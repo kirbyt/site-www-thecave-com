@@ -1,0 +1,179 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<title>Framework or CMS | thecave</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="index, follow" />
+
+<link rel="stylesheet" type="text/css" href="/styles/typebased/style.css" />
+<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="/atom.xml" />
+
+<!--[if IE 6]>
+<script type="text/javascript" src="/styles/typebased/includes/js/menu.js"></script>
+<![endif]-->	
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+<script type='text/javascript' src='/styles/typebased/includes/js/superfish.js?ver=3.3.2'></script>
+<script type="text/javascript" src="/js/lastfm.js"></script>
+
+<!-- Alt Stylesheet -->
+<link href="/styles/typebased/styles/grey.css" rel="stylesheet" type="text/css" />
+
+<!-- Woo Shortcodes CSS -->
+<link href="/styles/typebased/functions/css/shortcodes.css" rel="stylesheet" type="text/css" />
+
+<!-- Custom Stylesheet -->
+<link href="/styles/typebased/custom.css" rel="stylesheet" type="text/css" />
+<meta id="syntaxhighlighteranchor" name="syntaxhighlighter-version" content="3.1.3" />
+</head>
+
+<body class="home blog unknown">
+
+<div id="container">
+
+	<div id="header">
+		<h1>
+			<a href="/" title="Ramblings from a crotchety old man.">
+			<img src="/images/thecave-logo-2.png" style="margin-top:0px;" alt="thecave" /></a></h1>
+	</div>
+	
+	<div id="menu">
+				<ul id="navigation" class="nav wrap">
+										<li class="page_item current_page_item first"><a href="/"><span>Home</span></a></li>
+										</ul>
+			</div>
+	<div class="wrap background">
+		
+		<div id="content" class="left-col wrap">
+            <!--- Post Starts -->
+<div class="post wrap page">
+
+    <div class="post-meta left-col">
+    <h3 class="wrap"><span class="month">Dec<span class="year">2008</span></span><span class="day">08</span></h3>
+    <h4 class="author">kirbyt</h4>
+    </div>
+
+    <div class="post-content right-col">
+    <h2><a href="/2008/12/08/framework-or-cms/" rel="bookmark" title="Framework or CMS">Framework or CMS</a></h2>
+
+    <p>I am once again pondering the question of whether to use a framework or CMS for the upcoming refresh the <a href='http://www.whitepeaksoftware.com/'>White Peak Software</a> web site. I have gone back and forth on this multiple times over the years and I can never really decide which is better. And I ask this question often not just for my company web site but for customer web sites that I build.<br /><br />A <a href='http://en.wikipedia.org/wiki/Framework'>framework</a> gives me great control and flexibility. I can design and architect the site to my liking. I can use the data store of my choice be it XML, a database such as MSSQL or <a href='http://www.postgresql.org/'>Postgres</a>, and I can implement site specific features that meet 100% of the requirements. But the site eventually reaches a point where the only thing needed is to publish new content. Create a new landing page for marketing, change copy on an existing page, add a new product page, and so on. This is when I start thinking &#8220;Man, I wish I had a really simple CMS in place.&#8221;<br /><br />A <a href='http://en.wikipedia.org/wiki/Content_management_system'>CMS</a> manages the site content for me. A CMS really does make publishing new content a snap. And you get a lot of additional features, or add-ons, with a CMS such as blog engine, forums or discussion groups, user management, calendar, photo gallery&#8230;the list goes on. However, most if not all CMSs are built on top of some core framework (<a href='http://plone.org/'>Plone</a> uses <a href='http://www.zope.org/'>Zope</a>, <a href='http://www.dotnetnuke.com/'>DotNetNuke</a> uses .NET, <a href='http://expressionengine.com/'>ExpressionEngine</a> uses <a href='http://codeigniter.com/'>CodeIgnitor</a> - I think). This allows developers to expand and enhance the CMS by writing their own add-ons and extensions. But to do this the developer needs to know the underlying framework, and if you already know the framework isn&#8217;t it sometimes easier and or faster to work directly with the framework bypassing the CMS all together? Also, it&#8217;s been my experience that many of the CMSs out there tend to meet only 80 to 90% of the requirements. So you get the ease of publishing new content but other areas of the site can be lacking unless, of course, additional code is written to make up for the missing functionality. It&#8217;s a vicious circle.<br /><br />So do you learn and master a framework and have ultimate flexibility or learn and master a CMS and have ease of use for managing content? And what about rolling your own &#8220;simple&#8221; CMS. It can be great experience in the beginning but it will eventually have limitations or even worse become yet another full feature CMS like those already available today. And if you end up writing your own full featured CMS you have to ask yourself &#8220;Would my time have been better spent learning and mastering an existing CMS, its framework and contributing to its community?&#8221;<br /><br />Unfortunately I don&#8217;t have any solid answers here. I guess the only real answer to the question should I use a framework or CMS is &#8220;It depends.&#8221; It depends on a number of different factors unique to your situation, your needs, your time line, and so on.<br /><br />So what have I decided for the White Peak Software web site refresh? Honestly I&#8217;m still a bit undecided. The site is currently implemented with ASP.NET and a home grown simple CMS mechanism. It has worked well for a number of years but I need more functionality on the site. Building on the current implementation would take too much time so I need a different approach. My original thought was to use PHP and Zend but then I discovered CodeIgnitor. CodeIgnitor led me to ExpressEngine and I thought &#8220;Ah, the solution for me. PHP+CodeIgnitor+ExpressEngine&#8221;. But then I started looking at python for general programming tasks and thought &#8220;What would it take to use Python programming for web apps?&#8221; Not much I found out so I have decided to use <a href='http://www.python.org/'>Python</a>.<br /><br />The decision to use Python has lead me to look at a number of different frameworks and CMS solutions. And while I&#8217;m not 100% sure what stack I will select, I&#8217;m leaning towards Python + web2py. <a href='http://www.web2py.com/'>web2py</a> is an enterprise ready framework for web based application. Web development using web2py is very easy and fast, and I really like the development experience on my Mac.<br /><br />I guess it&#8217;s safe to assume at this point that I will once again pick a framework over an existing CMS. What can I say? I&#8217;m a programmer and while the appeal for a CMS is there I still enjoy the flexibility and control I have by doing my own implementation using a framework.<br /><br /><span style='color:red'>Update:</span> Here is a <a href='http://www.thecave.com/archive/2008/12/08/framework_or_cms_revisited.aspx'>follow up posting</a> that explains my own requirements and why I feel using a framework is better in my situation.</p>
+
+
+    <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+    </div>
+</div>
+<!--- Post Ends -->
+
+
+		</div>
+		
+				<!--- Sidebar Starts -->
+		
+		<div id="sidebar" class="right-col">
+		
+			<div id="search">
+                <form action="http://google.com/search" method="get">
+                    <div>
+                    <input type="hidden" name="q" value="site:thecave.com" />
+					<input type="text" class="search_box" name="q" id="q" results="0" />
+					<input type="image" src="/styles/typebased/images/search.gif" class="submit" name="submit" />
+                    </div>
+                </form>
+			</div>
+						
+			<div id="sidebar_in">
+			
+			<div id="lastfm-1" class="block widget widget_lastfm">
+    <h2><a href="http://last.fm/user/kirbyt" class="lastfm_title_link">Listening To</a></h2>
+    <div class="lastfm">
+    </div>
+</div>
+
+
+			
+        <div id="linkcat-2" class="block widget widget_links"><h2>Blogroll</h2>
+            <ul class='xoxo blogroll'>
+            <li><a href="http://www.rowanturner.net/">Rowan T</a></li>
+            <li><a href="http://photos.thecave.com/">Photos</a></li>
+            <li><a href="http://www.learnipadprogramming.com/">Learning iPad Programming</a></li>
+            <li><a href="http://blog.whitepeaksoftware.com/">White Peak Software</a></li>
+            </ul>
+        </div>
+    
+        <div id="archives-3" class="block widget widget_archive"><h2>Archives</h2>		
+        <ul>
+        <li><a href="/blog/archives">The Complete Blog Archives</a></li>
+        </ul>
+        </div>			
+			
+						
+			</div>
+				
+		</div>
+		
+		<!--- Sidebar Ends -->		
+	</div>
+	
+</div>
+	
+<div id="footer" class="wrap">
+
+	<div class="left-col">
+		<div class="popular wrap">
+			<h2>Recent Articles</h2>
+			<ul>
+                
+                  <li><a href="/2012/08/21/weighing-in/" title="Weighing In">Weighing In</a></li>
+                
+                  <li><a href="/2012/08/18/pack-unpack-repeat/" title="Pack Unpack Repeat">Pack Unpack Repeat</a></li>
+                
+                  <li><a href="/2012/08/17/the-weight-lost-continues/" title="The Weight Lost Continues">The Weight Lost Continues</a></li>
+                
+                  <li><a href="/2012/08/16/planning-to-thru-hike-the-long-trail/" title="Planning to Thru Hike the Long Trail">Planning to Thru Hike the Long Trail</a></li>
+                
+                  <li><a href="/2012/08/10/test-run-on-my-dyi-pot-cozy/" title="Test Run on My DYI Pot Cozy">Test Run on My DYI Pot Cozy</a></li>
+                
+            </ul>
+		</div>
+	</div>
+	
+	<div id="subscribe" class="right-col">
+		<h2>Subscribe to RSS</h2>
+		<p class="rss">If you enjoyed the post, make sure you subscribe to the RSS feed.</p>
+		<p>
+		<a href="/atom.xml">Articles</a><br />
+		</p>
+	</div>
+	
+<div id="copyright" class="wrap">
+
+	<div class="left-col">
+		<p>&copy; 2012</p>
+	</div>
+	
+	<div class="right-col">
+		<p>Design by <a href="http://woothemes.com"><img src="/styles/typebased/styles/grey/logo-footer.jpg" width="87" height="21" alt="woo themes" /></a></p>
+	</div>
+
+</div>
+
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-167605-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
+<!-- Localized -->

@@ -1,0 +1,238 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<title>Explicit Interface Implementation in C# | thecave</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="index, follow" />
+
+<link rel="stylesheet" type="text/css" href="/styles/typebased/style.css" />
+<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="/atom.xml" />
+
+<!--[if IE 6]>
+<script type="text/javascript" src="/styles/typebased/includes/js/menu.js"></script>
+<![endif]-->	
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+<script type='text/javascript' src='/styles/typebased/includes/js/superfish.js?ver=3.3.2'></script>
+<script type="text/javascript" src="/js/lastfm.js"></script>
+
+<!-- Alt Stylesheet -->
+<link href="/styles/typebased/styles/grey.css" rel="stylesheet" type="text/css" />
+
+<!-- Woo Shortcodes CSS -->
+<link href="/styles/typebased/functions/css/shortcodes.css" rel="stylesheet" type="text/css" />
+
+<!-- Custom Stylesheet -->
+<link href="/styles/typebased/custom.css" rel="stylesheet" type="text/css" />
+<meta id="syntaxhighlighteranchor" name="syntaxhighlighter-version" content="3.1.3" />
+</head>
+
+<body class="home blog unknown">
+
+<div id="container">
+
+	<div id="header">
+		<h1>
+			<a href="/" title="Ramblings from a crotchety old man.">
+			<img src="/images/thecave-logo-2.png" style="margin-top:0px;" alt="thecave" /></a></h1>
+	</div>
+	
+	<div id="menu">
+				<ul id="navigation" class="nav wrap">
+										<li class="page_item current_page_item first"><a href="/"><span>Home</span></a></li>
+										</ul>
+			</div>
+	<div class="wrap background">
+		
+		<div id="content" class="left-col wrap">
+            <!--- Post Starts -->
+<div class="post wrap page">
+
+    <div class="post-meta left-col">
+    <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">25</span></h3>
+    <h4 class="author">kirbyt</h4>
+    </div>
+
+    <div class="post-content right-col">
+    <h2><a href="/2004/06/25/explicit-interface-implementation-in-c/" rel="bookmark" title="Explicit Interface Implementation in C#">Explicit Interface Implementation in C#</a></h2>
+
+    <p>I was a grumbling VB developer for a number of years. At the time Delphi was my language of choice but in the part of the country I lived customer work using it was almost non-existent. In the summer of 2000 at PDC, a friend of mine from Microsoft showed me the .NET Framework and C#. I was instantly drawn to C# because it reminded me of Delphi, which is no surprise for those who know their <a href='http://c2.com/cgi/wiki?HistoryOfCsharp'>C#/Delphi history</a>.</p>
+
+<p>At last there was (is) a language and framework from Microsoft that generated the same level of excitement in me that Borland&#8217;s Delphi had done a few years prior. Best of all it was from Microsoft which would mean customer work in the future. And as luck would have it, I started working exclusively with the .NET Framework and C# in the fall of 2001.</p>
+
+<p>For better or worse I have not spent much time with VB.NET, or Visual Basic 6.0 for that manner, since the fall of 2001. I have done a few small project using VB.NET but nothing to brag about. For the most part, both .NET languages are very similar with regard to features but there are some differences. For example, you can write unsafe code in C# but you can&#8217;t do the same in VB.NET. Depending on your point of view this is an advantage or a disadvantage.</p>
+
+<p>Another difference is that in VB.NET you can specify the scope of a member that implements a particular interface as something other than public. I needed to do this in more than one occasion in C# but was resolved to the fact that a member implementation of interface in C# had to be scoped as public.</p>
+
+<pre><code>Public Interface IMyInterface
+    Sub Foo()
+End Interface
+
+Public Class Class1
+Implements IMyInterface
+    Private Sub Foo() Implements IMyInterface.Foo
+    End Sub
+End Class</code></pre>
+
+<p>So if you can do this in VB.NET why can&#8217;t you do the same, or something similar in C#? This question lead me to the discovery (thank you <a href='http://www.google.com/search?q=explicit+interface+implement&amp;amp;sourceid=firefox&amp;amp;start=0&amp;amp;start=0&amp;amp;ie=utf-8&amp;amp;oe=utf-8'>google</a>) of explicit interface implementation in C#. By using an explicit interface implementation you can scope the member implementation as private. It&#8217;s a little messy because a member explicitly implemented cannot be access through the class instance. Instead it must be accessed through an instance of the interface.</p>
+
+<pre><code>interface IMyInterface
+{
+    void Foo();
+}
+
+abstract class MyAbstractClass : IMyInterface
+{
+    // Explicit interface implementation
+    void IMyInterface.Foo()
+    {
+        Console.WriteLine( &quot;bar&quot; );
+    }
+}
+
+class MyConcreteClass : MyAbstractClass
+{
+    public void FooBar()
+    {
+        // Must use an instance of the interface to access
+        // the explicit implementation.
+        ((IMyInterface)this).Foo();
+    }
+}
+
+public class MyApp
+{
+    public static void Main( string[] args )
+    {
+        MyConcreteClass c = new MyConcreteClass();
+        // Will not compile because Foo() is private.
+        // c.Foo();
+
+        c.FooBar();
+
+        // This works because we are all in the same module.
+        ((IMyInterface)c).Foo();
+    }
+}</code></pre>
+
+<p>While an explicit interface implementation does give the C# developer the ability to scope a member implementation as private, it is still not as powerful as VB.NET&#8217;s ability to scope a member implementation as anything other than public. Score 1 point for VB.NET.</p>
+
+
+    <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+    </div>
+</div>
+<!--- Post Ends -->
+
+
+		</div>
+		
+				<!--- Sidebar Starts -->
+		
+		<div id="sidebar" class="right-col">
+		
+			<div id="search">
+                <form action="http://google.com/search" method="get">
+                    <div>
+                    <input type="hidden" name="q" value="site:thecave.com" />
+					<input type="text" class="search_box" name="q" id="q" results="0" />
+					<input type="image" src="/styles/typebased/images/search.gif" class="submit" name="submit" />
+                    </div>
+                </form>
+			</div>
+						
+			<div id="sidebar_in">
+			
+			<div id="lastfm-1" class="block widget widget_lastfm">
+    <h2><a href="http://last.fm/user/kirbyt" class="lastfm_title_link">Listening To</a></h2>
+    <div class="lastfm">
+    </div>
+</div>
+
+
+			
+        <div id="linkcat-2" class="block widget widget_links"><h2>Blogroll</h2>
+            <ul class='xoxo blogroll'>
+            <li><a href="http://www.rowanturner.net/">Rowan T</a></li>
+            <li><a href="http://photos.thecave.com/">Photos</a></li>
+            <li><a href="http://www.learnipadprogramming.com/">Learning iPad Programming</a></li>
+            <li><a href="http://blog.whitepeaksoftware.com/">White Peak Software</a></li>
+            </ul>
+        </div>
+    
+        <div id="archives-3" class="block widget widget_archive"><h2>Archives</h2>		
+        <ul>
+        <li><a href="/blog/archives">The Complete Blog Archives</a></li>
+        </ul>
+        </div>			
+			
+						
+			</div>
+				
+		</div>
+		
+		<!--- Sidebar Ends -->		
+	</div>
+	
+</div>
+	
+<div id="footer" class="wrap">
+
+	<div class="left-col">
+		<div class="popular wrap">
+			<h2>Recent Articles</h2>
+			<ul>
+                
+                  <li><a href="/2012/08/21/weighing-in/" title="Weighing In">Weighing In</a></li>
+                
+                  <li><a href="/2012/08/18/pack-unpack-repeat/" title="Pack Unpack Repeat">Pack Unpack Repeat</a></li>
+                
+                  <li><a href="/2012/08/17/the-weight-lost-continues/" title="The Weight Lost Continues">The Weight Lost Continues</a></li>
+                
+                  <li><a href="/2012/08/16/planning-to-thru-hike-the-long-trail/" title="Planning to Thru Hike the Long Trail">Planning to Thru Hike the Long Trail</a></li>
+                
+                  <li><a href="/2012/08/10/test-run-on-my-dyi-pot-cozy/" title="Test Run on My DYI Pot Cozy">Test Run on My DYI Pot Cozy</a></li>
+                
+            </ul>
+		</div>
+	</div>
+	
+	<div id="subscribe" class="right-col">
+		<h2>Subscribe to RSS</h2>
+		<p class="rss">If you enjoyed the post, make sure you subscribe to the RSS feed.</p>
+		<p>
+		<a href="/atom.xml">Articles</a><br />
+		</p>
+	</div>
+	
+<div id="copyright" class="wrap">
+
+	<div class="left-col">
+		<p>&copy; 2012</p>
+	</div>
+	
+	<div class="right-col">
+		<p>Design by <a href="http://woothemes.com"><img src="/styles/typebased/styles/grey/logo-footer.jpg" width="87" height="21" alt="woo themes" /></a></p>
+	</div>
+
+</div>
+
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-167605-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
+<!-- Localized -->

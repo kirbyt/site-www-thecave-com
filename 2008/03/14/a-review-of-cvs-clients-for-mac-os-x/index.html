@@ -1,0 +1,179 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<title>A Review of CVS Clients for Mac OS X | thecave</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="index, follow" />
+
+<link rel="stylesheet" type="text/css" href="/styles/typebased/style.css" />
+<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="/atom.xml" />
+
+<!--[if IE 6]>
+<script type="text/javascript" src="/styles/typebased/includes/js/menu.js"></script>
+<![endif]-->	
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+<script type='text/javascript' src='/styles/typebased/includes/js/superfish.js?ver=3.3.2'></script>
+<script type="text/javascript" src="/js/lastfm.js"></script>
+
+<!-- Alt Stylesheet -->
+<link href="/styles/typebased/styles/grey.css" rel="stylesheet" type="text/css" />
+
+<!-- Woo Shortcodes CSS -->
+<link href="/styles/typebased/functions/css/shortcodes.css" rel="stylesheet" type="text/css" />
+
+<!-- Custom Stylesheet -->
+<link href="/styles/typebased/custom.css" rel="stylesheet" type="text/css" />
+<meta id="syntaxhighlighteranchor" name="syntaxhighlighter-version" content="3.1.3" />
+</head>
+
+<body class="home blog unknown">
+
+<div id="container">
+
+	<div id="header">
+		<h1>
+			<a href="/" title="Ramblings from a crotchety old man.">
+			<img src="/images/thecave-logo-2.png" style="margin-top:0px;" alt="thecave" /></a></h1>
+	</div>
+	
+	<div id="menu">
+				<ul id="navigation" class="nav wrap">
+										<li class="page_item current_page_item first"><a href="/"><span>Home</span></a></li>
+										</ul>
+			</div>
+	<div class="wrap background">
+		
+		<div id="content" class="left-col wrap">
+            <!--- Post Starts -->
+<div class="post wrap page">
+
+    <div class="post-meta left-col">
+    <h3 class="wrap"><span class="month">Mar<span class="year">2008</span></span><span class="day">14</span></h3>
+    <h4 class="author">kirbyt</h4>
+    </div>
+
+    <div class="post-content right-col">
+    <h2><a href="/2008/03/14/a-review-of-cvs-clients-for-mac-os-x/" rel="bookmark" title="A Review of CVS Clients for Mac OS X">A Review of CVS Clients for Mac OS X</a></h2>
+
+    <p>I&#8217;ve been a Mac user for a little more than 6 months now, and while I&#8217;m still writing software for the Windows platform, I&#8217;m toying with the idea of targeting OS X for an upcoming product. The use of version control software is part of the software methodology used at <a href='http://www.whitepeaksoftware.com/'>White Peak Software</a>, and the version control software I used is CVS (Concurrent Versioning System).<br /><br />Why CVS instead of Subversion? Simple. I have been using CVS since early 2000. It works for me and I see no reason for moving to Subversion. If I were starting from scratch I would most likely select Subversion for versioning control, but that&#8217;s a different story for a different blog post. This blog post is about my review of the various CVS clients available for Mac OS X.<br /><br /><a href='http://www.tortoisecvs.org/'>TortoiseCVS</a> is the CVS client I use on Windows and is by far, in my opinion, the best Windows CVS client out there. This of course is what I used as a baseline for finding a CVS client for the Mac. The CVS client I use needs to be as good as, or close to, TortoiseCVS. My preference for a CVS client for the Mac would be one that provides a Finder like user interface and uses right-click popup menus to interact with the CVS repository. That&#8217;s what I went searching for and here is what I found:<br /><br /><b>Xcode</b><br /><br />Xcode from Apple has an SCM repository feature that works with CVS, Subversion, and Perforce. I like the approach used in Xcode but I wasn&#8217;t able to get it working with my CVS repositories. The first problem I encountered was the lack of sserver support. The workaround for this is to use CVSNT instead of CVS, which comes installed by default on OS X. Unfortunately Xcode has a problem with sending the password to CVSNT and since CVS doesn&#8217;t support sserver Xcode was quickly off my list of CVS clients to consider.<br /><br />For grins I decided to enable pserver on one of my CVS repositories to test Xcode with CVS. Unfortunately I ran into more problems. For starters, there is no way (that I can find) for specifying a module. Secondly, when I was finally able to get Xcode to checkout a complete repository it would crash Xcode. I was testing with a rather large repository and the crash happened after about 20 minutes of download time. I tried this 3 times and the crash happened all 3 times. So even if Xcode did work with CVSNT and I was able to use sserver, I still could not use Xcode as my CVS client.<br /><br /><b>MacCvsX</b><br /><br />The next CVS client I tried was <a href='http://cvsgui.sourceforge.net/'>MacCvsX</a> (version 3.3 beta 2). This client has no problems accessing my CVS repositories but I found the UI to be a bit cumbersome. Also, I didn&#8217;t like the fact that when I wanted to add lots of new files to the repository I had to select each and every file individually. There is no &#8220;Add Content&#8221; feature like that found in <a href='http://www.tortoisecvs.org/'>TortoiseCVS</a>. While I can do everything I need to using MacCvsX, I found it UI to be inefficient. Thus my search for a CVS client for Mac OS X continued.<br /><br /><b>MacCVS Pro</b><br /><br />I looked at <a href='http://www.maccvs.org/'>MacCVS Pro</a> next, but I never downloaded it. The <a href='http://www.maccvs.org/status.html'>revision history</a> shows the last update to be March 27, 2000. That&#8217;s nearly 8 years without an update. I doubt it will run on my Intel-based MacBook Pro so I didn&#8217;t bother to download it.<br /><br />After more searching I discovered that the MacCVS Pro website at maccvs.org is out of date and no longer maintained, but the project lives on at SourceForge.net. The up-to-date <a href='http://sourceforge.net/projects/maccvspro/'>MacCVS Pro</a> can be found at <a href='http://sourceforge.net/projects/maccvspro/'>http://sourceforge.net/projects/maccvspro/</a>. The latest update at the time of this writing is January 14, 2007. Ah, much better. I did download it but I never ran it. According to the release notes in the readme file the latest build of MacCVS Pro &#8220;will only run on PPC machines (and Intel machines via Rosetta).&#8221; And the readme goes on to say &#8220;This is likely the last version that will be built using CodeWarrior, since CodeWarrior is no longer commercially available.&#8221; So MacCVS Pro is not the CVS client for me.<br /><br /><b>MacCVSClient</b><br /><br />The next CVS client I looked at was <a href='http://www.heilancoo.net/MacCVSClient/'>MacCVSClient</a> version 1.10. Now this product is more to my liking especially after looking at the other options. It works well with my CVS repositories and I like the concept of opening a sandbox to get a hierarchical view of the files. I also really liked how the hierarchical view automatically refreshed to reflect the most recent changes to the sandbox area and files within the sandbox. What I didn&#8217;t like was the diff viewer. While usable it wasn&#8217;t what I have become accustom to. I prefer the split window approach when viewing differences between files. Still, MacCVSClient is an excellent choice for those looking for a free CVS client for the Mac.<br /><br /><b>SmartCVS</b><br /><br />My search to find the ideal CVS client for Mac OS X lead me to <a href='http://www.syntevo.com/smartcvs/'>SmartCVS</a> from Syntevo. SmartCVS as a very clean, modern looking user interface. It provides different views of the sandbox. It allows me to easily checkout specific modules instead of the complete repository. As a matter of fact, SmartCVS has a project manager that allows me to save the settings for a particular module. I found this feature to be really cool and handy. And even though it does not have the &#8220;Add Contents&#8221; feature found in TortoiseCVS, SmartCVS does make it easy to add large sets of files to a repository even when the files are contained within subdirectories.<br /><br />SmartCVS comes in two favors, Foundation and Professional. Foundation is free but it does not include all the features found in the Professional version (click <a href='http://www.syntevo.com/smartcvs/comparison.html'>here</a> for the features comparison chart). The Professional version is affordable costing only $79 USD for a single user license and discounts for multi-user licenses.<br /><br />My only complaint with SmartCVS at the moment is that Syntevo needs to improve its <a href='http://en.wikipedia.org/wiki/Search_engine_optimization'>SEO</a>. I didn&#8217;t find SmartCVS in my initial searches and had I not spent a few nights in a row looking for CVS clients I probably would have never found it. <br /><br /><b>Conclusion</b><br /><br />In my opinion and based on my needs, SmartCVS is the best CVS client available for the Mac. It lacks some features that I have come to expect with TortoiseCVS <strike>such as the ability to use the diff and merge tools of my choosing</strike>, but it definitely has unique features that I like such as the Project Manager. So if you are looking for a good CVS client for the Mac, give SmartCVS a test drive.<br /><br /><font color='red'>\[Update\]</font> Turns out SmartCVS does allow users to specify external file diff and merge tools. The options are found under Preferences.</p>
+
+
+    <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+    </div>
+</div>
+<!--- Post Ends -->
+
+
+		</div>
+		
+				<!--- Sidebar Starts -->
+		
+		<div id="sidebar" class="right-col">
+		
+			<div id="search">
+                <form action="http://google.com/search" method="get">
+                    <div>
+                    <input type="hidden" name="q" value="site:thecave.com" />
+					<input type="text" class="search_box" name="q" id="q" results="0" />
+					<input type="image" src="/styles/typebased/images/search.gif" class="submit" name="submit" />
+                    </div>
+                </form>
+			</div>
+						
+			<div id="sidebar_in">
+			
+			<div id="lastfm-1" class="block widget widget_lastfm">
+    <h2><a href="http://last.fm/user/kirbyt" class="lastfm_title_link">Listening To</a></h2>
+    <div class="lastfm">
+    </div>
+</div>
+
+
+			
+        <div id="linkcat-2" class="block widget widget_links"><h2>Blogroll</h2>
+            <ul class='xoxo blogroll'>
+            <li><a href="http://www.rowanturner.net/">Rowan T</a></li>
+            <li><a href="http://photos.thecave.com/">Photos</a></li>
+            <li><a href="http://www.learnipadprogramming.com/">Learning iPad Programming</a></li>
+            <li><a href="http://blog.whitepeaksoftware.com/">White Peak Software</a></li>
+            </ul>
+        </div>
+    
+        <div id="archives-3" class="block widget widget_archive"><h2>Archives</h2>		
+        <ul>
+        <li><a href="/blog/archives">The Complete Blog Archives</a></li>
+        </ul>
+        </div>			
+			
+						
+			</div>
+				
+		</div>
+		
+		<!--- Sidebar Ends -->		
+	</div>
+	
+</div>
+	
+<div id="footer" class="wrap">
+
+	<div class="left-col">
+		<div class="popular wrap">
+			<h2>Recent Articles</h2>
+			<ul>
+                
+                  <li><a href="/2012/08/21/weighing-in/" title="Weighing In">Weighing In</a></li>
+                
+                  <li><a href="/2012/08/18/pack-unpack-repeat/" title="Pack Unpack Repeat">Pack Unpack Repeat</a></li>
+                
+                  <li><a href="/2012/08/17/the-weight-lost-continues/" title="The Weight Lost Continues">The Weight Lost Continues</a></li>
+                
+                  <li><a href="/2012/08/16/planning-to-thru-hike-the-long-trail/" title="Planning to Thru Hike the Long Trail">Planning to Thru Hike the Long Trail</a></li>
+                
+                  <li><a href="/2012/08/10/test-run-on-my-dyi-pot-cozy/" title="Test Run on My DYI Pot Cozy">Test Run on My DYI Pot Cozy</a></li>
+                
+            </ul>
+		</div>
+	</div>
+	
+	<div id="subscribe" class="right-col">
+		<h2>Subscribe to RSS</h2>
+		<p class="rss">If you enjoyed the post, make sure you subscribe to the RSS feed.</p>
+		<p>
+		<a href="/atom.xml">Articles</a><br />
+		</p>
+	</div>
+	
+<div id="copyright" class="wrap">
+
+	<div class="left-col">
+		<p>&copy; 2012</p>
+	</div>
+	
+	<div class="right-col">
+		<p>Design by <a href="http://woothemes.com"><img src="/styles/typebased/styles/grey/logo-footer.jpg" width="87" height="21" alt="woo themes" /></a></p>
+	</div>
+
+</div>
+
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-167605-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
+<!-- Localized -->
