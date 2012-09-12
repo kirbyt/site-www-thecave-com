@@ -1,0 +1,9 @@
+---
+layout: post
+title: 'Cannot Resolve Machine Name From Mac OS X'
+categories:
+  - blogger
+
+---
+
+After resolving the <a href="http://www.thecave.com/archive/2007/07/29/how_to_access_a_windows_2003_file_share_from_mac_os_x.aspx">Windows Server 2003 file share access</a> problem I turned my attention to fixing the DNS issue I'm having.  I'm able to ping the IP address of machines on my Local Area Network but I'm not able to resolve the machine names.  I have a local DNS running on Windows Server 2003 but for some odd reason OS X is not using it to resolve names.  So I decided to use a stop-gap approach for the time being.<br /><br />I modified the /etc/hosts file to include the address of the machines with a static IP address.  After all, these are the only machines I need access to from OS X.  Here are the steps I followed:<ul><br /><li>Sign in as an administrator (or an account belonging to the sudousers group)</li><br /><li>Launch a terminal shell (Applications &gt; Utilities &gt; Terminal if you are using Finder or type <b>terminal</b> in Spotlight)</li><br /><li>Run the command <b>sudo vi /etc/hosts</b></li><br /><li>Scroll to the end of the file</li><br /><li>Type <b>i</b> to enter insert mode</li><br /><li>Press the enter key to start a new line (my vi skills are weak as it has been years since I have used it - there is probably a better way to append to the end of a file)</li><br /><li>Enter the IP address, press the <b>tab</b> key, then enter the name machine</li><br /><li>Press the <b>esc</b> key to get out of insert mode</li><br /><li>Press <b>:wq</b> to save the changes and quit vi</li><br /></ul>That's is.  The machine name will now resolve to the IP.

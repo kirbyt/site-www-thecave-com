@@ -1,0 +1,9 @@
+---
+layout: post
+title: 'Using WinHelp for Popup Information'
+categories:
+  - blogger
+
+---
+
+I want to include a legend feature in SMTP Diagnostics to give users a clue as to the meaning of various icons used in the program.  I initially tried to accomplish this by creating a new borderless window that displayed the legend.  When the user clicked the legend link in the statusbar the legend window would popup.  But I found an easier way to do this.<br /><br />Instead of creating a new window and doing all the leg work behind the scenes to display the window, position the window, add shadowing to the window and so on, I decided to use a WinHelp popup.  WinHelp popups are used in many applications such as Microsoft Office to display "What's This?" Help.  A nice feature of WinHelp popups is content can be formatted.  In the case of SMTP Diagnostics, a WinHelp popup topic is used to display the legend with the icon on the left followed by the text describing the meaning of the icon.<br /><br />The end result.  I reduced the code used in my first attempt at displaying a legend to a single line of code.  Delphi and WinHelp do all the work of displaying, positioning, and shadowing the legend window.<br /><br /><a href="/images/blogimages/smtpdiagnosticsnapshot03.jpg"><img src="/images/blogimages/smtpdiagnosticsnapshot03.jpg" border="0" width="380" height="331" /></a><br />Click image to enlarge.

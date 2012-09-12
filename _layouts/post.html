@@ -1,0 +1,23 @@
+---
+layout: default
+---
+ 
+<!--- Post Starts -->
+<div class="post wrap page">
+
+    <div class="post-meta left-col">
+    <h3 class="wrap"><span class="month">{{ page.date | date: "%b" }}<span class="year">{{ page.date | date: "%Y" }}</span></span><span class="day">{{ page.date | date: "%d" }}</span></h3>
+    <h4 class="author">kirbyt</h4>
+    </div>
+
+    <div class="post-content right-col">
+    <h2><a href="{{ root_url }}{{ page.url }}" rel="bookmark" title="{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</a></h2>
+
+    {{ content }}
+
+
+    {% if page.categories %}<div>Posted in {{ page.categories | category_links }}.</div>{% endif %}
+    </div>
+</div>
+<!--- Post Ends -->
+

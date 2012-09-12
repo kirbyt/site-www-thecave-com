@@ -1,0 +1,9 @@
+---
+layout: post
+title: 'Disable Trillian Hotkeys'
+categories:
+  - blogger
+
+---
+
+Recently I downloaded Trillian Basic 3.1 and noticed it was interfering with hotkeys I commonly use in other applications.  Settings for Trillian hotkeys can be found in Trillian Preferences | Advanced Preferences | Automation.  Note you may need to scroll down to see the hotkeys.<br /><br />Even though I un-checked the Trillian hotkeys, they were still interfering with my other application.  I found the only way to stop the interference was to delete the hotkeys from Trillian.  After doing so I had to exit Trillian and re-launch it for the changes to take effect.  And now I am able to happily use specific hotkeys in other applications.<br />Disable Trillian Hotkeys<br />Recently I downloaded Trillian Basic 3.1 and noticed it was interfering with hotkeys I commonly use in other applications.  Settings for Trillian hotkeys can be found in Trillian Preferences | Advanced Preferences | Automation.  Note you may need to scroll down to see the hotkeys.<br /><br />Even though I un-checked the Trillian hotkeys, they were still interfering with my other application.  I found the only way to stop the interference was to delete the hotkeys from Trillian.  After doing so I had to exit Trillian and re-launch it for the changes to take effect.  And now I am able to happily use specific hotkeys in other applications.

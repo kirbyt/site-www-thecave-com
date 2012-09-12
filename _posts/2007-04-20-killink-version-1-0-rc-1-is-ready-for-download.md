@@ -1,0 +1,9 @@
+---
+layout: post
+title: 'Killink Version 1.0 RC 1 is Ready for Download'
+categories:
+  - blogger
+
+---
+
+Whew, it's been a long, busy week.  <br /><br />I have been hammering away at various performance issues with <a href="http://www.killink.com/">Killink CSV</a> and I'm happy to announce a stable build is now available for download.  This is Release Candidate 1.  Assuming no more show stoppers the final release of Killink CSV should be posted in a few days.  <br /><br />I'll try to find time this weekend to blog about some of the performance improvements made in Killink CSV.  One aspect I find exciting is the use of a custom dataset that allows a single copy of the delimited data to exists in memory and is used to feed data to the print module.  But more on that later.<br /><br />I've also been busy this week cleaning up the <a href="http://www.whitepeaksoftware.com/">White Peak Software web site</a> and the <a href="http://www.killink.com/">Killink CSV web site</a>.  The <a href="http://www.smtpdiagnostics.com/">SMTP Diagnostics web site</a> will be updated soon.  Also look for a new release of <a href="http://www.smtpdiagnostics.com/">SMTP Diagnostics</a> coming soon with better Windows Vista support.<br /><br />And if you haven't seen it yet check out the new <a href="http://www.whitepeaksoftware.com/buynow.aspx">White Peak Software Store</a>.  The new store front is fully integrated with the <a href="http://www.whitepeaksoftware.com/">White Peak Software</a> web site giving the customer a more seamless shopping experience.<br /><br />As I said, it has been a long, busy week.

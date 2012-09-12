@@ -1,0 +1,9 @@
+---
+layout: post
+title: 'Explosion in Danvers MA'
+categories:
+  - blogger
+
+---
+
+Early this morning, around 2:45 AM, my wife and I were woken up by a thunderous boom that shook the house.  We both jumped out of bed, looked out the window, but all was quiet.  I thought maybe the explosion was downstairs in the basement so I went down to check it out.  My wife turned on the TV and tuned in to local Boston news channels but there was nothing about an explosion.  No breaking news.  Nothing.  Finally I went outside to see if I could tell what happened.  Still not luck.<br /><br />We were up for almost an hour worried that something bad had happened.  It was hard to go back to sleep.  For us, being from New York City, it was strange how quiet the streets were.  It seems the explosion did not wake any of our neighbors.  And there was nothing on the local news.  As a matter of fact the local news was nothing more than a re-broadcast of an early news broadcast.  Boy, we miss <a href="http://www.ny1.com/">NY1</a> at times like this.<br /><br />Well, the mystery of what happened was uncovered this morning when I checked <a href="http://www.boston.com/">Boston.com</a>.  Seems there was a <a href="http://www.boston.com/news/globe/city_region/breaking_news/2006/11/explosion_rocks.html">major chemical explosion in near by Danvers</a>.  <br /><br />We live a few miles from Danvers and we felt the affects of the explosion, so it must have been one heck of an explosion.  As I said it woke up from our sleep and shook the house.  And we live a few miles away.  It's amazing no one was seriously hurt.

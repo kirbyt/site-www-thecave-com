@@ -1,0 +1,9 @@
+---
+layout: post
+title: 'Camping in Long Island'
+categories:
+  - blogger
+
+---
+
+There are camp grounds in Long Island?  You bet ya.  Melanie and I spent the weekend camping at one of many Long Island campgrounds.  We stayed at <a href="http://nysparks.state.ny.us/parks/info.asp?parkID=52">Wildwood State Park</a> Saturday and Sunday night and had a very enjoyable time.  Wildwood is about an hour and a half to two hours from Manhattan and is on the Sound side of the island.<br /><br />We were a bit disappointed with the camp grounds on Saturday, rather I should say disappointed with the other campers on Saturday.  There were lots of campers on that night, the grounds were near capacity.  And many of the campers seemed to enjoy their cars more than the great outdoors.  Music poured from car radios until 10:00/10:30 pm, people drove cars around until midnight, and car alarms could be heard throughout the night and early morning.  Needless to say, Saturday wasn't what we expected.<br /><br />Luckily Sunday was the saving grace for Wildwood campgrounds.  The rowdy campers left (check-out time is 11 am) and grounds were probably less than 25% full.  Sunday night was quite and enjoyable, a welcome change from the previous night.  We chilled by the campfire listening to the strange noises made by the creatures of the night.  We cooked steaks and roasted corn on the grill, and we were constantly thankful the Saturday night crowd was gone.<br /><br />Overall we really liked the campgrounds at Wildwood State Park and highly recommend it to those wanting to camp in Long Island.  The campgrounds are nice and the beach is only a short walk away.  Be sure to bring your bike and avoid Friday and Saturday nights.

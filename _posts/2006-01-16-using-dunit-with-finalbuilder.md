@@ -1,0 +1,9 @@
+---
+layout: post
+title: 'Using DUnit with FinalBuilder'
+categories:
+  - blogger
+
+---
+
+After installing FinalBuilder for the first time, I looked through the list of actions to see what 3rd party tools were supported.  I was pleasantly surprised to see an action for every tool I use in software development except one, DUnit.  I thought this was odd but I soon realized that DUnit is supported, just not as a custom action.<br /><br />Follow these steps to use DUnit in FinalBuilder:<br /><br />1) Add a Compile Delphi Win32 Project action to your FinalBuilder project.<br />2) Point the Compile Delphi action to your DUnit project and configure it as needed to compile the project.<br />3) Add an Execute Program action to the FinalBuilder project.  This action is found under the Windows OS action group.<br />4) Point the action to the compiled bits from the Compile Delphi action.  In other words, point it to your DUnit program.<br />5) Mark the Log Output option, which should be marked by default.<br /><br />That's it.  FinalBuilder will run your DUnit unit tests as part of the build process and the output from the tests will be captured by FinalBuilder.  And of course you can configure the FinalBuilder project to act accordingly based on the pass/fail result of your unit tests.<br /><br />Some people might think FinalBuilder should have a custom action for DUnit.  However, the action would only be a direct copy of the Execute Program action.  Or maybe it would combine the Compile Delphi and Execute Program actions into a single action.  But as you can see a custom action is not needed.  DUnit unit tests are support through the Execute Program action and a custom action specific to DUnit would just be a waste of time for the folks at Vsoft Technologies.  Their time is better spent adding support for more tools and adding more features to an already great product,<br />FinalBuilder.

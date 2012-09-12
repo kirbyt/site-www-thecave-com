@@ -1,0 +1,9 @@
+---
+layout: post
+title: 'Major Progress Made on Vertigo'
+categories:
+  - blogger
+
+---
+
+I have been talking about Vertigo for a couple of years now.  Vertigo is a software product line currently under development at White Peak Software.  In a nutshell it is an email program for the Windows desktop.  And yes, it will be release this year.<br /><br />Why develop yet another email program?  Simple, none of the available mail programs suit my needs as a small business owner.  And I have tried them all including Outlook, The Bat, Eudora, Poca, and ThunderBird.  My needs are not unique and there is definitely an untouched market out there, which is why we are building yet another, albeit, a new kind of email program.<br /><br />We current have a working version of Vertigo that is being used daily.  <a href="http://en.wikipedia.org/wiki/Eat_one's_own_dog_food">Dogfooding</a> an email program, though, can have its challenges especially given than I must send emails out every day.  The thing that has surprised me the most is the large amount of crap contained in mail messages.<br /><br />We are building a database containing thousands and thousands (soon to be hundreds of thousands) of real mail messages.  Of course the majority of the messages in our database are spam mail.  This will be extremely helpful when work begins on the spam filter feature.  But the spam messages are also proving to be helpful in uncovering bugs in Vertigo.  Malformed message headers, date formats, and MIME encoding are common.  Then of course there are the attachments containing questionable content.  It's been amazing to see what actually happens with email under the hood.

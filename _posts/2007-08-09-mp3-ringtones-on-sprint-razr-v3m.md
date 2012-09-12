@@ -1,0 +1,9 @@
+---
+layout: post
+title: 'MP3 Ringtones on Sprint RAZR V3m'
+categories:
+  - blogger
+
+---
+
+My new Sprint RAZR V3m phone can play MP3 music files, so it seems only logical to me that I should be able to use MP3 files as ringtones on the phone.  It turns out you can but it involves a few steps.<br /><br />The steps below are for MacBook Pro users.  Windows users can probably use a similar approach but I don't really know for sure.  So please no questions about how to do this using Windows.<br /><br />First you will need an MP3 file.  A ringtone only play for 30 seconds so I suggest you edit the music file down to a maximum duration of 30 seconds.  I used GarageBand to edit the MP3 file down to the desired duration and to contain the sound bit I wanted as a ringtone.<br /><br />Once you are done editing the track in GarageBand, select Share &gt; Send Song to iTunes from the GarageBand menu bar.  The song will be mixed, copied to your iTunes library, and iTunes will be launched.  In iTunes, select the new song, which is probably playing in iTunes, and select Advanced &gt; Convert Selection to MP3.  <br /><br />Congratulations.  You now have an MP3 file ready to use as a ringtone.<br /><br />The next step is to copy your newly created MP3 ringtone to your Sprint RAZR V3m phone.  Using Bluetooth, pair your MacBook Pro with your phone.  Select Browse Device... from the Bluetooth menulet.  Select your phone in the list of devices and click the Browse button.  Make sure your phone has Bluetooth turned on and that you grant access to your computer.<br /><br />Assuming all is right up to this point, you should see the Browse window displayed on your computer.

@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<h2 class="arh">{{ page.title }}</h2>
+
+{% for post in site.categories[page.category] %}
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">{{ post.date | date: "%b" }}<span class="year">{{ post.date | date: "%Y" }}</span></span><span class="day">{{ post.date | date: "%d" }}</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="{{ root_url }}{{ post.url }}" rel="bookmark" title="{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a></h2>
+
+        {{ content }}
+        
+        {% if post.categories %}<div>Posted in {{ post.categories | category_links }}.</div>{% endif %}
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+{% endfor %}
+
