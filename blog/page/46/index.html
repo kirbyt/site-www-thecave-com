@@ -59,6 +59,26 @@
         </div>
 
         <div class="post-content right-col">
+        <h2><a href="/2004/06/17/unit-testing-and-vs-net-2005/" rel="bookmark" title="Unit testing and VS.NET 2005">Unit testing and VS.NET 2005</a></h2>
+
+        <p>I <a href='http://www.peterprovost.org/archive/2004/06/12/1379.aspx'>agree</a> with Scott. Unit Testing support should be included with all versions of Visual Studio 2005 and not just with Team System. However, I am not sure I agree with the unit testing support using a new framework developed by Microsoft. <a href='http://www.nunit.org/'>NUnit</a> is here today and works with all released versions of the .NET Framework. And I am sure support for version 2 of the .NET Framework will be included in NUnit once Microsoft has released it.<br /><br />I doubt many of my customers will be ready to move to VS.NET 2005 and the .NET Framework 2.0 when it is released, but I will still be developing solutions for them. And I will continue to provide unit tests for custom written production code. So while I agree that all versions of Visual Studio.NET 2005 should include support for unit testing, I would like to see stronger support for NUnit and not some new testing framework. This will help ease the migration to the new tool and framework.<br /><br /><br /></p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">17</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
         <h2><a href="/2004/06/17/firefox-extensions/" rel="bookmark" title="Firefox Extensions">Firefox Extensions</a></h2>
 
         <p>For those new to Firefox, be sure to check out the list of <a href='http://texturizer.net/firefox/extensions/'>extensions</a>. They&#8217;re easy to install and there are many helpful extensions that will improve your browsing experience. As a matter of fact, I&#8217;m using the BlogThis! extension right now to post this entry.</p>
@@ -244,26 +264,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">09</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/06/09/which-xml-api/" rel="bookmark" title="Which XML API?">Which XML API?</a></h2>
-
-        <p>I had an interesting chat with a team member today about which XML parsing API from the .NET Framework to use for a particular situation. He mentioned that using the XPathNavigator with an XmlReader would not load the document into memory. However, after some quick research I found this to be incorrect. XPathNavigator is different than XmlDocument in that it is optimized for XSLT processing and the XPath data model, but it is similar in that the entire document is read into memory. XPathNavigator appears to use a cursor-base model for traversing the document while XmlDocument uses a tree-base model.<br /><br />The rule of thumb I have come up with is this: Read-only, forward-only XML parsing API tend to read from a stream and do not store the entire document in memory. Random access XML parsing API, which typically use a tree-base model or cursor-base model, will traverse in-memory the XML document which means this entire document is stored in memory.<br /><br /><br /></p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -336,6 +336,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2012/09/25/back-from-the-long-trail-hike/" title="‘Back from the Long Trail Hike’">‘Back from the Long Trail Hike’</a></li>
+                
                   <li><a href="/2012/08/21/weighing-in/" title="Weighing In">Weighing In</a></li>
                 
                   <li><a href="/2012/08/18/pack-unpack-repeat/" title="Pack Unpack Repeat">Pack Unpack Repeat</a></li>
@@ -343,8 +345,6 @@
                   <li><a href="/2012/08/17/the-weight-lost-continues/" title="The Weight Lost Continues">The Weight Lost Continues</a></li>
                 
                   <li><a href="/2012/08/16/planning-to-thru-hike-the-long-trail/" title="Planning to Thru Hike the Long Trail">Planning to Thru Hike the Long Trail</a></li>
-                
-                  <li><a href="/2012/08/10/test-run-on-my-dyi-pot-cozy/" title="Test Run on My DYI Pot Cozy">Test Run on My DYI Pot Cozy</a></li>
                 
             </ul>
 		</div>
