@@ -54,6 +54,41 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">10</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2004/06/10/tools-of-choice/" rel="bookmark" title="Tools of Choice">Tools of Choice</a></h2>
+
+        <p>Lately I have seen a handful of developers blog the list of tools they use so I&#8217;ve decided to do the same. Here are the ones that come to mind because I use them daily.<dl>
+<br /><dt><a href='http://www.eudora.com/'>Eudora Pro</a></dt><dd>My e-mail reader of choice.  I configure it for text base only so I don't have to worry about all the problems associated with HTML based readers.</dd>
+<br /><dt>VS.NET 2003</dt><dd>My primary development IDE.  I've become a sucker for Intellisense.</dd><dd>
+<br /></dd><dt><a href='http://www.multiedit.com/'>MultiEdit</a></dt><dd>My text editor of choice and the tool I use to write small snippet code.  My only compliant is the lack of Unicode support, which prevents me from selecting MultiEdit as my IDE of choice.</dd>
+<br /><dt><a href='http://www.devexpress.com/?section=/Products/NET/CodeRush'>CodeRush</a></dt><dd>Enhances the VS.NET editor with templates and other useful features.  Makes up for the fact that I don't use MultiEdit daily any more.</dd>
+<br /><dt><a href='http://www.nunit.org/'>NUnit</a></dt><dd>I don't write a line of production code these days without first writing a unit test.  NUnit has changed my programming life.</dd>
+<br /><dt><a href='http://www.tortoisecvs.org/'>TortoiseCVS</a></dt><dd>I gave up on VSS long time ago and exclusive lock source control.  CVS is a great repository and TortoiseCVS makes working with CVS repository a breeze.</dd>
+<br /><dt><a href='http://www.aisto.com/roeder/dotnet/'>Reflector</a></dt><dd>This tool allows me to review the internals of an assembly.  The decompiler is great especially when working with generated code or trying to trouble shoot a problem with a 3rd party assembly.</dd>
+<br /><dt><a href='http://nant.sourceforge.net'>NAnt</a></dt><dd>NAnt is an open source build tool that allows me to write build scripts in XML.  I find that for more complex applications NAnt is much better for building applications then VS.NET.  Plus, it can also send e-mails, retrieve latest source code from a repository, and more.</dd>
+<br /><dt>WinCV</dt><dd>WinCV is a class view for the .NET Framework and comes with the .NET Framework SDK.  I use it to find all sorts of things about the framework and it's much faster then the MSDN documentation.</dd>
+<br /><dt><a href='http://www.scootersoftware.com/'>Beyond Compare</a></dt><dd>This is a great tool for comparing files or directory of files.  It will even compare files on your local machine with an FTP server.  And best of all it has merge and synch features.
+<br /></dd><dt>SQL Query Analyzer</dt><dd>I know it is probably old skool but I still use the query analyzer for much of my SQL Server work.</dd>
+<br /><dt><a href='http://www.pocketsoap.com/tcptrace/'>tcpTrace</a></dt><dd>This tool from Simon Fell is a must have when you want to see what is going on the wire when calling a web service.  And I can't imagine writing a SOAP extension without it.</dd>
+<br /><dt><a href='http://www.sharpreader.net/'>SharpReader</a></dt><dd>I don't read blogs as often as I would like but when I do I use SharpReader.</dd>
+<br /><dt>RoboCopy</dt><dd>This is an unsupported tool from Microsoft that is a copy command on steroids.  I use it daily to backup my laptop to an external hard drive.</dd>
+<br /></dl></p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">09</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -331,26 +366,6 @@ namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">May<span class="year">2004</span></span><span class="day">19</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/05/19/using-enterprise-templates-to-group-projects/" rel="bookmark" title="Using Enterprise Templates to Group Projects">Using Enterprise Templates to Group Projects</a></h2>
-
-        <p>I&#8217;m currently working on a customer project with 16+ VS.NET projects in a single VS.NET solution file. The single solution file is handy in that all the source code that makes up the complete customer solution is available in one place. The solution includes multiple C# projects, unit test projects, database projects, and one Reporting Services project. Also our build environment relies on NAnt scripts so each project that produces an assembly also has its own .build script.<br /><br />A single solution approach is nice because I have access to everything that makes up the solution, from build scripts to C# source code to stored procedures. But finding the right project or file is becoming more challenging each day as more is added to the solution. This is where Enterprise Template Projects comes to the rescue. <br /><br />An Enterprise Template Project is a project type available in Visual Studio.NET Enterprise Edition or greater, and it can contain any type of file including other project types. I started out by creating a set of enterprise template projects that represent the grouping I want. For example, I created template projects with the names Applications, BusinessServices, Databases, Frameworks, NAntScripts, and UnitTests. Within each of these projects I added the appropriate reference based on the grouping to existing project files. UnitTests contains references to the C# projects responsible for producing our NUnit unit test assemblies. BusinessServices contains references to projects that make up the middle tier of the solution. Framework contains references to framework projects, and so on.<br /><br />NAntScripts is interesting in that it does not contain a reference to another project but instead it contains references to .build scripts files found in other projects. I like this because many times when I am working on the build scripts I need to modify more than one script. Before making the grouping I was jumping from project to project in search of the .build script file. Now I have references to all the script files in one place making it easier to find a particular script file.<br /><br />With this new grouping I am able to more efficiently find the projects and files I need to work on. The grouping has proven itself to be a huge time saver for me especially when working with large single solution files.<br /><br />One additional note on using enterprise template projects to organize your single solution: To prevent scattering .etp files throughout project directories containing the source code I recommend creating a single directory that will store all of the .etp files. References within an enterprise template project do not have to fall under the template project. Instead files referenced within the .etp can be stored anywhere on the hard drive. This means the .etp file does not have to dirty up the project directory where the source code actually resides.<br /><br /><br /></p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -423,6 +438,8 @@ namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2012/12/25/christmas-2012/" title="Our Christmas 2012">Our Christmas 2012</a></li>
+                
                   <li><a href="/2012/09/25/back-from-the-long-trail-hike/" title="Back from the Long Trail Hike">Back from the Long Trail Hike</a></li>
                 
                   <li><a href="/2012/08/21/weighing-in/" title="Weighing In">Weighing In</a></li>
@@ -430,8 +447,6 @@ namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
                   <li><a href="/2012/08/18/pack-unpack-repeat/" title="Pack Unpack Repeat">Pack Unpack Repeat</a></li>
                 
                   <li><a href="/2012/08/17/the-weight-lost-continues/" title="The Weight Lost Continues">The Weight Lost Continues</a></li>
-                
-                  <li><a href="/2012/08/16/planning-to-thru-hike-the-long-trail/" title="Planning to Thru Hike the Long Trail">Planning to Thru Hike the Long Trail</a></li>
                 
             </ul>
 		</div>
