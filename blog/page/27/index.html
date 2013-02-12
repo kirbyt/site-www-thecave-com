@@ -59,6 +59,26 @@
         </div>
 
         <div class="post-content right-col">
+        <h2><a href="/2005/11/22/using-wincv-exe-with-net-2-0/" rel="bookmark" title="Using WinCV.exe with .NET 2.0">Using WinCV.exe with .NET 2.0</a></h2>
+
+        <p>In an earlier post I mentioned my disappointment with Microsoft for not including wincv.exe in the .NET Framework 2.0 SDK. Like many developers I have found this tool to be very handy and I use it a lot. But all is not lost. WinCV.exe can be used with .NET 2.0.<br /><br />WinCV.exe has a config file called WinCV.exe.config identifying the assemblies loaded and exposed by the tool. I modified the config file to include the .NET 2.0 assemblies. Low and behold this worked. I can now use WinCV.exe to examine class definitions for 2.0 classes.<br /><br />I recommend copying the WinCV.exe and WinCV.exe.config to a clean directory if you have .NET 1.1 and 2.0 installed on the same machine. This way you can use one instance of WinCV.exe for .NET 1.1 and the other for 2.0. You can declare the 2.0 assemblies in the same config file as the 1.1 assembly but this can lead to confusion when looking at the class definitions in WinCV.exe. I like to eliminate confusion so I copied WinCV.exe and its config file to a different directory, which I use to browse 2.0 classes. I use the instance at the default location to browse 1.1 classes.<br /><br />I have posted <a href='http://www.thecave.com/downloads/WinCV.exe.config.xml'>the WinCV.exe.config file containing the 2.0 assembly declarations here</a>. Note I had to rename the file stored on the web server to WinCV.exe.config.xml so ASP.NET would not block you from downloading it. You will need to remove the .xml from the file extension or copy|paste the XML if you are viewing it in the browser window.<br /><br />Lastly, for those of you wondering where you can find WinCV.exe, look in your Visual Studio 2003 install directory. The default location is:<br /><br />C:\Program Files\Microsoft Visual Studio .NET 2003\SDK\v1.1\Bin<br /><br />Kudos to the Microsoft developer who had the smarts to use a config file for WinCV.exe.<br /><br /><span style='color:red'>Update</span>: The <b>WinCV.exe.config file posted above</b> has the section needed to force WinCV.exe to run under .NET 2.0 when multiple versions of the .NET Framework are present on the same machine. Thanks to Don Jayamanne for recommending the the section setting.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Nov<span class="year">2005</span></span><span class="day">22</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
         <h2><a href="/2005/11/22/let-down-twice-today-by-microsoft/" rel="bookmark" title="Let down twice today by Microsoft">Let down twice today by Microsoft</a></h2>
 
         <p>This is more of a rant then anything else but I gotta say it. I&#8217;m really disappointed with Microsoft today. It started at the NYC Product Launch event for Visual Studio 2005, SQL Server 2005 and BizTalk 2006. <br /><br />Today&#8217;s event was a let down for me. I have been to many similar Microsoft events over the years and have always left thinking &#8220;This was well worth my time.&#8221; Today&#8217;s event was only worth my time because of the free giveaways. The actual event itself was a let down and left me wondering if Visual Studio Team Services is really ready.<br /><br />For starters the demo of VSTS used a pre-RTM version. This was a launch day event and pre-released software was demoed&#8230;WTF! On top of that many of the features demoed did not work, presumably because the pre-RTM release was used. Unit tests did not run, web tests did not run, load tests did not run, reports could not be displayed, and in certain cases bad practices were demoed such as saving the list of work items in SharePoint as an Excel spreadsheet. I would not want my team working from a static list of work items when Foundation Server is installed and live information can be used.<br /><br />Disappointed with the event I decided to return to the office early to get some work done. My plan for the rest of the day is to evaluate the <a href='http://msdn2.microsoft.com/en-us/library/system.data.sqlclient.sqlbulkcopy.aspx'>SqlBulkCopy class</a> for a customer. I wanted to quickly see the class definition for SqlBulkCopy so I went to load <a href='http://blogs.msdn.com/csharpfaq/archive/2004/10/20/245236.aspx'>wincv.exe</a>. <br /><br />For those of you who don&#8217;t know what wincv.exe is, it is a class viewer for the .NET Framework classes. I often use it to identify property and methods names, which is faster using wincv.exe then the MSDN documentation. But to my surprise wincv.exe is NOT included with the .NET Framework 2.0 SDK. What gives? I found it to be a very useful tool that I used on a regular basis. Now it is gone. Even the <a href='http://msdn2.microsoft.com/en-us/library/sbey26hw.aspx'>wincv.exe page</a> says it ships only with version 1.0 and 1.1 of the .NET Framework. <br /><br />I have been using this tool for 4 years and I&#8217;m disappointed that I cannot continue using it with the new release of the framework. Needless to say this adds to my disappointment in Microsoft today. If only my Xbox 360 had arrived today. Things might seem different.</p>
@@ -235,26 +255,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Oct<span class="year">2005</span></span><span class="day">12</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2005/10/12/more-on-delphi-roadmap/" rel="bookmark" title="More on Delphi Roadmap">More on Delphi Roadmap</a></h2>
-
-        <p><a href='http://blogs.borland.com/dcc/'>Danny Thorpe</a>, Borland Chief Scientist, posted an entry on the <a href='http://blogs.borland.com/dcc/archive/2005/09/27/21361.aspx'>Delphi Roadmap for 2005-2006</a>. But the really interesting read are the comments, which include responses from Danny.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -327,6 +327,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2013/02/12/nssnow-2013/" title="NSSnow 2013">NSSnow 2013</a></li>
+                
                   <li><a href="/2013/01/19/super-long-day-with-the-kid/" title="Super Long Day with the Kid">Super Long Day with the Kid</a></li>
                 
                   <li><a href="/2012/12/25/christmas-2012/" title="Our Christmas 2012">Our Christmas 2012</a></li>
@@ -334,8 +336,6 @@
                   <li><a href="/2012/09/25/back-from-the-long-trail-hike/" title="Back from the Long Trail Hike">Back from the Long Trail Hike</a></li>
                 
                   <li><a href="/2012/08/21/weighing-in/" title="Weighing In">Weighing In</a></li>
-                
-                  <li><a href="/2012/08/18/pack-unpack-repeat/" title="Pack Unpack Repeat">Pack Unpack Repeat</a></li>
                 
             </ul>
 		</div>

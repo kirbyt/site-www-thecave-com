@@ -54,6 +54,26 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Aug<span class="year">2004</span></span><span class="day">01</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2004/08/01/installers-and-my-document-directory/" rel="bookmark" title="Installers and My Document Directory">Installers and My Document Directory</a></h2>
+
+        <p>In setting up my new laptop, I decided to go with VMware to host various guest operating systems for my development, collaboration, etc. For the most part this is working out well but there are still glitches. For example, to share the My Document folder with multiple guest OS I created a share in the host OS. Each guest OS maps the My Documents folder to the UNC \.host\Shared Folders\kirbyt\documents. The problem I have experienced with this configuration has nothing to do with me authoring documents, etc. Instead I have encounter two cases where installers have failed. <br /> <br />The .NET Framework 1.1 installer and the Adobe Reader 6.0 apparently need access to the My Documents folder during the installation process. However, both fail because of the UNC reference to the actual folder. My temporary work around to date has been to re-map the My Documents folder to a temporary directory on the local hard drive within the guest OS, prefer the install, and re-map the My Documents folder back to the original UNC location. <br /> <br />I wonder what these two installers want with the My Documents folder during installations and I wonder why their not smart enough to recognize the UNC reference.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Jul<span class="year">2004</span></span><span class="day">30</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -365,26 +385,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jul<span class="year">2004</span></span><span class="day">16</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/07/16/duh/" rel="bookmark" title="Duh!">Duh!</a></h2>
-
-        <p>Melanie and I were planning to fly into Manchester, NH next week and drive to Vermont for a break from NYC.&#160; However confusion set in when we started checking the fly availability and car rentals.&#160; Flights into Manchester are filling up and car rentals are sold out.&#160; What gives? <br />&#160; <br />Duh!&#160; The Democratic Convention 2004 starts on Sunday, July 26 in Boston.&#160; No wonder Manchester is so busy that weekend.&#160; Needless to say, Melanie and I are breaking convention (no pun intended) and driving up from NYC to avoid the Boston/Manchester madness. <br /></p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -457,6 +457,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2013/02/12/nssnow-2013/" title="NSSnow 2013">NSSnow 2013</a></li>
+                
                   <li><a href="/2013/01/19/super-long-day-with-the-kid/" title="Super Long Day with the Kid">Super Long Day with the Kid</a></li>
                 
                   <li><a href="/2012/12/25/christmas-2012/" title="Our Christmas 2012">Our Christmas 2012</a></li>
@@ -464,8 +466,6 @@
                   <li><a href="/2012/09/25/back-from-the-long-trail-hike/" title="Back from the Long Trail Hike">Back from the Long Trail Hike</a></li>
                 
                   <li><a href="/2012/08/21/weighing-in/" title="Weighing In">Weighing In</a></li>
-                
-                  <li><a href="/2012/08/18/pack-unpack-repeat/" title="Pack Unpack Repeat">Pack Unpack Repeat</a></li>
                 
             </ul>
 		</div>

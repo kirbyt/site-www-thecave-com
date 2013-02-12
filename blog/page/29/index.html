@@ -54,6 +54,26 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Sep<span class="year">2005</span></span><span class="day">23</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2005/09/23/refactoring-smtp-diagnostics-the-story-continues/" rel="bookmark" title="Refactoring SMTP Diagnostics...The Story Continues">Refactoring SMTP Diagnostics...The Story Continues</a></h2>
+
+        <p>My small refactoring effort on SMTP Diagnostics turned into a much bigger effort but the end result is a much better code base. The exercise led to re-architecting most of the application. The GUI remains untouched but everything else behind the scenes has changed. After an 11 hour marathon session, I finally got a clean compile. I still need to re-wire parts of the GUI to the new object model before I can begin testing. But I did write unit tests (using <a href='http://dunit.sourceforge.net/'>DUnit</a>) for all of the non-GUI code as part of the refactoring exercise. All of this re-work is definitely going to make it easier to add new features in the future.<br /><br /><b>Incorporating another New Feature</b><br /><br />Speaking of new features, a fellow developer recommended I incorporate <a href='http://www.xml.com/pub/a/2002/12/18/dive-into-xml.html'>RSS</a> feeds as a way to inform users of new releases within the program. I instantly fell in love with this idea mainly because it allows me to share more information with customer beyond just &#8220;a new release is available&#8221;. By using an RSS feed, I will be able to let users know about new releases, show the list of enhancements and bug fixes, send out tips, and possibly a newsletter some day.<br /><br />Of course the user will have the option to turn off the feed feature, or to display the feed on demand. But I think this is a great use for RSS that I plan to incorporate in all of our products going forward.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Sep<span class="year">2005</span></span><span class="day">22</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -239,26 +259,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Aug<span class="year">2005</span></span><span class="day">29</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2005/08/29/i-admit-to-being-lazy-and-dumb/" rel="bookmark" title="I Admit to Being Lazy and Dumb">I Admit to Being Lazy and Dumb</a></h2>
-
-        <p>I&#8217;ve always said I&#8217;m lazy programmer, which makes me a good programmer. For instance, I&#8217;m too lazy to perform the same task over and over on a computer so I write a tool. And I hate writing the same code over and over. I would rather write it once, package it up in a library, and forget the details. All I want to remember is the API.<br /><br />I also believe my lack of a quality education helps me think of solutions that smarter individual may never even consider. My seemingly childish approach to problem solving helps me think of solutions to the most time consuming yet simple problems.<br /><br />But Philipp Lenssen at Google Blogoscoped has really summed up <a href='http://blog.outer-court.com/archive/2005-08-24-n14.html'>why good programmers are lazy and dumb</a>. Give it a read.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -331,6 +331,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2013/02/12/nssnow-2013/" title="NSSnow 2013">NSSnow 2013</a></li>
+                
                   <li><a href="/2013/01/19/super-long-day-with-the-kid/" title="Super Long Day with the Kid">Super Long Day with the Kid</a></li>
                 
                   <li><a href="/2012/12/25/christmas-2012/" title="Our Christmas 2012">Our Christmas 2012</a></li>
@@ -338,8 +340,6 @@
                   <li><a href="/2012/09/25/back-from-the-long-trail-hike/" title="Back from the Long Trail Hike">Back from the Long Trail Hike</a></li>
                 
                   <li><a href="/2012/08/21/weighing-in/" title="Weighing In">Weighing In</a></li>
-                
-                  <li><a href="/2012/08/18/pack-unpack-repeat/" title="Pack Unpack Repeat">Pack Unpack Repeat</a></li>
                 
             </ul>
 		</div>
