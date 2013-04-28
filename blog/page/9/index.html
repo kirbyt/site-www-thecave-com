@@ -59,6 +59,26 @@
         </div>
 
         <div class="post-content right-col">
+        <h2><a href="/2007/07/29/how-to-access-a-windows-2003-file-share-from-mac-os-x/" rel="bookmark" title="How To Access a Windows 2003 File Share From Mac OS X">How To Access a Windows 2003 File Share From Mac OS X</a></h2>
+
+        <p>I love my MacBook Pro. It&#8217;s an awesome machine and OS X is a great operating system. However, I have encountered 2 problems when dealing with my Windows-base network. First problem is accessing Windows 2003 file shares and the other problem is resolving machine names on the local network. <br /><br />I still haven&#8217;t solved the second problem but today I came across the solution for the first. This blog posting by Drew McLellan gives the step by step instructions for <a href='http://allinthehead.com/retro/218/accessing-a-windows-2003-share-from-os-x'>accessing Windows 2003 file shares from Mac OS X</a>. Thanks Drew!</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jul<span class="year">2007</span></span><span class="day">29</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
         <h2><a href="/2007/07/29/cannot-resolve-machine-name-from-mac-os-x/" rel="bookmark" title="Cannot Resolve Machine Name From Mac OS X">Cannot Resolve Machine Name From Mac OS X</a></h2>
 
         <p>After resolving the <a href='http://www.thecave.com/archive/2007/07/29/how_to_access_a_windows_2003_file_share_from_mac_os_x.aspx'>Windows Server 2003 file share access</a> problem I turned my attention to fixing the DNS issue I&#8217;m having. I&#8217;m able to ping the IP address of machines on my Local Area Network but I&#8217;m not able to resolve the machine names. I have a local DNS running on Windows Server 2003 but for some odd reason OS X is not using it to resolve names. So I decided to use a stop-gap approach for the time being.<br /><br />I modified the /etc/hosts file to include the address of the machines with a static IP address. After all, these are the only machines I need access to from OS X. Here are the steps I followed:<ul><br /><li>Sign in as an administrator (or an account belonging to the sudousers group)</li><br /><li>Launch a terminal shell (Applications &gt; Utilities &gt; Terminal if you are using Finder or type <b>terminal</b> in Spotlight)</li><br /><li>Run the command <b>sudo vi /etc/hosts</b></li><br /><li>Scroll to the end of the file</li><br /><li>Type <b>i</b> to enter insert mode</li><br /><li>Press the enter key to start a new line (my vi skills are weak as it has been years since I have used it - there is probably a better way to append to the end of a file)</li><br /><li>Enter the IP address, press the <b>tab</b> key, then enter the name machine</li><br /><li>Press the <b>esc</b> key to get out of insert mode</li><br /><li>Press <b>:wq</b> to save the changes and quit vi</li><br /></ul>That&#8217;s is. The machine name will now resolve to the IP.</p>
@@ -237,26 +257,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2007</span></span><span class="day">11</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2007/06/11/ann-killink-csv-v1-2/" rel="bookmark" title="ANN: Killink CSV v1.2">ANN: Killink CSV v1.2</a></h2>
-
-        <p>I&#8217;m happy to annouce the release of Killink CSV v1.2, the <a href='http://www.whitepeaksoftware.com/killink-csv.aspx'>spreadsheet application dedicated to delimited text files</a>. Version 1.2 is a FREE upgrade for all licensed users.<br /><br />Download Killink CSV at:<br /><a href='http://www.whitepeaksoftware.com/killink-csv-download.aspx'>http://www.whitepeaksoftware.com/killink-csv-download.aspx</a><br /><br /><b>What's New</b><br /><br />* Adds support for history, undo and redo actions<br />* Insert new rows<br />* Insert new columns<br />* Selected row column header highlighting<br />* Unsaved changes indiciator<br />* Select entire row by clicking row header<br />* Select entire column by clicking the column header<br />* Delete entire rows<br />* Delete entire columns<br />* Insert / delete cells<br />* Added popup cell editor (click the ellipses button at end of cell text or press Ctrl+Enter when a cell is highlighted)<br />* Right mouse click cell for fast access to common actions<br />* Fixed auto check for update<br />* Minor bug fixes and enhancements<br />* Fixed minor memory leak</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -329,6 +329,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2013/04/27/what-the-hell/" title="What the Hell">What the Hell</a></li>
+                
                   <li><a href="/2013/02/12/nssnow-2013/" title="NSSnow 2013">NSSnow 2013</a></li>
                 
                   <li><a href="/2013/01/19/super-long-day-with-the-kid/" title="Super Long Day with the Kid">Super Long Day with the Kid</a></li>
@@ -336,8 +338,6 @@
                   <li><a href="/2012/12/25/christmas-2012/" title="Our Christmas 2012">Our Christmas 2012</a></li>
                 
                   <li><a href="/2012/09/25/back-from-the-long-trail-hike/" title="Back from the Long Trail Hike">Back from the Long Trail Hike</a></li>
-                
-                  <li><a href="/2012/08/21/weighing-in/" title="Weighing In">Weighing In</a></li>
                 
             </ul>
 		</div>

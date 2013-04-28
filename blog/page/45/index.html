@@ -54,6 +54,162 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jul<span class="year">2004</span></span><span class="day">20</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2004/07/20/a-binding-formatter-is-called-twice/" rel="bookmark" title="A Binding Formatter is Called Twice">A Binding Formatter is Called Twice</a></h2>
+
+        <p>It seems that a binding formatter is called twice when a user leaves a textbox control. As the user leaves the control the Leave event for the control is fired followed by the binding format event. The setter method of the bounded property is called next followed by the getter method then finally the binding format event is called again. <br /> <br /> This should not be a concern for applications that use binding formatters but the developer should know it will be called twice. <br /> <br /> Here is sample code that illustrates the behavior:<span style='font-family: monospace'><pre>
+<br /> using System;
+<br /> using System.Drawing;
+<br /> using System.Collections;
+<br /> using System.ComponentModel;
+<br /> using System.Windows.Forms;
+<br /> using System.Data;
+<br /> using System.Diagnostics;
+<br />
+<br /> namespace SampleWindowsApp
+<br /> {
+<br />     /// <summary>
+<br />     /// Summary description for Form1.
+<br />     /// </summary>
+<br />     public class Form1 : System.Windows.Forms.Form
+<br />     {
+<br />         private System.Windows.Forms.TextBox textBox1;
+<br />         private System.Windows.Forms.Button button1;
+<br />         private MyClass _dataSource = new MyClass();
+<br />
+<br />         /// <summary>
+<br />         /// Required designer variable.
+<br />         /// </summary>
+<br />         private System.ComponentModel.Container components = null;
+<br />
+<br />         public Form1()
+<br />         {
+<br />             //
+<br />             // Required for Windows Form Designer support
+<br />             //
+<br />             InitializeComponent();
+<br />         }
+<br />
+<br />         /// <summary>
+<br />         /// Clean up any resources being used.
+<br />         /// </summary>
+<br />         protected override void Dispose( bool disposing )
+<br />         {
+<br />             if( disposing )
+<br />             {
+<br />                 if (components != null)
+<br />                 {
+<br />                     components.Dispose();
+<br />                 }
+<br />             }
+<br />             base.Dispose( disposing );
+<br />         }
+<br />
+<br />         #region Windows Form Designer generated code
+<br />         /// <summary>
+<br />         /// Required method for Designer support - do not modify
+<br />         /// the contents of this method with the code editor.
+<br />         /// </summary>
+<br />         private void InitializeComponent()
+<br />         {
+<br />             this.textBox1 = new System.Windows.Forms.TextBox();
+<br />             this.button1 = new System.Windows.Forms.Button();
+<br />             this.SuspendLayout();
+<br />             //
+<br />             // textBox1
+<br />             //
+<br />             this.textBox1.Location = new System.Drawing.Point(56, 32);
+<br />             this.textBox1.Name = "textBox1";
+<br />             this.textBox1.TabIndex = 0;
+<br />             this.textBox1.Text = "textBox1";
+<br />             this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
+<br />             //
+<br />             // button1
+<br />             //
+<br />             this.button1.Location = new System.Drawing.Point(72, 120);
+<br />             this.button1.Name = "button1";
+<br />             this.button1.TabIndex = 1;
+<br />             this.button1.Text = "button1";
+<br />             //
+<br />             // Form1
+<br />             //
+<br />             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+<br />             this.ClientSize = new System.Drawing.Size(292, 266);
+<br />             this.Controls.Add(this.button1);
+<br />             this.Controls.Add(this.textBox1);
+<br />             this.Name = "Form1";
+<br />             this.Text = "Form1";
+<br />             this.Load += new System.EventHandler(this.Form1_Load);
+<br />             this.ResumeLayout(false);
+<br />
+<br />         }
+<br />         #endregion
+<br />
+<br />         /// <summary>
+<br />         /// The main entry point for the application.
+<br />         /// </summary>
+<br />         [STAThread]
+<br />         static void Main()
+<br />         {
+<br />             Application.Run(new Form1());
+<br />         }
+<br />
+<br />         private void Form1_Load(object sender, System.EventArgs e)
+<br />         {
+<br />             Binding binding = new Binding( "Text", _dataSource, "Value" );
+<br />             binding.Format += new ConvertEventHandler(binding_Format);
+<br />
+<br />             textBox1.DataBindings.Add( binding );
+<br />         }
+<br />
+<br />         private void binding_Format(object sender, ConvertEventArgs e)
+<br />         {
+<br />             Debug.WriteLine( "Format" );
+<br />         }
+<br />
+<br />         private void textBox1_Leave(object sender, System.EventArgs e)
+<br />         {
+<br />             Debug.WriteLine( "Leave" );
+<br />
+<br />         }
+<br />     }
+<br />
+<br />     class MyClass
+<br />     {
+<br />         private string _value = "Default value.";
+<br />         public string Value
+<br />         {
+<br />             get
+<br />             {
+<br />                 Debug.WriteLine( "MyClass.Value getter" );
+<br />                 return _value;
+<br />             }
+<br />             set
+<br />             {
+<br />                 Debug.WriteLine( "MyClass.Value setter" );
+<br />                 _value = value;
+<br />             }
+<br />         }
+<br />     }
+<br /> }
+<br /> </pre>
+<br /> </span></p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Jul<span class="year">2004</span></span><span class="day">16</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -229,85 +385,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">25</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/06/25/explicit-interface-implementation-in-c/" rel="bookmark" title="Explicit Interface Implementation in C#">Explicit Interface Implementation in C#</a></h2>
-
-        <p>I was a grumbling VB developer for a number of years. At the time Delphi was my language of choice but in the part of the country I lived customer work using it was almost non-existent. In the summer of 2000 at PDC, a friend of mine from Microsoft showed me the .NET Framework and C#. I was instantly drawn to C# because it reminded me of Delphi, which is no surprise for those who know their <a href='http://c2.com/cgi/wiki?HistoryOfCsharp'>C#/Delphi history</a>.</p>
-
-<p>At last there was (is) a language and framework from Microsoft that generated the same level of excitement in me that Borland&#8217;s Delphi had done a few years prior. Best of all it was from Microsoft which would mean customer work in the future. And as luck would have it, I started working exclusively with the .NET Framework and C# in the fall of 2001.</p>
-
-<p>For better or worse I have not spent much time with VB.NET, or Visual Basic 6.0 for that manner, since the fall of 2001. I have done a few small project using VB.NET but nothing to brag about. For the most part, both .NET languages are very similar with regard to features but there are some differences. For example, you can write unsafe code in C# but you can&#8217;t do the same in VB.NET. Depending on your point of view this is an advantage or a disadvantage.</p>
-
-<p>Another difference is that in VB.NET you can specify the scope of a member that implements a particular interface as something other than public. I needed to do this in more than one occasion in C# but was resolved to the fact that a member implementation of interface in C# had to be scoped as public.</p>
-
-<pre><code>Public Interface IMyInterface
-    Sub Foo()
-End Interface
-
-Public Class Class1
-Implements IMyInterface
-    Private Sub Foo() Implements IMyInterface.Foo
-    End Sub
-End Class</code></pre>
-
-<p>So if you can do this in VB.NET why can&#8217;t you do the same, or something similar in C#? This question lead me to the discovery (thank you <a href='http://www.google.com/search?q=explicit+interface+implement&amp;amp;sourceid=firefox&amp;amp;start=0&amp;amp;start=0&amp;amp;ie=utf-8&amp;amp;oe=utf-8'>google</a>) of explicit interface implementation in C#. By using an explicit interface implementation you can scope the member implementation as private. It&#8217;s a little messy because a member explicitly implemented cannot be access through the class instance. Instead it must be accessed through an instance of the interface.</p>
-
-<pre><code>interface IMyInterface
-{
-    void Foo();
-}
-
-abstract class MyAbstractClass : IMyInterface
-{
-    // Explicit interface implementation
-    void IMyInterface.Foo()
-    {
-        Console.WriteLine( &quot;bar&quot; );
-    }
-}
-
-class MyConcreteClass : MyAbstractClass
-{
-    public void FooBar()
-    {
-        // Must use an instance of the interface to access
-        // the explicit implementation.
-        ((IMyInterface)this).Foo();
-    }
-}
-
-public class MyApp
-{
-    public static void Main( string[] args )
-    {
-        MyConcreteClass c = new MyConcreteClass();
-        // Will not compile because Foo() is private.
-        // c.Foo();
-
-        c.FooBar();
-
-        // This works because we are all in the same module.
-        ((IMyInterface)c).Foo();
-    }
-}</code></pre>
-
-<p>While an explicit interface implementation does give the C# developer the ability to scope a member implementation as private, it is still not as powerful as VB.NET&#8217;s ability to scope a member implementation as anything other than public. Score 1 point for VB.NET.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -380,6 +457,8 @@ public class MyApp
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2013/04/27/what-the-hell/" title="What the Hell">What the Hell</a></li>
+                
                   <li><a href="/2013/02/12/nssnow-2013/" title="NSSnow 2013">NSSnow 2013</a></li>
                 
                   <li><a href="/2013/01/19/super-long-day-with-the-kid/" title="Super Long Day with the Kid">Super Long Day with the Kid</a></li>
@@ -387,8 +466,6 @@ public class MyApp
                   <li><a href="/2012/12/25/christmas-2012/" title="Our Christmas 2012">Our Christmas 2012</a></li>
                 
                   <li><a href="/2012/09/25/back-from-the-long-trail-hike/" title="Back from the Long Trail Hike">Back from the Long Trail Hike</a></li>
-                
-                  <li><a href="/2012/08/21/weighing-in/" title="Weighing In">Weighing In</a></li>
                 
             </ul>
 		</div>
