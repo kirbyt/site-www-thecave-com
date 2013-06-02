@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: random | thecave | Ramblings from a crotchety old man]]></title>
-  <link href="http://blog.whitepeaksoftware.com/category/random/atom.xml" rel="self"/>
-  <link href="http://blog.whitepeaksoftware.com/"/>
-  <updated>2013-06-02T11:11:16-04:00</updated>
-  <id>http://blog.whitepeaksoftware.com/</id>
+  <link href="http://www.thecave.com/category/random/atom.xml" rel="self"/>
+  <link href="http://www.thecave.com/"/>
+  <updated>2013-06-02T12:45:33-04:00</updated>
+  <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
@@ -14,9 +14,9 @@
   
   <entry>
     <title type="html"><![CDATA[Simple Bank, My Kind of Banking]]></title>
-    <link href="http://blog.whitepeaksoftware.com/2013/05/12/simple-banking-my-kind-of-banking/"/>
+    <link href="http://www.thecave.com/2013/05/12/simple-banking-my-kind-of-banking/"/>
     <updated>2013-05-12T00:00:00-04:00</updated>
-    <id>http://blog.whitepeaksoftware.com/2013/05/12/simple-banking-my-kind-of-banking</id>
+    <id>http://www.thecave.com/2013/05/12/simple-banking-my-kind-of-banking</id>
     <content type="html"><![CDATA[<p>Earlier today I <a href='https://alpha.app.net/kirbyt/post/5586671'>posted</a> on ADN that I love banking with Simple. My friend <a href='https://alpha.app.net/danielpunkass'>Daniel</a> asked if I could summarize in 250 or less what sets Simple apart from other banks. I did my best to summarize what I thought was different/better about Simple, but I still felt a blog post would be better.</p>
 
 <p>At the end of 2012, my wife and I decided to return to separate checking accounts. We&#8217;ve had a joint account for years, but it wasn&#8217;t working for us. We do better managing our money separately. Going back to separate accounts meant I needed to setup a new personal checking account for myself. I had heard of <a href='https://www.simple.com'>Simple</a>, so I decided to give it a try.</p>
@@ -52,9 +52,9 @@
   
   <entry>
     <title type="html"><![CDATA[What the Hell]]></title>
-    <link href="http://blog.whitepeaksoftware.com/2013/04/27/what-the-hell/"/>
+    <link href="http://www.thecave.com/2013/04/27/what-the-hell/"/>
     <updated>2013-04-27T00:00:00-04:00</updated>
-    <id>http://blog.whitepeaksoftware.com/2013/04/27/what-the-hell</id>
+    <id>http://www.thecave.com/2013/04/27/what-the-hell</id>
     <content type="html"><![CDATA[<p>That&#8217;s right. What the hell?</p>
 
 <p>I&#8217;m in Seattle stressing out about a talk I have to do in a few hours, and all I can think is what the hell?</p>]]></content>
