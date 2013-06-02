@@ -54,6 +54,26 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">May<span class="year">2005</span></span><span class="day">24</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2005/05/24/problem-accessing-ntfs-for-other-oses/" rel="bookmark" title="Problem Accessing NTFS for Other OSes">Problem Accessing NTFS for Other OSes</a></h2>
+
+        <p>I was asked to look at my sister-in-law&#8217;s PC over the weekend. Apparently it was having problems. I typically avoid helping others with their PC problems but thought I would since she and her boyfriend were great hosts. <br /><br />Somehow a nasty, little virus-like program was installed on her PC. I tracked down the source of the problem to the <a href='http://www.wilderssecurity.com/showthread.php?t=79466'>winik.sys</a>, which isn&#8217;t in fact a Microsoft driver. This little puppy loads other programs that appear to be tracking activity on the PC and reporting information out to somewhere.<br /><br />The simple solution to the problem: delete the winik.sys file along with the directory of other programs it launches and clean up the registry. Unfortunately the winik.sys loads as a driver and cannot be deleted while Windows is running. No big deal I thought. I would just boot up into a different OS and manually delete the files. This turned out to be harder than I thought. And harder then it should have been.<br /><br />Not having any &#8220;tools&#8221; with me, I decided I would boot up in safe mode with a command prompt. Unfortunately this still loads the winik.sys driver. Note that my sister-in-law is running an OEM version of Windows XP Home without any updates on it&#8230;no service packs, etc. When this attempt failed, I created a DOS bootable disk from Windows. I booted up the computer from the disk and to my surprised learned that the version of DOS I was running did not recognize NTFS. <br /><br />I tried using the OEM recovery disc, but that didn&#8217;t help either. <br /><br />My next thought was to use Linux. I found a <a href='http://www.linuxlinks.com/Distributions/Floppy/'>list</a> of floppy based distributions, but to my surprise none of the distributions I tried supported NTFS. After spending hours trying to find ways to read an NTFS volume from another OS, I finally had to give up. After all, I needed to get on the road and head back to NYC.<br /><br />I did learn a lot from the exercise even though I wasn&#8217;t able to remove the file from the PC. For instance,<br /><br />1) Sysinternals has a <a href='http://www.sysinternals.com/ntw2k/freeware/ntfsdospro.shtml'>NTFSDOS</a> utility that will mount NTFS volumes and provide read/write access from DOS. Unfortunately the freeware version is read access only so it didn&#8217;t help me solve the problem. And I didn&#8217;t want to buy the Administration Pack just for this one problem.<br /><br />2) While the idea of a Linux distribution on a floppy is cool, there are limits to what you can do. I realized I need to know more about Linux and possibly make my own distribution that would allow me to help family and friends clean up infected machines. But I&#8217;ll never take the time to make a floppy distribution.<br /><br />3) I should buy this <a href='http://www.thinkgeek.com/tshirts/frustrations/388b/'>t-shirt</a>.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">May<span class="year">2005</span></span><span class="day">18</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -81,7 +101,7 @@
         <div class="post-content right-col">
         <h2><a href="/2005/05/18/change-expressscheduler-labels/" rel="bookmark" title="Change ExpressScheduler Labels">Change ExpressScheduler Labels</a></h2>
 
-        <p>Looking to change the label caption in the DevExpress ExpressScheduler? It is as simple as setting the resource string for the label caption. Here&#8217;s the code snippet and a screen shot of the changed label.<br /><pre><br />// Delphi<br />uses<br />  cxClasses,<br />  cxSchedulerStrs;<br /><br />procedure TForm1.FormCreate(Sender: TObject);<br />begin<br />  cxSetResourceString(sEventLabelCaptions[3],'Money Maker');<br />end;<br /></pre><br /><a href='http://www.thecave.com/images/blogimages/schedulerlabel.jpg'><img height='273' width='389' src='http://www.thecave.com/images/blogimages/schedulerlabel.jpg' border='0' /></a><br />Click image to enlarge.</p>
+        <p>Looking to change the label caption in the DevExpress ExpressScheduler? It is as simple as setting the resource string for the label caption. Here&#8217;s the code snippet and a screen shot of the changed label.<br /><pre><br />// Delphi<br />uses<br />  cxClasses,<br />  cxSchedulerStrs;<br /><br />procedure TForm1.FormCreate(Sender: TObject);<br />begin<br />  cxSetResourceString(sEventLabelCaptions[3],'Money Maker');<br />end;<br /></pre><br /><a href='http://www.thecave.com/images/blogimages/schedulerlabel.jpg'><img src='http://www.thecave.com/images/blogimages/schedulerlabel.jpg' height='273' border='0' width='389' /></a><br />Click image to enlarge.</p>
         
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
         
@@ -229,26 +249,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">May<span class="year">2005</span></span><span class="day">04</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2005/05/04/argh/" rel="bookmark" title="Argh!">Argh!</a></h2>
-
-        <p>The way interfaces work in Delphi for Win32 stinks. From what I have read it seems that interfaces were forced in to work with COM. But even if you are not using COM, interfaces imposes COM like behaviors such as ref counts and interfaces must have a GUID. But what really ticks me off is that you cannot cast an interface to an object.<br /><br />For years I have abstracted framework and application features through interfaces. Now I can&#8217;t use them and it means I have to change the way I think. This limitation, which I wish I knew about 2 months ago, makes me think I should have used C# for my app.<br /><br />In the end, I will be happy with my selection of Delphi. But I&#8217;m a bit ticked off at it for the moment.<br /><br />For those using Delphi for .NET, this will not be a problem. Interfaces work the way you would expect, and you can cast objects to interfaces and interfaces to objects.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -321,6 +321,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2013/06/02/kayaking-the-ipswitch-river/" title="Kayaking the Ipswich River">Kayaking the Ipswich River</a></li>
+                
                   <li><a href="/2013/05/24/our-visit-to-the-eiffel-tower/" title="Our Visit to the Eiffel Tower">Our Visit to the Eiffel Tower</a></li>
                 
                   <li><a href="/2013/05/12/simple-banking-my-kind-of-banking/" title="Simple Bank, My Kind of Banking">Simple Bank, My Kind of Banking</a></li>
@@ -328,8 +330,6 @@
                   <li><a href="/2013/04/27/what-the-hell/" title="What the Hell">What the Hell</a></li>
                 
                   <li><a href="/2013/02/12/nssnow-2013/" title="NSSnow 2013">NSSnow 2013</a></li>
-                
-                  <li><a href="/2013/01/19/super-long-day-with-the-kid/" title="Super Long Day with the Kid">Super Long Day with the Kid</a></li>
                 
             </ul>
 		</div>

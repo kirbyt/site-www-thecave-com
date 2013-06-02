@@ -54,6 +54,26 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jul<span class="year">2005</span></span><span class="day">06</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2005/07/06/spam-filter-rule-changes/" rel="bookmark" title="Spam Filter Rule Changes">Spam Filter Rule Changes</a></h2>
+
+        <p>Attention @thecave.com mail users: A number of you have reported an increase in the number of spam messages received. I have adjusted the spam filter rules in hopes to reduce this number. Please note that messages flagged with spam probabilities of MEDIUM and HIGH are automatically moved to your Junk Mail folder. You can override this to have HIGH messages automatically deleted by going to Settings|My Spam Filtering from the SmarterMail web interface.<br /><br />If you do not want to delete HIGH probability spam messages right away, you can use the auto-clean feature. I use this to force spam messages to be deleted automatically after a few days. This gives me a few days to check my Junk Mail folder should someone report sending me an report that was mistakenly flagged as MEDIUM or HIGH.<br /><br />To setup the auto-clean, go to Settings|My Folder Auto-Clean from the SmarterMail web interface. Tick the &#8220;Enable auto-clean for this folder&#8221; box found under the Junk E-mail heading. Set the size before to auto-clean to 3 MB and the size after to 2 MB. This should keep the message around for a few days to a week depending on the amount of spam in your Junk Folder.<br /><br />Comment or email me if you have specific questions regarding your @thecave.com email account.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Jul<span class="year">2005</span></span><span class="day">05</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -273,26 +293,6 @@ public string MaskedStringFromString(string value)
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2005</span></span><span class="day">24</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2005/06/24/an-all-nighter/" rel="bookmark" title="An All Nighter">An All Nighter</a></h2>
-
-        <p>I decided last night to make some enhancements to blog engine I wrote for this web site. That was around 7:30 pm. At 5:30 am I decided it was time to go to bed. I did roll out the changes but there&#8217;s more work to be done. And I know there are some problems too. For example <a href='http://www.melanieandkirby.com/'>melanieandkirby.com</a> is displaying the wrong blog.<br /><br />The most notable change is the new <a href='http://en.wikipedia.org/wiki/Permlink'>permlink</a> for my blog entries. The old permlink, which are still valid, used a blog item ID as part of the query string. While functional it wasn&#8217;t very descriptive and not well liked by search engines like Goggle.<br /><br />The new permlink uses a better structure consisting of the posting date and title. For example, the permlink for my last posting is <a href='http://www.thecave.com/archive/2005/06/23/office_pranks.aspx'>http://www.thecave.com/archive/2005/06/23/office_pranks.aspx</a>. As you can see the link includes the publish date followed by the title of the post. For older blog items that do not have a title the blog item id is used.<br /><br />The other notable change is the blog item page itself, which is a new feature. Before you could only see the blog item on a page listing other items from that month. Now the blog item displays on its own page with the comments below. At last you can see both the post and its comments from the same page. This is a feature I have wanted implemented for a long time.<br /><br />I still need to migrate the archives to the new permlink structure. For example, http://www.thecave.com/archive/2005/06/ should display all the blog items for the month of June 2005. Also I discovered that the links in the rss file are invalid, which will be fixed soon.<br /><br />So why did I make the change? Simple, I want to make the site more appealing to search engines and hopefully increase my Google ranking. The blog item is now optimized by the title, which will make it easier to find specific blog items through Google and other search engines. There still many more things that need to happen to make the pages more appealing to search engines but this is a start.<br /><br />One side note, all previous permlinks are still valid. As a matter of fact, the data store containing the blog items remains unchanged. I wrote an HttpHandler to map the permlinks to the correct page content. This mapping allows the site to support both the old and new permlinks.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -365,6 +365,8 @@ public string MaskedStringFromString(string value)
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2013/06/02/kayaking-the-ipswitch-river/" title="Kayaking the Ipswich River">Kayaking the Ipswich River</a></li>
+                
                   <li><a href="/2013/05/24/our-visit-to-the-eiffel-tower/" title="Our Visit to the Eiffel Tower">Our Visit to the Eiffel Tower</a></li>
                 
                   <li><a href="/2013/05/12/simple-banking-my-kind-of-banking/" title="Simple Bank, My Kind of Banking">Simple Bank, My Kind of Banking</a></li>
@@ -372,8 +374,6 @@ public string MaskedStringFromString(string value)
                   <li><a href="/2013/04/27/what-the-hell/" title="What the Hell">What the Hell</a></li>
                 
                   <li><a href="/2013/02/12/nssnow-2013/" title="NSSnow 2013">NSSnow 2013</a></li>
-                
-                  <li><a href="/2013/01/19/super-long-day-with-the-kid/" title="Super Long Day with the Kid">Super Long Day with the Kid</a></li>
                 
             </ul>
 		</div>
