@@ -59,6 +59,26 @@
         </div>
 
         <div class="post-content right-col">
+        <h2><a href="/2002/05/19/762/" rel="bookmark" title=""></a></h2>
+
+        <p>This weekend&#8217;s geek out weekend involved setting up a new remote development environment for myself. My plan was to roll out a hosted version of <a href='http://www.cvsnt.org/'>CVS</a> (Concurrent Versions System) with secure access via SSH. I used <a href='http://www.networksimplicity.com/openssh/'>OpenSSH on Windows</a> from Network Simplicity, which was easy to install and configure. OpenSSH also includes SCP, a secure copy program, which I am now using to make backups of important information from my laptop to my file server. Totally sweet, I must say. <br /> <br />CVSNT was a bit of a challenge compared to OpenSSH but I did get it installed and running. The final step was to provide remote access to my CVS repository through a secure tunnel using SSH. This has proven to be very challenge and I have yet to finish this goal. I have search the Net over and have learned many others have had the same problems. This is preventing me from building the desired remote development environment, which means I must continue using VPN access to my Visual Source Safe repository. <br /> <br />Not all is lost though. I learned a lot about security, secure access, PKI, OpenSSH and such. And I have a easy to use, fast, secure process for backing up files from my laptop. I am not giving up on the challenge either. I will try again in a couple of weeks when I have more time.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">May<span class="year">2002</span></span><span class="day">19</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
         <h2><a href="/2002/05/19/761/" rel="bookmark" title=""></a></h2>
 
         <p>After spending the last few hours trying to access CVS repository stored on Windows 2000 through SSH, I finally give up. My final conclusion is the CVSNT does not work SSH when CVSNT is on the server-side. From all I have read and seen, CVSNT with SSH works fine with the CVS server is some flavor of Unix. This bums me out because I really don&#8217;t care to install Linux at home and I would like to use TortoiseCVS as my WinCVS GUI client. <br /> <br />All is not lost though. I think I can use another WinCVS to access my CVS repository. I was able to successfully access it with the CVS command line using SSPI for Windows authentication. And by using the -x, you can ensure that the network traffic is encrypted. Still, I would rather use SSH.</p>
@@ -229,30 +249,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Apr<span class="year">2002</span></span><span class="day">23</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2002/04/23/772/" rel="bookmark" title=""></a></h2>
-
-        <p><a href='http://msdn.microsoft.com/library/en-us/cpref/html/frlrfSystemXmlSerialization.asp?frame=true'>System.Xml.Serialization</a> namespace in .NET totally kicks ass. It makes consuming and producing XML almost as easy as writing a class definition. Let me explain.</p>
-
-<p>I am working on a project that includes a set of SOAP calls. These calls must consume and return XML. Lucky for me, an XML schema (.xsd file) already exist. Using the xsd.exe utility included with Visual Studio.NET, I generated a C# source file containing the class definitions and appropriate Xml.Serialization attributes needed to serialize/deserialize XML that adheres to the rules defined in the schema. And the great thing about xsd.exe is that expect for one attribute setting the generated code worked perfectly from the get go. This was a great time saver for me, and allowed me to focus on the implementation of the web service stubs for the SOAP calls.</p>
-
-<p>In the future, whenever I need to consume or produce XML especially complex XML I plan to use System.Xml.Serialization.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -313,16 +309,17 @@
 <li class='category'><a href='/category/family/'>family (2)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
 <li class='category'><a href='/category/general/'>general (5)</a></li>
-<li class='category'><a href='/category/hiking/'>hiking (6)</a></li>
+<li class='category'><a href='/category/hiking/'>hiking (7)</a></li>
 <li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
 <li class='category'><a href='/category/long-trail/'>long-trail (2)</a></li>
+<li class='category'><a href='/category/moving/'>moving (1)</a></li>
 <li class='category'><a href='/category/opinion/'>opinion (1)</a></li>
 <li class='category'><a href='/category/pictures/'>pictures (2)</a></li>
 <li class='category'><a href='/category/random/'>random (2)</a></li>
 <li class='category'><a href='/category/rowan/'>rowan (2)</a></li>
 <li class='category'><a href='/category/salem/'>salem (1)</a></li>
-<li class='category'><a href='/category/skiing/'>skiing (1)</a></li>
-<li class='category'><a href='/category/snowboarding/'>snowboarding (1)</a></li>
+<li class='category'><a href='/category/skiing/'>skiing (2)</a></li>
+<li class='category'><a href='/category/snowboarding/'>snowboarding (2)</a></li>
 <li class='category'><a href='/category/travel/'>travel (3)</a></li>
 <li class='category'><a href='/category/trip/'>trip (4)</a></li>
 <li class='category'><a href='/category/trips/'>trips (1)</a></li>
@@ -354,6 +351,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2013/06/05/moving-to-a-ski-town/" title="We're Moving to a Ski Town...Finally">We're Moving to a Ski Town...Finally</a></li>
+                
                   <li><a href="/2013/06/02/kayaking-the-ipswitch-river/" title="Kayaking the Ipswich River">Kayaking the Ipswich River</a></li>
                 
                   <li><a href="/2013/05/24/our-visit-to-the-eiffel-tower/" title="Our Visit to the Eiffel Tower">Our Visit to the Eiffel Tower</a></li>
@@ -361,8 +360,6 @@
                   <li><a href="/2013/05/12/simple-banking-my-kind-of-banking/" title="Simple Bank, My Kind of Banking">Simple Bank, My Kind of Banking</a></li>
                 
                   <li><a href="/2013/04/27/what-the-hell/" title="What the Hell">What the Hell</a></li>
-                
-                  <li><a href="/2013/02/12/nssnow-2013/" title="NSSnow 2013">NSSnow 2013</a></li>
                 
             </ul>
 		</div>
