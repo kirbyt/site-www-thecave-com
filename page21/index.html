@@ -1,0 +1,420 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<title>thecave | Ramblings from a crotchety old man</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="index, follow" />
+
+<link rel="stylesheet" type="text/css" href="/styles/typebased/style.css" />
+<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="/atom.xml" />
+
+<!--[if IE 6]>
+<script type="text/javascript" src="/styles/typebased/includes/js/menu.js"></script>
+<![endif]-->	
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+<script type='text/javascript' src='/styles/typebased/includes/js/superfish.js?ver=3.3.2'></script>
+<script type="text/javascript" src="/js/lastfm.js"></script>
+
+<!-- Alt Stylesheet -->
+<link href="/styles/typebased/styles/grey.css" rel="stylesheet" type="text/css" />
+
+<!-- Woo Shortcodes CSS -->
+<link href="/styles/typebased/functions/css/shortcodes.css" rel="stylesheet" type="text/css" />
+
+<!-- Custom Stylesheet -->
+<link href="/styles/typebased/custom.css" rel="stylesheet" type="text/css" />
+<meta id="syntaxhighlighteranchor" name="syntaxhighlighter-version" content="3.1.3" />
+</head>
+
+<body class="home blog unknown">
+
+<div id="container">
+
+	<div id="header">
+		<h1>
+			<a href="/" title="Ramblings from a crotchety old man.">
+			<img src="/images/thecave-logo-2.png" style="margin-top:0px;" alt="thecave" /></a></h1>
+	</div>
+	
+	<div id="menu">
+				<ul id="navigation" class="nav wrap">
+										<li class="page_item current_page_item first"><a href="/"><span>Home</span></a></li>
+										</ul>
+			</div>
+	<div class="wrap background">
+		
+		<div id="content" class="left-col wrap">
+            
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">May<span class="year">2006</span></span><span class="day">30</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2006/05/30/generating-large-number-of-temporary-user-accounts/" rel="bookmark" title="Generating Large Number of Temporary User Accounts">Generating Large Number of Temporary User Accounts</a></h2>
+
+        <p>A customer recently asked White Peak Software to <a href='http://www.whitepeaksoftware.com/'>design and implement custom software</a> for generating large batches of temporary user accounts. The purpose of these temporary user accounts is to market a subscription based web site in much the same way AOL used to market its services. Here&#8217;s how it works.</p>
+
+<p>A large number of temporary user accounts, say 100,000 to 1,000,000 accounts per batch, would be generated and handed out to potential subscribers. When the credentials to a temporary account are first used the user is guided through a set of web pages that setup a real user account and trial subscription. Different business models are supported for the trial subscription such as 30-day trial or usage count.</p>
+
+<p>As I was designing the system my first concern was storing millions of records in the database to represent temporary user accounts. I was worried that it would take too much time to generate batches of 1 million user accounts and store them in the database, and I didn&#8217;t like the idea of storing this much data when initially the majority of the temporary user accounts will - most likely - never be used. So I set off to find a way, or an algorithm if you will, that would allow the system to generate a unique set of credentials for a temporary user account that did not require storage. In other words, I needed an algorithm that is used to generate the credentials and can be re-applied during authentication to determine of validity of the credentials. This felt similar to public private key encryption, which ultimately led me to the final design.</p>
+
+<p>In the final design a private key is used that is known only to the system. A unique private key is used for every batch of accounts generated where each batch represents a marketing campaign. A random number generator (RNG) is used to generate a username unique to the batch. The combination of the private key and the username is used to generate a <a href='http://en.wikipedia.org/wiki/Md5'>MD5</a> token and a random password is generated based on the bytes that makeup the MD5 token.</p>
+
+<p>The beauty of this design is that the same algorithm can be used to authenticate the credentials for the temporary account. An individual comes to the web site and uses the temporary account credentials to sign in. The username is combined with the private key of every active marketing campaign to create the MD5 token, which is used to generate the password. The generated password is compared to the password entered by the user. If the passwords match, the credentials are authenticated otherwise the credentials are invalid.</p>
+
+<p><a href='http://www.borland.com/delphi'>Delphi</a> was used for the implementation of this design. A Win32 COM component was implemented to provide authentication of the temporary credentials from the Classic ASP application. A .NET version was also implemented [using Delphi.NET] but is not used at this time.</p>
+
+<p>To generate the large number of users, a Delphi Win32 desktop application was written. This proved to be a fast way to generate batches. The program can generate a batch of 1 million accounts in under 2 and half minutes on a 2 year old laptop (Pentium M 1.6GHz with 512MB of RAM). And the batch can be saved to an XML or CSV file.</p>
+
+<p>The customer is extremely happy with the implementation, and I&#8217;m proud of the end result. The only issue I have with the design is that during authentication the username is checked against each active marketing campaign. This will cause a performance problem in a scenario with a large number of active campaigns (i.e., 100,000 or more), but this scenario is unrealistic for the customer. It is unlikely that the number of active campaigns will ever exceeded 100 so the issue is not really an issue.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">May<span class="year">2006</span></span><span class="day">26</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2006/05/26/devco-questions-comments-and-name-suggestions/" rel="bookmark" title="DevCo Questions, Comments, and Name Suggestions">DevCo Questions, Comments, and Name Suggestions</a></h2>
+
+        <p>DevCo wants your input. Michael Swindell, DevCo Director of Product Management, has posted a <a href='http://blogs.borland.com/michaelswindell/archive/2006/05/25.aspx'>blog entry</a> asking you to send your suggestions, comments, and questions regarding DevCo to the appropriate email addresses listed below.<br /><br />Send a message to <a href='devco.names@borland.com'>devco.names@borland.com</a> for your company name ideas.<br />Send a message to <a href='devco.suggestions@borland.com'>devco.suggestions@borland.com</a> for your ideas and suggestions.<br />Send a message to <a href='devco.questions@borland.com'>devco.questions@borland.com</a> with any questions and concerns.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">May<span class="year">2006</span></span><span class="day">23</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2006/05/23/white-peak-software-news/" rel="bookmark" title="White Peak Software News">White Peak Software News</a></h2>
+
+        <p>A common question I get is &#8220;How is <a href='http://www.whitepeaksoftware.com/'>White Peak Software</a> doing?&#8221; The answer is quiet simply &#8220;We&#8217;re doing great.&#8221; Revenues continue to grow and we are inching closer to the release of our next product. We&#8217;ve also done some exciting <a href='http://www.whitepeaksoftware.com/'>custom software</a> work over the last year. <br /><br />I have decided to start posting news briefs on some of our more exciting, and successful, custom software work. You can read the postings in the <a href='http://www.whitepeaksoftware.com/forums/Forum4-1.aspx'>White Peak Software Announcements forum</a> or by subscribing to the <a href='http://www.whitepeaksoftware.com/forums/RssFeed4-0-0-1.aspx'>announcement feed</a> using your <a href='http://www.feeddemon.com/'>favorite RSS feed reader</a>.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">May<span class="year">2006</span></span><span class="day">16</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2006/05/16/mike-eberhart-is-now-blogging/" rel="bookmark" title="Mike Eberhart is now Blogging">Mike Eberhart is now Blogging</a></h2>
+
+        <p>Mike Eberhart of the <a href='http://www.intersoftdevelopment.com/'>Cleveland based database developer</a> shop Intersoft Development, and long time friend, is finally blogging on <a href='http://suretalent.blogspot.com/'>investment news and opinions, software and technology thoughts</a>, and more. Should make for some interesting reading.<br /><br />Welcome to the blogosphere, Mike.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">May<span class="year">2006</span></span><span class="day">16</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2006/05/16/delphi-asp-net-on-mono/" rel="bookmark" title="Delphi ASP.NET on Mono">Delphi ASP.NET on Mono</a></h2>
+
+        <p>This blog posting by <a href='http://delphi-notes.blogspot.com/'>Daniel Wischnewski</a> really caught my attention. He has successfully ported an <a href='http://delphi-notes.blogspot.com/2006/05/first-time-delphi-aspnet-application.html'>ASP.NET application written in Delphi.NET to a Linux environment running Mono and Apache</a>. This really doesn&#8217;t surprise me because I have in the past run .NET assemblies under Mono without a problem. But at the same time I find it very cool that it is an ASP.NET application written in <a href='http://www.borland.com/delphi'>Delphi</a>, which is something I haven&#8217;t yet tried. Awesome stuff.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">May<span class="year">2006</span></span><span class="day">14</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2006/05/14/sharing-the-delphi-love/" rel="bookmark" title="Sharing the Delphi Love">Sharing the Delphi Love</a></h2>
+
+        <p>Someone on the <a href='http://discuss.joelonsoftware.com/default.asp?joel'>Joel on Software forum</a> asked &#8221;<a href='http://discuss.joelonsoftware.com/default.asp?joel.3.342621.47'>how many ISVs are using Delphi</a>?&#8221; If you&#8217;re using <a href='http://www.borland.com/delphi'>Delphi</a>, share the love and post a reply. White Peak Software is <a href='http://www.whitepeaksoftware.com/'>using Delphi and Borland Developer Studio 2006 for its products and custom software</a>.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">May<span class="year">2006</span></span><span class="day">12</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2006/05/12/borland-2006-road-show-u-s-dates/" rel="bookmark" title="Borland 2006 Road Show U.S. Dates">Borland 2006 Road Show U.S. Dates</a></h2>
+
+        <p>Registration for the <a href='http://208.109.7.163/html/borland_inside/landing.htm'>Borland 2006 Road Show</a> is now open for the U.S. dates. I have reserved my spot for the June 8 NYC event.</p>
+
+<p>[Not to worry Darren and Jeff, I will be back in time to pick you guys up at the Boston Logan airport that night. Actually I will probably schedule my flight so I arrive to Boston around the same time as you guys.]</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">May<span class="year">2006</span></span><span class="day">11</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2006/05/11/software-business-on-the-raise-in-cleveland/" rel="bookmark" title="Software Business on the Raise in Cleveland">Software Business on the Raise in Cleveland</a></h2>
+
+        <p>&#8220;The software business is picking up regionally across the country&#8221;, as noted per CEO of White Peak&#8217;s <a href='http://www.intersoftdevelopment.com/'>Cleveland database developers</a> partner firm, which has seen software development and consulting requests easily double during the past 3 months in the Cleveland, Ohio region. Requests have been pouring in from small, mid, and large firms alike. The most sought after technology skills have been Access, Microsoft SQL Server 2000 and 2005, and .NET recently.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">May<span class="year">2006</span></span><span class="day">07</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2006/05/07/running-livecd-in-vmware/" rel="bookmark" title="Running LiveCD in VMware">Running LiveCD in VMware</a></h2>
+
+        <p>Here is a useful link for those who want to <a href='http://www.vmwarez.com/2006/02/livecd-player-virtual-machine.html'>run a Linux LiveCD under VMware Workstation or VMware Player</a>. What&#8217;s neat about this hack is it allows you to run the LiveCD without needing to reboot your host OS. [Hats off to Mike for sharing the tip with me.]</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">May<span class="year">2006</span></span><span class="day">05</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2006/05/05/using-asp-net-1-1-and-2-0-on-the-same-machine/" rel="bookmark" title="Using ASP.NET 1.1 and 2.0 on the Same Machine">Using ASP.NET 1.1 and 2.0 on the Same Machine</a></h2>
+
+        <p>John Kaster has posted tips on <a href='http://blogs.borland.com/johnk/archive/2006/05/05/24602.aspx'>using ASP.NET 1.1 and 2.0 on the same machine</a>. It&#8217;s a quick read and has references to utilities that will easy the work.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+
+
+
+<div class="more_posts">
+	<h2>
+        
+        <a href="/page22" >&laquo; Older Entries</a> &nbsp; 
+        
+        
+            
+                <a href="/page20" >Recent Entries &raquo;</a>
+            
+        
+    </h2>
+</div>
+
+		</div>
+		
+				<!--- Sidebar Starts -->
+		
+		<div id="sidebar" class="right-col">
+		
+			<div id="search">
+                <form action="http://google.com/search" method="get">
+                    <div>
+                    <input type="hidden" name="q" value="site:thecave.com" />
+					<input type="text" class="search_box" name="q" id="q" results="0" />
+					<input type="image" src="/styles/typebased/images/search.gif" class="submit" name="submit" />
+                    </div>
+                </form>
+			</div>
+						
+			<div id="sidebar_in">
+			
+			<div id="lastfm-1" class="block widget widget_lastfm">
+    <h2><a href="http://last.fm/user/kirbyt" class="lastfm_title_link">Listening To</a></h2>
+    <div class="lastfm">
+    </div>
+</div>
+
+
+			
+        <div id="linkcat-2" class="block widget widget_links"><h2>Blogroll</h2>
+            <ul class='xoxo blogroll'>
+            <li><a href="http://www.rowanturner.net/">Rowan T</a></li>
+            <li><a href="http://photos.thecave.com/">Photos</a></li>
+            <li><a href="http://www.learnipadprogramming.com/">Learning iPad Programming</a></li>
+            <li><a href="http://blog.whitepeaksoftware.com/">White Peak Software</a></li>
+            </ul>
+        </div>
+
+		<div id="linkcat-3" class="block widget widget_links"><h2>Categories</h2>
+    <ul>
+        <li class='category'><a href='/category/backpack/'>backpack (1)</a></li>
+<li class='category'><a href='/category/backpacking/'>backpacking (8)</a></li>
+<li class='category'><a href='/category/blogger/'>blogger (785)</a></li>
+<li class='category'><a href='/category/camping/'>camping (11)</a></li>
+<li class='category'><a href='/category/family/'>family (2)</a></li>
+<li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
+<li class='category'><a href='/category/general/'>general (5)</a></li>
+<li class='category'><a href='/category/hiking/'>hiking (6)</a></li>
+<li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
+<li class='category'><a href='/category/long-trail/'>long-trail (2)</a></li>
+<li class='category'><a href='/category/opinion/'>opinion (1)</a></li>
+<li class='category'><a href='/category/pictures/'>pictures (2)</a></li>
+<li class='category'><a href='/category/random/'>random (2)</a></li>
+<li class='category'><a href='/category/rowan/'>rowan (2)</a></li>
+<li class='category'><a href='/category/salem/'>salem (1)</a></li>
+<li class='category'><a href='/category/skiing/'>skiing (1)</a></li>
+<li class='category'><a href='/category/snowboarding/'>snowboarding (1)</a></li>
+<li class='category'><a href='/category/travel/'>travel (3)</a></li>
+<li class='category'><a href='/category/trip/'>trip (4)</a></li>
+<li class='category'><a href='/category/trips/'>trips (1)</a></li>
+<li class='category'><a href='/category/videos/'>videos (1)</a></li>
+
+    </ul>
+</div>
+    
+        <div id="archives-3" class="block widget widget_archive"><h2>Archives</h2>		
+        <ul>
+        <li><a href="/blog/archives">The Complete Blog Archives</a></li>
+        </ul>
+        </div>			
+			
+						
+			</div>
+				
+		</div>
+		
+		<!--- Sidebar Ends -->		
+	</div>
+	
+</div>
+	
+<div id="footer" class="wrap">
+
+	<div class="left-col">
+		<div class="popular wrap">
+			<h2>Recent Articles</h2>
+			<ul>
+                
+                  <li><a href="/2013/06/02/kayaking-the-ipswitch-river/" title="Kayaking the Ipswich River">Kayaking the Ipswich River</a></li>
+                
+                  <li><a href="/2013/05/24/our-visit-to-the-eiffel-tower/" title="Our Visit to the Eiffel Tower">Our Visit to the Eiffel Tower</a></li>
+                
+                  <li><a href="/2013/05/12/simple-banking-my-kind-of-banking/" title="Simple Bank, My Kind of Banking">Simple Bank, My Kind of Banking</a></li>
+                
+                  <li><a href="/2013/04/27/what-the-hell/" title="What the Hell">What the Hell</a></li>
+                
+                  <li><a href="/2013/02/12/nssnow-2013/" title="NSSnow 2013">NSSnow 2013</a></li>
+                
+            </ul>
+		</div>
+	</div>
+	
+	<div id="subscribe" class="right-col">
+		<h2>Subscribe to RSS</h2>
+		<p class="rss">If you enjoyed the post, make sure you subscribe to the RSS feed.</p>
+		<p>
+		<a href="/atom.xml">Articles</a><br />
+		</p>
+	</div>
+	
+<div id="copyright" class="wrap">
+
+	<div class="left-col">
+		<p>&copy; 2013</p>
+	</div>
+	
+	<div class="right-col">
+		<p>Design by <a href="http://woothemes.com"><img src="/styles/typebased/styles/grey/logo-footer.jpg" width="87" height="21" alt="woo themes" /></a></p>
+	</div>
+
+</div>
+
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-167605-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
+<!-- Localized -->

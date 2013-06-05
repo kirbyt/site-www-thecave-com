@@ -1,0 +1,412 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<title>thecave | Ramblings from a crotchety old man</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="index, follow" />
+
+<link rel="stylesheet" type="text/css" href="/styles/typebased/style.css" />
+<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="/atom.xml" />
+
+<!--[if IE 6]>
+<script type="text/javascript" src="/styles/typebased/includes/js/menu.js"></script>
+<![endif]-->	
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+<script type='text/javascript' src='/styles/typebased/includes/js/superfish.js?ver=3.3.2'></script>
+<script type="text/javascript" src="/js/lastfm.js"></script>
+
+<!-- Alt Stylesheet -->
+<link href="/styles/typebased/styles/grey.css" rel="stylesheet" type="text/css" />
+
+<!-- Woo Shortcodes CSS -->
+<link href="/styles/typebased/functions/css/shortcodes.css" rel="stylesheet" type="text/css" />
+
+<!-- Custom Stylesheet -->
+<link href="/styles/typebased/custom.css" rel="stylesheet" type="text/css" />
+<meta id="syntaxhighlighteranchor" name="syntaxhighlighter-version" content="3.1.3" />
+</head>
+
+<body class="home blog unknown">
+
+<div id="container">
+
+	<div id="header">
+		<h1>
+			<a href="/" title="Ramblings from a crotchety old man.">
+			<img src="/images/thecave-logo-2.png" style="margin-top:0px;" alt="thecave" /></a></h1>
+	</div>
+	
+	<div id="menu">
+				<ul id="navigation" class="nav wrap">
+										<li class="page_item current_page_item first"><a href="/"><span>Home</span></a></li>
+										</ul>
+			</div>
+	<div class="wrap background">
+		
+		<div id="content" class="left-col wrap">
+            
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jul<span class="year">2002</span></span><span class="day">24</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2002/07/24/a-year-ago-today/" rel="bookmark" title="A year ago today">A year ago today</a></h2>
+
+        <p>A year ago today, Melanie and I were part of a group going to a Yankee&#8217;s game. Melanie and I separated from the group to find a shorter line for beer and hot dogs. We got to our seats before the rest of the group and started talking. We talked to each other for the rest of the game (and I was gracefully trying to stare at her long, tan, smooth, sexy legs). I wonder if she ever caught me looking.</p>
+
+<p>That night was the start of something between the two of us. We started talking on the phone and e-mailing each other on a regular basis. And even though she thought to herself &#8220;He&#8217;s short&#8221; at a party a few days after <em>the</em> game, she agreed to go out with me.</p>
+
+<p>A year ago today was the start of something very wonderful. Had you told me I would be falling in love I would have said you were crazy. And now I can&#8217;t imagine going a single day without having Melanie in my life.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jul<span class="year">2002</span></span><span class="day">23</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2002/07/23/uddi-as-a-directory-of-rss-feeds/" rel="bookmark" title="UDDI as a directory of RSS feeds">UDDI as a directory of RSS feeds</a></h2>
+
+        <p>Recently my friend Karsten Januszewski posted a <a href='http://groups.yahoo.com/group/rss-dev/message/2866'>message</a> to the RSS-DEV group suggesting that UDDI could be used as a directory of RSS feeds. I for one really like the idea. UDDI provides not only a public directory that is easily searchable but an API that would allow me to automate the search rather the discovery of new RSS feeds that I might be interested in. <br /> <br />Ironically a couple of days prior to first learning of Karsten&#8217;s idea, I spent an hour looking for RSS feeds covering a particular topic for a customer. Sure I found various sites listing some feeds and such but no definitive directory. Should Karsten&#8217;s idea take off then the time it took me to find feed in the past will be greatly reduced. And as I said I can automate the discovery of new RSS feeds. I for one fully support Karsten&#8217;s idea.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jul<span class="year">2002</span></span><span class="day">21</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2002/07/21/xsd-exe-does-not-support-import/" rel="bookmark" title="xsd.exe does not support import">xsd.exe does not support import</a></h2>
+
+        <p>xsd.exe from the .NET SDK has been a favorite tool of mine in recent months, but it let me down tonight. It seems that xsd.exe does not support schema files that import other schemas. I&#8217;m bummed.</p>
+
+<p>[Moments later] I&#8217;m no longer bummed. It turns out that xsd.exe does in fact support . You simply need to include all .xsd file names on the command line. For example:</p>
+
+<pre><code>xsd.exe /c /l:cs /n:&quot;namespace&quot; a.xsd b.xsd c.xsd</code></pre>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jul<span class="year">2002</span></span><span class="day">21</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2002/07/21/who-turned-off-the-lights/" rel="bookmark" title="Who turned off the lights">Who turned off the lights</a></h2>
+
+        <p>The brief <a href='http://www.ny1.com/ny/TopStories/SubTopic/index.html?topicintid=1&amp;subtopicintid=1&amp;contentintid=23113'>power outage</a> in the lower Manhattan was an interesting experience. With no power in the West Village, shops and restaurants were forced to close. This sent a large number of people out onto the streets. And traffic was a total mess with no traffic signals working. Subways were not working and buses were overflowing with people. <br /> <br />I was planning to meet Melanie and Brenna for lunch in Central Park just as the power went out. So I started walking. And I walked, and I walked. I can now say I have walked from my apartment to Melanie&#8217;s Upper Eastside pad with only one brief stop in Central Park. Although an enjoyable walk, it&#8217;s not something I care to do on a regular basis.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jul<span class="year">2002</span></span><span class="day">21</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2002/07/21/quote-of-the-day/" rel="bookmark" title="Quote of the day">Quote of the day</a></h2>
+
+        <p>&#8220;It&#8217;s not my fault. It&#8217;s the bartender&#8217;s fault.&#8221; - MD</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jul<span class="year">2002</span></span><span class="day">20</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2002/07/20/john-waters-on-broadway/" rel="bookmark" title="John Waters on Broadway">John Waters on Broadway</a></h2>
+
+        <p>Last night Melanie, her sister Brenna, and I saw the new Broadway musical <a href='http://www.hairsprayonbroadway.com/'>Hairspray</a> based on the John Waters&#8217; movie of the <a href='http://us.imdb.com/Title?0095270'>same name</a>. The show set in Baltimore, 1962, was not only hilarious but energetic, up-beat, and quite entertaining. The story is about a plump teenage girl who fights for racial equality and integration by appearing as a regular on a local TV dance show. What&#8217;s more funny than that? Well, a lot of things I guess but this show is still very funny. And <a href='http://www.plump.com/harvbio.htm'>Harvery Fierstein</a> is simply <a href='http://www.geocities.com/Hollywood/Set/9625/'>divine</a> as Edna Turnblad.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jul<span class="year">2002</span></span><span class="day">16</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2002/07/16/software-development-is-about-making-the-end-users-life-easier/" rel="bookmark" title="Software development is about making the end user's life easier.">Software development is about making the end user's life easier.</a></h2>
+
+        <p>I am starting to realize there are different types of software developers. I guess I have always known this but it was not clear to me how the differences affect delivery of software solutions. This probably explains why I am happy on some gigs and frustrated on others. And why I can easily become frustrated on projects where I start out happy. <br /> <br />As Joel Spolsky says, there are <a href='http://www.joelonsoftware.com/articles/FiveWorlds.html'>five worlds</a> of software development: shrinkwrap, internal, embedded, games, and throwaway. I come from the shrinkwrap world where programs should have easy to use interfaces, be easy to install and deploy, and resilient to variations between computers. After all, shrinkwrap applications are expected to be used &#8220;in the wild&#8221; by a large number of people. Developing shrinkwrap applications requires a mindset not commonly found in the corporate and consulting worlds. And with this different mindset comes a different way to work towards achieving the goals. <br /> <br />I&#8217;ll pick on my buddies at <a href='http://www.antennasoftware.com/'>Antenna Software</a> for a moment. Now in their defense, I will say I left Antenna over a year ago and a lot has changed in that time. My comments here are based on my time at Antenna as an employee. <br /> <br />Antenna had the dream to be an <a href='http://www.webopedia.com/TERM/I/ISV.html'>ISV</a> focused on mobile and ASP-based solutions for the field force automation. In my mind to be successful we had to think like those companies producing shrinkwrap and embedded applications. However the software engineering team was staffed with primarily people either recently out of college or from a corporate IT background. The college guys are okay because you can shape and mold them but the corporate folks are a different story. And I believe this contributed to the lack of a solid product after my one year at Antenna. <br /> <br />A lot of assumptions can be made when you are developing applications that only run within a single company. It is easier to demand certain restrictions or hardware configurations. And deployment can be more involved. It can be tough for most ex-corporate developers to make the switch from controlled environment programming to programming for the wild, which leads me to my current thought and reason for this post. <br /> <br />I work in the consulting world of software development. I like the freedom it provides and will probably remain a consultant for the rest of my career. But most of the projects that consultants work on are custom software development for a single corporation. There are exceptions from time to time like the work I did last year at <a href='http://www.i-deal.com/'>i-Deal</a>, which was an internal software development effort turned commercial Web-based software. But for the most part consulting gigs are on internal software development efforts. <br /> <br />In my career I have observed an interesting fact. When I apply shrinkwrap techniques and approaches for delivering an internal software solution the customer tends to be happier and the solution is perceived as having a higher level of quality. Working in this manner will not make the software developer&#8217;s life easier. In fact, it is harder for the developer and requires more work. But software development is not about making the developer&#8217;s life easier. It&#8217;s about making the end user&#8217;s life easier.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jul<span class="year">2002</span></span><span class="day">15</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2002/07/15/goodbye-to-dot-dot/" rel="bookmark" title="Goodbye to Dot-Dot">Goodbye to Dot-Dot</a></h2>
+
+        <p>As some already know, my grandmother Dot passed away last week. I left for Memphis as soon as I heard the news to be with the family. Although it is sad that Dot is no longer with us, she is in a much better place now. <br /> <br />Dot was an amazing woman and a wonderful grandmother. I still have fond memories of summer times at her place with a frig packed with Jell-O, Easter Saturday dying eggs, and nights playing Aggravation and watching Carson. I can&#8217;t think of a better person to have as a grandmother. I love you, Dot.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jul<span class="year">2002</span></span><span class="day">11</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2002/07/11/another-c-beta-completed/" rel="bookmark" title="Another C# beta completed">Another C# beta completed</a></h2>
+
+        <p>I just finished the latest in Microsoft C# beta exams, 71-315 Develop and Implementing Web Applications with Microsoft Visual C#.NET and Microsoft Visual Studio.NET. The test was easier than the <a href='http://www.thecave.com/archive/2002_06_01_archive.aspx#85194835'>last one</a> but still had challenging questions. Those planning to take this exam should have a working knowledge of Web app setup projects, security settings via the web.config, working with DataList, Repeater, and DataGrid server controls, how to write custom user controls, and once again ADO.NET, some XML, and how to consume Web services. <br /> <br />And yes, for those wondering&#8230;I rescheduled the exam so I could take it this morning in Memphis.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jul<span class="year">2002</span></span><span class="day">10</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2002/07/10/death-in-the-family-flying-to-memphis-today/" rel="bookmark" title="Death in the family - flying to Memphis today">Death in the family - flying to Memphis today</a></h2>
+
+        <p>Death in the family - will be in Memphis for the next few days.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+
+
+
+<div class="more_posts">
+	<h2>
+        
+        <a href="/page74" >&laquo; Older Entries</a> &nbsp; 
+        
+        
+            
+                <a href="/page72" >Recent Entries &raquo;</a>
+            
+        
+    </h2>
+</div>
+
+		</div>
+		
+				<!--- Sidebar Starts -->
+		
+		<div id="sidebar" class="right-col">
+		
+			<div id="search">
+                <form action="http://google.com/search" method="get">
+                    <div>
+                    <input type="hidden" name="q" value="site:thecave.com" />
+					<input type="text" class="search_box" name="q" id="q" results="0" />
+					<input type="image" src="/styles/typebased/images/search.gif" class="submit" name="submit" />
+                    </div>
+                </form>
+			</div>
+						
+			<div id="sidebar_in">
+			
+			<div id="lastfm-1" class="block widget widget_lastfm">
+    <h2><a href="http://last.fm/user/kirbyt" class="lastfm_title_link">Listening To</a></h2>
+    <div class="lastfm">
+    </div>
+</div>
+
+
+			
+        <div id="linkcat-2" class="block widget widget_links"><h2>Blogroll</h2>
+            <ul class='xoxo blogroll'>
+            <li><a href="http://www.rowanturner.net/">Rowan T</a></li>
+            <li><a href="http://photos.thecave.com/">Photos</a></li>
+            <li><a href="http://www.learnipadprogramming.com/">Learning iPad Programming</a></li>
+            <li><a href="http://blog.whitepeaksoftware.com/">White Peak Software</a></li>
+            </ul>
+        </div>
+
+		<div id="linkcat-3" class="block widget widget_links"><h2>Categories</h2>
+    <ul>
+        <li class='category'><a href='/category/backpack/'>backpack (1)</a></li>
+<li class='category'><a href='/category/backpacking/'>backpacking (8)</a></li>
+<li class='category'><a href='/category/blogger/'>blogger (785)</a></li>
+<li class='category'><a href='/category/camping/'>camping (11)</a></li>
+<li class='category'><a href='/category/family/'>family (2)</a></li>
+<li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
+<li class='category'><a href='/category/general/'>general (5)</a></li>
+<li class='category'><a href='/category/hiking/'>hiking (6)</a></li>
+<li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
+<li class='category'><a href='/category/long-trail/'>long-trail (2)</a></li>
+<li class='category'><a href='/category/opinion/'>opinion (1)</a></li>
+<li class='category'><a href='/category/pictures/'>pictures (2)</a></li>
+<li class='category'><a href='/category/random/'>random (2)</a></li>
+<li class='category'><a href='/category/rowan/'>rowan (2)</a></li>
+<li class='category'><a href='/category/salem/'>salem (1)</a></li>
+<li class='category'><a href='/category/skiing/'>skiing (1)</a></li>
+<li class='category'><a href='/category/snowboarding/'>snowboarding (1)</a></li>
+<li class='category'><a href='/category/travel/'>travel (3)</a></li>
+<li class='category'><a href='/category/trip/'>trip (4)</a></li>
+<li class='category'><a href='/category/trips/'>trips (1)</a></li>
+<li class='category'><a href='/category/videos/'>videos (1)</a></li>
+
+    </ul>
+</div>
+    
+        <div id="archives-3" class="block widget widget_archive"><h2>Archives</h2>		
+        <ul>
+        <li><a href="/blog/archives">The Complete Blog Archives</a></li>
+        </ul>
+        </div>			
+			
+						
+			</div>
+				
+		</div>
+		
+		<!--- Sidebar Ends -->		
+	</div>
+	
+</div>
+	
+<div id="footer" class="wrap">
+
+	<div class="left-col">
+		<div class="popular wrap">
+			<h2>Recent Articles</h2>
+			<ul>
+                
+                  <li><a href="/2013/06/02/kayaking-the-ipswitch-river/" title="Kayaking the Ipswich River">Kayaking the Ipswich River</a></li>
+                
+                  <li><a href="/2013/05/24/our-visit-to-the-eiffel-tower/" title="Our Visit to the Eiffel Tower">Our Visit to the Eiffel Tower</a></li>
+                
+                  <li><a href="/2013/05/12/simple-banking-my-kind-of-banking/" title="Simple Bank, My Kind of Banking">Simple Bank, My Kind of Banking</a></li>
+                
+                  <li><a href="/2013/04/27/what-the-hell/" title="What the Hell">What the Hell</a></li>
+                
+                  <li><a href="/2013/02/12/nssnow-2013/" title="NSSnow 2013">NSSnow 2013</a></li>
+                
+            </ul>
+		</div>
+	</div>
+	
+	<div id="subscribe" class="right-col">
+		<h2>Subscribe to RSS</h2>
+		<p class="rss">If you enjoyed the post, make sure you subscribe to the RSS feed.</p>
+		<p>
+		<a href="/atom.xml">Articles</a><br />
+		</p>
+	</div>
+	
+<div id="copyright" class="wrap">
+
+	<div class="left-col">
+		<p>&copy; 2013</p>
+	</div>
+	
+	<div class="right-col">
+		<p>Design by <a href="http://woothemes.com"><img src="/styles/typebased/styles/grey/logo-footer.jpg" width="87" height="21" alt="woo themes" /></a></p>
+	</div>
+
+</div>
+
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-167605-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
+<!-- Localized -->
