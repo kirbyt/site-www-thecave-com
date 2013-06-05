@@ -30,10 +30,14 @@ layout: default
 <div class="more_posts">
 	<h2>
         {% if paginator.next_page %}
-        <a href="{{paginator.next_page}}" >&laquo; Older Entries</a> &nbsp; 
+        <a href="/{{paginator.next_page_path}}" >&laquo; Older Entries</a> &nbsp; 
         {% endif %}
         {% if paginator.previous_page %}
-        <a href="{{paginator.previous_page}}" >Recent Entries &raquo;</a>
+            {% if paginator.previous_page == 1 %}
+                <a href="/" >Recent Entries &raquo;</a>
+            {% else %}
+                <a href="/{{paginator.previous_page_path}}" >Recent Entries &raquo;</a>
+            {% endif %}
         {% endif %}
     </h2>
 </div>

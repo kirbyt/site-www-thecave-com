@@ -44,6 +44,11 @@ code {
 	background: #FFFFC1;
 }
 
+hr {
+    border: 0;
+    border-bottom: #CBCBCB 1px solid;
+}
+
 a {
 	color: #CE1433;
 	text-decoration: none;
