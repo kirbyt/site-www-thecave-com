@@ -19,13 +19,12 @@ layout: default
     {% if page.categories %}<div>Posted in {{ page.categories | category_links }}.</div>{% endif %}
     
     <hr />
-    {% if page.previous.url %}
-        <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; {{page.previous.title}}</a>
-    {% endif %}
-
     {% if page.next.url %}
+        <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">&laquo; {{page.next.title}}</a>
         &nbsp; | &nbsp;
-        <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">{{page.next.title}} &raquo;</a>
+    {% endif %}
+    {% if page.previous.url %}
+        <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">{{page.previous.title}} &raquo;</a>
     {% endif %}
 
     </div>
