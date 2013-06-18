@@ -59,6 +59,26 @@
         </div>
 
         <div class="post-content right-col">
+        <h2><a href="/2005/10/05/vcl-net-vs-winform/" rel="bookmark" title="VCL.NET vs WinForm">VCL.NET vs WinForm</a></h2>
+
+        <p>By the way for those interested in a good article on VCL.NET versus WinForm, give Craig Stuntz&#8217;s article <a href='http://blogs.teamb.com/craigstuntz/articles/VCLForDotNetVsWinForms.aspx'>Choosing Between VCL for .NET and WinForms</a> a read.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Oct<span class="year">2005</span></span><span class="day">05</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
         <h2><a href="/2005/10/05/delphi-and-avalon/" rel="bookmark" title="Delphi and Avalon">Delphi and Avalon</a></h2>
 
         <p>Back in April I blogged about <a href='http://www.thecave.com/archive/2005/04/06/my_delphi_2005_is_here.aspx'>re-compiling Delphi source code from the 90's</a> into a .NET managed assembly. Delphi (and possibly C++) is the only language I know of that provides this level of support. While many Classic VB developers are porting legacy code to VB.NET or C#, I continue using Delphi code that has been unchanged for more than 7 years.<br /><br />One of the next big things coming out of Redmond that will affect Windows developers is Avalon, now called the <a href='http://msdn.microsoft.com/windowsvista/default.aspx?pull=/library/en-us/dnlong/html/wpf101.asp'>Windows Presentation <strike>Framework</strike> Foundation</a>. While I image there will be some migration plan for .NET developers, I&#8217;m happy to see Borland has <a href='http://blogs.borland.com/davidi/archive/2005/10/03/21548.aspx'>plans to implement VCL for Avalon in 2007</a>. <br /><br />Based on my experience of moving Delphi code to .NET, I&#8217;m confident that Delphi code I write today as well as code I&#8217;ve written over the years will require little to no change with I&#8217;m ready to adopt the new presentation framework from Microsoft.</p>
@@ -239,26 +259,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Sep<span class="year">2005</span></span><span class="day">19</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2005/09/19/discovered-constant-bug-in-vs-net-2003/" rel="bookmark" title="Discovered Constant Bug in VS.NET 2003">Discovered Constant Bug in VS.NET 2003</a></h2>
-
-        <p>Tonight I discovered an interesting Visual Studio.NET 2003 bug. Seems devenv.exe will throw an unhandled exception when the constant in the sample code below is compiled. From what I can tell, it looks like devenv.exe chokes on the length of the contant. Remove line 73 (LEFT OUTER JOIN&#8230;) and the exception is not thrown.<br /><br />The exception only occurs when compiling the project from within VS.NET 2003 (devenv.exe). The command line compiler csc.exe does not have the problem. Also, the problem does not occur if you are using <a href='http://www.borland.com/delphi/'>Delphi</a> 2005. Makes me wonder what devenv.exe is doing during the project build process.<br /><br /><pre><br />001  using System;<br />002 <br />003  namespace ConsoleApplication3<br />004  {<br />005     /// <summary><br />006     /// Summary description for Class1.<br />007     /// </summary><br />008     class Class1<br />009     {<br />010        /// <summary><br />011        /// The main entry point for the application.<br />012        /// </summary><br />013        [STAThread]<br />014        static void Main(string[] args)<br />015        {<br />016          const string SQL_FORMAT = @"<br />017           SELECT <br />018           1 AS Tag,<br />019           NULL AS Parent,<br />020           NULL AS [users!1],<br />021           NULL AS [user!2!strUSID],<br />022           NULL AS [user!2!strPrefixID],<br />023           NULL AS [user!2!strFirstName],<br />024           NULL AS [user!2!strLastName],<br />025           NULL AS [user!2!strUSName],<br />026           NULL AS [user!2!strAdd1],<br />027           NULL AS [user!2!strAdd2],<br />028           NULL AS [user!2!strTown],<br />029           NULL AS [user!2!strState],<br />030           NULL AS [user!2!strPostCode],<br />031           NULL AS [user!2!strCountry],<br />032           NULL AS [user!2!strTel],<br />033           NULL AS [user!2!strFax],<br />034           NULL AS [user!2!strEMail],<br />035           NULL AS [user!2!strLocked],<br />036           NULL AS [user!2!dtmLockedDate],<br />037           NULL AS [user!2!strSuspenseReason],<br />038           NULL AS [user!2!intLogonCount],<br />039           NULL AS [user!2!dtmCreatedDate],<br />040           NULL AS [user!2!strMedicalSpecialtyID],<br />041           NULL AS [user!2!blnChangePassword],<br />042           NULL AS [user!2!strInstitutionalUser],<br />043           NULL AS [user!2!strCreditCardExpDate]<br />044           UNION<br />045           SELECT<br />046           2 AS Tag,<br />047           1 AS Parent,<br />048           NULL,<br />049           Users.strUSID,<br />050           strPrefixID,<br />051           strFirstName,<br />052           strLastName,<br />053           strUSName,<br />054           strAdd1,<br />055           strAdd2,<br />056           strTown,<br />057           strState,<br />058           strPostCode,<br />059           strCountry,<br />060           strTel,<br />061           strFax,<br />062           strEMail,<br />063           strLocked,<br />064           dtmLockedDate,<br />065           ID_LoginSuspenseReason.strSuspenseReason,<br />066           intLogonCount,<br />067           dtmCreatedDate,<br />068           strMedicalSpecialtyID,<br />069           blnChangePassword,<br />070           strInstitutionalUser,<br />071           strCreditCardExpDate<br />072           FROM ID_Login Users<br />073           LEFT OUTER JOIN ID_LoginSuspenseReason ON Users.strUSID = ID_LoginSuspenseReason.strUSID<br />074           {0}<br />075           FOR XML EXPLICIT<br />076           ";<br />077        }<br />078     }<br />079  }<br /></pre></p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -318,7 +318,7 @@
 <li class='category'><a href='/category/camping/'>camping (11)</a></li>
 <li class='category'><a href='/category/family/'>family (2)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
-<li class='category'><a href='/category/general/'>general (5)</a></li>
+<li class='category'><a href='/category/general/'>general (6)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (7)</a></li>
 <li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
 <li class='category'><a href='/category/long-trail/'>long-trail (2)</a></li>
@@ -361,6 +361,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2013/06/18/im-an-idiot/" title="I'm an Idiot">I'm an Idiot</a></li>
+                
                   <li><a href="/2013/06/05/moving-to-a-ski-town/" title="We're Moving to a Ski Town...Finally">We're Moving to a Ski Town...Finally</a></li>
                 
                   <li><a href="/2013/06/02/kayaking-the-ipswitch-river/" title="Kayaking the Ipswich River">Kayaking the Ipswich River</a></li>
@@ -368,8 +370,6 @@
                   <li><a href="/2013/05/24/our-visit-to-the-eiffel-tower/" title="Our Visit to the Eiffel Tower">Our Visit to the Eiffel Tower</a></li>
                 
                   <li><a href="/2013/05/12/simple-banking-my-kind-of-banking/" title="Simple Bank, My Kind of Banking">Simple Bank, My Kind of Banking</a></li>
-                
-                  <li><a href="/2013/04/27/what-the-hell/" title="What the Hell">What the Hell</a></li>
                 
             </ul>
 		</div>
