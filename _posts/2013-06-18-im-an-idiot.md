@@ -4,7 +4,7 @@ title: 'I''m an Idiot'
 categories:
     - general
 ---
-I am, what I call certain individuals, an idiot. Yep. I too am an idiot. 
+I am, what I like to call certain individuals, an idiot. Yep. I too am an idiot. 
 
 Last week we bought a used Subaru Outback from a private seller. As with buying any car, used or new, there is a period of discovery as you learn more about your purchase. This is especially true when you buy a high mileage car. Our "new" Subaru came with 161,702 miles on it so I knew we would make all sorts of interesting, but hopefully not expensive, discoveries. I knew before buying the car it needs new tires, despite the seller insisting that the tires are in good condition. (Side note: I showed the seller what good condition tires look like by showing him the tires on our other Outback. This was a plus for us because it helped drive down the price of the car.)
 
