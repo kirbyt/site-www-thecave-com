@@ -54,6 +54,26 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">May<span class="year">2004</span></span><span class="day">19</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2004/05/19/using-enterprise-templates-to-group-projects/" rel="bookmark" title="Using Enterprise Templates to Group Projects">Using Enterprise Templates to Group Projects</a></h2>
+
+        <p>I&#8217;m currently working on a customer project with 16+ VS.NET projects in a single VS.NET solution file. The single solution file is handy in that all the source code that makes up the complete customer solution is available in one place. The solution includes multiple C# projects, unit test projects, database projects, and one Reporting Services project. Also our build environment relies on NAnt scripts so each project that produces an assembly also has its own .build script.<br /><br />A single solution approach is nice because I have access to everything that makes up the solution, from build scripts to C# source code to stored procedures. But finding the right project or file is becoming more challenging each day as more is added to the solution. This is where Enterprise Template Projects comes to the rescue. <br /><br />An Enterprise Template Project is a project type available in Visual Studio.NET Enterprise Edition or greater, and it can contain any type of file including other project types. I started out by creating a set of enterprise template projects that represent the grouping I want. For example, I created template projects with the names Applications, BusinessServices, Databases, Frameworks, NAntScripts, and UnitTests. Within each of these projects I added the appropriate reference based on the grouping to existing project files. UnitTests contains references to the C# projects responsible for producing our NUnit unit test assemblies. BusinessServices contains references to projects that make up the middle tier of the solution. Framework contains references to framework projects, and so on.<br /><br />NAntScripts is interesting in that it does not contain a reference to another project but instead it contains references to .build scripts files found in other projects. I like this because many times when I am working on the build scripts I need to modify more than one script. Before making the grouping I was jumping from project to project in search of the .build script file. Now I have references to all the script files in one place making it easier to find a particular script file.<br /><br />With this new grouping I am able to more efficiently find the projects and files I need to work on. The grouping has proven itself to be a huge time saver for me especially when working with large single solution files.<br /><br />One additional note on using enterprise template projects to organize your single solution: To prevent scattering .etp files throughout project directories containing the source code I recommend creating a single directory that will store all of the .etp files. References within an enterprise template project do not have to fall under the template project. Instead files referenced within the .etp can be stored anywhere on the hard drive. This means the .etp file does not have to dirty up the project directory where the source code actually resides.<br /><br /><br /></p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">May<span class="year">2004</span></span><span class="day">18</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -235,26 +255,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Apr<span class="year">2004</span></span><span class="day">30</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/04/30/new-geek-toys-finally/" rel="bookmark" title="New Geek Toys Finally">New Geek Toys Finally</a></h2>
-
-        <p>Some people think of me as a gadget geek. Surprisingly though I&#8217;m not. Before Melanie I did not have cable TV for years. Broadcast TV was good enough for me. The last time I brought a computer was the first part of 1999, which was a laptop. And the last time I brought a desktop system was in 1998. And yes, both of these computers are still in use today. <br /><br />The only gadgets I tend to keep up to date are gaming consoles, even though I don&#8217;t game as much as I would like. I have a PS/2, 2 Xbox consoles, Sega Dreamcast, Super Nintendo, and a Gameboy Advance. I gave away my older consoles when I moved to New York. I would have kept them if I had the space.<br /><br />So contrary to popular belief I&#8217;m not much of a gadget geek&#8230;until yesterday. I finally broken down and bought a Dell PowerEdge server for use with upcoming work. And I&#8217;m planning to buy more computers, servers, laptops, etc over the next year. But the really cool geek gadget in my live as of yesterday, and in Melanie&#8217;s life, is <a href='http://www.timewarnercable.com/corporate/products/digitalcable/dvr.html'>DVR</a> (Digital Video Recorder).<br /><br />Melanie was kind enough to visit the Time Warner office yesterday and upgraded our digital cable box with the new DVR box. It&#8217;s like having <a href='http://www.tivo.com/'>TiVo</a> built into the cable box, and I for one am totally hooked. Recording shows has never been easier. And the instance replay and rewinding of live shows is awesome. It comes with a series manager that allows us to record entire show series airing on one or more channels. And we can record two shows at the same time, which is pretty dang awesome.<br /><br />Time Warner DVR will definitely change the way we watch TV. Digital cable gives us tons of channels which on any given day there is nothing to watch. But combined with DVR there will also be an interesting show to watch, from Brady Bunch to South Park to the latest XPlay on TechTV.<br /><br /><br /></p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -357,6 +357,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2013/08/19/i-knew-a-drug-dealer-in-memphis/" title="I Knew A Drug Dealer In Memphis">I Knew A Drug Dealer In Memphis</a></li>
+                
                   <li><a href="/2013/06/20/congrats-to-the-kid/" title="Congratulations to the Kid">Congratulations to the Kid</a></li>
                 
                   <li><a href="/2013/06/18/im-an-idiot/" title="I'm an Idiot">I'm an Idiot</a></li>
@@ -364,8 +366,6 @@
                   <li><a href="/2013/06/05/moving-to-a-ski-town/" title="We're Moving to a Ski Town...Finally">We're Moving to a Ski Town...Finally</a></li>
                 
                   <li><a href="/2013/06/02/kayaking-the-ipswitch-river/" title="Kayaking the Ipswich River">Kayaking the Ipswich River</a></li>
-                
-                  <li><a href="/2013/05/24/our-visit-to-the-eiffel-tower/" title="Our Visit to the Eiffel Tower">Our Visit to the Eiffel Tower</a></li>
                 
             </ul>
 		</div>
