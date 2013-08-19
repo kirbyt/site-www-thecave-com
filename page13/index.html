@@ -1,409 +1,124 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-
-<title>thecave | Ramblings from a crotchety old man</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="robots" content="index, follow" />
-
-<link rel="stylesheet" type="text/css" href="/styles/typebased/style.css" />
-<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="/atom.xml" />
-
-<!--[if IE 6]>
-<script type="text/javascript" src="/styles/typebased/includes/js/menu.js"></script>
-<![endif]-->	
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
-<script type='text/javascript' src='/styles/typebased/includes/js/superfish.js?ver=3.3.2'></script>
-<script type="text/javascript" src="/js/lastfm.js"></script>
-
-<!-- Alt Stylesheet -->
-<link href="/styles/typebased/styles/grey.css" rel="stylesheet" type="text/css" />
-
-<!-- Woo Shortcodes CSS -->
-<link href="/styles/typebased/functions/css/shortcodes.css" rel="stylesheet" type="text/css" />
-
-<!-- Custom Stylesheet -->
-<link href="/styles/typebased/custom.css" rel="stylesheet" type="text/css" />
-<meta id="syntaxhighlighteranchor" name="syntaxhighlighter-version" content="3.1.3" />
-</head>
-
-<body class="home blog unknown">
-
-<div id="container">
-
-	<div id="header">
-		<h1>
-			<a href="/" title="Ramblings from a crotchety old man.">
-			<img src="/images/thecave-logo-2.png" style="margin-top:0px;" alt="thecave" /></a></h1>
-	</div>
-	
-	<div id="menu">
-				<ul id="navigation" class="nav wrap">
-										<li class="page_item current_page_item first"><a href="/"><span>Home</span></a></li>
-										</ul>
-			</div>
-	<div class="wrap background">
-		
-		<div id="content" class="left-col wrap">
-            
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Apr<span class="year">2007</span></span><span class="day">16</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2007/04/16/powerpoint-2007-and-outlook-2003-dont-play-nice-together/" rel="bookmark" title="PowerPoint 2007 and Outlook 2003 Don't Play Nice Together">PowerPoint 2007 and Outlook 2003 Don't Play Nice Together</a></h2>
-
-        <p>Yesterday I had a need to install PowerPoint 2007. Typically I install something like this in a virtual machine to avoid problems with other applications but yesterday I was in a rush so I installed PowerPoint 2007 in my &#8220;production&#8221; VM. The Office 2007 installation gave me the option to keep my Office 2003 applications and install only PowerPoint 2007. &#8220;Groovy!&#8221; I thought. Well, it turns out not to be so groovy. <br /><br />After installing PowerPoint 2007 and doing what I needed to do, I launched Outlook 2003. As Outlook 2003 was loading the Office 2007 installer popped up and attempted to install something. I cancel the installer and Outlook 2003 finally loads. I checked my mail, read a few messages, and clicked Reply to author a response to a new message. Here&#8217;s where the problem started.<br /><br />I have Outlook configured to use Word as the editor for messages. When I tried to reply to a message Outlook locked up. Not only did the application lock up but the entire operating system locked up. I had no choice but to power off.<br /><br />Rebooting didn&#8217;t help either. Outlook 2003 did not properly load, and I had a new problem. Microsoft&#8217;s automatic update was now maxing out the CPU. To regain control over the machine I killed the automatic update process.<br /><br />After dealing with this mess I believe I found a work around. After installing PowerPoint 2007 and before launch Outlook 2003, launch Word 2003. If your experience is similar to mine you will notice Word 2003 loads without the XP theme. After about 30 seconds Word 2003&#8217;s UI switches to the XP theme. It is after this point that Outlook 2003 is once again able to use Word 2003 as its editor.<br /><br />I can&#8217;t guarantee this will work for you but it did work for me. I&#8217;m now able to use Outlook 2003 once again.<br /><br />The only problem that remains is the automatic update for Windows. It still maxes out the CPU and the process must be manually killed. I can handle doing this until I have time to re-build a new &#8220;production&#8221; VM.<br /><br /><span style='color:red'>Update</span>: I found <a href='http://www.thecave.com/archive/2007/05/24/wuauclt_svchost_and_100_cpu_usgage.aspx'>this wordaround</a> to the maxed out CPU problem.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
+<div class="blog_index">
+  
+  
+  
+    <article>
+      Included file 'article.html' not found in _includes directory
+    </article>
+    <div class="clear"></div>
+    <div class="grid_9 prefix_2 alpha omega">
+      <hr />
     </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Apr<span class="year">2007</span></span><span class="day">10</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2007/04/10/supporting-large-files-in-killink-part-ii/" rel="bookmark" title="Supporting Large Files in Killink Part II">Supporting Large Files in Killink Part II</a></h2>
-
-        <p>I&#8217;m coming to the conclusion that having code loop millions of times to copy data from one structure to another is never going to be fast. <br /><br />I&#8217;m using two controls, a spreadsheet control and a report printing control. Unfortunately the two do not support the same data structures so to print a report <a href='http://www.killink.com/'>Killink</a> has to copy the data from the spreadsheet to the report which means looping. And when there are a million + rows with 3 columns the code is looping 3 million + times. Not much can be done to speed it up.<br /><br />What I need is a way to keep the data in a single data structure that is supported by both components. I&#8217;m starting to have a better understanding why certain commercial software tends to not rely on 3rd party components and libraries. However, time is important to me so I must rely on 3rd party components for certain features.<br /><br />For now <a href='http://www.killink.com/'>Killink</a> will have to warn the user before allowing a huge files to be printed. &#8220;You wish to print a file that is very large. It will take some time to prepare the data for printing. Do you wish to continue?&#8221;<br /><br />The report I&#8217;m trying to preview during testing will have more than 15,000 pages. I don&#8217;t see anyone realistically printing this many pages but you never know.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
+    <div class="clear"></div>
+  
+  
+    <article>
+      Included file 'article.html' not found in _includes directory
+    </article>
+    <div class="clear"></div>
+    <div class="grid_9 prefix_2 alpha omega">
+      <hr />
     </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Apr<span class="year">2007</span></span><span class="day">10</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2007/04/10/support-large-files-in-killink/" rel="bookmark" title="Support Large Files in Killink">Support Large Files in Killink</a></h2>
-
-        <p>The first version of <a href='http://www.killink.com/'>Killink</a> is feature complete, but there was one thing that was brothering me, large file support. Opening, printing, and saving a large file in Killink is a rather slow process so I&#8217;ve been working on improving these 3 areas.<br /><br />The first area I worked on was opening a large file, which is what I will talk about today. After profiling the application I found the biggest bottleneck was populating the spreadsheet with display data. This was an easy fix that involved &#8220;freezing&#8221; display while the spreadsheet is loaded with data. This change resulted in a huge performance increase. The test file I used took minutes to load prior to the change and only 2 seconds after the change. But then Killink took another perform hit.<br /><br />A beta tester reported the bug that embedded new line characters were not properly handled. I modified the CSV parser to check each byte of data as it was read from the hard drive. However this is a very inefficient approach. A better approach is to buffer each read. In other words, instead of reading a single byte from the hard drive it is better to read a chuck of bytes. The chuck can be any size such as 65K chucks or 1MB chucks. <br /><br />Buffering the file read process gave Killink the performance boost it needed to open large files. It&#8217;s not as fast as I would like it but it&#8217;s getting closer.<br /><br />The performance improved version of Killink should be ready for <a href='http://www.killink.com/download.aspx'>download</a> in a couple of days.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
+    <div class="clear"></div>
+  
+  
+    <article>
+      Included file 'article.html' not found in _includes directory
+    </article>
+    <div class="clear"></div>
+    <div class="grid_9 prefix_2 alpha omega">
+      <hr />
     </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Apr<span class="year">2007</span></span><span class="day">10</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2007/04/10/csv-editing/" rel="bookmark" title="CSV Editing">CSV Editing</a></h2>
-
-        <p>CSV (also known as comma separated values, comma separated list, or comma separated variable) is a commonly used file format that stores tabular data. Each data element, or value, is separated with a comma or other single character delimiter such as a Tab character. These types of files are also called delimited text files or flat files.<br /><br />Many software application support CSV delimited text files either as an import or export data format. For example, Outlook users can export the address book to a comma separated value file and import the contacts into another application.<br /><br />I have worked with comma and tab delimited text files throughout most of my career. I have written applications that produce delimited text and consume delimited text. And while XML is my preferred file format for sharing data there is no escaping the usefulness of CSV delimited text files.<br /><br />While CSV delimited text files are typically used to import and export data between software applications there are times when individuals must <a href='http://www.killink.com/'>manually create or edit comma and tab delimited text files</a>. And many of these individuals use a spreadsheet program such as Microsoft Excel. However, using a full featured spreadsheet such as Excel to create and edit CSV delimited text files seems overkill to me.<br /><br />For starters, say you only need to <a href='http://www.killink.com/'>manipulate CSV delimited text</a> files and have no need for working with spreadsheets. The licensing cost of Excel is hardly justified. Secondly Excel imposes certain size limitations. Excel is limited to 65,536 rows of data and 256 columns per worksheet. This means you will not be able to open a delimited text file containing 100,000 rows. Faced with high licensing cost, overkill list of features, and size limitations I decided to write Killink. <br /><br /><a href='http://www.killink.com/'>Killink</a> is a spreadsheet-like editor for delimited text files. It supports delimited text files using any single character delimiter including comma and tab, and it supports large delimited text files.<br /><br />Version 1.0 is currently in beta test which is open to the public. Visit the <a href='http://www.killink.com/download.aspx'>Killink download page</a> and give the latest release a test drive. I appreciate any feedback, good or bad, you might have about Killink. Feedback can be posted to the <a href='http://www.whitepeaksoftware.com/forums/'>Killink Support forum</a>.<br /><br /><span style='color:red'>Update</span>: Microsoft has improved the <a href='http://blogs.msdn.com/excel/archive/2005/09/26/474258.aspx'>limitation of Excel</a>. Excel 2007 supports 1 million rows per worksheet.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
+    <div class="clear"></div>
+  
+  
+    <article>
+      Included file 'article.html' not found in _includes directory
+    </article>
+    <div class="clear"></div>
+    <div class="grid_9 prefix_2 alpha omega">
+      <hr />
     </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Apr<span class="year">2007</span></span><span class="day">09</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2007/04/09/wiring-code-to-zeppelin/" rel="bookmark" title="Wiring Code to Zeppelin">Wiring Code to Zeppelin</a></h2>
-
-        <p>Writing code while listening to Led Zeppelin puts me into the zone especially when I&#8217;m making bug fixes.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
+    <div class="clear"></div>
+  
+  
+    <article>
+      Included file 'article.html' not found in _includes directory
+    </article>
+    <div class="clear"></div>
+    <div class="grid_9 prefix_2 alpha omega">
+      <hr />
     </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Apr<span class="year">2007</span></span><span class="day">04</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2007/04/04/vista-reigstry-keys-and-uac/" rel="bookmark" title="VIsta, Reigstry Keys, and UAC">VIsta, Reigstry Keys, and UAC</a></h2>
-
-        <p>I&#8217;m adding a new feature to <a href='http://www.killink.com/'>Killink</a> to allow the user to integrate the application with Windows Explorer. Not a difficult task. Just involves making some registry settings. But one registry setting I need to make must go under HKEY_CLASSES_ROOT, and this hive is under administrative control in Vista. <br /><br />This isn&#8217;t such a big deal if I am using an installer. Installers will typically ask for elevated permissions to perform the install. But I&#8217;m trying to provide a version that does not require an installer. This means my application will have to ask for elevated permissions when the user clicks the option to integrate with Explorer. It also means I need to display the shield icon indicating that elevated permissions are required to perform the task.<br /><br />This really has me bummed out because it means more work (and learning). Now I have to learn up to ask for elevated permissions within the application.<br /><br />Sigh&#8230;</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
+    <div class="clear"></div>
+  
+  
+    <article>
+      Included file 'article.html' not found in _includes directory
+    </article>
+    <div class="clear"></div>
+    <div class="grid_9 prefix_2 alpha omega">
+      <hr />
     </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Apr<span class="year">2007</span></span><span class="day">04</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2007/04/04/new-ceo-at-codegear/" rel="bookmark" title="New CEO at CodeGear">New CEO at CodeGear</a></h2>
-
-        <p><a href='http://dn.codegear.com/article/34365'>Jim Douglas replaces Ben Smith as CEO for CodeGear</a>. This move makes no sense to me, but then again I have never really understood <a href='http://en.wikipedia.org/wiki/Corporate_America'>Corporate America</a>.</p>
-
-<p>In my opinion <a href='http://blogs.codegear.com/bensmith/'>Ben Smith</a> seems like a fine CEO for CodeGear. I have admired his openness and his willingness to connect with the developer community. Heck, he has even <a href='http://www.thecave.com/archive/2007/03/19/developers_do_matter_at_codegear'>responded</a> to blog posting here at <a href='http://www.thecave.com/'>thecave.com</a> as well as to other blog sites. His actions have given me greater confidence in the future of CodeGear. But this latest move by CodeGear has me scratching my head wondering what the future will hold for CodeGear.</p>
-
-<p>Best of luck to Ben. I for one think you did a great job kick starting CodeGear.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
+    <div class="clear"></div>
+  
+  
+    <article>
+      Included file 'article.html' not found in _includes directory
+    </article>
+    <div class="clear"></div>
+    <div class="grid_9 prefix_2 alpha omega">
+      <hr />
     </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Mar<span class="year">2007</span></span><span class="day">30</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2007/03/30/delphi-2007-support-in-finalbuilder-coming-soon/" rel="bookmark" title="Delphi 2007 Support in FinalBuilder Coming Soon">Delphi 2007 Support in FinalBuilder Coming Soon</a></h2>
-
-        <p><a href='http://www.finalbuilder.com/'>FinalBuilder</a> should have <a href='http://www.finalbuilder.com/forums.aspx?forumid=1&amp;amp;postid=3168&amp;amp;view=topic'>support for Delphi 2007</a> next week. Sweeeet.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
+    <div class="clear"></div>
+  
+  
+    <article>
+      Included file 'article.html' not found in _includes directory
+    </article>
+    <div class="clear"></div>
+    <div class="grid_9 prefix_2 alpha omega">
+      <hr />
     </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Mar<span class="year">2007</span></span><span class="day">27</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2007/03/27/things-i-like-about-delphi-2007-7/" rel="bookmark" title="Things I Like About Delphi 2007 #7">Things I Like About Delphi 2007 #7</a></h2>
-
-        <p>The 7th thing I like about Delphi 2007 is the &#8220;non-breaking&#8221; release. In a nutshell this means DCU and packages compiled for BDS 2006 will work with Delphi 2007. I initially had problems with some of the 3rd party packages I manually installed in Delphi 2007 so I didn&#8217;t list this as one of the <a href='http://www.thecave.com/archive/2007/03/25/5_things_i_like_about_delphi_2007.aspx'>5 things I like about Delphi 2007</a>. But after resolving the issues (caused by me) I&#8217;m finding NO problems using 3rd party packages built for BDS 2006 in Delphi 2007.<br /><br /><ul><br /><li><a href='http://www.thecave.com/archive/2007/03/25/5_things_i_like_about_delphi_2007.aspx'>Things I Like About Delphi 2007 #1-5</a></li><br /><li><a href='http://www.thecave.com/archive/2007/03/26/things_i_like_about_delphi_2007_6.aspx'>Things I Like About Delphi 2007 #6</a></li><br /></ul></p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
+    <div class="clear"></div>
+  
+  
+    <article>
+      Included file 'article.html' not found in _includes directory
+    </article>
+    <div class="clear"></div>
+    <div class="grid_9 prefix_2 alpha omega">
+      <hr />
     </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Mar<span class="year">2007</span></span><span class="day">26</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2007/03/26/things-i-like-about-delphi-2007-6/" rel="bookmark" title="Things I Like About Delphi 2007 #6">Things I Like About Delphi 2007 #6</a></h2>
-
-        <p>The number 6 thing I like about <a href='http://www.codegear.com/delphi'>Delphi 2007</a> is the new message output for compiles. It provides detailed information about the compile including the dcc32.exe command line. It&#8217;s nice to see this level of detail especially when odd things start to happen.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
+    <div class="clear"></div>
+  
+  
+    <article>
+      Included file 'article.html' not found in _includes directory
+    </article>
+    <div class="clear"></div>
+    <div class="grid_9 prefix_2 alpha omega">
+      <hr />
     </div>
-    <!--- Post Ends -->
-
-
-
-
-<div class="more_posts">
-	<h2>
-        
-        <a href="/page14" >&laquo; Older Entries</a> &nbsp; 
-        
-        
-            
-                <a href="/page12" >Recent Entries &raquo;</a>
-            
-        
-    </h2>
+    <div class="clear"></div>
+  
 </div>
 
-		</div>
-		
-				<!--- Sidebar Starts -->
-		
-		<div id="sidebar" class="right-col">
-		
-			<div id="search">
-                <form action="http://google.com/search" method="get">
-                    <div>
-                    <input type="hidden" name="q" value="site:thecave.com" />
-					<input type="text" class="search_box" name="q" id="q" results="0" />
-					<input type="image" src="/styles/typebased/images/search.gif" class="submit" name="submit" />
-                    </div>
-                </form>
-			</div>
-						
-			<div id="sidebar_in">
-			
-			<div id="lastfm-1" class="block widget widget_lastfm">
-    <h2><a href="http://last.fm/user/kirbyt" class="lastfm_title_link">Listening To</a></h2>
-    <div class="lastfm">
-    </div>
-</div>
+<div class="clear"></div>
 
 
-			
-        <div id="linkcat-2" class="block widget widget_links"><h2>Blogroll</h2>
-            <ul class='xoxo blogroll'>
-            <li><a href="http://www.rowanturner.net/">Rowan T</a></li>
-            <li><a href="http://photos.thecave.com/">Photos</a></li>
-            <li><a href="http://www.learnipadprogramming.com/">Learning iPad Programming</a></li>
-            <li><a href="http://blog.whitepeaksoftware.com/">White Peak Software</a></li>
-            </ul>
-        </div>
-
-		<div id="linkcat-3" class="block widget widget_links"><h2>Categories</h2>
-    <ul>
-        <li class='category'><a href='/category/backpack/'>backpack (1)</a></li>
-<li class='category'><a href='/category/backpacking/'>backpacking (8)</a></li>
-<li class='category'><a href='/category/blogger/'>blogger (785)</a></li>
-<li class='category'><a href='/category/camping/'>camping (11)</a></li>
-<li class='category'><a href='/category/family/'>family (2)</a></li>
-<li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
-<li class='category'><a href='/category/general/'>general (6)</a></li>
-<li class='category'><a href='/category/hiking/'>hiking (7)</a></li>
-<li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
-<li class='category'><a href='/category/long-trail/'>long-trail (2)</a></li>
-<li class='category'><a href='/category/moving/'>moving (1)</a></li>
-<li class='category'><a href='/category/opinion/'>opinion (1)</a></li>
-<li class='category'><a href='/category/pictures/'>pictures (3)</a></li>
-<li class='category'><a href='/category/random/'>random (2)</a></li>
-<li class='category'><a href='/category/rowan/'>rowan (3)</a></li>
-<li class='category'><a href='/category/salem/'>salem (1)</a></li>
-<li class='category'><a href='/category/skiing/'>skiing (2)</a></li>
-<li class='category'><a href='/category/snowboarding/'>snowboarding (2)</a></li>
-<li class='category'><a href='/category/travel/'>travel (3)</a></li>
-<li class='category'><a href='/category/trip/'>trip (4)</a></li>
-<li class='category'><a href='/category/trips/'>trips (1)</a></li>
-<li class='category'><a href='/category/videos/'>videos (1)</a></li>
-
-    </ul>
-</div>
+<div class="grid_2 alpha">   
     
-        <div id="archives-3" class="block widget widget_archive"><h2>Archives</h2>		
-        <ul>
-        <li><a href="/blog/archives">The Complete Blog Archives</a></li>
-        </ul>
-        </div>			
-			
-						
-			</div>
-				
-		</div>
-		
-		<!--- Sidebar Ends -->		
-	</div>
-	
+      <a class="prev" href="/page14">&larr; Older</a>
+    
+</div>   
+<div class="grid_7" align="center">
+    <a href="/blog/archives">Blog Archives</a>
 </div>
-	
-<div id="footer" class="wrap">
-
-	<div class="left-col">
-		<div class="popular wrap">
-			<h2>Recent Articles</h2>
-			<ul>
-                
-                  <li><a href="/2013/08/19/i-knew-a-drug-dealer-in-memphis/" title="I Knew A Drug Dealer In Memphis">I Knew A Drug Dealer In Memphis</a></li>
-                
-                  <li><a href="/2013/06/20/congrats-to-the-kid/" title="Congratulations to the Kid">Congratulations to the Kid</a></li>
-                
-                  <li><a href="/2013/06/18/im-an-idiot/" title="I'm an Idiot">I'm an Idiot</a></li>
-                
-                  <li><a href="/2013/06/05/moving-to-a-ski-town/" title="We're Moving to a Ski Town...Finally">We're Moving to a Ski Town...Finally</a></li>
-                
-                  <li><a href="/2013/06/02/kayaking-the-ipswitch-river/" title="Kayaking the Ipswich River">Kayaking the Ipswich River</a></li>
-                
-            </ul>
-		</div>
-	</div>
-	
-	<div id="subscribe" class="right-col">
-		<h2>Subscribe to RSS</h2>
-		<p class="rss">If you enjoyed the post, make sure you subscribe to the RSS feed.</p>
-		<p>
-		<a href="/atom.xml">Articles</a><br />
-		</p>
-	</div>
-	
-<div id="copyright" class="wrap">
-
-	<div class="left-col">
-		<p>&copy; 2013</p>
-	</div>
-	
-	<div class="right-col">
-		<p>Design by <a href="http://woothemes.com"><img src="/styles/typebased/styles/grey/logo-footer.jpg" width="87" height="21" alt="woo themes" /></a></p>
-	</div>
-
-</div>
-
-</div>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-167605-3']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
-</body>
-</html>
-<!-- Localized -->
+<div class="grid_2 omega">   
+    
+        
+            <a class="next" href="/page12">Newer &rarr;</a>
+        
+    
+</div> 
+<div class="clear"></div>
