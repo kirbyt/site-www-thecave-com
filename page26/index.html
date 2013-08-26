@@ -54,6 +54,98 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jan<span class="year">2006</span></span><span class="day">16</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2006/01/16/migrating-from-visual-studio-to-borland-developer-studio/" rel="bookmark" title="Migrating from Visual Studio to Borland Developer Studio">Migrating from Visual Studio to Borland Developer Studio</a></h2>
+
+        <p>I spent the day migrating various Visual Studio projects to Borland Developer Studio 2006. For the most part the projects easily moved over but I did have some problems with one project group. <br /><br />This project group contains multiple C# library projects and an ASP.NET C# web application. The BDS converter for the project group did not set the parent reference for some of the .aspx and .ascx files. However, I was able to quickly fix this using a text editor.<br /><br />One Visual Studio feature I do miss since moving to Borland Developer Studio is Copy Web Project. I really like this feature to xcopy an ASP.NET web application to a new directory that contains only the files needed for runtime. The Professional Edition of BDS does not have this feature. However, I was able to quickly clone this feature using FinalBuilder.<br /><br />Right now I&#8217;m very happy with the move to Borland Developer Studio. Using one IDE for all my development work (Delphi, C# and ASP.NET 1.1) is making me a more productive software developer.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jan<span class="year">2006</span></span><span class="day">16</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2006/01/16/delphi-live-templates-for-vb-developers/" rel="bookmark" title="Delphi Live Templates for VB Developers">Delphi Live Templates for VB Developers</a></h2>
+
+        <p><a href='http://www.lemanix.com/nickblog/default.aspx'>Nick Hodges</a> has created a set of <a href='http://www.lemanix.com/nickblog/PermaLink,guid,e407798f-32bd-43cb-96d9-e1f5b04ae316.aspx'>Delphi Live Templates for VB developers</a> who have moved to Delphi. This templates work with the latest version of Borland Developer Studio. The developer to type VBish code and the templates spit out Delphi code. For instance, type &#8220;MsgBox&#8221; and you get &#8220;MessageDlg&#8221;.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jan<span class="year">2006</span></span><span class="day">13</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2006/01/13/smtp-diagnostics-review/" rel="bookmark" title="SMTP Diagnostics Review">SMTP Diagnostics Review</a></h2>
+
+        <p><a href='http://email.about.com/mbiopage.htm'>Heinz Tschabitscher</a> posted <a href='http://email.about.com/od/emailbehindthescenes/gr/smtp_diagnostic.htm'>a review about SMTP Diagnostics</a> on About Email. I have to say I agree with Heinz when he says &#8220;SMTP Diagnostics does not help you understand or fix errors.&#8221; It is true <a href='http://www.smtpdiagnostics.com/'>SMTP Diagnostics will help you understand what is happening assuming you understand the protocol message</a>, but the tool would be more useful if it explained things in plain English, which I believe is Heinz&#8217;s point.</p>
+
+<p>It&#8217;s been on my feature list for a while now to change this. SMTP Diagnostics should provide more help and understanding in plain English. The challenge has been to correctly interpret the error message. For example, I recently was troubleshooting an email problem for a web application. In my tests using SMTP Diagnostics I enabled SMTP Authentication and provided the correct credentials for the mail server. For the From and To I used the same email address. The sender was checked and determined to be okay but the recipient check failed with &#8220;550 no such user here&#8221;, and I knew for a fact that the email address was valid.</p>
+
+<p>To SMTP Diagnostics the problem is clear. The recipient address is invalid, or at least that is what it is told by the mail server. However, the address is very much valid and the problem is actually caused by a check on the outgoing mail server that does not allow a message to be sent from an address to the same address where the domain name in the email address is different than the domain name for the outgoing mail server. In other words, using this particular mail server you cannot send an email to validaddress@domain.com from validaddress@domain.com from a mail server at the domain anotherdomain.com.</p>
+
+<p>The reason for the setting is clear. The setting is used to help prevent spam mail. However, it is impossible for SMTP Diagnostics to properly interpret this error into plain English that accurately describes the problem.</p>
+
+<p>Another test on the same mail server further illustrates why it is hard to correctly interpret the actual error. The same error message, &#8220;550 no such user here&#8221; is received for a valid recipient address when the From address used is not a valid maildrop but of the same domain as the outgoing mail server. In other words, the mail server for anotherdomain.com will report &#8220;550 no such user here&#8221; for the recipient validaddress@domain.com when the From address no-reply@anotherdomain.com is used and no-reply is not a valid maildrop.</p>
+
+<p>These are two very different scenarios where the mail server reports the same error message, and both result from server settings used to prevent sending spam.</p>
+
+<p>Personally I&#8217;m glad mail servers are incorporating settings that help prevent spam mail from being sent. But at the same time it makes it more difficult to determine the actual cause of the problem when sending outgoing emails. Still, I plan to take the feedback from Heinz&#8217;s review and improve on SMTP Diagnostics for the next release.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jan<span class="year">2006</span></span><span class="day">11</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2006/01/11/new-microisv-web-site/" rel="bookmark" title="New MicroISV Web Site">New MicroISV Web Site</a></h2>
+
+        <p>And the good stuff keeps coming from Bob. He just told me about a new <a href='http://mymicroisv.com/'>web site for small software company</a> that is going live today. Be sure to check it out.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Jan<span class="year">2006</span></span><span class="day">11</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -197,86 +289,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Dec<span class="year">2005</span></span><span class="day">25</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2005/12/25/long-time-no-post-3/" rel="bookmark" title="Long Time No Post">Long Time No Post</a></h2>
-
-        <p>December has been a very busy month for me and my wife. We&#8217;ve had a lot going on, which is why I have been slow to post this month. And no, I have not spent the entire month playing on the Xbox 360, although I wish I had.<br /><br />First the exciting news&#8230;We&#8217;re moving out of NYC!<br /><br />Yep, you read it here first. We&#8217;re moving out of NYC at the end of January. Melanie and I both love this city but we also want a life style that is hard to have in the city unless you are filthy rich. And contrary to my family&#8217;s beliefs, living in Manhattan doesn&#8217;t mean you are rich and we are far from rich.<br /><br />So where are we moving to? <a href='http://www.salemweb.com/'>Salem, Massachusetts</a>. I call it our &#8220;From Rainbows to Witches&#8221; move and if you know anything about where we currently live and where we are moving to you will know this is not a Wizard of Oz reference.<br /><br />We found a super nice apartment in Salem. It&#8217;s actually a house but a portion of the first floor is used as office space for the church that is next door. We have a small portion of the first floor, all of the second and third floors, and a small storage room. This house is definitely larger than our small Manhattan apartment. And for a faction of the cost too. I&#8217;ll post pictures of the house in about a month.<br /><br />A number of other things have been keeping me busy in December too. Migrating all my Visual Studio.NET 2003 (.NET 1.1) projects to Borland Developer Studio 2006 (C# Builder) has not gone as smoothly as I had hoped. I&#8217;ll post my experience about this later, but I will say I absolutely love BDS. Live templates are awesome and the IDE is very fast. Aside from load time I find it more responsive than Visual Studio 2005, which is why I&#8217;m moving all my .NET 1.1 projects to BDS.<br /><br />I also spent a lot of time in December reviewing and evaluating specific features of Visual Studio 2005 and .NET 2.0. There are some improvements I like such as <a href='http://www.thecave.com/archive/2005/11/09/my_opinion_of_typed_data_sets_is_changing.aspx'>typed data sets</a> but I&#8217;m finding my customers are slow to move to or have little interest at the moment in .NET 2.0. So while I wish BDS 2006 had support for .NET 2.0 it doesn&#8217;t look like I will be doing any hardcore .NET 2.0 work anytime soon. My focus will continue to be on Win32 and .NET 1.1.<br /><br />Happy holidays to everyone.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Dec<span class="year">2005</span></span><span class="day">15</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2005/12/15/bds-and-quality-central/" rel="bookmark" title="BDS and Quality Central">BDS and Quality Central</a></h2>
-
-        <p>I finally got my copy of <a href='http://www.borland.com/delphi'>Delphi</a> 2006 install and I have started using it day. I love it and it is a huge improvement over Delphi 2005.<br /><br />Unfortunately the IDE crashed on me, but it did something really cool. The exception was caught and I was given the option to send the error report to Borland&#8217;s Quality Central. Not only that, but if you provide your BDN credentials you can track the report! How cool is that!<br /><br />I&#8217;m happy to see this new level of commitment to quality.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Dec<span class="year">2005</span></span><span class="day">04</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2005/12/04/nycs-first-snowfall-for-the-season/" rel="bookmark" title="NYC's First Snowfall for the Season">NYC's First Snowfall for the Season</a></h2>
-
-        <p>Finally a dusting of snow is on the sidewalks of Manhattan. I was happy to finally see the white stuff, which is melting fast.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Dec<span class="year">2005</span></span><span class="day">04</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2005/12/04/my-amped3-for-the-xbox-360-review/" rel="bookmark" title="My Amped3 for the Xbox 360 Review">My Amped3 for the Xbox 360 Review</a></h2>
-
-        <p>At first I did not like Amped3 but I quickly warmed up to it. I owe Amped and Amped2 so I naturally expected to jump into Amped3 with some free riding. But that didn&#8217;t happen. Here&#8217;s my story.<br /><br />My copy of Amped3 arrived a week before my Xbox 360 arrived. Since I couldn&#8217;t play the game I read the booklet. &#8220;Wow! This is going to be the best Amped yet,&#8221; I first thought. Not only can you ride the mountains but you can jump on a sled, ride snowmobiles, and even throw snowballs. <br /><br />As soon as my <a href='http://www.thecave.com/archive/2005/11/30/my_xbox_360_review.aspx'>Xbox 360 was setup and running</a> the first game I planned was Amped3. After you setup your player you are immediately placed in the story. I found the beginning annoying because I wanted to ride the slopes but every couple of minutes I had to watch a silly movie.<br /><br />You start off in a pink bunny suit and you get to do a quick, short run. I guess this part gives new players of Amped3 a chance to learn the controls. You see movies that introduce you to your crew and you meet a wacky woman. After playing Amped3, or should I say watching the wacky movies, I turned off the game and spent time with my wife. I told her I was now thinking this is probably the worse Amped game. A huge difference from a week earlier.<br /><br />I started playing again a few days later only to find I was wrong. Amped3 was in fact fun and is a great game. The story mode became more interesting (and wacky) and as you progress through the story you unlock new mountains areas and new mountains. Once unlocked you can spend as much time as you like free riding, exploring, hitting the park, sledding, snowmobile riding, and even build your own park. I was finally getting into the game.<br /><br />The story mode is wacky but will hold your attention for the 6 or 7 hours needed to complete it (that is, after you get pass the initial start of the story). Once you have finished the story all the mountains are unlocked and you are free to explore and complete the many, many, MANY remaining challenges. Although you can finish the story mode in a day, it will definitely take much more time to finish all aspects of the game.<br /><br />My favorite feature of Amped3 is the leaderboard. When you win a gold medal on a challenge, you are ranked on the leaderboard which is posted on Xbox Live. This allows you to see how you rank with other Amped3 players throughout the world. It&#8217;s a whole new level of competation. I often find that if I don&#8217;t place well on the leaderboard for a particular challenge I will re-play that challenge over and over until I&#8217;m happy with my ranking. And I&#8217;m stoked everytime I place in the top 10 on a leaderboard.<br /><br />Another new feature of Amped3 I really like are the player stats. I love stats and I review them all the time. With Amped3 you can see how much time you have spent playing the game, the number of tricks thrown down, and the number of crashes you&#8217;ve had. You can see other stats as well like how many miles covered on a snowmobile, high scores, and number of leaderboards you are on. And there are many, many stats available too.<br /><br />Game play is similar to previous Amped games but the controls are easier. I imagine the game developers decided to do this to appeal to more causual gamers and/or to attact the SSX crowd. You still get awarded more points for style but jibbing is much, much easier. You don&#8217;t have to press B to start a jib. In Amped3 just land on the object, or snowboard right up to it, and you&#8217;re jibbing. Grabs, tricks and so on are determined by pressing XYBA button combinations (XYB for jibs, A will ollie when jibbing).<br /><br />One feature I dislike is the awesomeness graphics. These annoying graphics are displayed around your character when you reach a level of awesomeness. I find it annonying and luckily the game designers were smart enough to provide a way to disabel the awesomeness graphics. Go to the ride customization menu and select Awesomeness. From the menu you can select the awesomeness graphics to display or you can select &#8220;None&#8221;. I prefer &#8220;None&#8221;.<br /><br />My biggest disappointment with Amped3 is the lack of multiplayer support. I really expected offline, split screen multiplayer support, and I miss the online multiplayer games found in Amped2. It&#8217;s a real shame that Amped3 does not have multiplayer ability given the new features like sledding, snowmobile riding, and having snowball fights. These new features could make for hours of multiplayer fun. <br /><br />By the way, there is a stupid sled game that you can play on some mountains that is multiplayer but it&#8217;s a really stupid game. You and a buddy are on sleds that are attached by a rope. The goal of the game is to get the most bodily damage. I don&#8217;t know why the game designers put this in there. It makes me think maybe, just maybe the plan was to have multiplayer support in Amped3 but got rushed since it is a launch title game. Personally I would have rather waited another 6 months for Amped3 just to have multiplayer support.<br /><br />If you enjoyed Amped and Amped2 then you will really like Amped3. Just get pass the first 30 minutes and you will start enjoying the game. I also recommend playing out the story mode as quickly as possible. Afterwards you can focus on all the other challenges, building your own park - yes, I forgot to mention that. In Amped3 you can design your own park! Way cool - and exploring the mountains. The leaderboards on Xbox Live is a great new feature, but the lack of multiplayer support does suck. Still, it&#8217;s a great game and a must buy for those who loved Amped and Amped2.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -342,7 +354,7 @@
 <li class='category'><a href='/category/long-trail/'>long-trail (2)</a></li>
 <li class='category'><a href='/category/moving/'>moving (1)</a></li>
 <li class='category'><a href='/category/opinion/'>opinion (1)</a></li>
-<li class='category'><a href='/category/pictures/'>pictures (3)</a></li>
+<li class='category'><a href='/category/pictures/'>pictures (7)</a></li>
 <li class='category'><a href='/category/random/'>random (3)</a></li>
 <li class='category'><a href='/category/rowan/'>rowan (3)</a></li>
 <li class='category'><a href='/category/salem/'>salem (1)</a></li>
@@ -379,15 +391,15 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2013/08/26/whale-watching-tour/" title="Whale Watching Tour">Whale Watching Tour</a></li>
+                
+                  <li><a href="/2013/08/26/pawleys-island/" title="Pawleys Island with the Davis Clan">Pawleys Island with the Davis Clan</a></li>
+                
+                  <li><a href="/2013/08/26/camp-murphy/" title="Camp Murphy">Camp Murphy</a></li>
+                
+                  <li><a href="/2013/08/26/andys-wedding/" title="Andy's Wedding">Andy's Wedding</a></li>
+                
                   <li><a href="/2013/08/19/i-knew-a-drug-dealer-in-memphis/" title="I Knew a Drug Dealer in Memphis">I Knew a Drug Dealer in Memphis</a></li>
-                
-                  <li><a href="/2013/06/20/congrats-to-the-kid/" title="Congratulations to the Kid">Congratulations to the Kid</a></li>
-                
-                  <li><a href="/2013/06/18/im-an-idiot/" title="I'm an Idiot">I'm an Idiot</a></li>
-                
-                  <li><a href="/2013/06/05/moving-to-a-ski-town/" title="We're Moving to a Ski Town...Finally">We're Moving to a Ski Town...Finally</a></li>
-                
-                  <li><a href="/2013/06/02/kayaking-the-ipswitch-river/" title="Kayaking the Ipswich River">Kayaking the Ipswich River</a></li>
                 
             </ul>
 		</div>

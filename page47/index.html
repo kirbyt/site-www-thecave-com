@@ -54,6 +54,145 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">29</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2004/06/29/why-software-quality-matters/" rel="bookmark" title="Why Software Quality Matters">Why Software Quality Matters</a></h2>
+
+        <p>&#8220;This is a warning for any creator of computer programs: that software quality matters, that applications must be foolproof, and that-whether embedded in the engine of a car, a robotic arm in a factory or a healing device in a hospital-poorly deployed code can kill.&#8221; <br /> <br />This quote comes from an article my friend Matt pointed to me from Base Line Magazine titled <a href='http://www.baselinemag.com/article2/0,1397,1543564,00.asp'>Why Software Quality Matters</a>. <br /> <br />This article really illustrates the importance of software quality. As more software is used in the daily lives of people the importance of quality software increases. Recently I read in Consumer Reports that a particular model of luxury car is being recalled due to a problem related to a transmission controller chip. The software in this chip can cause the car moving forward to shift into reverse. Imagine the pileup that could be caused by a car suddenly shifting into reverse as it and other drivers speed down the NJ Turnpike during rush hour. <br /> <br />Many programmers like me can and have argued that our business applications pose no threat to human life. But does this mean we can set quality levels for our work to a lower standard? Does it mean we can intentionally deploy poorly written applications? I say absolutely not! Software developers must start accepting the responsibility of writing high quality code and they should be held accountable for any code not adhering to a high standard of quality.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">25</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2004/06/25/explicit-interface-implementation-in-c/" rel="bookmark" title="Explicit Interface Implementation in C#">Explicit Interface Implementation in C#</a></h2>
+
+        <p>I was a grumbling VB developer for a number of years. At the time Delphi was my language of choice but in the part of the country I lived customer work using it was almost non-existent. In the summer of 2000 at PDC, a friend of mine from Microsoft showed me the .NET Framework and C#. I was instantly drawn to C# because it reminded me of Delphi, which is no surprise for those who know their <a href='http://c2.com/cgi/wiki?HistoryOfCsharp'>C#/Delphi history</a>.</p>
+
+<p>At last there was (is) a language and framework from Microsoft that generated the same level of excitement in me that Borland&#8217;s Delphi had done a few years prior. Best of all it was from Microsoft which would mean customer work in the future. And as luck would have it, I started working exclusively with the .NET Framework and C# in the fall of 2001.</p>
+
+<p>For better or worse I have not spent much time with VB.NET, or Visual Basic 6.0 for that manner, since the fall of 2001. I have done a few small project using VB.NET but nothing to brag about. For the most part, both .NET languages are very similar with regard to features but there are some differences. For example, you can write unsafe code in C# but you can&#8217;t do the same in VB.NET. Depending on your point of view this is an advantage or a disadvantage.</p>
+
+<p>Another difference is that in VB.NET you can specify the scope of a member that implements a particular interface as something other than public. I needed to do this in more than one occasion in C# but was resolved to the fact that a member implementation of interface in C# had to be scoped as public.</p>
+
+<pre><code>Public Interface IMyInterface
+    Sub Foo()
+End Interface
+
+Public Class Class1
+Implements IMyInterface
+    Private Sub Foo() Implements IMyInterface.Foo
+    End Sub
+End Class</code></pre>
+
+<p>So if you can do this in VB.NET why can&#8217;t you do the same, or something similar in C#? This question lead me to the discovery (thank you <a href='http://www.google.com/search?q=explicit+interface+implement&amp;amp;sourceid=firefox&amp;amp;start=0&amp;amp;start=0&amp;amp;ie=utf-8&amp;amp;oe=utf-8'>google</a>) of explicit interface implementation in C#. By using an explicit interface implementation you can scope the member implementation as private. It&#8217;s a little messy because a member explicitly implemented cannot be access through the class instance. Instead it must be accessed through an instance of the interface.</p>
+
+<pre><code>interface IMyInterface
+{
+    void Foo();
+}
+
+abstract class MyAbstractClass : IMyInterface
+{
+    // Explicit interface implementation
+    void IMyInterface.Foo()
+    {
+        Console.WriteLine( &quot;bar&quot; );
+    }
+}
+
+class MyConcreteClass : MyAbstractClass
+{
+    public void FooBar()
+    {
+        // Must use an instance of the interface to access
+        // the explicit implementation.
+        ((IMyInterface)this).Foo();
+    }
+}
+
+public class MyApp
+{
+    public static void Main( string[] args )
+    {
+        MyConcreteClass c = new MyConcreteClass();
+        // Will not compile because Foo() is private.
+        // c.Foo();
+
+        c.FooBar();
+
+        // This works because we are all in the same module.
+        ((IMyInterface)c).Foo();
+    }
+}</code></pre>
+
+<p>While an explicit interface implementation does give the C# developer the ability to scope a member implementation as private, it is still not as powerful as VB.NET&#8217;s ability to scope a member implementation as anything other than public. Score 1 point for VB.NET.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">24</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2004/06/24/it-came-from-inside/" rel="bookmark" title="It Came from Inside">It Came from Inside</a></h2>
+
+        <p>Over the last month a lot of my time has been spent focusing on security as I design a security framework and strategy for a customer. One comment I hear often is &#8220;we don&#8217;t need to worry about internal security threats&#8221; or &#8220;internal security threats are minor and represent a low priority&#8221;. I couldn&#8217;t disagree more and have been repeatedly emphasizing the importance of protecting ones assets from internal attacks, which for some companies is a greater threat. <br /> <br />Yesterday&#8217;s <a href='http://www.eweek.com/article2/0,1759,1616668,00.asp?kc=ewnws062404dtx1k0000599'>report</a> of an AOL software engineer being arrested for stealing 92 million customer screen names proves my point. Some people will do crazy things when offered enough money. And companies that believe &#8220;it won&#8217;t happen here&#8221; or &#8220;our employees would never do such a thing&#8221; are fooling themselves. Why risk it? Invest in reducing security threats, both external and internal.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">24</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2004/06/24/another-microsoft-patent/" rel="bookmark" title="Another Microsoft Patent">Another Microsoft Patent</a></h2>
+
+        <p>I thought Microsoft&#8217;s <a href='?xml/2004_06_01_archive.xml#108695677194415311'>patent</a> on //TODO was silly but Microsoft&#8217;s <a href='http://zdnet.com.com/2100-1104-5244766.html'>patent</a> for using human skin as a power conduit tops it. Actually this patent sounds interesting. I can see how wearable devices can benefit from a personal area network.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">19</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -173,86 +312,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">16</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/06/16/new-airport-express-is-there-anything-it-cant-do/" rel="bookmark" title="New AirPort Express: Is there anything it can't do?">New AirPort Express: Is there anything it can't do?</a></h2>
-
-        <p>Apple&#8217;s new <a href='http://www.apple.com/airportexpress/'>AirPort Express</a> sounds simply amazing. It can act as a wireless bridge, provides wireless access to USB printers, and play music broadcasted wirelessly from your computer. The device fits in the palm of your hand and it has a built-in AC adaptor meaning no cables or power supply. This little puppy will be great to take on the road too. You can connect it to the hotel&#8217;s ethernet and access the Internet wirelessly. Or use it at the home of friends and family who have broadband Internet access but no wireless access point. I might have to buy one once Apple starts shipping it.<br /><br /><br /></p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">12</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/06/12/msn-alerts-for-xbox-live/" rel="bookmark" title="MSN Alerts for Xbox Live">MSN Alerts for Xbox Live</a></h2>
-
-        <p>Microsoft recently <a href='http://www.xbox.com/en-US/live/about/features-messenger.htm?level1=enushome&amp;level2=ad1&amp;level3=messengeralerts'>announced</a> MSN Alerts for Xbox Live users. It works by linking your Messager account with your Xbox Live gametag. You can receive alerts for game invites, friend requests, know when friends sign in, and more. Sounds cool but unfortunately I use <a href='http://www.trillian.cc/'>Trillian</a> as my IM client.<br /><br />Trillian is awesome in that it is a single IM chat interface for different IM services such as AIM, Messager, ICQ, and Yahoo. With Trillian I no longer need to run different IM programs. Instead I run one program and it communicates with the different services. The only beef I have with Trillian is the lack of support for <a href='http://alerts.msn.com/'>MSN Alerts</a>, but I&#8217;m sure that has more to do with Microsoft then with the Trillian folks. And as much as I like the concept of MSN Alerts I&#8217;m not going to give up Trillian.<br /><br /><br /></p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">11</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/06/11/yet-another-silly-patent/" rel="bookmark" title="Yet Another Silly Patent">Yet Another Silly Patent</a></h2>
-
-        <p>Microsoft has created a <a href='http://news.zdnet.co.uk/business/legal/0,39020651,39157145,00.htm'> patent</a> on <i>// TODO</i>. Fortunately it only applies to software development environments so individuals can still produce their own TO-DO list for things such as grocery shopping.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">11</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/06/11/map-of-springfield/" rel="bookmark" title="Map of Springfield">Map of Springfield</a></h2>
-
-        <p>This is <a href='http://www.csupomona.edu/~jelerma/springfield/spring_map.png'>too funny</a>. I would have never thought you could find such a detailed <a href='http://www.csupomona.edu/~jelerma/springfield/'>guide</a> to Springfield USA.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -318,7 +377,7 @@
 <li class='category'><a href='/category/long-trail/'>long-trail (2)</a></li>
 <li class='category'><a href='/category/moving/'>moving (1)</a></li>
 <li class='category'><a href='/category/opinion/'>opinion (1)</a></li>
-<li class='category'><a href='/category/pictures/'>pictures (3)</a></li>
+<li class='category'><a href='/category/pictures/'>pictures (7)</a></li>
 <li class='category'><a href='/category/random/'>random (3)</a></li>
 <li class='category'><a href='/category/rowan/'>rowan (3)</a></li>
 <li class='category'><a href='/category/salem/'>salem (1)</a></li>
@@ -355,15 +414,15 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2013/08/26/whale-watching-tour/" title="Whale Watching Tour">Whale Watching Tour</a></li>
+                
+                  <li><a href="/2013/08/26/pawleys-island/" title="Pawleys Island with the Davis Clan">Pawleys Island with the Davis Clan</a></li>
+                
+                  <li><a href="/2013/08/26/camp-murphy/" title="Camp Murphy">Camp Murphy</a></li>
+                
+                  <li><a href="/2013/08/26/andys-wedding/" title="Andy's Wedding">Andy's Wedding</a></li>
+                
                   <li><a href="/2013/08/19/i-knew-a-drug-dealer-in-memphis/" title="I Knew a Drug Dealer in Memphis">I Knew a Drug Dealer in Memphis</a></li>
-                
-                  <li><a href="/2013/06/20/congrats-to-the-kid/" title="Congratulations to the Kid">Congratulations to the Kid</a></li>
-                
-                  <li><a href="/2013/06/18/im-an-idiot/" title="I'm an Idiot">I'm an Idiot</a></li>
-                
-                  <li><a href="/2013/06/05/moving-to-a-ski-town/" title="We're Moving to a Ski Town...Finally">We're Moving to a Ski Town...Finally</a></li>
-                
-                  <li><a href="/2013/06/02/kayaking-the-ipswitch-river/" title="Kayaking the Ipswich River">Kayaking the Ipswich River</a></li>
                 
             </ul>
 		</div>

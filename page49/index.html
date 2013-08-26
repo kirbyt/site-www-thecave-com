@@ -54,6 +54,188 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">01</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2004/06/01/rail-runtime-assembly-instrumentation-library-project/" rel="bookmark" title="RAIL - Runtime Assembly Instrumentation Library Project">RAIL - Runtime Assembly Instrumentation Library Project</a></h2>
+
+        <p>Just came across this dandy project called <a href='http://rail.dei.uc.pt/'>RAIL</a> - Runtime Assembly Instrumentation Library. RAIL provides &#8220;an API that allows CLR assemblies to be manipulated and instrumented before they are loaded or executed.&#8221; Imagine if you will loading an assembly, inspecting it, altering the IL, and executing the mutated assembly or even saving it. This has some interesting applications for aspect-oriented programming.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">01</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2004/06/01/how-to-unit-testing-implementations-of-an-interface/" rel="bookmark" title="How to Unit Testing Implementations of an Interface">How to Unit Testing Implementations of an Interface</a></h2>
+
+        <p>I have become a firm supporter of writing unit tests for most if not all code I write, and <a href='http://www.nunit.org'>NUnit</a> is an ideal framework for implementing unit tests. But one problem I have had repeatedly is finding a good way to test specific implementations of an interface. My approach has always been to write a new test fixture for each implementor of an interface. But the problem with this approach is that I end up duplicating unit tests for each implementor, and if I need to write a new test I have to copy it to multiple fixtures.</p>
+
+<p>As a programmer I consider myself lazy. I don&#8217;t like having to write the same code over and over. Instead I would rather write it once and forget about it. Having to write multiple test fixtures for each implementor of an interface doesn&#8217;t suit my lazy style. I need a better approach and a quick google.com search pointed me in the right direction.</p>
+
+<p>I came across a blog from <a href='http://blog.dotnetwiki.org/'>Jonathan de Halleux</a> that talks about <a href='http://blog.dotnetwiki.org/archive/2004/05/13/206.aspx'>composite unit testing using MbUnit</a>. Jonathan presents an approach that splits the testing effort by class functionality rather than writing a test fixture for each class. This is exactly what I am looking for but as much as I like this approach and MbUnit I still have one issue. I want an approach that works with NUnit and does not require another framework such as MbUnit.</p>
+
+<p>The development environment I have created for my customer is solid and I do not want to introduce new problems by introducing a new framework, in the case MbUnit. In other words, I do not want to change what has been currently written including the NAnt build scripts. So I did the next best thing. I took Jonathan&#8217;s design and wrote a helper class to provide composite unit testing and include this class in my unit test projects.</p>
+
+<p>Introducing CompositeTestFixture, a class that enables composite unit testing within NUnit test fixtures. Because this is a class and not a new framework there are limitations but the limitations do not affect the unit tests I am writing today. I will discuss the limitation later in this article.</p>
+
+<p>To use CompositeTestFixture, begin by writing your test fixtures as you normally would. In the spirit of Jonathan&#8217;s blog I will show an example that provides a test for implementors of the IEnumerable interface. In this example I will show how to test the ArrayList and Hashtable classes which both implement this interface. The only requirement in this test is that the IEnumerable instance is not null.</p>
+
+<pre><code>using System;
+using System.Collections;
+using System.Diagnostics;
+
+using NUnit.Framework;
+
+namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
+{
+    [TestFixture]
+    public class EnumerableTest
+    {
+        [Test]
+        public void GetEnumeratorNotNull()
+        {
+            // Write unit test here.
+        }
+    }
+}</code></pre>
+
+<p>Now we need to write the unit test for the GetEnumeratorNotNull test. However we must first tell CompositeTestFixture about the factories needed to create an instance of class that implements the interface to test. I call the instance of the class the implementor.</p>
+
+<pre><code>[TestFixture]
+[ProviderFactory(FactoryType=typeof(ArrayListFactory),
+ReturnType=typeof(IEnumerable))]
+[ProviderFactory(FactoryType=typeof(HashtableFactory),
+ReturnType=typeof(IEnumerable))]
+public class EnumerableTest
+{
+    ...
+}</code></pre>
+
+<p>Next we need to write the code that will test the implementor. The NUnit framework is going to call the GetEnumeratorNotNull method that is decorated with the [Test] attribute. This is where we call into the CompositeTestFixture helper class. A static method RunTest is provided for those who do not want to create an instance of the CompositeTestFixture class.</p>
+
+<pre><code>[Test]
+public void GetEnumeratorNotNull()
+{
+    CompositeTestFixture.RunTest( this );
+}</code></pre>
+
+<p>Now we write the method that will perform the actual test. This method will have the same name as the test method. The only difference is that the method signature takes a single parameter of the interface type we are testing. Note that this method is not decorated with the [Test] attribute since we do not want NUnit calling this method.</p>
+
+<pre><code>public void GetEnumeratorNotNull( IEnumerable en )
+{
+    Debug.WriteLine( &quot;Testing &quot; + en.GetType().ToString() );
+    Assert.IsNotNull( en.GetEnumerator(), &quot;Must not be null.&quot; );
+}</code></pre>
+
+<p>That&#8217;s it. CompositeTestFixture will do all the heavy work of calling the appropriate unit test method to test a specific implementor.</p>
+
+<h2 id='how_does_this_work'>How Does This Work</h2>
+
+<p>CompositeTestFixture will reflect on the class instances provided in the RunTest method call and retrieve the collection of ProviderFactory attributes decorating the test fixture. Each factory declared by the FactoryType property will be called to create an instance of a class that implements the type defined in the ReturnType property. In other words the factory will be used to create an instance of an implementor.</p>
+
+<p>A factory can declare one or more methods that return an instance object. I call these methods creators since each is responsible for creating a instance of a class. Having multiple creators gives the unit test writer the option to provide implementors that are initialized differently. For example one creator might return an empty ArrayList while a second creator might return an ArrayList filled with random numbers.</p>
+
+<p>CompositeTestFixture determines creators by inspecting the factory class type and discovering each method with a return type that implements the type defined in the ProviderFactory.ReturnType property that decorates the test fixture. Creators must be defined with a public scope and no parameters on the method signature.</p>
+
+<pre><code>using System;
+using System.Collections;
+
+namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
+{
+    public class ArrayListFactory
+    {
+        public ArrayList CreateEmpty()
+        {
+            return new ArrayList();
+        }
+
+        public ArrayList RandomFilled()
+        {
+            ArrayList list = new ArrayList();
+            Random rnd = new Random();
+            for(int i=0;i&amp;lt;15;++i)
+            {
+                list.Add(rnd.Next());
+            }
+            return list;
+        }
+    }
+}</code></pre>
+
+<p>After CompositeTestFixture calls a factory creator it calls the unit test method matching the name of the [Test] method that invoked CompositeTestFixture.RunTest( this ). In our example this is the GetEnumeratorNotNull( IEnumerable en ) method. This is repeated for each creator declared on a factory and for each factory declared on the fixture.</p>
+
+<h2 id='limitations'>Limitations</h2>
+
+<p>Although this approach works for many cases it is not perfect. The SetUp and TearDown methods of the fixture will only be called when NUnit calls the wrapper test method. CompositeTestFixture does not call the SetUp and TearDown methods before and after calling the internal test method, although it would not be hard to add that feature.</p>
+
+<h2 id='conclusion'>Conclusion</h2>
+
+<p>With the CompositeTestFixture helper class, I now have an easy way to provide composite unit testing within introducing a new framework into my development environment. Hopefully you will find this code as useful as I have. Click <a href='/downloads/CompositeTestFixture.zip'>here</a> to download the complete source code.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">May<span class="year">2004</span></span><span class="day">28</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2004/05/28/a-comment-or-two-on-visual-studio-team-system/" rel="bookmark" title="A comment or two on Visual Studio Team System">A comment or two on Visual Studio Team System</a></h2>
+
+        <p>This week at TechEd, Microsoft announced <a href='http://msdn.microsoft.com/vstudio/teamsystem/default.aspx'>Visual Studio Team System</a>. It includes a number of features to get development team more into the life cycle such as unit testing, profiling, and code coverage. Sounds exciting but a couple of things I have read bother me. <br /> <br />Class diagraming will not use UML. Instead Microsoft has created a new notation which Microsoft says is needed to support two-way application design. The other point that I read that worries me is that Visual Studio Team System integrates tightly with SQL Server 2005. My assumption here is that as a team tool the database used most likely has to be a centralized database accessible by all team members. However, this is just an assumption at the moment but as a developer who uses a laptop and one who does development disconnected from a network from time to time such as when flying, I wonder how this will change the development experience or worse how it will limit the development experience. Guess I will have to wait until I get my hands on the bits to see what will happen.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">May<span class="year">2004</span></span><span class="day">27</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2004/05/27/hipster-bingo/" rel="bookmark" title="hipster bingo">hipster bingo</a></h2>
+
+        <p>Here&#8217;s a fun game to play while walking the streets of New York, <a href='http://www.catbirdseat.org/catbirdseat/bingo.html'>hipster bingo</a>.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">May<span class="year">2004</span></span><span class="day">19</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -169,92 +351,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">May<span class="year">2004</span></span><span class="day">07</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/05/07/pinvoke-net-add-in-for-vs-net/" rel="bookmark" title="PINVOKE.NET Add-in for VS.NET">PINVOKE.NET Add-in for VS.NET</a></h2>
-
-        <p>The PInvoke.net <a href='http://www.gotdotnet.com/Community/UserSamples/Details.aspx?SampleGuid=75122f62-5459-4364-b9ba-7b5e6a4754fe'>Add-in</a> for Visual Studio.NET will insert PInvoke signatures into your code. What&#8217;s cool about this is that the add-in retrieves the PInvoke information from the <a href='http://www.pinvoke.net/'>PINVOKE.NET</a> wiki. And you can contribute signatures back to the wiki from the add-in. What a neat idea.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">May<span class="year">2004</span></span><span class="day">07</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/05/07/being-a-software-developer/" rel="bookmark" title="Being a Software Developer">Being a Software Developer</a></h2>
-
-        <p><a href='http://www.joelonsoftware.com/'>Joel Spolsky</a> has posted his <a href='http://www.joelonsoftware.com/articles/CoderToDeveloper.html'>foreword</a> to Mike Gunderloy&#8217;s new book, <a href='http://www.amazon.com/exec/obidos/tg/detail/-/078214327X/ref=ase_whitepeaksoft-20/002-0173335-5722445?v=glance&amp;amp;s=books'>Coder to Developer</a>. The foreword puts in very simple terms what it takes to be a software developer, which is more than knowing how to writing code. As Joel puts it, a software developer can &#8220;take a concept, build a team, set up state of the art development processes, design a software product, the right software product, and produce it.&#8221; I&#8217;ll add that a software developer should understand various development methodologies and how to apply them, and the importances of QA and testing even though these are assumed to be part of the state of the art development process.</p>
-
-<p>The interesting thing here is that a software developer still does not know it all, and a good software developer knows this. A software developer will take lessons learned from past experiences, and will enhance and improve on those experiences for future project. The good software developer is always learning. Much of the learning comes from hands on experience, which I personally believe is very important, while lucky ones will also learn from more seasoned software developers who are willing to coach and mentor.</p>
-
-<p>I find interesting though, that in my field of work there is the large number of individuals who think they know software development but don&#8217;t know the first thing about being a software developer. These individuals think that because they know how to write code they know how to develop software. I know how to drive a car but I don&#8217;t know how to build a car. Nor do I think I know how to build a car. But many in the software development world think because they know how to write code they know how to build software. The truth is these individual do not get software development, which can typically results in a poor quality product, a product the does not meet the needs of the users, or even worse a product that never sees the light of day.</p>
-
-<p>Being a software developer is more than writing code. Being a software developer is knowing how to bring a concept to life within the computer through software and code, applying the right techniques and processes, ensuring the maintainability for increased life expectancy of the product, selecting the right set of tools for the job, building a team right for the project, and ultimately producing a quality product that meets or exceeds user expectations.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">May<span class="year">2004</span></span><span class="day">06</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/05/06/msn-careers-avoiding-burnout-career-advice-article/" rel="bookmark" title="MSN Careers - Avoiding Burnout - Career Advice Article">MSN Careers - Avoiding Burnout - Career Advice Article</a></h2>
-
-        <p><a href='http://msn.careerbuilder.com/Custom/MSN/CareerAdvice/WPI_AvoidingBurnout.htm?cbRecursionCnt=1&amp;amp;cbsid=afe52b39db6e49d6a39e0b382d483563-137180763-wu-2'>MSN Careers - Avoiding Burnout - Career Advice Article</a>: &#8220;Avoiding Burnout&#8221;</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">May<span class="year">2004</span></span><span class="day">01</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/05/01/pac-manhattan/" rel="bookmark" title="Pac Manhattan">Pac Manhattan</a></h2>
-
-        <p>This sounds like <a href='http://www.pacmanhattan.com/'>fun</a>. I&#8217;ll have to check it out this Saturday.<br /><br /><br /></p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -320,7 +416,7 @@
 <li class='category'><a href='/category/long-trail/'>long-trail (2)</a></li>
 <li class='category'><a href='/category/moving/'>moving (1)</a></li>
 <li class='category'><a href='/category/opinion/'>opinion (1)</a></li>
-<li class='category'><a href='/category/pictures/'>pictures (3)</a></li>
+<li class='category'><a href='/category/pictures/'>pictures (7)</a></li>
 <li class='category'><a href='/category/random/'>random (3)</a></li>
 <li class='category'><a href='/category/rowan/'>rowan (3)</a></li>
 <li class='category'><a href='/category/salem/'>salem (1)</a></li>
@@ -357,15 +453,15 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2013/08/26/whale-watching-tour/" title="Whale Watching Tour">Whale Watching Tour</a></li>
+                
+                  <li><a href="/2013/08/26/pawleys-island/" title="Pawleys Island with the Davis Clan">Pawleys Island with the Davis Clan</a></li>
+                
+                  <li><a href="/2013/08/26/camp-murphy/" title="Camp Murphy">Camp Murphy</a></li>
+                
+                  <li><a href="/2013/08/26/andys-wedding/" title="Andy's Wedding">Andy's Wedding</a></li>
+                
                   <li><a href="/2013/08/19/i-knew-a-drug-dealer-in-memphis/" title="I Knew a Drug Dealer in Memphis">I Knew a Drug Dealer in Memphis</a></li>
-                
-                  <li><a href="/2013/06/20/congrats-to-the-kid/" title="Congratulations to the Kid">Congratulations to the Kid</a></li>
-                
-                  <li><a href="/2013/06/18/im-an-idiot/" title="I'm an Idiot">I'm an Idiot</a></li>
-                
-                  <li><a href="/2013/06/05/moving-to-a-ski-town/" title="We're Moving to a Ski Town...Finally">We're Moving to a Ski Town...Finally</a></li>
-                
-                  <li><a href="/2013/06/02/kayaking-the-ipswitch-river/" title="Kayaking the Ipswich River">Kayaking the Ipswich River</a></li>
                 
             </ul>
 		</div>
