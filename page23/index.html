@@ -59,6 +59,32 @@
         </div>
 
         <div class="post-content right-col">
+        <h2><a href="/2006/05/04/one-more-rant-about-sql-server-2005/" rel="bookmark" title="One More Rant about SQL Server 2005">One More Rant about SQL Server 2005</a></h2>
+
+        <p>Here&#8217;s another rant I have about SQL Server 2005.</p>
+
+<p>Visual Studio supports a database project type. I have used this project type for numerous projects. It&#8217;s a great way to manage the script code for tables, stored procedures, views, and so on.</p>
+
+<p>I first discovered the limited scripting abilities of SQL Server 2005 earlier today but I noticed the SQL Server 2005 installation process installed a copy of Visual Studio 2005 on my machine. &#8220;Nice,&#8221; I thought. &#8221;I&#8217;ll use it to open my database project and update my scripts from Visual Studio.&#8221; But luck was not on my side today.</p>
+
+<p>Even though the installation process for SQL Server 2005 installs Visual Studio, it does not install support for the database project type. Guess I need to run the full Visual Studio installer, which seems silly to me. After all Visual Studio supports a database project type AND a copy of Visual Studio was installed by SQL Server 2005, which is after all a database. Seems to me it would be appropriate for the SQL Server 2005 installation to install the database project type if it is going to also install Visual Studio. It&#8217;s definitely more appropriate than some of the things past versions of IE would install. [Ever wonder why a web browser needs to install MDAC (Microsoft Data Access Components)?]</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">May<span class="year">2006</span></span><span class="day">04</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
         <h2><a href="/2006/05/04/limited-scripting-in-sql-server-2005/" rel="bookmark" title="Limited Scripting in SQL Server 2005">Limited Scripting in SQL Server 2005</a></h2>
 
         <p>SQL Server 2005 has been out for some time now but I have only recently made the move to it. I&#8217;ve been in the SQL Server 2000 world because of customers but my customers are finally making the move 2005.<br /><br />Overall I really like SQL Server 2005 and the new Management Studio is nice. However, I&#8217;m really annoyed that the SQL Server 2005 team decided to do away with the database scripting feature found in SQL Server 2000. <br /><br />In SQL Server 2000, you can script out each database object into individual files. I do this so I can commit the DDL source for each into CVS, or to do revision comparisons, or to do a number of other tasks. But you cannot easily script out each object in a database with SQL Server 2005. Apparently this is a known limitation as seen <a href='http://lab.msdn.microsoft.com/productfeedback/viewfeedback.aspx?feedbackid=9eb6c773-2dbb-4a27-b9d8-225d6ed4385a'>here</a>.<br /><br />One option I found is to <a href='http://www.sqlteam.com/item.asp?ItemID=23185'>write a programming using .NET 2.0 and the SQL Management Object (SMO)</a>. Unfortunately time is not a luxury I have and I have an immediate need to script out the each object in a database into individual files. So I started down the path of script out each object individual. <br /><br />Guess what? It has its own set of problems. First starters, there is not an option to generate a script that contains both the DROP and CREATE statements. Instead what I do is generate the CREATE statement to a query window. Next I generate the DROP statement to the clipboard followed by pasting the clipboard content to the query window. Needless to say, this is a painful process, and I have hundreds of database objects to script out.<br /><br />I can&#8217;t believe the model used for generating scripts in previous versions of SQL Server did not make it into SQL Server 2005. I would have expected the same functionality at a minimum, and possibly an improvement on past versions. But I would never have guess it was removed completely.</p>
@@ -233,26 +259,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Apr<span class="year">2006</span></span><span class="day">05</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2006/04/05/xml-schema-object-model-som-parser-for-delphi/" rel="bookmark" title="XML Schema Object Model (SOM) Parser for Delphi">XML Schema Object Model (SOM) Parser for Delphi</a></h2>
-
-        <p>I&#8217;m working on a new project and have a need to parse XML Schemas found inside WSDL documents. After a few google searches I discovered the concept of a Schema Object Model (SOM). The <a href='http://www.xml.com/pub/a/2002/12/04/som.html'>.NET Framework has a SOM parser</a> as does <a href='http://msdn.microsoft.com/library/default.asp?url=/library/en-us/xmlsdk/html/85b447ee-70d0-4456-9ad7-70b4e2d1f3fa.asp'>MSXML</a>. There&#8217;s also a <a href='https://xsom.dev.java.net/'>SOM parser for Java</a> as well. Because I&#8217;m writing a Win32 application, I started learning <a href='http://www.informit.com/articles/article.asp?p=31360&amp;seqNum=1'>the ins and outs of MSXML's SOM parser</a>. As a learned more I did additional google searches and discovered Delphi has its own SOM parser.<br /><br />Interfaces such as <i>IXmlSchemaDoc</i> and functions such as <i>LoadXMLSchema</i> and <i>LoadXMLSchemaStr</i> are undocumented but the source can be found in <i>source\win32\xml\XMLSchema.pas</i>. There is also <a href='http://codecentral.borland.com/Item.aspx?id=21870'>sample code for parsing an XML Schema</a> available BDN. With the aid of the sample code I was able to get my sample project working. <br /><br />And in case you are wondering, the VCL library has a component called <i>TXMLSchemaDoc</i> that wraps Delphi&#8217;s SOM parser into a handy component. You will not find it in the tool pallet though. For what it is worth, I found working with the interface (<i>IXmlSchemaDoc</i>) easy and I have not tried the <i>TXMLSchemaDoc</i> component.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -318,16 +324,16 @@
 <li class='category'><a href='/category/long-trail/'>long-trail (2)</a></li>
 <li class='category'><a href='/category/moving/'>moving (1)</a></li>
 <li class='category'><a href='/category/opinion/'>opinion (1)</a></li>
-<li class='category'><a href='/category/pictures/'>pictures (7)</a></li>
+<li class='category'><a href='/category/pictures/'>pictures (8)</a></li>
 <li class='category'><a href='/category/random/'>random (3)</a></li>
-<li class='category'><a href='/category/rowan/'>rowan (3)</a></li>
+<li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
 <li class='category'><a href='/category/salem/'>salem (1)</a></li>
 <li class='category'><a href='/category/skiing/'>skiing (2)</a></li>
 <li class='category'><a href='/category/snowboarding/'>snowboarding (2)</a></li>
 <li class='category'><a href='/category/travel/'>travel (3)</a></li>
 <li class='category'><a href='/category/trip/'>trip (4)</a></li>
 <li class='category'><a href='/category/trips/'>trips (1)</a></li>
-<li class='category'><a href='/category/videos/'>videos (1)</a></li>
+<li class='category'><a href='/category/videos/'>videos (2)</a></li>
 
     </ul>
 </div>
@@ -355,6 +361,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2013/11/11/rowan-on-the-balance-board/" title="Rowan on the Balance Board">Rowan on the Balance Board</a></li>
+                
                   <li><a href="/2013/08/26/whale-watching-tour/" title="Whale Watching Tour">Whale Watching Tour</a></li>
                 
                   <li><a href="/2013/08/26/pawleys-island/" title="Pawleys Island with the Davis Clan">Pawleys Island with the Davis Clan</a></li>
@@ -362,8 +370,6 @@
                   <li><a href="/2013/08/26/camp-murphy/" title="Camp Murphy">Camp Murphy</a></li>
                 
                   <li><a href="/2013/08/26/andys-wedding/" title="Andy's Wedding">Andy's Wedding</a></li>
-                
-                  <li><a href="/2013/08/19/i-knew-a-drug-dealer-in-memphis/" title="I Knew a Drug Dealer in Memphis">I Knew a Drug Dealer in Memphis</a></li>
                 
             </ul>
 		</div>
