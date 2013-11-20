@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Ramblings from a crotchety old man]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2013-11-11T11:35:30-05:00</updated>
+  <updated>2013-11-20T14:48:23-05:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,29 @@
   </author>
   <rights>Copyright (c) 2003-2013 White Peak Software Inc</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[Send Camera Video to Your TV]]></title>
+    <link href="http://www.thecave.com/2013/11/20/send-your-camera-video-to-your-tv/"/>
+    <published>2013-11-20T00:00:00-05:00</published>
+    <updated>2013-11-20T00:00:00-05:00</updated>
+    <id>http://www.thecave.com/2013/11/20/send-your-camera-video-to-your-tv</id>
+    <content type="html"><![CDATA[Believe it or not, I finally released a new app for iOS. It's my first new app for [White Peak Software][wps] in more than 2 years. Somewhere along the way over the last two years I lost my way, but I'm back. 
+
+So what's this new app? It's [Big Screen][bigscreen].
+
+Big Screen lets you view the video from your iPhone or iPad's camera on your TV. It requires an AppleTV, or other AirPlay receiver. Sure, you can use the built-in iOS 7 camera app to do the same, but you will see the app's chrome on the TV. With Big Screen, there is no chrome or any other evidence that the app is being used. This makes Big Screen ideal for presentation, conferences, and other events where large screen TVs are used to let viewers in the room see the action on the stage.
+
+I got the idea to write an [app to display the camera's video on a TV][why] while attending an event at Rowan's elementary school. It just goes to show you never know when a new app idea will pop up.
+
+Big Screen is a free app available now in the iOS App Store. [Grab a copy][download], and let me know what you think.
+
+[bigscreen]: http://www.whitepeaksoftware.com/big-screen
+[download]: http://www.whitepeaksoftware.com/main/store/buy/big-screen
+[wps]: http://www.whitepeaksoftware.com/
+[why]: http://www.whitepeaksoftware.com/main/big-screen/why
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Rowan on the Balance Board]]></title>
@@ -380,15 +403,6 @@
 <p>Not much I can do about it now other than to leave some gear behind. I&#8217;m planning to weigh each item on Monday, and will decide what absolutely needs to go and what can stay behind. I doubt, though, I will see much reduction of in weight. Some of my gear, such as my sleeping bag, are in desperate need of an upgrade.</p>
 
 <p>My sleeping bag is 15 years year, and is much heavier than what I would buy today. But a new sleeping bag is not in my future anytime soon. With luck, and a change in our finical situation, I might be able to buy a lighter, better sleeping bag.</p>]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The Weight Lost Continues]]></title>
-    <link href="http://www.thecave.com/2012/08/17/the-weight-lost-continues/"/>
-    <published>2012-08-17T00:00:00-04:00</published>
-    <updated>2012-08-17T00:00:00-04:00</updated>
-    <id>http://www.thecave.com/2012/08/17/the-weight-lost-continues</id>
-    <content type="html"><![CDATA[<p>Weighed myself today. I&#8217;m down to 153 pounds. That&#8217;s 17 pounds lighter than I was 4 months ago. Only three more pounds to go before I hit my target weight.</p>]]></content>
   </entry>
   
 </feed>

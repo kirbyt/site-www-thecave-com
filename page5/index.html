@@ -59,6 +59,40 @@
         </div>
 
         <div class="post-content right-col">
+        <h2><a href="/2008/12/08/framework-or-cms-revisited/" rel="bookmark" title="Framework or CMS Revisited">Framework or CMS Revisited</a></h2>
+
+        <p>Thanks to <a href='http://twitter.com/'>Twitter</a> I have received some great feedback [thanks folks!] within minutes of posting my thoughts on <a href='http://www.thecave.com/archive/2008/12/08/framework_or_cms.aspx#comment'>using a framework or CMS</a>. In the post I talk about the two approaches in general terms and I end the post saying I will very liking use a framework for the <a href='http://www.whitepeaksoftware.com/'>White Peak Software</a> web site refresh. Everyone who sent me feedback suggested I use a CMS for White Peak but unfortunately I didn&#8217;t really say what my requirements are. Knowing the requirements might change the opinions of some.</p>
+
+<p>The new White Peak Software site will do much more than what I believe is available out of the box from a CMS package. I need a new customer area that allows customers to sign in, retrieve license keys for purchased products, display invoices, get special discount codes for future purchases, make additional purchases, and maybe a trouble ticket lookup system that integrates with my FogBugz install. Also, the site need to be able to read XML files used for posting product version information and RSS feeds to display company announcements.</p>
+
+<p>There also needs to be a web service part that will receive order information in real time from payment processors such as eSellerate. The web service needs to update customer information, licensing information, and store order information. There needs to be an admin view as well that allows me to view orders, re-send order confirmation emails, re-send license keys, change customer contact information, and so on. Oh, and I need to be able to send email notifications to customers. The email notification system needs to be a double opt-in system and should work for customers who have purchased products as well as potential customers who want to receive information about the company.</p>
+
+<p>There are some nice to have features that I will probably eventually implement as well such as an iTunes sales report viewer so I can have better insight to my iPhone app sales. And a license key generator so I&#8217;m not solely depended on third party apps for licensing.</p>
+
+<p>Now I know some of these features exists in CMS solutions but the features don&#8217;t work exactly how I need them too. For example, many CMS solutions will allow email notifications to be sent to site members and a site member is someone who has registered with the site. But in my case a site member is also a person who placed an order through the company store where no registration is needed. Look at it as being a site member who hasn&#8217;t provided a password to the account yet. So while I can use a CMS for the feature of email notification I still must extend it to suite my needs.</p>
+
+<p>If I were to go with a CMS solution it would very likely be <a href='http://expressionengine.com/'>ExpressionEngine</a> with <a href='http://codeigniter.com/'>CodeIgniter</a>. I looked at these 2 this past summer and thought it was the best solution out there that addresses most of my needs. Unfortunately the combination of EE and CI have 2 strikes against them for my purposes.</p>
+
+<p>The first strike is ExpressionEngine&#8217;s <a href='http://www.mysql.com/'>MySQL</a> requirement. Nothing against MySQL but <a href='http://www.postgresql.org/'>Postgres</a> is better in my opinion. I&#8217;ve spent equal amount of time working with both database engines - well, okay, I have spent more time with Postgres in recent months - and I find Postgres to be faster, more stable, and easier to work with. Heck, just comparing the 2 solely based on the wikipedia pages (<a href='http://en.wikipedia.org/wiki/Mysql'>MySQL</a> vs <a href='http://en.wikipedia.org/wiki/Postgres'>Postgres</a>) gives me the impression that Postgres is the better of the two.<br /><br />The second strike is <a href='http://www.php.net/'>PHP</a>. I&#8217;m not opposed to using PHP. In fact, I like PHP and I have done PHP programming off and on for a number of years. I also use other PHP based solutions such as <a href='http://wordpress.org/'>WordPress</a> for a couple of blog sites that I have. But given that I know I need to do a lot of extra coding to get all the functionality I need, I would rather use a programming language that suites me better. That language is <a href='http://www.python.org/'>Python</a>.</p>
+
+<p>So for my specific needs, ExpressionEngine with CodeIgnitor comes close but still requires too much extra programming. On the other hand, Python with <a href='http://www.web2py.com/'>web2py</a> is a good combination for me writing something from scratch. It has all the right pieces so I&#8217;m not reinventing the wheel and is open enough to not hold be back or get in my way. Still, the day will come when I have the new site completely implemented and all I need to do is manage content. Then I&#8217;ll start thinking again, &#8220;Use a framework or CMS&#8221;.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Dec<span class="year">2008</span></span><span class="day">08</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
         <h2><a href="/2008/12/08/framework-or-cms/" rel="bookmark" title="Framework or CMS">Framework or CMS</a></h2>
 
         <p>I am once again pondering the question of whether to use a framework or CMS for the upcoming refresh the <a href='http://www.whitepeaksoftware.com/'>White Peak Software</a> web site. I have gone back and forth on this multiple times over the years and I can never really decide which is better. And I ask this question often not just for my company web site but for customer web sites that I build.<br /><br />A <a href='http://en.wikipedia.org/wiki/Framework'>framework</a> gives me great control and flexibility. I can design and architect the site to my liking. I can use the data store of my choice be it XML, a database such as MSSQL or <a href='http://www.postgresql.org/'>Postgres</a>, and I can implement site specific features that meet 100% of the requirements. But the site eventually reaches a point where the only thing needed is to publish new content. Create a new landing page for marketing, change copy on an existing page, add a new product page, and so on. This is when I start thinking &#8220;Man, I wish I had a really simple CMS in place.&#8221;<br /><br />A <a href='http://en.wikipedia.org/wiki/Content_management_system'>CMS</a> manages the site content for me. A CMS really does make publishing new content a snap. And you get a lot of additional features, or add-ons, with a CMS such as blog engine, forums or discussion groups, user management, calendar, photo gallery&#8230;the list goes on. However, most if not all CMSs are built on top of some core framework (<a href='http://plone.org/'>Plone</a> uses <a href='http://www.zope.org/'>Zope</a>, <a href='http://www.dotnetnuke.com/'>DotNetNuke</a> uses .NET, <a href='http://expressionengine.com/'>ExpressionEngine</a> uses <a href='http://codeigniter.com/'>CodeIgnitor</a> - I think). This allows developers to expand and enhance the CMS by writing their own add-ons and extensions. But to do this the developer needs to know the underlying framework, and if you already know the framework isn&#8217;t it sometimes easier and or faster to work directly with the framework bypassing the CMS all together? Also, it&#8217;s been my experience that many of the CMSs out there tend to meet only 80 to 90% of the requirements. So you get the ease of publishing new content but other areas of the site can be lacking unless, of course, additional code is written to make up for the missing functionality. It&#8217;s a vicious circle.<br /><br />So do you learn and master a framework and have ultimate flexibility or learn and master a CMS and have ease of use for managing content? And what about rolling your own &#8220;simple&#8221; CMS. It can be great experience in the beginning but it will eventually have limitations or even worse become yet another full feature CMS like those already available today. And if you end up writing your own full featured CMS you have to ask yourself &#8220;Would my time have been better spent learning and mastering an existing CMS, its framework and contributing to its community?&#8221;<br /><br />Unfortunately I don&#8217;t have any solid answers here. I guess the only real answer to the question should I use a framework or CMS is &#8220;It depends.&#8221; It depends on a number of different factors unique to your situation, your needs, your time line, and so on.<br /><br />So what have I decided for the White Peak Software web site refresh? Honestly I&#8217;m still a bit undecided. The site is currently implemented with ASP.NET and a home grown simple CMS mechanism. It has worked well for a number of years but I need more functionality on the site. Building on the current implementation would take too much time so I need a different approach. My original thought was to use PHP and Zend but then I discovered CodeIgnitor. CodeIgnitor led me to ExpressEngine and I thought &#8220;Ah, the solution for me. PHP+CodeIgnitor+ExpressEngine&#8221;. But then I started looking at python for general programming tasks and thought &#8220;What would it take to use Python programming for web apps?&#8221; Not much I found out so I have decided to use <a href='http://www.python.org/'>Python</a>.<br /><br />The decision to use Python has lead me to look at a number of different frameworks and CMS solutions. And while I&#8217;m not 100% sure what stack I will select, I&#8217;m leaning towards Python + web2py. <a href='http://www.web2py.com/'>web2py</a> is an enterprise ready framework for web based application. Web development using web2py is very easy and fast, and I really like the development experience on my Mac.<br /><br />I guess it&#8217;s safe to assume at this point that I will once again pick a framework over an existing CMS. What can I say? I&#8217;m a programmer and while the appeal for a CMS is there I still enjoy the flexibility and control I have by doing my own implementation using a framework.<br /><br /><span style='color:red'>Update:</span> Here is a <a href='http://www.thecave.com/archive/2008/12/08/framework_or_cms_revisited.aspx'>follow up posting</a> that explains my own requirements and why I feel using a framework is better in my situation.</p>
@@ -234,27 +268,6 @@ ownloadFile = open(filename, 'w')<br />downloadFile.write(filebuffer)<br />downl
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Oct<span class="year">2008</span></span><span class="day">09</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2008/10/09/wedding-pictures/" rel="bookmark" title="Wedding Pictures">Wedding Pictures</a></h2>
-
-        <a href='http://photos.thecave.com/gallery/6192603_d997M//390526002_eeLnF'><img alt='' border='0' height='150' hspace='6' src='http://photos.thecave.com/photos/390526002_eeLnF-Th.jpg' vspace='6' width='150' /></a>
-<p>Fun <a href='http://photos.thecave.com/gallery/6192603_d997M//390526002_eeLnF'>pictures</a> from Laura and Jason&#8217;s wedding.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -308,7 +321,8 @@ ownloadFile = open(filename, 'w')<br />downloadFile.write(filebuffer)<br />downl
 
 		<div id="linkcat-3" class="block widget widget_links"><h2>Categories</h2>
     <ul>
-        <li class='category'><a href='/category/backpack/'>backpack (1)</a></li>
+        <li class='category'><a href='/category/apps/'>apps (1)</a></li>
+<li class='category'><a href='/category/backpack/'>backpack (1)</a></li>
 <li class='category'><a href='/category/backpacking/'>backpacking (8)</a></li>
 <li class='category'><a href='/category/blogger/'>blogger (785)</a></li>
 <li class='category'><a href='/category/camping/'>camping (11)</a></li>
@@ -316,6 +330,7 @@ ownloadFile = open(filename, 'w')<br />downloadFile.write(filebuffer)<br />downl
 <li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
 <li class='category'><a href='/category/general/'>general (6)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (7)</a></li>
+<li class='category'><a href='/category/ios/'>ios (1)</a></li>
 <li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
 <li class='category'><a href='/category/long-trail/'>long-trail (2)</a></li>
 <li class='category'><a href='/category/moving/'>moving (1)</a></li>
@@ -357,6 +372,8 @@ ownloadFile = open(filename, 'w')<br />downloadFile.write(filebuffer)<br />downl
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2013/11/20/send-your-camera-video-to-your-tv/" title="Send Camera Video to Your TV">Send Camera Video to Your TV</a></li>
+                
                   <li><a href="/2013/11/11/rowan-on-the-balance-board/" title="Rowan on the Balance Board">Rowan on the Balance Board</a></li>
                 
                   <li><a href="/2013/08/26/whale-watching-tour/" title="Whale Watching Tour">Whale Watching Tour</a></li>
@@ -364,8 +381,6 @@ ownloadFile = open(filename, 'w')<br />downloadFile.write(filebuffer)<br />downl
                   <li><a href="/2013/08/26/pawleys-island/" title="Pawleys Island with the Davis Clan">Pawleys Island with the Davis Clan</a></li>
                 
                   <li><a href="/2013/08/26/camp-murphy/" title="Camp Murphy">Camp Murphy</a></li>
-                
-                  <li><a href="/2013/08/26/andys-wedding/" title="Andy's Wedding">Andy's Wedding</a></li>
                 
             </ul>
 		</div>
