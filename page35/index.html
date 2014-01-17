@@ -54,6 +54,70 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jun<span class="year">2005</span></span><span class="day">25</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2005/06/25/masking-addresses-to-prevent-email-harvesting/" rel="bookmark" title="Masking Addresses to Prevent Email Harvesting">Masking Addresses to Prevent Email Harvesting</a></h2>
+
+        <p>Email harvesting is a technique used by spammers to find email addresses published on web sites. Spiders crawl the net looking for text that looks like email addresses (ex: somename@somedomain.com).</p>
+
+<p>For years I have published my email address on my web sites to make it easier for people to contact me. And as expected, over the years the amount of spam mail I receive has grown. I received around 600 to 700 spam mails a day. Luckily I have several layers of spam filtering enabled so less than 5% of spam makes it to my Inbox. But today I decided I would attempt to reduce the amount of spam I receive by masking my email address.</p>
+
+<p>As I mentioned spammers harvest email addresses by searching the Internet for text that matches an email pattern. By masking an email address the spammer will have a tougher time determining if the content is in fact an email address. So how do you mask an email address?</p>
+
+<p>You can use JavaScript to mask an email address. For example, instead of including your email address as plain text in the HTML convert each character of your email address into the appropriate ASCII value and display the ASCII value string using document.write as shown below.</p>
+
+<pre><code>&lt;!--document.write(&#39;&amp;#107&amp;#105&amp;#114&amp;#98&amp;#121&amp;#64&amp;#116&amp;#104&amp;#101&amp;#99&amp;#97&amp;#118&amp;#101&amp;#46&amp;#99&amp;#111&amp;#109&#39;);// --&gt; </code></pre>
+
+<p>Of course doing this each time can be a pain. A better approach is to use server-side scripting that will mask the email address for you. That&#8217;s exactly what I did for my web site using the following C# code:</p>
+
+<pre><code>public string MaskedEmail( string email )
+{   
+    string masked = MaskedStringFromString(email);   
+    string javascript = @&quot;  &lt;!--      document.write(&#39;{0}&#39;);      // --&gt; &quot;;
+
+    return String.Format( javascript, masked );
+}
+
+public string MaskedMailToLink( string email, string text )
+{   
+    return MaskedMailToLink( email, text, String.Empty );
+}
+
+public string MaskedMailToLink( string email, string text, string additionalAttributes )
+{   
+    string maskedEmail = MaskedStringFromString(&quot;mailto:&quot; + email);   
+    string maskedText = MaskedStringFromString(text);   
+    string encodedAttr = additionalAttributes.Replace(&quot;&#39;&quot;,@&quot;\&#39;&quot;);   
+    string javascript = @&quot;  &lt;!--      document.write(&#39;{2}&amp;lt/a&gt;&#39;);      // --&gt; &quot;;
+
+   return String.Format( javascript, maskedEmail, encodedAttr, maskedText );
+}
+
+public string MaskedStringFromString(string value)
+{   
+    string masked = string.Empty;   
+    for( int i=0; i &lt; value.Length; i++)   {      
+        masked += String.Format( &quot;&amp;#{0}&quot;, Convert.ToByte(value[i]) );   
+    }   
+    return masked;
+}</code></pre>
+
+<p>When I display an email address I mask it by calling the MaskedEmail method. And I use MaskedMailToLink for those times when I want to include a mailto link. You can see this in action on the <a href='http://www.whitepeaksoftware.com/contacts.aspx'>contact us</a> page for White Peak Software.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Jun<span class="year">2005</span></span><span class="day">24</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -229,26 +293,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2005</span></span><span class="day">10</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2005/06/10/the-power-of-auto-responders/" rel="bookmark" title="The Power of Auto-Responders">The Power of Auto-Responders</a></h2>
-
-        <p>I purchased a pricy set of components today, or at least I tried. The browser window timed out during the final processing of the order. The problem is I do not know if the order went through or not.<br /><br />I sent an email to the company&#8217;s support and sales addresses but I haven&#8217;t heard anything back yet. I find this very annoying. At a minimum I would expect an auto-responder that sends a return email saying something like &#8220;We value you business. We will respond to your request as soon as possible.&#8221; It&#8217;s been 40 minutes now with no response. Obviously the vendor does not use an auto-responder. <br /><br />An auto-responder is a simple use of technology that I believe all companies selling products on the Internet should use. Heck my own company, <a href='http://www.whitepeaksoftware.com/'>White Peak Software</a>, has the capability enabled to provide immediate response to client requests. It amazes me that a successful component vendor who has been in business for years does provide the simplest of services to its customers.<br /><br />All is not lost though. I have learned a valuable lesson from the experience. <br /><br />1) Auto-responders can be very powerful and provide assurance to customers. <br />2) Vendors should provide detailed information about what to expect from an online ordering experience.<br /><br />This second point is very important to me as I prepare to start selling products. I definitely plan to publish a web page that explains the order process to customers. This will tell my customers what to expect and what to do should something go wrong.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -321,7 +365,8 @@
 <li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
 <li class='category'><a href='/category/salem/'>salem (1)</a></li>
 <li class='category'><a href='/category/skiing/'>skiing (2)</a></li>
-<li class='category'><a href='/category/snowboarding/'>snowboarding (2)</a></li>
+<li class='category'><a href='/category/snowboarding/'>snowboarding (3)</a></li>
+<li class='category'><a href='/category/stowe/'>stowe (1)</a></li>
 <li class='category'><a href='/category/travel/'>travel (3)</a></li>
 <li class='category'><a href='/category/trip/'>trip (4)</a></li>
 <li class='category'><a href='/category/trips/'>trips (1)</a></li>
@@ -353,6 +398,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2014/01/17/day-25/" title="Day 25">Day 25</a></li>
+                
                   <li><a href="/2013/11/20/send-your-camera-video-to-your-tv/" title="Send Camera Video to Your TV">Send Camera Video to Your TV</a></li>
                 
                   <li><a href="/2013/11/11/rowan-on-the-balance-board/" title="Rowan on the Balance Board">Rowan on the Balance Board</a></li>
@@ -360,8 +407,6 @@
                   <li><a href="/2013/08/26/whale-watching-tour/" title="Whale Watching Tour">Whale Watching Tour</a></li>
                 
                   <li><a href="/2013/08/26/pawleys-island/" title="Pawleys Island with the Davis Clan">Pawleys Island with the Davis Clan</a></li>
-                
-                  <li><a href="/2013/08/26/camp-murphy/" title="Camp Murphy">Camp Murphy</a></li>
                 
             </ul>
 		</div>

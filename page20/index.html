@@ -54,6 +54,26 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jul<span class="year">2006</span></span><span class="day">13</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2006/07/13/essex-county-tops-most-overpriced-list/" rel="bookmark" title="Essex County Tops Most Overpriced List">Essex County Tops Most Overpriced List</a></h2>
+
+        <p>I lived in the West Village, Manhattan for just over 6 years. Earlier this year my wife and I moved to Salem, Massachusetts. We have a number of reasons for moving such as a change in life style, wanting to be closer to the mountains of New England, etc. Cost is definitely one of the reasons. We were spending more and more time outside of NYC making it hard to justify paying high rent for an apartment we didn&#8217;t see much, especially in the winter time. <br /><br />I was surprise to learn that Essex County, Massachusetts, which is where Salem is located, is ranked at the top of the recent <a href='http://realestate.msn.com/Rentals/Articleforbes.aspx?cp-documentid=648559&amp;GT1=8384'>Forbes most overprice places in the United States</a>. (New York is ranked number 6.) Granted we don&#8217;t live in one of the <a href='http://rmne-remaxadvantagerealestate-salem-ma.com/Properties/PropDispForm.php?idx_prop=101582664&amp;QueryID=44b53c2373630&amp;3'>awesomely big water front homes</a> mentioned in the article. I wish we did. But homes at a million and more is beyond what we can afford. I will say, though, that $1.4 million for a 4,000 square foot water front home does seem like a better deal to me than a $1.4 million, 2 bedroom, 900 square foot condo in downtown Manhattan.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Jun<span class="year">2006</span></span><span class="day">27</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -229,64 +249,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2006</span></span><span class="day">15</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2006/06/15/quickbase-api-for-delphi/" rel="bookmark" title="QuickBase API for Delphi">QuickBase API for Delphi</a></h2>
-
-        <p>I have been doing more <a href='http://www.quickbase.com/'>QuickBase</a> work lately. I really like QuickBase but the <a href='https://www.quickbase.com/up/6mztyxu8/g/rc7/en/va/QuickBaseAPI.htm'>HTTP API</a> can be a bit hairy. Intuit provides various language specific SDKs for the QuickBase API but <a href='http://www.borland.com/delphi'>Delphi</a> is not included. So I&#8217;m writing my own. [I&#8217;ll post the code to the <a href='http://www.whitepeaksoftware.com/'>White Peak Software</a> site as soon as it is done.]</p>
-
-<p>A challenge I encounter today was determining an appropriate data structure for a QuickBase record set. The QuickBase API includes a DoQuery call that returns an XML document containing the results of the query. A goal of my Delphi QuickBase SDK is to simplify API calls such as DoQuery, which means I do not want to return XML to calling Delphi code. A Delphi friendly data structure for the QuickBase record set is needed.</p>
-
-<p>After bouncing different ideas around a buddy, I started &#8220;seeing&#8221; the data structure. I started hacking up code keeping in mind 3 primary goals:</p>
-
-<ol>
-<li>The data structure must be easy to use.</li>
-
-<li>The data structure must make the code readable.</li>
-
-<li>The data structure must be Delphi friendly.</li>
-</ol>
-
-<p>The end result is a set of classes which is really nothing more than a TObjectList containing TObjectList containing a field value class. In other words, the final data structure consists of the following classes:</p>
-
-<pre><code>TQuickBaseDataset = class(TObjectList);
-TQuickBaseRecordset = class(TObjectList);
-TQuickBaseValue = class(TObject);</code></pre>
-
-<p>A dataset contains one or more record sets which contains one of more values. The value class is implemented to provide strong type access to the value returned from QuickBase.</p>
-
-<p>So does the new data structure meet the 3 goals above? I think so but I will leave it up to you to decide. Here is a code snippet that queries the database and returns a record set containing 3 fields in each record.</p>
-
-<pre><code>Qdb := TQuickBaseClient.Create(username, password);
-if Qdb.Authenticate then
-begin
-    Dataset := Qdb.DoQuery(dbid, query, clist);
-    for Recordset in Dataset do
-    begin
-        s := Recordset.Items[0].ValueAsString;
-        b := Recordset.Items[1].ValueAsBoolean;
-        i := Recordset.Items[2].ValueAsInteger;
-    end;
-end;
-Qdb.SignOut;
-Qdb.Free;</code></pre>
-
-<p>I will be adding the ability to retrieve field values by name very soon. This will make the code even more readable.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -359,7 +321,8 @@ Qdb.Free;</code></pre>
 <li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
 <li class='category'><a href='/category/salem/'>salem (1)</a></li>
 <li class='category'><a href='/category/skiing/'>skiing (2)</a></li>
-<li class='category'><a href='/category/snowboarding/'>snowboarding (2)</a></li>
+<li class='category'><a href='/category/snowboarding/'>snowboarding (3)</a></li>
+<li class='category'><a href='/category/stowe/'>stowe (1)</a></li>
 <li class='category'><a href='/category/travel/'>travel (3)</a></li>
 <li class='category'><a href='/category/trip/'>trip (4)</a></li>
 <li class='category'><a href='/category/trips/'>trips (1)</a></li>
@@ -391,6 +354,8 @@ Qdb.Free;</code></pre>
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2014/01/17/day-25/" title="Day 25">Day 25</a></li>
+                
                   <li><a href="/2013/11/20/send-your-camera-video-to-your-tv/" title="Send Camera Video to Your TV">Send Camera Video to Your TV</a></li>
                 
                   <li><a href="/2013/11/11/rowan-on-the-balance-board/" title="Rowan on the Balance Board">Rowan on the Balance Board</a></li>
@@ -398,8 +363,6 @@ Qdb.Free;</code></pre>
                   <li><a href="/2013/08/26/whale-watching-tour/" title="Whale Watching Tour">Whale Watching Tour</a></li>
                 
                   <li><a href="/2013/08/26/pawleys-island/" title="Pawleys Island with the Davis Clan">Pawleys Island with the Davis Clan</a></li>
-                
-                  <li><a href="/2013/08/26/camp-murphy/" title="Camp Murphy">Camp Murphy</a></li>
                 
             </ul>
 		</div>
