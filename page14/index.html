@@ -59,6 +59,26 @@
         </div>
 
         <div class="post-content right-col">
+        <h2><a href="/2007/04/10/support-large-files-in-killink/" rel="bookmark" title="Support Large Files in Killink">Support Large Files in Killink</a></h2>
+
+        <p>The first version of <a href='http://www.killink.com/'>Killink</a> is feature complete, but there was one thing that was brothering me, large file support. Opening, printing, and saving a large file in Killink is a rather slow process so I&#8217;ve been working on improving these 3 areas.<br /><br />The first area I worked on was opening a large file, which is what I will talk about today. After profiling the application I found the biggest bottleneck was populating the spreadsheet with display data. This was an easy fix that involved &#8220;freezing&#8221; display while the spreadsheet is loaded with data. This change resulted in a huge performance increase. The test file I used took minutes to load prior to the change and only 2 seconds after the change. But then Killink took another perform hit.<br /><br />A beta tester reported the bug that embedded new line characters were not properly handled. I modified the CSV parser to check each byte of data as it was read from the hard drive. However this is a very inefficient approach. A better approach is to buffer each read. In other words, instead of reading a single byte from the hard drive it is better to read a chuck of bytes. The chuck can be any size such as 65K chucks or 1MB chucks. <br /><br />Buffering the file read process gave Killink the performance boost it needed to open large files. It&#8217;s not as fast as I would like it but it&#8217;s getting closer.<br /><br />The performance improved version of Killink should be ready for <a href='http://www.killink.com/download.aspx'>download</a> in a couple of days.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Apr<span class="year">2007</span></span><span class="day">10</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
         <h2><a href="/2007/04/10/csv-editing/" rel="bookmark" title="CSV Editing">CSV Editing</a></h2>
 
         <p>CSV (also known as comma separated values, comma separated list, or comma separated variable) is a commonly used file format that stores tabular data. Each data element, or value, is separated with a comma or other single character delimiter such as a Tab character. These types of files are also called delimited text files or flat files.<br /><br />Many software application support CSV delimited text files either as an import or export data format. For example, Outlook users can export the address book to a comma separated value file and import the contacts into another application.<br /><br />I have worked with comma and tab delimited text files throughout most of my career. I have written applications that produce delimited text and consume delimited text. And while XML is my preferred file format for sharing data there is no escaping the usefulness of CSV delimited text files.<br /><br />While CSV delimited text files are typically used to import and export data between software applications there are times when individuals must <a href='http://www.killink.com/'>manually create or edit comma and tab delimited text files</a>. And many of these individuals use a spreadsheet program such as Microsoft Excel. However, using a full featured spreadsheet such as Excel to create and edit CSV delimited text files seems overkill to me.<br /><br />For starters, say you only need to <a href='http://www.killink.com/'>manipulate CSV delimited text</a> files and have no need for working with spreadsheets. The licensing cost of Excel is hardly justified. Secondly Excel imposes certain size limitations. Excel is limited to 65,536 rows of data and 256 columns per worksheet. This means you will not be able to open a delimited text file containing 100,000 rows. Faced with high licensing cost, overkill list of features, and size limitations I decided to write Killink. <br /><br /><a href='http://www.killink.com/'>Killink</a> is a spreadsheet-like editor for delimited text files. It supports delimited text files using any single character delimiter including comma and tab, and it supports large delimited text files.<br /><br />Version 1.0 is currently in beta test which is open to the public. Visit the <a href='http://www.killink.com/download.aspx'>Killink download page</a> and give the latest release a test drive. I appreciate any feedback, good or bad, you might have about Killink. Feedback can be posted to the <a href='http://www.whitepeaksoftware.com/forums/'>Killink Support forum</a>.<br /><br /><span style='color:red'>Update</span>: Microsoft has improved the <a href='http://blogs.msdn.com/excel/archive/2005/09/26/474258.aspx'>limitation of Excel</a>. Excel 2007 supports 1 million rows per worksheet.</p>
@@ -233,26 +253,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Mar<span class="year">2007</span></span><span class="day">21</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2007/03/21/update-on-delphi-2007-order-mess/" rel="bookmark" title="Update on Delphi 2007 Order Mess">Update on Delphi 2007 Order Mess</a></h2>
-
-        <p>The <a href='http://www.codegear.com/'>CodeGear</a> folks are awesome. They were quick to respond to my <a href='http://www.thecave.com/archive/2007/03/19/why_i_will_never_preorder_from_codegear_again.aspx'>pre-order issue</a>. CodeGear&#8217;s Loreen Fornshell worked directly with me. She was able to sort through the mess and correct the mistakes made by Digital River. It did take a few days but based on my phone calls with Digital River I suspect the delays were caused by DR and not CodeGear.<br /><br />Thanks to CodeGear folks like Loreen my pre-order mess has finally been cleaned up and I should have my license for <a href='http://www.codegear.com/delphi'>Delphi 2007</a> later today. <br /><br />I installed Vista the other day preparing the Delphi 2007. I don&#8217;t have much of an opinion on Vista yet because I haven&#8217;t spent much time playing with it other than to say you better have a beefy machine with lots of RAM if you want the best UI experience. I ordered more RAM for my laptop so I can run Vista&#8217;s Aero theme. I&#8217;m not 100% sure if this will meet the minimum requirements needed to use the Aero theme but based on what I have read it should. I&#8217;ll know in a couple of days after the new RAM arrives.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -321,11 +321,11 @@
 <li class='category'><a href='/category/moving/'>moving (1)</a></li>
 <li class='category'><a href='/category/opinion/'>opinion (1)</a></li>
 <li class='category'><a href='/category/pictures/'>pictures (8)</a></li>
-<li class='category'><a href='/category/random/'>random (3)</a></li>
+<li class='category'><a href='/category/random/'>random (4)</a></li>
 <li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
 <li class='category'><a href='/category/salem/'>salem (1)</a></li>
 <li class='category'><a href='/category/skiing/'>skiing (2)</a></li>
-<li class='category'><a href='/category/snowboarding/'>snowboarding (3)</a></li>
+<li class='category'><a href='/category/snowboarding/'>snowboarding (4)</a></li>
 <li class='category'><a href='/category/stowe/'>stowe (1)</a></li>
 <li class='category'><a href='/category/travel/'>travel (3)</a></li>
 <li class='category'><a href='/category/trip/'>trip (4)</a></li>
@@ -358,6 +358,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2014/02/05/example-of-a-bad-day/" title="An Example of a Bad Day for Me">An Example of a Bad Day for Me</a></li>
+                
                   <li><a href="/2014/01/17/day-25/" title="Day 25">Day 25</a></li>
                 
                   <li><a href="/2013/11/20/send-your-camera-video-to-your-tv/" title="Send Camera Video to Your TV">Send Camera Video to Your TV</a></li>
@@ -365,8 +367,6 @@
                   <li><a href="/2013/11/11/rowan-on-the-balance-board/" title="Rowan on the Balance Board">Rowan on the Balance Board</a></li>
                 
                   <li><a href="/2013/08/26/whale-watching-tour/" title="Whale Watching Tour">Whale Watching Tour</a></li>
-                
-                  <li><a href="/2013/08/26/pawleys-island/" title="Pawleys Island with the Davis Clan">Pawleys Island with the Davis Clan</a></li>
                 
             </ul>
 		</div>
