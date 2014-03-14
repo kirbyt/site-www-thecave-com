@@ -54,6 +54,26 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">09</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2004/06/09/which-xml-api/" rel="bookmark" title="Which XML API?">Which XML API?</a></h2>
+
+        <p>I had an interesting chat with a team member today about which XML parsing API from the .NET Framework to use for a particular situation. He mentioned that using the XPathNavigator with an XmlReader would not load the document into memory. However, after some quick research I found this to be incorrect. XPathNavigator is different than XmlDocument in that it is optimized for XSLT processing and the XPath data model, but it is similar in that the entire document is read into memory. XPathNavigator appears to use a cursor-base model for traversing the document while XmlDocument uses a tree-base model.<br /><br />The rule of thumb I have come up with is this: Read-only, forward-only XML parsing API tend to read from a stream and do not store the entire document in memory. Random access XML parsing API, which typically use a tree-base model or cursor-base model, will traverse in-memory the XML document which means this entire document is stored in memory.<br /><br /><br /></p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">08</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -331,26 +351,6 @@ namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">May<span class="year">2004</span></span><span class="day">18</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/05/18/multiple-nunit-tests-from-nant/" rel="bookmark" title="Multiple NUnit tests from NAnt">Multiple NUnit tests from NAnt</a></h2>
-
-        <p>I have been working today on stabilizing our build environment for a customer project. NAnt has been a great to so far for this. But today I wanted to start running NUnit tests of our assemblies from the NAnt script. I have tried a combination of Xml in attempts to get the NUnit task to work as expected. All assemblies except one have a configuration file so I must use the element. I have tried defining a single section with multiple elements, one for each assembly to test. And I have tried multiple sections within a single target, but the result is the same. Not all tests do not always run. <br /><br />Say I have 4 test assemblies. 2 out of the 4 may load. The other two seem to be ignored. The section seems easiest enough, but I must be missing something. Shot me a reply if you have a suggestion. Thanks.<br /><br /><br /></p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -411,7 +411,7 @@ namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
 <li class='category'><a href='/category/camping/'>camping (11)</a></li>
 <li class='category'><a href='/category/family/'>family (2)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
-<li class='category'><a href='/category/general/'>general (6)</a></li>
+<li class='category'><a href='/category/general/'>general (7)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (7)</a></li>
 <li class='category'><a href='/category/humor/'>humor (1)</a></li>
 <li class='category'><a href='/category/ios/'>ios (1)</a></li>
@@ -425,6 +425,7 @@ namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
 <li class='category'><a href='/category/salem/'>salem (1)</a></li>
 <li class='category'><a href='/category/skiing/'>skiing (2)</a></li>
 <li class='category'><a href='/category/snowboarding/'>snowboarding (4)</a></li>
+<li class='category'><a href='/category/social/'>social (1)</a></li>
 <li class='category'><a href='/category/stowe/'>stowe (1)</a></li>
 <li class='category'><a href='/category/travel/'>travel (3)</a></li>
 <li class='category'><a href='/category/trip/'>trip (4)</a></li>
@@ -457,6 +458,8 @@ namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2014/03/14/cross-posting/" title="Cross Posting">Cross Posting</a></li>
+                
                   <li><a href="/2014/02/05/i-m-having-a-bad-day/" title="I'm Having a Bad Day">I'm Having a Bad Day</a></li>
                 
                   <li><a href="/2014/01/17/day-25/" title="Day 25">Day 25</a></li>
@@ -464,8 +467,6 @@ namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
                   <li><a href="/2013/11/20/send-your-camera-video-to-your-tv/" title="Send Camera Video to Your TV">Send Camera Video to Your TV</a></li>
                 
                   <li><a href="/2013/11/11/rowan-on-the-balance-board/" title="Rowan on the Balance Board">Rowan on the Balance Board</a></li>
-                
-                  <li><a href="/2013/08/26/whale-watching-tour/" title="Whale Watching Tour">Whale Watching Tour</a></li>
                 
             </ul>
 		</div>

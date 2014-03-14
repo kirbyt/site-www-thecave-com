@@ -59,6 +59,26 @@
         </div>
 
         <div class="post-content right-col">
+        <h2><a href="/2007/04/10/supporting-large-files-in-killink-part-ii/" rel="bookmark" title="Supporting Large Files in Killink Part II">Supporting Large Files in Killink Part II</a></h2>
+
+        <p>I&#8217;m coming to the conclusion that having code loop millions of times to copy data from one structure to another is never going to be fast. <br /><br />I&#8217;m using two controls, a spreadsheet control and a report printing control. Unfortunately the two do not support the same data structures so to print a report <a href='http://www.killink.com/'>Killink</a> has to copy the data from the spreadsheet to the report which means looping. And when there are a million + rows with 3 columns the code is looping 3 million + times. Not much can be done to speed it up.<br /><br />What I need is a way to keep the data in a single data structure that is supported by both components. I&#8217;m starting to have a better understanding why certain commercial software tends to not rely on 3rd party components and libraries. However, time is important to me so I must rely on 3rd party components for certain features.<br /><br />For now <a href='http://www.killink.com/'>Killink</a> will have to warn the user before allowing a huge files to be printed. &#8220;You wish to print a file that is very large. It will take some time to prepare the data for printing. Do you wish to continue?&#8221;<br /><br />The report I&#8217;m trying to preview during testing will have more than 15,000 pages. I don&#8217;t see anyone realistically printing this many pages but you never know.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Apr<span class="year">2007</span></span><span class="day">10</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
         <h2><a href="/2007/04/10/support-large-files-in-killink/" rel="bookmark" title="Support Large Files in Killink">Support Large Files in Killink</a></h2>
 
         <p>The first version of <a href='http://www.killink.com/'>Killink</a> is feature complete, but there was one thing that was brothering me, large file support. Opening, printing, and saving a large file in Killink is a rather slow process so I&#8217;ve been working on improving these 3 areas.<br /><br />The first area I worked on was opening a large file, which is what I will talk about today. After profiling the application I found the biggest bottleneck was populating the spreadsheet with display data. This was an easy fix that involved &#8220;freezing&#8221; display while the spreadsheet is loaded with data. This change resulted in a huge performance increase. The test file I used took minutes to load prior to the change and only 2 seconds after the change. But then Killink took another perform hit.<br /><br />A beta tester reported the bug that embedded new line characters were not properly handled. I modified the CSV parser to check each byte of data as it was read from the hard drive. However this is a very inefficient approach. A better approach is to buffer each read. In other words, instead of reading a single byte from the hard drive it is better to read a chuck of bytes. The chuck can be any size such as 65K chucks or 1MB chucks. <br /><br />Buffering the file read process gave Killink the performance boost it needed to open large files. It&#8217;s not as fast as I would like it but it&#8217;s getting closer.<br /><br />The performance improved version of Killink should be ready for <a href='http://www.killink.com/download.aspx'>download</a> in a couple of days.</p>
@@ -233,26 +253,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Mar<span class="year">2007</span></span><span class="day">25</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2007/03/25/5-things-i-like-about-delphi-2007/" rel="bookmark" title="5 Things I Like About Delphi 2007">5 Things I Like About Delphi 2007</a></h2>
-
-        <p>Bloggers in the Delphi community have been tagging each other to post 5 things they like about the Delphi 2007. I wasn&#8217;t tagged but I want to play so here are my 5 things.<br /><br />1) <b>Speed</b> - The IDE loads and shutdowns so much faster then BDS 2006. There seems to be other performance enhancements too such as switching between the form designer and code window. The IDE is so much faster that I don&#8217;t like going back to BDS 2006.<br /><br />2) <b>Vista Support</b> - This is a wonderful enhancement. I especially like how existing projects using dialogs and routines such as MessageDlg automatically have a Vista look simply by re-compiling the project.<br /><br />3) <b>Application.MainFormOnTaskbar</b> - I really like this new property. I&#8217;m working on an SDI application that manages windows in a similar way as Microsoft Word and Outlook. Overriding CreateParams and setting the ExStyle isn&#8217;t a big deal but having the MainFormOnTaskbar property helps to reduce some code. <br /><br /><span style='color:red'>Update:</span> Steve Trefethen posted a nice overview of <a href='http://www.stevetrefethen.com/blog/TheNewVCLPropertyTApplicationMainFormOnTaskbarInDelphi2007.aspx'>Application.MainFormOnTaskbar</a>.<br /><br />4) <b>Online Help</b> - I like the new look of the help system and the new navigation between pages is really nice. But I do have one major complaint. Help indexes found in the BDS 2006 help system are missing. For example launch the help system, go to Index, and enter &#8220;CreateDir routine&#8221; in the &#8220;Look for&#8221; textbox. The routine is not indexed in the new help system but it is indexed in the previous help system. And this is not the only routine not indexed. It sucks that this sort of information is no longer indexed in the help system.<br /><br /><span style='color:red'>Update:</span>Delphi 2007 Update 1 fixes my complaint about the online help. Routines such as CreateDir are now indexed.<br /><br />5) <b>Improved Tool Palette Search</b> - I really like how the tool palette search has been improved to find all matches containing the search word, not just matches beginning with the search word. This is a great improvement for me given that I use a number of 3rd party VCL components that are prefixed (i.e., TcxComboBox). <br /><br />So that&#8217;s my list of 5 things I like about Delphi 2007. But what about the things I do not like about Delphi 2007.<br /><br />1) &#8220;Non-breaking&#8221; Release - Well, sort of. The idea is that DCUs and packages from BDS 2006 can be used in Delphi 2007. In general this is true. However, I have encountered a number of problems. For starters Delphi 2007 is having trouble loading certain DevExpress packages at startup. And I have read in the newsgroups there is a painting issue too although I have not personally experienced it.<br /><br /><span style='color:red'>Update:</span> Turns out the problem was me. I was installing DevExpress packages that weren&#8217;t meant for the IDE. After installing the correct set of DevExpress VCL packages my IDE problems went away.<br /><br />2) Trouble Debugging - This problem has me scratching my head and for the life of me I cannot figure it out. All BDS 2006 projects I have opened in Delphi 2007 will not run under the interactive debugger. I haven&#8217;t logged this issue in QC yet because I&#8217;m still trying to figure out what is happening. Simply saying &#8220;Cannot debug project opened from BDS 2006 project file&#8221; does not give CodeGear enough information to troubleshoot the problem. But the problem still remains. I cannot debug existing projects. (Note: I suspect this issue might have something to do with the 3rd party packages such as the ones I&#8217;m using from DevExpress.)<br /><br />3) More Issues with Debugging - From time to time I get a weird error message when I press F9. The message says the debugger cannot create the process. I launch Sysinternal&#8217;s Process Explorer and notice the application to debug is running under the bds.exe process and yet the debugger cannot attach to it. To make matter worse I cannot kill the spawned process. I have to close down the IDE to kill it. (Again, I suspect this issue might have somethign to do with some of the 3rd party packages I have manually installed.)<br /><br /><span style='color:red'>Update:</span> <a href='http://www.thecave.com/archive/2007/03/26/fixed_my_delphi_2007_debug_issues.aspx'>Fixed my Delphi 2007 debug issues</a>.<br /><br />4) No Support in FinalBuilder (yet) - I use FinalBuilder for all my projects and unfortunately FinalBuilder does not support Delphi 2007 (yet). But according to the newsgroups a new compiler action for Delphi 2007 is in the works. <br /><br /><span style='color:red'>Update:</span> FinalBuilder now has a Delphi 2007 compiler action.<br /><br />5) No Support in EurekaLog (yet) - EurekaLog is another 3rd party tool I use, and unfortunately support for Delphi 2007 is not there yet. But good news is EurekaLog should have support in about 2 weeks.<br /><br /><span style='color:red'>Update:</span> EurekaLog now has Delphi 2007.<br /><br />I know some of these dislikes are not directly Delphi 2007 but they do prevent me from completely moving from BDS 2006 to Delphi 2007 right now. So Delphi 2007 is still an experiment for me at the moment while I wait for 3rd party support. Meanwhile I&#8217;m still using BDS 2006 for production work.<br /><br /><span style='color:red'>Update:</span> I now use Delphi 2007 daily. Best Delphi IDE in a long time.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -313,7 +313,7 @@
 <li class='category'><a href='/category/camping/'>camping (11)</a></li>
 <li class='category'><a href='/category/family/'>family (2)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
-<li class='category'><a href='/category/general/'>general (6)</a></li>
+<li class='category'><a href='/category/general/'>general (7)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (7)</a></li>
 <li class='category'><a href='/category/humor/'>humor (1)</a></li>
 <li class='category'><a href='/category/ios/'>ios (1)</a></li>
@@ -327,6 +327,7 @@
 <li class='category'><a href='/category/salem/'>salem (1)</a></li>
 <li class='category'><a href='/category/skiing/'>skiing (2)</a></li>
 <li class='category'><a href='/category/snowboarding/'>snowboarding (4)</a></li>
+<li class='category'><a href='/category/social/'>social (1)</a></li>
 <li class='category'><a href='/category/stowe/'>stowe (1)</a></li>
 <li class='category'><a href='/category/travel/'>travel (3)</a></li>
 <li class='category'><a href='/category/trip/'>trip (4)</a></li>
@@ -359,6 +360,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2014/03/14/cross-posting/" title="Cross Posting">Cross Posting</a></li>
+                
                   <li><a href="/2014/02/05/i-m-having-a-bad-day/" title="I'm Having a Bad Day">I'm Having a Bad Day</a></li>
                 
                   <li><a href="/2014/01/17/day-25/" title="Day 25">Day 25</a></li>
@@ -366,8 +369,6 @@
                   <li><a href="/2013/11/20/send-your-camera-video-to-your-tv/" title="Send Camera Video to Your TV">Send Camera Video to Your TV</a></li>
                 
                   <li><a href="/2013/11/11/rowan-on-the-balance-board/" title="Rowan on the Balance Board">Rowan on the Balance Board</a></li>
-                
-                  <li><a href="/2013/08/26/whale-watching-tour/" title="Whale Watching Tour">Whale Watching Tour</a></li>
                 
             </ul>
 		</div>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: social | thecave | Ramblings from a crotchety old man]]></title>
+  <link href="http://www.thecave.com/category/social/atom.xml" rel="self"/>
+  <link href="http://www.thecave.com/"/>
+  <updated>2014-03-14T09:11:24-04:00</updated>
+  <id>http://www.thecave.com/</id>
+  <author>
+    <name><![CDATA[Kirby Turner]]></name>
+    
+  </author>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cross Posting]]></title>
+    <link href="http://www.thecave.com/2014/03/14/cross-posting/"/>
+    <updated>2014-03-14T00:00:00-04:00</updated>
+    <id>http://www.thecave.com/2014/03/14/cross-posting</id>
+    <content type="html"><![CDATA[<p>I decided to go back to cross posting between ADN, Twitter, and Facebook. I&#8217;m not as active as I once was on any one of these social networks, so I figured cross posting won&#8217;t cause too much noise in the streams of followers.</p>]]></content>
+  </entry>
+  
+</feed>
