@@ -59,6 +59,28 @@
         </div>
 
         <div class="post-content right-col">
+        <h2><a href="/2006/01/11/micro-isv-from-vision-to-reality/" rel="bookmark" title="Micro-ISV: From Vision to Reality">Micro-ISV: From Vision to Reality</a></h2>
+
+        <p><a href='http://www.amazon.com/exec/obidos/ASIN/1590596013/whitepeaksoft-20?creative=327641&amp;amp;camp=14573&amp;amp;link_code=as1'><img align='left' alt=' Micro-ISV: From Vision to Reality ' border='0' src='/images/blogimages/bcm.gif' /></a> <a href='http://www.todoorelse.com/'>Bob Walsh</a>&#8217;s book <a href='http://www.amazon.com/exec/obidos/ASIN/1590596013/whitepeaksoft-20?creative=327641&amp;amp;camp=14573&amp;amp;link_code=as1'>Micro-ISV: From Vision to Reality</a> is finally on sale at Amazon. You can also <a href='http://www.apress.com/book/bookDisplay.html?bID=10057'>buy the eBook version</a> from directly from APress.</p>
+
+<p>I&#8217;ve not read the book yet but I&#8217;m looking forward to it. I ordered my copy and should have it in a couple of days. I&#8217;ll post a review once I read it, but I know it&#8217;s going to be a great book for those looking to start a software company and for those of us still in the early years of running our own software company. And if that doesn&#8217;t convince you to buy the book then maybe the fact that my interview from Bob is on Page 263.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jan<span class="year">2006</span></span><span class="day">11</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
         <h2><a href="/2006/01/11/finalbuilder-is-a-must-have-for-constructing-build-processes/" rel="bookmark" title="FinalBuilder is a Must Have for Constructing Build Processes">FinalBuilder is a Must Have for Constructing Build Processes</a></h2>
 
         <p>For years I have relied on custom built build processes for software I develop. For instance, on a recent large-scale .NET solution I used a combination of NTScheduler, VMware Workstation, CVS, NAnt, and the .NET SDK (along with other tools) to build an automated build environment. However, doing something similar for every one of my software projects is time consuming, and I have to rely on different tools for different projects. For example NAnt is useless for a Delphi Win32 project. So I finally decided to give FinalBuilder a try.<br /><br /><a href='http://www.finalbuilder.com/'>FinalBuilder is the ultimate tool for constructing a build process</a>. Within minutes I was able to automate a build process for a box inventory program I am working on. Of course projects with a more complex build process will take more than a few minutes to setup, but you should be able to automate a build process in minutes and not hours or days for most projects. <br /><br />I&#8217;m amazed at the flexibility provided by FinalBuilder. It supports a wide array of compilers and tools. And it has an easy-to-use GUI for construction of the build process for every time of project I&#8217;m working on.<br /><br />I decided to see how long it would take to setup a build process for <a href='http://www.smtpdiagnostics.com/'>SMTP Diagnostics</a>. Although SMTP Diagnostics is a simple product, its build process involves a number of steps. It is the perfect product to evaluate FinalBuilder with. <br /><br />Here are the steps in the build process that I wanted to automate through FinalBuilder:<br /><br />- Create a build directory sandbox<br />- Retrieve the latest source code from <a href='http://www.cvsnt.org'>CVS</a><br />- Compile the GUI program (using <a href='http://www.borland.com/delphi'>Delphi</a> 2006 compiler)<br />- Compile <a href='http://www.eurekalog.com/'>EurekaLog</a> into the GUI program<br />- Compile to console program (using <a href='http://www.borland.com/delphi'>Delphi</a> 2006 compiler)<br />- Compile the licensing framework into the GUI and console programs (using <a href='http://www.siliconrealms.com/software.shtml'>Armadillo</a>)<br />- Generate the help file system (using <a href='http://www.ec-software.com/hmpage.htm'>Help&amp;Manual;</a>)<br />- Generate the installer (using <a href='http://www.jrsoftware.org/isinfo.php'>Inno Setup</a>)<br />- Generate a zip file containing the generated installer<br />- Update and commit build number changes to CVS<br />- Tag release in CVS<br /><br />In less than 30 minutes I was able to setup the SMTP Diagnostics build process in FinalBuilder. I can now make a complete build of SMTP Diagnostics in under a minute with a click of a button. <br /><br />My next step in exploring FinalBuilder will be to generate the online help as HTML files and upon successful build of the product push the HTML files and the installer out to SMTP Diagnostics web site. Given the time I spent playing with FinalBuilder, I&#8217;m confident I will be able to automate these steps as well.</p>
@@ -255,26 +277,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Dec<span class="year">2005</span></span><span class="day">04</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2005/12/04/borland-delphi-2006-hits-the-streets/" rel="bookmark" title="Borland Delphi 2006 Hits the Streets">Borland Delphi 2006 Hits the Streets</a></h2>
-
-        <p>It&#8217;s true. <a href='http://www.borland.com/delphi'>Borland Delphi 2006</a> is shipping. Unfortunately I still do not have my copy which I pre-ordered back at the beginning of November. So much for a first come, first serve approach. According to my order status, my order has been back ordered! <br /><br />I hope my copy comes soon. I want to start up a new dev environment where I use the Borland Developers Studio 2006 for all my Delphi and .NET 1.1 programming. I&#8217;ll use Visual Studio 2005 for .NET 2.0 development since the Borland Developers Studio will not have support for .NET 2.0. This is unfortunate but I understand it had something to do with Microsoft consistently changing the release schedule for .NET 2.0 and a license agreement between Microsoft and Borland regarding the distribution of pre-RTM releases of the .NET 2.0 Framework. Unfortunately I can&#8217;t find the link to the blog that explains why this latest release from Borland does not support .NET Framework 2.0. I&#8217;ll post the URL if I find the link.<br /><br />Meanwhile, I anxiously wait for my copy of Delphi 2006.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -335,7 +337,7 @@
 <li class='category'><a href='/category/camping/'>camping (11)</a></li>
 <li class='category'><a href='/category/family/'>family (2)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
-<li class='category'><a href='/category/general/'>general (7)</a></li>
+<li class='category'><a href='/category/general/'>general (8)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (7)</a></li>
 <li class='category'><a href='/category/humor/'>humor (1)</a></li>
 <li class='category'><a href='/category/ios/'>ios (1)</a></li>
@@ -349,7 +351,7 @@
 <li class='category'><a href='/category/salem/'>salem (1)</a></li>
 <li class='category'><a href='/category/skiing/'>skiing (2)</a></li>
 <li class='category'><a href='/category/snowboarding/'>snowboarding (4)</a></li>
-<li class='category'><a href='/category/social/'>social (1)</a></li>
+<li class='category'><a href='/category/social/'>social (2)</a></li>
 <li class='category'><a href='/category/stowe/'>stowe (1)</a></li>
 <li class='category'><a href='/category/travel/'>travel (3)</a></li>
 <li class='category'><a href='/category/trip/'>trip (4)</a></li>
@@ -382,6 +384,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2014/04/06/not-organizing-events/" title="Not Organizing Events">Not Organizing Events</a></li>
+                
                   <li><a href="/2014/03/14/cross-posting/" title="Cross Posting">Cross Posting</a></li>
                 
                   <li><a href="/2014/02/05/i-m-having-a-bad-day/" title="I'm Having a Bad Day">I'm Having a Bad Day</a></li>
@@ -389,8 +393,6 @@
                   <li><a href="/2014/01/17/day-25/" title="Day 25">Day 25</a></li>
                 
                   <li><a href="/2013/11/20/send-your-camera-video-to-your-tv/" title="Send Camera Video to Your TV">Send Camera Video to Your TV</a></li>
-                
-                  <li><a href="/2013/11/11/rowan-on-the-balance-board/" title="Rowan on the Balance Board">Rowan on the Balance Board</a></li>
                 
             </ul>
 		</div>
