@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: rant | thecave | Ramblings from a crotchety old man]]></title>
+  <link href="http://www.thecave.com/category/rant/atom.xml" rel="self"/>
+  <link href="http://www.thecave.com/"/>
+  <updated>2014-04-24T09:06:45-04:00</updated>
+  <id>http://www.thecave.com/</id>
+  <author>
+    <name><![CDATA[Kirby Turner]]></name>
+    
+  </author>
+
+  
+  <entry>
+    <title type="html"><![CDATA[WTF Ruby Gems]]></title>
+    <link href="http://www.thecave.com/2014/04/24/wtf-ruby-gems/"/>
+    <updated>2014-04-24T00:00:00-04:00</updated>
+    <id>http://www.thecave.com/2014/04/24/wtf-ruby-gems</id>
+    <content type="html"><![CDATA[<p>I’m working with a client to update one of their iOS apps. The Xcode project uses CocoaPods for dependency management. I’m not a fan of CocoaPods, but I grin and bear it when working with existing client projects.</p>
+
+<p>Yesterday I needed to update a class, one .h file and one .m, from an open source project, so I ran <code>pod update</code> on the project. This told me I needed to update my install of CocoaPods, so I did. This in turn updated a ton of other Ruby Gems on my system. It was annoying having to go through the update process when all I needed was two files that I could have copied from github in less time, but no harm done, right? WRONG!!!</p>
+
+<p>Today I go to publish a new blog post. I use Jekyll to convert my site to static HTML. Guess what? Yesterday’s CocoaPods update has now broken my Jekyll install, and I cannot publish the blog post I just finished writing. WTF!?</p>
+
+<p>ALL I WANTED TO DO WAS GET THE LATEST FREAKIN’ VERSION OF TWO FILES, A .h AND .m, AND NOW I HAVE TO WASTE TIME TRYING TO FIX WHAT WAS NOT BROKEN UNTIL YESTERDAY JUST SO I CAN PUBLISH A BLOG POST.</p>
+
+<p>This is why I don’t like using things like CocoaPods, plug-ins, and other simular widgets.</p>]]></content>
+  </entry>
+  
+</feed>
