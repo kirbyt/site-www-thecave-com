@@ -54,6 +54,46 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Aug<span class="year">2005</span></span><span class="day">30</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2005/08/30/date-range-check-in-sql-server/" rel="bookmark" title="Date Range Check in SQL Server">Date Range Check in SQL Server</a></h2>
+
+        <p>I have been writing a number of stored procedures that return report data for a client. Each of these reports can be filtered by a date range, so I needed a simple way to check that a date was within a user defined date range. <br /><br />As an additional requirement, if the user does not specify a begin date or end date as part of the date range then the earliest or latest supported date respectively should be used. In other words, if the user does not specify a begin date then the earliest date supported by SQL Server should be used as the begin date, and if the user does not specify the end date then the latest date supported is used for the end date.<br /><br />My original approach was to use a BETWEEN clause in the SELECT statements. However, this made the code messy especially with the ISNULL call used to set the begin end dates when NULL. So I swapped out the code with a user-defined function.<br /><br />The user-defined function <b>fnIsInDateRange</b> takes 3 parameters:<ul><li>Date to check</li><li>Beginning date of the date range</li><li>Ending date of the date range</li></ul><br />The function returns one of the following:<ul><li><b>-1</b> if the date is before the range</li><li><b>0</b> if the date is within the range</li><li><b>1</b> if the date is beyond the range</li></ul><br />Here’s the code for those who want it.<pre><br />CREATE FUNCTION dbo.fnIsInDateRange<br />/* <br />  Determines if the date time value is within the date time range.<br /> <br />  Returns:<br />  -1 if the date is before the date range.<br />   0 if the date is within the date range.<br />   1 if the date is after the date range.<br /> <br />  Usage:<br />   SELECT dbo.fnIsInDateRange('2005-08-16','2005-08-01','2005-08-15')<br />   SELECT * FROM exams WHERE dbo.fnIsInDateRange(dtmExamDate,'2005-08-01','2005-08-15')=0<br />*/  <br />  (<br />    @value      DATETIME,<br />    @rangeFrom  DATETIME,<br />    @rangeTo    DATETIME<br />  )<br />RETURNS SMALLINT<br />AS<br />BEGIN<br />   DECLARE @result SMALLINT<br />   IF @value &lt; ISNULL(@rangeFrom,&#039;1753-01-01 00:00:00.000&#039;) <br />   BEGIN<br />      SET @result = -1<br />   END<br />   ELSE IF @value &gt; ISNULL( @rangeTo, '9999-12-31 11:59:59.997' )<br />   BEGIN<br />      SET @result = 1<br />   END<br />   ELSE<br />   BEGIN<br />      SET @result = 0<br />   END<br />   RETURN @result<br />END<br /></pre></p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Aug<span class="year">2005</span></span><span class="day">29</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2005/08/29/i-admit-to-being-lazy-and-dumb/" rel="bookmark" title="I Admit to Being Lazy and Dumb">I Admit to Being Lazy and Dumb</a></h2>
+
+        <p>I’ve always said I’m lazy programmer, which makes me a good programmer. For instance, I’m too lazy to perform the same task over and over on a computer so I write a tool. And I hate writing the same code over and over. I would rather write it once, package it up in a library, and forget the details. All I want to remember is the API.<br /><br />I also believe my lack of a quality education helps me think of solutions that smarter individual may never even consider. My seemingly childish approach to problem solving helps me think of solutions to the most time consuming yet simple problems.<br /><br />But Philipp Lenssen at Google Blogoscoped has really summed up <a href='http://blog.outer-court.com/archive/2005-08-24-n14.html'>why good programmers are lazy and dumb</a>. Give it a read.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Aug<span class="year">2005</span></span><span class="day">29</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -101,7 +141,7 @@
         <div class="post-content right-col">
         <h2><a href="/2005/08/22/offline-for-the-next-48-hours/" rel="bookmark" title="Offline for the next 48 hours">Offline for the next 48 hours</a></h2>
 
-        <p>I want to let the 2 readers out there know I will be offline for the next 48 hours. I&#8217;ll catch up on emails and such Wednesday afternoon/evening. Cheers.</p>
+        <p>I want to let the 2 readers out there know I will be offline for the next 48 hours. I’ll catch up on emails and such Wednesday afternoon/evening. Cheers.</p>
         
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
         
@@ -121,27 +161,27 @@
         <div class="post-content right-col">
         <h2><a href="/2005/08/18/recap-of-last-week/" rel="bookmark" title="Recap of Last Week">Recap of Last Week</a></h2>
 
-        <h2 id='lake_sunapee'>Lake Sunapee</h2>
+        <h2 id="lake_sunapee">Lake Sunapee</h2>
 
 <p>Last week Melanie and I joined her family for a week long vacation on Lake Sunapee in New Hampshire. Aside from no broadband Internet connection, the trip was perfect. The house we rented sits just a few feet from the water on 1 of 3 natural sandy beaches at Lake Sunapee.</p>
 
-<p>The views are amazing and the water is crystal clear. Being from Memphis, the water was naturally a little cold for me but I was still able to get in the water. We rented a pontoon boat for a day to tour the entire lake, and we were able to view the ski slopes of Mount Sunapee from the water. I couldn&#8217;t help but think how cool it would be to snow mobile across the lake in winter time to Mt Sunapee and snowboard for the day. Having a summer time house on Lake Sunapee would be awesome, but I imagine having a winter time house on the lake would be equally as awesome.</p>
+<p>The views are amazing and the water is crystal clear. Being from Memphis, the water was naturally a little cold for me but I was still able to get in the water. We rented a pontoon boat for a day to tour the entire lake, and we were able to view the ski slopes of Mount Sunapee from the water. I couldn’t help but think how cool it would be to snow mobile across the lake in winter time to Mt Sunapee and snowboard for the day. Having a summer time house on Lake Sunapee would be awesome, but I imagine having a winter time house on the lake would be equally as awesome.</p>
 
-<p>We didn&#8217;t sit around the lake all day, every day. Melanie and I brought bikes with us and rode around. Some of the hills were killers to climb but the speed coming down was exhilarating. Our longest ride was one around the entire lake, which resulted in a 22 or 23 mile ride. In the beginning, we didn&#8217;t think we could do it but next thing we knew we were back at the house.</p>
+<p>We didn’t sit around the lake all day, every day. Melanie and I brought bikes with us and rode around. Some of the hills were killers to climb but the speed coming down was exhilarating. Our longest ride was one around the entire lake, which resulted in a 22 or 23 mile ride. In the beginning, we didn’t think we could do it but next thing we knew we were back at the house.</p>
 
 <p>I highly recommend Lake Sunapee for those looking for a New England vacation.</p>
 
-<h2 id='salem_mass'>Salem, Mass</h2>
+<h2 id="salem_mass">Salem, Mass</h2>
 
 <p>As many people already know, Melanie and I are considering leaving NYC. Our life style has changed since getting married and we want certain things in our life that are hard to obtain in New York unless you have millions in the bank, which we do not. We really like New England and will probably end up somewhere North of Boston. Salem, MA is one of the areas we are considering so we stopped by the town on our drive back to NYC from Lake Sunapee.</p>
 
-<p>The day was hot, very hot. The temperature was around 95 degrees, which is way too hot for me. We had lunch at an Irish pub then walked around Salem Commons. Salem is definitely our favor place in the North of Boston area at the moment. We&#8217;re planning more visits to the area this fall before making our final decision but the closeness to Vermont and New Hampshire, and the coolness of this water front town has us already dreaming of &#8220;Going from Rainbows to Witches.&#8221;</p>
+<p>The day was hot, very hot. The temperature was around 95 degrees, which is way too hot for me. We had lunch at an Irish pub then walked around Salem Commons. Salem is definitely our favor place in the North of Boston area at the moment. We’re planning more visits to the area this fall before making our final decision but the closeness to Vermont and New Hampshire, and the coolness of this water front town has us already dreaming of “Going from Rainbows to Witches.”</p>
 
-<h2 id='dci'>DCI</h2>
+<h2 id="dci">DCI</h2>
 
-<p>Our vacation week ended with a stop to Gillett Stadium in Foxborough, MA, home of the New England Patriots, to see the <a href='http://www.dci.org/'>DCI</a> World Championships. This was my first DCI event in many years and Melanie&#8217;s first DCI event ever. Blue Knights, Santa Clara Vanguard, and The Cavaliers were our favorites of the night. While The Cadets took home the championship with a score of 99.150, I personally believe The Cavaliers were far better. And granted I don&#8217;t know the judging rules as well as I did 20 years ago but how can a corp score 99.150 when the drum major starts the show before the judges indicated that they were ready.</p>
+<p>Our vacation week ended with a stop to Gillett Stadium in Foxborough, MA, home of the New England Patriots, to see the <a href="http://www.dci.org/">DCI</a> World Championships. This was my first DCI event in many years and Melanie’s first DCI event ever. Blue Knights, Santa Clara Vanguard, and The Cavaliers were our favorites of the night. While The Cadets took home the championship with a score of 99.150, I personally believe The Cavaliers were far better. And granted I don’t know the judging rules as well as I did 20 years ago but how can a corp score 99.150 when the drum major starts the show before the judges indicated that they were ready.</p>
 
-<p>Short story short, The Cadet&#8217;s drum major started the show before the announcer asked if the judges were ready, which is before the drum major is asked if he or she is ready, and is most definitely before the announcer tells the corp that they may take the field. But what do I know? Heck, I thought The Cavaliers were way better but they only scored a 97.625 putting them in second place for the night.</p>
+<p>Short story short, The Cadet’s drum major started the show before the announcer asked if the judges were ready, which is before the drum major is asked if he or she is ready, and is most definitely before the announcer tells the corp that they may take the field. But what do I know? Heck, I thought The Cavaliers were way better but they only scored a 97.625 putting them in second place for the night.</p>
         
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
         
@@ -161,7 +201,7 @@
         <div class="post-content right-col">
         <h2><a href="/2005/08/18/30-day-trial-vs-marketing-screens/" rel="bookmark" title="30-day Trial vs Marketing Screens">30-day Trial vs Marketing Screens</a></h2>
 
-        <p>I read a <a href='http://www.furrygoat.com/2005/08/how_to_win_a_sa.html'>blog post</a> that has me thinking about the trial version of SMTP Diagnostics. As the story goes, a person was unhappy with the nag screen popping up as he was trying the trial version of a software program. Annoyed at the popups, he decided to uninstall the application even though the gentleman liked the program.<br /><br />The ISV that published the program in question found the blog <a href='http://www.furrygoat.com/2005/08/how_to_kill_a_s.html#comments'>posting</a> and explained the company&#8217;s reasoning for displaying the popup screens in the trial version. This is the part that really got me thinking about the trail version for SMTP Diagnostics.<br /><br />I didn&#8217;t like the trial mode model used in SMTP Diagnostics when I first released it and I still don&#8217;t like it. For starters, it is too confusing. In trial mode, the software will disable itself after 10 runs or 30 days which ever occurs first. While I&#8217;m not a fan of nag screens, which I prefer to call marketing screens, I believe just such a screen makes more sense for SMTP Diagnostics over disabling the software.<br /><br />I would love to hear your thoughts. What would be YOUR preferred approach to encourage users to buy the product without interfering too much with the user experience?<br /><br />Here&#8217;s one idea I am playing with in my head: Eliminate the current model all together and instead use marketing screens. The user will see the marketing screen every 5 times that the program is run. Also, the user will see the marketing screen every 5 times a test mail is sent within a single run. Lastly, the test mail will include a tag line at the end of each message saying something like &#8220;Sent using the trial version of SMTP Diagnostics.&#8221;<br /><br />The benefit of this approach is that the program will continue to work even if it has been installed for months. The current approach does not allow for that. Under the new model, users who rarely use SMTP Diagnostics can get away with running the trial and clicking OK to close the marketing screens. Users who use SMTP Diagnostics on a regular basis will hopefully agree to buy a license to eliminate the popup screen and remove the trial version tag line in the email message.<br /><br />What do you think of this approach? Or is there an approach I should consider?</p>
+        <p>I read a <a href='http://www.furrygoat.com/2005/08/how_to_win_a_sa.html'>blog post</a> that has me thinking about the trial version of SMTP Diagnostics. As the story goes, a person was unhappy with the nag screen popping up as he was trying the trial version of a software program. Annoyed at the popups, he decided to uninstall the application even though the gentleman liked the program.<br /><br />The ISV that published the program in question found the blog <a href='http://www.furrygoat.com/2005/08/how_to_kill_a_s.html#comments'>posting</a> and explained the company’s reasoning for displaying the popup screens in the trial version. This is the part that really got me thinking about the trail version for SMTP Diagnostics.<br /><br />I didn’t like the trial mode model used in SMTP Diagnostics when I first released it and I still don’t like it. For starters, it is too confusing. In trial mode, the software will disable itself after 10 runs or 30 days which ever occurs first. While I’m not a fan of nag screens, which I prefer to call marketing screens, I believe just such a screen makes more sense for SMTP Diagnostics over disabling the software.<br /><br />I would love to hear your thoughts. What would be YOUR preferred approach to encourage users to buy the product without interfering too much with the user experience?<br /><br />Here’s one idea I am playing with in my head: Eliminate the current model all together and instead use marketing screens. The user will see the marketing screen every 5 times that the program is run. Also, the user will see the marketing screen every 5 times a test mail is sent within a single run. Lastly, the test mail will include a tag line at the end of each message saying something like “Sent using the trial version of SMTP Diagnostics.”<br /><br />The benefit of this approach is that the program will continue to work even if it has been installed for months. The current approach does not allow for that. Under the new model, users who rarely use SMTP Diagnostics can get away with running the trial and clicking OK to close the marketing screens. Users who use SMTP Diagnostics on a regular basis will hopefully agree to buy a license to eliminate the popup screen and remove the trial version tag line in the email message.<br /><br />What do you think of this approach? Or is there an approach I should consider?</p>
         
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
         
@@ -229,57 +269,17 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Aug<span class="year">2005</span></span><span class="day">03</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2005/08/03/camping-in-long-island/" rel="bookmark" title="Camping in Long Island">Camping in Long Island</a></h2>
-
-        <p>There are camp grounds in Long Island? You bet ya. Melanie and I spent the weekend camping at one of many Long Island campgrounds. We stayed at <a href='http://nysparks.state.ny.us/parks/info.asp?parkID=52'>Wildwood State Park</a> Saturday and Sunday night and had a very enjoyable time. Wildwood is about an hour and a half to two hours from Manhattan and is on the Sound side of the island.<br /><br />We were a bit disappointed with the camp grounds on Saturday, rather I should say disappointed with the other campers on Saturday. There were lots of campers on that night, the grounds were near capacity. And many of the campers seemed to enjoy their cars more than the great outdoors. Music poured from car radios until 10:00/10:30 pm, people drove cars around until midnight, and car alarms could be heard throughout the night and early morning. Needless to say, Saturday wasn&#8217;t what we expected.<br /><br />Luckily Sunday was the saving grace for Wildwood campgrounds. The rowdy campers left (check-out time is 11 am) and grounds were probably less than 25% full. Sunday night was quite and enjoyable, a welcome change from the previous night. We chilled by the campfire listening to the strange noises made by the creatures of the night. We cooked steaks and roasted corn on the grill, and we were constantly thankful the Saturday night crowd was gone.<br /><br />Overall we really liked the campgrounds at Wildwood State Park and highly recommend it to those wanting to camp in Long Island. The campgrounds are nice and the beach is only a short walk away. Be sure to bring your bike and avoid Friday and Saturday nights.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Aug<span class="year">2005</span></span><span class="day">02</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2005/08/02/support-forums-are-open/" rel="bookmark" title="Support Forums are Open">Support Forums are Open</a></h2>
-
-        <p>I&#8217;m happy to announce that the White Peak Software <a href='http://www.whitepeaksoftware.com/forums/'>Forums</a> are open. Please start using the forums for your questions and feedback about SMTP Diagnostics.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
 <div class="more_posts">
 	<h2>
         
-        <a href="/page33" >&laquo; Older Entries</a> &nbsp; 
+        <a href="//page33" >&laquo; Older Entries</a> &nbsp; 
         
         
             
-                <a href="/page31" >Recent Entries &raquo;</a>
+                <a href="//page31" >Recent Entries &raquo;</a>
             
         
     </h2>
@@ -327,7 +327,7 @@
 <li class='category'><a href='/category/backpacking/'>backpacking (8)</a></li>
 <li class='category'><a href='/category/blogger/'>blogger (785)</a></li>
 <li class='category'><a href='/category/camping/'>camping (11)</a></li>
-<li class='category'><a href='/category/family/'>family (3)</a></li>
+<li class='category'><a href='/category/family/'>family (4)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
 <li class='category'><a href='/category/general/'>general (8)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (7)</a></li>
@@ -339,16 +339,19 @@
 <li class='category'><a href='/category/opinion/'>opinion (1)</a></li>
 <li class='category'><a href='/category/pictures/'>pictures (8)</a></li>
 <li class='category'><a href='/category/random/'>random (4)</a></li>
+<li class='category'><a href='/category/rant/'>rant (1)</a></li>
 <li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
 <li class='category'><a href='/category/salem/'>salem (1)</a></li>
 <li class='category'><a href='/category/skiing/'>skiing (2)</a></li>
 <li class='category'><a href='/category/snowboarding/'>snowboarding (4)</a></li>
 <li class='category'><a href='/category/social/'>social (2)</a></li>
 <li class='category'><a href='/category/stowe/'>stowe (1)</a></li>
+<li class='category'><a href='/category/tech/'>tech (1)</a></li>
 <li class='category'><a href='/category/travel/'>travel (3)</a></li>
 <li class='category'><a href='/category/trip/'>trip (4)</a></li>
 <li class='category'><a href='/category/trips/'>trips (1)</a></li>
 <li class='category'><a href='/category/videos/'>videos (2)</a></li>
+<li class='category'><a href='/category/work/'>work (1)</a></li>
 
     </ul>
 </div>
@@ -376,15 +379,15 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2014/04/24/wtf-ruby-gems/" title="WTF Ruby Gems">WTF Ruby Gems</a></li>
+                
+                  <li><a href="/2014/04/24/family-influence/" title="Family Influence">Family Influence</a></li>
+                
                   <li><a href="/2014/04/08/still-no-regrets/" title="Still No Regrets">Still No Regrets</a></li>
                 
                   <li><a href="/2014/04/06/not-organizing-events/" title="Not Organizing Events">Not Organizing Events</a></li>
                 
                   <li><a href="/2014/03/14/cross-posting/" title="Cross Posting">Cross Posting</a></li>
-                
-                  <li><a href="/2014/02/05/i-m-having-a-bad-day/" title="I'm Having a Bad Day">I'm Having a Bad Day</a></li>
-                
-                  <li><a href="/2014/01/17/day-25/" title="Day 25">Day 25</a></li>
                 
             </ul>
 		</div>

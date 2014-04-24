@@ -58,19 +58,19 @@
     <div class="post-content right-col">
     <h2><a href="/2006/01/13/smtp-diagnostics-review/" rel="bookmark" title="SMTP Diagnostics Review">SMTP Diagnostics Review</a></h2>
 
-    <p><a href='http://email.about.com/mbiopage.htm'>Heinz Tschabitscher</a> posted <a href='http://email.about.com/od/emailbehindthescenes/gr/smtp_diagnostic.htm'>a review about SMTP Diagnostics</a> on About Email. I have to say I agree with Heinz when he says &#8220;SMTP Diagnostics does not help you understand or fix errors.&#8221; It is true <a href='http://www.smtpdiagnostics.com/'>SMTP Diagnostics will help you understand what is happening assuming you understand the protocol message</a>, but the tool would be more useful if it explained things in plain English, which I believe is Heinz&#8217;s point.</p>
+    <p><a href="http://email.about.com/mbiopage.htm">Heinz Tschabitscher</a> posted <a href="http://email.about.com/od/emailbehindthescenes/gr/smtp_diagnostic.htm">a review about SMTP Diagnostics</a> on About Email. I have to say I agree with Heinz when he says “SMTP Diagnostics does not help you understand or fix errors.” It is true <a href="http://www.smtpdiagnostics.com/">SMTP Diagnostics will help you understand what is happening assuming you understand the protocol message</a>, but the tool would be more useful if it explained things in plain English, which I believe is Heinz’s point.</p>
 
-<p>It&#8217;s been on my feature list for a while now to change this. SMTP Diagnostics should provide more help and understanding in plain English. The challenge has been to correctly interpret the error message. For example, I recently was troubleshooting an email problem for a web application. In my tests using SMTP Diagnostics I enabled SMTP Authentication and provided the correct credentials for the mail server. For the From and To I used the same email address. The sender was checked and determined to be okay but the recipient check failed with &#8220;550 no such user here&#8221;, and I knew for a fact that the email address was valid.</p>
+<p>It’s been on my feature list for a while now to change this. SMTP Diagnostics should provide more help and understanding in plain English. The challenge has been to correctly interpret the error message. For example, I recently was troubleshooting an email problem for a web application. In my tests using SMTP Diagnostics I enabled SMTP Authentication and provided the correct credentials for the mail server. For the From and To I used the same email address. The sender was checked and determined to be okay but the recipient check failed with “550 no such user here”, and I knew for a fact that the email address was valid.</p>
 
 <p>To SMTP Diagnostics the problem is clear. The recipient address is invalid, or at least that is what it is told by the mail server. However, the address is very much valid and the problem is actually caused by a check on the outgoing mail server that does not allow a message to be sent from an address to the same address where the domain name in the email address is different than the domain name for the outgoing mail server. In other words, using this particular mail server you cannot send an email to validaddress@domain.com from validaddress@domain.com from a mail server at the domain anotherdomain.com.</p>
 
 <p>The reason for the setting is clear. The setting is used to help prevent spam mail. However, it is impossible for SMTP Diagnostics to properly interpret this error into plain English that accurately describes the problem.</p>
 
-<p>Another test on the same mail server further illustrates why it is hard to correctly interpret the actual error. The same error message, &#8220;550 no such user here&#8221; is received for a valid recipient address when the From address used is not a valid maildrop but of the same domain as the outgoing mail server. In other words, the mail server for anotherdomain.com will report &#8220;550 no such user here&#8221; for the recipient validaddress@domain.com when the From address no-reply@anotherdomain.com is used and no-reply is not a valid maildrop.</p>
+<p>Another test on the same mail server further illustrates why it is hard to correctly interpret the actual error. The same error message, “550 no such user here” is received for a valid recipient address when the From address used is not a valid maildrop but of the same domain as the outgoing mail server. In other words, the mail server for anotherdomain.com will report “550 no such user here” for the recipient validaddress@domain.com when the From address no-reply@anotherdomain.com is used and no-reply is not a valid maildrop.</p>
 
 <p>These are two very different scenarios where the mail server reports the same error message, and both result from server settings used to prevent sending spam.</p>
 
-<p>Personally I&#8217;m glad mail servers are incorporating settings that help prevent spam mail from being sent. But at the same time it makes it more difficult to determine the actual cause of the problem when sending outgoing emails. Still, I plan to take the feedback from Heinz&#8217;s review and improve on SMTP Diagnostics for the next release.</p>
+<p>Personally I’m glad mail servers are incorporating settings that help prevent spam mail from being sent. But at the same time it makes it more difficult to determine the actual cause of the problem when sending outgoing emails. Still, I plan to take the feedback from Heinz’s review and improve on SMTP Diagnostics for the next release.</p>
 
 
     <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
@@ -131,7 +131,7 @@
 <li class='category'><a href='/category/backpacking/'>backpacking (8)</a></li>
 <li class='category'><a href='/category/blogger/'>blogger (785)</a></li>
 <li class='category'><a href='/category/camping/'>camping (11)</a></li>
-<li class='category'><a href='/category/family/'>family (3)</a></li>
+<li class='category'><a href='/category/family/'>family (4)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
 <li class='category'><a href='/category/general/'>general (8)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (7)</a></li>
@@ -143,16 +143,19 @@
 <li class='category'><a href='/category/opinion/'>opinion (1)</a></li>
 <li class='category'><a href='/category/pictures/'>pictures (8)</a></li>
 <li class='category'><a href='/category/random/'>random (4)</a></li>
+<li class='category'><a href='/category/rant/'>rant (1)</a></li>
 <li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
 <li class='category'><a href='/category/salem/'>salem (1)</a></li>
 <li class='category'><a href='/category/skiing/'>skiing (2)</a></li>
 <li class='category'><a href='/category/snowboarding/'>snowboarding (4)</a></li>
 <li class='category'><a href='/category/social/'>social (2)</a></li>
 <li class='category'><a href='/category/stowe/'>stowe (1)</a></li>
+<li class='category'><a href='/category/tech/'>tech (1)</a></li>
 <li class='category'><a href='/category/travel/'>travel (3)</a></li>
 <li class='category'><a href='/category/trip/'>trip (4)</a></li>
 <li class='category'><a href='/category/trips/'>trips (1)</a></li>
 <li class='category'><a href='/category/videos/'>videos (2)</a></li>
+<li class='category'><a href='/category/work/'>work (1)</a></li>
 
     </ul>
 </div>
@@ -180,15 +183,15 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2014/04/24/wtf-ruby-gems/" title="WTF Ruby Gems">WTF Ruby Gems</a></li>
+                
+                  <li><a href="/2014/04/24/family-influence/" title="Family Influence">Family Influence</a></li>
+                
                   <li><a href="/2014/04/08/still-no-regrets/" title="Still No Regrets">Still No Regrets</a></li>
                 
                   <li><a href="/2014/04/06/not-organizing-events/" title="Not Organizing Events">Not Organizing Events</a></li>
                 
                   <li><a href="/2014/03/14/cross-posting/" title="Cross Posting">Cross Posting</a></li>
-                
-                  <li><a href="/2014/02/05/i-m-having-a-bad-day/" title="I'm Having a Bad Day">I'm Having a Bad Day</a></li>
-                
-                  <li><a href="/2014/01/17/day-25/" title="Day 25">Day 25</a></li>
                 
             </ul>
 		</div>

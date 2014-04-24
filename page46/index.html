@@ -54,6 +54,46 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Aug<span class="year">2004</span></span><span class="day">02</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2004/08/02/unit-testing-gone-bad/" rel="bookmark" title="Unit Testing Gone Bad">Unit Testing Gone Bad</a></h2>
+
+        <p>Sorry but I have to rant for a minute. I have been working with a team lately that doesn’t get unit testing. In 4 months, this team has been unable to have all 200+ unit tests run successfully. This to me is an indication that 1) the team does not understand unit testing and its importance, or 2) the team just does not care. My initial thought is the team does not care, but after today I am starting to think the team just does not understand unit testing. <br /> <br />Today a programmer committed code changes to CVS with a comment stating that the class failed unit testing with a stack overflow problem. The programmer apparently cared enough to run the unit tests prior to committing the code but didn’t take the time to fix the code, which by the way would have only taken a minute. Instead of fixing the code he commented in the log message that the class failed unit testing. <br /> <br />What kills me is the programmer cared enough to run the unit test against his code prior to committing to the source repository and yet didn’t care enough to fix the problem. Did the programmer think the test was falsely reporting an error against his assumed-to-be perfect code? It is as if the programmer does not realize that the unit test is trying to help him determine problems in his code. “Yeah, the unit test failed against my code but I know my code is correct so I’m going to commit anyway.” I don’t get it.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Aug<span class="year">2004</span></span><span class="day">01</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2004/08/01/installers-and-my-document-directory/" rel="bookmark" title="Installers and My Document Directory">Installers and My Document Directory</a></h2>
+
+        <p>In setting up my new laptop, I decided to go with VMware to host various guest operating systems for my development, collaboration, etc. For the most part this is working out well but there are still glitches. For example, to share the My Document folder with multiple guest OS I created a share in the host OS. Each guest OS maps the My Documents folder to the UNC \.host\Shared Folders\kirbyt\documents. The problem I have experienced with this configuration has nothing to do with me authoring documents, etc. Instead I have encounter two cases where installers have failed. <br /> <br />The .NET Framework 1.1 installer and the Adobe Reader 6.0 apparently need access to the My Documents folder during the installation process. However, both fail because of the UNC reference to the actual folder. My temporary work around to date has been to re-map the My Documents folder to a temporary directory on the local hard drive within the guest OS, prefer the install, and re-map the My Documents folder back to the original UNC location. <br /> <br />I wonder what these two installers want with the My Documents folder during installations and I wonder why their not smart enough to recognize the UNC reference.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Jul<span class="year">2004</span></span><span class="day">30</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -81,7 +121,7 @@
         <div class="post-content right-col">
         <h2><a href="/2004/07/26/back-from-vermont/" rel="bookmark" title="Back from Vermont">Back from Vermont</a></h2>
 
-        <p>We&#8217;re back from Vermont. It has only been a couple hours since we got home and I already miss the Green Mountains. <br /></p>
+        <p>We’re back from Vermont. It has only been a couple hours since we got home and I already miss the Green Mountains. <br /></p>
         
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
         
@@ -101,7 +141,7 @@
         <div class="post-content right-col">
         <h2><a href="/2004/07/23/weekend-in-vermont/" rel="bookmark" title="Weekend in Vermont">Weekend in Vermont</a></h2>
 
-        <p>Melanie and I will be in Vermont this week. Can&#8217;t wait. It&#8217;s been too long since our last visit. <br /></p>
+        <p>Melanie and I will be in Vermont this week. Can’t wait. It’s been too long since our last visit. <br /></p>
         
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
         
@@ -121,7 +161,7 @@
         <div class="post-content right-col">
         <h2><a href="/2004/07/22/shizzolator/" rel="bookmark" title="Shizzolator">Shizzolator</a></h2>
 
-        <p>Here&#8217;s what <a href='http://www.asksnoop.com/shizzolator.php?url=http%3A%2F%2Fthecave.com'>this blog</a> looks like to Snoop Dogg&#8217;s <a href='http://www.asksnoop.com/'>Tha Shizzolator</a>. And check out the shizzolated code down below. <br /></p>
+        <p>Here’s what <a href='http://www.asksnoop.com/shizzolator.php?url=http%3A%2F%2Fthecave.com'>this blog</a> looks like to Snoop Dogg’s <a href='http://www.asksnoop.com/'>Tha Shizzolator</a>. And check out the shizzolated code down below. <br /></p>
         
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
         
@@ -141,7 +181,8 @@
         <div class="post-content right-col">
         <h2><a href="/2004/07/21/shift-arrow-keys-not-highlighting/" rel="bookmark" title="Shift + Arrow Keys Not Highlighting">Shift + Arrow Keys Not Highlighting</a></h2>
 
-        <p>I learned that some Dell Latitude D600 configurations will prevent Shift + Arrow key combination from highlighting text within a VMware guest OS.&nbsp; The problem also prevents selecting multiple list items too.&nbsp; I found that the problem is caused by the ATI tray icon application.&nbsp; Disable the ATI tray icon application to get Shift + Arrow key highlighting working again within Windows guest OS'es.</p><br />
+        <p>I learned that some Dell Latitude D600 configurations will prevent Shift + Arrow key combination from highlighting text within a VMware guest OS.&nbsp; The problem also prevents selecting multiple list items too.&nbsp; I found that the problem is caused by the ATI tray icon application.&nbsp; Disable the ATI tray icon application to get Shift + Arrow key highlighting working again within Windows guest OS'es.</p>
+<p><br /></p>
         
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
         
@@ -161,7 +202,7 @@
         <div class="post-content right-col">
         <h2><a href="/2004/07/21/building-a-business-relationship/" rel="bookmark" title="Building a Business Relationship">Building a Business Relationship</a></h2>
 
-        <p>Over the last few years I have watched and learned about building business relationships. I have seen huge mistakes made and I have seen techniques used that lead to great success. However, the key to building a relationship, whether good or bad, is always same&#8230;communication. A lack of communication will spell disaster for any relationship while a good amount of communication can spell success. <br /> <br /> Good communication does not guarantee success but it eliminates the element of surprise. Most people don&#8217;t like surprises unless it is for happy moments. Having a surprise birthday party thrown in your honor will make you feel good. We like those types of surprises. However, being told that the project is going to take twice as long to complete and at twice the cost is not the type of surprise you want. It&#8217;s not a happy moment and the customer does not like those types of surprises. <br /> <br /> While we all know no one likes the bad moment surprises, I&#8217;m constantly amazed when I see a development team surprise the customer team and project stake holders with bad news. You are not going to be able to prevent bad things from happening within a project, but you can eliminate the element of surprise and it starts with communication. <br /> <br /> You can eliminate the element of surprise by communicating with the customer on a regular basis. This communication must include the good, bad and the ugly. The good news is always easy to share, but you also should be willing to share the bad and ugly news even at the risk of having the project canceled. The relationship you are building will only strengthen with your honesty and upfront nature, and this should result in greater awards further down the road. <br /> <br /> Frequent, open, and honest communication is a key to building successful relationships. However, one must know how to balance the information communicated. Someone who cries wolf all the time will loss credibility. Likewise the individual who only shares good news is likely to be perceived as hiding information, which can result in a loss of credibility as well. The trick here is to balance the information shared and provide only the information required by your audience to keep them informed and to eliminate surprise. <br /> <br /> As an example of this, if your project is showing signs of slippage share this knowledge with your customer, but don&#8217;t make it sound like a crisis. Just indicate that there are early signs of slippage and outline your plans to counter the affects. This should be done early on instead of waiting until there is major slippage in the project timeline. <br /> <br /> If slippage occurs, the customer will not be surprised by the news. If slippage does not occur then the customer will see your were able to mitigate the risks. Either way you were able to eliminate the element of surprise and instilled greater confidence in your abilities with your customer and thus strengthening the business relationship. <br /> <br /> Eliminating the element of surprise with regard to unfortunate news will help strengthen your business relationship with your customer and will hopefully result future work with your customer. <br /></p>
+        <p>Over the last few years I have watched and learned about building business relationships. I have seen huge mistakes made and I have seen techniques used that lead to great success. However, the key to building a relationship, whether good or bad, is always same…communication. A lack of communication will spell disaster for any relationship while a good amount of communication can spell success. <br /> <br /> Good communication does not guarantee success but it eliminates the element of surprise. Most people don’t like surprises unless it is for happy moments. Having a surprise birthday party thrown in your honor will make you feel good. We like those types of surprises. However, being told that the project is going to take twice as long to complete and at twice the cost is not the type of surprise you want. It’s not a happy moment and the customer does not like those types of surprises. <br /> <br /> While we all know no one likes the bad moment surprises, I’m constantly amazed when I see a development team surprise the customer team and project stake holders with bad news. You are not going to be able to prevent bad things from happening within a project, but you can eliminate the element of surprise and it starts with communication. <br /> <br /> You can eliminate the element of surprise by communicating with the customer on a regular basis. This communication must include the good, bad and the ugly. The good news is always easy to share, but you also should be willing to share the bad and ugly news even at the risk of having the project canceled. The relationship you are building will only strengthen with your honesty and upfront nature, and this should result in greater awards further down the road. <br /> <br /> Frequent, open, and honest communication is a key to building successful relationships. However, one must know how to balance the information communicated. Someone who cries wolf all the time will loss credibility. Likewise the individual who only shares good news is likely to be perceived as hiding information, which can result in a loss of credibility as well. The trick here is to balance the information shared and provide only the information required by your audience to keep them informed and to eliminate surprise. <br /> <br /> As an example of this, if your project is showing signs of slippage share this knowledge with your customer, but don’t make it sound like a crisis. Just indicate that there are early signs of slippage and outline your plans to counter the affects. This should be done early on instead of waiting until there is major slippage in the project timeline. <br /> <br /> If slippage occurs, the customer will not be surprised by the news. If slippage does not occur then the customer will see your were able to mitigate the risks. Either way you were able to eliminate the element of surprise and instilled greater confidence in your abilities with your customer and thus strengthening the business relationship. <br /> <br /> Eliminating the element of surprise with regard to unfortunate news will help strengthen your business relationship with your customer and will hopefully result future work with your customer. <br /></p>
         
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
         
@@ -209,193 +250,17 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jul<span class="year">2004</span></span><span class="day">20</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/07/20/a-binding-formatter-is-called-twice/" rel="bookmark" title="A Binding Formatter is Called Twice">A Binding Formatter is Called Twice</a></h2>
-
-        <p>It seems that a binding formatter is called twice when a user leaves a textbox control. As the user leaves the control the Leave event for the control is fired followed by the binding format event. The setter method of the bounded property is called next followed by the getter method then finally the binding format event is called again. <br /> <br /> This should not be a concern for applications that use binding formatters but the developer should know it will be called twice. <br /> <br /> Here is sample code that illustrates the behavior:<span style='font-family: monospace'><pre>
-<br /> using System;
-<br /> using System.Drawing;
-<br /> using System.Collections;
-<br /> using System.ComponentModel;
-<br /> using System.Windows.Forms;
-<br /> using System.Data;
-<br /> using System.Diagnostics;
-<br />
-<br /> namespace SampleWindowsApp
-<br /> {
-<br />     /// <summary>
-<br />     /// Summary description for Form1.
-<br />     /// </summary>
-<br />     public class Form1 : System.Windows.Forms.Form
-<br />     {
-<br />         private System.Windows.Forms.TextBox textBox1;
-<br />         private System.Windows.Forms.Button button1;
-<br />         private MyClass _dataSource = new MyClass();
-<br />
-<br />         /// <summary>
-<br />         /// Required designer variable.
-<br />         /// </summary>
-<br />         private System.ComponentModel.Container components = null;
-<br />
-<br />         public Form1()
-<br />         {
-<br />             //
-<br />             // Required for Windows Form Designer support
-<br />             //
-<br />             InitializeComponent();
-<br />         }
-<br />
-<br />         /// <summary>
-<br />         /// Clean up any resources being used.
-<br />         /// </summary>
-<br />         protected override void Dispose( bool disposing )
-<br />         {
-<br />             if( disposing )
-<br />             {
-<br />                 if (components != null)
-<br />                 {
-<br />                     components.Dispose();
-<br />                 }
-<br />             }
-<br />             base.Dispose( disposing );
-<br />         }
-<br />
-<br />         #region Windows Form Designer generated code
-<br />         /// <summary>
-<br />         /// Required method for Designer support - do not modify
-<br />         /// the contents of this method with the code editor.
-<br />         /// </summary>
-<br />         private void InitializeComponent()
-<br />         {
-<br />             this.textBox1 = new System.Windows.Forms.TextBox();
-<br />             this.button1 = new System.Windows.Forms.Button();
-<br />             this.SuspendLayout();
-<br />             //
-<br />             // textBox1
-<br />             //
-<br />             this.textBox1.Location = new System.Drawing.Point(56, 32);
-<br />             this.textBox1.Name = "textBox1";
-<br />             this.textBox1.TabIndex = 0;
-<br />             this.textBox1.Text = "textBox1";
-<br />             this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
-<br />             //
-<br />             // button1
-<br />             //
-<br />             this.button1.Location = new System.Drawing.Point(72, 120);
-<br />             this.button1.Name = "button1";
-<br />             this.button1.TabIndex = 1;
-<br />             this.button1.Text = "button1";
-<br />             //
-<br />             // Form1
-<br />             //
-<br />             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-<br />             this.ClientSize = new System.Drawing.Size(292, 266);
-<br />             this.Controls.Add(this.button1);
-<br />             this.Controls.Add(this.textBox1);
-<br />             this.Name = "Form1";
-<br />             this.Text = "Form1";
-<br />             this.Load += new System.EventHandler(this.Form1_Load);
-<br />             this.ResumeLayout(false);
-<br />
-<br />         }
-<br />         #endregion
-<br />
-<br />         /// <summary>
-<br />         /// The main entry point for the application.
-<br />         /// </summary>
-<br />         [STAThread]
-<br />         static void Main()
-<br />         {
-<br />             Application.Run(new Form1());
-<br />         }
-<br />
-<br />         private void Form1_Load(object sender, System.EventArgs e)
-<br />         {
-<br />             Binding binding = new Binding( "Text", _dataSource, "Value" );
-<br />             binding.Format += new ConvertEventHandler(binding_Format);
-<br />
-<br />             textBox1.DataBindings.Add( binding );
-<br />         }
-<br />
-<br />         private void binding_Format(object sender, ConvertEventArgs e)
-<br />         {
-<br />             Debug.WriteLine( "Format" );
-<br />         }
-<br />
-<br />         private void textBox1_Leave(object sender, System.EventArgs e)
-<br />         {
-<br />             Debug.WriteLine( "Leave" );
-<br />
-<br />         }
-<br />     }
-<br />
-<br />     class MyClass
-<br />     {
-<br />         private string _value = "Default value.";
-<br />         public string Value
-<br />         {
-<br />             get
-<br />             {
-<br />                 Debug.WriteLine( "MyClass.Value getter" );
-<br />                 return _value;
-<br />             }
-<br />             set
-<br />             {
-<br />                 Debug.WriteLine( "MyClass.Value setter" );
-<br />                 _value = value;
-<br />             }
-<br />         }
-<br />     }
-<br /> }
-<br /> </pre>
-<br /> </span></p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jul<span class="year">2004</span></span><span class="day">16</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/07/16/duh/" rel="bookmark" title="Duh!">Duh!</a></h2>
-
-        <p>Melanie and I were planning to fly into Manchester, NH next week and drive to Vermont for a break from NYC.&#160; However confusion set in when we started checking the fly availability and car rentals.&#160; Flights into Manchester are filling up and car rentals are sold out.&#160; What gives? <br />&#160; <br />Duh!&#160; The Democratic Convention 2004 starts on Sunday, July 26 in Boston.&#160; No wonder Manchester is so busy that weekend.&#160; Needless to say, Melanie and I are breaking convention (no pun intended) and driving up from NYC to avoid the Boston/Manchester madness. <br /></p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
 <div class="more_posts">
 	<h2>
         
-        <a href="/page47" >&laquo; Older Entries</a> &nbsp; 
+        <a href="//page47" >&laquo; Older Entries</a> &nbsp; 
         
         
             
-                <a href="/page45" >Recent Entries &raquo;</a>
+                <a href="//page45" >Recent Entries &raquo;</a>
             
         
     </h2>
@@ -443,7 +308,7 @@
 <li class='category'><a href='/category/backpacking/'>backpacking (8)</a></li>
 <li class='category'><a href='/category/blogger/'>blogger (785)</a></li>
 <li class='category'><a href='/category/camping/'>camping (11)</a></li>
-<li class='category'><a href='/category/family/'>family (3)</a></li>
+<li class='category'><a href='/category/family/'>family (4)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
 <li class='category'><a href='/category/general/'>general (8)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (7)</a></li>
@@ -455,16 +320,19 @@
 <li class='category'><a href='/category/opinion/'>opinion (1)</a></li>
 <li class='category'><a href='/category/pictures/'>pictures (8)</a></li>
 <li class='category'><a href='/category/random/'>random (4)</a></li>
+<li class='category'><a href='/category/rant/'>rant (1)</a></li>
 <li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
 <li class='category'><a href='/category/salem/'>salem (1)</a></li>
 <li class='category'><a href='/category/skiing/'>skiing (2)</a></li>
 <li class='category'><a href='/category/snowboarding/'>snowboarding (4)</a></li>
 <li class='category'><a href='/category/social/'>social (2)</a></li>
 <li class='category'><a href='/category/stowe/'>stowe (1)</a></li>
+<li class='category'><a href='/category/tech/'>tech (1)</a></li>
 <li class='category'><a href='/category/travel/'>travel (3)</a></li>
 <li class='category'><a href='/category/trip/'>trip (4)</a></li>
 <li class='category'><a href='/category/trips/'>trips (1)</a></li>
 <li class='category'><a href='/category/videos/'>videos (2)</a></li>
+<li class='category'><a href='/category/work/'>work (1)</a></li>
 
     </ul>
 </div>
@@ -492,15 +360,15 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2014/04/24/wtf-ruby-gems/" title="WTF Ruby Gems">WTF Ruby Gems</a></li>
+                
+                  <li><a href="/2014/04/24/family-influence/" title="Family Influence">Family Influence</a></li>
+                
                   <li><a href="/2014/04/08/still-no-regrets/" title="Still No Regrets">Still No Regrets</a></li>
                 
                   <li><a href="/2014/04/06/not-organizing-events/" title="Not Organizing Events">Not Organizing Events</a></li>
                 
                   <li><a href="/2014/03/14/cross-posting/" title="Cross Posting">Cross Posting</a></li>
-                
-                  <li><a href="/2014/02/05/i-m-having-a-bad-day/" title="I'm Having a Bad Day">I'm Having a Bad Day</a></li>
-                
-                  <li><a href="/2014/01/17/day-25/" title="Day 25">Day 25</a></li>
                 
             </ul>
 		</div>

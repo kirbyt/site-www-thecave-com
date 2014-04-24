@@ -54,6 +54,46 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jul<span class="year">2007</span></span><span class="day">29</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2007/07/29/how-to-access-a-windows-2003-file-share-from-mac-os-x/" rel="bookmark" title="How To Access a Windows 2003 File Share From Mac OS X">How To Access a Windows 2003 File Share From Mac OS X</a></h2>
+
+        <p>I love my MacBook Pro. It’s an awesome machine and OS X is a great operating system. However, I have encountered 2 problems when dealing with my Windows-base network. First problem is accessing Windows 2003 file shares and the other problem is resolving machine names on the local network. <br /><br />I still haven’t solved the second problem but today I came across the solution for the first. This blog posting by Drew McLellan gives the step by step instructions for <a href='http://allinthehead.com/retro/218/accessing-a-windows-2003-share-from-os-x'>accessing Windows 2003 file shares from Mac OS X</a>. Thanks Drew!</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jul<span class="year">2007</span></span><span class="day">29</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2007/07/29/cannot-resolve-machine-name-from-mac-os-x/" rel="bookmark" title="Cannot Resolve Machine Name From Mac OS X">Cannot Resolve Machine Name From Mac OS X</a></h2>
+
+        <p>After resolving the <a href='http://www.thecave.com/archive/2007/07/29/how_to_access_a_windows_2003_file_share_from_mac_os_x.aspx'>Windows Server 2003 file share access</a> problem I turned my attention to fixing the DNS issue I’m having. I’m able to ping the IP address of machines on my Local Area Network but I’m not able to resolve the machine names. I have a local DNS running on Windows Server 2003 but for some odd reason OS X is not using it to resolve names. So I decided to use a stop-gap approach for the time being.<br /><br />I modified the /etc/hosts file to include the address of the machines with a static IP address. After all, these are the only machines I need access to from OS X. Here are the steps I followed:<ul><br /><li>Sign in as an administrator (or an account belonging to the sudousers group)</li><br /><li>Launch a terminal shell (Applications &gt; Utilities &gt; Terminal if you are using Finder or type <b>terminal</b> in Spotlight)</li><br /><li>Run the command <b>sudo vi /etc/hosts</b></li><br /><li>Scroll to the end of the file</li><br /><li>Type <b>i</b> to enter insert mode</li><br /><li>Press the enter key to start a new line (my vi skills are weak as it has been years since I have used it - there is probably a better way to append to the end of a file)</li><br /><li>Enter the IP address, press the <b>tab</b> key, then enter the name machine</li><br /><li>Press the <b>esc</b> key to get out of insert mode</li><br /><li>Press <b>:wq</b> to save the changes and quit vi</li><br /></ul>That’s is. The machine name will now resolve to the IP.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Jul<span class="year">2007</span></span><span class="day">26</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -81,7 +121,7 @@
         <div class="post-content right-col">
         <h2><a href="/2007/07/26/major-technology-upgrade/" rel="bookmark" title="Major Technology Upgrade">Major Technology Upgrade</a></h2>
 
-        <p>Those that know me well know I tend to hold on to and use older technologies (i.e., computers, mobile phones, iPod, etc) longer then I should. Once a piece of technology is working for me I don&#8217;t see much reason to upgrade. But every few years I must go through a major technology upgrade, which is what I have done over the last week.<br /><br />I replaced my aging mobile phone with a sleek Motorola RAZR V3m. I admit I&#8217;m addicted to this phone. While I was able to do Internet and text messaging on my old phone, my new phone makes it easier and allows me to do more such as check email and watch live TV. The built-in Bluetooth is awesome too. I&#8217;ll talk more about that in a minute.<br /><br />The new mobile phone required I get a new headset. I prefer hands-free talking especially on longer calls. My wired headset is incompatible with the RAZR so I bought a new Bluetooth enabled headset, the Motorola H700C. Of course I look like I have joined the collective when I wear the headset, but fashion aside this is a really nice headset. It works well with the RAZR phone. Calls are clear, and according to those I&#8217;ve called there is no problem hearing me talk.<br /><br />A major technology upgrade is not complete without a new computer. I mentioned the other day that <a href='http://www.thecave.com/archive/2007/07/23/excited_about_expected_new_arrival.aspx'>I bought a MacBook Pro</a>. It arrived yesterday and after spending a few hours with it I can&#8217;t image going back to a Windows only machine. I&#8217;ve tried various favors of Linux over the last couple of years but I always encountered some type of problem. This made me a bit concerned about switching to Mac OSX, but I now know I had no reasons for concern. Everything just works. Some tweaking was needed in certain cases but in general everything work.<br /><br />One area that required a little tweak was adding iSync support for my RAZR phone. Apparently the latest OSX updates from Apple support the RAZR V3m but not the Sprint version, which is what I have. Luckily I learned about <a href='http://www.clockskew.com/blog/'>ClockSkew</a> and his <a href='http://www.clockskew.com/forum/'>iSync plug-ins for the RAZR phones</a>. Now, using Bluetooth - gotta love that technology, I&#8217;m able to sync my calendar and address book between my phone and MacBook Pro. Awesome stuff, I tell you.<br /><br />Speaking of Bluetooth, I decided to go with the wireless Bluetooth keyboard for Macs. Once again it just works.<br /><br />To continue working with Windows, which I must do, I installed <a href='http://www.vmware.com/mac'>VMware Fusion</a>. This product is awesome too. I find my virtual machines run much better under OSX as the host operating system compared to Windows or even Linux. Of course having 4GB of RAM doesn&#8217;t hurt either.<br /><br />So new phone, new headset, new laptop&#8230;what else? That&#8217;s it for the moment but I do plan to buy a new SLR digital camera within the next couple of weeks. I wonder if digital SLR camera come with Bluetooth to transfer pictures?</p>
+        <p>Those that know me well know I tend to hold on to and use older technologies (i.e., computers, mobile phones, iPod, etc) longer then I should. Once a piece of technology is working for me I don’t see much reason to upgrade. But every few years I must go through a major technology upgrade, which is what I have done over the last week.<br /><br />I replaced my aging mobile phone with a sleek Motorola RAZR V3m. I admit I’m addicted to this phone. While I was able to do Internet and text messaging on my old phone, my new phone makes it easier and allows me to do more such as check email and watch live TV. The built-in Bluetooth is awesome too. I’ll talk more about that in a minute.<br /><br />The new mobile phone required I get a new headset. I prefer hands-free talking especially on longer calls. My wired headset is incompatible with the RAZR so I bought a new Bluetooth enabled headset, the Motorola H700C. Of course I look like I have joined the collective when I wear the headset, but fashion aside this is a really nice headset. It works well with the RAZR phone. Calls are clear, and according to those I’ve called there is no problem hearing me talk.<br /><br />A major technology upgrade is not complete without a new computer. I mentioned the other day that <a href='http://www.thecave.com/archive/2007/07/23/excited_about_expected_new_arrival.aspx'>I bought a MacBook Pro</a>. It arrived yesterday and after spending a few hours with it I can’t image going back to a Windows only machine. I’ve tried various favors of Linux over the last couple of years but I always encountered some type of problem. This made me a bit concerned about switching to Mac OSX, but I now know I had no reasons for concern. Everything just works. Some tweaking was needed in certain cases but in general everything work.<br /><br />One area that required a little tweak was adding iSync support for my RAZR phone. Apparently the latest OSX updates from Apple support the RAZR V3m but not the Sprint version, which is what I have. Luckily I learned about <a href='http://www.clockskew.com/blog/'>ClockSkew</a> and his <a href='http://www.clockskew.com/forum/'>iSync plug-ins for the RAZR phones</a>. Now, using Bluetooth - gotta love that technology, I’m able to sync my calendar and address book between my phone and MacBook Pro. Awesome stuff, I tell you.<br /><br />Speaking of Bluetooth, I decided to go with the wireless Bluetooth keyboard for Macs. Once again it just works.<br /><br />To continue working with Windows, which I must do, I installed <a href='http://www.vmware.com/mac'>VMware Fusion</a>. This product is awesome too. I find my virtual machines run much better under OSX as the host operating system compared to Windows or even Linux. Of course having 4GB of RAM doesn’t hurt either.<br /><br />So new phone, new headset, new laptop…what else? That’s it for the moment but I do plan to buy a new SLR digital camera within the next couple of weeks. I wonder if digital SLR camera come with Bluetooth to transfer pictures?</p>
         
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
         
@@ -101,15 +141,15 @@
         <div class="post-content right-col">
         <h2><a href="/2007/07/23/excited-about-expected-new-arrival/" rel="bookmark" title="Excited About Expected New Arrival">Excited About Expected New Arrival</a></h2>
 
-        <p>Things are really busy for me right now. I&#8217;ve just started two separate customer projects, sales of <a href='http://www.whitepeaksoftware.com/killink-csv.aspx'>Killink CSV</a> and <a href='http://www.whitepeaksoftware.com/smtp-diagnostics.aspx'>SMTP Diagnostics</a> are climbing, and I&#8217;ve been doing a <a href='http://www.thecave.com/archive/2007/01/26/my_trips_in_2007.aspx'>lot of travel</a>. But one thing has me really excited. I ordered a <a href='http://www.apple.com/macbookpro/'>MacBook Pro</a> and it&#8217;s expected to arrive in a couple of days.</p>
+        <p>Things are really busy for me right now. I’ve just started two separate customer projects, sales of <a href="http://www.whitepeaksoftware.com/killink-csv.aspx">Killink CSV</a> and <a href="http://www.whitepeaksoftware.com/smtp-diagnostics.aspx">SMTP Diagnostics</a> are climbing, and I’ve been doing a <a href="http://www.thecave.com/archive/2007/01/26/my_trips_in_2007.aspx">lot of travel</a>. But one thing has me really excited. I ordered a <a href="http://www.apple.com/macbookpro/">MacBook Pro</a> and it’s expected to arrive in a couple of days.</p>
 
-<p>I need a beefy laptop for the work I&#8217;ll be doing while on the road. I compared prices, specs, etc with different vendors (Dell, HP, Apple) and the MacBook Pro won.</p>
+<p>I need a beefy laptop for the work I’ll be doing while on the road. I compared prices, specs, etc with different vendors (Dell, HP, Apple) and the MacBook Pro won.</p>
 
-<p>But wait! Aren&#8217;t you a Windows developer? Yes, I am and I will continue to write software for Windows. The only difference is I will be doing it from my shinny new MacBook Pro. Yep, <a href='http://chrisbensen.blogspot.com/2007/07/running-windows-and-delphi-on-mac.html'>another Delphi developer moves to the Mac</a>.</p>
+<p>But wait! Aren’t you a Windows developer? Yes, I am and I will continue to write software for Windows. The only difference is I will be doing it from my shinny new MacBook Pro. Yep, <a href="http://chrisbensen.blogspot.com/2007/07/running-windows-and-delphi-on-mac.html">another Delphi developer moves to the Mac</a>.</p>
 
-<p>Another reason for the switch is VMware&#8217;s upcoming virtualization software called <a href='http://www.vmware.com/mac/'>Fusion</a>. It&#8217;s still in beta but looks very promising. As a matter of fact check out this Fusion feature called <a href='http://www.youtube.com/embed/JIApJMzGzDQ'>Unity</a>.</p>
+<p>Another reason for the switch is VMware’s upcoming virtualization software called <a href="http://www.vmware.com/mac/">Fusion</a>. It’s still in beta but looks very promising. As a matter of fact check out this Fusion feature called <a href="http://www.youtube.com/embed/JIApJMzGzDQ">Unity</a>.</p>
 
-<p>Now that&#8217;s dang cool.</p>
+<p>Now that’s dang cool.</p>
         
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
         
@@ -129,7 +169,7 @@
         <div class="post-content right-col">
         <h2><a href="/2007/07/14/asp-20th-anniversary-and-software-discounts/" rel="bookmark" title="ASP 20th Anniversary and Software Discounts">ASP 20th Anniversary and Software Discounts</a></h2>
 
-        <p>The <a href='http://www.asp-shareware.org'>Association of Shareware Professionals</a> is celebrating it&#8217;s <a href='http://anniversary.asp-shareware.org'>20th anniversary</a>. During its 20 year history ASP has brought together many of the best software vendors in the business. <br /><br />As part of the 20th Anniversary Celebration, ASP has <a href='http://anniversary.asp-shareware.org'>negotiated great deals</a> on some quality software title including <a href='http://www.whitepeaksoftware.com/csveditor.aspx'>my favorite .csv editor</a> and <a href='http://www.finalbuilder.com/'>my favorite automated build tool</a>.<br /><br />Visit the <a href='http://anniversary.asp-shareware.org'>ASP's 20th Anniversary page</a> for the <a href='http://anniversary.asp-shareware.org'>complete list of software titles and discounts</a>.</p>
+        <p>The <a href='http://www.asp-shareware.org'>Association of Shareware Professionals</a> is celebrating it’s <a href='http://anniversary.asp-shareware.org'>20th anniversary</a>. During its 20 year history ASP has brought together many of the best software vendors in the business. <br /><br />As part of the 20th Anniversary Celebration, ASP has <a href='http://anniversary.asp-shareware.org'>negotiated great deals</a> on some quality software title including <a href='http://www.whitepeaksoftware.com/csveditor.aspx'>my favorite .csv editor</a> and <a href='http://www.finalbuilder.com/'>my favorite automated build tool</a>.<br /><br />Visit the <a href='http://anniversary.asp-shareware.org'>ASP&#39;s 20th Anniversary page</a> for the <a href='http://anniversary.asp-shareware.org'>complete list of software titles and discounts</a>.</p>
         
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
         
@@ -149,7 +189,7 @@
         <div class="post-content right-col">
         <h2><a href="/2007/07/06/whew-what-a-month/" rel="bookmark" title="Whew...What a Month">Whew...What a Month</a></h2>
 
-        <p>The last 4 weeks have been crazy, which is why I have not blogged much over the last month. For starters, I put in a lot of time on Killink CSV, <a href='http://www.whitepeaksoftware.com/edit-csv-files.aspx'>the new csv editor from White Peak Software</a>, over the last 4 to 5 weeks. Last month I rushed out release 1.3 to address some capability problems with Windows Vista but it turned out to cause more problems. That will teach me to rush out a release without proper testing. Good news is a lot of additional enhancements have been made to <a href='http://www.whitepeaksoftware.com/killink-csv.aspx'>Killink CSV</a> and today version 1.4 is finally ready for <a href='http://www.whitepeaksoftware.com/killink-csv-download.aspx'>download</a>.<br /><br />Now that version 1.4 has been released I should be able to focus time on new features such as search and replace. Another new feature I&#8217;m looking forward to is file extension association with Killink CSV. This has always been a trivial task under Windows but Windows Vista makes it a bit more difficult, hence the delay. Still, I&#8217;m looking forward to this new feature.<br /><br />It hasn&#8217;t been all work for me over the last 4 weeks. I did take time off for NASCAR weekend in Loudon NH. I knew I would have fun but I didn&#8217;t know I would have as much fun as I did. It was a blast. Everyone should spend at least one weekend camping in an RV and watching NASCAR races, even if you are not a NASCAR fan.</p>
+        <p>The last 4 weeks have been crazy, which is why I have not blogged much over the last month. For starters, I put in a lot of time on Killink CSV, <a href='http://www.whitepeaksoftware.com/edit-csv-files.aspx'>the new csv editor from White Peak Software</a>, over the last 4 to 5 weeks. Last month I rushed out release 1.3 to address some capability problems with Windows Vista but it turned out to cause more problems. That will teach me to rush out a release without proper testing. Good news is a lot of additional enhancements have been made to <a href='http://www.whitepeaksoftware.com/killink-csv.aspx'>Killink CSV</a> and today version 1.4 is finally ready for <a href='http://www.whitepeaksoftware.com/killink-csv-download.aspx'>download</a>.<br /><br />Now that version 1.4 has been released I should be able to focus time on new features such as search and replace. Another new feature I’m looking forward to is file extension association with Killink CSV. This has always been a trivial task under Windows but Windows Vista makes it a bit more difficult, hence the delay. Still, I’m looking forward to this new feature.<br /><br />It hasn’t been all work for me over the last 4 weeks. I did take time off for NASCAR weekend in Loudon NH. I knew I would have fun but I didn’t know I would have as much fun as I did. It was a blast. Everyone should spend at least one weekend camping in an RV and watching NASCAR races, even if you are not a NASCAR fan.</p>
         
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
         
@@ -189,7 +229,7 @@
         <div class="post-content right-col">
         <h2><a href="/2007/07/05/some-problems-with-killink-csv/" rel="bookmark" title="Some Problems with Killink CSV">Some Problems with Killink CSV</a></h2>
 
-        <p>Today I discovered a new problem in Killink CSV, the <a href='http://www.whitepeaksoftware.com/killink-csv.aspx'>.csv editor</a> I have been working on. Killink CSV has 2 general options, &#8220;Remember column widths&#8221; and &#8220;First row is read-only&#8221;. &#8220;Remember column widths&#8221; has a problem with hidden columns when the &#8220;First row is read-only&#8221; is turned on. Killink CSV will ignore the hidden columns when populating the first row causing column headers to appear under the wrong columns.<br /><br />The second problem is more serious. The option &#8220;First row is read-only&#8221; causes the program to report an unhandled error under certain circumstances when more than one file is open at a time. <br /><br />Fixes for these problems will be available in a few days. Meantime if you are <a href='http://www.whitepeaksoftware.com/edit-csv-files.aspx'>editing .csv files</a> with Killink CSV I suggest you turn off these options until version 1.4 is released.</p>
+        <p>Today I discovered a new problem in Killink CSV, the <a href='http://www.whitepeaksoftware.com/killink-csv.aspx'>.csv editor</a> I have been working on. Killink CSV has 2 general options, “Remember column widths” and “First row is read-only”. “Remember column widths” has a problem with hidden columns when the “First row is read-only” is turned on. Killink CSV will ignore the hidden columns when populating the first row causing column headers to appear under the wrong columns.<br /><br />The second problem is more serious. The option “First row is read-only” causes the program to report an unhandled error under certain circumstances when more than one file is open at a time. <br /><br />Fixes for these problems will be available in a few days. Meantime if you are <a href='http://www.whitepeaksoftware.com/edit-csv-files.aspx'>editing .csv files</a> with Killink CSV I suggest you turn off these options until version 1.4 is released.</p>
         
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
         
@@ -217,57 +257,17 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2007</span></span><span class="day">11</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2007/06/11/ann-killink-csv-v1-2/" rel="bookmark" title="ANN: Killink CSV v1.2">ANN: Killink CSV v1.2</a></h2>
-
-        <p>I&#8217;m happy to annouce the release of Killink CSV v1.2, the <a href='http://www.whitepeaksoftware.com/killink-csv.aspx'>spreadsheet application dedicated to delimited text files</a>. Version 1.2 is a FREE upgrade for all licensed users.<br /><br />Download Killink CSV at:<br /><a href='http://www.whitepeaksoftware.com/killink-csv-download.aspx'>http://www.whitepeaksoftware.com/killink-csv-download.aspx</a><br /><br /><b>What's New</b><br /><br />* Adds support for history, undo and redo actions<br />* Insert new rows<br />* Insert new columns<br />* Selected row column header highlighting<br />* Unsaved changes indiciator<br />* Select entire row by clicking row header<br />* Select entire column by clicking the column header<br />* Delete entire rows<br />* Delete entire columns<br />* Insert / delete cells<br />* Added popup cell editor (click the ellipses button at end of cell text or press Ctrl+Enter when a cell is highlighted)<br />* Right mouse click cell for fast access to common actions<br />* Fixed auto check for update<br />* Minor bug fixes and enhancements<br />* Fixed minor memory leak</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2007</span></span><span class="day">09</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2007/06/09/formatting-cells-in-killink-csv/" rel="bookmark" title="Formatting Cells in Killink CSV">Formatting Cells in Killink CSV</a></h2>
-
-        <p>I posted the following in the <a href='http://www.whitepeaksoftware.com/forums/Forum12-1.aspx'>Killink CSV support forum</a> but decided it might be helpful if posted here to:<br /><br />Starting with Killink CSV v1.2 add cell values are formatted as text. This is a change from previous versions which used a general format similar to the one found in Excel. <br /><br />The problem with the general format is that certain values are displayed in a format different then the format used in the actual file. For example, using the general format the value 01970 is displayed as 1970. Notice the leading zero is removed. With a text format the value 01970 is displayed as 01970. Changing to the text format means you will see the value as it is found in the file, which in my opinion is a good thing.<br /><br />This leads me to the question, do you want the ability to change the format of cells? <br /><br />I see some advantages to this. For example, by allowing formatting you could easily convert dates from a Month Day Year format to Year Month Day. Is this something Killink CSV users would find useful?</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
 <div class="more_posts">
 	<h2>
         
-        <a href="/page12" >&laquo; Older Entries</a> &nbsp; 
+        <a href="//page12" >&laquo; Older Entries</a> &nbsp; 
         
         
             
-                <a href="/page10" >Recent Entries &raquo;</a>
+                <a href="//page10" >Recent Entries &raquo;</a>
             
         
     </h2>
@@ -315,7 +315,7 @@
 <li class='category'><a href='/category/backpacking/'>backpacking (8)</a></li>
 <li class='category'><a href='/category/blogger/'>blogger (785)</a></li>
 <li class='category'><a href='/category/camping/'>camping (11)</a></li>
-<li class='category'><a href='/category/family/'>family (3)</a></li>
+<li class='category'><a href='/category/family/'>family (4)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
 <li class='category'><a href='/category/general/'>general (8)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (7)</a></li>
@@ -327,16 +327,19 @@
 <li class='category'><a href='/category/opinion/'>opinion (1)</a></li>
 <li class='category'><a href='/category/pictures/'>pictures (8)</a></li>
 <li class='category'><a href='/category/random/'>random (4)</a></li>
+<li class='category'><a href='/category/rant/'>rant (1)</a></li>
 <li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
 <li class='category'><a href='/category/salem/'>salem (1)</a></li>
 <li class='category'><a href='/category/skiing/'>skiing (2)</a></li>
 <li class='category'><a href='/category/snowboarding/'>snowboarding (4)</a></li>
 <li class='category'><a href='/category/social/'>social (2)</a></li>
 <li class='category'><a href='/category/stowe/'>stowe (1)</a></li>
+<li class='category'><a href='/category/tech/'>tech (1)</a></li>
 <li class='category'><a href='/category/travel/'>travel (3)</a></li>
 <li class='category'><a href='/category/trip/'>trip (4)</a></li>
 <li class='category'><a href='/category/trips/'>trips (1)</a></li>
 <li class='category'><a href='/category/videos/'>videos (2)</a></li>
+<li class='category'><a href='/category/work/'>work (1)</a></li>
 
     </ul>
 </div>
@@ -364,15 +367,15 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2014/04/24/wtf-ruby-gems/" title="WTF Ruby Gems">WTF Ruby Gems</a></li>
+                
+                  <li><a href="/2014/04/24/family-influence/" title="Family Influence">Family Influence</a></li>
+                
                   <li><a href="/2014/04/08/still-no-regrets/" title="Still No Regrets">Still No Regrets</a></li>
                 
                   <li><a href="/2014/04/06/not-organizing-events/" title="Not Organizing Events">Not Organizing Events</a></li>
                 
                   <li><a href="/2014/03/14/cross-posting/" title="Cross Posting">Cross Posting</a></li>
-                
-                  <li><a href="/2014/02/05/i-m-having-a-bad-day/" title="I'm Having a Bad Day">I'm Having a Bad Day</a></li>
-                
-                  <li><a href="/2014/01/17/day-25/" title="Day 25">Day 25</a></li>
                 
             </ul>
 		</div>

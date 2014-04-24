@@ -58,17 +58,17 @@
     <div class="post-content right-col">
     <h2><a href="/2004/06/01/how-to-unit-testing-implementations-of-an-interface/" rel="bookmark" title="How to Unit Testing Implementations of an Interface">How to Unit Testing Implementations of an Interface</a></h2>
 
-    <p>I have become a firm supporter of writing unit tests for most if not all code I write, and <a href='http://www.nunit.org'>NUnit</a> is an ideal framework for implementing unit tests. But one problem I have had repeatedly is finding a good way to test specific implementations of an interface. My approach has always been to write a new test fixture for each implementor of an interface. But the problem with this approach is that I end up duplicating unit tests for each implementor, and if I need to write a new test I have to copy it to multiple fixtures.</p>
+    <p>I have become a firm supporter of writing unit tests for most if not all code I write, and <a href="http://www.nunit.org">NUnit</a> is an ideal framework for implementing unit tests. But one problem I have had repeatedly is finding a good way to test specific implementations of an interface. My approach has always been to write a new test fixture for each implementor of an interface. But the problem with this approach is that I end up duplicating unit tests for each implementor, and if I need to write a new test I have to copy it to multiple fixtures.</p>
 
-<p>As a programmer I consider myself lazy. I don&#8217;t like having to write the same code over and over. Instead I would rather write it once and forget about it. Having to write multiple test fixtures for each implementor of an interface doesn&#8217;t suit my lazy style. I need a better approach and a quick google.com search pointed me in the right direction.</p>
+<p>As a programmer I consider myself lazy. I don’t like having to write the same code over and over. Instead I would rather write it once and forget about it. Having to write multiple test fixtures for each implementor of an interface doesn’t suit my lazy style. I need a better approach and a quick google.com search pointed me in the right direction.</p>
 
-<p>I came across a blog from <a href='http://blog.dotnetwiki.org/'>Jonathan de Halleux</a> that talks about <a href='http://blog.dotnetwiki.org/archive/2004/05/13/206.aspx'>composite unit testing using MbUnit</a>. Jonathan presents an approach that splits the testing effort by class functionality rather than writing a test fixture for each class. This is exactly what I am looking for but as much as I like this approach and MbUnit I still have one issue. I want an approach that works with NUnit and does not require another framework such as MbUnit.</p>
+<p>I came across a blog from <a href="http://blog.dotnetwiki.org/">Jonathan de Halleux</a> that talks about <a href="http://blog.dotnetwiki.org/archive/2004/05/13/206.aspx">composite unit testing using MbUnit</a>. Jonathan presents an approach that splits the testing effort by class functionality rather than writing a test fixture for each class. This is exactly what I am looking for but as much as I like this approach and MbUnit I still have one issue. I want an approach that works with NUnit and does not require another framework such as MbUnit.</p>
 
-<p>The development environment I have created for my customer is solid and I do not want to introduce new problems by introducing a new framework, in the case MbUnit. In other words, I do not want to change what has been currently written including the NAnt build scripts. So I did the next best thing. I took Jonathan&#8217;s design and wrote a helper class to provide composite unit testing and include this class in my unit test projects.</p>
+<p>The development environment I have created for my customer is solid and I do not want to introduce new problems by introducing a new framework, in the case MbUnit. In other words, I do not want to change what has been currently written including the NAnt build scripts. So I did the next best thing. I took Jonathan’s design and wrote a helper class to provide composite unit testing and include this class in my unit test projects.</p>
 
 <p>Introducing CompositeTestFixture, a class that enables composite unit testing within NUnit test fixtures. Because this is a class and not a new framework there are limitations but the limitations do not affect the unit tests I am writing today. I will discuss the limitation later in this article.</p>
 
-<p>To use CompositeTestFixture, begin by writing your test fixtures as you normally would. In the spirit of Jonathan&#8217;s blog I will show an example that provides a test for implementors of the IEnumerable interface. In this example I will show how to test the ArrayList and Hashtable classes which both implement this interface. The only requirement in this test is that the IEnumerable instance is not null.</p>
+<p>To use CompositeTestFixture, begin by writing your test fixtures as you normally would. In the spirit of Jonathan’s blog I will show an example that provides a test for implementors of the IEnumerable interface. In this example I will show how to test the ArrayList and Hashtable classes which both implement this interface. The only requirement in this test is that the IEnumerable instance is not null.</p>
 
 <pre><code>using System;
 using System.Collections;
@@ -117,9 +117,9 @@ public void GetEnumeratorNotNull()
     Assert.IsNotNull( en.GetEnumerator(), &quot;Must not be null.&quot; );
 }</code></pre>
 
-<p>That&#8217;s it. CompositeTestFixture will do all the heavy work of calling the appropriate unit test method to test a specific implementor.</p>
+<p>That’s it. CompositeTestFixture will do all the heavy work of calling the appropriate unit test method to test a specific implementor.</p>
 
-<h2 id='how_does_this_work'>How Does This Work</h2>
+<h2 id="how_does_this_work">How Does This Work</h2>
 
 <p>CompositeTestFixture will reflect on the class instances provided in the RunTest method call and retrieve the collection of ProviderFactory attributes decorating the test fixture. Each factory declared by the FactoryType property will be called to create an instance of a class that implements the type defined in the ReturnType property. In other words the factory will be used to create an instance of an implementor.</p>
 
@@ -154,13 +154,13 @@ namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
 
 <p>After CompositeTestFixture calls a factory creator it calls the unit test method matching the name of the [Test] method that invoked CompositeTestFixture.RunTest( this ). In our example this is the GetEnumeratorNotNull( IEnumerable en ) method. This is repeated for each creator declared on a factory and for each factory declared on the fixture.</p>
 
-<h2 id='limitations'>Limitations</h2>
+<h2 id="limitations">Limitations</h2>
 
 <p>Although this approach works for many cases it is not perfect. The SetUp and TearDown methods of the fixture will only be called when NUnit calls the wrapper test method. CompositeTestFixture does not call the SetUp and TearDown methods before and after calling the internal test method, although it would not be hard to add that feature.</p>
 
-<h2 id='conclusion'>Conclusion</h2>
+<h2 id="conclusion">Conclusion</h2>
 
-<p>With the CompositeTestFixture helper class, I now have an easy way to provide composite unit testing within introducing a new framework into my development environment. Hopefully you will find this code as useful as I have. Click <a href='/downloads/CompositeTestFixture.zip'>here</a> to download the complete source code.</p>
+<p>With the CompositeTestFixture helper class, I now have an easy way to provide composite unit testing within introducing a new framework into my development environment. Hopefully you will find this code as useful as I have. Click <a href="/downloads/CompositeTestFixture.zip">here</a> to download the complete source code.</p>
 
 
     <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
@@ -221,7 +221,7 @@ namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
 <li class='category'><a href='/category/backpacking/'>backpacking (8)</a></li>
 <li class='category'><a href='/category/blogger/'>blogger (785)</a></li>
 <li class='category'><a href='/category/camping/'>camping (11)</a></li>
-<li class='category'><a href='/category/family/'>family (3)</a></li>
+<li class='category'><a href='/category/family/'>family (4)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
 <li class='category'><a href='/category/general/'>general (8)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (7)</a></li>
@@ -233,16 +233,19 @@ namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
 <li class='category'><a href='/category/opinion/'>opinion (1)</a></li>
 <li class='category'><a href='/category/pictures/'>pictures (8)</a></li>
 <li class='category'><a href='/category/random/'>random (4)</a></li>
+<li class='category'><a href='/category/rant/'>rant (1)</a></li>
 <li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
 <li class='category'><a href='/category/salem/'>salem (1)</a></li>
 <li class='category'><a href='/category/skiing/'>skiing (2)</a></li>
 <li class='category'><a href='/category/snowboarding/'>snowboarding (4)</a></li>
 <li class='category'><a href='/category/social/'>social (2)</a></li>
 <li class='category'><a href='/category/stowe/'>stowe (1)</a></li>
+<li class='category'><a href='/category/tech/'>tech (1)</a></li>
 <li class='category'><a href='/category/travel/'>travel (3)</a></li>
 <li class='category'><a href='/category/trip/'>trip (4)</a></li>
 <li class='category'><a href='/category/trips/'>trips (1)</a></li>
 <li class='category'><a href='/category/videos/'>videos (2)</a></li>
+<li class='category'><a href='/category/work/'>work (1)</a></li>
 
     </ul>
 </div>
@@ -270,15 +273,15 @@ namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2014/04/24/wtf-ruby-gems/" title="WTF Ruby Gems">WTF Ruby Gems</a></li>
+                
+                  <li><a href="/2014/04/24/family-influence/" title="Family Influence">Family Influence</a></li>
+                
                   <li><a href="/2014/04/08/still-no-regrets/" title="Still No Regrets">Still No Regrets</a></li>
                 
                   <li><a href="/2014/04/06/not-organizing-events/" title="Not Organizing Events">Not Organizing Events</a></li>
                 
                   <li><a href="/2014/03/14/cross-posting/" title="Cross Posting">Cross Posting</a></li>
-                
-                  <li><a href="/2014/02/05/i-m-having-a-bad-day/" title="I'm Having a Bad Day">I'm Having a Bad Day</a></li>
-                
-                  <li><a href="/2014/01/17/day-25/" title="Day 25">Day 25</a></li>
                 
             </ul>
 		</div>

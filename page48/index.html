@@ -54,6 +54,105 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">25</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2004/06/25/explicit-interface-implementation-in-c/" rel="bookmark" title="Explicit Interface Implementation in C#">Explicit Interface Implementation in C#</a></h2>
+
+        <p>I was a grumbling VB developer for a number of years. At the time Delphi was my language of choice but in the part of the country I lived customer work using it was almost non-existent. In the summer of 2000 at PDC, a friend of mine from Microsoft showed me the .NET Framework and C#. I was instantly drawn to C# because it reminded me of Delphi, which is no surprise for those who know their <a href="http://c2.com/cgi/wiki?HistoryOfCsharp">C#/Delphi history</a>.</p>
+
+<p>At last there was (is) a language and framework from Microsoft that generated the same level of excitement in me that Borland’s Delphi had done a few years prior. Best of all it was from Microsoft which would mean customer work in the future. And as luck would have it, I started working exclusively with the .NET Framework and C# in the fall of 2001.</p>
+
+<p>For better or worse I have not spent much time with VB.NET, or Visual Basic 6.0 for that manner, since the fall of 2001. I have done a few small project using VB.NET but nothing to brag about. For the most part, both .NET languages are very similar with regard to features but there are some differences. For example, you can write unsafe code in C# but you can’t do the same in VB.NET. Depending on your point of view this is an advantage or a disadvantage.</p>
+
+<p>Another difference is that in VB.NET you can specify the scope of a member that implements a particular interface as something other than public. I needed to do this in more than one occasion in C# but was resolved to the fact that a member implementation of interface in C# had to be scoped as public.</p>
+
+<pre><code>Public Interface IMyInterface
+    Sub Foo()
+End Interface
+
+Public Class Class1
+Implements IMyInterface
+    Private Sub Foo() Implements IMyInterface.Foo
+    End Sub
+End Class</code></pre>
+
+<p>So if you can do this in VB.NET why can’t you do the same, or something similar in C#? This question lead me to the discovery (thank you <a href="http://www.google.com/search?q=explicit+interface+implement&amp;sourceid=firefox&amp;start=0&amp;start=0&amp;ie=utf-8&amp;oe=utf-8">google</a>) of explicit interface implementation in C#. By using an explicit interface implementation you can scope the member implementation as private. It’s a little messy because a member explicitly implemented cannot be access through the class instance. Instead it must be accessed through an instance of the interface.</p>
+
+<pre><code>interface IMyInterface
+{
+    void Foo();
+}
+
+abstract class MyAbstractClass : IMyInterface
+{
+    // Explicit interface implementation
+    void IMyInterface.Foo()
+    {
+        Console.WriteLine( &quot;bar&quot; );
+    }
+}
+
+class MyConcreteClass : MyAbstractClass
+{
+    public void FooBar()
+    {
+        // Must use an instance of the interface to access
+        // the explicit implementation.
+        ((IMyInterface)this).Foo();
+    }
+}
+
+public class MyApp
+{
+    public static void Main( string[] args )
+    {
+        MyConcreteClass c = new MyConcreteClass();
+        // Will not compile because Foo() is private.
+        // c.Foo();
+
+        c.FooBar();
+
+        // This works because we are all in the same module.
+        ((IMyInterface)c).Foo();
+    }
+}</code></pre>
+
+<p>While an explicit interface implementation does give the C# developer the ability to scope a member implementation as private, it is still not as powerful as VB.NET’s ability to scope a member implementation as anything other than public. Score 1 point for VB.NET.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">24</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2004/06/24/it-came-from-inside/" rel="bookmark" title="It Came from Inside">It Came from Inside</a></h2>
+
+        <p>Over the last month a lot of my time has been spent focusing on security as I design a security framework and strategy for a customer. One comment I hear often is “we don’t need to worry about internal security threats” or “internal security threats are minor and represent a low priority”. I couldn’t disagree more and have been repeatedly emphasizing the importance of protecting ones assets from internal attacks, which for some companies is a greater threat. <br /> <br />Yesterday’s <a href='http://www.eweek.com/article2/0,1759,1616668,00.asp?kc=ewnws062404dtx1k0000599'>report</a> of an AOL software engineer being arrested for stealing 92 million customer screen names proves my point. Some people will do crazy things when offered enough money. And companies that believe “it won’t happen here” or “our employees would never do such a thing” are fooling themselves. Why risk it? Invest in reducing security threats, both external and internal.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">24</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -61,7 +160,7 @@
         <div class="post-content right-col">
         <h2><a href="/2004/06/24/another-microsoft-patent/" rel="bookmark" title="Another Microsoft Patent">Another Microsoft Patent</a></h2>
 
-        <p>I thought Microsoft&#8217;s <a href='?xml/2004_06_01_archive.xml#108695677194415311'>patent</a> on //TODO was silly but Microsoft&#8217;s <a href='http://zdnet.com.com/2100-1104-5244766.html'>patent</a> for using human skin as a power conduit tops it. Actually this patent sounds interesting. I can see how wearable devices can benefit from a personal area network.</p>
+        <p>I thought Microsoft’s <a href='?xml/2004_06_01_archive.xml#108695677194415311'>patent</a> on //TODO was silly but Microsoft’s <a href='http://zdnet.com.com/2100-1104-5244766.html'>patent</a> for using human skin as a power conduit tops it. Actually this patent sounds interesting. I can see how wearable devices can benefit from a personal area network.</p>
         
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
         
@@ -81,11 +180,11 @@
         <div class="post-content right-col">
         <h2><a href="/2004/06/19/nyc-visitors-are-coming/" rel="bookmark" title="NYC Visitors are Coming">NYC Visitors are Coming</a></h2>
 
-        <p>My friend Phil was in town this week which means one thing. Time for <a href='http://www.benzonaband.com/'>BenZona</a> to rock <a href='http://www.lunalounge.com/'>Luna Lounge</a>. They had a great gig last night and it was good to see Phil, Keith and others again. We also stuck around to hear San Francisco based <a href='http://www.candyfromstrangers.com/'>Candy From Strangers</a> who I definitely got into.</p>
+        <p>My friend Phil was in town this week which means one thing. Time for <a href="http://www.benzonaband.com/">BenZona</a> to rock <a href="http://www.lunalounge.com/">Luna Lounge</a>. They had a great gig last night and it was good to see Phil, Keith and others again. We also stuck around to hear San Francisco based <a href="http://www.candyfromstrangers.com/">Candy From Strangers</a> who I definitely got into.</p>
 
-<p>Speaking of NYC visitors, my mom, brother Andy, and his son (my nephew) Lucas will be arriving in New York within a few hours. It will be Andy and Lucas&#8217;s first time to the Big Apple. We have the next few days planned out to wear them out. From Central Park to Time Square to Coney Island to a Staten Island Yankees game, Melanie and I will definitely keep the family busy.</p>
+<p>Speaking of NYC visitors, my mom, brother Andy, and his son (my nephew) Lucas will be arriving in New York within a few hours. It will be Andy and Lucas’s first time to the Big Apple. We have the next few days planned out to wear them out. From Central Park to Time Square to Coney Island to a Staten Island Yankees game, Melanie and I will definitely keep the family busy.</p>
 
-<p>And the fun doesn&#8217;t stop there. My good friend John from Cleveland by way of St. Louis will be in town too. Of course we will be meeting up for a drink or two. A week of catching up with friends and family. What could be better?</p>
+<p>And the fun doesn’t stop there. My good friend John from Cleveland by way of St. Louis will be in town too. Of course we will be meeting up for a drink or two. A week of catching up with friends and family. What could be better?</p>
         
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
         
@@ -125,7 +224,7 @@
         <div class="post-content right-col">
         <h2><a href="/2004/06/17/firefox-extensions/" rel="bookmark" title="Firefox Extensions">Firefox Extensions</a></h2>
 
-        <p>For those new to Firefox, be sure to check out the list of <a href='http://texturizer.net/firefox/extensions/'>extensions</a>. They&#8217;re easy to install and there are many helpful extensions that will improve your browsing experience. As a matter of fact, I&#8217;m using the BlogThis! extension right now to post this entry.</p>
+        <p>For those new to Firefox, be sure to check out the list of <a href='http://texturizer.net/firefox/extensions/'>extensions</a>. They’re easy to install and there are many helpful extensions that will improve your browsing experience. As a matter of fact, I’m using the BlogThis! extension right now to post this entry.</p>
         
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
         
@@ -145,7 +244,7 @@
         <div class="post-content right-col">
         <h2><a href="/2004/06/17/firefox-0-9-available-for-download/" rel="bookmark" title="Firefox 0.9 Available for Download">Firefox 0.9 Available for Download</a></h2>
 
-        <p>While nothing really new, other than security updates has happened to IE in quite some time, Mozilla has continued work on its next generation web browser called Firefox. <a href='http://www.mozilla.org/products/firefox/'>Firefox 0.9</a> is available for download and I feel it is a worth while download.<br /><br />I have been running Firefox as my default browser for the last 24 hours. I really like tab browsing and how Firefox blocks pop-up windows. It works fine for almost all sites I visit including a Microsoft SharePoint Window Services 2.0 site that I use daily. I don&#8217;t get the drop down command list on SharePoint documents like I would in IE but I&#8217;m still able to do everything I need with a document through the document design page.<br /><br />My only complaint to date is when I attempt to open a link in a new window from SharpReader, the RSS aggregator I use. For some reason the web page is displayed in both a Firefox window and an IE window. I doubt this is the fault of SharpReader and is more the fault of the IE component used within SharpReader. In other words, I think the IE component is launching the additional IE window when Firefox is set as my default browser.<br /><br />Aside from that one problem, I enjoy browsing with Firefox based on my 24 hour experience and will probably keep it as my default browser for a while.<br /><br /><br /></p>
+        <p>While nothing really new, other than security updates has happened to IE in quite some time, Mozilla has continued work on its next generation web browser called Firefox. <a href='http://www.mozilla.org/products/firefox/'>Firefox 0.9</a> is available for download and I feel it is a worth while download.<br /><br />I have been running Firefox as my default browser for the last 24 hours. I really like tab browsing and how Firefox blocks pop-up windows. It works fine for almost all sites I visit including a Microsoft SharePoint Window Services 2.0 site that I use daily. I don’t get the drop down command list on SharePoint documents like I would in IE but I’m still able to do everything I need with a document through the document design page.<br /><br />My only complaint to date is when I attempt to open a link in a new window from SharpReader, the RSS aggregator I use. For some reason the web page is displayed in both a Firefox window and an IE window. I doubt this is the fault of SharpReader and is more the fault of the IE component used within SharpReader. In other words, I think the IE component is launching the additional IE window when Firefox is set as my default browser.<br /><br />Aside from that one problem, I enjoy browsing with Firefox based on my 24 hour experience and will probably keep it as my default browser for a while.<br /><br /><br /></p>
         
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
         
@@ -165,7 +264,7 @@
         <div class="post-content right-col">
         <h2><a href="/2004/06/16/visual-sourcesafe-gets-a-much-needed-upgrade/" rel="bookmark" title="Visual SourceSafe Gets a Much Needed Upgrade">Visual SourceSafe Gets a Much Needed Upgrade</a></h2>
 
-        <p>Microsoft has published the latest <a href='http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnvsent/html/vssmap.asp'>Visual SourceSafe Roadmap</a>, which outlines where VSS is heading with the release of Visual SourceSafe 2005. The new version will still be geared towards individual developers and small teams, i.e., teams with less than 5 developers but it will finally include remote access. I&#8217;m glad to see VSS is finally getting a much needed upgrade but I doubt the new release will convince me to switch back from <a href='http://www.cvshome.org/'>CVS</a>.<br /><br /><br /></p>
+        <p>Microsoft has published the latest <a href='http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnvsent/html/vssmap.asp'>Visual SourceSafe Roadmap</a>, which outlines where VSS is heading with the release of Visual SourceSafe 2005. The new version will still be geared towards individual developers and small teams, i.e., teams with less than 5 developers but it will finally include remote access. I’m glad to see VSS is finally getting a much needed upgrade but I doubt the new release will convince me to switch back from <a href='http://www.cvshome.org/'>CVS</a>.<br /><br /><br /></p>
         
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
         
@@ -185,7 +284,7 @@
         <div class="post-content right-col">
         <h2><a href="/2004/06/16/uddi/" rel="bookmark" title="UDDI">UDDI</a></h2>
 
-        <p>A friend pointed me to <a href='http://www.bindingpoint.net/'>BindingPoint</a>, which is an XML web services directory. I did a quick search on <a href='http://www.bindingpoint.net/services.aspx?tag=srch&amp;val=snow+report&amp;x=0&amp;y=0'>"snow report"</a> and found my snow report web service. I checked out the service description that I setup in UDDI over a year ago and ran the quick test from BindingPoint. It brought back memories of my <a href='http://www.uddi.org/'>UDDI</a> and Web services work I did last year. And I still think UDDI rocks!<br /><br /><br /></p>
+        <p>A friend pointed me to <a href='http://www.bindingpoint.net/'>BindingPoint</a>, which is an XML web services directory. I did a quick search on <a href='http://www.bindingpoint.net/services.aspx?tag=srch&amp;val=snow+report&amp;x=0&amp;y=0'>&quot;snow report&quot;</a> and found my snow report web service. I checked out the service description that I setup in UDDI over a year ago and ran the quick test from BindingPoint. It brought back memories of my <a href='http://www.uddi.org/'>UDDI</a> and Web services work I did last year. And I still think UDDI rocks!<br /><br /><br /></p>
         
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
         
@@ -205,47 +304,7 @@
         <div class="post-content right-col">
         <h2><a href="/2004/06/16/new-airport-express-is-there-anything-it-cant-do/" rel="bookmark" title="New AirPort Express: Is there anything it can't do?">New AirPort Express: Is there anything it can't do?</a></h2>
 
-        <p>Apple&#8217;s new <a href='http://www.apple.com/airportexpress/'>AirPort Express</a> sounds simply amazing. It can act as a wireless bridge, provides wireless access to USB printers, and play music broadcasted wirelessly from your computer. The device fits in the palm of your hand and it has a built-in AC adaptor meaning no cables or power supply. This little puppy will be great to take on the road too. You can connect it to the hotel&#8217;s ethernet and access the Internet wirelessly. Or use it at the home of friends and family who have broadband Internet access but no wireless access point. I might have to buy one once Apple starts shipping it.<br /><br /><br /></p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">12</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/06/12/msn-alerts-for-xbox-live/" rel="bookmark" title="MSN Alerts for Xbox Live">MSN Alerts for Xbox Live</a></h2>
-
-        <p>Microsoft recently <a href='http://www.xbox.com/en-US/live/about/features-messenger.htm?level1=enushome&amp;level2=ad1&amp;level3=messengeralerts'>announced</a> MSN Alerts for Xbox Live users. It works by linking your Messager account with your Xbox Live gametag. You can receive alerts for game invites, friend requests, know when friends sign in, and more. Sounds cool but unfortunately I use <a href='http://www.trillian.cc/'>Trillian</a> as my IM client.<br /><br />Trillian is awesome in that it is a single IM chat interface for different IM services such as AIM, Messager, ICQ, and Yahoo. With Trillian I no longer need to run different IM programs. Instead I run one program and it communicates with the different services. The only beef I have with Trillian is the lack of support for <a href='http://alerts.msn.com/'>MSN Alerts</a>, but I&#8217;m sure that has more to do with Microsoft then with the Trillian folks. And as much as I like the concept of MSN Alerts I&#8217;m not going to give up Trillian.<br /><br /><br /></p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">11</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/06/11/yet-another-silly-patent/" rel="bookmark" title="Yet Another Silly Patent">Yet Another Silly Patent</a></h2>
-
-        <p>Microsoft has created a <a href='http://news.zdnet.co.uk/business/legal/0,39020651,39157145,00.htm'> patent</a> on <i>// TODO</i>. Fortunately it only applies to software development environments so individuals can still produce their own TO-DO list for things such as grocery shopping.</p>
+        <p>Apple’s new <a href='http://www.apple.com/airportexpress/'>AirPort Express</a> sounds simply amazing. It can act as a wireless bridge, provides wireless access to USB printers, and play music broadcasted wirelessly from your computer. The device fits in the palm of your hand and it has a built-in AC adaptor meaning no cables or power supply. This little puppy will be great to take on the road too. You can connect it to the hotel’s ethernet and access the Internet wirelessly. Or use it at the home of friends and family who have broadband Internet access but no wireless access point. I might have to buy one once Apple starts shipping it.<br /><br /><br /></p>
         
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
         
@@ -259,11 +318,11 @@
 <div class="more_posts">
 	<h2>
         
-        <a href="/page49" >&laquo; Older Entries</a> &nbsp; 
+        <a href="//page49" >&laquo; Older Entries</a> &nbsp; 
         
         
             
-                <a href="/page47" >Recent Entries &raquo;</a>
+                <a href="//page47" >Recent Entries &raquo;</a>
             
         
     </h2>
@@ -311,7 +370,7 @@
 <li class='category'><a href='/category/backpacking/'>backpacking (8)</a></li>
 <li class='category'><a href='/category/blogger/'>blogger (785)</a></li>
 <li class='category'><a href='/category/camping/'>camping (11)</a></li>
-<li class='category'><a href='/category/family/'>family (3)</a></li>
+<li class='category'><a href='/category/family/'>family (4)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
 <li class='category'><a href='/category/general/'>general (8)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (7)</a></li>
@@ -323,16 +382,19 @@
 <li class='category'><a href='/category/opinion/'>opinion (1)</a></li>
 <li class='category'><a href='/category/pictures/'>pictures (8)</a></li>
 <li class='category'><a href='/category/random/'>random (4)</a></li>
+<li class='category'><a href='/category/rant/'>rant (1)</a></li>
 <li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
 <li class='category'><a href='/category/salem/'>salem (1)</a></li>
 <li class='category'><a href='/category/skiing/'>skiing (2)</a></li>
 <li class='category'><a href='/category/snowboarding/'>snowboarding (4)</a></li>
 <li class='category'><a href='/category/social/'>social (2)</a></li>
 <li class='category'><a href='/category/stowe/'>stowe (1)</a></li>
+<li class='category'><a href='/category/tech/'>tech (1)</a></li>
 <li class='category'><a href='/category/travel/'>travel (3)</a></li>
 <li class='category'><a href='/category/trip/'>trip (4)</a></li>
 <li class='category'><a href='/category/trips/'>trips (1)</a></li>
 <li class='category'><a href='/category/videos/'>videos (2)</a></li>
+<li class='category'><a href='/category/work/'>work (1)</a></li>
 
     </ul>
 </div>
@@ -360,15 +422,15 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2014/04/24/wtf-ruby-gems/" title="WTF Ruby Gems">WTF Ruby Gems</a></li>
+                
+                  <li><a href="/2014/04/24/family-influence/" title="Family Influence">Family Influence</a></li>
+                
                   <li><a href="/2014/04/08/still-no-regrets/" title="Still No Regrets">Still No Regrets</a></li>
                 
                   <li><a href="/2014/04/06/not-organizing-events/" title="Not Organizing Events">Not Organizing Events</a></li>
                 
                   <li><a href="/2014/03/14/cross-posting/" title="Cross Posting">Cross Posting</a></li>
-                
-                  <li><a href="/2014/02/05/i-m-having-a-bad-day/" title="I'm Having a Bad Day">I'm Having a Bad Day</a></li>
-                
-                  <li><a href="/2014/01/17/day-25/" title="Day 25">Day 25</a></li>
                 
             </ul>
 		</div>
