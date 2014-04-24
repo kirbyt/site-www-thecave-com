@@ -14,11 +14,3 @@ Today I go to publish a new blog post. I use Jekyll to convert my site to static
 ALL I WANTED TO DO WAS GET THE LATEST FREAKIN' VERSION OF TWO FILES, A .h AND .m, AND NOW I HAVE TO WASTE TIME TRYING TO FIX WHAT WAS NOT BROKEN UNTIL YESTERDAY JUST SO I CAN PUBLISH A BLOG POST.
 
 This is why I don't like using things like CocoaPods, plug-ins, and other simular widgets.
-
-Oh, and here is one of the error messages I'm now getting:
-
-> Malformed HTML starting at "<p>Be sure to modify the path above to match your installation of Visual Studio.NET."
-
-WTF!? I'm using a Mac running OS X. And I sure as hell don't have Visual Studio.NET installed on my system. So I have gone from needing to update to simple files to getting errors saying I need to modify a path to match something that doesn't even run on my computer.
-
-I'm going back to writing static HTML by hand.
