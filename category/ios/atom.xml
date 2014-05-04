@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ios | thecave | Ramblings from a crotchety old man]]></title>
   <link href="http://www.thecave.com/category/ios/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2014-05-04T17:12:34-04:00</updated>
+  <updated>2014-05-04T17:16:34-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -163,7 +163,7 @@
   [self setComposeView:composeView];
 }</code></pre>
 
-<p>After I create the view I might add more layout constraints to position and size the subview as needed within the main content view. I do that in the view controller’s <code>loadView</code> when needed.</p>
+<p>After I create the view I might add more layout constraints to position and size the subview as needed within the main content view. I do that in the view controller’s <code>-loadView</code> when needed.</p>
 
 <p>So that’s it. That’s why I have stopped using NIB and storyboard files in my iOS projects. This approach might not work for others, but it certainly works for me.</p>]]></content>
   </entry>
