@@ -54,6 +54,26 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">May<span class="year">2006</span></span><span class="day">23</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2006/05/23/white-peak-software-news/" rel="bookmark" title="White Peak Software News">White Peak Software News</a></h2>
+
+        <p>A common question I get is “How is <a href='http://www.whitepeaksoftware.com/'>White Peak Software</a> doing?” The answer is quiet simply “We’re doing great.” Revenues continue to grow and we are inching closer to the release of our next product. We’ve also done some exciting <a href='http://www.whitepeaksoftware.com/'>custom software</a> work over the last year. <br /><br />I have decided to start posting news briefs on some of our more exciting, and successful, custom software work. You can read the postings in the <a href='http://www.whitepeaksoftware.com/forums/Forum4-1.aspx'>White Peak Software Announcements forum</a> or by subscribing to the <a href='http://www.whitepeaksoftware.com/forums/RssFeed4-0-0-1.aspx'>announcement feed</a> using your <a href='http://www.feeddemon.com/'>favorite RSS feed reader</a>.</p>
+        
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+        
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">May<span class="year">2006</span></span><span class="day">16</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -243,26 +263,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">May<span class="year">2006</span></span><span class="day">04</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2006/05/04/limited-scripting-in-sql-server-2005/" rel="bookmark" title="Limited Scripting in SQL Server 2005">Limited Scripting in SQL Server 2005</a></h2>
-
-        <p>SQL Server 2005 has been out for some time now but I have only recently made the move to it. I’ve been in the SQL Server 2000 world because of customers but my customers are finally making the move 2005.<br /><br />Overall I really like SQL Server 2005 and the new Management Studio is nice. However, I’m really annoyed that the SQL Server 2005 team decided to do away with the database scripting feature found in SQL Server 2000. <br /><br />In SQL Server 2000, you can script out each database object into individual files. I do this so I can commit the DDL source for each into CVS, or to do revision comparisons, or to do a number of other tasks. But you cannot easily script out each object in a database with SQL Server 2005. Apparently this is a known limitation as seen <a href='http://lab.msdn.microsoft.com/productfeedback/viewfeedback.aspx?feedbackid=9eb6c773-2dbb-4a27-b9d8-225d6ed4385a'>here</a>.<br /><br />One option I found is to <a href='http://www.sqlteam.com/item.asp?ItemID=23185'>write a programming using .NET 2.0 and the SQL Management Object (SMO)</a>. Unfortunately time is not a luxury I have and I have an immediate need to script out the each object in a database into individual files. So I started down the path of script out each object individual. <br /><br />Guess what? It has its own set of problems. First starters, there is not an option to generate a script that contains both the DROP and CREATE statements. Instead what I do is generate the CREATE statement to a query window. Next I generate the DROP statement to the clipboard followed by pasting the clipboard content to the query window. Needless to say, this is a painful process, and I have hundreds of database objects to script out.<br /><br />I can’t believe the model used for generating scripts in previous versions of SQL Server did not make it into SQL Server 2005. I would have expected the same functionality at a minimum, and possibly an improvement on past versions. But I would never have guess it was removed completely.</p>
-        
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -326,12 +326,13 @@
 <li class='category'><a href='/category/general/'>general (8)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (7)</a></li>
 <li class='category'><a href='/category/humor/'>humor (1)</a></li>
-<li class='category'><a href='/category/ios/'>ios (1)</a></li>
+<li class='category'><a href='/category/ios/'>ios (2)</a></li>
 <li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
 <li class='category'><a href='/category/long-trail/'>long-trail (2)</a></li>
 <li class='category'><a href='/category/moving/'>moving (1)</a></li>
 <li class='category'><a href='/category/opinion/'>opinion (1)</a></li>
 <li class='category'><a href='/category/pictures/'>pictures (8)</a></li>
+<li class='category'><a href='/category/programming/'>programming (1)</a></li>
 <li class='category'><a href='/category/random/'>random (4)</a></li>
 <li class='category'><a href='/category/rant/'>rant (1)</a></li>
 <li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
@@ -373,6 +374,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout/" title="I Stopped Using NIBs Thanks to Auto Layout">I Stopped Using NIBs Thanks to Auto Layout</a></li>
+                
                   <li><a href="/2014/04/24/wtf-ruby-gems/" title="WTF Ruby Gems">WTF Ruby Gems</a></li>
                 
                   <li><a href="/2014/04/24/family-influence/" title="Family Influence">Family Influence</a></li>
@@ -380,8 +383,6 @@
                   <li><a href="/2014/04/08/still-no-regrets/" title="Still No Regrets">Still No Regrets</a></li>
                 
                   <li><a href="/2014/04/06/not-organizing-events/" title="Not Organizing Events">Not Organizing Events</a></li>
-                
-                  <li><a href="/2014/03/14/cross-posting/" title="Cross Posting">Cross Posting</a></li>
                 
             </ul>
 		</div>

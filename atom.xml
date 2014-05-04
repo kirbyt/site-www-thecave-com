@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Ramblings from a crotchety old man]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2014-04-24T09:54:30-04:00</updated>
+  <updated>2014-05-04T16:56:39-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,163 @@
   </author>
   <rights>Copyright (c) 2003-2014 White Peak Software Inc</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[I Stopped Using NIBs Thanks to Auto Layout]]></title>
+    <link href="http://www.thecave.com/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout/"/>
+    <published>2014-05-04T00:00:00-04:00</published>
+    <updated>2014-05-04T00:00:00-04:00</updated>
+    <id>http://www.thecave.com/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout</id>
+    <content type="html"><![CDATA[<p>The subject to this post might suggest I don’t like Auto Layout, but on the contrary I really like Auto Layout. I didn’t always like Auto Layout. For the longest time Auto Layout was a major pain in my ass, but it turns out it was Interface Builder that was causing me the majority of headaches when I used Auto Layout. So I stopped using Auto Layout in IB and I started using it in code only.</p>
+
+<p>It took me a while to get comfortable with Auto Layout in code, but once things clicked, I found it easy to get the layout I wanted. In fact, I have found Auto Layout saves me time when laying out a UI, and I’ve become so comfortable with Auto Layout that now I become annoyed if I have to work on a project that does not use Auto Layout.</p>
+
+<p>Because I use Auto Layout in code I realized overtime I was using Interface Builder only to define the UI elements that made up the view. I would define all the Auto Layout constraints in code. This got me thinking, why do I need to define the UI elements in IB? So I did a small project with no NIBs or storyboards, and I loved it. I felt more productive, and I was banging my head against the wall a hell of a lot less.</p>
+
+<p>(Credit also goes to <a href="https://twitter.com/mattie">Matt Massicotte</a> for encouraging me to try a project with no NIB or storboard files.)</p>
+
+<p>I’ve now done a number of iOS projects where I don’t use a single NIB or storyboard, and I’m convinced this is the right approach for me. I see everything regarding a view and its subviews explicitly defined in source code, which makes it easier to see what’s going on and to make changes. No more bouncing between inspectors to figure out what is causing a problem or to understand how a view is rendered. I see it all in the source code defined in a single <em>.m</em> file.</p>
+
+<p>So how do I construct my views using only source code? I have a base class that I call <a href="https://github.com/kirbyt/WPSKit/blob/master/WPSKit/UIKit/WPSCompositeView.h"><code>WPSCompositeView</code></a> in my <a href="https://github.com/kirbyt/WPSKit">WPSKit</a>, a set of classes and categories I use to build apps. <code>WPSCompositeView</code> has a class method named <code>+addToSuperview:</code> that creates the instance of the view, which must be a subclass of <code>WPSCompositeView</code>, then calls <code>-loadView</code> on the instance of the view. I place all the code needed to create the subviews of the view in the <code>-loadView</code> implementation. The constraints for the view are implemented in the <code>-updateConstraints</code> that is called by iOS when needed. That’s it.</p>
+
+<p>Here’s an example of a composer view for a new app I’m working on:</p>
+
+<p><a href="https://farm8.staticflickr.com/7204/13920896030_4c53fbfe1c_o.jpg"><img src="https://farm8.staticflickr.com/7204/13920896030_e0da352daf_m.jpg" alt="" /></a></p>
+
+<p>And the code for creating this view is as follows:</p>
+
+<pre><code>- (void)loadView
+{
+  UIView *containerView = self;
+
+  WPSTextView *textView = [[WPSTextView alloc] init];
+  [textView setTranslatesAutoresizingMaskIntoConstraints:NO];
+  [textView setAlwaysBounceVertical:YES];
+  [textView setInputAccessoryView:[self toolbar]];
+  [textView setFont:[UIFont systemFontOfSize:17.0]];
+  [textView setPlaceholderText:NSLocalizedString(@&quot;What&#39;s up?&quot;, @&quot;Placeholder text.&quot;)];
+  [self setTextView:textView];
+
+  UIButton *locationButton = [UIButton buttonWithType:UIButtonTypeCustom];
+  [locationButton setTranslatesAutoresizingMaskIntoConstraints:NO];
+  [locationButton setImage:[UIImage wps_imageNamed:@&quot;location&quot; withMaskColor:[UIColor lightGrayColor]] forState:UIControlStateNormal];
+  [locationButton setImage:[UIImage wps_imageNamed:@&quot;location&quot; withMaskColor:[UIColor wps_iOSDefaultBlue]] forState:UIControlStateSelected];
+  [locationButton setSelected:NO];
+  [locationButton addTarget:self action:@selector(_locationButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+  [self setLocationButton:locationButton];
+
+  UILabel *locationLabel = [[UILabel alloc] init];
+  [locationLabel setTranslatesAutoresizingMaskIntoConstraints:NO];
+  [locationLabel setTextColor:[UIColor lightGrayColor]];
+  [locationLabel setTextAlignment:NSTextAlignmentLeft];
+  [locationLabel setText:NSLocalizedString(@&quot;Location Disabled&quot;, @&quot;Location text.&quot;)];
+  [self setLocationLabel:locationLabel];
+
+  UILabel *characterCountLabel = [[UILabel alloc] init];
+  [characterCountLabel setTranslatesAutoresizingMaskIntoConstraints:NO];
+  [characterCountLabel setTextColor:[UIColor lightGrayColor]];
+  [characterCountLabel setTextAlignment:NSTextAlignmentRight];
+  [self setCharacterCountLabel:characterCountLabel];
+
+  [containerView addSubview:textView];
+  [containerView addSubview:locationButton];
+  [containerView addSubview:locationLabel];
+  [containerView addSubview:characterCountLabel];
+
+  [textView wps_setDidChange:^(UITextView *aTextView) {
+    NSString *countString = nil;
+    NSUInteger length = [[aTextView text] length];
+    if (length &gt; 0) {
+      countString = [NSString stringWithFormat:@&quot;%lu&quot;, (unsigned long)length];
+    }
+    [characterCountLabel setText:countString];
+  }];
+}
+
+- (void)updateConstraints
+{
+  WPSTextView *textView = [self textView];
+  UILabel *characterCountLabel = [self characterCountLabel];
+  UIButton *locationButton = [self locationButton];
+  UILabel *locationLabel = [self locationLabel];
+
+  [locationButton wps_constrainToHeight:38.0f];
+  [locationButton wps_constrainToWidth:38.0f];
+
+  NSDictionary *bindings = NSDictionaryOfVariableBindings(textView, characterCountLabel, locationButton, locationLabel);
+  [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@&quot;V:|-0-[textView]-4-[characterCountLabel]-0-|&quot; options:0 metrics:nil views:bindings]];
+  [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@&quot;H:|-0-[textView]-0-|&quot; options:0 metrics:nil views:bindings]];
+  [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@&quot;H:|-8-[locationButton]-[locationLabel]-[characterCountLabel]-8-|&quot; options:0 metrics:nil views:bindings]];
+  [self addConstraint:[NSLayoutConstraint constraintWithItem:locationLabel attribute:NSLayoutAttributeBaseline relatedBy:NSLayoutRelationEqual toItem:characterCountLabel attribute:NSLayoutAttributeBaseline multiplier:1.0 constant:0.0]];
+  [self addConstraint:[NSLayoutConstraint constraintWithItem:locationButton attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:locationLabel attribute:NSLayoutAttributeCenterY multiplier:1.0 constant:0.0]];
+
+  [super updateConstraints];
+}
+
+- (UIToolbar *)toolbar
+{
+  if (_toolbar == nil) {
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, screenBounds.size.width, 44)];
+    [toolbar setTintAdjustmentMode:UIViewTintAdjustmentModeNormal];
+
+
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    BOOL adnOn = [defaults cp_isAdnOn];
+    BOOL facebookOn = [defaults cp_isFacebookOn];
+    BOOL twitterOn = [defaults cp_isTwitterOn];
+
+    UIColor *offColor = [UIColor lightGrayColor];
+    UIColor *adnColor = adnOn ? [UIColor blackColor] : offColor;
+    UIColor *facebookColor = facebookOn ? [UIColor wps_facebookBlue] : offColor;
+    UIColor *twitterColor = twitterOn ? [UIColor wps_twitterBlue] : offColor;
+
+    UIBarButtonItem *cameraButton = [self buttonWithImageName:@&quot;camera&quot; color:[UIColor wps_iOSDefaultBlue] action:@selector(_cameraButtonTapped:)];
+    [self setCameraButton:cameraButton];
+
+    UIBarButtonItem *adnButton = [self buttonWithImageName:@&quot;adn&quot; color:adnColor action:@selector(_adnButtonTapped:)];
+    [adnButton setTag:adnOn];
+    [self setAdnOn:adnOn];
+    [self setAdnButton:adnButton];
+
+    UIBarButtonItem *facebookButton = [self buttonWithImageName:@&quot;facebook&quot; color:facebookColor action:@selector(_facebookButtonTapped:)];
+    [facebookButton setTag:facebookOn];
+    [self setFacebookOn:facebookOn];
+    [self setFacebookButton:facebookButton];
+
+    UIBarButtonItem *twitterButton = [self buttonWithImageName:@&quot;twitter&quot; color:twitterColor action:@selector(_twitterButtonTapped:)];
+    [twitterButton setTag:twitterOn];
+    [self setTwitterOn:twitterOn];
+    [self setTwitterButton:twitterButton];
+
+    UIBarButtonItem *draftsButton = [self buttonWithImageName:@&quot;drafts&quot; color:[UIColor wps_iOSDefaultBlue] action:@selector(_draftsButtonTapped:)];
+    [self setDraftsButton:draftsButton];
+
+    UIBarButtonItem *flexibleButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    [toolbar setItems:@[adnButton, facebookButton, twitterButton, flexibleButton, draftsButton, cameraButton] animated:NO];
+
+    _toolbar = toolbar;
+  }
+  return  _toolbar;
+}</code></pre>
+
+<p>The only things not created or managed but this view are the navigation bar and collection view of photos. The navigation bar is provided by the <code>UINavigationController</code> used by the view controller that created this composer view. Also, the view controller uses controller containment to include the collection view of photos, which is actually managed by another view controller and custom view class.</p>
+
+<p>Oh, I almost forgot to mention…I create the composite view in the <code>loadView</code> method implemented in the view controller. For example:</p>
+
+<pre><code>- (void)loadView
+{
+  [super loadView];
+  UIView *contentView = [self view];
+
+  CPComposeView *composeView = [CPComposeView addToSuperview:contentView];
+  [self setComposeView:composeView];
+}</code></pre>
+
+<p>After I create the view I might add more layout constraints to position and size the subview as needed within the main content view. I do that in the view controller’s <code>loadView</code> when needed.</p>
+
+<p>So that’s it. That’s why I have stopped using NIB and storyboard files in my iOS projects. This approach might not work for others, but it certainly works for me.</p>]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[WTF Ruby Gems]]></title>
@@ -318,45 +475,6 @@
     <content type="html"><![CDATA[<p><a href="http://photos.thecave.com/Trips/Europe/Eiffel-Tower-May-2013/"><img alt='' border='0' class='alignleft' src='http://photos.thecave.com/Trips/Europe/Eiffel-Tower-May-2013/i-xsrGKH2/0/Th/IMG_1293-Th.jpg' /></a> Melanie was working a flight to Paris this week, and as luck would have it there were seats available on the flight. So Rowan and I decided to join her. Rowan has wanted to visit the Eiffel Tower for as long as I can remember, so that’s what we did on this trip. We flew to Paris, went to the Eiffel Tower, then flew back home. Pictures from our short trip are available <a href="http://photos.thecave.com/Trips/Europe/Eiffel-Tower-May-2013/">here</a>.</p>
 
 <p>Rowan was a real trooper during this trip. He handled the long plane ride, time zone changes, and lack of sleep like a seasoned traveler.</p>]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Simple Bank, My Kind of Banking]]></title>
-    <link href="http://www.thecave.com/2013/05/12/simple-banking-my-kind-of-banking/"/>
-    <published>2013-05-12T00:00:00-04:00</published>
-    <updated>2013-05-12T00:00:00-04:00</updated>
-    <id>http://www.thecave.com/2013/05/12/simple-banking-my-kind-of-banking</id>
-    <content type="html"><![CDATA[<p>Earlier today I <a href="https://alpha.app.net/kirbyt/post/5586671">posted</a> on ADN that I love banking with Simple. My friend <a href="https://alpha.app.net/danielpunkass">Daniel</a> asked if I could summarize in 250 or less what sets Simple apart from other banks. I did my best to summarize what I thought was different/better about Simple, but I still felt a blog post would be better.</p>
-
-<p>At the end of 2012, my wife and I decided to return to separate checking accounts. We’ve had a joint account for years, but it wasn’t working for us. We do better managing our money separately. Going back to separate accounts meant I needed to setup a new personal checking account for myself. I had heard of <a href="https://www.simple.com">Simple</a>, so I decided to give it a try.</p>
-
-<p>Before trying Simple, I asked if any of my friends use Simple. I was surprised to find that of my friends with a Simple account, not one of them really liked it. And none are using it as their primary bank. But as I read more about Simple, the more I liked the concepts behind Simple. Despite the lack of rave reviews from friends, I decided to give Simple a try. A friend sent me an invite, and within 24 hours I had my own Simple account.</p>
-
-<p>I should point out that I approach banking differently than most. I’ve been using online banking for as long as I cam remember, at least since 1992, possibly longer. And I’ve not lived in a city where my bank had a local branch or ATM in over 10 years. This means I’ve done all my banking online and done mail-in check deposits for the last decade. This already makes me well suited for banking with Simple.</p>
-
-<p>After five months of using Simple, and I have to say I love it. It’s almost as if Simple was designed specifically for me. Simple not only provides the banking services I need, but it’s “goals” feature makes it easier for me to manage and save my money. Goals is the single most feature that makes Simple standout from all the other online banking experiences I have had over the years. Of course the beautiful, easy to use web interface and iPhone app also set Simple apart from other banks, but it’s goals that have changed my expectations for online banking.</p>
-
-<p>Goals help you save money in an automated fashion. Say you want to save a $1,000 in six months for a trip. You define a goal and optionally give it a starting balance, say $50. Each day Simple will move a few dollars from your “safe to spend” to the goal until your goal is reached. The dollar amount varies based on when you want to archive the goal. A goal of saving $1,000 in three months will move more money daily than a goal of the same amount that spans six months. You can also pause the goal and manually move money in and out of a goal any time you like.</p>
-
-<p>I use goals to set aside money for paying big bills such as our quarterly property tax payment as well as for stashing money away in an emergency fund goal and savings for Rowan. I also use goals for monthly automatic debit payments like our gas and electric bills. These goals are not tied to a time period. Instead, when I get the statement for a bill I create a goal for the payment amount. This sets aside the money that will be automatically debited from my account. Once a transaction has clear, such as paying the gas bill, I mark the payment as spent from my gas bill goal. This means my “safe to spend” balance remains unaffected.</p>
-
-<p>And what of this “safe to spend” that I keep mentioning? The “safe to spend” is a different way of looking at your available balance. The “safe to spend” balance is the dollar amount you have in your account that has not been set aside for a scheduled payment or goal. In other words, “safe to spend” tells you how much money you have in your account that is not allocated to some other purpose, making it…safe to spend.</p>
-
-<p>Your account still has an account balance, and the Simple website and iPhone app easily shows this information. But knowing how much I actually have to spend helps me not overspend. That’s the problem I’ve had in the past with online banking. I see I have $1,500 in the available balance, but I might forget that I need a $1,000 of that $1,500 to pay my estimated quarterly taxes. With a goal I don’t have to think about setting aside the $1,000. Simple goal does it for me.</p>
-
-<p>I know third party banking apps have, for years, had features to hide money in an account and some even have goal-like features, but that’s another reason I really like banking with Simple. I don’t need a third party app. Simple provides the features I need to manage my money without needing a third party app, and that is another point that sets Simple apart from other online banks. Other online banking experiences are so basic that you need a third party app to help manage your money.</p>
-
-<p>As much as I enjoy banking with Simple, it’s not all perfect (yet). There are some things I don’t like. I cannot view my goals in the iPhone app. I found a word around for this by opening the details of a past transaction and tapping “Spend from goal”. This shows me each of my goals and how much money is in each goal. I just have to remember not to actually select a goal since I don’t want to transaction to use money from the goal.</p>
-
-<p>Another thing I don’t like about Simple is that I cannot assign a category to a scheduled payment until after the payment has cleared. The good news is once I do set the category for the cleared payment, if I ever send another payment to the same payee, Simple will automatically assign the category for me based on the previously selected category. Still, I think it’s silly that I cannot set the category at the time I initially setup the scheduled payment.</p>
-
-<p>Also, Simple does not yet have support for joint checking accounts. Granted I don’t need joint checking, but for some this is a deal breaker. What I do need is a business checking account, which is another service not yet provided by Simple. So I must continue using a traditional bank for my business. The online experience with my traditional bank is okay, in fact better than with many other banks, but the experience is still not as good as with Simple.</p>
-
-<p>And as for my friends who have tried Simple, their reasons for not using Simple as their primary bank varies from preferring to have a local branch to having a local ATM for cash deposits. I admit there are times when I wish I could do a cash deposit, but those times are rare and are usually only after I sell something on Craig’s List.</p>
-
-<p>As for check deposits, taking a picture of the check and doing a mobile deposit using the Simple iPhone app is far faster for me than depositing a check through an ATM. And remember, I’ve not made check deposit, or cash for that matter, via an ATM for a decade so not having a local branch or ATM doesn’t effect me like it might effect others.</p>
-
-<p>Simple is not a primary bank for everyone, but for me there is no better online bank than Simple.</p>]]></content>
   </entry>
   
 </feed>
