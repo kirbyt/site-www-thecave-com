@@ -151,6 +151,6 @@ Oh, I almost forgot to mention...I create the composite view in the `loadView` m
       [self setComposeView:composeView];
     }
 
-After I create the view I might add more layout constraints to position and size the subview as needed within the main content view. I do that in the view controller's `loadView` when needed.
+After I create the view I might add more layout constraints to position and size the subview as needed within the main content view. I do that in the view controller's `-loadView` when needed.
 
 So that's it. That's why I have stopped using NIB and storyboard files in my iOS projects. This approach might not work for others, but it certainly works for me.
