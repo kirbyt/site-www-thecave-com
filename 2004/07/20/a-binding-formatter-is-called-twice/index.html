@@ -125,17 +125,17 @@ namespace SampleWindowsApp
             // textBox1
             //
             this.textBox1.Location = new System.Drawing.Point(56, 32);
-            this.textBox1.Name = &quot;textBox1&quot;;
+            this.textBox1.Name = "textBox1";
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = &quot;textBox1&quot;;
+            this.textBox1.Text = "textBox1";
             this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
             //
             // button1
             //
             this.button1.Location = new System.Drawing.Point(72, 120);
-            this.button1.Name = &quot;button1&quot;;
+            this.button1.Name = "button1";
             this.button1.TabIndex = 1;
-            this.button1.Text = &quot;button1&quot;;
+            this.button1.Text = "button1";
             //
             // Form1
             //
@@ -143,8 +143,8 @@ namespace SampleWindowsApp
             this.ClientSize = new System.Drawing.Size(292, 266);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
-            this.Name = &quot;Form1&quot;;
-            this.Text = &quot;Form1&quot;;
+            this.Name = "Form1";
+            this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
@@ -162,7 +162,7 @@ namespace SampleWindowsApp
 
         private void Form1_Load(object sender, System.EventArgs e)
         {
-            Binding binding = new Binding( &quot;Text&quot;, _dataSource, &quot;Value&quot; );
+            Binding binding = new Binding( "Text", _dataSource, "Value" );
             binding.Format += new ConvertEventHandler(binding_Format);
 
             textBox1.DataBindings.Add( binding );
@@ -170,34 +170,36 @@ namespace SampleWindowsApp
 
         private void binding_Format(object sender, ConvertEventArgs e)
         {
-            Debug.WriteLine( &quot;Format&quot; );
+            Debug.WriteLine( "Format" );
         }
 
         private void textBox1_Leave(object sender, System.EventArgs e)
         {
-            Debug.WriteLine( &quot;Leave&quot; );
+            Debug.WriteLine( "Leave" );
 
         }
     }
 
     class MyClass
     {
-        private string _value = &quot;Default value.&quot;;
+        private string _value = "Default value.";
         public string Value
         {
             get
             {
-                Debug.WriteLine( &quot;MyClass.Value getter&quot; );
+                Debug.WriteLine( "MyClass.Value getter" );
                 return _value;
             }
             set
             {
-                Debug.WriteLine( &quot;MyClass.Value setter&quot; );
+                Debug.WriteLine( "MyClass.Value setter" );
                 _value = value;
             }
         }
     }
-}</code></pre>
+}
+</code></pre>
+
 
 
     <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>

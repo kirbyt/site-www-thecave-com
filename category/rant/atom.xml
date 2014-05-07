@@ -4,7 +4,7 @@
   <title><![CDATA[Category: rant | thecave | Ramblings from a crotchety old man]]></title>
   <link href="http://www.thecave.com/category/rant/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2014-05-04T17:16:34-04:00</updated>
+  <updated>2014-05-06T23:23:11-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -25,7 +25,8 @@
 
 <p>ALL I WANTED TO DO WAS GET THE LATEST FREAKIN’ VERSION OF TWO FILES, A .h AND .m, AND NOW I HAVE TO WASTE TIME TRYING TO FIX WHAT WAS NOT BROKEN UNTIL YESTERDAY JUST SO I CAN PUBLISH A BLOG POST.</p>
 
-<p>This is why I don’t like using things like CocoaPods, plug-ins, and other simular widgets.</p>]]></content>
+<p>This is why I don’t like using things like CocoaPods, plug-ins, and other simular widgets.</p>
+]]></content>
   </entry>
   
 </feed>

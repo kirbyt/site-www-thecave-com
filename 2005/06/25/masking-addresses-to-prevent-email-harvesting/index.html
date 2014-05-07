@@ -58,22 +58,23 @@
     <div class="post-content right-col">
     <h2><a href="/2005/06/25/masking-addresses-to-prevent-email-harvesting/" rel="bookmark" title="Masking Addresses to Prevent Email Harvesting">Masking Addresses to Prevent Email Harvesting</a></h2>
 
-    <p>Email harvesting is a technique used by spammers to find email addresses published on web sites. Spiders crawl the net looking for text that looks like email addresses (ex: somename@somedomain.com).</p>
+    <p>Email harvesting is a technique used by spammers to find email addresses published on web sites.  Spiders crawl the net looking for text that looks like email addresses (ex: somename@somedomain.com).</p>
 
-<p>For years I have published my email address on my web sites to make it easier for people to contact me. And as expected, over the years the amount of spam mail I receive has grown. I received around 600 to 700 spam mails a day. Luckily I have several layers of spam filtering enabled so less than 5% of spam makes it to my Inbox. But today I decided I would attempt to reduce the amount of spam I receive by masking my email address.</p>
+<p>For years I have published my email address on my web sites to make it easier for people to contact me.  And as expected, over the years the amount of spam mail I receive has grown.  I received around 600 to 700 spam mails a day.  Luckily I have several layers of spam filtering enabled so less than 5% of spam makes it to my Inbox.  But today I decided I would attempt to reduce the amount of spam I receive by masking my email address.</p>
 
-<p>As I mentioned spammers harvest email addresses by searching the Internet for text that matches an email pattern. By masking an email address the spammer will have a tougher time determining if the content is in fact an email address. So how do you mask an email address?</p>
+<p>As I mentioned spammers harvest email addresses by searching the Internet for text that matches an email pattern.  By masking an email address the spammer will have a tougher time determining if the content is in fact an email address.  So how do you mask an email address?</p>
 
-<p>You can use JavaScript to mask an email address. For example, instead of including your email address as plain text in the HTML convert each character of your email address into the appropriate ASCII value and display the ASCII value string using document.write as shown below.</p>
+<p>You can use JavaScript to mask an email address.  For example, instead of including your email address as plain text in the HTML convert each character of your email address into the appropriate ASCII value and display the ASCII value string using document.write as shown below.</p>
 
-<pre><code>&lt;!--document.write(&#39;&amp;#107&amp;#105&amp;#114&amp;#98&amp;#121&amp;#64&amp;#116&amp;#104&amp;#101&amp;#99&amp;#97&amp;#118&amp;#101&amp;#46&amp;#99&amp;#111&amp;#109&#39;);// --&gt; </code></pre>
+<pre><code>&lt;!--document.write('&amp;#107&amp;#105&amp;#114&amp;#98&amp;#121&amp;#64&amp;#116&amp;#104&amp;#101&amp;#99&amp;#97&amp;#118&amp;#101&amp;#46&amp;#99&amp;#111&amp;#109');// --&gt; 
+</code></pre>
 
-<p>Of course doing this each time can be a pain. A better approach is to use server-side scripting that will mask the email address for you. That’s exactly what I did for my web site using the following C# code:</p>
+<p>Of course doing this each time can be a pain.  A better approach is to use server-side scripting that will mask the email address for you.  That’s exactly what I did for my web site using the following C# code:</p>
 
 <pre><code>public string MaskedEmail( string email )
 {   
     string masked = MaskedStringFromString(email);   
-    string javascript = @&quot;  &lt;!--      document.write(&#39;{0}&#39;);      // --&gt; &quot;;
+    string javascript = @"  &lt;!--      document.write('{0}');      // --&gt; ";
 
     return String.Format( javascript, masked );
 }
@@ -85,10 +86,10 @@ public string MaskedMailToLink( string email, string text )
 
 public string MaskedMailToLink( string email, string text, string additionalAttributes )
 {   
-    string maskedEmail = MaskedStringFromString(&quot;mailto:&quot; + email);   
+    string maskedEmail = MaskedStringFromString("mailto:" + email);   
     string maskedText = MaskedStringFromString(text);   
-    string encodedAttr = additionalAttributes.Replace(&quot;&#39;&quot;,@&quot;\&#39;&quot;);   
-    string javascript = @&quot;  &lt;!--      document.write(&#39;{2}&amp;lt/a&gt;&#39;);      // --&gt; &quot;;
+    string encodedAttr = additionalAttributes.Replace("'",@"\'");   
+    string javascript = @"  &lt;!--      document.write('{2}&amp;lt/a&gt;');      // --&gt; ";
 
    return String.Format( javascript, maskedEmail, encodedAttr, maskedText );
 }
@@ -97,12 +98,14 @@ public string MaskedStringFromString(string value)
 {   
     string masked = string.Empty;   
     for( int i=0; i &lt; value.Length; i++)   {      
-        masked += String.Format( &quot;&amp;#{0}&quot;, Convert.ToByte(value[i]) );   
+        masked += String.Format( "&amp;#{0}", Convert.ToByte(value[i]) );   
     }   
     return masked;
-}</code></pre>
+}
+</code></pre>
 
-<p>When I display an email address I mask it by calling the MaskedEmail method. And I use MaskedMailToLink for those times when I want to include a mailto link. You can see this in action on the <a href="http://www.whitepeaksoftware.com/contacts.aspx">contact us</a> page for White Peak Software.</p>
+<p>When I display an email address I mask it by calling the MaskedEmail method.  And I use MaskedMailToLink for those times when I want to include a mailto link.  You can see this in action on the <a href="http://www.whitepeaksoftware.com/contacts.aspx">contact us</a> page for White Peak Software.</p>
+
 
 
     <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>

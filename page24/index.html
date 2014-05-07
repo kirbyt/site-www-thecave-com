@@ -61,10 +61,11 @@
         <div class="post-content right-col">
         <h2><a href="/2006/05/04/limited-scripting-in-sql-server-2005/" rel="bookmark" title="Limited Scripting in SQL Server 2005">Limited Scripting in SQL Server 2005</a></h2>
 
-        <p>SQL Server 2005 has been out for some time now but I have only recently made the move to it. I’ve been in the SQL Server 2000 world because of customers but my customers are finally making the move 2005.<br /><br />Overall I really like SQL Server 2005 and the new Management Studio is nice. However, I’m really annoyed that the SQL Server 2005 team decided to do away with the database scripting feature found in SQL Server 2000. <br /><br />In SQL Server 2000, you can script out each database object into individual files. I do this so I can commit the DDL source for each into CVS, or to do revision comparisons, or to do a number of other tasks. But you cannot easily script out each object in a database with SQL Server 2005. Apparently this is a known limitation as seen <a href='http://lab.msdn.microsoft.com/productfeedback/viewfeedback.aspx?feedbackid=9eb6c773-2dbb-4a27-b9d8-225d6ed4385a'>here</a>.<br /><br />One option I found is to <a href='http://www.sqlteam.com/item.asp?ItemID=23185'>write a programming using .NET 2.0 and the SQL Management Object (SMO)</a>. Unfortunately time is not a luxury I have and I have an immediate need to script out the each object in a database into individual files. So I started down the path of script out each object individual. <br /><br />Guess what? It has its own set of problems. First starters, there is not an option to generate a script that contains both the DROP and CREATE statements. Instead what I do is generate the CREATE statement to a query window. Next I generate the DROP statement to the clipboard followed by pasting the clipboard content to the query window. Needless to say, this is a painful process, and I have hundreds of database objects to script out.<br /><br />I can’t believe the model used for generating scripts in previous versions of SQL Server did not make it into SQL Server 2005. I would have expected the same functionality at a minimum, and possibly an improvement on past versions. But I would never have guess it was removed completely.</p>
-        
+        <p>SQL Server 2005 has been out for some time now but I have only recently made the move to it.  I’ve been in the SQL Server 2000 world because of customers but my customers are finally making the move 2005.<br /><br />Overall I really like SQL Server 2005 and the new Management Studio is nice.  However, I’m really annoyed that the SQL Server 2005 team decided to do away with the database scripting feature found in SQL Server 2000.  <br /><br />In SQL Server 2000, you can script out each database object into individual files.  I do this so I can commit the DDL source for each into CVS, or to do revision comparisons, or to do a number of other tasks.  But you cannot easily script out each object in a database with SQL Server 2005.  Apparently this is a known limitation as seen <a href="http://lab.msdn.microsoft.com/productfeedback/viewfeedback.aspx?feedbackid=9eb6c773-2dbb-4a27-b9d8-225d6ed4385a">here</a>.<br /><br />One option I found is to <a href="http://www.sqlteam.com/item.asp?ItemID=23185">write a programming using .NET 2.0 and the SQL Management Object (SMO)</a>.  Unfortunately time is not a luxury I have and I have an immediate need to script out the each object in a database into individual files.  So I started down the path of script out each object individual.  <br /><br />Guess what?  It has its own set of problems.  First starters, there is not an option to generate a script that contains both the DROP and CREATE statements.  Instead what I do is generate the CREATE statement to a query window.  Next I generate the DROP statement to the clipboard followed by pasting the clipboard content to the query window.  Needless to say, this is a painful process, and I have hundreds of database objects to script out.<br /><br />I can’t believe the model used for generating scripts in previous versions of SQL Server did not make it into SQL Server 2005.  I would have expected the same functionality at a minimum, and possibly an improvement on past versions.  But I would never have guess it was removed completely.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -81,14 +82,16 @@
         <div class="post-content right-col">
         <h2><a href="/2006/05/03/ws-workbench-coming-along-nicely/" rel="bookmark" title="WS-Workbench Coming Along Nicely">WS-Workbench Coming Along Nicely</a></h2>
 
-        <p><a href="http://www.thecave.com/images/blogimages/swirl-20060503.gif"><img align='left' border='1' src='http://www.thecave.com/images/blogimages/swirl-20060503.gif' width='50%' /></a> Work on <a href="http://www.whitepeaksoftware.com/">White Peak Software</a>’s next product, WS-Workbench (also called Swirl internally) is coming along nicely as you can see from this screen shot. The first beta should be ready soon. Post a comment or send me an email if you are interested in beta testing WS-Workbench once it is ready.</p>
+        <p><a href="http://www.thecave.com/images/blogimages/swirl-20060503.gif"><img src="http://www.thecave.com/images/blogimages/swirl-20060503.gif" width="50%" border="1" align="left" /></a>
+Work on <a href="http://www.whitepeaksoftware.com/">White Peak Software</a>’s next product, WS-Workbench (also called Swirl internally) is coming along nicely as you can see from this screen shot.  The first beta should be ready soon.  Post a comment or send me an email if you are interested in beta testing WS-Workbench once it is ready.</p>
 
-<p>A couple of big challenges still remain before the beta is ready. For instance, reading the data types defined in XML Schema that represent the parameters for a web service call isn’t as straight forward as I originally hoped. This is due in part to the lack of a Delphi native SOM parser. Well, that’s not exactly true.</p>
+<p>A couple of big challenges still remain before the beta is ready.  For instance, reading the data types defined in XML Schema that represent the parameters for a web service call isn’t as straight forward as I originally hoped.  This is due in part to the lack of a Delphi native SOM parser.  Well, that’s not exactly true.</p>
 
-<p>Delphi does have an undocumented <a href="http://www.thecave.com/archive/2006/04/05/xml_schema_object_model_som_parser_for_delphi.aspx">SOM parser</a>, but it depends on a registered XML DOM parser such as MSXML. While it does work White Peak does strive to reduce dependences on certain types of 3rd party library such as MSXML. This means writing my own SOM. Luckily it will be a specialized SOM parser and not one intended for general purpose.</p>
-        
+<p>Delphi does have an undocumented <a href="http://www.thecave.com/archive/2006/04/05/xml_schema_object_model_som_parser_for_delphi.aspx">SOM parser</a>, but it depends on a registered XML DOM parser such as MSXML.  While it does work White Peak does strive to reduce dependences on certain types of 3rd party library such as MSXML.  This means writing my own SOM.  Luckily it will be a specialized SOM parser and not one intended for general purpose.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -105,10 +108,11 @@
         <div class="post-content right-col">
         <h2><a href="/2006/05/02/too-much-technology-to-play-with/" rel="bookmark" title="Too Much Technology to Play With">Too Much Technology to Play With</a></h2>
 
-        <p>Some days I find it hard to stay focused. There are many new technologies to play with and I want to spend time with them all. I’m itching to install the latest version of <a href='http://www.dotnetnuke.com/'>DotNetNuke</a> and see what has changed in the last year. I also want to port a web part I wrote for SharePoint from C# to <a href='http://www.borland.com/delphi/'>Delphi</a> and make it a DNN module. There’s also a few Ajax frameworks I want to experiment with, and <a href='http://code.google.com/apis/gdata/index.html'>GData</a> (Google Data API) is something I’m really, really anxious to play with.<br /><br />The fun doesn’t stop there. Microsoft’s Windows Workflow Foundation and SQL Server Integration Services (SSIS) are peaking my interest too. /n software isn’t helping my focus problem either by releasing a new <a href='http://www.nsoftware.com/workflow/'>workflow</a> and <a href='http://www.nsoftware.com/ssis/'>SSIS</a>. Just more fun stuff to play with.<br /><br />Maybe I need a new <a href='http://www.whitepeaksoftware.com/'>White Peak Software</a> company policy allowing 8 hours per week to “technology play time”.</p>
-        
+        <p>Some days I find it hard to stay focused.  There are many new technologies to play with and I want to spend time with them all.  I’m itching to install the latest version of <a href="http://www.dotnetnuke.com/">DotNetNuke</a> and see what has changed in the last year.  I also want to port a web part I wrote for SharePoint from C# to <a href="http://www.borland.com/delphi/">Delphi</a> and make it a DNN module.  There’s also a few Ajax frameworks I want to experiment with, and <a href="http://code.google.com/apis/gdata/index.html">GData</a> (Google Data API) is something I’m really, really anxious to play with.<br /><br />The fun doesn’t stop there.  Microsoft’s Windows Workflow Foundation and SQL Server Integration Services (SSIS) are peaking my interest too.  /n software isn’t helping my focus problem either by releasing a new <a href="http://www.nsoftware.com/workflow/">workflow</a> and <a href="http://www.nsoftware.com/ssis/">SSIS</a>.  Just more fun stuff to play with.<br /><br />Maybe I need a new <a href="http://www.whitepeaksoftware.com/">White Peak Software</a> company policy allowing 8 hours per week to “technology play time”.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -125,10 +129,11 @@
         <div class="post-content right-col">
         <h2><a href="/2006/04/27/what-is-microsoft-re-designed-the-ipod-packaging/" rel="bookmark" title="What is Microsoft Re-designed the iPod Packaging?">What is Microsoft Re-designed the iPod Packaging?</a></h2>
 
-        <p>It might go a little something like this<a href='http://www.youtube.com/watch?v=EUXnJraKM3k&amp;search=microsoft%20packaging%20ipod'>Microsoft&#39;s Re-designed iPod Packing</a>.</p>
-        
+        <p>It might go a little something like this…<a href="http://www.youtube.com/watch?v=EUXnJraKM3k&amp;search=microsoft%20packaging%20ipod">Microsoft’s Re-designed iPod Packing</a>.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -145,10 +150,11 @@
         <div class="post-content right-col">
         <h2><a href="/2006/04/27/killington-season-ends-may-1st/" rel="bookmark" title="Killington Season Ends May 1st">Killington Season Ends May 1st</a></h2>
 
-        <p>I was hoping to make one more trip to Killington this season before packing away the snowboard, but it doesn’t look like it going to happen. Killington announced today it will close on May 1st for the 2005-2006 season. Looking at recent pictures I’m surprised they are able to stay open that long but Killington does have its image of staying open longer than any other East Coast resort to keep. <br /><br />What a crappy season the East Coast had this year. Here’s hoping there will be much more snow next season.</p>
-        
+        <p>I was hoping to make one more trip to Killington this season before packing away the snowboard, but it doesn’t look like it going to happen.  Killington announced today it will close on May 1st for the 2005-2006 season.  Looking at recent pictures I’m surprised they are able to stay open that long but Killington does have its image of staying open longer than any other East Coast resort to keep.  <br /><br />What a crappy season the East Coast had this year.  Here’s hoping there will be much more snow next season.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -165,10 +171,11 @@
         <div class="post-content right-col">
         <h2><a href="/2006/04/27/first-visit-to-fenway/" rel="bookmark" title="First Visit to Fenway">First Visit to Fenway</a></h2>
 
-        <p>My wife and I went to Fenway the other night to see the Redsox play. It was our first visit to Fenway. I like the stadium despite the small size. As a matter of fact, I said to me wife I felt like we were at a minor league game because of the stadium size. Plus, the stadium seems to be very family friendly with a kid throwing the first pitch and a kid making the standard “Play ball!” announcement. The vibe and stadium size reminded me of the two minor league teams in New York. However, that opinion changed once the game got started. The crowd definitely fills the stadium with cheers and you definitely feel like you are at a major league game once the first pitch is thrown.<br /><br />Boston fans are definitely loyal fans. But unlike St. Louis where just about every wears red, Boston fans have no one color. Sure the Redsox fans are wearing some type of Redsox shirt but some shirts are blue, some are white, some are red…I even saw a green Redsox shirt. Go figure. One of the things I like about going to a Cardinals game in Busch stadium is seeing the sea of red.<br /><br />Contrary to popular belief, I thought the ticket prices were reasonable and definitely cheaper than a Yankees game. Granted I paid for my tickets through the normal channel and I didn’t get ripped off by some scalper selling a $40 ticket for $150. The food is also cheaper at Fenway compared to Yankee Stadium. The only thing that was more expensive is the beer.<br /><br />Fenway charges way too much for beer. Yes, a beer at Yankee stadium will run you something like $8 but it is twice the size of the wimpy $6 beer at Fenway. So by the end of the game we spent as much as we would at Yankee stadium but that was only because we had to buy more beers at Fenway than we typically do at Yankee Stadium.</p>
-        
+        <p>My wife and I went to Fenway the other night to see the Redsox play.  It was our first visit to Fenway.  I like the stadium despite the small size.  As a matter of fact, I said to me wife I felt like we were at a minor league game because of the stadium size.  Plus, the stadium seems to be very family friendly with a kid throwing the first pitch and a kid making the standard “Play ball!” announcement.  The vibe and stadium size reminded me of the two minor league teams in New York.  However, that opinion changed once the game got started.  The crowd definitely fills the stadium with cheers and you definitely feel like you are at a major league game once the first pitch is thrown.<br /><br />Boston fans are definitely loyal fans.  But unlike St. Louis where just about every wears red, Boston fans have no one color.  Sure the Redsox fans are wearing some type of Redsox shirt but some shirts are blue, some are white, some are red…I even saw a green Redsox shirt.  Go figure.  One of the things I like about going to a Cardinals game in Busch stadium is seeing the sea of red.<br /><br />Contrary to popular belief, I thought the ticket prices were reasonable and definitely cheaper than a Yankees game.  Granted I paid for my tickets through the normal channel and I didn’t get ripped off by some scalper selling a $40 ticket for $150.  The food is also cheaper at Fenway compared to Yankee Stadium.  The only thing that was more expensive is the beer.<br /><br />Fenway charges way too much for beer.  Yes, a beer at Yankee stadium will run you something like $8 but it is twice the size of the wimpy $6 beer at Fenway.  So by the end of the game we spent as much as we would at Yankee stadium but that was only because we had to buy more beers at Fenway than we typically do at Yankee Stadium.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -185,10 +192,11 @@
         <div class="post-content right-col">
         <h2><a href="/2006/04/26/moving-from-vmware-gsx-server-to-vmware-server/" rel="bookmark" title="Moving from VMware GSX Server to VMWare Server">Moving from VMware GSX Server to VMWare Server</a></h2>
 
-        <p>I upgrade my server install of <a href='http://www.vmware.com/products/gsx/'>VMware GSX Server</a> with <a href='http://www.vmware.com/products/server/'>VMware Server</a>, a free virtualization product for Windows and Linux currently in beta. The VMware Server install went smoothly. It detected the GSX install and uninstalled it for me. It copied the appropriate settings over to VMware Server and my virtual machines were up and running again in a matter of minutes. <br /><br />VMware Server is an improvement on GSX Server. Most notable improvement is that it works with virtual machines created with VMware Workstation 5.x. No more hacking the .vmdk file to make it work with GSX.</p>
-        
+        <p>I upgrade my server install of <a href="http://www.vmware.com/products/gsx/">VMware GSX Server</a> with <a href="http://www.vmware.com/products/server/">VMware Server</a>, a free virtualization product for Windows and Linux currently in beta.  The VMware Server install went smoothly.  It detected the GSX install and uninstalled it for me.  It copied the appropriate settings over to VMware Server and my virtual machines were up and running again in a matter of minutes.  <br /><br />VMware Server is an improvement on GSX Server.  Most notable improvement is that it works with virtual machines created with VMware Workstation 5.x.  No more hacking the .vmdk file to make it work with GSX.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -205,10 +213,11 @@
         <div class="post-content right-col">
         <h2><a href="/2006/04/25/google-api/" rel="bookmark" title="Google API">Google API</a></h2>
 
-        <p>I’ve been working away the last few weeks on a new web service SOA testing tool. However, today I decided to take a break and see what else is happening in the world. One of the things I played with today is Google Calendar. It’s pretty cool and I think I will try it out for the next few weeks. <br /><br />Google Calendar got me thinking about synchronizing my calendar, which is currently stored in Outlook, with Google Calendar. This lead me to the <a href='http://code.google.com/'>Google API</a> at http://code.google.com/. The API uses REST principals with Atom and RSS feeds. Now I have even more fun things to play with.</p>
-        
+        <p>I’ve been working away the last few weeks on a new web service SOA testing tool.  However, today I decided to take a break and see what else is happening in the world.  One of the things I played with today is Google Calendar.  It’s pretty cool and I think I will try it out for the next few weeks.  <br /><br />Google Calendar got me thinking about synchronizing my calendar, which is currently stored in Outlook, with Google Calendar.  This lead me to the <a href="http://code.google.com/">Google API</a> at http://code.google.com/.  The API uses REST principals with Atom and RSS feeds.  Now I have even more fun things to play with.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -225,10 +234,11 @@
         <div class="post-content right-col">
         <h2><a href="/2006/04/09/delphis-net-interop-features/" rel="bookmark" title="Delphi's .NET Interop features">Delphi's .NET Interop features</a></h2>
 
-        <p>Bruce McGee made a <a href='http://groups.google.com/group/borland.public.delphi.non-technical/browse_thread/thread/9b61ff2b4300a66e/2dad3eb263746f07?lnk=st&amp;q=Bruce+McGee+interop&amp;rnum=1#2dad3eb263746f07'>newsgroup posting listing some great examples of interop between Delphi and the .NET world</a>. Two that really caught my attention are:<br /><br /><div class='quote'><br /><a href='http://cc.borland.com/Item.aspx?id=22688'>http://cc.borland.com/Item.aspx?id=22688</a><br />Unmanaged exports.  Run .Net code from Win32 applications without COM interop.  Delphi and managed C++ support these, but C# doesn't.<br /><br /><a href='http://cc.borland.com/Item.aspx?id=23615'>http://cc.borland.com/Item.aspx?id=23615</a><br />Virtual Library Interfaces (VLI).  Run Win32 code from .Net<br />applications without PInvoke.  Not sure if any of the other .Net<br />languages support something similar.<br /></div></p>
-        
+        <p>Bruce McGee made a <a href="http://groups.google.com/group/borland.public.delphi.non-technical/browse_thread/thread/9b61ff2b4300a66e/2dad3eb263746f07?lnk=st&amp;q=Bruce+McGee+interop&amp;rnum=1#2dad3eb263746f07">newsgroup posting listing some great examples of interop between Delphi and the .NET world</a>.  Two that really caught my attention are:<br /><br />&lt;div class="quote"&gt;<br /><a href="http://cc.borland.com/Item.aspx?id=22688">http://cc.borland.com/Item.aspx?id=22688</a><br />Unmanaged exports.  Run .Net code from Win32 applications without COM interop.  Delphi and managed C++ support these, but C# doesn’t.<br /><br /><a href="http://cc.borland.com/Item.aspx?id=23615">http://cc.borland.com/Item.aspx?id=23615</a><br />Virtual Library Interfaces (VLI).  Run Win32 code from .Net<br />applications without PInvoke.  Not sure if any of the other .Net<br />languages support something similar.<br />&lt;/div&gt;</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -245,10 +255,11 @@
         <div class="post-content right-col">
         <h2><a href="/2006/04/05/xml-schema-object-model-som-parser-for-delphi/" rel="bookmark" title="XML Schema Object Model (SOM) Parser for Delphi">XML Schema Object Model (SOM) Parser for Delphi</a></h2>
 
-        <p>I’m working on a new project and have a need to parse XML Schemas found inside WSDL documents. After a few google searches I discovered the concept of a Schema Object Model (SOM). The <a href='http://www.xml.com/pub/a/2002/12/04/som.html'>.NET Framework has a SOM parser</a> as does <a href='http://msdn.microsoft.com/library/default.asp?url=/library/en-us/xmlsdk/html/85b447ee-70d0-4456-9ad7-70b4e2d1f3fa.asp'>MSXML</a>. There’s also a <a href='https://xsom.dev.java.net/'>SOM parser for Java</a> as well. Because I’m writing a Win32 application, I started learning <a href='http://www.informit.com/articles/article.asp?p=31360&amp;seqNum=1'>the ins and outs of MSXML&#39;s SOM parser</a>. As a learned more I did additional google searches and discovered Delphi has its own SOM parser.<br /><br />Interfaces such as <i>IXmlSchemaDoc</i> and functions such as <i>LoadXMLSchema</i> and <i>LoadXMLSchemaStr</i> are undocumented but the source can be found in <i>source\win32\xml\XMLSchema.pas</i>. There is also <a href='http://codecentral.borland.com/Item.aspx?id=21870'>sample code for parsing an XML Schema</a> available BDN. With the aid of the sample code I was able to get my sample project working. <br /><br />And in case you are wondering, the VCL library has a component called <i>TXMLSchemaDoc</i> that wraps Delphi’s SOM parser into a handy component. You will not find it in the tool pallet though. For what it is worth, I found working with the interface (<i>IXmlSchemaDoc</i>) easy and I have not tried the <i>TXMLSchemaDoc</i> component.</p>
-        
+        <p>I’m working on a new project and have a need to parse XML Schemas found inside WSDL documents.  After a few google searches I discovered the concept of a Schema Object Model (SOM).  The <a href="http://www.xml.com/pub/a/2002/12/04/som.html">.NET Framework has a SOM parser</a> as does <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/xmlsdk/html/85b447ee-70d0-4456-9ad7-70b4e2d1f3fa.asp">MSXML</a>.  There’s also a <a href="https://xsom.dev.java.net/">SOM parser for Java</a> as well.  Because I’m writing a Win32 application, I started learning <a href="http://www.informit.com/articles/article.asp?p=31360&amp;seqNum=1">the ins and outs of MSXML’s SOM parser</a>.  As a learned more I did additional google searches and discovered Delphi has its own SOM parser.<br /><br />Interfaces such as <i>IXmlSchemaDoc</i> and functions such as <i>LoadXMLSchema</i> and <i>LoadXMLSchemaStr</i> are undocumented but the source can be found in <i>source\win32\xml\XMLSchema.pas</i>.  There is also <a href="http://codecentral.borland.com/Item.aspx?id=21870">sample code for parsing an XML Schema</a> available BDN.  With the aid of the sample code I was able to get my sample project working.  <br /><br />And in case you are wondering, the VCL library has a component called <i>TXMLSchemaDoc</i> that wraps Delphi’s SOM parser into a handy component.  You will not find it in the tool pallet though.  For what it is worth, I found working with the interface (<i>IXmlSchemaDoc</i>) easy and I have not tried the <i>TXMLSchemaDoc</i> component.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -259,15 +270,16 @@
 <div class="more_posts">
 	<h2>
         
-        <a href="//page25" >&laquo; Older Entries</a> &nbsp; 
+        <a href="/page25" >&laquo; Older Entries</a> &nbsp;
         
         
             
-                <a href="//page23" >Recent Entries &raquo;</a>
+                <a href="/page23" >Recent Entries &raquo;</a>
             
         
     </h2>
 </div>
+
 
 		</div>
 		

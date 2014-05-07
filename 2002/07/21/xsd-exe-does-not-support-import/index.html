@@ -58,11 +58,13 @@
     <div class="post-content right-col">
     <h2><a href="/2002/07/21/xsd-exe-does-not-support-import/" rel="bookmark" title="xsd.exe does not support import">xsd.exe does not support import</a></h2>
 
-    <p>xsd.exe from the .NET SDK has been a favorite tool of mine in recent months, but it let me down tonight. It seems that xsd.exe does not support schema files that import other schemas. I’m bummed.</p>
+    <p>xsd.exe from the .NET SDK has been a favorite tool of mine in recent months, but it let me down tonight.  It seems that xsd.exe does not support schema files that import other schemas.  I’m bummed.</p>
 
-<p>[Moments later] I’m no longer bummed. It turns out that xsd.exe does in fact support . You simply need to include all .xsd file names on the command line. For example:</p>
+<p>[Moments later] I’m no longer bummed.  It turns out that xsd.exe does in fact support .  You simply need to include all .xsd file names on the command line.  For example:</p>
 
-<pre><code>xsd.exe /c /l:cs /n:&quot;namespace&quot; a.xsd b.xsd c.xsd</code></pre>
+<pre><code>xsd.exe /c /l:cs /n:"namespace" a.xsd b.xsd c.xsd
+</code></pre>
+
 
 
     <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>

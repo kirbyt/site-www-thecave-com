@@ -61,10 +61,17 @@
         <div class="post-content right-col">
         <h2><a href="/2004/06/29/why-software-quality-matters/" rel="bookmark" title="Why Software Quality Matters">Why Software Quality Matters</a></h2>
 
-        <p>“This is a warning for any creator of computer programs: that software quality matters, that applications must be foolproof, and that-whether embedded in the engine of a car, a robotic arm in a factory or a healing device in a hospital-poorly deployed code can kill.” <br /> <br />This quote comes from an article my friend Matt pointed to me from Base Line Magazine titled <a href='http://www.baselinemag.com/article2/0,1397,1543564,00.asp'>Why Software Quality Matters</a>. <br /> <br />This article really illustrates the importance of software quality. As more software is used in the daily lives of people the importance of quality software increases. Recently I read in Consumer Reports that a particular model of luxury car is being recalled due to a problem related to a transmission controller chip. The software in this chip can cause the car moving forward to shift into reverse. Imagine the pileup that could be caused by a car suddenly shifting into reverse as it and other drivers speed down the NJ Turnpike during rush hour. <br /> <br />Many programmers like me can and have argued that our business applications pose no threat to human life. But does this mean we can set quality levels for our work to a lower standard? Does it mean we can intentionally deploy poorly written applications? I say absolutely not! Software developers must start accepting the responsibility of writing high quality code and they should be held accountable for any code not adhering to a high standard of quality.</p>
-        
+        <p>“This is a warning for any creator of computer programs: that software quality matters, that applications must be foolproof, and that-whether embedded in the engine of a car, a robotic arm in a factory or a healing device in a hospital-poorly deployed code can kill.”
+<br />
+<br />This quote comes from an article my friend Matt pointed to me from Base Line Magazine titled <a href="http://www.baselinemag.com/article2/0,1397,1543564,00.asp">Why Software Quality Matters</a>.
+<br />
+<br />This article really illustrates the importance of software quality.  As more software is used in the daily lives of people the importance of quality software increases.  Recently I read in Consumer Reports that a particular model of luxury car is being recalled due to a problem related to a transmission controller chip.  The software in this chip can cause the car moving forward to shift into reverse.  Imagine the pileup that could be caused by a car suddenly shifting into reverse as it and other drivers speed down the NJ Turnpike during rush hour.
+<br />
+<br />Many programmers like me can and have argued that our business applications pose no threat to human life.  But does this mean we can set quality levels for our work to a lower standard?  Does it mean we can intentionally deploy poorly written applications?  I say absolutely not!  Software developers must start accepting the responsibility of writing high quality code and they should be held accountable for any code not adhering to a high standard of quality.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -81,13 +88,13 @@
         <div class="post-content right-col">
         <h2><a href="/2004/06/25/explicit-interface-implementation-in-c/" rel="bookmark" title="Explicit Interface Implementation in C#">Explicit Interface Implementation in C#</a></h2>
 
-        <p>I was a grumbling VB developer for a number of years. At the time Delphi was my language of choice but in the part of the country I lived customer work using it was almost non-existent. In the summer of 2000 at PDC, a friend of mine from Microsoft showed me the .NET Framework and C#. I was instantly drawn to C# because it reminded me of Delphi, which is no surprise for those who know their <a href="http://c2.com/cgi/wiki?HistoryOfCsharp">C#/Delphi history</a>.</p>
+        <p>I was a grumbling VB developer for a number of years.  At the time Delphi was my language of choice but in the part of the country I lived customer work using it was almost non-existent.  In the summer of 2000 at PDC, a friend of mine from Microsoft showed me the .NET Framework and C#.  I was instantly drawn to C# because it reminded me of Delphi, which is no surprise for those who know their <a href="http://c2.com/cgi/wiki?HistoryOfCsharp">C#/Delphi history</a>.</p>
 
-<p>At last there was (is) a language and framework from Microsoft that generated the same level of excitement in me that Borland’s Delphi had done a few years prior. Best of all it was from Microsoft which would mean customer work in the future. And as luck would have it, I started working exclusively with the .NET Framework and C# in the fall of 2001.</p>
+<p>At last there was (is) a language and framework from Microsoft that generated the same level of excitement in me that Borland’s Delphi had done a few years prior.  Best of all it was from Microsoft which would mean customer work in the future.  And as luck would have it, I started working exclusively with the .NET Framework and C# in the fall of 2001.</p>
 
-<p>For better or worse I have not spent much time with VB.NET, or Visual Basic 6.0 for that manner, since the fall of 2001. I have done a few small project using VB.NET but nothing to brag about. For the most part, both .NET languages are very similar with regard to features but there are some differences. For example, you can write unsafe code in C# but you can’t do the same in VB.NET. Depending on your point of view this is an advantage or a disadvantage.</p>
+<p>For better or worse I have not spent much time with VB.NET, or Visual Basic 6.0 for that manner, since the fall of 2001.  I have done a few small project using VB.NET but nothing to brag about.  For the most part, both .NET languages are very similar with regard to features but there are some differences.  For example, you can write unsafe code in C# but you can’t do the same in VB.NET.  Depending on your point of view this is an advantage or a disadvantage.</p>
 
-<p>Another difference is that in VB.NET you can specify the scope of a member that implements a particular interface as something other than public. I needed to do this in more than one occasion in C# but was resolved to the fact that a member implementation of interface in C# had to be scoped as public.</p>
+<p>Another difference is that in VB.NET you can specify the scope of a member that implements a particular interface as something other than public.  I needed to do this in more than one occasion in C# but was resolved to the fact that a member implementation of interface in C# had to be scoped as public.</p>
 
 <pre><code>Public Interface IMyInterface
     Sub Foo()
@@ -97,9 +104,10 @@ Public Class Class1
 Implements IMyInterface
     Private Sub Foo() Implements IMyInterface.Foo
     End Sub
-End Class</code></pre>
+End Class
+</code></pre>
 
-<p>So if you can do this in VB.NET why can’t you do the same, or something similar in C#? This question lead me to the discovery (thank you <a href="http://www.google.com/search?q=explicit+interface+implement&amp;sourceid=firefox&amp;start=0&amp;start=0&amp;ie=utf-8&amp;oe=utf-8">google</a>) of explicit interface implementation in C#. By using an explicit interface implementation you can scope the member implementation as private. It’s a little messy because a member explicitly implemented cannot be access through the class instance. Instead it must be accessed through an instance of the interface.</p>
+<p>So if you can do this in VB.NET why can’t you do the same, or something similar in C#?  This question lead me to the discovery (thank you <a href="http://www.google.com/search?q=explicit+interface+implement&amp;sourceid=firefox&amp;start=0&amp;start=0&amp;ie=utf-8&amp;oe=utf-8">google</a>) of explicit interface implementation in C#.  By using an explicit interface implementation you can scope the member implementation as private.  It’s a little messy because a member explicitly implemented cannot be access through the class instance.  Instead it must be accessed through an instance of the interface.</p>
 
 <pre><code>interface IMyInterface
 {
@@ -111,7 +119,7 @@ abstract class MyAbstractClass : IMyInterface
     // Explicit interface implementation
     void IMyInterface.Foo()
     {
-        Console.WriteLine( &quot;bar&quot; );
+        Console.WriteLine( "bar" );
     }
 }
 
@@ -138,12 +146,14 @@ public class MyApp
         // This works because we are all in the same module.
         ((IMyInterface)c).Foo();
     }
-}</code></pre>
+}
+</code></pre>
 
-<p>While an explicit interface implementation does give the C# developer the ability to scope a member implementation as private, it is still not as powerful as VB.NET’s ability to scope a member implementation as anything other than public. Score 1 point for VB.NET.</p>
-        
+<p>While an explicit interface implementation does give the C# developer the ability to scope a member implementation as private, it is still not as powerful as VB.NET’s ability to scope a member implementation as anything other than public.  Score 1 point for VB.NET.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -160,10 +170,13 @@ public class MyApp
         <div class="post-content right-col">
         <h2><a href="/2004/06/24/it-came-from-inside/" rel="bookmark" title="It Came from Inside">It Came from Inside</a></h2>
 
-        <p>Over the last month a lot of my time has been spent focusing on security as I design a security framework and strategy for a customer. One comment I hear often is “we don’t need to worry about internal security threats” or “internal security threats are minor and represent a low priority”. I couldn’t disagree more and have been repeatedly emphasizing the importance of protecting ones assets from internal attacks, which for some companies is a greater threat. <br /> <br />Yesterday’s <a href='http://www.eweek.com/article2/0,1759,1616668,00.asp?kc=ewnws062404dtx1k0000599'>report</a> of an AOL software engineer being arrested for stealing 92 million customer screen names proves my point. Some people will do crazy things when offered enough money. And companies that believe “it won’t happen here” or “our employees would never do such a thing” are fooling themselves. Why risk it? Invest in reducing security threats, both external and internal.</p>
-        
+        <p>Over the last month a lot of my time has been spent focusing on security as I design a security framework and strategy for a customer.  One comment I hear often is “we don’t need to worry about internal security threats” or “internal security threats are minor and represent a low priority”.  I couldn’t disagree more and have been repeatedly emphasizing the importance of protecting ones assets from internal attacks, which for some companies is a greater threat.
+<br />
+<br />Yesterday’s <a href="http://www.eweek.com/article2/0,1759,1616668,00.asp?kc=ewnws062404dtx1k0000599">report</a> of an AOL software engineer being arrested for stealing 92 million customer screen names proves my point.  Some people will do crazy things when offered enough money.  And companies that believe “it won’t happen here” or “our employees would never do such a thing” are fooling themselves.  Why risk it?  Invest in reducing security threats, both external and internal.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -180,10 +193,11 @@ public class MyApp
         <div class="post-content right-col">
         <h2><a href="/2004/06/24/another-microsoft-patent/" rel="bookmark" title="Another Microsoft Patent">Another Microsoft Patent</a></h2>
 
-        <p>I thought Microsoft’s <a href='?xml/2004_06_01_archive.xml#108695677194415311'>patent</a> on //TODO was silly but Microsoft’s <a href='http://zdnet.com.com/2100-1104-5244766.html'>patent</a> for using human skin as a power conduit tops it. Actually this patent sounds interesting. I can see how wearable devices can benefit from a personal area network.</p>
-        
+        <p>I thought Microsoft’s <a href="?xml/2004_06_01_archive.xml#108695677194415311">patent</a> on //TODO was silly but Microsoft’s <a href="http://zdnet.com.com/2100-1104-5244766.html">patent</a> for using human skin as a power conduit tops it.  Actually this patent sounds interesting.  I can see how wearable devices can benefit from a personal area network.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -200,14 +214,15 @@ public class MyApp
         <div class="post-content right-col">
         <h2><a href="/2004/06/19/nyc-visitors-are-coming/" rel="bookmark" title="NYC Visitors are Coming">NYC Visitors are Coming</a></h2>
 
-        <p>My friend Phil was in town this week which means one thing. Time for <a href="http://www.benzonaband.com/">BenZona</a> to rock <a href="http://www.lunalounge.com/">Luna Lounge</a>. They had a great gig last night and it was good to see Phil, Keith and others again. We also stuck around to hear San Francisco based <a href="http://www.candyfromstrangers.com/">Candy From Strangers</a> who I definitely got into.</p>
+        <p>My friend Phil was in town this week which means one thing.  Time for <a href="http://www.benzonaband.com/">BenZona</a> to rock <a href="http://www.lunalounge.com/">Luna Lounge</a>.  They had a great gig last night and it was good to see Phil, Keith and others again.  We also stuck around to hear San Francisco based <a href="http://www.candyfromstrangers.com/">Candy From Strangers</a> who I definitely got into.</p>
 
-<p>Speaking of NYC visitors, my mom, brother Andy, and his son (my nephew) Lucas will be arriving in New York within a few hours. It will be Andy and Lucas’s first time to the Big Apple. We have the next few days planned out to wear them out. From Central Park to Time Square to Coney Island to a Staten Island Yankees game, Melanie and I will definitely keep the family busy.</p>
+<p>Speaking of NYC visitors, my mom, brother Andy, and his son (my nephew) Lucas will be arriving in New York within a few hours.  It will be Andy and Lucas’s first time to the Big Apple.  We have the next few days planned out to wear them out.  From Central Park to Time Square to Coney Island to a Staten Island Yankees game, Melanie and I will definitely keep the family busy.</p>
 
-<p>And the fun doesn’t stop there. My good friend John from Cleveland by way of St. Louis will be in town too. Of course we will be meeting up for a drink or two. A week of catching up with friends and family. What could be better?</p>
-        
+<p>And the fun doesn’t stop there.  My good friend John from Cleveland by way of St. Louis will be in town too.  Of course we will be meeting up for a drink or two.  A week of catching up with friends and family.  What could be better?</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -224,10 +239,11 @@ public class MyApp
         <div class="post-content right-col">
         <h2><a href="/2004/06/17/unit-testing-and-vs-net-2005/" rel="bookmark" title="Unit testing and VS.NET 2005">Unit testing and VS.NET 2005</a></h2>
 
-        <p>I <a href='http://www.peterprovost.org/archive/2004/06/12/1379.aspx'>agree</a> with Scott. Unit Testing support should be included with all versions of Visual Studio 2005 and not just with Team System. However, I am not sure I agree with the unit testing support using a new framework developed by Microsoft. <a href='http://www.nunit.org/'>NUnit</a> is here today and works with all released versions of the .NET Framework. And I am sure support for version 2 of the .NET Framework will be included in NUnit once Microsoft has released it.<br /><br />I doubt many of my customers will be ready to move to VS.NET 2005 and the .NET Framework 2.0 when it is released, but I will still be developing solutions for them. And I will continue to provide unit tests for custom written production code. So while I agree that all versions of Visual Studio.NET 2005 should include support for unit testing, I would like to see stronger support for NUnit and not some new testing framework. This will help ease the migration to the new tool and framework.<br /><br /><br /></p>
-        
+        <p>I <a href="http://www.peterprovost.org/archive/2004/06/12/1379.aspx">agree</a> with Scott.  Unit Testing support should be included with all versions of Visual Studio 2005 and not just with Team System.  However, I am not sure I agree with the unit testing support using a new framework developed by Microsoft.  <a href="http://www.nunit.org/">NUnit</a> is here today and works with all released versions of the .NET Framework.  And I am sure support for version 2 of the .NET Framework will be included in NUnit once Microsoft has released it.<br /><br />I doubt many of my customers will be ready to move to VS.NET 2005 and the .NET Framework 2.0 when it is released, but I will still be developing solutions for them.  And I will continue to provide unit tests for custom written production code.  So while I agree that all versions of Visual Studio.NET 2005 should include support for unit testing, I would like to see stronger support for NUnit and not some new testing framework.  This will help ease the migration to the new tool and framework.<br /><br /><br /></p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -244,10 +260,11 @@ public class MyApp
         <div class="post-content right-col">
         <h2><a href="/2004/06/17/firefox-extensions/" rel="bookmark" title="Firefox Extensions">Firefox Extensions</a></h2>
 
-        <p>For those new to Firefox, be sure to check out the list of <a href='http://texturizer.net/firefox/extensions/'>extensions</a>. They’re easy to install and there are many helpful extensions that will improve your browsing experience. As a matter of fact, I’m using the BlogThis! extension right now to post this entry.</p>
-        
+        <p>For those new to Firefox, be sure to check out the list of <a href="http://texturizer.net/firefox/extensions/">extensions</a>.  They’re easy to install and there are many helpful extensions that will improve your browsing experience.  As a matter of fact, I’m using the BlogThis! extension right now to post this entry.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -264,10 +281,11 @@ public class MyApp
         <div class="post-content right-col">
         <h2><a href="/2004/06/17/firefox-0-9-available-for-download/" rel="bookmark" title="Firefox 0.9 Available for Download">Firefox 0.9 Available for Download</a></h2>
 
-        <p>While nothing really new, other than security updates has happened to IE in quite some time, Mozilla has continued work on its next generation web browser called Firefox. <a href='http://www.mozilla.org/products/firefox/'>Firefox 0.9</a> is available for download and I feel it is a worth while download.<br /><br />I have been running Firefox as my default browser for the last 24 hours. I really like tab browsing and how Firefox blocks pop-up windows. It works fine for almost all sites I visit including a Microsoft SharePoint Window Services 2.0 site that I use daily. I don’t get the drop down command list on SharePoint documents like I would in IE but I’m still able to do everything I need with a document through the document design page.<br /><br />My only complaint to date is when I attempt to open a link in a new window from SharpReader, the RSS aggregator I use. For some reason the web page is displayed in both a Firefox window and an IE window. I doubt this is the fault of SharpReader and is more the fault of the IE component used within SharpReader. In other words, I think the IE component is launching the additional IE window when Firefox is set as my default browser.<br /><br />Aside from that one problem, I enjoy browsing with Firefox based on my 24 hour experience and will probably keep it as my default browser for a while.<br /><br /><br /></p>
-        
+        <p>While nothing really new, other than security updates has happened to IE in quite some time, Mozilla has continued work on its next generation web browser called Firefox.  <a href="http://www.mozilla.org/products/firefox/">Firefox 0.9</a> is available for download and I feel it is a worth while download.<br /><br />I have been running Firefox as my default browser for the last 24 hours.  I really like tab browsing and how Firefox blocks pop-up windows.  It works fine for almost all sites I visit including a Microsoft SharePoint Window Services 2.0 site that I use daily.  I don’t get the drop down command list on SharePoint documents like I would in IE but I’m still able to do everything I need with a document through the document design page.<br /><br />My only complaint to date is when I attempt to open a link in a new window from SharpReader, the RSS aggregator I use.  For some reason the web page is displayed in both a Firefox window and an IE window.  I doubt this is the fault of SharpReader and is more the fault of the IE component used within SharpReader.  In other words, I think the IE component is launching the additional IE window when Firefox is set as my default browser.<br /><br />Aside from that one problem, I enjoy browsing with Firefox based on my 24 hour experience and will probably keep it as my default browser for a while.<br /><br /><br /></p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -284,10 +302,11 @@ public class MyApp
         <div class="post-content right-col">
         <h2><a href="/2004/06/16/visual-sourcesafe-gets-a-much-needed-upgrade/" rel="bookmark" title="Visual SourceSafe Gets a Much Needed Upgrade">Visual SourceSafe Gets a Much Needed Upgrade</a></h2>
 
-        <p>Microsoft has published the latest <a href='http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnvsent/html/vssmap.asp'>Visual SourceSafe Roadmap</a>, which outlines where VSS is heading with the release of Visual SourceSafe 2005. The new version will still be geared towards individual developers and small teams, i.e., teams with less than 5 developers but it will finally include remote access. I’m glad to see VSS is finally getting a much needed upgrade but I doubt the new release will convince me to switch back from <a href='http://www.cvshome.org/'>CVS</a>.<br /><br /><br /></p>
-        
+        <p>Microsoft has published the latest <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnvsent/html/vssmap.asp">Visual SourceSafe Roadmap</a>, which outlines where VSS is heading with the release of Visual SourceSafe 2005.  The new version will still be geared towards individual developers and small teams, i.e., teams with less than 5 developers but it will finally include remote access.  I’m glad to see VSS is finally getting a much needed upgrade but I doubt the new release will convince me to switch back from <a href="http://www.cvshome.org/">CVS</a>.<br /><br /><br /></p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -304,10 +323,11 @@ public class MyApp
         <div class="post-content right-col">
         <h2><a href="/2004/06/16/uddi/" rel="bookmark" title="UDDI">UDDI</a></h2>
 
-        <p>A friend pointed me to <a href='http://www.bindingpoint.net/'>BindingPoint</a>, which is an XML web services directory. I did a quick search on <a href='http://www.bindingpoint.net/services.aspx?tag=srch&amp;val=snow+report&amp;x=0&amp;y=0'>&quot;snow report&quot;</a> and found my snow report web service. I checked out the service description that I setup in UDDI over a year ago and ran the quick test from BindingPoint. It brought back memories of my <a href='http://www.uddi.org/'>UDDI</a> and Web services work I did last year. And I still think UDDI rocks!<br /><br /><br /></p>
-        
+        <p>A friend pointed me to <a href="http://www.bindingpoint.net/">BindingPoint</a>, which is an XML web services directory.  I did a quick search on <a href="http://www.bindingpoint.net/services.aspx?tag=srch&amp;val=snow+report&amp;x=0&amp;y=0">“snow report”</a> and found my snow report web service.  I checked out the service description that I setup in UDDI over a year ago and ran the quick test from BindingPoint.  It brought back memories of my <a href="http://www.uddi.org/">UDDI</a> and Web services work I did last year.  And I still think UDDI rocks!<br /><br /><br /></p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -318,15 +338,16 @@ public class MyApp
 <div class="more_posts">
 	<h2>
         
-        <a href="//page49" >&laquo; Older Entries</a> &nbsp; 
+        <a href="/page49" >&laquo; Older Entries</a> &nbsp;
         
         
             
-                <a href="//page47" >Recent Entries &raquo;</a>
+                <a href="/page47" >Recent Entries &raquo;</a>
             
         
     </h2>
 </div>
+
 
 		</div>
 		

@@ -58,29 +58,28 @@
     <div class="post-content right-col">
     <h2><a href="/2006/06/15/quickbase-api-for-delphi/" rel="bookmark" title="QuickBase API for Delphi">QuickBase API for Delphi</a></h2>
 
-    <p>I have been doing more <a href="http://www.quickbase.com/">QuickBase</a> work lately. I really like QuickBase but the <a href="https://www.quickbase.com/up/6mztyxu8/g/rc7/en/va/QuickBaseAPI.htm">HTTP API</a> can be a bit hairy. Intuit provides various language specific SDKs for the QuickBase API but <a href="http://www.borland.com/delphi">Delphi</a> is not included. So I’m writing my own. [I’ll post the code to the <a href="http://www.whitepeaksoftware.com/">White Peak Software</a> site as soon as it is done.]</p>
+    <p>I have been doing more <a href="http://www.quickbase.com/">QuickBase</a> work lately.  I really like QuickBase but the <a href="https://www.quickbase.com/up/6mztyxu8/g/rc7/en/va/QuickBaseAPI.htm">HTTP API</a> can be a bit hairy.  Intuit provides various language specific SDKs for the QuickBase API but <a href="http://www.borland.com/delphi">Delphi</a> is not included.  So I’m writing my own.  [I’ll post the code to the <a href="http://www.whitepeaksoftware.com/">White Peak Software</a> site as soon as it is done.]</p>
 
-<p>A challenge I encounter today was determining an appropriate data structure for a QuickBase record set. The QuickBase API includes a DoQuery call that returns an XML document containing the results of the query. A goal of my Delphi QuickBase SDK is to simplify API calls such as DoQuery, which means I do not want to return XML to calling Delphi code. A Delphi friendly data structure for the QuickBase record set is needed.</p>
+<p>A challenge I encounter today was determining an appropriate data structure for a QuickBase record set.  The QuickBase API includes a DoQuery call that returns an XML document containing the results of the query.  A goal of my Delphi QuickBase SDK is to simplify API calls such as DoQuery, which means I do not want to return XML to calling Delphi code.  A Delphi friendly data structure for the QuickBase record set is needed.</p>
 
-<p>After bouncing different ideas around a buddy, I started “seeing” the data structure. I started hacking up code keeping in mind 3 primary goals:</p>
+<p>After bouncing different ideas around a buddy, I started “seeing” the data structure.  I started hacking up code keeping in mind 3 primary goals:</p>
 
 <ol>
-<li>The data structure must be easy to use.</li>
-
-<li>The data structure must make the code readable.</li>
-
-<li>The data structure must be Delphi friendly.</li>
+  <li>The data structure must be easy to use.</li>
+  <li>The data structure must make the code readable.</li>
+  <li>The data structure must be Delphi friendly.</li>
 </ol>
 
-<p>The end result is a set of classes which is really nothing more than a TObjectList containing TObjectList containing a field value class. In other words, the final data structure consists of the following classes:</p>
+<p>The end result is a set of classes which is really nothing more than a TObjectList containing TObjectList containing a field value class.  In other words, the final data structure consists of the following classes:</p>
 
 <pre><code>TQuickBaseDataset = class(TObjectList);
 TQuickBaseRecordset = class(TObjectList);
-TQuickBaseValue = class(TObject);</code></pre>
+TQuickBaseValue = class(TObject);
+</code></pre>
 
-<p>A dataset contains one or more record sets which contains one of more values. The value class is implemented to provide strong type access to the value returned from QuickBase.</p>
+<p>A dataset contains one or more record sets which contains one of more values.  The value class is implemented to provide strong type access to the value returned from QuickBase.</p>
 
-<p>So does the new data structure meet the 3 goals above? I think so but I will leave it up to you to decide. Here is a code snippet that queries the database and returns a record set containing 3 fields in each record.</p>
+<p>So does the new data structure meet the 3 goals above?  I think so but I will leave it up to you to decide.  Here is a code snippet that queries the database and returns a record set containing 3 fields in each record.</p>
 
 <pre><code>Qdb := TQuickBaseClient.Create(username, password);
 if Qdb.Authenticate then
@@ -94,9 +93,11 @@ begin
     end;
 end;
 Qdb.SignOut;
-Qdb.Free;</code></pre>
+Qdb.Free;
+</code></pre>
 
-<p>I will be adding the ability to retrieve field values by name very soon. This will make the code even more readable.</p>
+<p>I will be adding the ability to retrieve field values by name very soon.  This will make the code even more readable.</p>
+
 
 
     <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>

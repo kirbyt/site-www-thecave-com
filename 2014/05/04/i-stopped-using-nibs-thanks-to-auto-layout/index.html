@@ -85,13 +85,13 @@
   [textView setAlwaysBounceVertical:YES];
   [textView setInputAccessoryView:[self toolbar]];
   [textView setFont:[UIFont systemFontOfSize:17.0]];
-  [textView setPlaceholderText:NSLocalizedString(@&quot;What&#39;s up?&quot;, @&quot;Placeholder text.&quot;)];
+  [textView setPlaceholderText:NSLocalizedString(@"What's up?", @"Placeholder text.")];
   [self setTextView:textView];
 
   UIButton *locationButton = [UIButton buttonWithType:UIButtonTypeCustom];
   [locationButton setTranslatesAutoresizingMaskIntoConstraints:NO];
-  [locationButton setImage:[UIImage wps_imageNamed:@&quot;location&quot; withMaskColor:[UIColor lightGrayColor]] forState:UIControlStateNormal];
-  [locationButton setImage:[UIImage wps_imageNamed:@&quot;location&quot; withMaskColor:[UIColor wps_iOSDefaultBlue]] forState:UIControlStateSelected];
+  [locationButton setImage:[UIImage wps_imageNamed:@"location" withMaskColor:[UIColor lightGrayColor]] forState:UIControlStateNormal];
+  [locationButton setImage:[UIImage wps_imageNamed:@"location" withMaskColor:[UIColor wps_iOSDefaultBlue]] forState:UIControlStateSelected];
   [locationButton setSelected:NO];
   [locationButton addTarget:self action:@selector(_locationButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
   [self setLocationButton:locationButton];
@@ -100,7 +100,7 @@
   [locationLabel setTranslatesAutoresizingMaskIntoConstraints:NO];
   [locationLabel setTextColor:[UIColor lightGrayColor]];
   [locationLabel setTextAlignment:NSTextAlignmentLeft];
-  [locationLabel setText:NSLocalizedString(@&quot;Location Disabled&quot;, @&quot;Location text.&quot;)];
+  [locationLabel setText:NSLocalizedString(@"Location Disabled", @"Location text.")];
   [self setLocationLabel:locationLabel];
 
   UILabel *characterCountLabel = [[UILabel alloc] init];
@@ -118,7 +118,7 @@
     NSString *countString = nil;
     NSUInteger length = [[aTextView text] length];
     if (length &gt; 0) {
-      countString = [NSString stringWithFormat:@&quot;%lu&quot;, (unsigned long)length];
+      countString = [NSString stringWithFormat:@"%lu", (unsigned long)length];
     }
     [characterCountLabel setText:countString];
   }];
@@ -135,9 +135,9 @@
   [locationButton wps_constrainToWidth:38.0f];
 
   NSDictionary *bindings = NSDictionaryOfVariableBindings(textView, characterCountLabel, locationButton, locationLabel);
-  [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@&quot;V:|-0-[textView]-4-[characterCountLabel]-0-|&quot; options:0 metrics:nil views:bindings]];
-  [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@&quot;H:|-0-[textView]-0-|&quot; options:0 metrics:nil views:bindings]];
-  [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@&quot;H:|-8-[locationButton]-[locationLabel]-[characterCountLabel]-8-|&quot; options:0 metrics:nil views:bindings]];
+  [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[textView]-4-[characterCountLabel]-0-|" options:0 metrics:nil views:bindings]];
+  [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[textView]-0-|" options:0 metrics:nil views:bindings]];
+  [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-8-[locationButton]-[locationLabel]-[characterCountLabel]-8-|" options:0 metrics:nil views:bindings]];
   [self addConstraint:[NSLayoutConstraint constraintWithItem:locationLabel attribute:NSLayoutAttributeBaseline relatedBy:NSLayoutRelationEqual toItem:characterCountLabel attribute:NSLayoutAttributeBaseline multiplier:1.0 constant:0.0]];
   [self addConstraint:[NSLayoutConstraint constraintWithItem:locationButton attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:locationLabel attribute:NSLayoutAttributeCenterY multiplier:1.0 constant:0.0]];
 
@@ -162,25 +162,25 @@
     UIColor *facebookColor = facebookOn ? [UIColor wps_facebookBlue] : offColor;
     UIColor *twitterColor = twitterOn ? [UIColor wps_twitterBlue] : offColor;
 
-    UIBarButtonItem *cameraButton = [self buttonWithImageName:@&quot;camera&quot; color:[UIColor wps_iOSDefaultBlue] action:@selector(_cameraButtonTapped:)];
+    UIBarButtonItem *cameraButton = [self buttonWithImageName:@"camera" color:[UIColor wps_iOSDefaultBlue] action:@selector(_cameraButtonTapped:)];
     [self setCameraButton:cameraButton];
 
-    UIBarButtonItem *adnButton = [self buttonWithImageName:@&quot;adn&quot; color:adnColor action:@selector(_adnButtonTapped:)];
+    UIBarButtonItem *adnButton = [self buttonWithImageName:@"adn" color:adnColor action:@selector(_adnButtonTapped:)];
     [adnButton setTag:adnOn];
     [self setAdnOn:adnOn];
     [self setAdnButton:adnButton];
 
-    UIBarButtonItem *facebookButton = [self buttonWithImageName:@&quot;facebook&quot; color:facebookColor action:@selector(_facebookButtonTapped:)];
+    UIBarButtonItem *facebookButton = [self buttonWithImageName:@"facebook" color:facebookColor action:@selector(_facebookButtonTapped:)];
     [facebookButton setTag:facebookOn];
     [self setFacebookOn:facebookOn];
     [self setFacebookButton:facebookButton];
 
-    UIBarButtonItem *twitterButton = [self buttonWithImageName:@&quot;twitter&quot; color:twitterColor action:@selector(_twitterButtonTapped:)];
+    UIBarButtonItem *twitterButton = [self buttonWithImageName:@"twitter" color:twitterColor action:@selector(_twitterButtonTapped:)];
     [twitterButton setTag:twitterOn];
     [self setTwitterOn:twitterOn];
     [self setTwitterButton:twitterButton];
 
-    UIBarButtonItem *draftsButton = [self buttonWithImageName:@&quot;drafts&quot; color:[UIColor wps_iOSDefaultBlue] action:@selector(_draftsButtonTapped:)];
+    UIBarButtonItem *draftsButton = [self buttonWithImageName:@"drafts" color:[UIColor wps_iOSDefaultBlue] action:@selector(_draftsButtonTapped:)];
     [self setDraftsButton:draftsButton];
 
     UIBarButtonItem *flexibleButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
@@ -189,7 +189,8 @@
     _toolbar = toolbar;
   }
   return  _toolbar;
-}</code></pre>
+}
+</code></pre>
 
 <p>The only things not created or managed but this view are the navigation bar and collection view of photos. The navigation bar is provided by the <code>UINavigationController</code> used by the view controller that created this composer view. Also, the view controller uses controller containment to include the collection view of photos, which is actually managed by another view controller and custom view class.</p>
 
@@ -202,11 +203,13 @@
 
   CPComposeView *composeView = [CPComposeView addToSuperview:contentView];
   [self setComposeView:composeView];
-}</code></pre>
+}
+</code></pre>
 
 <p>After I create the view I might add more layout constraints to position and size the subview as needed within the main content view. I do that in the view controller’s <code>-loadView</code> when needed.</p>
 
 <p>So that’s it. That’s why I have stopped using NIB and storyboard files in my iOS projects. This approach might not work for others, but it certainly works for me.</p>
+
 
 
     <div>Posted in <a class='category' href='/category/ios/'>ios</a>, <a class='category' href='/category/programming/'>programming</a>.</div>

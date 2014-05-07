@@ -61,10 +61,11 @@
         <div class="post-content right-col">
         <h2><a href="/2006/01/16/migrating-from-visual-studio-to-borland-developer-studio/" rel="bookmark" title="Migrating from Visual Studio to Borland Developer Studio">Migrating from Visual Studio to Borland Developer Studio</a></h2>
 
-        <p>I spent the day migrating various Visual Studio projects to Borland Developer Studio 2006. For the most part the projects easily moved over but I did have some problems with one project group. <br /><br />This project group contains multiple C# library projects and an ASP.NET C# web application. The BDS converter for the project group did not set the parent reference for some of the .aspx and .ascx files. However, I was able to quickly fix this using a text editor.<br /><br />One Visual Studio feature I do miss since moving to Borland Developer Studio is Copy Web Project. I really like this feature to xcopy an ASP.NET web application to a new directory that contains only the files needed for runtime. The Professional Edition of BDS does not have this feature. However, I was able to quickly clone this feature using FinalBuilder.<br /><br />Right now I’m very happy with the move to Borland Developer Studio. Using one IDE for all my development work (Delphi, C# and ASP.NET 1.1) is making me a more productive software developer.</p>
-        
+        <p>I spent the day migrating various Visual Studio projects to Borland Developer Studio 2006.  For the most part the projects easily moved over but I did have some problems with one project group.  <br /><br />This project group contains multiple C# library projects and an ASP.NET C# web application.  The BDS converter for the project group did not set the parent reference for some of the .aspx and .ascx files.  However, I was able to quickly fix this using a text editor.<br /><br />One Visual Studio feature I do miss since moving to Borland Developer Studio is Copy Web Project.  I really like this feature to xcopy an ASP.NET web application to a new directory that contains only the files needed for runtime.  The Professional Edition of BDS does not have this feature.  However, I was able to quickly clone this feature using FinalBuilder.<br /><br />Right now I’m very happy with the move to Borland Developer Studio.  Using one IDE for all my development work (Delphi, C# and ASP.NET 1.1) is making me a more productive software developer.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -81,10 +82,11 @@
         <div class="post-content right-col">
         <h2><a href="/2006/01/16/delphi-live-templates-for-vb-developers/" rel="bookmark" title="Delphi Live Templates for VB Developers">Delphi Live Templates for VB Developers</a></h2>
 
-        <p><a href="http://www.lemanix.com/nickblog/default.aspx">Nick Hodges</a> has created a set of <a href="http://www.lemanix.com/nickblog/PermaLink,guid,e407798f-32bd-43cb-96d9-e1f5b04ae316.aspx">Delphi Live Templates for VB developers</a> who have moved to Delphi. This templates work with the latest version of Borland Developer Studio. The developer to type VBish code and the templates spit out Delphi code. For instance, type “MsgBox” and you get “MessageDlg”.</p>
-        
+        <p><a href="http://www.lemanix.com/nickblog/default.aspx">Nick Hodges</a> has created a set of <a href="http://www.lemanix.com/nickblog/PermaLink,guid,e407798f-32bd-43cb-96d9-e1f5b04ae316.aspx">Delphi Live Templates for VB developers</a> who have moved to Delphi.  This templates work with the latest version of Borland Developer Studio.  The developer to type VBish code and the templates spit out Delphi code.  For instance, type “MsgBox” and you get “MessageDlg”.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -101,22 +103,23 @@
         <div class="post-content right-col">
         <h2><a href="/2006/01/13/smtp-diagnostics-review/" rel="bookmark" title="SMTP Diagnostics Review">SMTP Diagnostics Review</a></h2>
 
-        <p><a href="http://email.about.com/mbiopage.htm">Heinz Tschabitscher</a> posted <a href="http://email.about.com/od/emailbehindthescenes/gr/smtp_diagnostic.htm">a review about SMTP Diagnostics</a> on About Email. I have to say I agree with Heinz when he says “SMTP Diagnostics does not help you understand or fix errors.” It is true <a href="http://www.smtpdiagnostics.com/">SMTP Diagnostics will help you understand what is happening assuming you understand the protocol message</a>, but the tool would be more useful if it explained things in plain English, which I believe is Heinz’s point.</p>
+        <p><a href="http://email.about.com/mbiopage.htm">Heinz Tschabitscher</a> posted <a href="http://email.about.com/od/emailbehindthescenes/gr/smtp_diagnostic.htm">a review about SMTP Diagnostics</a> on About Email.  I have to say I agree with Heinz when he says “SMTP Diagnostics does not help you understand or fix errors.”  It is true <a href="http://www.smtpdiagnostics.com/">SMTP Diagnostics will help you understand what is happening assuming you understand the protocol message</a>, but the tool would be more useful if it explained things in plain English, which I believe is Heinz’s point.</p>
 
-<p>It’s been on my feature list for a while now to change this. SMTP Diagnostics should provide more help and understanding in plain English. The challenge has been to correctly interpret the error message. For example, I recently was troubleshooting an email problem for a web application. In my tests using SMTP Diagnostics I enabled SMTP Authentication and provided the correct credentials for the mail server. For the From and To I used the same email address. The sender was checked and determined to be okay but the recipient check failed with “550 no such user here”, and I knew for a fact that the email address was valid.</p>
+<p>It’s been on my feature list for a while now to change this.  SMTP Diagnostics should provide more help and understanding in plain English.  The challenge has been to correctly interpret the error message.  For example, I recently was troubleshooting an email problem for a web application.  In my tests using SMTP Diagnostics I enabled SMTP Authentication and provided the correct credentials for the mail server.  For the From and To I used the same email address.  The sender was checked and determined to be okay but the recipient check failed with “550 no such user here”, and I knew for a fact that the email address was valid.</p>
 
-<p>To SMTP Diagnostics the problem is clear. The recipient address is invalid, or at least that is what it is told by the mail server. However, the address is very much valid and the problem is actually caused by a check on the outgoing mail server that does not allow a message to be sent from an address to the same address where the domain name in the email address is different than the domain name for the outgoing mail server. In other words, using this particular mail server you cannot send an email to validaddress@domain.com from validaddress@domain.com from a mail server at the domain anotherdomain.com.</p>
+<p>To SMTP Diagnostics the problem is clear.  The recipient address is invalid, or at least that is what it is told by the mail server.  However, the address is very much valid and the problem is actually caused by a check on the outgoing mail server that does not allow a message to be sent from an address to the same address where the domain name in the email address is different than the domain name for the outgoing mail server.  In other words, using this particular mail server you cannot send an email to validaddress@domain.com from validaddress@domain.com from a mail server at the domain anotherdomain.com.</p>
 
-<p>The reason for the setting is clear. The setting is used to help prevent spam mail. However, it is impossible for SMTP Diagnostics to properly interpret this error into plain English that accurately describes the problem.</p>
+<p>The reason for the setting is clear.  The setting is used to help prevent spam mail.  However, it is impossible for SMTP Diagnostics to properly interpret this error into plain English that accurately describes the problem.</p>
 
-<p>Another test on the same mail server further illustrates why it is hard to correctly interpret the actual error. The same error message, “550 no such user here” is received for a valid recipient address when the From address used is not a valid maildrop but of the same domain as the outgoing mail server. In other words, the mail server for anotherdomain.com will report “550 no such user here” for the recipient validaddress@domain.com when the From address no-reply@anotherdomain.com is used and no-reply is not a valid maildrop.</p>
+<p>Another test on the same mail server further illustrates why it is hard to correctly interpret the actual error.  The same error message, “550 no such user here” is received for a valid recipient address when the From address used is not a valid maildrop but of the same domain as the outgoing mail server.  In other words, the mail server for anotherdomain.com will report “550 no such user here” for the recipient validaddress@domain.com when the From address no-reply@anotherdomain.com is used and no-reply is not a valid maildrop.</p>
 
 <p>These are two very different scenarios where the mail server reports the same error message, and both result from server settings used to prevent sending spam.</p>
 
-<p>Personally I’m glad mail servers are incorporating settings that help prevent spam mail from being sent. But at the same time it makes it more difficult to determine the actual cause of the problem when sending outgoing emails. Still, I plan to take the feedback from Heinz’s review and improve on SMTP Diagnostics for the next release.</p>
-        
+<p>Personally I’m glad mail servers are incorporating settings that help prevent spam mail from being sent.  But at the same time it makes it more difficult to determine the actual cause of the problem when sending outgoing emails.  Still, I plan to take the feedback from Heinz’s review and improve on SMTP Diagnostics for the next release.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -133,10 +136,11 @@
         <div class="post-content right-col">
         <h2><a href="/2006/01/11/new-microisv-web-site/" rel="bookmark" title="New MicroISV Web Site">New MicroISV Web Site</a></h2>
 
-        <p>And the good stuff keeps coming from Bob. He just told me about a new <a href='http://mymicroisv.com/'>web site for small software company</a> that is going live today. Be sure to check it out.</p>
-        
+        <p>And the good stuff keeps coming from Bob.  He just told me about a new <a href="http://mymicroisv.com/">web site for small software company</a> that is going live today.  Be sure to check it out.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -153,12 +157,13 @@
         <div class="post-content right-col">
         <h2><a href="/2006/01/11/micro-isv-from-vision-to-reality/" rel="bookmark" title="Micro-ISV: From Vision to Reality">Micro-ISV: From Vision to Reality</a></h2>
 
-        <p><a href="http://www.amazon.com/exec/obidos/ASIN/1590596013/whitepeaksoft-20?creative=327641&amp;camp=14573&amp;link_code=as1"><img align='left' alt=' Micro-ISV: From Vision to Reality ' border='0' src='/images/blogimages/bcm.gif' /></a> <a href="http://www.todoorelse.com/">Bob Walsh</a>’s book <a href="http://www.amazon.com/exec/obidos/ASIN/1590596013/whitepeaksoft-20?creative=327641&amp;camp=14573&amp;link_code=as1">Micro-ISV: From Vision to Reality</a> is finally on sale at Amazon. You can also <a href="http://www.apress.com/book/bookDisplay.html?bID=10057">buy the eBook version</a> from directly from APress.</p>
+        <p><a href="http://www.amazon.com/exec/obidos/ASIN/1590596013/whitepeaksoft-20?creative=327641&amp;camp=14573&amp;link_code=as1"><img src="/images/blogimages/bcm.gif" border="0" alt=" Micro-ISV: From Vision to Reality " align="left" /></a> <a href="http://www.todoorelse.com/">Bob Walsh</a>’s book <a href="http://www.amazon.com/exec/obidos/ASIN/1590596013/whitepeaksoft-20?creative=327641&amp;camp=14573&amp;link_code=as1">Micro-ISV: From Vision to Reality</a> is finally on sale at Amazon.  You can also <a href="http://www.apress.com/book/bookDisplay.html?bID=10057">buy the eBook version</a> from directly from APress.</p>
 
-<p>I’ve not read the book yet but I’m looking forward to it. I ordered my copy and should have it in a couple of days. I’ll post a review once I read it, but I know it’s going to be a great book for those looking to start a software company and for those of us still in the early years of running our own software company. And if that doesn’t convince you to buy the book then maybe the fact that my interview from Bob is on Page 263.</p>
-        
+<p>I’ve not read the book yet but I’m looking forward to it.  I ordered my copy and should have it in a couple of days.  I’ll post a review once I read it, but I know it’s going to be a great book for those looking to start a software company and for those of us still in the early years of running our own software company.  And if that doesn’t convince you to buy the book then maybe the fact that my interview from Bob is on Page 263.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -175,10 +180,11 @@
         <div class="post-content right-col">
         <h2><a href="/2006/01/11/finalbuilder-is-a-must-have-for-constructing-build-processes/" rel="bookmark" title="FinalBuilder is a Must Have for Constructing Build Processes">FinalBuilder is a Must Have for Constructing Build Processes</a></h2>
 
-        <p>For years I have relied on custom built build processes for software I develop. For instance, on a recent large-scale .NET solution I used a combination of NTScheduler, VMware Workstation, CVS, NAnt, and the .NET SDK (along with other tools) to build an automated build environment. However, doing something similar for every one of my software projects is time consuming, and I have to rely on different tools for different projects. For example NAnt is useless for a Delphi Win32 project. So I finally decided to give FinalBuilder a try.<br /><br /><a href='http://www.finalbuilder.com/'>FinalBuilder is the ultimate tool for constructing a build process</a>. Within minutes I was able to automate a build process for a box inventory program I am working on. Of course projects with a more complex build process will take more than a few minutes to setup, but you should be able to automate a build process in minutes and not hours or days for most projects. <br /><br />I’m amazed at the flexibility provided by FinalBuilder. It supports a wide array of compilers and tools. And it has an easy-to-use GUI for construction of the build process for every time of project I’m working on.<br /><br />I decided to see how long it would take to setup a build process for <a href='http://www.smtpdiagnostics.com/'>SMTP Diagnostics</a>. Although SMTP Diagnostics is a simple product, its build process involves a number of steps. It is the perfect product to evaluate FinalBuilder with. <br /><br />Here are the steps in the build process that I wanted to automate through FinalBuilder:<br /><br />- Create a build directory sandbox<br />- Retrieve the latest source code from <a href='http://www.cvsnt.org'>CVS</a><br />- Compile the GUI program (using <a href='http://www.borland.com/delphi'>Delphi</a> 2006 compiler)<br />- Compile <a href='http://www.eurekalog.com/'>EurekaLog</a> into the GUI program<br />- Compile to console program (using <a href='http://www.borland.com/delphi'>Delphi</a> 2006 compiler)<br />- Compile the licensing framework into the GUI and console programs (using <a href='http://www.siliconrealms.com/software.shtml'>Armadillo</a>)<br />- Generate the help file system (using <a href='http://www.ec-software.com/hmpage.htm'>Help&amp;Manual;</a>)<br />- Generate the installer (using <a href='http://www.jrsoftware.org/isinfo.php'>Inno Setup</a>)<br />- Generate a zip file containing the generated installer<br />- Update and commit build number changes to CVS<br />- Tag release in CVS<br /><br />In less than 30 minutes I was able to setup the SMTP Diagnostics build process in FinalBuilder. I can now make a complete build of SMTP Diagnostics in under a minute with a click of a button. <br /><br />My next step in exploring FinalBuilder will be to generate the online help as HTML files and upon successful build of the product push the HTML files and the installer out to SMTP Diagnostics web site. Given the time I spent playing with FinalBuilder, I’m confident I will be able to automate these steps as well.</p>
-        
+        <p>For years I have relied on custom built build processes for software I develop.  For instance, on a recent large-scale .NET solution I used a combination of NTScheduler, VMware Workstation, CVS, NAnt, and the .NET SDK (along with other tools) to build an automated build environment.  However, doing something similar for every one of my software projects is time consuming, and I have to rely on different tools for different projects.  For example NAnt is useless for a Delphi Win32 project.  So I finally decided to give FinalBuilder a try.<br /><br /><a href="http://www.finalbuilder.com/">FinalBuilder is the ultimate tool for constructing a build process</a>.  Within minutes I was able to automate a build process for a box inventory program I am working on.  Of course projects with a more complex build process will take more than a few minutes to setup, but you should be able to automate a build process in minutes and not hours or days for most projects.  <br /><br />I’m amazed at the flexibility provided by FinalBuilder.  It supports a wide array of compilers and tools.  And it has an easy-to-use GUI for construction of the build process for every time of project I’m working on.<br /><br />I decided to see how long it would take to setup a build process for <a href="http://www.smtpdiagnostics.com/">SMTP Diagnostics</a>.  Although SMTP Diagnostics is a simple product, its build process involves a number of steps.  It is the perfect product to evaluate FinalBuilder with.  <br /><br />Here are the steps in the build process that I wanted to automate through FinalBuilder:<br /><br />- Create a build directory sandbox<br />- Retrieve the latest source code from <a href="http://www.cvsnt.org">CVS</a><br />- Compile the GUI program (using <a href="http://www.borland.com/delphi">Delphi</a> 2006 compiler)<br />- Compile <a href="http://www.eurekalog.com/">EurekaLog</a> into the GUI program<br />- Compile to console program (using <a href="http://www.borland.com/delphi">Delphi</a> 2006 compiler)<br />- Compile the licensing framework into the GUI and console programs (using <a href="http://www.siliconrealms.com/software.shtml">Armadillo</a>)<br />- Generate the help file system (using <a href="http://www.ec-software.com/hmpage.htm">Help&amp;Manual;</a>)<br />- Generate the installer (using <a href="http://www.jrsoftware.org/isinfo.php">Inno Setup</a>)<br />- Generate a zip file containing the generated installer<br />- Update and commit build number changes to CVS<br />- Tag release in CVS<br /><br />In less than 30 minutes I was able to setup the SMTP Diagnostics build process in FinalBuilder.  I can now make a complete build of SMTP Diagnostics in under a minute with a click of a button.  <br /><br />My next step in exploring FinalBuilder will be to generate the online help as HTML files and upon successful build of the product push the HTML files and the installer out to SMTP Diagnostics web site.  Given the time I spent playing with FinalBuilder, I’m confident I will be able to automate these steps as well.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -195,10 +201,11 @@
         <div class="post-content right-col">
         <h2><a href="/2006/01/06/my-dead-or-alive-4-review/" rel="bookmark" title="My Dead Or Alive 4 Review">My Dead Or Alive 4 Review</a></h2>
 
-        <p>For Christmas Melanie gave me a copy of <a href='http://www.xbox.com/en-US/games/d/deadoralive4/'>Dead Or Alive 4</a> for the Xbox 360. The game wasn’t released until the end of the December so I had to wait. But it finally came in this week and last night I got a chance to play it.<br /><br />My review can be summed up in 4 simple words: My thumb is sore!<br /><br />I must have played 8 hours or so last night. And yes my thumb is sore. The game is awesome. Story Mode can be frustrating at times but I was able to finish it in one night. The frustration is not a bad thing although it seems like it when you are playing. The AI in this game is incredible, which made Story Mode challenging and frustrating at the same time.<br /><br />Like other Xbox 360 games DOA4 supports leaderboards. You can, for example, compare your best Survival Mode score against other players world wide. My current ranking is around 10,500 out of 25,000 players. I definitely need to work on improving that ranking. <br /><br />As I have mentioned before, Xbox Live really makes Xbox 360 a great console. Having the ability to compare my ranking and achievement to other players causes me to play more, and in turn leaves me wanting to buy more games. Xbox Live is really the shining star of the Xbox 360 for the moment. But this review is about DOA4, not Xbox Live.<br /><br />DOA4 comes with online play as well. I played “Versus” challenges for a bit last night online. Unfortunately I didn’t do as well as I had hoped. There are some top notch players out there. Online play was fun but the game play was a bit choppy. I couldn’t tell if the performance problem was caused by my DSL line or if the problem was coming from the DOA4/Live servers. I need to check the forums to see if other DOA4 players are experiencing the same choppiness. I have not noticed any performance problems with other Xbox Live enabled games so I have to believe it is not my DSL line.<br /><br />Another feature I like about DOA4 is Sparring Mode. There is a feature within this mode called Exercise, which is a great way to learn all the button combinations for a given character. I will definitely spend more time in this mode to learn more of the advance moves and combinations.<br /><br />Overall, DOA4 is great. The graphics are amazing. The game play is fun. The leaderboards are addicting. And online play is a blast. <br /><br />Thanks Melanie for getting me this great game.</p>
-        
+        <p>For Christmas Melanie gave me a copy of <a href="http://www.xbox.com/en-US/games/d/deadoralive4/">Dead Or Alive 4</a> for the Xbox 360.  The game wasn’t released until the end of the December so I had to wait.  But it finally came in this week and last night I got a chance to play it.<br /><br />My review can be summed up in 4 simple words: My thumb is sore!<br /><br />I must have played 8 hours or so last night.  And yes my thumb is sore.  The game is awesome.  Story Mode can be frustrating at times but I was able to finish it in one night.  The frustration is not a bad thing although it seems like it when you are playing.  The AI in this game is incredible, which made Story Mode challenging and frustrating at the same time.<br /><br />Like other Xbox 360 games DOA4 supports leaderboards.  You can, for example, compare your best Survival Mode score against other players world wide.  My current ranking is around 10,500 out of 25,000 players.  I definitely need to work on improving that ranking.  <br /><br />As I have mentioned before, Xbox Live really makes Xbox 360 a great console.  Having the ability to compare my ranking and achievement to other players causes me to play more, and in turn leaves me wanting to buy more games.  Xbox Live is really the shining star of the Xbox 360 for the moment.  But this review is about DOA4, not Xbox Live.<br /><br />DOA4 comes with online play as well.  I played “Versus” challenges for a bit last night online.  Unfortunately I didn’t do as well as I had hoped.  There are some top notch players out there.  Online play was fun but the game play was a bit choppy.  I couldn’t tell if the performance problem was caused by my DSL line or if the problem was coming from the DOA4/Live servers.  I need to check the forums to see if other DOA4 players are experiencing the same choppiness.  I have not noticed any performance problems with other Xbox Live enabled games so I have to believe it is not my DSL line.<br /><br />Another feature I like about DOA4 is Sparring Mode.  There is a feature within this mode called Exercise, which is a great way to learn all the button combinations for a given character.  I will definitely spend more time in this mode to learn more of the advance moves and combinations.<br /><br />Overall, DOA4 is great.  The graphics are amazing.  The game play is fun.  The leaderboards are addicting.  And online play is a blast.  <br /><br />Thanks Melanie for getting me this great game.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -215,10 +222,11 @@
         <div class="post-content right-col">
         <h2><a href="/2006/01/02/first-vertigo-screenshot/" rel="bookmark" title="First Vertigo Screenshot">First Vertigo Screenshot</a></h2>
 
-        <p>Okay, I probably shouldn’t post this screenshot because it is ugly and far from the final Vertigo UI. But what the heck. I have been talking about Vertigo for a year now and this screenshot shows the world I’m actually working on it (finally).<br /><br /><a href='http://www.thecave.com/images/blogimages/vertigo-20060102-snapshot.gif'><img alt='Early screenshot of Vertigo' border='0' height='80%' src='http://www.thecave.com/images/blogimages/vertigo-20060102-snapshot.gif' width='80%' /></a><br />Click the image to view full size.<br /><br />For those wondering, <a href='http://www.whitepeaksoftware.com/vertigo.aspx'>Vertigo is a desktop email client</a> that is being developed by White Peak Software and will be released later this year. Feel free to post your comments, suggestions, and questions to <a href='http://www.whitepeaksoftware.com/forums/Forum11-1.aspx'>the Vertigo forum area</a>.</p>
-        
+        <p>Okay, I probably shouldn’t post this screenshot because it is ugly and far from the final Vertigo UI.  But what the heck.  I have been talking about Vertigo for a year now and this screenshot shows the world I’m actually working on it (finally).<br /><br /><a href="http://www.thecave.com/images/blogimages/vertigo-20060102-snapshot.gif"><img src="http://www.thecave.com/images/blogimages/vertigo-20060102-snapshot.gif" width="80%" height="80%" border="0" alt="Early screenshot of Vertigo" /></a><br />Click the image to view full size.<br /><br />For those wondering, <a href="http://www.whitepeaksoftware.com/vertigo.aspx">Vertigo is a desktop email client</a> that is being developed by White Peak Software and will be released later this year.  Feel free to post your comments, suggestions, and questions to <a href="http://www.whitepeaksoftware.com/forums/Forum11-1.aspx">the Vertigo forum area</a>.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -235,10 +243,11 @@
         <div class="post-content right-col">
         <h2><a href="/2006/01/02/a-new-year-a-new-adventure/" rel="bookmark" title="A New Year, a New Adventure">A New Year, a New Adventure</a></h2>
 
-        <p>2005 has come and gone, and man was it fast. 2005 was a very interesting year for me. I learned a lot about running a software business and I have a better idea of what it means to be a self employed computer geek turned aspiring entrepreneur. I have my success stories, made mistakes, changed directions, lost sleep, and spent more time with my wife. Here’s a brief recap of 2005:<br /><br />Success Stories<br />- Release <a href='http://www.smtpdiagnostics.com/'>White Peak Software&#39;s first product, SMTPdiagnostics</a>. <br />- Released 4 custom software solutions for customers.<br />- Elected Chapter President of <a href='http://www.iccanyc.org/'>ICCA NYC Metro</a>.<br />- Met target revenue goals.<br />- Became more focus on where I want to take <a href='http://www.whitepeaksoftware.com/'>White Peak Software</a>.<br /><br />Mistakes<br />- Over obligating myself and my time.<br />- Lacking focus for the first half of the year.<br />- Did not release Beta version of Vertigo.<br />- A poor job of networking and keep in touch with customer.<br /><br />So what are my resolutions for 2006?<br /><br />2006 Resolutions<br />- Complete Vertigo version 1.0.<br />- Increase product revenue by at least 60%.<br />- Do a better job of staying in touch with customer.<br />- Do a better job of going to the gym.<br />- And find more ways to spend more time with my wife.</p>
-        
+        <p>2005 has come and gone, and man was it fast.  2005 was a very interesting year for me.  I learned a lot about running a software business and I have a better idea of what it means to be a self employed computer geek turned aspiring entrepreneur.  I have my success stories, made mistakes, changed directions, lost sleep, and spent more time with my wife.  Here’s a brief recap of 2005:<br /><br />Success Stories<br />- Release <a href="http://www.smtpdiagnostics.com/">White Peak Software’s first product, SMTPdiagnostics</a>.  <br />- Released 4 custom software solutions for customers.<br />- Elected Chapter President of <a href="http://www.iccanyc.org/">ICCA NYC Metro</a>.<br />- Met target revenue goals.<br />- Became more focus on where I want to take <a href="http://www.whitepeaksoftware.com/">White Peak Software</a>.<br /><br />Mistakes<br />- Over obligating myself and my time.<br />- Lacking focus for the first half of the year.<br />- Did not release Beta version of Vertigo.<br />- A poor job of networking and keep in touch with customer.<br /><br />So what are my resolutions for 2006?<br /><br />2006 Resolutions<br />- Complete Vertigo version 1.0.<br />- Increase product revenue by at least 60%.<br />- Do a better job of staying in touch with customer.<br />- Do a better job of going to the gym.<br />- And find more ways to spend more time with my wife.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -255,36 +264,29 @@
         <div class="post-content right-col">
         <h2><a href="/2005/12/30/what-i-will-and-will-not-miss-about-living-in-new-york-city/" rel="bookmark" title="What I will and will not miss about living in New York City">What I will and will not miss about living in New York City</a></h2>
 
-        <h2 id="5_things_i_will_not_miss_about_life_in_new_york_in_no_particular_order">5 things I will NOT miss about life in New York (in no particular order):</h2>
+        <h2 id="things-i-will-not-miss-about-life-in-new-york-in-no-particular-order">5 things I will NOT miss about life in New York (in no particular order):</h2>
 
 <ol>
-<li>The people - Sometimes there just too many people here.</li>
-
-<li>The traffic - I’m sick and tired of traffic so bad that it takes an hour and half just to drive 10 miles.</li>
-
-<li>The small apartments - I feel like I live in a shoebox at times.</li>
-
-<li>The high cost living - Rent is the worst. I’m tired of paying more per month for rent than what a typical American pays monthly for on a home mortgage.</li>
-
-<li>Over priced beer - I have paid as much as $12 for a 12oz bottle of Bud Light. And $5 to $7 is not uncommon.</li>
+  <li>The people - Sometimes there just too many people here.</li>
+  <li>The traffic - I’m sick and tired of traffic so bad that it takes an hour and half just to drive 10 miles.</li>
+  <li>The small apartments - I feel like I live in a shoebox at times.</li>
+  <li>The high cost living - Rent is the worst.  I’m tired of paying more per month for rent than what a typical American pays monthly for on a home mortgage.</li>
+  <li>Over priced beer - I have paid as much as $12 for a 12oz bottle of Bud Light.  And $5 to $7 is not uncommon.</li>
 </ol>
 
-<h2 id="5_things_i_will_miss_about_life_in_new_york_in_no_particular_order">5 things I WILL MISS about life in New York (in no particular order):</h2>
+<h2 id="things-i-will-miss-about-life-in-new-york-in-no-particular-order">5 things I WILL MISS about life in New York (in no particular order):</h2>
 
 <ol>
-<li>The people - New York City has some of the nicest people in the world. And I have made some great friends here.</li>
-
-<li>Bars and pubs - New York City has great places to hang out, meet people, and have a couple of cold brews.</li>
-
-<li>The energy - I still remember the first time I walked out of Penn Station and onto a Manhattan street. I immediately felt the energy from the city, and I love that feeling.</li>
-
-<li>$2 beers - There’s nothing like finding a real deal in New York City. And there’s a special feeling you get when you know where to find the $2 beers and can eat dinner for under $3.50.</li>
-
-<li>Living in New York City - There is no greater city than New York City in my opinion. I’m definitely going to miss living here.</li>
+  <li>The people - New York City has some of the nicest people in the world.  And I have made some great friends here.</li>
+  <li>Bars and pubs - New York City has great places to hang out, meet people, and have a couple of cold brews.</li>
+  <li>The energy - I still remember the first time I walked out of Penn Station and onto a Manhattan street.  I immediately felt the energy from the city, and I love that feeling.</li>
+  <li>$2 beers - There’s nothing like finding a real deal in New York City.  And there’s a special feeling you get when you know where to find the $2 beers and can eat dinner for under $3.50.</li>
+  <li>Living in New York City - There is no greater city than New York City in my opinion.  I’m definitely going to miss living here.</li>
 </ol>
-        
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -295,15 +297,16 @@
 <div class="more_posts">
 	<h2>
         
-        <a href="//page28" >&laquo; Older Entries</a> &nbsp; 
+        <a href="/page28" >&laquo; Older Entries</a> &nbsp;
         
         
             
-                <a href="//page26" >Recent Entries &raquo;</a>
+                <a href="/page26" >Recent Entries &raquo;</a>
             
         
     </h2>
 </div>
+
 
 		</div>
 		

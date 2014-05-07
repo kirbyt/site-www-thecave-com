@@ -61,10 +61,17 @@
         <div class="post-content right-col">
         <h2><a href="/2002/09/05/rss-and-uddi/" rel="bookmark" title="RSS and UDDI">RSS and UDDI</a></h2>
 
-        <p>Karsten Januszewski recently published a white paper on <a href='http://www.gotdotnet.com/team/karstenj/docs/rss_in_uddi.aspx'>Registering and Discovering RSS Feed in UDDI</a>. I personally think this is a great idea. My only problem with the idea is that registering services in UDDI can be a bit cumbersome for some folks. But Karsten solves this problem by providing a <a href='http://www.gotdotnet.com/userfiles/karstenj/rssuddi.zip'>sample</a> Windows application that makes registering RSS v.9x feeds as simple as specifying the URL to the feed and clicking a button. <br /> <br />So why do I like the idea of registering and discovering RSS feeds in UDDI? It exploits the power of UDDI. Many people assume UDDI is only about Web services but that is not true. Any services can be registered in UDDI and discovered by the masses. For example, if you were to search one of the UBR for the provider “Kirby” you will find that I offer two <a href='https://uddi.ibm.com/ubr/findservice?action=find&amp;businesskey=09A655F9-BA28-4009-94EF-906E26D247FB'>services</a>. <br /> <br />One service is a Web service for reporting statistics for <a href='http://radio.thecave.com/'>WCAV Radio</a>. But the other is the RSS feed for this weblog. And by leveraging UDDI, people can discovery all the services I offer whether the service is a Web service or not. <br /> <br />Those using Visual Studio.NET’s Add Web Reference will notice a <a href='http://uddi.microsoft.com/addwebreference/search.aspx?searchType=1&amp;searchParams=kirby'>search</a> on the provider “Kirby” will return only Web service I offer. The reason is that Add Web Reference was implemented to search for Web services only. The same idea can be applied to weblog tools that wish to discover RSS feeds. Those tools only need to search for services in UDDI based on the practices outlined in Karsten’s white paper.</p>
-        
+        <p>Karsten Januszewski recently published a white paper on <a href="http://www.gotdotnet.com/team/karstenj/docs/rss_in_uddi.aspx">Registering and Discovering RSS Feed in UDDI</a>.  I personally think this is a great idea.  My only problem with the idea is that registering services in UDDI can be a bit cumbersome for some folks.  But Karsten solves this problem by providing a <a href="http://www.gotdotnet.com/userfiles/karstenj/rssuddi.zip">sample</a> Windows application that makes registering RSS v.9x feeds as simple as specifying the URL to the feed and clicking a button.
+<br />
+<br />So why do I like the idea of registering and discovering RSS feeds in UDDI?  It exploits the power of UDDI.  Many people assume UDDI is only about Web services but that is not true.  Any services can be registered in UDDI and discovered by the masses.  For example, if you were to search one of the UBR for the provider “Kirby” you will find that I offer two <a href="https://uddi.ibm.com/ubr/findservice?action=find&amp;businesskey=09A655F9-BA28-4009-94EF-906E26D247FB">services</a>.
+<br />
+<br />One service is a Web service for reporting statistics for <a href="http://radio.thecave.com/">WCAV Radio</a>.  But the other is the RSS feed for this weblog.  And by leveraging UDDI, people can discovery all the services I offer whether the service is a Web service or not.
+<br />
+<br />Those using Visual Studio.NET’s Add Web Reference will notice a <a href="http://uddi.microsoft.com/addwebreference/search.aspx?searchType=1&amp;searchParams=kirby">search</a> on the provider “Kirby” will return only Web service I offer.  The reason is that Add Web Reference was implemented to search for Web services only.  The same idea can be applied to weblog tools that wish to discover RSS feeds.  Those tools only need to search for services in UDDI based on the practices outlined in Karsten’s white paper.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -81,10 +88,23 @@
         <div class="post-content right-col">
         <h2><a href="/2002/08/29/the-company-burton-com-2003/" rel="bookmark" title="The Company - Burton.com 2003">The Company - Burton.com 2003</a></h2>
 
-        <p>From <a href='http://www.burton.com/'>Burton&#39;s</a> 2003 web site: <br /> <br />We stand sideways. <br />We sleep on floors in cramped resort hotel rooms. <br />We get up early and go to sleep late. <br />We’ve been mocked. <br />We’ve been turned away from resorts that won’t have us. <br />We are relentless. <br />We dream it, we make it, we break it, we fix it. <br />We create. <br />We destroy. <br />We wreck ourselves day in and day out and yet we stomp that one trick or find that one line that keeps us coming back. <br />We progress.</p>
-        
+        <p>From <a href="http://www.burton.com/">Burton’s</a> 2003 web site:
+<br />
+<br />We stand sideways.
+<br />We sleep on floors in cramped resort hotel rooms.
+<br />We get up early and go to sleep late.
+<br />We’ve been mocked.
+<br />We’ve been turned away from resorts that won’t have us.
+<br />We are relentless.
+<br />We dream it, we make it, we break it, we fix it.
+<br />We create.
+<br />We destroy.
+<br />We wreck ourselves day in and day out and yet we stomp that one trick or find that one line that keeps us coming back.
+<br />We progress.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -101,28 +121,31 @@
         <div class="post-content right-col">
         <h2><a href="/2002/08/27/open-vs-net-command-window-here/" rel="bookmark" title="Open VS.NET Command Window Here">Open VS.NET Command Window Here</a></h2>
 
-        <p>I used Windows Explorer all the time to navigate my hard drive. Many times throughout the day I need to drop to MS-DOS within a specific directory. I’m too lazy to drop to DOS and navigate using the command line so I created a registry entry that will launch a CMD window from Windows Explorer and place me in the selected directory. You can run the following VBScript to do the same for yourself.</p>
+        <p>I used Windows Explorer all the time to navigate my hard drive.  Many times throughout the day I need to drop to MS-DOS within a specific directory.  I’m too lazy to drop to DOS and navigate using the command line so I created a registry entry that will launch a CMD window from Windows Explorer and place me in the selected directory.  You can run the following VBScript to do the same for yourself.</p>
 
-<pre><code>Set WshShell = CreateObject( &quot;WScript.Shell&quot; )  
+<pre><code>Set WshShell = CreateObject( "WScript.Shell" )  
 WshShell.RegWrite _  
-   &quot;HKEY_CLASSES_ROOT\Folder\Shell\Command Window\Command\&quot;, _  
-   &quot;CMD /K cd /d %L&quot;  </code></pre>
+   "HKEY_CLASSES_ROOT\Folder\Shell\Command Window\Command\", _  
+   "CMD /K cd /d %L"  
+</code></pre>
 
 <p>As an added bonus, you can run the VBScript below to create a menu item that will launch a CMD window that has been setup for the Microsoft Visual Studio .NET tools.</p>
 
 <pre><code>vsnetPath = _  
- &quot;d:\Program Files\Microsoft Visual Studio .NET\Common7\Tools\vsvars32.bat&quot;  
-Set WshShell = CreateObject( &quot;WScript.Shell&quot; )  
+ "d:\Program Files\Microsoft Visual Studio .NET\Common7\Tools\vsvars32.bat"  
+Set WshShell = CreateObject( "WScript.Shell" )  
 WshShell.RegWrite _  
- &quot;HKEY_CLASSES_ROOT\Folder\Shell\Open VS.NET Command Window Here\Command\&quot;, _  
- &quot;CMD /K &quot;&quot;&quot; + vsnetPath + &quot;&quot;&quot; : cd /d %L&quot;  </code></pre>
+ "HKEY_CLASSES_ROOT\Folder\Shell\Open VS.NET Command Window Here\Command\", _  
+ "CMD /K """ + vsnetPath + """ : cd /d %L"  
+</code></pre>
 
-<p>Be sure to modify the path above to match your installation of Visual Studio.NET.</p>
+<p>Be sure to modify the path above to match your installation of Visual Studio.NET.  </p>
 
-<p>To use launch an instance of Windows Explorer and navigate to the desired directory. Right mouse click the directory name and select Open Command Window Here or Open VS.NET Command Window Here menu item. Now ain’t that nice?</p>
-        
+<p>To use launch an instance of Windows Explorer and navigate to the desired directory.  Right mouse click the directory name and select Open Command Window Here or Open VS.NET Command Window Here menu item.  Now ain’t that nice?</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -139,10 +162,11 @@ WshShell.RegWrite _
         <div class="post-content right-col">
         <h2><a href="/2002/08/27/could-have-used-a-reg-registry-import-file/" rel="bookmark" title="Could have used a .reg registry import file">Could have used a .reg registry import file</a></h2>
 
-        <p>After posting the VBScript below I realized I could have simply created .reg file that has the registry entries to import. Oh well. The VBScript approach gave me a reason to play with VBScript.</p>
-        
+        <p>After posting the VBScript below I realized I could have simply created .reg file that has the registry entries to import.  Oh well.  The VBScript approach gave me a reason to play with VBScript.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -159,10 +183,13 @@ WshShell.RegWrite _
         <div class="post-content right-col">
         <h2><a href="/2002/08/23/they-will-fire-me-if-i-pee-one-more-time-today/" rel="bookmark" title="They will fire me if I pee one more time today.">They will fire me if I pee one more time today.</a></h2>
 
-        <p>Get this crap<a href='http://www.courier-journal.com/localnews/2002/08/21/ke082102s261927.htm'>Daily news from Louisville, Kentucky and Southern Indiana from courier-journal.com</a> The Jim Beam bourbon-making plant in Bullitt County is disputing a Kentucky Labor Cabinet citation involving toilet breaks for the plant’s bottlingline workers. <br /> <br />Under a policy implemented in October, line workers at the Jim Beam Brands Co. plant may use the restroom only during lunch and two other scheduled daily breaks, one before lunch and one after. They also are allowed one unscheduled toilet break per day, and can be disciplined for taking more, starting with a warning and escalating to dismissal after six incidents.</p>
-        
+        <p>Get this crap…<a href="http://www.courier-journal.com/localnews/2002/08/21/ke082102s261927.htm">Daily news from Louisville, Kentucky and Southern Indiana from courier-journal.com</a> The Jim Beam bourbon-making plant in Bullitt County is disputing a Kentucky Labor Cabinet citation involving toilet breaks for the plant’s bottlingline workers.
+<br />
+<br />Under a policy implemented in October, line workers at the Jim Beam Brands Co. plant may use the restroom only during lunch and two other scheduled daily breaks, one before lunch and one after. They also are allowed one unscheduled toilet break per day, and can be disciplined for taking more, starting with a warning and escalating to dismissal after six incidents.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -179,10 +206,11 @@ WshShell.RegWrite _
         <div class="post-content right-col">
         <h2><a href="/2002/08/23/new-pictures-posted-at-kirbyland-net/" rel="bookmark" title="New pictures posted at Kirbyland.net">New pictures posted at Kirbyland.net</a></h2>
 
-        <p>New <a href='http://www.kirbyland.net/photoroom/default.aspx?a=27'>pictures</a> of Melanie and I are online. Most of the pictures are from our trip to Vermont last month.</p>
-        
+        <p>New <a href="http://www.kirbyland.net/photoroom/default.aspx?a=27">pictures</a> of Melanie and I are online.  Most of the pictures are from our trip to Vermont last month.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -199,10 +227,11 @@ WshShell.RegWrite _
         <div class="post-content right-col">
         <h2><a href="/2002/08/23/cvs-at-kirbyland-net/" rel="bookmark" title="CVS at kirbyland.net">CVS at kirbyland.net</a></h2>
 
-        <p>I finally got around to setting up <a href='http://www.cvshome.org'>CVS</a> at home with secured access using <a href='http://www.openssh.org'>OpenSSH</a>. The magic formula was <a href='http://www.cygwin.com'>Cygwin</a>, my favorite open source product of the moment. And best of all I have <a href='http://russ.hn.org/viewcvs/'>ViewCVS</a> running for browser based, read-only access to my CVS <a href='http://www.kirbyland.net/viewcvs/viewcvs.cgi'>repository</a>. WASTEDBoarding.com and Alt.System projects are already in the repository and are available for your viewing pleasure.</p>
-        
+        <p>I finally got around to setting up <a href="http://www.cvshome.org">CVS</a> at home with secured access using <a href="http://www.openssh.org">OpenSSH</a>.  The magic formula was <a href="http://www.cygwin.com">Cygwin</a>, my favorite open source product of the moment.  And best of all I have <a href="http://russ.hn.org/viewcvs/">ViewCVS</a> running for browser based, read-only access to my CVS <a href="http://www.kirbyland.net/viewcvs/viewcvs.cgi">repository</a>.  WASTEDBoarding.com and Alt.System projects are already in the repository and are available for your viewing pleasure.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -219,10 +248,11 @@ WshShell.RegWrite _
         <div class="post-content right-col">
         <h2><a href="/2002/08/21/favorite-feature-of-the-day-installer-class/" rel="bookmark" title="Favorite feature of the day: Installer class">Favorite feature of the day: Installer class</a></h2>
 
-        <p>I know I have been weak on the tech note postings but my geek life has been very busy this month. But for those interested, my favorite .NET feature of the day is Visual Studio.NET’s Installer class. This puppy rocks! With it you can create custom actions in the setup wizard. I have created two .MSI files today that update the application config files with database connection settings provided by the user running the setup wizard. Very nice, I must say</p>
-        
+        <p>I know I have been weak on the tech note postings but my geek life has been very busy this month.  But for those interested, my favorite .NET feature of the day is Visual Studio.NET’s Installer class.  This puppy rocks!  With it you can create custom actions in the setup wizard.  I have created two .MSI files today that update the application config files with database connection settings provided by the user running the setup wizard.  Very nice, I must say…</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -239,10 +269,13 @@ WshShell.RegWrite _
         <div class="post-content right-col">
         <h2><a href="/2002/08/18/back-from-the-cape/" rel="bookmark" title="Back from The Cape">Back from The Cape</a></h2>
 
-        <p>Melanie and I just returned from our first trip to Cape Cod. Rachel and Dana, our wonderful host for the weekend, invited us up for the weekend. We stayed in a cute cottage owned by Dana’s parents. This private community was neat. All the cottages look like miniature houses. We spent Saturday and Sunday out on the beach…Melanie getting more tan and me, well, I stayed white with my SPF 50. The highlight of the weekend was me finally beating Melanie at miniature golf. Yep, it’s true. She was not playing at her typical level and I was in the zone, if you can believe that. <br /> <br />I must say visiting the Cape was very relaxing. And I hope Rachel and Dana invite us up again.</p>
-        
+        <p>Melanie and I just returned from our first trip to Cape Cod.  Rachel and Dana, our wonderful host for the weekend, invited us up for the weekend.  We stayed in a cute cottage owned by Dana’s parents.  This private community was neat.  All the cottages look like miniature houses.  We spent Saturday and Sunday out on the beach…Melanie getting more tan and me, well, I stayed white with my SPF 50.  The highlight of the weekend was me finally beating Melanie at miniature golf.  Yep, it’s true.  She was not playing at her typical level and I was in the zone, if you can believe that.
+<br />
+<br />I must say visiting the Cape was very relaxing.  And I hope Rachel and Dana invite us up again.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -259,10 +292,11 @@ WshShell.RegWrite _
         <div class="post-content right-col">
         <h2><a href="/2002/08/14/thecave-at-home-is-down/" rel="bookmark" title="thecave at home is down">thecave at home is down</a></h2>
 
-        <p>Bummer. My machine at home went down unexpectedly. This means WCAV Radio is off the air for the moment, and WASTEDBoarding.com is not accessible. This sucks too because I was testing my new WSDL Validator against WSDLs stored on that machine.</p>
-        
+        <p>Bummer.  My machine at home went down unexpectedly.  This means WCAV Radio is off the air for the moment, and WASTEDBoarding.com is not accessible.  This sucks too because I was testing my new WSDL Validator against WSDLs stored on that machine.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -273,15 +307,16 @@ WshShell.RegWrite _
 <div class="more_posts">
 	<h2>
         
-        <a href="//page74" >&laquo; Older Entries</a> &nbsp; 
+        <a href="/page74" >&laquo; Older Entries</a> &nbsp;
         
         
             
-                <a href="//page72" >Recent Entries &raquo;</a>
+                <a href="/page72" >Recent Entries &raquo;</a>
             
         
     </h2>
 </div>
+
 
 		</div>
 		

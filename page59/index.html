@@ -61,10 +61,11 @@
         <div class="post-content right-col">
         <h2><a href="/2003/07/10/lame/" rel="bookmark" title="Lame">Lame</a></h2>
 
-        <p>The Robots are <a href='http://www.robotfood.com/'>robotfood.com</a> have named their name movie “Lame” due out in September. Be sure to check out the new teaser video.</p>
-        
+        <p>The Robots are <a href="http://www.robotfood.com/">robotfood.com</a> have named their name movie “Lame” due out in September.  Be sure to check out the new teaser video.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -81,10 +82,11 @@
         <div class="post-content right-col">
         <h2><a href="/2003/07/10/date-set-for-wasted-2004/" rel="bookmark" title="Date set for WASTED 2004">Date set for WASTED 2004</a></h2>
 
-        <p>The date for <a href='http://www.wastedboarding.com/'>WASTED</a> 2004 has been set. January 24, 2004 through February 7, 2004 at Whistler-Blackcomb of course.</p>
-        
+        <p>The date for <a href="http://www.wastedboarding.com/">WASTED</a> 2004 has been set.  January 24, 2004 through February 7, 2004 at Whistler-Blackcomb of course.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -101,7 +103,7 @@
         <div class="post-content right-col">
         <h2><a href="/2003/07/08/field-versus-property/" rel="bookmark" title="Field versus Property">Field versus Property</a></h2>
 
-        <p>.NET class structures defined in the CLR can have public fields and public properties among other things. On the surface, a public field and a public property appear to be the same. The .NET Framework Glossary even says a property “is like a public field.” However the two are not same. The most obvious difference is in the declaration of the two. For example, consider the follow class:</p>
+        <p>.NET class structures defined in the CLR can have public fields and public properties among other things.  On the surface, a public field and a public property appear to be the same.  The .NET Framework Glossary even says a property “is like a public field.”  However the two are not same. The most obvious difference is in the declaration of the two. For example, consider the follow class:</p>
 
 <pre><code>public class Person
 {
@@ -109,26 +111,30 @@
 
     private string _email;
     public string Email{ get{ return _email; } set{ _email = value; } }
-}</code></pre>
+}
+</code></pre>
 
-<p>In the code snippet above, Name is a public field while Email is a public property. However if you were to use an instance of the class Person, you would not be able to tell what is defined as a field versus property. The two appear to be the same. Example:</p>
+<p>In the code snippet above, Name is a public field while Email is a public property.  However if you were to use an instance of the class Person, you would not be able to tell what is defined as a field versus property. The two appear to be the same.  Example:</p>
 
 <pre><code>Person p = new Person();
-p.Name = &quot;Kirby&quot;;
-p.Email = &quot;kirby@thecave.com&quot;;</code></pre>
+p.Name = "Kirby";
+p.Email = "kirby@thecave.com";
+</code></pre>
 
-<p>A property has many advantages over a field and I personally rarely, if ever, use public fields. And today I learned yet another reason for using a public property over a public field.</p>
+<p>A property has many advantages over a field and I personally rarely, if ever, use public fields.  And today I learned yet another reason for using a public property over a public field.</p>
 
-<p>Some functionality built into the .NET Framework relies on reflection to perform specific tasks. For example, within ASP.NET you can use DataBinder.Eval() to reference properties of a class instance stored in the Container.DataItem. Example:</p>
+<p>Some functionality built into the .NET Framework relies on reflection to perform specific tasks.  For example, within ASP.NET you can use DataBinder.Eval() to reference properties of a class instance stored in the Container.DataItem.  Example:</p>
 
-<pre><code>&lt;%# DataBinder.Eval( Container.DataItem, &quot;Name&quot; ) %&gt;</code></pre>
+<pre><code>&lt;%# DataBinder.Eval( Container.DataItem, "Name" ) %&gt;
+</code></pre>
 
-<p>Using the Person class defined above, the DataBinder.Eval() call to retrieve the value of Name will fail. The exception message will state that the property Name is not defined in the class Person, which is true. Name is defined as a field not a property. Another area where the difference between a property and a field is realized is within custom components that have design time properties. Visual Studio.NET’s Designer expects properties to be defined as properties and not fields.</p>
+<p>Using the Person class defined above, the DataBinder.Eval() call to retrieve the value of Name will fail.  The exception message will state that the property Name is not defined in the class Person, which is true.  Name is defined as a field not a property. Another area where the difference between a property and a field is realized is within custom components that have design time properties.  Visual Studio.NET’s Designer expects properties to be defined as properties and not fields.</p>
 
-<p>So as you can see a field is in fact different from a property. My preference is to always use property declarations, but if you need to use a field declaration, beware of the possible limitation.</p>
-        
+<p>So as you can see a field is in fact different from a property.  My preference is to always use property declarations, but if you need to use a field declaration, beware of the possible limitation.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -145,10 +151,11 @@ p.Email = &quot;kirby@thecave.com&quot;;</code></pre>
         <div class="post-content right-col">
         <h2><a href="/2003/07/06/photoroom-v1-3-released/" rel="bookmark" title="PhotoRoom v1.3 Released">PhotoRoom v1.3 Released</a></h2>
 
-        <p><a href="http://photoroom.sourceforge.net/">PhotoRoom</a> v1.3 has finally been released and is available for <a href="http://photoroom.sourceforge.net/download.html">download</a>. I hope to have the <a href="gallery.aspx">gallery</a>&lt;/a&gt; @thecave.com updated with the latest version within the next few days.</p>
-        
+        <p><a href="http://photoroom.sourceforge.net/">PhotoRoom</a> v1.3 has finally been released and is available for <a href="http://photoroom.sourceforge.net/download.html">download</a>.  I hope to have the <a href="gallery.aspx">gallery</a>&lt;/a&gt; @thecave.com updated with the latest version within the next few days.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -165,10 +172,11 @@ p.Email = &quot;kirby@thecave.com&quot;;</code></pre>
         <div class="post-content right-col">
         <h2><a href="/2003/07/06/nyc-4th-of-july-pictures-online/" rel="bookmark" title="NYC 4th of July Pictures Online">NYC 4th of July Pictures Online</a></h2>
 
-        <p>Our pictures from this 4th of July weekend in NYC have just been <a href='gallery.aspx'>posted</a>. Enjoy.<br /><br /></p>
-        
+        <p>Our pictures from this 4th of July weekend in NYC have just been <a href="gallery.aspx">posted</a>.  Enjoy.<br /><br /></p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -185,10 +193,13 @@ p.Email = &quot;kirby@thecave.com&quot;;</code></pre>
         <div class="post-content right-col">
         <h2><a href="/2003/07/03/catch-up-posting/" rel="bookmark" title="Catch up posting">Catch up posting</a></h2>
 
-        <p>I know I have been slow to post tech talk on this blog lately. The ironic thing is that I have been doing more .NET work over the last couple of months than I have done over the last year. I even completed my MCSD for .NET last week. Although I took all the .NET exams last year I needed to pass my one elective, which for me was the SQL Server exam. I previously took the 4.2 and 7.0 SQL Server exams and I was worried about the 2000. But it turned out to be the easiest of the three, the most developer focused, and I was able to pass by not studying, playing Xbox, and drinking beer the next better. Go figure. <br /> <br />Hopefully I will get back into posting on this blog soon. My customer work is very exciting and gives me lots to talk about. For example, we have extended WSDL to support our own binding, written tools for generating a proxy class to our own services, and are building out a framework by which developers do not need to write code for middle-tier component that most retrieve information from various backend resources. Exciting stuff.</p>
-        
+        <p>I know I have been slow to post tech talk on this blog lately.  The ironic thing is that I have been doing more .NET work over the last couple of months than I have done over the last year.  I even completed my MCSD for .NET last week.  Although I took all the .NET exams last year I needed to pass my one elective, which for me was the SQL Server exam.  I previously took the 4.2 and 7.0 SQL Server exams and I was worried about the 2000.  But it turned out to be the easiest of the three, the most developer focused, and I was able to pass by not studying, playing Xbox, and drinking beer the next better.  Go figure.
+<br />
+<br />Hopefully I will get back into posting on this blog soon.  My customer work is very exciting and gives me lots to talk about.  For example, we have extended WSDL to support our own binding, written tools for generating a proxy class to our own services, and are building out a framework by which developers do not need to write code for middle-tier component that most retrieve information from various backend resources.  Exciting stuff.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -205,10 +216,13 @@ p.Email = &quot;kirby@thecave.com&quot;;</code></pre>
         <div class="post-content right-col">
         <h2><a href="/2003/06/29/nyc-gay-pride/" rel="bookmark" title="NYC Gay Pride">NYC Gay Pride</a></h2>
 
-        <p>Melanie and I with friends enjoyed our fire escape view of this year’s NYC Gay Pride March. It was one of the best parades we even seen. Lots of excitement, good music from float to float, but best of all, our first row seats on the fire escape. It was the best way to see a parade. <br /> <br />Pictures in the <a href='gallery.aspx'>gallery</a>.</p>
-        
+        <p>Melanie and I with friends enjoyed our fire escape view of this year’s NYC Gay Pride March.  It was one of the best parades we even seen.  Lots of excitement, good music from float to float, but best of all, our first row seats on the fire escape.  It was the best way to see a parade.
+<br />
+<br />Pictures in the <a href="gallery.aspx">gallery</a>.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -226,9 +240,10 @@ p.Email = &quot;kirby@thecave.com&quot;;</code></pre>
         <h2><a href="/2003/06/26/transworld-snowboarding-com-snowbiz-jake-burton-chases-winter-across-six-continents/" rel="bookmark" title="Transworld Snowboarding.com | Snowbiz | Jake Burton Chases Winter Across Six Continents">Transworld Snowboarding.com | Snowbiz | Jake Burton Chases Winter Across Six Continents</a></h2>
 
         <p><a href="http://www.transworldsnowboarding.com/snow/snowbiz/article/0,13009,460975,00.html">Jake Burton Chases Winter Across Six Continents</a>: “Burlington, VT - Most of us can only dream of setting off on a world tour. This year, Jake Burton and his family will be living the dream, embarking on a 10-month trip to snowboard all over the globe, covering six continents and following winter the whole way.”</p>
-        
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -245,10 +260,11 @@ p.Email = &quot;kirby@thecave.com&quot;;</code></pre>
         <div class="post-content right-col">
         <h2><a href="/2003/06/26/thecave-com-rss-feed/" rel="bookmark" title="thecave.com RSS feed">thecave.com RSS feed</a></h2>
 
-        <p>Those using thecave.com RSS feed will notice that I am using Blogger’s new full feed feature. Unfortunately it is setting the resource link incorrectly for my site. Guess I might need to generate the RSS file myself to have complete control. Until I do, the link will be invalid. Sorry Charlie.</p>
-        
+        <p>Those using thecave.com RSS feed will notice that I am using Blogger’s new full feed feature.  Unfortunately it is setting the resource link incorrectly for my site.  Guess I might need to generate the RSS file myself to have complete control.  Until I do, the link will be invalid.  Sorry Charlie.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -265,10 +281,11 @@ p.Email = &quot;kirby@thecave.com&quot;;</code></pre>
         <div class="post-content right-col">
         <h2><a href="/2003/06/22/new-photos/" rel="bookmark" title="New photos">New photos</a></h2>
 
-        <p>New photos are in the <a href='gallery.aspx'>gallery</a>. Photos include a cookout at Chris and Sarah’s, Adina and Justin’s wedding, and our recent Garden City, SC trip. Enjoy.</p>
-        
+        <p>New photos are in the <a href="gallery.aspx">gallery</a>.  Photos include a cookout at Chris and Sarah’s, Adina and Justin’s wedding, and our recent Garden City, SC trip.  Enjoy.</p>
+
+
         <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-        
+
         </div>
     </div>
     <!--- Post Ends -->
@@ -279,15 +296,16 @@ p.Email = &quot;kirby@thecave.com&quot;;</code></pre>
 <div class="more_posts">
 	<h2>
         
-        <a href="//page60" >&laquo; Older Entries</a> &nbsp; 
+        <a href="/page60" >&laquo; Older Entries</a> &nbsp;
         
         
             
-                <a href="//page58" >Recent Entries &raquo;</a>
+                <a href="/page58" >Recent Entries &raquo;</a>
             
         
     </h2>
 </div>
+
 
 		</div>
 		
