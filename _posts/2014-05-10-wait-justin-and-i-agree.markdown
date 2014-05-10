@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Wait, Justin Agrees with Me?'
+title: 'Wait, Justin and I Agree?'
 categories:
     - ios
     - programming
@@ -19,7 +19,7 @@ Over the years my style has changed and evolved to a point where I break down co
 
 Does this mean you should abandon IB as well? Certainly not. Does this mean I hate IB and I will never use it again? Most certainly not. When a task I need to accomplish is quicker and easier for me to do in IB, then I will most certainly use IB. Just like Justin will sometimes write layout constraints in code, I will sometimes use IB to put together a view.
 
-There isn't just one way to solve a problem, and programmers shouldn't do something just because one person says this is the way it should be done. Programmers should explore all the different ways to accomplish a task, and decide what works best for them and what tools and approaches make them the best, most productive programmer they can be. And don't get hung up on doing a task the same way each time. Challenge yourself by find new ways of accomplishing the same task. In doing this, you might find you agree much more with the person that you thought you disagreed with on the onset.
+Different situations call for different solutions. There isn't just one way to solve a problem, and programmers shouldn't do something just because one person says this is the way it should be done. Programmers should explore the different ways to accomplish a task, and decide what works best for them and what tools and approaches make them the best, most productive programmer they can be. And don't get hung up on doing a task the same way each time. Challenge yourself by find new ways of accomplishing the same task. In doing this, you might find you agree much more with the person that you thought you disagreed with on the onset.
 
 [response]: http://carpeaqua.com/2014/05/09/why-you-should-use-interface-builder-with-auto-layout/
 [noib]: http://www.thecave.com/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout/
