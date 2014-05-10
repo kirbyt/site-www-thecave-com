@@ -5,7 +5,7 @@ categories:
     - ios
     - programming
 ---
-My friend Justin wrote a post explaining why he thinks you should [use Interface Builder with Auto Layout][response]. It was in response to my post about [why I don't use Interface Builder][noib] these days thanks to Auto Layout. Justin's post is good with plenty of valid points. Justin and I also agree iOS and Mac developers should be using Auto Layout. But he said something that got me wondering...does Justin actually agree with me more than he realizes. Regarding writing layout constraints in code, Justin says:
+My friend Justin wrote a post explaining why he thinks you should [use Interface Builder with Auto Layout][response]. It was in response to my post about [why I don't use Interface Builder][noib] these days thanks to Auto Layout. Justin's post is good with plenty of valid points. Justin and I also agree iOS and Mac developers should be using Auto Layout. But he said something that got me wondering...does Justin agree with me more than he realizes. Regarding writing layout constraints in code, Justin says:
 
 > It’s totally possible to do this, and there are situations where I do it as well. Small views with a few basic constraints are usually quicker and easier to write without a Xib. Insanely complex views such as the TED video player I wrote and maintain are also too heavy for a straight Xib implementation.
 
