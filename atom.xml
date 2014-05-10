@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Ramblings from a crotchety old man]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2014-05-08T20:03:40-04:00</updated>
+  <updated>2014-05-10T10:21:30-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,35 @@
   </author>
   <rights>Copyright (c) 2003-2014 White Peak Software Inc</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[Wait, Justin Agrees with Me?]]></title>
+    <link href="http://www.thecave.com/2014/05/10/wait-justin-agrees-with-me/"/>
+    <published>2014-05-10T00:00:00-04:00</published>
+    <updated>2014-05-10T00:00:00-04:00</updated>
+    <id>http://www.thecave.com/2014/05/10/wait-justin-agrees-with-me</id>
+    <content type="html"><![CDATA[<p>My friend Justin wrote a post explaining why he thinks you should <a href="http://carpeaqua.com/2014/05/09/why-you-should-use-interface-builder-with-auto-layout/">use Interface Builder with Auto Layout</a>. It was in response to my post about <a href="http://www.thecave.com/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout/">why I don’t use Interface Builder</a> these days thanks to Auto Layout. Justin’s post is good with plenty of valid points. Justin and I also agree iOS and Mac developers should be using Auto Layout. But he said something that got me wondering…does Justin actually agree with me more than he realizes. Regarding writing layout constraints in code, Justin says:</p>
+
+<blockquote>
+  <p>It’s totally possible to do this, and there are situations where I do it as well. Small views with a few basic constraints are usually quicker and easier to write without a Xib. Insanely complex views such as the TED video player I wrote and maintain are also too heavy for a straight Xib implementation.</p>
+</blockquote>
+
+<p>I found that almost all the apps I have worked on in recent years consists of views that fall into the category of either being small views or complex views. And even “insanely complex views” can likely be broken down into smaller views using the <a href="http://stackoverflow.com/a/13581816">composite view pattern</a>. In other words, in my experience many views can be broken down into smaller, more manageable views that end up needing only a few basic constraints. And even Justin agrees that “small views with a few basic constraints are usually quicker and easier to write without a Xib.” So it’s my style, my approach to solving UI problems that makes it quicker and easier for me to write UI with layout constraints in code rather than using IB.</p>
+
+<p>Does this mean I’m right and Justin is wrong? No. Does it mean Justin’s right and I’m wrong? No.</p>
+
+<p>In programming there are multiple ways to accomplish a task, and one approach isn’t always necessarily better or more right than another approach. The approach a programmer takes to solve a problem is often based on past experience and the solution often reflects the personal style of the programmer.</p>
+
+<p>Over the years my style has changed and evolved to a point where I break down complex problems into smaller, more manageable tasks, and I use this style, or approach if you will, when implementing a UI. These days view controller containment and composite views work well for me. I like to write <a href="http://www.objc.io/issue-1/lighter-view-controllers.html">light weight view controllers</a>, and I use other objects to serve as the data source and delegate to my view controllers. And more recently I have found I don’t need to use Interface Builder to be a productive programmer.</p>
+
+<p>Does this mean you should abandon IB as well? Certainly not. Does this mean I hate IB and I will never use it again? Most certainly not. When a task I need to accomplish is quicker and easier for me to do in IB, then I will most certainly use IB. Just like Justin will sometimes write layout constraints in code, I will sometimes use IB to put together a view.</p>
+
+<p>If you asked me a year ago should you use IB when designing your UIs, my answer would have been a resounding yes. Even today I think most programmers are more comfortable and more productive using tools such as IB, and those programmers should continue using IB. But this doesn’t mean you shouldn’t explore other options, and it doesn’t mean your approach and style to solving a problem is wrong either.</p>
+
+<p>Programmers shouldn’t do something just because one person says this is the way it should be done. Programmers should explore all the different ways to accomplish a task, and decide what works best for them and what tools and approaches make them the best, most productive programmer they can be. And don’t get hung up on doing a task the same way each time. Challenge yourself by find new ways of accomplishing the same task. In doing this, you might find you agree much more with the person that you thought you disagreed with on the onset.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Still Enjoying the Snow]]></title>
@@ -493,19 +522,6 @@
 <p>And as for canceling my trip to San Francisco, as well as a visit to Memphis, I decided we need to hold on to as much cash as possible. The next few months are going to be expensive, and how expensive will depend on how quickly we can rent out our house. It’s great that I work for myself, but the indie income is itself a roller coaster ride. And while I’m bummed that I will not be in SF for WWDC, I’m not bummed about getting to snowboard almost daily this upcoming winter season.</p>
 
 <p>So that’s my big announcement and the reason plans for this summer have changed. We’re moving to a ski town to make living the dream even better.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Kayaking the Ipswich River]]></title>
-    <link href="http://www.thecave.com/2013/06/02/kayaking-the-ipswitch-river/"/>
-    <published>2013-06-02T00:00:00-04:00</published>
-    <updated>2013-06-02T00:00:00-04:00</updated>
-    <id>http://www.thecave.com/2013/06/02/kayaking-the-ipswitch-river</id>
-    <content type="html"><![CDATA[<p><a href="http://photos.thecave.com/Sports/Ipswich-River/29760430_PwD6W4"><img src="http://photos.thecave.com/Sports/Ipswitch-River/i-BBjM2Nm/0/Th/IMG_1313-Th.jpg" alt="" border="0" class="alignleft" /></a> Yesterday I did a 16 mile paddle on the Ipswich River with my buddy Shawn. It was the perfect way to spend a Saturday morning. We put in at Thunder Bridge, made our way east through the Ipswich Wildlife Sanctuary, and finally stopped in the town of Ipswich. </p>
-
-<p>We keep a fast pace so I didn’t get a chance to take a lot of pictures, but I need sneak in a few <a href="http://photos.thecave.com/Sports/Ipswich-River/29760430_PwD6W4">shots</a>.</p>
 
 ]]></content>
   </entry>

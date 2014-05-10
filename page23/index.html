@@ -54,6 +54,41 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">May<span class="year">2006</span></span><span class="day">30</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2006/05/30/generating-large-number-of-temporary-user-accounts/" rel="bookmark" title="Generating Large Number of Temporary User Accounts">Generating Large Number of Temporary User Accounts</a></h2>
+
+        <p>A customer recently asked White Peak Software to <a href="http://www.whitepeaksoftware.com/">design and implement custom software</a> for generating large batches of temporary user accounts.  The purpose of these temporary user accounts is to market a subscription based web site in much the same way AOL used to market its services.  Here’s how it works.</p>
+
+<p>A large number of temporary user accounts, say 100,000 to 1,000,000 accounts per batch, would be generated and handed out to potential subscribers.  When the credentials to a temporary account are first used the user is guided through a set of web pages that setup a real user account and trial subscription.  Different business models are supported for the trial subscription such as 30-day trial or usage count.</p>
+
+<p>As I was designing the system my first concern was storing millions of records in the database to represent temporary user accounts.  I was worried that it would take too much time to generate batches of 1 million user accounts and store them in the database, and I didn’t like the idea of storing this much data when initially the majority of the temporary user accounts will - most likely - never be used.  So I set off to find a way, or an algorithm if you will, that would allow the system to generate a unique set of credentials for a temporary user account that did not require storage.  In other words, I needed an algorithm that is used to generate the credentials and can be re-applied during authentication to determine of validity of the credentials.  This felt similar to public private key encryption, which ultimately led me to the final design.</p>
+
+<p>In the final design a private key is used that is known only to the system.  A unique private key is used for every batch of accounts generated where each batch represents a marketing campaign.  A random number generator (RNG) is used to generate a username unique to the batch.  The combination of the private key and the username is used to generate a <a href="http://en.wikipedia.org/wiki/Md5">MD5</a> token and a random password is generated based on the bytes that makeup the MD5 token.</p>
+
+<p>The beauty of this design is that the same algorithm can be used to authenticate the credentials for the temporary account.  An individual comes to the web site and uses the temporary account credentials to sign in.  The username is combined with the private key of every active marketing campaign to create the MD5 token, which is used to generate the password.  The generated password is compared to the password entered by the user.  If the passwords match, the credentials are authenticated otherwise the credentials are invalid.</p>
+
+<p><a href="http://www.borland.com/delphi">Delphi</a> was used for the implementation of this design.  A Win32 COM component was implemented to provide authentication of the temporary credentials from the Classic ASP application.  A .NET version was also implemented [using Delphi.NET] but is not used at this time.</p>
+
+<p>To generate the large number of users, a Delphi Win32 desktop application was written.  This proved to be a fast way to generate batches.  The program can generate a batch of 1 million accounts in under 2 and half minutes on a 2 year old laptop (Pentium M 1.6GHz with 512MB of RAM).  And the batch can be saved to an XML or CSV file.</p>
+
+<p>The customer is extremely happy with the implementation, and I’m proud of the end result.  The only issue I have with the design is that during authentication the username is checked against each active marketing campaign.  This will cause a performance problem in a scenario with a large number of active campaigns (i.e., 100,000 or more), but this scenario is unrealistic for the customer.  It is unlikely that the number of active campaigns will ever exceeded 100 so the issue is not really an issue.</p>
+
+
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">May<span class="year">2006</span></span><span class="day">26</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -240,33 +275,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">May<span class="year">2006</span></span><span class="day">05</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2006/05/05/dbgo-and-delphi/" rel="bookmark" title="dbGo and Delphi">dbGo and Delphi</a></h2>
-
-        <p>For years I believed the Professional Edition of Delphi did not provide any database access to SQL Server.  I assumed if you wanted db access you would need to import the type library for ADO included in MDAC.  But raw COM access to ADO is sometimes a pain (think BSTR and SafeArray).  So 15 minutes of googling and reading the BDS help file I discovered a gem called dbGo.  From the help file, “The dbGo components provide data access through the ADO framework.”  Go figure, or should I say “dbGo figure”?  [Geek humor, haha]</p>
-
-<p>So my question is what advantage, if any, does the Enterprise and Architect editions of BDS provide for a SQL Server database developer?  I’m sure there are some advantages, most likely designed for the corporate developer and or enterprise environment.  But for my needs it looks like dbGo and Delphi Professional will work nicely.</p>
-
-<p>I need to verify that I can use dbGo to access SQL Server 2005 but from what I read it looks like dbGo is nothing more than a wrapper to ADO.  And ADO can definitely talk to SQL Server.</p>
-
-<p><strong>Update:</strong> I have no problems interacting with SQL Server 2005 using dbGo and the Professional edition of Delphi.  This opens up a whole new world for me.</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -331,13 +339,13 @@
 <li class='category'><a href='/category/general/'>general (8)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
 <li class='category'><a href='/category/humor/'>humor (1)</a></li>
-<li class='category'><a href='/category/ios/'>ios (2)</a></li>
+<li class='category'><a href='/category/ios/'>ios (3)</a></li>
 <li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
 <li class='category'><a href='/category/long-trail/'>long-trail (2)</a></li>
 <li class='category'><a href='/category/moving/'>moving (1)</a></li>
 <li class='category'><a href='/category/opinion/'>opinion (1)</a></li>
 <li class='category'><a href='/category/pictures/'>pictures (8)</a></li>
-<li class='category'><a href='/category/programming/'>programming (1)</a></li>
+<li class='category'><a href='/category/programming/'>programming (2)</a></li>
 <li class='category'><a href='/category/random/'>random (4)</a></li>
 <li class='category'><a href='/category/rant/'>rant (1)</a></li>
 <li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
@@ -379,6 +387,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2014/05/10/wait-justin-agrees-with-me/" title="Wait, Justin Agrees with Me?">Wait, Justin Agrees with Me?</a></li>
+                
                   <li><a href="/2014/05/08/still-enjoying-the-snow/" title="Still Enjoying the Snow">Still Enjoying the Snow</a></li>
                 
                   <li><a href="/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout/" title="I Stopped Using NIBs Thanks to Auto Layout">I Stopped Using NIBs Thanks to Auto Layout</a></li>
@@ -386,8 +396,6 @@
                   <li><a href="/2014/04/24/wtf-ruby-gems/" title="WTF Ruby Gems">WTF Ruby Gems</a></li>
                 
                   <li><a href="/2014/04/24/family-influence/" title="Family Influence">Family Influence</a></li>
-                
-                  <li><a href="/2014/04/08/still-no-regrets/" title="Still No Regrets">Still No Regrets</a></li>
                 
             </ul>
 		</div>

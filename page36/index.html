@@ -54,6 +54,27 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jun<span class="year">2005</span></span><span class="day">24</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2005/06/24/an-all-nighter/" rel="bookmark" title="An All Nighter">An All Nighter</a></h2>
+
+        <p>I decided last night to make some enhancements to blog engine I wrote for this web site.  That was around 7:30 pm.  At 5:30 am I decided it was time to go to bed.  I did roll out the changes but there’s more work to be done.  And I know there are some problems too.  For example <a href="http://www.melanieandkirby.com/">melanieandkirby.com</a> is displaying the wrong blog.<br /><br />The most notable change is the new <a href="http://en.wikipedia.org/wiki/Permlink">permlink</a> for my blog entries.  The old permlink, which are still valid, used a blog item ID as part of the query string.  While functional it wasn’t very descriptive and not well liked by search engines like Goggle.<br /><br />The new permlink uses a better structure consisting of the posting date and title.  For example, the permlink for my last posting is <a href="http://www.thecave.com/archive/2005/06/23/office_pranks.aspx">http://www.thecave.com/archive/2005/06/23/office_pranks.aspx</a>.  As you can see the link includes the publish date followed by the title of the post.  For older blog items that do not have a title the blog item id is used.<br /><br />The other notable change is the blog item page itself, which is a new feature.  Before you could only see the blog item on a page listing other items from that month.  Now the blog item displays on its own page with the comments below.  At last you can see both the post and its comments from the same page.  This is a feature I have wanted implemented for a long time.<br /><br />I still need to migrate the archives to the new permlink structure.  For example, http://www.thecave.com/archive/2005/06/ should display all the blog items for the month of June 2005.  Also I discovered that the links in the rss file are invalid, which will be fixed soon.<br /><br />So why did I make the change?  Simple, I want to make the site more appealing to search engines and hopefully increase my Google ranking.  The blog item is now optimized by the title, which will make it easier to find specific blog items through Google and other search engines.  There still many more things that need to happen to make the pages more appealing to search engines but this is a start.<br /><br />One side note, all previous permlinks are still valid.  As a matter of fact, the data store containing the blog items remains unchanged.  I wrote an HttpHandler to map the permlinks to the correct page content.  This mapping allows the site to support both the old and new permlinks.</p>
+
+
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Jun<span class="year">2005</span></span><span class="day">23</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -238,27 +259,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2005</span></span><span class="day">09</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2005/06/09/sending-email-from-other-networks/" rel="bookmark" title="Sending Email from Other Networks">Sending Email from Other Networks</a></h2>
-
-        <p>I am preparing the first beta release of a new application that is used for diagnosing problems with SMTP.  The program allows the user to test account settings against an SMTP server by sending a test message.<br /><br />I have been testing the program from various locations including the hotel here in Atlanta.  I was surprised to see that the network here redirects SMTP requests to its own SMTP server which relays the message to the appropriate destination.  No wonder laptop users have problems with email.  The experience behind the scenes can be different based on the network and the user may never know.<br /><br /><a href="/images/blogimages/smtpdiagnosticsnapshot01.JPG"><img src="/images/blogimages/smtpdiagnosticsnapshot01.JPG" border="0" width="380" height="331" /></a><br />Click image to enlarge.</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -323,13 +323,13 @@
 <li class='category'><a href='/category/general/'>general (8)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
 <li class='category'><a href='/category/humor/'>humor (1)</a></li>
-<li class='category'><a href='/category/ios/'>ios (2)</a></li>
+<li class='category'><a href='/category/ios/'>ios (3)</a></li>
 <li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
 <li class='category'><a href='/category/long-trail/'>long-trail (2)</a></li>
 <li class='category'><a href='/category/moving/'>moving (1)</a></li>
 <li class='category'><a href='/category/opinion/'>opinion (1)</a></li>
 <li class='category'><a href='/category/pictures/'>pictures (8)</a></li>
-<li class='category'><a href='/category/programming/'>programming (1)</a></li>
+<li class='category'><a href='/category/programming/'>programming (2)</a></li>
 <li class='category'><a href='/category/random/'>random (4)</a></li>
 <li class='category'><a href='/category/rant/'>rant (1)</a></li>
 <li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
@@ -371,6 +371,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2014/05/10/wait-justin-agrees-with-me/" title="Wait, Justin Agrees with Me?">Wait, Justin Agrees with Me?</a></li>
+                
                   <li><a href="/2014/05/08/still-enjoying-the-snow/" title="Still Enjoying the Snow">Still Enjoying the Snow</a></li>
                 
                   <li><a href="/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout/" title="I Stopped Using NIBs Thanks to Auto Layout">I Stopped Using NIBs Thanks to Auto Layout</a></li>
@@ -378,8 +380,6 @@
                   <li><a href="/2014/04/24/wtf-ruby-gems/" title="WTF Ruby Gems">WTF Ruby Gems</a></li>
                 
                   <li><a href="/2014/04/24/family-influence/" title="Family Influence">Family Influence</a></li>
-                
-                  <li><a href="/2014/04/08/still-no-regrets/" title="Still No Regrets">Still No Regrets</a></li>
                 
             </ul>
 		</div>
