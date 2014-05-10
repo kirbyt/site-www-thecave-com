@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | thecave | Ramblings from a crotchety old man]]></title>
   <link href="http://www.thecave.com/category/programming/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2014-05-10T10:21:30-04:00</updated>
+  <updated>2014-05-10T10:27:26-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -17,7 +17,7 @@
     <link href="http://www.thecave.com/2014/05/10/wait-justin-agrees-with-me/"/>
     <updated>2014-05-10T00:00:00-04:00</updated>
     <id>http://www.thecave.com/2014/05/10/wait-justin-agrees-with-me</id>
-    <content type="html"><![CDATA[<p>My friend Justin wrote a post explaining why he thinks you should <a href="http://carpeaqua.com/2014/05/09/why-you-should-use-interface-builder-with-auto-layout/">use Interface Builder with Auto Layout</a>. It was in response to my post about <a href="http://www.thecave.com/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout/">why I don’t use Interface Builder</a> these days thanks to Auto Layout. Justin’s post is good with plenty of valid points. Justin and I also agree iOS and Mac developers should be using Auto Layout. But he said something that got me wondering…does Justin actually agree with me more than he realizes. Regarding writing layout constraints in code, Justin says:</p>
+    <content type="html"><![CDATA[<p>My friend Justin wrote a post explaining why he thinks you should <a href="http://carpeaqua.com/2014/05/09/why-you-should-use-interface-builder-with-auto-layout/">use Interface Builder with Auto Layout</a>. It was in response to my post about <a href="http://www.thecave.com/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout/">why I don’t use Interface Builder</a> these days thanks to Auto Layout. Justin’s post is good with plenty of valid points. Justin and I also agree iOS and Mac developers should be using Auto Layout. But he said something that got me wondering…does Justin agree with me more than he realizes. Regarding writing layout constraints in code, Justin says:</p>
 
 <blockquote>
   <p>It’s totally possible to do this, and there are situations where I do it as well. Small views with a few basic constraints are usually quicker and easier to write without a Xib. Insanely complex views such as the TED video player I wrote and maintain are also too heavy for a straight Xib implementation.</p>
