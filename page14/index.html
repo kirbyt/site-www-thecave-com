@@ -59,6 +59,27 @@
         </div>
 
         <div class="post-content right-col">
+        <h2><a href="/2007/04/29/smtp-diagnostics-1-7-released/" rel="bookmark" title="SMTP Diagnostics 1.7 Released">SMTP Diagnostics 1.7 Released</a></h2>
+
+        <p><a href="http://www.smtpdiagnostics.com/">SMTP Diagnostics 1.7</a> has been released and is available for <a href="http://www.smtpdiagnostics.com/">download</a>.  Read <a href="http://www.whitepeaksoftware.com/forums/Topic109-4-1.aspx">here</a> for more information.</p>
+
+
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Apr<span class="year">2007</span></span><span class="day">29</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
         <h2><a href="/2007/04/29/my-8-week-goals/" rel="bookmark" title="My 8 Week Goals">My 8 Week Goals</a></h2>
 
         <p>I have talked about <a href="http://www.whitepeaksoftware.com/">White Peak Software</a> being a product company for the last couple of years, but the transition from services to products has been challenging.  I’m working on a new email program call Vertigo but progress has been slow for various reasons.  I learned trying to get a product like Vertigo out the door at single person software company is a huge challenge especially when you rely on services work to bootstrap any R&amp;D; work.  <br /><br />What I need is a different approach, so 8 weeks ago I came up with a set of short term goals to start building momentum towards being a product company.  Tomorrow is the last day of the 8 weeks and I’m happy to say I reached my goals as of today.  It hasn’t been easy especially over the last couple of weeks which has had me working 14 hour days, but momentum is finally starting to build.<br /><br />Over the last 8 weeks I released an update to <a href="http://www.smtpdiagnostics.com/">SMTP Diagnostics</a> and published a new product called <a href="http://www.killink.com/">Killink CSV</a>.  I have also made numerous improvements to the <a href="http://www.whitepeaksoftware.com/">White Peak Software</a> web sites including a fully integrated <a href="http://www.whitepeaksoftware.com/buynow.aspx">store front</a>.  More work is needed but things are off to a good start.<br /><br />My next challenge is to sustain and build on top of the momentum started over the past 8 weeks.  This means a new set of goals for the next 8 weeks.  The new goals include:<br /><br />* At least 2 product releases<br />* Sell at least 20 units of my products<br /><br />Key to the next 8 weeks is selling 20 units.  This means not only getting updates to <a href="http://www.killinnk.com/">Killink CSV</a> out the door but making improvements on the marketing side.  Currently, my plans include a press release campaign and Google AdWords.  I also plan to do a better job monitoring conversion rates and web site traffic, something I have ignored over the last year and a half.<br /><br />My motivation level is high and will only get higher as sales increase.  But even with a high level of motivation I must do a better job managing my time during the next 8 weeks.  I’ve been working 14 days recently and it’s starting to wear on me…and on my wife too.</p>
@@ -238,27 +259,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Apr<span class="year">2007</span></span><span class="day">10</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2007/04/10/support-large-files-in-killink/" rel="bookmark" title="Support Large Files in Killink">Support Large Files in Killink</a></h2>
-
-        <p>The first version of <a href="http://www.killink.com/">Killink</a> is feature complete, but there was one thing that was brothering me, large file support.  Opening, printing, and saving a large file in Killink is a rather slow process so I’ve been working on improving these 3 areas.<br /><br />The first area I worked on was opening a large file, which is what I will talk about today.  After profiling the application I found the biggest bottleneck was populating the spreadsheet with display data.  This was an easy fix that involved “freezing” display while the spreadsheet is loaded with data.  This change resulted in a huge performance increase.  The test file I used took minutes to load prior to the change and only 2 seconds after the change.  But then Killink took another perform hit.<br /><br />A beta tester reported the bug that embedded new line characters were not properly handled.  I modified the CSV parser to check each byte of data as it was read from the hard drive.  However this is a very inefficient approach.  A better approach is to buffer each read.  In other words, instead of reading a single byte from the hard drive it is better to read a chuck of bytes.  The chuck can be any size such as 65K chucks or 1MB chucks.  <br /><br />Buffering the file read process gave Killink the performance boost it needed to open large files.  It’s not as fast as I would like it but it’s getting closer.<br /><br />The performance improved version of Killink should be ready for <a href="http://www.killink.com/download.aspx">download</a> in a couple of days.</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -344,7 +344,7 @@
 <li class='category'><a href='/category/trip/'>trip (4)</a></li>
 <li class='category'><a href='/category/trips/'>trips (1)</a></li>
 <li class='category'><a href='/category/videos/'>videos (2)</a></li>
-<li class='category'><a href='/category/work/'>work (2)</a></li>
+<li class='category'><a href='/category/work/'>work (3)</a></li>
 
     </ul>
 </div>
@@ -372,6 +372,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2014/08/27/i-am-not-the-android-expert-you-seek/" title="I Am Not The Android Expert You Seek">I Am Not The Android Expert You Seek</a></li>
+                
                   <li><a href="/2014/06/20/enjoy-less-and-love-more/" title="Enjoy Less and Love More">Enjoy Less and Love More</a></li>
                 
                   <li><a href="/2014/05/10/wait-justin-and-i-agree/" title="Wait, Justin and I Agree?">Wait, Justin and I Agree?</a></li>
@@ -379,8 +381,6 @@
                   <li><a href="/2014/05/08/still-enjoying-the-snow/" title="Still Enjoying the Snow">Still Enjoying the Snow</a></li>
                 
                   <li><a href="/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout/" title="I Stopped Using NIBs Thanks to Auto Layout">I Stopped Using NIBs Thanks to Auto Layout</a></li>
-                
-                  <li><a href="/2014/04/24/wtf-ruby-gems/" title="WTF Ruby Gems">WTF Ruby Gems</a></li>
                 
             </ul>
 		</div>

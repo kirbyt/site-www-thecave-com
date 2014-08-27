@@ -59,6 +59,27 @@
         </div>
 
         <div class="post-content right-col">
+        <h2><a href="/2005/09/19/discovered-constant-bug-in-vs-net-2003/" rel="bookmark" title="Discovered Constant Bug in VS.NET 2003">Discovered Constant Bug in VS.NET 2003</a></h2>
+
+        <p>Tonight I discovered an interesting Visual Studio.NET 2003 bug.  Seems devenv.exe will throw an unhandled exception when the constant in the sample code below is compiled.  From what I can tell, it looks like devenv.exe chokes on the length of the contant.  Remove line 73 (LEFT OUTER JOIN…) and the exception is not thrown.<br /><br />The exception only occurs when compiling the project from within VS.NET 2003 (devenv.exe).  The command line compiler csc.exe does not have the problem.  Also, the problem does not occur if you are using <a href="http://www.borland.com/delphi/">Delphi</a> 2005.  Makes me wonder what devenv.exe is doing during the project build process.<br /><br />&lt;pre&gt;<br />001  using System;<br />002 <br />003  namespace ConsoleApplication3<br />004  {<br />005     /// &lt;summary&gt;<br />006     /// Summary description for Class1.<br />007     /// &lt;/summary&gt;<br />008     class Class1<br />009     {<br />010        /// &lt;summary&gt;<br />011        /// The main entry point for the application.<br />012        /// &lt;/summary&gt;<br />013        [STAThread]<br />014        static void Main(string[] args)<br />015        {<br />016          const string SQL_FORMAT = @”<br />017           SELECT <br />018           1 AS Tag,<br />019           NULL AS Parent,<br />020           NULL AS [users!1],<br />021           NULL AS [user!2!strUSID],<br />022           NULL AS [user!2!strPrefixID],<br />023           NULL AS [user!2!strFirstName],<br />024           NULL AS [user!2!strLastName],<br />025           NULL AS [user!2!strUSName],<br />026           NULL AS [user!2!strAdd1],<br />027           NULL AS [user!2!strAdd2],<br />028           NULL AS [user!2!strTown],<br />029           NULL AS [user!2!strState],<br />030           NULL AS [user!2!strPostCode],<br />031           NULL AS [user!2!strCountry],<br />032           NULL AS [user!2!strTel],<br />033           NULL AS [user!2!strFax],<br />034           NULL AS [user!2!strEMail],<br />035           NULL AS [user!2!strLocked],<br />036           NULL AS [user!2!dtmLockedDate],<br />037           NULL AS [user!2!strSuspenseReason],<br />038           NULL AS [user!2!intLogonCount],<br />039           NULL AS [user!2!dtmCreatedDate],<br />040           NULL AS [user!2!strMedicalSpecialtyID],<br />041           NULL AS [user!2!blnChangePassword],<br />042           NULL AS [user!2!strInstitutionalUser],<br />043           NULL AS [user!2!strCreditCardExpDate]<br />044           UNION<br />045           SELECT<br />046           2 AS Tag,<br />047           1 AS Parent,<br />048           NULL,<br />049           Users.strUSID,<br />050           strPrefixID,<br />051           strFirstName,<br />052           strLastName,<br />053           strUSName,<br />054           strAdd1,<br />055           strAdd2,<br />056           strTown,<br />057           strState,<br />058           strPostCode,<br />059           strCountry,<br />060           strTel,<br />061           strFax,<br />062           strEMail,<br />063           strLocked,<br />064           dtmLockedDate,<br />065           ID_LoginSuspenseReason.strSuspenseReason,<br />066           intLogonCount,<br />067           dtmCreatedDate,<br />068           strMedicalSpecialtyID,<br />069           blnChangePassword,<br />070           strInstitutionalUser,<br />071           strCreditCardExpDate<br />072           FROM ID_Login Users<br />073           LEFT OUTER JOIN ID_LoginSuspenseReason ON Users.strUSID = ID_LoginSuspenseReason.strUSID<br />074           {0}<br />075           FOR XML EXPLICIT<br />076           “;<br />077        }<br />078     }<br />079  }<br />&lt;/pre&gt;</p>
+
+
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Sep<span class="year">2005</span></span><span class="day">19</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
         <h2><a href="/2005/09/19/ann-new-smtp-diagnostics-web-site/" rel="bookmark" title="ANN: New SMTP Diagnostics Web Site">ANN: New SMTP Diagnostics Web Site</a></h2>
 
         <p>We are happy to announcement the new <a href="http://www.smtpdiagnostics.com/">SMTP Diagnostics web site</a>. Find the latest download, purchase your license, view the FAQ, and more.<br /><br /><a href="http://www.smtpdiagnostics.com/">http://www.smtpdiagnostics.com/</a></p>
@@ -238,47 +259,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Aug<span class="year">2005</span></span><span class="day">18</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2005/08/18/recap-of-last-week/" rel="bookmark" title="Recap of Last Week">Recap of Last Week</a></h2>
-
-        <h2 id="lake-sunapee">Lake Sunapee</h2>
-
-<p>Last week Melanie and I joined her family for a week long vacation on Lake Sunapee in New Hampshire.  Aside from no broadband Internet connection, the trip was perfect.  The house we rented sits just a few feet from the water on 1 of 3 natural sandy beaches at Lake Sunapee.</p>
-
-<p>The views are amazing and the water is crystal clear.  Being from Memphis, the water was naturally a little cold for me but I was still able to get in the water.  We rented a pontoon boat for a day to tour the entire lake, and we were able to view the ski slopes of Mount Sunapee from the water.  I couldn’t help but think how cool it would be to snow mobile across the lake in winter time to Mt Sunapee and snowboard for the day.  Having a summer time house on Lake Sunapee would be awesome, but I imagine having a winter time house on the lake would be equally as awesome.</p>
-
-<p>We didn’t sit around the lake all day, every day.  Melanie and I brought bikes with us and rode around.  Some of the hills were killers to climb but the speed coming down was exhilarating.  Our longest ride was one around the entire lake, which resulted in a 22 or 23 mile ride.  In the beginning, we didn’t think we could do it but next thing we knew we were back at the house.</p>
-
-<p>I highly recommend Lake Sunapee for those looking for a New England vacation.</p>
-
-<h2 id="salem-mass">Salem, Mass</h2>
-
-<p>As many people already know, Melanie and I are considering leaving NYC.  Our life style has changed since getting married and we want certain things in our life that are hard to obtain in New York unless you have millions in the bank, which we do not.  We really like New England and will probably end up somewhere North of Boston.  Salem, MA is one of the areas we are considering so we stopped by the town on our drive back to NYC from Lake Sunapee.</p>
-
-<p>The day was hot, very hot.  The temperature was around 95 degrees, which is way too hot for me.  We had lunch at an Irish pub then walked around Salem Commons.  Salem is definitely our favor place in the North of Boston area at the moment.  We’re planning more visits to the area this fall before making our final decision but the closeness to Vermont and New Hampshire, and the coolness of this water front town has us already dreaming of “Going from Rainbows to Witches.”</p>
-
-<h2 id="dci">DCI</h2>
-
-<p>Our vacation week ended with a stop to Gillett Stadium in Foxborough, MA, home of the New England Patriots, to see the <a href="http://www.dci.org/">DCI</a> World Championships.  This was my first DCI event in many years and Melanie’s first DCI event ever.  Blue Knights, Santa Clara Vanguard, and The Cavaliers were our favorites of the night.  While The Cadets took home the championship with a score of 99.150, I personally believe The Cavaliers were far better.  And granted I don’t know the judging rules as well as I did 20 years ago but how can a corp score 99.150 when the drum major starts the show before the judges indicated that they were ready.</p>
-
-<p>Short story short, The Cadet’s drum major started the show before the announcer asked if the judges were ready, which is before the drum major is asked if he or she is ready, and is most definitely before the announcer tells the corp that they may take the field.  But what do I know?  Heck, I thought The Cavaliers were way better but they only scored a 97.625 putting them in second place for the night.</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -364,7 +344,7 @@
 <li class='category'><a href='/category/trip/'>trip (4)</a></li>
 <li class='category'><a href='/category/trips/'>trips (1)</a></li>
 <li class='category'><a href='/category/videos/'>videos (2)</a></li>
-<li class='category'><a href='/category/work/'>work (2)</a></li>
+<li class='category'><a href='/category/work/'>work (3)</a></li>
 
     </ul>
 </div>
@@ -392,6 +372,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2014/08/27/i-am-not-the-android-expert-you-seek/" title="I Am Not The Android Expert You Seek">I Am Not The Android Expert You Seek</a></li>
+                
                   <li><a href="/2014/06/20/enjoy-less-and-love-more/" title="Enjoy Less and Love More">Enjoy Less and Love More</a></li>
                 
                   <li><a href="/2014/05/10/wait-justin-and-i-agree/" title="Wait, Justin and I Agree?">Wait, Justin and I Agree?</a></li>
@@ -399,8 +381,6 @@
                   <li><a href="/2014/05/08/still-enjoying-the-snow/" title="Still Enjoying the Snow">Still Enjoying the Snow</a></li>
                 
                   <li><a href="/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout/" title="I Stopped Using NIBs Thanks to Auto Layout">I Stopped Using NIBs Thanks to Auto Layout</a></li>
-                
-                  <li><a href="/2014/04/24/wtf-ruby-gems/" title="WTF Ruby Gems">WTF Ruby Gems</a></li>
                 
             </ul>
 		</div>

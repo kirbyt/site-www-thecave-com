@@ -54,6 +54,27 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">08</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2004/06/08/making-the-move-to-test-driven-development/" rel="bookmark" title="Making the Move to Test Driven Development">Making the Move to Test Driven Development</a></h2>
+
+        <p>I have been using NUnit since its early days but it has only been in the last six months that I have made the move to test driven development.  TDD is concept of writing production code based on unit test cases that are written first.  And using a framework such as NUnit enables the developer to write automated unit tests that will test the features of an application at a functional level thus encouraging test driven development.  <br /><br />TDD is a paradigm switch for many developers as it was for me.  Sure I have been unit testing my code for years.  I would employ techniques such as console applications, shell programs, and other types of test harnesses to test the functions of my code.  But until recently I never <br />started the development of a module by writing unit tests first.<br /><br />Test driven development is an investment up front in the quality of your code.  That investment is in the form of the unit tests before production code.  Many developers today write the production code first (after the design phase of course), followed by commenting the code, then followed by testing the code.  And in many cases the later work of commenting and testing never happens because bug fixes become the developer’s top priority.  But by investing in the quality of the code at the start developers will find that bugs are reduced, the classes and functions of the code are better designed, and over all quality of the work is greatly improved.  Best of all, refactoring code becomes less of a risk with TDD because recursion testing at the unit level is possible.<br /><br />Here are some tip I would like to share that will hopefully help you make the move to test driven development:<br />&lt;ul&gt;<br />&lt;li&gt;Just do it.  Force yourself to write your unit test first.  Over time the quality of the unit test will improve, writing unit test will be easier, and it will because almost second nature for you to start with a unit test.&lt;/li&gt;<br />&lt;li&gt;When testing data changes to a database, start a transaction in the SetUp of the unit test and roll back the transaction in the TearDown.  This provides an easy way to clean up the data after each unit test.&lt;/li&gt;<br />&lt;li&gt;Writing a unit test prior to writing the production code will give you insight into the design of your class or function.  Use this insight to improve on the design prior to writing production code.&lt;/li&gt;<br />&lt;li&gt;Use <a href="http://www.whitepeaksoftware.com/blog.aspx?xml/2004_06_01_archive.xml#108613701548157152">composite unit testing</a> to test implementors of interfaces.&lt;/li&gt;<br />&lt;li&gt;Write a unit test for each defect reported.  This provides a great way to ensure a problem never reoccurs.  And for those who already have existing applications but no unit tests, this approach will give you an introduction to writing unit tests.&lt;/li&gt;<br />&lt;/ul&gt;<br /><br /><br /></p>
+
+
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">07</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -349,27 +370,6 @@ namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">May<span class="year">2004</span></span><span class="day">18</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/05/18/man-this-whomps/" rel="bookmark" title="Man this Whomps">Man this Whomps</a></h2>
-
-        <p>When did the term <a href="http://www.thinkgeek.com/tshirts/coder/3817/">code monkey</a> become inappropriate in the office?  <br /><br />I was talking with a programmer who is employed by the customer yesterday and a question came up about coders.  This lead to a conversation about the meaning behind terms like “coder”, “programmer”, and “developer”.  All can be the same while having some differences.  During the conversation I mentioned the term code monkey.  The programmer I was talking to never heard of the term so I showed him the <a href="http://info.astrian.net/jargon/terms/c/code_monkey.html">definition</a> of code monkey from <a href="http://info.astrian.net/jargon/">The Jargon Dictionary</a>.<br /><br />Later that day the GM from my employer talked with me about the term, and 15 minutes later I got an e-mail from our HR Generalist requesting to talk with me about this.  Apparently code monkey has become an offensive thing to say, or at least it has within the walls of my employer.<br /><br />I see nothing wrong with this phrase.  I have even considered myself a code monkey from time to time.  Last summer I was on a project for a customer where I got to be a code monkey and I loved it.  It was one the best project I have been on since joining my employer.<br /><br />The whole situation reminds me of an episode of Recess called <a href="http://www.bcdb.com/bcdb/cartoon.cgi?film=7015&amp;cartoon=The%20Story%20of%20Whomps">The Story of Whomps</a>.  The school principal and one of the teachers deem the word “whomps” as a cuss word and set out to punish the kid who created the word.  The scandal goes all the way up to the Board of Education.  When the superintended learns the scandalous word is “whomps” he says something to the tune of “Anyone who hears something vulgar in the word ‘whomps’ has a vulgar mind.”  And that’s how I feel about the term code monkey.  If you hear something offensive in the term code monkey than you probably have an offense mind.<br /><br /><br /></p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -455,7 +455,7 @@ namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
 <li class='category'><a href='/category/trip/'>trip (4)</a></li>
 <li class='category'><a href='/category/trips/'>trips (1)</a></li>
 <li class='category'><a href='/category/videos/'>videos (2)</a></li>
-<li class='category'><a href='/category/work/'>work (2)</a></li>
+<li class='category'><a href='/category/work/'>work (3)</a></li>
 
     </ul>
 </div>
@@ -483,6 +483,8 @@ namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2014/08/27/i-am-not-the-android-expert-you-seek/" title="I Am Not The Android Expert You Seek">I Am Not The Android Expert You Seek</a></li>
+                
                   <li><a href="/2014/06/20/enjoy-less-and-love-more/" title="Enjoy Less and Love More">Enjoy Less and Love More</a></li>
                 
                   <li><a href="/2014/05/10/wait-justin-and-i-agree/" title="Wait, Justin and I Agree?">Wait, Justin and I Agree?</a></li>
@@ -490,8 +492,6 @@ namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
                   <li><a href="/2014/05/08/still-enjoying-the-snow/" title="Still Enjoying the Snow">Still Enjoying the Snow</a></li>
                 
                   <li><a href="/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout/" title="I Stopped Using NIBs Thanks to Auto Layout">I Stopped Using NIBs Thanks to Auto Layout</a></li>
-                
-                  <li><a href="/2014/04/24/wtf-ruby-gems/" title="WTF Ruby Gems">WTF Ruby Gems</a></li>
                 
             </ul>
 		</div>
