@@ -1,0 +1,9 @@
+---
+layout: post
+title: 'I Am Not The Android Expert You Seek'
+categories:
+    - work
+---
+I do not own an Android device. I have spent less than 2 hours in my entire life playing with an Android device. I’ve never written an app for Android. Heck, I’ve never written a single line of Java code in a shipping app. So, for the love of god, please stop asking me if I can look into problems related to Android and Android apps. I am the last person in the world you want to ask to help you with Android related problems.
+
+Disclaimer: I have nothing against Android. It's just not an interest to me.
