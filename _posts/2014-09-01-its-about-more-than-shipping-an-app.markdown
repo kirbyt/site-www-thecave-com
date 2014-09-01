@@ -66,7 +66,7 @@ During long dry spells when cash isn't flowing, I have access to a large sum of 
 
 Being an indie developer, nay a **business owner** is not for everyone. It takes a lot of hard work. It takes planning and requires not only strategies for making money but strategies on how to survive when the money isn't coming in. For the software developer turned business owner, writing the app is the easiest part, but it's about more than the app. To survive, you need to give the business side of your company just as much attention as you give your app. Your company's survival depends on it.
 
-
+---
 
 [^sbc]: A small business coach is someone who can help mentor you and help you take your company to the next level. It can be someone who does coaching for a living or even a friend who is wise in the ways of running a business. My coach happens to be a business savvy friend of mine. And yes, I paid him for his time during those three months of coaching, which I easily earned back using his advice.
 
