@@ -976,6 +976,14 @@ ul.top_label .clear-multi { clear: none !important; }
 .gform_wrapper .gfield_checkbox, .gform_wrapper .gfield_radio { margin-left: 120px !important; }
 img.ui-datepicker-trigger { border: 0px; padding: 0px; }
 
-#post-footer {
+.post-footer {
 	font-size: 12px;
+}
+
+.lastfm ul, li {
+	font-size: 11px;
+}
+
+.archives ul, li {
+	font-size: 11px;
 }
