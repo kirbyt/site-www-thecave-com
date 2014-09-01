@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
- 
+
 <!--- Post Starts -->
 <div class="post wrap page">
 
@@ -16,18 +16,17 @@ layout: default
     {{ content }}
 
 
-    {% if page.categories %}<div>Posted in {{ page.categories | category_links }}.</div>{% endif %}
-    
+    {% if page.categories %}<div class="post-footer">Posted in {{ page.categories | category_links }}.</div>{% endif %}
+
     <hr />
     {% if page.previous.url %}
-        <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; {{page.previous.title}}</a>
+        <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}" class="post-footer">&laquo; {{page.previous.title}}</a>
     {% endif %}
     {% if page.next.url %}
         &nbsp; | &nbsp;
-        <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">{{page.next.title}} &raquo;</a>
+        <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}" class="post-footer">{{page.next.title}} &raquo;</a>
     {% endif %}
 
     </div>
 </div>
 <!--- Post Ends -->
-
