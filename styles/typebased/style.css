@@ -975,3 +975,7 @@ ul.top_label .clear-multi { clear: none !important; }
 .gform_wrapper .gfield_checkbox li, .gform_wrapper .gfield_radio li { display: inline !important; }
 .gform_wrapper .gfield_checkbox, .gform_wrapper .gfield_radio { margin-left: 120px !important; }
 img.ui-datepicker-trigger { border: 0px; padding: 0px; }
+
+#post-footer {
+	font-size: 12px;
+}
