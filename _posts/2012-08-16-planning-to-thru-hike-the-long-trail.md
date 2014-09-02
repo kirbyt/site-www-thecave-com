@@ -5,7 +5,7 @@ categories:
   - backpacking
   - camping
   - hiking
-  - trip
+  - trips
 
 ---
 
