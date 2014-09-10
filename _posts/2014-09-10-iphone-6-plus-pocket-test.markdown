@@ -14,5 +14,5 @@ As for holding the two cutouts, I found that the iPhone 6 cutout fits comfortabl
 Conclusion: I will be buying the iPhone 6. The larger display of the iPhone 6 Plus would be nice for reading and watching shows and movies, but it's just too damn large to be pocket device for me.
 
 [pdf]: http://arstechnica.com/apple/2014/09/how-big-is-the-iphone-6-plus-find-out-with-our-handy-paper-template/
-[thumbnail]: https://farm6.staticflickr.com/5581/15198258832_1daebf3355_m.jpg class="alignleft"
+[thumbnail]: https://farm6.staticflickr.com/5581/15198258832_1daebf3355_m.jpg "cutout" class="alignleft"
 [photo]: https://flic.kr/p/pa23Ro
