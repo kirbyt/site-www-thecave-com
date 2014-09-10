@@ -61,6 +61,54 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jul<span class="year">2003</span></span><span class="day">08</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2003/07/08/field-versus-property/" rel="bookmark" title="Field versus Property">Field versus Property</a></h2>
+
+        <p>.NET class structures defined in the CLR can have public fields and public properties among other things.  On the surface, a public field and a public property appear to be the same.  The .NET Framework Glossary even says a property “is like a public field.”  However the two are not same. The most obvious difference is in the declaration of the two. For example, consider the follow class:</p>
+
+<pre><code>public class Person
+{
+    public string Name;
+
+    private string _email;
+    public string Email{ get{ return _email; } set{ _email = value; } }
+}
+</code></pre>
+
+<p>In the code snippet above, Name is a public field while Email is a public property.  However if you were to use an instance of the class Person, you would not be able to tell what is defined as a field versus property. The two appear to be the same.  Example:</p>
+
+<pre><code>Person p = new Person();
+p.Name = "Kirby";
+p.Email = "kirby@thecave.com";
+</code></pre>
+
+<p>A property has many advantages over a field and I personally rarely, if ever, use public fields.  And today I learned yet another reason for using a public property over a public field.</p>
+
+<p>Some functionality built into the .NET Framework relies on reflection to perform specific tasks.  For example, within ASP.NET you can use DataBinder.Eval() to reference properties of a class instance stored in the Container.DataItem.  Example:</p>
+
+<pre><code>&lt;%# DataBinder.Eval( Container.DataItem, "Name" ) %&gt;
+</code></pre>
+
+<p>Using the Person class defined above, the DataBinder.Eval() call to retrieve the value of Name will fail.  The exception message will state that the property Name is not defined in the class Person, which is true.  Name is defined as a field not a property. Another area where the difference between a property and a field is realized is within custom components that have design time properties.  Visual Studio.NET’s Designer expects properties to be defined as properties and not fields.</p>
+
+<p>So as you can see a field is in fact different from a property.  My preference is to always use property declarations, but if you need to use a field declaration, beware of the possible limitation.</p>
+
+
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Jul<span class="year">2003</span></span><span class="day">06</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -255,37 +303,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2003</span></span><span class="day">11</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2003/06/11/beach-vacation-ironing-board/" rel="bookmark" title="Beach Vacation Ironing Board">Beach Vacation Ironing Board</a></h2>
-
-        <p>Next week, the “cousins” from my family are getting together in Garden City, SC for a fun on the beach vacation.  Historically I have not been a fan of beach time vacations but I am actually looking forward to this one.  Not only will I be trying surfing for the first time, but I get to hang with the couzs and they get to meet Melanie.
-<br />
-<br />Beach vacations are something fairly new to me in my adult life with the first one being last year with Melanie.  So I am by no means an expert on what one needs for the beach but a flurry of e-mails have been going around between the couzs about the need of an iron and ironing board.  Admittedly this has me baffled.  Why would one need an iron and ironing board for this type of vacation?
-<br />
-<br />Ironically, I will be the first to admit I bring an iron with me on most of my snowboard trips, but for a very good reason.  I use the iron to wax my snowboard.  Wax is the secret to a sweet ride.  But I doubt we need an iron to wax a surf board.  And even if we did, why would we need an ironing board.
-<br />
-<br />I did a few searches on google.com in hopes to understand this ironic puzzle.  Searches for things like “101 uses for an ironing board” and “Why would you bring an ironing board on a beach vacation” resulted in nothing.  It is probably the only topic that does not yet exists on the Internet.  The irony here is that now the topic does exists on the Internet and others in search of the reasons behind the need of an iron and ironing board for a beach vacation will find this posting but still have no clear answers.
-<br />
-<br />Now, I do agree that if you are going on a fancy beach vacation where you plan to dine at finer restaurants, you might have a need for an iron and ironing board.  But our vacation is all about the beach, grilling out, miniature golf, and beer.  And of course there will be some personal interest as well, like my attempt at surfing.  But who would want to take the iron board to the beach and iron clothes?
-<br />
-<br />Hopefully the answers will become clear to me next week as I am drinking my beer, listening to the surf, and watching someone pressing their swim trucks.</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -347,10 +364,10 @@
 <li class='category'><a href='/category/camping/'>camping (11)</a></li>
 <li class='category'><a href='/category/family/'>family (4)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
-<li class='category'><a href='/category/general/'>general (10)</a></li>
+<li class='category'><a href='/category/general/'>general (11)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
 <li class='category'><a href='/category/humor/'>humor (1)</a></li>
-<li class='category'><a href='/category/ios/'>ios (3)</a></li>
+<li class='category'><a href='/category/ios/'>ios (4)</a></li>
 <li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
 <li class='category'><a href='/category/life/'>life (2)</a></li>
 <li class='category'><a href='/category/long-trail/'>long-trail (2)</a></li>
@@ -398,6 +415,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2014/09/10/iphone-6-plus-pocket-test/" title="iPhone 6 and 6 Plus Pocket Test">iPhone 6 and 6 Plus Pocket Test</a></li>
+                
                   <li><a href="/2014/09/03/dear-simple-its-you-not-me/" title="Dear Simple. It's You, Not Me.">Dear Simple. It's You, Not Me.</a></li>
                 
                   <li><a href="/2014/09/02/amy-bradstreet/" title="Amy Bradstreet">Amy Bradstreet</a></li>
@@ -405,8 +424,6 @@
                   <li><a href="/2014/09/01/its-about-more-than-shipping-an-app/" title="It's About More Than Shipping an App">It's About More Than Shipping an App</a></li>
                 
                   <li><a href="/2014/08/27/i-am-not-the-android-expert-you-seek/" title="I Am Not The Android Expert You Seek">I Am Not The Android Expert You Seek</a></li>
-                
-                  <li><a href="/2014/06/20/enjoy-less-and-love-more/" title="Enjoy Less and Love More">Enjoy Less and Love More</a></li>
                 
             </ul>
 		</div>

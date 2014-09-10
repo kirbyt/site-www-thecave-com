@@ -61,6 +61,27 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Oct<span class="year">2002</span></span><span class="day">07</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2002/10/07/back-from-the-south/" rel="bookmark" title="Back from the South">Back from the South</a></h2>
+
+        <p>We have returned from our Charlotte visit.  It was a great time and really nice to see Dave and meet the little woman (no pun intended) Meg.  We ate at some very good restaurants…Dave and Meg knows how to pick ‘em.  And Saturday night’s live sketch comedy at <a href="http://www.theperch.com/">The Perch</a> left all of us with our sides hurting.  “Talkin’ Baby.  That’s crazy.”  Thanks Dave and Meg for the invite!</p>
+
+
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Oct<span class="year">2002</span></span><span class="day">04</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -303,47 +324,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Aug<span class="year">2002</span></span><span class="day">27</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2002/08/27/open-vs-net-command-window-here/" rel="bookmark" title="Open VS.NET Command Window Here">Open VS.NET Command Window Here</a></h2>
-
-        <p>I used Windows Explorer all the time to navigate my hard drive.  Many times throughout the day I need to drop to MS-DOS within a specific directory.  I’m too lazy to drop to DOS and navigate using the command line so I created a registry entry that will launch a CMD window from Windows Explorer and place me in the selected directory.  You can run the following VBScript to do the same for yourself.</p>
-
-<pre><code>Set WshShell = CreateObject( "WScript.Shell" )  
-WshShell.RegWrite _  
-   "HKEY_CLASSES_ROOT\Folder\Shell\Command Window\Command\", _  
-   "CMD /K cd /d %L"  
-</code></pre>
-
-<p>As an added bonus, you can run the VBScript below to create a menu item that will launch a CMD window that has been setup for the Microsoft Visual Studio .NET tools.</p>
-
-<pre><code>vsnetPath = _  
- "d:\Program Files\Microsoft Visual Studio .NET\Common7\Tools\vsvars32.bat"  
-Set WshShell = CreateObject( "WScript.Shell" )  
-WshShell.RegWrite _  
- "HKEY_CLASSES_ROOT\Folder\Shell\Open VS.NET Command Window Here\Command\", _  
- "CMD /K """ + vsnetPath + """ : cd /d %L"  
-</code></pre>
-
-<p>Be sure to modify the path above to match your installation of Visual Studio.NET.  </p>
-
-<p>To use launch an instance of Windows Explorer and navigate to the desired directory.  Right mouse click the directory name and select Open Command Window Here or Open VS.NET Command Window Here menu item.  Now ain’t that nice?</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -405,10 +385,10 @@ WshShell.RegWrite _
 <li class='category'><a href='/category/camping/'>camping (11)</a></li>
 <li class='category'><a href='/category/family/'>family (4)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
-<li class='category'><a href='/category/general/'>general (10)</a></li>
+<li class='category'><a href='/category/general/'>general (11)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
 <li class='category'><a href='/category/humor/'>humor (1)</a></li>
-<li class='category'><a href='/category/ios/'>ios (3)</a></li>
+<li class='category'><a href='/category/ios/'>ios (4)</a></li>
 <li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
 <li class='category'><a href='/category/life/'>life (2)</a></li>
 <li class='category'><a href='/category/long-trail/'>long-trail (2)</a></li>
@@ -456,6 +436,8 @@ WshShell.RegWrite _
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2014/09/10/iphone-6-plus-pocket-test/" title="iPhone 6 and 6 Plus Pocket Test">iPhone 6 and 6 Plus Pocket Test</a></li>
+                
                   <li><a href="/2014/09/03/dear-simple-its-you-not-me/" title="Dear Simple. It's You, Not Me.">Dear Simple. It's You, Not Me.</a></li>
                 
                   <li><a href="/2014/09/02/amy-bradstreet/" title="Amy Bradstreet">Amy Bradstreet</a></li>
@@ -463,8 +445,6 @@ WshShell.RegWrite _
                   <li><a href="/2014/09/01/its-about-more-than-shipping-an-app/" title="It's About More Than Shipping an App">It's About More Than Shipping an App</a></li>
                 
                   <li><a href="/2014/08/27/i-am-not-the-android-expert-you-seek/" title="I Am Not The Android Expert You Seek">I Am Not The Android Expert You Seek</a></li>
-                
-                  <li><a href="/2014/06/20/enjoy-less-and-love-more/" title="Enjoy Less and Love More">Enjoy Less and Love More</a></li>
                 
             </ul>
 		</div>

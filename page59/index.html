@@ -61,6 +61,27 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jul<span class="year">2003</span></span><span class="day">23</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2003/07/23/matrix-reloaded-on-imax/" rel="bookmark" title="Matrix Reloaded on IMax">Matrix Reloaded on IMax</a></h2>
+
+        <p>One additional last minute New Orleans highlight for me…Matric Reloaded on IMax.  It was awesome seeing it on the really big screen.</p>
+
+
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Jul<span class="year">2003</span></span><span class="day">22</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -259,54 +280,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jul<span class="year">2003</span></span><span class="day">08</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2003/07/08/field-versus-property/" rel="bookmark" title="Field versus Property">Field versus Property</a></h2>
-
-        <p>.NET class structures defined in the CLR can have public fields and public properties among other things.  On the surface, a public field and a public property appear to be the same.  The .NET Framework Glossary even says a property “is like a public field.”  However the two are not same. The most obvious difference is in the declaration of the two. For example, consider the follow class:</p>
-
-<pre><code>public class Person
-{
-    public string Name;
-
-    private string _email;
-    public string Email{ get{ return _email; } set{ _email = value; } }
-}
-</code></pre>
-
-<p>In the code snippet above, Name is a public field while Email is a public property.  However if you were to use an instance of the class Person, you would not be able to tell what is defined as a field versus property. The two appear to be the same.  Example:</p>
-
-<pre><code>Person p = new Person();
-p.Name = "Kirby";
-p.Email = "kirby@thecave.com";
-</code></pre>
-
-<p>A property has many advantages over a field and I personally rarely, if ever, use public fields.  And today I learned yet another reason for using a public property over a public field.</p>
-
-<p>Some functionality built into the .NET Framework relies on reflection to perform specific tasks.  For example, within ASP.NET you can use DataBinder.Eval() to reference properties of a class instance stored in the Container.DataItem.  Example:</p>
-
-<pre><code>&lt;%# DataBinder.Eval( Container.DataItem, "Name" ) %&gt;
-</code></pre>
-
-<p>Using the Person class defined above, the DataBinder.Eval() call to retrieve the value of Name will fail.  The exception message will state that the property Name is not defined in the class Person, which is true.  Name is defined as a field not a property. Another area where the difference between a property and a field is realized is within custom components that have design time properties.  Visual Studio.NET’s Designer expects properties to be defined as properties and not fields.</p>
-
-<p>So as you can see a field is in fact different from a property.  My preference is to always use property declarations, but if you need to use a field declaration, beware of the possible limitation.</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -368,10 +341,10 @@ p.Email = "kirby@thecave.com";
 <li class='category'><a href='/category/camping/'>camping (11)</a></li>
 <li class='category'><a href='/category/family/'>family (4)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
-<li class='category'><a href='/category/general/'>general (10)</a></li>
+<li class='category'><a href='/category/general/'>general (11)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
 <li class='category'><a href='/category/humor/'>humor (1)</a></li>
-<li class='category'><a href='/category/ios/'>ios (3)</a></li>
+<li class='category'><a href='/category/ios/'>ios (4)</a></li>
 <li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
 <li class='category'><a href='/category/life/'>life (2)</a></li>
 <li class='category'><a href='/category/long-trail/'>long-trail (2)</a></li>
@@ -419,6 +392,8 @@ p.Email = "kirby@thecave.com";
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2014/09/10/iphone-6-plus-pocket-test/" title="iPhone 6 and 6 Plus Pocket Test">iPhone 6 and 6 Plus Pocket Test</a></li>
+                
                   <li><a href="/2014/09/03/dear-simple-its-you-not-me/" title="Dear Simple. It's You, Not Me.">Dear Simple. It's You, Not Me.</a></li>
                 
                   <li><a href="/2014/09/02/amy-bradstreet/" title="Amy Bradstreet">Amy Bradstreet</a></li>
@@ -426,8 +401,6 @@ p.Email = "kirby@thecave.com";
                   <li><a href="/2014/09/01/its-about-more-than-shipping-an-app/" title="It's About More Than Shipping an App">It's About More Than Shipping an App</a></li>
                 
                   <li><a href="/2014/08/27/i-am-not-the-android-expert-you-seek/" title="I Am Not The Android Expert You Seek">I Am Not The Android Expert You Seek</a></li>
-                
-                  <li><a href="/2014/06/20/enjoy-less-and-love-more/" title="Enjoy Less and Love More">Enjoy Less and Love More</a></li>
                 
             </ul>
 		</div>

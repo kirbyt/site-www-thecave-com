@@ -66,6 +66,47 @@
         </div>
 
         <div class="post-content right-col">
+        <h2><a href="/2002/08/27/open-vs-net-command-window-here/" rel="bookmark" title="Open VS.NET Command Window Here">Open VS.NET Command Window Here</a></h2>
+
+        <p>I used Windows Explorer all the time to navigate my hard drive.  Many times throughout the day I need to drop to MS-DOS within a specific directory.  I’m too lazy to drop to DOS and navigate using the command line so I created a registry entry that will launch a CMD window from Windows Explorer and place me in the selected directory.  You can run the following VBScript to do the same for yourself.</p>
+
+<pre><code>Set WshShell = CreateObject( "WScript.Shell" )  
+WshShell.RegWrite _  
+   "HKEY_CLASSES_ROOT\Folder\Shell\Command Window\Command\", _  
+   "CMD /K cd /d %L"  
+</code></pre>
+
+<p>As an added bonus, you can run the VBScript below to create a menu item that will launch a CMD window that has been setup for the Microsoft Visual Studio .NET tools.</p>
+
+<pre><code>vsnetPath = _  
+ "d:\Program Files\Microsoft Visual Studio .NET\Common7\Tools\vsvars32.bat"  
+Set WshShell = CreateObject( "WScript.Shell" )  
+WshShell.RegWrite _  
+ "HKEY_CLASSES_ROOT\Folder\Shell\Open VS.NET Command Window Here\Command\", _  
+ "CMD /K """ + vsnetPath + """ : cd /d %L"  
+</code></pre>
+
+<p>Be sure to modify the path above to match your installation of Visual Studio.NET.  </p>
+
+<p>To use launch an instance of Windows Explorer and navigate to the desired directory.  Right mouse click the directory name and select Open Command Window Here or Open VS.NET Command Window Here menu item.  Now ain’t that nice?</p>
+
+
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Aug<span class="year">2002</span></span><span class="day">27</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
         <h2><a href="/2002/08/27/could-have-used-a-reg-registry-import-file/" rel="bookmark" title="Could have used a .reg registry import file">Could have used a .reg registry import file</a></h2>
 
         <p>After posting the VBScript below I realized I could have simply created .reg file that has the registry entries to import.  Oh well.  The VBScript approach gave me a reason to play with VBScript.</p>
@@ -249,27 +290,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Aug<span class="year">2002</span></span><span class="day">05</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2002/08/05/wastedboarding-com-is-all-new/" rel="bookmark" title="WASTEDBoarding.com is all new">WASTEDBoarding.com is all new</a></h2>
-
-        <p>A new version of <a href="http://www.wastedboarding.com/">WASTEDBoarding.com</a> was posted last night.  It is a preview of things to come.</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -331,10 +351,10 @@
 <li class='category'><a href='/category/camping/'>camping (11)</a></li>
 <li class='category'><a href='/category/family/'>family (4)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
-<li class='category'><a href='/category/general/'>general (10)</a></li>
+<li class='category'><a href='/category/general/'>general (11)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
 <li class='category'><a href='/category/humor/'>humor (1)</a></li>
-<li class='category'><a href='/category/ios/'>ios (3)</a></li>
+<li class='category'><a href='/category/ios/'>ios (4)</a></li>
 <li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
 <li class='category'><a href='/category/life/'>life (2)</a></li>
 <li class='category'><a href='/category/long-trail/'>long-trail (2)</a></li>
@@ -382,6 +402,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2014/09/10/iphone-6-plus-pocket-test/" title="iPhone 6 and 6 Plus Pocket Test">iPhone 6 and 6 Plus Pocket Test</a></li>
+                
                   <li><a href="/2014/09/03/dear-simple-its-you-not-me/" title="Dear Simple. It's You, Not Me.">Dear Simple. It's You, Not Me.</a></li>
                 
                   <li><a href="/2014/09/02/amy-bradstreet/" title="Amy Bradstreet">Amy Bradstreet</a></li>
@@ -389,8 +411,6 @@
                   <li><a href="/2014/09/01/its-about-more-than-shipping-an-app/" title="It's About More Than Shipping an App">It's About More Than Shipping an App</a></li>
                 
                   <li><a href="/2014/08/27/i-am-not-the-android-expert-you-seek/" title="I Am Not The Android Expert You Seek">I Am Not The Android Expert You Seek</a></li>
-                
-                  <li><a href="/2014/06/20/enjoy-less-and-love-more/" title="Enjoy Less and Love More">Enjoy Less and Love More</a></li>
                 
             </ul>
 		</div>
