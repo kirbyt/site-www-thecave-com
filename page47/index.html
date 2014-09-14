@@ -61,6 +61,31 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Aug<span class="year">2004</span></span><span class="day">02</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2004/08/02/unit-testing-gone-bad/" rel="bookmark" title="Unit Testing Gone Bad">Unit Testing Gone Bad</a></h2>
+
+        <p>Sorry but I have to rant for a minute.  I have been working with a team lately that doesn’t get unit testing.  In 4 months, this team has been unable to have all 200+ unit tests run successfully.  This to me is an indication that 1) the team does not understand unit testing and its importance, or 2) the team just does not care.  My initial thought is the team does not care, but after today I am starting to think the team just does not understand unit testing.
+<br />
+<br />Today a programmer committed code changes to CVS with a comment stating that the class failed unit testing with a stack overflow problem.  The programmer apparently cared enough to run the unit tests prior to committing the code but didn’t take the time to fix the code, which by the way would have only taken a minute.  Instead of fixing the code he commented in the log message that the class failed unit testing.
+<br />
+<br />What kills me is the programmer cared enough to run the unit test against his code prior to committing to the source repository and yet didn’t care enough to fix the problem.  Did the programmer think the test was falsely reporting an error against his assumed-to-be perfect code?  It is as if the programmer does not realize that the unit test is trying to help him determine problems in his code.  “Yeah, the unit test failed against my code but I know my code is correct so I’m going to commit anyway.”  I don’t get it.</p>
+
+
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Aug<span class="year">2004</span></span><span class="day">01</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -274,167 +299,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jul<span class="year">2004</span></span><span class="day">20</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/07/20/a-binding-formatter-is-called-twice/" rel="bookmark" title="A Binding Formatter is Called Twice">A Binding Formatter is Called Twice</a></h2>
-
-        <p>It seems that a binding formatter is called twice when a user leaves a textbox control. As the user leaves the control the Leave event for the control is fired followed by the binding format event. The setter method of the bounded property is called next followed by the getter method then finally the binding format event is called again.</p>
-
-<p>This should not be a concern for applications that use binding formatters but the developer should know it will be called twice.</p>
-
-<p>Here is sample code that illustrates the behavior:</p>
-
-<pre><code>using System;
-using System.Drawing;
-using System.Collections;
-using System.ComponentModel;
-using System.Windows.Forms;
-using System.Data;
-using System.Diagnostics;
-
-namespace SampleWindowsApp
-{
-    /// &lt;summary&gt;
-    /// Summary description for Form1.
-    /// &lt;/summary&gt;
-    public class Form1 : System.Windows.Forms.Form
-    {
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private MyClass _dataSource = new MyClass();
-
-        /// &lt;summary&gt;
-        /// Required designer variable.
-        /// &lt;/summary&gt;
-        private System.ComponentModel.Container components = null;
-
-        public Form1()
-        {
-            //
-            // Required for Windows Form Designer support
-            //
-            InitializeComponent();
-        }
-
-        /// &lt;summary&gt;
-        /// Clean up any resources being used.
-        /// &lt;/summary&gt;
-        protected override void Dispose( bool disposing )
-        {
-            if( disposing )
-            {
-                if (components != null)
-                {
-                    components.Dispose();
-                }
-            }
-            base.Dispose( disposing );
-        }
-
-        #region Windows Form Designer generated code
-        /// &lt;summary&gt;
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// &lt;/summary&gt;
-        private void InitializeComponent()
-        {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.SuspendLayout();
-            //
-            // textBox1
-            //
-            this.textBox1.Location = new System.Drawing.Point(56, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "textBox1";
-            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
-            //
-            // button1
-            //
-            this.button1.Location = new System.Drawing.Point(72, 120);
-            this.button1.Name = "button1";
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            //
-            // Form1
-            //
-            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-            this.ClientSize = new System.Drawing.Size(292, 266);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.ResumeLayout(false);
-
-        }
-        #endregion
-
-        /// &lt;summary&gt;
-        /// The main entry point for the application.
-        /// &lt;/summary&gt;
-        [STAThread]
-        static void Main()
-        {
-            Application.Run(new Form1());
-        }
-
-        private void Form1_Load(object sender, System.EventArgs e)
-        {
-            Binding binding = new Binding( "Text", _dataSource, "Value" );
-            binding.Format += new ConvertEventHandler(binding_Format);
-
-            textBox1.DataBindings.Add( binding );
-        }
-
-        private void binding_Format(object sender, ConvertEventArgs e)
-        {
-            Debug.WriteLine( "Format" );
-        }
-
-        private void textBox1_Leave(object sender, System.EventArgs e)
-        {
-            Debug.WriteLine( "Leave" );
-
-        }
-    }
-
-    class MyClass
-    {
-        private string _value = "Default value.";
-        public string Value
-        {
-            get
-            {
-                Debug.WriteLine( "MyClass.Value getter" );
-                return _value;
-            }
-            set
-            {
-                Debug.WriteLine( "MyClass.Value setter" );
-                _value = value;
-            }
-        }
-    }
-}
-</code></pre>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -489,17 +353,18 @@ namespace SampleWindowsApp
 
 		<div id="linkcat-3" class="block widget widget_links"><h2>Categories</h2>
     <ul>
-        <li class='category'><a href='/category/apps/'>apps (2)</a></li>
+        <li class='category'><a href='/category/apps/'>apps (3)</a></li>
 <li class='category'><a href='/category/backpack/'>backpack (1)</a></li>
 <li class='category'><a href='/category/backpacking/'>backpacking (8)</a></li>
 <li class='category'><a href='/category/blogger/'>blogger (785)</a></li>
 <li class='category'><a href='/category/camping/'>camping (11)</a></li>
+<li class='category'><a href='/category/cross-post/'>cross post (1)</a></li>
 <li class='category'><a href='/category/family/'>family (4)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
 <li class='category'><a href='/category/general/'>general (11)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
 <li class='category'><a href='/category/humor/'>humor (1)</a></li>
-<li class='category'><a href='/category/ios/'>ios (4)</a></li>
+<li class='category'><a href='/category/ios/'>ios (5)</a></li>
 <li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
 <li class='category'><a href='/category/life/'>life (2)</a></li>
 <li class='category'><a href='/category/long-trail/'>long-trail (2)</a></li>
@@ -547,6 +412,8 @@ namespace SampleWindowsApp
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2014/09/14/cross-posting-to-app.net-facebook-and-twitter/" title="Cross Posting to App.net, Facebook, and Twitter">Cross Posting to App.net, Facebook, and Twitter</a></li>
+                
                   <li><a href="/2014/09/10/iphone-6-plus-pocket-test/" title="iPhone 6 and 6 Plus Pocket Test">iPhone 6 and 6 Plus Pocket Test</a></li>
                 
                   <li><a href="/2014/09/03/dear-simple-its-you-not-me/" title="Dear Simple. It's You, Not Me.">Dear Simple. It's You, Not Me.</a></li>
@@ -554,8 +421,6 @@ namespace SampleWindowsApp
                   <li><a href="/2014/09/02/amy-bradstreet/" title="Amy Bradstreet">Amy Bradstreet</a></li>
                 
                   <li><a href="/2014/09/01/its-about-more-than-shipping-an-app/" title="It's About More Than Shipping an App">It's About More Than Shipping an App</a></li>
-                
-                  <li><a href="/2014/08/27/i-am-not-the-android-expert-you-seek/" title="I Am Not The Android Expert You Seek">I Am Not The Android Expert You Seek</a></li>
                 
             </ul>
 		</div>

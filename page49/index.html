@@ -61,6 +61,88 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">25</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2004/06/25/explicit-interface-implementation-in-c/" rel="bookmark" title="Explicit Interface Implementation in C#">Explicit Interface Implementation in C#</a></h2>
+
+        <p>I was a grumbling VB developer for a number of years.  At the time Delphi was my language of choice but in the part of the country I lived customer work using it was almost non-existent.  In the summer of 2000 at PDC, a friend of mine from Microsoft showed me the .NET Framework and C#.  I was instantly drawn to C# because it reminded me of Delphi, which is no surprise for those who know their <a href="http://c2.com/cgi/wiki?HistoryOfCsharp">C#/Delphi history</a>.</p>
+
+<p>At last there was (is) a language and framework from Microsoft that generated the same level of excitement in me that Borland’s Delphi had done a few years prior.  Best of all it was from Microsoft which would mean customer work in the future.  And as luck would have it, I started working exclusively with the .NET Framework and C# in the fall of 2001.</p>
+
+<p>For better or worse I have not spent much time with VB.NET, or Visual Basic 6.0 for that manner, since the fall of 2001.  I have done a few small project using VB.NET but nothing to brag about.  For the most part, both .NET languages are very similar with regard to features but there are some differences.  For example, you can write unsafe code in C# but you can’t do the same in VB.NET.  Depending on your point of view this is an advantage or a disadvantage.</p>
+
+<p>Another difference is that in VB.NET you can specify the scope of a member that implements a particular interface as something other than public.  I needed to do this in more than one occasion in C# but was resolved to the fact that a member implementation of interface in C# had to be scoped as public.</p>
+
+<pre><code>Public Interface IMyInterface
+    Sub Foo()
+End Interface
+
+Public Class Class1
+Implements IMyInterface
+    Private Sub Foo() Implements IMyInterface.Foo
+    End Sub
+End Class
+</code></pre>
+
+<p>So if you can do this in VB.NET why can’t you do the same, or something similar in C#?  This question lead me to the discovery (thank you <a href="http://www.google.com/search?q=explicit+interface+implement&amp;sourceid=firefox&amp;start=0&amp;start=0&amp;ie=utf-8&amp;oe=utf-8">google</a>) of explicit interface implementation in C#.  By using an explicit interface implementation you can scope the member implementation as private.  It’s a little messy because a member explicitly implemented cannot be access through the class instance.  Instead it must be accessed through an instance of the interface.</p>
+
+<pre><code>interface IMyInterface
+{
+    void Foo();
+}
+
+abstract class MyAbstractClass : IMyInterface
+{
+    // Explicit interface implementation
+    void IMyInterface.Foo()
+    {
+        Console.WriteLine( "bar" );
+    }
+}
+
+class MyConcreteClass : MyAbstractClass
+{
+    public void FooBar()
+    {
+        // Must use an instance of the interface to access
+        // the explicit implementation.
+        ((IMyInterface)this).Foo();
+    }
+}
+
+public class MyApp
+{
+    public static void Main( string[] args )
+    {
+        MyConcreteClass c = new MyConcreteClass();
+        // Will not compile because Foo() is private.
+        // c.Foo();
+
+        c.FooBar();
+
+        // This works because we are all in the same module.
+        ((IMyInterface)c).Foo();
+    }
+}
+</code></pre>
+
+<p>While an explicit interface implementation does give the C# developer the ability to scope a member implementation as private, it is still not as powerful as VB.NET’s ability to scope a member implementation as anything other than public.  Score 1 point for VB.NET.</p>
+
+
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">24</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -251,27 +333,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">12</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/06/12/msn-alerts-for-xbox-live/" rel="bookmark" title="MSN Alerts for Xbox Live">MSN Alerts for Xbox Live</a></h2>
-
-        <p>Microsoft recently <a href="http://www.xbox.com/en-US/live/about/features-messenger.htm?level1=enushome&amp;level2=ad1&amp;level3=messengeralerts">announced</a> MSN Alerts for Xbox Live users.  It works by linking your Messager account with your Xbox Live gametag.  You can receive alerts for game invites, friend requests, know when friends sign in, and more.  Sounds cool but unfortunately I use <a href="http://www.trillian.cc/">Trillian</a> as my IM client.<br /><br />Trillian is awesome in that it is a single IM chat interface for different IM services such as AIM, Messager, ICQ, and Yahoo.  With Trillian I no longer need to run different IM programs.  Instead I run one program and it communicates with the different services.  The only beef I have with Trillian is the lack of support for <a href="http://alerts.msn.com/">MSN Alerts</a>, but I’m sure that has more to do with Microsoft then with the Trillian folks.  And as much as I like the concept of MSN Alerts I’m not going to give up Trillian.<br /><br /><br /></p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -326,17 +387,18 @@
 
 		<div id="linkcat-3" class="block widget widget_links"><h2>Categories</h2>
     <ul>
-        <li class='category'><a href='/category/apps/'>apps (2)</a></li>
+        <li class='category'><a href='/category/apps/'>apps (3)</a></li>
 <li class='category'><a href='/category/backpack/'>backpack (1)</a></li>
 <li class='category'><a href='/category/backpacking/'>backpacking (8)</a></li>
 <li class='category'><a href='/category/blogger/'>blogger (785)</a></li>
 <li class='category'><a href='/category/camping/'>camping (11)</a></li>
+<li class='category'><a href='/category/cross-post/'>cross post (1)</a></li>
 <li class='category'><a href='/category/family/'>family (4)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
 <li class='category'><a href='/category/general/'>general (11)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
 <li class='category'><a href='/category/humor/'>humor (1)</a></li>
-<li class='category'><a href='/category/ios/'>ios (4)</a></li>
+<li class='category'><a href='/category/ios/'>ios (5)</a></li>
 <li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
 <li class='category'><a href='/category/life/'>life (2)</a></li>
 <li class='category'><a href='/category/long-trail/'>long-trail (2)</a></li>
@@ -384,6 +446,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2014/09/14/cross-posting-to-app.net-facebook-and-twitter/" title="Cross Posting to App.net, Facebook, and Twitter">Cross Posting to App.net, Facebook, and Twitter</a></li>
+                
                   <li><a href="/2014/09/10/iphone-6-plus-pocket-test/" title="iPhone 6 and 6 Plus Pocket Test">iPhone 6 and 6 Plus Pocket Test</a></li>
                 
                   <li><a href="/2014/09/03/dear-simple-its-you-not-me/" title="Dear Simple. It's You, Not Me.">Dear Simple. It's You, Not Me.</a></li>
@@ -391,8 +455,6 @@
                   <li><a href="/2014/09/02/amy-bradstreet/" title="Amy Bradstreet">Amy Bradstreet</a></li>
                 
                   <li><a href="/2014/09/01/its-about-more-than-shipping-an-app/" title="It's About More Than Shipping an App">It's About More Than Shipping an App</a></li>
-                
-                  <li><a href="/2014/08/27/i-am-not-the-android-expert-you-seek/" title="I Am Not The Android Expert You Seek">I Am Not The Android Expert You Seek</a></li>
                 
             </ul>
 		</div>

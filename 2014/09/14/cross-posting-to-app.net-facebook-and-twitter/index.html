@@ -1,0 +1,265 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<script src="//widget.battleforthenet.com/widget.min.js" async></script>
+
+<title>Cross Posting to App.net, Facebook, and Twitter | thecave</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="index, follow" />
+
+<link rel="stylesheet" type="text/css" href="/styles/typebased/style.css" />
+<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="/atom.xml" />
+
+<!--[if IE 6]>
+<script type="text/javascript" src="/styles/typebased/includes/js/menu.js"></script>
+<![endif]-->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+<script type='text/javascript' src='/styles/typebased/includes/js/superfish.js?ver=3.3.2'></script>
+<script type="text/javascript" src="/js/lastfm.js"></script>
+
+<!-- Alt Stylesheet -->
+<link href="/styles/typebased/styles/grey.css" rel="stylesheet" type="text/css" />
+
+<!-- Woo Shortcodes CSS -->
+<link href="/styles/typebased/functions/css/shortcodes.css" rel="stylesheet" type="text/css" />
+
+<!-- Custom Stylesheet -->
+<link href="/styles/typebased/custom.css" rel="stylesheet" type="text/css" />
+<meta id="syntaxhighlighteranchor" name="syntaxhighlighter-version" content="3.1.3" />
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body class="home blog unknown">
+
+<div id="container">
+
+	<div id="header">
+		<h1>
+			<a href="/" title="Ramblings from a crotchety old man.">
+			<img src="/images/thecave-logo-2.png" style="margin-top:0px;" alt="thecave" /></a></h1>
+	</div>
+
+	
+	<div id="menu">
+				<ul id="navigation" class="nav wrap">
+										<li class="page_item current_page_item first"><a href="/"><span>Home</span></a></li>
+										<li class="page_item last"><a href="/about.html"><span>About</span></a></li>
+										</ul>
+			</div>
+	<div class="wrap background">
+
+		<div id="content" class="left-col wrap">
+            <!--- Post Starts -->
+<div class="post wrap page">
+
+    <div class="post-meta left-col">
+    <h3 class="wrap"><span class="month">Sep<span class="year">2014</span></span><span class="day">14</span></h3>
+    <h4 class="author">kirbyt</h4>
+    </div>
+
+    <div class="post-content right-col">
+    <h2><a href="/2014/09/14/cross-posting-to-app.net-facebook-and-twitter/" rel="bookmark" title="Cross Posting to App.net, Facebook, and Twitter">Cross Posting to App.net, Facebook, and Twitter</a></h2>
+
+    <p>Last year my wife told me more family and friends would “like” my photos on Facebook if I posted the them directly to Facebook. At the time I was using <a href="https://ifttt.com">ifttt</a> to selectively cross post to App.net and Facebook. This meant my photos on Facebook were actually links to the App.net, which is where the photos were being stored, and this required my Facebook followers to tap the link to see the photos. Not the best experience for my followers.</p>
+
+<p>I decided to test my wife’s theory by posting photos directly to Facebook. Turns out she was right. I started getting more likes. Not only that, I found that family and friends posted more comments when I posted the photos directly. My wife was right. Posting photos directly to the social site is the best experience for followers and the best to become more engaged with your followers.</p>
+
+<p>Now I could have setup an ifttt recipe that cross posted my Facebook photos to App.net, but that means my followers on App.net would have the less than ideal experience reading my posts and viewing my photos. So I started down the path of exploring different options for cross posting between different social networks.</p>
+
+<p>After exploring options for nearly six months, I learned there is no single solution that will cross post to different social networks while giving the followers on each network the best viewing experience. So I set out to write my own app.</p>
+
+<p>I quickly learned why no cross post solution that posts natively to each social network existed. It’s hard, and in the case of Facebook, nearly impossible to make the post look as if it were posted from the official app. But I figured it out and for the past few months I have been making posts using Cross Post.</p>
+
+<p>Cross Post is the app I’ve been working on for the last few months. I’ve also been using it almost daily for months. The app was ready for public release back in August, but I decided to wait until the iOS 8 release. The primary reason for this is to avoid annoying iPhone 4 users. iPhone 4 cannot run iOS 8, and I had planned to drop support for iOS 7 the moment iOS 8 is released. So I decided to delay the release of Cross Post.</p>
+
+<p>The delayed release gave me time to work on adding some new iOS 8 only features. One feature in particular that I’m very excited about is the share extension. This feature makes it possible for a person to cross post to different social networks from other apps running on their iPhone or iPad. This feature alone makes Cross Post much more useful than I ever imagined 6 months ago.</p>
+
+<p>When I started learning the ins and outs of share extensions I thought to myself, “This will be a snap.” But as I got deeper into the code I realized Cross Post has one major issue that makes the Cross Post share extension suck. It takes Cross Post too damn long to post photos to multiple social sites.</p>
+
+<p>Consider the scenario where you want to post 4 photos to App.net, Facebook, and Twitter. Each photo must be uploaded to each network. That means 12 different uploads, which is not speedy. This performance problem is acceptable in the Cross Post app because it performs the uploads even when the app is no longer active. A share extension, on the other hand, should return almost immediately. It should not, or have to, wait for the uploads to complete.</p>
+
+<p>Extensions that need to upload data should do so using a background <code>NSURLSession</code>. Unfortunately this is not an option for Cross Post because it uses the Facebook SDK to post to Facebook and <code>SLRequest</code> to post to Twitter. Cross Post does use <code>NSURLSession</code> to post to App.net, but I want to be able to post to Facebook and Twitter via the share extension as well. So I needed to come up with a better way to post status updates and photos across different social networks.</p>
+
+<p>To solve this problem I decided to create a Cross Post server. I was trying to avoid having a server for Cross Post, but it’s avoidable if I want to provide the best user experience. With the server in place Cross Post can upload the post and photos once and let the server handle uploading the content to the selected networks. Best of all, the upload from the app can be accomplished using a single <code>NSURLSession</code> request, and it can be performed in a background session. This means the Cross Post share extension can return almost immediately. It also means that Cross Post now only needs to make one HTTP request whereas previously it had to make numerous requests. For instance, the previous scenario of posting 4 photos to 3 different social sites required 15 HTTP requests. Now Cross Post app accomplishes the same thing using a single HTTP request<sup id="fnref:onerequest"><a href="#fn:onerequest" class="footnote">1</a></sup>, and the Cross Post server handles making all the other requests on behalf of the app.</p>
+
+<p>This performance boost does have some disadvantages. First and foremost, I’m now responsible for keeping the server environment up and running. But thanks to <a href="https://www.openshift.com">OpenShift</a>, I’m not too worried about that.</p>
+
+<p>Another disadvantage is that reporting errors back to the iOS app is going to be more challenging. Cross Post and the share extension sends off the request to the server. Once the server receives the payload the HTTP connection ends. The server, however, continues working by posting the payload to the selected social sites. If there is an error posting to, say, Twitter, there is no way for the server to tell the Cross Post app because that connection no longer exist. I have some ideas on how to solve this problem, but it’s not going to happen in the first release.</p>
+
+<p>Still, the improved user experience outweighs the disadvantages of using a server. And I have to admit, I’m enjoying getting back into server-side programming. So much as changed, for the better, over the years.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:onerequest">
+      <p>I was able to reducing the number of calls to the server down to one by packaging the post and photos into a single .zip file, which is sent to the server. <a href="#fnref:onerequest" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+
+
+    <div>Posted in <a class='category' href='/category/apps/'>apps</a>, <a class='category' href='/category/cross post/'>cross post</a>, <a class='category' href='/category/ios/'>ios</a>.</div>
+
+    <hr />
+    
+        <a href="/2014/09/10/iphone-6-plus-pocket-test/" title="Previous Post: iPhone 6 and 6 Plus Pocket Test" class="post-footer">&laquo; iPhone 6 and 6 Plus Pocket Test</a>
+    
+    
+
+    </div>
+</div>
+<!--- Post Ends -->
+
+		</div>
+
+				<!--- Sidebar Starts -->
+
+		<div id="sidebar" class="right-col">
+
+			<div id="search">
+                <form action="http://google.com/search" method="get">
+                    <div>
+                    <input type="hidden" name="q" value="site:thecave.com" />
+					<input type="text" class="search_box" name="q" id="q" results="0" />
+					<input type="image" src="/styles/typebased/images/search.gif" class="submit" name="submit" />
+                    </div>
+                </form>
+			</div>
+
+			<div id="sidebar_in">
+
+			<div id="lastfm-1" class="block widget widget_lastfm">
+    <h2><a href="http://last.fm/user/kirbyt" class="lastfm_title_link">Listening To</a></h2>
+    <div class="lastfm">
+    </div>
+</div>
+
+
+
+        <div id="linkcat-2" class="block widget widget_links"><h2>Blogroll</h2>
+            <ul class='xoxo blogroll'>
+            <li><a href="http://www.rowanturner.net/">Rowan T</a></li>
+            <li><a href="http://photos.thecave.com/">Photos</a></li>
+            <li><a href="http://www.learnipadprogramming.com/">Learning iPad Programming</a></li>
+            <li><a href="http://blog.whitepeaksoftware.com/">White Peak Software</a></li>
+            </ul>
+        </div>
+
+		<div id="linkcat-3" class="block widget widget_links"><h2>Categories</h2>
+    <ul>
+        <li class='category'><a href='/category/apps/'>apps (3)</a></li>
+<li class='category'><a href='/category/backpack/'>backpack (1)</a></li>
+<li class='category'><a href='/category/backpacking/'>backpacking (8)</a></li>
+<li class='category'><a href='/category/blogger/'>blogger (785)</a></li>
+<li class='category'><a href='/category/camping/'>camping (11)</a></li>
+<li class='category'><a href='/category/cross-post/'>cross post (1)</a></li>
+<li class='category'><a href='/category/family/'>family (4)</a></li>
+<li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
+<li class='category'><a href='/category/general/'>general (11)</a></li>
+<li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
+<li class='category'><a href='/category/humor/'>humor (1)</a></li>
+<li class='category'><a href='/category/ios/'>ios (5)</a></li>
+<li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
+<li class='category'><a href='/category/life/'>life (2)</a></li>
+<li class='category'><a href='/category/long-trail/'>long-trail (2)</a></li>
+<li class='category'><a href='/category/moving/'>moving (1)</a></li>
+<li class='category'><a href='/category/opinion/'>opinion (2)</a></li>
+<li class='category'><a href='/category/pictures/'>pictures (8)</a></li>
+<li class='category'><a href='/category/programming/'>programming (2)</a></li>
+<li class='category'><a href='/category/random/'>random (4)</a></li>
+<li class='category'><a href='/category/rant/'>rant (2)</a></li>
+<li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
+<li class='category'><a href='/category/salem/'>salem (1)</a></li>
+<li class='category'><a href='/category/skiing/'>skiing (2)</a></li>
+<li class='category'><a href='/category/snowboarding/'>snowboarding (5)</a></li>
+<li class='category'><a href='/category/social/'>social (2)</a></li>
+<li class='category'><a href='/category/stowe/'>stowe (2)</a></li>
+<li class='category'><a href='/category/tech/'>tech (1)</a></li>
+<li class='category'><a href='/category/travel/'>travel (3)</a></li>
+<li class='category'><a href='/category/trips/'>trips (5)</a></li>
+<li class='category'><a href='/category/videos/'>videos (2)</a></li>
+<li class='category'><a href='/category/work/'>work (4)</a></li>
+
+    </ul>
+</div>
+
+        <div id="archives-3" class="block widget widget_archive"><h2>Archives</h2>
+        <ul class='archives'>
+        <li><a href="/blog/archives">The Complete Blog Archives</a></li>
+        </ul>
+        </div>
+
+
+			</div>
+
+		</div>
+
+		<!--- Sidebar Ends -->
+	</div>
+
+</div>
+
+<div id="footer" class="wrap">
+
+	<div class="left-col">
+		<div class="popular wrap">
+			<h2>Recent Articles</h2>
+			<ul>
+                
+                  <li><a href="/2014/09/14/cross-posting-to-app.net-facebook-and-twitter/" title="Cross Posting to App.net, Facebook, and Twitter">Cross Posting to App.net, Facebook, and Twitter</a></li>
+                
+                  <li><a href="/2014/09/10/iphone-6-plus-pocket-test/" title="iPhone 6 and 6 Plus Pocket Test">iPhone 6 and 6 Plus Pocket Test</a></li>
+                
+                  <li><a href="/2014/09/03/dear-simple-its-you-not-me/" title="Dear Simple. It's You, Not Me.">Dear Simple. It's You, Not Me.</a></li>
+                
+                  <li><a href="/2014/09/02/amy-bradstreet/" title="Amy Bradstreet">Amy Bradstreet</a></li>
+                
+                  <li><a href="/2014/09/01/its-about-more-than-shipping-an-app/" title="It's About More Than Shipping an App">It's About More Than Shipping an App</a></li>
+                
+            </ul>
+		</div>
+	</div>
+
+	<div id="subscribe" class="right-col">
+		<h2>Subscribe to RSS</h2>
+		<p class="rss">If you enjoyed the post, make sure you subscribe to the RSS feed.</p>
+		<p>
+		<a href="/atom.xml">Articles</a><br />
+		</p>
+	</div>
+
+<div id="copyright" class="wrap">
+
+	<div class="left-col">
+		<p>&copy; 2014</p>
+	</div>
+
+	<div class="right-col">
+		<p>Design by <a href="http://woothemes.com"><img src="/styles/typebased/styles/grey/logo-footer.jpg" width="87" height="21" alt="woo themes" /></a></p>
+	</div>
+
+</div>
+
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-167605-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
+<!-- Localized -->
