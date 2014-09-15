@@ -33,4 +33,4 @@ Having the database does seem a bit overkill at the moment, but there might be a
 
 Update: I came up with a [third option][post] that is by far my favorite.
 
-[post]: http://www.thecave.com/2014/09/14/reporting-errors-in-cross-post/
+[post]: http://www.thecave.com/2014/09/15/reporting-errors-in-cross-post-part-2/
