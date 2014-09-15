@@ -11,7 +11,7 @@ Yesterday I talked about [options for reporting errors][post] (and statuses) fro
 
 The Cross Post server is scalable, which means I cannot rely on the server's file system. Data on the file system for one server is not synced to the other servers, and it's possible that the server reporting the error is not the same server as the one that caught the error.
 
-The obvious solution is to use a database server, but using a database server is overkill for Cross Post. But as I thought about it more I realized I all I need is a scalable file system, and that's exactly what cloud storage systems like S3[s3] and Cloud Files[cloudfiles] do. They provide a scalable file storage system.
+The obvious solution is to use a database server, but using a database server is overkill for Cross Post. But as I thought about it more I realized I all I need is a scalable file system, and that's exactly what cloud storage systems like [S3][s3] and [Cloud Files][cloudfiles] do. They provide a scalable file storage system.
 
 I came to this realization while thinking about how a CMS in a scalable environment might store uploaded files. Uploaded files would likely be stored on a scalable file storage system like S3. And that's exactly what I need for reporting errors, a scalable file system. As I keep saying, a database is overkill for the current needs of Cross Post.
 
