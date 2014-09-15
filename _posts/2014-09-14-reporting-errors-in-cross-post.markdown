@@ -30,3 +30,7 @@ The other problem with having the app check the server for error reports is that
 Having an additional server for data persistence isn't a big deal for OpenShift, but it is just one more server that must always be available. And now the backend for Cross Post is starting to grow. A couple of weeks ago the entire Cross Post solution ran on an iOS device. Now the solution spans the device and a server environment, and next I have to throw in a database server just for error reporting!?
 
 Having the database does seem a bit overkill at the moment, but there might be a need for a database for persistent storage down the road anyways. So it looks like I will be adding a MongoDB database to the mix very soon. That is unless someone has a better idea to share with me.
+
+Update: I came up with a [third option][post] that is by far my favorite.
+
+[post]: http://www.thecave.com/2014/09/14/reporting-errors-in-cross-post/
