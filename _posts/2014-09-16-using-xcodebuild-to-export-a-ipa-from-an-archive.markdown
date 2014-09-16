@@ -17,15 +17,15 @@ So how do I do it?
 
 My build script starts by performing a clean.
 
-`xcodebuild clean -project $projectname.xcodeproj -configuration Release -alltargets`
+> xcodebuild clean -project $projectname.xcodeproj -configuration Release -alltargets
 
 Then the script builds and archives the app. I specify the archive path using the *-archivePath* parameter in the command line so the script will know where the archive file is located.
 
-`xcodebuild archive -project $projectname.xcodeproj -scheme $schemename -archivePath $projectname.xcarchive`
+> xcodebuild archive -project $projectname.xcodeproj -scheme $schemename -archivePath $projectname.xcarchive
 
 Finally my script exports the archive into a .ipa file.
 
-`xcodebuild -exportArchive -archivePath $projectname.xcarchive -exportPath $projectname -exportFormat ipa -exportProvisioningProfile "Provisioning Profile Name"`
+> xcodebuild -exportArchive -archivePath $projectname.xcarchive -exportPath $projectname -exportFormat ipa -exportProvisioningProfile "Provisioning Profile Name"
 
 I let the provisioning profile imply the signing identity, but you can specify the signing identity using the *-exportSigningIdentity* parameter.
 
