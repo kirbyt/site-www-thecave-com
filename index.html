@@ -78,15 +78,21 @@
 
 <p>My build script starts by performing a clean.</p>
 
-<p><code>xcodebuild clean -project $projectname.xcodeproj -configuration Release -alltargets</code></p>
+<blockquote>
+  <p>xcodebuild clean -project $projectname.xcodeproj -configuration Release -alltargets</p>
+</blockquote>
 
 <p>Then the script builds and archives the app. I specify the archive path using the <em>-archivePath</em> parameter in the command line so the script will know where the archive file is located.</p>
 
-<p><code>xcodebuild archive -project $projectname.xcodeproj -scheme $schemename -archivePath $projectname.xcarchive</code></p>
+<blockquote>
+  <p>xcodebuild archive -project $projectname.xcodeproj -scheme $schemename -archivePath $projectname.xcarchive</p>
+</blockquote>
 
 <p>Finally my script exports the archive into a .ipa file.</p>
 
-<p><code>xcodebuild -exportArchive -archivePath $projectname.xcarchive -exportPath $projectname -exportFormat ipa -exportProvisioningProfile "Provisioning Profile Name"</code></p>
+<blockquote>
+  <p>xcodebuild -exportArchive -archivePath $projectname.xcarchive -exportPath $projectname -exportFormat ipa -exportProvisioningProfile “Provisioning Profile Name”</p>
+</blockquote>
 
 <p>I let the provisioning profile imply the signing identity, but you can specify the signing identity using the <em>-exportSigningIdentity</em> parameter.</p>
 
