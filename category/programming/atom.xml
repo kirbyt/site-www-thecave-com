@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | thecave | Ramblings from a crotchety old man]]></title>
   <link href="http://www.thecave.com/category/programming/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2014-09-16T17:01:51-04:00</updated>
+  <updated>2014-09-16T17:04:44-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -13,10 +13,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Using xcodebuild To Export An .ipa From An Archive]]></title>
-    <link href="http://www.thecave.com/2014/09/16/using-xcodebuild-to-export-an-ipa-from-an-archive/"/>
+    <title type="html"><![CDATA[Using xcodebuild To Export a .ipa From an Archive]]></title>
+    <link href="http://www.thecave.com/2014/09/16/using-xcodebuild-to-export-a-ipa-from-an-archive/"/>
     <updated>2014-09-16T00:00:00-04:00</updated>
-    <id>http://www.thecave.com/2014/09/16/using-xcodebuild-to-export-an-ipa-from-an-archive</id>
+    <id>http://www.thecave.com/2014/09/16/using-xcodebuild-to-export-a-ipa-from-an-archive</id>
     <content type="html"><![CDATA[<p>Xcode 6 changes how you export a .ipa from an archive for adhoc distribution. It used to be that you could export the archive to a .ipa as long as you had the right provisioning profile and distribution certificate on your machine. Starting with Xcode 6 you need to be a team member of the particular Developer Program account and you need to have the rights to make a distribution build. This means you need to be a team agent. However, I work with a number of clients who don’t have the clue what Xcode is much less are willing to make distribution builds, so I need to way to make distribution builds within this new limitation from Xcode 6.</p>
 
 <p>Making distribution builds hasn’t been a problem for me in the past. I ask the client to provide me<sup id="fnref:ask"><a href="#fn:ask" class="footnote">1</a></sup> with the necessary provisioning profile, distribution certificate, and public private key pair so I can make the distribution build for them. Then I use Xcode Organizer to export the archive to a .ipa that I can distribute.<sup id="fnref:host"><a href="#fn:host" class="footnote">2</a></sup> But it seems I can no longer export using Organizer without having the right team access, so I had to search out an alternative approach.</p>
