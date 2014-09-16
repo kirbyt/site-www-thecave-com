@@ -13,23 +13,23 @@ Turns out starting with Xcode 5, *xcodebuild* includes parameters for exporting 
 
 So how do I do it?
 
-## The How To
+### The How To
 
 My build script starts by performing a clean.
 
-> xcodebuild clean -project $projectname.xcodeproj -configuration Release -alltargets
+`xcodebuild clean -project $projectname.xcodeproj -configuration Release -alltargets`
 
 Then the script builds and archives the app. I specify the archive path using the *-archivePath* parameter in the command line so the script will know where the archive file is located.
 
-> xcodebuild archive -project $projectname.xcodeproj -scheme $schemename -archivePath $projectname.xcarchive
+`xcodebuild archive -project $projectname.xcodeproj -scheme $schemename -archivePath $projectname.xcarchive`
 
 Finally my script exports the archive into a .ipa file.
 
-> xcodebuild -exportArchive -archivePath $projectname.xcarchive -exportPath $projectname -exportFormat ipa -exportProvisioningProfile "Provisioning Profile Name"
+`xcodebuild -exportArchive -archivePath $projectname.xcarchive -exportPath $projectname -exportFormat ipa -exportProvisioningProfile "Provisioning Profile Name"`
 
 I let the provisioning profile imply the signing identity, but you can specify the signing identity using the *-exportSigningIdentity* parameter.
 
-## The Gotcha
+### The Gotcha
 
 The one major gotcha that cost me a more than an hour of time was figuring out the parameter value for *-exportProvisioningProfile*. I initial thought it should be the file name to the provisioning profile. I tried it with and without the *.mobileprovision* file extension, but it did not work. I included a relative path as well as an absolute path to the provision profile. I tried using the UUID for the provision profile instead of the file name. I even I tried not including a path at all thinking it would look up the provision profile in the *~/Library/MobileDevice/Provisioning Profiles/* directory, but still no luck.
 
