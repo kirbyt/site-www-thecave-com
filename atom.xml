@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Ramblings from a crotchety old man]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2014-09-16T17:04:44-04:00</updated>
+  <updated>2014-09-16T17:07:31-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -27,29 +27,23 @@
 
 <p>So how do I do it?</p>
 
-<h2 id="the-how-to">The How To</h2>
+<h3 id="the-how-to">The How To</h3>
 
 <p>My build script starts by performing a clean.</p>
 
-<blockquote>
-  <p>xcodebuild clean -project $projectname.xcodeproj -configuration Release -alltargets</p>
-</blockquote>
+<p><code>xcodebuild clean -project $projectname.xcodeproj -configuration Release -alltargets</code></p>
 
 <p>Then the script builds and archives the app. I specify the archive path using the <em>-archivePath</em> parameter in the command line so the script will know where the archive file is located.</p>
 
-<blockquote>
-  <p>xcodebuild archive -project $projectname.xcodeproj -scheme $schemename -archivePath $projectname.xcarchive</p>
-</blockquote>
+<p><code>xcodebuild archive -project $projectname.xcodeproj -scheme $schemename -archivePath $projectname.xcarchive</code></p>
 
 <p>Finally my script exports the archive into a .ipa file.</p>
 
-<blockquote>
-  <p>xcodebuild -exportArchive -archivePath $projectname.xcarchive -exportPath $projectname -exportFormat ipa -exportProvisioningProfile “Provisioning Profile Name”</p>
-</blockquote>
+<p><code>xcodebuild -exportArchive -archivePath $projectname.xcarchive -exportPath $projectname -exportFormat ipa -exportProvisioningProfile "Provisioning Profile Name"</code></p>
 
 <p>I let the provisioning profile imply the signing identity, but you can specify the signing identity using the <em>-exportSigningIdentity</em> parameter.</p>
 
-<h2 id="the-gotcha">The Gotcha</h2>
+<h3 id="the-gotcha">The Gotcha</h3>
 
 <p>The one major gotcha that cost me a more than an hour of time was figuring out the parameter value for <em>-exportProvisioningProfile</em>. I initial thought it should be the file name to the provisioning profile. I tried it with and without the <em>.mobileprovision</em> file extension, but it did not work. I included a relative path as well as an absolute path to the provision profile. I tried using the UUID for the provision profile instead of the file name. I even I tried not including a path at all thinking it would look up the provision profile in the <em>~/Library/MobileDevice/Provisioning Profiles/</em> directory, but still no luck.</p>
 
