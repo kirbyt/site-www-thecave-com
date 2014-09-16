@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Using xcodebuild To Export An .ipa From An Archive"
+title: "Using xcodebuild To Export a .ipa From an Archive"
 categories:
     - programming
     - ios
