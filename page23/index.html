@@ -64,6 +64,65 @@
         </div>
 
         <div class="post-content right-col">
+        <h2><a href="/2006/06/15/quickbase-api-for-delphi/" rel="bookmark" title="QuickBase API for Delphi">QuickBase API for Delphi</a></h2>
+
+        <p>I have been doing more <a href="http://www.quickbase.com/">QuickBase</a> work lately.  I really like QuickBase but the <a href="https://www.quickbase.com/up/6mztyxu8/g/rc7/en/va/QuickBaseAPI.htm">HTTP API</a> can be a bit hairy.  Intuit provides various language specific SDKs for the QuickBase API but <a href="http://www.borland.com/delphi">Delphi</a> is not included.  So I’m writing my own.  [I’ll post the code to the <a href="http://www.whitepeaksoftware.com/">White Peak Software</a> site as soon as it is done.]</p>
+
+<p>A challenge I encounter today was determining an appropriate data structure for a QuickBase record set.  The QuickBase API includes a DoQuery call that returns an XML document containing the results of the query.  A goal of my Delphi QuickBase SDK is to simplify API calls such as DoQuery, which means I do not want to return XML to calling Delphi code.  A Delphi friendly data structure for the QuickBase record set is needed.</p>
+
+<p>After bouncing different ideas around a buddy, I started “seeing” the data structure.  I started hacking up code keeping in mind 3 primary goals:</p>
+
+<ol>
+  <li>The data structure must be easy to use.</li>
+  <li>The data structure must make the code readable.</li>
+  <li>The data structure must be Delphi friendly.</li>
+</ol>
+
+<p>The end result is a set of classes which is really nothing more than a TObjectList containing TObjectList containing a field value class.  In other words, the final data structure consists of the following classes:</p>
+
+<pre><code>TQuickBaseDataset = class(TObjectList);
+TQuickBaseRecordset = class(TObjectList);
+TQuickBaseValue = class(TObject);
+</code></pre>
+
+<p>A dataset contains one or more record sets which contains one of more values.  The value class is implemented to provide strong type access to the value returned from QuickBase.</p>
+
+<p>So does the new data structure meet the 3 goals above?  I think so but I will leave it up to you to decide.  Here is a code snippet that queries the database and returns a record set containing 3 fields in each record.</p>
+
+<pre><code>Qdb := TQuickBaseClient.Create(username, password);
+if Qdb.Authenticate then
+begin
+    Dataset := Qdb.DoQuery(dbid, query, clist);
+    for Recordset in Dataset do
+    begin
+        s := Recordset.Items[0].ValueAsString;
+        b := Recordset.Items[1].ValueAsBoolean;
+        i := Recordset.Items[2].ValueAsInteger;
+    end;
+end;
+Qdb.SignOut;
+Qdb.Free;
+</code></pre>
+
+<p>I will be adding the ability to retrieve field values by name very soon.  This will make the code even more readable.</p>
+
+
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jun<span class="year">2006</span></span><span class="day">15</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
         <h2><a href="/2006/06/15/nick-hodges-joins-devco/" rel="bookmark" title="Nick Hodges Joins DevCo">Nick Hodges Joins DevCo</a></h2>
 
         <p><a href="http://www.lemanix.com/nickblog/">Nick Hodges</a> of <a href="http://www.teamb.com/">TeamB</a> fame, and a huge voice for the <a href="http://www.borland.com/delphi">Delphi</a> community, has joined the DevCo team as the <a href="http://www.lemanix.com/nickblog/PermaLink,guid,e12c634d-a70b-4c8e-b6e5-1c23130bf518.aspx">new Delphi Product Manager</a>.  Congratulations Nick!  I can’t think of a better person for the role.</p>
@@ -251,27 +310,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2006</span></span><span class="day">06</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2006/06/06/work-on-swirl-has-resumed/" rel="bookmark" title="Work on Swirl has resumed">Work on Swirl has resumed</a></h2>
-
-        <p>Work on Swirl has started up again.  For those readers who have forgotten, Swirl is the code name for White Peak Software’s soon to be released <a href="http://www.whitepeaksoftware.com/">Web service debugger and testing program</a>.  I missed the planned milestone of having the first beta release out by the end of May due to other customer demands.  Can’t blame a guy for needing to make money from time to time, right?<br /><br />As I’m working through preparing Swirl for the first beta release, something occurred to me.  I really don’t like the WSDL parser I wrote.  It works mostly.  I say mostly because there is still a bug or two left in the parser.  But the reason I don’t like it is not because there are a few bugs but because the code is nasty and hard to maintain.  I think it is time to take a step back and refactor the WSDL parser into something better.  This of course will delay the beta release even more but it’s worth the delay in the long run.</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -331,20 +369,20 @@
 <li class='category'><a href='/category/backpacking/'>backpacking (8)</a></li>
 <li class='category'><a href='/category/blogger/'>blogger (785)</a></li>
 <li class='category'><a href='/category/camping/'>camping (11)</a></li>
-<li class='category'><a href='/category/cross-post/'>cross post (3)</a></li>
+<li class='category'><a href='/category/cross-post/'>cross post (4)</a></li>
 <li class='category'><a href='/category/family/'>family (4)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
 <li class='category'><a href='/category/general/'>general (11)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
 <li class='category'><a href='/category/humor/'>humor (1)</a></li>
-<li class='category'><a href='/category/ios/'>ios (8)</a></li>
+<li class='category'><a href='/category/ios/'>ios (9)</a></li>
 <li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
 <li class='category'><a href='/category/life/'>life (2)</a></li>
 <li class='category'><a href='/category/long-trail/'>long-trail (2)</a></li>
 <li class='category'><a href='/category/moving/'>moving (1)</a></li>
 <li class='category'><a href='/category/opinion/'>opinion (2)</a></li>
 <li class='category'><a href='/category/pictures/'>pictures (8)</a></li>
-<li class='category'><a href='/category/programming/'>programming (5)</a></li>
+<li class='category'><a href='/category/programming/'>programming (6)</a></li>
 <li class='category'><a href='/category/random/'>random (4)</a></li>
 <li class='category'><a href='/category/rant/'>rant (2)</a></li>
 <li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
@@ -385,6 +423,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2014/10/09/microblogging-the-open-web-and-cross-post/" title="Microblogging, the Open Web, and Cross Post">Microblogging, the Open Web, and Cross Post</a></li>
+                
                   <li><a href="/2014/09/16/using-xcodebuild-to-export-a-ipa-from-an-archive/" title="Using xcodebuild To Export a .ipa From an Archive">Using xcodebuild To Export a .ipa From an Archive</a></li>
                 
                   <li><a href="/2014/09/15/reporting-errors-in-cross-post-part-2/" title="Reporting Errors in Cross Post Part 2">Reporting Errors in Cross Post Part 2</a></li>
@@ -392,8 +432,6 @@
                   <li><a href="/2014/09/14/reporting-errors-in-cross-post/" title="Reporting Errors in Cross Post">Reporting Errors in Cross Post</a></li>
                 
                   <li><a href="/2014/09/14/cross-posting-to-app.net-facebook-and-twitter/" title="Cross Posting to App.net, Facebook, and Twitter">Cross Posting to App.net, Facebook, and Twitter</a></li>
-                
-                  <li><a href="/2014/09/10/iphone-6-plus-pocket-test/" title="iPhone 6 and 6 Plus Pocket Test">iPhone 6 and 6 Plus Pocket Test</a></li>
                 
             </ul>
 		</div>
