@@ -11,7 +11,7 @@ A few weeks back I said I would be buying the [iPhone 6][iphone6], not the 6 Plu
 
 There are a few reasons I changed my mind. First and foremost, I could not justify upgrading from the iPhone 5 to iPhone 6. It's just a hardware upgrade, and I'm very happy with my iPhone 5. Sure, it would be nice having a device with TouchID but that's not a must have feature for me. And a better camera would also be nice, but again it's not totally necessary for me.
 
-I actually started the process of ordering the iPhone 6 on two separate occasions this past week, and each time I stopped before completing the order. There simply were good reasons for me to upgrade my phone other than to keep the end date for my 2-year contract with Verizon in the month of October. But the same is not true for the iPhone 6 Plus.
+I actually started the process of ordering the iPhone 6 on two separate occasions this past week, and each time I stopped before completing the order. There simply weren't any good reasons for me to upgrade my phone other than to keep the end date for my 2-year contract with Verizon in the month of October. But the same is not true for the iPhone 6 Plus.
 
 ## Different Size Classes
 
