@@ -41,7 +41,7 @@ Would I buy an iPhone 6 Plus if I weren't a developer? Nope, I would not. In fac
 
 What I really want isn't the iPhone 6 Plus, but what I want does not exists, at least not yet.
 
-As a developer what I really want is an iPod touch Plus. If Apple were selling an iPod touch Plus that is the same as the iPhone 6 Plus minus the phone, then I would buy it in an instance. That way I could continue using my iPhone 5 as my primary phone device and the iPod touch Plus as a test device. And my son would be happy too because in his mind the iPod touch Plus would be his even though I would use it for testing purposes. But sadly there is no such thing as an iPod touch Plus right now.
+As a developer what I really want is an iPod touch Plus. If Apple were selling an iPod touch Plus that is the same as the iPhone 6 Plus minus the phone, then I would buy it in an instant. That way I could continue using my iPhone 5 as my primary phone device and the iPod touch Plus as a test device. And my son would be happy too because in his mind the iPod touch Plus would be his even though I would use it for testing purposes. But sadly there is no such thing as an iPod touch Plus right now.
 
 ## Change My Mind Again
 
