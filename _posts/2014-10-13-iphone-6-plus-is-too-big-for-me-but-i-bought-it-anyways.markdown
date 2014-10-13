@@ -35,7 +35,7 @@ Using the iPhone 6 Plus to test my apps is like having two devices in one. I can
 
 ## Not a Developer
 
-Would I buy an iPhone 6 Plus if I weren't a developer? Nope, I would not. In fact I would not by the iPhone 6 either, at least not right now. My iPhone 5 suits me well, and I would have no good reason to upgrade if I weren't a developer.
+Would I buy an iPhone 6 Plus if I weren't a developer? Nope, I would not. In fact I would not buy the iPhone 6 either, at least not right now. My iPhone 5 suits me well, and I would have no good reason to upgrade if I weren't a developer.
 
 ## What I Really Want
 
