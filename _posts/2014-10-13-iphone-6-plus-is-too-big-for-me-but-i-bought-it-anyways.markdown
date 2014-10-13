@@ -25,7 +25,7 @@ Over the weekend, while attending [Çingleton][cingleton], I did a number of poc
 
 But as I thought about it more I realized that I don't keep my iPhone 5 in my pocket all that much. I work from home and the majority of the time my iPhone is sitting on my desk. I do put it in my pocket when I leave the house, but typically I'm at home more than not.
 
-Still, after a weekend of various pocket tests I wasn't completely sold on the iPhone 6 Plus. I certainly was leaning towards buy it, but I was still on the fence. That was until I learned about the zoom view.
+Still, after a weekend of various pocket tests I wasn't completely sold on the iPhone 6 Plus. I certainly was leaning towards buying it, but I was still on the fence. That was until I learned about the zoom view.
 
 ## Zoom View
 
