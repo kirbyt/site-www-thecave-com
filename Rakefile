@@ -1,6 +1,3 @@
-# require "rubygems"
-# require "bundler/setup"
-# require "stringex"
 
 # This will be configured for you when you run config_deploy
 deploy_branch  = "gh-pages"
@@ -8,17 +5,11 @@ git_repo = "https://github.com/kirbyt/site-www-thecave-com.git"
 
 ## -- Misc Configs -- ##
 
-# public_dir      = "public"    # compiled site directory
 source_dir      = "."    # source file directory
-# blog_index_dir  = 'source'    # directory for your blog's index page (if you put your index in source/blog/index.html, set this to 'source/blog')
 deploy_dir      = "_deploy"   # deploy directory (for Github pages deployment)
 site_dir      = "_site"   # Generated Jekyll site directory (for Github pages deployment)
-# stash_dir       = "_stash"    # directory to stash posts for speedy generation
 posts_dir       = "_posts"    # directory for blog files
-# themes_dir      = ".themes"   # directory for blog files
 new_post_ext    = "markdown"  # default new post file extension when using the new_post task
-# new_page_ext    = "markdown"  # default new page file extension when using the new_page task
-# server_port     = "4000"      # port for preview server eg. localhost:4000
 
 class String
   def titleize
