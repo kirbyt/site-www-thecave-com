@@ -1,5 +1,6 @@
 ---
-layout: nil
+layout: null
+title : Atom Feed
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
@@ -13,7 +14,7 @@ layout: nil
     <name><![CDATA[{{ site.author | strip_html }}]]></name>
     {% if site.email %}<email><![CDATA[{{ site.email }}]]></email>{% endif %}
   </author>
-  <rights>Copyright (c) 2003-{{ site.time | date: "%Y" }} White Peak Software Inc</rights>
+  <rights>Copyright (c) 1999-{{ site.time | date: "%Y" }} Kirby Turner</rights>
   
   {% for post in site.posts limit: 20 %}
   <entry>
