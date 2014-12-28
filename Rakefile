@@ -4,13 +4,15 @@
 
 # This will be configured for you when you run config_deploy
 deploy_branch  = "gh-pages"
+git_repo = "https://github.com/kirbyt/site-www-thecave-com.git"
 
 ## -- Misc Configs -- ##
 
 # public_dir      = "public"    # compiled site directory
 source_dir      = "."    # source file directory
 # blog_index_dir  = 'source'    # directory for your blog's index page (if you put your index in source/blog/index.html, set this to 'source/blog')
-# deploy_dir      = "_deploy"   # deploy directory (for Github pages deployment)
+deploy_dir      = "_deploy"   # deploy directory (for Github pages deployment)
+site_dir      = "_site"   # Generated Jekyll site directory (for Github pages deployment)
 # stash_dir       = "_stash"    # directory to stash posts for speedy generation
 posts_dir       = "_posts"    # directory for blog files
 # themes_dir      = ".themes"   # directory for blog files
@@ -53,3 +55,45 @@ task :new_post, :title do |t, args|
   end
   system "~/bin/subl --new-window #{filename}"
 end
+
+desc "Generate jekyll site"
+task :generate do
+  puts "## Generating Site with Jekyll"
+  system "jekyll build"
+end
+
+desc "Generate and deploy jekyll site to Github Pages"
+task :deploy do
+
+  Rake::Task[:generate].execute
+
+  puts "## Fetch git repo at #{git_repo}"
+  if not File.exist?(deploy_dir)
+    system "git clone #{git_repo} #{deploy_dir}"
+    cd "#{deploy_dir}" do 
+      system "git branch gh-pages origin/gh-pages"
+    end
+  end
+  cd "#{deploy_dir}" do 
+    system "git checkout gh-pages"
+    system "git pull"
+  end
+
+  # Remove the old files and directories
+  (Dir["#{deploy_dir}/*"]).each { |f| rm_rf(f) }  
+
+  puts "## Copying #{site_dir} files to #{deploy_dir}"
+  FileUtils.cp_r(site_dir + '/.', deploy_dir)
+
+  cd "#{deploy_dir}" do 
+    system "git add -A ."
+    message = "Site updated at #{Time.now.utc}"
+    puts "\n## Committing: #{message}"
+    system "git commit -m \"#{message}\""
+    puts "\n## Pushing generated #{deploy_dir} website"
+    system "git push origin #{deploy_branch}"
+    puts "\n## Github Pages deploy complete"
+  end
+
+end
+
