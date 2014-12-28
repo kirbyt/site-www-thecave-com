@@ -14,7 +14,7 @@ title : Atom Feed
     <name><![CDATA[{{ site.author | strip_html }}]]></name>
     {% if site.email %}<email><![CDATA[{{ site.email }}]]></email>{% endif %}
   </author>
-  <rights>Copyright (c) 1999-{{ site.time | date: "%Y" }} Kirby Turner</rights>
+  <rights>Copyright (c) 2002-{{ site.time | date: "%Y" }} Kirby Turner</rights>
   
   {% for post in site.posts limit: 20 %}
   <entry>
