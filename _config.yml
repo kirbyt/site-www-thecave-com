@@ -23,3 +23,5 @@ twitter_tweet_button: true
 
 # Category plugin (https://github.com/recurser/jekyll-plugins)
 category_dir: category
+
+exclude: [Rakefile, readme.md]
