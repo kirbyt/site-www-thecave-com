@@ -6,7 +6,7 @@ module Jekyll
       categories.sort.each do |category|
         posts_in_category = context.registers[:site].categories[category].size
         category_dir = context.registers[:site].config['category_dir']
-        category_url = File.join(category_dir, category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase)
+        category_url = File.join(category_dir, category.gsub(/_|\P{Word}/, '%20').gsub(/-{2,}/, '-').downcase)
         html << "<li class='category'><a href='/#{category_url}/'>#{category} (#{posts_in_category})</a></li>\n"
       end
       html
