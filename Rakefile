@@ -51,4 +51,5 @@ task :new_post, :title do |t, args|
     post.puts "categories: "
     post.puts "---"
   end
+  system "~/bin/subl --new-window #{filename}"
 end
