@@ -48,11 +48,9 @@ task :new_post, :title do |t, args|
 end
 
 desc "Generate jekyll site"
-task :generate, :nolimit do |t, args|
-  command = "jekyll build"
-  command += " --limit_posts 1" unless args.nolimit
-  puts "## Generating Site with: #{command}"
-  system command
+task :generate do
+  puts "## Generating Site with Jekyll"
+  system "jekyll build"
 end
 
 desc "Generate and deploy jekyll site to Github Pages"
