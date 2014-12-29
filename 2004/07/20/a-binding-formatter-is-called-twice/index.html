@@ -1,0 +1,372 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<title>A Binding Formatter is Called Twice | thecave</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="index, follow" />
+
+<link rel="stylesheet" type="text/css" href="/styles/typebased/style.css" />
+<link rel="alternate" type="application/atom+xml" title="thecave | Ramblings From A Crotchety Old Man" href="http://www.thecave.com/atom.xml" />
+
+<!--[if IE 6]>
+<script type="text/javascript" src="/styles/typebased/includes/js/menu.js"></script>
+<![endif]-->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+<script type='text/javascript' src='/styles/typebased/includes/js/superfish.js?ver=3.3.2'></script>
+<script type="text/javascript" src="/js/lastfm.js"></script>
+
+<!-- Alt Stylesheet -->
+<link href="/styles/typebased/styles/grey.css" rel="stylesheet" type="text/css" />
+
+<!-- Woo Shortcodes CSS -->
+<link href="/styles/typebased/functions/css/shortcodes.css" rel="stylesheet" type="text/css" />
+
+<!-- Custom Stylesheet -->
+<link href="/styles/typebased/custom.css" rel="stylesheet" type="text/css" />
+<meta id="syntaxhighlighteranchor" name="syntaxhighlighter-version" content="3.1.3" />
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body class="home blog unknown">
+
+<div id="container">
+
+	<div id="header">
+		<h1>
+			<a href="/" title="Ramblings from a crotchety old man.">
+			<img src="/images/thecave-logo-2.png" style="margin-top:0px;" alt="thecave" /></a></h1>
+	</div>
+
+	
+	<div id="menu">
+				<ul id="navigation" class="nav wrap">
+										<li class="page_item current_page_item first"><a href="/"><span>Home</span></a></li>
+										<li class="page_item last"><a href="/about.html"><span>About</span></a></li>
+										</ul>
+			</div>
+	<div class="wrap background">
+
+		<div id="content" class="left-col wrap">
+            <!--- Post Starts -->
+<div class="post wrap page">
+
+    <div class="post-meta left-col">
+    <h3 class="wrap"><span class="month">Jul<span class="year">2004</span></span><span class="day">20</span></h3>
+    <h4 class="author">kirbyt</h4>
+    </div>
+
+    <div class="post-content right-col">
+    <h2><a href="/2004/07/20/a-binding-formatter-is-called-twice/" rel="bookmark" title="A Binding Formatter is Called Twice">A Binding Formatter is Called Twice</a></h2>
+
+    <p>It seems that a binding formatter is called twice when a user leaves a textbox control. As the user leaves the control the Leave event for the control is fired followed by the binding format event. The setter method of the bounded property is called next followed by the getter method then finally the binding format event is called again.</p>
+
+<p>This should not be a concern for applications that use binding formatters but the developer should know it will be called twice.</p>
+
+<p>Here is sample code that illustrates the behavior:</p>
+
+<pre><code>using System;
+using System.Drawing;
+using System.Collections;
+using System.ComponentModel;
+using System.Windows.Forms;
+using System.Data;
+using System.Diagnostics;
+
+namespace SampleWindowsApp
+{
+    /// &lt;summary&gt;
+    /// Summary description for Form1.
+    /// &lt;/summary&gt;
+    public class Form1 : System.Windows.Forms.Form
+    {
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
+        private MyClass _dataSource = new MyClass();
+
+        /// &lt;summary&gt;
+        /// Required designer variable.
+        /// &lt;/summary&gt;
+        private System.ComponentModel.Container components = null;
+
+        public Form1()
+        {
+            //
+            // Required for Windows Form Designer support
+            //
+            InitializeComponent();
+        }
+
+        /// &lt;summary&gt;
+        /// Clean up any resources being used.
+        /// &lt;/summary&gt;
+        protected override void Dispose( bool disposing )
+        {
+            if( disposing )
+            {
+                if (components != null)
+                {
+                    components.Dispose();
+                }
+            }
+            base.Dispose( disposing );
+        }
+
+        #region Windows Form Designer generated code
+        /// &lt;summary&gt;
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// &lt;/summary&gt;
+        private void InitializeComponent()
+        {
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            //
+            // textBox1
+            //
+            this.textBox1.Location = new System.Drawing.Point(56, 32);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "textBox1";
+            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
+            //
+            // button1
+            //
+            this.button1.Location = new System.Drawing.Point(72, 120);
+            this.button1.Name = "button1";
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            //
+            // Form1
+            //
+            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.ClientSize = new System.Drawing.Size(292, 266);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox1);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+
+        }
+        #endregion
+
+        /// &lt;summary&gt;
+        /// The main entry point for the application.
+        /// &lt;/summary&gt;
+        [STAThread]
+        static void Main()
+        {
+            Application.Run(new Form1());
+        }
+
+        private void Form1_Load(object sender, System.EventArgs e)
+        {
+            Binding binding = new Binding( "Text", _dataSource, "Value" );
+            binding.Format += new ConvertEventHandler(binding_Format);
+
+            textBox1.DataBindings.Add( binding );
+        }
+
+        private void binding_Format(object sender, ConvertEventArgs e)
+        {
+            Debug.WriteLine( "Format" );
+        }
+
+        private void textBox1_Leave(object sender, System.EventArgs e)
+        {
+            Debug.WriteLine( "Leave" );
+
+        }
+    }
+
+    class MyClass
+    {
+        private string _value = "Default value.";
+        public string Value
+        {
+            get
+            {
+                Debug.WriteLine( "MyClass.Value getter" );
+                return _value;
+            }
+            set
+            {
+                Debug.WriteLine( "MyClass.Value setter" );
+                _value = value;
+            }
+        }
+    }
+}
+</code></pre>
+
+
+
+    <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+
+    <hr />
+    
+        <a href="/2004/07/16/duh/" title="Previous Post: Duh!" class="post-footer">&laquo; Duh!</a>
+    
+    
+        &nbsp; | &nbsp;
+        <a href="/2004/07/20/regex-library/" title="Next Post: Regex Library" class="post-footer">Regex Library &raquo;</a>
+    
+
+    </div>
+</div>
+<!--- Post Ends -->
+
+		</div>
+
+				<!--- Sidebar Starts -->
+
+		<div id="sidebar" class="right-col">
+
+			<div id="search">
+                <form action="http://google.com/search" method="get">
+                    <div>
+                    <input type="hidden" name="q" value="site:thecave.com" />
+					<input type="text" class="search_box" name="q" id="q" results="0" />
+					<input type="image" src="/styles/typebased/images/search.gif" class="submit" name="submit" />
+                    </div>
+                </form>
+			</div>
+
+			<div id="sidebar_in">
+
+			<div id="lastfm-1" class="block widget widget_lastfm">
+    <h2><a href="http://last.fm/user/kirbyt" class="lastfm_title_link">Listening To</a></h2>
+    <div class="lastfm">
+    </div>
+</div>
+
+
+
+        <div id="linkcat-2" class="block widget widget_links"><h2>Blogroll</h2>
+            <ul class='xoxo blogroll'>
+            <li><a href="http://www.rowanturner.net/">Rowan T</a></li>
+            <li><a href="http://photos.thecave.com/">Photos</a></li>
+            <li><a href="http://www.learnipadprogramming.com/">Learning iPad Programming</a></li>
+            <li><a href="http://blog.whitepeaksoftware.com/">White Peak Software</a></li>
+            </ul>
+        </div>
+
+		<div id="linkcat-3" class="block widget widget_links"><h2>Categories</h2>
+    <ul>
+        <li class='category'><a href='/category/apps/'>apps (5)</a></li>
+<li class='category'><a href='/category/backpack/'>backpack (1)</a></li>
+<li class='category'><a href='/category/backpacking/'>backpacking (8)</a></li>
+<li class='category'><a href='/category/blogger/'>blogger (785)</a></li>
+<li class='category'><a href='/category/camping/'>camping (11)</a></li>
+<li class='category'><a href='/category/cross%20post/'>cross post (4)</a></li>
+<li class='category'><a href='/category/family/'>family (4)</a></li>
+<li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
+<li class='category'><a href='/category/general/'>general (14)</a></li>
+<li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
+<li class='category'><a href='/category/humor/'>humor (1)</a></li>
+<li class='category'><a href='/category/ios/'>ios (10)</a></li>
+<li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
+<li class='category'><a href='/category/life/'>life (2)</a></li>
+<li class='category'><a href='/category/long%20trail/'>long-trail (2)</a></li>
+<li class='category'><a href='/category/moving/'>moving (1)</a></li>
+<li class='category'><a href='/category/opinion/'>opinion (2)</a></li>
+<li class='category'><a href='/category/pictures/'>pictures (8)</a></li>
+<li class='category'><a href='/category/programming/'>programming (8)</a></li>
+<li class='category'><a href='/category/random/'>random (5)</a></li>
+<li class='category'><a href='/category/rant/'>rant (2)</a></li>
+<li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
+<li class='category'><a href='/category/salem/'>salem (1)</a></li>
+<li class='category'><a href='/category/skiing/'>skiing (2)</a></li>
+<li class='category'><a href='/category/snowboarding/'>snowboarding (7)</a></li>
+<li class='category'><a href='/category/social/'>social (3)</a></li>
+<li class='category'><a href='/category/stowe/'>stowe (3)</a></li>
+<li class='category'><a href='/category/tech/'>tech (3)</a></li>
+<li class='category'><a href='/category/travel/'>travel (3)</a></li>
+<li class='category'><a href='/category/trips/'>trips (5)</a></li>
+<li class='category'><a href='/category/videos/'>videos (2)</a></li>
+<li class='category'><a href='/category/work/'>work (4)</a></li>
+
+    </ul>
+</div>
+
+        <div id="archives-3" class="block widget widget_archive"><h2>Archives</h2>
+        <ul class='archives'>
+        <li><a href="/blog/archives">The Complete Blog Archives</a></li>
+        </ul>
+        </div>
+
+
+			</div>
+
+		</div>
+
+		<!--- Sidebar Ends -->
+	</div>
+
+</div>
+
+<div id="footer" class="wrap">
+
+	<div class="left-col">
+		<div class="popular wrap">
+			<h2>Recent Articles</h2>
+			<ul>
+                
+                  <li><a href="/2014/12/28/made-some-fixes-to-the-blog-site/" title="Made Some Fixes To The Blog Site">Made Some Fixes To The Blog Site</a></li>
+                
+                  <li><a href="/2014/12/28/despite-a-rainy-start/" title="Despite A Rainy Start">Despite A Rainy Start</a></li>
+                
+                  <li><a href="/2014/12/22/a-tradition-comes-to-a-close-tonight/" title="A Tradition Comes To A Close Tonight">A Tradition Comes To A Close Tonight</a></li>
+                
+                  <li><a href="/2014/12/12/why-microsoft-s-acquisition-of-hockeyapp-saddens-me/" title="Why Microsoft's Acquisition of HockeyApp Saddens Me">Why Microsoft's Acquisition of HockeyApp Saddens Me</a></li>
+                
+                  <li><a href="/2014/10/13/iphone-6-plus-is-too-big-for-me-but-i-bought-it-anyways/" title="iPhone 6 Plus Is Too Big For Me, But I Bought It Anyways">iPhone 6 Plus Is Too Big For Me, But I Bought It Anyways</a></li>
+                
+            </ul>
+		</div>
+	</div>
+
+	<div id="subscribe" class="right-col">
+		<h2>Subscribe to RSS</h2>
+		<p class="rss">If you enjoyed the post, make sure you subscribe to the RSS feed.</p>
+		<p>
+		<a href="/atom.xml">Articles</a><br />
+		</p>
+	</div>
+
+<div id="copyright" class="wrap">
+
+	<div class="left-col">
+		<p>&copy; 2014</p>
+	</div>
+
+	<div class="right-col">
+		<p>Design by <a href="http://woothemes.com"><img src="/styles/typebased/styles/grey/logo-footer.jpg" width="87" height="21" alt="woo themes" /></a></p>
+	</div>
+
+</div>
+
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-167605-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
+<!-- Localized -->

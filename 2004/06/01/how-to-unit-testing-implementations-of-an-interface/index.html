@@ -1,0 +1,339 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<title>How to Unit Testing Implementations of an Interface | thecave</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="index, follow" />
+
+<link rel="stylesheet" type="text/css" href="/styles/typebased/style.css" />
+<link rel="alternate" type="application/atom+xml" title="thecave | Ramblings From A Crotchety Old Man" href="http://www.thecave.com/atom.xml" />
+
+<!--[if IE 6]>
+<script type="text/javascript" src="/styles/typebased/includes/js/menu.js"></script>
+<![endif]-->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+<script type='text/javascript' src='/styles/typebased/includes/js/superfish.js?ver=3.3.2'></script>
+<script type="text/javascript" src="/js/lastfm.js"></script>
+
+<!-- Alt Stylesheet -->
+<link href="/styles/typebased/styles/grey.css" rel="stylesheet" type="text/css" />
+
+<!-- Woo Shortcodes CSS -->
+<link href="/styles/typebased/functions/css/shortcodes.css" rel="stylesheet" type="text/css" />
+
+<!-- Custom Stylesheet -->
+<link href="/styles/typebased/custom.css" rel="stylesheet" type="text/css" />
+<meta id="syntaxhighlighteranchor" name="syntaxhighlighter-version" content="3.1.3" />
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body class="home blog unknown">
+
+<div id="container">
+
+	<div id="header">
+		<h1>
+			<a href="/" title="Ramblings from a crotchety old man.">
+			<img src="/images/thecave-logo-2.png" style="margin-top:0px;" alt="thecave" /></a></h1>
+	</div>
+
+	
+	<div id="menu">
+				<ul id="navigation" class="nav wrap">
+										<li class="page_item current_page_item first"><a href="/"><span>Home</span></a></li>
+										<li class="page_item last"><a href="/about.html"><span>About</span></a></li>
+										</ul>
+			</div>
+	<div class="wrap background">
+
+		<div id="content" class="left-col wrap">
+            <!--- Post Starts -->
+<div class="post wrap page">
+
+    <div class="post-meta left-col">
+    <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">01</span></h3>
+    <h4 class="author">kirbyt</h4>
+    </div>
+
+    <div class="post-content right-col">
+    <h2><a href="/2004/06/01/how-to-unit-testing-implementations-of-an-interface/" rel="bookmark" title="How to Unit Testing Implementations of an Interface">How to Unit Testing Implementations of an Interface</a></h2>
+
+    <p>I have become a firm supporter of writing unit tests for most if not all code I write, and <a href="http://www.nunit.org">NUnit</a> is an ideal framework for implementing unit tests.  But one problem I have had repeatedly is finding a good way to test specific implementations of an interface.  My approach has always been to write a new test fixture for each implementor of an interface.  But the problem with this approach is that I end up duplicating unit tests for each implementor, and if I need to write a new test I have to copy it to multiple fixtures.</p>
+
+<p>As a programmer I consider myself lazy.  I don’t like having to write the same code over and over.  Instead I would rather write it once and forget about it.  Having to write multiple test fixtures for each implementor of an interface doesn’t suit my lazy style.  I need a better approach and a quick google.com search pointed me in the right direction.</p>
+
+<p>I came across a blog from <a href="http://blog.dotnetwiki.org/">Jonathan de Halleux</a> that talks about <a href="http://blog.dotnetwiki.org/archive/2004/05/13/206.aspx">composite unit testing using MbUnit</a>.  Jonathan presents an approach that splits the testing effort by class functionality rather than writing a test fixture for each class.  This is exactly what I am looking for but as much as I like this approach and MbUnit I still have one issue.  I want an approach that works with NUnit and does not require another framework such as MbUnit.</p>
+
+<p>The development environment I have created for my customer is solid and I do not want to introduce new problems by introducing a new framework, in the case MbUnit.  In other words, I do not want to change what has been currently written including the NAnt build scripts.  So I did the next best thing.  I took Jonathan’s design and wrote a helper class to provide composite unit testing and include this class in my unit test projects.</p>
+
+<p>Introducing CompositeTestFixture, a class that enables composite unit testing within NUnit test fixtures.  Because this is a class and not a new framework there are limitations but the limitations do not affect the unit tests I am writing today.  I will discuss the limitation later in this article.</p>
+
+<p>To use CompositeTestFixture, begin by writing your test fixtures as you normally would.  In the spirit of Jonathan’s blog I will show an example that provides a test for implementors of the IEnumerable interface.  In this example I will show how to test the ArrayList and Hashtable classes which both implement this interface.  The only requirement in this test is that the IEnumerable instance is not null.</p>
+
+<pre><code>using System;
+using System.Collections;
+using System.Diagnostics;
+
+using NUnit.Framework;
+
+namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
+{
+    [TestFixture]
+    public class EnumerableTest
+    {
+        [Test]
+        public void GetEnumeratorNotNull()
+        {
+            // Write unit test here.
+        }
+    }
+}
+</code></pre>
+
+<p>Now we need to write the unit test for the GetEnumeratorNotNull test.  However we must first tell CompositeTestFixture about the factories needed to create an instance of class that implements the interface to test.  I call the instance of the class the implementor.</p>
+
+<pre><code>[TestFixture]
+[ProviderFactory(FactoryType=typeof(ArrayListFactory),
+ReturnType=typeof(IEnumerable))]
+[ProviderFactory(FactoryType=typeof(HashtableFactory),
+ReturnType=typeof(IEnumerable))]
+public class EnumerableTest
+{
+    ...
+}
+</code></pre>
+
+<p>Next we need to write the code that will test the implementor.  The NUnit framework is going to call the GetEnumeratorNotNull method that is decorated with the [Test] attribute.  This is where we call into the CompositeTestFixture helper class.  A static method RunTest is provided for those who do not want to create an instance of the CompositeTestFixture class.</p>
+
+<pre><code>[Test]
+public void GetEnumeratorNotNull()
+{
+    CompositeTestFixture.RunTest( this );
+}
+</code></pre>
+
+<p>Now we write the method that will perform the actual test.  This method will have the same name as the test method.  The only difference is that the method signature takes a single parameter of the interface type we are testing.  Note that this method is not decorated with the [Test] attribute since we do not want NUnit calling this method.</p>
+
+<pre><code>public void GetEnumeratorNotNull( IEnumerable en )
+{
+    Debug.WriteLine( "Testing " + en.GetType().ToString() );
+    Assert.IsNotNull( en.GetEnumerator(), "Must not be null." );
+}
+</code></pre>
+
+<p>That’s it.  CompositeTestFixture will do all the heavy work of calling the appropriate unit test method to test a specific implementor.</p>
+
+<h2 id="how-does-this-work">How Does This Work</h2>
+
+<p>CompositeTestFixture will reflect on the class instances provided in the RunTest method call and retrieve the collection of ProviderFactory attributes decorating the test fixture.  Each factory declared by the FactoryType property will be called to create an instance of a class that implements the type defined in the ReturnType property.  In other words the factory will be used to create an instance of an implementor.</p>
+
+<p>A factory can declare one or more methods that return an instance object.  I call these methods creators since each is responsible for creating a instance of a class.  Having multiple creators gives the unit test writer the option to provide implementors that are initialized differently.  For example one creator might return an empty ArrayList while a second creator might return an ArrayList filled with random numbers.</p>
+
+<p>CompositeTestFixture determines creators by inspecting the factory class type and discovering each method with a return type that implements the type defined in the ProviderFactory.ReturnType property that decorates the test fixture.  Creators must be defined with a public scope and no parameters on the method signature.</p>
+
+<pre><code>using System;
+using System.Collections;
+
+namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
+{
+    public class ArrayListFactory
+    {
+        public ArrayList CreateEmpty()
+        {
+            return new ArrayList();
+        }
+
+        public ArrayList RandomFilled()
+        {
+            ArrayList list = new ArrayList();
+            Random rnd = new Random();
+            for(int i=0;i&amp;lt;15;++i)
+            {
+                list.Add(rnd.Next());
+            }
+            return list;
+        }
+    }
+}
+</code></pre>
+
+<p>After CompositeTestFixture calls a factory creator it calls the unit test method matching the name of the [Test] method that invoked CompositeTestFixture.RunTest( this ).  In our example this is the GetEnumeratorNotNull( IEnumerable en ) method.  This is repeated for each creator declared on a factory and for each factory declared on the fixture.</p>
+
+<h2 id="limitations">Limitations</h2>
+
+<p>Although this approach works for many cases it is not perfect.  The SetUp and TearDown methods of the fixture will only be called when NUnit calls the wrapper test method.  CompositeTestFixture does not call the SetUp and TearDown methods before and after calling the internal test method, although it would not be hard to add that feature.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>With the CompositeTestFixture helper class, I now have an easy way to provide composite unit testing within introducing a new framework into my development environment.  Hopefully you will find this code as useful as I have.  Click <a href="/downloads/CompositeTestFixture.zip">here</a> to download the complete source code.</p>
+
+
+
+    <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+
+    <hr />
+    
+        <a href="/2004/05/28/a-comment-or-two-on-visual-studio-team-system/" title="Previous Post: A comment or two on Visual Studio Team System" class="post-footer">&laquo; A comment or two on Visual Studio Team System</a>
+    
+    
+        &nbsp; | &nbsp;
+        <a href="/2004/06/01/rail-runtime-assembly-instrumentation-library-project/" title="Next Post: RAIL - Runtime Assembly Instrumentation Library Project" class="post-footer">RAIL - Runtime Assembly Instrumentation Library Project &raquo;</a>
+    
+
+    </div>
+</div>
+<!--- Post Ends -->
+
+		</div>
+
+				<!--- Sidebar Starts -->
+
+		<div id="sidebar" class="right-col">
+
+			<div id="search">
+                <form action="http://google.com/search" method="get">
+                    <div>
+                    <input type="hidden" name="q" value="site:thecave.com" />
+					<input type="text" class="search_box" name="q" id="q" results="0" />
+					<input type="image" src="/styles/typebased/images/search.gif" class="submit" name="submit" />
+                    </div>
+                </form>
+			</div>
+
+			<div id="sidebar_in">
+
+			<div id="lastfm-1" class="block widget widget_lastfm">
+    <h2><a href="http://last.fm/user/kirbyt" class="lastfm_title_link">Listening To</a></h2>
+    <div class="lastfm">
+    </div>
+</div>
+
+
+
+        <div id="linkcat-2" class="block widget widget_links"><h2>Blogroll</h2>
+            <ul class='xoxo blogroll'>
+            <li><a href="http://www.rowanturner.net/">Rowan T</a></li>
+            <li><a href="http://photos.thecave.com/">Photos</a></li>
+            <li><a href="http://www.learnipadprogramming.com/">Learning iPad Programming</a></li>
+            <li><a href="http://blog.whitepeaksoftware.com/">White Peak Software</a></li>
+            </ul>
+        </div>
+
+		<div id="linkcat-3" class="block widget widget_links"><h2>Categories</h2>
+    <ul>
+        <li class='category'><a href='/category/apps/'>apps (5)</a></li>
+<li class='category'><a href='/category/backpack/'>backpack (1)</a></li>
+<li class='category'><a href='/category/backpacking/'>backpacking (8)</a></li>
+<li class='category'><a href='/category/blogger/'>blogger (785)</a></li>
+<li class='category'><a href='/category/camping/'>camping (11)</a></li>
+<li class='category'><a href='/category/cross%20post/'>cross post (4)</a></li>
+<li class='category'><a href='/category/family/'>family (4)</a></li>
+<li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
+<li class='category'><a href='/category/general/'>general (14)</a></li>
+<li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
+<li class='category'><a href='/category/humor/'>humor (1)</a></li>
+<li class='category'><a href='/category/ios/'>ios (10)</a></li>
+<li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
+<li class='category'><a href='/category/life/'>life (2)</a></li>
+<li class='category'><a href='/category/long%20trail/'>long-trail (2)</a></li>
+<li class='category'><a href='/category/moving/'>moving (1)</a></li>
+<li class='category'><a href='/category/opinion/'>opinion (2)</a></li>
+<li class='category'><a href='/category/pictures/'>pictures (8)</a></li>
+<li class='category'><a href='/category/programming/'>programming (8)</a></li>
+<li class='category'><a href='/category/random/'>random (5)</a></li>
+<li class='category'><a href='/category/rant/'>rant (2)</a></li>
+<li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
+<li class='category'><a href='/category/salem/'>salem (1)</a></li>
+<li class='category'><a href='/category/skiing/'>skiing (2)</a></li>
+<li class='category'><a href='/category/snowboarding/'>snowboarding (7)</a></li>
+<li class='category'><a href='/category/social/'>social (3)</a></li>
+<li class='category'><a href='/category/stowe/'>stowe (3)</a></li>
+<li class='category'><a href='/category/tech/'>tech (3)</a></li>
+<li class='category'><a href='/category/travel/'>travel (3)</a></li>
+<li class='category'><a href='/category/trips/'>trips (5)</a></li>
+<li class='category'><a href='/category/videos/'>videos (2)</a></li>
+<li class='category'><a href='/category/work/'>work (4)</a></li>
+
+    </ul>
+</div>
+
+        <div id="archives-3" class="block widget widget_archive"><h2>Archives</h2>
+        <ul class='archives'>
+        <li><a href="/blog/archives">The Complete Blog Archives</a></li>
+        </ul>
+        </div>
+
+
+			</div>
+
+		</div>
+
+		<!--- Sidebar Ends -->
+	</div>
+
+</div>
+
+<div id="footer" class="wrap">
+
+	<div class="left-col">
+		<div class="popular wrap">
+			<h2>Recent Articles</h2>
+			<ul>
+                
+                  <li><a href="/2014/12/28/made-some-fixes-to-the-blog-site/" title="Made Some Fixes To The Blog Site">Made Some Fixes To The Blog Site</a></li>
+                
+                  <li><a href="/2014/12/28/despite-a-rainy-start/" title="Despite A Rainy Start">Despite A Rainy Start</a></li>
+                
+                  <li><a href="/2014/12/22/a-tradition-comes-to-a-close-tonight/" title="A Tradition Comes To A Close Tonight">A Tradition Comes To A Close Tonight</a></li>
+                
+                  <li><a href="/2014/12/12/why-microsoft-s-acquisition-of-hockeyapp-saddens-me/" title="Why Microsoft's Acquisition of HockeyApp Saddens Me">Why Microsoft's Acquisition of HockeyApp Saddens Me</a></li>
+                
+                  <li><a href="/2014/10/13/iphone-6-plus-is-too-big-for-me-but-i-bought-it-anyways/" title="iPhone 6 Plus Is Too Big For Me, But I Bought It Anyways">iPhone 6 Plus Is Too Big For Me, But I Bought It Anyways</a></li>
+                
+            </ul>
+		</div>
+	</div>
+
+	<div id="subscribe" class="right-col">
+		<h2>Subscribe to RSS</h2>
+		<p class="rss">If you enjoyed the post, make sure you subscribe to the RSS feed.</p>
+		<p>
+		<a href="/atom.xml">Articles</a><br />
+		</p>
+	</div>
+
+<div id="copyright" class="wrap">
+
+	<div class="left-col">
+		<p>&copy; 2014</p>
+	</div>
+
+	<div class="right-col">
+		<p>Design by <a href="http://woothemes.com"><img src="/styles/typebased/styles/grey/logo-footer.jpg" width="87" height="21" alt="woo themes" /></a></p>
+	</div>
+
+</div>
+
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-167605-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
+<!-- Localized -->
