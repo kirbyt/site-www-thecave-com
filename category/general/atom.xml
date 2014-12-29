@@ -4,7 +4,7 @@
   <title><![CDATA[Category: general | thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/category/general/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2014-12-28T20:10:04-05:00</updated>
+  <updated>2014-12-28T20:28:24-05:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -32,129 +32,6 @@
 <p>With a smile on my face and feeling of success I decided to do one more thing. I decided to update my install of Jekyll. And this is when everything fell apart. The sense of success and feeling of being productive evaporated quickly. Long story short, turns out I had rvm and rbenv installed at the same time, and apparently having both installed at the same time causes problems when updating gems. Unfortunately it took me a long while to figure out what had happened. I didn’t realize rvm was installed, but once I did I uninstalled it. I did another update and made sure I had rbenv-gem-rehash installed. </p>
 
 <p>All is well now. In fact, the only reason I’m writing this post is to make sure everything is working as expected. And now that I have a faster way to create new posts, I’m hoping to post here more frequently. </p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Why Microsoft's Acquisition of HockeyApp Saddens Me]]></title>
-    <link href="http://www.thecave.com/2014/12/12/why-microsoft-s-acquisition-of-hockeyapp-saddens-me/"/>
-    <updated>2014-12-12T00:00:00-05:00</updated>
-    <id>http://www.thecave.com/2014/12/12/why-microsoft-s-acquisition-of-hockeyapp-saddens-me</id>
-    <content type="html"><![CDATA[<p>While catching up on the latest tech news last night, I came across a post that said Microsoft had acquired HockeyApp. My first thought was this is a joke. I immediately went to the HockeyApp blog site and, lo and behold, it is not a joke. Microsoft did acquire HockeyApp.</p>
-
-<p>This news left me with mixed feelings. First, I’m happy for the folks at HockeyApp. I’ve been a long time user of HockeyApp, and I feel they have the best solution for beta app distribution and crash reporting. The acquisition is further proof that HockeyApp is an outstanding solution. Yet at the same time it saddens me that HockeyApp is now in the hands of Microsoft.</p>
-
-<p>It’s no secret that I’m not a fan of Microsoft. That wasn’t always the case. I used to love the technology coming out of Redmond, so much so that I worked for nearly 4 years for a consulting company co-owned by Microsoft whose initial purpose was to promote and showcase Microsoft technologies in the enterprise. But around 2005 I started feeling like Microsoft technologies were heading in the wrong direction and, by this time I was working for myself, I stopped recommending Microsoft technologies to clients. I also began transitioning my skill set to other non-Microsoft technologies. By the end of 2008 I was done working in the Microsoft world, a decision that I don’t regret one bit.</p>
-
-<p>In 2010 my dislike for Microsoft became a bit more personal when an accounting mistake caused during the merger of billing systems after a Microsoft acquisition resulted in a collection agency calling me on behalf of Microsoft. I talk in detail about what happened <a href="http://blog.whitepeaksoftware.com/2010/04/26/i-paid-for-microsofts-mistake/">here</a> and <a href="http://blog.whitepeaksoftware.com/2010/05/18/follow-up-on-my-fight-with-microsoft/">here</a>, and thanks to the first post being picked up on Hacker News the matter was eventually <a href="http://blog.whitepeaksoftware.com/2010/06/14/score-one-for-the-little-guy-and-kudos-to-microsoft/">resolved</a>. Still, I was left with a stronger dislike of Microsoft.</p>
-
-<p>The combination of my lacking faith in Microsoft technologies and poor customer service experiences<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> drove me away from Microsoft world, and in 2010 I made conscious decision to stop giving my money to Microsoft unless there is absolutely no other option<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>. I’m fully aware that my decision to stop buying Microsoft products and services has zero impact on Microsoft. Also I don’t view Microsoft as an evil empire or a horrible company, and not everything about Microsoft sucks. Heck, they are doing some really neat things these days. But based on my past experiences, Microsoft is not a company I want to do business with today.</p>
-
-<p>It boils downs to a personal preference, much like my preference to shop at Target instead of Wal-mart or to buy from a locally owned store before buying from a national store or online. And this is why Microsoft’s acquisition of HockeyApp saddens me. A product I love is now in the hands of a company I choose to not do business with, and this means I need to think long and hard about whether or not I will continue using HockeyApp when my subscription comes up for renewal in October.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>I know there are individuals at Microsoft who really care about and do provide outstanding customer service, and there are consumers and businesses out there that have had nothing but great experiences dealing with Microsoft. But my own personal experiences dealing with Microsoft have been less than ideal. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:2">
-      <p>When writing my books my publisher required I submit my manuscripts in Word documents, so I ended up buying a copy of Microsoft Word. Also I do enjoying playing video games on my Xbox, so Microsoft does get a bit of my money from time to time. But in general I have stopped buying Microsoft products and services. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[iPhone 6 Plus Is Too Big For Me, But I Bought It Anyways]]></title>
-    <link href="http://www.thecave.com/2014/10/13/iphone-6-plus-is-too-big-for-me-but-i-bought-it-anyways/"/>
-    <updated>2014-10-13T00:00:00-04:00</updated>
-    <id>http://www.thecave.com/2014/10/13/iphone-6-plus-is-too-big-for-me-but-i-bought-it-anyways</id>
-    <content type="html"><![CDATA[<p>A few weeks back I said I would be buying the <a href="http://www.thecave.com/2014/09/10/iphone-6-plus-pocket-test/">iPhone 6</a>, not the 6 Plus. The 6 Plus is simply too large for me. But I have since changed my mind.</p>
-
-<p>There are a few reasons I changed my mind. First and foremost, I could not justify upgrading from the iPhone 5 to iPhone 6. It’s just a hardware upgrade, and I’m very happy with my iPhone 5. Sure, it would be nice having a device with TouchID but that’s not a must have feature for me. And a better camera would also be nice, but again it’s not totally necessary for me.</p>
-
-<p>I actually started the process of ordering the iPhone 6 on two separate occasions this past week, and each time I stopped before completing the order. There simply weren’t any good reasons for me to upgrade my phone other than to keep the end date for my 2-year contract with Verizon in the month of October. But the same is not true for the iPhone 6 Plus.</p>
-
-<h2 id="different-size-classes">Different Size Classes</h2>
-
-<p>The iPhone 6 Plus has features not available on the 6, features that, as a developer, I need to support in the apps I write. And while I can use the iOS Simulator to test those features, I’m a firm believer that testing on an actual device is far better. Testing on a device gives you a real sense for how your app feels on that device, and that’s why I own a number of iOS devices. The Simulator is great for quick debugging and testings, but nothing beats playing with your app on an actual device.</p>
-
-<p>The iPhone 6 Plus supports different size classes than the iPhone 6 and earlier iPhones. This means, for example, in landscape mode the iPhone 6 Plus can take advantage of displaying a split view controller, which is something the iPhone 6 does not. And again, while I can test this using the Simulator I won’t get a true feel for the differences without using an actual device. But this alone wasn’t the only reason I changed my mind on which device I should buy.</p>
-
-<h2 id="the-pocket-test">The Pocket Test</h2>
-
-<p>Over the weekend, while attending <a href="http://cingleton.com">Çingleton</a>, I did a number of pocket tests using various iPhone 6 Plus devices. Some had cases, others did not. What I found was that while I notice the iPhone 6 Plus in my pocket, it wasn’t as uncomfortable as I thought it would be. Does it feel as nice in my pocket as the iPhone 5 or even the 4s? Certainly not. And there will still be times when I’m annoyed at the size of the 6 Plus when carrying it in my pocket, such as when I’m snowboarding. In fact, I’ll likely have to carry the 6 Plus in my jacket pocket when snowboarding instead of my front pants pocket. And I’m not thrilled about carrying the larger device in a cargo pocket when I’m hiking as it will be banging against my leg as I walk.</p>
-
-<p>But as I thought about it more I realized that I don’t keep my iPhone 5 in my pocket all that much. I work from home and the majority of the time my iPhone is sitting on my desk. I do put it in my pocket when I leave the house, but typically I’m at home more than not.</p>
-
-<p>Still, after a weekend of various pocket tests I wasn’t completely sold on the iPhone 6 Plus. I certainly was leaning towards buying it, but I was still on the fence. That was until I learned about the zoom view.</p>
-
-<h2 id="zoom-view">Zoom View</h2>
-
-<p>With the zoom view an iPhone 6 Plus behaves like an iPhone 6. For instance, when the zoom view is enabled the home screen does not rotate when the iPhone 6 Plus is in landscape mode. In fact, it appears that the size classes used on the iPhone 6 Plus are the same as the iPhone 6 when using zoom mode. This means that the iPhone 6 Plus can be used to test the behavior of your app as if it were running on an iPhone 6. And that sealed the deal for me.</p>
-
-<p>Using the iPhone 6 Plus to test my apps is like having two devices in one. I can test my apps to make sure the user experience is perfect for iPhone 6 Plus users and, thanks to the zoom view, iPhone 6 users. At this point the decision to buy an iPhone 6 Plus became a no brainer for me.</p>
-
-<h2 id="not-a-developer">Not a Developer</h2>
-
-<p>Would I buy an iPhone 6 Plus if I weren’t a developer? Nope, I would not. In fact I would not buy the iPhone 6 either, at least not right now. My iPhone 5 suits me well, and I would have no good reason to upgrade if I weren’t a developer.</p>
-
-<h2 id="what-i-really-want">What I Really Want</h2>
-
-<p>What I really want isn’t the iPhone 6 Plus, but what I want does not exists, at least not yet.</p>
-
-<p>As a developer what I really want is an iPod touch Plus. If Apple were selling an iPod touch Plus that is the same as the iPhone 6 Plus minus the phone, then I would buy it in an instant. That way I could continue using my iPhone 5 as my primary phone device and the iPod touch Plus as a test device. And my son would be happy too because in his mind the iPod touch Plus would be his even though I would use it for testing purposes. But sadly there is no such thing as an iPod touch Plus right now.</p>
-
-<h2 id="change-my-mind-again">Change My Mind Again</h2>
-
-<p>So there you have it…the reasons I changed my mind.</p>
-
-<ol>
-  <li>Different size classes and UI behaviors.</li>
-  <li>Not as uncomfortable in my pocket as I thought it would be.</li>
-  <li>Able to test iPhone 6 and 6 Plus user experience from the same device.</li>
-  <li>No iPod touch Plus.</li>
-</ol>
-
-<p>There’s actually one more reason that led to me changing my mind, Apple’s return policy. If after the first week of owning an iPhone 6 Plus I find that carrying it around in my pocket too annoying then I can return the device. I doubt I will return it especially after talking with many iPhone 6 Plus owners at Çingleton this past weekend, but still, there is always a chance I will change my mind again.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[iPhone 6 and 6 Plus Pocket Test]]></title>
-    <link href="http://www.thecave.com/2014/09/10/iphone-6-plus-pocket-test/"/>
-    <updated>2014-09-10T00:00:00-04:00</updated>
-    <id>http://www.thecave.com/2014/09/10/iphone-6-plus-pocket-test</id>
-    <content type="html"><![CDATA[<p><a href="https://flic.kr/p/pa23Ro"><img src="https://farm6.staticflickr.com/5581/15198258832_1daebf3355_m.jpg" border="0" class="alignleft" /></a> I printed out this <a href="http://arstechnica.com/apple/2014/09/how-big-is-the-iphone-6-plus-find-out-with-our-handy-paper-template/">iPhone 6 and 6 Plus paper template</a>. I cut out each template and taped cardboard to the back. Then I did a pocket test with each one. I tested each template with different pants and shorts that I wear often. I found that both the iPhone 6 and iPhone 6 Plus fit in all my pockets, but a corner of the iPhone 6 Plus cutout does stick out of the pocket on my gym shorts. I also found that while the iPhone 6 Plus does fit in the pockets of my Levis 501, my jeans of choice, the cutout was annoyingly noticeable when I sat down.</p>
-
-<p>For those wondering, I’m 5 foot 6 and typically wear 32 inch waist pants and shorts. Taller folks with roomier pants and shorts might not notice the size difference of the Plus as much as I did.</p>
-
-<p>As for holding the two cutouts, I found that the iPhone 6 cutout fits comfortably and securely in my hand. The iPhone 6 Plus cutout, on the other hand, just feels too big to hold and use with one hand. Granted I have small hands, but in acting like I’m interacting with a real iPhone I found I kept using two hands with the iPhone 6 Plus whereas I was comfortable using only one hand with the iPhone 6 cutout.</p>
-
-<p>Conclusion: I will be buying the iPhone 6. The larger display of the iPhone 6 Plus would be nice for reading and watching shows and movies, but it’s just too damn large to be pocket device for me.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Dear Simple. It's You, Not Me.]]></title>
-    <link href="http://www.thecave.com/2014/09/03/dear-simple-its-you-not-me/"/>
-    <updated>2014-09-03T00:00:00-04:00</updated>
-    <id>http://www.thecave.com/2014/09/03/dear-simple-its-you-not-me</id>
-    <content type="html"><![CDATA[<p>For more than a year and a half I’ve been in love with <a href="http://www.simple.com">Simple</a>, my online bank. From the very beginning it was as if Simple were designed specifically for me. Safe-to-spend and Goals changed how I managed and saved money, and it worked. It worked really well. So well in fact that I have more cash on hand today than I’ve had in years, and it’s all thanks to Simple. But something went wrong.</p>
-
-<p>A month ago Simple did a major update to their backend system/platform, and since that dreadful day my financial world has been turned upside down. Payments were not sent while other scheduled payments simply disappear. My account balance has been all over the place. My account activity shows payments with the wrong payee name. And there have been times where the same debit appears in the account activity multiple times. It’s been a total nightmare.</p>
-
-<p>For the last month I’ve been patient with Simple in hopes that they would resolve the problems caused by the platform upgrade, but instead of seeing improvements I continue to find and have more problems. I loved the Simple before the upgrade, but today I have zero confidence in Simple. And I don’t know how long it will be before I can trust Simple for my banking needs. Who knows, I may never trust them with my money again.</p>
-
-<p>Following the advice of Simple’s own customer support representative, who said I should seek “alternative means of payment for the time being,” I decided to open a new account at <a href="http://ally.com">Ally</a>. It will take about a week before I have all my money moved over, but at least then I will know payments are going out as scheduled, and I do not have to worry about being late paying my rent.</p>
-
-<p>I have to say I’m not thrilled about my breakup with Simple. Ally’s online experience is the same experience found with most other banks. Simple spoiled me with a better way (before the upgrade) to bank, and going back to a more traditional experience really sucks. But I would rather have a sucky online experience with a reliable bank than to have to worry about whether or not my bills are being paid on time.</p>
-
-<p>Sorry Simple, but I must break up with you now. And it’s you, not me, that has caused this to happen. There might be a day in the future when we can get back together, but for the moment I  need a bank I can trust.</p>
 
 ]]></content>
   </entry>
