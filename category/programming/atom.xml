@@ -4,13 +4,37 @@
   <title><![CDATA[Category: programming | thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/category/programming/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2014-12-28T18:51:55-05:00</updated>
+  <updated>2014-12-28T19:40:50-05:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Made Some Fixes To The Blog Site]]></title>
+    <link href="http://www.thecave.com/2014/12/28/made-some-fixes-to-the-blog-site/"/>
+    <updated>2014-12-28T19:01:32-05:00</updated>
+    <id>http://www.thecave.com/2014/12/28/made-some-fixes-to-the-blog-site</id>
+    <content type="html"><![CDATA[<p>Before doing some work today I decided to make some improvements to my blog site. I thought I would be playing with the site for only an hour or so, but instead it took most of the day. Typical when dealing with programming issues in an unfamiliar environment. </p>
+
+<p>This site, as well as <a href="http://blog.whitepeaksoftware.com">my company blog site</a>, uses <a href="http://jekyllrb.com">Jekyll</a> to generate a static HTML version of the site that is in turned hosted on a server for your viewing pleasure. I noticed a while back that categories with embedded spaces, such as <em>cross post</em>, weren’t accessible from the categories list. The embedded space was being replaced with a dash. Also, the RSS feed was not including the time of the post, only the date. So I set out to fix these problems.</p>
+
+<p>I started with the time problem first. I learned that Jekyll does not include the time of the post unless you include the <code>date</code> parameter in the front matter. Adding the parameter is easy enough to do, but I decided I wanted to make it even easier for me. So I created a Rakefile that has a <code>new_post</code> task. I could have used an existing Rakefile, maybe even the one from Octopress, but I decided it would be more fun to write my own. Turns out writing a Rakefile is pretty simple, and I had my <code>new_post</code> task working quickly. </p>
+
+<p>The <code>new_post</code> task I wrote create a new markdown file for the post. The task also generates the YAML front matter for the post including the <code>date</code> parameter with the current local time. This solves my time problem in the RSS feed for new post. I thought about making a fix for older post, but I decided it wasn’t worth the effort.</p>
+
+<p>Using the Rakefile to create a new post makes so much sense that I decided to add a <code>deploy</code> task the Rakefile. I’ve been using a shell script I wrote a few years ago to generate the Jekyll site then commit it to the <em>gh-pages</em> branch of the site’s git <a href="https://github.com/kirbyt/site-www-thecave-com">repo</a>. I thought it would be a fun exercise to re-implement this in the Rakefile. At the same time I decided to change how the files are committed to the branch. Instead of working from a single local git repo, I decided to clone the repo to a second <em>_deploy</em> directory, then copy the <em>_site</em> files to that directory. Turns out this was fairly simple to do as well. </p>
+
+<p>With that work out of the way I turned my focus to the categories name problem. Turns out it was caused by a space replacement in the Jekyll plugin I use to generate the categories list. That was the easiest, fastest fix of the day.</p>
+
+<p>With a smile on my face and feeling of success I decided to do one more thing. I decided to update my install of Jekyll. And this is when everything fell apart. The sense of success and feeling of being productive evaporated quickly. Long story short, turns out I had rvm and rbenv installed at the same time, and apparently having both installed at the same time causes problems when updating gems. Unfortunately it took me a long while to figure out what had happened. I didn’t realize rvm was installed, but once I did I uninstalled it. I did another update and made sure I had rbenv-gem-rehash installed. </p>
+
+<p>All is well now. In fact, the only reason I’m writing this post is to make sure everything is working as expected. And now that I have a faster way to create new posts, I’m hoping to post here more frequently. </p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[iPhone 6 Plus Is Too Big For Me, But I Bought It Anyways]]></title>
@@ -215,40 +239,6 @@
     </li>
   </ol>
 </div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Reporting Errors in Cross Post]]></title>
-    <link href="http://www.thecave.com/2014/09/14/reporting-errors-in-cross-post/"/>
-    <updated>2014-09-14T00:00:00-04:00</updated>
-    <id>http://www.thecave.com/2014/09/14/reporting-errors-in-cross-post</id>
-    <content type="html"><![CDATA[<p>A friend sent me suggestions on handling error reporting for Cross Post. I decided write up my current thinking here to see if my approach makes sense. Besides, trying to explain it in a set of 140 character tweets is less than ideal.</p>
-
-<p>The challenge I face is reporting errors, or any status reporting for that matter, that happen once the server takes over the process. A timeout error, for example, could occur while the server is uploading a photo to Twitter. At this point the server no longer has a connection to the app, so trickling the error up to the app is not an option.</p>
-
-<p>One option is to let the server eat the error. I know of a few similar solutions that eat the error, and I stopped using those apps for that very reason. If I ask an app to post something to Facebook, and the post never appears, then I want to know why. Letting the server eat the error is not an option for Cross Post. But how does the Cross Post app learn about the error?</p>
-
-<p>One option is to use push notifications. When an error occurs the server can notify the user via a push notification. But this isn’t a trivial task to implement and it’s a path I don’t care to pursue unless absolutely necessary.</p>
-
-<p>Another option, and the one I’m considering at the moment, is having the app include a unique identifier in the payload sent to the server. You can think of the identifier as a handle that the app can use to query to server for the status of the post.</p>
-
-<p>If an error occurs on the server, the server will store the error with the identifier provided by the app as the primary key. The next time the app launches, it will check with the server to see if there were any errors. Once the app learns about the error, the server deletes the error from its data store.</p>
-
-<p>This is a more reactive approach to reporting errors instead of a proactive approach, but it’s a cleaner solution than going down the push notification route. Beside, push notifications are not guaranteed so this approach is as reliable if not more reliable.</p>
-
-<p>There are problems with this approach. First starters, only the device that sent the post will know to check for the error. Say I send a new post to Facebook using my iPhone. The post fails to make its way to Facebook. I launch Cross Post on my iPad. The iPad does not know about the post sent from iPhone, so it does not know to check for an error.</p>
-
-<p>Now there are ways around this new problem. I could ask each user for a unique identifier such as an email address or username, but that’s another road I don’t care to travel down. People have more than enough logins to remember without me asking them to setup yet another online account and log into Cross Post. Besides, Cross Post can use iCloud to sync the unique identifier for each post between devices. In fact, this is what I will likely do. Key-value syncing using iCloud has been reliable for some time now, so why take advantage of it.</p>
-
-<p>The other problem with having the app check the server for error reports is that now the server must persist the error report. This means I need to have some type of data persistence store. I could use the file system on the server, but I’ve configured my server app to scale. This means a load balancer is in place and as traffic increases OpenShift will spawn new server instances. This means it is possible that the server that caught the error will not be the server that the app queries for error reports. So storing the error report on the server’s file system is not an option. An additional server, aka a database server, is needed to persist the error reports.</p>
-
-<p>Having an additional server for data persistence isn’t a big deal for OpenShift, but it is just one more server that must always be available. And now the backend for Cross Post is starting to grow. A couple of weeks ago the entire Cross Post solution ran on an iOS device. Now the solution spans the device and a server environment, and next I have to throw in a database server just for error reporting!?</p>
-
-<p>Having the database does seem a bit overkill at the moment, but there might be a need for a database for persistent storage down the road anyways. So it looks like I will be adding a MongoDB database to the mix very soon. That is unless someone has a better idea to share with me.</p>
-
-<p>Update: I came up with a <a href="http://www.thecave.com/2014/09/15/reporting-errors-in-cross-post-part-2/">third option</a> that is by far my favorite.</p>
-
 ]]></content>
   </entry>
   

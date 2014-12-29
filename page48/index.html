@@ -59,6 +59,31 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Aug<span class="year">2004</span></span><span class="day">01</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2004/08/01/installers-and-my-document-directory/" rel="bookmark" title="Installers and My Document Directory">Installers and My Document Directory</a></h2>
+
+        <p>In setting up my new laptop, I decided to go with VMware to host various guest operating systems for my development, collaboration, etc.  For the most part this is working out well but there are still glitches.  For example, to share the My Document folder with multiple guest OS I created a share in the host OS.  Each guest OS maps the My Documents folder to the UNC \.host\Shared Folders\kirbyt\documents.  The problem I have experienced with this configuration has nothing to do with me authoring documents, etc.  Instead I have encounter two cases where installers have failed.
+<br />
+<br />The .NET Framework 1.1 installer and the Adobe Reader 6.0 apparently need access to the My Documents folder during the installation process.  However, both fail because of the UNC reference to the actual folder.  My temporary work around to date has been to re-map the My Documents folder to a temporary directory on the local hard drive within the guest OS, prefer the install, and re-map the My Documents folder back to the original UNC location.
+<br />
+<br />I wonder what these two installers want with the My Documents folder during installations and I wonder why their not smart enough to recognize the UNC reference.</p>
+
+
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Jul<span class="year">2004</span></span><span class="day">30</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -408,30 +433,6 @@ namespace SampleWindowsApp
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jul<span class="year">2004</span></span><span class="day">16</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/07/16/duh/" rel="bookmark" title="Duh!">Duh!</a></h2>
-
-        <p>Melanie and I were planning to fly into Manchester, NH next week and drive to Vermont for a break from NYC.  However confusion set in when we started checking the fly availability and car rentals.  Flights into Manchester are filling up and car rentals are sold out.  What gives?
-<br /> 
-<br />Duh!  The Democratic Convention 2004 starts on Sunday, July 26 in Boston.  No wonder Manchester is so busy that weekend.  Needless to say, Melanie and I are breaking convention (no pun intended) and driving up from NYC to avoid the Boston/Manchester madness.
-<br /></p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -494,7 +495,7 @@ namespace SampleWindowsApp
 <li class='category'><a href='/category/cross%20post/'>cross post (4)</a></li>
 <li class='category'><a href='/category/family/'>family (4)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
-<li class='category'><a href='/category/general/'>general (13)</a></li>
+<li class='category'><a href='/category/general/'>general (14)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
 <li class='category'><a href='/category/humor/'>humor (1)</a></li>
 <li class='category'><a href='/category/ios/'>ios (10)</a></li>
@@ -504,7 +505,7 @@ namespace SampleWindowsApp
 <li class='category'><a href='/category/moving/'>moving (1)</a></li>
 <li class='category'><a href='/category/opinion/'>opinion (2)</a></li>
 <li class='category'><a href='/category/pictures/'>pictures (8)</a></li>
-<li class='category'><a href='/category/programming/'>programming (7)</a></li>
+<li class='category'><a href='/category/programming/'>programming (8)</a></li>
 <li class='category'><a href='/category/random/'>random (5)</a></li>
 <li class='category'><a href='/category/rant/'>rant (2)</a></li>
 <li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
@@ -545,6 +546,8 @@ namespace SampleWindowsApp
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2014/12/28/made-some-fixes-to-the-blog-site/" title="Made Some Fixes To The Blog Site">Made Some Fixes To The Blog Site</a></li>
+                
                   <li><a href="/2014/12/28/despite-a-rainy-start/" title="Despite A Rainy Start">Despite A Rainy Start</a></li>
                 
                   <li><a href="/2014/12/22/a-tradition-comes-to-a-close-tonight/" title="A Tradition Comes To A Close Tonight">A Tradition Comes To A Close Tonight</a></li>
@@ -552,8 +555,6 @@ namespace SampleWindowsApp
                   <li><a href="/2014/12/12/why-microsoft-s-acquisition-of-hockeyapp-saddens-me/" title="Why Microsoft's Acquisition of HockeyApp Saddens Me">Why Microsoft's Acquisition of HockeyApp Saddens Me</a></li>
                 
                   <li><a href="/2014/10/13/iphone-6-plus-is-too-big-for-me-but-i-bought-it-anyways/" title="iPhone 6 Plus Is Too Big For Me, But I Bought It Anyways">iPhone 6 Plus Is Too Big For Me, But I Bought It Anyways</a></li>
-                
-                  <li><a href="/2014/10/09/microblogging-the-open-web-and-cross-post/" title="Microblogging, the Open Web, and Cross Post">Microblogging, the Open Web, and Cross Post</a></li>
                 
             </ul>
 		</div>
