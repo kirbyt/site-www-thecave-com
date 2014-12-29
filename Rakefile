@@ -5,9 +5,9 @@ git_repo = "https://github.com/kirbyt/site-www-thecave-com.git"
 
 ## -- Misc Configs -- ##
 
-source_dir      = "."    # source file directory
+source_dir      = "."         # source file directory
 deploy_dir      = "_deploy"   # deploy directory (for Github pages deployment)
-site_dir      = "_site"   # Generated Jekyll site directory (for Github pages deployment)
+site_dir        = "_site"     # Generated Jekyll site directory (for Github pages deployment)
 posts_dir       = "_posts"    # directory for blog files
 new_post_ext    = "markdown"  # default new post file extension when using the new_post task
 
