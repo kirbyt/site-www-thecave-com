@@ -5,9 +5,9 @@ git_repo = "https://github.com/kirbyt/site-www-thecave-com.git"
 
 ## -- Misc Configs -- ##
 
-source_dir      = "."    # source file directory
+source_dir      = "."         # source file directory
 deploy_dir      = "_deploy"   # deploy directory (for Github pages deployment)
-site_dir      = "_site"   # Generated Jekyll site directory (for Github pages deployment)
+site_dir        = "_site"     # Generated Jekyll site directory (for Github pages deployment)
 posts_dir       = "_posts"    # directory for blog files
 new_post_ext    = "markdown"  # default new post file extension when using the new_post task
 
@@ -48,9 +48,11 @@ task :new_post, :title do |t, args|
 end
 
 desc "Generate jekyll site"
-task :generate do
-  puts "## Generating Site with Jekyll"
-  system "jekyll build"
+task :generate, :nolimit do |t, args|
+  command = "jekyll build"
+  command += " --limit_posts 1" unless args.nolimit
+  puts "## Generating Site with: #{command}"
+  system command
 end
 
 desc "Generate and deploy jekyll site to Github Pages"
