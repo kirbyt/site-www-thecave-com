@@ -5,10 +5,26 @@
         <description>thecave | Ramblings From A Crotchety Old Man - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2015-01-01T16:08:42-05:00</lastBuildDate>
-        <pubDate>2015-01-01T16:08:42-05:00</pubDate>
+        <lastBuildDate>2015-01-07T13:42:32-05:00</lastBuildDate>
+        <pubDate>2015-01-07T13:42:32-05:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>15 Minutes Of Writing</title>
+                <description>&lt;p&gt;My friend, Greg Raiz, talks about &lt;a href=&quot;http://www.raizlabs.com/graiz/2015/01/05/better-goals-via-better-systems/&quot;&gt;using a system to achieve goals&lt;/a&gt;. The particular goal he wants to achieve is writing more.&lt;/p&gt;
+
+&lt;p&gt;I’ve tried using a system similar to what Greg describes, but I fail each time I try. My system, or goal as I still often call it, has been to write an hour each day. Writing an hour day, often times more, was easy when I was writing my books, but I can’t seem to get into the routine now that I’m done with book writing (for now). I realized after reading Greg’s post that I’ve been doing it wrong. &lt;/p&gt;
+
+&lt;p&gt;Greg’s plan is to write about 100 words a day, or for about 15 minutes a day, which is about the amount of time he needs to write 100 words. And that sounds like a much more reasonable system than writing for an hour a day.&lt;/p&gt;
+
+&lt;p&gt;I wish I could write for at least an hour a day, but it’s just not in me to do that right now. Sure, if I were focused on writing a book then I would have no problem writing an hour a day. In fact, I would write more. But writing a book not my focus. Writing apps is my focus. And 15 minutes a day sounds like a perfect way for me to get back into writing.&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2015/01/07/15-minutes-of-writing/</link>
+                <guid>http://www.thecave.com/2015/01/07/15-minutes-of-writing</guid>
+                <pubDate>2015-01-07T13:19:09-05:00</pubDate>
+        </item>
 
         <item>
                 <title>Made Some Fixes To The Blog Site</title>
@@ -728,23 +744,6 @@
                 <link>http://www.thecave.com/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout/</link>
                 <guid>http://www.thecave.com/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout</guid>
                 <pubDate>2014-05-04T00:00:00-04:00</pubDate>
-        </item>
-
-        <item>
-                <title>WTF Ruby Gems</title>
-                <description>&lt;p&gt;I’m working with a client to update one of their iOS apps. The Xcode project uses CocoaPods for dependency management. I’m not a fan of CocoaPods, but I grin and bear it when working with existing client projects.&lt;/p&gt;
-
-&lt;p&gt;Yesterday I needed to update a class, one .h file and one .m, from an open source project, so I ran &lt;code&gt;pod update&lt;/code&gt; on the project. This told me I needed to update my install of CocoaPods, so I did. This in turn updated a ton of other Ruby Gems on my system. It was annoying having to go through the update process when all I needed was two files that I could have copied from github in less time, but no harm done, right? WRONG!!!&lt;/p&gt;
-
-&lt;p&gt;Today I go to publish a new blog post. I use Jekyll to convert my site to static HTML. Guess what? Yesterday’s CocoaPods update has now broken my Jekyll install, and I cannot publish the blog post I just finished writing. WTF!?&lt;/p&gt;
-
-&lt;p&gt;ALL I WANTED TO DO WAS GET THE LATEST FREAKIN’ VERSION OF TWO FILES, A .h AND .m, AND NOW I HAVE TO WASTE TIME TRYING TO FIX WHAT WAS NOT BROKEN UNTIL YESTERDAY JUST SO I CAN PUBLISH A BLOG POST.&lt;/p&gt;
-
-&lt;p&gt;This is why I don’t like using things like CocoaPods, plug-ins, and other simular widgets.&lt;/p&gt;
-</description>
-                <link>http://www.thecave.com/2014/04/24/wtf-ruby-gems/</link>
-                <guid>http://www.thecave.com/2014/04/24/wtf-ruby-gems</guid>
-                <pubDate>2014-04-24T00:00:00-04:00</pubDate>
         </item>
 
 

@@ -64,6 +64,31 @@
         </div>
 
         <div class="post-content right-col">
+        <h2><a href="/2004/09/23/save-from-url/" rel="bookmark" title="save from url">save from url</a></h2>
+
+        <p>I encounter a rather strange problem today.  I have a set of HTML files stored locally on my machine.  I can view each of the web pages in Fire Fox but not in IE.  Every time I attempted to open the HTML in IE, IE would report that the file was missing even though I knew it was on the hard drive.  I tried opening the file using the menu item File|Open from IE but it reported the same error message.  Finally I decided to load the HTML file into Visual Studio.NET.  To my surprise the file would not load and VS.NET would not report an error message.  If I attempted to load the file a second time in VS.NET, the IDE would simply lock forcing me to kill the process.
+<br />
+<br />After some detective work, I discovered the source of the problem.  Seems that each HTML file I attempted to open had a comment line near the top of the file that looked like this: <b><!-- saved from url=(0033) --></b>.  Apparently this is special information that Microsoft products such as IE and VS.NET look for.  I’m not sure how the information is used but I do know that neither tool reported meaningful messages regarding the commented line in the HTML file.
+<br />
+<br />To resolve the problem, I removed the saved from url lines from each HTML file.  IE and VS.NET are now happy as can be with regard to viewing these files.</p>
+
+
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Sep<span class="year">2004</span></span><span class="day">23</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
         <h2><a href="/2004/09/23/contact-management-tools/" rel="bookmark" title="Contact Management Tools">Contact Management Tools</a></h2>
 
         <p>Here is a list of <a href="http://www.slipstick.com/addins/contact_management.htm">contact management tools</a> that provide integration with Outlook.  Business Contact Manager from Microsoft is working for me but others may be interested in other options.</p>
@@ -274,27 +299,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Aug<span class="year">2004</span></span><span class="day">31</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/08/31/interesting-day-indeed/" rel="bookmark" title="Interesting Day Indeed">Interesting Day Indeed</a></h2>
-
-        <p>I was heading up to Connecticut for an afternoon meeting so I scheduled a morning meeting at Grand Central Station.  As we drank our coffee and talked business, 18 year old “kids” (military of course) walked around carrying semi-automatic weapons.  Police were in full force at all the train stops from the West Village to Grand Central. Officers performed random sweeps on the trains including the one I took up to CT.  Definitely not a typical day in the office.<br /><br />On a related note, I had time to kill between my meeting at Grand Central and the train ride up to CT.  I decided to check my e-mail so I walked out of the station in search of a Starbucks.  To no surprise there was a large Starbucks just a block and a half away.  I have often joked about Starbucks being on every corner but today it paid off.  And it paid Starbucks as well as I order an ice coffee and signed up with T-Mobile for a day pass.  Gotta love the convenience provided by Starbucks.<br /><br /><br /></p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -357,7 +361,7 @@
 <li class='category'><a href='/category/cross%20post/'>cross post (4)</a></li>
 <li class='category'><a href='/category/family/'>family (4)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
-<li class='category'><a href='/category/general/'>general (14)</a></li>
+<li class='category'><a href='/category/general/'>general (15)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
 <li class='category'><a href='/category/humor/'>humor (1)</a></li>
 <li class='category'><a href='/category/ios/'>ios (10)</a></li>
@@ -381,6 +385,7 @@
 <li class='category'><a href='/category/trips/'>trips (5)</a></li>
 <li class='category'><a href='/category/videos/'>videos (2)</a></li>
 <li class='category'><a href='/category/work/'>work (4)</a></li>
+<li class='category'><a href='/category/writing/'>writing (1)</a></li>
 
     </ul>
 </div>
@@ -408,6 +413,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2015/01/07/15-minutes-of-writing/" title="15 Minutes Of Writing">15 Minutes Of Writing</a></li>
+                
                   <li><a href="/2014/12/28/made-some-fixes-to-the-blog-site/" title="Made Some Fixes To The Blog Site">Made Some Fixes To The Blog Site</a></li>
                 
                   <li><a href="/2014/12/28/despite-a-rainy-start/" title="Despite A Rainy Start">Despite A Rainy Start</a></li>
@@ -415,8 +422,6 @@
                   <li><a href="/2014/12/22/a-tradition-comes-to-a-close-tonight/" title="A Tradition Comes To A Close Tonight">A Tradition Comes To A Close Tonight</a></li>
                 
                   <li><a href="/2014/12/12/why-microsoft-s-acquisition-of-hockeyapp-saddens-me/" title="Why Microsoft's Acquisition of HockeyApp Saddens Me">Why Microsoft's Acquisition of HockeyApp Saddens Me</a></li>
-                
-                  <li><a href="/2014/10/13/iphone-6-plus-is-too-big-for-me-but-i-bought-it-anyways/" title="iPhone 6 Plus Is Too Big For Me, But I Bought It Anyways">iPhone 6 Plus Is Too Big For Me, But I Bought It Anyways</a></li>
                 
             </ul>
 		</div>

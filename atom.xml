@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-01-01T16:08:42-05:00</updated>
+  <updated>2015-01-07T13:42:32-05:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,23 @@
   </author>
   <rights>Copyright (c) 2002-2015 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[15 Minutes Of Writing]]></title>
+    <link href="http://www.thecave.com/2015/01/07/15-minutes-of-writing/"/>
+    <published>2015-01-07T13:19:09-05:00</published>
+    <updated>2015-01-07T13:19:09-05:00</updated>
+    <id>http://www.thecave.com/2015/01/07/15-minutes-of-writing</id>
+    <content type="html"><![CDATA[<p>My friend, Greg Raiz, talks about <a href="http://www.raizlabs.com/graiz/2015/01/05/better-goals-via-better-systems/">using a system to achieve goals</a>. The particular goal he wants to achieve is writing more.</p>
+
+<p>I’ve tried using a system similar to what Greg describes, but I fail each time I try. My system, or goal as I still often call it, has been to write an hour each day. Writing an hour day, often times more, was easy when I was writing my books, but I can’t seem to get into the routine now that I’m done with book writing (for now). I realized after reading Greg’s post that I’ve been doing it wrong. </p>
+
+<p>Greg’s plan is to write about 100 words a day, or for about 15 minutes a day, which is about the amount of time he needs to write 100 words. And that sounds like a much more reasonable system than writing for an hour a day.</p>
+
+<p>I wish I could write for at least an hour a day, but it’s just not in me to do that right now. Sure, if I were focused on writing a book then I would have no problem writing an hour a day. In fact, I would write more. But writing a book not my focus. Writing apps is my focus. And 15 minutes a day sounds like a perfect way for me to get back into writing.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Made Some Fixes To The Blog Site]]></title>
@@ -749,24 +766,6 @@
 <p>After I create the view I might add more layout constraints to position and size the subview as needed within the main content view. I do that in the view controller’s <code>-loadView</code> when needed.</p>
 
 <p>So that’s it. That’s why I have stopped using NIB and storyboard files in my iOS projects. This approach might not work for others, but it certainly works for me.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[WTF Ruby Gems]]></title>
-    <link href="http://www.thecave.com/2014/04/24/wtf-ruby-gems/"/>
-    <published>2014-04-24T00:00:00-04:00</published>
-    <updated>2014-04-24T00:00:00-04:00</updated>
-    <id>http://www.thecave.com/2014/04/24/wtf-ruby-gems</id>
-    <content type="html"><![CDATA[<p>I’m working with a client to update one of their iOS apps. The Xcode project uses CocoaPods for dependency management. I’m not a fan of CocoaPods, but I grin and bear it when working with existing client projects.</p>
-
-<p>Yesterday I needed to update a class, one .h file and one .m, from an open source project, so I ran <code>pod update</code> on the project. This told me I needed to update my install of CocoaPods, so I did. This in turn updated a ton of other Ruby Gems on my system. It was annoying having to go through the update process when all I needed was two files that I could have copied from github in less time, but no harm done, right? WRONG!!!</p>
-
-<p>Today I go to publish a new blog post. I use Jekyll to convert my site to static HTML. Guess what? Yesterday’s CocoaPods update has now broken my Jekyll install, and I cannot publish the blog post I just finished writing. WTF!?</p>
-
-<p>ALL I WANTED TO DO WAS GET THE LATEST FREAKIN’ VERSION OF TWO FILES, A .h AND .m, AND NOW I HAVE TO WASTE TIME TRYING TO FIX WHAT WAS NOT BROKEN UNTIL YESTERDAY JUST SO I CAN PUBLISH A BLOG POST.</p>
-
-<p>This is why I don’t like using things like CocoaPods, plug-ins, and other simular widgets.</p>
 ]]></content>
   </entry>
   
