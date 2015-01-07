@@ -5,10 +5,20 @@
         <description>thecave | Ramblings From A Crotchety Old Man - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2015-01-07T13:46:34-05:00</lastBuildDate>
-        <pubDate>2015-01-07T13:46:34-05:00</pubDate>
+        <lastBuildDate>2015-01-07T13:53:40-05:00</lastBuildDate>
+        <pubDate>2015-01-07T13:53:40-05:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Checkout The New Rowan T Site</title>
+                <description>&lt;p&gt;If you haven’t seen it yet, be sure to checkout the new &lt;a href=&quot;http://www.rowanturner.net&quot;&gt;Rowan T&lt;/a&gt; website. I moved it to Jekyll, updated it with a new site template, and I’ve starting sharing more about what’s going on with Rowan…after a two and a half year hiatus. So pop over to &lt;a href=&quot;http://www.rowanturner.net&quot;&gt;www.rowanturner.net&lt;/a&gt; and see what the kid has been up to lately.&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2015/01/07/checkout-the-new-rowan-t-site/</link>
+                <guid>http://www.thecave.com/2015/01/07/checkout-the-new-rowan-t-site</guid>
+                <pubDate>2015-01-07T13:49:49-05:00</pubDate>
+        </item>
 
         <item>
                 <title>15 Minutes Of Writing</title>
@@ -585,165 +595,6 @@
                 <link>http://www.thecave.com/2014/05/08/still-enjoying-the-snow/</link>
                 <guid>http://www.thecave.com/2014/05/08/still-enjoying-the-snow</guid>
                 <pubDate>2014-05-08T00:00:00-04:00</pubDate>
-        </item>
-
-        <item>
-                <title>I Stopped Using NIBs Thanks to Auto Layout</title>
-                <description>&lt;p&gt;The subject to this post might suggest I don’t like Auto Layout, but on the contrary I really like Auto Layout. I didn’t always like Auto Layout. For the longest time Auto Layout was a major pain in my ass, but it turns out it was Interface Builder that was causing me the majority of headaches when I used Auto Layout. So I stopped using Auto Layout in IB and I started using it in code only.&lt;/p&gt;
-
-&lt;p&gt;It took me a while to get comfortable with Auto Layout in code, but once things clicked, I found it easy to get the layout I wanted. In fact, I have found Auto Layout saves me time when laying out a UI, and I’ve become so comfortable with Auto Layout that now I become annoyed if I have to work on a project that does not use Auto Layout.&lt;/p&gt;
-
-&lt;p&gt;Because I use Auto Layout in code I realized overtime I was using Interface Builder only to define the UI elements that made up the view. I would define all the Auto Layout constraints in code. This got me thinking, why do I need to define the UI elements in IB? So I did a small project with no NIBs or storyboards, and I loved it. I felt more productive, and I was banging my head against the wall a hell of a lot less.&lt;/p&gt;
-
-&lt;p&gt;(Credit also goes to &lt;a href=&quot;https://twitter.com/mattie&quot;&gt;Matt Massicotte&lt;/a&gt; for encouraging me to try a project with no NIB or storboard files.)&lt;/p&gt;
-
-&lt;p&gt;I’ve now done a number of iOS projects where I don’t use a single NIB or storyboard, and I’m convinced this is the right approach for me. I see everything regarding a view and its subviews explicitly defined in source code, which makes it easier to see what’s going on and to make changes. No more bouncing between inspectors to figure out what is causing a problem or to understand how a view is rendered. I see it all in the source code defined in a single &lt;em&gt;.m&lt;/em&gt; file.&lt;/p&gt;
-
-&lt;p&gt;So how do I construct my views using only source code? I have a base class that I call &lt;a href=&quot;https://github.com/kirbyt/WPSKit/blob/master/WPSKit/UIKit/WPSCompositeView.h&quot;&gt;&lt;code&gt;WPSCompositeView&lt;/code&gt;&lt;/a&gt; in my &lt;a href=&quot;https://github.com/kirbyt/WPSKit&quot;&gt;WPSKit&lt;/a&gt;, a set of classes and categories I use to build apps. &lt;code&gt;WPSCompositeView&lt;/code&gt; has a class method named &lt;code&gt;+addToSuperview:&lt;/code&gt; that creates the instance of the view, which must be a subclass of &lt;code&gt;WPSCompositeView&lt;/code&gt;, then calls &lt;code&gt;-loadView&lt;/code&gt; on the instance of the view. I place all the code needed to create the subviews of the view in the &lt;code&gt;-loadView&lt;/code&gt; implementation. The constraints for the view are implemented in the &lt;code&gt;-updateConstraints&lt;/code&gt; that is called by iOS when needed. That’s it.&lt;/p&gt;
-
-&lt;p&gt;Here’s an example of a composer view for a new app I’m working on:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://farm8.staticflickr.com/7204/13920896030_4c53fbfe1c_o.jpg&quot;&gt;&lt;img src=&quot;https://farm8.staticflickr.com/7204/13920896030_e0da352daf_m.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;And the code for creating this view is as follows:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;- (void)loadView
-{
-  UIView *containerView = self;
-
-  WPSTextView *textView = [[WPSTextView alloc] init];
-  [textView setTranslatesAutoresizingMaskIntoConstraints:NO];
-  [textView setAlwaysBounceVertical:YES];
-  [textView setInputAccessoryView:[self toolbar]];
-  [textView setFont:[UIFont systemFontOfSize:17.0]];
-  [textView setPlaceholderText:NSLocalizedString(@&quot;What&#39;s up?&quot;, @&quot;Placeholder text.&quot;)];
-  [self setTextView:textView];
-
-  UIButton *locationButton = [UIButton buttonWithType:UIButtonTypeCustom];
-  [locationButton setTranslatesAutoresizingMaskIntoConstraints:NO];
-  [locationButton setImage:[UIImage wps_imageNamed:@&quot;location&quot; withMaskColor:[UIColor lightGrayColor]] forState:UIControlStateNormal];
-  [locationButton setImage:[UIImage wps_imageNamed:@&quot;location&quot; withMaskColor:[UIColor wps_iOSDefaultBlue]] forState:UIControlStateSelected];
-  [locationButton setSelected:NO];
-  [locationButton addTarget:self action:@selector(_locationButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
-  [self setLocationButton:locationButton];
-
-  UILabel *locationLabel = [[UILabel alloc] init];
-  [locationLabel setTranslatesAutoresizingMaskIntoConstraints:NO];
-  [locationLabel setTextColor:[UIColor lightGrayColor]];
-  [locationLabel setTextAlignment:NSTextAlignmentLeft];
-  [locationLabel setText:NSLocalizedString(@&quot;Location Disabled&quot;, @&quot;Location text.&quot;)];
-  [self setLocationLabel:locationLabel];
-
-  UILabel *characterCountLabel = [[UILabel alloc] init];
-  [characterCountLabel setTranslatesAutoresizingMaskIntoConstraints:NO];
-  [characterCountLabel setTextColor:[UIColor lightGrayColor]];
-  [characterCountLabel setTextAlignment:NSTextAlignmentRight];
-  [self setCharacterCountLabel:characterCountLabel];
-
-  [containerView addSubview:textView];
-  [containerView addSubview:locationButton];
-  [containerView addSubview:locationLabel];
-  [containerView addSubview:characterCountLabel];
-
-  [textView wps_setDidChange:^(UITextView *aTextView) {
-    NSString *countString = nil;
-    NSUInteger length = [[aTextView text] length];
-    if (length &amp;gt; 0) {
-      countString = [NSString stringWithFormat:@&quot;%lu&quot;, (unsigned long)length];
-    }
-    [characterCountLabel setText:countString];
-  }];
-}
-
-- (void)updateConstraints
-{
-  WPSTextView *textView = [self textView];
-  UILabel *characterCountLabel = [self characterCountLabel];
-  UIButton *locationButton = [self locationButton];
-  UILabel *locationLabel = [self locationLabel];
-
-  [locationButton wps_constrainToHeight:38.0f];
-  [locationButton wps_constrainToWidth:38.0f];
-
-  NSDictionary *bindings = NSDictionaryOfVariableBindings(textView, characterCountLabel, locationButton, locationLabel);
-  [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@&quot;V:|-0-[textView]-4-[characterCountLabel]-0-|&quot; options:0 metrics:nil views:bindings]];
-  [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@&quot;H:|-0-[textView]-0-|&quot; options:0 metrics:nil views:bindings]];
-  [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@&quot;H:|-8-[locationButton]-[locationLabel]-[characterCountLabel]-8-|&quot; options:0 metrics:nil views:bindings]];
-  [self addConstraint:[NSLayoutConstraint constraintWithItem:locationLabel attribute:NSLayoutAttributeBaseline relatedBy:NSLayoutRelationEqual toItem:characterCountLabel attribute:NSLayoutAttributeBaseline multiplier:1.0 constant:0.0]];
-  [self addConstraint:[NSLayoutConstraint constraintWithItem:locationButton attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:locationLabel attribute:NSLayoutAttributeCenterY multiplier:1.0 constant:0.0]];
-
-  [super updateConstraints];
-}
-
-- (UIToolbar *)toolbar
-{
-  if (_toolbar == nil) {
-    CGRect screenBounds = [[UIScreen mainScreen] bounds];
-    UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, screenBounds.size.width, 44)];
-    [toolbar setTintAdjustmentMode:UIViewTintAdjustmentModeNormal];
-
-
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    BOOL adnOn = [defaults cp_isAdnOn];
-    BOOL facebookOn = [defaults cp_isFacebookOn];
-    BOOL twitterOn = [defaults cp_isTwitterOn];
-
-    UIColor *offColor = [UIColor lightGrayColor];
-    UIColor *adnColor = adnOn ? [UIColor blackColor] : offColor;
-    UIColor *facebookColor = facebookOn ? [UIColor wps_facebookBlue] : offColor;
-    UIColor *twitterColor = twitterOn ? [UIColor wps_twitterBlue] : offColor;
-
-    UIBarButtonItem *cameraButton = [self buttonWithImageName:@&quot;camera&quot; color:[UIColor wps_iOSDefaultBlue] action:@selector(_cameraButtonTapped:)];
-    [self setCameraButton:cameraButton];
-
-    UIBarButtonItem *adnButton = [self buttonWithImageName:@&quot;adn&quot; color:adnColor action:@selector(_adnButtonTapped:)];
-    [adnButton setTag:adnOn];
-    [self setAdnOn:adnOn];
-    [self setAdnButton:adnButton];
-
-    UIBarButtonItem *facebookButton = [self buttonWithImageName:@&quot;facebook&quot; color:facebookColor action:@selector(_facebookButtonTapped:)];
-    [facebookButton setTag:facebookOn];
-    [self setFacebookOn:facebookOn];
-    [self setFacebookButton:facebookButton];
-
-    UIBarButtonItem *twitterButton = [self buttonWithImageName:@&quot;twitter&quot; color:twitterColor action:@selector(_twitterButtonTapped:)];
-    [twitterButton setTag:twitterOn];
-    [self setTwitterOn:twitterOn];
-    [self setTwitterButton:twitterButton];
-
-    UIBarButtonItem *draftsButton = [self buttonWithImageName:@&quot;drafts&quot; color:[UIColor wps_iOSDefaultBlue] action:@selector(_draftsButtonTapped:)];
-    [self setDraftsButton:draftsButton];
-
-    UIBarButtonItem *flexibleButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
-    [toolbar setItems:@[adnButton, facebookButton, twitterButton, flexibleButton, draftsButton, cameraButton] animated:NO];
-
-    _toolbar = toolbar;
-  }
-  return  _toolbar;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The only things not created or managed but this view are the navigation bar and collection view of photos. The navigation bar is provided by the &lt;code&gt;UINavigationController&lt;/code&gt; used by the view controller that created this composer view. Also, the view controller uses controller containment to include the collection view of photos, which is actually managed by another view controller and custom view class.&lt;/p&gt;
-
-&lt;p&gt;Oh, I almost forgot to mention…I create the composite view in the &lt;code&gt;loadView&lt;/code&gt; method implemented in the view controller. For example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;- (void)loadView
-{
-  [super loadView];
-  UIView *contentView = [self view];
-
-  CPComposeView *composeView = [CPComposeView addToSuperview:contentView];
-  [self setComposeView:composeView];
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;After I create the view I might add more layout constraints to position and size the subview as needed within the main content view. I do that in the view controller’s &lt;code&gt;-loadView&lt;/code&gt; when needed.&lt;/p&gt;
-
-&lt;p&gt;So that’s it. That’s why I have stopped using NIB and storyboard files in my iOS projects. This approach might not work for others, but it certainly works for me.&lt;/p&gt;
-</description>
-                <link>http://www.thecave.com/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout/</link>
-                <guid>http://www.thecave.com/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout</guid>
-                <pubDate>2014-05-04T00:00:00-04:00</pubDate>
         </item>
 
 

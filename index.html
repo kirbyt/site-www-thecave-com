@@ -64,6 +64,28 @@
         </div>
 
         <div class="post-content right-col">
+        <h2><a href="/2015/01/07/checkout-the-new-rowan-t-site/" rel="bookmark" title="Checkout The New Rowan T Site">Checkout The New Rowan T Site</a></h2>
+
+        <p>If you haven’t seen it yet, be sure to checkout the new <a href="http://www.rowanturner.net">Rowan T</a> website. I moved it to Jekyll, updated it with a new site template, and I’ve starting sharing more about what’s going on with Rowan…after a two and a half year hiatus. So pop over to <a href="http://www.rowanturner.net">www.rowanturner.net</a> and see what the kid has been up to lately.</p>
+
+
+
+        <div>Posted in <a class='category' href='/category/general/'>general</a>.</div>
+
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jan<span class="year">2015</span></span><span class="day">07</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
         <h2><a href="/2015/01/07/15-minutes-of-writing/" rel="bookmark" title="15 Minutes Of Writing">15 Minutes Of Writing</a></h2>
 
         <p>My friend, Greg Raiz, talks about <a href="http://www.raizlabs.com/graiz/2015/01/05/better-goals-via-better-systems/">using a system to achieve goals</a>. The particular goal he wants to achieve is writing more.</p>
@@ -462,52 +484,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Sep<span class="year">2014</span></span><span class="day">14</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2014/09/14/reporting-errors-in-cross-post/" rel="bookmark" title="Reporting Errors in Cross Post">Reporting Errors in Cross Post</a></h2>
-
-        <p>A friend sent me suggestions on handling error reporting for Cross Post. I decided write up my current thinking here to see if my approach makes sense. Besides, trying to explain it in a set of 140 character tweets is less than ideal.</p>
-
-<p>The challenge I face is reporting errors, or any status reporting for that matter, that happen once the server takes over the process. A timeout error, for example, could occur while the server is uploading a photo to Twitter. At this point the server no longer has a connection to the app, so trickling the error up to the app is not an option.</p>
-
-<p>One option is to let the server eat the error. I know of a few similar solutions that eat the error, and I stopped using those apps for that very reason. If I ask an app to post something to Facebook, and the post never appears, then I want to know why. Letting the server eat the error is not an option for Cross Post. But how does the Cross Post app learn about the error?</p>
-
-<p>One option is to use push notifications. When an error occurs the server can notify the user via a push notification. But this isn’t a trivial task to implement and it’s a path I don’t care to pursue unless absolutely necessary.</p>
-
-<p>Another option, and the one I’m considering at the moment, is having the app include a unique identifier in the payload sent to the server. You can think of the identifier as a handle that the app can use to query to server for the status of the post.</p>
-
-<p>If an error occurs on the server, the server will store the error with the identifier provided by the app as the primary key. The next time the app launches, it will check with the server to see if there were any errors. Once the app learns about the error, the server deletes the error from its data store.</p>
-
-<p>This is a more reactive approach to reporting errors instead of a proactive approach, but it’s a cleaner solution than going down the push notification route. Beside, push notifications are not guaranteed so this approach is as reliable if not more reliable.</p>
-
-<p>There are problems with this approach. First starters, only the device that sent the post will know to check for the error. Say I send a new post to Facebook using my iPhone. The post fails to make its way to Facebook. I launch Cross Post on my iPad. The iPad does not know about the post sent from iPhone, so it does not know to check for an error.</p>
-
-<p>Now there are ways around this new problem. I could ask each user for a unique identifier such as an email address or username, but that’s another road I don’t care to travel down. People have more than enough logins to remember without me asking them to setup yet another online account and log into Cross Post. Besides, Cross Post can use iCloud to sync the unique identifier for each post between devices. In fact, this is what I will likely do. Key-value syncing using iCloud has been reliable for some time now, so why take advantage of it.</p>
-
-<p>The other problem with having the app check the server for error reports is that now the server must persist the error report. This means I need to have some type of data persistence store. I could use the file system on the server, but I’ve configured my server app to scale. This means a load balancer is in place and as traffic increases OpenShift will spawn new server instances. This means it is possible that the server that caught the error will not be the server that the app queries for error reports. So storing the error report on the server’s file system is not an option. An additional server, aka a database server, is needed to persist the error reports.</p>
-
-<p>Having an additional server for data persistence isn’t a big deal for OpenShift, but it is just one more server that must always be available. And now the backend for Cross Post is starting to grow. A couple of weeks ago the entire Cross Post solution ran on an iOS device. Now the solution spans the device and a server environment, and next I have to throw in a database server just for error reporting!?</p>
-
-<p>Having the database does seem a bit overkill at the moment, but there might be a need for a database for persistent storage down the road anyways. So it looks like I will be adding a MongoDB database to the mix very soon. That is unless someone has a better idea to share with me.</p>
-
-<p>Update: I came up with a <a href="http://www.thecave.com/2014/09/15/reporting-errors-in-cross-post-part-2/">third option</a> that is by far my favorite.</p>
-
-
-
-        <div>Posted in <a class='category' href='/category/apps/'>apps</a>, <a class='category' href='/category/cross post/'>cross post</a>, <a class='category' href='/category/ios/'>ios</a>, <a class='category' href='/category/programming/'>programming</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -566,7 +542,7 @@
 <li class='category'><a href='/category/cross%20post/'>cross post (4)</a></li>
 <li class='category'><a href='/category/family/'>family (4)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
-<li class='category'><a href='/category/general/'>general (15)</a></li>
+<li class='category'><a href='/category/general/'>general (16)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
 <li class='category'><a href='/category/humor/'>humor (1)</a></li>
 <li class='category'><a href='/category/ios/'>ios (10)</a></li>
@@ -618,6 +594,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2015/01/07/checkout-the-new-rowan-t-site/" title="Checkout The New Rowan T Site">Checkout The New Rowan T Site</a></li>
+                
                   <li><a href="/2015/01/07/15-minutes-of-writing/" title="15 Minutes Of Writing">15 Minutes Of Writing</a></li>
                 
                   <li><a href="/2014/12/28/made-some-fixes-to-the-blog-site/" title="Made Some Fixes To The Blog Site">Made Some Fixes To The Blog Site</a></li>
@@ -625,8 +603,6 @@
                   <li><a href="/2014/12/28/despite-a-rainy-start/" title="Despite A Rainy Start">Despite A Rainy Start</a></li>
                 
                   <li><a href="/2014/12/22/a-tradition-comes-to-a-close-tonight/" title="A Tradition Comes To A Close Tonight">A Tradition Comes To A Close Tonight</a></li>
-                
-                  <li><a href="/2014/12/12/why-microsoft-s-acquisition-of-hockeyapp-saddens-me/" title="Why Microsoft's Acquisition of HockeyApp Saddens Me">Why Microsoft's Acquisition of HockeyApp Saddens Me</a></li>
                 
             </ul>
 		</div>
