@@ -59,6 +59,37 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Aug<span class="year">2004</span></span><span class="day">17</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2004/08/17/install-woes-with-roxio/" rel="bookmark" title="Install Woes with Roxio">Install Woes with Roxio</a></h2>
+
+        <p>After a 3 hour struggle I finally got Roxio Easy CD &amp; DVD Creator 6 installed on my laptop.  Here’s the story.
+<br />
+<br />I run my laptop under a minimum privileged user account.  I go to install Roxio but it requires administrative rights to the machine for installation.  Okay, given the nature of the software I am okay with signing in as administrator for this install.  And that’s where the problems started.
+<br />
+<br />Roxio 5 was already installed on my laptop so the install process asked to un-install it for me.   I tell it yes, the old software is removed, and the machine reboots.  I ran the installer under an administrator account from my primary user account which as I said has minimum privileges.  After the reboot, I signed in with my primary user account to finish the install but the install did not run.  I manually re-ran the install but it told me I needed to re-boot my machine to finish the install.  After doing this a couple of times, I realized that the install process was not going to restart unless I sign in as an administrator even though I started the process using a Run As the administrator.  Sigh…I sign out and back in this time as the administrator.  The install process runs and completes.
+<br />
+<br />With the software in place, I plug in my new Plextor PX-708UF into a USB2.0 port on my laptop.  The OS recognizes the device, does it magic, and I now have access to the device.  I launch the Roxio Creator Classic software to write out some virtual machines to DVD.  Roxio sees the device but it does not know how to interact with the device.  It doesn’t know what formats are supported by the device and it doesn’t recognize the media in the drive.  I re-boot.  No luck.  I sign in as administrator and still no luck.  I tried a combination of things and still no luck.  Finally I decide to re-install the Roxio software.
+<br />
+<br />Being a bit wiser this time around, I left the Plextor device turned on while I installed the Roxio software under the administrator account.  Ah, the missing piece reveals itself.  This time around the Roxio software detects the Plextor device and immediately downloaded additional driver tables to support the device.  Note, I had to remain in the administrator account for this to happen.  Finally all the pieces are in place and I am burning to DVD and CD without a problem.
+<br />
+<br />Lesson learned: When installing Roxio software, 1) have the device installed and turned on before installing the software, 2) install using a user account that has administration rights, 3) continue using the administrator account until the software installation is complete and you have verified that everything is working correctly.  Follow these steps and you will be able to use the Roxio software to burn DVD and CD in minimum privileged user accounts.</p>
+
+
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Aug<span class="year">2004</span></span><span class="day">11</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -276,32 +307,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jul<span class="year">2004</span></span><span class="day">20</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/07/20/vpc-versus-vmware-revisited/" rel="bookmark" title="VPC versus VMWare Revisited">VPC versus VMWare Revisited</a></h2>
-
-        <p>After playing with Virtual PC off and on for a couple of days, I decided to return to VMWare. There are two main reasons why I decided to go with VMWare over VPC.
-<br />
-<br /> Reason one: Network bridging. Simply put, I could not get bridging to work with VPC but it worked flawlessly with VMWare. Overall, I think VMWare does a better job at networking. I especially like having control of the DHPC service settings.
-<br />
-<br /> Reason two: UNC support to the host. This feature seems to only exist in VMWare. \.host\Shared Folders\ gives you access to VMWare shares defined in the host OS. I could not find an equivalent feature in VPC.
-<br /></p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -364,12 +369,12 @@
 <li class='category'><a href='/category/cross%20post/'>cross post (4)</a></li>
 <li class='category'><a href='/category/family/'>family (4)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
-<li class='category'><a href='/category/general/'>general (16)</a></li>
+<li class='category'><a href='/category/general/'>general (17)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
 <li class='category'><a href='/category/humor/'>humor (1)</a></li>
 <li class='category'><a href='/category/ios/'>ios (10)</a></li>
 <li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
-<li class='category'><a href='/category/life/'>life (2)</a></li>
+<li class='category'><a href='/category/life/'>life (3)</a></li>
 <li class='category'><a href='/category/long%20trail/'>long-trail (2)</a></li>
 <li class='category'><a href='/category/moving/'>moving (1)</a></li>
 <li class='category'><a href='/category/opinion/'>opinion (2)</a></li>
@@ -388,7 +393,7 @@
 <li class='category'><a href='/category/trips/'>trips (5)</a></li>
 <li class='category'><a href='/category/videos/'>videos (2)</a></li>
 <li class='category'><a href='/category/work/'>work (4)</a></li>
-<li class='category'><a href='/category/writing/'>writing (1)</a></li>
+<li class='category'><a href='/category/writing/'>writing (2)</a></li>
 
     </ul>
 </div>
@@ -416,6 +421,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2015/01/08/no-plans-for-a-third-edition/" title="No Plans For A Third Edition">No Plans For A Third Edition</a></li>
+                
                   <li><a href="/2015/01/07/checkout-the-new-rowan-t-site/" title="Checkout The New Rowan T Site">Checkout The New Rowan T Site</a></li>
                 
                   <li><a href="/2015/01/07/15-minutes-of-writing/" title="15 Minutes Of Writing">15 Minutes Of Writing</a></li>
@@ -423,8 +430,6 @@
                   <li><a href="/2014/12/28/made-some-fixes-to-the-blog-site/" title="Made Some Fixes To The Blog Site">Made Some Fixes To The Blog Site</a></li>
                 
                   <li><a href="/2014/12/28/despite-a-rainy-start/" title="Despite A Rainy Start">Despite A Rainy Start</a></li>
-                
-                  <li><a href="/2014/12/22/a-tradition-comes-to-a-close-tonight/" title="A Tradition Comes To A Close Tonight">A Tradition Comes To A Close Tonight</a></li>
                 
             </ul>
 		</div>

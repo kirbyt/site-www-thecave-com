@@ -59,6 +59,33 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Apr<span class="year">2003</span></span><span class="day">24</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2003/04/24/snowreport-service-passes-ws-i-test/" rel="bookmark" title="SnowReport Service Passes WS-I Test">SnowReport Service Passes WS-I Test</a></h2>
+
+        <p><a href="http://www.ws-i.org/">WS-I.org</a> recently published a set of test tools for XML Web services.  These tools test for conformance with the WS-I’s Basic Profile.  For fun, I decided to test my Snow Report Service.</p>
+
+<p>Configuration of the Analyzer is straight forward.  Starting with the sample analyzerConfig.xml, I commented out the  and created a new , pointing the references to my <a href="http://www.thecave.com/ws/snowreport.wsdl">Snow Report</a> service.  I ran the analyzer test and my service failed the tests.</p>
+
+<p>Analyzer produces a report of the test in XML, which can be viewed in a user friendly format using your browser.  I quickly saw from the report that the test could not find my  that I have declared in a separate schema file that is imported into the WSDL.  And sure enough, there was a problem.  I had forgotten to include the namespace reference on the  element in my WSDL document.  A simple change to <code>&lt;s&gt;</code> and all was well.  My service passes the WS-I Basic Profile test.</p>
+
+<p>In theory, my service should interop with other platforms.  I have had no problem consuming the service from Java.  However, WSDL2Java from Axis still fails.  Apparently it does not support the <code>&lt;/s&gt;</code> element.  The only way I can generate the Java based proxy classes using WSDL2Java is to include the types schema in the WSDL document as a single file.  Hopefully that will be fix some day.</p>
+
+
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Apr<span class="year">2003</span></span><span class="day">23</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -264,35 +291,6 @@ My latest order of WASTED Wear arrived today.  The <a href="http://www.cafeshops
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Apr<span class="year">2003</span></span><span class="day">04</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2003/04/04/transworld-snowboarding-com-news-snowiest-march-on-record-at-whistler-blackcomb/" rel="bookmark" title="Transworld Snowboarding.com | News | Snowiest March On Record At Whistler Blackcomb">Transworld Snowboarding.com | News | Snowiest March On Record At Whistler Blackcomb</a></h2>
-
-        <table>
-  <tbody>
-    <tr>
-      <td>[Transworld Snowboarding.com</td>
-      <td>News</td>
-      <td>Snowiest March On Record At Whistler Blackcomb](http://www.transworldsnowboarding.com/snow/news/article/0,13009,438674,00.html): “Whistler, March 27, 2003 - Daffodils may be blooming in Vancouver, but in Whistler, the only thing that is growing is the snowbase. This month, it snowed 21 days in a row, and almost 11 feet of snow has fallen, making it the snowiest March on Whistler Blackcomb record.”</td>
-    </tr>
-  </tbody>
-</table>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -355,12 +353,12 @@ My latest order of WASTED Wear arrived today.  The <a href="http://www.cafeshops
 <li class='category'><a href='/category/cross%20post/'>cross post (4)</a></li>
 <li class='category'><a href='/category/family/'>family (4)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
-<li class='category'><a href='/category/general/'>general (16)</a></li>
+<li class='category'><a href='/category/general/'>general (17)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
 <li class='category'><a href='/category/humor/'>humor (1)</a></li>
 <li class='category'><a href='/category/ios/'>ios (10)</a></li>
 <li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
-<li class='category'><a href='/category/life/'>life (2)</a></li>
+<li class='category'><a href='/category/life/'>life (3)</a></li>
 <li class='category'><a href='/category/long%20trail/'>long-trail (2)</a></li>
 <li class='category'><a href='/category/moving/'>moving (1)</a></li>
 <li class='category'><a href='/category/opinion/'>opinion (2)</a></li>
@@ -379,7 +377,7 @@ My latest order of WASTED Wear arrived today.  The <a href="http://www.cafeshops
 <li class='category'><a href='/category/trips/'>trips (5)</a></li>
 <li class='category'><a href='/category/videos/'>videos (2)</a></li>
 <li class='category'><a href='/category/work/'>work (4)</a></li>
-<li class='category'><a href='/category/writing/'>writing (1)</a></li>
+<li class='category'><a href='/category/writing/'>writing (2)</a></li>
 
     </ul>
 </div>
@@ -407,6 +405,8 @@ My latest order of WASTED Wear arrived today.  The <a href="http://www.cafeshops
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2015/01/08/no-plans-for-a-third-edition/" title="No Plans For A Third Edition">No Plans For A Third Edition</a></li>
+                
                   <li><a href="/2015/01/07/checkout-the-new-rowan-t-site/" title="Checkout The New Rowan T Site">Checkout The New Rowan T Site</a></li>
                 
                   <li><a href="/2015/01/07/15-minutes-of-writing/" title="15 Minutes Of Writing">15 Minutes Of Writing</a></li>
@@ -414,8 +414,6 @@ My latest order of WASTED Wear arrived today.  The <a href="http://www.cafeshops
                   <li><a href="/2014/12/28/made-some-fixes-to-the-blog-site/" title="Made Some Fixes To The Blog Site">Made Some Fixes To The Blog Site</a></li>
                 
                   <li><a href="/2014/12/28/despite-a-rainy-start/" title="Despite A Rainy Start">Despite A Rainy Start</a></li>
-                
-                  <li><a href="/2014/12/22/a-tradition-comes-to-a-close-tonight/" title="A Tradition Comes To A Close Tonight">A Tradition Comes To A Close Tonight</a></li>
                 
             </ul>
 		</div>

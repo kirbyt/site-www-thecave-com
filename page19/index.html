@@ -64,6 +64,27 @@
         </div>
 
         <div class="post-content right-col">
+        <h2><a href="/2006/12/06/delphi-bds-live-templates-for-sql-server/" rel="bookmark" title="Delphi (BDS) Live Templates for SQL Server">Delphi (BDS) Live Templates for SQL Server</a></h2>
+
+        <p>Here are a few Delphi (BDS) Live Templates I created for writting SQL Server script:<br /><br /><b>Create SQL Server Table</b><br />&lt;pre&gt;<br /><br /><br />        version=”1.0.0”&gt;<br /> <br /> <br />      Create table for SQL Server.<br /> <br /> <br />      Kirby Turner<br /> <br /><br /> <br /> <br />        TableName<br /> <br /> <br /> <br /> <br /><br /> <code>&lt;![CDATA[/***<br />  Create |TableName| table.<br />***/<br /><br />PRINT 'Create |TableName| table'<br />GO<br /><br />IF (EXISTS (SELECT name FROM sysobjects WHERE (name = N'|TableName|') AND (type = 'U')))<br />BEGIN<br />  DROP TABLE [dbo].[|TableName|]<br />END<br />GO<br /><br />CREATE TABLE [dbo].[|TableName|] (<br />|*||end|<br /><br />|*|CONSTRAINT [PK_|TableName|_1] PRIMARY KEY CLUSTERED<br />|*|(<br />|*|)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]<br />) ON [PRIMARY]<br />GO<br /><br />GRANT SELECT ON [dbo].[|TableName|] TO [public]<br />GO]]&gt;<br /> </code><br /> <br /><br />&lt;/pre&gt;<br /><br /><b>Create Foreign Key Reference</b><br />&lt;pre&gt;<br /><br /><br />        version=”1.0.0”&gt;<br /> <br /> <br />      Create foreign key constraint for SQL Server.<br /> <br /> <br />      Kirby Turner<br /> <br /> <br /> <br />                PrimaryTableName<br /> <br /> <br /> <br /> <br /> <br /> <br />                SecondaryTableName<br /> <br /> <br /> <br /> <br /> <br /> <br />                ColumnName<br /> <br /> <br /> <br /> <br /> <code>&lt;![CDATA[ALTER TABLE [dbo].[|PrimaryTableName|] WITH CHECK ADD<br />CONSTRAINT [FK_|PrimaryTableName|_|SecondaryTableName|] FOREIGN KEY([|ColumnName|])<br />REFERENCES [dbo].[|SecondaryTableName|] ([|ColumnName|])<br />GO]]&gt;<br /> </code><br /> <br /><br />&lt;/pre&gt;<br /><br />Enjoy.</p>
+
+
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Dec<span class="year">2006</span></span><span class="day">06</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
         <h2><a href="/2006/12/06/apple-distributed-quicktime-patch-through-myspace/" rel="bookmark" title="Apple Distributed QuickTime Patch Through MySpace">Apple Distributed QuickTime Patch Through MySpace</a></h2>
 
         <p>WTF…<a href="http://blog.washingtonpost.com/securityfix/2006/12/how_not_to_distribute_security_1.html">Apple distributed a QuickTime security patch through MySpace</a>.  This is crazy!<br /><br />First of all, I’m not a fan of QuickTime for various reasons.  I stopped using it years ago and I no longer have it installed.  But when I read <a href="http://blog.washingtonpost.com/securityfix/2006/12/how_not_to_distribute_security_1.html">this blog posting</a> about Apple distributing a security patch through MySpace it made me glad not to be a QuickTime user.  And to think Apple has been running ads on TV about the Mac being more secure than the PC.  Will the day come when Mac users need a MySpace account to install the latest Mac OS security patch?<br /><br />What the heck was Apple thinking?</p>
@@ -257,27 +278,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Oct<span class="year">2006</span></span><span class="day">30</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2006/10/30/surge-in-email-spam/" rel="bookmark" title="Surge in Email Spam">Surge in Email Spam</a></h2>
-
-        <p>I don’t know about you but the number of spam mails I receive daily has definitely gone up in recent months.  And I’m not just imagining it either.  There has been a <a href="http://blogs.zdnet.com/Ou/?p=354&amp;tag=nl.e539">surge in spam</a>.<br /><br />Update: More on the <a href="http://www.theregister.co.uk/2006/10/31/botnet_spam_surge/">surge in spam</a>.</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -340,12 +340,12 @@
 <li class='category'><a href='/category/cross%20post/'>cross post (4)</a></li>
 <li class='category'><a href='/category/family/'>family (4)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
-<li class='category'><a href='/category/general/'>general (16)</a></li>
+<li class='category'><a href='/category/general/'>general (17)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
 <li class='category'><a href='/category/humor/'>humor (1)</a></li>
 <li class='category'><a href='/category/ios/'>ios (10)</a></li>
 <li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
-<li class='category'><a href='/category/life/'>life (2)</a></li>
+<li class='category'><a href='/category/life/'>life (3)</a></li>
 <li class='category'><a href='/category/long%20trail/'>long-trail (2)</a></li>
 <li class='category'><a href='/category/moving/'>moving (1)</a></li>
 <li class='category'><a href='/category/opinion/'>opinion (2)</a></li>
@@ -364,7 +364,7 @@
 <li class='category'><a href='/category/trips/'>trips (5)</a></li>
 <li class='category'><a href='/category/videos/'>videos (2)</a></li>
 <li class='category'><a href='/category/work/'>work (4)</a></li>
-<li class='category'><a href='/category/writing/'>writing (1)</a></li>
+<li class='category'><a href='/category/writing/'>writing (2)</a></li>
 
     </ul>
 </div>
@@ -392,6 +392,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2015/01/08/no-plans-for-a-third-edition/" title="No Plans For A Third Edition">No Plans For A Third Edition</a></li>
+                
                   <li><a href="/2015/01/07/checkout-the-new-rowan-t-site/" title="Checkout The New Rowan T Site">Checkout The New Rowan T Site</a></li>
                 
                   <li><a href="/2015/01/07/15-minutes-of-writing/" title="15 Minutes Of Writing">15 Minutes Of Writing</a></li>
@@ -399,8 +401,6 @@
                   <li><a href="/2014/12/28/made-some-fixes-to-the-blog-site/" title="Made Some Fixes To The Blog Site">Made Some Fixes To The Blog Site</a></li>
                 
                   <li><a href="/2014/12/28/despite-a-rainy-start/" title="Despite A Rainy Start">Despite A Rainy Start</a></li>
-                
-                  <li><a href="/2014/12/22/a-tradition-comes-to-a-close-tonight/" title="A Tradition Comes To A Close Tonight">A Tradition Comes To A Close Tonight</a></li>
                 
             </ul>
 		</div>

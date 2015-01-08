@@ -4,13 +4,56 @@
   <title><![CDATA[Category: general | thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/category/general/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-01-07T13:53:40-05:00</updated>
+  <updated>2015-01-08T09:48:58-05:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[No Plans For A Third Edition]]></title>
+    <link href="http://www.thecave.com/2015/01/08/no-plans-for-a-third-edition/"/>
+    <updated>2015-01-08T08:18:28-05:00</updated>
+    <id>http://www.thecave.com/2015/01/08/no-plans-for-a-third-edition</id>
+    <content type="html"><![CDATA[<p>A number of people have recently asked if there will be a third edition of <a href="http://www.learningipadprogramming.com/">Learning iPad Programming</a>. The short answer is no, there are no plans. There are many reasons why I decided to not update the book, but a few key reasons stand out more than others.</p>
+
+<h2 id="i-enjoy-writing-but-i-dont-love-it">I Enjoy Writing, But I Don’t Love It</h2>
+
+<p>Writing a tech book was on my bucket list for many years, and writing has long been an interest of mine. But writing a book like Learning iPad Programming takes a lot of time. The first two editions of the book consumed most of my time and life for nearly two and a half years, and this left me feeling stressed and depressed. That’s when I came to the conclusion that my time is better spent <a href="http://www.thecave.com/2014/06/20/enjoy-less-and-love-more/">doing things I love</a> and cutting back on doing things that I only enjoy. </p>
+
+<p>If I had all the time in the world, then I certainly would consider updating the book each year or two. But my time is limited, and writing apps, snowboarding, spending time with my family, and going on outdoor adventures are all things I love doing. And those things leave me with little extra time to do things I only enjoy.</p>
+
+<h2 id="no-financial-motivation">No Financial Motivation</h2>
+
+<p>My <a href="http://www.whitepeaksoftware.com/">company</a> was booming just before I started work on the first edition of Learning iPad Programming. I saw a steady increase in product revenue year after year for five straight years, and I was becoming less dependent on consulting and contract work. In other words, I was on track for making a living selling my own products. In fact, that’s partly why I agreed to write a book in the first place. In my mind the book was another product in my expanding line of diversified products. But it turns out writing a book is hard. And writing the first edition was probably one of the hardest things I’ve ever done.</p>
+
+<p>I had never written a book before, so I ended up spending a lot of time learning how to write a book. I also tried a number of different systems to get me into the habit of writing. All of this extra time spent on learning to write, how to get pass mental blocks, how to stay motivated, how to make daily progress, even the smallest bit, took my focus away from my company. And at one point I knew the only way I would finish the book was to devote 100% of my time to it, so that’s exactly what I did. I stopped working for a few months so I could work on the book full time.</p>
+
+<p>All the time spent away from my company resulted in lost revenue as my product sales started a downward trend and I had zero time to offset the drop in product revenue with consulting. That meant I had to start living off of borrowed money. By the time the book was done I had well over $50K in credit card debt. And while sales of the book were great<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>, the royalty payments I received were not enough to pay down the debt, debt that I’m still working on paying off today. </p>
+
+<h2 id="mistakes-and-mishandling">Mistakes and Mishandling</h2>
+
+<p>The third and possibly the number one reason there are no plans for a third edition were the mistakes and mishandling of both editions of the book by the publisher. The publisher’s decision to release the second edition two weeks before WWDC 2013 was the final straw for me. Apple announced iOS 7 with its new look at that WWDC making the second edition obsolete only two weeks after hitting the bookstores.</p>
+
+<p>There were other mistakes made throughout my time working with the publisher, from production problems to not completing planned projects. But it was the handling, or as I call it, the mishandling of the second edition that led to my decision to not continue updating the book. </p>
+
+<p>If the book were self-published, then things might be different. But as it stands Learning iPad Programming is owned by the publisher, and everything other than the final manuscript is controlled by the publisher. I certainly have some say and can provide input, but I don’t really have any control once the manuscript is turned over to them. And given the past mistakes and mishandling of projects, I cannot see myself working with the same group for a third edition (my editor and her assistant excluded - they were outstanding to work with).</p>
+
+<h1 id="there-you-have-it">There You Have It</h1>
+
+<p>So there you have it, the main reasons there are no plans for a third edition of Learning iPad Programming. I admit it makes me rather sad when I think about it not doing new editions of the book. I poured my heart and soul into the first two editions, and I had high hopes that there would be many more editions for years to come. But at the end of the day it just not worth struggle, stress, and toll that the first two editions took on me, my family, and our financial wellbeing.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Of the millions of books available on Amazon, my book was in the top 1100 for a few months. This is an outstanding and rare achievement for a tech book, and one of my proudest moments during my career. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Checkout The New Rowan T Site]]></title>
@@ -89,63 +132,6 @@
     </li>
   </ol>
 </div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[iPhone 6 Plus Is Too Big For Me, But I Bought It Anyways]]></title>
-    <link href="http://www.thecave.com/2014/10/13/iphone-6-plus-is-too-big-for-me-but-i-bought-it-anyways/"/>
-    <updated>2014-10-13T00:00:00-04:00</updated>
-    <id>http://www.thecave.com/2014/10/13/iphone-6-plus-is-too-big-for-me-but-i-bought-it-anyways</id>
-    <content type="html"><![CDATA[<p>A few weeks back I said I would be buying the <a href="http://www.thecave.com/2014/09/10/iphone-6-plus-pocket-test/">iPhone 6</a>, not the 6 Plus. The 6 Plus is simply too large for me. But I have since changed my mind.</p>
-
-<p>There are a few reasons I changed my mind. First and foremost, I could not justify upgrading from the iPhone 5 to iPhone 6. It’s just a hardware upgrade, and I’m very happy with my iPhone 5. Sure, it would be nice having a device with TouchID but that’s not a must have feature for me. And a better camera would also be nice, but again it’s not totally necessary for me.</p>
-
-<p>I actually started the process of ordering the iPhone 6 on two separate occasions this past week, and each time I stopped before completing the order. There simply weren’t any good reasons for me to upgrade my phone other than to keep the end date for my 2-year contract with Verizon in the month of October. But the same is not true for the iPhone 6 Plus.</p>
-
-<h2 id="different-size-classes">Different Size Classes</h2>
-
-<p>The iPhone 6 Plus has features not available on the 6, features that, as a developer, I need to support in the apps I write. And while I can use the iOS Simulator to test those features, I’m a firm believer that testing on an actual device is far better. Testing on a device gives you a real sense for how your app feels on that device, and that’s why I own a number of iOS devices. The Simulator is great for quick debugging and testings, but nothing beats playing with your app on an actual device.</p>
-
-<p>The iPhone 6 Plus supports different size classes than the iPhone 6 and earlier iPhones. This means, for example, in landscape mode the iPhone 6 Plus can take advantage of displaying a split view controller, which is something the iPhone 6 does not. And again, while I can test this using the Simulator I won’t get a true feel for the differences without using an actual device. But this alone wasn’t the only reason I changed my mind on which device I should buy.</p>
-
-<h2 id="the-pocket-test">The Pocket Test</h2>
-
-<p>Over the weekend, while attending <a href="http://cingleton.com">Çingleton</a>, I did a number of pocket tests using various iPhone 6 Plus devices. Some had cases, others did not. What I found was that while I notice the iPhone 6 Plus in my pocket, it wasn’t as uncomfortable as I thought it would be. Does it feel as nice in my pocket as the iPhone 5 or even the 4s? Certainly not. And there will still be times when I’m annoyed at the size of the 6 Plus when carrying it in my pocket, such as when I’m snowboarding. In fact, I’ll likely have to carry the 6 Plus in my jacket pocket when snowboarding instead of my front pants pocket. And I’m not thrilled about carrying the larger device in a cargo pocket when I’m hiking as it will be banging against my leg as I walk.</p>
-
-<p>But as I thought about it more I realized that I don’t keep my iPhone 5 in my pocket all that much. I work from home and the majority of the time my iPhone is sitting on my desk. I do put it in my pocket when I leave the house, but typically I’m at home more than not.</p>
-
-<p>Still, after a weekend of various pocket tests I wasn’t completely sold on the iPhone 6 Plus. I certainly was leaning towards buying it, but I was still on the fence. That was until I learned about the zoom view.</p>
-
-<h2 id="zoom-view">Zoom View</h2>
-
-<p>With the zoom view an iPhone 6 Plus behaves like an iPhone 6. For instance, when the zoom view is enabled the home screen does not rotate when the iPhone 6 Plus is in landscape mode. In fact, it appears that the size classes used on the iPhone 6 Plus are the same as the iPhone 6 when using zoom mode. This means that the iPhone 6 Plus can be used to test the behavior of your app as if it were running on an iPhone 6. And that sealed the deal for me.</p>
-
-<p>Using the iPhone 6 Plus to test my apps is like having two devices in one. I can test my apps to make sure the user experience is perfect for iPhone 6 Plus users and, thanks to the zoom view, iPhone 6 users. At this point the decision to buy an iPhone 6 Plus became a no brainer for me.</p>
-
-<h2 id="not-a-developer">Not a Developer</h2>
-
-<p>Would I buy an iPhone 6 Plus if I weren’t a developer? Nope, I would not. In fact I would not buy the iPhone 6 either, at least not right now. My iPhone 5 suits me well, and I would have no good reason to upgrade if I weren’t a developer.</p>
-
-<h2 id="what-i-really-want">What I Really Want</h2>
-
-<p>What I really want isn’t the iPhone 6 Plus, but what I want does not exists, at least not yet.</p>
-
-<p>As a developer what I really want is an iPod touch Plus. If Apple were selling an iPod touch Plus that is the same as the iPhone 6 Plus minus the phone, then I would buy it in an instant. That way I could continue using my iPhone 5 as my primary phone device and the iPod touch Plus as a test device. And my son would be happy too because in his mind the iPod touch Plus would be his even though I would use it for testing purposes. But sadly there is no such thing as an iPod touch Plus right now.</p>
-
-<h2 id="change-my-mind-again">Change My Mind Again</h2>
-
-<p>So there you have it…the reasons I changed my mind.</p>
-
-<ol>
-  <li>Different size classes and UI behaviors.</li>
-  <li>Not as uncomfortable in my pocket as I thought it would be.</li>
-  <li>Able to test iPhone 6 and 6 Plus user experience from the same device.</li>
-  <li>No iPod touch Plus.</li>
-</ol>
-
-<p>There’s actually one more reason that led to me changing my mind, Apple’s return policy. If after the first week of owning an iPhone 6 Plus I find that carrying it around in my pocket too annoying then I can return the device. I doubt I will return it especially after talking with many iPhone 6 Plus owners at Çingleton this past weekend, but still, there is always a chance I will change my mind again.</p>
-
 ]]></content>
   </entry>
   
