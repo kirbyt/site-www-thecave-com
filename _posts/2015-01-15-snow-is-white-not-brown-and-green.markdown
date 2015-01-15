@@ -1,0 +1,9 @@
+---
+layout: post
+title: "Snow is White, Not Brown and Green"
+date: 2015-01-15 13:22:07 -0500
+categories: 
+---
+This screen shot says it all.
+
+![](https://farm9.staticflickr.com/8571/16286890482_5fc6e96929_z.jpg)
