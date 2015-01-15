@@ -3,6 +3,8 @@ layout: post
 title: "Snow is White, Not Brown and Green"
 date: 2015-01-15 13:22:07 -0500
 categories: 
+    - general
+    - family
 ---
 This screen shot says it all.
 
