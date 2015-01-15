@@ -5,10 +5,31 @@
         <description>thecave | Ramblings From A Crotchety Old Man - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2015-01-08T09:48:58-05:00</lastBuildDate>
-        <pubDate>2015-01-08T09:48:58-05:00</pubDate>
+        <lastBuildDate>2015-01-14T20:23:49-05:00</lastBuildDate>
+        <pubDate>2015-01-14T20:23:49-05:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Goodbye Fitbit Ultra, Hello Fitbit One</title>
+                <description>&lt;p&gt;On November 15, 2011, I started using my Fitbit Ultra, and after only 1157 days I have finally switched to the Fitbit One.&lt;/p&gt;
+
+&lt;p&gt;The Ultra has been an outstanding device, and it’s darn tough too. Mine has bits of plastic missing and the casing has separated on one side. And yet the thing continues working. The only problem is the button, which stopped working two days ago. That’s why I decided to upgrade. Still, the Ultra has been one of the best little devices I’ve ever owned.&lt;/p&gt;
+
+&lt;p&gt;Together the Ultra and I have taken 7,625,047 steps, climbed the equivalent of 22,711 floors, walked 3,401.97 miles, and burned 5,035,126. My Ultra was with me on my Long Trail thru hike as well as countless other hikes. It’s been with me to New York, San Francisco, Paris, Amsterdam, Montreal, and many other places. It’s the last thing I pull out of my pocket each night before bed, and the first thing I put back in my pocket after waking up. In all that time I’ve left my Ultra behind for fewer than 5 days. But as of this afternoon I’m no longer using my Ultra. I’m now using my new Fitbit One.&lt;/p&gt;
+
+&lt;p&gt;I’m excited to use the One. It certainly has features not available on the Ultra, most notably the ability to sync wirelessly over Bluetooth. The Ultra requires plugging in to sync, and often times I would go 6 or 7 days without syncing because it wasn’t convenient for me to plug in. But with the One and the option to sync via my iPhone, I will be syncing more frequently. &lt;/p&gt;
+
+&lt;p&gt;The One is smaller than the Ultra, and I have to say I’m really digging the smaller size. The display on the One is better than the Ultra too, but then again the display on my Ultra looked good when it was new. My Ultra has been through a lot and the wear and tear is showing on it. That might be why the One’s display looks much better to me right now.&lt;/p&gt;
+
+&lt;p&gt;I do have a couple of minor issues with the One. First, the wireless sync might mean I forget to charge my One as frequently as I did the Ultra. Time will tell if this is a valid concern or not for me. The other issue is that I rarely clipped my Ultra onto myself, but I did do it from time to time…mostly in the morning if I walked around the house in my boxers. I would clip the Ultra to my boxers until I put on pjs, shorts, or pants. The One comes with a clip, but since I rarely need the clip I’m not planning to use it. But there will still be those rare early mornings when I wish I could clip my One to my boxers. Maybe I’ll keep the clip on my nightstand next to my bed so it’s easy to grab when I do need it.&lt;/p&gt;
+
+&lt;p&gt;Hmmm, so it seems I don’t really have any issues with the One…at least not yet. And based on my experience with the Ultra, I don’t expect to have any issues with the One either. I’m hoping the One is as good, if not better, than the Ultra. Time will tell. I’ll try to remember to write a follow up about my One in, say, 1157 days.&lt;/p&gt;
+</description>
+                <link>http://www.thecave.com/2015/01/14/goodbye-fitbit-ultra-hello-fitbit-one/</link>
+                <guid>http://www.thecave.com/2015/01/14/goodbye-fitbit-ultra-hello-fitbit-one</guid>
+                <pubDate>2015-01-14T19:42:08-05:00</pubDate>
+        </item>
 
         <item>
                 <title>No Plans For A Third Edition</title>
@@ -600,32 +621,6 @@
                 <link>http://www.thecave.com/2014/06/20/enjoy-less-and-love-more/</link>
                 <guid>http://www.thecave.com/2014/06/20/enjoy-less-and-love-more</guid>
                 <pubDate>2014-06-20T00:00:00-04:00</pubDate>
-        </item>
-
-        <item>
-                <title>Wait, Justin and I Agree?</title>
-                <description>&lt;p&gt;My friend Justin wrote a post explaining why he thinks you should &lt;a href=&quot;http://carpeaqua.com/2014/05/09/why-you-should-use-interface-builder-with-auto-layout/&quot;&gt;use Interface Builder with Auto Layout&lt;/a&gt;. It was in response to my post about &lt;a href=&quot;http://www.thecave.com/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout/&quot;&gt;why I don’t use Interface Builder&lt;/a&gt; these days thanks to Auto Layout. Justin’s post is good with plenty of valid points. Justin and I also agree iOS and Mac developers should be using Auto Layout. But he said something that got me wondering…does Justin agree with me more than he realizes. Regarding writing layout constraints in code, Justin says:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;It’s totally possible to do this, and there are situations where I do it as well. Small views with a few basic constraints are usually quicker and easier to write without a Xib. Insanely complex views such as the TED video player I wrote and maintain are also too heavy for a straight Xib implementation.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I found that almost all the apps I have worked on in recent years consists of views that fall into the category of either being small views or complex views. And even “insanely complex views” can likely be broken down into smaller views using the &lt;a href=&quot;http://stackoverflow.com/a/13581816&quot;&gt;composite view pattern&lt;/a&gt;. In other words, in my experience many views can be broken down into smaller, more manageable views that end up needing only a few basic constraints. And even Justin agrees that “small views with a few basic constraints are usually quicker and easier to write without a Xib.” So it’s my style, my approach to solving UI problems that makes it quicker and easier for me to write UI with layout constraints in code rather than using IB.&lt;/p&gt;
-
-&lt;p&gt;Does this mean I’m right and Justin is wrong? No. Does it mean Justin’s right and I’m wrong? No.&lt;/p&gt;
-
-&lt;p&gt;In programming there are multiple ways to accomplish a task, and one approach isn’t always necessarily better or more right than another approach. The approach a programmer takes to solve a problem is often based on past experience and the solution often reflects the personal style of the programmer.&lt;/p&gt;
-
-&lt;p&gt;Over the years my style has changed and evolved to a point where I break down complex problems into smaller, more manageable tasks, and I use this style, or approach if you will, when implementing a UI. These days view controller containment and composite views work well for me. I like to write &lt;a href=&quot;http://www.objc.io/issue-1/lighter-view-controllers.html&quot;&gt;light weight view controllers&lt;/a&gt;, and I use other objects to serve as the data source and delegate to my view controllers. And more recently I have found I don’t need to use Interface Builder to be a productive programmer.&lt;/p&gt;
-
-&lt;p&gt;Does this mean you should abandon IB as well? Certainly not. Does this mean I hate IB and I will never use it again? Most certainly not. When a task I need to accomplish is quicker and easier for me to do in IB, then I will most certainly use IB. Just like Justin will sometimes write layout constraints in code, I will sometimes use IB to put together a view.&lt;/p&gt;
-
-&lt;p&gt;Different situations call for different solutions. There isn’t just one way to solve a problem, and programmers shouldn’t do something just because one person says this is the way it should be done. Programmers should explore the different ways to accomplish a task, and decide what works best for them and what tools and approaches make them the best, most productive programmer they can be. And don’t get hung up on doing a task the same way each time. Challenge yourself by find new ways of accomplishing the same task. In doing this, you might find you agree much more with the person that you thought you disagreed with on the onset.&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2014/05/10/wait-justin-and-i-agree/</link>
-                <guid>http://www.thecave.com/2014/05/10/wait-justin-and-i-agree</guid>
-                <pubDate>2014-05-10T00:00:00-04:00</pubDate>
         </item>
 
 

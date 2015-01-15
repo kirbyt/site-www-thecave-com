@@ -59,6 +59,39 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jan<span class="year">2015</span></span><span class="day">14</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2015/01/14/goodbye-fitbit-ultra-hello-fitbit-one/" rel="bookmark" title="Goodbye Fitbit Ultra, Hello Fitbit One">Goodbye Fitbit Ultra, Hello Fitbit One</a></h2>
+
+        <p>On November 15, 2011, I started using my Fitbit Ultra, and after only 1157 days I have finally switched to the Fitbit One.</p>
+
+<p>The Ultra has been an outstanding device, and it’s darn tough too. Mine has bits of plastic missing and the casing has separated on one side. And yet the thing continues working. The only problem is the button, which stopped working two days ago. That’s why I decided to upgrade. Still, the Ultra has been one of the best little devices I’ve ever owned.</p>
+
+<p>Together the Ultra and I have taken 7,625,047 steps, climbed the equivalent of 22,711 floors, walked 3,401.97 miles, and burned 5,035,126. My Ultra was with me on my Long Trail thru hike as well as countless other hikes. It’s been with me to New York, San Francisco, Paris, Amsterdam, Montreal, and many other places. It’s the last thing I pull out of my pocket each night before bed, and the first thing I put back in my pocket after waking up. In all that time I’ve left my Ultra behind for fewer than 5 days. But as of this afternoon I’m no longer using my Ultra. I’m now using my new Fitbit One.</p>
+
+<p>I’m excited to use the One. It certainly has features not available on the Ultra, most notably the ability to sync wirelessly over Bluetooth. The Ultra requires plugging in to sync, and often times I would go 6 or 7 days without syncing because it wasn’t convenient for me to plug in. But with the One and the option to sync via my iPhone, I will be syncing more frequently. </p>
+
+<p>The One is smaller than the Ultra, and I have to say I’m really digging the smaller size. The display on the One is better than the Ultra too, but then again the display on my Ultra looked good when it was new. My Ultra has been through a lot and the wear and tear is showing on it. That might be why the One’s display looks much better to me right now.</p>
+
+<p>I do have a couple of minor issues with the One. First, the wireless sync might mean I forget to charge my One as frequently as I did the Ultra. Time will tell if this is a valid concern or not for me. The other issue is that I rarely clipped my Ultra onto myself, but I did do it from time to time…mostly in the morning if I walked around the house in my boxers. I would clip the Ultra to my boxers until I put on pjs, shorts, or pants. The One comes with a clip, but since I rarely need the clip I’m not planning to use it. But there will still be those rare early mornings when I wish I could clip my One to my boxers. Maybe I’ll keep the clip on my nightstand next to my bed so it’s easy to grab when I do need it.</p>
+
+<p>Hmmm, so it seems I don’t really have any issues with the One…at least not yet. And based on my experience with the Ultra, I don’t expect to have any issues with the One either. I’m hoping the One is as good, if not better, than the Ultra. Time will tell. I’ll try to remember to write a follow up about my One in, say, 1157 days.</p>
+
+
+        <div>Posted in <a class='category' href='/category/fitness/'>fitness</a>, <a class='category' href='/category/general/'>general</a>.</div>
+
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Jan<span class="year">2015</span></span><span class="day">08</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -420,72 +453,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Sep<span class="year">2014</span></span><span class="day">16</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2014/09/16/using-xcodebuild-to-export-a-ipa-from-an-archive/" rel="bookmark" title="Using xcodebuild To Export a .ipa From an Archive">Using xcodebuild To Export a .ipa From an Archive</a></h2>
-
-        <p>Xcode 6 changes how you export a .ipa from an archive for adhoc distribution. It used to be that you could export the archive to a .ipa as long as you had the right provisioning profile and distribution certificate on your machine. Starting with Xcode 6 you need to be a team member of the particular Developer Program account and you need to have the rights to make a distribution build. This means you need to be a team agent. However, I work with a number of clients who don’t have the clue what Xcode is much less are willing to make distribution builds, so I need to way to make distribution builds within this new limitation from Xcode 6.</p>
-
-<p>Making distribution builds hasn’t been a problem for me in the past. I ask the client to provide me<sup id="fnref:ask"><a href="#fn:ask" class="footnote">1</a></sup> with the necessary provisioning profile, distribution certificate, and public private key pair so I can make the distribution build for them. Then I use Xcode Organizer to export the archive to a .ipa that I can distribute.<sup id="fnref:host"><a href="#fn:host" class="footnote">2</a></sup> But it seems I can no longer export using Organizer without having the right team access, so I had to search out an alternative approach.</p>
-
-<p>Turns out starting with Xcode 5, <em>xcodebuild</em> includes parameters for exporting from an archive. This is exactly what I need so I can continue making adhoc distribution builds for clients without being a team member or team agent under their Developer Program account.</p>
-
-<p>So how do I do it?</p>
-
-<h3 id="the-how-to">The How To</h3>
-
-<p>My build script starts by performing a clean.</p>
-
-<blockquote>
-  <p>xcodebuild clean -project $projectname.xcodeproj -configuration Release -alltargets</p>
-</blockquote>
-
-<p>Then the script builds and archives the app. I specify the archive path using the <em>-archivePath</em> parameter in the command line so the script will know where the archive file is located.</p>
-
-<blockquote>
-  <p>xcodebuild archive -project $projectname.xcodeproj -scheme $schemename -archivePath $projectname.xcarchive</p>
-</blockquote>
-
-<p>Finally my script exports the archive into a .ipa file.</p>
-
-<blockquote>
-  <p>xcodebuild -exportArchive -archivePath $projectname.xcarchive -exportPath $projectname -exportFormat ipa -exportProvisioningProfile “Provisioning Profile Name”</p>
-</blockquote>
-
-<p>I let the provisioning profile imply the signing identity, but you can specify the signing identity using the <em>-exportSigningIdentity</em> parameter.</p>
-
-<h3 id="the-gotcha">The Gotcha</h3>
-
-<p>The one major gotcha that cost me a more than an hour of time was figuring out the parameter value for <em>-exportProvisioningProfile</em>. I initial thought it should be the file name to the provisioning profile. I tried it with and without the <em>.mobileprovision</em> file extension, but it did not work. I included a relative path as well as an absolute path to the provision profile. I tried using the UUID for the provision profile instead of the file name. I even I tried not including a path at all thinking it would look up the provision profile in the <em>~/Library/MobileDevice/Provisioning Profiles/</em> directory, but still no luck.</p>
-
-<p>Turns out I needed to specify the name of the provisioning profile as defined in the file itself. This is the same name assigned to the profile in the provisioning portal. Once I figured this out I was able to export the .ipa from the archive using the my build script, and I don’t have to be a team agent under my client’s Developer Program account to make the distribution build.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:ask">
-      <p>I usually assist my clients with this by guiding them through the steps, or I ask them to give me the account credentials with a temporary password so I can perform the necessary steps. Then I have the client reset the password. <a href="#fnref:ask" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:host">
-      <p>I don’t export when I host the test app on <a href="http://hockeyapp.net/">HockeyApp</a>. It takes care of exporting the .ipa from the archive for you. I only export when the client requests that the test app be hosted on their own server.) <a href="#fnref:host" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-
-
-        <div>Posted in <a class='category' href='/category/ios/'>ios</a>, <a class='category' href='/category/programming/'>programming</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -543,8 +510,8 @@
 <li class='category'><a href='/category/camping/'>camping (11)</a></li>
 <li class='category'><a href='/category/cross%20post/'>cross post (4)</a></li>
 <li class='category'><a href='/category/family/'>family (4)</a></li>
-<li class='category'><a href='/category/fitness/'>fitness (2)</a></li>
-<li class='category'><a href='/category/general/'>general (17)</a></li>
+<li class='category'><a href='/category/fitness/'>fitness (3)</a></li>
+<li class='category'><a href='/category/general/'>general (18)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
 <li class='category'><a href='/category/humor/'>humor (1)</a></li>
 <li class='category'><a href='/category/ios/'>ios (10)</a></li>
@@ -596,6 +563,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2015/01/14/goodbye-fitbit-ultra-hello-fitbit-one/" title="Goodbye Fitbit Ultra, Hello Fitbit One">Goodbye Fitbit Ultra, Hello Fitbit One</a></li>
+                
                   <li><a href="/2015/01/08/no-plans-for-a-third-edition/" title="No Plans For A Third Edition">No Plans For A Third Edition</a></li>
                 
                   <li><a href="/2015/01/07/checkout-the-new-rowan-t-site/" title="Checkout The New Rowan T Site">Checkout The New Rowan T Site</a></li>
@@ -603,8 +572,6 @@
                   <li><a href="/2015/01/07/15-minutes-of-writing/" title="15 Minutes Of Writing">15 Minutes Of Writing</a></li>
                 
                   <li><a href="/2014/12/28/made-some-fixes-to-the-blog-site/" title="Made Some Fixes To The Blog Site">Made Some Fixes To The Blog Site</a></li>
-                
-                  <li><a href="/2014/12/28/despite-a-rainy-start/" title="Despite A Rainy Start">Despite A Rainy Start</a></li>
                 
             </ul>
 		</div>
