@@ -6,4 +6,4 @@ categories:
 ---
 This screen shot says it all.
 
-![](https://farm9.staticflickr.com/8571/16286890482_5fc6e96929_z.jpg)
+[![](https://farm9.staticflickr.com/8571/16286890482_5fc6e96929_n.jpg)](https://www.flickr.com/photos/kirbyturner/16286890482)
