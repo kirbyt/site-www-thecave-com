@@ -64,6 +64,27 @@
         </div>
 
         <div class="post-content right-col">
+        <h2><a href="/2006/09/05/removing-child-nodes-dynamically-using-javascript/" rel="bookmark" title="Removing Child Nodes Dynamically using JavaScript">Removing Child Nodes Dynamically using JavaScript</a></h2>
+
+        <p>JavaScript once again kicked my butt last night.  Well, it was the combination of JavaScript and IE because my initial code worked fine in Firefox.  Here’s the story.<br /><br />I have a search form that uses AJAX to retrieve search results based on user submitted criteria.  The results are displayed in a table dynamically created using JavaScript.  The problem, however, was the results were being appended to the end of the existing table data.  I needed a way to clear the table contents prior to adding the latest search results.<br /><br />My first approach was to set the innerHTML property of the TBODY element from the results table to a zero-length string.  For example:<br /><br />&lt;pre&gt;<br />var ctrl;<br />ctrl = document.getElementById(‘searchTBody’);<br />ctrl.innerHTML = ‘’;<br />&lt;/pre&gt;<br /><br />This works fine in Firefox but it causes problems under IE.  A different approach is needed.  A couple of google searches turned up the removeChild method.  Using it you can iterate through the childNodes collections to remove each child within the element.  So I wrote the following JavaScript function:<br /><br />&lt;pre&gt;<br />function removeChildNodes(ctrl)<br />{<br />  while (ctrl.childNodes[0])<br />  {<br />    ctrl.removeChild(ctrl.childNodes[0]);<br />  }<br />}<br />&lt;/pre&gt;<br /><br />To remove each child node from an element, get a reference to the element and pass it to the removeChildNodes function.  For example:<br /><br />&lt;pre&gt;<br />var ctrl;<br />ctrl = document.getElementById(‘searchTBody’);<br />removeChildNodes(ctrl);<br />&lt;/pre&gt;<br /><br />This approach works for IE and Firefox.</p>
+
+
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Sep<span class="year">2006</span></span><span class="day">05</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
         <h2><a href="/2006/09/05/csv-parser-for-delphi/" rel="bookmark" title="CSV Parser for Delphi">CSV Parser for Delphi</a></h2>
 
         <p>I updated my <a href="http://www.whitepeaksoftware.com/delphi_csv_parser.aspx">Delphi CSV Parser</a> to include .NET support.  TwpsCsvParser can now be compiled for Win32 and .NET applications using Delphi.  To download the code with sample Win32 and .NET applications, visit the <a href="http://www.whitepeaksoftware.com/delphi_csv_parser.aspx">Delphi CSV Parser</a> page at the <a href="http://www.whitepeaksoftware.com/">White Peak Software</a> web site.<br /><br />Don’t have Delphi?  Visit <a href="http://www.turboexplorer.com/">http://www.turboexplorer.com/</a> and download the FREE <a href="http://www.turboexplorer.com/delphi">Turbo Delphi Explorer</a> or <a href="http://www.turboexplorer.com/delphinet">Turbo Delphi for .NET Explorer</a>.</p>
@@ -255,27 +276,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Aug<span class="year">2006</span></span><span class="day">12</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2006/08/12/turbo-delphi/" rel="bookmark" title="Turbo Delphi">Turbo Delphi</a></h2>
-
-        <p>Earlier this year I ranted about <a href="http://www.thecave.com/archive/2006/01/16/why_no_free_personal_edition_of_borland_developer_studio.aspx">Borland not offering a free personal edition of Borland Developer Studio</a>, and more specifically <a href="http://www.borland.com/delphi/">Delphi</a>.  A few months later a trial version was made available for download.  But the new DevCo is going one step further with the upcoming release of the <a href="http://www.turboexplorer.com/">Turbo editions of Delphi, Delphi.NET, C++, and C#</a>.<br /><br />The single language Turbo editions come in two flavors, Explorer and Professional.  Explorer is FREE while Professional will be less than $500 (and less then $100 for students).  The only restriction in the Explorer addition is the fixed component palette.  In other words, the Explorer edition, which comes with hundreds of pre-built components will not allow you use to 3rd party components.  But that’s okay because it is FREE.<br /><br />The return of single language Turbo editions is exciting news.  Now all those others developers who hear me preach about the wonders of Delphi will have a chance to give Turbo Delphi a spin at no cost.  And once they discover the power they will be able to buy the professional edition at a reasonable price.<br /><br />For me, I plan to stick with Borland Developer Studio because I need to multi-language support.  But I’m still excited about the new opportunities the Turbo editions will create.<br /><br />Go DevCo!</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -390,6 +390,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2015/01/15/snow-is-white-not-brown-and-green/" title="Snow is White, Not Brown and Green">Snow is White, Not Brown and Green</a></li>
+                
                   <li><a href="/2015/01/14/goodbye-fitbit-ultra-hello-fitbit-one/" title="Goodbye Fitbit Ultra, Hello Fitbit One">Goodbye Fitbit Ultra, Hello Fitbit One</a></li>
                 
                   <li><a href="/2015/01/08/no-plans-for-a-third-edition/" title="No Plans For A Third Edition">No Plans For A Third Edition</a></li>
@@ -397,8 +399,6 @@
                   <li><a href="/2015/01/07/checkout-the-new-rowan-t-site/" title="Checkout The New Rowan T Site">Checkout The New Rowan T Site</a></li>
                 
                   <li><a href="/2015/01/07/15-minutes-of-writing/" title="15 Minutes Of Writing">15 Minutes Of Writing</a></li>
-                
-                  <li><a href="/2014/12/28/made-some-fixes-to-the-blog-site/" title="Made Some Fixes To The Blog Site">Made Some Fixes To The Blog Site</a></li>
                 
             </ul>
 		</div>
