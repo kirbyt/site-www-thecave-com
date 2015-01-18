@@ -4,13 +4,36 @@
   <title><![CDATA[Category: ios | thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/category/ios/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-01-15T16:41:01-05:00</updated>
+  <updated>2015-01-18T14:22:45-05:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Eliminating Distractions]]></title>
+    <link href="http://www.thecave.com/2015/01/18/eliminating-distractions/"/>
+    <updated>2015-01-18T13:49:47-05:00</updated>
+    <id>http://www.thecave.com/2015/01/18/eliminating-distractions</id>
+    <content type="html"><![CDATA[<p>Dan Counsell wrote an excellent post about <a href="http://dancounsell.com/articles/removing-distractions">removing distractions</a>. In the post he talks about how he removed distractions by removing social media apps such as Twitter and Facebook from his iPhone. He’s done other things too such as reading a book instead of checking Twitter, and he started a “No Technology Day” on Saturdays, which is something I think I might start doing as well.</p>
+
+<p>Over the last year I too have been eliminating distractions in my life by spending more of my time <a href="http://www.thecave.com/2014/06/20/enjoy-less-and-love-more/">doing what I love</a> and changing the way I use social networks. Changing the way I use social networks is one of the reasons I wrote my app <a href="http://www.whitepeaksoftware.com/cross-post">Cross Post</a>. With Cross Post I can share pictures, thoughts, and comments on Facebook, Twitter, and App.net without the worry of being distracted by those sites. Cross Post sends updates to social media sites, but it does not read the time lines or streams from those sites. Cross Post is a tool for making, not reading, micro-blog posts, hence it’s ability to help eliminate distractions. </p>
+
+<p>I did one other thing to help me eliminate distractions. I turned off notifications on all but the most important apps on my iPhone<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. Unlike Dan I did not remove the social media apps from my phone. I still want to be able to reply to mentions via my iPhone, which is why I left the apps installed. And in the case of Facebook, it’s the easiest way for me to get news about my family via my sister down in Mississippi, so I still check Facebook once or twice a day. But I do not receive notifications from any of the social media apps on my phone.</p>
+
+<p>So how can you start eliminating distractions in your life. I suggest starting with Dan’s new website, <a href="http://thegreatdisconnect.info">The Great Disconnect</a>. It contains articles, videos and information about how to remove distractions by living a less connected life. Check it out because we all can benefit from being a bit less connected these days.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Examples of app that are important to me and which I still have notifications turned on are ones for my bank and credit cards. I want to make sure I’m alerted if a fraudulent charge is ever made against one of my accounts. Slack is another app that I use with notifications turned on since I use this for work purposes. Beyond that, I have notifications turned off. Oh, and in case you were wondering, I let sites like Twitter notify me of mentions via email, and I only check email a few times a day. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[iPhone 6 Plus Is Too Big For Me, But I Bought It Anyways]]></title>
@@ -215,40 +238,6 @@
     </li>
   </ol>
 </div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Reporting Errors in Cross Post]]></title>
-    <link href="http://www.thecave.com/2014/09/14/reporting-errors-in-cross-post/"/>
-    <updated>2014-09-14T00:00:00-04:00</updated>
-    <id>http://www.thecave.com/2014/09/14/reporting-errors-in-cross-post</id>
-    <content type="html"><![CDATA[<p>A friend sent me suggestions on handling error reporting for Cross Post. I decided write up my current thinking here to see if my approach makes sense. Besides, trying to explain it in a set of 140 character tweets is less than ideal.</p>
-
-<p>The challenge I face is reporting errors, or any status reporting for that matter, that happen once the server takes over the process. A timeout error, for example, could occur while the server is uploading a photo to Twitter. At this point the server no longer has a connection to the app, so trickling the error up to the app is not an option.</p>
-
-<p>One option is to let the server eat the error. I know of a few similar solutions that eat the error, and I stopped using those apps for that very reason. If I ask an app to post something to Facebook, and the post never appears, then I want to know why. Letting the server eat the error is not an option for Cross Post. But how does the Cross Post app learn about the error?</p>
-
-<p>One option is to use push notifications. When an error occurs the server can notify the user via a push notification. But this isn’t a trivial task to implement and it’s a path I don’t care to pursue unless absolutely necessary.</p>
-
-<p>Another option, and the one I’m considering at the moment, is having the app include a unique identifier in the payload sent to the server. You can think of the identifier as a handle that the app can use to query to server for the status of the post.</p>
-
-<p>If an error occurs on the server, the server will store the error with the identifier provided by the app as the primary key. The next time the app launches, it will check with the server to see if there were any errors. Once the app learns about the error, the server deletes the error from its data store.</p>
-
-<p>This is a more reactive approach to reporting errors instead of a proactive approach, but it’s a cleaner solution than going down the push notification route. Beside, push notifications are not guaranteed so this approach is as reliable if not more reliable.</p>
-
-<p>There are problems with this approach. First starters, only the device that sent the post will know to check for the error. Say I send a new post to Facebook using my iPhone. The post fails to make its way to Facebook. I launch Cross Post on my iPad. The iPad does not know about the post sent from iPhone, so it does not know to check for an error.</p>
-
-<p>Now there are ways around this new problem. I could ask each user for a unique identifier such as an email address or username, but that’s another road I don’t care to travel down. People have more than enough logins to remember without me asking them to setup yet another online account and log into Cross Post. Besides, Cross Post can use iCloud to sync the unique identifier for each post between devices. In fact, this is what I will likely do. Key-value syncing using iCloud has been reliable for some time now, so why take advantage of it.</p>
-
-<p>The other problem with having the app check the server for error reports is that now the server must persist the error report. This means I need to have some type of data persistence store. I could use the file system on the server, but I’ve configured my server app to scale. This means a load balancer is in place and as traffic increases OpenShift will spawn new server instances. This means it is possible that the server that caught the error will not be the server that the app queries for error reports. So storing the error report on the server’s file system is not an option. An additional server, aka a database server, is needed to persist the error reports.</p>
-
-<p>Having an additional server for data persistence isn’t a big deal for OpenShift, but it is just one more server that must always be available. And now the backend for Cross Post is starting to grow. A couple of weeks ago the entire Cross Post solution ran on an iOS device. Now the solution spans the device and a server environment, and next I have to throw in a database server just for error reporting!?</p>
-
-<p>Having the database does seem a bit overkill at the moment, but there might be a need for a database for persistent storage down the road anyways. So it looks like I will be adding a MongoDB database to the mix very soon. That is unless someone has a better idea to share with me.</p>
-
-<p>Update: I came up with a <a href="http://www.thecave.com/2014/09/15/reporting-errors-in-cross-post-part-2/">third option</a> that is by far my favorite.</p>
-
 ]]></content>
   </entry>
   

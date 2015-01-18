@@ -59,6 +59,27 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Mar<span class="year">2007</span></span><span class="day">25</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2007/03/25/5-things-i-like-about-delphi-2007/" rel="bookmark" title="5 Things I Like About Delphi 2007">5 Things I Like About Delphi 2007</a></h2>
+
+        <p>Bloggers in the Delphi community have been tagging each other to post 5 things they like about the Delphi 2007.  I wasn’t tagged but I want to play so here are my 5 things.<br /><br />1) <b>Speed</b> - The IDE loads and shutdowns so much faster then BDS 2006.  There seems to be other performance enhancements too such as switching between the form designer and code window.  The IDE is so much faster that I don’t like going back to BDS 2006.<br /><br />2) <b>Vista Support</b> - This is a wonderful enhancement.  I especially like how existing projects using dialogs and routines such as MessageDlg automatically have a Vista look simply by re-compiling the project.<br /><br />3) <b>Application.MainFormOnTaskbar</b> - I really like this new property.  I’m working on an SDI application that manages windows in a similar way as Microsoft Word and Outlook.  Overriding CreateParams and setting the ExStyle isn’t a big deal but having the MainFormOnTaskbar property helps to reduce some code.  <br /><br /><span style="color:red">Update:</span> Steve Trefethen posted a nice overview of <a href="http://www.stevetrefethen.com/blog/TheNewVCLPropertyTApplicationMainFormOnTaskbarInDelphi2007.aspx">Application.MainFormOnTaskbar</a>.<br /><br />4) <b>Online Help</b> - I like the new look of the help system and the new navigation between pages is really nice.  But I do have one major complaint.  Help indexes found in the BDS 2006 help system are missing.  For example launch the help system, go to Index, and enter “CreateDir routine” in the “Look for” textbox.  The routine is not indexed in the new help system but it is indexed in the previous help system.  And this is not the only routine not indexed.  It sucks that this sort of information is no longer indexed in the help system.<br /><br /><span style="color:red">Update:</span>Delphi 2007 Update 1 fixes my complaint about the online help.  Routines such as CreateDir are now indexed.<br /><br />5) <b>Improved Tool Palette Search</b> - I really like how the tool palette search has been improved to find all matches containing the search word, not just matches beginning with the search word.  This is a great improvement for me given that I use a number of 3rd party VCL components that are prefixed (i.e., TcxComboBox). <br /><br />So that’s my list of 5 things I like about Delphi 2007.  But what about the things I do not like about Delphi 2007.<br /><br />1) “Non-breaking” Release - Well, sort of.  The idea is that DCUs and packages from BDS 2006 can be used in Delphi 2007.  In general this is true.  However, I have encountered a number of problems.  For starters Delphi 2007 is having trouble loading certain DevExpress packages at startup.  And I have read in the newsgroups there is a painting issue too although I have not personally experienced it.<br /><br /><span style="color:red">Update:</span> Turns out the problem was me.  I was installing DevExpress packages that weren’t meant for the IDE.  After installing the correct set of DevExpress VCL packages my IDE problems went away.<br /><br />2) Trouble Debugging - This problem has me scratching my head and for the life of me I cannot figure it out.  All BDS 2006 projects I have opened in Delphi 2007 will not run under the interactive debugger.  I haven’t logged this issue in QC yet because I’m still trying to figure out what is happening.  Simply saying “Cannot debug project opened from BDS 2006 project file” does not give CodeGear enough information to troubleshoot the problem.  But the problem still remains.  I cannot debug existing projects.  (Note: I suspect this issue might have something to do with the 3rd party packages such as the ones I’m using from DevExpress.)<br /><br />3) More Issues with Debugging - From time to time I get a weird error message when I press F9.  The message says the debugger cannot create the process.  I launch Sysinternal’s Process Explorer and notice the application to debug is running under the bds.exe process and yet the debugger cannot attach to it.  To make matter worse I cannot kill the spawned process.  I have to close down the IDE to kill it. (Again, I suspect this issue might have somethign to do with some of the 3rd party packages I have manually installed.)<br /><br /><span style="color:red">Update:</span> <a href="http://www.thecave.com/archive/2007/03/26/fixed_my_delphi_2007_debug_issues.aspx">Fixed my Delphi 2007 debug issues</a>.<br /><br />4) No Support in FinalBuilder (yet) - I use FinalBuilder for all my projects and unfortunately FinalBuilder does not support Delphi 2007 (yet).  But according to the newsgroups a new compiler action for Delphi 2007 is in the works.  <br /><br /><span style="color:red">Update:</span> FinalBuilder now has a Delphi 2007 compiler action.<br /><br />5) No Support in EurekaLog (yet) - EurekaLog is another 3rd party tool I use, and unfortunately support for Delphi 2007 is not there yet.  But good news is EurekaLog should have support in about 2 weeks.<br /><br /><span style="color:red">Update:</span> EurekaLog now has Delphi 2007.<br /><br />I know some of these dislikes are not directly Delphi 2007 but they do prevent me from completely moving from BDS 2006 to Delphi 2007 right now.  So Delphi 2007 is still an experiment for me at the moment while I wait for 3rd party support.  Meanwhile I’m still using BDS 2006 for production work.<br /><br /><span style="color:red">Update:</span> I now use Delphi 2007 daily.  Best Delphi IDE in a long time.</p>
+
+
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Mar<span class="year">2007</span></span><span class="day">21</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -247,42 +268,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Feb<span class="year">2007</span></span><span class="day">22</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2007/02/22/exciting-news-this-week-from-codegear/" rel="bookmark" title="Exciting News This Week from CodeGear">Exciting News This Week from CodeGear</a></h2>
-
-        <p><a href="http://www.codegear.com/">CodeGear</a> made a couple of announcements this week that have generated a excitement and some confusion.</p>
-
-<p><a href="http://www.codegear.com/Products/Delphi/Delphi2007forWin32/tabid/236/Default.aspx">Delphi 2007 for Win32</a>, to be released in March, is the latest offering for Delphi developers.  As a current BDS user my first thought was “This upgrade is not for me”.  After all I do use the Delphi.NET and C# Builder personalities in additional to the Delphi Win32 personality.  However, I don’t use the first two as often as the Delphi Win32 personality but regular enough to want a Studio 2007 upgrade.  But after thinking about it more I decided this was the right move for CodeGear so I purchased the upgrade and started the support and maintenance subscription to boot.</p>
-
-<p>Why do I feel this is the right move?  Simple, I need to start moving towards Vista support for my native Windows applications.  Do I want to wait until CodeGear has all three personalities ready to ship or do I want the one most important to me now that provides Vista support?  Of course I want the one most important to my work now.  So I upgraded to Delphi 2007 for Win32 and by enrolling in the annual support and maintenance subscription I will receive the other personality when they become available at no additional cost.  And I will continue to receive the latest versions of the Studio products for as long as my subscription is remains active, which will save me money in the long run.</p>
-
-<p>The other announce, which has me really excited, is <a href="http://www.codegear.com/Products/Delphi/DelphiforPHP/tabid/237/Default.aspx">Delphi for PHP</a>.  I did some PHP programming last year.  I like PHP but have been slow to adopt it.  Unfortunately I’m not as productive in PHP as I am with ASP.NET.  Part of the reason is a lack of in depth knowledge of the language, but also the lack of a solid IDE with a visual designer.  Delphi for PHP promises to change this.  And from what I have read and seen Delphi for PHP has the potential to be real winner for CodeGear.</p>
-
-<p>Here are some links for those interested in learning more about Delphi for PHP:</p>
-
-<ul>
-  <li><a href="http://dn.codegear.com/article/34068">Delphi for PHP Introduction</a> (includes a flash demo)</li>
-  <li><a href="http://dn.codegear.com/article/34059">Delphi for PHP Quick Start</a></li>
-  <li><a href="http://blogs.codegear.com/davidi/archive/2007/02/22/32183.aspx">David I on VCL for PHP</a></li>
-  <li><a href="http://www.codegear.com/Products/Delphi/DelphiforPHP/tabid/237/Default.aspx">Delphi for PHP Product Page</a></li>
-</ul>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -342,15 +327,15 @@
 <li class='category'><a href='/category/backpacking/'>backpacking (8)</a></li>
 <li class='category'><a href='/category/blogger/'>blogger (785)</a></li>
 <li class='category'><a href='/category/camping/'>camping (11)</a></li>
-<li class='category'><a href='/category/cross%20post/'>cross post (4)</a></li>
+<li class='category'><a href='/category/cross%20post/'>cross post (5)</a></li>
 <li class='category'><a href='/category/family/'>family (5)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (3)</a></li>
-<li class='category'><a href='/category/general/'>general (20)</a></li>
+<li class='category'><a href='/category/general/'>general (21)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
 <li class='category'><a href='/category/humor/'>humor (1)</a></li>
-<li class='category'><a href='/category/ios/'>ios (10)</a></li>
+<li class='category'><a href='/category/ios/'>ios (11)</a></li>
 <li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
-<li class='category'><a href='/category/life/'>life (3)</a></li>
+<li class='category'><a href='/category/life/'>life (4)</a></li>
 <li class='category'><a href='/category/long%20trail/'>long-trail (2)</a></li>
 <li class='category'><a href='/category/moving/'>moving (1)</a></li>
 <li class='category'><a href='/category/opinion/'>opinion (2)</a></li>
@@ -362,7 +347,7 @@
 <li class='category'><a href='/category/salem/'>salem (1)</a></li>
 <li class='category'><a href='/category/skiing/'>skiing (2)</a></li>
 <li class='category'><a href='/category/snowboarding/'>snowboarding (7)</a></li>
-<li class='category'><a href='/category/social/'>social (3)</a></li>
+<li class='category'><a href='/category/social/'>social (4)</a></li>
 <li class='category'><a href='/category/stowe/'>stowe (3)</a></li>
 <li class='category'><a href='/category/tech/'>tech (4)</a></li>
 <li class='category'><a href='/category/travel/'>travel (3)</a></li>
@@ -397,6 +382,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2015/01/18/eliminating-distractions/" title="Eliminating Distractions">Eliminating Distractions</a></li>
+                
                   <li><a href="/2015/01/15/new-kirbyturnercom-site/" title="New kirbyturner.com Site">New kirbyturner.com Site</a></li>
                 
                   <li><a href="/2015/01/15/snow-is-white-not-brown-and-green/" title="Snow is White, Not Brown and Green">Snow is White, Not Brown and Green</a></li>
@@ -404,8 +391,6 @@
                   <li><a href="/2015/01/14/goodbye-fitbit-ultra-hello-fitbit-one/" title="Goodbye Fitbit Ultra, Hello Fitbit One">Goodbye Fitbit Ultra, Hello Fitbit One</a></li>
                 
                   <li><a href="/2015/01/08/no-plans-for-a-third-edition/" title="No Plans For A Third Edition">No Plans For A Third Edition</a></li>
-                
-                  <li><a href="/2015/01/07/checkout-the-new-rowan-t-site/" title="Checkout The New Rowan T Site">Checkout The New Rowan T Site</a></li>
                 
             </ul>
 		</div>
