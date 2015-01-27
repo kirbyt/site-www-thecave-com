@@ -59,6 +59,27 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Apr<span class="year">2007</span></span><span class="day">16</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2007/04/16/powerpoint-2007-and-outlook-2003-dont-play-nice-together/" rel="bookmark" title="PowerPoint 2007 and Outlook 2003 Don't Play Nice Together">PowerPoint 2007 and Outlook 2003 Don't Play Nice Together</a></h2>
+
+        <p>Yesterday I had a need to install PowerPoint 2007.  Typically I install something like this in a virtual machine to avoid problems with other applications but yesterday I was in a rush so I installed PowerPoint 2007 in my “production” VM.  The Office 2007 installation gave me the option to keep my Office 2003 applications and install only PowerPoint 2007.  “Groovy!” I thought.  Well, it turns out not to be so groovy.  <br /><br />After installing PowerPoint 2007 and doing what I needed to do, I launched Outlook 2003.  As Outlook 2003 was loading the Office 2007 installer popped up and attempted to install something.  I cancel the installer and Outlook 2003 finally loads.  I checked my mail, read a few messages, and clicked Reply to author a response to a new message.  Here’s where the problem started.<br /><br />I have Outlook configured to use Word as the editor for messages.  When I tried to reply to a message Outlook locked up.  Not only did the application lock up but the entire operating system locked up.  I had no choice but to power off.<br /><br />Rebooting didn’t help either.  Outlook 2003 did not properly load, and I had a new problem.  Microsoft’s automatic update was now maxing out the CPU.  To regain control over the machine I killed the automatic update process.<br /><br />After dealing with this mess I believe I found a work around.  After installing PowerPoint 2007 and before launch Outlook 2003, launch Word 2003.  If your experience is similar to mine you will notice Word 2003 loads without the XP theme.  After about 30 seconds Word 2003’s UI switches to the XP theme.  It is after this point that Outlook 2003 is once again able to use Word 2003 as its editor.<br /><br />I can’t guarantee this will work for you but it did work for me.  I’m now able to use Outlook 2003 once again.<br /><br />The only problem that remains is the automatic update for Windows.  It still maxes out the CPU and the process must be manually killed.  I can handle doing this until I have time to re-build a new “production” VM.<br /><br /><span style="color:red">Update</span>: I found <a href="http://www.thecave.com/archive/2007/05/24/wuauclt_svchost_and_100_cpu_usgage.aspx">this wordaround</a> to the maxed out CPU problem.</p>
+
+
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Apr<span class="year">2007</span></span><span class="day">10</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -247,27 +268,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Mar<span class="year">2007</span></span><span class="day">26</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2007/03/26/fixed-my-delphi-2007-debug-issues/" rel="bookmark" title="Fixed My Delphi 2007 Debug Issues">Fixed My Delphi 2007 Debug Issues</a></h2>
-
-        <p>In my posting <a href="http://www.thecave.com/archive/2007/03/25/5_things_i_like_about_delphi_2007.aspx">5 Things I Like About Delphi 2007</a> I mentioned debugging problems I experienced after installing 3rd party packages.  The source of the problem was in fact the use of certain 3rd party packages, more specifically the DevExpress VCL packages.  However the problem wasn’t with the DevExpress directly.  <br /><br />I installed all packages found in the DevExpress library/delphi10 directory.  This was a mistake made by me.  Only certain design time packages need to be installed in the IDE, not all packages in that directory.  Lucky for me I still have BDS 2006 installed.<br /><br />I launch BDS 2006 and Delphi 2007.  I went to the installed package list in BDS 2006 (Component &gt; Install Packages…) and manually added each DevExpress package listed in BDS 2006 to Delphi 2007.  This resolved the debugging issues I experienced yesterday.  And now I’m able to make use of Delphi 2007 for existing projects.</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -330,7 +330,7 @@
 <li class='category'><a href='/category/cross%20post/'>cross post (5)</a></li>
 <li class='category'><a href='/category/family/'>family (5)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (3)</a></li>
-<li class='category'><a href='/category/general/'>general (21)</a></li>
+<li class='category'><a href='/category/general/'>general (22)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
 <li class='category'><a href='/category/humor/'>humor (1)</a></li>
 <li class='category'><a href='/category/ios/'>ios (11)</a></li>
@@ -345,10 +345,10 @@
 <li class='category'><a href='/category/rant/'>rant (2)</a></li>
 <li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
 <li class='category'><a href='/category/salem/'>salem (1)</a></li>
-<li class='category'><a href='/category/skiing/'>skiing (2)</a></li>
-<li class='category'><a href='/category/snowboarding/'>snowboarding (7)</a></li>
+<li class='category'><a href='/category/skiing/'>skiing (3)</a></li>
+<li class='category'><a href='/category/snowboarding/'>snowboarding (8)</a></li>
 <li class='category'><a href='/category/social/'>social (4)</a></li>
-<li class='category'><a href='/category/stowe/'>stowe (3)</a></li>
+<li class='category'><a href='/category/stowe/'>stowe (4)</a></li>
 <li class='category'><a href='/category/tech/'>tech (4)</a></li>
 <li class='category'><a href='/category/travel/'>travel (3)</a></li>
 <li class='category'><a href='/category/trips/'>trips (5)</a></li>
@@ -382,6 +382,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2015/01/27/finally/" title="Finally...">Finally...</a></li>
+                
                   <li><a href="/2015/01/18/eliminating-distractions/" title="Eliminating Distractions">Eliminating Distractions</a></li>
                 
                   <li><a href="/2015/01/15/new-kirbyturnercom-site/" title="New kirbyturner.com Site">New kirbyturner.com Site</a></li>
@@ -389,8 +391,6 @@
                   <li><a href="/2015/01/15/snow-is-white-not-brown-and-green/" title="Snow is White, Not Brown and Green">Snow is White, Not Brown and Green</a></li>
                 
                   <li><a href="/2015/01/14/goodbye-fitbit-ultra-hello-fitbit-one/" title="Goodbye Fitbit Ultra, Hello Fitbit One">Goodbye Fitbit Ultra, Hello Fitbit One</a></li>
-                
-                  <li><a href="/2015/01/08/no-plans-for-a-third-edition/" title="No Plans For A Third Edition">No Plans For A Third Edition</a></li>
                 
             </ul>
 		</div>
