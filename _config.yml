@@ -25,4 +25,4 @@ twitter_tweet_button: true
 category_dir: category
 
 exclude: [Rakefile, readme.md]
-include: [.nojekyll]
+include: [.nojekyll, keybase.txt]
