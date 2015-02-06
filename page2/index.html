@@ -64,6 +64,42 @@
         </div>
 
         <div class="post-content right-col">
+        <h2><a href="/2014/12/28/made-some-fixes-to-the-blog-site/" rel="bookmark" title="Made Some Fixes To The Blog Site">Made Some Fixes To The Blog Site</a></h2>
+
+        <p>Before doing some work today I decided to make some improvements to my blog site. I thought I would be playing with the site for only an hour or so, but instead it took most of the day. Typical when dealing with programming issues in an unfamiliar environment. </p>
+
+<p>This site, as well as <a href="http://blog.whitepeaksoftware.com">my company blog site</a>, uses <a href="http://jekyllrb.com">Jekyll</a> to generate a static HTML version of the site that is in turned hosted on a server for your viewing pleasure. I noticed a while back that categories with embedded spaces, such as <em>cross post</em>, weren’t accessible from the categories list. The embedded space was being replaced with a dash. Also, the RSS feed was not including the time of the post, only the date. So I set out to fix these problems.</p>
+
+<p>I started with the time problem first. I learned that Jekyll does not include the time of the post unless you include the <code>date</code> parameter in the front matter. Adding the parameter is easy enough to do, but I decided I wanted to make it even easier for me. So I created a Rakefile that has a <code>new_post</code> task. I could have used an existing Rakefile, maybe even the one from Octopress, but I decided it would be more fun to write my own. Turns out writing a Rakefile is pretty simple, and I had my <code>new_post</code> task working quickly. </p>
+
+<p>The <code>new_post</code> task I wrote create a new markdown file for the post. The task also generates the YAML front matter for the post including the <code>date</code> parameter with the current local time. This solves my time problem in the RSS feed for new post. I thought about making a fix for older post, but I decided it wasn’t worth the effort.</p>
+
+<p>Using the Rakefile to create a new post makes so much sense that I decided to add a <code>deploy</code> task the Rakefile. I’ve been using a shell script I wrote a few years ago to generate the Jekyll site then commit it to the <em>gh-pages</em> branch of the site’s git <a href="https://github.com/kirbyt/site-www-thecave-com">repo</a>. I thought it would be a fun exercise to re-implement this in the Rakefile. At the same time I decided to change how the files are committed to the branch. Instead of working from a single local git repo, I decided to clone the repo to a second <em>_deploy</em> directory, then copy the <em>_site</em> files to that directory. Turns out this was fairly simple to do as well. </p>
+
+<p>With that work out of the way I turned my focus to the categories name problem. Turns out it was caused by a space replacement in the Jekyll plugin I use to generate the categories list. That was the easiest, fastest fix of the day.</p>
+
+<p>With a smile on my face and feeling of success I decided to do one more thing. I decided to update my install of Jekyll. And this is when everything fell apart. The sense of success and feeling of being productive evaporated quickly. Long story short, turns out I had rvm and rbenv installed at the same time, and apparently having both installed at the same time causes problems when updating gems. Unfortunately it took me a long while to figure out what had happened. I didn’t realize rvm was installed, but once I did I uninstalled it. I did another update and made sure I had rbenv-gem-rehash installed. </p>
+
+<p>All is well now. In fact, the only reason I’m writing this post is to make sure everything is working as expected. And now that I have a faster way to create new posts, I’m hoping to post here more frequently. </p>
+
+
+
+        <div>Posted in <a class='category' href='/category/general/'>general</a>, <a class='category' href='/category/programming/'>programming</a>.</div>
+
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Dec<span class="year">2014</span></span><span class="day">28</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
         <h2><a href="/2014/12/28/despite-a-rainy-start/" rel="bookmark" title="Despite A Rainy Start">Despite A Rainy Start</a></h2>
 
         <p>Despite a rainy start this morning, I was able to get in a few snowboard runs on the hill before crowd arrived. And I had great visibility top to bottom on the last two runs. I think that might be the first time this season I’ve had great visibility top to bottom.</p>
@@ -499,34 +535,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Sep<span class="year">2014</span></span><span class="day">10</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2014/09/10/iphone-6-plus-pocket-test/" rel="bookmark" title="iPhone 6 and 6 Plus Pocket Test">iPhone 6 and 6 Plus Pocket Test</a></h2>
-
-        <p><a href="https://flic.kr/p/pa23Ro"><img src="https://farm6.staticflickr.com/5581/15198258832_1daebf3355_m.jpg" border="0" class="alignleft" /></a> I printed out this <a href="http://arstechnica.com/apple/2014/09/how-big-is-the-iphone-6-plus-find-out-with-our-handy-paper-template/">iPhone 6 and 6 Plus paper template</a>. I cut out each template and taped cardboard to the back. Then I did a pocket test with each one. I tested each template with different pants and shorts that I wear often. I found that both the iPhone 6 and iPhone 6 Plus fit in all my pockets, but a corner of the iPhone 6 Plus cutout does stick out of the pocket on my gym shorts. I also found that while the iPhone 6 Plus does fit in the pockets of my Levis 501, my jeans of choice, the cutout was annoyingly noticeable when I sat down.</p>
-
-<p>For those wondering, I’m 5 foot 6 and typically wear 32 inch waist pants and shorts. Taller folks with roomier pants and shorts might not notice the size difference of the Plus as much as I did.</p>
-
-<p>As for holding the two cutouts, I found that the iPhone 6 cutout fits comfortably and securely in my hand. The iPhone 6 Plus cutout, on the other hand, just feels too big to hold and use with one hand. Granted I have small hands, but in acting like I’m interacting with a real iPhone I found I kept using two hands with the iPhone 6 Plus whereas I was comfortable using only one hand with the iPhone 6 cutout.</p>
-
-<p>Conclusion: I will be buying the iPhone 6. The larger display of the iPhone 6 Plus would be nice for reading and watching shows and movies, but it’s just too damn large to be pocket device for me.</p>
-
-
-
-        <div>Posted in <a class='category' href='/category/general/'>general</a>, <a class='category' href='/category/ios/'>ios</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -589,7 +597,7 @@
 <li class='category'><a href='/category/cross%20post/'>cross post (5)</a></li>
 <li class='category'><a href='/category/family/'>family (5)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (3)</a></li>
-<li class='category'><a href='/category/general/'>general (23)</a></li>
+<li class='category'><a href='/category/general/'>general (24)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
 <li class='category'><a href='/category/humor/'>humor (1)</a></li>
 <li class='category'><a href='/category/ios/'>ios (11)</a></li>
@@ -604,8 +612,8 @@
 <li class='category'><a href='/category/rant/'>rant (3)</a></li>
 <li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
 <li class='category'><a href='/category/salem/'>salem (1)</a></li>
-<li class='category'><a href='/category/skiing/'>skiing (4)</a></li>
-<li class='category'><a href='/category/snowboarding/'>snowboarding (9)</a></li>
+<li class='category'><a href='/category/skiing/'>skiing (5)</a></li>
+<li class='category'><a href='/category/snowboarding/'>snowboarding (10)</a></li>
 <li class='category'><a href='/category/social/'>social (4)</a></li>
 <li class='category'><a href='/category/stowe/'>stowe (5)</a></li>
 <li class='category'><a href='/category/tech/'>tech (4)</a></li>
@@ -641,6 +649,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2015/02/06/consider-the-environmental-cost/" title="Consider The Environmental Cost">Consider The Environmental Cost</a></li>
+                
                   <li><a href="/2015/02/04/hey-local-retail-stores-update-your-website/" title="Hey Local Retail Stores, Update Your Website">Hey Local Retail Stores, Update Your Website</a></li>
                 
                   <li><a href="/2015/01/27/finally/" title="Finally...">Finally...</a></li>
@@ -648,8 +658,6 @@
                   <li><a href="/2015/01/18/eliminating-distractions/" title="Eliminating Distractions">Eliminating Distractions</a></li>
                 
                   <li><a href="/2015/01/15/new-kirbyturnercom-site/" title="New kirbyturner.com Site">New kirbyturner.com Site</a></li>
-                
-                  <li><a href="/2015/01/15/snow-is-white-not-brown-and-green/" title="Snow is White, Not Brown and Green">Snow is White, Not Brown and Green</a></li>
                 
             </ul>
 		</div>

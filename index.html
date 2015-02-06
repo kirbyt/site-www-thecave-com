@@ -59,6 +59,43 @@
     <div class="post wrap">
 
         <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Feb<span class="year">2015</span></span><span class="day">06</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
+        <h2><a href="/2015/02/06/consider-the-environmental-cost/" rel="bookmark" title="Consider The Environmental Cost">Consider The Environmental Cost</a></h2>
+
+        <p>Two days ago I wrote a <a href="http://www.thecave.com/2015/02/04/hey-local-retail-stores-update-your-website/">post</a> about how I bought a new snowboard online because it was cheaper than buying locally, or so I thought. Turns out a local shop in Stowe was offering a 20% discount on the board I bought, but I didn’t know this at the time since that shop didn’t advertise the sale on their website. So in the end I paid a little more to buy a new snowboard from another local shop located on the other side of the country. </p>
+
+<p>Today I read an article written by Hana Beaman about how we might want it all but we don’t need it all, see the picture below, when it hit me I was totally missed the point in my earlier post. I should have bought locally even if the price was slightly higher. I forgot about the cost on the environment.</p>
+
+<p><img src="https://pbs.twimg.com/media/B8uV-gMCcAAYfXp.jpg" alt="Alt text" /></p>
+
+<p>Sure, I thought I was saving a few dollars by buying online, but now that snowboard must travel across the United States by truck, airplane or some sort of and combination of fuel sucking transport. Regardless the means of transport the snowboard takes to get from Oregon to Vermont, it will have a negative impact on the environment. The environmental impact would have been much lower if I had bought locally since I live only a mile or so away from the store, a store that ultimately had the better price. </p>
+
+<p>The lesson here for me is that I need to buy locally more than I already do<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>, and I need to consider more than just how much an item will cost me. I need to also consider the cost to the environment. </p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>My spending habits have changed a lot since moving to Stowe. I buy a lot more things locally, from eggs to gear. Even my Amazon purchases have dropped to a third of what they were 3 years ago. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+
+        <div>Posted in <a class='category' href='/category/general/'>general</a>, <a class='category' href='/category/skiing/'>skiing</a>, <a class='category' href='/category/snowboarding/'>snowboarding</a>.</div>
+
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
         <h3 class="wrap"><span class="month">Feb<span class="year">2015</span></span><span class="day">04</span></h3>
         <h4 class="author">kirbyt</h4>
         </div>
@@ -328,42 +365,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Dec<span class="year">2014</span></span><span class="day">28</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2014/12/28/made-some-fixes-to-the-blog-site/" rel="bookmark" title="Made Some Fixes To The Blog Site">Made Some Fixes To The Blog Site</a></h2>
-
-        <p>Before doing some work today I decided to make some improvements to my blog site. I thought I would be playing with the site for only an hour or so, but instead it took most of the day. Typical when dealing with programming issues in an unfamiliar environment. </p>
-
-<p>This site, as well as <a href="http://blog.whitepeaksoftware.com">my company blog site</a>, uses <a href="http://jekyllrb.com">Jekyll</a> to generate a static HTML version of the site that is in turned hosted on a server for your viewing pleasure. I noticed a while back that categories with embedded spaces, such as <em>cross post</em>, weren’t accessible from the categories list. The embedded space was being replaced with a dash. Also, the RSS feed was not including the time of the post, only the date. So I set out to fix these problems.</p>
-
-<p>I started with the time problem first. I learned that Jekyll does not include the time of the post unless you include the <code>date</code> parameter in the front matter. Adding the parameter is easy enough to do, but I decided I wanted to make it even easier for me. So I created a Rakefile that has a <code>new_post</code> task. I could have used an existing Rakefile, maybe even the one from Octopress, but I decided it would be more fun to write my own. Turns out writing a Rakefile is pretty simple, and I had my <code>new_post</code> task working quickly. </p>
-
-<p>The <code>new_post</code> task I wrote create a new markdown file for the post. The task also generates the YAML front matter for the post including the <code>date</code> parameter with the current local time. This solves my time problem in the RSS feed for new post. I thought about making a fix for older post, but I decided it wasn’t worth the effort.</p>
-
-<p>Using the Rakefile to create a new post makes so much sense that I decided to add a <code>deploy</code> task the Rakefile. I’ve been using a shell script I wrote a few years ago to generate the Jekyll site then commit it to the <em>gh-pages</em> branch of the site’s git <a href="https://github.com/kirbyt/site-www-thecave-com">repo</a>. I thought it would be a fun exercise to re-implement this in the Rakefile. At the same time I decided to change how the files are committed to the branch. Instead of working from a single local git repo, I decided to clone the repo to a second <em>_deploy</em> directory, then copy the <em>_site</em> files to that directory. Turns out this was fairly simple to do as well. </p>
-
-<p>With that work out of the way I turned my focus to the categories name problem. Turns out it was caused by a space replacement in the Jekyll plugin I use to generate the categories list. That was the easiest, fastest fix of the day.</p>
-
-<p>With a smile on my face and feeling of success I decided to do one more thing. I decided to update my install of Jekyll. And this is when everything fell apart. The sense of success and feeling of being productive evaporated quickly. Long story short, turns out I had rvm and rbenv installed at the same time, and apparently having both installed at the same time causes problems when updating gems. Unfortunately it took me a long while to figure out what had happened. I didn’t realize rvm was installed, but once I did I uninstalled it. I did another update and made sure I had rbenv-gem-rehash installed. </p>
-
-<p>All is well now. In fact, the only reason I’m writing this post is to make sure everything is working as expected. And now that I have a faster way to create new posts, I’m hoping to post here more frequently. </p>
-
-
-
-        <div>Posted in <a class='category' href='/category/general/'>general</a>, <a class='category' href='/category/programming/'>programming</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -422,7 +423,7 @@
 <li class='category'><a href='/category/cross%20post/'>cross post (5)</a></li>
 <li class='category'><a href='/category/family/'>family (5)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (3)</a></li>
-<li class='category'><a href='/category/general/'>general (23)</a></li>
+<li class='category'><a href='/category/general/'>general (24)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
 <li class='category'><a href='/category/humor/'>humor (1)</a></li>
 <li class='category'><a href='/category/ios/'>ios (11)</a></li>
@@ -437,8 +438,8 @@
 <li class='category'><a href='/category/rant/'>rant (3)</a></li>
 <li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
 <li class='category'><a href='/category/salem/'>salem (1)</a></li>
-<li class='category'><a href='/category/skiing/'>skiing (4)</a></li>
-<li class='category'><a href='/category/snowboarding/'>snowboarding (9)</a></li>
+<li class='category'><a href='/category/skiing/'>skiing (5)</a></li>
+<li class='category'><a href='/category/snowboarding/'>snowboarding (10)</a></li>
 <li class='category'><a href='/category/social/'>social (4)</a></li>
 <li class='category'><a href='/category/stowe/'>stowe (5)</a></li>
 <li class='category'><a href='/category/tech/'>tech (4)</a></li>
@@ -474,6 +475,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2015/02/06/consider-the-environmental-cost/" title="Consider The Environmental Cost">Consider The Environmental Cost</a></li>
+                
                   <li><a href="/2015/02/04/hey-local-retail-stores-update-your-website/" title="Hey Local Retail Stores, Update Your Website">Hey Local Retail Stores, Update Your Website</a></li>
                 
                   <li><a href="/2015/01/27/finally/" title="Finally...">Finally...</a></li>
@@ -481,8 +484,6 @@
                   <li><a href="/2015/01/18/eliminating-distractions/" title="Eliminating Distractions">Eliminating Distractions</a></li>
                 
                   <li><a href="/2015/01/15/new-kirbyturnercom-site/" title="New kirbyturner.com Site">New kirbyturner.com Site</a></li>
-                
-                  <li><a href="/2015/01/15/snow-is-white-not-brown-and-green/" title="Snow is White, Not Brown and Green">Snow is White, Not Brown and Green</a></li>
                 
             </ul>
 		</div>

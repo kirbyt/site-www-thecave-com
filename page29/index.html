@@ -64,6 +64,27 @@
         </div>
 
         <div class="post-content right-col">
+        <h2><a href="/2006/01/26/spam-posting/" rel="bookmark" title="Spam Posting">Spam Posting</a></h2>
+
+        <p>This blog site has been up since March 2002 and since that time it has never once received a spam comment posting.  That was until Tuesday of this week.<br /><br />The site gets lots of traffic.  Not as much as <a href="http://www.lemanix.com/nickblog/">this person</a> or <a href="http://blog.marcocantu.com/">that person</a>, but enough to make me happy.  I knew the day would come when a spammer would finally make a posting but I didn’t think it would take this long.  Now I’m not asking for spam comments to be posted on this site but I find it interesting it has taken almost 4 years before a spammer successfully posted comment.<br /><br />What makes this more interesting is that a number of attempts by spammers to post spam comments have been made over the last 4 years.  This is especially true for another site I have, the <a href="http://www.melanieandkirby.com/">Melanie and Kirby wedding site</a> where attempts by spammers to post comments in the guest book are made daily.<br /><br />So what’s my secret to warding off spammers?  I’m not 100% sure.  All my sites including this blog site are custom written using ASP.NET.  Maybe that has something to do with it.  What I do know is that I will probably start seeing an increase in successful spam comment posting to this site unless I make some changes.</p>
+
+
+        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+
+        </div>
+    </div>
+    <!--- Post Ends -->
+
+    
+    <!--- Post Starts -->
+    <div class="post wrap">
+
+        <div class="post-meta left-col">
+        <h3 class="wrap"><span class="month">Jan<span class="year">2006</span></span><span class="day">26</span></h3>
+        <h4 class="author">kirbyt</h4>
+        </div>
+
+        <div class="post-content right-col">
         <h2><a href="/2006/01/26/more-on-personal-and-trial-editions-of-borland-developer-studio/" rel="bookmark" title="More on Personal and Trial Editions of Borland Developer Studio">More on Personal and Trial Editions of Borland Developer Studio</a></h2>
 
         <p>Last week I posted <a href="http://www.thecave.com/archive/2006/01/16/why_no_free_personal_edition_of_borland_developer_studio.aspx">a few remarks on the lack of a free Personal or Trial Edition of Borland Developer Studio</a>.  A friend of mine wanted to give Delphi a try but unfortunately he cannot because Borland does not provide a way for him to do this.<br /><br />As it turns out on the same day Marco Cantu made a newsgroup and blog posting on the exact same topic.  And there were a number of replies from both sides regarding the issue, which I have included below.<br /><br />Still I think it is a mistake for Borland to not have a Personal or Trial version available for download available today.<br /><br /><a href="http://blog.marcocantu.com/blog/perstrial_again.html">More of the topic from Marco Cantu</a>.<br /><br /><a href="http://blogs.borland.com/abauer/archive/2006/01/18/22786.aspx">And a differ point of view.</a></p>
@@ -249,39 +270,6 @@
     </div>
     <!--- Post Ends -->
 
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jan<span class="year">2006</span></span><span class="day">13</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2006/01/13/smtp-diagnostics-review/" rel="bookmark" title="SMTP Diagnostics Review">SMTP Diagnostics Review</a></h2>
-
-        <p><a href="http://email.about.com/mbiopage.htm">Heinz Tschabitscher</a> posted <a href="http://email.about.com/od/emailbehindthescenes/gr/smtp_diagnostic.htm">a review about SMTP Diagnostics</a> on About Email.  I have to say I agree with Heinz when he says “SMTP Diagnostics does not help you understand or fix errors.”  It is true <a href="http://www.smtpdiagnostics.com/">SMTP Diagnostics will help you understand what is happening assuming you understand the protocol message</a>, but the tool would be more useful if it explained things in plain English, which I believe is Heinz’s point.</p>
-
-<p>It’s been on my feature list for a while now to change this.  SMTP Diagnostics should provide more help and understanding in plain English.  The challenge has been to correctly interpret the error message.  For example, I recently was troubleshooting an email problem for a web application.  In my tests using SMTP Diagnostics I enabled SMTP Authentication and provided the correct credentials for the mail server.  For the From and To I used the same email address.  The sender was checked and determined to be okay but the recipient check failed with “550 no such user here”, and I knew for a fact that the email address was valid.</p>
-
-<p>To SMTP Diagnostics the problem is clear.  The recipient address is invalid, or at least that is what it is told by the mail server.  However, the address is very much valid and the problem is actually caused by a check on the outgoing mail server that does not allow a message to be sent from an address to the same address where the domain name in the email address is different than the domain name for the outgoing mail server.  In other words, using this particular mail server you cannot send an email to validaddress@domain.com from validaddress@domain.com from a mail server at the domain anotherdomain.com.</p>
-
-<p>The reason for the setting is clear.  The setting is used to help prevent spam mail.  However, it is impossible for SMTP Diagnostics to properly interpret this error into plain English that accurately describes the problem.</p>
-
-<p>Another test on the same mail server further illustrates why it is hard to correctly interpret the actual error.  The same error message, “550 no such user here” is received for a valid recipient address when the From address used is not a valid maildrop but of the same domain as the outgoing mail server.  In other words, the mail server for anotherdomain.com will report “550 no such user here” for the recipient validaddress@domain.com when the From address no-reply@anotherdomain.com is used and no-reply is not a valid maildrop.</p>
-
-<p>These are two very different scenarios where the mail server reports the same error message, and both result from server settings used to prevent sending spam.</p>
-
-<p>Personally I’m glad mail servers are incorporating settings that help prevent spam mail from being sent.  But at the same time it makes it more difficult to determine the actual cause of the problem when sending outgoing emails.  Still, I plan to take the feedback from Heinz’s review and improve on SMTP Diagnostics for the next release.</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
 
 
 
@@ -344,7 +332,7 @@
 <li class='category'><a href='/category/cross%20post/'>cross post (5)</a></li>
 <li class='category'><a href='/category/family/'>family (5)</a></li>
 <li class='category'><a href='/category/fitness/'>fitness (3)</a></li>
-<li class='category'><a href='/category/general/'>general (23)</a></li>
+<li class='category'><a href='/category/general/'>general (24)</a></li>
 <li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
 <li class='category'><a href='/category/humor/'>humor (1)</a></li>
 <li class='category'><a href='/category/ios/'>ios (11)</a></li>
@@ -359,8 +347,8 @@
 <li class='category'><a href='/category/rant/'>rant (3)</a></li>
 <li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
 <li class='category'><a href='/category/salem/'>salem (1)</a></li>
-<li class='category'><a href='/category/skiing/'>skiing (4)</a></li>
-<li class='category'><a href='/category/snowboarding/'>snowboarding (9)</a></li>
+<li class='category'><a href='/category/skiing/'>skiing (5)</a></li>
+<li class='category'><a href='/category/snowboarding/'>snowboarding (10)</a></li>
 <li class='category'><a href='/category/social/'>social (4)</a></li>
 <li class='category'><a href='/category/stowe/'>stowe (5)</a></li>
 <li class='category'><a href='/category/tech/'>tech (4)</a></li>
@@ -396,6 +384,8 @@
 			<h2>Recent Articles</h2>
 			<ul>
                 
+                  <li><a href="/2015/02/06/consider-the-environmental-cost/" title="Consider The Environmental Cost">Consider The Environmental Cost</a></li>
+                
                   <li><a href="/2015/02/04/hey-local-retail-stores-update-your-website/" title="Hey Local Retail Stores, Update Your Website">Hey Local Retail Stores, Update Your Website</a></li>
                 
                   <li><a href="/2015/01/27/finally/" title="Finally...">Finally...</a></li>
@@ -403,8 +393,6 @@
                   <li><a href="/2015/01/18/eliminating-distractions/" title="Eliminating Distractions">Eliminating Distractions</a></li>
                 
                   <li><a href="/2015/01/15/new-kirbyturnercom-site/" title="New kirbyturner.com Site">New kirbyturner.com Site</a></li>
-                
-                  <li><a href="/2015/01/15/snow-is-white-not-brown-and-green/" title="Snow is White, Not Brown and Green">Snow is White, Not Brown and Green</a></li>
                 
             </ul>
 		</div>
