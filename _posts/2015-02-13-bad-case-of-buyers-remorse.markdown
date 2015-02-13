@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bad Case Of Buyer'S Remorse"
+title: "Bad Case Of Buyer's Remorse"
 date: 2015-02-13 07:48:47 -0500
 categories: 
     - general
