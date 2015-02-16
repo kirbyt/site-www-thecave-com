@@ -2,31 +2,51 @@
 layout: default
 ---
 
-<!--- Post Starts -->
-<div class="post wrap page">
-
-    <div class="post-meta left-col">
-    <h3 class="wrap"><span class="month">{{ page.date | date: "%b" }}<span class="year">{{ page.date | date: "%Y" }}</span></span><span class="day">{{ page.date | date: "%d" }}</span></h3>
-    <h4 class="author">kirbyt</h4>
+<!-- Post Header -->
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{site.header-img}}{% endif %}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>{{ page.title }}</h1>
+                    {% if page.subtitle %}
+                    <h2 class="subheading">{{ page.subtitle }}</h2>
+                    {% endif %}
+                    <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
+                </div>
+            </div>
+        </div>
     </div>
+</header>
 
-    <div class="post-content right-col">
-    <h2><a href="{{ root_url }}{{ page.url }}" rel="bookmark" title="{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</a></h2>
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-    {{ content }}
+				{{ content }}
 
+                {% if page.categories %}<p>Posted in {{ page.categories | category_links }}.</p>{% endif %}
 
-    {% if page.categories %}<div>Posted in {{ page.categories | category_links }}.</div>{% endif %}
+                <hr>
 
-    <hr />
-    {% if page.previous.url %}
-        <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}" class="post-footer">&laquo; {{page.previous.title}}</a>
-    {% endif %}
-    {% if page.next.url %}
-        &nbsp; | &nbsp;
-        <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}" class="post-footer">{{page.next.title}} &raquo;</a>
-    {% endif %}
+                <ul class="pager">
+                    {% if page.previous.url %}
+                    <li class="previous">
+                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
+                    </li>
+                    {% endif %}
+                    {% if page.next.url %}
+                    <li class="next">
+                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
+                    </li>
+                    {% endif %}
+                </ul>
 
+            </div>
+        </div>
     </div>
-</div>
-<!--- Post Ends -->
+</article>
+
+<p>&nbsp;</p>

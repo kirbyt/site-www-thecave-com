@@ -1,0 +1,9 @@
+/* responsive videos */
+.youtube-video figure { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+
+.youtube-video iframe, .video object, .video embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+/* responsive videos */
+.vimeo-video figure { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+
+.vimeo-video iframe, .video object, .video embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }

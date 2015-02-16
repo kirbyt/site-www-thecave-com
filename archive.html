@@ -1,27 +1,30 @@
 ---
 layout: page
+title: Archive
 ---
 
-{% for post in site.categories[page.category] %}
+{% for post in site.posts reverse %}
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% unless year == this_year %}
+      {% unless year == null %}<hr />{% endunless %}
+      {% assign year = this_year %}
+      <h1>{{ year }}</h1>
+    {% endunless %}
+
     <!--- Post Starts -->
     <div class="post-preview">
         
         <h2 class="post-title">
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <a href="{{ post.url | prepend: site.baseurl }}">{% unless post.title == '' or post.title == null %}{{ post.title }}{% else %}No Title{% endunless %}</a>
         </h2>
         {% if post.subtitle %}
         <h3 class="post-subtitle">
             {{ post.subtitle }}
         </h3>
         {% endif %}
-        {{ post.excerpt || markdownify }}
-
-        <p><a href="{{ post.url | prepend: site.baseurl }}">Continue reading &rarr;</a></p>
-
         <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.author }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
         {% if post.categories %} in {{ post.categories | category_links }}{% endif %}
         </p>
     </div>
-    <hr>
     <!--- Post Ends -->
 {% endfor %}

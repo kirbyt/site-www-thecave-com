@@ -43,7 +43,7 @@ module Jekyll
       self.data['title']       = "#{title_prefix}#{category}"
       # Set the meta-description for this page.
       meta_description_prefix  = site.config['category_meta_description_prefix'] || 'Category: '
-      self.data['description'] = "#{meta_description_prefix}#{category}"
+      # self.data['description'] = "#{meta_description_prefix}#{category}"
     end
 
   end
@@ -144,7 +144,7 @@ module Jekyll
     def category_links(categories)
       dir = @context.registers[:site].config['category_dir']
       categories = categories.sort!.map do |item|
-        "<a class='category' href='/#{dir}/#{item.downcase}/'>#{item}</a>"
+        "<a href='/#{dir}/#{item.downcase}/'>#{item}</a>"
         # "<a class='category' href='/#{dir}/#{item.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase}/'>#{item}</a>"
       end
 

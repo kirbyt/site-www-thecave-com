@@ -1,8 +1,17 @@
 showGrid: false
 
 url: http://www.thecave.com
-title: thecave | Ramblings From A Crotchety Old Man
+title: thecave
 author: Kirby Turner
+baseurl: ""
+url: "http://www.thecave.com"
+header-img: "img/home-bg.jpg"
+
+# Social Sites
+adn_username: kirbyt
+twitter_username: kirbyt
+github_username:  kirbyt
+linkedin_username: kirbyturner
 
 root: /
 
@@ -11,15 +20,6 @@ pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
 
 permalink: /:year/:month/:day/:title/
-
-# Twitter
-twitter_user: whitepeak
-twitter_tweet_count: 4
-twitter_show_replies: false
-twitter_follow_button: true
-twitter_show_follower_count: false
-twitter_tweet_button: true
-
 
 # Category plugin (https://github.com/recurser/jekyll-plugins)
 category_dir: category
