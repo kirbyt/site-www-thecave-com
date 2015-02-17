@@ -5,10 +5,21 @@
         <description>thecave | Ramblings From A Crotchety Old Man - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2015-02-17T01:45:16-05:00</lastBuildDate>
-        <pubDate>2015-02-17T01:45:16-05:00</pubDate>
+        <lastBuildDate>2015-02-17T11:25:39-05:00</lastBuildDate>
+        <pubDate>2015-02-17T11:25:39-05:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Temperature Inversion</title>
+                <description>&lt;p&gt;Seeing “temperature inversion” in the Stowe snow report this morning is music to my ears. It’s -20°F in town but a balmy 2°F at the summit. Time to ride. &lt;/p&gt;
+
+&lt;p&gt;Speaking of odd temperatures…Whistler Village is 50°F warmer than the Village of Stowe this morning. I’m starting to think our Whistler winter vacation next week will feel more like a spring break vacation.&lt;/p&gt;
+</description>
+                <link>http://www.thecave.com/2015/02/17/temperature-inversion/</link>
+                <guid>http://www.thecave.com/2015/02/17/temperature-inversion</guid>
+                <pubDate>2015-02-17T11:24:30-05:00</pubDate>
+        </item>
 
         <item>
                 <title>Reliving The Past</title>
@@ -456,60 +467,6 @@
                 <link>http://www.thecave.com/2014/10/09/microblogging-the-open-web-and-cross-post/</link>
                 <guid>http://www.thecave.com/2014/10/09/microblogging-the-open-web-and-cross-post</guid>
                 <pubDate>2014-10-09T00:00:00-04:00</pubDate>
-        </item>
-
-        <item>
-                <title>Using xcodebuild To Export a .ipa From an Archive</title>
-                <description>&lt;p&gt;Xcode 6 changes how you export a .ipa from an archive for adhoc distribution. It used to be that you could export the archive to a .ipa as long as you had the right provisioning profile and distribution certificate on your machine. Starting with Xcode 6 you need to be a team member of the particular Developer Program account and you need to have the rights to make a distribution build. This means you need to be a team agent. However, I work with a number of clients who don’t have the clue what Xcode is much less are willing to make distribution builds, so I need to way to make distribution builds within this new limitation from Xcode 6.&lt;/p&gt;
-
-&lt;p&gt;Making distribution builds hasn’t been a problem for me in the past. I ask the client to provide me&lt;sup id=&quot;fnref:ask&quot;&gt;&lt;a href=&quot;#fn:ask&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; with the necessary provisioning profile, distribution certificate, and public private key pair so I can make the distribution build for them. Then I use Xcode Organizer to export the archive to a .ipa that I can distribute.&lt;sup id=&quot;fnref:host&quot;&gt;&lt;a href=&quot;#fn:host&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; But it seems I can no longer export using Organizer without having the right team access, so I had to search out an alternative approach.&lt;/p&gt;
-
-&lt;p&gt;Turns out starting with Xcode 5, &lt;em&gt;xcodebuild&lt;/em&gt; includes parameters for exporting from an archive. This is exactly what I need so I can continue making adhoc distribution builds for clients without being a team member or team agent under their Developer Program account.&lt;/p&gt;
-
-&lt;p&gt;So how do I do it?&lt;/p&gt;
-
-&lt;h3 id=&quot;the-how-to&quot;&gt;The How To&lt;/h3&gt;
-
-&lt;p&gt;My build script starts by performing a clean.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;xcodebuild clean -project $projectname.xcodeproj -configuration Release -alltargets&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Then the script builds and archives the app. I specify the archive path using the &lt;em&gt;-archivePath&lt;/em&gt; parameter in the command line so the script will know where the archive file is located.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;xcodebuild archive -project $projectname.xcodeproj -scheme $schemename -archivePath $projectname.xcarchive&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Finally my script exports the archive into a .ipa file.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;xcodebuild -exportArchive -archivePath $projectname.xcarchive -exportPath $projectname -exportFormat ipa -exportProvisioningProfile “Provisioning Profile Name”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I let the provisioning profile imply the signing identity, but you can specify the signing identity using the &lt;em&gt;-exportSigningIdentity&lt;/em&gt; parameter.&lt;/p&gt;
-
-&lt;h3 id=&quot;the-gotcha&quot;&gt;The Gotcha&lt;/h3&gt;
-
-&lt;p&gt;The one major gotcha that cost me a more than an hour of time was figuring out the parameter value for &lt;em&gt;-exportProvisioningProfile&lt;/em&gt;. I initial thought it should be the file name to the provisioning profile. I tried it with and without the &lt;em&gt;.mobileprovision&lt;/em&gt; file extension, but it did not work. I included a relative path as well as an absolute path to the provision profile. I tried using the UUID for the provision profile instead of the file name. I even I tried not including a path at all thinking it would look up the provision profile in the &lt;em&gt;~/Library/MobileDevice/Provisioning Profiles/&lt;/em&gt; directory, but still no luck.&lt;/p&gt;
-
-&lt;p&gt;Turns out I needed to specify the name of the provisioning profile as defined in the file itself. This is the same name assigned to the profile in the provisioning portal. Once I figured this out I was able to export the .ipa from the archive using the my build script, and I don’t have to be a team agent under my client’s Developer Program account to make the distribution build.&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:ask&quot;&gt;
-      &lt;p&gt;I usually assist my clients with this by guiding them through the steps, or I ask them to give me the account credentials with a temporary password so I can perform the necessary steps. Then I have the client reset the password. &lt;a href=&quot;#fnref:ask&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:host&quot;&gt;
-      &lt;p&gt;I don’t export when I host the test app on &lt;a href=&quot;http://hockeyapp.net/&quot;&gt;HockeyApp&lt;/a&gt;. It takes care of exporting the .ipa from the archive for you. I only export when the client requests that the test app be hosted on their own server.) &lt;a href=&quot;#fnref:host&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <link>http://www.thecave.com/2014/09/16/using-xcodebuild-to-export-a-ipa-from-an-archive/</link>
-                <guid>http://www.thecave.com/2014/09/16/using-xcodebuild-to-export-a-ipa-from-an-archive</guid>
-                <pubDate>2014-09-16T00:00:00-04:00</pubDate>
         </item>
 
 
