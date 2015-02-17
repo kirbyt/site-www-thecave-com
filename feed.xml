@@ -5,9 +5,28 @@
     <description>The Cave is the blog site for Kirby Turner, an independent software developer for Mac and iOS.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 17 Feb 2015 00:00:29 -0500</pubDate>
-    <lastBuildDate>Tue, 17 Feb 2015 00:00:29 -0500</lastBuildDate>
+    <pubDate>Tue, 17 Feb 2015 01:45:16 -0500</pubDate>
+    <lastBuildDate>Tue, 17 Feb 2015 01:45:16 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Reliving The Past</title>
+        <description>&lt;p&gt;I just spent the last two hours looking through past posts here at thecave. I was writing a lot for the four or five years, and some of those old posts are actually good. But more importantly reading through those old posts gave me a chance to relive my past. &lt;/p&gt;
+
+&lt;p&gt;This makes me realize I need to post here more even if the post is short like this one. All too often I’ll post something short to Twitter or Facebook, but I need to start posting it here too. It will be great to re-read my old posts five years from now.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 17 Feb 2015 01:38:50 -0500</pubDate>
+        <link>http://www.thecave.com/2015/02/17/reliving-the-past/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2015/02/17/reliving-the-past/</guid>
+        
+        
+        <category>general</category>
+        
+        <category>life</category>
+        
+        <category>writing</category>
+        
+      </item>
     
       <item>
         <title>New Site Theme</title>
@@ -259,57 +278,6 @@
         <category>fitness</category>
         
         <category>general</category>
-        
-      </item>
-    
-      <item>
-        <title>No Plans For A Third Edition</title>
-        <description>&lt;p&gt;A number of people have recently asked if there will be a third edition of &lt;a href=&quot;http://www.learningipadprogramming.com/&quot;&gt;Learning iPad Programming&lt;/a&gt;. The short answer is no, there are no plans. There are many reasons why I decided to not update the book, but a few key reasons stand out more than others.&lt;/p&gt;
-
-&lt;h2 id=&quot;i-enjoy-writing-but-i-dont-love-it&quot;&gt;I Enjoy Writing, But I Don’t Love It&lt;/h2&gt;
-
-&lt;p&gt;Writing a tech book was on my bucket list for many years, and writing has long been an interest of mine. But writing a book like Learning iPad Programming takes a lot of time. The first two editions of the book consumed most of my time and life for nearly two and a half years, and this left me feeling stressed and depressed. That’s when I came to the conclusion that my time is better spent &lt;a href=&quot;http://www.thecave.com/2014/06/20/enjoy-less-and-love-more/&quot;&gt;doing things I love&lt;/a&gt; and cutting back on doing things that I only enjoy. &lt;/p&gt;
-
-&lt;p&gt;If I had all the time in the world, then I certainly would consider updating the book each year or two. But my time is limited, and writing apps, snowboarding, spending time with my family, and going on outdoor adventures are all things I love doing. And those things leave me with little extra time to do things I only enjoy.&lt;/p&gt;
-
-&lt;h2 id=&quot;no-financial-motivation&quot;&gt;No Financial Motivation&lt;/h2&gt;
-
-&lt;p&gt;My &lt;a href=&quot;http://www.whitepeaksoftware.com/&quot;&gt;company&lt;/a&gt; was booming just before I started work on the first edition of Learning iPad Programming. I saw a steady increase in product revenue year after year for five straight years, and I was becoming less dependent on consulting and contract work. In other words, I was on track for making a living selling my own products. In fact, that’s partly why I agreed to write a book in the first place. In my mind the book was another product in my expanding line of diversified products. But it turns out writing a book is hard. And writing the first edition was probably one of the hardest things I’ve ever done.&lt;/p&gt;
-
-&lt;p&gt;I had never written a book before, so I ended up spending a lot of time learning how to write a book. I also tried a number of different systems to get me into the habit of writing. All of this extra time spent on learning to write, how to get pass mental blocks, how to stay motivated, how to make daily progress, even the smallest bit, took my focus away from my company. And at one point I knew the only way I would finish the book was to devote 100% of my time to it, so that’s exactly what I did. I stopped working for a few months so I could work on the book full time.&lt;/p&gt;
-
-&lt;p&gt;All the time spent away from my company resulted in lost revenue as my product sales started a downward trend and I had zero time to offset the drop in product revenue with consulting. That meant I had to start living off of borrowed money. By the time the book was done I had well over $50K in credit card debt. And while sales of the book were great&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, the royalty payments I received were not enough to pay down the debt, debt that I’m still working on paying off today. &lt;/p&gt;
-
-&lt;h2 id=&quot;mistakes-and-mishandling&quot;&gt;Mistakes and Mishandling&lt;/h2&gt;
-
-&lt;p&gt;The third and possibly the number one reason there are no plans for a third edition were the mistakes and mishandling of both editions of the book by the publisher. The publisher’s decision to release the second edition two weeks before WWDC 2013 was the final straw for me. Apple announced iOS 7 with its new look at that WWDC making the second edition obsolete only two weeks after hitting the bookstores.&lt;/p&gt;
-
-&lt;p&gt;There were other mistakes made throughout my time working with the publisher, from production problems to not completing planned projects. But it was the handling, or as I call it, the mishandling of the second edition that led to my decision to not continue updating the book. &lt;/p&gt;
-
-&lt;p&gt;If the book were self-published, then things might be different. But as it stands Learning iPad Programming is owned by the publisher, and everything other than the final manuscript is controlled by the publisher. I certainly have some say and can provide input, but I don’t really have any control once the manuscript is turned over to them. And given the past mistakes and mishandling of projects, I cannot see myself working with the same group for a third edition (my editor and her assistant excluded - they were outstanding to work with).&lt;/p&gt;
-
-&lt;h1 id=&quot;there-you-have-it&quot;&gt;There You Have It&lt;/h1&gt;
-
-&lt;p&gt;So there you have it, the main reasons there are no plans for a third edition of Learning iPad Programming. I admit it makes me rather sad when I think about it not doing new editions of the book. I poured my heart and soul into the first two editions, and I had high hopes that there would be many more editions for years to come. But at the end of the day it just not worth struggle, stress, and toll that the first two editions took on me, my family, and our financial wellbeing.&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;Of the millions of books available on Amazon, my book was in the top 1100 for a few months. This is an outstanding and rare achievement for a tech book, and one of my proudest moments during my career. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Thu, 08 Jan 2015 08:18:28 -0500</pubDate>
-        <link>http://www.thecave.com/2015/01/08/no-plans-for-a-third-edition/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2015/01/08/no-plans-for-a-third-edition/</guid>
-        
-        
-        <category>general</category>
-        
-        <category>life</category>
-        
-        <category>writing</category>
         
       </item>
     
