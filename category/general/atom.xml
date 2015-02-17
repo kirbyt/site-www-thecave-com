@@ -1,16 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: general | thecave | Ramblings From A Crotchety Old Man]]></title>
+  <title><![CDATA[Category: general | thecave]]></title>
   <link href="http://www.thecave.com/category/general/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-02-13T07:54:30-05:00</updated>
+  <updated>2015-02-16T23:29:09-05:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[New Site Theme]]></title>
+    <link href="http://www.thecave.com/2015/02/16/new-site-theme/"/>
+    <updated>2015-02-16T22:53:03-05:00</updated>
+    <id>http://www.thecave.com/2015/02/16/new-site-theme</id>
+    <content type="html"><![CDATA[<p>I’ve been on a website redesign kick lately updating sites such as <a href="http://www.kirbyturner.com">kirbyturner.com</a> and <a href="http://www.rowanturner.net">rowanturner.net</a>. The recent update to my <a href="http://www.kirbyturner.com">vanity website</a> gives it a more modern look, and <a href="http://www.rowanturner.net">Rowan’s website</a> now has a clean, fresh look that focuses on the content.</p>
+
+<p>I especially like Rowan’s new site design. It uses a responsive design site theme so it looks good on the desktop as well as on mobile devices. I also like how it has custom header images for posts, and the clean and simply layout for posts makes it easy to focus on the content in each post. I like the site design for Rowan’s website so much that I decided to use the same site theme here at The Cave.</p>
+
+<p>I couldn’t, however, use the site theme as is. The Cave is a bit more involved given that it uses categories. Plus, I want to provide a complete <a href="http://www.thecave.com/archive.html">archive</a> of every post available. These are things not found on Rowan’s site, so I’ve spent the last couple of evenings tweaking the site theme to be more appropriate for thecave.com.</p>
+
+<p>Other changes I made include adding a footer to each page that shows recent articles and a link list to other sites that I run, and adding an <a href="http://www.thecave.com/archive.html">archive</a> link to the top that gives you access to every post made here since 2002. There is also a <a href="http://www.thecave.com/categories.html">categories</a> link in the top bar for those who would rather find an article based on a category. But the change that I like the most is the rotating header images for each post. </p>
+
+<p>The original site theme lets me pick a header image for a new post, and if I do not specify a header image then the default header image is used. This works but it felt a bit boring to me. I want to see other header images when reading through old posts, not the same one over and over. So I tweaked the theme to pick the header image, when not specified, by performing a modulus operation on the day of the month. It’s not random, but it’s also not boring. Now as you page through posts you will see different header images<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.</p>
+
+<p>I have more work I want to do to this site such as adding an RSS feed for each category. Actually the site has had a feed file for each category for years. I just haven’t made the URL to the category feed files obvious. But that should be easier to do now that there is a page dedicated to listing all the <a href="http://www.thecave.com/categories.html">categories</a>.</p>
+
+<p>So there you have it…the new site theme for thecave.com. Let me know what you think<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>I made the same change to the theme on Rowan’s website. Now you can see more fun pictures of Rowan as you read through the posts. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>You will find links to me on various social networks such as App.net and Twitter below in the page footer. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Bad Case Of Buyer's Remorse]]></title>
@@ -87,29 +119,6 @@
     <updated>2015-01-27T13:54:26-05:00</updated>
     <id>http://www.thecave.com/2015/01/27/finally</id>
     <content type="html"><![CDATA[<p>The Northeast has been getting slammed with a major snow storm, but unfortunately Stowe, Vermont, is too far northwest to get the full force of the storm. I had hoped for a bit of new snow overnight, but it didn’t happen. So I waited before hitting the slopes this morning in hopes the edge of the storm would inch its way into the Stowe, but it didn’t happen. So Melanie and I hit the slopes anyways, braving the -26 degrees Fahrenheit wind chill. We got in two runs before deciding today would be a good day for a lunch date. So we left the hill, and headed for lunch in town. And then the snow finally came…guess I’ll be hitting the hill first thing tomorrow morning. </p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Eliminating Distractions]]></title>
-    <link href="http://www.thecave.com/2015/01/18/eliminating-distractions/"/>
-    <updated>2015-01-18T13:49:47-05:00</updated>
-    <id>http://www.thecave.com/2015/01/18/eliminating-distractions</id>
-    <content type="html"><![CDATA[<p>Dan Counsell wrote an excellent post about <a href="http://dancounsell.com/articles/removing-distractions">removing distractions</a>. In the post he talks about how he removed distractions by removing social media apps such as Twitter and Facebook from his iPhone. He’s done other things too such as reading a book instead of checking Twitter, and he started a “No Technology Day” on Saturdays, which is something I think I might start doing as well.</p>
-
-<p>Over the last year I too have been eliminating distractions in my life by spending more of my time <a href="http://www.thecave.com/2014/06/20/enjoy-less-and-love-more/">doing what I love</a> and changing the way I use social networks. Changing the way I use social networks is one of the reasons I wrote my app <a href="http://www.whitepeaksoftware.com/cross-post">Cross Post</a>. With Cross Post I can share pictures, thoughts, and comments on Facebook, Twitter, and App.net without the worry of being distracted by those sites. Cross Post sends updates to social media sites, but it does not read the time lines or streams from those sites. Cross Post is a tool for making, not reading, micro-blog posts, hence it’s ability to help eliminate distractions. </p>
-
-<p>I did one other thing to help me eliminate distractions. I turned off notifications on all but the most important apps on my iPhone<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. Unlike Dan I did not remove the social media apps from my phone. I still want to be able to reply to mentions via my iPhone, which is why I left the apps installed. And in the case of Facebook, it’s the easiest way for me to get news about my family via my sister down in Mississippi, so I still check Facebook once or twice a day. But I do not receive notifications from any of the social media apps on my phone.</p>
-
-<p>So how can you start eliminating distractions in your life. I suggest starting with Dan’s new website, <a href="http://thegreatdisconnect.info">The Great Disconnect</a>. It contains articles, videos and information about how to remove distractions by living a less connected life. Check it out because we all can benefit from being a bit less connected these days.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>Examples of app that are important to me and which I still have notifications turned on are ones for my bank and credit cards. I want to make sure I’m alerted if a fraudulent charge is ever made against one of my accounts. Slack is another app that I use with notifications turned on since I use this for work purposes. Beyond that, I have notifications turned off. Oh, and in case you were wondering, I let sites like Twitter notify me of mentions via email, and I only check email a few times a day. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 ]]></content>
   </entry>
   

@@ -1,233 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 
-<title>5 Things I Like About Delphi 2007 | thecave</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="robots" content="index, follow" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ramblings From A Crotchety Old Man">
 
-<link rel="stylesheet" type="text/css" href="/styles/typebased/style.css" />
-<link rel="alternate" type="application/atom+xml" title="thecave | Ramblings From A Crotchety Old Man" href="http://www.thecave.com/atom.xml" />
+    <title>5 Things I Like About Delphi 2007 - thecave</title>
 
-<!--[if IE 6]>
-<script type="text/javascript" src="/styles/typebased/includes/js/menu.js"></script>
-<![endif]-->
+    <link rel="canonical" href="http://www.thecave.com/2007/03/25/5-things-i-like-about-delphi-2007/">
+    <link rel="alternate" type="application/atom+xml" title="thecave's Feed" href="http://www.thecave.com/feed.xml" />
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
-<script type='text/javascript' src='/styles/typebased/includes/js/superfish.js?ver=3.3.2'></script>
-<script type="text/javascript" src="/js/lastfm.js"></script>
 
-<!-- Alt Stylesheet -->
-<link href="/styles/typebased/styles/grey.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 
-<!-- Woo Shortcodes CSS -->
-<link href="/styles/typebased/functions/css/shortcodes.css" rel="stylesheet" type="text/css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/clean-blog.css">
 
-<!-- Custom Stylesheet -->
-<link href="/styles/typebased/custom.css" rel="stylesheet" type="text/css" />
-<meta id="syntaxhighlighteranchor" name="syntaxhighlighter-version" content="3.1.3" />
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
 
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- YouTube CSS -->
+    <link rel="stylesheet" href="/css/video.css">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
-<body class="home blog unknown">
 
-<div id="container">
+<body>
 
-	<div id="header">
-		<h1>
-			<a href="/" title="Ramblings from a crotchety old man.">
-			<img src="/images/thecave-logo-2.png" style="margin-top:0px;" alt="thecave" /></a></h1>
-	</div>
-
-	
-	<div id="menu">
-				<ul id="navigation" class="nav wrap">
-										<li class="page_item current_page_item first"><a href="/"><span>Home</span></a></li>
-										<li class="page_item last"><a href="/about.html"><span>About</span></a></li>
-										</ul>
-			</div>
-	<div class="wrap background">
-
-		<div id="content" class="left-col wrap">
-            <!--- Post Starts -->
-<div class="post wrap page">
-
-    <div class="post-meta left-col">
-    <h3 class="wrap"><span class="month">Mar<span class="year">2007</span></span><span class="day">25</span></h3>
-    <h4 class="author">kirbyt</h4>
-    </div>
-
-    <div class="post-content right-col">
-    <h2><a href="/2007/03/25/5-things-i-like-about-delphi-2007/" rel="bookmark" title="5 Things I Like About Delphi 2007">5 Things I Like About Delphi 2007</a></h2>
-
-    <p>Bloggers in the Delphi community have been tagging each other to post 5 things they like about the Delphi 2007.  I wasn’t tagged but I want to play so here are my 5 things.<br /><br />1) <b>Speed</b> - The IDE loads and shutdowns so much faster then BDS 2006.  There seems to be other performance enhancements too such as switching between the form designer and code window.  The IDE is so much faster that I don’t like going back to BDS 2006.<br /><br />2) <b>Vista Support</b> - This is a wonderful enhancement.  I especially like how existing projects using dialogs and routines such as MessageDlg automatically have a Vista look simply by re-compiling the project.<br /><br />3) <b>Application.MainFormOnTaskbar</b> - I really like this new property.  I’m working on an SDI application that manages windows in a similar way as Microsoft Word and Outlook.  Overriding CreateParams and setting the ExStyle isn’t a big deal but having the MainFormOnTaskbar property helps to reduce some code.  <br /><br /><span style="color:red">Update:</span> Steve Trefethen posted a nice overview of <a href="http://www.stevetrefethen.com/blog/TheNewVCLPropertyTApplicationMainFormOnTaskbarInDelphi2007.aspx">Application.MainFormOnTaskbar</a>.<br /><br />4) <b>Online Help</b> - I like the new look of the help system and the new navigation between pages is really nice.  But I do have one major complaint.  Help indexes found in the BDS 2006 help system are missing.  For example launch the help system, go to Index, and enter “CreateDir routine” in the “Look for” textbox.  The routine is not indexed in the new help system but it is indexed in the previous help system.  And this is not the only routine not indexed.  It sucks that this sort of information is no longer indexed in the help system.<br /><br /><span style="color:red">Update:</span>Delphi 2007 Update 1 fixes my complaint about the online help.  Routines such as CreateDir are now indexed.<br /><br />5) <b>Improved Tool Palette Search</b> - I really like how the tool palette search has been improved to find all matches containing the search word, not just matches beginning with the search word.  This is a great improvement for me given that I use a number of 3rd party VCL components that are prefixed (i.e., TcxComboBox). <br /><br />So that’s my list of 5 things I like about Delphi 2007.  But what about the things I do not like about Delphi 2007.<br /><br />1) “Non-breaking” Release - Well, sort of.  The idea is that DCUs and packages from BDS 2006 can be used in Delphi 2007.  In general this is true.  However, I have encountered a number of problems.  For starters Delphi 2007 is having trouble loading certain DevExpress packages at startup.  And I have read in the newsgroups there is a painting issue too although I have not personally experienced it.<br /><br /><span style="color:red">Update:</span> Turns out the problem was me.  I was installing DevExpress packages that weren’t meant for the IDE.  After installing the correct set of DevExpress VCL packages my IDE problems went away.<br /><br />2) Trouble Debugging - This problem has me scratching my head and for the life of me I cannot figure it out.  All BDS 2006 projects I have opened in Delphi 2007 will not run under the interactive debugger.  I haven’t logged this issue in QC yet because I’m still trying to figure out what is happening.  Simply saying “Cannot debug project opened from BDS 2006 project file” does not give CodeGear enough information to troubleshoot the problem.  But the problem still remains.  I cannot debug existing projects.  (Note: I suspect this issue might have something to do with the 3rd party packages such as the ones I’m using from DevExpress.)<br /><br />3) More Issues with Debugging - From time to time I get a weird error message when I press F9.  The message says the debugger cannot create the process.  I launch Sysinternal’s Process Explorer and notice the application to debug is running under the bds.exe process and yet the debugger cannot attach to it.  To make matter worse I cannot kill the spawned process.  I have to close down the IDE to kill it. (Again, I suspect this issue might have somethign to do with some of the 3rd party packages I have manually installed.)<br /><br /><span style="color:red">Update:</span> <a href="http://www.thecave.com/archive/2007/03/26/fixed_my_delphi_2007_debug_issues.aspx">Fixed my Delphi 2007 debug issues</a>.<br /><br />4) No Support in FinalBuilder (yet) - I use FinalBuilder for all my projects and unfortunately FinalBuilder does not support Delphi 2007 (yet).  But according to the newsgroups a new compiler action for Delphi 2007 is in the works.  <br /><br /><span style="color:red">Update:</span> FinalBuilder now has a Delphi 2007 compiler action.<br /><br />5) No Support in EurekaLog (yet) - EurekaLog is another 3rd party tool I use, and unfortunately support for Delphi 2007 is not there yet.  But good news is EurekaLog should have support in about 2 weeks.<br /><br /><span style="color:red">Update:</span> EurekaLog now has Delphi 2007.<br /><br />I know some of these dislikes are not directly Delphi 2007 but they do prevent me from completely moving from BDS 2006 to Delphi 2007 right now.  So Delphi 2007 is still an experiment for me at the moment while I wait for 3rd party support.  Meanwhile I’m still using BDS 2006 for production work.<br /><br /><span style="color:red">Update:</span> I now use Delphi 2007 daily.  Best Delphi IDE in a long time.</p>
-
-
-
-    <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-    <hr />
-    
-        <a href="/2007/03/21/update-on-delphi-2007-order-mess/" title="Previous Post: Update on Delphi 2007 Order Mess" class="post-footer">&laquo; Update on Delphi 2007 Order Mess</a>
-    
-    
-        &nbsp; | &nbsp;
-        <a href="/2007/03/26/fixed-my-delphi-2007-debug-issues/" title="Next Post: Fixed My Delphi 2007 Debug Issues" class="post-footer">Fixed My Delphi 2007 Debug Issues &raquo;</a>
-    
-
-    </div>
-</div>
-<!--- Post Ends -->
-
-		</div>
-
-				<!--- Sidebar Starts -->
-
-		<div id="sidebar" class="right-col">
-
-			<div id="search">
-                <form action="http://google.com/search" method="get">
-                    <div>
-          					<input type="text" class="search_box" name="as_q" id="q" results="0" />
-                    <input type="hidden" name="as_sitesearch" value="thecave.com" />
-          					<input type="image" src="/styles/typebased/images/search.gif" class="submit" name="submit" />
-                    </div>
-                </form>
-			</div>
-
-			<div id="sidebar_in">
-
-			<div id="lastfm-1" class="block widget widget_lastfm">
-    <h2><a href="http://last.fm/user/kirbyt" class="lastfm_title_link">Listening To</a></h2>
-    <div class="lastfm">
-    </div>
-</div>
-
-
-
-        <div id="linkcat-2" class="block widget widget_links"><h2>Blogroll</h2>
-            <ul class='xoxo blogroll'>
-            <li><a href="http://www.rowanturner.net/">Rowan T</a></li>
-            <li><a href="http://photos.thecave.com/">Photos</a></li>
-            <li><a href="http://www.learnipadprogramming.com/">Learning iPad Programming</a></li>
-            <li><a href="http://blog.whitepeaksoftware.com/">White Peak Software</a></li>
-            </ul>
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">thecave</a>
         </div>
 
-		<div id="linkcat-3" class="block widget widget_links"><h2>Categories</h2>
-    <ul>
-        <li class='category'><a href='/category/apps/'>apps (5)</a></li>
-<li class='category'><a href='/category/backpack/'>backpack (1)</a></li>
-<li class='category'><a href='/category/backpacking/'>backpacking (8)</a></li>
-<li class='category'><a href='/category/blogger/'>blogger (785)</a></li>
-<li class='category'><a href='/category/camping/'>camping (11)</a></li>
-<li class='category'><a href='/category/cross%20post/'>cross post (5)</a></li>
-<li class='category'><a href='/category/family/'>family (5)</a></li>
-<li class='category'><a href='/category/fitness/'>fitness (3)</a></li>
-<li class='category'><a href='/category/general/'>general (25)</a></li>
-<li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
-<li class='category'><a href='/category/humor/'>humor (1)</a></li>
-<li class='category'><a href='/category/ios/'>ios (11)</a></li>
-<li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
-<li class='category'><a href='/category/life/'>life (4)</a></li>
-<li class='category'><a href='/category/long%20trail/'>long-trail (2)</a></li>
-<li class='category'><a href='/category/moving/'>moving (1)</a></li>
-<li class='category'><a href='/category/opinion/'>opinion (2)</a></li>
-<li class='category'><a href='/category/pictures/'>pictures (8)</a></li>
-<li class='category'><a href='/category/programming/'>programming (8)</a></li>
-<li class='category'><a href='/category/random/'>random (5)</a></li>
-<li class='category'><a href='/category/rant/'>rant (4)</a></li>
-<li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
-<li class='category'><a href='/category/salem/'>salem (1)</a></li>
-<li class='category'><a href='/category/skiing/'>skiing (5)</a></li>
-<li class='category'><a href='/category/snowboarding/'>snowboarding (11)</a></li>
-<li class='category'><a href='/category/social/'>social (4)</a></li>
-<li class='category'><a href='/category/stowe/'>stowe (5)</a></li>
-<li class='category'><a href='/category/tech/'>tech (4)</a></li>
-<li class='category'><a href='/category/travel/'>travel (3)</a></li>
-<li class='category'><a href='/category/trips/'>trips (5)</a></li>
-<li class='category'><a href='/category/videos/'>videos (2)</a></li>
-<li class='category'><a href='/category/work/'>work (5)</a></li>
-<li class='category'><a href='/category/writing/'>writing (2)</a></li>
-
-    </ul>
-</div>
-
-        <div id="archives-3" class="block widget widget_archive"><h2>Archives</h2>
-        <ul class='archives'>
-        <li><a href="/blog/archives">The Complete Blog Archives</a></li>
-        </ul>
-        </div>
-
-
-			</div>
-
-		</div>
-
-		<!--- Sidebar Ends -->
-	</div>
-
-</div>
-
-<div id="footer" class="wrap">
-
-	<div class="left-col">
-		<div class="popular wrap">
-			<h2>Recent Articles</h2>
-			<ul>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/">Home</a>
+                </li>
                 
-                  <li><a href="/2015/02/13/bad-case-of-buyers-remorse/" title="Bad Case Of Buyer's Remorse">Bad Case Of Buyer's Remorse</a></li>
+                <li>
+                    <a href="/about.html">About</a>
+                </li>
                 
-                  <li><a href="/2015/02/06/consider-the-environmental-cost/" title="Consider The Environmental Cost">Consider The Environmental Cost</a></li>
+                <li>
+                    <a href="/archive.html">Archive</a>
+                </li>
                 
-                  <li><a href="/2015/02/04/hey-local-retail-stores-update-your-website/" title="Hey Local Retail Stores, Update Your Website">Hey Local Retail Stores, Update Your Website</a></li>
-                
-                  <li><a href="/2015/01/27/finally/" title="Finally...">Finally...</a></li>
-                
-                  <li><a href="/2015/01/18/eliminating-distractions/" title="Eliminating Distractions">Eliminating Distractions</a></li>
+                <li>
+                    <a href="/categories.html">Categories</a>
+                </li>
                 
             </ul>
-		</div>
-	</div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
 
-	<div id="subscribe" class="right-col">
-		<h2>Subscribe to RSS</h2>
-		<p class="rss">If you enjoyed the post, make sure you subscribe to the RSS feed.</p>
-		<p>
-		<a href="/atom.xml">Articles</a><br />
-		</p>
-	</div>
 
-<div id="copyright" class="wrap">
+    <!-- Post Header -->
+<header class="intro-header" style="background-image: url('/img/bg-05.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>5 Things I Like About Delphi 2007</h1>
+                    
+                    <span class="meta">Posted by Kirby Turner on March 25, 2007</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 
-	<div class="left-col">
-		<p>&copy; 2015</p>
-	</div>
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-	<div class="right-col">
-		<p>Design by <a href="http://woothemes.com"><img src="/styles/typebased/styles/grey/logo-footer.jpg" width="87" height="21" alt="woo themes" /></a></p>
-	</div>
+				<p>Bloggers in the Delphi community have been tagging each other to post 5 things they like about the Delphi 2007.  I wasn’t tagged but I want to play so here are my 5 things.<br /><br />1) <b>Speed</b> - The IDE loads and shutdowns so much faster then BDS 2006.  There seems to be other performance enhancements too such as switching between the form designer and code window.  The IDE is so much faster that I don’t like going back to BDS 2006.<br /><br />2) <b>Vista Support</b> - This is a wonderful enhancement.  I especially like how existing projects using dialogs and routines such as MessageDlg automatically have a Vista look simply by re-compiling the project.<br /><br />3) <b>Application.MainFormOnTaskbar</b> - I really like this new property.  I’m working on an SDI application that manages windows in a similar way as Microsoft Word and Outlook.  Overriding CreateParams and setting the ExStyle isn’t a big deal but having the MainFormOnTaskbar property helps to reduce some code.  <br /><br /><span style="color:red">Update:</span> Steve Trefethen posted a nice overview of <a href="http://www.stevetrefethen.com/blog/TheNewVCLPropertyTApplicationMainFormOnTaskbarInDelphi2007.aspx">Application.MainFormOnTaskbar</a>.<br /><br />4) <b>Online Help</b> - I like the new look of the help system and the new navigation between pages is really nice.  But I do have one major complaint.  Help indexes found in the BDS 2006 help system are missing.  For example launch the help system, go to Index, and enter “CreateDir routine” in the “Look for” textbox.  The routine is not indexed in the new help system but it is indexed in the previous help system.  And this is not the only routine not indexed.  It sucks that this sort of information is no longer indexed in the help system.<br /><br /><span style="color:red">Update:</span>Delphi 2007 Update 1 fixes my complaint about the online help.  Routines such as CreateDir are now indexed.<br /><br />5) <b>Improved Tool Palette Search</b> - I really like how the tool palette search has been improved to find all matches containing the search word, not just matches beginning with the search word.  This is a great improvement for me given that I use a number of 3rd party VCL components that are prefixed (i.e., TcxComboBox). <br /><br />So that’s my list of 5 things I like about Delphi 2007.  But what about the things I do not like about Delphi 2007.<br /><br />1) “Non-breaking” Release - Well, sort of.  The idea is that DCUs and packages from BDS 2006 can be used in Delphi 2007.  In general this is true.  However, I have encountered a number of problems.  For starters Delphi 2007 is having trouble loading certain DevExpress packages at startup.  And I have read in the newsgroups there is a painting issue too although I have not personally experienced it.<br /><br /><span style="color:red">Update:</span> Turns out the problem was me.  I was installing DevExpress packages that weren’t meant for the IDE.  After installing the correct set of DevExpress VCL packages my IDE problems went away.<br /><br />2) Trouble Debugging - This problem has me scratching my head and for the life of me I cannot figure it out.  All BDS 2006 projects I have opened in Delphi 2007 will not run under the interactive debugger.  I haven’t logged this issue in QC yet because I’m still trying to figure out what is happening.  Simply saying “Cannot debug project opened from BDS 2006 project file” does not give CodeGear enough information to troubleshoot the problem.  But the problem still remains.  I cannot debug existing projects.  (Note: I suspect this issue might have something to do with the 3rd party packages such as the ones I’m using from DevExpress.)<br /><br />3) More Issues with Debugging - From time to time I get a weird error message when I press F9.  The message says the debugger cannot create the process.  I launch Sysinternal’s Process Explorer and notice the application to debug is running under the bds.exe process and yet the debugger cannot attach to it.  To make matter worse I cannot kill the spawned process.  I have to close down the IDE to kill it. (Again, I suspect this issue might have somethign to do with some of the 3rd party packages I have manually installed.)<br /><br /><span style="color:red">Update:</span> <a href="http://www.thecave.com/archive/2007/03/26/fixed_my_delphi_2007_debug_issues.aspx">Fixed my Delphi 2007 debug issues</a>.<br /><br />4) No Support in FinalBuilder (yet) - I use FinalBuilder for all my projects and unfortunately FinalBuilder does not support Delphi 2007 (yet).  But according to the newsgroups a new compiler action for Delphi 2007 is in the works.  <br /><br /><span style="color:red">Update:</span> FinalBuilder now has a Delphi 2007 compiler action.<br /><br />5) No Support in EurekaLog (yet) - EurekaLog is another 3rd party tool I use, and unfortunately support for Delphi 2007 is not there yet.  But good news is EurekaLog should have support in about 2 weeks.<br /><br /><span style="color:red">Update:</span> EurekaLog now has Delphi 2007.<br /><br />I know some of these dislikes are not directly Delphi 2007 but they do prevent me from completely moving from BDS 2006 to Delphi 2007 right now.  So Delphi 2007 is still an experiment for me at the moment while I wait for 3rd party support.  Meanwhile I’m still using BDS 2006 for production work.<br /><br /><span style="color:red">Update:</span> I now use Delphi 2007 daily.  Best Delphi IDE in a long time.</p>
 
-</div>
 
-</div>
-<script type="text/javascript">
+                <p>Posted in <a href='/category/blogger/'>blogger</a>.</p>
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-167605-3']);
-  _gaq.push(['_trackPageview']);
+                <hr>
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2007/03/21/update-on-delphi-2007-order-mess/" data-toggle="tooltip" data-placement="top" title="Update on Delphi 2007 Order Mess">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2007/03/26/fixed-my-delphi-2007-debug-issues/" data-toggle="tooltip" data-placement="top" title="Fixed My Delphi 2007 Debug Issues">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
 
-</script>
+            </div>
+        </div>
+    </div>
+</article>
+
+<p>&nbsp;</p>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-lg-offset-1 col-xs-12">
+                <h3>Recent Articles</h3>
+                <ul>
+                
+                <li><a href="/2015/02/16/new-site-theme/" title="New Site Theme">New Site Theme</a></li>
+                
+                <li><a href="/2015/02/13/bad-case-of-buyers-remorse/" title="Bad Case Of Buyer's Remorse">Bad Case Of Buyer's Remorse</a></li>
+                
+                <li><a href="/2015/02/06/consider-the-environmental-cost/" title="Consider The Environmental Cost">Consider The Environmental Cost</a></li>
+                
+                <li><a href="/2015/02/04/hey-local-retail-stores-update-your-website/" title="Hey Local Retail Stores, Update Your Website">Hey Local Retail Stores, Update Your Website</a></li>
+                
+                <li><a href="/2015/01/27/finally/" title="Finally...">Finally...</a></li>
+                
+                </ul>                
+            </div>
+            <div class="col-lg-5 col-lg-offset-1 col-xs-12">
+                <h3>Other Sites</h3>
+                <ul>
+                    <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
+                    <li><a href="http://photos.thecave.com/">And More Photos</a></li>
+                    <li><a href="http://www.rowanturner.net/">Rowan Turner</a></li>
+                    <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
+                    <li><a href="http://www.whitepeaksoftware.com/">White Peak Software</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br />
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://alpha.app.net/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-adn fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://twitter.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="https://github.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="http://www.linkedin.com/in/kirbyt/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2015</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
+
 
 </body>
+
 </html>
-<!-- Localized -->

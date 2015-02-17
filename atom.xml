@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[thecave | Ramblings From A Crotchety Old Man]]></title>
+  <title><![CDATA[thecave]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-02-13T07:54:30-05:00</updated>
+  <updated>2015-02-16T23:29:09-05:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,39 @@
   </author>
   <rights>Copyright (c) 2002-2015 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[New Site Theme]]></title>
+    <link href="http://www.thecave.com/2015/02/16/new-site-theme/"/>
+    <published>2015-02-16T22:53:03-05:00</published>
+    <updated>2015-02-16T22:53:03-05:00</updated>
+    <id>http://www.thecave.com/2015/02/16/new-site-theme</id>
+    <content type="html"><![CDATA[<p>I’ve been on a website redesign kick lately updating sites such as <a href="http://www.kirbyturner.com">kirbyturner.com</a> and <a href="http://www.rowanturner.net">rowanturner.net</a>. The recent update to my <a href="http://www.kirbyturner.com">vanity website</a> gives it a more modern look, and <a href="http://www.rowanturner.net">Rowan’s website</a> now has a clean, fresh look that focuses on the content.</p>
+
+<p>I especially like Rowan’s new site design. It uses a responsive design site theme so it looks good on the desktop as well as on mobile devices. I also like how it has custom header images for posts, and the clean and simply layout for posts makes it easy to focus on the content in each post. I like the site design for Rowan’s website so much that I decided to use the same site theme here at The Cave.</p>
+
+<p>I couldn’t, however, use the site theme as is. The Cave is a bit more involved given that it uses categories. Plus, I want to provide a complete <a href="http://www.thecave.com/archive.html">archive</a> of every post available. These are things not found on Rowan’s site, so I’ve spent the last couple of evenings tweaking the site theme to be more appropriate for thecave.com.</p>
+
+<p>Other changes I made include adding a footer to each page that shows recent articles and a link list to other sites that I run, and adding an <a href="http://www.thecave.com/archive.html">archive</a> link to the top that gives you access to every post made here since 2002. There is also a <a href="http://www.thecave.com/categories.html">categories</a> link in the top bar for those who would rather find an article based on a category. But the change that I like the most is the rotating header images for each post. </p>
+
+<p>The original site theme lets me pick a header image for a new post, and if I do not specify a header image then the default header image is used. This works but it felt a bit boring to me. I want to see other header images when reading through old posts, not the same one over and over. So I tweaked the theme to pick the header image, when not specified, by performing a modulus operation on the day of the month. It’s not random, but it’s also not boring. Now as you page through posts you will see different header images<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.</p>
+
+<p>I have more work I want to do to this site such as adding an RSS feed for each category. Actually the site has had a feed file for each category for years. I just haven’t made the URL to the category feed files obvious. But that should be easier to do now that there is a page dedicated to listing all the <a href="http://www.thecave.com/categories.html">categories</a>.</p>
+
+<p>So there you have it…the new site theme for thecave.com. Let me know what you think<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>I made the same change to the theme on Rowan’s website. Now you can see more fun pictures of Rowan as you read through the posts. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>You will find links to me on various social networks such as App.net and Twitter below in the page footer. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Bad Case Of Buyer's Remorse]]></title>
@@ -529,41 +562,6 @@
     </li>
   </ol>
 </div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Reporting Errors in Cross Post]]></title>
-    <link href="http://www.thecave.com/2014/09/14/reporting-errors-in-cross-post/"/>
-    <published>2014-09-14T00:00:00-04:00</published>
-    <updated>2014-09-14T00:00:00-04:00</updated>
-    <id>http://www.thecave.com/2014/09/14/reporting-errors-in-cross-post</id>
-    <content type="html"><![CDATA[<p>A friend sent me suggestions on handling error reporting for Cross Post. I decided write up my current thinking here to see if my approach makes sense. Besides, trying to explain it in a set of 140 character tweets is less than ideal.</p>
-
-<p>The challenge I face is reporting errors, or any status reporting for that matter, that happen once the server takes over the process. A timeout error, for example, could occur while the server is uploading a photo to Twitter. At this point the server no longer has a connection to the app, so trickling the error up to the app is not an option.</p>
-
-<p>One option is to let the server eat the error. I know of a few similar solutions that eat the error, and I stopped using those apps for that very reason. If I ask an app to post something to Facebook, and the post never appears, then I want to know why. Letting the server eat the error is not an option for Cross Post. But how does the Cross Post app learn about the error?</p>
-
-<p>One option is to use push notifications. When an error occurs the server can notify the user via a push notification. But this isn’t a trivial task to implement and it’s a path I don’t care to pursue unless absolutely necessary.</p>
-
-<p>Another option, and the one I’m considering at the moment, is having the app include a unique identifier in the payload sent to the server. You can think of the identifier as a handle that the app can use to query to server for the status of the post.</p>
-
-<p>If an error occurs on the server, the server will store the error with the identifier provided by the app as the primary key. The next time the app launches, it will check with the server to see if there were any errors. Once the app learns about the error, the server deletes the error from its data store.</p>
-
-<p>This is a more reactive approach to reporting errors instead of a proactive approach, but it’s a cleaner solution than going down the push notification route. Beside, push notifications are not guaranteed so this approach is as reliable if not more reliable.</p>
-
-<p>There are problems with this approach. First starters, only the device that sent the post will know to check for the error. Say I send a new post to Facebook using my iPhone. The post fails to make its way to Facebook. I launch Cross Post on my iPad. The iPad does not know about the post sent from iPhone, so it does not know to check for an error.</p>
-
-<p>Now there are ways around this new problem. I could ask each user for a unique identifier such as an email address or username, but that’s another road I don’t care to travel down. People have more than enough logins to remember without me asking them to setup yet another online account and log into Cross Post. Besides, Cross Post can use iCloud to sync the unique identifier for each post between devices. In fact, this is what I will likely do. Key-value syncing using iCloud has been reliable for some time now, so why take advantage of it.</p>
-
-<p>The other problem with having the app check the server for error reports is that now the server must persist the error report. This means I need to have some type of data persistence store. I could use the file system on the server, but I’ve configured my server app to scale. This means a load balancer is in place and as traffic increases OpenShift will spawn new server instances. This means it is possible that the server that caught the error will not be the server that the app queries for error reports. So storing the error report on the server’s file system is not an option. An additional server, aka a database server, is needed to persist the error reports.</p>
-
-<p>Having an additional server for data persistence isn’t a big deal for OpenShift, but it is just one more server that must always be available. And now the backend for Cross Post is starting to grow. A couple of weeks ago the entire Cross Post solution ran on an iOS device. Now the solution spans the device and a server environment, and next I have to throw in a database server just for error reporting!?</p>
-
-<p>Having the database does seem a bit overkill at the moment, but there might be a need for a database for persistent storage down the road anyways. So it looks like I will be adding a MongoDB database to the mix very soon. That is unless someone has a better idea to share with me.</p>
-
-<p>Update: I came up with a <a href="http://www.thecave.com/2014/09/15/reporting-errors-in-cross-post-part-2/">third option</a> that is by far my favorite.</p>
-
 ]]></content>
   </entry>
   

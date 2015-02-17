@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>thecave</title>
+    <description>Ramblings From A Crotchety Old Man</description>
+    <link>http://www.thecave.com/</link>
+    <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 16 Feb 2015 23:29:09 -0500</pubDate>
+    <lastBuildDate>Mon, 16 Feb 2015 23:29:09 -0500</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>New Site Theme</title>
+        <description>&lt;p&gt;I’ve been on a website redesign kick lately updating sites such as &lt;a href=&quot;http://www.kirbyturner.com&quot;&gt;kirbyturner.com&lt;/a&gt; and &lt;a href=&quot;http://www.rowanturner.net&quot;&gt;rowanturner.net&lt;/a&gt;. The recent update to my &lt;a href=&quot;http://www.kirbyturner.com&quot;&gt;vanity website&lt;/a&gt; gives it a more modern look, and &lt;a href=&quot;http://www.rowanturner.net&quot;&gt;Rowan’s website&lt;/a&gt; now has a clean, fresh look that focuses on the content.&lt;/p&gt;
+
+&lt;p&gt;I especially like Rowan’s new site design. It uses a responsive design site theme so it looks good on the desktop as well as on mobile devices. I also like how it has custom header images for posts, and the clean and simply layout for posts makes it easy to focus on the content in each post. I like the site design for Rowan’s website so much that I decided to use the same site theme here at The Cave.&lt;/p&gt;
+
+&lt;p&gt;I couldn’t, however, use the site theme as is. The Cave is a bit more involved given that it uses categories. Plus, I want to provide a complete &lt;a href=&quot;http://www.thecave.com/archive.html&quot;&gt;archive&lt;/a&gt; of every post available. These are things not found on Rowan’s site, so I’ve spent the last couple of evenings tweaking the site theme to be more appropriate for thecave.com.&lt;/p&gt;
+
+&lt;p&gt;Other changes I made include adding a footer to each page that shows recent articles and a link list to other sites that I run, and adding an &lt;a href=&quot;http://www.thecave.com/archive.html&quot;&gt;archive&lt;/a&gt; link to the top that gives you access to every post made here since 2002. There is also a &lt;a href=&quot;http://www.thecave.com/categories.html&quot;&gt;categories&lt;/a&gt; link in the top bar for those who would rather find an article based on a category. But the change that I like the most is the rotating header images for each post. &lt;/p&gt;
+
+&lt;p&gt;The original site theme lets me pick a header image for a new post, and if I do not specify a header image then the default header image is used. This works but it felt a bit boring to me. I want to see other header images when reading through old posts, not the same one over and over. So I tweaked the theme to pick the header image, when not specified, by performing a modulus operation on the day of the month. It’s not random, but it’s also not boring. Now as you page through posts you will see different header images&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;I have more work I want to do to this site such as adding an RSS feed for each category. Actually the site has had a feed file for each category for years. I just haven’t made the URL to the category feed files obvious. But that should be easier to do now that there is a page dedicated to listing all the &lt;a href=&quot;http://www.thecave.com/categories.html&quot;&gt;categories&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;So there you have it…the new site theme for thecave.com. Let me know what you think&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;I made the same change to the theme on Rowan’s website. Now you can see more fun pictures of Rowan as you read through the posts. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;You will find links to me on various social networks such as App.net and Twitter below in the page footer. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 16 Feb 2015 22:53:03 -0500</pubDate>
+        <link>http://www.thecave.com/2015/02/16/new-site-theme/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2015/02/16/new-site-theme/</guid>
+        
+        
+        <category>general</category>
+        
+      </item>
+    
+      <item>
+        <title>Bad Case Of Buyer&#39;s Remorse</title>
+        <description>&lt;p&gt;I’ve very disappointed in my new snowboard purchase. It’s fair to say I have a bad case of buyer’s remorse. I thought I was saving a few dollars by buying online, but at the same time I felt rushed. My gut was telling me not to do it. It told me to wait. But I didn’t listen. I’ll know better next time. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://farm8.staticflickr.com/7291/16512353495_71314188f0_n.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;My new board arrived yesterday, but I still cannot ride it. It’s missing the M6 hardware needed for my old bindings. Burton will send the hardware to me for free but it means going a few more days without riding the board. And if I were to buy the board today from AJ’s I would get a 25% discount and they would likely throw in the necessary hardware for my bindings for free. That said, I stopped by AJ’s to buy a pair of new bindings. &lt;/p&gt;
+
+&lt;p&gt;Why new bindings? I need something to feel good about with regards to this snowboard purchase. &lt;/p&gt;
+
+&lt;p&gt;Why feel bad? It’s not just the money. Turns out the board I bought is a Burton 2nd. This is a pre-production board. This means it has visual defects with the graphics. The board is just as good as a production board. It’s just that the graphic may or may not have blemishes. And my new board certainly has noticeable blemishes. &lt;/p&gt;
+
+&lt;p&gt;I feel a bit cheated because the site I bought the board from did not make it clear I was buying a 2nd. The product title had “Blem” at the end, but I had no idea that meant blemish. I certainly would not have bought the board had I known. &lt;/p&gt;
+
+&lt;p&gt;I thought about returning the board, but then I decided it was more trouble than it was worth. Plus it was my mistake for buying it, so I owned up to the mistake and decided to keep the board. But that’s also why I decided to buy the new bindings. I wanted something to feel good about with this entire messed up purchasing experience. And I have to say, I really like the new bindings. &lt;/p&gt;
+
+&lt;p&gt;I like the ride of the board too. I’m still getting use to it. I finally took it out for 3 run, wish I had had more time. The board feels like a craving machine. The board is a little longer than I’m use to, and I’m using a wider stance than before, but I’m sure I’m going to love this board as much if not more than my Malolo. &lt;/p&gt;
+
+&lt;p&gt;Also I learned something from the experience. Buy locally even if the price is slightly higher. Always check in-store locally for the best deals, don’t trust the website. And wait until February, or later, to buy new snowboard gear. &lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 Feb 2015 07:48:47 -0500</pubDate>
+        <link>http://www.thecave.com/2015/02/13/bad-case-of-buyers-remorse/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2015/02/13/bad-case-of-buyers-remorse/</guid>
+        
+        
+        <category>general</category>
+        
+        <category>rant</category>
+        
+        <category>snowboarding</category>
+        
+      </item>
+    
+      <item>
+        <title>Consider The Environmental Cost</title>
+        <description>&lt;p&gt;Two days ago I wrote a &lt;a href=&quot;http://www.thecave.com/2015/02/04/hey-local-retail-stores-update-your-website/&quot;&gt;post&lt;/a&gt; about how I bought a new snowboard online because it was cheaper than buying locally, or so I thought. Turns out a local shop in Stowe was offering a 20% discount on the board I bought, but I didn’t know this at the time since that shop didn’t advertise the sale on their website. So in the end I paid a little more to buy a new snowboard from another local shop located on the other side of the country. &lt;/p&gt;
+
+&lt;p&gt;Today I read an article written by Hana Beaman about how we might want it all but we don’t need it all, see the picture below, when it hit me I was totally missed the point in my earlier post. I should have bought locally even if the price was slightly higher. I forgot about the cost on the environment.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://pbs.twimg.com/media/B8uV-gMCcAAYfXp.jpg&quot; alt=&quot;Alt text&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sure, I thought I was saving a few dollars by buying online, but now that snowboard must travel across the United States by truck, airplane or some sort of and combination of fuel sucking transport. Regardless the means of transport the snowboard takes to get from Oregon to Vermont, it will have a negative impact on the environment. The environmental impact would have been much lower if I had bought locally since I live only a mile or so away from the store, a store that ultimately had the better price. &lt;/p&gt;
+
+&lt;p&gt;The lesson here for me is that I need to buy locally more than I already do&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, and I need to consider more than just how much an item will cost me. I need to also consider the cost to the environment. &lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;My spending habits have changed a lot since moving to Stowe. I buy a lot more things locally, from eggs to gear. Even my Amazon purchases have dropped to a third of what they were 3 years ago. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 06 Feb 2015 07:56:46 -0500</pubDate>
+        <link>http://www.thecave.com/2015/02/06/consider-the-environmental-cost/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2015/02/06/consider-the-environmental-cost/</guid>
+        
+        
+        <category>general</category>
+        
+        <category>skiing</category>
+        
+        <category>snowboarding</category>
+        
+      </item>
+    
+      <item>
+        <title>Hey Local Retail Stores, Update Your Website</title>
+        <description>&lt;p&gt;I bought a new Burton snowboard the other day. I ordered it online from a mom and pop shop in the Oregon. I wanted to buy locally here in Stowe but the price I paid was 10% cheaper than the price listed on the websites of local shops. Combined with the fact that I didn’t have to pay sales tax and shipping was free, I felt I was getting a great deal. Still, I would have preferred to support a local shop here in Vermont, but at least I supported a local shop in Oregon. &lt;/p&gt;
+
+&lt;p&gt;All good, right? Well…&lt;/p&gt;
+
+&lt;p&gt;My wife stopped by one of the local Stowe shops today to buy a pair of new skis. Turns out the shop has a sale going on…20% off all Burton boards! Turns out if I had bought my new board locally I would have saved more money than buying online. Plus I would have my board now instead of waiting until next week. &lt;/p&gt;
+
+&lt;p&gt;So why didn’t I buy locally given that the sale is going on? It’s because I didn’t know about the sale. Being the type of person I am, I check online before going into brick and mortar stores, and I checked the websites of the local Stowe shops before looking elsewhere. But the shop having the awesome sale did not advise the sale on their website. And because they didn’t advise the sale I ended up taking my business elsewhere.&lt;/p&gt;
+
+&lt;p&gt;What could this store have done to win my business? They could have shown the sale price on their website. And if they didn’t want to offer the sale price for online orders, then they could have advised the sale on the front page of their website. Something as simple as “20% Off All Snowboards” for in-store purchases only would have brought me into the store two days ago. And since they have the snowboard I want in stock, it would have been an easy sell. I would have been in and out of the store in under 10 minutes, and they would have a few hundred more dollars in the cash register.&lt;/p&gt;
+
+&lt;p&gt;Still, I’m happy with my purchase. With my online purchase I was able to support a locally owned, small business…granted in Oregon instead of Vermont, but that’s still better than buying from a big corporate retail chain. And while I spent more money with my online order, it was only $32 more than I would have paid locally when you add sales tax. So I didn’t lose out too much. The Stowe shop, and the state of Vermont for that matter, lost out more than I did and all because the shop didn’t update their website.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 04 Feb 2015 13:08:21 -0500</pubDate>
+        <link>http://www.thecave.com/2015/02/04/hey-local-retail-stores-update-your-website/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2015/02/04/hey-local-retail-stores-update-your-website/</guid>
+        
+        
+        <category>general</category>
+        
+        <category>rant</category>
+        
+        <category>skiing</category>
+        
+        <category>snowboarding</category>
+        
+        <category>stowe</category>
+        
+      </item>
+    
+      <item>
+        <title>Finally...</title>
+        <description>&lt;p&gt;The Northeast has been getting slammed with a major snow storm, but unfortunately Stowe, Vermont, is too far northwest to get the full force of the storm. I had hoped for a bit of new snow overnight, but it didn’t happen. So I waited before hitting the slopes this morning in hopes the edge of the storm would inch its way into the Stowe, but it didn’t happen. So Melanie and I hit the slopes anyways, braving the -26 degrees Fahrenheit wind chill. We got in two runs before deciding today would be a good day for a lunch date. So we left the hill, and headed for lunch in town. And then the snow finally came…guess I’ll be hitting the hill first thing tomorrow morning. &lt;/p&gt;
+</description>
+        <pubDate>Tue, 27 Jan 2015 13:54:26 -0500</pubDate>
+        <link>http://www.thecave.com/2015/01/27/finally/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2015/01/27/finally/</guid>
+        
+        
+        <category>general</category>
+        
+        <category>skiing</category>
+        
+        <category>snowboarding</category>
+        
+        <category>stowe</category>
+        
+      </item>
+    
+      <item>
+        <title>Eliminating Distractions</title>
+        <description>&lt;p&gt;Dan Counsell wrote an excellent post about &lt;a href=&quot;http://dancounsell.com/articles/removing-distractions&quot;&gt;removing distractions&lt;/a&gt;. In the post he talks about how he removed distractions by removing social media apps such as Twitter and Facebook from his iPhone. He’s done other things too such as reading a book instead of checking Twitter, and he started a “No Technology Day” on Saturdays, which is something I think I might start doing as well.&lt;/p&gt;
+
+&lt;p&gt;Over the last year I too have been eliminating distractions in my life by spending more of my time &lt;a href=&quot;http://www.thecave.com/2014/06/20/enjoy-less-and-love-more/&quot;&gt;doing what I love&lt;/a&gt; and changing the way I use social networks. Changing the way I use social networks is one of the reasons I wrote my app &lt;a href=&quot;http://www.whitepeaksoftware.com/cross-post&quot;&gt;Cross Post&lt;/a&gt;. With Cross Post I can share pictures, thoughts, and comments on Facebook, Twitter, and App.net without the worry of being distracted by those sites. Cross Post sends updates to social media sites, but it does not read the time lines or streams from those sites. Cross Post is a tool for making, not reading, micro-blog posts, hence it’s ability to help eliminate distractions. &lt;/p&gt;
+
+&lt;p&gt;I did one other thing to help me eliminate distractions. I turned off notifications on all but the most important apps on my iPhone&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Unlike Dan I did not remove the social media apps from my phone. I still want to be able to reply to mentions via my iPhone, which is why I left the apps installed. And in the case of Facebook, it’s the easiest way for me to get news about my family via my sister down in Mississippi, so I still check Facebook once or twice a day. But I do not receive notifications from any of the social media apps on my phone.&lt;/p&gt;
+
+&lt;p&gt;So how can you start eliminating distractions in your life. I suggest starting with Dan’s new website, &lt;a href=&quot;http://thegreatdisconnect.info&quot;&gt;The Great Disconnect&lt;/a&gt;. It contains articles, videos and information about how to remove distractions by living a less connected life. Check it out because we all can benefit from being a bit less connected these days.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Examples of app that are important to me and which I still have notifications turned on are ones for my bank and credit cards. I want to make sure I’m alerted if a fraudulent charge is ever made against one of my accounts. Slack is another app that I use with notifications turned on since I use this for work purposes. Beyond that, I have notifications turned off. Oh, and in case you were wondering, I let sites like Twitter notify me of mentions via email, and I only check email a few times a day. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 18 Jan 2015 13:49:47 -0500</pubDate>
+        <link>http://www.thecave.com/2015/01/18/eliminating-distractions/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2015/01/18/eliminating-distractions/</guid>
+        
+        
+        <category>cross post</category>
+        
+        <category>general</category>
+        
+        <category>ios</category>
+        
+        <category>life</category>
+        
+        <category>social</category>
+        
+      </item>
+    
+      <item>
+        <title>New kirbyturner.com Site</title>
+        <description>&lt;p&gt;I have owned the vanity domain name &lt;a href=&quot;http://www.kirbyturner.com&quot;&gt;kirbyturner.com&lt;/a&gt; for a long time, but I didn’t anything with it after buying it. That changed back when I was writing &lt;a href=&quot;http://www.learningipadprogramming.com&quot;&gt;Learning iPad Programming&lt;/a&gt;. My publisher asked that I setup a website that talks about me, so I finally put kirbyturner.com to use. Unfortunately I never liked the look of the site. I used a bland template to create the website quickly. The site was ugly, but it served its purpose. Then Justin Williams created a new “professional web site” for &lt;a href=&quot;http://www.justinw.me&quot;&gt;himself&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;My first thought after seeing Justin’s new site was, “Wow! That looks really nice.” My second thought was, “Man my site sucks donkey balls.” So I spent the last couple of days working on a new look for &lt;a href=&quot;http://www.kirbyturner.com&quot;&gt;kirbyturner.com&lt;/a&gt;. I just finished the site, and I can say with 100% certainty that the new site looks much, much better than my &lt;a href=&quot;https://www.flickr.com/photos/kirbyturner/16288802435/&quot;&gt;old site&lt;/a&gt;. Thanks for the inspiration, Justin.&lt;/p&gt;
+
+&lt;p&gt;Take a look at the new and improved &lt;a href=&quot;http://www.kirbyturner.com&quot;&gt;kirbyturner.com&lt;/a&gt;, and let me know what you think.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 15 Jan 2015 16:20:35 -0500</pubDate>
+        <link>http://www.thecave.com/2015/01/15/new-kirbyturnercom-site/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2015/01/15/new-kirbyturnercom-site/</guid>
+        
+        
+        <category>general</category>
+        
+        <category>tech</category>
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>Snow is White, Not Brown and Green</title>
+        <description>&lt;p&gt;This screen shot says it all.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.flickr.com/photos/kirbyturner/16286890482&quot;&gt;&lt;img src=&quot;https://farm9.staticflickr.com/8571/16286890482_5fc6e96929_n.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 15 Jan 2015 13:22:07 -0500</pubDate>
+        <link>http://www.thecave.com/2015/01/15/snow-is-white-not-brown-and-green/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2015/01/15/snow-is-white-not-brown-and-green/</guid>
+        
+        
+        <category>family</category>
+        
+        <category>general</category>
+        
+      </item>
+    
+      <item>
+        <title>Goodbye Fitbit Ultra, Hello Fitbit One</title>
+        <description>&lt;p&gt;On November 15, 2011, I started using my Fitbit Ultra, and after only 1157 days I have finally switched to the Fitbit One.&lt;/p&gt;
+
+&lt;p&gt;The Ultra has been an outstanding device, and it’s darn tough too. Mine has bits of plastic missing and the casing has separated on one side. And yet the thing continues working. The only problem is the button, which stopped working two days ago. That’s why I decided to upgrade. Still, the Ultra has been one of the best little devices I’ve ever owned.&lt;/p&gt;
+
+&lt;p&gt;Together the Ultra and I have taken 7,625,047 steps, climbed the equivalent of 22,711 floors, walked 3,401.97 miles, and burned 5,035,126. My Ultra was with me on my Long Trail thru hike as well as countless other hikes. It’s been with me to New York, San Francisco, Paris, Amsterdam, Montreal, and many other places. It’s the last thing I pull out of my pocket each night before bed, and the first thing I put back in my pocket after waking up. In all that time I’ve left my Ultra behind for fewer than 5 days. But as of this afternoon I’m no longer using my Ultra. I’m now using my new Fitbit One.&lt;/p&gt;
+
+&lt;p&gt;I’m excited to use the One. It certainly has features not available on the Ultra, most notably the ability to sync wirelessly over Bluetooth. The Ultra requires plugging in to sync, and often times I would go 6 or 7 days without syncing because it wasn’t convenient for me to plug in. But with the One and the option to sync via my iPhone, I will be syncing more frequently. &lt;/p&gt;
+
+&lt;p&gt;The One is smaller than the Ultra, and I have to say I’m really digging the smaller size. The display on the One is better than the Ultra too, but then again the display on my Ultra looked good when it was new. My Ultra has been through a lot and the wear and tear is showing on it. That might be why the One’s display looks much better to me right now.&lt;/p&gt;
+
+&lt;p&gt;I do have a couple of minor issues with the One. First, the wireless sync might mean I forget to charge my One as frequently as I did the Ultra. Time will tell if this is a valid concern or not for me. The other issue is that I rarely clipped my Ultra onto myself, but I did do it from time to time…mostly in the morning if I walked around the house in my boxers. I would clip the Ultra to my boxers until I put on pjs, shorts, or pants. The One comes with a clip, but since I rarely need the clip I’m not planning to use it. But there will still be those rare early mornings when I wish I could clip my One to my boxers. Maybe I’ll keep the clip on my nightstand next to my bed so it’s easy to grab when I do need it.&lt;/p&gt;
+
+&lt;p&gt;Hmmm, so it seems I don’t really have any issues with the One…at least not yet. And based on my experience with the Ultra, I don’t expect to have any issues with the One either. I’m hoping the One is as good, if not better, than the Ultra. Time will tell. I’ll try to remember to write a follow up about my One in, say, 1157 days.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 14 Jan 2015 19:42:08 -0500</pubDate>
+        <link>http://www.thecave.com/2015/01/14/goodbye-fitbit-ultra-hello-fitbit-one/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2015/01/14/goodbye-fitbit-ultra-hello-fitbit-one/</guid>
+        
+        
+        <category>fitness</category>
+        
+        <category>general</category>
+        
+      </item>
+    
+      <item>
+        <title>No Plans For A Third Edition</title>
+        <description>&lt;p&gt;A number of people have recently asked if there will be a third edition of &lt;a href=&quot;http://www.learningipadprogramming.com/&quot;&gt;Learning iPad Programming&lt;/a&gt;. The short answer is no, there are no plans. There are many reasons why I decided to not update the book, but a few key reasons stand out more than others.&lt;/p&gt;
+
+&lt;h2 id=&quot;i-enjoy-writing-but-i-dont-love-it&quot;&gt;I Enjoy Writing, But I Don’t Love It&lt;/h2&gt;
+
+&lt;p&gt;Writing a tech book was on my bucket list for many years, and writing has long been an interest of mine. But writing a book like Learning iPad Programming takes a lot of time. The first two editions of the book consumed most of my time and life for nearly two and a half years, and this left me feeling stressed and depressed. That’s when I came to the conclusion that my time is better spent &lt;a href=&quot;http://www.thecave.com/2014/06/20/enjoy-less-and-love-more/&quot;&gt;doing things I love&lt;/a&gt; and cutting back on doing things that I only enjoy. &lt;/p&gt;
+
+&lt;p&gt;If I had all the time in the world, then I certainly would consider updating the book each year or two. But my time is limited, and writing apps, snowboarding, spending time with my family, and going on outdoor adventures are all things I love doing. And those things leave me with little extra time to do things I only enjoy.&lt;/p&gt;
+
+&lt;h2 id=&quot;no-financial-motivation&quot;&gt;No Financial Motivation&lt;/h2&gt;
+
+&lt;p&gt;My &lt;a href=&quot;http://www.whitepeaksoftware.com/&quot;&gt;company&lt;/a&gt; was booming just before I started work on the first edition of Learning iPad Programming. I saw a steady increase in product revenue year after year for five straight years, and I was becoming less dependent on consulting and contract work. In other words, I was on track for making a living selling my own products. In fact, that’s partly why I agreed to write a book in the first place. In my mind the book was another product in my expanding line of diversified products. But it turns out writing a book is hard. And writing the first edition was probably one of the hardest things I’ve ever done.&lt;/p&gt;
+
+&lt;p&gt;I had never written a book before, so I ended up spending a lot of time learning how to write a book. I also tried a number of different systems to get me into the habit of writing. All of this extra time spent on learning to write, how to get pass mental blocks, how to stay motivated, how to make daily progress, even the smallest bit, took my focus away from my company. And at one point I knew the only way I would finish the book was to devote 100% of my time to it, so that’s exactly what I did. I stopped working for a few months so I could work on the book full time.&lt;/p&gt;
+
+&lt;p&gt;All the time spent away from my company resulted in lost revenue as my product sales started a downward trend and I had zero time to offset the drop in product revenue with consulting. That meant I had to start living off of borrowed money. By the time the book was done I had well over $50K in credit card debt. And while sales of the book were great&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, the royalty payments I received were not enough to pay down the debt, debt that I’m still working on paying off today. &lt;/p&gt;
+
+&lt;h2 id=&quot;mistakes-and-mishandling&quot;&gt;Mistakes and Mishandling&lt;/h2&gt;
+
+&lt;p&gt;The third and possibly the number one reason there are no plans for a third edition were the mistakes and mishandling of both editions of the book by the publisher. The publisher’s decision to release the second edition two weeks before WWDC 2013 was the final straw for me. Apple announced iOS 7 with its new look at that WWDC making the second edition obsolete only two weeks after hitting the bookstores.&lt;/p&gt;
+
+&lt;p&gt;There were other mistakes made throughout my time working with the publisher, from production problems to not completing planned projects. But it was the handling, or as I call it, the mishandling of the second edition that led to my decision to not continue updating the book. &lt;/p&gt;
+
+&lt;p&gt;If the book were self-published, then things might be different. But as it stands Learning iPad Programming is owned by the publisher, and everything other than the final manuscript is controlled by the publisher. I certainly have some say and can provide input, but I don’t really have any control once the manuscript is turned over to them. And given the past mistakes and mishandling of projects, I cannot see myself working with the same group for a third edition (my editor and her assistant excluded - they were outstanding to work with).&lt;/p&gt;
+
+&lt;h1 id=&quot;there-you-have-it&quot;&gt;There You Have It&lt;/h1&gt;
+
+&lt;p&gt;So there you have it, the main reasons there are no plans for a third edition of Learning iPad Programming. I admit it makes me rather sad when I think about it not doing new editions of the book. I poured my heart and soul into the first two editions, and I had high hopes that there would be many more editions for years to come. But at the end of the day it just not worth struggle, stress, and toll that the first two editions took on me, my family, and our financial wellbeing.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Of the millions of books available on Amazon, my book was in the top 1100 for a few months. This is an outstanding and rare achievement for a tech book, and one of my proudest moments during my career. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Thu, 08 Jan 2015 08:18:28 -0500</pubDate>
+        <link>http://www.thecave.com/2015/01/08/no-plans-for-a-third-edition/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2015/01/08/no-plans-for-a-third-edition/</guid>
+        
+        
+        <category>general</category>
+        
+        <category>life</category>
+        
+        <category>writing</category>
+        
+      </item>
+    
+  </channel>
+</rss>

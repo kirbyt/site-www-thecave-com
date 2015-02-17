@@ -1,499 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 
-<title>thecave | Ramblings From A Crotchety Old Man</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="robots" content="index, follow" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ramblings From A Crotchety Old Man">
 
-<link rel="stylesheet" type="text/css" href="/styles/typebased/style.css" />
-<link rel="alternate" type="application/atom+xml" title="thecave | Ramblings From A Crotchety Old Man" href="http://www.thecave.com/atom.xml" />
+    <title>thecave</title>
 
-<!--[if IE 6]>
-<script type="text/javascript" src="/styles/typebased/includes/js/menu.js"></script>
-<![endif]-->
+    <link rel="canonical" href="http://www.thecave.com/page51/">
+    <link rel="alternate" type="application/atom+xml" title="thecave's Feed" href="http://www.thecave.com/feed.xml" />
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
-<script type='text/javascript' src='/styles/typebased/includes/js/superfish.js?ver=3.3.2'></script>
-<script type="text/javascript" src="/js/lastfm.js"></script>
 
-<!-- Alt Stylesheet -->
-<link href="/styles/typebased/styles/grey.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 
-<!-- Woo Shortcodes CSS -->
-<link href="/styles/typebased/functions/css/shortcodes.css" rel="stylesheet" type="text/css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/clean-blog.css">
 
-<!-- Custom Stylesheet -->
-<link href="/styles/typebased/custom.css" rel="stylesheet" type="text/css" />
-<meta id="syntaxhighlighteranchor" name="syntaxhighlighter-version" content="3.1.3" />
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
 
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- YouTube CSS -->
+    <link rel="stylesheet" href="/css/video.css">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
-<body class="home blog unknown">
 
-<div id="container">
+<body>
 
-	<div id="header">
-		<h1>
-			<a href="/" title="Ramblings from a crotchety old man.">
-			<img src="/images/thecave-logo-2.png" style="margin-top:0px;" alt="thecave" /></a></h1>
-	</div>
-
-	
-	<div id="menu">
-				<ul id="navigation" class="nav wrap">
-										<li class="page_item current_page_item first"><a href="/"><span>Home</span></a></li>
-										<li class="page_item last"><a href="/about.html"><span>About</span></a></li>
-										</ul>
-			</div>
-	<div class="wrap background">
-
-		<div id="content" class="left-col wrap">
-            
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">25</span></h3>
-        <h4 class="author">kirbyt</h4>
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">thecave</a>
         </div>
 
-        <div class="post-content right-col">
-        <h2><a href="/2004/06/25/explicit-interface-implementation-in-c/" rel="bookmark" title="Explicit Interface Implementation in C#">Explicit Interface Implementation in C#</a></h2>
-
-        <p>I was a grumbling VB developer for a number of years.  At the time Delphi was my language of choice but in the part of the country I lived customer work using it was almost non-existent.  In the summer of 2000 at PDC, a friend of mine from Microsoft showed me the .NET Framework and C#.  I was instantly drawn to C# because it reminded me of Delphi, which is no surprise for those who know their <a href="http://c2.com/cgi/wiki?HistoryOfCsharp">C#/Delphi history</a>.</p>
-
-<p>At last there was (is) a language and framework from Microsoft that generated the same level of excitement in me that Borland’s Delphi had done a few years prior.  Best of all it was from Microsoft which would mean customer work in the future.  And as luck would have it, I started working exclusively with the .NET Framework and C# in the fall of 2001.</p>
-
-<p>For better or worse I have not spent much time with VB.NET, or Visual Basic 6.0 for that manner, since the fall of 2001.  I have done a few small project using VB.NET but nothing to brag about.  For the most part, both .NET languages are very similar with regard to features but there are some differences.  For example, you can write unsafe code in C# but you can’t do the same in VB.NET.  Depending on your point of view this is an advantage or a disadvantage.</p>
-
-<p>Another difference is that in VB.NET you can specify the scope of a member that implements a particular interface as something other than public.  I needed to do this in more than one occasion in C# but was resolved to the fact that a member implementation of interface in C# had to be scoped as public.</p>
-
-<pre><code>Public Interface IMyInterface
-    Sub Foo()
-End Interface
-
-Public Class Class1
-Implements IMyInterface
-    Private Sub Foo() Implements IMyInterface.Foo
-    End Sub
-End Class
-</code></pre>
-
-<p>So if you can do this in VB.NET why can’t you do the same, or something similar in C#?  This question lead me to the discovery (thank you <a href="http://www.google.com/search?q=explicit+interface+implement&amp;sourceid=firefox&amp;start=0&amp;start=0&amp;ie=utf-8&amp;oe=utf-8">google</a>) of explicit interface implementation in C#.  By using an explicit interface implementation you can scope the member implementation as private.  It’s a little messy because a member explicitly implemented cannot be access through the class instance.  Instead it must be accessed through an instance of the interface.</p>
-
-<pre><code>interface IMyInterface
-{
-    void Foo();
-}
-
-abstract class MyAbstractClass : IMyInterface
-{
-    // Explicit interface implementation
-    void IMyInterface.Foo()
-    {
-        Console.WriteLine( "bar" );
-    }
-}
-
-class MyConcreteClass : MyAbstractClass
-{
-    public void FooBar()
-    {
-        // Must use an instance of the interface to access
-        // the explicit implementation.
-        ((IMyInterface)this).Foo();
-    }
-}
-
-public class MyApp
-{
-    public static void Main( string[] args )
-    {
-        MyConcreteClass c = new MyConcreteClass();
-        // Will not compile because Foo() is private.
-        // c.Foo();
-
-        c.FooBar();
-
-        // This works because we are all in the same module.
-        ((IMyInterface)c).Foo();
-    }
-}
-</code></pre>
-
-<p>While an explicit interface implementation does give the C# developer the ability to scope a member implementation as private, it is still not as powerful as VB.NET’s ability to scope a member implementation as anything other than public.  Score 1 point for VB.NET.</p>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                
+                <li>
+                    <a href="/about.html">About</a>
+                </li>
+                
+                <li>
+                    <a href="/archive.html">Archive</a>
+                </li>
+                
+                <li>
+                    <a href="/categories.html">Categories</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
 
 
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
+    <!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/bg-01.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>thecave</h1>
+                    <hr class="small">
+                    <span class="subheading">Ramblings From A Crotchety Old Man</span>
+                </div>
+            </div>
         </div>
     </div>
-    <!--- Post Ends -->
+</header>
 
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			
+<div class="post-preview">
     
-    <!--- Post Starts -->
-    <div class="post wrap">
+    <h2 class="post-title">
+        <a href="/2004/06/29/why-software-quality-matters/">Why Software Quality Matters</a>
+    </h2>
+    
+    <p>“This is a warning for any creator of computer programs: that software quality matters, that applications must be foolproof, and that-whether embedded in the engine of a car, a robotic arm in a factory or a healing device in a hospital-poorly deployed code can kill.”
+<br />
+<br />This quote comes from an article my friend Matt pointed to me from Base Line Magazine titled <a href="http://www.baselinemag.com/article2/0,1397,1543564,00.asp">Why Software Quality Matters</a>.
+<br />
+<br />This article really illustrates the importance of software quality.  As more software is used in the daily lives of people the importance of quality software increases.  Recently I read in Consumer Reports that a particular model of luxury car is being recalled due to a problem related to a transmission controller chip.  The software in this chip can cause the car moving forward to shift into reverse.  Imagine the pileup that could be caused by a car suddenly shifting into reverse as it and other drivers speed down the NJ Turnpike during rush hour.
+<br />
+<br />Many programmers like me can and have argued that our business applications pose no threat to human life.  But does this mean we can set quality levels for our work to a lower standard?  Does it mean we can intentionally deploy poorly written applications?  I say absolutely not!  Software developers must start accepting the responsibility of writing high quality code and they should be held accountable for any code not adhering to a high standard of quality.</p>
 
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">24</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
 
-        <div class="post-content right-col">
-        <h2><a href="/2004/06/24/it-came-from-inside/" rel="bookmark" title="It Came from Inside">It Came from Inside</a></h2>
 
-        <p>Over the last month a lot of my time has been spent focusing on security as I design a security framework and strategy for a customer.  One comment I hear often is “we don’t need to worry about internal security threats” or “internal security threats are minor and represent a low priority”.  I couldn’t disagree more and have been repeatedly emphasizing the importance of protecting ones assets from internal attacks, which for some companies is a greater threat.
+    <p><a href="/2004/06/29/why-software-quality-matters/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on June 29, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/06/25/explicit-interface-implementation-in-c/">Explicit Interface Implementation in C#</a>
+    </h2>
+    
+    <p>I was a grumbling VB developer for a number of years.  At the time Delphi was my language of choice but in the part of the country I lived customer work using it was almost non-existent.  In the summer of 2000 at PDC, a friend of mine from Microsoft showed me the .NET Framework and C#.  I was instantly drawn to C# because it reminded me of Delphi, which is no surprise for those who know their <a href="http://c2.com/cgi/wiki?HistoryOfCsharp">C#/Delphi history</a>.</p>
+
+
+
+    <p><a href="/2004/06/25/explicit-interface-implementation-in-c/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on June 25, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/06/24/it-came-from-inside/">It Came from Inside</a>
+    </h2>
+    
+    <p>Over the last month a lot of my time has been spent focusing on security as I design a security framework and strategy for a customer.  One comment I hear often is “we don’t need to worry about internal security threats” or “internal security threats are minor and represent a low priority”.  I couldn’t disagree more and have been repeatedly emphasizing the importance of protecting ones assets from internal attacks, which for some companies is a greater threat.
 <br />
 <br />Yesterday’s <a href="http://www.eweek.com/article2/0,1759,1616668,00.asp?kc=ewnws062404dtx1k0000599">report</a> of an AOL software engineer being arrested for stealing 92 million customer screen names proves my point.  Some people will do crazy things when offered enough money.  And companies that believe “it won’t happen here” or “our employees would never do such a thing” are fooling themselves.  Why risk it?  Invest in reducing security threats, both external and internal.</p>
 
 
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
 
-        </div>
-    </div>
-    <!--- Post Ends -->
+    <p><a href="/2004/06/24/it-came-from-inside/">Continue reading &rarr;</a></p>
 
+    <p class="post-meta">Posted by Kirby Turner on June 24, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
     
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">24</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/06/24/another-microsoft-patent/" rel="bookmark" title="Another Microsoft Patent">Another Microsoft Patent</a></h2>
-
-        <p>I thought Microsoft’s <a href="?xml/2004_06_01_archive.xml#108695677194415311">patent</a> on //TODO was silly but Microsoft’s <a href="http://zdnet.com.com/2100-1104-5244766.html">patent</a> for using human skin as a power conduit tops it.  Actually this patent sounds interesting.  I can see how wearable devices can benefit from a personal area network.</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">19</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/06/19/nyc-visitors-are-coming/" rel="bookmark" title="NYC Visitors are Coming">NYC Visitors are Coming</a></h2>
-
-        <p>My friend Phil was in town this week which means one thing.  Time for <a href="http://www.benzonaband.com/">BenZona</a> to rock <a href="http://www.lunalounge.com/">Luna Lounge</a>.  They had a great gig last night and it was good to see Phil, Keith and others again.  We also stuck around to hear San Francisco based <a href="http://www.candyfromstrangers.com/">Candy From Strangers</a> who I definitely got into.</p>
-
-<p>Speaking of NYC visitors, my mom, brother Andy, and his son (my nephew) Lucas will be arriving in New York within a few hours.  It will be Andy and Lucas’s first time to the Big Apple.  We have the next few days planned out to wear them out.  From Central Park to Time Square to Coney Island to a Staten Island Yankees game, Melanie and I will definitely keep the family busy.</p>
-
-<p>And the fun doesn’t stop there.  My good friend John from Cleveland by way of St. Louis will be in town too.  Of course we will be meeting up for a drink or two.  A week of catching up with friends and family.  What could be better?</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">17</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/06/17/unit-testing-and-vs-net-2005/" rel="bookmark" title="Unit testing and VS.NET 2005">Unit testing and VS.NET 2005</a></h2>
-
-        <p>I <a href="http://www.peterprovost.org/archive/2004/06/12/1379.aspx">agree</a> with Scott.  Unit Testing support should be included with all versions of Visual Studio 2005 and not just with Team System.  However, I am not sure I agree with the unit testing support using a new framework developed by Microsoft.  <a href="http://www.nunit.org/">NUnit</a> is here today and works with all released versions of the .NET Framework.  And I am sure support for version 2 of the .NET Framework will be included in NUnit once Microsoft has released it.<br /><br />I doubt many of my customers will be ready to move to VS.NET 2005 and the .NET Framework 2.0 when it is released, but I will still be developing solutions for them.  And I will continue to provide unit tests for custom written production code.  So while I agree that all versions of Visual Studio.NET 2005 should include support for unit testing, I would like to see stronger support for NUnit and not some new testing framework.  This will help ease the migration to the new tool and framework.<br /><br /><br /></p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">17</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/06/17/firefox-extensions/" rel="bookmark" title="Firefox Extensions">Firefox Extensions</a></h2>
-
-        <p>For those new to Firefox, be sure to check out the list of <a href="http://texturizer.net/firefox/extensions/">extensions</a>.  They’re easy to install and there are many helpful extensions that will improve your browsing experience.  As a matter of fact, I’m using the BlogThis! extension right now to post this entry.</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">17</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/06/17/firefox-0-9-available-for-download/" rel="bookmark" title="Firefox 0.9 Available for Download">Firefox 0.9 Available for Download</a></h2>
-
-        <p>While nothing really new, other than security updates has happened to IE in quite some time, Mozilla has continued work on its next generation web browser called Firefox.  <a href="http://www.mozilla.org/products/firefox/">Firefox 0.9</a> is available for download and I feel it is a worth while download.<br /><br />I have been running Firefox as my default browser for the last 24 hours.  I really like tab browsing and how Firefox blocks pop-up windows.  It works fine for almost all sites I visit including a Microsoft SharePoint Window Services 2.0 site that I use daily.  I don’t get the drop down command list on SharePoint documents like I would in IE but I’m still able to do everything I need with a document through the document design page.<br /><br />My only complaint to date is when I attempt to open a link in a new window from SharpReader, the RSS aggregator I use.  For some reason the web page is displayed in both a Firefox window and an IE window.  I doubt this is the fault of SharpReader and is more the fault of the IE component used within SharpReader.  In other words, I think the IE component is launching the additional IE window when Firefox is set as my default browser.<br /><br />Aside from that one problem, I enjoy browsing with Firefox based on my 24 hour experience and will probably keep it as my default browser for a while.<br /><br /><br /></p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">16</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/06/16/visual-sourcesafe-gets-a-much-needed-upgrade/" rel="bookmark" title="Visual SourceSafe Gets a Much Needed Upgrade">Visual SourceSafe Gets a Much Needed Upgrade</a></h2>
-
-        <p>Microsoft has published the latest <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnvsent/html/vssmap.asp">Visual SourceSafe Roadmap</a>, which outlines where VSS is heading with the release of Visual SourceSafe 2005.  The new version will still be geared towards individual developers and small teams, i.e., teams with less than 5 developers but it will finally include remote access.  I’m glad to see VSS is finally getting a much needed upgrade but I doubt the new release will convince me to switch back from <a href="http://www.cvshome.org/">CVS</a>.<br /><br /><br /></p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">16</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/06/16/uddi/" rel="bookmark" title="UDDI">UDDI</a></h2>
-
-        <p>A friend pointed me to <a href="http://www.bindingpoint.net/">BindingPoint</a>, which is an XML web services directory.  I did a quick search on <a href="http://www.bindingpoint.net/services.aspx?tag=srch&amp;val=snow+report&amp;x=0&amp;y=0">“snow report”</a> and found my snow report web service.  I checked out the service description that I setup in UDDI over a year ago and ran the quick test from BindingPoint.  It brought back memories of my <a href="http://www.uddi.org/">UDDI</a> and Web services work I did last year.  And I still think UDDI rocks!<br /><br /><br /></p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">16</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/06/16/new-airport-express-is-there-anything-it-cant-do/" rel="bookmark" title="New AirPort Express: Is there anything it can't do?">New AirPort Express: Is there anything it can't do?</a></h2>
-
-        <p>Apple’s new <a href="http://www.apple.com/airportexpress/">AirPort Express</a> sounds simply amazing.  It can act as a wireless bridge, provides wireless access to USB printers, and play music broadcasted wirelessly from your computer.  The device fits in the palm of your hand and it has a built-in AC adaptor meaning no cables or power supply.  This little puppy will be great to take on the road too.  You can connect it to the hotel’s ethernet and access the Internet wirelessly.  Or use it at the home of friends and family who have broadband Internet access but no wireless access point.  I might have to buy one once Apple starts shipping it.<br /><br /><br /></p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-
-
-
-<div class="more_posts">
-	<h2>
-        
-        <a href="/page52" >&laquo; Older Entries</a> &nbsp;
-        
-        
-            
-                <a href="/page50" >Recent Entries &raquo;</a>
-            
-        
+    <h2 class="post-title">
+        <a href="/2004/06/24/another-microsoft-patent/">Another Microsoft Patent</a>
     </h2>
+    
+    <p>I thought Microsoft’s <a href="?xml/2004_06_01_archive.xml#108695677194415311">patent</a> on //TODO was silly but Microsoft’s <a href="http://zdnet.com.com/2100-1104-5244766.html">patent</a> for using human skin as a power conduit tops it.  Actually this patent sounds interesting.  I can see how wearable devices can benefit from a personal area network.</p>
+
+
+
+    <p><a href="/2004/06/24/another-microsoft-patent/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on June 24, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
 </div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/06/19/nyc-visitors-are-coming/">NYC Visitors are Coming</a>
+    </h2>
+    
+    <p>My friend Phil was in town this week which means one thing.  Time for <a href="http://www.benzonaband.com/">BenZona</a> to rock <a href="http://www.lunalounge.com/">Luna Lounge</a>.  They had a great gig last night and it was good to see Phil, Keith and others again.  We also stuck around to hear San Francisco based <a href="http://www.candyfromstrangers.com/">Candy From Strangers</a> who I definitely got into.</p>
+
+
+
+    <p><a href="/2004/06/19/nyc-visitors-are-coming/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on June 19, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/06/17/unit-testing-and-vs-net-2005/">Unit testing and VS.NET 2005</a>
+    </h2>
+    
+    <p>I <a href="http://www.peterprovost.org/archive/2004/06/12/1379.aspx">agree</a> with Scott.  Unit Testing support should be included with all versions of Visual Studio 2005 and not just with Team System.  However, I am not sure I agree with the unit testing support using a new framework developed by Microsoft.  <a href="http://www.nunit.org/">NUnit</a> is here today and works with all released versions of the .NET Framework.  And I am sure support for version 2 of the .NET Framework will be included in NUnit once Microsoft has released it.<br /><br />I doubt many of my customers will be ready to move to VS.NET 2005 and the .NET Framework 2.0 when it is released, but I will still be developing solutions for them.  And I will continue to provide unit tests for custom written production code.  So while I agree that all versions of Visual Studio.NET 2005 should include support for unit testing, I would like to see stronger support for NUnit and not some new testing framework.  This will help ease the migration to the new tool and framework.<br /><br /><br /></p>
+
+
+
+    <p><a href="/2004/06/17/unit-testing-and-vs-net-2005/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on June 17, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/06/17/firefox-extensions/">Firefox Extensions</a>
+    </h2>
+    
+    <p>For those new to Firefox, be sure to check out the list of <a href="http://texturizer.net/firefox/extensions/">extensions</a>.  They’re easy to install and there are many helpful extensions that will improve your browsing experience.  As a matter of fact, I’m using the BlogThis! extension right now to post this entry.</p>
+
+
+
+    <p><a href="/2004/06/17/firefox-extensions/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on June 17, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/06/17/firefox-0-9-available-for-download/">Firefox 0.9 Available for Download</a>
+    </h2>
+    
+    <p>While nothing really new, other than security updates has happened to IE in quite some time, Mozilla has continued work on its next generation web browser called Firefox.  <a href="http://www.mozilla.org/products/firefox/">Firefox 0.9</a> is available for download and I feel it is a worth while download.<br /><br />I have been running Firefox as my default browser for the last 24 hours.  I really like tab browsing and how Firefox blocks pop-up windows.  It works fine for almost all sites I visit including a Microsoft SharePoint Window Services 2.0 site that I use daily.  I don’t get the drop down command list on SharePoint documents like I would in IE but I’m still able to do everything I need with a document through the document design page.<br /><br />My only complaint to date is when I attempt to open a link in a new window from SharpReader, the RSS aggregator I use.  For some reason the web page is displayed in both a Firefox window and an IE window.  I doubt this is the fault of SharpReader and is more the fault of the IE component used within SharpReader.  In other words, I think the IE component is launching the additional IE window when Firefox is set as my default browser.<br /><br />Aside from that one problem, I enjoy browsing with Firefox based on my 24 hour experience and will probably keep it as my default browser for a while.<br /><br /><br /></p>
+
+
+
+    <p><a href="/2004/06/17/firefox-0-9-available-for-download/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on June 17, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/06/16/visual-sourcesafe-gets-a-much-needed-upgrade/">Visual SourceSafe Gets a Much Needed Upgrade</a>
+    </h2>
+    
+    <p>Microsoft has published the latest <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnvsent/html/vssmap.asp">Visual SourceSafe Roadmap</a>, which outlines where VSS is heading with the release of Visual SourceSafe 2005.  The new version will still be geared towards individual developers and small teams, i.e., teams with less than 5 developers but it will finally include remote access.  I’m glad to see VSS is finally getting a much needed upgrade but I doubt the new release will convince me to switch back from <a href="http://www.cvshome.org/">CVS</a>.<br /><br /><br /></p>
+
+
+
+    <p><a href="/2004/06/16/visual-sourcesafe-gets-a-much-needed-upgrade/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on June 16, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/06/16/uddi/">UDDI</a>
+    </h2>
+    
+    <p>A friend pointed me to <a href="http://www.bindingpoint.net/">BindingPoint</a>, which is an XML web services directory.  I did a quick search on <a href="http://www.bindingpoint.net/services.aspx?tag=srch&amp;val=snow+report&amp;x=0&amp;y=0">“snow report”</a> and found my snow report web service.  I checked out the service description that I setup in UDDI over a year ago and ran the quick test from BindingPoint.  It brought back memories of my <a href="http://www.uddi.org/">UDDI</a> and Web services work I did last year.  And I still think UDDI rocks!<br /><br /><br /></p>
+
+
+
+    <p><a href="/2004/06/16/uddi/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on June 16, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+
+<!-- Pager -->
+
+<ul class="pager">
+    
+    <li class="previous">
+        <a href="/page50">&larr; Newer Posts</a>
+    </li>
+    
+    
+    <li class="next">
+        <a href="/page52">Older Posts &rarr;</a>
+    </li>
+    
+</ul>
 
 
 		</div>
+	</div>
+</div>
 
-				<!--- Sidebar Starts -->
+<p>&nbsp;</p>
 
-		<div id="sidebar" class="right-col">
 
-			<div id="search">
-                <form action="http://google.com/search" method="get">
-                    <div>
-          					<input type="text" class="search_box" name="as_q" id="q" results="0" />
-                    <input type="hidden" name="as_sitesearch" value="thecave.com" />
-          					<input type="image" src="/styles/typebased/images/search.gif" class="submit" name="submit" />
-                    </div>
-                </form>
-			</div>
-
-			<div id="sidebar_in">
-
-			<div id="lastfm-1" class="block widget widget_lastfm">
-    <h2><a href="http://last.fm/user/kirbyt" class="lastfm_title_link">Listening To</a></h2>
-    <div class="lastfm">
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-lg-offset-1 col-xs-12">
+                <h3>Recent Articles</h3>
+                <ul>
+                
+                <li><a href="/2015/02/16/new-site-theme/" title="New Site Theme">New Site Theme</a></li>
+                
+                <li><a href="/2015/02/13/bad-case-of-buyers-remorse/" title="Bad Case Of Buyer's Remorse">Bad Case Of Buyer's Remorse</a></li>
+                
+                <li><a href="/2015/02/06/consider-the-environmental-cost/" title="Consider The Environmental Cost">Consider The Environmental Cost</a></li>
+                
+                <li><a href="/2015/02/04/hey-local-retail-stores-update-your-website/" title="Hey Local Retail Stores, Update Your Website">Hey Local Retail Stores, Update Your Website</a></li>
+                
+                <li><a href="/2015/01/27/finally/" title="Finally...">Finally...</a></li>
+                
+                </ul>                
+            </div>
+            <div class="col-lg-5 col-lg-offset-1 col-xs-12">
+                <h3>Other Sites</h3>
+                <ul>
+                    <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
+                    <li><a href="http://photos.thecave.com/">And More Photos</a></li>
+                    <li><a href="http://www.rowanturner.net/">Rowan Turner</a></li>
+                    <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
+                    <li><a href="http://www.whitepeaksoftware.com/">White Peak Software</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br />
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://alpha.app.net/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-adn fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://twitter.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="https://github.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="http://www.linkedin.com/in/kirbyt/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2015</p>
+            </div>
+        </div>
     </div>
-</div>
+</footer>
 
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
 
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
 
-        <div id="linkcat-2" class="block widget widget_links"><h2>Blogroll</h2>
-            <ul class='xoxo blogroll'>
-            <li><a href="http://www.rowanturner.net/">Rowan T</a></li>
-            <li><a href="http://photos.thecave.com/">Photos</a></li>
-            <li><a href="http://www.learnipadprogramming.com/">Learning iPad Programming</a></li>
-            <li><a href="http://blog.whitepeaksoftware.com/">White Peak Software</a></li>
-            </ul>
-        </div>
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
 
-		<div id="linkcat-3" class="block widget widget_links"><h2>Categories</h2>
-    <ul>
-        <li class='category'><a href='/category/apps/'>apps (5)</a></li>
-<li class='category'><a href='/category/backpack/'>backpack (1)</a></li>
-<li class='category'><a href='/category/backpacking/'>backpacking (8)</a></li>
-<li class='category'><a href='/category/blogger/'>blogger (785)</a></li>
-<li class='category'><a href='/category/camping/'>camping (11)</a></li>
-<li class='category'><a href='/category/cross%20post/'>cross post (5)</a></li>
-<li class='category'><a href='/category/family/'>family (5)</a></li>
-<li class='category'><a href='/category/fitness/'>fitness (3)</a></li>
-<li class='category'><a href='/category/general/'>general (25)</a></li>
-<li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
-<li class='category'><a href='/category/humor/'>humor (1)</a></li>
-<li class='category'><a href='/category/ios/'>ios (11)</a></li>
-<li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
-<li class='category'><a href='/category/life/'>life (4)</a></li>
-<li class='category'><a href='/category/long%20trail/'>long-trail (2)</a></li>
-<li class='category'><a href='/category/moving/'>moving (1)</a></li>
-<li class='category'><a href='/category/opinion/'>opinion (2)</a></li>
-<li class='category'><a href='/category/pictures/'>pictures (8)</a></li>
-<li class='category'><a href='/category/programming/'>programming (8)</a></li>
-<li class='category'><a href='/category/random/'>random (5)</a></li>
-<li class='category'><a href='/category/rant/'>rant (4)</a></li>
-<li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
-<li class='category'><a href='/category/salem/'>salem (1)</a></li>
-<li class='category'><a href='/category/skiing/'>skiing (5)</a></li>
-<li class='category'><a href='/category/snowboarding/'>snowboarding (11)</a></li>
-<li class='category'><a href='/category/social/'>social (4)</a></li>
-<li class='category'><a href='/category/stowe/'>stowe (5)</a></li>
-<li class='category'><a href='/category/tech/'>tech (4)</a></li>
-<li class='category'><a href='/category/travel/'>travel (3)</a></li>
-<li class='category'><a href='/category/trips/'>trips (5)</a></li>
-<li class='category'><a href='/category/videos/'>videos (2)</a></li>
-<li class='category'><a href='/category/work/'>work (5)</a></li>
-<li class='category'><a href='/category/writing/'>writing (2)</a></li>
-
-    </ul>
-</div>
-
-        <div id="archives-3" class="block widget widget_archive"><h2>Archives</h2>
-        <ul class='archives'>
-        <li><a href="/blog/archives">The Complete Blog Archives</a></li>
-        </ul>
-        </div>
-
-
-			</div>
-
-		</div>
-
-		<!--- Sidebar Ends -->
-	</div>
-
-</div>
-
-<div id="footer" class="wrap">
-
-	<div class="left-col">
-		<div class="popular wrap">
-			<h2>Recent Articles</h2>
-			<ul>
-                
-                  <li><a href="/2015/02/13/bad-case-of-buyers-remorse/" title="Bad Case Of Buyer's Remorse">Bad Case Of Buyer's Remorse</a></li>
-                
-                  <li><a href="/2015/02/06/consider-the-environmental-cost/" title="Consider The Environmental Cost">Consider The Environmental Cost</a></li>
-                
-                  <li><a href="/2015/02/04/hey-local-retail-stores-update-your-website/" title="Hey Local Retail Stores, Update Your Website">Hey Local Retail Stores, Update Your Website</a></li>
-                
-                  <li><a href="/2015/01/27/finally/" title="Finally...">Finally...</a></li>
-                
-                  <li><a href="/2015/01/18/eliminating-distractions/" title="Eliminating Distractions">Eliminating Distractions</a></li>
-                
-            </ul>
-		</div>
-	</div>
-
-	<div id="subscribe" class="right-col">
-		<h2>Subscribe to RSS</h2>
-		<p class="rss">If you enjoyed the post, make sure you subscribe to the RSS feed.</p>
-		<p>
-		<a href="/atom.xml">Articles</a><br />
-		</p>
-	</div>
-
-<div id="copyright" class="wrap">
-
-	<div class="left-col">
-		<p>&copy; 2015</p>
-	</div>
-
-	<div class="right-col">
-		<p>Design by <a href="http://woothemes.com"><img src="/styles/typebased/styles/grey/logo-footer.jpg" width="87" height="21" alt="woo themes" /></a></p>
-	</div>
-
-</div>
-
-</div>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-167605-3']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 
 </body>
+
 </html>
-<!-- Localized -->

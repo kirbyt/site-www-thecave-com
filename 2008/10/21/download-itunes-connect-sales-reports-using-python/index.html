@@ -1,234 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 
-<title>Download iTunes Connect Sales Reports Using Python | thecave</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="robots" content="index, follow" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ramblings From A Crotchety Old Man">
 
-<link rel="stylesheet" type="text/css" href="/styles/typebased/style.css" />
-<link rel="alternate" type="application/atom+xml" title="thecave | Ramblings From A Crotchety Old Man" href="http://www.thecave.com/atom.xml" />
+    <title>Download iTunes Connect Sales Reports Using Python - thecave</title>
 
-<!--[if IE 6]>
-<script type="text/javascript" src="/styles/typebased/includes/js/menu.js"></script>
-<![endif]-->
+    <link rel="canonical" href="http://www.thecave.com/2008/10/21/download-itunes-connect-sales-reports-using-python/">
+    <link rel="alternate" type="application/atom+xml" title="thecave's Feed" href="http://www.thecave.com/feed.xml" />
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
-<script type='text/javascript' src='/styles/typebased/includes/js/superfish.js?ver=3.3.2'></script>
-<script type="text/javascript" src="/js/lastfm.js"></script>
 
-<!-- Alt Stylesheet -->
-<link href="/styles/typebased/styles/grey.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 
-<!-- Woo Shortcodes CSS -->
-<link href="/styles/typebased/functions/css/shortcodes.css" rel="stylesheet" type="text/css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/clean-blog.css">
 
-<!-- Custom Stylesheet -->
-<link href="/styles/typebased/custom.css" rel="stylesheet" type="text/css" />
-<meta id="syntaxhighlighteranchor" name="syntaxhighlighter-version" content="3.1.3" />
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
 
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- YouTube CSS -->
+    <link rel="stylesheet" href="/css/video.css">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
-<body class="home blog unknown">
 
-<div id="container">
+<body>
 
-	<div id="header">
-		<h1>
-			<a href="/" title="Ramblings from a crotchety old man.">
-			<img src="/images/thecave-logo-2.png" style="margin-top:0px;" alt="thecave" /></a></h1>
-	</div>
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">thecave</a>
+        </div>
 
-	
-	<div id="menu">
-				<ul id="navigation" class="nav wrap">
-										<li class="page_item current_page_item first"><a href="/"><span>Home</span></a></li>
-										<li class="page_item last"><a href="/about.html"><span>About</span></a></li>
-										</ul>
-			</div>
-	<div class="wrap background">
-
-		<div id="content" class="left-col wrap">
-            <!--- Post Starts -->
-<div class="post wrap page">
-
-    <div class="post-meta left-col">
-    <h3 class="wrap"><span class="month">Oct<span class="year">2008</span></span><span class="day">21</span></h3>
-    <h4 class="author">kirbyt</h4>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                
+                <li>
+                    <a href="/about.html">About</a>
+                </li>
+                
+                <li>
+                    <a href="/archive.html">Archive</a>
+                </li>
+                
+                <li>
+                    <a href="/categories.html">Categories</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
     </div>
+    <!-- /.container -->
+</nav>
 
-    <div class="post-content right-col">
-    <h2><a href="/2008/10/21/download-itunes-connect-sales-reports-using-python/" rel="bookmark" title="Download iTunes Connect Sales Reports Using Python">Download iTunes Connect Sales Reports Using Python</a></h2>
 
-    <p>Apple publishes daily sales figures on their iTunes Connect website for software vendors who have applications for sale in the iPhone App Store.  I’ve been making a point to download the daily file each morning but I know I cannot continue doing this manually.  What I need is an automated way to download the daily file.<br /><br />I searched the net for script code that will download the iTunes Connect daily sales report but I came up empty.  So I decided to write my own.<br /><br />I’ve been interested in getting into Python programming and I thought what better way to learn Python programming than to write a script that will download the daily sales report from the iTunes Connect website.  It turned out to be a fairly easy task to complete using Python.  Guess it goes to show how powerful Python really is.<br /><br />So here is my very first Python script.  I’m sure there are things I could do better in the script, but hey, it’s my first script.  Enjoy.<br /><br /><span style="color:red">UPDATE:</span> The original code had a problem with retaining cookies set by the iTunes Connect website. The code below has been updated with the correct, working code.<br /><br /><span style="color:red">UPDATE 2:</span> The Python script below is now hosted over at Google.  Just click <a href="http://code.google.com/p/appdailysales/source/browse/trunk/appdailysales.py">here</a> or visit <a href="http://code.google.com/p/appdailysales/">http://code.google.com/p/appdailysales/</a> for the latest information and version.<br /><br />&lt;pre&gt;<br />#!/usr/bin/python<br />#<br /># appdailysales.py<br />#<br /># iTune Connect Daily Sales Reports Downloader<br /># Copyright 2008 Kirby Turner<br />#<br />#<br /># This script will download yesterday’s daily sales report from<br /># the iTunes Connect web site.  The downloaded file is stored<br /># in the same directory containing the script file.  Note: if<br /># the download file already exists then it will be overwritten.<br />#<br /># The iTunes Connect web site has dynamic urls and form field<br /># names.  In other words, these values change from session to<br /># session.  So to get to the download file we must navigate  <br /># the site and webscrape the pages.  Joy, joy.<br />#<br />#<br /># Permission is hereby granted, free of charge, to any person obtaining a copy<br /># of this software and associated documentation files (the “Software”), to deal<br /># in the Software without restriction, including without limitation the rights<br /># to use, copy, modify, merge, publish, distribute, sublicense, and/or sell<br /># copies of the Software, and to permit persons to whom the Software is<br /># furnished to do so, subject to the following conditions:<br /># <br /># The above copyright notice and this permission notice shall be included in<br /># all copies or substantial portions of the Software.<br /># <br /># THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR<br /># IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,<br /># FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE<br /># AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER<br /># LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,<br /># OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN<br /># THE SOFTWARE.<br /><br /><br /># – Change the following to match your credentials –<br />appleId = ‘Your Apple Id’<br />password = ‘Your Password’<br /># —————————————————-<br /><br /><br />import urllib<br />import urllib2<br />import cookielib<br />import datetime<br />import re<br /><br />urlWebsite = ‘https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa’<br />urlActionLogin = ‘https://itunesconnect.apple.com%s’<br />urlActionSalesReport = ‘https://itunesconnect.apple.com%s’<br /><br />print ‘– begin script –‘<br /><br /># There is an issue with Python 2.5 where it assumes the ‘version’<br /># cookie value is always interger.  However, itunesconnect.apple.com<br /># returns this value as a string, i.e., “1” instead of 1.  Because<br /># of this we need a workaround that “fixes” the version field.<br />#<br /># More information at: http://bugs.python.org/issue3924<br />class MyCookieJar(cookielib.CookieJar):<br /> def _cookie_from_cookie_tuple(self, tup, request):<br />  name, value, standard, rest = tup<br />  version = standard.get(‘version’, None)<br />  if version is not None:<br />   version = version.replace(‘”’, ‘’)<br />   standard[“version”] = version<br />  return cookielib.CookieJar._cookie_from_cookie_tuple(self, tup, request)<br /><br /><br />def showCookies(cj):<br /> for index, cookie in enumerate(cj):<br />  print index, ‘ : ‘, cookie<br /> <br /><br />cj = MyCookieJar();<br />opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))<br /><br /><br /><br /># Go to the iTunes Connect website and retrieve the<br /># form action for logging into the site.<br />urlHandle = opener.open(urlWebsite)<br />html = urlHandle.read()<br />match = re.search(‘action=”(.<em>)”’, html)<br />urlActionLogin = urlActionLogin % match.group(1)<br /><br /><br /># Login to iTunes Connect web site and retrieve the<br /># link to the sales report page.<br />webFormLoginData = urllib.urlencode({‘theAccountName’:appleId, ‘theAccountPW’:password})<br />urlHandle = opener.open(urlActionLogin, webFormLoginData)<br />html = urlHandle.read()<br />match = re.search(‘href=”(/WebObjects/iTunesConnect.woa/wo/.</em>)”&gt;<img /><br />urlActionSalesReport = urlActionSalesReport % match.group(1)<br /><br /><br /># Go to the sales report page, get the form action url and<br /># form fields.  Note the sales report page will actually<br /># load a blank page that redirects to the static URL. Best<br /># guess here is that the server is setting some session<br /># variables or something.<br />urlHandle = opener.open(urlActionSalesReport)<br />urlHandle = opener.open(‘https://itts.apple.com/cgi-bin/WebObjects/Piano.woa’)<br />html = urlHandle.read()<br />match = re.findall(‘action=”(.<em>)”’, html)<br />urlDownload = “https://itts.apple.com%s” % match[1]<br /><br /><br /># Get the form field names needed to download the report.<br />match = re.findall(‘name=”(.</em>?)”’, html)<br />fieldNameReportType = match[3]<br />fieldNameReportPeriod = match[4]<br />fieldNameDayOrWeekSelection = match[6]<br />fieldNameSubmitTypeName = match[7]<br /><br /><br /># Ah…more fun.  We need to post the page with the form<br /># fields collected so far.  This will give us the remaining<br /># form fields needed to get the download file.<br />webFormSalesReportData = urllib.urlencode({fieldNameReportType:’Summary’, fieldNameReportPeriod:’Daily’, fieldNameDayOrWeekSelection:’Daily’, fieldNameSubmitTypeName:’ShowDropDown’})<br />urlHandle = opener.open(urlDownload, webFormSalesReportData)<br />html = urlHandle.read()<br />match = re.findall(‘action=”(.<em>)”’, html)<br />urlDownload = “https://itts.apple.com%s” % match[1]<br />match = re.findall(‘name=”(.</em>?)”’, html)<br />fieldNameDayOrWeekDropdown = match[5]<br /><br /><br /># Set report date to yesterday’s date.  This will be the most<br /># recent daily report available.  Another option would be to<br /># webscrape the dropdown list of available report dates and<br /># select the first item but setting the date to yesterday’s<br /># date is easier.<br />today = datetime.date.today() - datetime.timedelta(1)<br />reportDate = ‘%i/%i/%i’ % (today.month, today.day, today.year)<br /><br /><br /># And finally…we’re ready to download yesterday’s sales report.<br />webFormSalesReportData = urllib.urlencode({fieldNameReportType:’Summary’, fieldNameReportPeriod:’Daily’, fieldNameDayOrWeekDropdown:reportDate, fieldNameDayOrWeekSelection:’Daily’, fieldNameSubmitTypeName:’Download’})<br />urlHandle = opener.open(urlDownload, webFormSalesReportData)<br />filename = urlHandle.info().getheader(‘content-disposition’).split(‘=’)[1]<br />filebuffer = urlHandle.read()<br />urlHandle.close()<br /><br /><br />print ‘ saving download file:’, filename<br />d
+    <!-- Post Header -->
+<header class="intro-header" style="background-image: url('/img/bg-01.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Download iTunes Connect Sales Reports Using Python</h1>
+                    
+                    <span class="meta">Posted by Kirby Turner on October 21, 2008</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+				<p>Apple publishes daily sales figures on their iTunes Connect website for software vendors who have applications for sale in the iPhone App Store.  I’ve been making a point to download the daily file each morning but I know I cannot continue doing this manually.  What I need is an automated way to download the daily file.<br /><br />I searched the net for script code that will download the iTunes Connect daily sales report but I came up empty.  So I decided to write my own.<br /><br />I’ve been interested in getting into Python programming and I thought what better way to learn Python programming than to write a script that will download the daily sales report from the iTunes Connect website.  It turned out to be a fairly easy task to complete using Python.  Guess it goes to show how powerful Python really is.<br /><br />So here is my very first Python script.  I’m sure there are things I could do better in the script, but hey, it’s my first script.  Enjoy.<br /><br /><span style="color:red">UPDATE:</span> The original code had a problem with retaining cookies set by the iTunes Connect website. The code below has been updated with the correct, working code.<br /><br /><span style="color:red">UPDATE 2:</span> The Python script below is now hosted over at Google.  Just click <a href="http://code.google.com/p/appdailysales/source/browse/trunk/appdailysales.py">here</a> or visit <a href="http://code.google.com/p/appdailysales/">http://code.google.com/p/appdailysales/</a> for the latest information and version.<br /><br />&lt;pre&gt;<br />#!/usr/bin/python<br />#<br /># appdailysales.py<br />#<br /># iTune Connect Daily Sales Reports Downloader<br /># Copyright 2008 Kirby Turner<br />#<br />#<br /># This script will download yesterday’s daily sales report from<br /># the iTunes Connect web site.  The downloaded file is stored<br /># in the same directory containing the script file.  Note: if<br /># the download file already exists then it will be overwritten.<br />#<br /># The iTunes Connect web site has dynamic urls and form field<br /># names.  In other words, these values change from session to<br /># session.  So to get to the download file we must navigate  <br /># the site and webscrape the pages.  Joy, joy.<br />#<br />#<br /># Permission is hereby granted, free of charge, to any person obtaining a copy<br /># of this software and associated documentation files (the “Software”), to deal<br /># in the Software without restriction, including without limitation the rights<br /># to use, copy, modify, merge, publish, distribute, sublicense, and/or sell<br /># copies of the Software, and to permit persons to whom the Software is<br /># furnished to do so, subject to the following conditions:<br /># <br /># The above copyright notice and this permission notice shall be included in<br /># all copies or substantial portions of the Software.<br /># <br /># THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR<br /># IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,<br /># FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE<br /># AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER<br /># LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,<br /># OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN<br /># THE SOFTWARE.<br /><br /><br /># – Change the following to match your credentials –<br />appleId = ‘Your Apple Id’<br />password = ‘Your Password’<br /># —————————————————-<br /><br /><br />import urllib<br />import urllib2<br />import cookielib<br />import datetime<br />import re<br /><br />urlWebsite = ‘https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa’<br />urlActionLogin = ‘https://itunesconnect.apple.com%s’<br />urlActionSalesReport = ‘https://itunesconnect.apple.com%s’<br /><br />print ‘– begin script –‘<br /><br /># There is an issue with Python 2.5 where it assumes the ‘version’<br /># cookie value is always interger.  However, itunesconnect.apple.com<br /># returns this value as a string, i.e., “1” instead of 1.  Because<br /># of this we need a workaround that “fixes” the version field.<br />#<br /># More information at: http://bugs.python.org/issue3924<br />class MyCookieJar(cookielib.CookieJar):<br /> def _cookie_from_cookie_tuple(self, tup, request):<br />  name, value, standard, rest = tup<br />  version = standard.get(‘version’, None)<br />  if version is not None:<br />   version = version.replace(‘”’, ‘’)<br />   standard[“version”] = version<br />  return cookielib.CookieJar._cookie_from_cookie_tuple(self, tup, request)<br /><br /><br />def showCookies(cj):<br /> for index, cookie in enumerate(cj):<br />  print index, ‘ : ‘, cookie<br /> <br /><br />cj = MyCookieJar();<br />opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))<br /><br /><br /><br /># Go to the iTunes Connect website and retrieve the<br /># form action for logging into the site.<br />urlHandle = opener.open(urlWebsite)<br />html = urlHandle.read()<br />match = re.search(‘action=”(.<em>)”’, html)<br />urlActionLogin = urlActionLogin % match.group(1)<br /><br /><br /># Login to iTunes Connect web site and retrieve the<br /># link to the sales report page.<br />webFormLoginData = urllib.urlencode({‘theAccountName’:appleId, ‘theAccountPW’:password})<br />urlHandle = opener.open(urlActionLogin, webFormLoginData)<br />html = urlHandle.read()<br />match = re.search(‘href=”(/WebObjects/iTunesConnect.woa/wo/.</em>)”&gt;<img /><br />urlActionSalesReport = urlActionSalesReport % match.group(1)<br /><br /><br /># Go to the sales report page, get the form action url and<br /># form fields.  Note the sales report page will actually<br /># load a blank page that redirects to the static URL. Best<br /># guess here is that the server is setting some session<br /># variables or something.<br />urlHandle = opener.open(urlActionSalesReport)<br />urlHandle = opener.open(‘https://itts.apple.com/cgi-bin/WebObjects/Piano.woa’)<br />html = urlHandle.read()<br />match = re.findall(‘action=”(.<em>)”’, html)<br />urlDownload = “https://itts.apple.com%s” % match[1]<br /><br /><br /># Get the form field names needed to download the report.<br />match = re.findall(‘name=”(.</em>?)”’, html)<br />fieldNameReportType = match[3]<br />fieldNameReportPeriod = match[4]<br />fieldNameDayOrWeekSelection = match[6]<br />fieldNameSubmitTypeName = match[7]<br /><br /><br /># Ah…more fun.  We need to post the page with the form<br /># fields collected so far.  This will give us the remaining<br /># form fields needed to get the download file.<br />webFormSalesReportData = urllib.urlencode({fieldNameReportType:’Summary’, fieldNameReportPeriod:’Daily’, fieldNameDayOrWeekSelection:’Daily’, fieldNameSubmitTypeName:’ShowDropDown’})<br />urlHandle = opener.open(urlDownload, webFormSalesReportData)<br />html = urlHandle.read()<br />match = re.findall(‘action=”(.<em>)”’, html)<br />urlDownload = “https://itts.apple.com%s” % match[1]<br />match = re.findall(‘name=”(.</em>?)”’, html)<br />fieldNameDayOrWeekDropdown = match[5]<br /><br /><br /># Set report date to yesterday’s date.  This will be the most<br /># recent daily report available.  Another option would be to<br /># webscrape the dropdown list of available report dates and<br /># select the first item but setting the date to yesterday’s<br /># date is easier.<br />today = datetime.date.today() - datetime.timedelta(1)<br />reportDate = ‘%i/%i/%i’ % (today.month, today.day, today.year)<br /><br /><br /># And finally…we’re ready to download yesterday’s sales report.<br />webFormSalesReportData = urllib.urlencode({fieldNameReportType:’Summary’, fieldNameReportPeriod:’Daily’, fieldNameDayOrWeekDropdown:reportDate, fieldNameDayOrWeekSelection:’Daily’, fieldNameSubmitTypeName:’Download’})<br />urlHandle = opener.open(urlDownload, webFormSalesReportData)<br />filename = urlHandle.info().getheader(‘content-disposition’).split(‘=’)[1]<br />filebuffer = urlHandle.read()<br />urlHandle.close()<br /><br /><br />print ‘ saving download file:’, filename<br />d
 ownloadFile = open(filename, ‘w’)<br />downloadFile.write(filebuffer)<br />downloadFile.close()<br /><br />print ‘– end of script –‘<br />&lt;/pre&gt;</p>
 
 
+                <p>Posted in <a href='/category/blogger/'>blogger</a>.</p>
 
-    <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
+                <hr>
 
-    <hr />
-    
-        <a href="/2008/10/10/pictures-from-recent-memphis-trip/" title="Previous Post: Pictures from Recent Memphis Trip" class="post-footer">&laquo; Pictures from Recent Memphis Trip</a>
-    
-    
-        &nbsp; | &nbsp;
-        <a href="/2008/10/23/hug-a-developer/" title="Next Post: Hug a Developer" class="post-footer">Hug a Developer &raquo;</a>
-    
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2008/10/10/pictures-from-recent-memphis-trip/" data-toggle="tooltip" data-placement="top" title="Pictures from Recent Memphis Trip">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2008/10/23/hug-a-developer/" data-toggle="tooltip" data-placement="top" title="Hug a Developer">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
 
-    </div>
-</div>
-<!--- Post Ends -->
-
-		</div>
-
-				<!--- Sidebar Starts -->
-
-		<div id="sidebar" class="right-col">
-
-			<div id="search">
-                <form action="http://google.com/search" method="get">
-                    <div>
-          					<input type="text" class="search_box" name="as_q" id="q" results="0" />
-                    <input type="hidden" name="as_sitesearch" value="thecave.com" />
-          					<input type="image" src="/styles/typebased/images/search.gif" class="submit" name="submit" />
-                    </div>
-                </form>
-			</div>
-
-			<div id="sidebar_in">
-
-			<div id="lastfm-1" class="block widget widget_lastfm">
-    <h2><a href="http://last.fm/user/kirbyt" class="lastfm_title_link">Listening To</a></h2>
-    <div class="lastfm">
-    </div>
-</div>
-
-
-
-        <div id="linkcat-2" class="block widget widget_links"><h2>Blogroll</h2>
-            <ul class='xoxo blogroll'>
-            <li><a href="http://www.rowanturner.net/">Rowan T</a></li>
-            <li><a href="http://photos.thecave.com/">Photos</a></li>
-            <li><a href="http://www.learnipadprogramming.com/">Learning iPad Programming</a></li>
-            <li><a href="http://blog.whitepeaksoftware.com/">White Peak Software</a></li>
-            </ul>
+            </div>
         </div>
+    </div>
+</article>
 
-		<div id="linkcat-3" class="block widget widget_links"><h2>Categories</h2>
-    <ul>
-        <li class='category'><a href='/category/apps/'>apps (5)</a></li>
-<li class='category'><a href='/category/backpack/'>backpack (1)</a></li>
-<li class='category'><a href='/category/backpacking/'>backpacking (8)</a></li>
-<li class='category'><a href='/category/blogger/'>blogger (785)</a></li>
-<li class='category'><a href='/category/camping/'>camping (11)</a></li>
-<li class='category'><a href='/category/cross%20post/'>cross post (5)</a></li>
-<li class='category'><a href='/category/family/'>family (5)</a></li>
-<li class='category'><a href='/category/fitness/'>fitness (3)</a></li>
-<li class='category'><a href='/category/general/'>general (25)</a></li>
-<li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
-<li class='category'><a href='/category/humor/'>humor (1)</a></li>
-<li class='category'><a href='/category/ios/'>ios (11)</a></li>
-<li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
-<li class='category'><a href='/category/life/'>life (4)</a></li>
-<li class='category'><a href='/category/long%20trail/'>long-trail (2)</a></li>
-<li class='category'><a href='/category/moving/'>moving (1)</a></li>
-<li class='category'><a href='/category/opinion/'>opinion (2)</a></li>
-<li class='category'><a href='/category/pictures/'>pictures (8)</a></li>
-<li class='category'><a href='/category/programming/'>programming (8)</a></li>
-<li class='category'><a href='/category/random/'>random (5)</a></li>
-<li class='category'><a href='/category/rant/'>rant (4)</a></li>
-<li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
-<li class='category'><a href='/category/salem/'>salem (1)</a></li>
-<li class='category'><a href='/category/skiing/'>skiing (5)</a></li>
-<li class='category'><a href='/category/snowboarding/'>snowboarding (11)</a></li>
-<li class='category'><a href='/category/social/'>social (4)</a></li>
-<li class='category'><a href='/category/stowe/'>stowe (5)</a></li>
-<li class='category'><a href='/category/tech/'>tech (4)</a></li>
-<li class='category'><a href='/category/travel/'>travel (3)</a></li>
-<li class='category'><a href='/category/trips/'>trips (5)</a></li>
-<li class='category'><a href='/category/videos/'>videos (2)</a></li>
-<li class='category'><a href='/category/work/'>work (5)</a></li>
-<li class='category'><a href='/category/writing/'>writing (2)</a></li>
+<p>&nbsp;</p>
 
-    </ul>
-</div>
 
-        <div id="archives-3" class="block widget widget_archive"><h2>Archives</h2>
-        <ul class='archives'>
-        <li><a href="/blog/archives">The Complete Blog Archives</a></li>
-        </ul>
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-lg-offset-1 col-xs-12">
+                <h3>Recent Articles</h3>
+                <ul>
+                
+                <li><a href="/2015/02/16/new-site-theme/" title="New Site Theme">New Site Theme</a></li>
+                
+                <li><a href="/2015/02/13/bad-case-of-buyers-remorse/" title="Bad Case Of Buyer's Remorse">Bad Case Of Buyer's Remorse</a></li>
+                
+                <li><a href="/2015/02/06/consider-the-environmental-cost/" title="Consider The Environmental Cost">Consider The Environmental Cost</a></li>
+                
+                <li><a href="/2015/02/04/hey-local-retail-stores-update-your-website/" title="Hey Local Retail Stores, Update Your Website">Hey Local Retail Stores, Update Your Website</a></li>
+                
+                <li><a href="/2015/01/27/finally/" title="Finally...">Finally...</a></li>
+                
+                </ul>                
+            </div>
+            <div class="col-lg-5 col-lg-offset-1 col-xs-12">
+                <h3>Other Sites</h3>
+                <ul>
+                    <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
+                    <li><a href="http://photos.thecave.com/">And More Photos</a></li>
+                    <li><a href="http://www.rowanturner.net/">Rowan Turner</a></li>
+                    <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
+                    <li><a href="http://www.whitepeaksoftware.com/">White Peak Software</a></li>
+                </ul>
+            </div>
         </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br />
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://alpha.app.net/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-adn fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://twitter.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="https://github.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="http://www.linkedin.com/in/kirbyt/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2015</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
 
-			</div>
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
 
-		</div>
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
 
-		<!--- Sidebar Ends -->
-	</div>
-
-</div>
-
-<div id="footer" class="wrap">
-
-	<div class="left-col">
-		<div class="popular wrap">
-			<h2>Recent Articles</h2>
-			<ul>
-                
-                  <li><a href="/2015/02/13/bad-case-of-buyers-remorse/" title="Bad Case Of Buyer's Remorse">Bad Case Of Buyer's Remorse</a></li>
-                
-                  <li><a href="/2015/02/06/consider-the-environmental-cost/" title="Consider The Environmental Cost">Consider The Environmental Cost</a></li>
-                
-                  <li><a href="/2015/02/04/hey-local-retail-stores-update-your-website/" title="Hey Local Retail Stores, Update Your Website">Hey Local Retail Stores, Update Your Website</a></li>
-                
-                  <li><a href="/2015/01/27/finally/" title="Finally...">Finally...</a></li>
-                
-                  <li><a href="/2015/01/18/eliminating-distractions/" title="Eliminating Distractions">Eliminating Distractions</a></li>
-                
-            </ul>
-		</div>
-	</div>
-
-	<div id="subscribe" class="right-col">
-		<h2>Subscribe to RSS</h2>
-		<p class="rss">If you enjoyed the post, make sure you subscribe to the RSS feed.</p>
-		<p>
-		<a href="/atom.xml">Articles</a><br />
-		</p>
-	</div>
-
-<div id="copyright" class="wrap">
-
-	<div class="left-col">
-		<p>&copy; 2015</p>
-	</div>
-
-	<div class="right-col">
-		<p>Design by <a href="http://woothemes.com"><img src="/styles/typebased/styles/grey/logo-footer.jpg" width="87" height="21" alt="woo themes" /></a></p>
-	</div>
-
-</div>
-
-</div>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-167605-3']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 
 </body>
+
 </html>
-<!-- Localized -->

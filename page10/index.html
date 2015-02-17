@@ -1,434 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 
-<title>thecave | Ramblings From A Crotchety Old Man</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="robots" content="index, follow" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ramblings From A Crotchety Old Man">
 
-<link rel="stylesheet" type="text/css" href="/styles/typebased/style.css" />
-<link rel="alternate" type="application/atom+xml" title="thecave | Ramblings From A Crotchety Old Man" href="http://www.thecave.com/atom.xml" />
+    <title>thecave</title>
 
-<!--[if IE 6]>
-<script type="text/javascript" src="/styles/typebased/includes/js/menu.js"></script>
-<![endif]-->
+    <link rel="canonical" href="http://www.thecave.com/page10/">
+    <link rel="alternate" type="application/atom+xml" title="thecave's Feed" href="http://www.thecave.com/feed.xml" />
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
-<script type='text/javascript' src='/styles/typebased/includes/js/superfish.js?ver=3.3.2'></script>
-<script type="text/javascript" src="/js/lastfm.js"></script>
 
-<!-- Alt Stylesheet -->
-<link href="/styles/typebased/styles/grey.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 
-<!-- Woo Shortcodes CSS -->
-<link href="/styles/typebased/functions/css/shortcodes.css" rel="stylesheet" type="text/css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/clean-blog.css">
 
-<!-- Custom Stylesheet -->
-<link href="/styles/typebased/custom.css" rel="stylesheet" type="text/css" />
-<meta id="syntaxhighlighteranchor" name="syntaxhighlighter-version" content="3.1.3" />
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
 
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- YouTube CSS -->
+    <link rel="stylesheet" href="/css/video.css">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
-<body class="home blog unknown">
 
-<div id="container">
+<body>
 
-	<div id="header">
-		<h1>
-			<a href="/" title="Ramblings from a crotchety old man.">
-			<img src="/images/thecave-logo-2.png" style="margin-top:0px;" alt="thecave" /></a></h1>
-	</div>
-
-	
-	<div id="menu">
-				<ul id="navigation" class="nav wrap">
-										<li class="page_item current_page_item first"><a href="/"><span>Home</span></a></li>
-										<li class="page_item last"><a href="/about.html"><span>About</span></a></li>
-										</ul>
-			</div>
-	<div class="wrap background">
-
-		<div id="content" class="left-col wrap">
-            
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Sep<span class="year">2008</span></span><span class="day">04</span></h3>
-        <h4 class="author">kirbyt</h4>
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">thecave</a>
         </div>
 
-        <div class="post-content right-col">
-        <h2><a href="/2008/09/04/importerror-no-module-named-svn/" rel="bookmark" title="ImportError: No module named svn">ImportError: No module named svn</a></h2>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                
+                <li>
+                    <a href="/about.html">About</a>
+                </li>
+                
+                <li>
+                    <a href="/archive.html">Archive</a>
+                </li>
+                
+                <li>
+                    <a href="/categories.html">Categories</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
 
-        <p>Recently I moved my CVS and Subversion repositories to a VPS that is running the server edition of Ubuntu Hardy.  As part of the move I installed ViewCV enabling me to view my repositories via a web browser.  Problem was when I viewed a Subversion repository I got the following error message:<br /><br /><code><br />An Exception Has Occurred<br />Python Traceback<br />Traceback (most recent call last):<br />  File "/usr/local/viewcvs-1.0-dev/lib/viewcvs.py", line 3194, in main<br />    request.run_viewcvs()<br />  File "/usr/local/viewcvs-1.0-dev/lib/viewcvs.py", line 258, in run_viewcvs<br />    import vclib.svn<br />  File "/usr/local/viewcvs-1.0-dev/lib/vclib/svn/__init__.py", line 27, in ?<br />    from svn import fs, repos, core, delta<br />ImportError: No module named svn<br /></code><br /><br />I could view CVS repository just not Subversion repositories.  This left me scratching my head.  I did a couple of google searches but no solution found.  Then I thought to myself, “I wonder if there is anything Python specific for Subversion.”  This prompted me to try searching for packages using the aptitude command.<br /><br />Sure enough the command <b>aptitude search subversion</b> returned a few items including <b>python-subversion</b>, which is the Python binding for Subversion.  Bingo!  I ran the command <b>aptitude install python-subversion</b> then checked ViewCV again in my browser.  Error gone.  I’m now able to view both CVS and SVN repositories.</p>
 
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
+    <!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/bg-01.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>thecave</h1>
+                    <hr class="small">
+                    <span class="subheading">Ramblings From A Crotchety Old Man</span>
+                </div>
+            </div>
         </div>
     </div>
-    <!--- Post Ends -->
+</header>
 
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			
+<div class="post-preview">
     
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Aug<span class="year">2008</span></span><span class="day">28</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2008/08/28/salem-bloggers-unite/" rel="bookmark" title="Salem Bloggers Unite">Salem Bloggers Unite</a></h2>
-
-        <p>The fine folks at <a href="http://www.thesaleminsider.com/">The Salem Insider</a> are compiling a list of Salem-based bloggers.  If you live in Salem Mass and have a blog, you should <a href="http://www.thesaleminsider.com/2008/08/26/do-you-blog/">add your blog site</a> to the list.  And no, your blog site doesn’t have to be about Salem.  They just ask that you be a Salem resident.  It’s a neat way to see what others in Salem are writing about.</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Aug<span class="year">2008</span></span><span class="day">27</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2008/08/27/waiting-on-a-response/" rel="bookmark" title="Waiting on a Response?">Waiting on a Response?</a></h2>
-
-        <p>I know there are family and friends waiting for me to response to emails, IM, txt, facebook wall posting, tweets, etc.  I’m sorry to say you will have to wait another day or two.  I’ll be catching up on personal emails, etc starting tomorrow.  Meanwhile, <a href="http://is.gd/1YZ1">check this out</a> if you need entertaining while you wait.</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Aug<span class="year">2008</span></span><span class="day">26</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2008/08/26/new-blog-for-white-peak-software/" rel="bookmark" title="New Blog for White Peak Software">New Blog for White Peak Software</a></h2>
-
-        <p>I decided the time has come to separate blog postings specific to <a href="http://www.whitepeaksoftware.com/">White Peak Software</a> from my personal posting found here at thecave.com.  If you are interested in following product news, tips, tricks, and all other things related to White Peak Software please visit or subscribe to <a href="http://blog.whitepeaksoftware.com">blog.whitepeaksoftware.com</a>.</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Aug<span class="year">2008</span></span><span class="day">20</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2008/08/20/high-royalty-rates-could-kill-web-radio/" rel="bookmark" title="High Royalty Rates Could Kill Web Radio">High Royalty Rates Could Kill Web Radio</a></h2>
-
-        <p><a href="http://www.rollingstone.com/rockdaily/index.php/2008/08/18/pandora-says-high-royalty-rates-are-putting-them-out-of-business/">High royalty rates could kill web radio including Pandora</a>. This is very disturbing news for me because I listen to a lot of web radio especially Pandora.  I rarely if ever listen to AM/FM radio these days and web radio is my only insight to new music.  Web radio influences me to buy new music.</p>
-
-<p>As I <a href="http://www.thecave.com/archive/2008/03/05/a_better_way_to_buy_music">mentioned before</a> I have only recently started buying new music again. A big part of this is has to do with the availability of DRM-free music. And the music I do buy now is heavily influenced by what I hear on Pandora and other web radio stations.  If web radio dies because of the insanely high royalty rates then there’s a good chance my music buying habits will die off too as I will end up going back and listening to only the music I already have.</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Aug<span class="year">2008</span></span><span class="day">14</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2008/08/14/php-development-in-linux-or-mac-os-x/" rel="bookmark" title="PHP Development in Linux or Mac OS X?">PHP Development in Linux or Mac OS X?</a></h2>
-
-        <p>I’m planning to move a web site from ASP.NET to PHP. My primary development machine is a MacBook Pro.  I use VMware Fusion for hosting a number of different OSes including Windows and Linux (mostly Ubuntu).  So now I’m wondering what type of development environment I should setup for working with this new PHP based web site.<br /><br />Should I develop directly within OS X?  It’s definitely convenient.  But I don’t need services such as Apache, Postgres, etc running on my laptop all the time.  Also, I’m concerned that it might introduce my laptop to additional security risks.<br /><br />Should I develop within a Linux guest OS?  This is not as convenient as doing development within my host OS but it does mean my LAMP development environment is not running all the time wasting system resources when I’m not doing development work.  And it is also more secure because I can restrict access to the guest OS.<br /><br />So my latest thinking is to use a hybrid approach.  I’ll setup a Ubuntu LAMP server as a guest OS using VMware Fusion. Then use a file share so I can edit the web site files within the host OS. It seems like this approach gives me the best of both worlds.  I can edit files in OS X using an editor like TextMate while hosting and testing the web site on a LAMP server.  Hmmm, I think maybe this is the right approach for me.</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jul<span class="year">2008</span></span><span class="day">20</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2008/07/20/my-first-software-industry-conference-2008/" rel="bookmark" title="My First Software Industry Conference 2008">My First Software Industry Conference 2008</a></h2>
-
-        <p>I attended my first <a href="http://www.sic.org/">Software Industry Conference</a> this year and overall it was a great experience.  I learned some good tips from the sessions I tended and from the people I met.  I got to meet a number of people who, like me, are indie developers and or run small software companies.  And I got to put faces on names of individuals from the <a href="http://www.asp-shareware.org/">ASP</a> newsgroups and <a href="http://discuss.joelonsoftware.com/?biz">BoS forum</a>. And of course I picked up a couple of new t-shirts too.  Now if vendors exhibiting at conferences like SIC would hand out jeans and boxers I could have a new wardrobe each year.<br /><br />The sessions covered a variety topics related to the business of selling software.  There were sessions on distribution channels, alternative revenue models such as subscriptions and rentals, marketing, web site designs, the impact of social networks and more.  I really liked the variety of topics covered.  However, one thing I did not like was the lack of depth in many of the sessions.<br /><br />Most of the sessions had multiple speakers providing different points of views on a topic.  For example, the session on distribution channels had 3 speakers.  The first speaker talked about breaking into the China marketplace.  The second speaker talked about OEM distribution, and the final speaker talked about distribution through publishers and retail channels.  With this particular topic the three speakers and the different points of view format worked well and was helpful and insightful.  But the multi-speaker approach did not work for all sessions.<br /><br />The session on web site analytics and metrics was one such session that I wish had been broken out into two separate sessions.  The first speaker talked about monitoring your competitors, and the second speaker talked about tools and options for understanding what is happening with your own web site.  What I would have liked to see was more in depth discussions and how tos on the two areas.  For example, the talk about the tools and options for understanding what is happening with your own web site was good but it could have been even better if the speaker had time to drill into a sample web log using a tool of choice and explain in detail how to look for and understand the meaning of the data and how to uncover and find trends within the data.<br /><br />It also felt as if each speaker was rushed to get through the information he or she wanted to share so that there would be enough time for the next speaker within the session.<br /><br />Despite the lack of depth in many of the session talks, the Q&amp;A; that typically followed was great.  In many cases the Q&amp;A; was more useful for me that the actual talk.  <br /><br />Another aspect of SIC that I really like is meeting a wide range of people who, like me, are producing and selling software products.  Not only was it fun to share war stories and talk shop, I also learned a lot from the more seasoned veterans.  For instance, Dan from <a href="http://www.topografix.com/">TopoGrafix</a> gave me some great feedback on my web site and suggested ways to improve my SEO with landing pages covering topics I had not thought of before.  Not only did I learn a thing or two from others, but the conversations I had with various individuals gave me the kick in the ass I needed to re-motivated and come up with fresh, new ideas for growing my company and taking it to the next level.<br /><br />So was the conference worth it?  Absolutely.  Granted my cost was low because the conference was held in the Boston metro area which is local for me and meant I didn’t not have to pay travel experiences (no airfare or hotel).  But I do plan to return next year and I will be staying in the hotel so I can have more fun at the party-like receptions held each evening.</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jul<span class="year">2008</span></span><span class="day">09</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2008/07/09/run-killink-csv-under-linux/" rel="bookmark" title="Run Killink CSV Under Linux">Run Killink CSV Under Linux</a></h2>
-
-        <p>For grins I decided to see if <a href="http://www.killink.com/">Killink CSV</a> will run under Linux using the latest version of Wine. I tried a few months ago and it didn’t work.  So imagine my surprise today when I upgraded the version of Wine installed on my Ubuntu machine, installed Killink CSV, and saw it run under Linux for the very first time.  All functionality works as expected.  I’ll post more about this soon.</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jul<span class="year">2008</span></span><span class="day">03</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2008/07/03/pictures-from-recent-trips/" rel="bookmark" title="Pictures from Recent Trips">Pictures from Recent Trips</a></h2>
-
-        <p>While my travel schedule is not like it was last year, we are finally traveling again. And I have finally posted pictures from recent trips.  Enjoy.&lt;ul&gt;<br />&lt;li&gt;<a href="http://thecave.smugmug.com/gallery/5020430_kG8MK/1/301330190_FgqrJ"><img src="http://thecave.smugmug.com/photos/301334985_Fsq8w-Ti.jpg" border="0" alt="" hspace="6" align="texttop" />East Durham Irish Festival</a>&lt;/li&gt;<br />&lt;li&gt;<a href="http://thecave.smugmug.com/gallery/5154049_Ehpci/1/311929379_wt2Jp"><img src="http://thecave.smugmug.com/photos/311932206_6F2tG-Ti.jpg" border="0" alt="" hspace="6" align="texttop" />Southern France</a>&lt;/li&gt;<br />&lt;li&gt;<a href="http://thecave.smugmug.com/gallery/5317323_nHGfo/1/324685388_YXXm9"><img src="http://thecave.smugmug.com/photos/324685388_YXXm9-Ti.jpg" border="0" alt="" hspace="6" align="texttop" />Camp Turner 08</a>&lt;/li&gt;<br />&lt;li&gt;<a href="http://thecave.smugmug.com/gallery/5317442_QNNnz/1/324689334_UwS8m"><img src="http://thecave.smugmug.com/photos/324689020_eNx9Y-Ti.jpg" border="0" alt="" hspace="6" align="texttop" />NASCAR Weekend - Loudon NH</a>&lt;/li&gt;<br />&lt;/ul&gt;</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2008</span></span><span class="day">25</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2008/06/25/high-tech-capital-in-the-u-s/" rel="bookmark" title="High-Tech Capital in the U.S.?">High-Tech Capital in the U.S.?</a></h2>
-
-        <p>The <a href="http://bits.blogs.nytimes.com/2008/06/24/the-high-tech-job-capital-isthe-big-apple/">high-tech capital in the U.S.</a> is…New York City. I’m not surprised.</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-
-
-
-<div class="more_posts">
-	<h2>
-        
-        <a href="/page11" >&laquo; Older Entries</a> &nbsp;
-        
-        
-            
-                <a href="/page9" >Recent Entries &raquo;</a>
-            
-        
+    <h2 class="post-title">
+        <a href="/2008/09/30/playing-with-xbox-again/">Playing with Xbox Again</a>
     </h2>
+    
+    <p>Today was the first time in over 6 months that I played on my Xbox 360.</p>
+
+
+
+    <p><a href="/2008/09/30/playing-with-xbox-again/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on September 30, 2008
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
 </div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2008/09/04/importerror-no-module-named-svn/">ImportError: No module named svn</a>
+    </h2>
+    
+    <p>Recently I moved my CVS and Subversion repositories to a VPS that is running the server edition of Ubuntu Hardy.  As part of the move I installed ViewCV enabling me to view my repositories via a web browser.  Problem was when I viewed a Subversion repository I got the following error message:<br /><br /><code><br />An Exception Has Occurred<br />Python Traceback<br />Traceback (most recent call last):<br />  File "/usr/local/viewcvs-1.0-dev/lib/viewcvs.py", line 3194, in main<br />    request.run_viewcvs()<br />  File "/usr/local/viewcvs-1.0-dev/lib/viewcvs.py", line 258, in run_viewcvs<br />    import vclib.svn<br />  File "/usr/local/viewcvs-1.0-dev/lib/vclib/svn/__init__.py", line 27, in ?<br />    from svn import fs, repos, core, delta<br />ImportError: No module named svn<br /></code><br /><br />I could view CVS repository just not Subversion repositories.  This left me scratching my head.  I did a couple of google searches but no solution found.  Then I thought to myself, “I wonder if there is anything Python specific for Subversion.”  This prompted me to try searching for packages using the aptitude command.<br /><br />Sure enough the command <b>aptitude search subversion</b> returned a few items including <b>python-subversion</b>, which is the Python binding for Subversion.  Bingo!  I ran the command <b>aptitude install python-subversion</b> then checked ViewCV again in my browser.  Error gone.  I’m now able to view both CVS and SVN repositories.</p>
+
+
+
+    <p><a href="/2008/09/04/importerror-no-module-named-svn/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on September 4, 2008
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2008/08/28/salem-bloggers-unite/">Salem Bloggers Unite</a>
+    </h2>
+    
+    <p>The fine folks at <a href="http://www.thesaleminsider.com/">The Salem Insider</a> are compiling a list of Salem-based bloggers.  If you live in Salem Mass and have a blog, you should <a href="http://www.thesaleminsider.com/2008/08/26/do-you-blog/">add your blog site</a> to the list.  And no, your blog site doesn’t have to be about Salem.  They just ask that you be a Salem resident.  It’s a neat way to see what others in Salem are writing about.</p>
+
+
+
+    <p><a href="/2008/08/28/salem-bloggers-unite/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on August 28, 2008
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2008/08/27/waiting-on-a-response/">Waiting on a Response?</a>
+    </h2>
+    
+    <p>I know there are family and friends waiting for me to response to emails, IM, txt, facebook wall posting, tweets, etc.  I’m sorry to say you will have to wait another day or two.  I’ll be catching up on personal emails, etc starting tomorrow.  Meanwhile, <a href="http://is.gd/1YZ1">check this out</a> if you need entertaining while you wait.</p>
+
+
+
+    <p><a href="/2008/08/27/waiting-on-a-response/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on August 27, 2008
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2008/08/26/new-blog-for-white-peak-software/">New Blog for White Peak Software</a>
+    </h2>
+    
+    <p>I decided the time has come to separate blog postings specific to <a href="http://www.whitepeaksoftware.com/">White Peak Software</a> from my personal posting found here at thecave.com.  If you are interested in following product news, tips, tricks, and all other things related to White Peak Software please visit or subscribe to <a href="http://blog.whitepeaksoftware.com">blog.whitepeaksoftware.com</a>.</p>
+
+
+
+    <p><a href="/2008/08/26/new-blog-for-white-peak-software/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on August 26, 2008
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2008/08/20/high-royalty-rates-could-kill-web-radio/">High Royalty Rates Could Kill Web Radio</a>
+    </h2>
+    
+    <p><a href="http://www.rollingstone.com/rockdaily/index.php/2008/08/18/pandora-says-high-royalty-rates-are-putting-them-out-of-business/">High royalty rates could kill web radio including Pandora</a>. This is very disturbing news for me because I listen to a lot of web radio especially Pandora.  I rarely if ever listen to AM/FM radio these days and web radio is my only insight to new music.  Web radio influences me to buy new music.</p>
+
+
+
+    <p><a href="/2008/08/20/high-royalty-rates-could-kill-web-radio/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on August 20, 2008
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2008/08/14/php-development-in-linux-or-mac-os-x/">PHP Development in Linux or Mac OS X?</a>
+    </h2>
+    
+    <p>I’m planning to move a web site from ASP.NET to PHP. My primary development machine is a MacBook Pro.  I use VMware Fusion for hosting a number of different OSes including Windows and Linux (mostly Ubuntu).  So now I’m wondering what type of development environment I should setup for working with this new PHP based web site.<br /><br />Should I develop directly within OS X?  It’s definitely convenient.  But I don’t need services such as Apache, Postgres, etc running on my laptop all the time.  Also, I’m concerned that it might introduce my laptop to additional security risks.<br /><br />Should I develop within a Linux guest OS?  This is not as convenient as doing development within my host OS but it does mean my LAMP development environment is not running all the time wasting system resources when I’m not doing development work.  And it is also more secure because I can restrict access to the guest OS.<br /><br />So my latest thinking is to use a hybrid approach.  I’ll setup a Ubuntu LAMP server as a guest OS using VMware Fusion. Then use a file share so I can edit the web site files within the host OS. It seems like this approach gives me the best of both worlds.  I can edit files in OS X using an editor like TextMate while hosting and testing the web site on a LAMP server.  Hmmm, I think maybe this is the right approach for me.</p>
+
+
+
+    <p><a href="/2008/08/14/php-development-in-linux-or-mac-os-x/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on August 14, 2008
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2008/07/20/my-first-software-industry-conference-2008/">My First Software Industry Conference 2008</a>
+    </h2>
+    
+    <p>I attended my first <a href="http://www.sic.org/">Software Industry Conference</a> this year and overall it was a great experience.  I learned some good tips from the sessions I tended and from the people I met.  I got to meet a number of people who, like me, are indie developers and or run small software companies.  And I got to put faces on names of individuals from the <a href="http://www.asp-shareware.org/">ASP</a> newsgroups and <a href="http://discuss.joelonsoftware.com/?biz">BoS forum</a>. And of course I picked up a couple of new t-shirts too.  Now if vendors exhibiting at conferences like SIC would hand out jeans and boxers I could have a new wardrobe each year.<br /><br />The sessions covered a variety topics related to the business of selling software.  There were sessions on distribution channels, alternative revenue models such as subscriptions and rentals, marketing, web site designs, the impact of social networks and more.  I really liked the variety of topics covered.  However, one thing I did not like was the lack of depth in many of the sessions.<br /><br />Most of the sessions had multiple speakers providing different points of views on a topic.  For example, the session on distribution channels had 3 speakers.  The first speaker talked about breaking into the China marketplace.  The second speaker talked about OEM distribution, and the final speaker talked about distribution through publishers and retail channels.  With this particular topic the three speakers and the different points of view format worked well and was helpful and insightful.  But the multi-speaker approach did not work for all sessions.<br /><br />The session on web site analytics and metrics was one such session that I wish had been broken out into two separate sessions.  The first speaker talked about monitoring your competitors, and the second speaker talked about tools and options for understanding what is happening with your own web site.  What I would have liked to see was more in depth discussions and how tos on the two areas.  For example, the talk about the tools and options for understanding what is happening with your own web site was good but it could have been even better if the speaker had time to drill into a sample web log using a tool of choice and explain in detail how to look for and understand the meaning of the data and how to uncover and find trends within the data.<br /><br />It also felt as if each speaker was rushed to get through the information he or she wanted to share so that there would be enough time for the next speaker within the session.<br /><br />Despite the lack of depth in many of the session talks, the Q&amp;A; that typically followed was great.  In many cases the Q&amp;A; was more useful for me that the actual talk.  <br /><br />Another aspect of SIC that I really like is meeting a wide range of people who, like me, are producing and selling software products.  Not only was it fun to share war stories and talk shop, I also learned a lot from the more seasoned veterans.  For instance, Dan from <a href="http://www.topografix.com/">TopoGrafix</a> gave me some great feedback on my web site and suggested ways to improve my SEO with landing pages covering topics I had not thought of before.  Not only did I learn a thing or two from others, but the conversations I had with various individuals gave me the kick in the ass I needed to re-motivated and come up with fresh, new ideas for growing my company and taking it to the next level.<br /><br />So was the conference worth it?  Absolutely.  Granted my cost was low because the conference was held in the Boston metro area which is local for me and meant I didn’t not have to pay travel experiences (no airfare or hotel).  But I do plan to return next year and I will be staying in the hotel so I can have more fun at the party-like receptions held each evening.</p>
+
+
+
+    <p><a href="/2008/07/20/my-first-software-industry-conference-2008/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on July 20, 2008
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2008/07/09/run-killink-csv-under-linux/">Run Killink CSV Under Linux</a>
+    </h2>
+    
+    <p>For grins I decided to see if <a href="http://www.killink.com/">Killink CSV</a> will run under Linux using the latest version of Wine. I tried a few months ago and it didn’t work.  So imagine my surprise today when I upgraded the version of Wine installed on my Ubuntu machine, installed Killink CSV, and saw it run under Linux for the very first time.  All functionality works as expected.  I’ll post more about this soon.</p>
+
+
+
+    <p><a href="/2008/07/09/run-killink-csv-under-linux/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on July 9, 2008
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2008/07/03/pictures-from-recent-trips/">Pictures from Recent Trips</a>
+    </h2>
+    
+    <p>While my travel schedule is not like it was last year, we are finally traveling again. And I have finally posted pictures from recent trips.  Enjoy.&lt;ul&gt;<br />&lt;li&gt;<a href="http://thecave.smugmug.com/gallery/5020430_kG8MK/1/301330190_FgqrJ"><img src="http://thecave.smugmug.com/photos/301334985_Fsq8w-Ti.jpg" border="0" alt="" hspace="6" align="texttop" />East Durham Irish Festival</a>&lt;/li&gt;<br />&lt;li&gt;<a href="http://thecave.smugmug.com/gallery/5154049_Ehpci/1/311929379_wt2Jp"><img src="http://thecave.smugmug.com/photos/311932206_6F2tG-Ti.jpg" border="0" alt="" hspace="6" align="texttop" />Southern France</a>&lt;/li&gt;<br />&lt;li&gt;<a href="http://thecave.smugmug.com/gallery/5317323_nHGfo/1/324685388_YXXm9"><img src="http://thecave.smugmug.com/photos/324685388_YXXm9-Ti.jpg" border="0" alt="" hspace="6" align="texttop" />Camp Turner 08</a>&lt;/li&gt;<br />&lt;li&gt;<a href="http://thecave.smugmug.com/gallery/5317442_QNNnz/1/324689334_UwS8m"><img src="http://thecave.smugmug.com/photos/324689020_eNx9Y-Ti.jpg" border="0" alt="" hspace="6" align="texttop" />NASCAR Weekend - Loudon NH</a>&lt;/li&gt;<br />&lt;/ul&gt;</p>
+
+
+
+    <p><a href="/2008/07/03/pictures-from-recent-trips/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on July 3, 2008
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+
+<!-- Pager -->
+
+<ul class="pager">
+    
+    <li class="previous">
+        <a href="/page9">&larr; Newer Posts</a>
+    </li>
+    
+    
+    <li class="next">
+        <a href="/page11">Older Posts &rarr;</a>
+    </li>
+    
+</ul>
 
 
 		</div>
+	</div>
+</div>
 
-				<!--- Sidebar Starts -->
+<p>&nbsp;</p>
 
-		<div id="sidebar" class="right-col">
 
-			<div id="search">
-                <form action="http://google.com/search" method="get">
-                    <div>
-          					<input type="text" class="search_box" name="as_q" id="q" results="0" />
-                    <input type="hidden" name="as_sitesearch" value="thecave.com" />
-          					<input type="image" src="/styles/typebased/images/search.gif" class="submit" name="submit" />
-                    </div>
-                </form>
-			</div>
-
-			<div id="sidebar_in">
-
-			<div id="lastfm-1" class="block widget widget_lastfm">
-    <h2><a href="http://last.fm/user/kirbyt" class="lastfm_title_link">Listening To</a></h2>
-    <div class="lastfm">
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-lg-offset-1 col-xs-12">
+                <h3>Recent Articles</h3>
+                <ul>
+                
+                <li><a href="/2015/02/16/new-site-theme/" title="New Site Theme">New Site Theme</a></li>
+                
+                <li><a href="/2015/02/13/bad-case-of-buyers-remorse/" title="Bad Case Of Buyer's Remorse">Bad Case Of Buyer's Remorse</a></li>
+                
+                <li><a href="/2015/02/06/consider-the-environmental-cost/" title="Consider The Environmental Cost">Consider The Environmental Cost</a></li>
+                
+                <li><a href="/2015/02/04/hey-local-retail-stores-update-your-website/" title="Hey Local Retail Stores, Update Your Website">Hey Local Retail Stores, Update Your Website</a></li>
+                
+                <li><a href="/2015/01/27/finally/" title="Finally...">Finally...</a></li>
+                
+                </ul>                
+            </div>
+            <div class="col-lg-5 col-lg-offset-1 col-xs-12">
+                <h3>Other Sites</h3>
+                <ul>
+                    <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
+                    <li><a href="http://photos.thecave.com/">And More Photos</a></li>
+                    <li><a href="http://www.rowanturner.net/">Rowan Turner</a></li>
+                    <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
+                    <li><a href="http://www.whitepeaksoftware.com/">White Peak Software</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br />
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://alpha.app.net/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-adn fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://twitter.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="https://github.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="http://www.linkedin.com/in/kirbyt/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2015</p>
+            </div>
+        </div>
     </div>
-</div>
+</footer>
 
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
 
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
 
-        <div id="linkcat-2" class="block widget widget_links"><h2>Blogroll</h2>
-            <ul class='xoxo blogroll'>
-            <li><a href="http://www.rowanturner.net/">Rowan T</a></li>
-            <li><a href="http://photos.thecave.com/">Photos</a></li>
-            <li><a href="http://www.learnipadprogramming.com/">Learning iPad Programming</a></li>
-            <li><a href="http://blog.whitepeaksoftware.com/">White Peak Software</a></li>
-            </ul>
-        </div>
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
 
-		<div id="linkcat-3" class="block widget widget_links"><h2>Categories</h2>
-    <ul>
-        <li class='category'><a href='/category/apps/'>apps (5)</a></li>
-<li class='category'><a href='/category/backpack/'>backpack (1)</a></li>
-<li class='category'><a href='/category/backpacking/'>backpacking (8)</a></li>
-<li class='category'><a href='/category/blogger/'>blogger (785)</a></li>
-<li class='category'><a href='/category/camping/'>camping (11)</a></li>
-<li class='category'><a href='/category/cross%20post/'>cross post (5)</a></li>
-<li class='category'><a href='/category/family/'>family (5)</a></li>
-<li class='category'><a href='/category/fitness/'>fitness (3)</a></li>
-<li class='category'><a href='/category/general/'>general (25)</a></li>
-<li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
-<li class='category'><a href='/category/humor/'>humor (1)</a></li>
-<li class='category'><a href='/category/ios/'>ios (11)</a></li>
-<li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
-<li class='category'><a href='/category/life/'>life (4)</a></li>
-<li class='category'><a href='/category/long%20trail/'>long-trail (2)</a></li>
-<li class='category'><a href='/category/moving/'>moving (1)</a></li>
-<li class='category'><a href='/category/opinion/'>opinion (2)</a></li>
-<li class='category'><a href='/category/pictures/'>pictures (8)</a></li>
-<li class='category'><a href='/category/programming/'>programming (8)</a></li>
-<li class='category'><a href='/category/random/'>random (5)</a></li>
-<li class='category'><a href='/category/rant/'>rant (4)</a></li>
-<li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
-<li class='category'><a href='/category/salem/'>salem (1)</a></li>
-<li class='category'><a href='/category/skiing/'>skiing (5)</a></li>
-<li class='category'><a href='/category/snowboarding/'>snowboarding (11)</a></li>
-<li class='category'><a href='/category/social/'>social (4)</a></li>
-<li class='category'><a href='/category/stowe/'>stowe (5)</a></li>
-<li class='category'><a href='/category/tech/'>tech (4)</a></li>
-<li class='category'><a href='/category/travel/'>travel (3)</a></li>
-<li class='category'><a href='/category/trips/'>trips (5)</a></li>
-<li class='category'><a href='/category/videos/'>videos (2)</a></li>
-<li class='category'><a href='/category/work/'>work (5)</a></li>
-<li class='category'><a href='/category/writing/'>writing (2)</a></li>
-
-    </ul>
-</div>
-
-        <div id="archives-3" class="block widget widget_archive"><h2>Archives</h2>
-        <ul class='archives'>
-        <li><a href="/blog/archives">The Complete Blog Archives</a></li>
-        </ul>
-        </div>
-
-
-			</div>
-
-		</div>
-
-		<!--- Sidebar Ends -->
-	</div>
-
-</div>
-
-<div id="footer" class="wrap">
-
-	<div class="left-col">
-		<div class="popular wrap">
-			<h2>Recent Articles</h2>
-			<ul>
-                
-                  <li><a href="/2015/02/13/bad-case-of-buyers-remorse/" title="Bad Case Of Buyer's Remorse">Bad Case Of Buyer's Remorse</a></li>
-                
-                  <li><a href="/2015/02/06/consider-the-environmental-cost/" title="Consider The Environmental Cost">Consider The Environmental Cost</a></li>
-                
-                  <li><a href="/2015/02/04/hey-local-retail-stores-update-your-website/" title="Hey Local Retail Stores, Update Your Website">Hey Local Retail Stores, Update Your Website</a></li>
-                
-                  <li><a href="/2015/01/27/finally/" title="Finally...">Finally...</a></li>
-                
-                  <li><a href="/2015/01/18/eliminating-distractions/" title="Eliminating Distractions">Eliminating Distractions</a></li>
-                
-            </ul>
-		</div>
-	</div>
-
-	<div id="subscribe" class="right-col">
-		<h2>Subscribe to RSS</h2>
-		<p class="rss">If you enjoyed the post, make sure you subscribe to the RSS feed.</p>
-		<p>
-		<a href="/atom.xml">Articles</a><br />
-		</p>
-	</div>
-
-<div id="copyright" class="wrap">
-
-	<div class="left-col">
-		<p>&copy; 2015</p>
-	</div>
-
-	<div class="right-col">
-		<p>Design by <a href="http://woothemes.com"><img src="/styles/typebased/styles/grey/logo-footer.jpg" width="87" height="21" alt="woo themes" /></a></p>
-	</div>
-
-</div>
-
-</div>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-167605-3']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 
 </body>
+
 </html>
-<!-- Localized -->

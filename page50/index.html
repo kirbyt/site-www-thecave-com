@@ -1,257 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 
-<title>thecave | Ramblings From A Crotchety Old Man</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="robots" content="index, follow" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ramblings From A Crotchety Old Man">
 
-<link rel="stylesheet" type="text/css" href="/styles/typebased/style.css" />
-<link rel="alternate" type="application/atom+xml" title="thecave | Ramblings From A Crotchety Old Man" href="http://www.thecave.com/atom.xml" />
+    <title>thecave</title>
 
-<!--[if IE 6]>
-<script type="text/javascript" src="/styles/typebased/includes/js/menu.js"></script>
-<![endif]-->
+    <link rel="canonical" href="http://www.thecave.com/page50/">
+    <link rel="alternate" type="application/atom+xml" title="thecave's Feed" href="http://www.thecave.com/feed.xml" />
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
-<script type='text/javascript' src='/styles/typebased/includes/js/superfish.js?ver=3.3.2'></script>
-<script type="text/javascript" src="/js/lastfm.js"></script>
 
-<!-- Alt Stylesheet -->
-<link href="/styles/typebased/styles/grey.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 
-<!-- Woo Shortcodes CSS -->
-<link href="/styles/typebased/functions/css/shortcodes.css" rel="stylesheet" type="text/css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/clean-blog.css">
 
-<!-- Custom Stylesheet -->
-<link href="/styles/typebased/custom.css" rel="stylesheet" type="text/css" />
-<meta id="syntaxhighlighteranchor" name="syntaxhighlighter-version" content="3.1.3" />
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
 
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- YouTube CSS -->
+    <link rel="stylesheet" href="/css/video.css">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
-<body class="home blog unknown">
 
-<div id="container">
+<body>
 
-	<div id="header">
-		<h1>
-			<a href="/" title="Ramblings from a crotchety old man.">
-			<img src="/images/thecave-logo-2.png" style="margin-top:0px;" alt="thecave" /></a></h1>
-	</div>
-
-	
-	<div id="menu">
-				<ul id="navigation" class="nav wrap">
-										<li class="page_item current_page_item first"><a href="/"><span>Home</span></a></li>
-										<li class="page_item last"><a href="/about.html"><span>About</span></a></li>
-										</ul>
-			</div>
-	<div class="wrap background">
-
-		<div id="content" class="left-col wrap">
-            
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jul<span class="year">2004</span></span><span class="day">20</span></h3>
-        <h4 class="author">kirbyt</h4>
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">thecave</a>
         </div>
 
-        <div class="post-content right-col">
-        <h2><a href="/2004/07/20/a-binding-formatter-is-called-twice/" rel="bookmark" title="A Binding Formatter is Called Twice">A Binding Formatter is Called Twice</a></h2>
-
-        <p>It seems that a binding formatter is called twice when a user leaves a textbox control. As the user leaves the control the Leave event for the control is fired followed by the binding format event. The setter method of the bounded property is called next followed by the getter method then finally the binding format event is called again.</p>
-
-<p>This should not be a concern for applications that use binding formatters but the developer should know it will be called twice.</p>
-
-<p>Here is sample code that illustrates the behavior:</p>
-
-<pre><code>using System;
-using System.Drawing;
-using System.Collections;
-using System.ComponentModel;
-using System.Windows.Forms;
-using System.Data;
-using System.Diagnostics;
-
-namespace SampleWindowsApp
-{
-    /// &lt;summary&gt;
-    /// Summary description for Form1.
-    /// &lt;/summary&gt;
-    public class Form1 : System.Windows.Forms.Form
-    {
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private MyClass _dataSource = new MyClass();
-
-        /// &lt;summary&gt;
-        /// Required designer variable.
-        /// &lt;/summary&gt;
-        private System.ComponentModel.Container components = null;
-
-        public Form1()
-        {
-            //
-            // Required for Windows Form Designer support
-            //
-            InitializeComponent();
-        }
-
-        /// &lt;summary&gt;
-        /// Clean up any resources being used.
-        /// &lt;/summary&gt;
-        protected override void Dispose( bool disposing )
-        {
-            if( disposing )
-            {
-                if (components != null)
-                {
-                    components.Dispose();
-                }
-            }
-            base.Dispose( disposing );
-        }
-
-        #region Windows Form Designer generated code
-        /// &lt;summary&gt;
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// &lt;/summary&gt;
-        private void InitializeComponent()
-        {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.SuspendLayout();
-            //
-            // textBox1
-            //
-            this.textBox1.Location = new System.Drawing.Point(56, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "textBox1";
-            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
-            //
-            // button1
-            //
-            this.button1.Location = new System.Drawing.Point(72, 120);
-            this.button1.Name = "button1";
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            //
-            // Form1
-            //
-            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-            this.ClientSize = new System.Drawing.Size(292, 266);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.ResumeLayout(false);
-
-        }
-        #endregion
-
-        /// &lt;summary&gt;
-        /// The main entry point for the application.
-        /// &lt;/summary&gt;
-        [STAThread]
-        static void Main()
-        {
-            Application.Run(new Form1());
-        }
-
-        private void Form1_Load(object sender, System.EventArgs e)
-        {
-            Binding binding = new Binding( "Text", _dataSource, "Value" );
-            binding.Format += new ConvertEventHandler(binding_Format);
-
-            textBox1.DataBindings.Add( binding );
-        }
-
-        private void binding_Format(object sender, ConvertEventArgs e)
-        {
-            Debug.WriteLine( "Format" );
-        }
-
-        private void textBox1_Leave(object sender, System.EventArgs e)
-        {
-            Debug.WriteLine( "Leave" );
-
-        }
-    }
-
-    class MyClass
-    {
-        private string _value = "Default value.";
-        public string Value
-        {
-            get
-            {
-                Debug.WriteLine( "MyClass.Value getter" );
-                return _value;
-            }
-            set
-            {
-                Debug.WriteLine( "MyClass.Value setter" );
-                _value = value;
-            }
-        }
-    }
-}
-</code></pre>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                
+                <li>
+                    <a href="/about.html">About</a>
+                </li>
+                
+                <li>
+                    <a href="/archive.html">Archive</a>
+                </li>
+                
+                <li>
+                    <a href="/categories.html">Categories</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
 
 
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
+    <!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/bg-01.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>thecave</h1>
+                    <hr class="small">
+                    <span class="subheading">Ramblings From A Crotchety Old Man</span>
+                </div>
+            </div>
         </div>
     </div>
-    <!--- Post Ends -->
+</header>
 
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			
+<div class="post-preview">
     
-    <!--- Post Starts -->
-    <div class="post wrap">
+    <h2 class="post-title">
+        <a href="/2004/07/20/regex-library/">Regex Library</a>
+    </h2>
+    
+    <p>Looking for a particular regular expression?  Check out the Regular Expression Library (<a href="http://regexplib.com/">http://regexplib.com/</a>).
+<br /></p>
 
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jul<span class="year">2004</span></span><span class="day">16</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
 
-        <div class="post-content right-col">
-        <h2><a href="/2004/07/16/duh/" rel="bookmark" title="Duh!">Duh!</a></h2>
 
-        <p>Melanie and I were planning to fly into Manchester, NH next week and drive to Vermont for a break from NYC.  However confusion set in when we started checking the fly availability and car rentals.  Flights into Manchester are filling up and car rentals are sold out.  What gives?
+    <p><a href="/2004/07/20/regex-library/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on July 20, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/07/20/a-binding-formatter-is-called-twice/">A Binding Formatter is Called Twice</a>
+    </h2>
+    
+    <p>It seems that a binding formatter is called twice when a user leaves a textbox control. As the user leaves the control the Leave event for the control is fired followed by the binding format event. The setter method of the bounded property is called next followed by the getter method then finally the binding format event is called again.</p>
+
+
+
+    <p><a href="/2004/07/20/a-binding-formatter-is-called-twice/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on July 20, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/07/16/duh/">Duh!</a>
+    </h2>
+    
+    <p>Melanie and I were planning to fly into Manchester, NH next week and drive to Vermont for a break from NYC.  However confusion set in when we started checking the fly availability and car rentals.  Flights into Manchester are filling up and car rentals are sold out.  What gives?
 <br /> 
 <br />Duh!  The Democratic Convention 2004 starts on Sunday, July 26 in Boston.  No wonder Manchester is so busy that weekend.  Needless to say, Melanie and I are breaking convention (no pun intended) and driving up from NYC to avoid the Boston/Manchester madness.
 <br /></p>
 
 
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
 
-        </div>
-    </div>
-    <!--- Post Ends -->
+    <p><a href="/2004/07/16/duh/">Continue reading &rarr;</a></p>
 
+    <p class="post-meta">Posted by Kirby Turner on July 16, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
     
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jul<span class="year">2004</span></span><span class="day">15</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/07/15/to-data-bind-or-not-to-data-bind-that-is-the-question/" rel="bookmark" title="To Data Bind or Not To Data Bind?  That is the Question.">To Data Bind or Not To Data Bind?  That is the Question.</a></h2>
-
-        <p>I had a lengthy discussion with another developer today regarding data binding in .NET.  I started thinking about this more after the conversation ended and I realized there are some who think data binding should always be used in Windows based .NET applications.  The conversation today brought back memories of how developers overused data binding when VB 3.0 was released into the wild.
+    <h2 class="post-title">
+        <a href="/2004/07/15/to-data-bind-or-not-to-data-bind-that-is-the-question/">To Data Bind or Not To Data Bind?  That is the Question.</a>
+    </h2>
+    
+    <p>I had a lengthy discussion with another developer today regarding data binding in .NET.  I started thinking about this more after the conversation ended and I realized there are some who think data binding should always be used in Windows based .NET applications.  The conversation today brought back memories of how developers overused data binding when VB 3.0 was released into the wild.
 <br />
 <br />Data binding in .NET is a vast improvement over past attempts at providing a data binding feature in a programming language.  I for one love the fact that I can data bind to different data structures and that I am not limited to binding to ADO.NET datasets only.  I often use data binding in my ASP.NET applications that use a repeater.  This feature alone has helped me build web pages faster, but I do not believe data binding is the silver bullet for all cases of moving data between structure and presentation.
 <br />
@@ -269,332 +186,252 @@ namespace SampleWindowsApp
 <br /></p>
 
 
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
 
-        </div>
-    </div>
-    <!--- Post Ends -->
+    <p><a href="/2004/07/15/to-data-bind-or-not-to-data-bind-that-is-the-question/">Continue reading &rarr;</a></p>
 
+    <p class="post-meta">Posted by Kirby Turner on July 15, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
     
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jul<span class="year">2004</span></span><span class="day">12</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/07/12/performance-review-virtual-pc-versus-vmware/" rel="bookmark" title="Performance Review: Virtual PC versus VMWare">Performance Review: Virtual PC versus VMWare</a></h2>
-
-        <p>Hernan Di Pietro has done a nice job of comparing the performance between Virtual PC and VMWare.  I think I will start with VPC as I begin setting up the new laptop.
+    <h2 class="post-title">
+        <a href="/2004/07/12/performance-review-virtual-pc-versus-vmware/">Performance Review: Virtual PC versus VMWare</a>
+    </h2>
+    
+    <p>Hernan Di Pietro has done a nice job of comparing the performance between Virtual PC and VMWare.  I think I will start with VPC as I begin setting up the new laptop.
 <br />
 <br /><a href="http://usuarios.lycos.es/hernandp/articles/vpcvsII.html">http://usuarios.lycos.es/hernandp/articles/vpcvsII.html  </a></p>
 
 
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
 
-        </div>
-    </div>
-    <!--- Post Ends -->
+    <p><a href="/2004/07/12/performance-review-virtual-pc-versus-vmware/">Continue reading &rarr;</a></p>
 
+    <p class="post-meta">Posted by Kirby Turner on July 12, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
     
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jul<span class="year">2004</span></span><span class="day">12</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/07/12/its-official/" rel="bookmark" title="It's Official">It's Official</a></h2>
-
-        <p>It’s official.  Over the next few weeks I will be transitioning my day time job from <a href="http://www.avanade.com/">Avanade</a> to my own company <a href="http://www.whitepeaksoftware.com/">White Peak Software Inc</a> and I will be 100% focused on White Peak starting Monday, August 16.  This is a very exciting time for me as I move to the world of independent consulting and it is something I could not do without the love and support of my wonderful wife Melanie.</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
+    <h2 class="post-title">
+        <a href="/2004/07/12/its-official/">It's Official</a>
+    </h2>
     
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jul<span class="year">2004</span></span><span class="day">12</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/07/12/early-bird-specials/" rel="bookmark" title="Early Bird Specials">Early Bird Specials</a></h2>
-
-        <p>American Ski Company finally gets it.  They are offering low cost season passes for those people who wish to buy their passes early.  These are <a href="http://www.allforonepass.com/">All for One</a> passes with access to Killington, Pico, Mount Snow, Sugarloaf, Sunday River, and Attitash Bear Peak for as low as $349.  Quantities are limited so act now.</p>
+    <p>It’s official.  Over the next few weeks I will be transitioning my day time job from <a href="http://www.avanade.com/">Avanade</a> to my own company <a href="http://www.whitepeaksoftware.com/">White Peak Software Inc</a> and I will be 100% focused on White Peak starting Monday, August 16.  This is a very exciting time for me as I move to the world of independent consulting and it is something I could not do without the love and support of my wonderful wife Melanie.</p>
 
 
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
 
-        </div>
-    </div>
-    <!--- Post Ends -->
+    <p><a href="/2004/07/12/its-official/">Continue reading &rarr;</a></p>
 
+    <p class="post-meta">Posted by Kirby Turner on July 12, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
     
-    <!--- Post Starts -->
-    <div class="post wrap">
+    <h2 class="post-title">
+        <a href="/2004/07/12/early-bird-specials/">Early Bird Specials</a>
+    </h2>
+    
+    <p>American Ski Company finally gets it.  They are offering low cost season passes for those people who wish to buy their passes early.  These are <a href="http://www.allforonepass.com/">All for One</a> passes with access to Killington, Pico, Mount Snow, Sugarloaf, Sunday River, and Attitash Bear Peak for as low as $349.  Quantities are limited so act now.</p>
 
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jul<span class="year">2004</span></span><span class="day">12</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
 
-        <div class="post-content right-col">
-        <h2><a href="/2004/07/12/dell-latitude-600-setup/" rel="bookmark" title="Dell Latitude 600 Setup">Dell Latitude 600 Setup</a></h2>
 
-        <p>I received my new Dell Latitude 600 today.  Sweet machine but now it’s time to set it up to my liking.  My plan going into it is to setup the host OS with the general tools I need each day such as Eudora Pro, Office 2003, iTunes, and so on.  I will use either VMWare or Virtual PC to host guest OS for my development environments.  I plan to setup the primary user account for each OS with minimum privileges to force me to become even more security minded.
+    <p><a href="/2004/07/12/early-bird-specials/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on July 12, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/07/12/dell-latitude-600-setup/">Dell Latitude 600 Setup</a>
+    </h2>
+    
+    <p>I received my new Dell Latitude 600 today.  Sweet machine but now it’s time to set it up to my liking.  My plan going into it is to setup the host OS with the general tools I need each day such as Eudora Pro, Office 2003, iTunes, and so on.  I will use either VMWare or Virtual PC to host guest OS for my development environments.  I plan to setup the primary user account for each OS with minimum privileges to force me to become even more security minded.
 <br />
 <br />I’m still not convinced that hosting my development environment in a guest OS is the right choice but I do like the idea of creating a new development environment in a matter of minutes instead of hours.  The big decision I have to make though is whether to use VMWare or Virtual PC.  I have been a VMWare user for some time now but there are some cost benefits for using Virtual PC.  Post a reply if you have an opinion on VMWare versus Virtual.  Meanwhile I’ll post more about my setup and configuration experience as I go through the process.</p>
 
 
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
 
-        </div>
-    </div>
-    <!--- Post Ends -->
+    <p><a href="/2004/07/12/dell-latitude-600-setup/">Continue reading &rarr;</a></p>
 
+    <p class="post-meta">Posted by Kirby Turner on July 12, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
     
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jul<span class="year">2004</span></span><span class="day">02</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/07/02/delta-to-invest-in-radio-tags-for-luggage-at-airports/" rel="bookmark" title="Delta to Invest in Radio Tags for Luggage at Airports">Delta to Invest in Radio Tags for Luggage at Airports</a></h2>
-
-        <p><a href="http://www.nytimes.com/2004/07/01/technology/01tags.html?ex=1089345600&amp;en=9afabca9eda48507&amp;ei=5062&amp;partner=GOOGLE">Reported by the The New York Times</a>, “Delta Air Lines said yesterday that it planned to use disposable radio tags to track all luggage it handles at domestic airports.”</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">30</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/06/30/dave-and-lexi/" rel="bookmark" title="Dave and Lexi">Dave and Lexi</a></h2>
-
-        <p>Congratulations to <a href="http://www.daveandlexi.com/">Dave and Lexi</a> on their recent marriage.  Melanie and I are looking forward to the reception in October.</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jun<span class="year">2004</span></span><span class="day">29</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/06/29/why-software-quality-matters/" rel="bookmark" title="Why Software Quality Matters">Why Software Quality Matters</a></h2>
-
-        <p>“This is a warning for any creator of computer programs: that software quality matters, that applications must be foolproof, and that-whether embedded in the engine of a car, a robotic arm in a factory or a healing device in a hospital-poorly deployed code can kill.”
-<br />
-<br />This quote comes from an article my friend Matt pointed to me from Base Line Magazine titled <a href="http://www.baselinemag.com/article2/0,1397,1543564,00.asp">Why Software Quality Matters</a>.
-<br />
-<br />This article really illustrates the importance of software quality.  As more software is used in the daily lives of people the importance of quality software increases.  Recently I read in Consumer Reports that a particular model of luxury car is being recalled due to a problem related to a transmission controller chip.  The software in this chip can cause the car moving forward to shift into reverse.  Imagine the pileup that could be caused by a car suddenly shifting into reverse as it and other drivers speed down the NJ Turnpike during rush hour.
-<br />
-<br />Many programmers like me can and have argued that our business applications pose no threat to human life.  But does this mean we can set quality levels for our work to a lower standard?  Does it mean we can intentionally deploy poorly written applications?  I say absolutely not!  Software developers must start accepting the responsibility of writing high quality code and they should be held accountable for any code not adhering to a high standard of quality.</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-
-
-
-<div class="more_posts">
-	<h2>
-        
-        <a href="/page51" >&laquo; Older Entries</a> &nbsp;
-        
-        
-            
-                <a href="/page49" >Recent Entries &raquo;</a>
-            
-        
+    <h2 class="post-title">
+        <a href="/2004/07/02/delta-to-invest-in-radio-tags-for-luggage-at-airports/">Delta to Invest in Radio Tags for Luggage at Airports</a>
     </h2>
+    
+    <p><a href="http://www.nytimes.com/2004/07/01/technology/01tags.html?ex=1089345600&amp;en=9afabca9eda48507&amp;ei=5062&amp;partner=GOOGLE">Reported by the The New York Times</a>, “Delta Air Lines said yesterday that it planned to use disposable radio tags to track all luggage it handles at domestic airports.”</p>
+
+
+
+    <p><a href="/2004/07/02/delta-to-invest-in-radio-tags-for-luggage-at-airports/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on July 2, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
 </div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/06/30/dave-and-lexi/">Dave and Lexi</a>
+    </h2>
+    
+    <p>Congratulations to <a href="http://www.daveandlexi.com/">Dave and Lexi</a> on their recent marriage.  Melanie and I are looking forward to the reception in October.</p>
+
+
+
+    <p><a href="/2004/06/30/dave-and-lexi/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on June 30, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+
+<!-- Pager -->
+
+<ul class="pager">
+    
+    <li class="previous">
+        <a href="/page49">&larr; Newer Posts</a>
+    </li>
+    
+    
+    <li class="next">
+        <a href="/page51">Older Posts &rarr;</a>
+    </li>
+    
+</ul>
 
 
 		</div>
+	</div>
+</div>
 
-				<!--- Sidebar Starts -->
+<p>&nbsp;</p>
 
-		<div id="sidebar" class="right-col">
 
-			<div id="search">
-                <form action="http://google.com/search" method="get">
-                    <div>
-          					<input type="text" class="search_box" name="as_q" id="q" results="0" />
-                    <input type="hidden" name="as_sitesearch" value="thecave.com" />
-          					<input type="image" src="/styles/typebased/images/search.gif" class="submit" name="submit" />
-                    </div>
-                </form>
-			</div>
-
-			<div id="sidebar_in">
-
-			<div id="lastfm-1" class="block widget widget_lastfm">
-    <h2><a href="http://last.fm/user/kirbyt" class="lastfm_title_link">Listening To</a></h2>
-    <div class="lastfm">
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-lg-offset-1 col-xs-12">
+                <h3>Recent Articles</h3>
+                <ul>
+                
+                <li><a href="/2015/02/16/new-site-theme/" title="New Site Theme">New Site Theme</a></li>
+                
+                <li><a href="/2015/02/13/bad-case-of-buyers-remorse/" title="Bad Case Of Buyer's Remorse">Bad Case Of Buyer's Remorse</a></li>
+                
+                <li><a href="/2015/02/06/consider-the-environmental-cost/" title="Consider The Environmental Cost">Consider The Environmental Cost</a></li>
+                
+                <li><a href="/2015/02/04/hey-local-retail-stores-update-your-website/" title="Hey Local Retail Stores, Update Your Website">Hey Local Retail Stores, Update Your Website</a></li>
+                
+                <li><a href="/2015/01/27/finally/" title="Finally...">Finally...</a></li>
+                
+                </ul>                
+            </div>
+            <div class="col-lg-5 col-lg-offset-1 col-xs-12">
+                <h3>Other Sites</h3>
+                <ul>
+                    <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
+                    <li><a href="http://photos.thecave.com/">And More Photos</a></li>
+                    <li><a href="http://www.rowanturner.net/">Rowan Turner</a></li>
+                    <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
+                    <li><a href="http://www.whitepeaksoftware.com/">White Peak Software</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br />
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://alpha.app.net/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-adn fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://twitter.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="https://github.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="http://www.linkedin.com/in/kirbyt/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2015</p>
+            </div>
+        </div>
     </div>
-</div>
+</footer>
 
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
 
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
 
-        <div id="linkcat-2" class="block widget widget_links"><h2>Blogroll</h2>
-            <ul class='xoxo blogroll'>
-            <li><a href="http://www.rowanturner.net/">Rowan T</a></li>
-            <li><a href="http://photos.thecave.com/">Photos</a></li>
-            <li><a href="http://www.learnipadprogramming.com/">Learning iPad Programming</a></li>
-            <li><a href="http://blog.whitepeaksoftware.com/">White Peak Software</a></li>
-            </ul>
-        </div>
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
 
-		<div id="linkcat-3" class="block widget widget_links"><h2>Categories</h2>
-    <ul>
-        <li class='category'><a href='/category/apps/'>apps (5)</a></li>
-<li class='category'><a href='/category/backpack/'>backpack (1)</a></li>
-<li class='category'><a href='/category/backpacking/'>backpacking (8)</a></li>
-<li class='category'><a href='/category/blogger/'>blogger (785)</a></li>
-<li class='category'><a href='/category/camping/'>camping (11)</a></li>
-<li class='category'><a href='/category/cross%20post/'>cross post (5)</a></li>
-<li class='category'><a href='/category/family/'>family (5)</a></li>
-<li class='category'><a href='/category/fitness/'>fitness (3)</a></li>
-<li class='category'><a href='/category/general/'>general (25)</a></li>
-<li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
-<li class='category'><a href='/category/humor/'>humor (1)</a></li>
-<li class='category'><a href='/category/ios/'>ios (11)</a></li>
-<li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
-<li class='category'><a href='/category/life/'>life (4)</a></li>
-<li class='category'><a href='/category/long%20trail/'>long-trail (2)</a></li>
-<li class='category'><a href='/category/moving/'>moving (1)</a></li>
-<li class='category'><a href='/category/opinion/'>opinion (2)</a></li>
-<li class='category'><a href='/category/pictures/'>pictures (8)</a></li>
-<li class='category'><a href='/category/programming/'>programming (8)</a></li>
-<li class='category'><a href='/category/random/'>random (5)</a></li>
-<li class='category'><a href='/category/rant/'>rant (4)</a></li>
-<li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
-<li class='category'><a href='/category/salem/'>salem (1)</a></li>
-<li class='category'><a href='/category/skiing/'>skiing (5)</a></li>
-<li class='category'><a href='/category/snowboarding/'>snowboarding (11)</a></li>
-<li class='category'><a href='/category/social/'>social (4)</a></li>
-<li class='category'><a href='/category/stowe/'>stowe (5)</a></li>
-<li class='category'><a href='/category/tech/'>tech (4)</a></li>
-<li class='category'><a href='/category/travel/'>travel (3)</a></li>
-<li class='category'><a href='/category/trips/'>trips (5)</a></li>
-<li class='category'><a href='/category/videos/'>videos (2)</a></li>
-<li class='category'><a href='/category/work/'>work (5)</a></li>
-<li class='category'><a href='/category/writing/'>writing (2)</a></li>
-
-    </ul>
-</div>
-
-        <div id="archives-3" class="block widget widget_archive"><h2>Archives</h2>
-        <ul class='archives'>
-        <li><a href="/blog/archives">The Complete Blog Archives</a></li>
-        </ul>
-        </div>
-
-
-			</div>
-
-		</div>
-
-		<!--- Sidebar Ends -->
-	</div>
-
-</div>
-
-<div id="footer" class="wrap">
-
-	<div class="left-col">
-		<div class="popular wrap">
-			<h2>Recent Articles</h2>
-			<ul>
-                
-                  <li><a href="/2015/02/13/bad-case-of-buyers-remorse/" title="Bad Case Of Buyer's Remorse">Bad Case Of Buyer's Remorse</a></li>
-                
-                  <li><a href="/2015/02/06/consider-the-environmental-cost/" title="Consider The Environmental Cost">Consider The Environmental Cost</a></li>
-                
-                  <li><a href="/2015/02/04/hey-local-retail-stores-update-your-website/" title="Hey Local Retail Stores, Update Your Website">Hey Local Retail Stores, Update Your Website</a></li>
-                
-                  <li><a href="/2015/01/27/finally/" title="Finally...">Finally...</a></li>
-                
-                  <li><a href="/2015/01/18/eliminating-distractions/" title="Eliminating Distractions">Eliminating Distractions</a></li>
-                
-            </ul>
-		</div>
-	</div>
-
-	<div id="subscribe" class="right-col">
-		<h2>Subscribe to RSS</h2>
-		<p class="rss">If you enjoyed the post, make sure you subscribe to the RSS feed.</p>
-		<p>
-		<a href="/atom.xml">Articles</a><br />
-		</p>
-	</div>
-
-<div id="copyright" class="wrap">
-
-	<div class="left-col">
-		<p>&copy; 2015</p>
-	</div>
-
-	<div class="right-col">
-		<p>Design by <a href="http://woothemes.com"><img src="/styles/typebased/styles/grey/logo-footer.jpg" width="87" height="21" alt="woo themes" /></a></p>
-	</div>
-
-</div>
-
-</div>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-167605-3']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 
 </body>
+
 </html>
-<!-- Localized -->

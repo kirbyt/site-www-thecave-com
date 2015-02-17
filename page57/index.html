@@ -1,183 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 
-<title>thecave | Ramblings From A Crotchety Old Man</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="robots" content="index, follow" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ramblings From A Crotchety Old Man">
 
-<link rel="stylesheet" type="text/css" href="/styles/typebased/style.css" />
-<link rel="alternate" type="application/atom+xml" title="thecave | Ramblings From A Crotchety Old Man" href="http://www.thecave.com/atom.xml" />
+    <title>thecave</title>
 
-<!--[if IE 6]>
-<script type="text/javascript" src="/styles/typebased/includes/js/menu.js"></script>
-<![endif]-->
+    <link rel="canonical" href="http://www.thecave.com/page57/">
+    <link rel="alternate" type="application/atom+xml" title="thecave's Feed" href="http://www.thecave.com/feed.xml" />
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
-<script type='text/javascript' src='/styles/typebased/includes/js/superfish.js?ver=3.3.2'></script>
-<script type="text/javascript" src="/js/lastfm.js"></script>
 
-<!-- Alt Stylesheet -->
-<link href="/styles/typebased/styles/grey.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 
-<!-- Woo Shortcodes CSS -->
-<link href="/styles/typebased/functions/css/shortcodes.css" rel="stylesheet" type="text/css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/clean-blog.css">
 
-<!-- Custom Stylesheet -->
-<link href="/styles/typebased/custom.css" rel="stylesheet" type="text/css" />
-<meta id="syntaxhighlighteranchor" name="syntaxhighlighter-version" content="3.1.3" />
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
 
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- YouTube CSS -->
+    <link rel="stylesheet" href="/css/video.css">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
-<body class="home blog unknown">
 
-<div id="container">
+<body>
 
-	<div id="header">
-		<h1>
-			<a href="/" title="Ramblings from a crotchety old man.">
-			<img src="/images/thecave-logo-2.png" style="margin-top:0px;" alt="thecave" /></a></h1>
-	</div>
-
-	
-	<div id="menu">
-				<ul id="navigation" class="nav wrap">
-										<li class="page_item current_page_item first"><a href="/"><span>Home</span></a></li>
-										<li class="page_item last"><a href="/about.html"><span>About</span></a></li>
-										</ul>
-			</div>
-	<div class="wrap background">
-
-		<div id="content" class="left-col wrap">
-            
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Feb<span class="year">2004</span></span><span class="day">17</span></h3>
-        <h4 class="author">kirbyt</h4>
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">thecave</a>
         </div>
 
-        <div class="post-content right-col">
-        <h2><a href="/2004/02/17/nant-rocks/" rel="bookmark" title="NAnt Rocks!">NAnt Rocks!</a></h2>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                
+                <li>
+                    <a href="/about.html">About</a>
+                </li>
+                
+                <li>
+                    <a href="/archive.html">Archive</a>
+                </li>
+                
+                <li>
+                    <a href="/categories.html">Categories</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
 
-        <p>I have been working on making an automated build environment for a customer project and I have to say <a href="http://nant.sf.net/">NAnt</a> simply rocks!  I am able to do some many things with it should as touch redist files, send e-mails on success and failure events, and build different targets.  Later I will try posting complete details on the continuous integration environment I have built using NAnt, NUnit, CVS, VMWare and more.<br /><br /><br /></p>
 
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
+    <!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/bg-01.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>thecave</h1>
+                    <hr class="small">
+                    <span class="subheading">Ramblings From A Crotchety Old Man</span>
+                </div>
+            </div>
         </div>
     </div>
-    <!--- Post Ends -->
+</header>
 
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			
+<div class="post-preview">
     
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Feb<span class="year">2004</span></span><span class="day">15</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/02/15/why-i-wont-use-turbotax-again/" rel="bookmark" title="Why I won't use TurboTax again">Why I won't use TurboTax again</a></h2>
-
-        <p>I have used <a href="http://www.turbotax.com/">TurboTax</a> for a number of years to do my annual federal and state tax returns so this year should have been no different.  But from the start I had a bad feeling about using TurboTax.  First it seems <a href="http://www.intuit.com/">Intuit</a> only provides a web version of the <a href="http://www.turbotax.intuit.com/welcome/internalnocobrand/live.htm?source=ttcommain">product</a>.  Not that I have anything again doing my taxes on the web.  It’s just I prefer to use a desktop application.<br /><br />As if filling my return on the web wasn’t bad enough I struggled with various worksheets as Melanie and I are now filling as a married couple.  What does one do when a question ask for information from the previous year’s return?  Do you add the total from the two returns?  Anyway, combine this with the sell of some stocks last year that resulted in long term capital gains and losses and I started finding bugs in the online software.  In all cases I found I had to completely delete records of information and re-enter the same information to get around bugs.  An example of a bug was when I answered a question only to later learn that I answered the question incorrectly.  When I returned to the question to answer it correctly it seemed the software ignored the new answer.  Regardless of what I tried the software continued to ignore the corrected answer.  So as a last resort I deleted the section of information and re-keyed it.  A major plan but nothing compared to the final problem I had with TurboTax for the Web.<br /><br />While completing my New York return I was asked to provide information from my New Jersey return.  Note: I did some work in New Jersey over the summer which requires I complete two state returns.  No problem I thought.  I’ll just stop work on my New York return and complete my New Jersey.  To my surprise there was no way for me to create a second state return.  I searched the online help and FAQ but found no answer.  I tried an online chat with tech support but after waiting a very long time I gave up waiting for someone from Intuit to reply.  I would have called support over the phone but noticed that a $19.95 charge applies.  And I refuse to pay $19.95 to a company only to learn there is a limitation in their software or they designed a poor user interface.<br /><br />In total frustration and after wasting lots of time trying to navigate the pains of TurboTax I decided I am better off paying a tax professional to complete my return.  Yes it will cost more than the TurboTax software but at least I know it will be correct and it will not take up a full day of my time.  And it’s sad that I can’t use TurboTax given that our taxes when compared to many others are not complex.  <br /><br />Looks like I am no longer a TurboTax user.  Maybe it’s time for me to look at Microsoft Money 2004 as well and dump Quicken.<br /><br /><br /></p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
+    <h2 class="post-title">
+        <a href="/2004/02/19/quality-xbox-time/">Quality Xbox Time</a>
+    </h2>
     
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Feb<span class="year">2004</span></span><span class="day">15</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/02/15/whistler-pictures-online/" rel="bookmark" title="Whistler Pictures Online">Whistler Pictures Online</a></h2>
-
-        <p>Finally some new pictures.  Check out the <a href="gallery.aspx">new pix</a> from Whistler in the WASTED 2004 folder.  Enjoy.</p>
+    <p>I finally got in some quality Xbox time last year thanks to Melanie.  The awesome Tony Hawk’s Underground (THUG) was the game of choice.  That game is so addicting.  I couldn’t stop playing.  I’m not far in the game but I have hit New Jersey, Manhattan, and Tampa.  I’m really starting to get the hang of the controls which means better tricks and higher scores.  But I need to continue playing it to maintain and improve my skills.  Taking two months off between sessions is no way to finish a game.  Maybe I can squeeze in another hour sometime tomorrow morning before work.<br /><br /><br /></p>
 
 
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
 
-        </div>
-    </div>
-    <!--- Post Ends -->
+    <p><a href="/2004/02/19/quality-xbox-time/">Continue reading &rarr;</a></p>
 
+    <p class="post-meta">Posted by Kirby Turner on February 19, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
     
-    <!--- Post Starts -->
-    <div class="post wrap">
+    <h2 class="post-title">
+        <a href="/2004/02/17/nant-rocks/">NAnt Rocks!</a>
+    </h2>
+    
+    <p>I have been working on making an automated build environment for a customer project and I have to say <a href="http://nant.sf.net/">NAnt</a> simply rocks!  I am able to do some many things with it should as touch redist files, send e-mails on success and failure events, and build different targets.  Later I will try posting complete details on the continuous integration environment I have built using NAnt, NUnit, CVS, VMWare and more.<br /><br /><br /></p>
 
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Feb<span class="year">2004</span></span><span class="day">15</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
 
-        <div class="post-content right-col">
-        <h2><a href="/2004/02/15/travel-journal-org-experience-advice-tips-for-cheap-international-travel/" rel="bookmark" title="Travel Journal.org - Experience, Advice & Tips for Cheap International Travel">Travel Journal.org - Experience, Advice & Tips for Cheap International Travel</a></h2>
 
-        <p>Melanie’s good friend Chris Hart has started a new travel site.  Check it out.
+    <p><a href="/2004/02/17/nant-rocks/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on February 17, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/02/15/why-i-wont-use-turbotax-again/">Why I won't use TurboTax again</a>
+    </h2>
+    
+    <p>I have used <a href="http://www.turbotax.com/">TurboTax</a> for a number of years to do my annual federal and state tax returns so this year should have been no different.  But from the start I had a bad feeling about using TurboTax.  First it seems <a href="http://www.intuit.com/">Intuit</a> only provides a web version of the <a href="http://www.turbotax.intuit.com/welcome/internalnocobrand/live.htm?source=ttcommain">product</a>.  Not that I have anything again doing my taxes on the web.  It’s just I prefer to use a desktop application.<br /><br />As if filling my return on the web wasn’t bad enough I struggled with various worksheets as Melanie and I are now filling as a married couple.  What does one do when a question ask for information from the previous year’s return?  Do you add the total from the two returns?  Anyway, combine this with the sell of some stocks last year that resulted in long term capital gains and losses and I started finding bugs in the online software.  In all cases I found I had to completely delete records of information and re-enter the same information to get around bugs.  An example of a bug was when I answered a question only to later learn that I answered the question incorrectly.  When I returned to the question to answer it correctly it seemed the software ignored the new answer.  Regardless of what I tried the software continued to ignore the corrected answer.  So as a last resort I deleted the section of information and re-keyed it.  A major plan but nothing compared to the final problem I had with TurboTax for the Web.<br /><br />While completing my New York return I was asked to provide information from my New Jersey return.  Note: I did some work in New Jersey over the summer which requires I complete two state returns.  No problem I thought.  I’ll just stop work on my New York return and complete my New Jersey.  To my surprise there was no way for me to create a second state return.  I searched the online help and FAQ but found no answer.  I tried an online chat with tech support but after waiting a very long time I gave up waiting for someone from Intuit to reply.  I would have called support over the phone but noticed that a $19.95 charge applies.  And I refuse to pay $19.95 to a company only to learn there is a limitation in their software or they designed a poor user interface.<br /><br />In total frustration and after wasting lots of time trying to navigate the pains of TurboTax I decided I am better off paying a tax professional to complete my return.  Yes it will cost more than the TurboTax software but at least I know it will be correct and it will not take up a full day of my time.  And it’s sad that I can’t use TurboTax given that our taxes when compared to many others are not complex.  <br /><br />Looks like I am no longer a TurboTax user.  Maybe it’s time for me to look at Microsoft Money 2004 as well and dump Quicken.<br /><br /><br /></p>
+
+
+
+    <p><a href="/2004/02/15/why-i-wont-use-turbotax-again/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on February 15, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/02/15/whistler-pictures-online/">Whistler Pictures Online</a>
+    </h2>
+    
+    <p>Finally some new pictures.  Check out the <a href="gallery.aspx">new pix</a> from Whistler in the WASTED 2004 folder.  Enjoy.</p>
+
+
+
+    <p><a href="/2004/02/15/whistler-pictures-online/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on February 15, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/02/15/travel-journal-org-experience-advice-tips-for-cheap-international-travel/">Travel Journal.org - Experience, Advice & Tips for Cheap International Travel</a>
+    </h2>
+    
+    <p>Melanie’s good friend Chris Hart has started a new travel site.  Check it out.
 <br />
 <br /><a href="http://www.travel-journal.org/index.html">Travel Journal.org - Experience, Advice &amp; Tips for Cheap International Travel</a>: “Advice on cheap international travel from a backpacker who has “seen it all” is here on Travel-Journal.org.”</p>
 
 
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
 
-        </div>
-    </div>
-    <!--- Post Ends -->
+    <p><a href="/2004/02/15/travel-journal-org-experience-advice-tips-for-cheap-international-travel/">Continue reading &rarr;</a></p>
 
+    <p class="post-meta">Posted by Kirby Turner on February 15, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
     
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Feb<span class="year">2004</span></span><span class="day">15</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/02/15/correction-found-desktop-version-of-turbotax/" rel="bookmark" title="Correction: Found desktop version of TurboTax">Correction: Found desktop version of TurboTax</a></h2>
-
-        <p>I stand corrected.  I was able to find a <a href="http://www.shop.intuit.com/commerce/catalog/product.jhtml;jsessionid=U15PHHFJUKZR2CQIBMVRZNQKBAFSOF4K?sellLocation=CATALOG%2FCATEGORY.cat60004.overview.m251166%2FFeaturedProducts.2%2F0000000000001402409&amp;lid=0000000000001402409&amp;prodId=prod0000000000005948713">desktop version</a> of TurboTax but I didn’t find it from the www.turbotax.com website.  Instead I found it from the www.intuit.com website.  Go figure.
+    <h2 class="post-title">
+        <a href="/2004/02/15/correction-found-desktop-version-of-turbotax/">Correction: Found desktop version of TurboTax</a>
+    </h2>
+    
+    <p>I stand corrected.  I was able to find a <a href="http://www.shop.intuit.com/commerce/catalog/product.jhtml;jsessionid=U15PHHFJUKZR2CQIBMVRZNQKBAFSOF4K?sellLocation=CATALOG%2FCATEGORY.cat60004.overview.m251166%2FFeaturedProducts.2%2F0000000000001402409&amp;lid=0000000000001402409&amp;prodId=prod0000000000005948713">desktop version</a> of TurboTax but I didn’t find it from the www.turbotax.com website.  Instead I found it from the www.intuit.com website.  Go figure.
 <br />
 <br /><span style="color:red">Update:</span> I decided to give TurboTax one more chance before going to a professional but not the web version.  Instead I order my old, familiar friend, the desktop version.  Hopefully the experience will be much better and I can get our taxes done.
 <br />
 <br /></p>
 
 
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
 
-        </div>
-    </div>
-    <!--- Post Ends -->
+    <p><a href="/2004/02/15/correction-found-desktop-version-of-turbotax/">Continue reading &rarr;</a></p>
 
+    <p class="post-meta">Posted by Kirby Turner on February 15, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
     
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Feb<span class="year">2004</span></span><span class="day">12</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/02/12/freeware-versus-build/" rel="bookmark" title="Freeware versus Build">Freeware versus Build</a></h2>
-
-        <p>I know I have said this before but this time I hope I really mean it.  I plan to start making more technology related posting to this blog.  And to start things off I will share my rambling on using a CMS verses building a web site by hand.
+    <h2 class="post-title">
+        <a href="/2004/02/12/freeware-versus-build/">Freeware versus Build</a>
+    </h2>
+    
+    <p>I know I have said this before but this time I hope I really mean it.  I plan to start making more technology related posting to this blog.  And to start things off I will share my rambling on using a CMS verses building a web site by hand.
 <br />
 <br />I am in the process of setting up a web site for a new software company.  Originally I wanted to use <a href="http://www.dotnetnuke.com/">DotNetNuke</a> to manage the site.  It’s a great solution that has evolved since original releases of IBuySpy.  However there are some database issues I have with DNN.  Specifically the software company’s hosting provider only provides a single database so multiple applications hosted under the one account must share the database.  Unfortunately DNN and another application already hosted attempt to use the same table names.  Now there are ways around the problem using tricks like assigning different owners to the tables,
 <br />etc.  And from what I have heard DNN v2.0 will have table name prefixes and other enhancements to prevent the problem.  But DNN v2.0 has not been released yet.
@@ -191,259 +238,194 @@
 <br />The struggle continues.  Feel free to post your opinions if you have one.</p>
 
 
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
 
-        </div>
-    </div>
-    <!--- Post Ends -->
+    <p><a href="/2004/02/12/freeware-versus-build/">Continue reading &rarr;</a></p>
 
+    <p class="post-meta">Posted by Kirby Turner on February 12, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
     
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jan<span class="year">2004</span></span><span class="day">26</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/01/26/off-to-wasted-2004/" rel="bookmark" title="Off to WASTED 2004">Off to WASTED 2004</a></h2>
-
-        <p><a href="http://www.wastedboarding.com/">WASTED 2004</a> started over the weekend and for the first time Melanie and I were <strong>not</strong> there for the start of the trip.  But we are heading out tomorrow.  Be sure to check the WASTED site at <a href="http://www.wastedboarding.com/">http://www.wastedboarding.com/</a> for daily (or almost daily) posting.</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jan<span class="year">2004</span></span><span class="day">23</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/01/23/ambrosia-software-inc-newsnewsletter/" rel="bookmark" title="Ambrosia Software, Inc. -- news/newsletter">Ambrosia Software, Inc. -- news/newsletter</a></h2>
-
-        <p><a href="http://www.ambrosiasw.com/cgi-bin/ubb/newsdisplay.cgi?action=topics&amp;number=14&amp;forum=The%20Ambrosia%20Times%20Newsletter&amp;DaysPrune=25&amp;article=000052&amp;startpoint=">Ambrosia Software, Inc. – Bitwise Operator: The Plain Truth About Piracy</a> “It’s a rare day when a shareware programmer gets firm statistics on the extent of software piracy, but just recently, I got that chance.”</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jan<span class="year">2004</span></span><span class="day">21</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/01/21/commentary-the-upcoming-gnome-monarchy-of-mono-osnews-com/" rel="bookmark" title="Commentary: The Upcoming GNOME Monarchy of Mono - OSNews.com">Commentary: The Upcoming GNOME Monarchy of Mono - OSNews.com</a></h2>
-
-        <p><a href="http://www.osnews.com/story.php?news_id=5746&amp;foo=Commentary:%20The%20Upcoming%20GNOME%20Monarchy%20of%20Mono%2001-21-2004">Commentary: The Upcoming GNOME Monarchy of Mono - OSNews.com</a>: “Unix was originally all about not being… Multics. If Mono is to follow a similar nomenclature (just for the kicks), we have to talk about Mono’s upcoming ‘monopolization’ and ‘monarchy’ in the next generation of the Unix programming land. Your see, if everything goes well, in 2 to 3 years most new Gnome user/desktop applications will be written –hopefully– in Mono and C#. “</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-    
-    <!--- Post Starts -->
-    <div class="post wrap">
-
-        <div class="post-meta left-col">
-        <h3 class="wrap"><span class="month">Jan<span class="year">2004</span></span><span class="day">20</span></h3>
-        <h4 class="author">kirbyt</h4>
-        </div>
-
-        <div class="post-content right-col">
-        <h2><a href="/2004/01/20/articles-avoiding-the-spam-trap-get-your-message-delivered/" rel="bookmark" title="Articles - Avoiding the Spam Trap: Get your message delivered!">Articles - Avoiding the Spam Trap: Get your message delivered!</a></h2>
-
-        <p><a href="http://www.envisionsoftware.com/articles/Avoid_The_Spam_Trap_RSS.html">Articles - Avoiding the Spam Trap: Get your message delivered!</a>: “If you send emails to your customers, I have some bad news for you. Not all of your emails are making it to your intended recipients. Between ISP spam filters, spam-blocking email servers, spam-killing email software, and email content filtering everywhere in between, the chances are high that your messages just aren’t making it past all of these roadblocks.”</p>
-
-
-        <div>Posted in <a class='category' href='/category/blogger/'>blogger</a>.</div>
-
-        </div>
-    </div>
-    <!--- Post Ends -->
-
-
-
-
-<div class="more_posts">
-	<h2>
-        
-        <a href="/page58" >&laquo; Older Entries</a> &nbsp;
-        
-        
-            
-                <a href="/page56" >Recent Entries &raquo;</a>
-            
-        
+    <h2 class="post-title">
+        <a href="/2004/01/26/off-to-wasted-2004/">Off to WASTED 2004</a>
     </h2>
+    
+    <p><a href="http://www.wastedboarding.com/">WASTED 2004</a> started over the weekend and for the first time Melanie and I were <strong>not</strong> there for the start of the trip.  But we are heading out tomorrow.  Be sure to check the WASTED site at <a href="http://www.wastedboarding.com/">http://www.wastedboarding.com/</a> for daily (or almost daily) posting.</p>
+
+
+
+    <p><a href="/2004/01/26/off-to-wasted-2004/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on January 26, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
 </div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/01/23/ambrosia-software-inc-newsnewsletter/">Ambrosia Software, Inc. -- news/newsletter</a>
+    </h2>
+    
+    <p><a href="http://www.ambrosiasw.com/cgi-bin/ubb/newsdisplay.cgi?action=topics&amp;number=14&amp;forum=The%20Ambrosia%20Times%20Newsletter&amp;DaysPrune=25&amp;article=000052&amp;startpoint=">Ambrosia Software, Inc. – Bitwise Operator: The Plain Truth About Piracy</a> “It’s a rare day when a shareware programmer gets firm statistics on the extent of software piracy, but just recently, I got that chance.”</p>
+
+
+
+    <p><a href="/2004/01/23/ambrosia-software-inc-newsnewsletter/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on January 23, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/01/21/commentary-the-upcoming-gnome-monarchy-of-mono-osnews-com/">Commentary: The Upcoming GNOME Monarchy of Mono - OSNews.com</a>
+    </h2>
+    
+    <p><a href="http://www.osnews.com/story.php?news_id=5746&amp;foo=Commentary:%20The%20Upcoming%20GNOME%20Monarchy%20of%20Mono%2001-21-2004">Commentary: The Upcoming GNOME Monarchy of Mono - OSNews.com</a>: “Unix was originally all about not being… Multics. If Mono is to follow a similar nomenclature (just for the kicks), we have to talk about Mono’s upcoming ‘monopolization’ and ‘monarchy’ in the next generation of the Unix programming land. Your see, if everything goes well, in 2 to 3 years most new Gnome user/desktop applications will be written –hopefully– in Mono and C#. “</p>
+
+
+
+    <p><a href="/2004/01/21/commentary-the-upcoming-gnome-monarchy-of-mono-osnews-com/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on January 21, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+
+<!-- Pager -->
+
+<ul class="pager">
+    
+    <li class="previous">
+        <a href="/page56">&larr; Newer Posts</a>
+    </li>
+    
+    
+    <li class="next">
+        <a href="/page58">Older Posts &rarr;</a>
+    </li>
+    
+</ul>
 
 
 		</div>
+	</div>
+</div>
 
-				<!--- Sidebar Starts -->
+<p>&nbsp;</p>
 
-		<div id="sidebar" class="right-col">
 
-			<div id="search">
-                <form action="http://google.com/search" method="get">
-                    <div>
-          					<input type="text" class="search_box" name="as_q" id="q" results="0" />
-                    <input type="hidden" name="as_sitesearch" value="thecave.com" />
-          					<input type="image" src="/styles/typebased/images/search.gif" class="submit" name="submit" />
-                    </div>
-                </form>
-			</div>
-
-			<div id="sidebar_in">
-
-			<div id="lastfm-1" class="block widget widget_lastfm">
-    <h2><a href="http://last.fm/user/kirbyt" class="lastfm_title_link">Listening To</a></h2>
-    <div class="lastfm">
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-lg-offset-1 col-xs-12">
+                <h3>Recent Articles</h3>
+                <ul>
+                
+                <li><a href="/2015/02/16/new-site-theme/" title="New Site Theme">New Site Theme</a></li>
+                
+                <li><a href="/2015/02/13/bad-case-of-buyers-remorse/" title="Bad Case Of Buyer's Remorse">Bad Case Of Buyer's Remorse</a></li>
+                
+                <li><a href="/2015/02/06/consider-the-environmental-cost/" title="Consider The Environmental Cost">Consider The Environmental Cost</a></li>
+                
+                <li><a href="/2015/02/04/hey-local-retail-stores-update-your-website/" title="Hey Local Retail Stores, Update Your Website">Hey Local Retail Stores, Update Your Website</a></li>
+                
+                <li><a href="/2015/01/27/finally/" title="Finally...">Finally...</a></li>
+                
+                </ul>                
+            </div>
+            <div class="col-lg-5 col-lg-offset-1 col-xs-12">
+                <h3>Other Sites</h3>
+                <ul>
+                    <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
+                    <li><a href="http://photos.thecave.com/">And More Photos</a></li>
+                    <li><a href="http://www.rowanturner.net/">Rowan Turner</a></li>
+                    <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
+                    <li><a href="http://www.whitepeaksoftware.com/">White Peak Software</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br />
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://alpha.app.net/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-adn fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://twitter.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="https://github.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="http://www.linkedin.com/in/kirbyt/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2015</p>
+            </div>
+        </div>
     </div>
-</div>
+</footer>
 
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
 
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
 
-        <div id="linkcat-2" class="block widget widget_links"><h2>Blogroll</h2>
-            <ul class='xoxo blogroll'>
-            <li><a href="http://www.rowanturner.net/">Rowan T</a></li>
-            <li><a href="http://photos.thecave.com/">Photos</a></li>
-            <li><a href="http://www.learnipadprogramming.com/">Learning iPad Programming</a></li>
-            <li><a href="http://blog.whitepeaksoftware.com/">White Peak Software</a></li>
-            </ul>
-        </div>
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
 
-		<div id="linkcat-3" class="block widget widget_links"><h2>Categories</h2>
-    <ul>
-        <li class='category'><a href='/category/apps/'>apps (5)</a></li>
-<li class='category'><a href='/category/backpack/'>backpack (1)</a></li>
-<li class='category'><a href='/category/backpacking/'>backpacking (8)</a></li>
-<li class='category'><a href='/category/blogger/'>blogger (785)</a></li>
-<li class='category'><a href='/category/camping/'>camping (11)</a></li>
-<li class='category'><a href='/category/cross%20post/'>cross post (5)</a></li>
-<li class='category'><a href='/category/family/'>family (5)</a></li>
-<li class='category'><a href='/category/fitness/'>fitness (3)</a></li>
-<li class='category'><a href='/category/general/'>general (25)</a></li>
-<li class='category'><a href='/category/hiking/'>hiking (8)</a></li>
-<li class='category'><a href='/category/humor/'>humor (1)</a></li>
-<li class='category'><a href='/category/ios/'>ios (11)</a></li>
-<li class='category'><a href='/category/kayaking/'>kayaking (1)</a></li>
-<li class='category'><a href='/category/life/'>life (4)</a></li>
-<li class='category'><a href='/category/long%20trail/'>long-trail (2)</a></li>
-<li class='category'><a href='/category/moving/'>moving (1)</a></li>
-<li class='category'><a href='/category/opinion/'>opinion (2)</a></li>
-<li class='category'><a href='/category/pictures/'>pictures (8)</a></li>
-<li class='category'><a href='/category/programming/'>programming (8)</a></li>
-<li class='category'><a href='/category/random/'>random (5)</a></li>
-<li class='category'><a href='/category/rant/'>rant (4)</a></li>
-<li class='category'><a href='/category/rowan/'>rowan (4)</a></li>
-<li class='category'><a href='/category/salem/'>salem (1)</a></li>
-<li class='category'><a href='/category/skiing/'>skiing (5)</a></li>
-<li class='category'><a href='/category/snowboarding/'>snowboarding (11)</a></li>
-<li class='category'><a href='/category/social/'>social (4)</a></li>
-<li class='category'><a href='/category/stowe/'>stowe (5)</a></li>
-<li class='category'><a href='/category/tech/'>tech (4)</a></li>
-<li class='category'><a href='/category/travel/'>travel (3)</a></li>
-<li class='category'><a href='/category/trips/'>trips (5)</a></li>
-<li class='category'><a href='/category/videos/'>videos (2)</a></li>
-<li class='category'><a href='/category/work/'>work (5)</a></li>
-<li class='category'><a href='/category/writing/'>writing (2)</a></li>
-
-    </ul>
-</div>
-
-        <div id="archives-3" class="block widget widget_archive"><h2>Archives</h2>
-        <ul class='archives'>
-        <li><a href="/blog/archives">The Complete Blog Archives</a></li>
-        </ul>
-        </div>
-
-
-			</div>
-
-		</div>
-
-		<!--- Sidebar Ends -->
-	</div>
-
-</div>
-
-<div id="footer" class="wrap">
-
-	<div class="left-col">
-		<div class="popular wrap">
-			<h2>Recent Articles</h2>
-			<ul>
-                
-                  <li><a href="/2015/02/13/bad-case-of-buyers-remorse/" title="Bad Case Of Buyer's Remorse">Bad Case Of Buyer's Remorse</a></li>
-                
-                  <li><a href="/2015/02/06/consider-the-environmental-cost/" title="Consider The Environmental Cost">Consider The Environmental Cost</a></li>
-                
-                  <li><a href="/2015/02/04/hey-local-retail-stores-update-your-website/" title="Hey Local Retail Stores, Update Your Website">Hey Local Retail Stores, Update Your Website</a></li>
-                
-                  <li><a href="/2015/01/27/finally/" title="Finally...">Finally...</a></li>
-                
-                  <li><a href="/2015/01/18/eliminating-distractions/" title="Eliminating Distractions">Eliminating Distractions</a></li>
-                
-            </ul>
-		</div>
-	</div>
-
-	<div id="subscribe" class="right-col">
-		<h2>Subscribe to RSS</h2>
-		<p class="rss">If you enjoyed the post, make sure you subscribe to the RSS feed.</p>
-		<p>
-		<a href="/atom.xml">Articles</a><br />
-		</p>
-	</div>
-
-<div id="copyright" class="wrap">
-
-	<div class="left-col">
-		<p>&copy; 2015</p>
-	</div>
-
-	<div class="right-col">
-		<p>Design by <a href="http://woothemes.com"><img src="/styles/typebased/styles/grey/logo-footer.jpg" width="87" height="21" alt="woo themes" /></a></p>
-	</div>
-
-</div>
-
-</div>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-167605-3']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 
 </body>
+
 </html>
-<!-- Localized -->
