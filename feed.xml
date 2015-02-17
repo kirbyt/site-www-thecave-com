@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>thecave</title>
+    <title>thecave | Ramblings From A Crotchety Old Man</title>
     <description>The Cave is the blog site for Kirby Turner, an independent software developer for Mac and iOS.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 16 Feb 2015 23:37:36 -0500</pubDate>
-    <lastBuildDate>Mon, 16 Feb 2015 23:37:36 -0500</lastBuildDate>
+    <pubDate>Mon, 16 Feb 2015 23:52:42 -0500</pubDate>
+    <lastBuildDate>Mon, 16 Feb 2015 23:52:42 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>New Site Theme</title>
         <description>&lt;p&gt;I’ve been on a website redesign kick lately updating sites such as &lt;a href=&quot;http://www.kirbyturner.com&quot;&gt;kirbyturner.com&lt;/a&gt; and &lt;a href=&quot;http://www.rowanturner.net&quot;&gt;rowanturner.net&lt;/a&gt;. The recent update to my &lt;a href=&quot;http://www.kirbyturner.com&quot;&gt;vanity website&lt;/a&gt; gives it a more modern look, and &lt;a href=&quot;http://www.rowanturner.net&quot;&gt;Rowan’s website&lt;/a&gt; now has a clean, fresh look that focuses on the content.&lt;/p&gt;
 
-&lt;p&gt;I especially like Rowan’s new site design. It uses a responsive design site theme so it looks good on the desktop as well as on mobile devices. I also like how it has custom header images for posts, and the clean and simply layout for posts makes it easy to focus on the content in each post. I like the site design for Rowan’s website so much that I decided to use the same site theme here at The Cave.&lt;/p&gt;
+&lt;p&gt;I especially like Rowan’s new site design. It uses a responsive design site theme so it looks good on the desktop as well as on mobile devices. I also like how it has custom header images for posts, and the clean and simply layout for posts makes it easy to focus on the content in each post. I like the site design for Rowan’s website so much that I decided to use the same site theme here at thecave.&lt;/p&gt;
 
-&lt;p&gt;I couldn’t, however, use the site theme as is. The Cave is a bit more involved given that it uses categories. Plus, I want to provide a complete &lt;a href=&quot;http://www.thecave.com/archive.html&quot;&gt;archive&lt;/a&gt; of every post available. These are things not found on Rowan’s site, so I’ve spent the last couple of evenings tweaking the site theme to be more appropriate for thecave.com.&lt;/p&gt;
+&lt;p&gt;I couldn’t, however, use the site theme as is. thecave is a bit more involved given that it uses categories. Plus, I want to provide a complete &lt;a href=&quot;http://www.thecave.com/archive.html&quot;&gt;archive&lt;/a&gt; of every post available. These are things not found on Rowan’s site, so I’ve spent the last couple of evenings tweaking the site theme to be more appropriate for thecave.com.&lt;/p&gt;
 
 &lt;p&gt;Other changes I made include adding a footer to each page that shows recent articles and a link list to other sites that I run, and adding an &lt;a href=&quot;http://www.thecave.com/archive.html&quot;&gt;archive&lt;/a&gt; link to the top that gives you access to every post made here since 2002. There is also a &lt;a href=&quot;http://www.thecave.com/categories.html&quot;&gt;categories&lt;/a&gt; link in the top bar for those who would rather find an article based on a category. But the change that I like the most is the rotating header images for each post. &lt;/p&gt;
 
