@@ -7,9 +7,9 @@ categories:
 ---
 I've been on a website redesign kick lately updating sites such as [kirbyturner.com][1] and [rowanturner.net][2]. The recent update to my [vanity website][1] gives it a more modern look, and [Rowan's website][2] now has a clean, fresh look that focuses on the content.
 
-I especially like Rowan's new site design. It uses a responsive design site theme so it looks good on the desktop as well as on mobile devices. I also like how it has custom header images for posts, and the clean and simply layout for posts makes it easy to focus on the content in each post. I like the site design for Rowan's website so much that I decided to use the same site theme here at The Cave.
+I especially like Rowan's new site design. It uses a responsive design site theme so it looks good on the desktop as well as on mobile devices. I also like how it has custom header images for posts, and the clean and simply layout for posts makes it easy to focus on the content in each post. I like the site design for Rowan's website so much that I decided to use the same site theme here at thecave.
 
-I couldn't, however, use the site theme as is. The Cave is a bit more involved given that it uses categories. Plus, I want to provide a complete [archive][3] of every post available. These are things not found on Rowan's site, so I've spent the last couple of evenings tweaking the site theme to be more appropriate for thecave.com.
+I couldn't, however, use the site theme as is. thecave is a bit more involved given that it uses categories. Plus, I want to provide a complete [archive][3] of every post available. These are things not found on Rowan's site, so I've spent the last couple of evenings tweaking the site theme to be more appropriate for thecave.com.
 
 Other changes I made include adding a footer to each page that shows recent articles and a link list to other sites that I run, and adding an [archive][3] link to the top that gives you access to every post made here since 2002. There is also a [categories][4] link in the top bar for those who would rather find an article based on a category. But the change that I like the most is the rotating header images for each post. 
 
