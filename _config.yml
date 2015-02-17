@@ -6,7 +6,11 @@ author: Kirby Turner
 description: Ramblings From A Crotchety Old Man
 baseurl: ""
 url: "http://www.thecave.com"
-header-img: "img/home-bg.jpg"
+header-img: "img/bg-01.jpg"
+
+# Set header image count to the number of bg-NN.jpg images.
+# This will randomly select a header image when none is specified.
+headerImageCount: 5
 
 # Social Sites
 adn_username: kirbyt
