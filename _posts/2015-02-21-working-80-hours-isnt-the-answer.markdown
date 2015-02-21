@@ -32,11 +32,12 @@ Life's too short to overwork yourself today in hopes you will have the time late
 
 ## The Long Trail And Me
 
-A couple of years back I did a talk on the topic of underworking at the first [360intersect][3]. In it I talk about my time hiking the Long Trail and the effect it has had on me and the amount of time I spend working each week. Here's the video for those interested in watching it and learning more about the benefits of working less.
+A couple of years back I did a talk on the topic of underworking at the first [360intersect][3]. In it I talk about my time hiking the Long Trail and the effect it has had on me and the amount of time I spend working each week. Here's the video for those interested in watching it and learning more about the benefits of working less.[^2]
 
 {% vimeo 65740037 %}
 
 [^1]: Funny how working only 32 to 40 hours a week is thought to be slacking. 
+[^2]: Sorry the first couple of minutes of the talk are missing. Someone forgot to push the record button.
 
 [1]: http://www.quora.com/How-do-you-make-programmers-work-60-80-hours-per-week
 [2]: http://www.thecave.com/2014/06/20/enjoy-less-and-love-more/
