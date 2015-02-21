@@ -4,13 +4,54 @@
   <title><![CDATA[Category: life | thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/category/life/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-02-20T13:37:14-05:00</updated>
+  <updated>2015-02-21T08:28:39-05:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Working 80+ Hours Isn't The Answer]]></title>
+    <link href="http://www.thecave.com/2015/02/21/working-80-hours-isnt-the-answer/"/>
+    <updated>2015-02-21T07:41:24-05:00</updated>
+    <id>http://www.thecave.com/2015/02/21/working-80-hours-isnt-the-answer</id>
+    <content type="html"><![CDATA[<p>A founder, or maybe the person is a manager type, asked on Quora, “<a href="http://www.quora.com/How-do-you-make-programmers-work-60-80-hours-per-week">How do you make programmers work 60-80 hours per week?</a>” While the question is a pathetic one, the answers that follow, especially the first one, are worth a read. And you should certainly read the answers if you happen to be one of those sad founders/manager types who wants their of programmers to work long hours. In short, if you are trying to force your programmers to work 60, 80 or more hours per week, then you are doing it wrong. </p>
+
+<h2 id="personal-experience">Personal Experience</h2>
+
+<p>I have first hand experience working 80+ hours per week. Heck, there were times I worked more than 100 hours in a single week at one particular startup. There were times when I would go days without going home, choosing instead to sleep in the office for an hour here and an hour there. And if I needed a change of clothes for an important meeting, I would go to the Banana Republic that was below my office to buy a change of clothes instead of going home.</p>
+
+<p>The difference with this experience, however, was that I was never forced to put in those insane hours. No one ever asked me to work 80+ hours. I did it because I truly believed in what we were building. But I also knew what it took to be productive, and that’s why I often times made sure my team did not follow my lead. </p>
+
+<p>I encouraged my team to work no more than 40 hours, and if I noticed someone reaching 50 hours I usually asked that person to take a break, go home, and enjoy life a bit. The work can wait. Sometimes the team member would take my suggestion and leave, other times they would not. But the choice was theirs. I never asked for more than 40 hours per week and in the end we created some amazing things in a short amount of time.</p>
+
+<h2 id="get-to-the-point">Get To The Point</h2>
+
+<p>So what’s my point here? My point is that you can’t force a programmer to work long hours. That person has to want to do it. There has to be a love or passion for what they are doing, otherwise it’s just work. And people max out, especially creative types, after about 32 to 40 hours of work in a single week.</p>
+
+<h2 id="and-now">And Now</h2>
+
+<p>I worked at a few startups putting in 60 or more hours per week, but those days are behind me. Those were fun times with lots of good memories, but I now find it’s more important to break up work with other interest. Today I’m a proponent of what I like to call underworking, or as I more often times jokingly call “being a slacker.”<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
+
+<p>Life’s too short to overwork yourself today in hopes you will have the time later in life for the fun things. Who knows what will happen in the future. You could be hit by a beer truck tomorrow and die. That’s why I believe you should make a point to spend more time <a href="http://www.thecave.com/2014/06/20/enjoy-less-and-love-more/">doing what you love</a> now. The work can wait. </p>
+
+<h2 id="the-long-trail-and-me">The Long Trail And Me</h2>
+
+<p>A couple of years back I did a talk on the topic of underworking at the first <a href="http://www.360intersect.com/">360intersect</a>. In it I talk about my time hiking the Long Trail and the effect it has had on me and the amount of time I spend working each week. Here’s the video for those interested in watching it and learning more about the benefits of working less.</p>
+
+<p><div class="vimeo-video"><figure><iframe src="//player.vimeo.com/video/65740037" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></figure></div></p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Funny how working only 32 to 40 hours a week is thought to be slacking.  <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Reliving The Past]]></title>
@@ -98,29 +139,6 @@
 
 <p>You will be missed, Amy.</p>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Enjoy Less and Love More]]></title>
-    <link href="http://www.thecave.com/2014/06/20/enjoy-less-and-love-more/"/>
-    <updated>2014-06-20T00:00:00-04:00</updated>
-    <id>http://www.thecave.com/2014/06/20/enjoy-less-and-love-more</id>
-    <content type="html"><![CDATA[<p>To some my life seems like a non-stop vacation. I’m a ski bum, a slacker, someone who rarely works. I’m always off on some adventure, snowboarding in the winter months, hiking and kayaking in the summer months. And from one point of view this is true. Over the last 12 months I have spent a great deal of my time snowboarding, hiking and kayaking. But I’ve also been focused on writing code and building apps.</p>
-
-<p>Writing code and building software is a passion of mine. It’s the one thing I’m most passionate about. I’ve been writing code for more than 30 years, and I cannot image doing anything else with my life.</p>
-
-<p>Over the last year I’ve been enjoying my passion more than ever. I’ve written more code in the last year than I did in the previous 3 years combined. I realized just this morning I have worked on and contributed to 22 different apps in the last 12 months, of which 15 are available in the App Store today. That’s a lot of time behind the keyboard.</p>
-
-<p>Business is booming and life is good. So what changed? How is it I can live the ski bum, slacker life and still get a ton of work done? How is it I’m able to work on more apps today compared to a few years ago and still have time for adventure and family? The answer for me was to cut out those things from my life that I enjoy but do not love. (I already cut out those things I hate years ago.)</p>
-
-<p>I stopped writing. I stopped organizing meet ups events. I stopped speaking at conferences. And while I haven’t completely stopped attending conferences and meet up events, I’ve cut way back. In the last 12 months I’ve attended one CocoaHeads event, one conference, and I socialized in San Francisco for only a 3 days during WWDC. This is a big change from just a few years ago when I was writing more words than code, attending and often times speaking at a conference every other month on average, and attending and organizing multiple social gatherings and meet ups each month.</p>
-
-<p>I’ve also made changes to my daily routines. I don’t spend as much time reading news and following the latest happenings on social sites like App.net, Facebook and Twitter. I still make posts to these sites, but I limit the amount of time I spend reading what others have to say. And I’m not as active as I once was in chat rooms and irc. Cutting back on these distractions gives me more time each day to focus on things I love doing.</p>
-
-<p>Some friends and family members have pointed out that I seem happier since moving to Stowe, and they are right. I am happier these days, but it’s not just because I moved to Stowe. It’s because I’m doing more of what I love, and I accomplished this by doing less of what I only enjoy.</p>
-
-<p>By not doing the things I enjoy, I’ve been able to spend more time doing the things I love.</p>
 ]]></content>
   </entry>
   

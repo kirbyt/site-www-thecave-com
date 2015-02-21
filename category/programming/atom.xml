@@ -4,13 +4,54 @@
   <title><![CDATA[Category: programming | thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/category/programming/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-02-20T13:37:14-05:00</updated>
+  <updated>2015-02-21T08:28:39-05:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Working 80+ Hours Isn't The Answer]]></title>
+    <link href="http://www.thecave.com/2015/02/21/working-80-hours-isnt-the-answer/"/>
+    <updated>2015-02-21T07:41:24-05:00</updated>
+    <id>http://www.thecave.com/2015/02/21/working-80-hours-isnt-the-answer</id>
+    <content type="html"><![CDATA[<p>A founder, or maybe the person is a manager type, asked on Quora, “<a href="http://www.quora.com/How-do-you-make-programmers-work-60-80-hours-per-week">How do you make programmers work 60-80 hours per week?</a>” While the question is a pathetic one, the answers that follow, especially the first one, are worth a read. And you should certainly read the answers if you happen to be one of those sad founders/manager types who wants their of programmers to work long hours. In short, if you are trying to force your programmers to work 60, 80 or more hours per week, then you are doing it wrong. </p>
+
+<h2 id="personal-experience">Personal Experience</h2>
+
+<p>I have first hand experience working 80+ hours per week. Heck, there were times I worked more than 100 hours in a single week at one particular startup. There were times when I would go days without going home, choosing instead to sleep in the office for an hour here and an hour there. And if I needed a change of clothes for an important meeting, I would go to the Banana Republic that was below my office to buy a change of clothes instead of going home.</p>
+
+<p>The difference with this experience, however, was that I was never forced to put in those insane hours. No one ever asked me to work 80+ hours. I did it because I truly believed in what we were building. But I also knew what it took to be productive, and that’s why I often times made sure my team did not follow my lead. </p>
+
+<p>I encouraged my team to work no more than 40 hours, and if I noticed someone reaching 50 hours I usually asked that person to take a break, go home, and enjoy life a bit. The work can wait. Sometimes the team member would take my suggestion and leave, other times they would not. But the choice was theirs. I never asked for more than 40 hours per week and in the end we created some amazing things in a short amount of time.</p>
+
+<h2 id="get-to-the-point">Get To The Point</h2>
+
+<p>So what’s my point here? My point is that you can’t force a programmer to work long hours. That person has to want to do it. There has to be a love or passion for what they are doing, otherwise it’s just work. And people max out, especially creative types, after about 32 to 40 hours of work in a single week.</p>
+
+<h2 id="and-now">And Now</h2>
+
+<p>I worked at a few startups putting in 60 or more hours per week, but those days are behind me. Those were fun times with lots of good memories, but I now find it’s more important to break up work with other interest. Today I’m a proponent of what I like to call underworking, or as I more often times jokingly call “being a slacker.”<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
+
+<p>Life’s too short to overwork yourself today in hopes you will have the time later in life for the fun things. Who knows what will happen in the future. You could be hit by a beer truck tomorrow and die. That’s why I believe you should make a point to spend more time <a href="http://www.thecave.com/2014/06/20/enjoy-less-and-love-more/">doing what you love</a> now. The work can wait. </p>
+
+<h2 id="the-long-trail-and-me">The Long Trail And Me</h2>
+
+<p>A couple of years back I did a talk on the topic of underworking at the first <a href="http://www.360intersect.com/">360intersect</a>. In it I talk about my time hiking the Long Trail and the effect it has had on me and the amount of time I spend working each week. Here’s the video for those interested in watching it and learning more about the benefits of working less.</p>
+
+<p><div class="vimeo-video"><figure><iframe src="//player.vimeo.com/video/65740037" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></figure></div></p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Funny how working only 32 to 40 hours a week is thought to be slacking.  <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[For-In Loop vs Using Block]]></title>
@@ -163,60 +204,6 @@
     </li>
     <li id="fn:manton">
       <p>That Manton is a smart guy. <a href="#fnref:manton" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Using xcodebuild To Export a .ipa From an Archive]]></title>
-    <link href="http://www.thecave.com/2014/09/16/using-xcodebuild-to-export-a-ipa-from-an-archive/"/>
-    <updated>2014-09-16T00:00:00-04:00</updated>
-    <id>http://www.thecave.com/2014/09/16/using-xcodebuild-to-export-a-ipa-from-an-archive</id>
-    <content type="html"><![CDATA[<p>Xcode 6 changes how you export a .ipa from an archive for adhoc distribution. It used to be that you could export the archive to a .ipa as long as you had the right provisioning profile and distribution certificate on your machine. Starting with Xcode 6 you need to be a team member of the particular Developer Program account and you need to have the rights to make a distribution build. This means you need to be a team agent. However, I work with a number of clients who don’t have the clue what Xcode is much less are willing to make distribution builds, so I need to way to make distribution builds within this new limitation from Xcode 6.</p>
-
-<p>Making distribution builds hasn’t been a problem for me in the past. I ask the client to provide me<sup id="fnref:ask"><a href="#fn:ask" class="footnote">1</a></sup> with the necessary provisioning profile, distribution certificate, and public private key pair so I can make the distribution build for them. Then I use Xcode Organizer to export the archive to a .ipa that I can distribute.<sup id="fnref:host"><a href="#fn:host" class="footnote">2</a></sup> But it seems I can no longer export using Organizer without having the right team access, so I had to search out an alternative approach.</p>
-
-<p>Turns out starting with Xcode 5, <em>xcodebuild</em> includes parameters for exporting from an archive. This is exactly what I need so I can continue making adhoc distribution builds for clients without being a team member or team agent under their Developer Program account.</p>
-
-<p>So how do I do it?</p>
-
-<h3 id="the-how-to">The How To</h3>
-
-<p>My build script starts by performing a clean.</p>
-
-<blockquote>
-  <p>xcodebuild clean -project $projectname.xcodeproj -configuration Release -alltargets</p>
-</blockquote>
-
-<p>Then the script builds and archives the app. I specify the archive path using the <em>-archivePath</em> parameter in the command line so the script will know where the archive file is located.</p>
-
-<blockquote>
-  <p>xcodebuild archive -project $projectname.xcodeproj -scheme $schemename -archivePath $projectname.xcarchive</p>
-</blockquote>
-
-<p>Finally my script exports the archive into a .ipa file.</p>
-
-<blockquote>
-  <p>xcodebuild -exportArchive -archivePath $projectname.xcarchive -exportPath $projectname -exportFormat ipa -exportProvisioningProfile “Provisioning Profile Name”</p>
-</blockquote>
-
-<p>I let the provisioning profile imply the signing identity, but you can specify the signing identity using the <em>-exportSigningIdentity</em> parameter.</p>
-
-<h3 id="the-gotcha">The Gotcha</h3>
-
-<p>The one major gotcha that cost me a more than an hour of time was figuring out the parameter value for <em>-exportProvisioningProfile</em>. I initial thought it should be the file name to the provisioning profile. I tried it with and without the <em>.mobileprovision</em> file extension, but it did not work. I included a relative path as well as an absolute path to the provision profile. I tried using the UUID for the provision profile instead of the file name. I even I tried not including a path at all thinking it would look up the provision profile in the <em>~/Library/MobileDevice/Provisioning Profiles/</em> directory, but still no luck.</p>
-
-<p>Turns out I needed to specify the name of the provisioning profile as defined in the file itself. This is the same name assigned to the profile in the provisioning portal. Once I figured this out I was able to export the .ipa from the archive using the my build script, and I don’t have to be a team agent under my client’s Developer Program account to make the distribution build.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:ask">
-      <p>I usually assist my clients with this by guiding them through the steps, or I ask them to give me the account credentials with a temporary password so I can perform the necessary steps. Then I have the client reset the password. <a href="#fnref:ask" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:host">
-      <p>I don’t export when I host the test app on <a href="http://hockeyapp.net/">HockeyApp</a>. It takes care of exporting the .ipa from the archive for you. I only export when the client requests that the test app be hosted on their own server.) <a href="#fnref:host" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
