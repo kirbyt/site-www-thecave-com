@@ -6,7 +6,7 @@ categories:
     - work
     - life
 ---
-While writing my previous post on how [working 80+ hours is not the answer][1], I was reminded of a Wall Street startup that I interviewed for back in December 1999. The startup was staffed with many brilliant programmers, and I certainly would learn a lot from them. The startup was well funded, and they offered me more money than any other company had offer me. But in the end, I turned down their offer.
+While writing my previous post on how [working 80+ hours is not the answer][1], I was reminded of a Wall Street startup I interviewed for back in December 1999. The startup was staffed with many brilliant programmers, and I certainly would learn a lot from them. The startup was well funded, and they offered me more money than any other company had offer me. But in the end I turned down their offer.
 
 While walking around the their office, I noticed most of the programmers had sleeping bags under their desks. And every one was sitting in cubes with no natural light. No one had toys on their desks, no pictures of loved ones, and no smiles on their faces. It seemed no one was having fun. 
 
