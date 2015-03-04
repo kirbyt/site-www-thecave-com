@@ -15,7 +15,8 @@ In the same spirit as those past Whistler trips[^1], I decided to write a daily 
 ---
 
 # Day 0.1 (Feb 23, 2015)
-We started our trek to Whistler today. It's the first time back to Whistler for Melanie and me since 2007. For those who might not know, Whistler was like a second home mountain for me for a while. I once even had a season pass there. But we haven't been back since Rowan was born. 
+
+We started our trek to Whistler today. It's the first time back to Whistler for Melanie and me since 2007. For those who might not know, Whistler was like a second home mountain for me for a while. I even had a season pass there one year. But we haven't been back since Rowan was born. 
 
 Our day began with a 4 hour car drive to Boston. The Delta flights out of Burlington were full, so we had to fly out of Logan. We flew to Minneapolis St. Paul for our first leg of the trek. We stayed overnight before continuing on to Vancouver the next morning. 
 
@@ -23,9 +24,9 @@ Our day began with a 4 hour car drive to Boston. The Delta flights out of Burlin
 
 ## Weather
 
-Recently I've been joking that our vacation in Whistler is going to feel more like a spring vacation than a winter one. As I type this the current temperature in Stowe is -27°F and 36°F in Whistler. That's a 63°F temperature difference. Makes me think I should have packed a pair of shorts. 
+Recently I've been joking that our vacation in Whistler will feel more like a spring vacation than a winter one. As I type this the current temperature in Stowe is -27°F and 36°F in Whistler. That's a 63°F temperature difference. Makes me think I should have packed a pair of shorts. 
 
-The weather in Whistler has been less than ideal. They haven't received much new snow in recent weeks. And we've received more snow in Stowe this season so far, 225 inches compared to the 186 inches in Whistler. On the plus side, there's been plenty of sunshine in Whistler, which means lots of great views of the mountains. 
+The weather in Whistler has been less than ideal. They haven't received much new snow in recent weeks. And we've received more total snow in Stowe this season so far, 225 inches compared to the 186 inches in Whistler. On the plus side, there's been plenty of sunshine in Whistler, which means lots of great views of the mountains. 
 
 Despite the lack of fresh snow and powder - 3 to 4 inches is in the forecast for tomorrow (woohoo!) - I'm sure we are going to have a great time. And Rowan is going to be amazed at the sheer size of the mountains. 
 
