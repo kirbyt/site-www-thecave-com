@@ -160,6 +160,8 @@ The trek home was a long one. We packed up and left Whistler around 9 am Pacific
 
 For more photos from our trip, take a look at the [complete photo album](https://www.flickr.com/photos/kirbyturner/sets/72157650745528988/).
 
+---
+
 [^1]: Here are links to the daily postings I did for WASTED II, which was held in February 2003. The snow conditions that year were very similar to the conditions this year.
     
     - [Day 0](http://www.thecave.com/2003/02/01/day-0-the-commute-begins/)
