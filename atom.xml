@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-03-03T21:42:26-05:00</updated>
+  <updated>2015-03-04T13:38:01-05:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,20 @@
   </author>
   <rights>Copyright (c) 2002-2015 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[Life Is A Vacation]]></title>
+    <link href="http://www.thecave.com/2015/03/04/life-is-a-vacation/"/>
+    <published>2015-03-04T13:24:17-05:00</published>
+    <updated>2015-03-04T13:24:17-05:00</updated>
+    <id>http://www.thecave.com/2015/03/04/life-is-a-vacation</id>
+    <content type="html"><![CDATA[<p>As we flew home from Vancouver I asked Rowan if he thought it was neat that we were flying from a snowboarding vacation to home where we will go snowboarding again. He said he thought it was neat, but I don’t know if he really gets it. I know it blows my mind to think that we live in a place where people come for a vacation to do exactly what we did on our vacation. The difference though is that we get to continue doing what we did on vacation once we return home.</p>
+
+<p>A lot of people go away for a week, maybe two, to ski or snowboard. Or they visit a mountain over the weekend. When they get home they, put their gear away until the next trip. But we get to hit the slopes almost daily. Our gear stays out all winter long.</p>
+
+<p>It’s starting to seem like my life is vacation.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Our Return To Whistler Blackcomb]]></title>
@@ -577,31 +591,6 @@
 <p>Greg’s plan is to write about 100 words a day, or for about 15 minutes a day, which is about the amount of time he needs to write 100 words. And that sounds like a much more reasonable system than writing for an hour a day.</p>
 
 <p>I wish I could write for at least an hour a day, but it’s just not in me to do that right now. Sure, if I were focused on writing a book then I would have no problem writing an hour a day. In fact, I would write more. But writing a book not my focus. Writing apps is my focus. And 15 minutes a day sounds like a perfect way for me to get back into writing.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Made Some Fixes To The Blog Site]]></title>
-    <link href="http://www.thecave.com/2014/12/28/made-some-fixes-to-the-blog-site/"/>
-    <published>2014-12-28T19:01:32-05:00</published>
-    <updated>2014-12-28T19:01:32-05:00</updated>
-    <id>http://www.thecave.com/2014/12/28/made-some-fixes-to-the-blog-site</id>
-    <content type="html"><![CDATA[<p>Before doing some work today I decided to make some improvements to my blog site. I thought I would be playing with the site for only an hour or so, but instead it took most of the day. Typical when dealing with programming issues in an unfamiliar environment. </p>
-
-<p>This site, as well as <a href="http://blog.whitepeaksoftware.com">my company blog site</a>, uses <a href="http://jekyllrb.com">Jekyll</a> to generate a static HTML version of the site that is in turned hosted on a server for your viewing pleasure. I noticed a while back that categories with embedded spaces, such as <em>cross post</em>, weren’t accessible from the categories list. The embedded space was being replaced with a dash. Also, the RSS feed was not including the time of the post, only the date. So I set out to fix these problems.</p>
-
-<p>I started with the time problem first. I learned that Jekyll does not include the time of the post unless you include the <code>date</code> parameter in the front matter. Adding the parameter is easy enough to do, but I decided I wanted to make it even easier for me. So I created a Rakefile that has a <code>new_post</code> task. I could have used an existing Rakefile, maybe even the one from Octopress, but I decided it would be more fun to write my own. Turns out writing a Rakefile is pretty simple, and I had my <code>new_post</code> task working quickly. </p>
-
-<p>The <code>new_post</code> task I wrote create a new markdown file for the post. The task also generates the YAML front matter for the post including the <code>date</code> parameter with the current local time. This solves my time problem in the RSS feed for new post. I thought about making a fix for older post, but I decided it wasn’t worth the effort.</p>
-
-<p>Using the Rakefile to create a new post makes so much sense that I decided to add a <code>deploy</code> task the Rakefile. I’ve been using a shell script I wrote a few years ago to generate the Jekyll site then commit it to the <em>gh-pages</em> branch of the site’s git <a href="https://github.com/kirbyt/site-www-thecave-com">repo</a>. I thought it would be a fun exercise to re-implement this in the Rakefile. At the same time I decided to change how the files are committed to the branch. Instead of working from a single local git repo, I decided to clone the repo to a second <em>_deploy</em> directory, then copy the <em>_site</em> files to that directory. Turns out this was fairly simple to do as well. </p>
-
-<p>With that work out of the way I turned my focus to the categories name problem. Turns out it was caused by a space replacement in the Jekyll plugin I use to generate the categories list. That was the easiest, fastest fix of the day.</p>
-
-<p>With a smile on my face and feeling of success I decided to do one more thing. I decided to update my install of Jekyll. And this is when everything fell apart. The sense of success and feeling of being productive evaporated quickly. Long story short, turns out I had rvm and rbenv installed at the same time, and apparently having both installed at the same time causes problems when updating gems. Unfortunately it took me a long while to figure out what had happened. I didn’t realize rvm was installed, but once I did I uninstalled it. I did another update and made sure I had rbenv-gem-rehash installed. </p>
-
-<p>All is well now. In fact, the only reason I’m writing this post is to make sure everything is working as expected. And now that I have a faster way to create new posts, I’m hoping to post here more frequently. </p>
 
 ]]></content>
   </entry>
