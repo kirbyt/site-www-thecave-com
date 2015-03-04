@@ -10,12 +10,12 @@ categories:
 ---
 Years ago I, with help from a couple of friends, organized an annual snowboarding trip to Whistler Blackcomb. Even after the annual trips were no more, Melanie and I continued visiting Whistler once every year or two. Our last Whistler trip was in 2007, and we've been wanting to return for many years. But it just hasn't worked out for us. That is until this year when we finally made our return to Whistler, and we brought Rowan with us. 
 
-In the same spirit as those past Whistler trips, I decided to write a daily blog post about our trip[^1]. But because I didn't have a reliable Internet connection at the condo, I wasn't able to publish the posts at the end of each day. So I combined the postings from each day and I have published them here. Enjoy.
+In the same spirit as those past Whistler trips[^1], I decided to write a daily blog post about our trip. But because I didn't have a reliable Internet connection at the condo, I wasn't able to publish the posts at the end of each day. So I combined the postings from each day into a single post that I have published them here. Enjoy.
 
 ---
 
-# Day 0.1
-We started our trek to Whistler today. It's the first time back to Whistler for Melanie and me since 2007. For those who might not know, Whistler was like a second home mountain for me for a while. I even had a season pass there one year. But we haven't been back since Rowan was born. 
+# Day 0.1 (Feb 23, 2015)
+We started our trek to Whistler today. It's the first time back to Whistler for Melanie and me since 2007. For those who might not know, Whistler was like a second home mountain for me for a while. I once even had a season pass there. But we haven't been back since Rowan was born. 
 
 Our day began with a 4 hour car drive to Boston. The Delta flights out of Burlington were full, so we had to fly out of Logan. We flew to Minneapolis St. Paul for our first leg of the trek. We stayed overnight before continuing on to Vancouver the next morning. 
 
@@ -31,7 +31,7 @@ Despite the lack of fresh snow and powder - 3 to 4 inches is in the forecast for
 
 ---
 
-# Day 0.2
+# Day 0.2 (Feb 24, 2015)
 
 Our second and final leg to Whistler went smoothly. We even arrived earlier than expected giving us time to walk around the village. Rowan was tired by this point so he became a bit grouchy, but in general he was a real trooper the entire day. 
 
@@ -53,7 +53,7 @@ I'm really curious what the upper part of the mountains will be like.
 
 ---
 
-# Day 1
+# Day 1 (Feb 25, 2015)
 
 We finally hit the slopes today. After hearing about days and days of sunshine in Whistler, we get a cloudy day on the hill. And it was a bit colder than recent days. The snow was so so, about on par with the conditions during the second WASTED trip. And there was a lot more ice than I expected. 
 
@@ -85,7 +85,7 @@ The snow conditions weren't the only disappointment today. We stopped by Longhor
 
 ---
 
-# Day 2
+# Day 2 (Feb 26, 2015)
 
 Today was a bit better than yesterday. Moods were better too, which helped. 
 
@@ -103,7 +103,7 @@ Turns out the condo we rented has a heated swimming pool and hot tub, so we took
 
 ---
 
-# Day 3
+# Day 3 (Feb 27, 2015)
 
 I went out for a few runs before meeting up with Rowan and Melanie. Snow conditions were the same, but it was partly cloudy so we had some great views. 
 
@@ -117,7 +117,7 @@ Rowan was excited to "discover" the ice rink and playground. Guess we'll be visi
 
 ---
 
-# Day 4
+# Day 4 (Feb 28, 2015)
 
 On Day 4 we took our time getting out to the mountain. Put quite frankly, riding hard pack day after day gets rather boring. Melanie and Rowan did a bit of shopping in the morning. When we did finally hit the hill, we did one long run down to Merlins for lunch. And of course we had to order the Nacho Daddy even though it was way to big for the three of us. 
 
@@ -137,7 +137,7 @@ Later in the evening we went ice skating, which I suck at, Rowan's getting bette
 
 ---
 
-# Day 5
+# Day 5 (Mar 1, 2015)
 
 Today was our final day on the hill. We took it easy today since the snow conditions were unchanged - still hard packed. We slept in this morning. When we did finally hit the slopes we did a warm up run then we headed straight for the Peak Chair and the top of Whistler. We rode back down to the village where we had lunch at Dubh Linn Gate. 
 
@@ -153,7 +153,7 @@ It's been a great week in Whistler despite the lack of fresh snow. We all had a 
 
 ---
 
-# The Trek Home
+# The Trek Home (Mar 2, 2015)
 
 The trek home was a long one. We packed up and left Whistler around 9 am Pacific time, and arrive back home in Vermont at 3:30 am Eastern. It was a long trek home, but all three of us were glad to be home. And it was nice to see a fresh 3 inches of snow on the ground. 
 
