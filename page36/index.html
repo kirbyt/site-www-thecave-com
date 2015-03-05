@@ -107,6 +107,24 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2005/08/30/date-range-check-in-sql-server/">Date Range Check in SQL Server</a>
+    </h2>
+    
+    <p>I have been writing a number of stored procedures that return report data for a client.  Each of these reports can be filtered by a date range, so I needed a simple way to check that a date was within a user defined date range.  <br /><br />As an additional requirement, if the user does not specify a begin date or end date as part of the date range then the earliest or latest supported date respectively should be used.  In other words, if the user does not specify a begin date then the earliest date supported by SQL Server should be used as the begin date, and if the user does not specify the end date then the latest date supported is used for the end date.<br /><br />My original approach was to use a BETWEEN clause in the SELECT statements.  However, this made the code messy especially with the ISNULL call used to set the begin end dates when NULL.  So I swapped out the code with a user-defined function.<br /><br />The user-defined function <b>fnIsInDateRange</b> takes 3 parameters:&lt;ul&gt;&lt;li&gt;Date to check&lt;/li&gt;&lt;li&gt;Beginning date of the date range&lt;/li&gt;&lt;li&gt;Ending date of the date range&lt;/li&gt;&lt;/ul&gt;<br />The function returns one of the following:&lt;ul&gt;&lt;li&gt;<b>-1</b> if the date is before the range&lt;/li&gt;&lt;li&gt;<b>0</b> if the date is within the range&lt;/li&gt;&lt;li&gt;<b>1</b> if the date is beyond the range&lt;/li&gt;&lt;/ul&gt;<br />Here’s the code for those who want it.&lt;pre&gt;<br />CREATE FUNCTION dbo.fnIsInDateRange<br />/* <br />  Determines if the date time value is within the date time range.<br /> <br />  Returns:<br />  -1 if the date is before the date range.<br />   0 if the date is within the date range.<br />   1 if the date is after the date range.<br /> <br />  Usage:<br />   SELECT dbo.fnIsInDateRange(‘2005-08-16’,’2005-08-01’,’2005-08-15’)<br />   SELECT * FROM exams WHERE dbo.fnIsInDateRange(dtmExamDate,’2005-08-01’,’2005-08-15’)=0<br />*/  <br />  (<br />    @value      DATETIME,<br />    @rangeFrom  DATETIME,<br />    @rangeTo    DATETIME<br />  )<br />RETURNS SMALLINT<br />AS<br />BEGIN<br />   DECLARE @result SMALLINT<br />   IF @value &lt; ISNULL(@rangeFrom,'1753-01-01 00:00:00.000') <br />   BEGIN<br />      SET @result = -1<br />   END<br />   ELSE IF @value &gt; ISNULL( @rangeTo, ‘9999-12-31 11:59:59.997’ )<br />   BEGIN<br />      SET @result = 1<br />   END<br />   ELSE<br />   BEGIN<br />      SET @result = 0<br />   END<br />   RETURN @result<br />END<br />&lt;/pre&gt;</p>
+
+
+
+    <p><a href="/2005/08/30/date-range-check-in-sql-server/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on August 30, 2005
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2005/08/29/i-admit-to-being-lazy-and-dumb/">I Admit to Being Lazy and Dumb</a>
     </h2>
     
@@ -266,24 +284,6 @@
 </div>
 <hr>
 
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2005/08/03/camping-in-long-island/">Camping in Long Island</a>
-    </h2>
-    
-    <p>There are camp grounds in Long Island?  You bet ya.  Melanie and I spent the weekend camping at one of many Long Island campgrounds.  We stayed at <a href="http://nysparks.state.ny.us/parks/info.asp?parkID=52">Wildwood State Park</a> Saturday and Sunday night and had a very enjoyable time.  Wildwood is about an hour and a half to two hours from Manhattan and is on the Sound side of the island.<br /><br />We were a bit disappointed with the camp grounds on Saturday, rather I should say disappointed with the other campers on Saturday.  There were lots of campers on that night, the grounds were near capacity.  And many of the campers seemed to enjoy their cars more than the great outdoors.  Music poured from car radios until 10:00/10:30 pm, people drove cars around until midnight, and car alarms could be heard throughout the night and early morning.  Needless to say, Saturday wasn’t what we expected.<br /><br />Luckily Sunday was the saving grace for Wildwood campgrounds.  The rowdy campers left (check-out time is 11 am) and grounds were probably less than 25% full.  Sunday night was quite and enjoyable, a welcome change from the previous night.  We chilled by the campfire listening to the strange noises made by the creatures of the night.  We cooked steaks and roasted corn on the grill, and we were constantly thankful the Saturday night crowd was gone.<br /><br />Overall we really liked the campgrounds at Wildwood State Park and highly recommend it to those wanting to camp in Long Island.  The campgrounds are nice and the beach is only a short walk away.  Be sure to bring your bike and avoid Friday and Saturday nights.</p>
-
-
-
-    <p><a href="/2005/08/03/camping-in-long-island/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on August 3, 2005
-     in <a href='/category/blogger/'>blogger</a>
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -316,6 +316,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/03/05/the-snow-was-better-in-2003/" title="The Snow Was Better In 2003">The Snow Was Better In 2003</a></li>
+                
                 <li><a href="/2015/03/04/life-is-a-vacation/" title="Life Is A Vacation">Life Is A Vacation</a></li>
                 
                 <li><a href="/2015/03/03/our-return-to-whistler-blackcomb/" title="Our Return To Whistler Blackcomb">Our Return To Whistler Blackcomb</a></li>
@@ -323,8 +325,6 @@
                 <li><a href="/2015/02/21/raw-denim/" title="Raw Denim">Raw Denim</a></li>
                 
                 <li><a href="/2015/02/21/this-startup-is-not-for-me/" title="This Startup Is Not For Me">This Startup Is Not For Me</a></li>
-                
-                <li><a href="/2015/02/21/working-80-hours-isnt-the-answer/" title="Working 80+ Hours Isn't The Answer">Working 80+ Hours Isn't The Answer</a></li>
                 
                 </ul>                
             </div>
