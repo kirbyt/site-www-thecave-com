@@ -4,13 +4,56 @@
   <title><![CDATA[Category: ios | thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/category/ios/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-03-05T10:50:56-05:00</updated>
+  <updated>2015-03-05T11:49:10-05:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Après Code: A New Developer Meetup In Stowe Vt]]></title>
+    <link href="http://www.thecave.com/2015/03/05/apres-code-a-new-developer-meetup-in-stowe-vt/"/>
+    <updated>2015-03-05T10:54:05-05:00</updated>
+    <id>http://www.thecave.com/2015/03/05/apres-code-a-new-developer-meetup-in-stowe-vt</id>
+    <content type="html"><![CDATA[<p>I started organizing developer related meetups in 2001 starting with a weekly happy hour for dev friends and co-workers. Over the years I ended up organizing different types of events, from monthly meetings that included speakers to parties and happy hours to annual snowboarding trips. I even started <a href="http://www.nshappyhour.org">NSHappyHour</a> for Mac and iOS developers, which is still going on each month in Salem, MA.</p>
+
+<p>I realized as I prepared for my move to Stowe, VT, that I was burnt out organizing events and meetups. I stepped down as co-organizer of <a href="http://www.cocoaheadsboston.org">CocoaHeads Boston</a> a few months before my move, which gave me a chance to be just a regular attendee. That’s when I realized I was done organizing events for a while.</p>
+
+<p>After moving to Vermont, I was asked by a few folks if I would start a <a href="http://cocoaheads.org">CocoaHeads</a> chapter in the Burlington area. I said no because I needed a break. The break I needed wasn’t just from being an organizer. I needed a break from attending developer focused gatherings and networking events too. And while it’s been a bit lonely not having local folks to talk shop with on a regular basis, I’ve enjoyed my break. But break time is over.</p>
+
+<p>It’s been nearly two years since I was last responsible for a meetup, but that changes tonight with the first of many Après Code events.</p>
+
+<p>I’ve been thinking about hosting a developer meetup in Stowe since I moved here, but I wasn’t initially sure there would be enough interest. However, in my short time here I’ve met other software developers living in the area. Some work for companies here in town while others work for shops in and around Burlington. And the number of developers in our small community is growing with companies like <a href="http://corp.inntopia.com/careers/">Inntopia hiring</a> more developers. Even though I knew there were developers living and working in the area, I wasn’t ready to commit to a monthly meetup just yet. </p>
+
+<p>That changed two days before I left for Whistler. I was talking with a local dev friend, Maya Ropelip<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>, about writing apps for iOS. During our chat I mentioned my idea for a local meetup. He got excited about the idea and thought the timing was right for hosting a software developer gathering in Stowe. He also agreed to be the co-host in case I need to skip a meetup. So that night I grabbed the domain name, setup a <a href="http://www.apres-code.com/">website</a>, and created a new group on <a href="http://www.meetup.com/Apres-Code/">meetup.com</a>. </p>
+
+<p>Starting a new group just 48 hours before I leave the country for a week and a half wasn’t the smartest thing for me to do, but I did it anyways. And now that I’m back home, I’m scrambling to get the word out about tonight’s inaugural Après Code. So without further ado, I’m happy to officially announce <a href="http://www.apres-code.com/">Après Code</a>. </p>
+
+<h1 id="what-is-aprs-code">What Is Après Code</h1>
+
+<p>Après Code is an informal gathering of software developers in Stowe, Vermont. The gathering is a chance for those of us living in and around Stowe, or just visiting the area, to get together to talk about joys of producing software and writing code, seek help or assist others, and most importantly meet and get to know other fine folks in the our community. The group is open to professionals, hobbyists, and anyone with an interest in designing, programming and creating software, apps, and websites.</p>
+
+<h2 id="when">When</h2>
+
+<p>We meet the first Thursday of each month, starting tonight, at 6:30 pm and go until the last person leaves. We’re gathering at <a href="http://rimrocksmountaintavern.com/">Rimrock’s Tavern</a> though this could change in the future. But for now Rimrock’s is the place to be.</p>
+
+<h2 id="more-information">More Information</h2>
+
+<p>You can find more information about the group at the Après Code <a href="http://www.apres-code.com/">website</a>, and you can receive email reminders about future Après Code events by joining the Après Code <a href="http://www.meetup.com/Apres-Code/">meetup.com group</a>.</p>
+
+<p>So if you happen to be in the area, whether you live in the Stowe area or are just visiting, stop by tonight to say hi.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>I gotta get this guy on Twitter or some other social network. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[For-In Loop vs Using Block]]></title>
@@ -162,60 +205,6 @@
     </li>
     <li id="fn:manton">
       <p>That Manton is a smart guy. <a href="#fnref:manton" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Using xcodebuild To Export a .ipa From an Archive]]></title>
-    <link href="http://www.thecave.com/2014/09/16/using-xcodebuild-to-export-a-ipa-from-an-archive/"/>
-    <updated>2014-09-16T00:00:00-04:00</updated>
-    <id>http://www.thecave.com/2014/09/16/using-xcodebuild-to-export-a-ipa-from-an-archive</id>
-    <content type="html"><![CDATA[<p>Xcode 6 changes how you export a .ipa from an archive for adhoc distribution. It used to be that you could export the archive to a .ipa as long as you had the right provisioning profile and distribution certificate on your machine. Starting with Xcode 6 you need to be a team member of the particular Developer Program account and you need to have the rights to make a distribution build. This means you need to be a team agent. However, I work with a number of clients who don’t have the clue what Xcode is much less are willing to make distribution builds, so I need to way to make distribution builds within this new limitation from Xcode 6.</p>
-
-<p>Making distribution builds hasn’t been a problem for me in the past. I ask the client to provide me<sup id="fnref:ask"><a href="#fn:ask" class="footnote">1</a></sup> with the necessary provisioning profile, distribution certificate, and public private key pair so I can make the distribution build for them. Then I use Xcode Organizer to export the archive to a .ipa that I can distribute.<sup id="fnref:host"><a href="#fn:host" class="footnote">2</a></sup> But it seems I can no longer export using Organizer without having the right team access, so I had to search out an alternative approach.</p>
-
-<p>Turns out starting with Xcode 5, <em>xcodebuild</em> includes parameters for exporting from an archive. This is exactly what I need so I can continue making adhoc distribution builds for clients without being a team member or team agent under their Developer Program account.</p>
-
-<p>So how do I do it?</p>
-
-<h3 id="the-how-to">The How To</h3>
-
-<p>My build script starts by performing a clean.</p>
-
-<blockquote>
-  <p>xcodebuild clean -project $projectname.xcodeproj -configuration Release -alltargets</p>
-</blockquote>
-
-<p>Then the script builds and archives the app. I specify the archive path using the <em>-archivePath</em> parameter in the command line so the script will know where the archive file is located.</p>
-
-<blockquote>
-  <p>xcodebuild archive -project $projectname.xcodeproj -scheme $schemename -archivePath $projectname.xcarchive</p>
-</blockquote>
-
-<p>Finally my script exports the archive into a .ipa file.</p>
-
-<blockquote>
-  <p>xcodebuild -exportArchive -archivePath $projectname.xcarchive -exportPath $projectname -exportFormat ipa -exportProvisioningProfile “Provisioning Profile Name”</p>
-</blockquote>
-
-<p>I let the provisioning profile imply the signing identity, but you can specify the signing identity using the <em>-exportSigningIdentity</em> parameter.</p>
-
-<h3 id="the-gotcha">The Gotcha</h3>
-
-<p>The one major gotcha that cost me a more than an hour of time was figuring out the parameter value for <em>-exportProvisioningProfile</em>. I initial thought it should be the file name to the provisioning profile. I tried it with and without the <em>.mobileprovision</em> file extension, but it did not work. I included a relative path as well as an absolute path to the provision profile. I tried using the UUID for the provision profile instead of the file name. I even I tried not including a path at all thinking it would look up the provision profile in the <em>~/Library/MobileDevice/Provisioning Profiles/</em> directory, but still no luck.</p>
-
-<p>Turns out I needed to specify the name of the provisioning profile as defined in the file itself. This is the same name assigned to the profile in the provisioning portal. Once I figured this out I was able to export the .ipa from the archive using the my build script, and I don’t have to be a team agent under my client’s Developer Program account to make the distribution build.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:ask">
-      <p>I usually assist my clients with this by guiding them through the steps, or I ask them to give me the account credentials with a temporary password so I can perform the necessary steps. Then I have the client reset the password. <a href="#fnref:ask" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:host">
-      <p>I don’t export when I host the test app on <a href="http://hockeyapp.net/">HockeyApp</a>. It takes care of exporting the .ipa from the archive for you. I only export when the client requests that the test app be hosted on their own server.) <a href="#fnref:host" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

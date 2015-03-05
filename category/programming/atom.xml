@@ -4,13 +4,56 @@
   <title><![CDATA[Category: programming | thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/category/programming/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-03-05T10:50:56-05:00</updated>
+  <updated>2015-03-05T11:49:10-05:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Après Code: A New Developer Meetup In Stowe Vt]]></title>
+    <link href="http://www.thecave.com/2015/03/05/apres-code-a-new-developer-meetup-in-stowe-vt/"/>
+    <updated>2015-03-05T10:54:05-05:00</updated>
+    <id>http://www.thecave.com/2015/03/05/apres-code-a-new-developer-meetup-in-stowe-vt</id>
+    <content type="html"><![CDATA[<p>I started organizing developer related meetups in 2001 starting with a weekly happy hour for dev friends and co-workers. Over the years I ended up organizing different types of events, from monthly meetings that included speakers to parties and happy hours to annual snowboarding trips. I even started <a href="http://www.nshappyhour.org">NSHappyHour</a> for Mac and iOS developers, which is still going on each month in Salem, MA.</p>
+
+<p>I realized as I prepared for my move to Stowe, VT, that I was burnt out organizing events and meetups. I stepped down as co-organizer of <a href="http://www.cocoaheadsboston.org">CocoaHeads Boston</a> a few months before my move, which gave me a chance to be just a regular attendee. That’s when I realized I was done organizing events for a while.</p>
+
+<p>After moving to Vermont, I was asked by a few folks if I would start a <a href="http://cocoaheads.org">CocoaHeads</a> chapter in the Burlington area. I said no because I needed a break. The break I needed wasn’t just from being an organizer. I needed a break from attending developer focused gatherings and networking events too. And while it’s been a bit lonely not having local folks to talk shop with on a regular basis, I’ve enjoyed my break. But break time is over.</p>
+
+<p>It’s been nearly two years since I was last responsible for a meetup, but that changes tonight with the first of many Après Code events.</p>
+
+<p>I’ve been thinking about hosting a developer meetup in Stowe since I moved here, but I wasn’t initially sure there would be enough interest. However, in my short time here I’ve met other software developers living in the area. Some work for companies here in town while others work for shops in and around Burlington. And the number of developers in our small community is growing with companies like <a href="http://corp.inntopia.com/careers/">Inntopia hiring</a> more developers. Even though I knew there were developers living and working in the area, I wasn’t ready to commit to a monthly meetup just yet. </p>
+
+<p>That changed two days before I left for Whistler. I was talking with a local dev friend, Maya Ropelip<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>, about writing apps for iOS. During our chat I mentioned my idea for a local meetup. He got excited about the idea and thought the timing was right for hosting a software developer gathering in Stowe. He also agreed to be the co-host in case I need to skip a meetup. So that night I grabbed the domain name, setup a <a href="http://www.apres-code.com/">website</a>, and created a new group on <a href="http://www.meetup.com/Apres-Code/">meetup.com</a>. </p>
+
+<p>Starting a new group just 48 hours before I leave the country for a week and a half wasn’t the smartest thing for me to do, but I did it anyways. And now that I’m back home, I’m scrambling to get the word out about tonight’s inaugural Après Code. So without further ado, I’m happy to officially announce <a href="http://www.apres-code.com/">Après Code</a>. </p>
+
+<h1 id="what-is-aprs-code">What Is Après Code</h1>
+
+<p>Après Code is an informal gathering of software developers in Stowe, Vermont. The gathering is a chance for those of us living in and around Stowe, or just visiting the area, to get together to talk about joys of producing software and writing code, seek help or assist others, and most importantly meet and get to know other fine folks in the our community. The group is open to professionals, hobbyists, and anyone with an interest in designing, programming and creating software, apps, and websites.</p>
+
+<h2 id="when">When</h2>
+
+<p>We meet the first Thursday of each month, starting tonight, at 6:30 pm and go until the last person leaves. We’re gathering at <a href="http://rimrocksmountaintavern.com/">Rimrock’s Tavern</a> though this could change in the future. But for now Rimrock’s is the place to be.</p>
+
+<h2 id="more-information">More Information</h2>
+
+<p>You can find more information about the group at the Après Code <a href="http://www.apres-code.com/">website</a>, and you can receive email reminders about future Après Code events by joining the Après Code <a href="http://www.meetup.com/Apres-Code/">meetup.com group</a>.</p>
+
+<p>So if you happen to be in the area, whether you live in the Stowe area or are just visiting, stop by tonight to say hi.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>I gotta get this guy on Twitter or some other social network. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Working 80+ Hours Isn't The Answer]]></title>
@@ -156,60 +199,6 @@
 
 <p>There’s actually one more reason that led to me changing my mind, Apple’s return policy. If after the first week of owning an iPhone 6 Plus I find that carrying it around in my pocket too annoying then I can return the device. I doubt I will return it especially after talking with many iPhone 6 Plus owners at Çingleton this past weekend, but still, there is always a chance I will change my mind again.</p>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Microblogging, the Open Web, and Cross Post]]></title>
-    <link href="http://www.thecave.com/2014/10/09/microblogging-the-open-web-and-cross-post/"/>
-    <updated>2014-10-09T00:00:00-04:00</updated>
-    <id>http://www.thecave.com/2014/10/09/microblogging-the-open-web-and-cross-post</id>
-    <content type="html"><![CDATA[<p>Recently Manton Reece has been talking a lot about <a href="http://www.manton.org/tag/microblogging">microblogging</a> in an open web world using <a href="http://www.manton.org/tag/rss">RSS</a>. He has touched on points that are important to me, specifically content ownership. Like many people I post regularly to App.net, Facebook, Twitter, and other social networks, but I’ve always had one big problem with these networks. My micro-posts do not appear on my web site, and if these networks were to disappear in the future, then my content disappears too.</p>
-
-<h2 id="a-bit-of-history">A Bit of History</h2>
-
-<p>I started thecave.com back in 1997. It was called “The Programmer’s Hideout” and I published various programming how-to articles for SQL Server, Delphi, and other tech that was interesting to me at the time. What I didn’t know at the time was that I was blogging. It wasn’t called blogging in 1997, but that’s exactly what I was doing. It wasn’t until March 2002 that thecave.com became what is typically known today as a blog site.</p>
-
-<p>thecave.com has changed a lot under the hood. In the beginning I used a blogging engine that I wrote. I later switched to a hybrid engine using blogger.com as my editor. Blogger would upload an XML version of the post to my server that my blogging engine would consume and publish the website. As time went on I would used other blogging engines including Wordpress for thecave.com. Today thecave.com is a static HTML website generated by Jekyll. Despite all the changes under the hood, <a href="http://www.thecave.com/blog/archives/">every post</a> I have made to thecave.com since March 2002 is still available today<sup id="fnref:oldposts"><a href="#fn:oldposts" class="footnote">1</a></sup>. I own and control the content, and it is not going away.</p>
-
-<p>This isn’t true for my Facebook or Twitter posts. They control the content, content that could disappear in the future. That is why Manton’s thoughts on microblogging in an open web environment has piqued my interest. I want to take back control of my content including my micro-posts, but how do I do this? As luck would have it, Manton suggested a possible solution for me that fits in nicely with Cross Post, the app I’m currently working, and his suggestion is changing the way I think of Cross Post<sup id="fnref:manton"><a href="#fn:manton" class="footnote">2</a></sup>.</p>
-
-<h2 id="the-suggestion">The Suggestion</h2>
-
-<p>Cross Post is designed to make it easy to share your status and photos across multiple social networks. In other words, Cross Post is a microblog app that lets you post to one or more social networks. Manton’s suggested to me that I add RSS support to Cross Post. It took a while for his suggestion to sink in, but when it did turn on I was like “Oh shit! I want that!”</p>
-
-<p>Cross Post lets me post updates to App.net, Facebook, and Twitter so friends and family can read about me drinking beer, snowboarding, and doing other boring things. But more importantly it can be updated to give me the option to store my content in a location that I have complete control of. Cross Post then becomes an app for microblogging that not only publishes content to multiple networks, it stores your post in a place that you have complete control over and ownership of. And RSS is the perfect solution for this.</p>
-
-<p>When I first heard Manton’s suggestion of adding RSS support to Cross Post, my thinking was that Cross Post would host the RSS feed on its own server. But this is not as simple as it sounds. This requires me to implement some type of user management system. Also since the Cross Post server would be hosting the content, I would have to implement features to allow a person to edit and remove posts. And then there is the hosting cost for hosting all the photos that a person can include with each post. But beyond that, you as the user of Cross Post would not have complete control over the content. It would be hosted on the Cross Post server, and if Cross Post were to ever disappear, then so would your content. In other words letting Cross Post host your content is no better than using App.net or Twitter. But I didn’t give up on the idea of using RSS in Cross Post.</p>
-
-<p>Content ownership is what is important to me, and I knew there had to be a way to make this work. So my next thought was to have Cross Post support different blogging engines. Instead of just posting to social networks, Cross Post could upload your post to your web site directly. But that’s no easy task. What you are talking here is a microblogging version of <a href="http://www.red-sweater.com/marsedit/">MarsEdit</a>, which is not something I care to write. Besides, a microblogging MarsEdit wouldn’t help me get my post into thecave.com because only static HTML is hosted. What Cross Post needs to do is post the content somewhere available on the Internet, but it has to be a location that the person has complete control. That’s when it hit me. Dropbox.</p>
-
-<h2 id="host-on-dropbox">Host on Dropbox</h2>
-
-<p>Cross Post can post the content to your Dropbox (or similar service), and with syncing you will have a copy of your content for as long as you like. Even if Facebook or Twitter disappears, you would still have a copy of your post. And using RSS to store the content lets you do all sorts of things, from syndicating the post to other services to displaying the content in your own website to letting family and friends read you micro-post via an RSS reader.</p>
-
-<h2 id="but-how">But How</h2>
-
-<p>Here’s my current thinking of how it would work:</p>
-
-<p>Using Cross Post, the person grants the app access to Dropbox (Google Drive, SFTP, whatever). When the person makes a post, Cross Post will append it to two feed files, full.rss and recent.rss. Full would contain all micro-posts ever made through the app. Recent would be the last n number of posts where “n” is set by the person (i.e., 5, 10, 20, etc). And if the post includes a photo, then the photo is uploaded to a subdirectory and the appropriate link is added to the entry in the feed file. If the person wishes to publish the feed to a service or let others consume the feed, then the Dropbox public link to the RSS feed file can be used.</p>
-
-<p>The beauty of this approach is that the person has full control over the microblog content and that content is synced to their computer. Even if Cross Post disappears, the content does not. And for oddballs like me, I can integrated the microblog content into my static HTML site just by adding a plugin to Jekyll that consumes the RSS feed and generates a markdown file for each new post before generating the complete site. Heck, I can automate this to have my website updated in near-real time each time I make a new post via Cross Post.</p>
-
-<p>So that’s my thinking, at a high level, for adding RSS support to Cross Post. This feature will not be in the first release of Cross Post. My first goal is to stabilize and ship the current version of the app. Once that happens I’ll focus on adding RSS support.</p>
-
-<p>Whadda think? Is RSS support something that interest you? Let me know on App.net or Twitter.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:oldposts">
-      <p>I still have the content from thecave.com pre-March 2002, but it’s not published on the Internet anymore. <a href="#fnref:oldposts" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:manton">
-      <p>That Manton is a smart guy. <a href="#fnref:manton" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 ]]></content>
   </entry>
   
