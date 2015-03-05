@@ -36,6 +36,8 @@ You can find more information about the group at the Après Code [website][5], a
 
 So if you happen to be in the area, whether you live in the Stowe area or are just visiting, stop by tonight to say hi.
 
+---
+
 [^1]: I gotta get this guy on Twitter or some other social network.
 
 [1]: http://www.nshappyhour.org
