@@ -5,9 +5,25 @@
     <description>thecave.com is the blog site for Kirby Turner, an independent software developer for Mac and iOS.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 09 Mar 2015 11:26:36 -0400</pubDate>
-    <lastBuildDate>Mon, 09 Mar 2015 11:26:36 -0400</lastBuildDate>
+    <pubDate>Mon, 09 Mar 2015 16:20:14 -0400</pubDate>
+    <lastBuildDate>Mon, 09 Mar 2015 16:20:14 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Driver X</title>
+        <description>&lt;p&gt;I received my new pair of Burton Driver X snowboard boots this afternoon. Damn, these puppies are stiff, but that’s a good thing. I can’t wait to hit the hill with them in the morning. It’s going to be a whole new riding experience after wearing boots that I probably should’ve replaced a couple of seasons ago.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://farm8.staticflickr.com/7634/16766864701_a383cbd8cc_z.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 09 Mar 2015 16:11:50 -0400</pubDate>
+        <link>http://www.thecave.com/2015/03/09/driver-x/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2015/03/09/driver-x/</guid>
+        
+        
+        <category>snowboarding</category>
+        
+      </item>
     
       <item>
         <title>I Feel Guilty But</title>
@@ -456,23 +472,6 @@
         <category>ios</category>
         
         <category>programming</category>
-        
-      </item>
-    
-      <item>
-        <title>Temperature Inversion</title>
-        <description>&lt;p&gt;Seeing “temperature inversion” in the Stowe snow report this morning is music to my ears. It’s -20°F in town but a balmy 2°F at the summit. Time to ride. &lt;/p&gt;
-
-&lt;p&gt;Speaking of odd temperatures…Whistler Village is 50°F warmer than the Village of Stowe this morning. I’m starting to think our Whistler winter vacation next week will feel more like a spring break vacation.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 17 Feb 2015 11:24:30 -0500</pubDate>
-        <link>http://www.thecave.com/2015/02/17/temperature-inversion/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2015/02/17/temperature-inversion/</guid>
-        
-        
-        <category>snowboarding</category>
-        
-        <category>stowe</category>
         
       </item>
     
