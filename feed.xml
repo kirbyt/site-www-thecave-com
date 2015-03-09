@@ -5,9 +5,24 @@
     <description>thecave.com is the blog site for Kirby Turner, an independent software developer for Mac and iOS.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 05 Mar 2015 11:57:53 -0500</pubDate>
-    <lastBuildDate>Thu, 05 Mar 2015 11:57:53 -0500</lastBuildDate>
+    <pubDate>Mon, 09 Mar 2015 11:26:36 -0400</pubDate>
+    <lastBuildDate>Mon, 09 Mar 2015 11:26:36 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>I Feel Guilty But</title>
+        <description>&lt;p&gt;Our local hill received a surprised 6-7 inches of new snow overnight. I feel a little guilty for not letting Rowan skip the first half of school this morning so he could ride the fresh powder, but at the time, he didn’t ask to skip school so he’s loss.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 09 Mar 2015 11:21:39 -0400</pubDate>
+        <link>http://www.thecave.com/2015/03/09/i-feel-guilty-but/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2015/03/09/i-feel-guilty-but/</guid>
+        
+        
+        <category>family</category>
+        
+        <category>snowboarding</category>
+        
+      </item>
     
       <item>
         <title>Après Code: A New Developer Meetup In Stowe Vt</title>
@@ -458,25 +473,6 @@
         <category>snowboarding</category>
         
         <category>stowe</category>
-        
-      </item>
-    
-      <item>
-        <title>Reliving The Past</title>
-        <description>&lt;p&gt;I just spent the last two hours looking through past posts here at thecave. I was writing a lot for the four or five years, and some of those old posts are actually good. But more importantly reading through those old posts gave me a chance to relive my past. &lt;/p&gt;
-
-&lt;p&gt;This makes me realize I need to post here more even if the post is short like this one. All too often I’ll post something short to Twitter or Facebook, but I need to start posting it here too. It will be great to re-read my old posts five years from now.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 17 Feb 2015 01:38:50 -0500</pubDate>
-        <link>http://www.thecave.com/2015/02/17/reliving-the-past/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2015/02/17/reliving-the-past/</guid>
-        
-        
-        <category>general</category>
-        
-        <category>life</category>
-        
-        <category>writing</category>
         
       </item>
     

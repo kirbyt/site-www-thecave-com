@@ -107,6 +107,24 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2007/03/16/new-pictures-in-the-gallery/">New Pictures in the Gallery</a>
+    </h2>
+    
+    <p>I finally got around to posting pictures from the last 4 months.  Check them out in the <a href="http://www.thecave.com/gallery.aspx">gallery</a>.</p>
+
+
+
+    <p><a href="/2007/03/16/new-pictures-in-the-gallery/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on March 16, 2007
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2007/03/13/learning-ajax-with-delphi-at-coderage/">Learning AJAX with Delphi at CodeRage</a>
     </h2>
     
@@ -266,24 +284,6 @@
 </div>
 <hr>
 
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2006/12/06/delphi-bds-live-templates-for-sql-server/">Delphi (BDS) Live Templates for SQL Server</a>
-    </h2>
-    
-    <p>Here are a few Delphi (BDS) Live Templates I created for writting SQL Server script:<br /><br /><b>Create SQL Server Table</b><br />&lt;pre&gt;<br /><br /><br />        version=”1.0.0”&gt;<br /> <br /> <br />      Create table for SQL Server.<br /> <br /> <br />      Kirby Turner<br /> <br /><br /> <br /> <br />        TableName<br /> <br /> <br /> <br /> <br /><br /> <code>&lt;![CDATA[/***<br />  Create |TableName| table.<br />***/<br /><br />PRINT 'Create |TableName| table'<br />GO<br /><br />IF (EXISTS (SELECT name FROM sysobjects WHERE (name = N'|TableName|') AND (type = 'U')))<br />BEGIN<br />  DROP TABLE [dbo].[|TableName|]<br />END<br />GO<br /><br />CREATE TABLE [dbo].[|TableName|] (<br />|*||end|<br /><br />|*|CONSTRAINT [PK_|TableName|_1] PRIMARY KEY CLUSTERED<br />|*|(<br />|*|)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]<br />) ON [PRIMARY]<br />GO<br /><br />GRANT SELECT ON [dbo].[|TableName|] TO [public]<br />GO]]&gt;<br /> </code><br /> <br /><br />&lt;/pre&gt;<br /><br /><b>Create Foreign Key Reference</b><br />&lt;pre&gt;<br /><br /><br />        version=”1.0.0”&gt;<br /> <br /> <br />      Create foreign key constraint for SQL Server.<br /> <br /> <br />      Kirby Turner<br /> <br /> <br /> <br />                PrimaryTableName<br /> <br /> <br /> <br /> <br /> <br /> <br />                SecondaryTableName<br /> <br /> <br /> <br /> <br /> <br /> <br />                ColumnName<br /> <br /> <br /> <br /> <br /> <code>&lt;![CDATA[ALTER TABLE [dbo].[|PrimaryTableName|] WITH CHECK ADD<br />CONSTRAINT [FK_|PrimaryTableName|_|SecondaryTableName|] FOREIGN KEY([|ColumnName|])<br />REFERENCES [dbo].[|SecondaryTableName|] ([|ColumnName|])<br />GO]]&gt;<br /> </code><br /> <br /><br />&lt;/pre&gt;<br /><br />Enjoy.</p>
-
-
-
-    <p><a href="/2006/12/06/delphi-bds-live-templates-for-sql-server/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on December 6, 2006
-     in <a href='/category/blogger/'>blogger</a>
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -316,6 +316,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/03/09/i-feel-guilty-but/" title="I Feel Guilty But">I Feel Guilty But</a></li>
+                
                 <li><a href="/2015/03/05/apres-code-a-new-developer-meetup-in-stowe-vt/" title="Après Code: A New Developer Meetup In Stowe Vt">Après Code: A New Developer Meetup In Stowe Vt</a></li>
                 
                 <li><a href="/2015/03/05/the-snow-was-better-in-2003/" title="The Snow Was Better In 2003">The Snow Was Better In 2003</a></li>
@@ -323,8 +325,6 @@
                 <li><a href="/2015/03/04/life-is-a-vacation/" title="Life Is A Vacation">Life Is A Vacation</a></li>
                 
                 <li><a href="/2015/03/03/our-return-to-whistler-blackcomb/" title="Our Return To Whistler Blackcomb">Our Return To Whistler Blackcomb</a></li>
-                
-                <li><a href="/2015/02/21/raw-denim/" title="Raw Denim">Raw Denim</a></li>
                 
                 </ul>                
             </div>
