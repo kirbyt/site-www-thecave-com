@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-03-09T16:20:14-04:00</updated>
+  <updated>2015-03-21T08:29:51-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,33 @@
   </author>
   <rights>Copyright (c) 2002-2015 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[Dress Code For Remote Job]]></title>
+    <link href="http://www.thecave.com/2015/03/21/dress-code-for-remote-job/"/>
+    <published>2015-03-21T08:27:07-04:00</published>
+    <updated>2015-03-21T08:27:07-04:00</updated>
+    <id>http://www.thecave.com/2015/03/21/dress-code-for-remote-job</id>
+    <content type="html"><![CDATA[<p>I came across one of the silliest benefits I’ve seen for a remote developer job: casual dress code. From the job <a href="https://weworkremotely.com/jobs/1323">posting</a>:</p>
+
+<blockquote>
+  <p>What’s In It For You</p>
+
+  <ul>
+    <li>Medical and dental benefits</li>
+    <li>Paid vacation and holidays</li>
+    <li>Remote work environment … work where you work best</li>
+    <li>Dynamic and dedicated team</li>
+    <li>Data/Cell (internet) stipend</li>
+    <li>Casual dress code</li>
+    <li>Most of all smart and driven team members that love to collaborate, seek feedback, and improve</li>
+  </ul>
+</blockquote>
+
+<p>I’m not sure I would want to work for a remote company that has a dress code even if it’s a casual dress code. Besides, I like coding in my pjs on many days, which means I would be in violation of the casual dress code. </p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Driver X]]></title>
@@ -586,18 +613,6 @@
 
 <p>Take a look at the new and improved <a href="http://www.kirbyturner.com">kirbyturner.com</a>, and let me know what you think.</p>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Snow is White, Not Brown and Green]]></title>
-    <link href="http://www.thecave.com/2015/01/15/snow-is-white-not-brown-and-green/"/>
-    <published>2015-01-15T13:22:07-05:00</published>
-    <updated>2015-01-15T13:22:07-05:00</updated>
-    <id>http://www.thecave.com/2015/01/15/snow-is-white-not-brown-and-green</id>
-    <content type="html"><![CDATA[<p>This screen shot says it all.</p>
-
-<p><a href="https://www.flickr.com/photos/kirbyturner/16286890482"><img src="https://farm9.staticflickr.com/8571/16286890482_5fc6e96929_n.jpg" alt="" /></a></p>
 ]]></content>
   </entry>
   
