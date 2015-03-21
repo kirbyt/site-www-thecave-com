@@ -19,6 +19,6 @@ I came across one of the silliest benefits I've seen for a remote developer job:
 > - Casual dress code
 > - Most of all smart and driven team members that love to collaborate, seek feedback, and improve
 
-I'm not sure I would want to work for a remote company that has a dress code even if it's a casual dress code. Besides, I like coding in my pjs on many days, which means I would be in violation of the casual dress code. 
+I'm not sure I would want to work for a remote company that has a dress code even if it's a casual dress code. I like coding in my pjs on many days, which means I would be in violation of the casual dress code. 
 
 [1]: https://weworkremotely.com/jobs/1323
