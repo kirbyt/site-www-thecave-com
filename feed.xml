@@ -5,9 +5,62 @@
     <description>thecave.com is the blog site for Kirby Turner, an independent software developer for Mac and iOS.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 21 Mar 2015 08:33:15 -0400</pubDate>
-    <lastBuildDate>Sat, 21 Mar 2015 08:33:15 -0400</lastBuildDate>
+    <pubDate>Sat, 28 Mar 2015 02:40:28 -0400</pubDate>
+    <lastBuildDate>Sat, 28 Mar 2015 02:40:28 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>2600 Miles In 4 Minutes</title>
+        <description>&lt;p&gt;Here’s a very cool video of a guy who did a time-lapse of his Pacific Crest Trail thru hike. Enjoy. &lt;/p&gt;
+
+&lt;div class=&quot;youtube-video&quot;&gt;&lt;figure&gt;&lt;iframe width=&quot;560&quot; height=&quot;420&quot; src=&quot;https://www.youtube.com/embed/xyo8OIp7aHM?color=white&amp;amp;theme=light&quot;&gt;&lt;/iframe&gt;&lt;/figure&gt;&lt;/div&gt;
+</description>
+        <pubDate>Sat, 28 Mar 2015 02:36:16 -0400</pubDate>
+        <link>http://www.thecave.com/2015/03/28/2600-miles-in-4-minutes/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2015/03/28/2600-miles-in-4-minutes/</guid>
+        
+        
+        <category>backpacking</category>
+        
+        <category>hiking</category>
+        
+      </item>
+    
+      <item>
+        <title>Affordable Cloud Storage With Amazon Cloud Drive</title>
+        <description>&lt;p&gt;Yesterday Amazon announced new &lt;a href=&quot;https://www.amazon.com/clouddrive/pricing&quot;&gt;pricing plans&lt;/a&gt; for their cloud storage offering named &lt;a href=&quot;https://www.amazon.com/clouddrive/home&quot;&gt;Cloud Drive&lt;/a&gt;. You can store unlimited number of photos for $11.99 per year, or you can store unlimited number of files for $59.99. The later is a no-brainer for me as I have been looking for an affordable cloud storage solution like this.&lt;/p&gt;
+
+&lt;p&gt;Currently I use a number of different services for cloud storage. I use &lt;a href=&quot;https://db.tt/Y2NovyiG&quot;&gt;Dropbox&lt;/a&gt; to sync files between computers and devices. The files I keep on Dropbox are ones I need immediate access to. In other words, these are the files I need to have on my laptop while also having access from other computers and devices such as my iPhone. &lt;/p&gt;
+
+&lt;p&gt;I use &lt;a href=&quot;https://secure.backblaze.com/r/00ytw8&quot;&gt;Backblaze&lt;/a&gt; to backup all the files on my laptop to the cloud. It’s my lifeline should something unexpected happen to my laptop. For photos I use &lt;a href=&quot;https://secure.smugmug.com/signup?Coupon=8ZK2smzZYAS1I&quot;&gt;SmugMug&lt;/a&gt;, but more recently I’ve been using &lt;a href=&quot;http://www.flickr.com&quot;&gt;Flickr&lt;/a&gt; more than SmugMug. And I use Rackspace Cloud File for my CDN. That’s content delivery network for my non-geeky friends reading this.&lt;/p&gt;
+
+&lt;p&gt;The problem with these different cloud storage providers is that I still had no easy way to upload and store files that I don’t need frequent access to. I don’t like to throw away data, but I also don’t need documents I wrote back in 2003 wasting space on my laptop. Dropbox has a way to not sync selected folders, but I don’t trust it. Plus, it’s not as straight forward as uploading and storing selected files.&lt;/p&gt;
+
+&lt;p&gt;Rackspace Cloud File works well for archiving my old data, but it can become costly if I have multi-terabytes of data to store. Same is true for Amazon S3, which I considered using in the past. In fact, when Amazon announced S3 Glacier I thought I had found the perfect cloud storage solution for me, but it’s not easy to use.&lt;/p&gt;
+
+&lt;p&gt;Flickr and SmugMug are great for storing photos and videos, and they both make it easy to upload new ones. Heck, Flickr will even automatically upload new photos taken on my iPhone for me. It doesn’t get much easier than that. But these two only support photos and videos, and I have other file types I want to store in the cloud.&lt;/p&gt;
+
+&lt;p&gt;So when I first heard about Amazon’s new pricing for Cloud Drive I thought, “Finally, an affordable cloud storage solution that fixes my needs for archiving old data.” At $60 per year for unlimited storage, I would be a fool not to try it out. But I don’t even need to spend the $60 right now. Amazon is offering a 3-month free trial.&lt;/p&gt;
+
+&lt;p&gt;Cloud Drive has desktop software for your Mac (and I’m guessing Windows too) to upload files, but I’m not a fan of the desktop software. It doesn’t let me pick where I want to store the files I’m uploading, and I like to use a very specific directory structure for my files. &lt;/p&gt;
+
+&lt;p&gt;While the Cloud Drive desktop software doesn’t suite my needs, the Cloud Drive web interface does. I can organize my storage area to my liking, create new folders and upload files to specific folders within the file system. And that’s just what I’ve been doing…uploading and organizing files - a few gigs so far to test out the service.&lt;/p&gt;
+
+&lt;p&gt;I do, however, have one complaint about Cloud Drive. The Cloud Drive app for iOS only shows photos and videos. I want access to all the files stored on my Cloud Drive. Hopefully Amazon will change this soon, or maybe it’s an opportunity for me to write a new app. There is, after all, an API for Cloud Drive.&lt;/p&gt;
+
+&lt;p&gt;Amazon Cloud Drive is the solution I’ve been looking for to archive my old data to the cloud. I’ll continue using external hard drives, Dropbox, Backblaze and such for backups, but my days with SmugMugs might be numbered. Still, I’m excited to finally have an affordable cloud storage solution for my old data.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 27 Mar 2015 06:52:45 -0400</pubDate>
+        <link>http://www.thecave.com/2015/03/27/affordable-cloud-storage-with-amazon-cloud-drive/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2015/03/27/affordable-cloud-storage-with-amazon-cloud-drive/</guid>
+        
+        
+        <category>general</category>
+        
+        <category>tech</category>
+        
+      </item>
     
       <item>
         <title>Dress Code For Remote Job</title>
@@ -398,86 +451,6 @@
         <category>general</category>
         
         <category>random</category>
-        
-      </item>
-    
-      <item>
-        <title>This Startup Is Not For Me</title>
-        <description>&lt;p&gt;While writing my previous post on how &lt;a href=&quot;http://www.thecave.com/2015/02/21/working-80-hours-isnt-the-answer/&quot;&gt;working 80+ hours is not the answer&lt;/a&gt;, I was reminded of a Wall Street startup I interviewed for back in December 1999. The startup was staffed with many brilliant programmers, and I certainly would learn a lot from them. The startup was well funded, and they offered me more money than any other company had offer me. But in the end I turned down their offer.&lt;/p&gt;
-
-&lt;p&gt;While walking around the their office, I noticed most of the programmers had sleeping bags under their desks. And every one was sitting in cubes with no natural light. No one had toys on their desks, no pictures of loved ones, and no smiles on their faces. It seemed no one was having fun. &lt;/p&gt;
-
-&lt;p&gt;I turned down their offer, and in the end I accepted another offer that paid $45,000 per year less. Why? Because the company I did join had passion, and the people working there shared that passion. We were going to work hard and play hard, and in the end build something great. And we did. &lt;/p&gt;
-
-&lt;p&gt;Looking back, I know I made the right decision. Sure, an extra $45,000 would have been nice, but it’s wasn’t worth spending a year in hell.&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 21 Feb 2015 08:27:44 -0500</pubDate>
-        <link>http://www.thecave.com/2015/02/21/this-startup-is-not-for-me/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2015/02/21/this-startup-is-not-for-me/</guid>
-        
-        
-        <category>life</category>
-        
-        <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Working 80+ Hours Isn&#39;t The Answer</title>
-        <description>&lt;p&gt;A founder, or maybe the person is a manager type, asked on Quora, “&lt;a href=&quot;http://www.quora.com/How-do-you-make-programmers-work-60-80-hours-per-week&quot;&gt;How do you make programmers work 60-80 hours per week?&lt;/a&gt;” While the question is a pathetic one, the answers that follow, especially the first one, are worth a read. And you should certainly read the answers if you happen to be one of those sad founders/manager types who wants their of programmers to work long hours. In short, if you are trying to force your programmers to work 60, 80 or more hours per week, then you are doing it wrong. &lt;/p&gt;
-
-&lt;h2 id=&quot;personal-experience&quot;&gt;Personal Experience&lt;/h2&gt;
-
-&lt;p&gt;I have first hand experience working 80+ hours per week. Heck, there were times I worked more than 100 hours in a single week at one particular startup. There were times when I would go days without going home, choosing instead to sleep in the office for an hour here and an hour there. And if I needed a change of clothes for an important meeting, I would go to the Banana Republic that was below my office to buy a change of clothes instead of going home.&lt;/p&gt;
-
-&lt;p&gt;The difference with this experience, however, was that I was never forced to put in those insane hours. No one ever asked me to work 80+ hours. I did it because I truly believed in what we were building. But I also knew what it took to be productive, and that’s why I often times made sure my team did not follow my lead. &lt;/p&gt;
-
-&lt;p&gt;I encouraged my team to work no more than 40 hours, and if I noticed someone reaching 50 hours I usually asked that person to take a break, go home, and enjoy life a bit. The work can wait. Sometimes the team member would take my suggestion and leave, other times they would not. But the choice was theirs. I never asked for more than 40 hours per week and in the end we created some amazing things in a short amount of time.&lt;/p&gt;
-
-&lt;h2 id=&quot;get-to-the-point&quot;&gt;Get To The Point&lt;/h2&gt;
-
-&lt;p&gt;So what’s my point here? My point is that you can’t force a programmer to work long hours. That person has to want to do it. There has to be a love or passion for what they are doing, otherwise it’s just work. And people max out, especially creative types, after about 32 to 40 hours of work in a single week.&lt;/p&gt;
-
-&lt;h2 id=&quot;and-now&quot;&gt;And Now&lt;/h2&gt;
-
-&lt;p&gt;I worked at a few startups putting in 60 or more hours per week, but those days are behind me. Those were fun times with lots of good memories, but I now find it’s more important to break up work with other interest. Today I’m a proponent of what I like to call underworking, or as I more often times jokingly call “being a slacker.”&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;Life’s too short to overwork yourself today in hopes you will have the time later in life for the fun things. Who knows what will happen in the future. You could be hit by a beer truck tomorrow and die. That’s why I believe you should make a point to spend more time &lt;a href=&quot;http://www.thecave.com/2014/06/20/enjoy-less-and-love-more/&quot;&gt;doing what you love&lt;/a&gt; now. The work can wait. &lt;/p&gt;
-
-&lt;h2 id=&quot;the-long-trail-and-me&quot;&gt;The Long Trail And Me&lt;/h2&gt;
-
-&lt;p&gt;A couple of years back I did a talk on the topic of underworking at the first &lt;a href=&quot;http://www.360intersect.com/&quot;&gt;360intersect&lt;/a&gt;. In it I talk about my time hiking the Long Trail and the effect it has had on me and the amount of time I spend working each week. Here’s the video for those interested in watching it and learning more about the benefits of working less.&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;div class=&quot;vimeo-video&quot;&gt;&lt;figure&gt;&lt;iframe src=&quot;//player.vimeo.com/video/65740037&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/figure&gt;&lt;/div&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;Funny how working only 32 to 40 hours a week is thought to be slacking.  &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot;&gt;
-      &lt;p&gt;Sorry the first couple of minutes of the talk are missing. Someone forgot to push the record button. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Sat, 21 Feb 2015 07:41:24 -0500</pubDate>
-        <link>http://www.thecave.com/2015/02/21/working-80-hours-isnt-the-answer/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2015/02/21/working-80-hours-isnt-the-answer/</guid>
-        
-        
-        <category>life</category>
-        
-        <category>long trail</category>
-        
-        <category>opinion</category>
-        
-        <category>programming</category>
-        
-        <category>videos</category>
-        
-        <category>work</category>
         
       </item>
     

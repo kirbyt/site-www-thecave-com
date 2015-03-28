@@ -107,6 +107,42 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2007/03/25/5-things-i-like-about-delphi-2007/">5 Things I Like About Delphi 2007</a>
+    </h2>
+    
+    <p>Bloggers in the Delphi community have been tagging each other to post 5 things they like about the Delphi 2007.  I wasn’t tagged but I want to play so here are my 5 things.<br /><br />1) <b>Speed</b> - The IDE loads and shutdowns so much faster then BDS 2006.  There seems to be other performance enhancements too such as switching between the form designer and code window.  The IDE is so much faster that I don’t like going back to BDS 2006.<br /><br />2) <b>Vista Support</b> - This is a wonderful enhancement.  I especially like how existing projects using dialogs and routines such as MessageDlg automatically have a Vista look simply by re-compiling the project.<br /><br />3) <b>Application.MainFormOnTaskbar</b> - I really like this new property.  I’m working on an SDI application that manages windows in a similar way as Microsoft Word and Outlook.  Overriding CreateParams and setting the ExStyle isn’t a big deal but having the MainFormOnTaskbar property helps to reduce some code.  <br /><br /><span style="color:red">Update:</span> Steve Trefethen posted a nice overview of <a href="http://www.stevetrefethen.com/blog/TheNewVCLPropertyTApplicationMainFormOnTaskbarInDelphi2007.aspx">Application.MainFormOnTaskbar</a>.<br /><br />4) <b>Online Help</b> - I like the new look of the help system and the new navigation between pages is really nice.  But I do have one major complaint.  Help indexes found in the BDS 2006 help system are missing.  For example launch the help system, go to Index, and enter “CreateDir routine” in the “Look for” textbox.  The routine is not indexed in the new help system but it is indexed in the previous help system.  And this is not the only routine not indexed.  It sucks that this sort of information is no longer indexed in the help system.<br /><br /><span style="color:red">Update:</span>Delphi 2007 Update 1 fixes my complaint about the online help.  Routines such as CreateDir are now indexed.<br /><br />5) <b>Improved Tool Palette Search</b> - I really like how the tool palette search has been improved to find all matches containing the search word, not just matches beginning with the search word.  This is a great improvement for me given that I use a number of 3rd party VCL components that are prefixed (i.e., TcxComboBox). <br /><br />So that’s my list of 5 things I like about Delphi 2007.  But what about the things I do not like about Delphi 2007.<br /><br />1) “Non-breaking” Release - Well, sort of.  The idea is that DCUs and packages from BDS 2006 can be used in Delphi 2007.  In general this is true.  However, I have encountered a number of problems.  For starters Delphi 2007 is having trouble loading certain DevExpress packages at startup.  And I have read in the newsgroups there is a painting issue too although I have not personally experienced it.<br /><br /><span style="color:red">Update:</span> Turns out the problem was me.  I was installing DevExpress packages that weren’t meant for the IDE.  After installing the correct set of DevExpress VCL packages my IDE problems went away.<br /><br />2) Trouble Debugging - This problem has me scratching my head and for the life of me I cannot figure it out.  All BDS 2006 projects I have opened in Delphi 2007 will not run under the interactive debugger.  I haven’t logged this issue in QC yet because I’m still trying to figure out what is happening.  Simply saying “Cannot debug project opened from BDS 2006 project file” does not give CodeGear enough information to troubleshoot the problem.  But the problem still remains.  I cannot debug existing projects.  (Note: I suspect this issue might have something to do with the 3rd party packages such as the ones I’m using from DevExpress.)<br /><br />3) More Issues with Debugging - From time to time I get a weird error message when I press F9.  The message says the debugger cannot create the process.  I launch Sysinternal’s Process Explorer and notice the application to debug is running under the bds.exe process and yet the debugger cannot attach to it.  To make matter worse I cannot kill the spawned process.  I have to close down the IDE to kill it. (Again, I suspect this issue might have somethign to do with some of the 3rd party packages I have manually installed.)<br /><br /><span style="color:red">Update:</span> <a href="http://www.thecave.com/archive/2007/03/26/fixed_my_delphi_2007_debug_issues.aspx">Fixed my Delphi 2007 debug issues</a>.<br /><br />4) No Support in FinalBuilder (yet) - I use FinalBuilder for all my projects and unfortunately FinalBuilder does not support Delphi 2007 (yet).  But according to the newsgroups a new compiler action for Delphi 2007 is in the works.  <br /><br /><span style="color:red">Update:</span> FinalBuilder now has a Delphi 2007 compiler action.<br /><br />5) No Support in EurekaLog (yet) - EurekaLog is another 3rd party tool I use, and unfortunately support for Delphi 2007 is not there yet.  But good news is EurekaLog should have support in about 2 weeks.<br /><br /><span style="color:red">Update:</span> EurekaLog now has Delphi 2007.<br /><br />I know some of these dislikes are not directly Delphi 2007 but they do prevent me from completely moving from BDS 2006 to Delphi 2007 right now.  So Delphi 2007 is still an experiment for me at the moment while I wait for 3rd party support.  Meanwhile I’m still using BDS 2006 for production work.<br /><br /><span style="color:red">Update:</span> I now use Delphi 2007 daily.  Best Delphi IDE in a long time.</p>
+
+
+
+    <p><a href="/2007/03/25/5-things-i-like-about-delphi-2007/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on March 25, 2007
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2007/03/21/update-on-delphi-2007-order-mess/">Update on Delphi 2007 Order Mess</a>
+    </h2>
+    
+    <p>The <a href="http://www.codegear.com/">CodeGear</a> folks are awesome.  They were quick to respond to my <a href="http://www.thecave.com/archive/2007/03/19/why_i_will_never_preorder_from_codegear_again.aspx">pre-order issue</a>.  CodeGear’s Loreen Fornshell worked directly with me.  She was able to sort through the mess and correct the mistakes made by Digital River.  It did take a few days but based on my phone calls with Digital River I suspect the delays were caused by DR and not CodeGear.<br /><br />Thanks to CodeGear folks like Loreen my pre-order mess has finally been cleaned up and I should have my license for <a href="http://www.codegear.com/delphi">Delphi 2007</a> later today.  <br /><br />I installed Vista the other day preparing the Delphi 2007.  I don’t have much of an opinion on Vista yet because I haven’t spent much time playing with it other than to say you better have a beefy machine with lots of RAM if you want the best UI experience.  I ordered more RAM for my laptop so I can run Vista’s Aero theme.  I’m not 100% sure if this will meet the minimum requirements needed to use the Aero theme but based on what I have read it should.  I’ll know in a couple of days after the new RAM arrives.</p>
+
+
+
+    <p><a href="/2007/03/21/update-on-delphi-2007-order-mess/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on March 21, 2007
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2007/03/19/why-i-will-never-pre-order-from-codegear-again/">Why I will NEVER Pre-order from CodeGear Again</a>
     </h2>
     
@@ -248,42 +284,6 @@
 </div>
 <hr>
 
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2007/02/22/exciting-news-this-week-from-codegear/">Exciting News This Week from CodeGear</a>
-    </h2>
-    
-    <p><a href="http://www.codegear.com/">CodeGear</a> made a couple of announcements this week that have generated a excitement and some confusion.</p>
-
-
-
-    <p><a href="/2007/02/22/exciting-news-this-week-from-codegear/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on February 22, 2007
-     in <a href='/category/blogger/'>blogger</a>
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2007/01/28/major-progress-made-on-vertigo/">Major Progress Made on Vertigo</a>
-    </h2>
-    
-    <p>I have been talking about Vertigo for a couple of years now.  Vertigo is a software product line currently under development at White Peak Software.  In a nutshell it is an email program for the Windows desktop.  And yes, it will be release this year.<br /><br />Why develop yet another email program?  Simple, none of the available mail programs suit my needs as a small business owner.  And I have tried them all including Outlook, The Bat, Eudora, Poca, and ThunderBird.  My needs are not unique and there is definitely an untouched market out there, which is why we are building yet another, albeit, a new kind of email program.<br /><br />We current have a working version of Vertigo that is being used daily.  <a href="http://en.wikipedia.org/wiki/Eat_one's_own_dog_food">Dogfooding</a> an email program, though, can have its challenges especially given than I must send emails out every day.  The thing that has surprised me the most is the large amount of crap contained in mail messages.<br /><br />We are building a database containing thousands and thousands (soon to be hundreds of thousands) of real mail messages.  Of course the majority of the messages in our database are spam mail.  This will be extremely helpful when work begins on the spam filter feature.  But the spam messages are also proving to be helpful in uncovering bugs in Vertigo.  Malformed message headers, date formats, and MIME encoding are common.  Then of course there are the attachments containing questionable content.  It’s been amazing to see what actually happens with email under the hood.</p>
-
-
-
-    <p><a href="/2007/01/28/major-progress-made-on-vertigo/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on January 28, 2007
-     in <a href='/category/blogger/'>blogger</a>
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -316,15 +316,15 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/03/28/2600-miles-in-4-minutes/" title="2600 Miles In 4 Minutes">2600 Miles In 4 Minutes</a></li>
+                
+                <li><a href="/2015/03/27/affordable-cloud-storage-with-amazon-cloud-drive/" title="Affordable Cloud Storage With Amazon Cloud Drive">Affordable Cloud Storage With Amazon Cloud Drive</a></li>
+                
                 <li><a href="/2015/03/21/dress-code-for-remote-job/" title="Dress Code For Remote Job">Dress Code For Remote Job</a></li>
                 
                 <li><a href="/2015/03/09/driver-x/" title="Driver X">Driver X</a></li>
                 
                 <li><a href="/2015/03/09/i-feel-guilty-but/" title="I Feel Guilty But">I Feel Guilty But</a></li>
-                
-                <li><a href="/2015/03/05/apres-code-a-new-developer-meetup-in-stowe-vt/" title="Après Code: A New Developer Meetup In Stowe Vt">Après Code: A New Developer Meetup In Stowe Vt</a></li>
-                
-                <li><a href="/2015/03/05/the-snow-was-better-in-2003/" title="The Snow Was Better In 2003">The Snow Was Better In 2003</a></li>
                 
                 </ul>                
             </div>

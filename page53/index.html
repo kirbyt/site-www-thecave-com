@@ -107,6 +107,42 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2004/06/17/unit-testing-and-vs-net-2005/">Unit testing and VS.NET 2005</a>
+    </h2>
+    
+    <p>I <a href="http://www.peterprovost.org/archive/2004/06/12/1379.aspx">agree</a> with Scott.  Unit Testing support should be included with all versions of Visual Studio 2005 and not just with Team System.  However, I am not sure I agree with the unit testing support using a new framework developed by Microsoft.  <a href="http://www.nunit.org/">NUnit</a> is here today and works with all released versions of the .NET Framework.  And I am sure support for version 2 of the .NET Framework will be included in NUnit once Microsoft has released it.<br /><br />I doubt many of my customers will be ready to move to VS.NET 2005 and the .NET Framework 2.0 when it is released, but I will still be developing solutions for them.  And I will continue to provide unit tests for custom written production code.  So while I agree that all versions of Visual Studio.NET 2005 should include support for unit testing, I would like to see stronger support for NUnit and not some new testing framework.  This will help ease the migration to the new tool and framework.<br /><br /><br /></p>
+
+
+
+    <p><a href="/2004/06/17/unit-testing-and-vs-net-2005/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on June 17, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/06/17/firefox-extensions/">Firefox Extensions</a>
+    </h2>
+    
+    <p>For those new to Firefox, be sure to check out the list of <a href="http://texturizer.net/firefox/extensions/">extensions</a>.  They’re easy to install and there are many helpful extensions that will improve your browsing experience.  As a matter of fact, I’m using the BlogThis! extension right now to post this entry.</p>
+
+
+
+    <p><a href="/2004/06/17/firefox-extensions/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on June 17, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2004/06/17/firefox-0-9-available-for-download/">Firefox 0.9 Available for Download</a>
     </h2>
     
@@ -248,42 +284,6 @@
 </div>
 <hr>
 
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2004/06/09/which-xml-api/">Which XML API?</a>
-    </h2>
-    
-    <p>I had an interesting chat with a team member today about which XML parsing API from the .NET Framework to use for a particular situation.  He mentioned that using the XPathNavigator with an XmlReader would not load the document into memory.  However, after some quick research I found this to be incorrect.  XPathNavigator is different than XmlDocument in that it is optimized for XSLT processing and the XPath data model, but it is similar in that the entire document is read into memory.  XPathNavigator appears to use a cursor-base model for traversing the document while XmlDocument uses a tree-base model.<br /><br />The rule of thumb I have come up with is this:  Read-only, forward-only XML parsing API tend to read from a stream and do not store the entire document in memory.  Random access XML parsing API, which typically use a tree-base model or cursor-base model, will traverse in-memory the XML document which means this entire document is stored in memory.<br /><br /><br /></p>
-
-
-
-    <p><a href="/2004/06/09/which-xml-api/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on June 9, 2004
-     in <a href='/category/blogger/'>blogger</a>
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2004/06/08/making-the-move-to-test-driven-development/">Making the Move to Test Driven Development</a>
-    </h2>
-    
-    <p>I have been using NUnit since its early days but it has only been in the last six months that I have made the move to test driven development.  TDD is concept of writing production code based on unit test cases that are written first.  And using a framework such as NUnit enables the developer to write automated unit tests that will test the features of an application at a functional level thus encouraging test driven development.  <br /><br />TDD is a paradigm switch for many developers as it was for me.  Sure I have been unit testing my code for years.  I would employ techniques such as console applications, shell programs, and other types of test harnesses to test the functions of my code.  But until recently I never <br />started the development of a module by writing unit tests first.<br /><br />Test driven development is an investment up front in the quality of your code.  That investment is in the form of the unit tests before production code.  Many developers today write the production code first (after the design phase of course), followed by commenting the code, then followed by testing the code.  And in many cases the later work of commenting and testing never happens because bug fixes become the developer’s top priority.  But by investing in the quality of the code at the start developers will find that bugs are reduced, the classes and functions of the code are better designed, and over all quality of the work is greatly improved.  Best of all, refactoring code becomes less of a risk with TDD because recursion testing at the unit level is possible.<br /><br />Here are some tip I would like to share that will hopefully help you make the move to test driven development:<br />&lt;ul&gt;<br />&lt;li&gt;Just do it.  Force yourself to write your unit test first.  Over time the quality of the unit test will improve, writing unit test will be easier, and it will because almost second nature for you to start with a unit test.&lt;/li&gt;<br />&lt;li&gt;When testing data changes to a database, start a transaction in the SetUp of the unit test and roll back the transaction in the TearDown.  This provides an easy way to clean up the data after each unit test.&lt;/li&gt;<br />&lt;li&gt;Writing a unit test prior to writing the production code will give you insight into the design of your class or function.  Use this insight to improve on the design prior to writing production code.&lt;/li&gt;<br />&lt;li&gt;Use <a href="http://www.whitepeaksoftware.com/blog.aspx?xml/2004_06_01_archive.xml#108613701548157152">composite unit testing</a> to test implementors of interfaces.&lt;/li&gt;<br />&lt;li&gt;Write a unit test for each defect reported.  This provides a great way to ensure a problem never reoccurs.  And for those who already have existing applications but no unit tests, this approach will give you an introduction to writing unit tests.&lt;/li&gt;<br />&lt;/ul&gt;<br /><br /><br /></p>
-
-
-
-    <p><a href="/2004/06/08/making-the-move-to-test-driven-development/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on June 8, 2004
-     in <a href='/category/blogger/'>blogger</a>
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -316,15 +316,15 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/03/28/2600-miles-in-4-minutes/" title="2600 Miles In 4 Minutes">2600 Miles In 4 Minutes</a></li>
+                
+                <li><a href="/2015/03/27/affordable-cloud-storage-with-amazon-cloud-drive/" title="Affordable Cloud Storage With Amazon Cloud Drive">Affordable Cloud Storage With Amazon Cloud Drive</a></li>
+                
                 <li><a href="/2015/03/21/dress-code-for-remote-job/" title="Dress Code For Remote Job">Dress Code For Remote Job</a></li>
                 
                 <li><a href="/2015/03/09/driver-x/" title="Driver X">Driver X</a></li>
                 
                 <li><a href="/2015/03/09/i-feel-guilty-but/" title="I Feel Guilty But">I Feel Guilty But</a></li>
-                
-                <li><a href="/2015/03/05/apres-code-a-new-developer-meetup-in-stowe-vt/" title="Après Code: A New Developer Meetup In Stowe Vt">Après Code: A New Developer Meetup In Stowe Vt</a></li>
-                
-                <li><a href="/2015/03/05/the-snow-was-better-in-2003/" title="The Snow Was Better In 2003">The Snow Was Better In 2003</a></li>
                 
                 </ul>                
             </div>

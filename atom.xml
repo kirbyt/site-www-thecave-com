@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-03-21T08:33:15-04:00</updated>
+  <updated>2015-03-28T02:40:28-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,49 @@
   </author>
   <rights>Copyright (c) 2002-2015 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[2600 Miles In 4 Minutes]]></title>
+    <link href="http://www.thecave.com/2015/03/28/2600-miles-in-4-minutes/"/>
+    <published>2015-03-28T02:36:16-04:00</published>
+    <updated>2015-03-28T02:36:16-04:00</updated>
+    <id>http://www.thecave.com/2015/03/28/2600-miles-in-4-minutes</id>
+    <content type="html"><![CDATA[<p>Here’s a very cool video of a guy who did a time-lapse of his Pacific Crest Trail thru hike. Enjoy. </p>
+
+<div class="youtube-video"><figure><iframe width="560" height="420" src="https://www.youtube.com/embed/xyo8OIp7aHM?color=white&amp;theme=light"></iframe></figure></div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Affordable Cloud Storage With Amazon Cloud Drive]]></title>
+    <link href="http://www.thecave.com/2015/03/27/affordable-cloud-storage-with-amazon-cloud-drive/"/>
+    <published>2015-03-27T06:52:45-04:00</published>
+    <updated>2015-03-27T06:52:45-04:00</updated>
+    <id>http://www.thecave.com/2015/03/27/affordable-cloud-storage-with-amazon-cloud-drive</id>
+    <content type="html"><![CDATA[<p>Yesterday Amazon announced new <a href="https://www.amazon.com/clouddrive/pricing">pricing plans</a> for their cloud storage offering named <a href="https://www.amazon.com/clouddrive/home">Cloud Drive</a>. You can store unlimited number of photos for $11.99 per year, or you can store unlimited number of files for $59.99. The later is a no-brainer for me as I have been looking for an affordable cloud storage solution like this.</p>
+
+<p>Currently I use a number of different services for cloud storage. I use <a href="https://db.tt/Y2NovyiG">Dropbox</a> to sync files between computers and devices. The files I keep on Dropbox are ones I need immediate access to. In other words, these are the files I need to have on my laptop while also having access from other computers and devices such as my iPhone. </p>
+
+<p>I use <a href="https://secure.backblaze.com/r/00ytw8">Backblaze</a> to backup all the files on my laptop to the cloud. It’s my lifeline should something unexpected happen to my laptop. For photos I use <a href="https://secure.smugmug.com/signup?Coupon=8ZK2smzZYAS1I">SmugMug</a>, but more recently I’ve been using <a href="http://www.flickr.com">Flickr</a> more than SmugMug. And I use Rackspace Cloud File for my CDN. That’s content delivery network for my non-geeky friends reading this.</p>
+
+<p>The problem with these different cloud storage providers is that I still had no easy way to upload and store files that I don’t need frequent access to. I don’t like to throw away data, but I also don’t need documents I wrote back in 2003 wasting space on my laptop. Dropbox has a way to not sync selected folders, but I don’t trust it. Plus, it’s not as straight forward as uploading and storing selected files.</p>
+
+<p>Rackspace Cloud File works well for archiving my old data, but it can become costly if I have multi-terabytes of data to store. Same is true for Amazon S3, which I considered using in the past. In fact, when Amazon announced S3 Glacier I thought I had found the perfect cloud storage solution for me, but it’s not easy to use.</p>
+
+<p>Flickr and SmugMug are great for storing photos and videos, and they both make it easy to upload new ones. Heck, Flickr will even automatically upload new photos taken on my iPhone for me. It doesn’t get much easier than that. But these two only support photos and videos, and I have other file types I want to store in the cloud.</p>
+
+<p>So when I first heard about Amazon’s new pricing for Cloud Drive I thought, “Finally, an affordable cloud storage solution that fixes my needs for archiving old data.” At $60 per year for unlimited storage, I would be a fool not to try it out. But I don’t even need to spend the $60 right now. Amazon is offering a 3-month free trial.</p>
+
+<p>Cloud Drive has desktop software for your Mac (and I’m guessing Windows too) to upload files, but I’m not a fan of the desktop software. It doesn’t let me pick where I want to store the files I’m uploading, and I like to use a very specific directory structure for my files. </p>
+
+<p>While the Cloud Drive desktop software doesn’t suite my needs, the Cloud Drive web interface does. I can organize my storage area to my liking, create new folders and upload files to specific folders within the file system. And that’s just what I’ve been doing…uploading and organizing files - a few gigs so far to test out the service.</p>
+
+<p>I do, however, have one complaint about Cloud Drive. The Cloud Drive app for iOS only shows photos and videos. I want access to all the files stored on my Cloud Drive. Hopefully Amazon will change this soon, or maybe it’s an opportunity for me to write a new app. There is, after all, an API for Cloud Drive.</p>
+
+<p>Amazon Cloud Drive is the solution I’ve been looking for to archive my old data to the cloud. I’ll continue using external hard drives, Dropbox, Backblaze and such for backups, but my days with SmugMugs might be numbered. Still, I’m excited to finally have an affordable cloud storage solution for my old data.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Dress Code For Remote Job]]></title>
@@ -574,45 +617,6 @@
     <updated>2015-01-27T13:54:26-05:00</updated>
     <id>http://www.thecave.com/2015/01/27/finally</id>
     <content type="html"><![CDATA[<p>The Northeast has been getting slammed with a major snow storm, but unfortunately Stowe, Vermont, is too far northwest to get the full force of the storm. I had hoped for a bit of new snow overnight, but it didn’t happen. So I waited before hitting the slopes this morning in hopes the edge of the storm would inch its way into the Stowe, but it didn’t happen. So Melanie and I hit the slopes anyways, braving the -26 degrees Fahrenheit wind chill. We got in two runs before deciding today would be a good day for a lunch date. So we left the hill, and headed for lunch in town. And then the snow finally came…guess I’ll be hitting the hill first thing tomorrow morning. </p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Eliminating Distractions]]></title>
-    <link href="http://www.thecave.com/2015/01/18/eliminating-distractions/"/>
-    <published>2015-01-18T13:49:47-05:00</published>
-    <updated>2015-01-18T13:49:47-05:00</updated>
-    <id>http://www.thecave.com/2015/01/18/eliminating-distractions</id>
-    <content type="html"><![CDATA[<p>Dan Counsell wrote an excellent post about <a href="http://dancounsell.com/articles/removing-distractions">removing distractions</a>. In the post he talks about how he removed distractions by removing social media apps such as Twitter and Facebook from his iPhone. He’s done other things too such as reading a book instead of checking Twitter, and he started a “No Technology Day” on Saturdays, which is something I think I might start doing as well.</p>
-
-<p>Over the last year I too have been eliminating distractions in my life by spending more of my time <a href="http://www.thecave.com/2014/06/20/enjoy-less-and-love-more/">doing what I love</a> and changing the way I use social networks. Changing the way I use social networks is one of the reasons I wrote my app <a href="http://www.whitepeaksoftware.com/cross-post">Cross Post</a>. With Cross Post I can share pictures, thoughts, and comments on Facebook, Twitter, and App.net without the worry of being distracted by those sites. Cross Post sends updates to social media sites, but it does not read the time lines or streams from those sites. Cross Post is a tool for making, not reading, micro-blog posts, hence it’s ability to help eliminate distractions. </p>
-
-<p>I did one other thing to help me eliminate distractions. I turned off notifications on all but the most important apps on my iPhone<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. Unlike Dan I did not remove the social media apps from my phone. I still want to be able to reply to mentions via my iPhone, which is why I left the apps installed. And in the case of Facebook, it’s the easiest way for me to get news about my family via my sister down in Mississippi, so I still check Facebook once or twice a day. But I do not receive notifications from any of the social media apps on my phone.</p>
-
-<p>So how can you start eliminating distractions in your life. I suggest starting with Dan’s new website, <a href="http://thegreatdisconnect.info">The Great Disconnect</a>. It contains articles, videos and information about how to remove distractions by living a less connected life. Check it out because we all can benefit from being a bit less connected these days.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>Examples of app that are important to me and which I still have notifications turned on are ones for my bank and credit cards. I want to make sure I’m alerted if a fraudulent charge is ever made against one of my accounts. Slack is another app that I use with notifications turned on since I use this for work purposes. Beyond that, I have notifications turned off. Oh, and in case you were wondering, I let sites like Twitter notify me of mentions via email, and I only check email a few times a day. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[New kirbyturner.com Site]]></title>
-    <link href="http://www.thecave.com/2015/01/15/new-kirbyturnercom-site/"/>
-    <published>2015-01-15T16:20:35-05:00</published>
-    <updated>2015-01-15T16:20:35-05:00</updated>
-    <id>http://www.thecave.com/2015/01/15/new-kirbyturnercom-site</id>
-    <content type="html"><![CDATA[<p>I have owned the vanity domain name <a href="http://www.kirbyturner.com">kirbyturner.com</a> for a long time, but I didn’t anything with it after buying it. That changed back when I was writing <a href="http://www.learningipadprogramming.com">Learning iPad Programming</a>. My publisher asked that I setup a website that talks about me, so I finally put kirbyturner.com to use. Unfortunately I never liked the look of the site. I used a bland template to create the website quickly. The site was ugly, but it served its purpose. Then Justin Williams created a new “professional web site” for <a href="http://www.justinw.me">himself</a>.</p>
-
-<p>My first thought after seeing Justin’s new site was, “Wow! That looks really nice.” My second thought was, “Man my site sucks donkey balls.” So I spent the last couple of days working on a new look for <a href="http://www.kirbyturner.com">kirbyturner.com</a>. I just finished the site, and I can say with 100% certainty that the new site looks much, much better than my <a href="https://www.flickr.com/photos/kirbyturner/16288802435/">old site</a>. Thanks for the inspiration, Justin.</p>
-
-<p>Take a look at the new and improved <a href="http://www.kirbyturner.com">kirbyturner.com</a>, and let me know what you think.</p>
-
 ]]></content>
   </entry>
   
