@@ -7,6 +7,7 @@ description: "thecave.com is the blog site for Kirby Turner, an independent soft
 baseurl: ""
 url: "http://www.thecave.com"
 header-img: "img/bg-01.jpg"
+google_tracking_id: "UA-167605-3"
 
 # Set header image count to the number of bg-NN.jpg images.
 # This will randomly select a header image when none is specified.
