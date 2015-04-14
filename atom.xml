@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-04-13T20:35:05-04:00</updated>
+  <updated>2015-04-14T09:31:41-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,18 @@
   </author>
   <rights>Copyright (c) 2002-2015 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[No WWDC Or SF Trip]]></title>
+    <link href="http://www.thecave.com/2015/04/14/no-wwdc-or-sf-trip/"/>
+    <published>2015-04-14T09:20:56-04:00</published>
+    <updated>2015-04-14T09:20:56-04:00</updated>
+    <id>http://www.thecave.com/2015/04/14/no-wwdc-or-sf-trip</id>
+    <content type="html"><![CDATA[<p>Apple announced the dates for this year’s WWDC, and once again a lottery is being used to decide who gets to buy a ticket. I have no interesting is attending WWDC other than to attend the labs since I do have questions I would love to ask an Apple engineer. But it’s not worth spending $1599 on a ticket just for that. </p>
+
+<p>Likewise, I’m struggling to justify spending the money to stay in San Francisco the week of WWDC just to hang out with friends and drink beer. Certainly reconnecting with friends and making news ones is very enjoyable, but there are cheaper ways for me to do that. So I’ve decided I’m not going to SF for this year’s WWDC. </p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[I Should Feel Guilty But I Don't]]></title>
@@ -569,39 +581,6 @@
     <content type="html"><![CDATA[<p>I just spent the last two hours looking through past posts here at thecave. I was writing a lot for the four or five years, and some of those old posts are actually good. But more importantly reading through those old posts gave me a chance to relive my past. </p>
 
 <p>This makes me realize I need to post here more even if the post is short like this one. All too often I’ll post something short to Twitter or Facebook, but I need to start posting it here too. It will be great to re-read my old posts five years from now.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[New Site Theme]]></title>
-    <link href="http://www.thecave.com/2015/02/16/new-site-theme/"/>
-    <published>2015-02-16T22:53:03-05:00</published>
-    <updated>2015-02-16T22:53:03-05:00</updated>
-    <id>http://www.thecave.com/2015/02/16/new-site-theme</id>
-    <content type="html"><![CDATA[<p>I’ve been on a website redesign kick lately updating sites such as <a href="http://www.kirbyturner.com">kirbyturner.com</a> and <a href="http://www.rowanturner.net">rowanturner.net</a>. The recent update to my <a href="http://www.kirbyturner.com">vanity website</a> gives it a more modern look, and <a href="http://www.rowanturner.net">Rowan’s website</a> now has a clean, fresh look that focuses on the content.</p>
-
-<p>I especially like Rowan’s new site design. It uses a responsive design site theme so it looks good on the desktop as well as on mobile devices. I also like how it has custom header images for posts, and the clean and simply layout for posts makes it easy to focus on the content in each post. I like the site design for Rowan’s website so much that I decided to use the same site theme here at thecave.</p>
-
-<p>I couldn’t, however, use the site theme as is. thecave is a bit more involved given that it uses categories. Plus, I want to provide a complete <a href="http://www.thecave.com/archive.html">archive</a> of every post available. These are things not found on Rowan’s site, so I’ve spent the last couple of evenings tweaking the site theme to be more appropriate for thecave.com.</p>
-
-<p>Other changes I made include adding a footer to each page that shows recent articles and a link list to other sites that I run, and adding an <a href="http://www.thecave.com/archive.html">archive</a> link to the top that gives you access to every post made here since 2002. There is also a <a href="http://www.thecave.com/categories.html">categories</a> link in the top bar for those who would rather find an article based on a category. But the change that I like the most is the rotating header images for each post. </p>
-
-<p>The original site theme lets me pick a header image for a new post, and if I do not specify a header image then the default header image is used. This works but it felt a bit boring to me. I want to see other header images when reading through old posts, not the same one over and over. So I tweaked the theme to pick the header image, when not specified, by performing a modulus operation on the day of the month. It’s not random, but it’s also not boring. Now as you page through posts you will see different header images<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.</p>
-
-<p>I have more work I want to do to this site such as adding an RSS feed for each category. Actually the site has had a feed file for each category for years. I just haven’t made the URL to the category feed files obvious. But that should be easier to do now that there is a page dedicated to listing all the <a href="http://www.thecave.com/categories.html">categories</a>.</p>
-
-<p>So there you have it…the new site theme for thecave.com. Let me know what you think<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>I made the same change to the theme on Rowan’s website. Now you can see more fun pictures of Rowan as you read through the posts. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:2">
-      <p>You will find links to me on various social networks such as App.net and Twitter below in the page footer. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 ]]></content>
   </entry>
   

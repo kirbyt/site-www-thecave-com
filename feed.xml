@@ -5,9 +5,28 @@
     <description>thecave.com is the blog site for Kirby Turner, an independent software developer for Mac and iOS.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 13 Apr 2015 20:35:05 -0400</pubDate>
-    <lastBuildDate>Mon, 13 Apr 2015 20:35:05 -0400</lastBuildDate>
+    <pubDate>Tue, 14 Apr 2015 09:31:41 -0400</pubDate>
+    <lastBuildDate>Tue, 14 Apr 2015 09:31:41 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>No WWDC Or SF Trip</title>
+        <description>&lt;p&gt;Apple announced the dates for this year’s WWDC, and once again a lottery is being used to decide who gets to buy a ticket. I have no interesting is attending WWDC other than to attend the labs since I do have questions I would love to ask an Apple engineer. But it’s not worth spending $1599 on a ticket just for that. &lt;/p&gt;
+
+&lt;p&gt;Likewise, I’m struggling to justify spending the money to stay in San Francisco the week of WWDC just to hang out with friends and drink beer. Certainly reconnecting with friends and making news ones is very enjoyable, but there are cheaper ways for me to do that. So I’ve decided I’m not going to SF for this year’s WWDC. &lt;/p&gt;
+</description>
+        <pubDate>Tue, 14 Apr 2015 09:20:56 -0400</pubDate>
+        <link>http://www.thecave.com/2015/04/14/no-wwdc-or-sf-trip/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2015/04/14/no-wwdc-or-sf-trip/</guid>
+        
+        
+        <category>general</category>
+        
+        <category>ios</category>
+        
+        <category>travel</category>
+        
+      </item>
     
       <item>
         <title>I Should Feel Guilty But I Don&#39;t</title>
@@ -213,61 +232,6 @@
         <category>family</category>
         
         <category>snowboarding</category>
-        
-      </item>
-    
-      <item>
-        <title>Après Code: A New Developer Meetup In Stowe Vt</title>
-        <description>&lt;p&gt;I started organizing developer related meetups in 2001 starting with a weekly happy hour for dev friends and co-workers. Over the years I ended up organizing different types of events, from monthly meetings that included speakers to parties and happy hours to annual snowboarding trips. I even started &lt;a href=&quot;http://www.nshappyhour.org&quot;&gt;NSHappyHour&lt;/a&gt; for Mac and iOS developers, which is still going on each month in Salem, MA.&lt;/p&gt;
-
-&lt;p&gt;I realized as I prepared for my move to Stowe, VT, that I was burnt out organizing events and meetups. I stepped down as co-organizer of &lt;a href=&quot;http://www.cocoaheadsboston.org&quot;&gt;CocoaHeads Boston&lt;/a&gt; a few months before my move, which gave me a chance to be just a regular attendee. That’s when I realized I was done organizing events for a while.&lt;/p&gt;
-
-&lt;p&gt;After moving to Vermont, I was asked by a few folks if I would start a &lt;a href=&quot;http://cocoaheads.org&quot;&gt;CocoaHeads&lt;/a&gt; chapter in the Burlington area. I said no because I needed a break. The break I needed wasn’t just from being an organizer. I needed a break from attending developer focused gatherings and networking events too. And while it’s been a bit lonely not having local folks to talk shop with on a regular basis, I’ve enjoyed my break. But break time is over.&lt;/p&gt;
-
-&lt;p&gt;It’s been nearly two years since I was last responsible for a meetup, but that changes tonight with the first of many Après Code events.&lt;/p&gt;
-
-&lt;p&gt;I’ve been thinking about hosting a developer meetup in Stowe since I moved here, but I wasn’t initially sure there would be enough interest. However, in my short time here I’ve met other software developers living in the area. Some work for companies here in town while others work for shops in and around Burlington. And the number of developers in our small community is growing with companies like &lt;a href=&quot;http://corp.inntopia.com/careers/&quot;&gt;Inntopia hiring&lt;/a&gt; more developers. Even though I knew there were developers living and working in the area, I wasn’t ready to commit to a monthly meetup just yet. &lt;/p&gt;
-
-&lt;p&gt;That changed two days before I left for Whistler. I was talking with a local dev friend, Maya Ropelip&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, about writing apps for iOS. During our chat I mentioned my idea for a local meetup. He got excited about the idea and thought the timing was right for hosting a software developer gathering in Stowe. He also agreed to be the co-host in case I need to skip a meetup. So that night I grabbed the domain name, setup a &lt;a href=&quot;http://www.apres-code.com/&quot;&gt;website&lt;/a&gt;, and created a new group on &lt;a href=&quot;http://www.meetup.com/Apres-Code/&quot;&gt;meetup.com&lt;/a&gt;. &lt;/p&gt;
-
-&lt;p&gt;Starting a new group just 48 hours before I leave the country for a week and a half wasn’t the smartest thing for me to do, but I did it anyways. And now that I’m back home, I’m scrambling to get the word out about tonight’s inaugural Après Code. So without further ado, I’m happy to officially announce &lt;a href=&quot;http://www.apres-code.com/&quot;&gt;Après Code&lt;/a&gt;. &lt;/p&gt;
-
-&lt;h1 id=&quot;what-is-aprs-code&quot;&gt;What Is Après Code&lt;/h1&gt;
-
-&lt;p&gt;Après Code is an informal gathering of software developers in Stowe, Vermont. The gathering is a chance for those of us living in and around Stowe, or just visiting the area, to get together to talk about joys of producing software and writing code, seek help or assist others, and most importantly meet and get to know other fine folks in the our community. The group is open to professionals, hobbyists, and anyone with an interest in designing, programming and creating software, apps, and websites.&lt;/p&gt;
-
-&lt;h2 id=&quot;when&quot;&gt;When&lt;/h2&gt;
-
-&lt;p&gt;We meet the first Thursday of each month, starting tonight, at 6:30 pm and go until the last person leaves. We’re gathering at &lt;a href=&quot;http://rimrocksmountaintavern.com/&quot;&gt;Rimrock’s Tavern&lt;/a&gt; though this could change in the future. But for now Rimrock’s is the place to be.&lt;/p&gt;
-
-&lt;h2 id=&quot;more-information&quot;&gt;More Information&lt;/h2&gt;
-
-&lt;p&gt;You can find more information about the group at the Après Code &lt;a href=&quot;http://www.apres-code.com/&quot;&gt;website&lt;/a&gt;, and you can receive email reminders about future Après Code events by joining the Après Code &lt;a href=&quot;http://www.meetup.com/Apres-Code/&quot;&gt;meetup.com group&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;So if you happen to be in the area, whether you live in the Stowe area or are just visiting, stop by tonight to say hi.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;I gotta get this guy on Twitter or some other social network. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Thu, 05 Mar 2015 10:54:05 -0500</pubDate>
-        <link>http://www.thecave.com/2015/03/05/apres-code-a-new-developer-meetup-in-stowe-vt/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2015/03/05/apres-code-a-new-developer-meetup-in-stowe-vt/</guid>
-        
-        
-        <category>apps</category>
-        
-        <category>general</category>
-        
-        <category>ios</category>
-        
-        <category>programming</category>
         
       </item>
     
