@@ -5,10 +5,28 @@
         <description>thecave | Ramblings From A Crotchety Old Man - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2015-04-14T09:31:41-04:00</lastBuildDate>
-        <pubDate>2015-04-14T09:31:41-04:00</pubDate>
+        <lastBuildDate>2015-04-15T13:16:13-04:00</lastBuildDate>
+        <pubDate>2015-04-15T13:16:13-04:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Views Created In Code</title>
+                <description>&lt;p&gt;Last year I posted an article that talks about why &lt;a href=&quot;http://www.thecave.com/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout/&quot;&gt;I stopped using Interface Builder&lt;/a&gt; in favor of writing code to create views. There are some who disagree with me, and to them I say, “To each his own.” And there are some who agree with me, but choose not to publicize it. No matter. Every programmer has tricks that make them more productive, and creating views in code just happens to be one trick that works well for me. &lt;/p&gt;
+
+&lt;p&gt;What works for me doesn’t necessarily work for others. But I have to say, I had a brief “HA!” moment when I read this comment from Peter Steinberger’s post about &lt;a href=&quot;http://petersteinberger.com/blog/2015/researching-researchkit/&quot;&gt;researching Apple’s research kit&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;All views are created in code. Apple uses a Storyboard for the example catalog, but that’s it. Apple uses the standard pattern of overriding &lt;code&gt;viewDidLoad&lt;/code&gt; to build UI in combination with Auto Layout and the visual format language, whenever possible.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Great minds think alike.&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2015/04/15/views-created-in-code/</link>
+                <guid>http://www.thecave.com/2015/04/15/views-created-in-code</guid>
+                <pubDate>2015-04-15T12:58:45-04:00</pubDate>
+        </item>
 
         <item>
                 <title>No WWDC Or SF Trip</title>
@@ -548,17 +566,6 @@
                 <link>http://www.thecave.com/2015/02/17/temperature-inversion/</link>
                 <guid>http://www.thecave.com/2015/02/17/temperature-inversion</guid>
                 <pubDate>2015-02-17T11:24:30-05:00</pubDate>
-        </item>
-
-        <item>
-                <title>Reliving The Past</title>
-                <description>&lt;p&gt;I just spent the last two hours looking through past posts here at thecave. I was writing a lot for the four or five years, and some of those old posts are actually good. But more importantly reading through those old posts gave me a chance to relive my past. &lt;/p&gt;
-
-&lt;p&gt;This makes me realize I need to post here more even if the post is short like this one. All too often I’ll post something short to Twitter or Facebook, but I need to start posting it here too. It will be great to re-read my old posts five years from now.&lt;/p&gt;
-</description>
-                <link>http://www.thecave.com/2015/02/17/reliving-the-past/</link>
-                <guid>http://www.thecave.com/2015/02/17/reliving-the-past</guid>
-                <pubDate>2015-02-17T01:38:50-05:00</pubDate>
         </item>
 
 
