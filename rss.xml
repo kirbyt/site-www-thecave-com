@@ -5,8 +5,8 @@
         <description>thecave | Ramblings From A Crotchety Old Man - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2015-04-15T13:16:13-04:00</lastBuildDate>
-        <pubDate>2015-04-15T13:16:13-04:00</pubDate>
+        <lastBuildDate>2015-04-15T13:21:22-04:00</lastBuildDate>
+        <pubDate>2015-04-15T13:21:22-04:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -20,8 +20,15 @@
   &lt;p&gt;All views are created in code. Apple uses a Storyboard for the example catalog, but that’s it. Apple uses the standard pattern of overriding &lt;code&gt;viewDidLoad&lt;/code&gt; to build UI in combination with Auto Layout and the visual format language, whenever possible.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Great minds think alike.&lt;/p&gt;
+&lt;p&gt;Great minds think alike.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Though I don’t override &lt;code&gt;viewDidLoad&lt;/code&gt; to create my views. I usually create a view class, and I add an instance of the class to the view controller’s view in &lt;code&gt;loadView&lt;/code&gt;. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
 </description>
                 <link>http://www.thecave.com/2015/04/15/views-created-in-code/</link>
                 <guid>http://www.thecave.com/2015/04/15/views-created-in-code</guid>
