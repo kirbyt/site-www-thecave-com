@@ -6,7 +6,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="thecave.com is the blog site for Kirby Turner, an independent software developer for Mac and iOS.">
+    <meta name="author" content="Kirby Turner">
+    <meta name="description" content="
+  
+    
+      In an earlier post I mentioned my disappointment with Microsoft for not including wincv.exe in the .NET Framework 2.0 SDK.  Like many developers I have found this tool to be very handy and I use it a lot.  But all is not lost.  WinCV.exe can be used with .NET 2.0.WinCV.exe has a config file called WinCV.exe.config identifying the assemblies loaded and exposed by the tool.  I modified the config file to include the .NET 2.0 assemblies.  Low and behold this worked.  I can now use WinCV.exe to examine class definitions for 2.0 classes.I recommend copying the WinCV.exe and WinCV.exe.config to a clean directory if you have .NET 1.1 and 2.0 installed on the same machine.  This way you can use one instance of WinCV.exe for .NET 1.1 and the other for 2.0.  You can declare the 2.0 assemblies in the same config file as the 1.1 assembly but this can lead to confusion when looking at the class definitions in WinCV.exe.  I like to eliminate confusion so I copied WinCV.exe and its config file to a different directory, which I use to browse 2.0 classes.  I use the instance at the default location to browse 1.1 classes.I have posted the WinCV.exe.config file containing the 2.0 assembly declarations here.  Note I had to rename the file stored on the web server to WinCV.exe.config.xml so ASP.NET would not block you from downloading it.  You will need to remove the .xml from the file extension or copy
+      paste the XML if you are viewing it in the browser window.Lastly, for those of you wondering where you can find WinCV.exe, look in your Visual Studio 2003 install directory.  The default location is:C:\Program Files\Microsoft Visual Studio .NET 2003\SDK\v1.1\BinKudos to the Microsoft developer who had the smarts to use a config file for WinCV.exe.Update: The WinCV.exe.config file posted above has the  section needed to force WinCV.exe to run under .NET 2.0 when multiple versions of the .NET Framework are present on the same machine.  Thanks to Don Jayamanne for recommending the the  section setting.
+    
+  
+
+
+">
 
     <title>Using WinCV.exe with .NET 2.0 - thecave | Ramblings From A Crotchety Old Man</title>
 

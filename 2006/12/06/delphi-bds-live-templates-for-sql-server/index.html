@@ -6,7 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="thecave.com is the blog site for Kirby Turner, an independent software developer for Mac and iOS.">
+    <meta name="author" content="Kirby Turner">
+    <meta name="description" content="Here are a few Delphi (BDS) Live Templates I created for writting SQL Server script:Create SQL Server Table&lt;pre&gt;        version=”1.0.0”&gt;        Create table for SQL Server.        Kirby Turner           TableName     &lt;![CDATA[/***  Create |TableName| table.***/PRINT 'Create |TableName| table'GOIF (EXISTS (SELECT name FROM sysobjects WHERE (name = N'|TableName|') AND (type = 'U')))BEGIN  DROP TABLE [dbo].[|TableName|]ENDGOCREATE TABLE [dbo].[|TableName|] (|*||end||*|CONSTRAINT [PK_|TableName|_1] PRIMARY KEY CLUSTERED|*|(|*|)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]) ON [PRIMARY]GOGRANT SELECT ON [dbo].[|TableName|] TO [public]GO]]&gt;  &lt;/pre&gt;Create Foreign Key Reference&lt;pre&gt;        version=”1.0.0”&gt;        Create foreign key constraint for SQL Server.        Kirby Turner                   PrimaryTableName                      SecondaryTableName                      ColumnName     &lt;![CDATA[ALTER TABLE [dbo].[|PrimaryTableName|] WITH CHECK ADDCONSTRAINT [FK_|PrimaryTableName|_|SecondaryTableName|] FOREIGN KEY([|ColumnName|])REFERENCES [dbo].[|SecondaryTableName|] ([|ColumnName|])GO]]&gt;  &lt;/pre&gt;Enjoy.
+
+">
 
     <title>Delphi (BDS) Live Templates for SQL Server - thecave | Ramblings From A Crotchety Old Man</title>
 

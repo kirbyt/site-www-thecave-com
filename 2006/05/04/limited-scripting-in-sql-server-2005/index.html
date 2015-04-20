@@ -6,7 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="thecave.com is the blog site for Kirby Turner, an independent software developer for Mac and iOS.">
+    <meta name="author" content="Kirby Turner">
+    <meta name="description" content="SQL Server 2005 has been out for some time now but I have only recently made the move to it.  I’ve been in the SQL Server 2000 world because of customers but my customers are finally making the move 2005.Overall I really like SQL Server 2005 and the new Management Studio is nice.  However, I’m really annoyed that the SQL Server 2005 team decided to do away with the database scripting feature found in SQL Server 2000.  In SQL Server 2000, you can script out each database object into individual files.  I do this so I can commit the DDL source for each into CVS, or to do revision comparisons, or to do a number of other tasks.  But you cannot easily script out each object in a database with SQL Server 2005.  Apparently this is a known limitation as seen here.One option I found is to write a programming using .NET 2.0 and the SQL Management Object (SMO).  Unfortunately time is not a luxury I have and I have an immediate need to script out the each object in a database into individual files.  So I started down the path of script out each object individual.  Guess what?  It has its own set of problems.  First starters, there is not an option to generate a script that contains both the DROP and CREATE statements.  Instead what I do is generate the CREATE statement to a query window.  Next I generate the DROP statement to the clipboard followed by pasting the clipboard content to the query window.  Needless to say, this is a painful process, and I have hundreds of database objects to script out.I can’t believe the model used for generating scripts in previous versions of SQL Server did not make it into SQL Server 2005.  I would have expected the same functionality at a minimum, and possibly an improvement on past versions.  But I would never have guess it was removed completely.
+
+">
 
     <title>Limited Scripting in SQL Server 2005 - thecave | Ramblings From A Crotchety Old Man</title>
 

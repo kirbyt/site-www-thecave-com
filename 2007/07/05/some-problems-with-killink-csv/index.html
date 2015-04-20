@@ -6,7 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="thecave.com is the blog site for Kirby Turner, an independent software developer for Mac and iOS.">
+    <meta name="author" content="Kirby Turner">
+    <meta name="description" content="Today I discovered a new problem in Killink CSV, the .csv editor I have been working on.  Killink CSV has 2 general options, “Remember column widths” and “First row is read-only”.  “Remember column widths” has a problem with hidden columns when the “First row is read-only” is turned on.  Killink CSV will ignore the hidden columns when populating the first row causing column headers to appear under the wrong columns.The second problem is more serious.  The option “First row is read-only” causes the program to report an unhandled error under certain circumstances when more than one file is open at a time.  Fixes for these problems will be available in a few days.  Meantime if you are editing .csv files with Killink CSV I suggest you turn off these options until version 1.4 is released.
+
+">
 
     <title>Some Problems with Killink CSV - thecave | Ramblings From A Crotchety Old Man</title>
 

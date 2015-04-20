@@ -6,7 +6,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="thecave.com is the blog site for Kirby Turner, an independent software developer for Mac and iOS.">
+    <meta name="author" content="Kirby Turner">
+    <meta name="description" content="Last week while playing with Microsoft UDDI Services Version 1 released on 16 Nov 2001, I discovered an interesting fact about Windows .NET Server Enterprise Edition Build 3621.  The Windows API call GetVersionEx() is returning a MinorVersion value of 2 when called on Windows .NET Server Build 3621.  It does not surprise me that the value 2 is not documented for the OSVERSIONINFOEX structure since Windows .NET Server is still in beta.
+
+So what does this have to do with UDDI Services Version 1?  As it turns out, there is a little snippet of code in UDDI Services that checks the version number of the OS.  This is used to limited the operating systems that can run UDDI Services.  In this code snippet, a conditional is checked that expects the MinorVersion value to be 1, which is documented as Windows XP/Windows .NET Server.  But Windows .NET Server Enterprise Edition Build 3621 returns the value 2 for MinorVersion.  See the problem?  UDDI Services Version 1 will not run on Windows .NET Server Enterprise Edition Build 3621.
+
+
+">
 
     <title> - thecave | Ramblings From A Crotchety Old Man</title>
 

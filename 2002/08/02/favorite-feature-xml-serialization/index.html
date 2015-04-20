@@ -6,7 +6,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="thecave.com is the blog site for Kirby Turner, an independent software developer for Mac and iOS.">
+    <meta name="author" content="Kirby Turner">
+    <meta name="description" content="I have said it before and I will say it again.  XML Serialization ROCKS!  I am working on a new version for WASTEDBoarding.com this weekend and I am taking a totally new approach to the architecture of the software.  One approach includes using XML Serialization to save object hierarchies to a SQL Server database.
+
+Here’s how it works.  All my core classes are serializable.  ToString() has been overridden to return the object hierarchy in an XML string.  I pass the XML string to a stored procedure in SQL Server, which in turns saves out the information to the appropriate tables.  All of this totally rocks!
+
+">
 
     <title>Favorite feature: XML Serialization - thecave | Ramblings From A Crotchety Old Man</title>
 

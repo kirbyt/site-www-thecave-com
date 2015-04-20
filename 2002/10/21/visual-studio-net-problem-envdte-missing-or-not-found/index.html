@@ -6,7 +6,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="thecave.com is the blog site for Kirby Turner, an independent software developer for Mac and iOS.">
+    <meta name="author" content="Kirby Turner">
+    <meta name="description" content="I un-installed Visual XSLT the other day and it broke my Visual Studio.NET install.  When I created a new Windows Application, VS.NET would fail to display Form1 in the Form Designer with the exception “File or assembly name EnvDTE, or one of its dependencies, was not found.”  I believe the problem was caused by un-installing Visual XSLT.  Luckily the fix was simple.
+
+Under the .NET Framework directory C:\WINDOWS\Microsoft.NET\Framework\v1.0.3705\ you will find the envdte.dll assembly.  Copy this file to C:\Program Files\Microsoft Visual Studio .NET\Common7\IDE\ and you should be good to go.  Of course you will need to adjust the drive letters based on your configuration.
+
+This fix worked for me.  Hopefully it will work for you if you are experiencing the same problem.
+
+">
 
     <title>Visual Studio.NET problem: EnvDTE missing or not found - thecave | Ramblings From A Crotchety Old Man</title>
 

@@ -6,7 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="thecave.com is the blog site for Kirby Turner, an independent software developer for Mac and iOS.">
+    <meta name="author" content="Kirby Turner">
+    <meta name="description" content="I’m working on a new project and have a need to parse XML Schemas found inside WSDL documents.  After a few google searches I discovered the concept of a Schema Object Model (SOM).  The .NET Framework has a SOM parser as does MSXML.  There’s also a SOM parser for Java as well.  Because I’m writing a Win32 application, I started learning the ins and outs of MSXML’s SOM parser.  As a learned more I did additional google searches and discovered Delphi has its own SOM parser.Interfaces such as IXmlSchemaDoc and functions such as LoadXMLSchema and LoadXMLSchemaStr are undocumented but the source can be found in source\win32\xml\XMLSchema.pas.  There is also sample code for parsing an XML Schema available BDN.  With the aid of the sample code I was able to get my sample project working.  And in case you are wondering, the VCL library has a component called TXMLSchemaDoc that wraps Delphi’s SOM parser into a handy component.  You will not find it in the tool pallet though.  For what it is worth, I found working with the interface (IXmlSchemaDoc) easy and I have not tried the TXMLSchemaDoc component.
+
+">
 
     <title>XML Schema Object Model (SOM) Parser for Delphi - thecave | Ramblings From A Crotchety Old Man</title>
 
