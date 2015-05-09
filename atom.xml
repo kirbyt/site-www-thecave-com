@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-04-20T10:00:34-04:00</updated>
+  <updated>2015-05-09T11:29:19-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,18 @@
   </author>
   <rights>Copyright (c) 2002-2015 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[Snow River At Stowe]]></title>
+    <link href="http://www.thecave.com/2015/05/09/snow-river-at-stowe/"/>
+    <published>2015-05-09T11:24:25-04:00</published>
+    <updated>2015-05-09T11:24:25-04:00</updated>
+    <id>http://www.thecave.com/2015/05/09/snow-river-at-stowe</id>
+    <content type="html"><![CDATA[<p>This looks like it was a lot of fun. Wish I had known about it when it happened last year. </p>
+
+<div class="youtube-video"><figure><iframe width="560" height="420" src="https://www.youtube.com/embed/wfWUHKUt-Q0?color=white&amp;theme=light"></iframe></figure></div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Views Created In Code]]></title>
@@ -583,18 +595,6 @@
 
 <p>For those who don’t know who <a href="http://stackoverflow.com/users/25646/bbum">bbum</a> is, he’s Bill Bumgarner. He works at Apple and knows a thing or two about Cocoa. So I believe him when he says “<code>enumerateObjectsUsingBlock:</code> will be as fast or faster than fast enumeration.”</p>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Temperature Inversion]]></title>
-    <link href="http://www.thecave.com/2015/02/17/temperature-inversion/"/>
-    <published>2015-02-17T11:24:30-05:00</published>
-    <updated>2015-02-17T11:24:30-05:00</updated>
-    <id>http://www.thecave.com/2015/02/17/temperature-inversion</id>
-    <content type="html"><![CDATA[<p>Seeing “temperature inversion” in the Stowe snow report this morning is music to my ears. It’s -20°F in town but a balmy 2°F at the summit. Time to ride. </p>
-
-<p>Speaking of odd temperatures…Whistler Village is 50°F warmer than the Village of Stowe this morning. I’m starting to think our Whistler winter vacation next week will feel more like a spring break vacation.</p>
 ]]></content>
   </entry>
   
