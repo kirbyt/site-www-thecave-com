@@ -5,9 +5,36 @@
     <description>thecave.com is the blog site for Kirby Turner, an independent software developer for Mac and iOS.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 09 May 2015 11:31:12 -0400</pubDate>
-    <lastBuildDate>Sat, 09 May 2015 11:31:12 -0400</lastBuildDate>
+    <pubDate>Tue, 19 May 2015 10:02:06 -0400</pubDate>
+    <lastBuildDate>Tue, 19 May 2015 10:02:06 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Where I Blog These Days</title>
+        <description>&lt;p&gt;I’ve recently, and “recently” as in the last couple of years, cut back on the number of blog sites I have. I’m down to three sites now, and that seems manageable. The sites are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.thecave.com/&quot;&gt;thecave.com&lt;/a&gt;
+  That’s this site. It’s my personal blog, and it’s where I post most often. I talk about everything from what’s going on with me personally to snowboarding to programming. The site is broken down into categories, and I have plans to publish an RSS feed for each category so readers can filter out topics they might consider noise.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.whitepeaksoftware.com/&quot;&gt;blog.whitepeaksoftware.com&lt;/a&gt;
+  This is my company blog site. The focus of this site is to talk about the company and the products I sell. Granted I’m doing a horrible job at keeping up with the posts. That’s probably one of the many reasons my stuff doesn’t sell as well as it did a few years back.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.rowanturner.net/&quot;&gt;rowanturner.net&lt;/a&gt;
+  Yep, my son has his own website. But he has no interest in making posts here, so I do it for him. I usually post pictures and videos of Rowan and his friends off having fun. My mom might be the only person reading this site regularly, but that’s fine. I’ll keep posting because I like looking back on past articles and reliving fun moments with my kid.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These sites each have RSS feeds, so you don’t have to remember to visit. And some day I’ll do a better job of mentioning when new posts are available on the various social networks for those who don’t want to subscribe to the feeds. &lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 19 May 2015 09:40:11 -0400</pubDate>
+        <link>http://www.thecave.com/2015/05/19/where-i-blog-these-days/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2015/05/19/where-i-blog-these-days/</guid>
+        
+        
+        <category>general</category>
+        
+        <category>writing</category>
+        
+      </item>
     
       <item>
         <title>Snow River At Stowe</title>
@@ -217,40 +244,6 @@
         <category>general</category>
         
         <category>tech</category>
-        
-      </item>
-    
-      <item>
-        <title>Dress Code For Remote Job</title>
-        <description>&lt;p&gt;I came across one of the silliest benefits I’ve seen for a remote developer job: casual dress code. From the job &lt;a href=&quot;https://weworkremotely.com/jobs/1323&quot;&gt;posting&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;What’s In It For You&lt;/p&gt;
-
-  &lt;ul&gt;
-    &lt;li&gt;Medical and dental benefits&lt;/li&gt;
-    &lt;li&gt;Paid vacation and holidays&lt;/li&gt;
-    &lt;li&gt;Remote work environment … work where you work best&lt;/li&gt;
-    &lt;li&gt;Dynamic and dedicated team&lt;/li&gt;
-    &lt;li&gt;Data/Cell (internet) stipend&lt;/li&gt;
-    &lt;li&gt;Casual dress code&lt;/li&gt;
-    &lt;li&gt;Most of all smart and driven team members that love to collaborate, seek feedback, and improve&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I’m not sure I would want to work for a remote company that has a dress code even if it’s a casual dress code. I like coding in my pjs on many days, which means I would be in violation of the casual dress code. &lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 21 Mar 2015 08:27:07 -0400</pubDate>
-        <link>http://www.thecave.com/2015/03/21/dress-code-for-remote-job/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2015/03/21/dress-code-for-remote-job/</guid>
-        
-        
-        <category>general</category>
-        
-        <category>humor</category>
-        
-        <category>work</category>
         
       </item>
     

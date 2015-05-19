@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-05-09T11:31:12-04:00</updated>
+  <updated>2015-05-19T10:02:06-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,28 @@
   </author>
   <rights>Copyright (c) 2002-2015 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[Where I Blog These Days]]></title>
+    <link href="http://www.thecave.com/2015/05/19/where-i-blog-these-days/"/>
+    <published>2015-05-19T09:40:11-04:00</published>
+    <updated>2015-05-19T09:40:11-04:00</updated>
+    <id>http://www.thecave.com/2015/05/19/where-i-blog-these-days</id>
+    <content type="html"><![CDATA[<p>I’ve recently, and “recently” as in the last couple of years, cut back on the number of blog sites I have. I’m down to three sites now, and that seems manageable. The sites are:</p>
+
+<ul>
+  <li><a href="http://www.thecave.com/">thecave.com</a>
+  That’s this site. It’s my personal blog, and it’s where I post most often. I talk about everything from what’s going on with me personally to snowboarding to programming. The site is broken down into categories, and I have plans to publish an RSS feed for each category so readers can filter out topics they might consider noise.</li>
+  <li><a href="http://blog.whitepeaksoftware.com/">blog.whitepeaksoftware.com</a>
+  This is my company blog site. The focus of this site is to talk about the company and the products I sell. Granted I’m doing a horrible job at keeping up with the posts. That’s probably one of the many reasons my stuff doesn’t sell as well as it did a few years back.</li>
+  <li><a href="http://www.rowanturner.net/">rowanturner.net</a>
+  Yep, my son has his own website. But he has no interest in making posts here, so I do it for him. I usually post pictures and videos of Rowan and his friends off having fun. My mom might be the only person reading this site regularly, but that’s fine. I’ll keep posting because I like looking back on past articles and reliving fun moments with my kid.</li>
+</ul>
+
+<p>These sites each have RSS feeds, so you don’t have to remember to visit. And some day I’ll do a better job of mentioning when new posts are available on the various social networks for those who don’t want to subscribe to the feeds. </p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Snow River At Stowe]]></title>
@@ -572,29 +594,6 @@
     </li>
   </ol>
 </div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[For-In Loop vs Using Block]]></title>
-    <link href="http://www.thecave.com/2015/02/20/for-in-loop-vs-using-block/"/>
-    <published>2015-02-20T13:17:18-05:00</published>
-    <updated>2015-02-20T13:17:18-05:00</updated>
-    <id>http://www.thecave.com/2015/02/20/for-in-loop-vs-using-block</id>
-    <content type="html"><![CDATA[<p>Brent Simmons talks about <a href="http://inessential.com/2015/02/19/looping_through_objects_in_an_array">for-in loops</a> in a recent post. In it he says:</p>
-
-<blockquote>
-  <p>most of the time the for-in enumeration is the straightforward and less clever approach. (“Less clever” is a good thing.)</p>
-</blockquote>
-
-<p>I agree with Brent. I’m a fan of the for-in syntax. It’s straightforward and easy to read. But I have to admit in recent years I’ve been using <code>enumerateObjects​UsingBlock:</code> more often than for-in loops. I’ve been favoring the block syntax because something bbum <a href="http://stackoverflow.com/users/25646/bbum">said on Stack Overflow</a> a while back.</p>
-
-<blockquote>
-  <p><code>enumerateObjectsUsingBlock:</code> will be as fast or faster than fast enumeration (<code>for(... in ...</code>) uses the <code>NSFastEnumeration</code> support to implement enumeration). Fast enumeration requires translation from an internal representation to the representation for fast enumeration. There is overhead therein. Block-based enumeration allows the collection class to enumerate contents as quickly as the fastest traversal of the native storage format. Likely irrelevant for arrays, but it can be a huge difference for dictionaries.</p>
-</blockquote>
-
-<p>For those who don’t know who <a href="http://stackoverflow.com/users/25646/bbum">bbum</a> is, he’s Bill Bumgarner. He works at Apple and knows a thing or two about Cocoa. So I believe him when he says “<code>enumerateObjectsUsingBlock:</code> will be as fast or faster than fast enumeration.”</p>
-
 ]]></content>
   </entry>
   

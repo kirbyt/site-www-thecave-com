@@ -5,10 +5,31 @@
         <description>thecave | Ramblings From A Crotchety Old Man - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2015-05-09T11:31:12-04:00</lastBuildDate>
-        <pubDate>2015-05-09T11:31:12-04:00</pubDate>
+        <lastBuildDate>2015-05-19T10:02:06-04:00</lastBuildDate>
+        <pubDate>2015-05-19T10:02:06-04:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Where I Blog These Days</title>
+                <description>&lt;p&gt;I’ve recently, and “recently” as in the last couple of years, cut back on the number of blog sites I have. I’m down to three sites now, and that seems manageable. The sites are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.thecave.com/&quot;&gt;thecave.com&lt;/a&gt;
+  That’s this site. It’s my personal blog, and it’s where I post most often. I talk about everything from what’s going on with me personally to snowboarding to programming. The site is broken down into categories, and I have plans to publish an RSS feed for each category so readers can filter out topics they might consider noise.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.whitepeaksoftware.com/&quot;&gt;blog.whitepeaksoftware.com&lt;/a&gt;
+  This is my company blog site. The focus of this site is to talk about the company and the products I sell. Granted I’m doing a horrible job at keeping up with the posts. That’s probably one of the many reasons my stuff doesn’t sell as well as it did a few years back.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.rowanturner.net/&quot;&gt;rowanturner.net&lt;/a&gt;
+  Yep, my son has his own website. But he has no interest in making posts here, so I do it for him. I usually post pictures and videos of Rowan and his friends off having fun. My mom might be the only person reading this site regularly, but that’s fine. I’ll keep posting because I like looking back on past articles and reliving fun moments with my kid.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These sites each have RSS feeds, so you don’t have to remember to visit. And some day I’ll do a better job of mentioning when new posts are available on the various social networks for those who don’t want to subscribe to the feeds. &lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2015/05/19/where-i-blog-these-days/</link>
+                <guid>http://www.thecave.com/2015/05/19/where-i-blog-these-days</guid>
+                <pubDate>2015-05-19T09:40:11-04:00</pubDate>
+        </item>
 
         <item>
                 <title>Snow River At Stowe</title>
@@ -551,28 +572,6 @@
                 <link>http://www.thecave.com/2015/02/21/working-80-hours-isnt-the-answer/</link>
                 <guid>http://www.thecave.com/2015/02/21/working-80-hours-isnt-the-answer</guid>
                 <pubDate>2015-02-21T07:41:24-05:00</pubDate>
-        </item>
-
-        <item>
-                <title>For-In Loop vs Using Block</title>
-                <description>&lt;p&gt;Brent Simmons talks about &lt;a href=&quot;http://inessential.com/2015/02/19/looping_through_objects_in_an_array&quot;&gt;for-in loops&lt;/a&gt; in a recent post. In it he says:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;most of the time the for-in enumeration is the straightforward and less clever approach. (“Less clever” is a good thing.)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I agree with Brent. I’m a fan of the for-in syntax. It’s straightforward and easy to read. But I have to admit in recent years I’ve been using &lt;code&gt;enumerateObjects​UsingBlock:&lt;/code&gt; more often than for-in loops. I’ve been favoring the block syntax because something bbum &lt;a href=&quot;http://stackoverflow.com/users/25646/bbum&quot;&gt;said on Stack Overflow&lt;/a&gt; a while back.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;code&gt;enumerateObjectsUsingBlock:&lt;/code&gt; will be as fast or faster than fast enumeration (&lt;code&gt;for(... in ...&lt;/code&gt;) uses the &lt;code&gt;NSFastEnumeration&lt;/code&gt; support to implement enumeration). Fast enumeration requires translation from an internal representation to the representation for fast enumeration. There is overhead therein. Block-based enumeration allows the collection class to enumerate contents as quickly as the fastest traversal of the native storage format. Likely irrelevant for arrays, but it can be a huge difference for dictionaries.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;For those who don’t know who &lt;a href=&quot;http://stackoverflow.com/users/25646/bbum&quot;&gt;bbum&lt;/a&gt; is, he’s Bill Bumgarner. He works at Apple and knows a thing or two about Cocoa. So I believe him when he says “&lt;code&gt;enumerateObjectsUsingBlock:&lt;/code&gt; will be as fast or faster than fast enumeration.”&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2015/02/20/for-in-loop-vs-using-block/</link>
-                <guid>http://www.thecave.com/2015/02/20/for-in-loop-vs-using-block</guid>
-                <pubDate>2015-02-20T13:17:18-05:00</pubDate>
         </item>
 
 
