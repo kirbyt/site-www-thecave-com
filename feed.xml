@@ -5,9 +5,33 @@
     <description>thecave.com is the blog site for Kirby Turner, an independent software developer for Mac and iOS.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 19 May 2015 10:04:36 -0400</pubDate>
-    <lastBuildDate>Tue, 19 May 2015 10:04:36 -0400</lastBuildDate>
+    <pubDate>Thu, 04 Jun 2015 16:34:46 -0400</pubDate>
+    <lastBuildDate>Thu, 04 Jun 2015 16:34:46 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Stuck Working For Others</title>
+        <description>&lt;p&gt;I love this quote from Amy Hoy:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you only do what pays immediately, you will be stuck working for other people. Or you will be stuck doing what other people want you to do…forever.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The quote come from her talk about &lt;a href=&quot;https://unicornfree.com/2015/be-your-own-angel-a-revenue-model-for-slow-startups?inf_contact_key=33d23f3cc326dbb9432ca21551e5c05960ba9e460978b642f3bc69a5e6171317&quot;&gt;being your own angel investor&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 04 Jun 2015 16:31:38 -0400</pubDate>
+        <link>http://www.thecave.com/2015/06/04/stuck-working-for-others/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2015/06/04/stuck-working-for-others/</guid>
+        
+        
+        <category>bootstrapping</category>
+        
+        <category>general</category>
+        
+        <category>work</category>
+        
+      </item>
     
       <item>
         <title>Where I Blog These Days</title>
@@ -208,42 +232,6 @@
         <category>backpacking</category>
         
         <category>hiking</category>
-        
-      </item>
-    
-      <item>
-        <title>Affordable Cloud Storage With Amazon Cloud Drive</title>
-        <description>&lt;p&gt;Yesterday Amazon announced new &lt;a href=&quot;https://www.amazon.com/clouddrive/pricing&quot;&gt;pricing plans&lt;/a&gt; for their cloud storage offering named &lt;a href=&quot;https://www.amazon.com/clouddrive/home&quot;&gt;Cloud Drive&lt;/a&gt;. You can store unlimited number of photos for $11.99 per year, or you can store unlimited number of files for $59.99. The later is a no-brainer for me as I have been looking for an affordable cloud storage solution like this.&lt;/p&gt;
-
-&lt;p&gt;Currently I use a number of different services for cloud storage. I use &lt;a href=&quot;https://db.tt/Y2NovyiG&quot;&gt;Dropbox&lt;/a&gt; to sync files between computers and devices. The files I keep on Dropbox are ones I need immediate access to. In other words, these are the files I need to have on my laptop while also having access from other computers and devices such as my iPhone. &lt;/p&gt;
-
-&lt;p&gt;I use &lt;a href=&quot;https://secure.backblaze.com/r/00ytw8&quot;&gt;Backblaze&lt;/a&gt; to backup all the files on my laptop to the cloud. It’s my lifeline should something unexpected happen to my laptop. For photos I use &lt;a href=&quot;https://secure.smugmug.com/signup?Coupon=8ZK2smzZYAS1I&quot;&gt;SmugMug&lt;/a&gt;, but more recently I’ve been using &lt;a href=&quot;http://www.flickr.com&quot;&gt;Flickr&lt;/a&gt; more than SmugMug. And I use Rackspace Cloud File for my CDN. That’s content delivery network for my non-geeky friends reading this.&lt;/p&gt;
-
-&lt;p&gt;The problem with these different cloud storage providers is that I still had no easy way to upload and store files that I don’t need frequent access to. I don’t like to throw away data, but I also don’t need documents I wrote back in 2003 wasting space on my laptop. Dropbox has a way to not sync selected folders, but I don’t trust it. Plus, it’s not as straight forward as uploading and storing selected files.&lt;/p&gt;
-
-&lt;p&gt;Rackspace Cloud File works well for archiving my old data, but it can become costly if I have multi-terabytes of data to store. Same is true for Amazon S3, which I considered using in the past. In fact, when Amazon announced S3 Glacier I thought I had found the perfect cloud storage solution for me, but it’s not easy to use.&lt;/p&gt;
-
-&lt;p&gt;Flickr and SmugMug are great for storing photos and videos, and they both make it easy to upload new ones. Heck, Flickr will even automatically upload new photos taken on my iPhone for me. It doesn’t get much easier than that. But these two only support photos and videos, and I have other file types I want to store in the cloud.&lt;/p&gt;
-
-&lt;p&gt;So when I first heard about Amazon’s new pricing for Cloud Drive I thought, “Finally, an affordable cloud storage solution that fixes my needs for archiving old data.” At $60 per year for unlimited storage, I would be a fool not to try it out. But I don’t even need to spend the $60 right now. Amazon is offering a 3-month free trial.&lt;/p&gt;
-
-&lt;p&gt;Cloud Drive has desktop software for your Mac (and I’m guessing Windows too) to upload files, but I’m not a fan of the desktop software. It doesn’t let me pick where I want to store the files I’m uploading, and I like to use a very specific directory structure for my files. &lt;/p&gt;
-
-&lt;p&gt;While the Cloud Drive desktop software doesn’t suite my needs, the Cloud Drive web interface does. I can organize my storage area to my liking, create new folders and upload files to specific folders within the file system. And that’s just what I’ve been doing…uploading and organizing files - a few gigs so far to test out the service.&lt;/p&gt;
-
-&lt;p&gt;I do, however, have one complaint about Cloud Drive. The Cloud Drive app for iOS only shows photos and videos. I want access to all the files stored on my Cloud Drive. Hopefully Amazon will change this soon, or maybe it’s an opportunity for me to write a new app. There is, after all, an API for Cloud Drive.&lt;/p&gt;
-
-&lt;p&gt;Amazon Cloud Drive is the solution I’ve been looking for to archive my old data to the cloud. I’ll continue using external hard drives, Dropbox, Backblaze and such for backups, but my days with SmugMugs might be numbered. Still, I’m excited to finally have an affordable cloud storage solution for my old data.&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 27 Mar 2015 06:52:45 -0400</pubDate>
-        <link>http://www.thecave.com/2015/03/27/affordable-cloud-storage-with-amazon-cloud-drive/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2015/03/27/affordable-cloud-storage-with-amazon-cloud-drive/</guid>
-        
-        
-        <category>general</category>
-        
-        <category>tech</category>
         
       </item>
     

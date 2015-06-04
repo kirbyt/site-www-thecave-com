@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: bootstrapping | thecave | Ramblings From A Crotchety Old Man]]></title>
+  <link href="http://www.thecave.com/category/bootstrapping/atom.xml" rel="self"/>
+  <link href="http://www.thecave.com/"/>
+  <updated>2015-06-04T16:34:46-04:00</updated>
+  <id>http://www.thecave.com/</id>
+  <author>
+    <name><![CDATA[Kirby Turner]]></name>
+    
+  </author>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Stuck Working For Others]]></title>
+    <link href="http://www.thecave.com/2015/06/04/stuck-working-for-others/"/>
+    <updated>2015-06-04T16:31:38-04:00</updated>
+    <id>http://www.thecave.com/2015/06/04/stuck-working-for-others</id>
+    <content type="html"><![CDATA[<p>I love this quote from Amy Hoy:</p>
+
+<blockquote>
+  <p>If you only do what pays immediately, you will be stuck working for other people. Or you will be stuck doing what other people want you to do…forever.</p>
+</blockquote>
+
+<p>The quote come from her talk about <a href="https://unicornfree.com/2015/be-your-own-angel-a-revenue-model-for-slow-startups?inf_contact_key=33d23f3cc326dbb9432ca21551e5c05960ba9e460978b642f3bc69a5e6171317">being your own angel investor</a>.</p>
+
+]]></content>
+  </entry>
+  
+</feed>
