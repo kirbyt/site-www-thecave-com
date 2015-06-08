@@ -6,7 +6,7 @@ categories:
     - bootstrapping
     - quotes
 ---
-One of my favorite quotes about shipping.
+One of my favorite quotes about shipping:
 
 > It's better to try an idea and see if it works than worry too much about its potential and never ship. - [@_davidsmith][1]
 
