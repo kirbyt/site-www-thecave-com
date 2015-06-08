@@ -4,13 +4,27 @@
   <title><![CDATA[Category: ios | thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/category/ios/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-06-08T08:58:46-04:00</updated>
+  <updated>2015-06-08T09:20:21-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Building An App From Start To Finish]]></title>
+    <link href="http://www.thecave.com/2015/06/08/building-an-app-from-start-to-finish/"/>
+    <updated>2015-06-08T09:09:35-04:00</updated>
+    <id>http://www.thecave.com/2015/06/08/building-an-app-from-start-to-finish</id>
+    <content type="html"><![CDATA[<p>Amy Hoy wrote the first version of her book <a href="https://unicornfree.com/just-fucking-ship">Just Fucking Ship</a> in 24 hours, which is awesome. Along those same lines, <a href="https://twitter.com/_davidsmith">David Smith</a> built an app from start to finish in about 6 hours - also awesome, and he posted this video that shows the entire process.</p>
+
+<p><div class="youtube-video"><figure><iframe width="560" height="420" src="https://www.youtube.com/embed/rEkuRFO6xTw?color=white&theme=light"></iframe></figure></div></p>
+
+<p>Both of these, the book and the app, are motivating me to do more faster. I just need to stop letting excuses and fear of not being perfect get in my way.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Views Created In Code]]></title>
@@ -107,28 +121,6 @@
     </li>
   </ol>
 </div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[For-In Loop vs Using Block]]></title>
-    <link href="http://www.thecave.com/2015/02/20/for-in-loop-vs-using-block/"/>
-    <updated>2015-02-20T13:17:18-05:00</updated>
-    <id>http://www.thecave.com/2015/02/20/for-in-loop-vs-using-block</id>
-    <content type="html"><![CDATA[<p>Brent Simmons talks about <a href="http://inessential.com/2015/02/19/looping_through_objects_in_an_array">for-in loops</a> in a recent post. In it he says:</p>
-
-<blockquote>
-  <p>most of the time the for-in enumeration is the straightforward and less clever approach. (“Less clever” is a good thing.)</p>
-</blockquote>
-
-<p>I agree with Brent. I’m a fan of the for-in syntax. It’s straightforward and easy to read. But I have to admit in recent years I’ve been using <code>enumerateObjects​UsingBlock:</code> more often than for-in loops. I’ve been favoring the block syntax because something bbum <a href="http://stackoverflow.com/users/25646/bbum">said on Stack Overflow</a> a while back.</p>
-
-<blockquote>
-  <p><code>enumerateObjectsUsingBlock:</code> will be as fast or faster than fast enumeration (<code>for(... in ...</code>) uses the <code>NSFastEnumeration</code> support to implement enumeration). Fast enumeration requires translation from an internal representation to the representation for fast enumeration. There is overhead therein. Block-based enumeration allows the collection class to enumerate contents as quickly as the fastest traversal of the native storage format. Likely irrelevant for arrays, but it can be a huge difference for dictionaries.</p>
-</blockquote>
-
-<p>For those who don’t know who <a href="http://stackoverflow.com/users/25646/bbum">bbum</a> is, he’s Bill Bumgarner. He works at Apple and knows a thing or two about Cocoa. So I believe him when he says “<code>enumerateObjectsUsingBlock:</code> will be as fast or faster than fast enumeration.”</p>
-
 ]]></content>
   </entry>
   

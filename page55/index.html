@@ -108,6 +108,24 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2004/06/10/tools-of-choice/">Tools of Choice</a>
+    </h2>
+    
+    <p>Lately I have seen a handful of developers blog the list of tools they use so I’ve decided to do the same.  Here are the ones that come to mind because I use them daily.</p>
+
+
+
+    <p><a href="/2004/06/10/tools-of-choice/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on June 10, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2004/06/09/which-xml-api/">Which XML API?</a>
     </h2>
     
@@ -271,24 +289,6 @@
 </div>
 <hr>
 
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2004/05/19/using-enterprise-templates-to-group-projects/">Using Enterprise Templates to Group Projects</a>
-    </h2>
-    
-    <p>I’m currently working on a customer project with 16+ VS.NET projects in a single VS.NET solution file.  The single solution file is handy in that all the source code that makes up the complete customer solution is available in one place.  The solution includes multiple C# projects, unit test projects, database projects, and one Reporting Services project.  Also our build environment relies on NAnt scripts so each project that produces an assembly also has its own .build script.<br /><br />A single solution approach is nice because I have access to everything that makes up the solution, from build scripts to C# source code to stored procedures.  But finding the right project or file is becoming more challenging each day as more is added to the solution.  This is where Enterprise Template Projects comes to the rescue.  <br /><br />An Enterprise Template Project is a project type available in Visual Studio.NET Enterprise Edition or greater, and it can contain any type of file including other project types.  I started out by creating a set of enterprise template projects that represent the grouping I want.  For example, I created template projects with the names Applications, BusinessServices, Databases, Frameworks, NAntScripts, and UnitTests.  Within each of these projects I added the appropriate reference based on the grouping to existing project files.  UnitTests contains references to the C# projects responsible for producing our NUnit unit test assemblies.  BusinessServices contains references to projects that make up the middle tier of the solution.  Framework contains references to framework projects, and so on.<br /><br />NAntScripts is interesting in that it does not contain a reference to another project but instead it contains references to .build scripts files found in other projects.  I like this because many times when I am working on the build scripts I need to modify more than one script.  Before making the grouping I was jumping from project to project in search of the .build script file.  Now I have references to all the script files in one place making it easier to find a particular script file.<br /><br />With this new grouping I am able to more efficiently find the projects and files I need to work on.  The grouping has proven itself to be a huge time saver for me especially when working with large single solution files.<br /><br />One additional note on using enterprise template projects to organize your single solution: To prevent scattering .etp files throughout project directories containing the source code I recommend creating a single directory that will store all of the .etp files.  References within an enterprise template project do not have to fall under the template project.  Instead files referenced within the .etp can be stored anywhere on the hard drive.  This means the .etp file does not have to dirty up the project directory where the source code actually resides.<br /><br /><br /></p>
-
-
-
-    <p><a href="/2004/05/19/using-enterprise-templates-to-group-projects/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on May 19, 2004
-     in <a href='/category/blogger/'>blogger</a>
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -321,6 +321,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/06/08/building-an-app-from-start-to-finish/" title="Building An App From Start To Finish">Building An App From Start To Finish</a></li>
+                
                 <li><a href="/2015/06/08/its-better-to-try-an-idea/" title="It's Better To Try An Idea">It's Better To Try An Idea</a></li>
                 
                 <li><a href="/2015/06/04/stuck-working-for-others/" title="Stuck Working For Others">Stuck Working For Others</a></li>
@@ -328,8 +330,6 @@
                 <li><a href="/2015/05/19/where-i-blog-these-days/" title="Where I Blog These Days">Where I Blog These Days</a></li>
                 
                 <li><a href="/2015/05/09/snow-river-at-stowe/" title="Snow River At Stowe">Snow River At Stowe</a></li>
-                
-                <li><a href="/2015/04/15/views-created-in-code/" title="Views Created In Code">Views Created In Code</a></li>
                 
                 </ul>                
             </div>

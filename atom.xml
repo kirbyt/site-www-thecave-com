@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-06-08T08:58:46-04:00</updated>
+  <updated>2015-06-08T09:20:21-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,21 @@
   </author>
   <rights>Copyright (c) 2002-2015 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[Building An App From Start To Finish]]></title>
+    <link href="http://www.thecave.com/2015/06/08/building-an-app-from-start-to-finish/"/>
+    <published>2015-06-08T09:09:35-04:00</published>
+    <updated>2015-06-08T09:09:35-04:00</updated>
+    <id>http://www.thecave.com/2015/06/08/building-an-app-from-start-to-finish</id>
+    <content type="html"><![CDATA[<p>Amy Hoy wrote the first version of her book <a href="https://unicornfree.com/just-fucking-ship">Just Fucking Ship</a> in 24 hours, which is awesome. Along those same lines, <a href="https://twitter.com/_davidsmith">David Smith</a> built an app from start to finish in about 6 hours - also awesome, and he posted this video that shows the entire process.</p>
+
+<div class="youtube-video"><figure><iframe width="560" height="420" src="https://www.youtube.com/embed/rEkuRFO6xTw?color=white&amp;theme=light"></iframe></figure></div>
+
+<p>Both of these, the book and the app, are motivating me to do more faster. I just need to stop letting excuses and fear of not being perfect get in my way.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[It's Better To Try An Idea]]></title>
@@ -551,19 +566,6 @@
     </li>
   </ol>
 </div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Raw Denim]]></title>
-    <link href="http://www.thecave.com/2015/02/21/raw-denim/"/>
-    <published>2015-02-21T23:13:25-05:00</published>
-    <updated>2015-02-21T23:13:25-05:00</updated>
-    <id>http://www.thecave.com/2015/02/21/raw-denim</id>
-    <content type="html"><![CDATA[<p>16 months ago I bought my first pair of raw denim, a pair of Levi’s 501 Shrink to Fit, and I’m lovin’ the look.</p>
-
-<p><img src="https://farm9.staticflickr.com/8610/16578344836_a0c09db97c_z.jpg" alt="" /></p>
-
 ]]></content>
   </entry>
   
