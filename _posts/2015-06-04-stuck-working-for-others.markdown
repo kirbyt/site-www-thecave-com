@@ -6,6 +6,7 @@ categories:
     - general
     - bootstrapping
     - work
+    - quotes
 ---
 I love this quote from Amy Hoy:
 
