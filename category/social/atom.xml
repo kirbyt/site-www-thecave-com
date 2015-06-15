@@ -4,13 +4,37 @@
   <title><![CDATA[Category: social | thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/category/social/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-06-08T09:22:39-04:00</updated>
+  <updated>2015-06-14T22:53:03-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[@Thecave On Twitter]]></title>
+    <link href="http://www.thecave.com/2015/06/14/thecave-on-twitter/"/>
+    <updated>2015-06-14T22:31:52-04:00</updated>
+    <id>http://www.thecave.com/2015/06/14/thecave-on-twitter</id>
+    <content type="html"><![CDATA[<p>My friend Uli <a href="https://twitter.com/uliwitness/status/600656348272001024">asked</a>:</p>
+
+<blockquote>
+  <p>Do you have a Twitter feed that lets me know when you post something new?</p>
+</blockquote>
+
+<p>It only took me a month, but I finally have a Twitter account for thecave. Follow <a href="https://twitter.com/thecave_com/">@thecave_com</a> on Twitter if you want to know when I post something new to this blog. And as always you can subscribe to the <a href="http://www.thecave.com/feed.xml">RSS feed</a> if you prefer feed readers over Twitter.</p>
+
+<h2 id="the-technical-how-to">The Technical How To</h2>
+
+<p>There are a few different ways to automate the process of posting a link on Twitter when you publish a new blog post. <a href="http://twitterfeed.com">Twitter Feed</a> is one service I tried. It is fast and easy to setup, and it includes options such as including the title, description, or title and description in the tweet. Even though Twitter Feed is a cinch to setup, I decided to go with <a href="https://ifttt.com/">If This Then That (IFTTT)</a> instead.</p>
+
+<p>Using IFTTT create a new recipe. Select <em>Feed</em> for the trigger and <em>Twitter</em> for the action. Be sure to connect your Twitter account to the IFTTT if you have not already done so. And that’s it. Next time you make a blog post, IFTTT will update your Twitter account with the title and link to the post.</p>
+
+<p>And thanks <a href="https://twitter.com/uliwitness">@uliwitness</a> for suggesting I do this.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Eliminating Distractions]]></title>
