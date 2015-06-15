@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "@Thecave On Twitter"
+title: "thecave On Twitter"
 date: 2015-06-14 22:31:52 -0400
 categories: 
     - general 
