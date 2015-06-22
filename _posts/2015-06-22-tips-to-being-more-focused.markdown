@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Tips To Help Become More Focused"
+title: "Tips To Being More Focused"
 date: 2015-06-22 11:51:20 -0400
 categories: 
     - work
