@@ -67,6 +67,8 @@ I'm getting more done faster, and that feeling of being overwhelmed that I got a
 
 I'll post an update on my progress in a few weeks. Meanwhile I encourage you to give one, some or all the tips a try to see what works for you. And let me know how it works out for you. 
 
+---
+
 [^1]: Yes, I see the irony in that my search for ways to become more focused distracted me from the work that I needed to do last week.
 
 [^2]: I personally think daily stand up meetings, like most meetings, are a waste of time, and it's certainly not a productive use of my time. A daily status email is far more productive in my opinion, and you have the report captured for historical purposes. 
