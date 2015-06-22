@@ -7,11 +7,11 @@ categories:
     - work
     - general
 ---
-I few years back I was making the majority of my income from the products that I sold. My apps, my book, they were all doing well. But that changed in 2013. Things came crashing down, and I found myself wondering how I was going to pay my bills. 
+I few years back I was making the majority of my income from the products that I sold. My apps, my book, they were all doing well. But that changed in 2013. Things came crashing down, and I found myself wondering how I was going to pay the bills. 
 
-Luckily I have a skill that is very marketable, so I decided to focus on consulting. This was my attempt to reboot my company. The idea was to do consulting work to raise cash, then when I had enough cash I would take time off to work on my business, which in my case meant building another app or two and improving on the ones I already had.
+Luckily I have a marketable skill, so I decided to focus on consulting. This was my attempt to reboot my company. The idea was to do consulting work to raise cash, then when I had enough cash I would take time off to work on my business, which in my case meant building another app or two and improving on the ones I already had.
 
-Unfortunately my attempts to reboot didn't work. Sure, I released two new apps, but once they were out the door my focus returned to client work. I wasn't growing and nurturing the products I had. I wasn't taking advantage of the momentum I had built up through the end of 2012. In other words I stopped working on my business again. And things have only got worst.
+Unfortunately my attempts to reboot didn't work. Sure, I released two new apps, but once they were out the door my focus returned to billable work. I wasn't growing and nurturing the products I had. And I wasn't taking advantage of the momentum I had built up through the end of 2012. I stopped working on my business (again), and things only got worst.
 
 Today I barely make any money off of the products I have. My average monthly product revenue is around $800 per month now, which is better than nothing but certainly not enough to live on. And my attempts to relieve stress on the consulting side of has put me into a situation where my hourly bill rate is much lower than it was a few years back.
 
