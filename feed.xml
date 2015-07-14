@@ -5,8 +5,8 @@
     <description>thecave.com is the blog site for Kirby Turner, an independent software developer for Mac and iOS.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 14 Jul 2015 15:07:45 -0400</pubDate>
-    <lastBuildDate>Tue, 14 Jul 2015 15:07:45 -0400</lastBuildDate>
+    <pubDate>Tue, 14 Jul 2015 15:13:30 -0400</pubDate>
+    <lastBuildDate>Tue, 14 Jul 2015 15:13:30 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -23,11 +23,11 @@
 
 &lt;p&gt;The Jekyll website is actually just a static website hosted by Apache 2 running on an OpenShift gear. To force the redirect all I needed to do was add a &lt;em&gt;.htaccess&lt;/em&gt; file to the root of my Jekyll site source code (note: the site source code is in the &lt;em&gt;source/&lt;/em&gt; directory when using OpenShift) and put this rewrite rule in the file:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-RewriteEngine on  
-RewriteCond %{HTTP:X-Forwarded-Proto} !https  
-RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]  
-&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;RewriteEngine on&lt;br /&gt;
+RewriteCond %{HTTP:X-Forwarded-Proto} !https&lt;br /&gt;
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]  &lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;After I added the &lt;em&gt;.htaccess&lt;/em&gt; file with the rewrite rule, I pushed my changes to the remote git repository running on my OpenShift gear. This launched Jekyll which re-built my static website, this time with each web page being served with &lt;code&gt;https&lt;/code&gt; instead of &lt;code&gt;http&lt;/code&gt;.&lt;/p&gt;
 

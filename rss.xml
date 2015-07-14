@@ -5,8 +5,8 @@
         <description>thecave | Ramblings From A Crotchety Old Man - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2015-07-14T15:07:45-04:00</lastBuildDate>
-        <pubDate>2015-07-14T15:07:45-04:00</pubDate>
+        <lastBuildDate>2015-07-14T15:13:30-04:00</lastBuildDate>
+        <pubDate>2015-07-14T15:13:30-04:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -24,11 +24,11 @@
 
 &lt;p&gt;The Jekyll website is actually just a static website hosted by Apache 2 running on an OpenShift gear. To force the redirect all I needed to do was add a &lt;em&gt;.htaccess&lt;/em&gt; file to the root of my Jekyll site source code (note: the site source code is in the &lt;em&gt;source/&lt;/em&gt; directory when using OpenShift) and put this rewrite rule in the file:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-RewriteEngine on  
-RewriteCond %{HTTP:X-Forwarded-Proto} !https  
-RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]  
-&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;RewriteEngine on&lt;br /&gt;
+RewriteCond %{HTTP:X-Forwarded-Proto} !https&lt;br /&gt;
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]  &lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;After I added the &lt;em&gt;.htaccess&lt;/em&gt; file with the rewrite rule, I pushed my changes to the remote git repository running on my OpenShift gear. This launched Jekyll which re-built my static website, this time with each web page being served with &lt;code&gt;https&lt;/code&gt; instead of &lt;code&gt;http&lt;/code&gt;.&lt;/p&gt;
 
