@@ -5,10 +5,40 @@
         <description>thecave | Ramblings From A Crotchety Old Man - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2015-07-07T08:13:04-04:00</lastBuildDate>
-        <pubDate>2015-07-07T08:13:04-04:00</pubDate>
+        <lastBuildDate>2015-07-14T15:04:10-04:00</lastBuildDate>
+        <pubDate>2015-07-14T15:04:10-04:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Redirect Jekyll Site To HTTPS On Openshift</title>
+                <description>&lt;p&gt;I’m preparing to roll out a new &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; website, but unlike with my other Jekyll sites, I want each web page served up on &lt;code&gt;https&lt;/code&gt;, not &lt;code&gt;http&lt;/code&gt;. This means telling the server to redirect &lt;code&gt;http&lt;/code&gt; request to &lt;code&gt;https&lt;/code&gt;. &lt;/p&gt;
+
+&lt;p&gt;Hosting this new site on &lt;a href=&quot;https://pages.github.com&quot;&gt;Github Pages&lt;/a&gt; isn’t option because Github Pages doesn’t support using a custom SSL certificate for your custom domain name. So I decided to see what it would take to host a Jekyll site on &lt;a href=&quot;https://www.openshift.com&quot;&gt;OpenShift&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;I was thrilled to learn that OpenShift has a &lt;a href=&quot;https://hub.openshift.com/quickstarts/41-jekyll&quot;&gt;quick start cartridge for installing Jekyll&lt;/a&gt; on a new gear. With a click of a button I was able to deploy my new server instance with a boiler plate Jekyll site. I replaced the boiler plate site with the one I’ve been working on, and BAM! My site was up and running. The only step remaining was to force the web server to serve up the pages using &lt;code&gt;https&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Turns out this is simple to do with OpenShift and Jekyll. First, I went over to namecheap.com and purchased a &lt;a href=&quot;https://www.namecheap.com/security/ssl-certificates/rapidssl/rapidssl.aspx&quot;&gt;RapidSSL certificate&lt;/a&gt; with domain validation. Next, I followed the instructions from OpenShift to &lt;a href=&quot;https://developers.openshift.com/en/managing-domains-ssl.html#_generating_a_csr_certificate_signing_request&quot;&gt;generate my certificate signing request&lt;/a&gt;. Using my newly generated CSR I activated my RapidSSL certificate over at namecheap, then I followed the instructions on OpenShift to &lt;a href=&quot;https://developers.openshift.com/en/managing-domains-ssl.html#using-a-custom-ssl-certificate&quot;&gt;add the certificate to my server instance&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Up to this point everything was easy peasy, and all I had left to do was figure out how to redirect the Jekyll site from &lt;code&gt;http&lt;/code&gt; to &lt;code&gt;https&lt;/code&gt;. Turns out this isn’t difficult either.&lt;/p&gt;
+
+&lt;p&gt;The Jekyll website is actually just a static website hosted by Apache 2 running on an OpenShift gear. To force the redirect all I needed to do was add a &lt;em&gt;.htaccess&lt;/em&gt; file to the root of my Jekyll site source code (note: the site source code is in the &lt;em&gt;source/&lt;/em&gt; directory when using OpenShift) and put this rewrite rule in the file:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+RewriteEngine on 
+RewriteCond %{HTTP:X-Forwarded-Proto} !https 
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;After I added the &lt;em&gt;.htaccess&lt;/em&gt; file with the rewrite rule, I pushed my changes to the remote git repository running on my OpenShift gear. This launched Jekyll which re-built my static website, this time with each web page being served with &lt;code&gt;https&lt;/code&gt; instead of &lt;code&gt;http&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Including the &lt;em&gt;.htaccess&lt;/em&gt; file works great when deploying the Jekyll site to OpenShift, but approach isn’t unique to OpenShift. This should work for most Jekyll site hosted with Apache 2. And if for some reason Jekyll isn’t including the &lt;em&gt;.htaccess&lt;/em&gt; file when it builds the site, add &lt;code&gt;include: [&quot;.htaccess&quot;]&lt;/code&gt; to your &lt;em&gt;_config.yaml&lt;/em&gt; file.&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2015/07/14/redirect-jekyll-site-to-https-on-openshift/</link>
+                <guid>http://www.thecave.com/2015/07/14/redirect-jekyll-site-to-https-on-openshift</guid>
+                <pubDate>2015-07-14T14:17:53-04:00</pubDate>
+        </item>
 
         <item>
                 <title>I've Been Doing It Wrong</title>
@@ -442,36 +472,6 @@
                 <link>http://www.thecave.com/2015/03/28/2600-miles-in-4-minutes/</link>
                 <guid>http://www.thecave.com/2015/03/28/2600-miles-in-4-minutes</guid>
                 <pubDate>2015-03-28T02:36:16-04:00</pubDate>
-        </item>
-
-        <item>
-                <title>Affordable Cloud Storage With Amazon Cloud Drive</title>
-                <description>&lt;p&gt;Yesterday Amazon announced new &lt;a href=&quot;https://www.amazon.com/clouddrive/pricing&quot;&gt;pricing plans&lt;/a&gt; for their cloud storage offering named &lt;a href=&quot;https://www.amazon.com/clouddrive/home&quot;&gt;Cloud Drive&lt;/a&gt;. You can store unlimited number of photos for $11.99 per year, or you can store unlimited number of files for $59.99. The later is a no-brainer for me as I have been looking for an affordable cloud storage solution like this.&lt;/p&gt;
-
-&lt;p&gt;Currently I use a number of different services for cloud storage. I use &lt;a href=&quot;https://db.tt/Y2NovyiG&quot;&gt;Dropbox&lt;/a&gt; to sync files between computers and devices. The files I keep on Dropbox are ones I need immediate access to. In other words, these are the files I need to have on my laptop while also having access from other computers and devices such as my iPhone. &lt;/p&gt;
-
-&lt;p&gt;I use &lt;a href=&quot;https://secure.backblaze.com/r/00ytw8&quot;&gt;Backblaze&lt;/a&gt; to backup all the files on my laptop to the cloud. It’s my lifeline should something unexpected happen to my laptop. For photos I use &lt;a href=&quot;https://secure.smugmug.com/signup?Coupon=8ZK2smzZYAS1I&quot;&gt;SmugMug&lt;/a&gt;, but more recently I’ve been using &lt;a href=&quot;http://www.flickr.com&quot;&gt;Flickr&lt;/a&gt; more than SmugMug. And I use Rackspace Cloud File for my CDN. That’s content delivery network for my non-geeky friends reading this.&lt;/p&gt;
-
-&lt;p&gt;The problem with these different cloud storage providers is that I still had no easy way to upload and store files that I don’t need frequent access to. I don’t like to throw away data, but I also don’t need documents I wrote back in 2003 wasting space on my laptop. Dropbox has a way to not sync selected folders, but I don’t trust it. Plus, it’s not as straight forward as uploading and storing selected files.&lt;/p&gt;
-
-&lt;p&gt;Rackspace Cloud File works well for archiving my old data, but it can become costly if I have multi-terabytes of data to store. Same is true for Amazon S3, which I considered using in the past. In fact, when Amazon announced S3 Glacier I thought I had found the perfect cloud storage solution for me, but it’s not easy to use.&lt;/p&gt;
-
-&lt;p&gt;Flickr and SmugMug are great for storing photos and videos, and they both make it easy to upload new ones. Heck, Flickr will even automatically upload new photos taken on my iPhone for me. It doesn’t get much easier than that. But these two only support photos and videos, and I have other file types I want to store in the cloud.&lt;/p&gt;
-
-&lt;p&gt;So when I first heard about Amazon’s new pricing for Cloud Drive I thought, “Finally, an affordable cloud storage solution that fixes my needs for archiving old data.” At $60 per year for unlimited storage, I would be a fool not to try it out. But I don’t even need to spend the $60 right now. Amazon is offering a 3-month free trial.&lt;/p&gt;
-
-&lt;p&gt;Cloud Drive has desktop software for your Mac (and I’m guessing Windows too) to upload files, but I’m not a fan of the desktop software. It doesn’t let me pick where I want to store the files I’m uploading, and I like to use a very specific directory structure for my files. &lt;/p&gt;
-
-&lt;p&gt;While the Cloud Drive desktop software doesn’t suite my needs, the Cloud Drive web interface does. I can organize my storage area to my liking, create new folders and upload files to specific folders within the file system. And that’s just what I’ve been doing…uploading and organizing files - a few gigs so far to test out the service.&lt;/p&gt;
-
-&lt;p&gt;I do, however, have one complaint about Cloud Drive. The Cloud Drive app for iOS only shows photos and videos. I want access to all the files stored on my Cloud Drive. Hopefully Amazon will change this soon, or maybe it’s an opportunity for me to write a new app. There is, after all, an API for Cloud Drive.&lt;/p&gt;
-
-&lt;p&gt;Amazon Cloud Drive is the solution I’ve been looking for to archive my old data to the cloud. I’ll continue using external hard drives, Dropbox, Backblaze and such for backups, but my days with SmugMugs might be numbered. Still, I’m excited to finally have an affordable cloud storage solution for my old data.&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2015/03/27/affordable-cloud-storage-with-amazon-cloud-drive/</link>
-                <guid>http://www.thecave.com/2015/03/27/affordable-cloud-storage-with-amazon-cloud-drive</guid>
-                <pubDate>2015-03-27T06:52:45-04:00</pubDate>
         </item>
 
 
