@@ -19,9 +19,9 @@ Up to this point everything was easy peasy, and all I had left to do was figure 
 The Jekyll website is actually just a static website hosted by Apache 2 running on an OpenShift gear. To force the redirect all I needed to do was add a *.htaccess* file to the root of my Jekyll site source code (note: the site source code is in the *source/* directory when using OpenShift) and put this rewrite rule in the file:
 
 ```
-RewriteEngine on 
-RewriteCond %{HTTP:X-Forwarded-Proto} !https 
-RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+RewriteEngine on  
+RewriteCond %{HTTP:X-Forwarded-Proto} !https  
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]  
 ```
 
 After I added the *.htaccess* file with the rewrite rule, I pushed my changes to the remote git repository running on my OpenShift gear. This launched Jekyll which re-built my static website, this time with each web page being served with `https` instead of `http`.
