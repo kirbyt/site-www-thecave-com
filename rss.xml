@@ -5,13 +5,13 @@
         <description>thecave | Ramblings From A Crotchety Old Man - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2015-07-14T15:04:10-04:00</lastBuildDate>
-        <pubDate>2015-07-14T15:04:10-04:00</pubDate>
+        <lastBuildDate>2015-07-14T15:06:45-04:00</lastBuildDate>
+        <pubDate>2015-07-14T15:06:45-04:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
-                <title>Redirect Jekyll Site To HTTPS On Openshift</title>
+                <title>Redirect Jekyll Site To HTTPS On OpenShift</title>
                 <description>&lt;p&gt;I’m preparing to roll out a new &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; website, but unlike with my other Jekyll sites, I want each web page served up on &lt;code&gt;https&lt;/code&gt;, not &lt;code&gt;http&lt;/code&gt;. This means telling the server to redirect &lt;code&gt;http&lt;/code&gt; request to &lt;code&gt;https&lt;/code&gt;. &lt;/p&gt;
 
 &lt;p&gt;Hosting this new site on &lt;a href=&quot;https://pages.github.com&quot;&gt;Github Pages&lt;/a&gt; isn’t option because Github Pages doesn’t support using a custom SSL certificate for your custom domain name. So I decided to see what it would take to host a Jekyll site on &lt;a href=&quot;https://www.openshift.com&quot;&gt;OpenShift&lt;/a&gt;. &lt;/p&gt;
