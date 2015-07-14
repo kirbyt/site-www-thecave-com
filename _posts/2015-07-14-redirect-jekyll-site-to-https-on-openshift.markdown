@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Redirect Jekyll Site To HTTPS On Openshift"
+title: "Redirect Jekyll Site To HTTPS On OpenShift"
 date: 2015-07-14 14:17:53 -0400
 categories: 
     - programming
