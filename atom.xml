@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-07-14T23:54:35-04:00</updated>
+  <updated>2015-08-07T10:20:56-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,22 @@
   </author>
   <rights>Copyright (c) 2002-2015 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[Blogging The Little Things]]></title>
+    <link href="http://www.thecave.com/2015/08/07/blogging-the-little-things/"/>
+    <published>2015-08-07T10:11:57-04:00</published>
+    <updated>2015-08-07T10:11:57-04:00</updated>
+    <id>http://www.thecave.com/2015/08/07/blogging-the-little-things</id>
+    <content type="html"><![CDATA[<p>I read a post from Shubham Jain, by way of <a href="http://shapeof.com/archives/2015/7/coffee_coder_-_blog_little_things.html">Gus Mueller</a>, about <a href="http://coffeecoder.net/blog/blog-little-things/">blogging the little things</a>. In the post, Shubham says:</p>
+
+<pre><code>There are lots of things that can be blogged about and yet, we are stuck in the dilemma of, – "Is it worth something to write?". The fear of being insignificant aka "Nobody will read it" syndrome, inhibits us from writing that simple thing that might have helped many people.
+</code></pre>
+
+<p>I recently talked about my <a href="http://www.thecave.com/2015/07/02/fear/">fears</a> and I mentioned some of the things I’m trying to do to help overcome those fears. And blogging more about the little things seems like another way for me to overcome some of the fears I’ve been having.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Redirect Jekyll Site To HTTPS On OpenShift]]></title>
@@ -481,18 +497,6 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 <p>He broke up with his girlfriend 5 weeks ago. At 8 am on April 1 she sent him a text message with a picture of a at-home pregnancy test that was positive. Yep, she was telling my new friend he was going to be a dad. 16 hours later, at midnight and after he consumed countless shots and another drinks, she sent him the text “Happy April Fools.”</p>
 
 <p>She really got him, and he really appreciated the joke. The fact that she let him think he was going to be a new dad for 16 hours is what makes the joke really great. Had she reply “April Fools” five minutes after the first text message, the joke wouldn’t be as funny. But the fact that she made him sweat it out all day makes this the best April Fools’ joke ever. I’m just glad the joke wasn’t played on me.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[2600 Miles In 4 Minutes]]></title>
-    <link href="http://www.thecave.com/2015/03/28/2600-miles-in-4-minutes/"/>
-    <published>2015-03-28T02:36:16-04:00</published>
-    <updated>2015-03-28T02:36:16-04:00</updated>
-    <id>http://www.thecave.com/2015/03/28/2600-miles-in-4-minutes</id>
-    <content type="html"><![CDATA[<p>Here’s a very cool video of a guy who did a time-lapse of his Pacific Crest Trail thru hike. Enjoy. </p>
-
-<div class="youtube-video"><figure><iframe width="560" height="420" src="https://www.youtube.com/embed/xyo8OIp7aHM?color=white&amp;theme=light"></iframe></figure></div>
 ]]></content>
   </entry>
   

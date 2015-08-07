@@ -108,6 +108,24 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2007/04/10/supporting-large-files-in-killink-part-ii/">Supporting Large Files in Killink Part II</a>
+    </h2>
+    
+    <p>I’m coming to the conclusion that having code loop millions of times to copy data from one structure to another is never going to be fast.  <br /><br />I’m using two controls, a spreadsheet control and a report printing control.  Unfortunately the two do not support the same data structures so to print a report <a href="http://www.killink.com/">Killink</a> has to copy the data from the spreadsheet to the report which means looping.  And when there are a million + rows with 3 columns the code is looping 3 million + times.  Not much can be done to speed it up.<br /><br />What I need is a way to keep the data in a single data structure that is supported by both components.  I’m starting to have a better understanding why certain commercial software tends to not rely on 3rd party components and libraries.  However, time is important to me so I must rely on 3rd party components for certain features.<br /><br />For now <a href="http://www.killink.com/">Killink</a> will have to warn the user before allowing a huge files to be printed.  “You wish to print a file that is very large.  It will take some time to prepare the data for printing.  Do you wish to continue?”<br /><br />The report I’m trying to preview during testing will have more than 15,000 pages.  I don’t see anyone realistically printing this many pages but you never know.</p>
+
+
+
+    <p><a href="/2007/04/10/supporting-large-files-in-killink-part-ii/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on April 10, 2007
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2007/04/10/support-large-files-in-killink/">Support Large Files in Killink</a>
     </h2>
     
@@ -267,24 +285,6 @@
 </div>
 <hr>
 
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2007/03/25/5-things-i-like-about-delphi-2007/">5 Things I Like About Delphi 2007</a>
-    </h2>
-    
-    <p>Bloggers in the Delphi community have been tagging each other to post 5 things they like about the Delphi 2007.  I wasn’t tagged but I want to play so here are my 5 things.<br /><br />1) <b>Speed</b> - The IDE loads and shutdowns so much faster then BDS 2006.  There seems to be other performance enhancements too such as switching between the form designer and code window.  The IDE is so much faster that I don’t like going back to BDS 2006.<br /><br />2) <b>Vista Support</b> - This is a wonderful enhancement.  I especially like how existing projects using dialogs and routines such as MessageDlg automatically have a Vista look simply by re-compiling the project.<br /><br />3) <b>Application.MainFormOnTaskbar</b> - I really like this new property.  I’m working on an SDI application that manages windows in a similar way as Microsoft Word and Outlook.  Overriding CreateParams and setting the ExStyle isn’t a big deal but having the MainFormOnTaskbar property helps to reduce some code.  <br /><br /><span style="color:red">Update:</span> Steve Trefethen posted a nice overview of <a href="http://www.stevetrefethen.com/blog/TheNewVCLPropertyTApplicationMainFormOnTaskbarInDelphi2007.aspx">Application.MainFormOnTaskbar</a>.<br /><br />4) <b>Online Help</b> - I like the new look of the help system and the new navigation between pages is really nice.  But I do have one major complaint.  Help indexes found in the BDS 2006 help system are missing.  For example launch the help system, go to Index, and enter “CreateDir routine” in the “Look for” textbox.  The routine is not indexed in the new help system but it is indexed in the previous help system.  And this is not the only routine not indexed.  It sucks that this sort of information is no longer indexed in the help system.<br /><br /><span style="color:red">Update:</span>Delphi 2007 Update 1 fixes my complaint about the online help.  Routines such as CreateDir are now indexed.<br /><br />5) <b>Improved Tool Palette Search</b> - I really like how the tool palette search has been improved to find all matches containing the search word, not just matches beginning with the search word.  This is a great improvement for me given that I use a number of 3rd party VCL components that are prefixed (i.e., TcxComboBox). <br /><br />So that’s my list of 5 things I like about Delphi 2007.  But what about the things I do not like about Delphi 2007.<br /><br />1) “Non-breaking” Release - Well, sort of.  The idea is that DCUs and packages from BDS 2006 can be used in Delphi 2007.  In general this is true.  However, I have encountered a number of problems.  For starters Delphi 2007 is having trouble loading certain DevExpress packages at startup.  And I have read in the newsgroups there is a painting issue too although I have not personally experienced it.<br /><br /><span style="color:red">Update:</span> Turns out the problem was me.  I was installing DevExpress packages that weren’t meant for the IDE.  After installing the correct set of DevExpress VCL packages my IDE problems went away.<br /><br />2) Trouble Debugging - This problem has me scratching my head and for the life of me I cannot figure it out.  All BDS 2006 projects I have opened in Delphi 2007 will not run under the interactive debugger.  I haven’t logged this issue in QC yet because I’m still trying to figure out what is happening.  Simply saying “Cannot debug project opened from BDS 2006 project file” does not give CodeGear enough information to troubleshoot the problem.  But the problem still remains.  I cannot debug existing projects.  (Note: I suspect this issue might have something to do with the 3rd party packages such as the ones I’m using from DevExpress.)<br /><br />3) More Issues with Debugging - From time to time I get a weird error message when I press F9.  The message says the debugger cannot create the process.  I launch Sysinternal’s Process Explorer and notice the application to debug is running under the bds.exe process and yet the debugger cannot attach to it.  To make matter worse I cannot kill the spawned process.  I have to close down the IDE to kill it. (Again, I suspect this issue might have somethign to do with some of the 3rd party packages I have manually installed.)<br /><br /><span style="color:red">Update:</span> <a href="http://www.thecave.com/archive/2007/03/26/fixed_my_delphi_2007_debug_issues.aspx">Fixed my Delphi 2007 debug issues</a>.<br /><br />4) No Support in FinalBuilder (yet) - I use FinalBuilder for all my projects and unfortunately FinalBuilder does not support Delphi 2007 (yet).  But according to the newsgroups a new compiler action for Delphi 2007 is in the works.  <br /><br /><span style="color:red">Update:</span> FinalBuilder now has a Delphi 2007 compiler action.<br /><br />5) No Support in EurekaLog (yet) - EurekaLog is another 3rd party tool I use, and unfortunately support for Delphi 2007 is not there yet.  But good news is EurekaLog should have support in about 2 weeks.<br /><br /><span style="color:red">Update:</span> EurekaLog now has Delphi 2007.<br /><br />I know some of these dislikes are not directly Delphi 2007 but they do prevent me from completely moving from BDS 2006 to Delphi 2007 right now.  So Delphi 2007 is still an experiment for me at the moment while I wait for 3rd party support.  Meanwhile I’m still using BDS 2006 for production work.<br /><br /><span style="color:red">Update:</span> I now use Delphi 2007 daily.  Best Delphi IDE in a long time.</p>
-
-
-
-    <p><a href="/2007/03/25/5-things-i-like-about-delphi-2007/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on March 25, 2007
-     in <a href='/category/blogger/'>blogger</a>
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -317,6 +317,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/08/07/blogging-the-little-things/" title="Blogging The Little Things">Blogging The Little Things</a></li>
+                
                 <li><a href="/2015/07/14/redirect-jekyll-site-to-https-on-openshift/" title="Redirect Jekyll Site To HTTPS On OpenShift">Redirect Jekyll Site To HTTPS On OpenShift</a></li>
                 
                 <li><a href="/2015/07/07/ive-been-doing-it-wrong/" title="I've Been Doing It Wrong">I've Been Doing It Wrong</a></li>
@@ -324,8 +326,6 @@
                 <li><a href="/2015/07/02/fear/" title="Fear">Fear</a></li>
                 
                 <li><a href="/2015/06/22/tips-to-being-more-focused/" title="Tips To Being More Focused">Tips To Being More Focused</a></li>
-                
-                <li><a href="/2015/06/18/video-of-stowe-vermont/" title="Video of Stowe, Vermont">Video of Stowe, Vermont</a></li>
                 
                 </ul>                
             </div>

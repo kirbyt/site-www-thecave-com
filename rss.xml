@@ -5,10 +5,25 @@
         <description>thecave | Ramblings From A Crotchety Old Man - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2015-07-14T23:54:35-04:00</lastBuildDate>
-        <pubDate>2015-07-14T23:54:35-04:00</pubDate>
+        <lastBuildDate>2015-08-07T10:20:56-04:00</lastBuildDate>
+        <pubDate>2015-08-07T10:20:56-04:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Blogging The Little Things</title>
+                <description>&lt;p&gt;I read a post from Shubham Jain, by way of &lt;a href=&quot;http://shapeof.com/archives/2015/7/coffee_coder_-_blog_little_things.html&quot;&gt;Gus Mueller&lt;/a&gt;, about &lt;a href=&quot;http://coffeecoder.net/blog/blog-little-things/&quot;&gt;blogging the little things&lt;/a&gt;. In the post, Shubham says:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;There are lots of things that can be blogged about and yet, we are stuck in the dilemma of, – &quot;Is it worth something to write?&quot;. The fear of being insignificant aka &quot;Nobody will read it&quot; syndrome, inhibits us from writing that simple thing that might have helped many people.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I recently talked about my &lt;a href=&quot;http://www.thecave.com/2015/07/02/fear/&quot;&gt;fears&lt;/a&gt; and I mentioned some of the things I’m trying to do to help overcome those fears. And blogging more about the little things seems like another way for me to overcome some of the fears I’ve been having.&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2015/08/07/blogging-the-little-things/</link>
+                <guid>http://www.thecave.com/2015/08/07/blogging-the-little-things</guid>
+                <pubDate>2015-08-07T10:11:57-04:00</pubDate>
+        </item>
 
         <item>
                 <title>Redirect Jekyll Site To HTTPS On OpenShift</title>
@@ -460,17 +475,6 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
                 <link>http://www.thecave.com/2015/04/03/best-april-fools-joke-ever/</link>
                 <guid>http://www.thecave.com/2015/04/03/best-april-fools-joke-ever</guid>
                 <pubDate>2015-04-03T01:32:47-04:00</pubDate>
-        </item>
-
-        <item>
-                <title>2600 Miles In 4 Minutes</title>
-                <description>&lt;p&gt;Here’s a very cool video of a guy who did a time-lapse of his Pacific Crest Trail thru hike. Enjoy. &lt;/p&gt;
-
-&lt;div class=&quot;youtube-video&quot;&gt;&lt;figure&gt;&lt;iframe width=&quot;560&quot; height=&quot;420&quot; src=&quot;https://www.youtube.com/embed/xyo8OIp7aHM?color=white&amp;amp;theme=light&quot;&gt;&lt;/iframe&gt;&lt;/figure&gt;&lt;/div&gt;
-</description>
-                <link>http://www.thecave.com/2015/03/28/2600-miles-in-4-minutes/</link>
-                <guid>http://www.thecave.com/2015/03/28/2600-miles-in-4-minutes</guid>
-                <pubDate>2015-03-28T02:36:16-04:00</pubDate>
         </item>
 
 
