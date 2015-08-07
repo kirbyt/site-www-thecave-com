@@ -5,9 +5,31 @@
     <description>thecave.com is the blog site for Kirby Turner, an independent software developer for Mac and iOS.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 07 Aug 2015 10:20:56 -0400</pubDate>
-    <lastBuildDate>Fri, 07 Aug 2015 10:20:56 -0400</lastBuildDate>
+    <pubDate>Fri, 07 Aug 2015 10:28:48 -0400</pubDate>
+    <lastBuildDate>Fri, 07 Aug 2015 10:28:48 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Boston Area Mac And iOS Dev Community Is Awesome</title>
+        <description>&lt;p&gt;This past Wednesday I had a chance to attend &lt;a href=&quot;http://www.nshappyhour.org&quot;&gt;NSHappyHour&lt;/a&gt;. It’s was my first time attending since moving to Vermont two years ago. I had a great time catching up with everyone, and I was reminded just how awesome the Mac and iOS developer community is in the Boston area. &lt;/p&gt;
+
+&lt;p&gt;I also was reminded how much I miss the community there, and since moving back isn’t an option for me - snowboard season starts in about 3 months for me - I need to make a point of visit the Boston area more.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 07 Aug 2015 10:22:16 -0400</pubDate>
+        <link>http://www.thecave.com/2015/08/07/boston-area-mac-and-ios-dev-community-is-awesome/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2015/08/07/boston-area-mac-and-ios-dev-community-is-awesome/</guid>
+        
+        
+        <category>general</category>
+        
+        <category>ios</category>
+        
+        <category>mac</category>
+        
+        <category>tech</category>
+        
+      </item>
     
       <item>
         <title>Blogging The Little Things</title>
@@ -24,7 +46,7 @@
         <guid isPermaLink="true">http://www.thecave.com/2015/08/07/blogging-the-little-things/</guid>
         
         
-        <category>-general</category>
+        <category>general</category>
         
       </item>
     
@@ -356,30 +378,6 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
         <category>general</category>
         
         <category>social</category>
-        
-      </item>
-    
-      <item>
-        <title>Building An App From Start To Finish</title>
-        <description>&lt;p&gt;Amy Hoy wrote the first version of her book &lt;a href=&quot;https://unicornfree.com/just-fucking-ship&quot;&gt;Just Fucking Ship&lt;/a&gt; in 24 hours, which is awesome. Along those same lines, &lt;a href=&quot;https://twitter.com/_davidsmith&quot;&gt;David Smith&lt;/a&gt; built an app from start to finish in about 6 hours - also awesome, and he posted this video that shows the entire process.&lt;/p&gt;
-
-&lt;div class=&quot;youtube-video&quot;&gt;&lt;figure&gt;&lt;iframe width=&quot;560&quot; height=&quot;420&quot; src=&quot;https://www.youtube.com/embed/rEkuRFO6xTw?color=white&amp;amp;theme=light&quot;&gt;&lt;/iframe&gt;&lt;/figure&gt;&lt;/div&gt;
-
-&lt;p&gt;Both of these, the book and the app, are motivating me to do more faster. I just need to stop letting excuses and fear of not being perfect get in my way.&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 08 Jun 2015 09:09:35 -0400</pubDate>
-        <link>http://www.thecave.com/2015/06/08/building-an-app-from-start-to-finish/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2015/06/08/building-an-app-from-start-to-finish/</guid>
-        
-        
-        <category>apps</category>
-        
-        <category>bootstrapping</category>
-        
-        <category>ios</category>
-        
-        <category>videos</category>
         
       </item>
     

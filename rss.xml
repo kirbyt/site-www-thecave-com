@@ -5,10 +5,22 @@
         <description>thecave | Ramblings From A Crotchety Old Man - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2015-08-07T10:20:56-04:00</lastBuildDate>
-        <pubDate>2015-08-07T10:20:56-04:00</pubDate>
+        <lastBuildDate>2015-08-07T10:28:48-04:00</lastBuildDate>
+        <pubDate>2015-08-07T10:28:48-04:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Boston Area Mac And iOS Dev Community Is Awesome</title>
+                <description>&lt;p&gt;This past Wednesday I had a chance to attend &lt;a href=&quot;http://www.nshappyhour.org&quot;&gt;NSHappyHour&lt;/a&gt;. It’s was my first time attending since moving to Vermont two years ago. I had a great time catching up with everyone, and I was reminded just how awesome the Mac and iOS developer community is in the Boston area. &lt;/p&gt;
+
+&lt;p&gt;I also was reminded how much I miss the community there, and since moving back isn’t an option for me - snowboard season starts in about 3 months for me - I need to make a point of visit the Boston area more.&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2015/08/07/boston-area-mac-and-ios-dev-community-is-awesome/</link>
+                <guid>http://www.thecave.com/2015/08/07/boston-area-mac-and-ios-dev-community-is-awesome</guid>
+                <pubDate>2015-08-07T10:22:16-04:00</pubDate>
+        </item>
 
         <item>
                 <title>Blogging The Little Things</title>
@@ -462,19 +474,6 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
                 <link>http://www.thecave.com/2015/04/06/apple-watch-will-make-iphone-6-plus-size-less-annoying/</link>
                 <guid>http://www.thecave.com/2015/04/06/apple-watch-will-make-iphone-6-plus-size-less-annoying</guid>
                 <pubDate>2015-04-06T21:42:53-04:00</pubDate>
-        </item>
-
-        <item>
-                <title>Best April Fools' Joke Ever</title>
-                <description>&lt;p&gt;I met a guy tonight at the bar. He was the victim of the best April Fools’ Joke ever.&lt;/p&gt;
-
-&lt;p&gt;He broke up with his girlfriend 5 weeks ago. At 8 am on April 1 she sent him a text message with a picture of a at-home pregnancy test that was positive. Yep, she was telling my new friend he was going to be a dad. 16 hours later, at midnight and after he consumed countless shots and another drinks, she sent him the text “Happy April Fools.”&lt;/p&gt;
-
-&lt;p&gt;She really got him, and he really appreciated the joke. The fact that she let him think he was going to be a new dad for 16 hours is what makes the joke really great. Had she reply “April Fools” five minutes after the first text message, the joke wouldn’t be as funny. But the fact that she made him sweat it out all day makes this the best April Fools’ joke ever. I’m just glad the joke wasn’t played on me.&lt;/p&gt;
-</description>
-                <link>http://www.thecave.com/2015/04/03/best-april-fools-joke-ever/</link>
-                <guid>http://www.thecave.com/2015/04/03/best-april-fools-joke-ever</guid>
-                <pubDate>2015-04-03T01:32:47-04:00</pubDate>
         </item>
 
 

@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-08-07T10:20:56-04:00</updated>
+  <updated>2015-08-07T10:28:48-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,19 @@
   </author>
   <rights>Copyright (c) 2002-2015 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[Boston Area Mac And iOS Dev Community Is Awesome]]></title>
+    <link href="http://www.thecave.com/2015/08/07/boston-area-mac-and-ios-dev-community-is-awesome/"/>
+    <published>2015-08-07T10:22:16-04:00</published>
+    <updated>2015-08-07T10:22:16-04:00</updated>
+    <id>http://www.thecave.com/2015/08/07/boston-area-mac-and-ios-dev-community-is-awesome</id>
+    <content type="html"><![CDATA[<p>This past Wednesday I had a chance to attend <a href="http://www.nshappyhour.org">NSHappyHour</a>. It’s was my first time attending since moving to Vermont two years ago. I had a great time catching up with everyone, and I was reminded just how awesome the Mac and iOS developer community is in the Boston area. </p>
+
+<p>I also was reminded how much I miss the community there, and since moving back isn’t an option for me - snowboard season starts in about 3 months for me - I need to make a point of visit the Boston area more.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Blogging The Little Things]]></title>
@@ -483,20 +496,6 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 <p>It occurred to me that one of the possible reasons why Apple decided to release the larger iPhones was because they knew, thanks to the Apple Watch, that there would be no reason to pull out these larger devices from pockets and purses just to check notifications and send simple text messages and replies.</p>
 
 <p>The Apple Watch will make the iPhone 6 Plus size less annoying.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Best April Fools' Joke Ever]]></title>
-    <link href="http://www.thecave.com/2015/04/03/best-april-fools-joke-ever/"/>
-    <published>2015-04-03T01:32:47-04:00</published>
-    <updated>2015-04-03T01:32:47-04:00</updated>
-    <id>http://www.thecave.com/2015/04/03/best-april-fools-joke-ever</id>
-    <content type="html"><![CDATA[<p>I met a guy tonight at the bar. He was the victim of the best April Fools’ Joke ever.</p>
-
-<p>He broke up with his girlfriend 5 weeks ago. At 8 am on April 1 she sent him a text message with a picture of a at-home pregnancy test that was positive. Yep, she was telling my new friend he was going to be a dad. 16 hours later, at midnight and after he consumed countless shots and another drinks, she sent him the text “Happy April Fools.”</p>
-
-<p>She really got him, and he really appreciated the joke. The fact that she let him think he was going to be a new dad for 16 hours is what makes the joke really great. Had she reply “April Fools” five minutes after the first text message, the joke wouldn’t be as funny. But the fact that she made him sweat it out all day makes this the best April Fools’ joke ever. I’m just glad the joke wasn’t played on me.</p>
 ]]></content>
   </entry>
   
