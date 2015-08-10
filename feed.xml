@@ -5,9 +5,97 @@
     <description>thecave.com is the blog site for Kirby Turner, an independent software developer for Mac and iOS.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 07 Aug 2015 10:28:48 -0400</pubDate>
-    <lastBuildDate>Fri, 07 Aug 2015 10:28:48 -0400</lastBuildDate>
+    <pubDate>Mon, 10 Aug 2015 09:57:49 -0400</pubDate>
+    <lastBuildDate>Mon, 10 Aug 2015 09:57:49 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Dispatch Async to Main Queue Doesn&#39;t Work With Modal Window on Mac OS X</title>
+        <description>&lt;p&gt;I’ve been working on a Mac app lately, and while some things are similar to iOS, something are definitely different. One thing that is different are modal windows and run loops. &lt;/p&gt;
+
+&lt;p&gt;When you display a modal view on iOS you don’t get a new run loop for the view, but when you display a modal window on OS X a new run loop is created for the window. This is not necessarily a big deal unless you have a habit of using &lt;a href=&quot;https://developer.apple.com/library/ios/documentation/Performance/Reference/GCD_libdispatch_Ref/&quot;&gt;GCD&lt;/a&gt; to dispatch work between background and main queues. Let me give a more specific example.&lt;/p&gt;
+
+&lt;p&gt;I display a modal view, or in the cause of OS X, a modal window. The current view is managed by a view controller. User input is captured, then a URL request is sent off to a server on the Internet. The view controller is then notified when the URL request completes. &lt;/p&gt;
+
+&lt;p&gt;The typical pattern I follow for sending the request to the server and getting notified when done is to call a method that will dispatch the URL request to a background queue then dispatch to the main queue to call a block when complete. It looks something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;- (void)sendSomething:(NSDictionary *)something completion:(void(^)(BOOL success, NSError *error))completion
+{
+  NSParameterAssert(something);
+  dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    // Send something out over the Internet.
+    ...
+
+    // All done. Assume success and error are already set.
+    dispatch_async(dispatch_get_main_queue(), ^{
+      if (completion) {
+        completion(success, error);
+      }
+    });
+  });
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is a simplified view of the pattern I often use. Call a method with a callback block. Perform some work on a background thread. When done, call the callback block on the main thread. &lt;/p&gt;
+
+&lt;p&gt;This pattern has served me well on iOS, but it has issues on Mac OS X when displaying a modal window.&lt;/p&gt;
+
+&lt;p&gt;When you display a modal window with &lt;code&gt;+[NSApp runModalForWindow:]&lt;/code&gt; a new run loop is created for the window&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. That might seem fine until you call &lt;code&gt;dispatch_async(dispatch_get_main_queue(), ^{})&lt;/code&gt; from a background thread. The block that you are trying to execute in the main queue will never run. And in my case, the &lt;code&gt;completion&lt;/code&gt; block is never called. This means my modal window never receives the notification that the URL request completed.&lt;/p&gt;
+
+&lt;p&gt;So how did I work around this problem?&lt;/p&gt;
+
+&lt;p&gt;Instead of dispatching the &lt;code&gt;completion()&lt;/code&gt; to the main queue, I call it directly from the background thread. In the completion block itself, I decide how to get the code should run in the main thread. If my window isn’t modal, then I can use &lt;code&gt;dispatch_async(dispatch_get_main_queue(), ^{})&lt;/code&gt;. But if my window is modal, which just happens to be the case for the app I’m working on, then I use &lt;code&gt;-performSelectorOnMainThread:withObject:waitUntilDone:&lt;/code&gt;. So the code in my view controller looks something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;- (void)someAction:(id)sender
+{
+  SomeHelper *helper = [[SomeHelper alloc] init];
+  __weak __typeof__(self) weakSelf = self;
+  [helper sendSomething:someValues completion:^(BOOL success, NSError *error) {
+    __typeof__(self) strongSelf = weakSelf;
+    if (strongSelf == nil) return;
+    
+    // This window is running modally with its own run loop. Therefore,
+    // we cannot dispatch to the main queue. Instead, we must go old
+    // school can call a selector on the main thread. In other words,
+    // dispatch_async(dispatch_get_main_queue(), ^{}); does not work
+    // here.
+    
+    NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
+    userInfo[@&quot;success&quot;] = @(success);
+    if (error) userInfo[@&quot;error&quot;] = error;
+    
+    [strongSelf performSelectorOnMainThread:@selector(completeSendSomething:) withObject:userInfo waitUntilDone:NO];
+  }];
+}
+
+- (void)completeSendSomething:(NSDictionary *)userInfo
+{
+    ...
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This pattern change now has me re-thinking how I use certain patterns in my code, especially for code that I intend on sharing between the two platforms.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;From the &lt;a href=&quot;https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSApplication_Class/index.html#//apple_ref/occ/instm/NSApplication/runModalForWindow:&quot;&gt;Apple documentation&lt;/a&gt; for &lt;code&gt;+[NSApp runModalForWindow:]&lt;/code&gt;: “This method runs a modal event loop for the specified window synchronously. It displays the specified window, makes it key, starts the run loop, and processes events for that window. (You do not need to show the window yourself.) While the app is in that loop, it does not respond to any other events (including mouse, keyboard, or window-close events) unless they are associated with the window. It also does not perform any tasks (such as firing timers) that are not associated with the modal run loop. In other words, this method consumes only enough CPU time to process events and dispatch them to the action methods associated with the modal window.” &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 10 Aug 2015 07:09:01 -0400</pubDate>
+        <link>http://www.thecave.com/2015/08/10/dispatch-async-to-main-queue-doesnt-work-with-modal-window-on-mac-os-x/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2015/08/10/dispatch-async-to-main-queue-doesnt-work-with-modal-window-on-mac-os-x/</guid>
+        
+        
+        <category>mac</category>
+        
+        <category>programming</category>
+        
+      </item>
     
       <item>
         <title>Boston Area Mac And iOS Dev Community Is Awesome</title>
@@ -343,36 +431,6 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
         <pubDate>Sun, 14 Jun 2015 23:09:24 -0400</pubDate>
         <link>http://www.thecave.com/2015/06/14/do-i-need-another-twitter-account/</link>
         <guid isPermaLink="true">http://www.thecave.com/2015/06/14/do-i-need-another-twitter-account/</guid>
-        
-        
-        <category>general</category>
-        
-        <category>social</category>
-        
-      </item>
-    
-      <item>
-        <title>thecave On Twitter</title>
-        <description>&lt;p&gt;My friend Uli &lt;a href=&quot;https://twitter.com/uliwitness/status/600656348272001024&quot;&gt;asked&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Do you have a Twitter feed that lets me know when you post something new?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;It only took me a month, but I finally have a Twitter account for thecave. Follow &lt;a href=&quot;https://twitter.com/thecave_com/&quot;&gt;@thecave_com&lt;/a&gt; on Twitter if you want to know when I post something new to this blog. And as always you can subscribe to the &lt;a href=&quot;http://www.thecave.com/feed.xml&quot;&gt;RSS feed&lt;/a&gt; if you prefer feed readers over Twitter.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-technical-how-to&quot;&gt;The Technical How To&lt;/h2&gt;
-
-&lt;p&gt;There are a few different ways to automate the process of posting a link on Twitter when you publish a new blog post. &lt;a href=&quot;http://twitterfeed.com&quot;&gt;Twitter Feed&lt;/a&gt; is one service I tried. It is fast and easy to setup, and it includes options such as including the title, description, or title and description in the tweet. Even though Twitter Feed is a cinch to setup, I decided to go with &lt;a href=&quot;https://ifttt.com/&quot;&gt;If This Then That (IFTTT)&lt;/a&gt; instead.&lt;/p&gt;
-
-&lt;p&gt;Using IFTTT create a new recipe. Select &lt;em&gt;Feed&lt;/em&gt; for the trigger and &lt;em&gt;Twitter&lt;/em&gt; for the action. Be sure to connect your Twitter account to the IFTTT if you have not already done so. And that’s it. Next time you make a blog post, IFTTT will update your Twitter account with the title and link to the post.&lt;/p&gt;
-
-&lt;p&gt;And thanks &lt;a href=&quot;https://twitter.com/uliwitness&quot;&gt;@uliwitness&lt;/a&gt; for suggesting I do this.&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 14 Jun 2015 22:31:52 -0400</pubDate>
-        <link>http://www.thecave.com/2015/06/14/thecave-on-twitter/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2015/06/14/thecave-on-twitter/</guid>
         
         
         <category>general</category>

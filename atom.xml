@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-08-07T10:28:48-04:00</updated>
+  <updated>2015-08-10T09:57:49-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,89 @@
   </author>
   <rights>Copyright (c) 2002-2015 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[Dispatch Async to Main Queue Doesn't Work With Modal Window on Mac OS X]]></title>
+    <link href="http://www.thecave.com/2015/08/10/dispatch-async-to-main-queue-doesnt-work-with-modal-window-on-mac-os-x/"/>
+    <published>2015-08-10T07:09:01-04:00</published>
+    <updated>2015-08-10T07:09:01-04:00</updated>
+    <id>http://www.thecave.com/2015/08/10/dispatch-async-to-main-queue-doesnt-work-with-modal-window-on-mac-os-x</id>
+    <content type="html"><![CDATA[<p>I’ve been working on a Mac app lately, and while some things are similar to iOS, something are definitely different. One thing that is different are modal windows and run loops. </p>
+
+<p>When you display a modal view on iOS you don’t get a new run loop for the view, but when you display a modal window on OS X a new run loop is created for the window. This is not necessarily a big deal unless you have a habit of using <a href="https://developer.apple.com/library/ios/documentation/Performance/Reference/GCD_libdispatch_Ref/">GCD</a> to dispatch work between background and main queues. Let me give a more specific example.</p>
+
+<p>I display a modal view, or in the cause of OS X, a modal window. The current view is managed by a view controller. User input is captured, then a URL request is sent off to a server on the Internet. The view controller is then notified when the URL request completes. </p>
+
+<p>The typical pattern I follow for sending the request to the server and getting notified when done is to call a method that will dispatch the URL request to a background queue then dispatch to the main queue to call a block when complete. It looks something like this:</p>
+
+<pre><code>- (void)sendSomething:(NSDictionary *)something completion:(void(^)(BOOL success, NSError *error))completion
+{
+  NSParameterAssert(something);
+  dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    // Send something out over the Internet.
+    ...
+
+    // All done. Assume success and error are already set.
+    dispatch_async(dispatch_get_main_queue(), ^{
+      if (completion) {
+        completion(success, error);
+      }
+    });
+  });
+}
+</code></pre>
+
+<p>This is a simplified view of the pattern I often use. Call a method with a callback block. Perform some work on a background thread. When done, call the callback block on the main thread. </p>
+
+<p>This pattern has served me well on iOS, but it has issues on Mac OS X when displaying a modal window.</p>
+
+<p>When you display a modal window with <code>+[NSApp runModalForWindow:]</code> a new run loop is created for the window<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. That might seem fine until you call <code>dispatch_async(dispatch_get_main_queue(), ^{})</code> from a background thread. The block that you are trying to execute in the main queue will never run. And in my case, the <code>completion</code> block is never called. This means my modal window never receives the notification that the URL request completed.</p>
+
+<p>So how did I work around this problem?</p>
+
+<p>Instead of dispatching the <code>completion()</code> to the main queue, I call it directly from the background thread. In the completion block itself, I decide how to get the code should run in the main thread. If my window isn’t modal, then I can use <code>dispatch_async(dispatch_get_main_queue(), ^{})</code>. But if my window is modal, which just happens to be the case for the app I’m working on, then I use <code>-performSelectorOnMainThread:withObject:waitUntilDone:</code>. So the code in my view controller looks something like this:</p>
+
+<pre><code>- (void)someAction:(id)sender
+{
+  SomeHelper *helper = [[SomeHelper alloc] init];
+  __weak __typeof__(self) weakSelf = self;
+  [helper sendSomething:someValues completion:^(BOOL success, NSError *error) {
+    __typeof__(self) strongSelf = weakSelf;
+    if (strongSelf == nil) return;
+    
+    // This window is running modally with its own run loop. Therefore,
+    // we cannot dispatch to the main queue. Instead, we must go old
+    // school can call a selector on the main thread. In other words,
+    // dispatch_async(dispatch_get_main_queue(), ^{}); does not work
+    // here.
+    
+    NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
+    userInfo[@"success"] = @(success);
+    if (error) userInfo[@"error"] = error;
+    
+    [strongSelf performSelectorOnMainThread:@selector(completeSendSomething:) withObject:userInfo waitUntilDone:NO];
+  }];
+}
+
+- (void)completeSendSomething:(NSDictionary *)userInfo
+{
+    ...
+}
+</code></pre>
+
+<p>This pattern change now has me re-thinking how I use certain patterns in my code, especially for code that I intend on sharing between the two platforms.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>From the <a href="https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSApplication_Class/index.html#//apple_ref/occ/instm/NSApplication/runModalForWindow:">Apple documentation</a> for <code>+[NSApp runModalForWindow:]</code>: “This method runs a modal event loop for the specified window synchronously. It displays the specified window, makes it key, starts the run loop, and processes events for that window. (You do not need to show the window yourself.) While the app is in that loop, it does not respond to any other events (including mouse, keyboard, or window-close events) unless they are associated with the window. It also does not perform any tasks (such as firing timers) that are not associated with the modal run loop. In other words, this method consumes only enough CPU time to process events and dispatch them to the action methods associated with the modal window.” <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Boston Area Mac And iOS Dev Community Is Awesome]]></title>
@@ -478,24 +561,6 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 <p>I was at my computer trying to load store.apple.com at 3 am, but the site was down. I foolishly kept refreshing the web page for 6 minutes before deciding to try the Apple Store app on my iPhone. The app worked perfectly, and thanks to Apple Pay, the order process was fast. But it was too late to get the watch I wanted in the first set of shipments, and all because I wasted my time trying to use the damn website.</p>
 
 <p>I know, “first world problems.” All I can say is I’m grumpy when I have to use an alarm clock to wake up, and I become more grumpy when my time is wasted because of a website outage after waking up so freakin’ early.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Apple Watch Will Make iPhone 6 Plus Size Less Annoying]]></title>
-    <link href="http://www.thecave.com/2015/04/06/apple-watch-will-make-iphone-6-plus-size-less-annoying/"/>
-    <published>2015-04-06T21:42:53-04:00</published>
-    <updated>2015-04-06T21:42:53-04:00</updated>
-    <id>http://www.thecave.com/2015/04/06/apple-watch-will-make-iphone-6-plus-size-less-annoying</id>
-    <content type="html"><![CDATA[<p>One of the things that annoys me most about the size of my iPhone 6 Plus is pulling it out of my pocket while at a bar or restaurant just to see why my phone buzzed. The majority of the time my phone buzzes because of an incoming text message. I have notifications turned off for almost all other apps, and I rarely. if ever, get phone calls these days, which is why I know the buzz is most likely a text message. And if I’m at the bar without my wife, then the person trying to reach me is most likely my wife. </p>
-
-<p>So when the text message comes in, I have to pull out this big honkin’ device out of my pocket and light up the room just to see the message. I may reply, and if I do, it’s a short reply because, after all, I’m busy at the bar. Then I put the phone back into my pocket only to repeat all of this a few minutes later. </p>
-
-<p>Receiving text messages doesn’t annoy me, but having to pull out and put away this big device every few minutes does annoy me. </p>
-
-<p>It occurred to me that one of the possible reasons why Apple decided to release the larger iPhones was because they knew, thanks to the Apple Watch, that there would be no reason to pull out these larger devices from pockets and purses just to check notifications and send simple text messages and replies.</p>
-
-<p>The Apple Watch will make the iPhone 6 Plus size less annoying.</p>
 ]]></content>
   </entry>
   
