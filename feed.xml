@@ -5,9 +5,63 @@
     <description>thecave.com is the blog site for Kirby Turner, an independent software developer for Mac and iOS.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 10 Aug 2015 09:57:49 -0400</pubDate>
-    <lastBuildDate>Mon, 10 Aug 2015 09:57:49 -0400</lastBuildDate>
+    <pubDate>Tue, 11 Aug 2015 10:08:39 -0400</pubDate>
+    <lastBuildDate>Tue, 11 Aug 2015 10:08:39 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Maintain Your iOS App With Peak App Care</title>
+        <description>&lt;p&gt;Last month I briefly mentioned &lt;a href=&quot;http://www.thecave.com/2015/07/07/ive-been-doing-it-wrong/&quot;&gt;my plan&lt;/a&gt; to productize some of the services I offer through White Peak Software. The main idea is to take a consulting service that I already offer to my clients and turn it into a product that my clients and others will hopefully subscribe to thus creating a monthly recurring revenue stream for my company. My goal was to spend no more than 40 hours over the span of a few weeks setting up this new product. And now, after spending 38.75 hours over the last few weeks, I’m ready to share more details.&lt;/p&gt;
+
+&lt;p&gt;Today I’m happy to announce &lt;a href=&quot;https://www.peakappcare.com&quot;&gt;Peak App Care&lt;/a&gt;. Peak App Care is a monthly subscription service for maintaining your iOS apps. What do I mean by that? Simply put, I monitor your app for crashes and fix them as quickly as possible. Not only that, I also perform small jobs such as bug fixes and enhancements to your app at your request, and I even manage the App Store for you, from updating screenshots to submitting new builds on your behalf.&lt;/p&gt;
+
+&lt;p&gt;What I have found is that many apps available today in the App Store are published by companies with zero iOS developers on staff. Those companies, instead, rely on freelancers and software shops to build their apps for them. The problem, however, is that often times there’s no plans to keep the app up to date after the initial release. &lt;/p&gt;
+
+&lt;p&gt;What happens when the app starts crashing or customers start reporting bugs? What happens when Apple releases a new version of iOS or a new device? &lt;/p&gt;
+
+&lt;p&gt;Often times these companies must scramble to find an iOS developer to help out. If they are lucky, the original developer is still available but chances are good the developer is currently working on something else and isn’t available for days, weeks, or even months. &lt;/p&gt;
+
+&lt;p&gt;With Peak App Care I become your in-house iOS developer responsible for the upkeep of your mobile app. I watch for crashes and fix them as they are reported. But I go beyond that. I will work with you to ensure your app remains up to date with the latest changes coming out of Cupertino. A good example of this is happening right now. &lt;/p&gt;
+
+&lt;p&gt;iOS 9 is in beta and every app publisher should be testing their app on this new iOS version. Not only that, the app should be updated to cleanly compile against the iOS 9 SDK. This means replacing deprecated code. But a company with no staffed iOS developer is often times unaware of the need to perform these types of tasks. Or they choose to ignore these tasks. After all, the app is running fine right now, so why wouldn’t it run fine when the new OS comes out. &lt;/p&gt;
+
+&lt;p&gt;Sometimes it’s okay to ignore changes coming from Apple, but sometimes the changes are too big to ignore. The iPhone 6 Plus is one example. Customers can quickly tell if an iPhone app doesn’t support the larger display found on the 6 Plus, and the only way to take full advantage of the larger display is to update the app. &lt;/p&gt;
+
+&lt;p&gt;This is one area where Peak App Care helps app publishers. Making changes to your app to support the latest iOS release or new device is covered with Peak App Care.&lt;/p&gt;
+
+&lt;p&gt;So that’s the new productize service I’m now offering. Check out the new &lt;a href=&quot;https://www.peakappcare.com&quot;&gt;web site&lt;/a&gt;, and tell your friends, family members and anyone else who might be interested. Now let’s chat about how this concept came to be.&lt;/p&gt;
+
+&lt;h2 id=&quot;giving-credit-where-credit-is-due&quot;&gt;Giving Credit Where Credit is Due&lt;/h2&gt;
+
+&lt;p&gt;I wish I could take credit for coming up with a totally unique concept, but the truth is a maintenance plan for software isn’t anything new. And providing this type of service for mobile apps isn’t new either. In fact, I got the idea from Einar Vollset. &lt;/p&gt;
+
+&lt;p&gt;Einar talks about his app care service in &lt;a href=&quot;http://www.freelancetransformation.com/blog/building-a-recurring-revenue-consulting-business-with-einar-vollset&quot;&gt;this podcast interview&lt;/a&gt; over at &lt;a href=&quot;http://www.freelancetransformation.com&quot;&gt;Freelance Transformations&lt;/a&gt;. This interview blew me away. Here’s a person providing a service that is similar to what I provide, but he came up with a different way to market the service. Brilliant! &lt;/p&gt;
+
+&lt;p&gt;But Einar’s &lt;a href=&quot;http://www.appaftercare.com&quot;&gt;App Aftercare&lt;/a&gt; isn’t unique either. There are many other examples of this in different spaces. &lt;a href=&quot;http://wpcurve.com&quot;&gt;WPCurve&lt;/a&gt; provides a similar service for folks running a WordPress site. And I’ve heard of other examples too, companies that will help you maintain your Ruby on Rails app or your Django server. So the concept of app maintenance isn’t new, but I do give credit to Einar Vollset for inspiring me to create &lt;a href=&quot;https://www.peakappcare.com&quot;&gt;Peak App Care&lt;/a&gt;. &lt;/p&gt;
+
+&lt;h1 id=&quot;whats-next&quot;&gt;What’s Next&lt;/h1&gt;
+
+&lt;p&gt;So what’s next now that the web site is up and running? Well, it’s time for me to roll up my sleeves and start the real work…marketing Peak App Care. &lt;/p&gt;
+
+&lt;p&gt;Like any product I need to market Peak App Care if it is to be a success. My first step is to let my existing clients know about this new offering, which I’ve already done. After that I need to start making others companies within my target audience aware of Peak App Care, and that is where things start to get tougher for me. Just posting a web site isn’t going to bring in customers. I must find ways to reach my target audience, and thankfully I have some ideas on how to make that happen.&lt;/p&gt;
+
+&lt;p&gt;As for my company reboot, I feel this is a good first step. I don’t know if Peak App Care will be a success or not. I’m hopeful it will be. But if I fail to bring on new subscribers over the next few months, at least I won’t feel like I have wasted a lot of my time or money. This is a big switch in thinking when I compare it to the months I’ve spent in the past working on other products that either failed or were never even released into the wild.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 11 Aug 2015 07:05:42 -0400</pubDate>
+        <link>http://www.thecave.com/2015/08/11/maintain-your-ios-app-with-peak-app-care/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2015/08/11/maintain-your-ios-app-with-peak-app-care/</guid>
+        
+        
+        <category>bootstrap</category>
+        
+        <category>general</category>
+        
+        <category>ios</category>
+        
+        <category>work</category>
+        
+      </item>
     
       <item>
         <title>Dispatch Async to Main Queue Doesn&#39;t Work With Modal Window on Mac OS X</title>
@@ -418,24 +472,6 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
         <category>general</category>
         
         <category>videos</category>
-        
-      </item>
-    
-      <item>
-        <title>Do I Need Another Twitter Account</title>
-        <description>&lt;p&gt;Earlier tonight I setup a new Twitter account that tweets a link each time I publish a new post here at thecave.com. The new Twitter account is &lt;a href=&quot;https://twitter.com/thecave_com/&quot;&gt;@thecave_com&lt;/a&gt;. Of course now that this is setup, I’m wondering…Do I really need a separate Twitter account, or should I just tweet the links from my &lt;a href=&quot;https://twitter.com/kiryt/&quot;&gt;@kirbyt&lt;/a&gt; account?&lt;/p&gt;
-
-&lt;p&gt;I guess I will keep the two separate accounts, and I’ll retweet via @kirbyt any links that I feel might be of greater interest, which is basically what I’ve always done. So if you want to know each time a new post is published, follow @thecave_com. Otherwise just keep doing what you’ve been doing.&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 14 Jun 2015 23:09:24 -0400</pubDate>
-        <link>http://www.thecave.com/2015/06/14/do-i-need-another-twitter-account/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2015/06/14/do-i-need-another-twitter-account/</guid>
-        
-        
-        <category>general</category>
-        
-        <category>social</category>
         
       </item>
     

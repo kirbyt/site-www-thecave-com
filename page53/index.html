@@ -108,6 +108,28 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2004/08/01/installers-and-my-document-directory/">Installers and My Document Directory</a>
+    </h2>
+    
+    <p>In setting up my new laptop, I decided to go with VMware to host various guest operating systems for my development, collaboration, etc.  For the most part this is working out well but there are still glitches.  For example, to share the My Document folder with multiple guest OS I created a share in the host OS.  Each guest OS maps the My Documents folder to the UNC \.host\Shared Folders\kirbyt\documents.  The problem I have experienced with this configuration has nothing to do with me authoring documents, etc.  Instead I have encounter two cases where installers have failed.
+<br />
+<br />The .NET Framework 1.1 installer and the Adobe Reader 6.0 apparently need access to the My Documents folder during the installation process.  However, both fail because of the UNC reference to the actual folder.  My temporary work around to date has been to re-map the My Documents folder to a temporary directory on the local hard drive within the guest OS, prefer the install, and re-map the My Documents folder back to the original UNC location.
+<br />
+<br />I wonder what these two installers want with the My Documents folder during installations and I wonder why their not smart enough to recognize the UNC reference.</p>
+
+
+
+    <p><a href="/2004/08/01/installers-and-my-document-directory/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on August 1, 2004
+     in <a href='/category/blogger/'>blogger</a>
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2004/07/30/july-icca-meeting/">July ICCA Meeting</a>
     </h2>
     
@@ -292,27 +314,6 @@
 </div>
 <hr>
 
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2004/07/16/duh/">Duh!</a>
-    </h2>
-    
-    <p>Melanie and I were planning to fly into Manchester, NH next week and drive to Vermont for a break from NYC.  However confusion set in when we started checking the fly availability and car rentals.  Flights into Manchester are filling up and car rentals are sold out.  What gives?
-<br /> 
-<br />Duh!  The Democratic Convention 2004 starts on Sunday, July 26 in Boston.  No wonder Manchester is so busy that weekend.  Needless to say, Melanie and I are breaking convention (no pun intended) and driving up from NYC to avoid the Boston/Manchester madness.
-<br /></p>
-
-
-
-    <p><a href="/2004/07/16/duh/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on July 16, 2004
-     in <a href='/category/blogger/'>blogger</a>
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -345,6 +346,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/08/11/maintain-your-ios-app-with-peak-app-care/" title="Maintain Your iOS App With Peak App Care">Maintain Your iOS App With Peak App Care</a></li>
+                
                 <li><a href="/2015/08/10/dispatch-async-to-main-queue-doesnt-work-with-modal-window-on-mac-os-x/" title="Dispatch Async to Main Queue Doesn't Work With Modal Window on Mac OS X">Dispatch Async to Main Queue Doesn't Work With Modal Window on Mac OS X</a></li>
                 
                 <li><a href="/2015/08/07/boston-area-mac-and-ios-dev-community-is-awesome/" title="Boston Area Mac And iOS Dev Community Is Awesome">Boston Area Mac And iOS Dev Community Is Awesome</a></li>
@@ -352,8 +355,6 @@
                 <li><a href="/2015/08/07/blogging-the-little-things/" title="Blogging The Little Things">Blogging The Little Things</a></li>
                 
                 <li><a href="/2015/07/14/redirect-jekyll-site-to-https-on-openshift/" title="Redirect Jekyll Site To HTTPS On OpenShift">Redirect Jekyll Site To HTTPS On OpenShift</a></li>
-                
-                <li><a href="/2015/07/07/ive-been-doing-it-wrong/" title="I've Been Doing It Wrong">I've Been Doing It Wrong</a></li>
                 
                 </ul>                
             </div>
