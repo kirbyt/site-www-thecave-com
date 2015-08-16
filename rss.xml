@@ -5,8 +5,8 @@
         <description>thecave | Ramblings From A Crotchety Old Man - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2015-08-16T08:30:35-04:00</lastBuildDate>
-        <pubDate>2015-08-16T08:30:35-04:00</pubDate>
+        <lastBuildDate>2015-08-16T08:38:50-04:00</lastBuildDate>
+        <pubDate>2015-08-16T08:38:50-04:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -121,7 +121,9 @@
 
 &lt;p&gt;This pattern change now has me re-thinking how I use certain patterns in my code, especially for code that I intend on sharing between the two platforms.&lt;/p&gt;
 
-&lt;h2 id=&quot;update-i-posted-a-sample-project2-that-illustrates-the-problem-in-writing-the-sample-app-i-learned-that-the-scenario-that-causes-the-problem-is-when-the-modal-window-is-presented-via-a-block-that-is-dispatched-asynchronously-on-the-main-queue&quot;&gt;Update: I posted a &lt;a href=&quot;https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSApplication_Class/index.html#//apple_ref/occ/instm/NSApplication/runModalForWindow:&quot;&gt;sample project&lt;/a&gt; that illustrates the problem. In writing the sample app, I learned that the scenario that causes the problem is when the modal window is presented via a block that is dispatched asynchronously on the main queue.&lt;/h2&gt;
+&lt;p&gt;Update: I posted a &lt;a href=&quot;https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSApplication_Class/index.html#//apple_ref/occ/instm/NSApplication/runModalForWindow:&quot;&gt;sample project&lt;/a&gt; that illustrates the problem. In writing the sample app, I learned that the scenario that causes the problem is when the modal window is presented via a block that is dispatched asynchronously on the main queue.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
