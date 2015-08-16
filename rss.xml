@@ -5,10 +5,19 @@
         <description>thecave | Ramblings From A Crotchety Old Man - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2015-08-16T08:38:50-04:00</lastBuildDate>
-        <pubDate>2015-08-16T08:38:50-04:00</pubDate>
+        <lastBuildDate>2015-08-16T09:52:37-04:00</lastBuildDate>
+        <pubDate>2015-08-16T09:52:37-04:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Two Years Ago Today</title>
+                <description>&lt;p&gt;We moved to Stowe two years ago today. It seems like we’ve been here a lot longer, but in a good way. &lt;/p&gt;
+</description>
+                <link>http://www.thecave.com/2015/08/15/two-years-ago-today/</link>
+                <guid>http://www.thecave.com/2015/08/15/two-years-ago-today</guid>
+                <pubDate>2015-08-15T09:46:04-04:00</pubDate>
+        </item>
 
         <item>
                 <title>Maintain Your iOS App With Peak App Care</title>
@@ -552,26 +561,6 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
                 <link>http://www.thecave.com/2015/04/14/no-wwdc-or-sf-trip/</link>
                 <guid>http://www.thecave.com/2015/04/14/no-wwdc-or-sf-trip</guid>
                 <pubDate>2015-04-14T09:20:56-04:00</pubDate>
-        </item>
-
-        <item>
-                <title>I Should Feel Guilty But I Don't</title>
-                <description>&lt;p&gt;I played hooky from work afternoon. I should feel guilty but I don’t. &lt;/p&gt;
-
-&lt;p&gt;I picked up Rowan from school this afternoon, and we headed to the mountain. Unfortunately I forgot his skis boots, so we had to stop by the house. Then as we tried to get on the lift I realized I left our passes in our jackets. The temperature was in the 60, so we weren’t wearing our jackets. They were still at the house. The afternoon was off to a bad start, but our luck changed. &lt;/p&gt;
-
-&lt;p&gt;We were able to get two runs in before the lifts closed thanks to the nice lifties that let us through without our passes. Also we ran into some friends in our first run, including a class mate of Rowan’s. After the lifts shut down for the day we hung out in the parking lot for a bit of après ski with friends. Then we headed to Rimrocks where we ran into more friends. &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://farm9.staticflickr.com/8776/16952950809_f0103c0255_z.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It was a great father son afternoon with wonderful friends, and when I’m 85 years old I’ll remember how much fun Rowan and I had today. I won’t remember the work I should have done today, and that’s why I don’t feel guilty about how I spent my time this afternoon.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://farm9.staticflickr.com/8722/16951598160_95cb6df7cc_z.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2015/04/13/i-should-feel-guilty-but-i-dont/</link>
-                <guid>http://www.thecave.com/2015/04/13/i-should-feel-guilty-but-i-dont</guid>
-                <pubDate>2015-04-13T20:15:11-04:00</pubDate>
         </item>
 
 
