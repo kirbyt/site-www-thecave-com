@@ -5,8 +5,8 @@
         <description>thecave | Ramblings From A Crotchety Old Man - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2015-08-11T10:08:39-04:00</lastBuildDate>
-        <pubDate>2015-08-11T10:08:39-04:00</pubDate>
+        <lastBuildDate>2015-08-16T08:30:35-04:00</lastBuildDate>
+        <pubDate>2015-08-16T08:30:35-04:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -121,12 +121,12 @@
 
 &lt;p&gt;This pattern change now has me re-thinking how I use certain patterns in my code, especially for code that I intend on sharing between the two platforms.&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;h2 id=&quot;update-i-posted-a-sample-project2-that-illustrates-the-problem-in-writing-the-sample-app-i-learned-that-the-scenario-that-causes-the-problem-is-when-the-modal-window-is-presented-via-a-block-that-is-dispatched-asynchronously-on-the-main-queue&quot;&gt;Update: I posted a &lt;a href=&quot;https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSApplication_Class/index.html#//apple_ref/occ/instm/NSApplication/runModalForWindow:&quot;&gt;sample project&lt;/a&gt; that illustrates the problem. In writing the sample app, I learned that the scenario that causes the problem is when the modal window is presented via a block that is dispatched asynchronously on the main queue.&lt;/h2&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;From the &lt;a href=&quot;https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSApplication_Class/index.html#//apple_ref/occ/instm/NSApplication/runModalForWindow:&quot;&gt;Apple documentation&lt;/a&gt; for &lt;code&gt;+[NSApp runModalForWindow:]&lt;/code&gt;: “This method runs a modal event loop for the specified window synchronously. It displays the specified window, makes it key, starts the run loop, and processes events for that window. (You do not need to show the window yourself.) While the app is in that loop, it does not respond to any other events (including mouse, keyboard, or window-close events) unless they are associated with the window. It also does not perform any tasks (such as firing timers) that are not associated with the modal run loop. In other words, this method consumes only enough CPU time to process events and dispatch them to the action methods associated with the modal window.” &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;From the &lt;a href=&quot;https://github.com/kirbyt/MacModalDispatchAsyncProblem&quot;&gt;Apple documentation&lt;/a&gt; for &lt;code&gt;+[NSApp runModalForWindow:]&lt;/code&gt;: “This method runs a modal event loop for the specified window synchronously. It displays the specified window, makes it key, starts the run loop, and processes events for that window. (You do not need to show the window yourself.) While the app is in that loop, it does not respond to any other events (including mouse, keyboard, or window-close events) unless they are associated with the window. It also does not perform any tasks (such as firing timers) that are not associated with the modal run loop. In other words, this method consumes only enough CPU time to process events and dispatch them to the action methods associated with the modal window.” &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
