@@ -5,8 +5,8 @@
         <description>thecave | Ramblings From A Crotchety Old Man - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2015-08-16T09:52:37-04:00</lastBuildDate>
-        <pubDate>2015-08-16T09:52:37-04:00</pubDate>
+        <lastBuildDate>2015-08-16T15:23:27-04:00</lastBuildDate>
+        <pubDate>2015-08-16T15:23:27-04:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -94,7 +94,7 @@
 
 &lt;p&gt;This pattern has served me well on iOS, but it has issues on Mac OS X when displaying a modal window.&lt;/p&gt;
 
-&lt;p&gt;When you display a modal window with &lt;code&gt;+[NSApp runModalForWindow:]&lt;/code&gt; a new run loop is created for the window&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. That might seem fine until you call &lt;code&gt;dispatch_async(dispatch_get_main_queue(), ^{})&lt;/code&gt; from a background thread. The block that you are trying to execute in the main queue will never run. And in my case, the &lt;code&gt;completion&lt;/code&gt; block is never called. This means my modal window never receives the notification that the URL request completed.&lt;/p&gt;
+&lt;p&gt;When you display a modal window with &lt;code&gt;+[NSApp runModalForWindow:]&lt;/code&gt; a new run loop is created for the window&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. That might seem fine until you call &lt;code&gt;dispatch_async(dispatch_get_main_queue(), ^{})&lt;/code&gt; from a background thread. The block that you are trying to execute in the main queue will never run. And in my case, the &lt;code&gt;completion&lt;/code&gt; block is never called. This means my modal window never receives the notification that the URL request completed. (NOTE: Mike Ash &lt;a href=&quot;#update2&quot;&gt;pointed out&lt;/a&gt; that it’s not the new run loop that causes the problem.)&lt;/p&gt;
 
 &lt;p&gt;So how did I work around this problem?&lt;/p&gt;
 
@@ -131,6 +131,10 @@
 &lt;p&gt;This pattern change now has me re-thinking how I use certain patterns in my code, especially for code that I intend on sharing between the two platforms.&lt;/p&gt;
 
 &lt;p&gt;Update: I posted a &lt;a href=&quot;https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSApplication_Class/index.html#//apple_ref/occ/instm/NSApplication/runModalForWindow:&quot;&gt;sample project&lt;/a&gt; that illustrates the problem. In writing the sample app, I learned that the scenario that causes the problem is when the modal window is presented via a block that is dispatched asynchronously on the main queue.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&quot;update2&quot;&gt;&lt;/a&gt;Update 2: &lt;a href=&quot;https://mikeash.com/pyblog/&quot;&gt;Mike Ash&lt;/a&gt; pointed out that NSRunLoop is reentrant but GCD serial queues are not and this is the reason, not my theory of a different event loop, the block isn’t executed. Mike said, “The main queue is already executing a block, and it won’t execute a new one until that one is done. This is a subtle way in which dispatch on the main queue isn’t the same as &lt;code&gt;performSelectorOnMainThread&lt;/code&gt;.”&lt;/p&gt;
+
+&lt;p&gt;Good to know and thanks, Mike, for explaining what is happening.&lt;/p&gt;
 
 &lt;hr /&gt;
 
