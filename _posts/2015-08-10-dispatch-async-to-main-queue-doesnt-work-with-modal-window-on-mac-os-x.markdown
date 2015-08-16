@@ -34,7 +34,7 @@ This is a simplified view of the pattern I often use. Call a method with a callb
 
 This pattern has served me well on iOS, but it has issues on Mac OS X when displaying a modal window.
 
-When you display a modal window with `+[NSApp runModalForWindow:]` a new run loop is created for the window[^1]. That might seem fine until you call `dispatch_async(dispatch_get_main_queue(), ^{})` from a background thread. The block that you are trying to execute in the main queue will never run. And in my case, the `completion` block is never called. This means my modal window never receives the notification that the URL request completed.
+When you display a modal window with `+[NSApp runModalForWindow:]` a new run loop is created for the window[^1]. That might seem fine until you call `dispatch_async(dispatch_get_main_queue(), ^{})` from a background thread. The block that you are trying to execute in the main queue will never run. And in my case, the `completion` block is never called. This means my modal window never receives the notification that the URL request completed. (NOTE: Mike Ash [pointed out](#update2) that it's not the new run loop that causes the problem.)
 
 So how did I work around this problem?
 
@@ -71,6 +71,10 @@ This pattern change now has me re-thinking how I use certain patterns in my code
 
 Update: I posted a [sample project][2] that illustrates the problem. In writing the sample app, I learned that the scenario that causes the problem is when the modal window is presented via a block that is dispatched asynchronously on the main queue.
 
+<a name="update2"></a>Update 2: [Mike Ash][mikeash] pointed out that NSRunLoop is reentrant but GCD serial queues are not and this is the reason, not my theory of a different event loop, the block isn't executed. Mike said, "The main queue is already executing a block, and it won't execute a new one until that one is done. This is a subtle way in which dispatch on the main queue isn't the same as `performSelectorOnMainThread`."
+
+Good to know and thanks, Mike, for explaining what is happening.
+
 ---
 
 [^1]: From the [Apple documentation][github] for `+[NSApp runModalForWindow:]`: "This method runs a modal event loop for the specified window synchronously. It displays the specified window, makes it key, starts the run loop, and processes events for that window. (You do not need to show the window yourself.) While the app is in that loop, it does not respond to any other events (including mouse, keyboard, or window-close events) unless they are associated with the window. It also does not perform any tasks (such as firing timers) that are not associated with the modal run loop. In other words, this method consumes only enough CPU time to process events and dispatch them to the action methods associated with the modal window."
@@ -78,3 +82,4 @@ Update: I posted a [sample project][2] that illustrates the problem. In writing 
 [gcd]: https://developer.apple.com/library/ios/documentation/Performance/Reference/GCD_libdispatch_Ref/
 [2]: https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSApplication_Class/index.html#//apple_ref/occ/instm/NSApplication/runModalForWindow:
 [github]: https://github.com/kirbyt/MacModalDispatchAsyncProblem
+[mikeash]: https://mikeash.com/pyblog/
