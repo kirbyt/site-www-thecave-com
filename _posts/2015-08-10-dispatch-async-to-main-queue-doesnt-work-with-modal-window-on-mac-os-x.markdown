@@ -70,6 +70,7 @@ Instead of dispatching the `completion()` to the main queue, I call it directly 
 This pattern change now has me re-thinking how I use certain patterns in my code, especially for code that I intend on sharing between the two platforms.
 
 Update: I posted a [sample project][2] that illustrates the problem. In writing the sample app, I learned that the scenario that causes the problem is when the modal window is presented via a block that is dispatched asynchronously on the main queue.
+
 ---
 
 [^1]: From the [Apple documentation][github] for `+[NSApp runModalForWindow:]`: "This method runs a modal event loop for the specified window synchronously. It displays the specified window, makes it key, starts the run loop, and processes events for that window. (You do not need to show the window yourself.) While the app is in that loop, it does not respond to any other events (including mouse, keyboard, or window-close events) unless they are associated with the window. It also does not perform any tasks (such as firing timers) that are not associated with the modal run loop. In other words, this method consumes only enough CPU time to process events and dispatch them to the action methods associated with the modal window."
