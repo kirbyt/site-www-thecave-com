@@ -4,13 +4,39 @@
   <title><![CDATA[Category: rant | thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/category/rant/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-08-16T15:23:27-04:00</updated>
+  <updated>2015-08-17T08:03:41-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[I Wish There Was Something Better Than Meetup.Com]]></title>
+    <link href="http://www.thecave.com/2015/08/17/i-wish-there-was-something-better-than-meetupcom/"/>
+    <updated>2015-08-17T07:28:35-04:00</updated>
+    <id>http://www.thecave.com/2015/08/17/i-wish-there-was-something-better-than-meetupcom</id>
+    <content type="html"><![CDATA[<p>I’ve been a Meetup.com subscriber for years, but I hate using them. Their website isn’t very user-friendly, and I often times find their messages to be misleading and or confusing. For example during the transition of the <a href="http://www.nshappyhour.org">NSHappyHour</a> meetup, which had over 250 members, I tried to disable the account. Turns out that is not an option, or at least it wasn’t at the time. I learned that the account had been deleted when I went to re-enable the account a few days later. The only option was to start a new account. This meant we lost the 250+ members that has joined over the years, and we had no way of reaching out to those members to ask them to join the new meetup.</p>
+
+<p>After that experience I decided I would not use Meetup.com again. But earlier this year I decided to start a new group, <a href="http://www.apres-code.com">Après Code</a>, and the best way to get the word out was to start another Meetup.com meet up. Meetup did help get the word out and people have been attending the gathering each month. But I still haven’t fully leveraged Meetup.com because the web interface is still just as confusing and crappy as ever. </p>
+
+<p>Today I received yet another confusing, and misleading, message from Meetup.com that will cost a member $10, and I’m once again regretting my decision to use Meetup.com.</p>
+
+<p>Apparently there is an option with Meetup to allow members to send a contribution. I thought this option was turned off, and according to my account settings contributions were not enabled. Yet, a member was still able to send a $10 contribution. I decided not to accept the contribution because it just seems weird to me to have someone spend me money for this meet up group. </p>
+
+<p>I changed my mind this morning when I received the misleading email reminding me of the contribution. The Meetup email said, “You can choose to use it toward your Organizer Subscription.” My bi-annual subscription is due in a few days and I thought, sure, why not apply the $10 to the subscription amount. Turns out it’s not that simple.</p>
+
+<p>With a single click of the mouse button, I started the process of accepting the contribution, but accepting the contribution means setting up a new account with some service named WePay and linking my bank account to WePay. This is not something I’m interested in doing. I know nothing about WePay. Not only that, WePay is taking $1.50 from the $10 contribution as a processing fee. That’s 15% of the contribution, which I find ridiculous. </p>
+
+<p>Why can’t Meetup take the contribution and apply it directly to the Organizer Subscription? It seems like a simple enough task. After all, Meetup has the ability to process online credit card payments. And in doing this, members like me would not need to sign up for yet another service, link a bank account to a service they know nothing about, and the full contribution amount can be applied instead of only 85%.</p>
+
+<p>So now I’m having to waste time contacting both Meetup and WePay requesting the member be refunded his contribution because Meetup misled me. And with my bi-annual subscription renewal coming up in a few days, I’m once agree debating whether I should continue using Meetup.com or not. I’m leaning towards not renewing, but I know if I don’t then they will delete the account and the members will be lost forever if I decide to renew later. And if I let the account expire before this contribution mess is resolved, the member who was kind enough to send the contribution will likely be out $10 and WePay will have an extra $10.</p>
+
+<p>Regardless of whether or not I renew for another 6 months or not, I will not ever use Meetup.com again for any other group in the future. The subscription is not worth the hassle. </p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Argh! Thanks A Lot Apple]]></title>
@@ -86,23 +112,6 @@
 
 <p>Sorry Simple, but I must break up with you now. And it’s you, not me, that has caused this to happen. There might be a day in the future when we can get back together, but for the moment I  need a bank I can trust.</p>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[WTF Ruby Gems]]></title>
-    <link href="http://www.thecave.com/2014/04/24/wtf-ruby-gems/"/>
-    <updated>2014-04-24T00:00:00-04:00</updated>
-    <id>http://www.thecave.com/2014/04/24/wtf-ruby-gems</id>
-    <content type="html"><![CDATA[<p>I’m working with a client to update one of their iOS apps. The Xcode project uses CocoaPods for dependency management. I’m not a fan of CocoaPods, but I grin and bear it when working with existing client projects.</p>
-
-<p>Yesterday I needed to update a class, one .h file and one .m, from an open source project, so I ran <code>pod update</code> on the project. This told me I needed to update my install of CocoaPods, so I did. This in turn updated a ton of other Ruby Gems on my system. It was annoying having to go through the update process when all I needed was two files that I could have copied from github in less time, but no harm done, right? WRONG!!!</p>
-
-<p>Today I go to publish a new blog post. I use Jekyll to convert my site to static HTML. Guess what? Yesterday’s CocoaPods update has now broken my Jekyll install, and I cannot publish the blog post I just finished writing. WTF!?</p>
-
-<p>ALL I WANTED TO DO WAS GET THE LATEST FREAKIN’ VERSION OF TWO FILES, A .h AND .m, AND NOW I HAVE TO WASTE TIME TRYING TO FIX WHAT WAS NOT BROKEN UNTIL YESTERDAY JUST SO I CAN PUBLISH A BLOG POST.</p>
-
-<p>This is why I don’t like using things like CocoaPods, plug-ins, and other simular widgets.</p>
 ]]></content>
   </entry>
   
