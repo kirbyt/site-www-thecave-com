@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Retiring My Csv Editor"
+title: "Retiring My CSV Editor"
 date: 2015-08-18 11:23:09 -0400
 categories: 
     - apps
