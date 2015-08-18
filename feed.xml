@@ -5,9 +5,45 @@
     <description>thecave.com is the blog site for Kirby Turner, an independent software developer for Mac and iOS.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 17 Aug 2015 08:03:41 -0400</pubDate>
-    <lastBuildDate>Mon, 17 Aug 2015 08:03:41 -0400</lastBuildDate>
+    <pubDate>Tue, 18 Aug 2015 12:13:42 -0400</pubDate>
+    <lastBuildDate>Tue, 18 Aug 2015 12:13:42 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Retiring My Csv Editor</title>
+        <description>&lt;p&gt;Today I did something that I’ve been saying I will do for a long time. I retired my CSV editor, &lt;a href=&quot;http://blog.whitepeaksoftware.com/2015/08/18/killinks-retirement/&quot;&gt;Killink&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;The first release of Killink CSV Editor was back on March 22, 2007, and over the years it has done well despite the fact that I haven’t been actively working on the app or marketing it. Killink had great potential, especially if I had followed the business advice from those smarter than me to focus on the enterprise, but I honestly lost interest in the editor after I started writing apps for Mac and iOS.&lt;/p&gt;
+
+&lt;p&gt;I did start work on a Mac version of Killink CSV Editor, and I have still have a semi-working version of it on my iPhone. But I struggled to create the user experience that I wanted on those two platforms. Given enough time I could have conquered the UX challenges, but I knew the market for the editor was small and spending the extra time to do what I wanted didn’t make good business sense. So the Mac and iOS versions never shipped.&lt;/p&gt;
+
+&lt;p&gt;I always found the customers of Killink CSV Editor fascinating. While we developer types view CSV as antiquated technology, these customers work with CSV files regularly. And most are business users from large, well known companies. We developer types often times forget that people around the world are using old technologies like CSV daily to do their job, and they too would like a better way to work with old tech like CSV files. Killink CSV Editor was a better way for many for a number of years.&lt;/p&gt;
+
+&lt;p&gt;It saddens me to retire Killink CSV Editor, but at the same time I feel like a burden has been lifted off my shoulders. The app is rock solid and support is minimum, but I have felt guilty for a long time about selling a software product that I know isn’t actively being worked on. And with the recent Windows 10 release, I finally decided now is the time to retire my CSV editor. &lt;/p&gt;
+
+&lt;p&gt;I’ve heard many good things about Windows 10. But if I keep selling Killink to Windows users I will have no choice but to install it some day. And honestly, I don’t want to do that. I have zero interest in Windows these days.&lt;/p&gt;
+
+&lt;p&gt;I do plan to continuing supporting licensed users of Killink CSV Editor, which I talk about over at the &lt;a href=&quot;http://blog.whitepeaksoftware.com/2015/08/18/killinks-retirement/&quot;&gt;company blog site&lt;/a&gt;. The support load is minimum, so providing ongoing support isn’t a concern for me. Killink is a native Win32 app built using Delphi. It’s rock solid and hasn’t had a serious issue that I couldn’t resolve in email in years. So I’m happy to continue answering questions about Killink and helping folks if they happen to run into a problem. That said, I’m not looking forward to the emails I’m going to receive when people try to buy a new license.&lt;/p&gt;
+
+&lt;p&gt;When I retired SMTP Diagnostics, another Windows app I sold for years, I received emails for nearly a year asking why it was no longer available and why I couldn’t make an exception this one time and sell a new license. Most of the time the people understood, but a few sent angry emails. I fully expect the same will happen with the retirement of Killink, and all I can say to those folks is sorry.&lt;/p&gt;
+
+&lt;p&gt;Retiring my CSV editor ends another chapter in my long software career. I’m a bit sad by this, but I’m also excited by no longer having the mental burden that came with having my editor sit untouched for such a long time while people were still buying licenses for it.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 18 Aug 2015 11:23:09 -0400</pubDate>
+        <link>http://www.thecave.com/2015/08/18/retiring-my-csv-editor/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2015/08/18/retiring-my-csv-editor/</guid>
+        
+        
+        <category>apps</category>
+        
+        <category>bootstrapping</category>
+        
+        <category>general</category>
+        
+        <category>work</category>
+        
+      </item>
     
       <item>
         <title>I Wish There Was Something Better Than Meetup.Com</title>
@@ -395,94 +431,6 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
         <category>bootstrapping</category>
         
         <category>general</category>
-        
-        <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Tips To Being More Focused</title>
-        <description>&lt;p&gt;I tweeted the other day that “I have the problem of wanting to do too many things at once, which is distracting. It’s time for me to learn how to scale back and focus.”&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://c1.staticflickr.com/1/420/18776596119_d03e98a590_z.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It’s true. Right now there are a number of things I’m working on and there are even more things that I want to work on. &lt;/p&gt;
-
-&lt;p&gt;Lately I’ve been bouncing back and forth between a number of projects, but I haven’t been very productive. I start work on a task but before I finish I let myself get distracted with another task. For instance, I’ll work on a client project and before I finish the task at hand I’ll jump to another task from another project. &lt;/p&gt;
-
-&lt;p&gt;I haven’t always worked this way, and I’m not sure why I now struggle to stay focused. It could be the changing of seasons. I had my daily routine dialed in during the winter months, but something has changed recently and it’s not just the seasons. &lt;/p&gt;
-
-&lt;p&gt;Maybe my struggle with focus is a sign of being burnt out, maybe it’s the type of projects I’m working on - I’m certainly less excited about certain projects while much more excited about others. Maybe it’s because the kid is out of school and my work day is broken up into smaller chunks than during school time. Or maybe it’s a combination of all of the above. All I know for sure is that I find it difficult to focus, so last week I set out to find new ways to get focused and stay focused&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. And here’s what I came up with…&lt;/p&gt;
-
-&lt;h2 id=&quot;dont-check-email-first-thing-in-the-morning&quot;&gt;Don’t Check Email First Thing In The Morning&lt;/h2&gt;
-
-&lt;p&gt;I have stopped checking email first thing in the morning. This is probably one of the hardest habit for me to break, but I’ve come to realize that checking email first thing in the morning leads to the biggest distractions for me. So it is a must change habit for me. &lt;/p&gt;
-
-&lt;p&gt;On a typical day I start the morning excited about what I’m planning to do during the day only to have that excitement squashed because of emails. The emails will often times change my plans for the day. Emails, in other words, control my day when I should be controlling my day.&lt;/p&gt;
-
-&lt;p&gt;Instead of checking email at the start of the day I now check it later in the morning, usually just before I break for lunch. This gives me a chance to really focus on the work at hand and not let my day get off on the wrong foot.&lt;/p&gt;
-
-&lt;p&gt;I admit this hasn’t been the easiest change for me to make. I’ve become accustom to checking my email as soon as I wake up…often times while still in bed. But I recognize that checking email first thing each morning typically controls the rest of my day. It causes me to change the priorities I set the evening before, which in turn makes me feel like I didn’t spend nearly as much time on the most important tasks for the week. That’s why I’ve stopped checking email first thing each day and I have replaced that habit with the next tip.&lt;/p&gt;
-
-&lt;h2 id=&quot;do-whats-most-important-first&quot;&gt;Do What’s Most Important First&lt;/h2&gt;
-
-&lt;p&gt;Instead of checking email at the start of my day, I begin my work day by working on the task that is most important for the day. It could be bug fixes for a client’s app, work on a new landing page, writing a blog post, or adding a new feature to one of my apps. I decide the night before what is the most important thing to do and that’s the first task I work on the next morning.&lt;/p&gt;
-
-&lt;p&gt;I’ve been following this tip for only a few days, and so far I feel more productive. Plus I feel a greater sense of accomplishment at the end of the day because that task that was most important got the love it deserved.&lt;/p&gt;
-
-&lt;p&gt;I highly recommend get into the habit of starting your day by doing the most important task first. If you are writing a book, start your day by writing. If you are working on a client project, and have a upcoming deadline, start your day by working on the project. And remember to work on this important task before you check your email.&lt;/p&gt;
-
-&lt;p&gt;Those are the biggest changes I’ve made to my daily routine, and I’m seeing immediate results. But I decided to try a couple of more things to see if I can make more improvements to my focus and productivity.&lt;/p&gt;
-
-&lt;h2 id=&quot;limit-meetings-to-tuesday-and-thursday&quot;&gt;Limit Meetings to Tuesday and Thursday&lt;/h2&gt;
-
-&lt;p&gt;My next tip is to limit meetings with others to two specific days each week. For me those two days are Tuesday and Thursday. &lt;/p&gt;
-
-&lt;p&gt;The main benefit to doing this is to give me more control over the other days of the week. I can use those other days to focus on productive work without the disruption of meetings. Meetings are, after all, disruptive to a productive day. Nothing kills my productivity faster than having to stop what I’m working on to waste time in a meeting. And yes, most meetings are a waste of time. Even the ones that are not a complete waste of time do waste some time. That casual chit chat at the beginning of the meeting, for example, is unproductive time. So I’m limiting those periods of unproductive time to two days a week.&lt;/p&gt;
-
-&lt;p&gt;I get that this isn’t something everyone can do. Heck I’m not 100% sure I can make it happen for me. But if you work for yourself and/or have control over your schedule, then you should be able to make this happen. &lt;/p&gt;
-
-&lt;p&gt;Also if you are like me, you already have meetings on your calendar. I, for example, have a recurring client meeting every Monday and Thursday mornings, another client meeting on Monday afternoon, one on Wednesday morning, and just recently a client asked to do a daily stand-up meeting each morning&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. This means there will be a transition period for me as I get my meetings re-scheduled for Tuesday and Thursday. But this is something I’m going to make happen come hell or high water.&lt;/p&gt;
-
-&lt;h2 id=&quot;pomodoro-technique&quot;&gt;Pomodoro Technique&lt;/h2&gt;
-
-&lt;p&gt;As if not checking email first thing each morning isn’t already a big change to my daily routine, I’ve decided to give the &lt;a href=&quot;http://pomodorotechnique.com&quot;&gt;Pomodoro Technique&lt;/a&gt; a try.&lt;/p&gt;
-
-&lt;p&gt;The Pomodoro Technique is simple. You set a timer for 25 minutes and during that time you focus on a particular task. When the 25 minutes are up, you take a 5 minute break. Then you start another pomodoro, setting the timer for 25 minutes; focus, focus, focus; then take another 5 minute break. After four pomodoros you take a longer break (15 to 30 minutes).&lt;/p&gt;
-
-&lt;p&gt;I’ve heard about the Pomodoro Technique a number of times over the years. I felt the process was not for me, but since focus has become a recent problem for me I decided to give it a try. So far the small blocks of 25-minute work cycles is working well for me given the amount of distractions that can happen throughout the day especially when my wife and kid are home. With the Pomodoro Technique I focus for 25 minutes, then I can use the 5 minute break answer a question my wife might have or see the latest LEGO creation my son has built.&lt;/p&gt;
-
-&lt;p&gt;Time will tell if this technique will work for me long term. And I should mention I’m not following the Pomodoro Technique by the book either. There are times when I reach the end of my 25 minute work cycle and I don’t want to stop. So I don’t. I skip my 5 minute break, and I continue working using a new pomodoro. But I do force myself to take a break after the second pomodoro when I combine two of them.&lt;/p&gt;
-
-&lt;h2 id=&quot;do-these-tips-really-work&quot;&gt;Do These Tips Really Work&lt;/h2&gt;
-
-&lt;p&gt;So do these tips really work? It’s hard for me to say with absolutely certainty that they work. I’m seeing some positive results already, but only time will tell what works and doesn’t work for me long term. And obviously not every tip will work for every person. Heck, I’m not sure if all the tips will work for me. But these are the tips I’m trying right now, and after only a few days I’m seeing good results. &lt;/p&gt;
-
-&lt;p&gt;I’m getting more done faster, and that feeling of being overwhelmed that I got at the end of each day has been replaced with a greater sense of accomplishment and a feeling of being more productive. But the real test for me will be following these tips for a month and see what happens. Trying these tips for a month is the only way I will know what works and doesn’t work for me.&lt;/p&gt;
-
-&lt;p&gt;I’ll post an update on my progress in a few weeks. Meanwhile I encourage you to give one, some or all the tips a try to see what works for you. And let me know how it works out for you. &lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;Yes, I see the irony in that my search for ways to become more focused distracted me from the work that I needed to do last week. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot;&gt;
-      &lt;p&gt;I personally think daily stand up meetings, like most meetings, are a waste of time, and it’s certainly not a productive use of my time. A daily status email is far more productive in my opinion, and you have the report captured for historical purposes.  &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Mon, 22 Jun 2015 11:51:20 -0400</pubDate>
-        <link>http://www.thecave.com/2015/06/22/tips-to-being-more-focused/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2015/06/22/tips-to-being-more-focused/</guid>
-        
-        
-        <category>general</category>
-        
-        <category>life</category>
         
         <category>work</category>
         

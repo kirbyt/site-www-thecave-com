@@ -4,13 +4,39 @@
   <title><![CDATA[Category: work | thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/category/work/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-08-17T08:03:41-04:00</updated>
+  <updated>2015-08-18T12:13:42-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Retiring My Csv Editor]]></title>
+    <link href="http://www.thecave.com/2015/08/18/retiring-my-csv-editor/"/>
+    <updated>2015-08-18T11:23:09-04:00</updated>
+    <id>http://www.thecave.com/2015/08/18/retiring-my-csv-editor</id>
+    <content type="html"><![CDATA[<p>Today I did something that I’ve been saying I will do for a long time. I retired my CSV editor, <a href="http://blog.whitepeaksoftware.com/2015/08/18/killinks-retirement/">Killink</a>. </p>
+
+<p>The first release of Killink CSV Editor was back on March 22, 2007, and over the years it has done well despite the fact that I haven’t been actively working on the app or marketing it. Killink had great potential, especially if I had followed the business advice from those smarter than me to focus on the enterprise, but I honestly lost interest in the editor after I started writing apps for Mac and iOS.</p>
+
+<p>I did start work on a Mac version of Killink CSV Editor, and I have still have a semi-working version of it on my iPhone. But I struggled to create the user experience that I wanted on those two platforms. Given enough time I could have conquered the UX challenges, but I knew the market for the editor was small and spending the extra time to do what I wanted didn’t make good business sense. So the Mac and iOS versions never shipped.</p>
+
+<p>I always found the customers of Killink CSV Editor fascinating. While we developer types view CSV as antiquated technology, these customers work with CSV files regularly. And most are business users from large, well known companies. We developer types often times forget that people around the world are using old technologies like CSV daily to do their job, and they too would like a better way to work with old tech like CSV files. Killink CSV Editor was a better way for many for a number of years.</p>
+
+<p>It saddens me to retire Killink CSV Editor, but at the same time I feel like a burden has been lifted off my shoulders. The app is rock solid and support is minimum, but I have felt guilty for a long time about selling a software product that I know isn’t actively being worked on. And with the recent Windows 10 release, I finally decided now is the time to retire my CSV editor. </p>
+
+<p>I’ve heard many good things about Windows 10. But if I keep selling Killink to Windows users I will have no choice but to install it some day. And honestly, I don’t want to do that. I have zero interest in Windows these days.</p>
+
+<p>I do plan to continuing supporting licensed users of Killink CSV Editor, which I talk about over at the <a href="http://blog.whitepeaksoftware.com/2015/08/18/killinks-retirement/">company blog site</a>. The support load is minimum, so providing ongoing support isn’t a concern for me. Killink is a native Win32 app built using Delphi. It’s rock solid and hasn’t had a serious issue that I couldn’t resolve in email in years. So I’m happy to continue answering questions about Killink and helping folks if they happen to run into a problem. That said, I’m not looking forward to the emails I’m going to receive when people try to buy a new license.</p>
+
+<p>When I retired SMTP Diagnostics, another Windows app I sold for years, I received emails for nearly a year asking why it was no longer available and why I couldn’t make an exception this one time and sell a new license. Most of the time the people understood, but a few sent angry emails. I fully expect the same will happen with the retirement of Killink, and all I can say to those folks is sorry.</p>
+
+<p>Retiring my CSV editor ends another chapter in my long software career. I’m a bit sad by this, but I’m also excited by no longer having the mental burden that came with having my editor sit untouched for such a long time while people were still buying licenses for it.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Maintain Your iOS App With Peak App Care]]></title>
@@ -241,22 +267,6 @@
     </li>
   </ol>
 </div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Stuck Working For Others]]></title>
-    <link href="http://www.thecave.com/2015/06/04/stuck-working-for-others/"/>
-    <updated>2015-06-04T16:31:38-04:00</updated>
-    <id>http://www.thecave.com/2015/06/04/stuck-working-for-others</id>
-    <content type="html"><![CDATA[<p>I love this quote from Amy Hoy:</p>
-
-<blockquote>
-  <p>If you only do what pays immediately, you will be stuck working for other people. Or you will be stuck doing what other people want you to do…forever.</p>
-</blockquote>
-
-<p>The quote come from her talk about <a href="https://unicornfree.com/2015/be-your-own-angel-a-revenue-model-for-slow-startups?inf_contact_key=33d23f3cc326dbb9432ca21551e5c05960ba9e460978b642f3bc69a5e6171317">being your own angel investor</a>.</p>
-
 ]]></content>
   </entry>
   
