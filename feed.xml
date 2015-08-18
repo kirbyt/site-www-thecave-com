@@ -5,12 +5,12 @@
     <description>thecave.com is the blog site for Kirby Turner, an independent software developer for Mac and iOS.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 18 Aug 2015 12:13:42 -0400</pubDate>
-    <lastBuildDate>Tue, 18 Aug 2015 12:13:42 -0400</lastBuildDate>
+    <pubDate>Tue, 18 Aug 2015 12:16:09 -0400</pubDate>
+    <lastBuildDate>Tue, 18 Aug 2015 12:16:09 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>Retiring My Csv Editor</title>
+        <title>Retiring My CSV Editor</title>
         <description>&lt;p&gt;Today I did something that I’ve been saying I will do for a long time. I retired my CSV editor, &lt;a href=&quot;http://blog.whitepeaksoftware.com/2015/08/18/killinks-retirement/&quot;&gt;Killink&lt;/a&gt;. &lt;/p&gt;
 
 &lt;p&gt;The first release of Killink CSV Editor was back on March 22, 2007, and over the years it has done well despite the fact that I haven’t been actively working on the app or marketing it. Killink had great potential, especially if I had followed the business advice from those smarter than me to focus on the enterprise, but I honestly lost interest in the editor after I started writing apps for Mac and iOS.&lt;/p&gt;
