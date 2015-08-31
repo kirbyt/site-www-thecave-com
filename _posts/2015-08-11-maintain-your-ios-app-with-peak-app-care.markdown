@@ -3,7 +3,7 @@ layout: post
 title: "Maintain Your iOS App With Peak App Care"
 date: 2015-08-11 07:05:42 -0400
 categories: 
-    - bootstrap
+    - bootstrapping
     - general
     - ios
     - work
