@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-08-31T17:31:00-04:00</updated>
+  <updated>2015-08-31T21:10:07-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,53 @@
   </author>
   <rights>Copyright (c) 2002-2015 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[Kicking Procrastination In The Ass]]></title>
+    <link href="http://www.thecave.com/2015/08/31/kicking-procrastination-in-the-ass/"/>
+    <published>2015-08-31T20:57:22-04:00</published>
+    <updated>2015-08-31T20:57:22-04:00</updated>
+    <id>http://www.thecave.com/2015/08/31/kicking-procrastination-in-the-ass</id>
+    <content type="html"><![CDATA[<p>I attended a video cast thingie today - I think the kids call it a webinar - hosted by <a href="https://twitter.com/amyhoy">Amy Hoy</a> and <a href="https://twitter.com/alexhillman">Alex Hillman</a> titled <a href="https://www.crowdcast.io/e/procrastination">Kick Procrastination’s Ass</a>. It was really good, especially the first hour. If you have some spare time, I highly recommend watching it.</p>
+
+<p>Some of the keys points for me included:</p>
+
+<h2 id="reasons-for-procrastinating">Reasons for Procrastinating</h2>
+
+<ul>
+  <li>(Motivation) Lack of motivation.</li>
+  <li>(Destination) Not really defining a specific goal. Too vague in what you want to accomplish.</li>
+  <li>(Implementation) Breaking things down into small tasks, but they will be vague if the goals are vague. You need to have structure, a schedule that you stick to to over come this.</li>
+</ul>
+
+<h3 id="other-reason-for-procrastinating">Other Reason for Procrastinating</h3>
+
+<ul>
+  <li>The more you care about it, the harder it is to do. You are too emotionally involved. For example, it has to be perfect and since you feel like you can’t make it perfect right now, you put it off.</li>
+  <li>Get over the fantasy that you are great and your product has to be perfect. Ship it. Make mistakes. And learn.</li>
+  <li>Ship early. Example, ship when you only have 5 percent of the features complete. No one will know you didn’t ship the other 95 percent of features. (Note, the 5 percent must still be good and solve pains.)</li>
+</ul>
+
+<h2 id="other-points-and-thoughts-from-my-notes">Other Points and Thoughts From My Notes</h2>
+
+<p>“If you had to ship today then what choices would you make?”</p>
+
+<p>“You can’t ship a time tracking system without a timer or invoicing.” Sure you can. Once you solve a pain, ship. Other features can be added later. Another example, Early versions of <a href="https://letsfreckle.com">Freckle</a> shipped without a way to change your password. To change your password, you had to email support and have them change it for you.</p>
+
+<p><strong>Think about what can you ship this month? This week? Today?</strong></p>
+
+<p>When do you ship? When you kill one pain. Then kill another pain and ship. Rinse and repeat.</p>
+
+<h2 id="and-one-of-my-favorite-points">And One of My Favorite Points</h2>
+
+<p>Don’t get hung up on the long term destination, think of the short term destination to get it out the door in the near term. Note: You still want to have a long term goals, but don’t let them distract/delay from shipping today</p>
+
+<p>Example: When Alex started <a href="http://www.indyhall.org">Indy Hall</a>, he asked friends if they wanted to meet at the same time and same coffee shop each day. It cost him nothing and that was Indy Hall for the first year. Meeting daily at a coffee shop wasn’t his long term goal, but it was a start. (If you can’t find people to meet at the coffee shop, you’re not going to attract them to your co-working space that you are paying for.)</p>
+
+<p>Check out the video. Good stuff.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[You Don't Need Motivation. You Need Good Habits]]></title>
@@ -598,28 +645,6 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 </blockquote>
 
 <p>The quote come from her talk about <a href="https://unicornfree.com/2015/be-your-own-angel-a-revenue-model-for-slow-startups?inf_contact_key=33d23f3cc326dbb9432ca21551e5c05960ba9e460978b642f3bc69a5e6171317">being your own angel investor</a>.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Where I Blog These Days]]></title>
-    <link href="http://www.thecave.com/2015/05/19/where-i-blog-these-days/"/>
-    <published>2015-05-19T09:40:11-04:00</published>
-    <updated>2015-05-19T09:40:11-04:00</updated>
-    <id>http://www.thecave.com/2015/05/19/where-i-blog-these-days</id>
-    <content type="html"><![CDATA[<p>I’ve recently, and “recently” as in the last couple of years, cut back on the number of blog sites I have. I’m down to three sites now, and that seems manageable. The sites are:</p>
-
-<ul>
-  <li><a href="http://www.thecave.com/">thecave.com</a><br />
-  That’s this site. It’s my personal blog, and it’s where I post most often. I talk about everything from what’s going on with me personally to snowboarding to programming. The site is broken down into categories, and I have plans to publish an RSS feed for each category so readers can filter out topics they might consider noise.</li>
-  <li><a href="http://blog.whitepeaksoftware.com/">blog.whitepeaksoftware.com</a><br />
-  This is my company blog site. The focus of this site is to talk about the company and the products I sell. Granted I’m doing a horrible job at keeping up with the posts. That’s probably one of the many reasons my stuff doesn’t sell as well as it did a few years back.</li>
-  <li><a href="http://www.rowanturner.net/">rowanturner.net</a><br />
-  Yep, my son has his own website. But he has no interest in making posts here, so I do it for him. I usually post pictures and videos of Rowan and his friends off having fun. My mom might be the only person reading this site regularly, but that’s fine. I’ll keep posting because I like looking back on past articles and reliving fun moments with my kid.</li>
-</ul>
-
-<p>These sites each have RSS feeds, so you don’t have to remember to visit. And some day I’ll do a better job of mentioning when new posts are available on the various social networks for those who don’t want to subscribe to the feeds. </p>
 
 ]]></content>
   </entry>

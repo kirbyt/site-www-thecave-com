@@ -5,10 +5,56 @@
         <description>thecave | Ramblings From A Crotchety Old Man - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2015-08-31T17:31:00-04:00</lastBuildDate>
-        <pubDate>2015-08-31T17:31:00-04:00</pubDate>
+        <lastBuildDate>2015-08-31T21:10:07-04:00</lastBuildDate>
+        <pubDate>2015-08-31T21:10:07-04:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Kicking Procrastination In The Ass</title>
+                <description>&lt;p&gt;I attended a video cast thingie today - I think the kids call it a webinar - hosted by &lt;a href=&quot;https://twitter.com/amyhoy&quot;&gt;Amy Hoy&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/alexhillman&quot;&gt;Alex Hillman&lt;/a&gt; titled &lt;a href=&quot;https://www.crowdcast.io/e/procrastination&quot;&gt;Kick Procrastination’s Ass&lt;/a&gt;. It was really good, especially the first hour. If you have some spare time, I highly recommend watching it.&lt;/p&gt;
+
+&lt;p&gt;Some of the keys points for me included:&lt;/p&gt;
+
+&lt;h2 id=&quot;reasons-for-procrastinating&quot;&gt;Reasons for Procrastinating&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;(Motivation) Lack of motivation.&lt;/li&gt;
+  &lt;li&gt;(Destination) Not really defining a specific goal. Too vague in what you want to accomplish.&lt;/li&gt;
+  &lt;li&gt;(Implementation) Breaking things down into small tasks, but they will be vague if the goals are vague. You need to have structure, a schedule that you stick to to over come this.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;other-reason-for-procrastinating&quot;&gt;Other Reason for Procrastinating&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The more you care about it, the harder it is to do. You are too emotionally involved. For example, it has to be perfect and since you feel like you can’t make it perfect right now, you put it off.&lt;/li&gt;
+  &lt;li&gt;Get over the fantasy that you are great and your product has to be perfect. Ship it. Make mistakes. And learn.&lt;/li&gt;
+  &lt;li&gt;Ship early. Example, ship when you only have 5 percent of the features complete. No one will know you didn’t ship the other 95 percent of features. (Note, the 5 percent must still be good and solve pains.)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;other-points-and-thoughts-from-my-notes&quot;&gt;Other Points and Thoughts From My Notes&lt;/h2&gt;
+
+&lt;p&gt;“If you had to ship today then what choices would you make?”&lt;/p&gt;
+
+&lt;p&gt;“You can’t ship a time tracking system without a timer or invoicing.” Sure you can. Once you solve a pain, ship. Other features can be added later. Another example, Early versions of &lt;a href=&quot;https://letsfreckle.com&quot;&gt;Freckle&lt;/a&gt; shipped without a way to change your password. To change your password, you had to email support and have them change it for you.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Think about what can you ship this month? This week? Today?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;When do you ship? When you kill one pain. Then kill another pain and ship. Rinse and repeat.&lt;/p&gt;
+
+&lt;h2 id=&quot;and-one-of-my-favorite-points&quot;&gt;And One of My Favorite Points&lt;/h2&gt;
+
+&lt;p&gt;Don’t get hung up on the long term destination, think of the short term destination to get it out the door in the near term. Note: You still want to have a long term goals, but don’t let them distract/delay from shipping today&lt;/p&gt;
+
+&lt;p&gt;Example: When Alex started &lt;a href=&quot;http://www.indyhall.org&quot;&gt;Indy Hall&lt;/a&gt;, he asked friends if they wanted to meet at the same time and same coffee shop each day. It cost him nothing and that was Indy Hall for the first year. Meeting daily at a coffee shop wasn’t his long term goal, but it was a start. (If you can’t find people to meet at the coffee shop, you’re not going to attract them to your co-working space that you are paying for.)&lt;/p&gt;
+
+&lt;p&gt;Check out the video. Good stuff.&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2015/08/31/kicking-procrastination-in-the-ass/</link>
+                <guid>http://www.thecave.com/2015/08/31/kicking-procrastination-in-the-ass</guid>
+                <pubDate>2015-08-31T20:57:22-04:00</pubDate>
+        </item>
 
         <item>
                 <title>You Don't Need Motivation. You Need Good Habits</title>
@@ -578,27 +624,6 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
                 <link>http://www.thecave.com/2015/06/04/stuck-working-for-others/</link>
                 <guid>http://www.thecave.com/2015/06/04/stuck-working-for-others</guid>
                 <pubDate>2015-06-04T16:31:38-04:00</pubDate>
-        </item>
-
-        <item>
-                <title>Where I Blog These Days</title>
-                <description>&lt;p&gt;I’ve recently, and “recently” as in the last couple of years, cut back on the number of blog sites I have. I’m down to three sites now, and that seems manageable. The sites are:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.thecave.com/&quot;&gt;thecave.com&lt;/a&gt;&lt;br /&gt;
-  That’s this site. It’s my personal blog, and it’s where I post most often. I talk about everything from what’s going on with me personally to snowboarding to programming. The site is broken down into categories, and I have plans to publish an RSS feed for each category so readers can filter out topics they might consider noise.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://blog.whitepeaksoftware.com/&quot;&gt;blog.whitepeaksoftware.com&lt;/a&gt;&lt;br /&gt;
-  This is my company blog site. The focus of this site is to talk about the company and the products I sell. Granted I’m doing a horrible job at keeping up with the posts. That’s probably one of the many reasons my stuff doesn’t sell as well as it did a few years back.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.rowanturner.net/&quot;&gt;rowanturner.net&lt;/a&gt;&lt;br /&gt;
-  Yep, my son has his own website. But he has no interest in making posts here, so I do it for him. I usually post pictures and videos of Rowan and his friends off having fun. My mom might be the only person reading this site regularly, but that’s fine. I’ll keep posting because I like looking back on past articles and reliving fun moments with my kid.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;These sites each have RSS feeds, so you don’t have to remember to visit. And some day I’ll do a better job of mentioning when new posts are available on the various social networks for those who don’t want to subscribe to the feeds. &lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2015/05/19/where-i-blog-these-days/</link>
-                <guid>http://www.thecave.com/2015/05/19/where-i-blog-these-days</guid>
-                <pubDate>2015-05-19T09:40:11-04:00</pubDate>
         </item>
 
 

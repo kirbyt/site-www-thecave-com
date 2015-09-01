@@ -4,13 +4,59 @@
   <title><![CDATA[Category: work | thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/category/work/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-08-31T17:31:00-04:00</updated>
+  <updated>2015-08-31T21:10:07-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Kicking Procrastination In The Ass]]></title>
+    <link href="http://www.thecave.com/2015/08/31/kicking-procrastination-in-the-ass/"/>
+    <updated>2015-08-31T20:57:22-04:00</updated>
+    <id>http://www.thecave.com/2015/08/31/kicking-procrastination-in-the-ass</id>
+    <content type="html"><![CDATA[<p>I attended a video cast thingie today - I think the kids call it a webinar - hosted by <a href="https://twitter.com/amyhoy">Amy Hoy</a> and <a href="https://twitter.com/alexhillman">Alex Hillman</a> titled <a href="https://www.crowdcast.io/e/procrastination">Kick Procrastination’s Ass</a>. It was really good, especially the first hour. If you have some spare time, I highly recommend watching it.</p>
+
+<p>Some of the keys points for me included:</p>
+
+<h2 id="reasons-for-procrastinating">Reasons for Procrastinating</h2>
+
+<ul>
+  <li>(Motivation) Lack of motivation.</li>
+  <li>(Destination) Not really defining a specific goal. Too vague in what you want to accomplish.</li>
+  <li>(Implementation) Breaking things down into small tasks, but they will be vague if the goals are vague. You need to have structure, a schedule that you stick to to over come this.</li>
+</ul>
+
+<h3 id="other-reason-for-procrastinating">Other Reason for Procrastinating</h3>
+
+<ul>
+  <li>The more you care about it, the harder it is to do. You are too emotionally involved. For example, it has to be perfect and since you feel like you can’t make it perfect right now, you put it off.</li>
+  <li>Get over the fantasy that you are great and your product has to be perfect. Ship it. Make mistakes. And learn.</li>
+  <li>Ship early. Example, ship when you only have 5 percent of the features complete. No one will know you didn’t ship the other 95 percent of features. (Note, the 5 percent must still be good and solve pains.)</li>
+</ul>
+
+<h2 id="other-points-and-thoughts-from-my-notes">Other Points and Thoughts From My Notes</h2>
+
+<p>“If you had to ship today then what choices would you make?”</p>
+
+<p>“You can’t ship a time tracking system without a timer or invoicing.” Sure you can. Once you solve a pain, ship. Other features can be added later. Another example, Early versions of <a href="https://letsfreckle.com">Freckle</a> shipped without a way to change your password. To change your password, you had to email support and have them change it for you.</p>
+
+<p><strong>Think about what can you ship this month? This week? Today?</strong></p>
+
+<p>When do you ship? When you kill one pain. Then kill another pain and ship. Rinse and repeat.</p>
+
+<h2 id="and-one-of-my-favorite-points">And One of My Favorite Points</h2>
+
+<p>Don’t get hung up on the long term destination, think of the short term destination to get it out the door in the near term. Note: You still want to have a long term goals, but don’t let them distract/delay from shipping today</p>
+
+<p>Example: When Alex started <a href="http://www.indyhall.org">Indy Hall</a>, he asked friends if they wanted to meet at the same time and same coffee shop each day. It cost him nothing and that was Indy Hall for the first year. Meeting daily at a coffee shop wasn’t his long term goal, but it was a start. (If you can’t find people to meet at the coffee shop, you’re not going to attract them to your co-working space that you are paying for.)</p>
+
+<p>Check out the video. Good stuff.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[You Don't Need Motivation. You Need Good Habits]]></title>
@@ -158,61 +204,6 @@
   <ol>
     <li id="fn:1">
       <p>I’m not a fan of calling myself an entrepreneur because I don’t think of myself as one entrepreneur. But I am a business owner, and I have been for nearly 12 years, so I guess that makes me an entrepreneur. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Fear]]></title>
-    <link href="http://www.thecave.com/2015/07/02/fear/"/>
-    <updated>2015-07-02T06:48:32-04:00</updated>
-    <id>http://www.thecave.com/2015/07/02/fear</id>
-    <content type="html"><![CDATA[<p>Lately I’ve been struggling to release new things out to the public, things such as blog posts, open source code, a new website and service I want to offer, even updates to some of my apps. What’s worse is that a number of these things are done and are just sitting on my computer. For instance, I’ve been using an updated version of Cross Post for nearly two months that isn’t available in the App Store. </p>
-
-<p>So why haven’t I pulled the trigger on these things and released them to the public? Fear, that’s my answer. </p>
-
-<p>I’m letting fear get the best me recently. I fear what people might say or think of the work I’m going. I fear that friends will start looking down on me. I fear that I will end up looking like an idiot. The funny part is I don’t have a fear of failing. You learn from failure. But for some odd reason I have developed a fear what others, especially friends, will think. </p>
-
-<h2 id="out-of-character">Out of Character</h2>
-
-<p>This fear of what others will think is completely out of character for me. For most of my life I’ve had a “I don’t give a fuck what other think” attitude (and that’s exactly how I’ve always put it). I was the high school weirdo with dyed hair and strange clothes. I was the nonconformist who would occasionally wear a polo shirt just to throw off my small circle of friends. In college I had a my racquetball racquet strung with bright hot pink strings, which led to some heated confrontations with others<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. The point here is I didn’t care what others thought.</p>
-
-<p>I remember an evening years ago when my dad refused to go out to dinner with me because of the way I was dressed. He said I embarrassed him. I argued that he was being ridiculous because 1) it wasn’t him that was dressed up like a Boy George reject and if anyone should be embarrassed it should be me (though I wasn’t), and 2) if I don’t care what people think about me, then why should he care. If anything people will feel sorry for him for having to sit with me at a restaurant. My argument didn’t change his mind and our dinner plans were canceled.</p>
-
-<p>So if this fear is out of character for me, then where is it coming from?</p>
-
-<h2 id="where-is-it-coming-from">Where Is It Coming From</h2>
-
-<p>I know my fear is irrational when I think about it. But it’s still there and I can’t seem to shake it. Recently I’ve been putting a lot of thought into where this fear is coming from, and I think I might know. </p>
-
-<p>I’ve been much more isolated since moving to Vermont. I don’t have the social circle of independent software developers and business owners around me like I did when I lived in New York City and the Boston area. Most of my social interactions these days involved talking about snowboarding and hiking, not on product releases, marketing, and growing a business. </p>
-
-<p>Before moving to Vermont I attended a number of social gatherings where I could talk about and share my ideas. These groups were great and always provided excellent feedback. I always listened to what others had to say, but I didn’t always follow their advice. For example, I released a CSV editor for Windows years ago and made a good money from it for a number of years even though all my software dev friends said not to do it. Still, talking about the ideas with other on a regular bases always felt good, but I no longer have a local circle of friends and peers like I did before. And I think that is why I’ve developed this fear inside me.</p>
-
-<p>Even though I didn’t care, for most of my life, what others thoughts, hearing what others had to say, both good or bad, always helped me. But in my recent isolation I rarely, if ever, get feedback from others. Hearing “you suck” motivated me to do better. Hearing “that’s awesome” in encouraged me to do more. But hearing nothing, no feedback at all, for long periods of time has caused this fear to grow inside of me. </p>
-
-<h2 id="get-over-the-fear">Get Over The Fear</h2>
-
-<p>I know my fears are irrational, but I can’t seem to shake them. So I’m trying a few new things in my attempts to get over the fear. </p>
-
-<p>I’m trying to build a small community here in Stowe (though I think about giving up each month). A few folks do join me each month, but the group is not the same as the ones I participated in before coming to Vermont. Like the gatherings I attended before, this new group is made up of mostly software developers. But what is missing for me are the independents, the business owners, the solopreneur that were common in the circles I had when I lived in NYC and Boston.</p>
-
-<p>I’m also participating in a bi-weekly mastermind group. This is going well, and in fact, it was on a recent mastermind call that I realized I’ve developed this irrational fear. My fear came up again last night in an email exchange with a friend who is doing a far better job of shipping than me. Talking about my fear with others as well as what I’m working on and my goals is starting to help me return to my old self, but I need to do more.</p>
-
-<p>Another thing I’m interested in trying but I haven’t started yet is working with an accountability partner. The concept is simple. You and your partner help each other keep weekly commitments. Once a week you and your partner chat about the previous week’s accomplishments and the current week’s goals. When goals are not met, you analyze and talk through what happened. Having someone hold me accountable each week will help get me back into the habit of releasing things, which in turn will help me get over my fears.</p>
-
-<p>One other thing I am doing in my attempts to shake the fear is to leave my quiet “cave” here in Stowe and get back into interacting in person with peers. To get things started, I agreed last week to speak at a small conference in October (more on this later). Just knowing I have this speaking event coming up should help reset my brain back to where it once was, or so I hope.</p>
-
-<p>Are you having or had the similar fears? What sort of things are your doing to get over it? Fire off an email to me or send me a tweet and let me know.</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>To this day I still don’t understand why people get so worked up over something so silly such as the string color of a racquetball racquet or the appearance of others. Just because it’s not something you would do, wear, or whatever doesn’t mean you need to hate on the other person. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
