@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Wish I Could Help But It'S Not My App"
+title: "Wish I Could Help But It's Not My App"
 date: 2015-09-01 15:37:18 -0400
 categories: 
     - ios
