@@ -5,12 +5,12 @@
     <description>thecave.com is the blog site for Kirby Turner, an independent software developer for Mac and iOS.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 01 Sep 2015 15:41:53 -0400</pubDate>
-    <lastBuildDate>Tue, 01 Sep 2015 15:41:53 -0400</lastBuildDate>
+    <pubDate>Tue, 01 Sep 2015 15:43:21 -0400</pubDate>
+    <lastBuildDate>Tue, 01 Sep 2015 15:43:21 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>Wish I Could Help But It&#39;S Not My App</title>
+        <title>Wish I Could Help But It&#39;s Not My App</title>
         <description>&lt;p&gt;A well known global company is using some open source code I wrote in one of their apps (yay!). Like a good company, they included my name and licensing information in app’s about screen. Now I’m getting emails from one of the app’s users seeking help with the app. The person thinks I wrote the app because my name appears in the licensing section. &lt;/p&gt;
 
 &lt;p&gt;Definitely a first for me.&lt;/p&gt;
