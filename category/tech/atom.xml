@@ -4,13 +4,24 @@
   <title><![CDATA[Category: tech | thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/category/tech/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-08-31T21:10:07-04:00</updated>
+  <updated>2015-09-01T15:41:53-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Wish I Could Help But It'S Not My App]]></title>
+    <link href="http://www.thecave.com/2015/09/01/wish-i-could-help-but-its-not-my-app/"/>
+    <updated>2015-09-01T15:37:18-04:00</updated>
+    <id>http://www.thecave.com/2015/09/01/wish-i-could-help-but-its-not-my-app</id>
+    <content type="html"><![CDATA[<p>A well known global company is using some open source code I wrote in one of their apps (yay!). Like a good company, they included my name and licensing information in app’s about screen. Now I’m getting emails from one of the app’s users seeking help with the app. The person thinks I wrote the app because my name appears in the licensing section. </p>
+
+<p>Definitely a first for me.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Boston Area Mac And iOS Dev Community Is Awesome]]></title>
@@ -96,20 +107,6 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 <p>I do, however, have one complaint about Cloud Drive. The Cloud Drive app for iOS only shows photos and videos. I want access to all the files stored on my Cloud Drive. Hopefully Amazon will change this soon, or maybe it’s an opportunity for me to write a new app. There is, after all, an API for Cloud Drive.</p>
 
 <p>Amazon Cloud Drive is the solution I’ve been looking for to archive my old data to the cloud. I’ll continue using external hard drives, Dropbox, Backblaze and such for backups, but my days with SmugMugs might be numbered. Still, I’m excited to finally have an affordable cloud storage solution for my old data.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[New kirbyturner.com Site]]></title>
-    <link href="http://www.thecave.com/2015/01/15/new-kirbyturnercom-site/"/>
-    <updated>2015-01-15T16:20:35-05:00</updated>
-    <id>http://www.thecave.com/2015/01/15/new-kirbyturnercom-site</id>
-    <content type="html"><![CDATA[<p>I have owned the vanity domain name <a href="http://www.kirbyturner.com">kirbyturner.com</a> for a long time, but I didn’t anything with it after buying it. That changed back when I was writing <a href="http://www.learningipadprogramming.com">Learning iPad Programming</a>. My publisher asked that I setup a website that talks about me, so I finally put kirbyturner.com to use. Unfortunately I never liked the look of the site. I used a bland template to create the website quickly. The site was ugly, but it served its purpose. Then Justin Williams created a new “professional web site” for <a href="http://www.justinw.me">himself</a>.</p>
-
-<p>My first thought after seeing Justin’s new site was, “Wow! That looks really nice.” My second thought was, “Man my site sucks donkey balls.” So I spent the last couple of days working on a new look for <a href="http://www.kirbyturner.com">kirbyturner.com</a>. I just finished the site, and I can say with 100% certainty that the new site looks much, much better than my <a href="https://www.flickr.com/photos/kirbyturner/16288802435/">old site</a>. Thanks for the inspiration, Justin.</p>
-
-<p>Take a look at the new and improved <a href="http://www.kirbyturner.com">kirbyturner.com</a>, and let me know what you think.</p>
 
 ]]></content>
   </entry>

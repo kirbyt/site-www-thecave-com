@@ -5,10 +5,21 @@
         <description>thecave | Ramblings From A Crotchety Old Man - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2015-08-31T21:10:07-04:00</lastBuildDate>
-        <pubDate>2015-08-31T21:10:07-04:00</pubDate>
+        <lastBuildDate>2015-09-01T15:41:53-04:00</lastBuildDate>
+        <pubDate>2015-09-01T15:41:53-04:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Wish I Could Help But It'S Not My App</title>
+                <description>&lt;p&gt;A well known global company is using some open source code I wrote in one of their apps (yay!). Like a good company, they included my name and licensing information in app’s about screen. Now I’m getting emails from one of the app’s users seeking help with the app. The person thinks I wrote the app because my name appears in the licensing section. &lt;/p&gt;
+
+&lt;p&gt;Definitely a first for me.&lt;/p&gt;
+</description>
+                <link>http://www.thecave.com/2015/09/01/wish-i-could-help-but-its-not-my-app/</link>
+                <guid>http://www.thecave.com/2015/09/01/wish-i-could-help-but-its-not-my-app</guid>
+                <pubDate>2015-09-01T15:37:18-04:00</pubDate>
+        </item>
 
         <item>
                 <title>Kicking Procrastination In The Ass</title>
@@ -608,22 +619,6 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
                 <link>http://www.thecave.com/2015/06/08/its-better-to-try-an-idea/</link>
                 <guid>http://www.thecave.com/2015/06/08/its-better-to-try-an-idea</guid>
                 <pubDate>2015-06-08T08:54:23-04:00</pubDate>
-        </item>
-
-        <item>
-                <title>Stuck Working For Others</title>
-                <description>&lt;p&gt;I love this quote from Amy Hoy:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;If you only do what pays immediately, you will be stuck working for other people. Or you will be stuck doing what other people want you to do…forever.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The quote come from her talk about &lt;a href=&quot;https://unicornfree.com/2015/be-your-own-angel-a-revenue-model-for-slow-startups?inf_contact_key=33d23f3cc326dbb9432ca21551e5c05960ba9e460978b642f3bc69a5e6171317&quot;&gt;being your own angel investor&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2015/06/04/stuck-working-for-others/</link>
-                <guid>http://www.thecave.com/2015/06/04/stuck-working-for-others</guid>
-                <pubDate>2015-06-04T16:31:38-04:00</pubDate>
         </item>
 
 

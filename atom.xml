@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-08-31T21:10:07-04:00</updated>
+  <updated>2015-09-01T15:41:53-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,18 @@
   </author>
   <rights>Copyright (c) 2002-2015 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[Wish I Could Help But It'S Not My App]]></title>
+    <link href="http://www.thecave.com/2015/09/01/wish-i-could-help-but-its-not-my-app/"/>
+    <published>2015-09-01T15:37:18-04:00</published>
+    <updated>2015-09-01T15:37:18-04:00</updated>
+    <id>http://www.thecave.com/2015/09/01/wish-i-could-help-but-its-not-my-app</id>
+    <content type="html"><![CDATA[<p>A well known global company is using some open source code I wrote in one of their apps (yay!). Like a good company, they included my name and licensing information in app’s about screen. Now I’m getting emails from one of the app’s users seeking help with the app. The person thinks I wrote the app because my name appears in the licensing section. </p>
+
+<p>Definitely a first for me.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Kicking Procrastination In The Ass]]></title>
@@ -628,23 +640,6 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 <blockquote>
   <p>It’s better to try an idea and see if it works than worry too much about its potential and never ship. - <a href="https://twitter.com/_davidsmith">@_davidsmith</a></p>
 </blockquote>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Stuck Working For Others]]></title>
-    <link href="http://www.thecave.com/2015/06/04/stuck-working-for-others/"/>
-    <published>2015-06-04T16:31:38-04:00</published>
-    <updated>2015-06-04T16:31:38-04:00</updated>
-    <id>http://www.thecave.com/2015/06/04/stuck-working-for-others</id>
-    <content type="html"><![CDATA[<p>I love this quote from Amy Hoy:</p>
-
-<blockquote>
-  <p>If you only do what pays immediately, you will be stuck working for other people. Or you will be stuck doing what other people want you to do…forever.</p>
-</blockquote>
-
-<p>The quote come from her talk about <a href="https://unicornfree.com/2015/be-your-own-angel-a-revenue-model-for-slow-startups?inf_contact_key=33d23f3cc326dbb9432ca21551e5c05960ba9e460978b642f3bc69a5e6171317">being your own angel investor</a>.</p>
 
 ]]></content>
   </entry>
