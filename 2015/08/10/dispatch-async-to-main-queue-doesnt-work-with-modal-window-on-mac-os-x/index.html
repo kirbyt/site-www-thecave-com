@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Kirby Turner">
-    <meta name="description" content="I’ve been working on a Mac app lately, and while some things are similar to iOS, something are definitely different. One thing that is different are modal windows and run loops. 
+    <meta name="description" content="I’ve been working on a Mac app lately, and while some things are similar to iOS, something are definitely different. One thing that is different are modal windows and run loops.
 
 ">
 
@@ -108,11 +108,11 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-				<p>I’ve been working on a Mac app lately, and while some things are similar to iOS, something are definitely different. One thing that is different are modal windows and run loops. </p>
+				<p>I’ve been working on a Mac app lately, and while some things are similar to iOS, something are definitely different. One thing that is different are modal windows and run loops.</p>
 
 <p>When you display a modal view on iOS you don’t get a new run loop for the view, but when you display a modal window on OS X a new run loop is created for the window. This is not necessarily a big deal unless you have a habit of using <a href="https://developer.apple.com/library/ios/documentation/Performance/Reference/GCD_libdispatch_Ref/">GCD</a> to dispatch work between background and main queues. Let me give a more specific example.</p>
 
-<p>I display a modal view, or in the cause of OS X, a modal window. The current view is managed by a view controller. User input is captured, then a URL request is sent off to a server on the Internet. The view controller is then notified when the URL request completes. </p>
+<p>I display a modal view, or in the cause of OS X, a modal window. The current view is managed by a view controller. User input is captured, then a URL request is sent off to a server on the Internet. The view controller is then notified when the URL request completes.</p>
 
 <p>The typical pattern I follow for sending the request to the server and getting notified when done is to call a method that will dispatch the URL request to a background queue then dispatch to the main queue to call a block when complete. It looks something like this:</p>
 
@@ -133,7 +133,7 @@
 }
 </code></pre>
 
-<p>This is a simplified view of the pattern I often use. Call a method with a callback block. Perform some work on a background thread. When done, call the callback block on the main thread. </p>
+<p>This is a simplified view of the pattern I often use. Call a method with a callback block. Perform some work on a background thread. When done, call the callback block on the main thread.</p>
 
 <p>This pattern has served me well on iOS, but it has issues on Mac OS X when displaying a modal window.</p>
 
@@ -223,6 +223,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/" title="My Upcoming Share Extension Talk At 360idev-Min">My Upcoming Share Extension Talk At 360idev-Min</a></li>
+                
                 <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/" title="Wish I Could Help But It's Not My App">Wish I Could Help But It's Not My App</a></li>
                 
                 <li><a href="/2015/08/31/kicking-procrastination-in-the-ass/" title="Kicking Procrastination In The Ass">Kicking Procrastination In The Ass</a></li>
@@ -230,8 +232,6 @@
                 <li><a href="/2015/08/31/you-dont-need-motivation-you-need-good-habits/" title="You Don't Need Motivation. You Need Good Habits">You Don't Need Motivation. You Need Good Habits</a></li>
                 
                 <li><a href="/2015/08/18/retiring-my-csv-editor/" title="Retiring My CSV Editor">Retiring My CSV Editor</a></li>
-                
-                <li><a href="/2015/08/17/i-wish-there-was-something-better-than-meetupcom/" title="I Wish There Was Something Better Than Meetup.Com">I Wish There Was Something Better Than Meetup.Com</a></li>
                 
                 </ul>                
             </div>

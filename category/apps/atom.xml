@@ -4,7 +4,7 @@
   <title><![CDATA[Category: apps | thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/category/apps/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-09-01T15:43:21-04:00</updated>
+  <updated>2015-09-07T11:44:05-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -17,7 +17,7 @@
     <link href="http://www.thecave.com/2015/08/18/retiring-my-csv-editor/"/>
     <updated>2015-08-18T11:23:09-04:00</updated>
     <id>http://www.thecave.com/2015/08/18/retiring-my-csv-editor</id>
-    <content type="html"><![CDATA[<p>Today I did something that I’ve been saying I will do for a long time. I retired my CSV editor, <a href="http://blog.whitepeaksoftware.com/2015/08/18/killinks-retirement/">Killink</a>. </p>
+    <content type="html"><![CDATA[<p>Today I did something that I’ve been saying I will do for a long time. I retired my CSV editor, <a href="http://blog.whitepeaksoftware.com/2015/08/18/killinks-retirement/">Killink</a>.</p>
 
 <p>The first release of Killink CSV Editor was back on March 22, 2007, and over the years it has done well despite the fact that I haven’t been actively working on the app or marketing it. Killink had great potential, especially if I had followed the business advice from those smarter than me to focus on the enterprise, but I honestly lost interest in the editor after I started writing apps for Mac and iOS.</p>
 
@@ -25,7 +25,7 @@
 
 <p>I always found the customers of Killink CSV Editor fascinating. While we developer types view CSV as antiquated technology, these customers work with CSV files regularly. And most are business users from large, well known companies. We developer types often times forget that people around the world are using old technologies like CSV daily to do their job, and they too would like a better way to work with old tech like CSV files. Killink CSV Editor was a better way for many for a number of years.</p>
 
-<p>It saddens me to retire Killink CSV Editor, but at the same time I feel like a burden has been lifted off my shoulders. The app is rock solid and support is minimum, but I have felt guilty for a long time about selling a software product that I know isn’t actively being worked on. And with the recent Windows 10 release, I finally decided now is the time to retire my CSV editor. </p>
+<p>It saddens me to retire Killink CSV Editor, but at the same time I feel like a burden has been lifted off my shoulders. The app is rock solid and support is minimum, but I have felt guilty for a long time about selling a software product that I know isn’t actively being worked on. And with the recent Windows 10 release, I finally decided now is the time to retire my CSV editor.</p>
 
 <p>I’ve heard many good things about Windows 10. But if I keep selling Killink to Windows users I will have no choice but to install it some day. And honestly, I don’t want to do that. I have zero interest in Windows these days.</p>
 
@@ -65,11 +65,11 @@
 
 <p>It’s been nearly two years since I was last responsible for a meetup, but that changes tonight with the first of many Après Code events.</p>
 
-<p>I’ve been thinking about hosting a developer meetup in Stowe since I moved here, but I wasn’t initially sure there would be enough interest. However, in my short time here I’ve met other software developers living in the area. Some work for companies here in town while others work for shops in and around Burlington. And the number of developers in our small community is growing with companies like <a href="http://corp.inntopia.com/careers/">Inntopia hiring</a> more developers. Even though I knew there were developers living and working in the area, I wasn’t ready to commit to a monthly meetup just yet. </p>
+<p>I’ve been thinking about hosting a developer meetup in Stowe since I moved here, but I wasn’t initially sure there would be enough interest. However, in my short time here I’ve met other software developers living in the area. Some work for companies here in town while others work for shops in and around Burlington. And the number of developers in our small community is growing with companies like <a href="http://corp.inntopia.com/careers/">Inntopia hiring</a> more developers. Even though I knew there were developers living and working in the area, I wasn’t ready to commit to a monthly meetup just yet.</p>
 
-<p>That changed two days before I left for Whistler. I was talking with a local dev friend, Maya Ropelip<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>, about writing apps for iOS. During our chat I mentioned my idea for a local meetup. He got excited about the idea and thought the timing was right for hosting a software developer gathering in Stowe. He also agreed to be the co-host in case I need to skip a meetup. So that night I grabbed the domain name, setup a <a href="http://www.apres-code.com/">website</a>, and created a new group on <a href="http://www.meetup.com/Apres-Code/">meetup.com</a>. </p>
+<p>That changed two days before I left for Whistler. I was talking with a local dev friend, Maya Ropelip<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>, about writing apps for iOS. During our chat I mentioned my idea for a local meetup. He got excited about the idea and thought the timing was right for hosting a software developer gathering in Stowe. He also agreed to be the co-host in case I need to skip a meetup. So that night I grabbed the domain name, setup a <a href="http://www.apres-code.com/">website</a>, and created a new group on <a href="http://www.meetup.com/Apres-Code/">meetup.com</a>.</p>
 
-<p>Starting a new group just 48 hours before I leave the country for a week and a half wasn’t the smartest thing for me to do, but I did it anyways. And now that I’m back home, I’m scrambling to get the word out about tonight’s inaugural Après Code. So without further ado, I’m happy to officially announce <a href="http://www.apres-code.com/">Après Code</a>. </p>
+<p>Starting a new group just 48 hours before I leave the country for a week and a half wasn’t the smartest thing for me to do, but I did it anyways. And now that I’m back home, I’m scrambling to get the word out about tonight’s inaugural Après Code. So without further ado, I’m happy to officially announce <a href="http://www.apres-code.com/">Après Code</a>.</p>
 
 <h1 id="what-is-aprs-code">What Is Après Code</h1>
 

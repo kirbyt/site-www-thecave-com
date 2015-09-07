@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-09-01T15:43:21-04:00</updated>
+  <updated>2015-09-07T11:44:05-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -14,12 +14,27 @@
   
   
   <entry>
+    <title type="html"><![CDATA[My Upcoming Share Extension Talk At 360idev-Min]]></title>
+    <link href="http://www.thecave.com/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/"/>
+    <published>2015-09-07T11:37:39-04:00</published>
+    <updated>2015-09-07T11:37:39-04:00</updated>
+    <id>http://www.thecave.com/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min</id>
+    <content type="html"><![CDATA[<p>I’m excited to be one of the speakers at the upcoming <a href="http://min.360idev.com">360idev-min</a> conference in Greenville, SC. In my talk I’ll share the things you need to know about when writing a share extension for your iOS app.</p>
+
+<p>If you plan to attend <a href="http://min.360idev.com">360idev-min</a>, then use the coupon code <strong>SpeakerFriend</strong> to save $100 when purchasing your ticket.</p>
+
+<p>And let me know if you are attending so we can meet up in person.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Wish I Could Help But It's Not My App]]></title>
     <link href="http://www.thecave.com/2015/09/01/wish-i-could-help-but-its-not-my-app/"/>
     <published>2015-09-01T15:37:18-04:00</published>
     <updated>2015-09-01T15:37:18-04:00</updated>
     <id>http://www.thecave.com/2015/09/01/wish-i-could-help-but-its-not-my-app</id>
-    <content type="html"><![CDATA[<p>A well known global company is using some open source code I wrote in one of their apps (yay!). Like a good company, they included my name and licensing information in app’s about screen. Now I’m getting emails from one of the app’s users seeking help with the app. The person thinks I wrote the app because my name appears in the licensing section. </p>
+    <content type="html"><![CDATA[<p>A well known global company is using some open source code I wrote in one of their apps (yay!). Like a good company, they included my name and licensing information in app’s about screen. Now I’m getting emails from one of the app’s users seeking help with the app. The person thinks I wrote the app because my name appears in the licensing section.</p>
 
 <p>Definitely a first for me.</p>
 ]]></content>
@@ -82,7 +97,7 @@
 
 <p>To paraphrase Amy, you don’t let your kids or pets starve just because you’re not motivated to feed them. You do it anyways. And that exactly what you need to do when starting or running your business, creating a new product, or doing anything that matters to you. You just need to do it even when your not motivated to do it.</p>
 
-<p>I think back to the time when I was writing the first edition of <a href="http://www.learningipadprogramming.com">Learning iPad Programming</a>. I was struggling to stay motivated, and I would go long periods of time (days, weeks, months) without writing a word. I read anything and everything I could find on how to stay motivated, but those tips didn’t help me. </p>
+<p>I think back to the time when I was writing the first edition of <a href="http://www.learningipadprogramming.com">Learning iPad Programming</a>. I was struggling to stay motivated, and I would go long periods of time (days, weeks, months) without writing a word. I read anything and everything I could find on how to stay motivated, but those tips didn’t help me.</p>
 
 <p>What helped me was structuring my day so that I worked on my book at least an hour each day. I started work on the book at the same time every day, which was 9 am. Some days I only worked on it for an hour, other days I would work on it all day. It depended on how I felt. But I always worked on it for at least one hour starting at 9 am every day even when I wasn’t motivated to work on it.</p>
 
@@ -95,7 +110,7 @@
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>Another habit I developed while writing the second edition of my book, and one I still use today, is to listen to my <a href="https://open.spotify.com/user/kirbyt/playlist/6QUgiw9WPf8qXdgnrdXGvZ">Music to Write To</a> playlist on Spotify.  <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>Another habit I developed while writing the second edition of my book, and one I still use today, is to listen to my <a href="https://open.spotify.com/user/kirbyt/playlist/6QUgiw9WPf8qXdgnrdXGvZ">Music to Write To</a> playlist on Spotify. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -108,7 +123,7 @@
     <published>2015-08-18T11:23:09-04:00</published>
     <updated>2015-08-18T11:23:09-04:00</updated>
     <id>http://www.thecave.com/2015/08/18/retiring-my-csv-editor</id>
-    <content type="html"><![CDATA[<p>Today I did something that I’ve been saying I will do for a long time. I retired my CSV editor, <a href="http://blog.whitepeaksoftware.com/2015/08/18/killinks-retirement/">Killink</a>. </p>
+    <content type="html"><![CDATA[<p>Today I did something that I’ve been saying I will do for a long time. I retired my CSV editor, <a href="http://blog.whitepeaksoftware.com/2015/08/18/killinks-retirement/">Killink</a>.</p>
 
 <p>The first release of Killink CSV Editor was back on March 22, 2007, and over the years it has done well despite the fact that I haven’t been actively working on the app or marketing it. Killink had great potential, especially if I had followed the business advice from those smarter than me to focus on the enterprise, but I honestly lost interest in the editor after I started writing apps for Mac and iOS.</p>
 
@@ -116,7 +131,7 @@
 
 <p>I always found the customers of Killink CSV Editor fascinating. While we developer types view CSV as antiquated technology, these customers work with CSV files regularly. And most are business users from large, well known companies. We developer types often times forget that people around the world are using old technologies like CSV daily to do their job, and they too would like a better way to work with old tech like CSV files. Killink CSV Editor was a better way for many for a number of years.</p>
 
-<p>It saddens me to retire Killink CSV Editor, but at the same time I feel like a burden has been lifted off my shoulders. The app is rock solid and support is minimum, but I have felt guilty for a long time about selling a software product that I know isn’t actively being worked on. And with the recent Windows 10 release, I finally decided now is the time to retire my CSV editor. </p>
+<p>It saddens me to retire Killink CSV Editor, but at the same time I feel like a burden has been lifted off my shoulders. The app is rock solid and support is minimum, but I have felt guilty for a long time about selling a software product that I know isn’t actively being worked on. And with the recent Windows 10 release, I finally decided now is the time to retire my CSV editor.</p>
 
 <p>I’ve heard many good things about Windows 10. But if I keep selling Killink to Windows users I will have no choice but to install it some day. And honestly, I don’t want to do that. I have zero interest in Windows these days.</p>
 
@@ -137,21 +152,21 @@
     <id>http://www.thecave.com/2015/08/17/i-wish-there-was-something-better-than-meetupcom</id>
     <content type="html"><![CDATA[<p>I’ve been a Meetup.com subscriber for years, but I hate using them. Their website isn’t very user-friendly, and I often times find their messages to be misleading and or confusing. For example during the transition of the <a href="http://www.nshappyhour.org">NSHappyHour</a> meetup, which had over 250 members, I tried to disable the account. Turns out that is not an option, or at least it wasn’t at the time. I learned that the account had been deleted when I went to re-enable the account a few days later. The only option was to start a new account. This meant we lost the 250+ members that has joined over the years, and we had no way of reaching out to those members to ask them to join the new meetup.</p>
 
-<p>After that experience I decided I would not use Meetup.com again. But earlier this year I decided to start a new group, <a href="http://www.apres-code.com">Après Code</a>, and the best way to get the word out was to start another Meetup.com meet up. Meetup did help get the word out and people have been attending the gathering each month. But I still haven’t fully leveraged Meetup.com because the web interface is still just as confusing and crappy as ever. </p>
+<p>After that experience I decided I would not use Meetup.com again. But earlier this year I decided to start a new group, <a href="http://www.apres-code.com">Après Code</a>, and the best way to get the word out was to start another Meetup.com meet up. Meetup did help get the word out and people have been attending the gathering each month. But I still haven’t fully leveraged Meetup.com because the web interface is still just as confusing and crappy as ever.</p>
 
 <p>Today I received yet another confusing, and misleading, message from Meetup.com that will cost a member $10, and I’m once again regretting my decision to use Meetup.com.</p>
 
-<p>Apparently there is an option with Meetup to allow members to send a contribution. I thought this option was turned off, and according to my account settings contributions were not enabled. Yet, a member was still able to send a $10 contribution. I decided not to accept the contribution because it just seems weird to me to have someone spend me money for this meet up group. </p>
+<p>Apparently there is an option with Meetup to allow members to send a contribution. I thought this option was turned off, and according to my account settings contributions were not enabled. Yet, a member was still able to send a $10 contribution. I decided not to accept the contribution because it just seems weird to me to have someone spend me money for this meet up group.</p>
 
 <p>I changed my mind this morning when I received the misleading email reminding me of the contribution. The Meetup email said, “You can choose to use it toward your Organizer Subscription.” My bi-annual subscription is due in a few days and I thought, sure, why not apply the $10 to the subscription amount. Turns out it’s not that simple.</p>
 
-<p>With a single click of the mouse button, I started the process of accepting the contribution, but accepting the contribution means setting up a new account with some service named WePay and linking my bank account to WePay. This is not something I’m interested in doing. I know nothing about WePay. Not only that, WePay is taking $1.50 from the $10 contribution as a processing fee. That’s 15% of the contribution, which I find ridiculous. </p>
+<p>With a single click of the mouse button, I started the process of accepting the contribution, but accepting the contribution means setting up a new account with some service named WePay and linking my bank account to WePay. This is not something I’m interested in doing. I know nothing about WePay. Not only that, WePay is taking $1.50 from the $10 contribution as a processing fee. That’s 15% of the contribution, which I find ridiculous.</p>
 
 <p>Why can’t Meetup take the contribution and apply it directly to the Organizer Subscription? It seems like a simple enough task. After all, Meetup has the ability to process online credit card payments. And in doing this, members like me would not need to sign up for yet another service, link a bank account to a service they know nothing about, and the full contribution amount can be applied instead of only 85%.</p>
 
 <p>So now I’m having to waste time contacting both Meetup and WePay requesting the member be refunded his contribution because Meetup misled me. And with my bi-annual subscription renewal coming up in a few days, I’m once agree debating whether I should continue using Meetup.com or not. I’m leaning towards not renewing, but I know if I don’t then they will delete the account and the members will be lost forever if I decide to renew later. And if I let the account expire before this contribution mess is resolved, the member who was kind enough to send the contribution will likely be out $10 and WePay will have an extra $10.</p>
 
-<p>Regardless of whether or not I renew for another 6 months or not, I will not ever use Meetup.com again for any other group in the future. The subscription is not worth the hassle. </p>
+<p>Regardless of whether or not I renew for another 6 months or not, I will not ever use Meetup.com again for any other group in the future. The subscription is not worth the hassle.</p>
 
 ]]></content>
   </entry>
@@ -162,7 +177,7 @@
     <published>2015-08-15T09:46:04-04:00</published>
     <updated>2015-08-15T09:46:04-04:00</updated>
     <id>http://www.thecave.com/2015/08/15/two-years-ago-today</id>
-    <content type="html"><![CDATA[<p>We moved to Stowe two years ago today. It seems like we’ve been here a lot longer, but in a good way. </p>
+    <content type="html"><![CDATA[<p>We moved to Stowe two years ago today. It seems like we’ve been here a lot longer, but in a good way.</p>
 ]]></content>
   </entry>
   
@@ -176,17 +191,17 @@
 
 <p>Today I’m happy to announce <a href="https://www.peakappcare.com">Peak App Care</a>. Peak App Care is a monthly subscription service for maintaining your iOS apps. What do I mean by that? Simply put, I monitor your app for crashes and fix them as quickly as possible. Not only that, I also perform small jobs such as bug fixes and enhancements to your app at your request, and I even manage the App Store for you, from updating screenshots to submitting new builds on your behalf.</p>
 
-<p>What I have found is that many apps available today in the App Store are published by companies with zero iOS developers on staff. Those companies, instead, rely on freelancers and software shops to build their apps for them. The problem, however, is that often times there’s no plans to keep the app up to date after the initial release. </p>
+<p>What I have found is that many apps available today in the App Store are published by companies with zero iOS developers on staff. Those companies, instead, rely on freelancers and software shops to build their apps for them. The problem, however, is that often times there’s no plans to keep the app up to date after the initial release.</p>
 
-<p>What happens when the app starts crashing or customers start reporting bugs? What happens when Apple releases a new version of iOS or a new device? </p>
+<p>What happens when the app starts crashing or customers start reporting bugs? What happens when Apple releases a new version of iOS or a new device?</p>
 
-<p>Often times these companies must scramble to find an iOS developer to help out. If they are lucky, the original developer is still available but chances are good the developer is currently working on something else and isn’t available for days, weeks, or even months. </p>
+<p>Often times these companies must scramble to find an iOS developer to help out. If they are lucky, the original developer is still available but chances are good the developer is currently working on something else and isn’t available for days, weeks, or even months.</p>
 
-<p>With Peak App Care I become your in-house iOS developer responsible for the upkeep of your mobile app. I watch for crashes and fix them as they are reported. But I go beyond that. I will work with you to ensure your app remains up to date with the latest changes coming out of Cupertino. A good example of this is happening right now. </p>
+<p>With Peak App Care I become your in-house iOS developer responsible for the upkeep of your mobile app. I watch for crashes and fix them as they are reported. But I go beyond that. I will work with you to ensure your app remains up to date with the latest changes coming out of Cupertino. A good example of this is happening right now.</p>
 
-<p>iOS 9 is in beta and every app publisher should be testing their app on this new iOS version. Not only that, the app should be updated to cleanly compile against the iOS 9 SDK. This means replacing deprecated code. But a company with no staffed iOS developer is often times unaware of the need to perform these types of tasks. Or they choose to ignore these tasks. After all, the app is running fine right now, so why wouldn’t it run fine when the new OS comes out. </p>
+<p>iOS 9 is in beta and every app publisher should be testing their app on this new iOS version. Not only that, the app should be updated to cleanly compile against the iOS 9 SDK. This means replacing deprecated code. But a company with no staffed iOS developer is often times unaware of the need to perform these types of tasks. Or they choose to ignore these tasks. After all, the app is running fine right now, so why wouldn’t it run fine when the new OS comes out.</p>
 
-<p>Sometimes it’s okay to ignore changes coming from Apple, but sometimes the changes are too big to ignore. The iPhone 6 Plus is one example. Customers can quickly tell if an iPhone app doesn’t support the larger display found on the 6 Plus, and the only way to take full advantage of the larger display is to update the app. </p>
+<p>Sometimes it’s okay to ignore changes coming from Apple, but sometimes the changes are too big to ignore. The iPhone 6 Plus is one example. Customers can quickly tell if an iPhone app doesn’t support the larger display found on the 6 Plus, and the only way to take full advantage of the larger display is to update the app.</p>
 
 <p>This is one area where Peak App Care helps app publishers. Making changes to your app to support the latest iOS release or new device is covered with Peak App Care.</p>
 
@@ -194,15 +209,15 @@
 
 <h2 id="giving-credit-where-credit-is-due">Giving Credit Where Credit is Due</h2>
 
-<p>I wish I could take credit for coming up with a totally unique concept, but the truth is a maintenance plan for software isn’t anything new. And providing this type of service for mobile apps isn’t new either. In fact, I got the idea from Einar Vollset. </p>
+<p>I wish I could take credit for coming up with a totally unique concept, but the truth is a maintenance plan for software isn’t anything new. And providing this type of service for mobile apps isn’t new either. In fact, I got the idea from Einar Vollset.</p>
 
-<p>Einar talks about his app care service in <a href="http://www.freelancetransformation.com/blog/building-a-recurring-revenue-consulting-business-with-einar-vollset">this podcast interview</a> over at <a href="http://www.freelancetransformation.com">Freelance Transformations</a>. This interview blew me away. Here’s a person providing a service that is similar to what I provide, but he came up with a different way to market the service. Brilliant! </p>
+<p>Einar talks about his app care service in <a href="http://www.freelancetransformation.com/blog/building-a-recurring-revenue-consulting-business-with-einar-vollset">this podcast interview</a> over at <a href="http://www.freelancetransformation.com">Freelance Transformations</a>. This interview blew me away. Here’s a person providing a service that is similar to what I provide, but he came up with a different way to market the service. Brilliant!</p>
 
-<p>But Einar’s <a href="http://www.appaftercare.com">App Aftercare</a> isn’t unique either. There are many other examples of this in different spaces. <a href="http://wpcurve.com">WPCurve</a> provides a similar service for folks running a WordPress site. And I’ve heard of other examples too, companies that will help you maintain your Ruby on Rails app or your Django server. So the concept of app maintenance isn’t new, but I do give credit to Einar Vollset for inspiring me to create <a href="https://www.peakappcare.com">Peak App Care</a>. </p>
+<p>But Einar’s <a href="http://www.appaftercare.com">App Aftercare</a> isn’t unique either. There are many other examples of this in different spaces. <a href="http://wpcurve.com">WPCurve</a> provides a similar service for folks running a WordPress site. And I’ve heard of other examples too, companies that will help you maintain your Ruby on Rails app or your Django server. So the concept of app maintenance isn’t new, but I do give credit to Einar Vollset for inspiring me to create <a href="https://www.peakappcare.com">Peak App Care</a>.</p>
 
 <h1 id="whats-next">What’s Next</h1>
 
-<p>So what’s next now that the web site is up and running? Well, it’s time for me to roll up my sleeves and start the real work…marketing Peak App Care. </p>
+<p>So what’s next now that the web site is up and running? Well, it’s time for me to roll up my sleeves and start the real work…marketing Peak App Care.</p>
 
 <p>Like any product I need to market Peak App Care if it is to be a success. My first step is to let my existing clients know about this new offering, which I’ve already done. After that I need to start making others companies within my target audience aware of Peak App Care, and that is where things start to get tougher for me. Just posting a web site isn’t going to bring in customers. I must find ways to reach my target audience, and thankfully I have some ideas on how to make that happen.</p>
 
@@ -217,11 +232,11 @@
     <published>2015-08-10T07:09:01-04:00</published>
     <updated>2015-08-10T07:09:01-04:00</updated>
     <id>http://www.thecave.com/2015/08/10/dispatch-async-to-main-queue-doesnt-work-with-modal-window-on-mac-os-x</id>
-    <content type="html"><![CDATA[<p>I’ve been working on a Mac app lately, and while some things are similar to iOS, something are definitely different. One thing that is different are modal windows and run loops. </p>
+    <content type="html"><![CDATA[<p>I’ve been working on a Mac app lately, and while some things are similar to iOS, something are definitely different. One thing that is different are modal windows and run loops.</p>
 
 <p>When you display a modal view on iOS you don’t get a new run loop for the view, but when you display a modal window on OS X a new run loop is created for the window. This is not necessarily a big deal unless you have a habit of using <a href="https://developer.apple.com/library/ios/documentation/Performance/Reference/GCD_libdispatch_Ref/">GCD</a> to dispatch work between background and main queues. Let me give a more specific example.</p>
 
-<p>I display a modal view, or in the cause of OS X, a modal window. The current view is managed by a view controller. User input is captured, then a URL request is sent off to a server on the Internet. The view controller is then notified when the URL request completes. </p>
+<p>I display a modal view, or in the cause of OS X, a modal window. The current view is managed by a view controller. User input is captured, then a URL request is sent off to a server on the Internet. The view controller is then notified when the URL request completes.</p>
 
 <p>The typical pattern I follow for sending the request to the server and getting notified when done is to call a method that will dispatch the URL request to a background queue then dispatch to the main queue to call a block when complete. It looks something like this:</p>
 
@@ -242,7 +257,7 @@
 }
 </code></pre>
 
-<p>This is a simplified view of the pattern I often use. Call a method with a callback block. Perform some work on a background thread. When done, call the callback block on the main thread. </p>
+<p>This is a simplified view of the pattern I often use. Call a method with a callback block. Perform some work on a background thread. When done, call the callback block on the main thread.</p>
 
 <p>This pattern has served me well on iOS, but it has issues on Mac OS X when displaying a modal window.</p>
 
@@ -306,7 +321,7 @@
     <published>2015-08-07T10:22:16-04:00</published>
     <updated>2015-08-07T10:22:16-04:00</updated>
     <id>http://www.thecave.com/2015/08/07/boston-area-mac-and-ios-dev-community-is-awesome</id>
-    <content type="html"><![CDATA[<p>This past Wednesday I had a chance to attend <a href="http://www.nshappyhour.org">NSHappyHour</a>. It’s was my first time attending since moving to Vermont two years ago. I had a great time catching up with everyone, and I was reminded just how awesome the Mac and iOS developer community is in the Boston area. </p>
+    <content type="html"><![CDATA[<p>This past Wednesday I had a chance to attend <a href="http://www.nshappyhour.org">NSHappyHour</a>. It’s was my first time attending since moving to Vermont two years ago. I had a great time catching up with everyone, and I was reminded just how awesome the Mac and iOS developer community is in the Boston area.</p>
 
 <p>I also was reminded how much I miss the community there, and since moving back isn’t an option for me - snowboard season starts in about 3 months for me - I need to make a point of visit the Boston area more.</p>
 
@@ -335,9 +350,9 @@
     <published>2015-07-14T14:17:53-04:00</published>
     <updated>2015-07-14T14:17:53-04:00</updated>
     <id>http://www.thecave.com/2015/07/14/redirect-jekyll-site-to-https-on-openshift</id>
-    <content type="html"><![CDATA[<p>I’m preparing to roll out a new <a href="http://jekyllrb.com">Jekyll</a> website, but unlike with my other Jekyll sites, I want each web page served up on <code>https</code>, not <code>http</code>. This means telling the server to redirect <code>http</code> request to <code>https</code>. </p>
+    <content type="html"><![CDATA[<p>I’m preparing to roll out a new <a href="http://jekyllrb.com">Jekyll</a> website, but unlike with my other Jekyll sites, I want each web page served up on <code>https</code>, not <code>http</code>. This means telling the server to redirect <code>http</code> request to <code>https</code>.</p>
 
-<p>Hosting this new site on <a href="https://pages.github.com">Github Pages</a> isn’t option because Github Pages doesn’t support using a custom SSL certificate for your custom domain name. So I decided to see what it would take to host a Jekyll site on <a href="https://www.openshift.com">OpenShift</a>. </p>
+<p>Hosting this new site on <a href="https://pages.github.com">Github Pages</a> isn’t option because Github Pages doesn’t support using a custom SSL certificate for your custom domain name. So I decided to see what it would take to host a Jekyll site on <a href="https://www.openshift.com">OpenShift</a>.</p>
 
 <p>I was thrilled to learn that OpenShift has a <a href="https://hub.openshift.com/quickstarts/41-jekyll">quick start cartridge for installing Jekyll</a> on a new gear. With a click of a button I was able to deploy my new server instance with a boiler plate Jekyll site. I replaced the boiler plate site with the one I’ve been working on, and BAM! My site was up and running. The only step remaining was to force the web server to serve up the pages using <code>https</code>.</p>
 
@@ -365,7 +380,7 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
     <published>2015-07-07T07:22:54-04:00</published>
     <updated>2015-07-07T07:22:54-04:00</updated>
     <id>http://www.thecave.com/2015/07/07/ive-been-doing-it-wrong</id>
-    <content type="html"><![CDATA[<p>A few years back I was making the majority of my income from the products I sold. My apps, my book, they were all doing well. But that changed in 2013. Things came crashing down, and I found myself wondering how I was going to pay the bills. </p>
+    <content type="html"><![CDATA[<p>A few years back I was making the majority of my income from the products I sold. My apps, my book, they were all doing well. But that changed in 2013. Things came crashing down, and I found myself wondering how I was going to pay the bills.</p>
 
 <p>Luckily I have a marketable skill, so I decided to focus on consulting. This was my attempt to reboot my company. The idea was to do consulting work to raise cash, then when I had enough cash I would take time off to work on my business, which in my case meant building another app or two and improving on the ones I already had.</p>
 
@@ -377,23 +392,23 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 
 <p>Two weeks ago I woke up early one morning and thought, “I’ve been doing it wrong, and I know what I need to do to correct it.” It was as if all the information I consumed about making products and being an entrepreneur had finally mashed together in a way that made sense to my brain and the light bulb finally turned on.</p>
 
-<p>My cycle of doing full-time consulting work followed by taking time off to work on an app or other product doesn’t work for me. That is now so obvious to me. But how do I get out of this cycle and start building up the momentum on the product side again. </p>
+<p>My cycle of doing full-time consulting work followed by taking time off to work on an app or other product doesn’t work for me. That is now so obvious to me. But how do I get out of this cycle and start building up the momentum on the product side again.</p>
 
-<p>The answer was right in front of my face. It’s a common theme in everything I was reading and listening to. And Justin Jackson says it best in his <a href="http://buildandlaunch.net">Build and Launch podcast</a>, “Start small, start now.” </p>
+<p>The answer was right in front of my face. It’s a common theme in everything I was reading and listening to. And Justin Jackson says it best in his <a href="http://buildandlaunch.net">Build and Launch podcast</a>, “Start small, start now.”</p>
 
-<p>I was using consulting work to save cash so I can take months off at a time to focus on building something. But what I built doesn’t make money. It’s not that the apps I’ve published suck. It’s that once they hit the App Store, my focus returns to consulting work. I’m not sticking with what I started. I’m not marketing the products I have. I’m not doing what I need to do to let more people know about them. </p>
+<p>I was using consulting work to save cash so I can take months off at a time to focus on building something. But what I built doesn’t make money. It’s not that the apps I’ve published suck. It’s that once they hit the App Store, my focus returns to consulting work. I’m not sticking with what I started. I’m not marketing the products I have. I’m not doing what I need to do to let more people know about them.</p>
 
 <p>But at the same time I have a wife and a kid that I must provide for and rent and bills to pay. This is why I keep returning to consulting work.</p>
 
-<p>So how do I break this cycle. It’s simple. I need to start small. </p>
+<p>So how do I break this cycle. It’s simple. I need to start small.</p>
 
-<p>Instead of taking two to three months off to write a new app, I need to start creating small, even tiny, products that only take a short amount of time. Once the momentum is going and I have cash coming in from product sales, I can cut back on the consulting. </p>
+<p>Instead of taking two to three months off to write a new app, I need to start creating small, even tiny, products that only take a short amount of time. Once the momentum is going and I have cash coming in from product sales, I can cut back on the consulting.</p>
 
 <p>But what products can I create now, in a short amount of time, that will get the ball rolling. Here’s what I’m currently thinking:</p>
 
 <ol>
   <li><strong>Productize part of the services I offer.</strong> I’ll share more details on this soon, but in general the goal is to take a consulting service I already offer to my clients and turn it into a product that my clients, and hopefully others, will subscribe to. Now this might seem like a huge gamble. I mean after all, generating monthly recurring income is a tough nut to crack. But it’s a small gamble for me in that I will not spend more than 40 hours over the span of a few of weeks getting this setup. If no one subscribes, I’ve only lost a week’s worth of my time. But if just one company signs up, I’m that much closer to getting back on track.</li>
-  <li><strong>Start publishing ebooks.</strong> While I don’t love writing I do enjoy it a lot, and frankly, I miss it. But writing a big book like <a href="http://www.learningipadprogramming.com">Learning iPad Programming</a> took too much out of me, so this time I want to do it differently. I want to keep it small. Again, I’ll share details later but the plan is to create highly focused, short ebooks on specific topics. </li>
+  <li><strong>Start publishing ebooks.</strong> While I don’t love writing I do enjoy it a lot, and frankly, I miss it. But writing a big book like <a href="http://www.learningipadprogramming.com">Learning iPad Programming</a> took too much out of me, so this time I want to do it differently. I want to keep it small. Again, I’ll share details later but the plan is to create highly focused, short ebooks on specific topics.</li>
   <li><strong>Video tutorials.</strong> This is something I’ve explored in the past, and it’s something I want to explore again. But this time I want to do it under my control.</li>
 </ol>
 
@@ -419,11 +434,11 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
     <published>2015-07-02T06:48:32-04:00</published>
     <updated>2015-07-02T06:48:32-04:00</updated>
     <id>http://www.thecave.com/2015/07/02/fear</id>
-    <content type="html"><![CDATA[<p>Lately I’ve been struggling to release new things out to the public, things such as blog posts, open source code, a new website and service I want to offer, even updates to some of my apps. What’s worse is that a number of these things are done and are just sitting on my computer. For instance, I’ve been using an updated version of Cross Post for nearly two months that isn’t available in the App Store. </p>
+    <content type="html"><![CDATA[<p>Lately I’ve been struggling to release new things out to the public, things such as blog posts, open source code, a new website and service I want to offer, even updates to some of my apps. What’s worse is that a number of these things are done and are just sitting on my computer. For instance, I’ve been using an updated version of Cross Post for nearly two months that isn’t available in the App Store.</p>
 
-<p>So why haven’t I pulled the trigger on these things and released them to the public? Fear, that’s my answer. </p>
+<p>So why haven’t I pulled the trigger on these things and released them to the public? Fear, that’s my answer.</p>
 
-<p>I’m letting fear get the best me recently. I fear what people might say or think of the work I’m going. I fear that friends will start looking down on me. I fear that I will end up looking like an idiot. The funny part is I don’t have a fear of failing. You learn from failure. But for some odd reason I have developed a fear what others, especially friends, will think. </p>
+<p>I’m letting fear get the best me recently. I fear what people might say or think of the work I’m going. I fear that friends will start looking down on me. I fear that I will end up looking like an idiot. The funny part is I don’t have a fear of failing. You learn from failure. But for some odd reason I have developed a fear what others, especially friends, will think.</p>
 
 <h2 id="out-of-character">Out of Character</h2>
 
@@ -435,17 +450,17 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 
 <h2 id="where-is-it-coming-from">Where Is It Coming From</h2>
 
-<p>I know my fear is irrational when I think about it. But it’s still there and I can’t seem to shake it. Recently I’ve been putting a lot of thought into where this fear is coming from, and I think I might know. </p>
+<p>I know my fear is irrational when I think about it. But it’s still there and I can’t seem to shake it. Recently I’ve been putting a lot of thought into where this fear is coming from, and I think I might know.</p>
 
-<p>I’ve been much more isolated since moving to Vermont. I don’t have the social circle of independent software developers and business owners around me like I did when I lived in New York City and the Boston area. Most of my social interactions these days involved talking about snowboarding and hiking, not on product releases, marketing, and growing a business. </p>
+<p>I’ve been much more isolated since moving to Vermont. I don’t have the social circle of independent software developers and business owners around me like I did when I lived in New York City and the Boston area. Most of my social interactions these days involved talking about snowboarding and hiking, not on product releases, marketing, and growing a business.</p>
 
 <p>Before moving to Vermont I attended a number of social gatherings where I could talk about and share my ideas. These groups were great and always provided excellent feedback. I always listened to what others had to say, but I didn’t always follow their advice. For example, I released a CSV editor for Windows years ago and made a good money from it for a number of years even though all my software dev friends said not to do it. Still, talking about the ideas with other on a regular bases always felt good, but I no longer have a local circle of friends and peers like I did before. And I think that is why I’ve developed this fear inside me.</p>
 
-<p>Even though I didn’t care, for most of my life, what others thoughts, hearing what others had to say, both good or bad, always helped me. But in my recent isolation I rarely, if ever, get feedback from others. Hearing “you suck” motivated me to do better. Hearing “that’s awesome” in encouraged me to do more. But hearing nothing, no feedback at all, for long periods of time has caused this fear to grow inside of me. </p>
+<p>Even though I didn’t care, for most of my life, what others thoughts, hearing what others had to say, both good or bad, always helped me. But in my recent isolation I rarely, if ever, get feedback from others. Hearing “you suck” motivated me to do better. Hearing “that’s awesome” in encouraged me to do more. But hearing nothing, no feedback at all, for long periods of time has caused this fear to grow inside of me.</p>
 
 <h2 id="get-over-the-fear">Get Over The Fear</h2>
 
-<p>I know my fears are irrational, but I can’t seem to shake them. So I’m trying a few new things in my attempts to get over the fear. </p>
+<p>I know my fears are irrational, but I can’t seem to shake them. So I’m trying a few new things in my attempts to get over the fear.</p>
 
 <p>I’m trying to build a small community here in Stowe (though I think about giving up each month). A few folks do join me each month, but the group is not the same as the ones I participated in before coming to Vermont. Like the gatherings I attended before, this new group is made up of mostly software developers. But what is missing for me are the independents, the business owners, the solopreneur that were common in the circles I had when I lived in NYC and Boston.</p>
 
@@ -479,17 +494,17 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 
 <p><img src="https://c1.staticflickr.com/1/420/18776596119_d03e98a590_z.jpg" alt="" /></p>
 
-<p>It’s true. Right now there are a number of things I’m working on and there are even more things that I want to work on. </p>
+<p>It’s true. Right now there are a number of things I’m working on and there are even more things that I want to work on.</p>
 
-<p>Lately I’ve been bouncing back and forth between a number of projects, but I haven’t been very productive. I start work on a task but before I finish I let myself get distracted with another task. For instance, I’ll work on a client project and before I finish the task at hand I’ll jump to another task from another project. </p>
+<p>Lately I’ve been bouncing back and forth between a number of projects, but I haven’t been very productive. I start work on a task but before I finish I let myself get distracted with another task. For instance, I’ll work on a client project and before I finish the task at hand I’ll jump to another task from another project.</p>
 
-<p>I haven’t always worked this way, and I’m not sure why I now struggle to stay focused. It could be the changing of seasons. I had my daily routine dialed in during the winter months, but something has changed recently and it’s not just the seasons. </p>
+<p>I haven’t always worked this way, and I’m not sure why I now struggle to stay focused. It could be the changing of seasons. I had my daily routine dialed in during the winter months, but something has changed recently and it’s not just the seasons.</p>
 
 <p>Maybe my struggle with focus is a sign of being burnt out, maybe it’s the type of projects I’m working on - I’m certainly less excited about certain projects while much more excited about others. Maybe it’s because the kid is out of school and my work day is broken up into smaller chunks than during school time. Or maybe it’s a combination of all of the above. All I know for sure is that I find it difficult to focus, so last week I set out to find new ways to get focused and stay focused<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. And here’s what I came up with…</p>
 
 <h2 id="dont-check-email-first-thing-in-the-morning">Don’t Check Email First Thing In The Morning</h2>
 
-<p>I have stopped checking email first thing in the morning. This is probably one of the hardest habit for me to break, but I’ve come to realize that checking email first thing in the morning leads to the biggest distractions for me. So it is a must change habit for me. </p>
+<p>I have stopped checking email first thing in the morning. This is probably one of the hardest habit for me to break, but I’ve come to realize that checking email first thing in the morning leads to the biggest distractions for me. So it is a must change habit for me.</p>
 
 <p>On a typical day I start the morning excited about what I’m planning to do during the day only to have that excitement squashed because of emails. The emails will often times change my plans for the day. Emails, in other words, control my day when I should be controlling my day.</p>
 
@@ -509,11 +524,11 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 
 <h2 id="limit-meetings-to-tuesday-and-thursday">Limit Meetings to Tuesday and Thursday</h2>
 
-<p>My next tip is to limit meetings with others to two specific days each week. For me those two days are Tuesday and Thursday. </p>
+<p>My next tip is to limit meetings with others to two specific days each week. For me those two days are Tuesday and Thursday.</p>
 
 <p>The main benefit to doing this is to give me more control over the other days of the week. I can use those other days to focus on productive work without the disruption of meetings. Meetings are, after all, disruptive to a productive day. Nothing kills my productivity faster than having to stop what I’m working on to waste time in a meeting. And yes, most meetings are a waste of time. Even the ones that are not a complete waste of time do waste some time. That casual chit chat at the beginning of the meeting, for example, is unproductive time. So I’m limiting those periods of unproductive time to two days a week.</p>
 
-<p>I get that this isn’t something everyone can do. Heck I’m not 100% sure I can make it happen for me. But if you work for yourself and/or have control over your schedule, then you should be able to make this happen. </p>
+<p>I get that this isn’t something everyone can do. Heck I’m not 100% sure I can make it happen for me. But if you work for yourself and/or have control over your schedule, then you should be able to make this happen.</p>
 
 <p>Also if you are like me, you already have meetings on your calendar. I, for example, have a recurring client meeting every Monday and Thursday mornings, another client meeting on Monday afternoon, one on Wednesday morning, and just recently a client asked to do a daily stand-up meeting each morning<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>. This means there will be a transition period for me as I get my meetings re-scheduled for Tuesday and Thursday. But this is something I’m going to make happen come hell or high water.</p>
 
@@ -529,11 +544,11 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 
 <h2 id="do-these-tips-really-work">Do These Tips Really Work</h2>
 
-<p>So do these tips really work? It’s hard for me to say with absolutely certainty that they work. I’m seeing some positive results already, but only time will tell what works and doesn’t work for me long term. And obviously not every tip will work for every person. Heck, I’m not sure if all the tips will work for me. But these are the tips I’m trying right now, and after only a few days I’m seeing good results. </p>
+<p>So do these tips really work? It’s hard for me to say with absolutely certainty that they work. I’m seeing some positive results already, but only time will tell what works and doesn’t work for me long term. And obviously not every tip will work for every person. Heck, I’m not sure if all the tips will work for me. But these are the tips I’m trying right now, and after only a few days I’m seeing good results.</p>
 
 <p>I’m getting more done faster, and that feeling of being overwhelmed that I got at the end of each day has been replaced with a greater sense of accomplishment and a feeling of being more productive. But the real test for me will be following these tips for a month and see what happens. Trying these tips for a month is the only way I will know what works and doesn’t work for me.</p>
 
-<p>I’ll post an update on my progress in a few weeks. Meanwhile I encourage you to give one, some or all the tips a try to see what works for you. And let me know how it works out for you. </p>
+<p>I’ll post an update on my progress in a few weeks. Meanwhile I encourage you to give one, some or all the tips a try to see what works for you. And let me know how it works out for you.</p>
 
 <hr />
 
@@ -543,7 +558,7 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
       <p>Yes, I see the irony in that my search for ways to become more focused distracted me from the work that I needed to do last week. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:2">
-      <p>I personally think daily stand up meetings, like most meetings, are a waste of time, and it’s certainly not a productive use of my time. A daily status email is far more productive in my opinion, and you have the report captured for historical purposes.  <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+      <p>I personally think daily stand up meetings, like most meetings, are a waste of time, and it’s certainly not a productive use of my time. A daily status email is far more productive in my opinion, and you have the report captured for historical purposes. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -625,21 +640,6 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 <div class="youtube-video"><figure><iframe width="560" height="420" src="https://www.youtube.com/embed/rEkuRFO6xTw?color=white&amp;theme=light"></iframe></figure></div>
 
 <p>Both of these, the book and the app, are motivating me to do more faster. I just need to stop letting excuses and fear of not being perfect get in my way.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[It's Better To Try An Idea]]></title>
-    <link href="http://www.thecave.com/2015/06/08/its-better-to-try-an-idea/"/>
-    <published>2015-06-08T08:54:23-04:00</published>
-    <updated>2015-06-08T08:54:23-04:00</updated>
-    <id>http://www.thecave.com/2015/06/08/its-better-to-try-an-idea</id>
-    <content type="html"><![CDATA[<p>One of my favorite quotes about shipping:</p>
-
-<blockquote>
-  <p>It’s better to try an idea and see if it works than worry too much about its potential and never ship. - <a href="https://twitter.com/_davidsmith">@_davidsmith</a></p>
-</blockquote>
 
 ]]></content>
   </entry>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/category/programming/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-09-01T15:43:21-04:00</updated>
+  <updated>2015-09-07T11:44:05-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -17,11 +17,11 @@
     <link href="http://www.thecave.com/2015/08/10/dispatch-async-to-main-queue-doesnt-work-with-modal-window-on-mac-os-x/"/>
     <updated>2015-08-10T07:09:01-04:00</updated>
     <id>http://www.thecave.com/2015/08/10/dispatch-async-to-main-queue-doesnt-work-with-modal-window-on-mac-os-x</id>
-    <content type="html"><![CDATA[<p>I’ve been working on a Mac app lately, and while some things are similar to iOS, something are definitely different. One thing that is different are modal windows and run loops. </p>
+    <content type="html"><![CDATA[<p>I’ve been working on a Mac app lately, and while some things are similar to iOS, something are definitely different. One thing that is different are modal windows and run loops.</p>
 
 <p>When you display a modal view on iOS you don’t get a new run loop for the view, but when you display a modal window on OS X a new run loop is created for the window. This is not necessarily a big deal unless you have a habit of using <a href="https://developer.apple.com/library/ios/documentation/Performance/Reference/GCD_libdispatch_Ref/">GCD</a> to dispatch work between background and main queues. Let me give a more specific example.</p>
 
-<p>I display a modal view, or in the cause of OS X, a modal window. The current view is managed by a view controller. User input is captured, then a URL request is sent off to a server on the Internet. The view controller is then notified when the URL request completes. </p>
+<p>I display a modal view, or in the cause of OS X, a modal window. The current view is managed by a view controller. User input is captured, then a URL request is sent off to a server on the Internet. The view controller is then notified when the URL request completes.</p>
 
 <p>The typical pattern I follow for sending the request to the server and getting notified when done is to call a method that will dispatch the URL request to a background queue then dispatch to the main queue to call a block when complete. It looks something like this:</p>
 
@@ -42,7 +42,7 @@
 }
 </code></pre>
 
-<p>This is a simplified view of the pattern I often use. Call a method with a callback block. Perform some work on a background thread. When done, call the callback block on the main thread. </p>
+<p>This is a simplified view of the pattern I often use. Call a method with a callback block. Perform some work on a background thread. When done, call the callback block on the main thread.</p>
 
 <p>This pattern has served me well on iOS, but it has issues on Mac OS X when displaying a modal window.</p>
 
@@ -105,9 +105,9 @@
     <link href="http://www.thecave.com/2015/07/14/redirect-jekyll-site-to-https-on-openshift/"/>
     <updated>2015-07-14T14:17:53-04:00</updated>
     <id>http://www.thecave.com/2015/07/14/redirect-jekyll-site-to-https-on-openshift</id>
-    <content type="html"><![CDATA[<p>I’m preparing to roll out a new <a href="http://jekyllrb.com">Jekyll</a> website, but unlike with my other Jekyll sites, I want each web page served up on <code>https</code>, not <code>http</code>. This means telling the server to redirect <code>http</code> request to <code>https</code>. </p>
+    <content type="html"><![CDATA[<p>I’m preparing to roll out a new <a href="http://jekyllrb.com">Jekyll</a> website, but unlike with my other Jekyll sites, I want each web page served up on <code>https</code>, not <code>http</code>. This means telling the server to redirect <code>http</code> request to <code>https</code>.</p>
 
-<p>Hosting this new site on <a href="https://pages.github.com">Github Pages</a> isn’t option because Github Pages doesn’t support using a custom SSL certificate for your custom domain name. So I decided to see what it would take to host a Jekyll site on <a href="https://www.openshift.com">OpenShift</a>. </p>
+<p>Hosting this new site on <a href="https://pages.github.com">Github Pages</a> isn’t option because Github Pages doesn’t support using a custom SSL certificate for your custom domain name. So I decided to see what it would take to host a Jekyll site on <a href="https://www.openshift.com">OpenShift</a>.</p>
 
 <p>I was thrilled to learn that OpenShift has a <a href="https://hub.openshift.com/quickstarts/41-jekyll">quick start cartridge for installing Jekyll</a> on a new gear. With a click of a button I was able to deploy my new server instance with a boiler plate Jekyll site. I replaced the boiler plate site with the one I’ve been working on, and BAM! My site was up and running. The only step remaining was to force the web server to serve up the pages using <code>https</code>.</p>
 
@@ -134,7 +134,7 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
     <link href="http://www.thecave.com/2015/04/15/views-created-in-code/"/>
     <updated>2015-04-15T12:58:45-04:00</updated>
     <id>http://www.thecave.com/2015/04/15/views-created-in-code</id>
-    <content type="html"><![CDATA[<p>Last year I posted an article that talks about why <a href="http://www.thecave.com/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout/">I stopped using Interface Builder</a> in favor of writing code to create views. There are some who disagree with me, and to them I say, “To each his own.” And there are some who agree with me, but choose not to publicize it. No matter. Every programmer has tricks that make them more productive, and creating views in code just happens to be one trick that works well for me. </p>
+    <content type="html"><![CDATA[<p>Last year I posted an article that talks about why <a href="http://www.thecave.com/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout/">I stopped using Interface Builder</a> in favor of writing code to create views. There are some who disagree with me, and to them I say, “To each his own.” And there are some who agree with me, but choose not to publicize it. No matter. Every programmer has tricks that make them more productive, and creating views in code just happens to be one trick that works well for me.</p>
 
 <p>What works for me doesn’t necessarily work for others. But I have to say, I had a brief “HA!” moment when I read this comment from Peter Steinberger’s post about <a href="http://petersteinberger.com/blog/2015/researching-researchkit/">researching Apple’s research kit</a>:</p>
 
@@ -167,11 +167,11 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 
 <p>It’s been nearly two years since I was last responsible for a meetup, but that changes tonight with the first of many Après Code events.</p>
 
-<p>I’ve been thinking about hosting a developer meetup in Stowe since I moved here, but I wasn’t initially sure there would be enough interest. However, in my short time here I’ve met other software developers living in the area. Some work for companies here in town while others work for shops in and around Burlington. And the number of developers in our small community is growing with companies like <a href="http://corp.inntopia.com/careers/">Inntopia hiring</a> more developers. Even though I knew there were developers living and working in the area, I wasn’t ready to commit to a monthly meetup just yet. </p>
+<p>I’ve been thinking about hosting a developer meetup in Stowe since I moved here, but I wasn’t initially sure there would be enough interest. However, in my short time here I’ve met other software developers living in the area. Some work for companies here in town while others work for shops in and around Burlington. And the number of developers in our small community is growing with companies like <a href="http://corp.inntopia.com/careers/">Inntopia hiring</a> more developers. Even though I knew there were developers living and working in the area, I wasn’t ready to commit to a monthly meetup just yet.</p>
 
-<p>That changed two days before I left for Whistler. I was talking with a local dev friend, Maya Ropelip<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>, about writing apps for iOS. During our chat I mentioned my idea for a local meetup. He got excited about the idea and thought the timing was right for hosting a software developer gathering in Stowe. He also agreed to be the co-host in case I need to skip a meetup. So that night I grabbed the domain name, setup a <a href="http://www.apres-code.com/">website</a>, and created a new group on <a href="http://www.meetup.com/Apres-Code/">meetup.com</a>. </p>
+<p>That changed two days before I left for Whistler. I was talking with a local dev friend, Maya Ropelip<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>, about writing apps for iOS. During our chat I mentioned my idea for a local meetup. He got excited about the idea and thought the timing was right for hosting a software developer gathering in Stowe. He also agreed to be the co-host in case I need to skip a meetup. So that night I grabbed the domain name, setup a <a href="http://www.apres-code.com/">website</a>, and created a new group on <a href="http://www.meetup.com/Apres-Code/">meetup.com</a>.</p>
 
-<p>Starting a new group just 48 hours before I leave the country for a week and a half wasn’t the smartest thing for me to do, but I did it anyways. And now that I’m back home, I’m scrambling to get the word out about tonight’s inaugural Après Code. So without further ado, I’m happy to officially announce <a href="http://www.apres-code.com/">Après Code</a>. </p>
+<p>Starting a new group just 48 hours before I leave the country for a week and a half wasn’t the smartest thing for me to do, but I did it anyways. And now that I’m back home, I’m scrambling to get the word out about tonight’s inaugural Après Code. So without further ado, I’m happy to officially announce <a href="http://www.apres-code.com/">Après Code</a>.</p>
 
 <h1 id="what-is-aprs-code">What Is Après Code</h1>
 
@@ -204,13 +204,13 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
     <link href="http://www.thecave.com/2015/02/21/working-80-hours-isnt-the-answer/"/>
     <updated>2015-02-21T07:41:24-05:00</updated>
     <id>http://www.thecave.com/2015/02/21/working-80-hours-isnt-the-answer</id>
-    <content type="html"><![CDATA[<p>A founder, or maybe the person is a manager type, asked on Quora, “<a href="http://www.quora.com/How-do-you-make-programmers-work-60-80-hours-per-week">How do you make programmers work 60-80 hours per week?</a>” While the question is a pathetic one, the answers that follow, especially the first one, are worth a read. And you should certainly read the answers if you happen to be one of those sad founders/manager types who wants their of programmers to work long hours. In short, if you are trying to force your programmers to work 60, 80 or more hours per week, then you are doing it wrong. </p>
+    <content type="html"><![CDATA[<p>A founder, or maybe the person is a manager type, asked on Quora, “<a href="http://www.quora.com/How-do-you-make-programmers-work-60-80-hours-per-week">How do you make programmers work 60-80 hours per week?</a>” While the question is a pathetic one, the answers that follow, especially the first one, are worth a read. And you should certainly read the answers if you happen to be one of those sad founders/manager types who wants their of programmers to work long hours. In short, if you are trying to force your programmers to work 60, 80 or more hours per week, then you are doing it wrong.</p>
 
 <h2 id="personal-experience">Personal Experience</h2>
 
 <p>I have first hand experience working 80+ hours per week. Heck, there were times I worked more than 100 hours in a single week at one particular startup. There were times when I would go days without going home, choosing instead to sleep in the office for an hour here and an hour there. And if I needed a change of clothes for an important meeting, I would go to the Banana Republic that was below my office to buy a change of clothes instead of going home.</p>
 
-<p>The difference with this experience, however, was that I was never forced to put in those insane hours. No one ever asked me to work 80+ hours. I did it because I truly believed in what we were building. But I also knew what it took to be productive, and that’s why I often times made sure my team did not follow my lead. </p>
+<p>The difference with this experience, however, was that I was never forced to put in those insane hours. No one ever asked me to work 80+ hours. I did it because I truly believed in what we were building. But I also knew what it took to be productive, and that’s why I often times made sure my team did not follow my lead.</p>
 
 <p>I encouraged my team to work no more than 40 hours, and if I noticed someone reaching 50 hours I usually asked that person to take a break, go home, and enjoy life a bit. The work can wait. Sometimes the team member would take my suggestion and leave, other times they would not. But the choice was theirs. I never asked for more than 40 hours per week and in the end we created some amazing things in a short amount of time.</p>
 
@@ -222,7 +222,7 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 
 <p>I worked at a few startups putting in 60 or more hours per week, but those days are behind me. Those were fun times with lots of good memories, but I now find it’s more important to break up work with other interest. Today I’m a proponent of what I like to call underworking, or as I more often times jokingly call “being a slacker.”<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
 
-<p>Life’s too short to overwork yourself today in hopes you will have the time later in life for the fun things. Who knows what will happen in the future. You could be hit by a beer truck tomorrow and die. That’s why I believe you should make a point to spend more time <a href="http://www.thecave.com/2014/06/20/enjoy-less-and-love-more/">doing what you love</a> now. The work can wait. </p>
+<p>Life’s too short to overwork yourself today in hopes you will have the time later in life for the fun things. Who knows what will happen in the future. You could be hit by a beer truck tomorrow and die. That’s why I believe you should make a point to spend more time <a href="http://www.thecave.com/2014/06/20/enjoy-less-and-love-more/">doing what you love</a> now. The work can wait.</p>
 
 <h2 id="the-long-trail-and-me">The Long Trail And Me</h2>
 
@@ -233,7 +233,7 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>Funny how working only 32 to 40 hours a week is thought to be slacking.  <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>Funny how working only 32 to 40 hours a week is thought to be slacking. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:2">
       <p>Sorry the first couple of minutes of the talk are missing. Someone forgot to push the record button. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>

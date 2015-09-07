@@ -4,7 +4,7 @@
   <title><![CDATA[Category: tech | thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/category/tech/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-09-01T15:43:21-04:00</updated>
+  <updated>2015-09-07T11:44:05-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -17,7 +17,7 @@
     <link href="http://www.thecave.com/2015/09/01/wish-i-could-help-but-its-not-my-app/"/>
     <updated>2015-09-01T15:37:18-04:00</updated>
     <id>http://www.thecave.com/2015/09/01/wish-i-could-help-but-its-not-my-app</id>
-    <content type="html"><![CDATA[<p>A well known global company is using some open source code I wrote in one of their apps (yay!). Like a good company, they included my name and licensing information in app’s about screen. Now I’m getting emails from one of the app’s users seeking help with the app. The person thinks I wrote the app because my name appears in the licensing section. </p>
+    <content type="html"><![CDATA[<p>A well known global company is using some open source code I wrote in one of their apps (yay!). Like a good company, they included my name and licensing information in app’s about screen. Now I’m getting emails from one of the app’s users seeking help with the app. The person thinks I wrote the app because my name appears in the licensing section.</p>
 
 <p>Definitely a first for me.</p>
 ]]></content>
@@ -28,7 +28,7 @@
     <link href="http://www.thecave.com/2015/08/07/boston-area-mac-and-ios-dev-community-is-awesome/"/>
     <updated>2015-08-07T10:22:16-04:00</updated>
     <id>http://www.thecave.com/2015/08/07/boston-area-mac-and-ios-dev-community-is-awesome</id>
-    <content type="html"><![CDATA[<p>This past Wednesday I had a chance to attend <a href="http://www.nshappyhour.org">NSHappyHour</a>. It’s was my first time attending since moving to Vermont two years ago. I had a great time catching up with everyone, and I was reminded just how awesome the Mac and iOS developer community is in the Boston area. </p>
+    <content type="html"><![CDATA[<p>This past Wednesday I had a chance to attend <a href="http://www.nshappyhour.org">NSHappyHour</a>. It’s was my first time attending since moving to Vermont two years ago. I had a great time catching up with everyone, and I was reminded just how awesome the Mac and iOS developer community is in the Boston area.</p>
 
 <p>I also was reminded how much I miss the community there, and since moving back isn’t an option for me - snowboard season starts in about 3 months for me - I need to make a point of visit the Boston area more.</p>
 
@@ -40,9 +40,9 @@
     <link href="http://www.thecave.com/2015/07/14/redirect-jekyll-site-to-https-on-openshift/"/>
     <updated>2015-07-14T14:17:53-04:00</updated>
     <id>http://www.thecave.com/2015/07/14/redirect-jekyll-site-to-https-on-openshift</id>
-    <content type="html"><![CDATA[<p>I’m preparing to roll out a new <a href="http://jekyllrb.com">Jekyll</a> website, but unlike with my other Jekyll sites, I want each web page served up on <code>https</code>, not <code>http</code>. This means telling the server to redirect <code>http</code> request to <code>https</code>. </p>
+    <content type="html"><![CDATA[<p>I’m preparing to roll out a new <a href="http://jekyllrb.com">Jekyll</a> website, but unlike with my other Jekyll sites, I want each web page served up on <code>https</code>, not <code>http</code>. This means telling the server to redirect <code>http</code> request to <code>https</code>.</p>
 
-<p>Hosting this new site on <a href="https://pages.github.com">Github Pages</a> isn’t option because Github Pages doesn’t support using a custom SSL certificate for your custom domain name. So I decided to see what it would take to host a Jekyll site on <a href="https://www.openshift.com">OpenShift</a>. </p>
+<p>Hosting this new site on <a href="https://pages.github.com">Github Pages</a> isn’t option because Github Pages doesn’t support using a custom SSL certificate for your custom domain name. So I decided to see what it would take to host a Jekyll site on <a href="https://www.openshift.com">OpenShift</a>.</p>
 
 <p>I was thrilled to learn that OpenShift has a <a href="https://hub.openshift.com/quickstarts/41-jekyll">quick start cartridge for installing Jekyll</a> on a new gear. With a click of a button I was able to deploy my new server instance with a boiler plate Jekyll site. I replaced the boiler plate site with the one I’ve been working on, and BAM! My site was up and running. The only step remaining was to force the web server to serve up the pages using <code>https</code>.</p>
 
@@ -69,11 +69,11 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
     <link href="http://www.thecave.com/2015/04/06/apple-watch-will-make-iphone-6-plus-size-less-annoying/"/>
     <updated>2015-04-06T21:42:53-04:00</updated>
     <id>http://www.thecave.com/2015/04/06/apple-watch-will-make-iphone-6-plus-size-less-annoying</id>
-    <content type="html"><![CDATA[<p>One of the things that annoys me most about the size of my iPhone 6 Plus is pulling it out of my pocket while at a bar or restaurant just to see why my phone buzzed. The majority of the time my phone buzzes because of an incoming text message. I have notifications turned off for almost all other apps, and I rarely. if ever, get phone calls these days, which is why I know the buzz is most likely a text message. And if I’m at the bar without my wife, then the person trying to reach me is most likely my wife. </p>
+    <content type="html"><![CDATA[<p>One of the things that annoys me most about the size of my iPhone 6 Plus is pulling it out of my pocket while at a bar or restaurant just to see why my phone buzzed. The majority of the time my phone buzzes because of an incoming text message. I have notifications turned off for almost all other apps, and I rarely. if ever, get phone calls these days, which is why I know the buzz is most likely a text message. And if I’m at the bar without my wife, then the person trying to reach me is most likely my wife.</p>
 
-<p>So when the text message comes in, I have to pull out this big honkin’ device out of my pocket and light up the room just to see the message. I may reply, and if I do, it’s a short reply because, after all, I’m busy at the bar. Then I put the phone back into my pocket only to repeat all of this a few minutes later. </p>
+<p>So when the text message comes in, I have to pull out this big honkin’ device out of my pocket and light up the room just to see the message. I may reply, and if I do, it’s a short reply because, after all, I’m busy at the bar. Then I put the phone back into my pocket only to repeat all of this a few minutes later.</p>
 
-<p>Receiving text messages doesn’t annoy me, but having to pull out and put away this big device every few minutes does annoy me. </p>
+<p>Receiving text messages doesn’t annoy me, but having to pull out and put away this big device every few minutes does annoy me.</p>
 
 <p>It occurred to me that one of the possible reasons why Apple decided to release the larger iPhones was because they knew, thanks to the Apple Watch, that there would be no reason to pull out these larger devices from pockets and purses just to check notifications and send simple text messages and replies.</p>
 
@@ -88,7 +88,7 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
     <id>http://www.thecave.com/2015/03/27/affordable-cloud-storage-with-amazon-cloud-drive</id>
     <content type="html"><![CDATA[<p>Yesterday Amazon announced new <a href="https://www.amazon.com/clouddrive/pricing">pricing plans</a> for their cloud storage offering named <a href="https://www.amazon.com/clouddrive/home">Cloud Drive</a>. You can store unlimited number of photos for $11.99 per year, or you can store unlimited number of files for $59.99. The later is a no-brainer for me as I have been looking for an affordable cloud storage solution like this.</p>
 
-<p>Currently I use a number of different services for cloud storage. I use <a href="https://db.tt/Y2NovyiG">Dropbox</a> to sync files between computers and devices. The files I keep on Dropbox are ones I need immediate access to. In other words, these are the files I need to have on my laptop while also having access from other computers and devices such as my iPhone. </p>
+<p>Currently I use a number of different services for cloud storage. I use <a href="https://db.tt/Y2NovyiG">Dropbox</a> to sync files between computers and devices. The files I keep on Dropbox are ones I need immediate access to. In other words, these are the files I need to have on my laptop while also having access from other computers and devices such as my iPhone.</p>
 
 <p>I use <a href="https://secure.backblaze.com/r/00ytw8">Backblaze</a> to backup all the files on my laptop to the cloud. It’s my lifeline should something unexpected happen to my laptop. For photos I use <a href="https://secure.smugmug.com/signup?Coupon=8ZK2smzZYAS1I">SmugMug</a>, but more recently I’ve been using <a href="http://www.flickr.com">Flickr</a> more than SmugMug. And I use Rackspace Cloud File for my CDN. That’s content delivery network for my non-geeky friends reading this.</p>
 
@@ -100,7 +100,7 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 
 <p>So when I first heard about Amazon’s new pricing for Cloud Drive I thought, “Finally, an affordable cloud storage solution that fixes my needs for archiving old data.” At $60 per year for unlimited storage, I would be a fool not to try it out. But I don’t even need to spend the $60 right now. Amazon is offering a 3-month free trial.</p>
 
-<p>Cloud Drive has desktop software for your Mac (and I’m guessing Windows too) to upload files, but I’m not a fan of the desktop software. It doesn’t let me pick where I want to store the files I’m uploading, and I like to use a very specific directory structure for my files. </p>
+<p>Cloud Drive has desktop software for your Mac (and I’m guessing Windows too) to upload files, but I’m not a fan of the desktop software. It doesn’t let me pick where I want to store the files I’m uploading, and I like to use a very specific directory structure for my files.</p>
 
 <p>While the Cloud Drive desktop software doesn’t suite my needs, the Cloud Drive web interface does. I can organize my storage area to my liking, create new folders and upload files to specific folders within the file system. And that’s just what I’ve been doing…uploading and organizing files - a few gigs so far to test out the service.</p>
 

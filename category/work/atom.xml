@@ -4,7 +4,7 @@
   <title><![CDATA[Category: work | thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/category/work/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-09-01T15:43:21-04:00</updated>
+  <updated>2015-09-07T11:44:05-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -67,7 +67,7 @@
 
 <p>To paraphrase Amy, you don’t let your kids or pets starve just because you’re not motivated to feed them. You do it anyways. And that exactly what you need to do when starting or running your business, creating a new product, or doing anything that matters to you. You just need to do it even when your not motivated to do it.</p>
 
-<p>I think back to the time when I was writing the first edition of <a href="http://www.learningipadprogramming.com">Learning iPad Programming</a>. I was struggling to stay motivated, and I would go long periods of time (days, weeks, months) without writing a word. I read anything and everything I could find on how to stay motivated, but those tips didn’t help me. </p>
+<p>I think back to the time when I was writing the first edition of <a href="http://www.learningipadprogramming.com">Learning iPad Programming</a>. I was struggling to stay motivated, and I would go long periods of time (days, weeks, months) without writing a word. I read anything and everything I could find on how to stay motivated, but those tips didn’t help me.</p>
 
 <p>What helped me was structuring my day so that I worked on my book at least an hour each day. I started work on the book at the same time every day, which was 9 am. Some days I only worked on it for an hour, other days I would work on it all day. It depended on how I felt. But I always worked on it for at least one hour starting at 9 am every day even when I wasn’t motivated to work on it.</p>
 
@@ -80,7 +80,7 @@
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>Another habit I developed while writing the second edition of my book, and one I still use today, is to listen to my <a href="https://open.spotify.com/user/kirbyt/playlist/6QUgiw9WPf8qXdgnrdXGvZ">Music to Write To</a> playlist on Spotify.  <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>Another habit I developed while writing the second edition of my book, and one I still use today, is to listen to my <a href="https://open.spotify.com/user/kirbyt/playlist/6QUgiw9WPf8qXdgnrdXGvZ">Music to Write To</a> playlist on Spotify. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -92,7 +92,7 @@
     <link href="http://www.thecave.com/2015/08/18/retiring-my-csv-editor/"/>
     <updated>2015-08-18T11:23:09-04:00</updated>
     <id>http://www.thecave.com/2015/08/18/retiring-my-csv-editor</id>
-    <content type="html"><![CDATA[<p>Today I did something that I’ve been saying I will do for a long time. I retired my CSV editor, <a href="http://blog.whitepeaksoftware.com/2015/08/18/killinks-retirement/">Killink</a>. </p>
+    <content type="html"><![CDATA[<p>Today I did something that I’ve been saying I will do for a long time. I retired my CSV editor, <a href="http://blog.whitepeaksoftware.com/2015/08/18/killinks-retirement/">Killink</a>.</p>
 
 <p>The first release of Killink CSV Editor was back on March 22, 2007, and over the years it has done well despite the fact that I haven’t been actively working on the app or marketing it. Killink had great potential, especially if I had followed the business advice from those smarter than me to focus on the enterprise, but I honestly lost interest in the editor after I started writing apps for Mac and iOS.</p>
 
@@ -100,7 +100,7 @@
 
 <p>I always found the customers of Killink CSV Editor fascinating. While we developer types view CSV as antiquated technology, these customers work with CSV files regularly. And most are business users from large, well known companies. We developer types often times forget that people around the world are using old technologies like CSV daily to do their job, and they too would like a better way to work with old tech like CSV files. Killink CSV Editor was a better way for many for a number of years.</p>
 
-<p>It saddens me to retire Killink CSV Editor, but at the same time I feel like a burden has been lifted off my shoulders. The app is rock solid and support is minimum, but I have felt guilty for a long time about selling a software product that I know isn’t actively being worked on. And with the recent Windows 10 release, I finally decided now is the time to retire my CSV editor. </p>
+<p>It saddens me to retire Killink CSV Editor, but at the same time I feel like a burden has been lifted off my shoulders. The app is rock solid and support is minimum, but I have felt guilty for a long time about selling a software product that I know isn’t actively being worked on. And with the recent Windows 10 release, I finally decided now is the time to retire my CSV editor.</p>
 
 <p>I’ve heard many good things about Windows 10. But if I keep selling Killink to Windows users I will have no choice but to install it some day. And honestly, I don’t want to do that. I have zero interest in Windows these days.</p>
 
@@ -122,17 +122,17 @@
 
 <p>Today I’m happy to announce <a href="https://www.peakappcare.com">Peak App Care</a>. Peak App Care is a monthly subscription service for maintaining your iOS apps. What do I mean by that? Simply put, I monitor your app for crashes and fix them as quickly as possible. Not only that, I also perform small jobs such as bug fixes and enhancements to your app at your request, and I even manage the App Store for you, from updating screenshots to submitting new builds on your behalf.</p>
 
-<p>What I have found is that many apps available today in the App Store are published by companies with zero iOS developers on staff. Those companies, instead, rely on freelancers and software shops to build their apps for them. The problem, however, is that often times there’s no plans to keep the app up to date after the initial release. </p>
+<p>What I have found is that many apps available today in the App Store are published by companies with zero iOS developers on staff. Those companies, instead, rely on freelancers and software shops to build their apps for them. The problem, however, is that often times there’s no plans to keep the app up to date after the initial release.</p>
 
-<p>What happens when the app starts crashing or customers start reporting bugs? What happens when Apple releases a new version of iOS or a new device? </p>
+<p>What happens when the app starts crashing or customers start reporting bugs? What happens when Apple releases a new version of iOS or a new device?</p>
 
-<p>Often times these companies must scramble to find an iOS developer to help out. If they are lucky, the original developer is still available but chances are good the developer is currently working on something else and isn’t available for days, weeks, or even months. </p>
+<p>Often times these companies must scramble to find an iOS developer to help out. If they are lucky, the original developer is still available but chances are good the developer is currently working on something else and isn’t available for days, weeks, or even months.</p>
 
-<p>With Peak App Care I become your in-house iOS developer responsible for the upkeep of your mobile app. I watch for crashes and fix them as they are reported. But I go beyond that. I will work with you to ensure your app remains up to date with the latest changes coming out of Cupertino. A good example of this is happening right now. </p>
+<p>With Peak App Care I become your in-house iOS developer responsible for the upkeep of your mobile app. I watch for crashes and fix them as they are reported. But I go beyond that. I will work with you to ensure your app remains up to date with the latest changes coming out of Cupertino. A good example of this is happening right now.</p>
 
-<p>iOS 9 is in beta and every app publisher should be testing their app on this new iOS version. Not only that, the app should be updated to cleanly compile against the iOS 9 SDK. This means replacing deprecated code. But a company with no staffed iOS developer is often times unaware of the need to perform these types of tasks. Or they choose to ignore these tasks. After all, the app is running fine right now, so why wouldn’t it run fine when the new OS comes out. </p>
+<p>iOS 9 is in beta and every app publisher should be testing their app on this new iOS version. Not only that, the app should be updated to cleanly compile against the iOS 9 SDK. This means replacing deprecated code. But a company with no staffed iOS developer is often times unaware of the need to perform these types of tasks. Or they choose to ignore these tasks. After all, the app is running fine right now, so why wouldn’t it run fine when the new OS comes out.</p>
 
-<p>Sometimes it’s okay to ignore changes coming from Apple, but sometimes the changes are too big to ignore. The iPhone 6 Plus is one example. Customers can quickly tell if an iPhone app doesn’t support the larger display found on the 6 Plus, and the only way to take full advantage of the larger display is to update the app. </p>
+<p>Sometimes it’s okay to ignore changes coming from Apple, but sometimes the changes are too big to ignore. The iPhone 6 Plus is one example. Customers can quickly tell if an iPhone app doesn’t support the larger display found on the 6 Plus, and the only way to take full advantage of the larger display is to update the app.</p>
 
 <p>This is one area where Peak App Care helps app publishers. Making changes to your app to support the latest iOS release or new device is covered with Peak App Care.</p>
 
@@ -140,15 +140,15 @@
 
 <h2 id="giving-credit-where-credit-is-due">Giving Credit Where Credit is Due</h2>
 
-<p>I wish I could take credit for coming up with a totally unique concept, but the truth is a maintenance plan for software isn’t anything new. And providing this type of service for mobile apps isn’t new either. In fact, I got the idea from Einar Vollset. </p>
+<p>I wish I could take credit for coming up with a totally unique concept, but the truth is a maintenance plan for software isn’t anything new. And providing this type of service for mobile apps isn’t new either. In fact, I got the idea from Einar Vollset.</p>
 
-<p>Einar talks about his app care service in <a href="http://www.freelancetransformation.com/blog/building-a-recurring-revenue-consulting-business-with-einar-vollset">this podcast interview</a> over at <a href="http://www.freelancetransformation.com">Freelance Transformations</a>. This interview blew me away. Here’s a person providing a service that is similar to what I provide, but he came up with a different way to market the service. Brilliant! </p>
+<p>Einar talks about his app care service in <a href="http://www.freelancetransformation.com/blog/building-a-recurring-revenue-consulting-business-with-einar-vollset">this podcast interview</a> over at <a href="http://www.freelancetransformation.com">Freelance Transformations</a>. This interview blew me away. Here’s a person providing a service that is similar to what I provide, but he came up with a different way to market the service. Brilliant!</p>
 
-<p>But Einar’s <a href="http://www.appaftercare.com">App Aftercare</a> isn’t unique either. There are many other examples of this in different spaces. <a href="http://wpcurve.com">WPCurve</a> provides a similar service for folks running a WordPress site. And I’ve heard of other examples too, companies that will help you maintain your Ruby on Rails app or your Django server. So the concept of app maintenance isn’t new, but I do give credit to Einar Vollset for inspiring me to create <a href="https://www.peakappcare.com">Peak App Care</a>. </p>
+<p>But Einar’s <a href="http://www.appaftercare.com">App Aftercare</a> isn’t unique either. There are many other examples of this in different spaces. <a href="http://wpcurve.com">WPCurve</a> provides a similar service for folks running a WordPress site. And I’ve heard of other examples too, companies that will help you maintain your Ruby on Rails app or your Django server. So the concept of app maintenance isn’t new, but I do give credit to Einar Vollset for inspiring me to create <a href="https://www.peakappcare.com">Peak App Care</a>.</p>
 
 <h1 id="whats-next">What’s Next</h1>
 
-<p>So what’s next now that the web site is up and running? Well, it’s time for me to roll up my sleeves and start the real work…marketing Peak App Care. </p>
+<p>So what’s next now that the web site is up and running? Well, it’s time for me to roll up my sleeves and start the real work…marketing Peak App Care.</p>
 
 <p>Like any product I need to market Peak App Care if it is to be a success. My first step is to let my existing clients know about this new offering, which I’ve already done. After that I need to start making others companies within my target audience aware of Peak App Care, and that is where things start to get tougher for me. Just posting a web site isn’t going to bring in customers. I must find ways to reach my target audience, and thankfully I have some ideas on how to make that happen.</p>
 
@@ -162,7 +162,7 @@
     <link href="http://www.thecave.com/2015/07/07/ive-been-doing-it-wrong/"/>
     <updated>2015-07-07T07:22:54-04:00</updated>
     <id>http://www.thecave.com/2015/07/07/ive-been-doing-it-wrong</id>
-    <content type="html"><![CDATA[<p>A few years back I was making the majority of my income from the products I sold. My apps, my book, they were all doing well. But that changed in 2013. Things came crashing down, and I found myself wondering how I was going to pay the bills. </p>
+    <content type="html"><![CDATA[<p>A few years back I was making the majority of my income from the products I sold. My apps, my book, they were all doing well. But that changed in 2013. Things came crashing down, and I found myself wondering how I was going to pay the bills.</p>
 
 <p>Luckily I have a marketable skill, so I decided to focus on consulting. This was my attempt to reboot my company. The idea was to do consulting work to raise cash, then when I had enough cash I would take time off to work on my business, which in my case meant building another app or two and improving on the ones I already had.</p>
 
@@ -174,23 +174,23 @@
 
 <p>Two weeks ago I woke up early one morning and thought, “I’ve been doing it wrong, and I know what I need to do to correct it.” It was as if all the information I consumed about making products and being an entrepreneur had finally mashed together in a way that made sense to my brain and the light bulb finally turned on.</p>
 
-<p>My cycle of doing full-time consulting work followed by taking time off to work on an app or other product doesn’t work for me. That is now so obvious to me. But how do I get out of this cycle and start building up the momentum on the product side again. </p>
+<p>My cycle of doing full-time consulting work followed by taking time off to work on an app or other product doesn’t work for me. That is now so obvious to me. But how do I get out of this cycle and start building up the momentum on the product side again.</p>
 
-<p>The answer was right in front of my face. It’s a common theme in everything I was reading and listening to. And Justin Jackson says it best in his <a href="http://buildandlaunch.net">Build and Launch podcast</a>, “Start small, start now.” </p>
+<p>The answer was right in front of my face. It’s a common theme in everything I was reading and listening to. And Justin Jackson says it best in his <a href="http://buildandlaunch.net">Build and Launch podcast</a>, “Start small, start now.”</p>
 
-<p>I was using consulting work to save cash so I can take months off at a time to focus on building something. But what I built doesn’t make money. It’s not that the apps I’ve published suck. It’s that once they hit the App Store, my focus returns to consulting work. I’m not sticking with what I started. I’m not marketing the products I have. I’m not doing what I need to do to let more people know about them. </p>
+<p>I was using consulting work to save cash so I can take months off at a time to focus on building something. But what I built doesn’t make money. It’s not that the apps I’ve published suck. It’s that once they hit the App Store, my focus returns to consulting work. I’m not sticking with what I started. I’m not marketing the products I have. I’m not doing what I need to do to let more people know about them.</p>
 
 <p>But at the same time I have a wife and a kid that I must provide for and rent and bills to pay. This is why I keep returning to consulting work.</p>
 
-<p>So how do I break this cycle. It’s simple. I need to start small. </p>
+<p>So how do I break this cycle. It’s simple. I need to start small.</p>
 
-<p>Instead of taking two to three months off to write a new app, I need to start creating small, even tiny, products that only take a short amount of time. Once the momentum is going and I have cash coming in from product sales, I can cut back on the consulting. </p>
+<p>Instead of taking two to three months off to write a new app, I need to start creating small, even tiny, products that only take a short amount of time. Once the momentum is going and I have cash coming in from product sales, I can cut back on the consulting.</p>
 
 <p>But what products can I create now, in a short amount of time, that will get the ball rolling. Here’s what I’m currently thinking:</p>
 
 <ol>
   <li><strong>Productize part of the services I offer.</strong> I’ll share more details on this soon, but in general the goal is to take a consulting service I already offer to my clients and turn it into a product that my clients, and hopefully others, will subscribe to. Now this might seem like a huge gamble. I mean after all, generating monthly recurring income is a tough nut to crack. But it’s a small gamble for me in that I will not spend more than 40 hours over the span of a few of weeks getting this setup. If no one subscribes, I’ve only lost a week’s worth of my time. But if just one company signs up, I’m that much closer to getting back on track.</li>
-  <li><strong>Start publishing ebooks.</strong> While I don’t love writing I do enjoy it a lot, and frankly, I miss it. But writing a big book like <a href="http://www.learningipadprogramming.com">Learning iPad Programming</a> took too much out of me, so this time I want to do it differently. I want to keep it small. Again, I’ll share details later but the plan is to create highly focused, short ebooks on specific topics. </li>
+  <li><strong>Start publishing ebooks.</strong> While I don’t love writing I do enjoy it a lot, and frankly, I miss it. But writing a big book like <a href="http://www.learningipadprogramming.com">Learning iPad Programming</a> took too much out of me, so this time I want to do it differently. I want to keep it small. Again, I’ll share details later but the plan is to create highly focused, short ebooks on specific topics.</li>
   <li><strong>Video tutorials.</strong> This is something I’ve explored in the past, and it’s something I want to explore again. But this time I want to do it under my control.</li>
 </ol>
 
