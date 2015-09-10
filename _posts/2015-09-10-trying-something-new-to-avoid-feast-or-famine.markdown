@@ -22,7 +22,7 @@ While combing through my leads I came across a posting for [Toptal][1]. Topal co
 
 Back in the day I used guru.com to find iOS project work, and guess what? It worked and worked well. My first client iOS project came from guru, and I earned $36K off that one project. And my client became a repeat client of mine.
 
-Does the guru site work today? In my opinion, no, it does not. But at least I tried it. And that's what I'm doing with Toptal. I'm trying it. 
+Does the guru site work today? In my opinion, no, it does not. But at least I tried it. And that's what I'm [joining Toptal][2], to try it. 
 
 If Toptal works out for me and I'm able to reduce, or even eliminate the feast or famine cycle, then it's a win win situation for everyone involved. And if it does not workout, well, I'm only out a couple hours of my time.
 
@@ -31,3 +31,4 @@ If Toptal works out for me and I'm able to reduce, or even eliminate the feast o
 [^1]: I have since learned that in this situation I should have charged a fixed weekly or monthly rate instead of an hourly rate. This would have ensured I met my earning goals while still being available to the end-client even when the workload itself was lacking in hours.
 
 [1]: http://toptal.com/
+[2]: https://www.toptal.com/app
