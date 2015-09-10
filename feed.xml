@@ -5,9 +5,52 @@
     <description>thecave.com is the blog site for Kirby Turner, an independent software developer for Mac and iOS.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 07 Sep 2015 11:44:05 -0400</pubDate>
-    <lastBuildDate>Mon, 07 Sep 2015 11:44:05 -0400</lastBuildDate>
+    <pubDate>Thu, 10 Sep 2015 11:52:34 -0400</pubDate>
+    <lastBuildDate>Thu, 10 Sep 2015 11:52:34 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Trying Something New To Avoid Feast Or Famine</title>
+        <description>&lt;p&gt;I’ve been working for myself for nearly 12 years, and for the most part I love it. But there is one aspect of being an independent software developer that I could happily do without, the cycle of feast or famine.&lt;/p&gt;
+
+&lt;p&gt;My products don’t always sell as well as I would like, so I rely on consulting work to keep my annual income at a level that allows me to provide for my family. Some years I do less consulting work than other years thanks to product sales. But other years, I must rely more on consulting to keep food on the table.&lt;/p&gt;
+
+&lt;p&gt;Independent consulting work often times comes with the feast or famine cycle. Some months you have more work than you can handle, the feast, while other times you experience dry spells where you are not billing any hours, the famine.&lt;/p&gt;
+
+&lt;p&gt;Feast or famine is often times a result of not keeping a flowing pipeline of opportunities. But as a consultancy of one, keeping that pipeline flowing can be hard when you are focused on delivering a solution to a client.&lt;/p&gt;
+
+&lt;p&gt;I’ve tried different approach over the years to avoid the feast or famine cycle, and I continue trying new approaches each year. For instance, at the beginning of this year I agreed to work full time on a project for an agency. My hope was that by working with this agency, I would have a constant funnel of project work. However, the workload from the end-client was only part time at best, and since I was being paid hourly I didn’t earn nearly as much as I had planned&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. After a number of chats with the agency, I decided it was in the best interest for everyone for me to end the relationship so I could focus on projects that would get my income level back to where it was last year.&lt;/p&gt;
+
+&lt;p&gt;Today I’m trying something else new.&lt;/p&gt;
+
+&lt;p&gt;While combing through my leads I came across a posting for &lt;a href=&quot;http://toptal.com/&quot;&gt;Toptal&lt;/a&gt;. Topal connects top freelance developers to businesses world wide looking to hire someone for a project. Now I know what many of my friends are thinking right now, this is another one of those crappy freelancer dot com, elancer, or up-something type of sites. And Toptal may in fact turn to be like those other sites. But I won’t know unless I try.&lt;/p&gt;
+
+&lt;p&gt;Back in the day I used guru.com to find iOS project work, and guess what? It worked and worked well. My first client iOS project came from guru, and I earned $36K off that one project. And my client became a repeat client of mine.&lt;/p&gt;
+
+&lt;p&gt;Does the guru site work today? In my opinion, no, it does not. But at least I tried it. And that’s what I’m doing with Toptal. I’m trying it.&lt;/p&gt;
+
+&lt;p&gt;If Toptal works out for me and I’m able to reduce, or even eliminate the feast or famine cycle, then it’s a win win situation for everyone involved. And if it does not workout, well, I’m only out a couple hours of my time.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;I have since learned that in this situation I should have charged a fixed weekly or monthly rate instead of an hourly rate. This would have ensured I met my earning goals while still being available to the end-client even when the workload itself was lacking in hours. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Thu, 10 Sep 2015 11:05:11 -0400</pubDate>
+        <link>http://www.thecave.com/2015/09/10/trying-something-new-to-avoid-feast-or-famine/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2015/09/10/trying-something-new-to-avoid-feast-or-famine/</guid>
+        
+        
+        <category>general</category>
+        
+        <category>work</category>
+        
+      </item>
     
       <item>
         <title>My Upcoming Share Extension Talk At 360idev-Min</title>
@@ -365,28 +408,6 @@
         <category>mac</category>
         
         <category>programming</category>
-        
-      </item>
-    
-      <item>
-        <title>Boston Area Mac And iOS Dev Community Is Awesome</title>
-        <description>&lt;p&gt;This past Wednesday I had a chance to attend &lt;a href=&quot;http://www.nshappyhour.org&quot;&gt;NSHappyHour&lt;/a&gt;. It’s was my first time attending since moving to Vermont two years ago. I had a great time catching up with everyone, and I was reminded just how awesome the Mac and iOS developer community is in the Boston area.&lt;/p&gt;
-
-&lt;p&gt;I also was reminded how much I miss the community there, and since moving back isn’t an option for me - snowboard season starts in about 3 months for me - I need to make a point of visit the Boston area more.&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 07 Aug 2015 10:22:16 -0400</pubDate>
-        <link>http://www.thecave.com/2015/08/07/boston-area-mac-and-ios-dev-community-is-awesome/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2015/08/07/boston-area-mac-and-ios-dev-community-is-awesome/</guid>
-        
-        
-        <category>general</category>
-        
-        <category>ios</category>
-        
-        <category>mac</category>
-        
-        <category>tech</category>
         
       </item>
     
