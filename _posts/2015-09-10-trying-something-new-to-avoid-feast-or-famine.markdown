@@ -26,9 +26,12 @@ Does the guru site work today? In my opinion, no, it does not. But at least I tr
 
 If Toptal works out for me and I'm able to reduce, or even eliminate the feast or famine cycle, then it's a win win situation for everyone involved. And if it does not workout, well, I'm only out a couple hours of my time.
 
+Update: After writing this post I learned more about the [Toptal screening process][3]. Their screening process alone separates them from the other sites mentioned in this post.
+
 ---
 
 [^1]: I have since learned that in this situation I should have charged a fixed weekly or monthly rate instead of an hourly rate. This would have ensured I met my earning goals while still being available to the end-client even when the workload itself was lacking in hours.
 
 [1]: http://toptal.com/
 [2]: https://www.toptal.com/app
+[3]: http://www.toptal.com/top-3-percent
