@@ -2,9 +2,8 @@
 layout: post
 title: "Dispatch Async to Main Queue Doesn't Work With Modal Window on Mac OS X"
 date: 2015-08-10 07:09:01 -0400
-categories: 
-    - programming
-    - mac
+category: programming
+tags: [os x]
 ---
 I've been working on a Mac app lately, and while some things are similar to iOS, something are definitely different. One thing that is different are modal windows and run loops. 
 

@@ -2,9 +2,8 @@
 layout: post
 title: "Trying Something New To Avoid Feast Or Famine"
 date: 2015-09-10 11:05:11 -0400
-categories: 
-    - work
-    - general
+category: business
+tags: [contracting, freelance, self employed]
 ---
 I've been working for myself for nearly 12 years, and for the most part I love it. But there is one aspect of being an independent software developer that I could happily do without, the cycle of feast or famine. 
 

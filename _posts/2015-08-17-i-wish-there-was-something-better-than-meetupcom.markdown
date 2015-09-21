@@ -2,8 +2,7 @@
 layout: post
 title: "I Wish There Was Something Better Than Meetup.Com"
 date: 2015-08-17 07:28:35 -0400
-categories: 
-    - rant
+category: rant
 ---
 I've been a Meetup.com subscriber for years, but I hate using them. Their website isn't very user-friendly, and I often times find their messages to be misleading and or confusing. For example during the transition of the [NSHappyHour][nshappyhour] meetup, which had over 250 members, I tried to disable the account. Turns out that is not an option, or at least it wasn't at the time. I learned that the account had been deleted when I went to re-enable the account a few days later. The only option was to start a new account. This meant we lost the 250+ members that has joined over the years, and we had no way of reaching out to those members to ask them to join the new meetup.
 

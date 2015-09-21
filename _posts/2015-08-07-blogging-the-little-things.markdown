@@ -2,8 +2,8 @@
 layout: post
 title: "Blogging The Little Things"
 date: 2015-08-07 10:11:57 -0400
-categories: 
-    - general
+category: business
+tags: [blogging, writing]
 ---
 I read a post from Shubham Jain, by way of [Gus Mueller][1], about [blogging the little things][2]. In the post, Shubham says:
 

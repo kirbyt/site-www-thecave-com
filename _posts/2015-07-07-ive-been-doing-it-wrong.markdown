@@ -2,10 +2,8 @@
 layout: post
 title: "I've Been Doing It Wrong"
 date: 2015-07-07 07:22:54 -0400
-categories: 
-    - bootstrapping
-    - work
-    - general
+category: business
+tags: [bootstrapping, work]
 ---
 A few years back I was making the majority of my income from the products I sold. My apps, my book, they were all doing well. But that changed in 2013. Things came crashing down, and I found myself wondering how I was going to pay the bills. 
 

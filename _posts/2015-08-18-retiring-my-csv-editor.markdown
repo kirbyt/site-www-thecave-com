@@ -2,11 +2,8 @@
 layout: post
 title: "Retiring My CSV Editor"
 date: 2015-08-18 11:23:09 -0400
-categories: 
-    - apps
-    - bootstrapping
-    - work
-    - general
+category: business
+tags: [apps, product, work]
 ---
 Today I did something that I've been saying I will do for a long time. I retired my CSV editor, [Killink][1]. 
 

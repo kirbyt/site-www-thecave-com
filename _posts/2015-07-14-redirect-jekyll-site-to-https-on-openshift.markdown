@@ -2,9 +2,8 @@
 layout: post
 title: "Redirect Jekyll Site To HTTPS On OpenShift"
 date: 2015-07-14 14:17:53 -0400
-categories: 
-    - programming
-    - tech
+category: programming
+tags: [jekyll, web]
 ---
 I'm preparing to roll out a new [Jekyll][jekyll] website, but unlike with my other Jekyll sites, I want each web page served up on `https`, not `http`. This means telling the server to redirect `http` request to `https`. 
 
