@@ -2,8 +2,8 @@
 layout: post
 title: "Best April Fools' Joke Ever"
 date: 2015-04-03 01:32:47 -0400
-categories: 
-    - humor
+category: personal
+tags: [humor]
 ---
 I met a guy tonight at the bar. He was the victim of the best April Fools' Joke ever.
 

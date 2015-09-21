@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Hiking the Long Trail Division 1'
-category: persona
+category: personal
 tags: [hiking, long trail, pictures]
 ---
 
