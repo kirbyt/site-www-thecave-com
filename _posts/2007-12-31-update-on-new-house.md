@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Update on New House'
-categories:
-  - blogger
-
+category: personal
+tags: [family, salem]
 ---
 
 <a href="http://thecave.smugmug.com/gallery/4022799/2/234146912"><img src="http://thecave.smugmug.com/photos/234146912-Th.jpg" vspace="6" hspace="6" border="0" align="left" /></a>

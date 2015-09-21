@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Download Killink CSV v1.1 Beta'
-categories:
-  - blogger
-
+category: business
+tags: [killink]
 ---
 
 The latest build of Killink CSV v1.1 is available for download.  This is a beta release and is intended for testing purposes only.  More information is available [here](http://www.whitepeaksoftware.com/forums/Topic111-12-1.aspx).

@@ -1,12 +1,8 @@
 ---
 layout: post
 title: 'Weighing In'
-categories:
-  - backpacking
-  - camping
-  - hiking
-  - long trail
-
+category: personal
+tags: [hiking, camping, travel, long trail]
 ---
 
 I decided to weigh every item going with me on my end-to-end hike of the Long Trail. I'm unfortunately carrying about 5 pounds more than I was hoping, but I remind myself this is a month long hike, not a 3 to 5 day trip. I can do without some gear, such as the Solio charger, on shorter trips.

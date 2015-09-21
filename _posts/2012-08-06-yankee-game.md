@@ -1,10 +1,8 @@
 ---
 layout: post
 title: 'Yankee Game'
-categories:
-  - rowan
-  - trips
-
+category: personal
+tags: [rowan, travel]
 ---
 
 <a href="http://photos.thecave.com/Sports/Yankees-Game-Day-August-5-2012/24592870_NjzbJg"><img src="http://photos.thecave.com/Sports/Yankees-Game-Day-August-5-2012/i-gpjw7zB/0/Th/IMG0137-Th.jpg" alt="" border="0" class="alignleft" /></a>

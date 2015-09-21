@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Framework or CMS Revisited'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Thanks to <a href="http://twitter.com/">Twitter</a> I have received some great feedback \[thanks folks!\] within minutes of posting my thoughts on <a href="http://www.thecave.com/archive/2008/12/08/framework_or_cms.aspx#comment">using a framework or CMS</a>.  In the post I talk about the two approaches in general terms and I end the post saying I will very liking use a framework for the <a href="http://www.whitepeaksoftware.com/">White Peak Software</a> web site refresh.  Everyone who sent me feedback suggested I use a CMS for White Peak but unfortunately I didn't really say what my requirements are.  Knowing the requirements might change the opinions of some.

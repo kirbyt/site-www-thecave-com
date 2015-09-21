@@ -1,10 +1,8 @@
 ---
 layout: post
-title: 'DYI Pot Cozy'
-categories:
-  - backpacking
-  - camping
-
+title: 'DIY Pot Cozy'
+category: personal
+tags: [hiking, camping, diy]
 ---
 
 <a href="http://photos.thecave.com/Random/DYI-Pot-Cozy/24476733_NV9jrG"><img src="http://photos.thecave.com/Random/DYI-Pot-Cozy/i-RBn6FQG/0/Th/IMG0110-Th.jpg" border="0" class="alignleft" /></a>

@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'CodeRage Day 1'
-categories:
-  - blogger
-
+category: programming
+tags: [conference]
 ---
 
 [CodeRage](http://conferences.codegear.com/coderage07) Day 1 is over and overall I thought it was a great day.  Unfortunately Day 1 got off to a rough start.  Bandwidth issues caused video and audio outages throughout the morning but the problems were, for the most part, resolved later into the day.

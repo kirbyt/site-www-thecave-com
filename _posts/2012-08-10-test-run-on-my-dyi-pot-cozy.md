@@ -1,11 +1,8 @@
 ---
 layout: post
-title: 'Test Run on My DYI Pot Cozy'
-categories:
-  - backpacking
-  - camping
-  - hiking
-
+title: 'Test Run on My DIY Pot Cozy'
+category: personal
+tags: [hiking, camping, diy]
 ---
 
 <a href="http://photos.thecave.com/Random/DYI-Pot-Cozy/24476733_NV9jrG"><img src="http://photos.thecave.com/Random/DYI-Pot-Cozy/i-8GMG9JL/0/Th/IMG0165-Th.jpg" alt="" border="0" class="alignleft" /></a>

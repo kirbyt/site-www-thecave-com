@@ -1,10 +1,8 @@
 ---
 layout: post
 title: 'Goruck GR1 Review - First Impressions'
-categories:
-  - backpack
-  - camping
-
+category: personal
+tags: [gear]
 ---
 
 <img src="/images/blog/2012-05-30-goruck.jpg" alt="IMG 6146" border="0" width="180" height="270" class="alignleft" />

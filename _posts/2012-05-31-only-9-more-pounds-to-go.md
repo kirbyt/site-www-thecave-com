@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Only 9 more pounds to go'
-categories:
-  - fitness
-
+category: personal
+tags: [fitness]
 ---
 
 I weighed myself today. I'm 11 pounds lighter than I was 7 weeks ago, and I've lost a little more than an inch off my waist.

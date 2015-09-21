@@ -1,12 +1,8 @@
 ---
 layout: post
 title: 'Planning to Thru Hike the Long Trail'
-categories:
-  - backpacking
-  - camping
-  - hiking
-  - trips
-
+category: personal
+tags: [hiking, camping, travel, long trail]
 ---
 
 <p>One week from today, on August 23, I start a month long journey to hike the <a href="http://www.greenmountainclub.org/page.php?id=2">Long Trail</a> from end to end. I plan to start at the Vermont-Canadian border, and hike south to North Adams, Massachusetts. I’m not exactly sure how long the hike will take me, but it should be somewhere between 25 and 35 days depending on my daily mood, how much or little I hike each day, and so on.</p>

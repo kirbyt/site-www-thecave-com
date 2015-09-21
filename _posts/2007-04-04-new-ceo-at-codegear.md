@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'New CEO at CodeGear'
-categories:
-  - blogger
-
+category: business
 ---
 
 [Jim Douglas replaces Ben Smith as CEO for CodeGear](http://dn.codegear.com/article/34365).  This move makes no sense to me, but then again I have never really understood [Corporate America](http://en.wikipedia.org/wiki/Corporate_America).

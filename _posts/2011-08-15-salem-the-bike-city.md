@@ -1,10 +1,8 @@
 ---
 layout: post
 title: 'Salem The Bike City'
-categories:
-  - opinion
-  - salem
-
+category: personal
+tags: [salem]
 ---
 
 Salem Mass is often known as The Witch City, but it's also trying hard to become a bike city. One example of this comes from today's announcement about a [free bike sharing program](http://www.salemnews.com/local/x850300025/Salem-to-join-major-cities-in-offering-bike-sharing-program) here in Salem. The city has also made improvements to off-road bike paths and recently completed the striping of on-street bike lanes. The problem, however, I have with biking in Salem is with the North Shore drivers.

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'High Royalty Rates Could Kill Web Radio'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 [High royalty rates could kill web radio including Pandora](http://www.rollingstone.com/rockdaily/index.php/2008/08/18/pandora-says-high-royalty-rates-are-putting-them-out-of-business/). This is very disturbing news for me because I listen to a lot of web radio especially Pandora.  I rarely if ever listen to AM/FM radio these days and web radio is my only insight to new music.  Web radio influences me to buy new music.

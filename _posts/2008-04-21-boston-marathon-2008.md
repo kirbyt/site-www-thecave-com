@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Boston Marathon 2008'
-categories:
-  - blogger
-
+category: personal
+tags: [pictures]
 ---
 
 <a href="http://thecave.smugmug.com/gallery/4772984_3mrsK/1/283153640_nnZgX"><img src="http://thecave.smugmug.com/photos/283165438_TTCiT-Th.jpg" border="0" vspace="6" hspace="6" alt="" height="100" width="150" align="left" /></a>

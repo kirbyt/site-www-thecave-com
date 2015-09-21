@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Things I''ve Done This Weekend That I Normally Don''t Do'
-categories:
-  - general
-
+category: personal
+tags: [travel, family, writing]
 ---
 
 I'm in the final stagings of writing my book, and to help out, the wife gave me the okay to spend a few days in Vermont along. No wife. No kid. Just me and my laptop.

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Wallpaper Should Be Outlawed'
-categories:
-  - blogger
-
+category: personal
 ---
 
 <a href="http://thecave.smugmug.com/gallery/3997880/1/232528797"><img src="http://thecave.smugmug.com/photos/232528797-Th.jpg" border="0" alt="" align="left" hspace="6" /></a>

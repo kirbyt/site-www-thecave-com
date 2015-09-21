@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Exciting News This Week from CodeGear'
-categories:
-  - blogger
-
+category: programming
 ---
 
 [CodeGear](http://www.codegear.com/) made a couple of announcements this week that have generated a excitement and some confusion.

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Long Time No Post'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 I really need to find time to make more blog posting. I definitely have lots to say, opinions to share, tips and tricks learned from some of the programming work I have done over the last few months. But it seems I never have time to write.<br /><br />I'm currently working on new releases for Labor Mate, my <a href="http://www.whitepeaksoftware.com/labormate">labor contraction stopwatch for the iPhone and iPod touch</a>, and Killink CSV Editor, a <a href="http://www.whitepeaksoftware.com/killink-csv">csv editor</a> for the Windows desktop. I'm also working on 3 different custom software development projects for customers and I have another one that will be starting soon. And the new White Peak Software website will be ready very, very soon with new customer support features coming soon. Needless to say, I'm swamped.<br /><br />And of course <a href="http://www.rowanturner.net/">Rowan</a> is only 10 months old and I have to spend as much time as I can with him. Lucky for me I work from home so I get to spend plenty of time with the little guy daily, which is great. But he does interrupt my work from time to time.<br /><br />With luck and some focused time getting some of the projects completed, I'll be back blogging before you know it. Meanwhile you can <a href="http://twitter.com/kirbyt">follow me</a> over at Twitter.

@@ -23,6 +23,7 @@ root: /
 paginate: 10          # Posts per page on the blog index
 pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
+related_posts_count: 10 # Number of related articles to display.
 
 permalink: /:year/:month/:day/:title/
 

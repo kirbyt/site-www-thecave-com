@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Adding Excel File Support To Killink CSV'
-categories:
-  - blogger
-
+category: business
+tags: [killink]
 ---
 
 I received an email today from an individual asking if Excel files could be opened by [Killink CSV](http://www.killink.com/).  The person's goal is to load the Excel file into [Killink CSV](http://www.killink.com/) and save the data to a pipe delimited text file.  As far as I know this cannot be done in Excel, so guess what?

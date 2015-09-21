@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Welcome Back'
-categories:
-  - general
-
+category: personal
+tags: [blog, writing, white peak software, rowan]
 ---
 
 Hey! What's going on here? A new blog post after more than a year and a half?

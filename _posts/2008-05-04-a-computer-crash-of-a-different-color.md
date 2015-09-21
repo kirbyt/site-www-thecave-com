@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'A Computer Crash of a Different Color'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 [My tweet from Saturday night](http://twitter.com/kirbyt/statuses/802958985) deserves a follow up response, especially since a few folks have asked "What happened?"

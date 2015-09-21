@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Excited About Expected New Arrival'
-categories:
-  - blogger
-
+category: personal
+tags: [white peak software, killink, os x, family]
 ---
 
 Things are really busy for me right now.  I've just started two separate customer projects, sales of [Killink CSV](http://www.whitepeaksoftware.com/killink-csv.aspx) and [SMTP Diagnostics](http://www.whitepeaksoftware.com/smtp-diagnostics.aspx) are climbing, and I've been doing a [lot of travel](http://www.thecave.com/archive/2007/01/26/my_trips_in_2007.aspx).  But one thing has me really excited.  I ordered a [MacBook Pro](http://www.apple.com/macbookpro/) and it's expected to arrive in a couple of days.

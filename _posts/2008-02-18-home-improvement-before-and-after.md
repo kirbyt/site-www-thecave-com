@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Home Improvement Before and After'
-categories:
-  - blogger
-
+category: personal
+tags: [pictures, salem]
 ---
 
 <a href="http://thecave.smugmug.com/gallery/4361723_ESUYj/1/256017281_R3jAY"><img src="http://thecave.smugmug.com/photos/256017281_R3jAY-Th.jpg" vspace="6" hspace="6" border="0" /></a>

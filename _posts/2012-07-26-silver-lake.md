@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Silver Lake'
-categories:
-  - camping
-
+category: personal
+tags: [camping, travel, family]
 ---
 
 <a href="http://photos.thecave.com/Trips/Camping-Trips/Silver-Lake/24392143_pj99p6"><img src="http://photos.thecave.com/Trips/Camping-Trips/Silver-Lake/i-zFFnQ8j/0/Th/IMG0108-Th.jpg" class="alignleft" /></a>

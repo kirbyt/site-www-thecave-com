@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'I Think Delphi 2007 is Great'
-categories:
-  - blogger
-
+category: programming
 ---
 
 I received an email today from a person interested in my opinion about Delphi 2007 and CodeGear.  In his email he said he felt the Delphi 2007 release is not going as planned.  He wasn't sure if that was because the software sucks, support sucks, or what.<br /><br />I know experience and opinions can vary person to person, but I think Delphi 2007 rocks and I feel the CodeGear team is doing an amazing job despite a hiccup here and there.  And to show more love towards CodeGear and Delphi 2007, here is my reply to the person's email:<br /><br /><div class="quote"><br />I personally think CodeGear's Delphi 2007 is one of the best releases of Delphi in years.  I use the product on a daily basis and I have not experienced any major problems.  This latest release makes me excited to use Delphi again.<br /><br />The only serious problem I encountered was the ordering process but the problems were the fault of Digital River, not CodeGear or Delphi 2007.  The CodeGear staff responded quickly to the email I sent informing them of the problems.  Not only that, Loreen Fornshell of CodeGear went above and beyond to assist in correcting the problems caused by Digital River.<br /><br />There is still room for improvement with Delphi.  For example, the help system can use a bit more work.  But this initial offering from the newly formed CodeGear is not only rock solid (in my opinion) but shows that CodeGear is heading in the right direction.<br /></div><br /><br />Note: It occurs to me as I type this blog entry that the person might be referring to Delphi for PHP.  I admit I do not share the same love towards Delphi for PHP as I do for Delphi 2007, but it is after all a version 1.0 product.  Visual Studio 2002 and .NET 1.0 wasn't that great either.
