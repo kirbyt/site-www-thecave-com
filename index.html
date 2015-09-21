@@ -20,7 +20,8 @@ header-img: "img/bg-01.jpg"
     <p><a href="{{ post.url | prepend: site.baseurl }}">Continue reading &rarr;</a></p>
 
     <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.author }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-    {% if post.categories %} in {{ post.categories | category_links }}{% endif %}
+    {% if post.categories %} in {{ post.categories | category_links }}{% endif %}.
+    {% if post.tags %}Tagged in {{ post.tags | tag_links }}.{% endif %}
     </p>
 </div>
 <hr>
