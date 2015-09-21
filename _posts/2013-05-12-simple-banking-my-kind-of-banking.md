@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 'Simple Bank, My Kind of Banking'
-categories:
-    - random
+category: personal
 ---
 Earlier today I [posted][simplepost] on ADN that I love banking with Simple. My friend [Daniel][daniel] asked if I could summarize in 250 or less what sets Simple apart from other banks. I did my best to summarize what I thought was different/better about Simple, but I still felt a blog post would be better.
 

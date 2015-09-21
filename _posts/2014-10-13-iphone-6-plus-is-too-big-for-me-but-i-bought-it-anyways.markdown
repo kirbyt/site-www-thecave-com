@@ -1,11 +1,8 @@
 ---
 layout: post
 title: "iPhone 6 Plus Is Too Big For Me, But I Bought It Anyways"
-categories:
-    - programming
-    - tech
-    - ios
-    - general
+category: programming
+tags: [ios, tech, conference]
 ---
 A few weeks back I said I would be buying the [iPhone 6][iphone6], not the 6 Plus. The 6 Plus is simply too large for me. But I have since changed my mind.
 

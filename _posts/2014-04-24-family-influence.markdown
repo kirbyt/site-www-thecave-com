@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Family Influence'
-categories:
-    - family
-    - work
+category: business
+tags: [family]
 ---
 Over on ADN, Manton Reece [posted][manton] a link to [The Distance][distance], a new online magazine about "long lasting businesses and the people behind them". Manton's post included this quote:
 

@@ -2,10 +2,8 @@
 layout: post
 title: "Bad Case Of Buyer's Remorse"
 date: 2015-02-13 07:48:47 -0500
-categories: 
-    - general
-    - rant
-    - snowboarding
+category: personal
+tags: [snowboarding]
 ---
 I've very disappointed in my new snowboard purchase. It's fair to say I have a bad case of buyer's remorse. I thought I was saving a few dollars by buying online, but at the same time I felt rushed. My gut was telling me not to do it. It told me to wait. But I didn't listen. I'll know better next time. 
 

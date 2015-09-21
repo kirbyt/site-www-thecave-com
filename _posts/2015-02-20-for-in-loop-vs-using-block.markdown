@@ -2,9 +2,8 @@
 layout: post
 title: "For-In Loop vs Using Block"
 date: 2015-02-20 13:17:18 -0500
-categories: 
-    - programming
-    - ios
+category: programming
+tags: [ios, os x]
 ---
 Brent Simmons talks about [for-in loops][1] in a recent post. In it he says:
 

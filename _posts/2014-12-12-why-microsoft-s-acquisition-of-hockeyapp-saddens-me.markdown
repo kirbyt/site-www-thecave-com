@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "Why Microsoft's Acquisition of HockeyApp Saddens Me"
-categories:
-    - tech
-    - general
+category: business
+tags: [tech, microsoft, hockeyapp]
 ---
 While catching up on the latest tech news last night, I came across a post that said Microsoft had acquired HockeyApp. My first thought was this is a joke. I immediately went to the HockeyApp blog site and, lo and behold, it is not a joke. Microsoft did acquire HockeyApp.
 

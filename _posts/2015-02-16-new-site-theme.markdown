@@ -2,8 +2,8 @@
 layout: post
 title: "New Site Theme"
 date: 2015-02-16 22:53:03 -0500
-categories: 
-    - general
+category: personal
+tags: [web, blog]
 ---
 I've been on a website redesign kick lately updating sites such as [kirbyturner.com][1] and [rowanturner.net][2]. The recent update to my [vanity website][1] gives it a more modern look, and [Rowan's website][2] now has a clean, fresh look that focuses on the content.
 

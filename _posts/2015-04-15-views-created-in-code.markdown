@@ -2,9 +2,8 @@
 layout: post
 title: "Views Created In Code"
 date: 2015-04-15 12:58:45 -0400
-categories: 
-    - ios
-    - programming
+category: programming
+tags: [ios]
 ---
 Last year I posted an article that talks about why [I stopped using Interface Builder][1] in favor of writing code to create views. There are some who disagree with me, and to them I say, "To each his own." And there are some who agree with me, but choose not to publicize it. No matter. Every programmer has tricks that make them more productive, and creating views in code just happens to be one trick that works well for me. 
 

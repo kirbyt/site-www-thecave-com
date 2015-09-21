@@ -2,9 +2,8 @@
 layout: post
 title: "The Snow Was Better In 2003"
 date: 2015-03-05 10:31:00 -0500
-categories: 
-    - snowboarding
-    - travel
+category: personal
+tags: [snowboarding, travel]
 ---
 During our stay in Whistler last week, I kept saying to my wife I thought the snow conditions, which weren't the best, were about the same as the conditions we experienced in February 2003. Turns out I was wrong.
 

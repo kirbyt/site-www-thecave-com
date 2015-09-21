@@ -2,11 +2,8 @@
 layout: post
 title: "Building An App From Start To Finish"
 date: 2015-06-08 09:09:35 -0400
-categories: 
-    - bootstrapping
-    - ios
-    - apps
-    - videos
+category: business
+tags: [ios, indie life, videos]
 ---
 Amy Hoy wrote the first version of her book [Just Fucking Ship][2] in 24 hours, which is awesome. Along those same lines, [David Smith][1] built an app from start to finish in about 6 hours - also awesome, and he posted this video that shows the entire process.
 

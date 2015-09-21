@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "Microblogging, the Open Web, and Cross Post"
-categories:
-    - cross post
-    - ios
-    - programming
+category: programming
+tags: [ios, cross post, microblogging, blog]
 ---
 Recently Manton Reece has been talking a lot about [microblogging][microblog] in an open web world using [RSS][rss]. He has touched on points that are important to me, specifically content ownership. Like many people I post regularly to App.net, Facebook, Twitter, and other social networks, but I've always had one big problem with these networks. My micro-posts do not appear on my web site, and if these networks were to disappear in the future, then my content disappears too.
 

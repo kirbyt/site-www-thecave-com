@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'WTF Ruby Gems'
-categories:
-    - rant
-    - tech
+category: rant
+tags: [ios, gems, ruby, cocoapods]
 ---
 I'm working with a client to update one of their iOS apps. The Xcode project uses CocoaPods for dependency management. I'm not a fan of CocoaPods, but I grin and bear it when working with existing client projects.
 

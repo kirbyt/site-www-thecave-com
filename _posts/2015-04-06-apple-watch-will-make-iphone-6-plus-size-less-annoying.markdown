@@ -2,10 +2,8 @@
 layout: post
 title: "Apple Watch Will Make iPhone 6 Plus Size Less Annoying"
 date: 2015-04-06 21:42:53 -0400
-categories: 
-    - ios
-    - opinion
-    - tech
+category: business
+tags: [ios, watch]
 ---
 One of the things that annoys me most about the size of my iPhone 6 Plus is pulling it out of my pocket while at a bar or restaurant just to see why my phone buzzed. The majority of the time my phone buzzes because of an incoming text message. I have notifications turned off for almost all other apps, and I rarely. if ever, get phone calls these days, which is why I know the buzz is most likely a text message. And if I'm at the bar without my wife, then the person trying to reach me is most likely my wife. 
 

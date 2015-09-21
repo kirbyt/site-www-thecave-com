@@ -2,10 +2,8 @@
 layout: post
 title: "Tips To Being More Focused"
 date: 2015-06-22 11:51:20 -0400
-categories: 
-    - work
-    - general
-    - life
+category: business
+tags: [indie life]
 ---
 I tweeted the other day that "I have the problem of wanting to do too many things at once, which is distracting. It's time for me to learn how to scale back and focus."
 

@@ -3,7 +3,7 @@ layout: post
 title: "Retiring My CSV Editor"
 date: 2015-08-18 11:23:09 -0400
 category: business
-tags: [apps, product, work]
+tags: [white peak software, windows]
 ---
 Today I did something that I've been saying I will do for a long time. I retired my CSV editor, [Killink][1]. 
 

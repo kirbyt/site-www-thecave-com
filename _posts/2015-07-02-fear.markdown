@@ -3,7 +3,7 @@ layout: post
 title: "Fear"
 date: 2015-07-02 06:48:32 -0400
 category: business
-tags: [bootstrapping, work]
+tags: [indie life, life, social]
 ---
 Lately I've been struggling to release new things out to the public, things such as blog posts, open source code, a new website and service I want to offer, even updates to some of my apps. What's worse is that a number of these things are done and are just sitting on my computer. For instance, I've been using an updated version of Cross Post for nearly two months that isn't available in the App Store. 
 

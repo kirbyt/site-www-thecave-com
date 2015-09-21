@@ -2,10 +2,8 @@
 layout: post
 title: "No Plans For A Third Edition"
 date: 2015-01-08 08:18:28 -0500
-categories: 
-    - general
-    - writing
-    - life
+category: [business]
+tags: [ios, writing, life]
 ---
 A number of people have recently asked if there will be a third edition of [Learning iPad Programming][1]. The short answer is no, there are no plans. There are many reasons why I decided to not update the book, but a few key reasons stand out more than others.
 

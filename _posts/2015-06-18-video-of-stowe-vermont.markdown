@@ -2,9 +2,8 @@
 layout: post
 title: "Video of Stowe, Vermont"
 date: 2015-06-18 22:22:58 -0400
-categories: 
-    - general
-    - videos
+category: personal
+tags: [stowe, vermont, videos]
 ---
 My friend Ashley came across another video of Vermont. This time it's about Stowe, the town I live in. Enjoy.
 

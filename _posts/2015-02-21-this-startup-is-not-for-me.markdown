@@ -2,9 +2,8 @@
 layout: post
 title: "This Startup Is Not For Me"
 date: 2015-02-21 08:27:44 -0500
-categories: 
-    - work
-    - life
+category: business
+tags: [life, indie life]
 ---
 While writing my previous post on how [working 80+ hours is not the answer][1], I was reminded of a Wall Street startup I interviewed for back in December 1999. The startup was staffed with many brilliant programmers, and I certainly would learn a lot from them. The startup was well funded, and they offered me more money than any other company had offer me. But in the end I turned down their offer.
 

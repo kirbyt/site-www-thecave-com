@@ -1,10 +1,8 @@
 ---
 layout: post
 title: 'Cross Posting to App.net, Facebook, and Twitter'
-categories:
-    - ios
-    - apps
-    - cross post
+category: business
+tags: [ios, white peak software, cross post, social]
 ---
 Last year my wife told me more family and friends would "like" my photos on Facebook if I posted the them directly to Facebook. At the time I was using [ifttt][ifttt] to selectively cross post to App.net and Facebook. This meant my photos on Facebook were actually links to the App.net, which is where the photos were being stored, and this required my Facebook followers to tap the link to see the photos. Not the best experience for my followers.
 

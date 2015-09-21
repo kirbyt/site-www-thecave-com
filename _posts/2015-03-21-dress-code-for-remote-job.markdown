@@ -2,10 +2,8 @@
 layout: post
 title: "Dress Code For Remote Job"
 date: 2015-03-21 08:27:07 -0400
-categories: 
-    - work
-    - humor
-    - general
+category: business
+tags: [humor, indie life]
 ---
 I came across one of the silliest benefits I've seen for a remote developer job: casual dress code. From the job [posting][1]:
 

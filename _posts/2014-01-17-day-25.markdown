@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Day 25'
-categories:
-    - snowboarding
-    - stowe
+category: personal
+tags: [snowboarding, stowe]
 ---
 Today marks my 25th day snowboarding this season. While this might sound awesome, it's fewer days than I was hoping to have by mid-January. I snowboarded 21 days up through Christmas. That means I have only snowboarded 4 days since Christmas, which is why I thought I would have more days by now.
 

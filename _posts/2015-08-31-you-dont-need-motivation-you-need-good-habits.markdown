@@ -3,7 +3,7 @@ layout: post
 title: "You Don't Need Motivation. You Need Good Habits"
 date: 2015-08-31 14:49:56 -0400
 category: business
-tags: [bootstrapping, work, life]
+tags: [indie life, life]
 ---
 Amy Hoy answers the question "[How do you stay motivated when you're not making any money][1]". The post is a couple of years old, but her answer is as relevant today as it was back then. It's not about finding and having motivation. It's about developing good habits.
 

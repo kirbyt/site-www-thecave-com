@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 'Super Long Day with the Kid'
-categories:
-    - family
+category: personal
+tags: [family]
 ---
 Melanie's out of town enjoying some quality vacation time with one of her girlfriends leaving Rowan and me in Salem to enjoy some quality father son time. We made the most of it today, which has turned into a super long day. 
 

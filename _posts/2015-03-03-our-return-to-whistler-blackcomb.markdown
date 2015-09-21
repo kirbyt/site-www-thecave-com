@@ -2,11 +2,8 @@
 layout: post
 title: "Our Return To Whistler Blackcomb"
 date: 2015-03-03 20:50:15 -0500
-categories: 
-    - snowboarding
-    - skiing
-    - family
-    - travel
+category: personal
+tags: [snowboarding, family, travel]
 ---
 Years ago I, with help from a couple of friends, organized an annual snowboarding trip to Whistler Blackcomb. Even after the annual trips were no more, Melanie and I continued visiting Whistler once every year or two. Our last Whistler trip was in 2007, and we've been wanting to return for many years. But it just hasn't worked out for us. That is until this year when we finally made our return to Whistler, and we brought Rowan with us. 
 

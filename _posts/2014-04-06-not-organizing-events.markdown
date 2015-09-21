@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Not Organizing Events'
-categories:
-    - general
-    - social
+category: personal
+tags: [stowe, salem, social]
 ---
 When I lived in NYC I organized and ran events for computer geeks like me. It was a lot of fun, and a great way to meet new people. Then I moved to Salem, Mass, a suburb of Boston, and again I organized and ran events in Salem and Boston. And again it was a lot of fun and a great way to meet new people.
 

@@ -2,9 +2,8 @@
 layout: post
 title: "Goodbye Fitbit Ultra, Hello Fitbit One"
 date: 2015-01-14 19:42:08 -0500
-categories: 
-    - general
-    - fitness
+category: personal
+tags: [fitness]
 ---
 On November 15, 2011, I started using my Fitbit Ultra, and after only 1157 days I have finally switched to the Fitbit One.
 

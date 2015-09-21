@@ -2,8 +2,8 @@
 layout: post
 title: "Argh! Thanks A Lot Apple"
 date: 2015-04-10 03:13:14 -0400
-categories: 
-    - rant
+category: rant
+tags: [watch]
 ---
 I woke up at 2:45 am this morning to buy a new Apple Watch. I ordered the 42mm space gray with black sport band Apple Watch Sport, but I'm still annoyed. I got a delivery date of May 13 to May 27, and that annoys me because I was ready to order at 3 am.
 

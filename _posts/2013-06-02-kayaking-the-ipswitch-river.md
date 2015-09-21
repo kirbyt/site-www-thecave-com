@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Kayaking the Ipswich River'
-categories:
-    - pictures
-    - kayaking
+category: personal
+tags: [kayaking, pictures]
 ---
 [<img src="http://photos.thecave.com/Sports/Ipswitch-River/i-BBjM2Nm/0/Th/IMG_1313-Th.jpg" alt="" border="0" class="alignleft" />][gallery] Yesterday I did a 16 mile paddle on the Ipswich River with my buddy Shawn. It was the perfect way to spend a Saturday morning. We put in at Thunder Bridge, made our way east through the Ipswich Wildlife Sanctuary, and finally stopped in the town of Ipswich. 
 

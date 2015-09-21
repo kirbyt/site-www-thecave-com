@@ -3,7 +3,7 @@ layout: post
 title: "Kicking Procrastination In The Ass"
 date: 2015-08-31 20:57:22 -0400
 category: business
-tags: [bootstrapping, life, work]
+tags: [indie life, life]
 ---
 I attended a video cast thingie today - I think the kids call it a webinar - hosted by [Amy Hoy][amy] and [Alex Hillman][alex] titled [Kick Procrastination’s Ass][1]. It was really good, especially the first hour. If you have some spare time, I highly recommend watching it.
 

@@ -2,11 +2,8 @@
 layout: post
 title: "Stuck Working For Others"
 date: 2015-06-04 16:31:38 -0400
-categories: 
-    - general
-    - bootstrapping
-    - work
-    - quotes
+category: business
+tags: [quotes, indie life]
 ---
 I love this quote from Amy Hoy:
 

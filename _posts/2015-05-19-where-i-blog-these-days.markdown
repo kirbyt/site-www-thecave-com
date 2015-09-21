@@ -2,9 +2,8 @@
 layout: post
 title: "Where I Blog These Days"
 date: 2015-05-19 09:40:11 -0400
-categories: 
-    - general
-    - writing
+category: personal
+tags: [writing, blog]
 ---
 I've recently, and "recently" as in the last couple of years, cut back on the number of blog sites I have. I'm down to three sites now, and that seems manageable. The sites are:
 

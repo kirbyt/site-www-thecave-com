@@ -3,7 +3,7 @@ layout: post
 title: "My Upcoming Share Extension Talk At 360idev-Min"
 date: 2015-09-07 11:37:39 -0400
 category: programming
-tags: [ios, conference, speaking]
+tags: [ios, conference]
 ---
 I'm excited to be one of the speakers at the upcoming [360idev-min][1] conference in Greenville, SC. In my talk I'll share the things you need to know about when writing a share extension for your iOS app. 
 

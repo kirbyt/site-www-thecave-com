@@ -2,8 +2,8 @@
 layout: post
 title: "Driver X"
 date: 2015-03-09 16:11:50 -0400
-categories: 
-    - snowboarding
+category: personal
+tags: [snowboarding]
 ---
 I received my new pair of Burton Driver X snowboard boots this afternoon. Damn, these puppies are stiff, but that's a good thing. I can't wait to hit the hill with them in the morning. It's going to be a whole new riding experience after wearing boots that I probably should've replaced a couple of seasons ago.
 

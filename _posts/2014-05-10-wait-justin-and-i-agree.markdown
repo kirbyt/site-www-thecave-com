@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Wait, Justin and I Agree?'
-categories:
-    - ios
-    - programming
+category: programming
+tags: [ios, interface builder, auto layout]
 ---
 My friend Justin wrote a post explaining why he thinks you should [use Interface Builder with Auto Layout][response]. It was in response to my post about [why I don't use Interface Builder][noib] these days thanks to Auto Layout. Justin's post is good with plenty of valid points. Justin and I also agree iOS and Mac developers should be using Auto Layout. But he said something that got me wondering...does Justin agree with me more than he realizes. Regarding writing layout constraints in code, Justin says:
 

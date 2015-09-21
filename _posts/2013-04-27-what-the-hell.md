@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'What the Hell'
-categories:
-    - random
-    - travel
+category: personal
+tags: [travel]
 ---
 That's right. What the hell?
 

@@ -2,9 +2,8 @@
 layout: post
 title: "Made Some Fixes To The Blog Site"
 date: 2014-12-28 19:01:32 -0500
-categories: 
-    - general
-    - programming
+category: programming
+tags: [web, jekyll]
 ---
 Before doing some work today I decided to make some improvements to my blog site. I thought I would be playing with the site for only an hour or so, but instead it took most of the day. Typical when dealing with programming issues in an unfamiliar environment. 
 

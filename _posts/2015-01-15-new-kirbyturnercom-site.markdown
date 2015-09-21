@@ -2,10 +2,8 @@
 layout: post
 title: "New kirbyturner.com Site"
 date: 2015-01-15 16:20:35 -0500
-categories: 
-    - general
-    - work
-    - tech
+category: business
+tags: [web]
 ---
 I have owned the vanity domain name [kirbyturner.com][1] for a long time, but I didn't anything with it after buying it. That changed back when I was writing [Learning iPad Programming][2]. My publisher asked that I setup a website that talks about me, so I finally put kirbyturner.com to use. Unfortunately I never liked the look of the site. I used a bland template to create the website quickly. The site was ugly, but it served its purpose. Then Justin Williams created a new "professional web site" for [himself][3].
 

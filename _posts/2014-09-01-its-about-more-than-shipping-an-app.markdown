@@ -1,10 +1,8 @@
 ---
 layout: post
 title: 'It''s About More Than Shipping an App'
-categories:
-    - work
-    - opinion
-    - apps
+category: business
+tags: [indie life]
 ---
 There have been a number of recent blog posts about the doom and gloom of being an indie developer especially in the iOS world. The theme of these posts are basically the same. A developer spends some time building an app. The app is released into the wild, and sales are much lower than expected. Some developers give up while others will try again.
 

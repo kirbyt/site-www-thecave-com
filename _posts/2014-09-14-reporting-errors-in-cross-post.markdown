@@ -1,11 +1,8 @@
 ---
 layout: post
 title: 'Reporting Errors in Cross Post'
-categories:
-    - ios
-    - apps
-    - cross post
-    - programming
+category: programming
+tags: [ios, cross post]
 ---
 A friend sent me suggestions on handling error reporting for Cross Post. I decided write up my current thinking here to see if my approach makes sense. Besides, trying to explain it in a set of 140 character tweets is less than ideal.
 

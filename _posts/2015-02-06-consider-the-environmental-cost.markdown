@@ -2,10 +2,8 @@
 layout: post
 title: "Consider The Environmental Cost"
 date: 2015-02-06 07:56:46 -0500
-categories: 
-    - general
-    - snowboarding
-    - skiing
+category: personal
+tags: [snowboarding, life]
 ---
 Two days ago I wrote a [post][1] about how I bought a new snowboard online because it was cheaper than buying locally, or so I thought. Turns out a local shop in Stowe was offering a 20% discount on the board I bought, but I didn't know this at the time since that shop didn't advertise the sale on their website. So in the end I paid a little more to buy a new snowboard from another local shop located on the other side of the country. 
 

@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "A Tradition Comes To A Close Tonight"
-categories:
-    - random
-    - snowboarding
-    - social
+category: personal
+tags: [snowboarding, social]
 ---
 On December 22, 2001, I was in Whistler with my friends Dave and Joe. We spent the day snowboarding, then that night we went to see the first Lord of the Rings movie. Little did I know that night would become a tradition of sorts for me.
 

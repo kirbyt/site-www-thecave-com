@@ -2,9 +2,8 @@
 layout: post
 title: "thecave On Twitter"
 date: 2015-06-14 22:31:52 -0400
-categories: 
-    - general 
-    - social
+category: personal
+tags: [blog, social]
 ---
 My friend Uli [asked][1]:
 

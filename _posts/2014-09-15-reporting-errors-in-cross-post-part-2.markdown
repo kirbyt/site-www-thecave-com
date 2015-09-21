@@ -1,11 +1,8 @@
 ---
 layout: post
 title: 'Reporting Errors in Cross Post Part 2'
-categories:
-    - ios
-    - apps
-    - cross post
-    - programming
+category: programming
+tags: [ios, cross post]
 ---
 Yesterday I talked about [options for reporting errors][post] (and statuses) from the server back to the Cross Post app. Later I came up with a third option, which I like the best...hosting the error reports on [Cloud Files][cloudfiles].
 

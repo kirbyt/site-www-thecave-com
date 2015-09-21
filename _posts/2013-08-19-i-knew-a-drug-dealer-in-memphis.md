@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 'I Knew a Drug Dealer in Memphis'
-categories:
-    - random
+category: personal
+tags: [humor]
 ---
 I just received a spam email saying, "A well-established company wants to offer you a telecommuting opportunity in the business of mail management.The position requires no professional skills besides basic computer literacy. The key responsibilities are to receive correspondence at your home address, repack and resend it to our customers."
 

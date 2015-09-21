@@ -2,10 +2,8 @@
 layout: post
 title: "Reliving The Past"
 date: 2015-02-17 01:38:50 -0500
-categories: 
-    - general
-    - writing
-    - life
+category: personal
+tags: [writing, blog, life]
 ---
 I just spent the last two hours looking through past posts here at thecave. I was writing a lot for the four or five years, and some of those old posts are actually good. But more importantly reading through those old posts gave me a chance to relive my past. 
 

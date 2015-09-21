@@ -1,11 +1,8 @@
 ---
 layout: post
 title: 'We''re Moving to a Ski Town...Finally'
-categories:
-    - moving
-    - skiing
-    - snowboarding
-    - hiking
+category: personal
+tags: [stowe, vermont, snowboarding, hiking, family]
 ---
 It's official. It's really going to happen. We're moving to a ski town! We're moving to [Stowe, Vermont][stowe], in August. 
 

@@ -2,11 +2,8 @@
 layout: post
 title: "Après Code: A New Developer Meetup In Stowe Vt"
 date: 2015-03-05 10:54:05 -0500
-categories: 
-    - programming
-    - general
-    - apps
-    - ios
+category: programming
+tags: [ios, os x, social, stowe, vermont]
 ---
 I started organizing developer related meetups in 2001 starting with a weekly happy hour for dev friends and co-workers. Over the years I ended up organizing different types of events, from monthly meetings that included speakers to parties and happy hours to annual snowboarding trips. I even started [NSHappyHour][1] for Mac and iOS developers, which is still going on each month in Salem, MA.
 

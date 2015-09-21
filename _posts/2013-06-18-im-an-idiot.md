@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 'I''m an Idiot'
-categories:
-    - general
+category: personal
+tags: [life]
 ---
 I am, what I like to call certain individuals, an idiot. Yep. I too am an idiot. 
 

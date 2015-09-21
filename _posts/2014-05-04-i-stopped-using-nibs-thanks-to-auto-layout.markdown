@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'I Stopped Using NIBs Thanks to Auto Layout'
-categories:
-    - ios
-    - programming
+category: programming
+tags: [ios, auto layout, interface builder, xcode]
 ---
 The subject to this post might suggest I don't like Auto Layout, but on the contrary I really like Auto Layout. I didn't always like Auto Layout. For the longest time Auto Layout was a major pain in my ass, but it turns out it was Interface Builder that was causing me the majority of headaches when I used Auto Layout. So I stopped using Auto Layout in IB and I started using it in code only.
 

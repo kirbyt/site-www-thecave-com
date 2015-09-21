@@ -2,9 +2,8 @@
 layout: post
 title: "Affordable Cloud Storage With Amazon Cloud Drive"
 date: 2015-03-27 06:52:45 -0400
-categories: 
-    - general
-    - tech
+category: business
+tags: [tech, backup]
 ---
 Yesterday Amazon announced new [pricing plans][2] for their cloud storage offering named [Cloud Drive][1]. You can store unlimited number of photos for $11.99 per year, or you can store unlimited number of files for $59.99. The later is a no-brainer for me as I have been looking for an affordable cloud storage solution like this.
 

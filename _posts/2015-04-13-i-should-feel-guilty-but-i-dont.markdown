@@ -2,11 +2,8 @@
 layout: post
 title: "I Should Feel Guilty But I Don't"
 date: 2015-04-13 20:15:11 -0400
-categories: 
-    - snowboarding
-    - family
-    - life
-    - rowan
+category: personal
+tags: [family, life, rowan, snowboarding]
 ---
 I played hooky from work afternoon. I should feel guilty but I don't. 
 

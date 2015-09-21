@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Dear Simple. It''s You, Not Me.'
-categories:
-    - rant
-    - general
+category: rant
 ---
 For more than a year and a half I've been in love with [Simple][simple], my online bank. From the very beginning it was as if Simple were designed specifically for me. Safe-to-spend and Goals changed how I managed and saved money, and it worked. It worked really well. So well in fact that I have more cash on hand today than I've had in years, and it's all thanks to Simple. But something went wrong.
 

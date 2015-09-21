@@ -2,9 +2,8 @@
 layout: post
 title: "Do I Need Another Twitter Account"
 date: 2015-06-14 23:09:24 -0400
-categories: 
-    - general
-    - social
+category: personal
+tags: [blog, social]
 ---
 Earlier tonight I setup a new Twitter account that tweets a link each time I publish a new post here at thecave.com. The new Twitter account is [@thecave_com][1]. Of course now that this is setup, I'm wondering...Do I really need a separate Twitter account, or should I just tweet the links from my [@kirbyt][2] account?
 

@@ -2,9 +2,8 @@
 layout: post
 title: "It's Better To Try An Idea"
 date: 2015-06-08 08:54:23 -0400
-categories: 
-    - bootstrapping
-    - quotes
+category: business
+tags: [quotes, indie life]
 ---
 One of my favorite quotes about shipping:
 

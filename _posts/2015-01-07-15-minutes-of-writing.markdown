@@ -2,9 +2,8 @@
 layout: post
 title: "15 Minutes Of Writing"
 date: 2015-01-07 13:19:09 -0500
-categories: 
-    - writing
-    - general
+category: business
+tags: [writing]
 ---
 My friend, Greg Raiz, talks about [using a system to achieve goals][1]. The particular goal he wants to achieve is writing more.
 

@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Send Camera Video to Your TV'
-categories:
-    - apps
-    - ios
+category: business
+tags: [ios, white peak software, big screen]
 ---
 Believe it or not, I finally released a new app for iOS. It's my first new app for [White Peak Software][wps] in more than 2 years. Somewhere along the way over the last two years I lost my way, but I'm back. 
 

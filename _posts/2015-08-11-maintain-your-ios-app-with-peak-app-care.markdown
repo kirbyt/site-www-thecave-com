@@ -3,7 +3,7 @@ layout: post
 title: "Maintain Your iOS App With Peak App Care"
 date: 2015-08-11 07:05:42 -0400
 category: business
-tags: [bootstrapping, ios, work, service]
+tags: [indie life, ios, white peak software]
 ---
 Last month I briefly mentioned [my plan][1] to productize some of the services I offer through White Peak Software. The main idea is to take a consulting service that I already offer to my clients and turn it into a product that my clients and others will hopefully subscribe to thus creating a monthly recurring revenue stream for my company. My goal was to spend no more than 40 hours over the span of a few weeks setting up this new product. And now, after spending 38.75 hours over the last few weeks, I'm ready to share more details.
 

@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "Using xcodebuild To Export a .ipa From an Archive"
-categories:
-    - programming
-    - ios
+category: programming
+tags: [ios, xcode]
 ---
 Xcode 6 changes how you export a .ipa from an archive for adhoc distribution. It used to be that you could export the archive to a .ipa as long as you had the right provisioning profile and distribution certificate on your machine. Starting with Xcode 6 you need to be a team member of the particular Developer Program account and you need to have the rights to make a distribution build. This means you need to be a team agent. However, I work with a number of clients who don't have the clue what Xcode is much less are willing to make distribution builds, so I need to way to make distribution builds within this new limitation from Xcode 6.
 

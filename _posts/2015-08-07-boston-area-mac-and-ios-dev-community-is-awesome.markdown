@@ -3,7 +3,7 @@ layout: post
 title: "Boston Area Mac And iOS Dev Community Is Awesome"
 date: 2015-08-07 10:22:16 -0400
 category: programming
-tags: [ios, mac, social, networking]
+tags: [ios, mac, social]
 ---
 This past Wednesday I had a chance to attend [NSHappyHour][1]. It's was my first time attending since moving to Vermont two years ago. I had a great time catching up with everyone, and I was reminded just how awesome the Mac and iOS developer community is in the Boston area. 
 

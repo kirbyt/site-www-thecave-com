@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'iPhone 6 and 6 Plus Pocket Test'
-categories:
-    - ios
-    - general
+category: programming
+tags: [ios]
 ---
 [<img src="https://farm6.staticflickr.com/5581/15198258832_1daebf3355_m.jpg" border="0"  class="alignleft" />][photo] I printed out this [iPhone 6 and 6 Plus paper template][pdf]. I cut out each template and taped cardboard to the back. Then I did a pocket test with each one. I tested each template with different pants and shorts that I wear often. I found that both the iPhone 6 and iPhone 6 Plus fit in all my pockets, but a corner of the iPhone 6 Plus cutout does stick out of the pocket on my gym shorts. I also found that while the iPhone 6 Plus does fit in the pockets of my Levis 501, my jeans of choice, the cutout was annoyingly noticeable when I sat down.
 

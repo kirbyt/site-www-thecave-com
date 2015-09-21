@@ -2,9 +2,8 @@
 layout: post
 title: "Raw Denim"
 date: 2015-02-21 23:13:25 -0500
-categories: 
-    - general
-    - random
+category: personal
+tags: [jeans]
 ---
 16 months ago I bought my first pair of raw denim, a pair of Levi's 501 Shrink to Fit, and I'm lovin' the look.
 

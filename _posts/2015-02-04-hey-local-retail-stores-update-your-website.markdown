@@ -2,12 +2,8 @@
 layout: post
 title: "Hey Local Retail Stores, Update Your Website"
 date: 2015-02-04 13:08:21 -0500
-categories: 
-    - general
-    - rant
-    - snowboarding
-    - skiing
-    - stowe
+category: rant
+tags: [snowboarding, web, stowe]
 ---
 I bought a new Burton snowboard the other day. I ordered it online from a mom and pop shop in the Oregon. I wanted to buy locally here in Stowe but the price I paid was 10% cheaper than the price listed on the websites of local shops. Combined with the fact that I didn't have to pay sales tax and shipping was free, I felt I was getting a great deal. Still, I would have preferred to support a local shop here in Vermont, but at least I supported a local shop in Oregon. 
 

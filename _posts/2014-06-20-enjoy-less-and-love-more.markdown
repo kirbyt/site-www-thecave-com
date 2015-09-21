@@ -1,10 +1,8 @@
 ---
 layout: post
 title: 'Enjoy Less and Love More'
-categories:
-    - work
-    - life
-    - general
+category: business
+tags: [life, indie life]
 ---
 To some my life seems like a non-stop vacation. I'm a ski bum, a slacker, someone who rarely works. I'm always off on some adventure, snowboarding in the winter months, hiking and kayaking in the summer months. And from one point of view this is true. Over the last 12 months I have spent a great deal of my time snowboarding, hiking and kayaking. But I've also been focused on writing code and building apps.
 
