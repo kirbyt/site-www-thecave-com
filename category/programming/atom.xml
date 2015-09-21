@@ -4,13 +4,38 @@
   <title><![CDATA[Category: programming | thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/category/programming/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-09-10T12:04:38-04:00</updated>
+  <updated>2015-09-21T16:36:20-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[My Upcoming Share Extension Talk At 360idev-Min]]></title>
+    <link href="http://www.thecave.com/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/"/>
+    <updated>2015-09-07T11:37:39-04:00</updated>
+    <id>http://www.thecave.com/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min</id>
+    <content type="html"><![CDATA[<p>I’m excited to be one of the speakers at the upcoming <a href="http://min.360idev.com">360idev-min</a> conference in Greenville, SC. In my talk I’ll share the things you need to know about when writing a share extension for your iOS app.</p>
+
+<p>If you plan to attend <a href="http://min.360idev.com">360idev-min</a>, then use the coupon code <strong>SpeakerFriend</strong> to save $100 when purchasing your ticket.</p>
+
+<p>And let me know if you are attending so we can meet up in person.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Wish I Could Help But It's Not My App]]></title>
+    <link href="http://www.thecave.com/2015/09/01/wish-i-could-help-but-its-not-my-app/"/>
+    <updated>2015-09-01T15:37:18-04:00</updated>
+    <id>http://www.thecave.com/2015/09/01/wish-i-could-help-but-its-not-my-app</id>
+    <content type="html"><![CDATA[<p>A well known global company is using some open source code I wrote in one of their apps (yay!). Like a good company, they included my name and licensing information in app’s about screen. Now I’m getting emails from one of the app’s users seeking help with the app. The person thinks I wrote the app because my name appears in the licensing section.</p>
+
+<p>Definitely a first for me.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Dispatch Async to Main Queue Doesn't Work With Modal Window on Mac OS X]]></title>
@@ -101,6 +126,18 @@
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[Boston Area Mac And iOS Dev Community Is Awesome]]></title>
+    <link href="http://www.thecave.com/2015/08/07/boston-area-mac-and-ios-dev-community-is-awesome/"/>
+    <updated>2015-08-07T10:22:16-04:00</updated>
+    <id>http://www.thecave.com/2015/08/07/boston-area-mac-and-ios-dev-community-is-awesome</id>
+    <content type="html"><![CDATA[<p>This past Wednesday I had a chance to attend <a href="http://www.nshappyhour.org">NSHappyHour</a>. It’s was my first time attending since moving to Vermont two years ago. I had a great time catching up with everyone, and I was reminded just how awesome the Mac and iOS developer community is in the Boston area.</p>
+
+<p>I also was reminded how much I miss the community there, and since moving back isn’t an option for me - snowboard season starts in about 3 months for me - I need to make a point of visit the Boston area more.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Redirect Jekyll Site To HTTPS On OpenShift]]></title>
     <link href="http://www.thecave.com/2015/07/14/redirect-jekyll-site-to-https-on-openshift/"/>
     <updated>2015-07-14T14:17:53-04:00</updated>
@@ -126,120 +163,6 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 
 <p>Including the <em>.htaccess</em> file works great when deploying the Jekyll site to OpenShift, but approach isn’t unique to OpenShift. This should work for most Jekyll site hosted with Apache 2. And if for some reason Jekyll isn’t including the <em>.htaccess</em> file when it builds the site, add <code>include: [".htaccess"]</code> to your <em>_config.yaml</em> file.</p>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Views Created In Code]]></title>
-    <link href="http://www.thecave.com/2015/04/15/views-created-in-code/"/>
-    <updated>2015-04-15T12:58:45-04:00</updated>
-    <id>http://www.thecave.com/2015/04/15/views-created-in-code</id>
-    <content type="html"><![CDATA[<p>Last year I posted an article that talks about why <a href="http://www.thecave.com/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout/">I stopped using Interface Builder</a> in favor of writing code to create views. There are some who disagree with me, and to them I say, “To each his own.” And there are some who agree with me, but choose not to publicize it. No matter. Every programmer has tricks that make them more productive, and creating views in code just happens to be one trick that works well for me.</p>
-
-<p>What works for me doesn’t necessarily work for others. But I have to say, I had a brief “HA!” moment when I read this comment from Peter Steinberger’s post about <a href="http://petersteinberger.com/blog/2015/researching-researchkit/">researching Apple’s research kit</a>:</p>
-
-<blockquote>
-  <p>All views are created in code. Apple uses a Storyboard for the example catalog, but that’s it. Apple uses the standard pattern of overriding <code>viewDidLoad</code> to build UI in combination with Auto Layout and the visual format language, whenever possible.</p>
-</blockquote>
-
-<p>Great minds think alike.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>Though I don’t override <code>viewDidLoad</code> to create my views. I usually create a view class, and I add an instance of the class to the view controller’s view in <code>loadView</code>. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Après Code: A New Developer Meetup In Stowe Vt]]></title>
-    <link href="http://www.thecave.com/2015/03/05/apres-code-a-new-developer-meetup-in-stowe-vt/"/>
-    <updated>2015-03-05T10:54:05-05:00</updated>
-    <id>http://www.thecave.com/2015/03/05/apres-code-a-new-developer-meetup-in-stowe-vt</id>
-    <content type="html"><![CDATA[<p>I started organizing developer related meetups in 2001 starting with a weekly happy hour for dev friends and co-workers. Over the years I ended up organizing different types of events, from monthly meetings that included speakers to parties and happy hours to annual snowboarding trips. I even started <a href="http://www.nshappyhour.org">NSHappyHour</a> for Mac and iOS developers, which is still going on each month in Salem, MA.</p>
-
-<p>I realized as I prepared for my move to Stowe, VT, that I was burnt out organizing events and meetups. I stepped down as co-organizer of <a href="http://www.cocoaheadsboston.org">CocoaHeads Boston</a> a few months before my move, which gave me a chance to be just a regular attendee. That’s when I realized I was done organizing events for a while.</p>
-
-<p>After moving to Vermont, I was asked by a few folks if I would start a <a href="http://cocoaheads.org">CocoaHeads</a> chapter in the Burlington area. I said no because I needed a break. The break I needed wasn’t just from being an organizer. I needed a break from attending developer focused gatherings and networking events too. And while it’s been a bit lonely not having local folks to talk shop with on a regular basis, I’ve enjoyed my break. But break time is over.</p>
-
-<p>It’s been nearly two years since I was last responsible for a meetup, but that changes tonight with the first of many Après Code events.</p>
-
-<p>I’ve been thinking about hosting a developer meetup in Stowe since I moved here, but I wasn’t initially sure there would be enough interest. However, in my short time here I’ve met other software developers living in the area. Some work for companies here in town while others work for shops in and around Burlington. And the number of developers in our small community is growing with companies like <a href="http://corp.inntopia.com/careers/">Inntopia hiring</a> more developers. Even though I knew there were developers living and working in the area, I wasn’t ready to commit to a monthly meetup just yet.</p>
-
-<p>That changed two days before I left for Whistler. I was talking with a local dev friend, Maya Ropelip<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>, about writing apps for iOS. During our chat I mentioned my idea for a local meetup. He got excited about the idea and thought the timing was right for hosting a software developer gathering in Stowe. He also agreed to be the co-host in case I need to skip a meetup. So that night I grabbed the domain name, setup a <a href="http://www.apres-code.com/">website</a>, and created a new group on <a href="http://www.meetup.com/Apres-Code/">meetup.com</a>.</p>
-
-<p>Starting a new group just 48 hours before I leave the country for a week and a half wasn’t the smartest thing for me to do, but I did it anyways. And now that I’m back home, I’m scrambling to get the word out about tonight’s inaugural Après Code. So without further ado, I’m happy to officially announce <a href="http://www.apres-code.com/">Après Code</a>.</p>
-
-<h1 id="what-is-aprs-code">What Is Après Code</h1>
-
-<p>Après Code is an informal gathering of software developers in Stowe, Vermont. The gathering is a chance for those of us living in and around Stowe, or just visiting the area, to get together to talk about joys of producing software and writing code, seek help or assist others, and most importantly meet and get to know other fine folks in the our community. The group is open to professionals, hobbyists, and anyone with an interest in designing, programming and creating software, apps, and websites.</p>
-
-<h2 id="when">When</h2>
-
-<p>We meet the first Thursday of each month, starting tonight, at 6:30 pm and go until the last person leaves. We’re gathering at <a href="http://rimrocksmountaintavern.com/">Rimrock’s Tavern</a> though this could change in the future. But for now Rimrock’s is the place to be.</p>
-
-<h2 id="more-information">More Information</h2>
-
-<p>You can find more information about the group at the Après Code <a href="http://www.apres-code.com/">website</a>, and you can receive email reminders about future Après Code events by joining the Après Code <a href="http://www.meetup.com/Apres-Code/">meetup.com group</a>.</p>
-
-<p>So if you happen to be in the area, whether you live in the Stowe area or are just visiting, stop by tonight to say hi.</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>I gotta get this guy on Twitter or some other social network. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Working 80+ Hours Isn't The Answer]]></title>
-    <link href="http://www.thecave.com/2015/02/21/working-80-hours-isnt-the-answer/"/>
-    <updated>2015-02-21T07:41:24-05:00</updated>
-    <id>http://www.thecave.com/2015/02/21/working-80-hours-isnt-the-answer</id>
-    <content type="html"><![CDATA[<p>A founder, or maybe the person is a manager type, asked on Quora, “<a href="http://www.quora.com/How-do-you-make-programmers-work-60-80-hours-per-week">How do you make programmers work 60-80 hours per week?</a>” While the question is a pathetic one, the answers that follow, especially the first one, are worth a read. And you should certainly read the answers if you happen to be one of those sad founders/manager types who wants their of programmers to work long hours. In short, if you are trying to force your programmers to work 60, 80 or more hours per week, then you are doing it wrong.</p>
-
-<h2 id="personal-experience">Personal Experience</h2>
-
-<p>I have first hand experience working 80+ hours per week. Heck, there were times I worked more than 100 hours in a single week at one particular startup. There were times when I would go days without going home, choosing instead to sleep in the office for an hour here and an hour there. And if I needed a change of clothes for an important meeting, I would go to the Banana Republic that was below my office to buy a change of clothes instead of going home.</p>
-
-<p>The difference with this experience, however, was that I was never forced to put in those insane hours. No one ever asked me to work 80+ hours. I did it because I truly believed in what we were building. But I also knew what it took to be productive, and that’s why I often times made sure my team did not follow my lead.</p>
-
-<p>I encouraged my team to work no more than 40 hours, and if I noticed someone reaching 50 hours I usually asked that person to take a break, go home, and enjoy life a bit. The work can wait. Sometimes the team member would take my suggestion and leave, other times they would not. But the choice was theirs. I never asked for more than 40 hours per week and in the end we created some amazing things in a short amount of time.</p>
-
-<h2 id="get-to-the-point">Get To The Point</h2>
-
-<p>So what’s my point here? My point is that you can’t force a programmer to work long hours. That person has to want to do it. There has to be a love or passion for what they are doing, otherwise it’s just work. And people max out, especially creative types, after about 32 to 40 hours of work in a single week.</p>
-
-<h2 id="and-now">And Now</h2>
-
-<p>I worked at a few startups putting in 60 or more hours per week, but those days are behind me. Those were fun times with lots of good memories, but I now find it’s more important to break up work with other interest. Today I’m a proponent of what I like to call underworking, or as I more often times jokingly call “being a slacker.”<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
-
-<p>Life’s too short to overwork yourself today in hopes you will have the time later in life for the fun things. Who knows what will happen in the future. You could be hit by a beer truck tomorrow and die. That’s why I believe you should make a point to spend more time <a href="http://www.thecave.com/2014/06/20/enjoy-less-and-love-more/">doing what you love</a> now. The work can wait.</p>
-
-<h2 id="the-long-trail-and-me">The Long Trail And Me</h2>
-
-<p>A couple of years back I did a talk on the topic of underworking at the first <a href="http://www.360intersect.com/">360intersect</a>. In it I talk about my time hiking the Long Trail and the effect it has had on me and the amount of time I spend working each week. Here’s the video for those interested in watching it and learning more about the benefits of working less.<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup></p>
-
-<p><div class="vimeo-video"><figure><iframe src="//player.vimeo.com/video/65740037" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></figure></div></p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>Funny how working only 32 to 40 hours a week is thought to be slacking. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:2">
-      <p>Sorry the first couple of minutes of the talk are missing. Someone forgot to push the record button. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 ]]></content>
   </entry>
   

@@ -111,7 +111,16 @@
 				<p>Here are a few Delphi (BDS) Live Templates I created for writting SQL Server script:<br /><br /><b>Create SQL Server Table</b><br />&lt;pre&gt;<br /><br /><br />        version=”1.0.0”&gt;<br /> <br /> <br />      Create table for SQL Server.<br /> <br /> <br />      Kirby Turner<br /> <br /><br /> <br /> <br />        TableName<br /> <br /> <br /> <br /> <br /><br /> <code>&lt;![CDATA[/***<br />  Create |TableName| table.<br />***/<br /><br />PRINT 'Create |TableName| table'<br />GO<br /><br />IF (EXISTS (SELECT name FROM sysobjects WHERE (name = N'|TableName|') AND (type = 'U')))<br />BEGIN<br />  DROP TABLE [dbo].[|TableName|]<br />END<br />GO<br /><br />CREATE TABLE [dbo].[|TableName|] (<br />|*||end|<br /><br />|*|CONSTRAINT [PK_|TableName|_1] PRIMARY KEY CLUSTERED<br />|*|(<br />|*|)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]<br />) ON [PRIMARY]<br />GO<br /><br />GRANT SELECT ON [dbo].[|TableName|] TO [public]<br />GO]]&gt;<br /> </code><br /> <br /><br />&lt;/pre&gt;<br /><br /><b>Create Foreign Key Reference</b><br />&lt;pre&gt;<br /><br /><br />        version=”1.0.0”&gt;<br /> <br /> <br />      Create foreign key constraint for SQL Server.<br /> <br /> <br />      Kirby Turner<br /> <br /> <br /> <br />                PrimaryTableName<br /> <br /> <br /> <br /> <br /> <br /> <br />                SecondaryTableName<br /> <br /> <br /> <br /> <br /> <br /> <br />                ColumnName<br /> <br /> <br /> <br /> <br /> <code>&lt;![CDATA[ALTER TABLE [dbo].[|PrimaryTableName|] WITH CHECK ADD<br />CONSTRAINT [FK_|PrimaryTableName|_|SecondaryTableName|] FOREIGN KEY([|ColumnName|])<br />REFERENCES [dbo].[|SecondaryTableName|] ([|ColumnName|])<br />GO]]&gt;<br /> </code><br /> <br /><br />&lt;/pre&gt;<br /><br />Enjoy.</p>
 
 
-                <p>Posted in <a href='/category/blogger/'>blogger</a>.</p>
+                <hr>
+
+                
+                    <p>
+                    Posted in <a class='category' href='/category/blogger/'>blogger</a>. 
+                    Tagged in .
+                    </p>
+                
+
+                
 
                 <hr>
 

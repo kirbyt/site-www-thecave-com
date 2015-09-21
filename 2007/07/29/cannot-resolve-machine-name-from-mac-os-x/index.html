@@ -111,7 +111,41 @@
 				<p>After resolving the <a href="http://www.thecave.com/archive/2007/07/29/how_to_access_a_windows_2003_file_share_from_mac_os_x.aspx">Windows Server 2003 file share access</a> problem I turned my attention to fixing the DNS issue I’m having.  I’m able to ping the IP address of machines on my Local Area Network but I’m not able to resolve the machine names.  I have a local DNS running on Windows Server 2003 but for some odd reason OS X is not using it to resolve names.  So I decided to use a stop-gap approach for the time being.<br /><br />I modified the /etc/hosts file to include the address of the machines with a static IP address.  After all, these are the only machines I need access to from OS X.  Here are the steps I followed:&lt;ul&gt;<br />&lt;li&gt;Sign in as an administrator (or an account belonging to the sudousers group)&lt;/li&gt;<br />&lt;li&gt;Launch a terminal shell (Applications &gt; Utilities &gt; Terminal if you are using Finder or type <b>terminal</b> in Spotlight)&lt;/li&gt;<br />&lt;li&gt;Run the command <b>sudo vi /etc/hosts</b>&lt;/li&gt;<br />&lt;li&gt;Scroll to the end of the file&lt;/li&gt;<br />&lt;li&gt;Type <b>i</b> to enter insert mode&lt;/li&gt;<br />&lt;li&gt;Press the enter key to start a new line (my vi skills are weak as it has been years since I have used it - there is probably a better way to append to the end of a file)&lt;/li&gt;<br />&lt;li&gt;Enter the IP address, press the <b>tab</b> key, then enter the name machine&lt;/li&gt;<br />&lt;li&gt;Press the <b>esc</b> key to get out of insert mode&lt;/li&gt;<br />&lt;li&gt;Press <b>:wq</b> to save the changes and quit vi&lt;/li&gt;<br />&lt;/ul&gt;That’s is.  The machine name will now resolve to the IP.</p>
 
 
-                <p>Posted in <a href='/category/blogger/'>blogger</a>.</p>
+                <hr>
+
+                
+                    <p>
+                    Posted in <a class='category' href='/category/programming/'>programming</a>. 
+                    Tagged in <a class='tag' href='/tag/os-x/'>os x</a>, <a class='tag' href='/tag/windows/'>windows</a>.
+                    </p>
+                
+
+                
+                    <h3>Related Articles</h3>
+                    <ul>
+                    
+                        <li><a href="/2007/07/29/how-to-access-a-windows-2003-file-share-from-mac-os-x/">How To Access a Windows 2003 File Share From Mac OS X</a></li>
+                    
+                        <li><a href="/2015/08/18/retiring-my-csv-editor/">Retiring My CSV Editor</a></li>
+                    
+                        <li><a href="/2007/05/24/wuauclt-svchost-and-100-cpu-usgage/">wuauclt svchost and 100% CPU usgage</a></li>
+                    
+                        <li><a href="/2007/04/25/when-naming-a-configuration-file-program-exe-config-is-bad/">When Naming a Configuration File program.exe.config is Bad</a></li>
+                    
+                        <li><a href="/2007/04/16/powerpoint-2007-and-outlook-2003-dont-play-nice-together/">PowerPoint 2007 and Outlook 2003 Don't Play Nice Together</a></li>
+                    
+                        <li><a href="/2007/04/04/vista-reigstry-keys-and-uac/">VIsta, Reigstry Keys, and UAC</a></li>
+                    
+                        <li><a href="/2015/08/10/dispatch-async-to-main-queue-doesnt-work-with-modal-window-on-mac-os-x/">Dispatch Async to Main Queue Doesn't Work With Modal Window on Mac OS X</a></li>
+                    
+                        <li><a href="/2015/04/14/no-wwdc-or-sf-trip/">No WWDC Or SF Trip</a></li>
+                    
+                        <li><a href="/2015/03/05/apres-code-a-new-developer-meetup-in-stowe-vt/">Après Code: A New Developer Meetup In Stowe Vt</a></li>
+                    
+                        <li><a href="/2015/02/20/for-in-loop-vs-using-block/">For-In Loop vs Using Block</a></li>
+                    
+                    </ul>
+                
 
                 <hr>
 

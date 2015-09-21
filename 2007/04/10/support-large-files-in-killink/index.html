@@ -111,7 +111,41 @@
 				<p>The first version of <a href="http://www.killink.com/">Killink</a> is feature complete, but there was one thing that was brothering me, large file support.  Opening, printing, and saving a large file in Killink is a rather slow process so I’ve been working on improving these 3 areas.<br /><br />The first area I worked on was opening a large file, which is what I will talk about today.  After profiling the application I found the biggest bottleneck was populating the spreadsheet with display data.  This was an easy fix that involved “freezing” display while the spreadsheet is loaded with data.  This change resulted in a huge performance increase.  The test file I used took minutes to load prior to the change and only 2 seconds after the change.  But then Killink took another perform hit.<br /><br />A beta tester reported the bug that embedded new line characters were not properly handled.  I modified the CSV parser to check each byte of data as it was read from the hard drive.  However this is a very inefficient approach.  A better approach is to buffer each read.  In other words, instead of reading a single byte from the hard drive it is better to read a chuck of bytes.  The chuck can be any size such as 65K chucks or 1MB chucks.  <br /><br />Buffering the file read process gave Killink the performance boost it needed to open large files.  It’s not as fast as I would like it but it’s getting closer.<br /><br />The performance improved version of Killink should be ready for <a href="http://www.killink.com/download.aspx">download</a> in a couple of days.</p>
 
 
-                <p>Posted in <a href='/category/blogger/'>blogger</a>.</p>
+                <hr>
+
+                
+                    <p>
+                    Posted in <a class='category' href='/category/business/'>business</a>. 
+                    Tagged in <a class='tag' href='/tag/killink/'>killink</a>, <a class='tag' href='/tag/white-peak-software/'>white peak software</a>.
+                    </p>
+                
+
+                
+                    <h3>Related Articles</h3>
+                    <ul>
+                    
+                        <li><a href="/2008/07/09/run-killink-csv-under-linux/">Run Killink CSV Under Linux</a></li>
+                    
+                        <li><a href="/2008/03/13/killink-csv-1-9-finally-released/">Killink CSV 1.9 Finally Released!</a></li>
+                    
+                        <li><a href="/2008/02/29/when-is-the-next-release-of-killink-csv-coming/">When is the Next Release of Killink CSV Coming?</a></li>
+                    
+                        <li><a href="/2008/01/18/to-the-customers-of-white-peak-software/">To The Customers of White Peak Software</a></li>
+                    
+                        <li><a href="/2007/07/23/excited-about-expected-new-arrival/">Excited About Expected New Arrival</a></li>
+                    
+                        <li><a href="/2007/07/06/whew-what-a-month/">Whew...What a Month</a></li>
+                    
+                        <li><a href="/2007/07/05/some-problems-with-killink-csv/">Some Problems with Killink CSV</a></li>
+                    
+                        <li><a href="/2007/06/11/ann-killink-csv-v1-2/">ANN: Killink CSV v1.2</a></li>
+                    
+                        <li><a href="/2007/06/09/formatting-cells-in-killink-csv/">Formatting Cells in Killink CSV</a></li>
+                    
+                        <li><a href="/2007/05/31/new-killink-csv-beta-is-available/">New Killink CSV Beta is Available</a></li>
+                    
+                    </ul>
+                
 
                 <hr>
 

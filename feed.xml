@@ -5,8 +5,8 @@
     <description>thecave.com is the blog site for Kirby Turner, an independent software developer for Mac and iOS.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 10 Sep 2015 12:04:38 -0400</pubDate>
-    <lastBuildDate>Thu, 10 Sep 2015 12:04:38 -0400</lastBuildDate>
+    <pubDate>Mon, 21 Sep 2015 16:36:20 -0400</pubDate>
+    <lastBuildDate>Mon, 21 Sep 2015 16:36:20 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -47,10 +47,10 @@
         <link>http://www.thecave.com/2015/09/10/trying-something-new-to-avoid-feast-or-famine/</link>
         <guid isPermaLink="true">http://www.thecave.com/2015/09/10/trying-something-new-to-avoid-feast-or-famine/</guid>
         
+        <category>indie life</category>
         
-        <category>general</category>
         
-        <category>work</category>
+        <category>business</category>
         
       </item>
     
@@ -67,10 +67,12 @@
         <link>http://www.thecave.com/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/</link>
         <guid isPermaLink="true">http://www.thecave.com/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/</guid>
         
-        
-        <category>general</category>
+        <category>conference</category>
         
         <category>ios</category>
+        
+        
+        <category>programming</category>
         
       </item>
     
@@ -84,12 +86,12 @@
         <link>http://www.thecave.com/2015/09/01/wish-i-could-help-but-its-not-my-app/</link>
         <guid isPermaLink="true">http://www.thecave.com/2015/09/01/wish-i-could-help-but-its-not-my-app/</guid>
         
-        
         <category>ios</category>
         
-        <category>random</category>
+        <category>open source</category>
         
-        <category>tech</category>
+        
+        <category>programming</category>
         
       </item>
     
@@ -138,14 +140,12 @@
         <link>http://www.thecave.com/2015/08/31/kicking-procrastination-in-the-ass/</link>
         <guid isPermaLink="true">http://www.thecave.com/2015/08/31/kicking-procrastination-in-the-ass/</guid>
         
-        
-        <category>bootstrapping</category>
-        
-        <category>general</category>
+        <category>indie life</category>
         
         <category>life</category>
         
-        <category>work</category>
+        
+        <category>business</category>
         
       </item>
     
@@ -177,12 +177,12 @@
         <link>http://www.thecave.com/2015/08/31/you-dont-need-motivation-you-need-good-habits/</link>
         <guid isPermaLink="true">http://www.thecave.com/2015/08/31/you-dont-need-motivation-you-need-good-habits/</guid>
         
-        
-        <category>bootstrapping</category>
+        <category>indie life</category>
         
         <category>life</category>
         
-        <category>work</category>
+        
+        <category>business</category>
         
       </item>
     
@@ -211,14 +211,12 @@
         <link>http://www.thecave.com/2015/08/18/retiring-my-csv-editor/</link>
         <guid isPermaLink="true">http://www.thecave.com/2015/08/18/retiring-my-csv-editor/</guid>
         
+        <category>white peak software</category>
         
-        <category>apps</category>
+        <category>windows</category>
         
-        <category>bootstrapping</category>
         
-        <category>general</category>
-        
-        <category>work</category>
+        <category>business</category>
         
       </item>
     
@@ -260,8 +258,12 @@
         <link>http://www.thecave.com/2015/08/15/two-years-ago-today/</link>
         <guid isPermaLink="true">http://www.thecave.com/2015/08/15/two-years-ago-today/</guid>
         
+        <category>family</category>
         
         <category>stowe</category>
+        
+        
+        <category>personal</category>
         
       </item>
     
@@ -308,14 +310,14 @@
         <link>http://www.thecave.com/2015/08/11/maintain-your-ios-app-with-peak-app-care/</link>
         <guid isPermaLink="true">http://www.thecave.com/2015/08/11/maintain-your-ios-app-with-peak-app-care/</guid>
         
-        
-        <category>bootstrapping</category>
-        
-        <category>general</category>
+        <category>indie life</category>
         
         <category>ios</category>
         
-        <category>work</category>
+        <category>white peak software</category>
+        
+        
+        <category>business</category>
         
       </item>
     
@@ -406,8 +408,8 @@
         <link>http://www.thecave.com/2015/08/10/dispatch-async-to-main-queue-doesnt-work-with-modal-window-on-mac-os-x/</link>
         <guid isPermaLink="true">http://www.thecave.com/2015/08/10/dispatch-async-to-main-queue-doesnt-work-with-modal-window-on-mac-os-x/</guid>
         
+        <category>os x</category>
         
-        <category>mac</category>
         
         <category>programming</category>
         
