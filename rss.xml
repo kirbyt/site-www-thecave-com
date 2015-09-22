@@ -5,10 +5,25 @@
         <description>thecave | Ramblings From A Crotchety Old Man - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2015-09-21T16:52:15-04:00</lastBuildDate>
-        <pubDate>2015-09-21T16:52:15-04:00</pubDate>
+        <lastBuildDate>2015-09-22T10:28:30-04:00</lastBuildDate>
+        <pubDate>2015-09-22T10:28:30-04:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Tags And Categories</title>
+                <description>&lt;p&gt;I’ve been doing a bit of tinkering here at thecave. I realized I was using categories as if they were tags and for one simple reason. I didn’t have a way to support tags. That is, until now.&lt;/p&gt;
+
+&lt;p&gt;Tag support is provided in Jekyll, but I wanted something slightly different. I want the list of tags to appear at the end of a post just like the categories have for last couple of years. I searched for different ways to support tags with Jekyll, but I didn’t find anything suiting my needs. Then it occurred to me I could tweak the category plugins I use to work with tags, so that’s exactly what I did.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://github.com/recurser/jekyll-plugins&quot;&gt;Jekyll category plugins&lt;/a&gt; I use come from Dave Perretter. I made copies of &lt;em&gt;category_generator.rb&lt;/em&gt; and &lt;em&gt;category_list_tags.rb&lt;/em&gt; naming the new plugins &lt;em&gt;tag_generator.rb&lt;/em&gt; and &lt;em&gt;tag_list_tags.rb&lt;/em&gt;. Then I replace references to &lt;code&gt;categories&lt;/code&gt; and &lt;code&gt;category&lt;/code&gt; with &lt;code&gt;tags&lt;/code&gt; and &lt;code&gt;tag&lt;/code&gt; in the source code. And BAM! I now have tag support at thecave.com.&lt;/p&gt;
+
+&lt;p&gt;You can find the source code for the plugins in my site’s github &lt;a href=&quot;https://github.com/kirbyt/site-www-thecave-com/tree/master/_plugins&quot;&gt;repo&lt;/a&gt;.&lt;/p&gt;
+</description>
+                <link>http://www.thecave.com/2015/09/21/tags-and-categories/</link>
+                <guid>http://www.thecave.com/2015/09/21/tags-and-categories</guid>
+                <pubDate>2015-09-21T19:45:44-04:00</pubDate>
+        </item>
 
         <item>
                 <title>Trying Something New To Avoid Feast Or Famine</title>
@@ -620,30 +635,6 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
                 <link>http://www.thecave.com/2015/06/14/do-i-need-another-twitter-account/</link>
                 <guid>http://www.thecave.com/2015/06/14/do-i-need-another-twitter-account</guid>
                 <pubDate>2015-06-14T23:09:24-04:00</pubDate>
-        </item>
-
-        <item>
-                <title>thecave On Twitter</title>
-                <description>&lt;p&gt;My friend Uli &lt;a href=&quot;https://twitter.com/uliwitness/status/600656348272001024&quot;&gt;asked&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Do you have a Twitter feed that lets me know when you post something new?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;It only took me a month, but I finally have a Twitter account for thecave. Follow &lt;a href=&quot;https://twitter.com/thecave_com/&quot;&gt;@thecave_com&lt;/a&gt; on Twitter if you want to know when I post something new to this blog. And as always you can subscribe to the &lt;a href=&quot;http://www.thecave.com/feed.xml&quot;&gt;RSS feed&lt;/a&gt; if you prefer feed readers over Twitter.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-technical-how-to&quot;&gt;The Technical How To&lt;/h2&gt;
-
-&lt;p&gt;There are a few different ways to automate the process of posting a link on Twitter when you publish a new blog post. &lt;a href=&quot;http://twitterfeed.com&quot;&gt;Twitter Feed&lt;/a&gt; is one service I tried. It is fast and easy to setup, and it includes options such as including the title, description, or title and description in the tweet. Even though Twitter Feed is a cinch to setup, I decided to go with &lt;a href=&quot;https://ifttt.com/&quot;&gt;If This Then That (IFTTT)&lt;/a&gt; instead.&lt;/p&gt;
-
-&lt;p&gt;Using IFTTT create a new recipe. Select &lt;em&gt;Feed&lt;/em&gt; for the trigger and &lt;em&gt;Twitter&lt;/em&gt; for the action. Be sure to connect your Twitter account to the IFTTT if you have not already done so. And that’s it. Next time you make a blog post, IFTTT will update your Twitter account with the title and link to the post.&lt;/p&gt;
-
-&lt;p&gt;And thanks &lt;a href=&quot;https://twitter.com/uliwitness&quot;&gt;@uliwitness&lt;/a&gt; for suggesting I do this.&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2015/06/14/thecave-on-twitter/</link>
-                <guid>http://www.thecave.com/2015/06/14/thecave-on-twitter</guid>
-                <pubDate>2015-06-14T22:31:52-04:00</pubDate>
         </item>
 
 
