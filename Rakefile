@@ -51,7 +51,7 @@ end
 
 # usage rake draft[my-new-post] or rake draft['my new post'] or rake draft (defaults to "new-post")
 desc "Begin a new post in #{source_dir}/#{drafts_dir}"
-task :new_post, :title do |t, args|
+task :draft, :title do |t, args|
   if args.title
     title = args.title
   else
