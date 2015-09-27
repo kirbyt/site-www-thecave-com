@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'One More Rant about SQL Server 2005'
-categories:
-  - blogger
-
+category: programming
+tags: [sql server]
 ---
 
 Here's another rant I have about SQL Server 2005.

@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'QuickBase API for Delphi'
-categories:
-  - blogger
-
+category: programming
+tags: [delphi]
 ---
 
 I have been doing more [QuickBase](http://www.quickbase.com/) work lately.  I really like QuickBase but the [HTTP API](https://www.quickbase.com/up/6mztyxu8/g/rc7/en/va/QuickBaseAPI.htm) can be a bit hairy.  Intuit provides various language specific SDKs for the QuickBase API but [Delphi](http://www.borland.com/delphi) is not included.  So I'm writing my own.  \[I'll post the code to the [White Peak Software](http://www.whitepeaksoftware.com/) site as soon as it is done.\]

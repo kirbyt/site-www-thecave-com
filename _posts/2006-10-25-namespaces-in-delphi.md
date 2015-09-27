@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Namespaces in Delphi'
-categories:
-  - blogger
-
+category: programming
+tags: [delphi]
 ---
 
 Recently there have been some good postings about using namespaces in Delphi such as the ones <a href="http://blogs.borland.com/nickhodges/articles/28331.aspx">here</a>, <a href="http://blogs.teamb.com/rudyvelthuis/archive/2006/10/04/27817.aspx">here</a>, and <a href="http://blog.marcocantu.com/blog/delphidotnet_firstclass.html">here</a>.  I like how namespaces are implemented in Delphi but I have been slow to adopt them in my Delphi code (especially Win32 code).  The problem I have is that the BDS Project Manager has no collapsible view, or grouping for namespaces.  Instead, Project Manager lists the unit names.  My namespaces tend to be wordy which means I cannot easily see the unit name without making the Project Manager window very wide.<br /><br />It will be great if the next release of BDS provides some sort of grouping of namespaces within the Project Manager.  For example, each segment in the namespace could be represented as a folder that can expand and collapse.  And the contents of the folder would be the final unit name or additional namespaces contained within.  In other words, the Project Manager would look something like this when the following units are included:<br /><br />Units:<br /><br />WhitePeakSoftware.Data.DataProvider.pas<br />WhitePeakSoftware.Data.Providers.SqlProvider.pas<br />WhitePeakSoftware.Data.Providers.SqliteProvider.pas<br />WhitePeakSoftware.Net.MailClient.pas<br /><br />Project Manager:<br /><pre><br />ProjectGroup<br />- MyProgram.exe<br />  + References<br />  - WhitePeakSoftware<br />    - Data<br />      - Providers<br />        - SqlProvider.pas<br />        - SqliteProvider.pas<br />      - DataProvider.pas<br />    - Net<br />      - MailClient.pas<br /></pre><br /><br />There is already a <a href="http://qc.borland.com/wc/qcmain.aspx?d=26677">feature request</a> in the QC that asks for namespace grouping.  Please vote for this feature if you are using namespaces in Delphi and you would like to see some type of namespace grouping.

@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'SMTP Diagnostics Review'
-categories:
-  - blogger
-
+category: business
+tags: [white peak software]
 ---
 
 [Heinz Tschabitscher](http://email.about.com/mbiopage.htm) posted [a review about SMTP Diagnostics](http://email.about.com/od/emailbehindthescenes/gr/smtp_diagnostic.htm) on About Email.  I have to say I agree with Heinz when he says "SMTP Diagnostics does not help you understand or fix errors."  It is true [SMTP Diagnostics will help you understand what is happening assuming you understand the protocol message](http://www.smtpdiagnostics.com/), but the tool would be more useful if it explained things in plain English, which I believe is Heinz's point.

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Gluten-Free Gourmet Dessert Recipes Book'
-categories:
-  - blogger
-
+category: personal
 ---
 
 <img src="http://www.thecave.com/images/blogimages/GlutenFreeBookCover.jpg" border="0" width="148" height="191" align="left" hspace="10" />

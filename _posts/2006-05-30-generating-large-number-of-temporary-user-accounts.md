@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Generating Large Number of Temporary User Accounts'
-categories:
-  - blogger
-
+category: programming
+tags: [delphi]
 ---
 
 A customer recently asked White Peak Software to [design and implement custom software](http://www.whitepeaksoftware.com/) for generating large batches of temporary user accounts.  The purpose of these temporary user accounts is to market a subscription based web site in much the same way AOL used to market its services.  Here's how it works.

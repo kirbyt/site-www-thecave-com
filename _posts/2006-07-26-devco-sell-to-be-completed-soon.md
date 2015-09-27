@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'DevCo Sell to be Completed Soon'
-categories:
-  - blogger
-
+category: programming
+tags: [delphi]
 ---
 
 In this recent article on eWeek, Tod Nielsen said <a href="http://www.eweek.com/article2/0,1895,1993731,00.asp?kc=EWEAUEMNL072506EOAD">Borland is close to naming the buyer for DevCo</a>.  He also said the process should be complete by the end of September.  Exciting time indeed for software developers.  <br /><br />Many people thing Delphi is dead, but they are dead wrong.  I've been hearing the same time for 10 years now from people who have never even tried Delphi.  "Delphi is dead."  "There is no future for Delphi." And so on.  Not only is this wrong, but the future of Delphi is brighter than ever.<br /><br />I jumped onto the .NET C# bandwagon in the early days.  My first C# work started right after the Summer 2000 PDC, and I worked with C# exclusively from 2001 through most of 2004.  <br /><br />Soon after starting <a href="http://www.whitepeaksoftware.com">White Peak Software</a> I realized I needed a "secret weapon" not only for custom software development work but for the products White Peak Software plans to publish.  That secret weapon is <a href="http://www.borland.com/delphi">Delphi</a>.  I have been able to do so much more for our customers, in less time and at a lower cost beacuse Delphi.<br /><br />Corporations and uppper management will never get it.  Microsoft development tools are a safe choice, and in many cases .NET within the enterprise makes the most sense.  But for those developers who need a tool that allows them to do many things, Delphi or rather Borland Developer Studio is perfect.  The ability to write native Win32 application and .NET applications from the same IDE is priceless.

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Random Thoughts'
-categories:
-  - blogger
-
+category: programming
 ---
 
 The last few weeks have been very busy for me so I haven't had time to post as many blog entries as I would like.  SO here's a quick list of random thoughts I have had recently.<br /><br /><ul><br /><li><a href="http://www.winternals.com/Company/PressRelease92.aspx">Microsoft acquires SysInternals and WinInternals</a>.  Big news in my opinion.  I'm curious to see what Microsoft will do with the excellent SysInternal tools like Process Explorer.</li><br /><li>Speaking of SysInternals, Mark Russinovich has an interested <a href="http://www.sysinternals.com/blog/2005/04/coming-net-world-im-scared.html">take on .NET managed application</a>.  I agree with him that client only applications shouldn't be managed applications.</li><br /><li><a href="http://www.foxitsoftware.com/pdf/rd_intro.php">Foxit Reader</a> is awesome.  It is a PDF reader but unlike Adobe's PDF reader Foxit loads fast and doesn't require an install.  The single Foxit exe has made its way into my bin directory of useful tools.</li><br /><li>Allen Bauer points out that <a href="http://blogs.borland.com/abauer/archive/2006/07/19/26094.aspx">Foxit has an SDK</a> that allows you to embed a PDF reader into your application.  And best of all it supports <a href="http://www.borland.com/delphi/">Delphi</a>.</li><br /><li><a href="http://www.babyotis.com/index.php?/archives/201-Silence.html">Four grand to remove a tree</a>?  Makes me question whether home ownership is worth the trouble and unexpected expenses.</li><br /><li><a href="http://www.regdeveloper.co.uk/2006/07/21/borland_tools_buyer/">DevCo is one step closer</a>.</li><br /><li>I recently started some new work in Visual Studio 2003 and I immediately started missing features from <a href="http://www.borland.com/delphi">Borland Developer Studio 2006</a>.  Most noticeable was the lack of built-in support for unit test projects and creating unit test cases.  BDS simplifies the setup of unit tests.</li><br /></ul>

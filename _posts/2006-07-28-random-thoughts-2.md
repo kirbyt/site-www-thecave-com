@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Random Thoughts #2'
-categories:
-  - blogger
-
+category: programming
 ---
 
 <ul><br /><li>Need to test your application's compatibility with Vista?  Here's a <a href="http://delphi.newswhat.com/geoxml/forumgetmessage?groupname=borland.public.delphi.non-technical&amp;messageid=44c9e6cc$1@newsgroups.borland.com">set of tools</a> that will help.</li><br /><li><a href="http://www.sqlite.org/">SQLite</a> is an awesome SQL database engine.  And there is a Delphi favor of SQLite called <a href="http://www.zeitungsjunge.de/delphi/sqlite3/">DISQLite3</a>.  I recently used DISLite3 to help merge data from different files and I found it easy to use and very fast.</li><br /><li>I did a little mountain biking in <a href="http://www.salemwoods.org/">Salem Woods</a>.  I didn't have time to ride the whole loop but I did enjoy what little I did ride on.  Tight single track and lots of rocks and roots.</li><br /><li>My vacation officially starts when Melanie gets home from work.  Unfortunately Boston is being hit hard with a summer time thunderstorm so her flight has been delayed.  Still the start of vacation time is just hours away.</li><br /><li>After working in Visual Studio 2003 for a few days this week, I had to switch back to <a href="http://www.borland/delphi">Borland Developer Studio 2006</a>.  It has definitely become my favorite IDE even for C# projects.  But what if I am working with a team?  I wonder how confusing it might be if I continued using BDS while other teammates user Visual Studio.  Guess I'll have to try it and see.<br /></li></ul>

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Random Thoughts #3'
-categories:
-  - blogger
-
+category: programming
 ---
 
 <ul><br /><li>Ever have one of those days where you can't seem to get into your work even though you are under enormous pressure to certain tight deadlines?  I'm having one of those days today, which means my brain is trying to tell me to take a break.</li><br /><li>SQLite is an awesome DBMS for single user, desktop applications.  I had the opportunity to use SQLite, well, a Delphi favor called <a href="http://www.zeitungsjunge.de/delphi/sqlite3/">DISQLite3</a> in a project a few weeks ago.  The program I wrote called for reading data from multiple CSV files and sending data back out to two more CSV files.  The problem I was having was managing data relationships in memory.  SQLite and <a href="http://www.zeitungsjunge.de/delphi/sqlite3/">DISQLite3</a> to the rescue!  I imported the CSV data into the SQLite relational database then exported data using SQL queries.  I'm now looking for more reasons to use DISQLite3.</li><br /><li>I downloaded and installed the <a href="http://services.google.com/adwordseditor/">Google AdWords Editor</a>.  This neat desktop application makes it easier to manage your AdWord campaigns without having to go through the Web interface.  I recommend this program to anyone who needs to make frequent changes to AdWords campaigns.</li><br /><li>Only 17 days remain before the release of <a href="http://www.turboexplorer.com/">Turbo Delphi</a>.  I wonder if the new DevCo investor will be announced that same day.</li><br /><li>I'm working on a new web site for a <a href="http://www.capturethecork.com/">beer drinking game</a> Josh, Brooke, and I invited last year.  The site still needs lots of work especially on the copy, but it's a start.</li><br /></ul>

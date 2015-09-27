@@ -1,9 +1,7 @@
 ---
 layout: post
 title: '3 Years and Going Strong'
-categories:
-  - blogger
-
+category: business
 ---
 
 [White Peak Software](http://www.whitepeaksoftware.com/) is 3 years ago today.  What an amazing ride it has been over the last 3 years.  It's almost hard to believe 3 years has past.

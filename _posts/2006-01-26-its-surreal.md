@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'It''s Surreal'
-categories:
-  - blogger
-
+category: personal
+tags: [salem, nyc]
 ---
 
 My wife and I have actually moved from New York City to [Salem, Massachusetts](http://www.salemweb.com/).  It's still a bit surreal for us.  As we were driving out of the city yesterday, it didn't feel like we were really leaving.  It felt more like we were making a quick trip and will be returning in a few days.  I think it will hit me in a few days that we're not returning to the city to live.  Then again it might take longer for that to happen since I will be returning to New York next week for a meeting.

@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Removing Child Nodes Dynamically using JavaScript'
-categories:
-  - blogger
-
+category: programming
+tags: [javascript]
 ---
 
 JavaScript once again kicked my butt last night.  Well, it was the combination of JavaScript and IE because my initial code worked fine in Firefox.  Here's the story.<br /><br />I have a search form that uses AJAX to retrieve search results based on user submitted criteria.  The results are displayed in a table dynamically created using JavaScript.  The problem, however, was the results were being appended to the end of the existing table data.  I needed a way to clear the table contents prior to adding the latest search results.<br /><br />My first approach was to set the innerHTML property of the TBODY element from the results table to a zero-length string.  For example:<br /><br /><pre><br />var ctrl;<br />ctrl = document.getElementById('searchTBody');<br />ctrl.innerHTML = '';<br /></pre><br /><br />This works fine in Firefox but it causes problems under IE.  A different approach is needed.  A couple of google searches turned up the removeChild method.  Using it you can iterate through the childNodes collections to remove each child within the element.  So I wrote the following JavaScript function:<br /><br /><pre><br />function removeChildNodes(ctrl)<br />{<br />  while (ctrl.childNodes[0])<br />  {<br />    ctrl.removeChild(ctrl.childNodes[0]);<br />  }<br />}<br /></pre><br /><br />To remove each child node from an element, get a reference to the element and pass it to the removeChildNodes function.  For example:<br /><br /><pre><br />var ctrl;<br />ctrl = document.getElementById('searchTBody');<br />removeChildNodes(ctrl);<br /></pre><br /><br />This approach works for IE and Firefox.

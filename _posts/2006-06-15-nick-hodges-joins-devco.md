@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'Nick Hodges Joins DevCo'
-categories:
-  - blogger
-
+category: programming
+tags: [delphi]
 ---
 
 [Nick Hodges](http://www.lemanix.com/nickblog/) of [TeamB](http://www.teamb.com/) fame, and a huge voice for the [Delphi](http://www.borland.com/delphi) community, has joined the DevCo team as the [new Delphi Product Manager](http://www.lemanix.com/nickblog/PermaLink,guid,e12c634d-a70b-4c8e-b6e5-1c23130bf518.aspx).  Congratulations Nick!  I can't think of a better person for the role.

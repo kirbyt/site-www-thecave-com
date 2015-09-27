@@ -1,9 +1,8 @@
 ---
 layout: post
 title: 'WS-Workbench Coming Along Nicely'
-categories:
-  - blogger
-
+category: programming
+tags: [white peak software, delphi]
 ---
 
 [<img src="http://www.thecave.com/images/blogimages/swirl-20060503.gif" width="50%" border="1" align="left" />](http://www.thecave.com/images/blogimages/swirl-20060503.gif)
