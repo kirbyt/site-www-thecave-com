@@ -259,6 +259,116 @@
     <hr>
     <!--- Post Ends -->
 
+    <!--- Post Starts -->
+    <div class="post-preview">
+        
+        <h2 class="post-title">
+            <a href="/2006/12/06/delphi-bds-live-templates-for-sql-server/">Delphi (BDS) Live Templates for SQL Server</a>
+        </h2>
+        
+        <p>Here are a few Delphi (BDS) Live Templates I created for writting SQL Server script:<br /><br /><b>Create SQL Server Table</b><br />&lt;pre&gt;<br /><br /><br />        version=”1.0.0”&gt;<br /> <br /> <br />      Create table for SQL Server.<br /> <br /> <br />      Kirby Turner<br /> <br /><br /> <br /> <br />        TableName<br /> <br /> <br /> <br /> <br /><br /> <code>&lt;![CDATA[/***<br />  Create |TableName| table.<br />***/<br /><br />PRINT 'Create |TableName| table'<br />GO<br /><br />IF (EXISTS (SELECT name FROM sysobjects WHERE (name = N'|TableName|') AND (type = 'U')))<br />BEGIN<br />  DROP TABLE [dbo].[|TableName|]<br />END<br />GO<br /><br />CREATE TABLE [dbo].[|TableName|] (<br />|*||end|<br /><br />|*|CONSTRAINT [PK_|TableName|_1] PRIMARY KEY CLUSTERED<br />|*|(<br />|*|)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]<br />) ON [PRIMARY]<br />GO<br /><br />GRANT SELECT ON [dbo].[|TableName|] TO [public]<br />GO]]&gt;<br /> </code><br /> <br /><br />&lt;/pre&gt;<br /><br /><b>Create Foreign Key Reference</b><br />&lt;pre&gt;<br /><br /><br />        version=”1.0.0”&gt;<br /> <br /> <br />      Create foreign key constraint for SQL Server.<br /> <br /> <br />      Kirby Turner<br /> <br /> <br /> <br />                PrimaryTableName<br /> <br /> <br /> <br /> <br /> <br /> <br />                SecondaryTableName<br /> <br /> <br /> <br /> <br /> <br /> <br />                ColumnName<br /> <br /> <br /> <br /> <br /> <code>&lt;![CDATA[ALTER TABLE [dbo].[|PrimaryTableName|] WITH CHECK ADD<br />CONSTRAINT [FK_|PrimaryTableName|_|SecondaryTableName|] FOREIGN KEY([|ColumnName|])<br />REFERENCES [dbo].[|SecondaryTableName|] ([|ColumnName|])<br />GO]]&gt;<br /> </code><br /> <br /><br />&lt;/pre&gt;<br /><br />Enjoy.</p>
+
+
+
+        <p><a href="/2006/12/06/delphi-bds-live-templates-for-sql-server/">Continue reading &rarr;</a></p>
+
+        <p class="post-meta">Posted by Kirby Turner on December 6, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+        
+            Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>, <a class='tag' href='/tag/windows/'>windows</a>.
+        
+        </p>
+    </div>
+    <hr>
+    <!--- Post Ends -->
+
+    <!--- Post Starts -->
+    <div class="post-preview">
+        
+        <h2 class="post-title">
+            <a href="/2006/07/28/windows-vista-to-support-7000-new-native-apis/">Windows Vista to Support 7,000+ New Native APIs</a>
+        </h2>
+        
+        <p>According to the Microsoft blogger Somasegar, <a href="http://blogs.msdn.com/somasegar/archive/2006/07/28/681224.aspx">Windows Vista will support more than 7,000 new native APIs</a>.<br />&lt;div class="quote"&gt;<br />Here is a trivia for you.  We have added more than 7,000 new native APIs for Windows developers in Windows Vista.  Examples of some of the exciting new areas where we have exposed new APIs include the new integrated search capability and the new peer-to-peer functionality.  To get the whole story, please check out the <a href="http://msdn.microsoft.com/windowsvista/downloads/docs/developerstory/default.aspx">Windows Vista Developer Story</a> at the <a href="http://msdn.microsoft.com/windowsvista/">Vista Developer Center</a>.<br />&lt;/div&gt;<br />Further proof the <a href="http://www.thecave.com/archive/2006/06/21/native_windows_code_is_here_for_a_while.aspx">native windows code is here for a while</a>.</p>
+
+
+
+        <p><a href="/2006/07/28/windows-vista-to-support-7000-new-native-apis/">Continue reading &rarr;</a></p>
+
+        <p class="post-meta">Posted by Kirby Turner on July 28, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+        
+            Tagged in <a class='tag' href='/tag/windows/'>windows</a>.
+        
+        </p>
+    </div>
+    <hr>
+    <!--- Post Ends -->
+
+    <!--- Post Starts -->
+    <div class="post-preview">
+        
+        <h2 class="post-title">
+            <a href="/2006/06/21/native-windows-code-is-here-for-a-while/">Native Windows Code Is Here for a While</a>
+        </h2>
+        
+        <p>I’m one of those rare developers who have moved from .NET managed code to native Windows code over the last year.  After living in the managed code world for years, I’ve returned to native windows coding and I find I am doing more and more native Win32 work each month for customers.  Sure the <a href="http://www.whitepeaksoftware.com/products.aspx">products White Peak Software</a> is writing are native Windows applications but recently customers have been <a href="http://www.whitepeaksoftware.com/custom_software.aspx">asking White Peak Software to develop native Win32 custom software</a>.  The most common reason?  The desire to eliminate the dependency on the .NET Framework.  <br /><br />I often hear, “We don’t know if the server hosting your program will have the .NET Framework installed,” or “The end users do not have .NET installed on their desktops so we need something that will run without .NET.”<br /><br />Now don’t get me wrong.  I love .NET.  It’s a great framework, but there is something to be said for native Windows applications.  And there are still many cases where a native Windows application should be written instead of a .NET equivalent.  For instance, I feel .NET applications are ideal for in-house development typically found in corporations, and I feel commercial applications are typically better served as a native Windows application.  Of course there are always exceptions to my general thinking, hence the <a href="http://suretalent.blogspot.com/2006/06/resurgence-in-native-windows.html">recent resurgence seen at White Peak Software</a> in customer requests for <a href="http://www.whitepeaksoftware.com/custom_software.aspx">custom native Windows applications</a>.  <br /><br />Don’t believe me?  Think everything running on the Windows platform should be managed code?  Well, individuals at Microsoft know that native Windows applications are staying around for a while.  When the IE Lead Project Manager Christopher Vaughan was recently asked <a href="http://www.matasano.com/log/332/matasano-interviews-ie-lead-pm-christopher-vaughan">if components of the new IE7 would be implemented in managed code</a> his response was, “No, IE7 remains purely native code throughout. I think as we develop future versions of IE you’ll see a larger focus on managed code, most likely to enable great plug-ins of that type for our platform. One thing people shouldn’t expect is that IE8 be re-written in managed code. For a variety of reasons, native code is where we’ll stay for a while.”</p>
+
+
+
+        <p><a href="/2006/06/21/native-windows-code-is-here-for-a-while/">Continue reading &rarr;</a></p>
+
+        <p class="post-meta">Posted by Kirby Turner on June 21, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+        
+            Tagged in <a class='tag' href='/tag/windows/'>windows</a>.
+        
+        </p>
+    </div>
+    <hr>
+    <!--- Post Ends -->
+
+    <!--- Post Starts -->
+    <div class="post-preview">
+        
+        <h2 class="post-title">
+            <a href="/2006/06/15/msdn-wiki/">MSDN Wiki</a>
+        </h2>
+        
+        <p>Ever wish you could contribute to the Visual Studio and .NET Framework documentation?  Now you can through the <a href="http://msdnwiki.microsoft.com/">MSDN Wiki</a>.  The Wiki is already growing with a number of community contributed edits.</p>
+
+
+
+        <p><a href="/2006/06/15/msdn-wiki/">Continue reading &rarr;</a></p>
+
+        <p class="post-meta">Posted by Kirby Turner on June 15, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+        
+            Tagged in <a class='tag' href='/tag/-net/'>.net</a>, <a class='tag' href='/tag/windows/'>windows</a>.
+        
+        </p>
+    </div>
+    <hr>
+    <!--- Post Ends -->
+
+    <!--- Post Starts -->
+    <div class="post-preview">
+        
+        <h2 class="post-title">
+            <a href="/2006/04/05/finally-windows-on-mac/">Finally Windows on Mac</a>
+        </h2>
+        
+        <p>CNet news is reporting that <a href="http://news.zdnet.com/2100-3513_22-6057856.html?tag=nl.e589">Apple has announced Boot Camp</a>, a new software package that makes it possible to run Microsoft Windows on the new Intel-based Macs.  How awesome is that!  It’s one step closer to making me want to buy a Mac.  Now what would be really awesome and close the deal for me is to have “Devco” create a Delphi compiler for the Mac OS and make it easy for me to port my VCL applications to Mac.</p>
+
+
+
+        <p><a href="/2006/04/05/finally-windows-on-mac/">Continue reading &rarr;</a></p>
+
+        <p class="post-meta">Posted by Kirby Turner on April 5, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+        
+            Tagged in <a class='tag' href='/tag/os-x/'>os x</a>, <a class='tag' href='/tag/windows/'>windows</a>.
+        
+        </p>
+    </div>
+    <hr>
+    <!--- Post Ends -->
+
 
 		</div>
 	</div>
