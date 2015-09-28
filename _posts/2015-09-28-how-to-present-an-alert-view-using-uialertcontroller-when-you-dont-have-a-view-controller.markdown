@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How To Present An Alert View Using UIAlertController When You Don't Have A View Controller"
-date: 2015-09-27 07:46:02 -0400
+date: 2015-09-28 15:46:02 -0400
 category: programming
 tags: [ios, objective-c]
 ---
