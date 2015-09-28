@@ -5,8 +5,8 @@
         <description>thecave | Ramblings From A Crotchety Old Man - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2015-09-28T16:03:43-04:00</lastBuildDate>
-        <pubDate>2015-09-28T16:03:43-04:00</pubDate>
+        <lastBuildDate>2015-09-28T16:04:43-04:00</lastBuildDate>
+        <pubDate>2015-09-28T16:04:43-04:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -46,9 +46,9 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 
 &lt;p&gt;You can grab the &lt;a href=&quot;https://github.com/kirbyt/WPSKit/blob/master/WPSKit/UIKit/WPSAlertController.m&quot;&gt;source code for &lt;code&gt;WPSAlertController&lt;/code&gt;&lt;/a&gt; from my github repository and include it in your project, or use the entire &lt;a href=&quot;https://github.com/kirbyt/WPSKit&quot;&gt;WPSKit.framework&lt;/a&gt; in your project if you want to use &lt;code&gt;WPSAlertController&lt;/code&gt; plus other handy classes that I use when creating iOS apps.&lt;/p&gt;
 </description>
-                <link>http://www.thecave.com/2015/09/27/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/</link>
-                <guid>http://www.thecave.com/2015/09/27/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller</guid>
-                <pubDate>2015-09-27T07:46:02-04:00</pubDate>
+                <link>http://www.thecave.com/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/</link>
+                <guid>http://www.thecave.com/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller</guid>
+                <pubDate>2015-09-28T15:46:02-04:00</pubDate>
         </item>
 
         <item>
