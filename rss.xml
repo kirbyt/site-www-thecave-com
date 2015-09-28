@@ -5,10 +5,54 @@
         <description>thecave | Ramblings From A Crotchety Old Man - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2015-09-27T11:31:37-04:00</lastBuildDate>
-        <pubDate>2015-09-27T11:31:37-04:00</pubDate>
+        <lastBuildDate>2015-09-28T16:00:25-04:00</lastBuildDate>
+        <pubDate>2015-09-28T16:00:25-04:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</title>
+                <description>&lt;p&gt;Over the summer I updated a number of apps to iOS 9. A common tasks for me was replacing the deprecated &lt;code&gt;UIAlertView&lt;/code&gt; with new &lt;code&gt;UIAlertController&lt;/code&gt; class. Generally this is easy to do, but there is one scenario that &lt;code&gt;UIAlertView&lt;/code&gt; handles well that &lt;code&gt;UIAlertController&lt;/code&gt; doesn’t support at all: displaying an alert view from parts of your code without a reference to the current view controller, for instance, displaying an alert view from the app delegate.&lt;/p&gt;
+
+&lt;p&gt;Trying to display an alert view using &lt;code&gt;UIAlertController&lt;/code&gt; from a non-UI specific class such as the app delegate is a &lt;a href=&quot;http://stackoverflow.com/questions/26952061/present-uialertcontroller-from-appdelegate&quot;&gt;common problem&lt;/a&gt;, and developers have found different &lt;a href=&quot;http://stackoverflow.com/questions/26554894/how-to-present-uialertcontroller-when-not-in-a-view-controller&quot;&gt;workarounds&lt;/a&gt;. &lt;a href=&quot;http://stackoverflow.com/a/30941356&quot;&gt;One particular solution&lt;/a&gt; that caught my eye was this one from agilityvision, who writes:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;At WWDC I stopped in at one of the labs and asked an Apple Engineer this same question: “What was the best practice for displaying a UIAlertController?” And he said they had been getting this question a lot and we joked that they should have had a session on it. He said that internally Apple is creating a UIWindow with a transparent UIViewController and then presenting the UIAlertController on it.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This got me thinking about how I would solve the problem for apps I work on. Liking the approach mentioned by the Apple Engineer, I decided to give that a try. But unlike some of the other solutions that use a category, I decided to create a new class, &lt;code&gt;WPSAlertController&lt;/code&gt;, that is a subclass of &lt;code&gt;UIAlertController&lt;/code&gt;, and provide additional convenience methods making it possible to display an alert view with a single call…like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;objective-c
+NSString *title = ...
+NSString *message = ...
+[WPSAlertController presentOkayAlertWithTitle:title message:message];
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Or display the &lt;code&gt;localizedDescription&lt;/code&gt; from an &lt;code&gt;NSError&lt;/code&gt; object:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;objective-c
+[WPSAlertController presentOkayAlertWithError:error];
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;And of course, since &lt;code&gt;WPSAlertController&lt;/code&gt; is a subclass of &lt;code&gt;UIAlertController&lt;/code&gt;, you can create your alert the same way as you do using &lt;code&gt;UIAlertController&lt;/code&gt;. The only difference is you call &lt;code&gt;show&lt;/code&gt; to present the alert when you don’t have a view controller. For example:&lt;/p&gt;
+
+&lt;p&gt;```objective-c
+NSString *title = …
+NSString *message = …
+WPSAlertController *alertController = [WPSAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+[alertController addAction:[UIAlertAction actionWithTitle:@”OK” style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+  // Your code.
+}]];&lt;/p&gt;
+
+&lt;p&gt;[alertController show];
+```&lt;/p&gt;
+
+&lt;p&gt;You can grab the &lt;a href=&quot;https://github.com/kirbyt/WPSKit/blob/master/WPSKit/UIKit/WPSAlertController.m&quot;&gt;source code for &lt;code&gt;WPSAlertController&lt;/code&gt;&lt;/a&gt; from my github repository and include it in your project, or use the entire &lt;a href=&quot;https://github.com/kirbyt/WPSKit&quot;&gt;WPSKit.framework&lt;/a&gt; in your project if you want to use &lt;code&gt;WPSAlertController&lt;/code&gt; plus other handy classes that I use when creating iOS apps.&lt;/p&gt;
+</description>
+                <link>http://www.thecave.com/2015/09/27/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/</link>
+                <guid>http://www.thecave.com/2015/09/27/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller</guid>
+                <pubDate>2015-09-27T07:46:02-04:00</pubDate>
+        </item>
 
         <item>
                 <title>Tags And Categories</title>
@@ -623,18 +667,6 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
                 <link>http://www.thecave.com/2015/06/18/essence-of-vermont/</link>
                 <guid>http://www.thecave.com/2015/06/18/essence-of-vermont</guid>
                 <pubDate>2015-06-18T06:16:26-04:00</pubDate>
-        </item>
-
-        <item>
-                <title>Do I Need Another Twitter Account</title>
-                <description>&lt;p&gt;Earlier tonight I setup a new Twitter account that tweets a link each time I publish a new post here at thecave.com. The new Twitter account is &lt;a href=&quot;https://twitter.com/thecave_com/&quot;&gt;@thecave_com&lt;/a&gt;. Of course now that this is setup, I’m wondering…Do I really need a separate Twitter account, or should I just tweet the links from my &lt;a href=&quot;https://twitter.com/kiryt/&quot;&gt;@kirbyt&lt;/a&gt; account?&lt;/p&gt;
-
-&lt;p&gt;I guess I will keep the two separate accounts, and I’ll retweet via @kirbyt any links that I feel might be of greater interest, which is basically what I’ve always done. So if you want to know each time a new post is published, follow @thecave_com. Otherwise just keep doing what you’ve been doing.&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2015/06/14/do-i-need-another-twitter-account/</link>
-                <guid>http://www.thecave.com/2015/06/14/do-i-need-another-twitter-account</guid>
-                <pubDate>2015-06-14T23:09:24-04:00</pubDate>
         </item>
 
 

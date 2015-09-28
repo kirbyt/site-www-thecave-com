@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-09-27T11:31:37-04:00</updated>
+  <updated>2015-09-28T16:00:25-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,51 @@
   </author>
   <rights>Copyright (c) 2002-2015 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[How To Present An Alert View Using UIAlertController When You Don't Have A View Controller]]></title>
+    <link href="http://www.thecave.com/2015/09/27/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/"/>
+    <published>2015-09-27T07:46:02-04:00</published>
+    <updated>2015-09-27T07:46:02-04:00</updated>
+    <id>http://www.thecave.com/2015/09/27/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller</id>
+    <content type="html"><![CDATA[<p>Over the summer I updated a number of apps to iOS 9. A common tasks for me was replacing the deprecated <code>UIAlertView</code> with new <code>UIAlertController</code> class. Generally this is easy to do, but there is one scenario that <code>UIAlertView</code> handles well that <code>UIAlertController</code> doesn’t support at all: displaying an alert view from parts of your code without a reference to the current view controller, for instance, displaying an alert view from the app delegate.</p>
+
+<p>Trying to display an alert view using <code>UIAlertController</code> from a non-UI specific class such as the app delegate is a <a href="http://stackoverflow.com/questions/26952061/present-uialertcontroller-from-appdelegate">common problem</a>, and developers have found different <a href="http://stackoverflow.com/questions/26554894/how-to-present-uialertcontroller-when-not-in-a-view-controller">workarounds</a>. <a href="http://stackoverflow.com/a/30941356">One particular solution</a> that caught my eye was this one from agilityvision, who writes:</p>
+
+<blockquote>
+  <p>At WWDC I stopped in at one of the labs and asked an Apple Engineer this same question: “What was the best practice for displaying a UIAlertController?” And he said they had been getting this question a lot and we joked that they should have had a session on it. He said that internally Apple is creating a UIWindow with a transparent UIViewController and then presenting the UIAlertController on it.</p>
+</blockquote>
+
+<p>This got me thinking about how I would solve the problem for apps I work on. Liking the approach mentioned by the Apple Engineer, I decided to give that a try. But unlike some of the other solutions that use a category, I decided to create a new class, <code>WPSAlertController</code>, that is a subclass of <code>UIAlertController</code>, and provide additional convenience methods making it possible to display an alert view with a single call…like this:</p>
+
+<p><code>objective-c
+NSString *title = ...
+NSString *message = ...
+[WPSAlertController presentOkayAlertWithTitle:title message:message];
+</code></p>
+
+<p>Or display the <code>localizedDescription</code> from an <code>NSError</code> object:</p>
+
+<p><code>objective-c
+[WPSAlertController presentOkayAlertWithError:error];
+</code></p>
+
+<p>And of course, since <code>WPSAlertController</code> is a subclass of <code>UIAlertController</code>, you can create your alert the same way as you do using <code>UIAlertController</code>. The only difference is you call <code>show</code> to present the alert when you don’t have a view controller. For example:</p>
+
+<p>```objective-c
+NSString *title = …
+NSString *message = …
+WPSAlertController *alertController = [WPSAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+[alertController addAction:[UIAlertAction actionWithTitle:@”OK” style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+  // Your code.
+}]];</p>
+
+<p>[alertController show];
+```</p>
+
+<p>You can grab the <a href="https://github.com/kirbyt/WPSKit/blob/master/WPSKit/UIKit/WPSAlertController.m">source code for <code>WPSAlertController</code></a> from my github repository and include it in your project, or use the entire <a href="https://github.com/kirbyt/WPSKit">WPSKit.framework</a> in your project if you want to use <code>WPSAlertController</code> plus other handy classes that I use when creating iOS apps.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Tags And Categories]]></title>
@@ -644,19 +689,6 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
     <content type="html"><![CDATA[<p>It’s no surprise I love living in Vermont in part because it’s different from other places I have lived. And this video from Skyworks really captures parts of why I love it here.</p>
 
 <div class="youtube-video"><figure><iframe width="560" height="420" src="https://www.youtube.com/embed/UBwqn9BRWhA?color=white&amp;theme=light"></iframe></figure></div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Do I Need Another Twitter Account]]></title>
-    <link href="http://www.thecave.com/2015/06/14/do-i-need-another-twitter-account/"/>
-    <published>2015-06-14T23:09:24-04:00</published>
-    <updated>2015-06-14T23:09:24-04:00</updated>
-    <id>http://www.thecave.com/2015/06/14/do-i-need-another-twitter-account</id>
-    <content type="html"><![CDATA[<p>Earlier tonight I setup a new Twitter account that tweets a link each time I publish a new post here at thecave.com. The new Twitter account is <a href="https://twitter.com/thecave_com/">@thecave_com</a>. Of course now that this is setup, I’m wondering…Do I really need a separate Twitter account, or should I just tweet the links from my <a href="https://twitter.com/kiryt/">@kirbyt</a> account?</p>
-
-<p>I guess I will keep the two separate accounts, and I’ll retweet via @kirbyt any links that I feel might be of greater interest, which is basically what I’ve always done. So if you want to know each time a new post is published, follow @thecave_com. Otherwise just keep doing what you’ve been doing.</p>
-
 ]]></content>
   </entry>
   

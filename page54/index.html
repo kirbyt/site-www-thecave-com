@@ -108,6 +108,29 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2004/08/01/installers-and-my-document-directory/">Installers and My Document Directory</a>
+    </h2>
+    
+    <p>In setting up my new laptop, I decided to go with VMware to host various guest operating systems for my development, collaboration, etc.  For the most part this is working out well but there are still glitches.  For example, to share the My Document folder with multiple guest OS I created a share in the host OS.  Each guest OS maps the My Documents folder to the UNC \.host\Shared Folders\kirbyt\documents.  The problem I have experienced with this configuration has nothing to do with me authoring documents, etc.  Instead I have encounter two cases where installers have failed.
+<br />
+<br />The .NET Framework 1.1 installer and the Adobe Reader 6.0 apparently need access to the My Documents folder during the installation process.  However, both fail because of the UNC reference to the actual folder.  My temporary work around to date has been to re-map the My Documents folder to a temporary directory on the local hard drive within the guest OS, prefer the install, and re-map the My Documents folder back to the original UNC location.
+<br />
+<br />I wonder what these two installers want with the My Documents folder during installations and I wonder why their not smart enough to recognize the UNC reference.</p>
+
+
+
+    <p><a href="/2004/08/01/installers-and-my-document-directory/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on August 1, 2004
+     in <a class='category' href='/category/blogger/'>blogger</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2004/07/30/july-icca-meeting/">July ICCA Meeting</a>
     </h2>
     
@@ -301,28 +324,6 @@
 </div>
 <hr>
 
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2004/07/16/duh/">Duh!</a>
-    </h2>
-    
-    <p>Melanie and I were planning to fly into Manchester, NH next week and drive to Vermont for a break from NYC.  However confusion set in when we started checking the fly availability and car rentals.  Flights into Manchester are filling up and car rentals are sold out.  What gives?
-<br /> 
-<br />Duh!  The Democratic Convention 2004 starts on Sunday, July 26 in Boston.  No wonder Manchester is so busy that weekend.  Needless to say, Melanie and I are breaking convention (no pun intended) and driving up from NYC to avoid the Boston/Manchester madness.
-<br /></p>
-
-
-
-    <p><a href="/2004/07/16/duh/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on July 16, 2004
-     in <a class='category' href='/category/blogger/'>blogger</a>.
-    Tagged in .
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -355,6 +356,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/09/27/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/" title="How To Present An Alert View Using UIAlertController When You Don't Have A View Controller">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
+                
                 <li><a href="/2015/09/21/tags-and-categories/" title="Tags And Categories">Tags And Categories</a></li>
                 
                 <li><a href="/2015/09/10/trying-something-new-to-avoid-feast-or-famine/" title="Trying Something New To Avoid Feast Or Famine">Trying Something New To Avoid Feast Or Famine</a></li>
@@ -362,8 +365,6 @@
                 <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/" title="My Upcoming Share Extension Talk At 360idev-Min">My Upcoming Share Extension Talk At 360idev-Min</a></li>
                 
                 <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/" title="Wish I Could Help But It's Not My App">Wish I Could Help But It's Not My App</a></li>
-                
-                <li><a href="/2015/08/31/kicking-procrastination-in-the-ass/" title="Kicking Procrastination In The Ass">Kicking Procrastination In The Ass</a></li>
                 
                 </ul>                
             </div>
