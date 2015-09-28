@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | thecave | Ramblings From A Crotchety Old Man]]></title>
   <link href="http://www.thecave.com/category/programming/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-09-28T16:00:25-04:00</updated>
+  <updated>2015-09-28T16:03:43-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -27,30 +27,27 @@
 
 <p>This got me thinking about how I would solve the problem for apps I work on. Liking the approach mentioned by the Apple Engineer, I decided to give that a try. But unlike some of the other solutions that use a category, I decided to create a new class, <code>WPSAlertController</code>, that is a subclass of <code>UIAlertController</code>, and provide additional convenience methods making it possible to display an alert view with a single call…like this:</p>
 
-<p><code>objective-c
-NSString *title = ...
+<pre><code>NSString *title = ...
 NSString *message = ...
 [WPSAlertController presentOkayAlertWithTitle:title message:message];
-</code></p>
+</code></pre>
 
 <p>Or display the <code>localizedDescription</code> from an <code>NSError</code> object:</p>
 
-<p><code>objective-c
-[WPSAlertController presentOkayAlertWithError:error];
-</code></p>
+<pre><code>[WPSAlertController presentOkayAlertWithError:error];
+</code></pre>
 
 <p>And of course, since <code>WPSAlertController</code> is a subclass of <code>UIAlertController</code>, you can create your alert the same way as you do using <code>UIAlertController</code>. The only difference is you call <code>show</code> to present the alert when you don’t have a view controller. For example:</p>
 
-<p>```objective-c
-NSString *title = …
-NSString *message = …
+<pre><code>NSString *title = ...
+NSString *message = ...
 WPSAlertController *alertController = [WPSAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
-[alertController addAction:[UIAlertAction actionWithTitle:@”OK” style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+[alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
   // Your code.
-}]];</p>
+}]];
 
-<p>[alertController show];
-```</p>
+[alertController show];
+</code></pre>
 
 <p>You can grab the <a href="https://github.com/kirbyt/WPSKit/blob/master/WPSKit/UIKit/WPSAlertController.m">source code for <code>WPSAlertController</code></a> from my github repository and include it in your project, or use the entire <a href="https://github.com/kirbyt/WPSKit">WPSKit.framework</a> in your project if you want to use <code>WPSAlertController</code> plus other handy classes that I use when creating iOS apps.</p>
 ]]></content>
