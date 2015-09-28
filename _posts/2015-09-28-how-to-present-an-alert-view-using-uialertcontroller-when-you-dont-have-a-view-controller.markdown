@@ -13,29 +13,23 @@ Trying to display an alert view using `UIAlertController` from a non-UI specific
 
 This got me thinking about how I would solve the problem for apps I work on. Liking the approach mentioned by the Apple Engineer, I decided to give that a try. But unlike some of the other solutions that use a category, I decided to create a new class, `WPSAlertController`, that is a subclass of `UIAlertController`, and provide additional convenience methods making it possible to display an alert view with a single call...like this:
 
-```objective-c
-NSString *title = ...
-NSString *message = ...
-[WPSAlertController presentOkayAlertWithTitle:title message:message];
-```
+    NSString *title = ...
+    NSString *message = ...
+    [WPSAlertController presentOkayAlertWithTitle:title message:message];
 
 Or display the `localizedDescription` from an `NSError` object:
 
-```objective-c
-[WPSAlertController presentOkayAlertWithError:error];
-```
+    [WPSAlertController presentOkayAlertWithError:error];
 
 And of course, since `WPSAlertController` is a subclass of `UIAlertController`, you can create your alert the same way as you do using `UIAlertController`. The only difference is you call `show` to present the alert when you don't have a view controller. For example:
 
-```objective-c
-NSString *title = ...
-NSString *message = ...
-WPSAlertController *alertController = [WPSAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
-[alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-  // Your code.
-}]];
+    NSString *title = ...
+    NSString *message = ...
+    WPSAlertController *alertController = [WPSAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+      // Your code.
+    }]];
 
-[alertController show];
-```
+    [alertController show];
 
 You can grab the [source code for `WPSAlertController`](https://github.com/kirbyt/WPSKit/blob/master/WPSKit/UIKit/WPSAlertController.m) from my github repository and include it in your project, or use the entire [WPSKit.framework](https://github.com/kirbyt/WPSKit) in your project if you want to use `WPSAlertController` plus other handy classes that I use when creating iOS apps.
