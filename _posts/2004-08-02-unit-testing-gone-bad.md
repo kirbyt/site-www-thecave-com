@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Unit Testing Gone Bad'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Sorry but I have to rant for a minute.  I have been working with a team lately that doesn't get unit testing.  In 4 months, this team has been unable to have all 200+ unit tests run successfully.  This to me is an indication that 1) the team does not understand unit testing and its importance, or 2) the team just does not care.  My initial thought is the team does not care, but after today I am starting to think the team just does not understand unit testing.

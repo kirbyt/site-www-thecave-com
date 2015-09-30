@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Quote of the day'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 "It's not my fault.  It's the bartender's fault." - MD

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Exciting Prospects Follis Style'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 John Follis, President and Creative Director for <a href="http://www.follisinc.com/">Follis, Inc</a>, spoke at tonight's <a href="http://www.iccanyc.org/">ICCA NYC</a> meeting about getting prospects excited.  I really enjoyed his talk and he answered many questions I had.  For instance, how does marketing differ from networking?

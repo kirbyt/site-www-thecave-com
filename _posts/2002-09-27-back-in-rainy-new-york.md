@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Back in rainy New York'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Melanie and I have returned from France.  What a great trip!  I learned much more about Melanie and her life.  The trip highlight was having dinner the family she lived with for a year while studying in Aix en Provence.

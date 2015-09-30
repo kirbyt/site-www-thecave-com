@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Using 3rd Party Components'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Knowing when to use a 3rd party component is a key to developing a software product.  The use of a 3rd party component can save count hours and allow your developers to focus on the core product.  However, the selection of the wrong component can cause many headaches and cut into developer productivity.

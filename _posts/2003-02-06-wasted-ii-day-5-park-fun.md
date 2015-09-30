@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'WASTED II Day 5: Park Fun'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 ## Day 5: Park Fun:

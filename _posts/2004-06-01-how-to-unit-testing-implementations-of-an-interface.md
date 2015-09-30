@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'How to Unit Testing Implementations of an Interface'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 I have become a firm supporter of writing unit tests for most if not all code I write, and [NUnit](http://www.nunit.org) is an ideal framework for implementing unit tests.  But one problem I have had repeatedly is finding a good way to test specific implementations of an interface.  My approach has always been to write a new test fixture for each implementor of an interface.  But the problem with this approach is that I end up duplicating unit tests for each implementor, and if I need to write a new test I have to copy it to multiple fixtures.

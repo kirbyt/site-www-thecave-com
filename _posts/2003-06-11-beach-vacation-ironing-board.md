@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Beach Vacation Ironing Board'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Next week, the "cousins" from my family are getting together in Garden City, SC for a fun on the beach vacation.  Historically I have not been a fan of beach time vacations but I am actually looking forward to this one.  Not only will I be trying surfing for the first time, but I get to hang with the couzs and they get to meet Melanie.

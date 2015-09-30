@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'WASTED II Day 7: The Brotherhood'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 ## Day 7: The Brotherhood:

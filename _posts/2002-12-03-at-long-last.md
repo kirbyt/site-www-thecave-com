@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'At long last...'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 A lot has happened since my last posting.  My freebord came in but it has yet to touch cement.  I have been away since its arrival and now I'm afraid Melanie will be riding it before me.  Of course, maybe I can bring it with me on my trips to Florida.

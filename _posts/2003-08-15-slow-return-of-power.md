@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Slow return of power'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 My last posting of the night.  It seems that power is slowly returning to the island.  As I type this I can hear the rumble of the Path train beneath the apartment building.  I could see stars from the fire escape earlier but now the stars are being replaced with the glow of city lights.  I'm guessing Time Square or the Upper West Side finally has power.

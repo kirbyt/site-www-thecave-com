@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Recommended management books for techno-geeks'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Recently I was asked to recommend some books for computer geeks, software developer and engineers, etc moving into management.  Here is the list I came up with.  The books on this list have definitely helped my career over time.

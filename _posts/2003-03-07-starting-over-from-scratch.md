@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Starting over from scratch'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Okay, I'm depressed.  Next week I am joining Microsoft for a 5 day/5 city tour to talk about interop with Web services.  I have spent the last couple of days writing sample code for my demos and was nearing completion when I lost everything.

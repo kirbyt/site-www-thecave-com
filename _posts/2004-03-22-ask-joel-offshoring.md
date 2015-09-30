@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Ask Joel - Offshoring'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 A long read but worth it.

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'The Company - Burton.com 2003'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 From <a href="http://www.burton.com/">Burton's</a> 2003 web site:

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Great Day of Learning'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 I had the pleasure of meeting <a href="http://www.wintellect.com/about/instructors/instructorbios.aspx?id=3">Jeffrey Richter</a> of Wintellect today during his full day talk on .NET Framework internals.  He talked on topics such as threading, asynchronous programming model, app domain, reflection, and key differences between C# and VB.NET.  His presentation style was entertaining, and I was amazed at his depth of knowledge around the .NET Framework.  I definitely learned more than a thing or two from Jeffrey.

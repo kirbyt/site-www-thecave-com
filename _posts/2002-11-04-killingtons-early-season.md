@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Killington''s early season'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 [<img src="http://www.thecave.com/killington.jpg" border="0" align="left" />](http://www.killington.com)

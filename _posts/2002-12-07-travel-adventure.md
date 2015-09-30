@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Travel Adventure'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Today was fun travel day for me.  My day began at 5:30 am packing.  A quick breakfast at the hotel and a call from Melanie.  I love it when she calls even if I don't always sound like I do when I answer the phone.  She called to say that her flight from Paris to New York was delayed by at least an hour.  This should have given me a clue to my own flight situation but it didn't.

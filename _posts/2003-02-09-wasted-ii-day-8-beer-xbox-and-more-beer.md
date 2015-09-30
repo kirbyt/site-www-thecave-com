@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'WASTED II Day 8: Beer, Xbox, and More Beer'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 ## Day 8: Beer, Xbox, and More Beer:

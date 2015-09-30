@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Finished my first 5K run through Central Park'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Believe it or not I finished the 5K run \[officially 3.5 miles\] through Central Park.  I am excited that I did it.  And I finished in 35 minutes!

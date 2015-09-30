@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Creative Loafing Charlotte | They''re Young, They''re Vibrant...'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Here's a good online article that features my good buddy Dave.

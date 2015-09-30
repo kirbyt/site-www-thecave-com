@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Spam Filtering'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Attention @thecave e-mail users. The default for spam filtering is as follows:

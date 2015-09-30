@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Here I go again'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 I am once again trying Pro Blogger's e-mail feature.  Blogger.com is a nice service but I am starting to question the quality of selected Pro features.

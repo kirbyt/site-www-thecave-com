@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'South France for the week'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 It's been two weeks since Melanie and my last getaway so it is definitely time for another one.  Our last getaway was a weekend at Camp Murphy in Lake George.  What a blast that was!

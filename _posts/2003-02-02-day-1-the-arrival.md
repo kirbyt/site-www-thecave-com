@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Day 1: The Arrival'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 ## Day 1: The Arrival:

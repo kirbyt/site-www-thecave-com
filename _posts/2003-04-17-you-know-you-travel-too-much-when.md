@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'You know you travel too much when...'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 You know you travel too much when the Avis Car Rental bus driver can tell you which airline you are flying on before you can.

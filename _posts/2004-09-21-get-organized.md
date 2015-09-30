@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Get Organized'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Eric of <a href="http://www.deltapointsolutions.com/">Delta PointSolutions</a> recently turned me on to a new add-on for Outlook 2003 called <a href="http://www.microsoft.com/office/outlook/contactmanager/prodinfo/default.mspx

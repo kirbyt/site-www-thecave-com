@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Back from Vermont'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Melanie and I have returned to the Big Apple after a 4 day trip through the green mountain state of Vermont.  We started the road trip with a drive up the west side of the state ending at <a href="http://www.gostowe.com/">Stowe</a>.  On the way we took a sneak peek at the <a href="http://www.madriverglen.com/">Mad River Glen</a> ski slopes.  The scenery was wonderful with views of lakes and green mountains all around.  We ended the night with a 4th of July firework show in Stowe.  Don't be fooled by this small town.  The firework show could easily rival big city firework shows.  For those wondering, we spent our nights at <a href="http://www.threebearsbandb.com/">Three Bears at the Fountain</a>, a truly wonderful Vermont B&amp;B.;

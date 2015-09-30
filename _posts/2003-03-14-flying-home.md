@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Flying Home'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 After 5 days in 5 cities, I am finally flying home.  The week has been fun albeit tiring with days running 14 to 16 hours.  Admittedly, even with the long days this was one of those weeks that left me thinking "I like my job."  Granted, I would not want to do this every week.

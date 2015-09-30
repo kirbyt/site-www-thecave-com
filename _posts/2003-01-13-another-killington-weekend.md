@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Another Killington weekend'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Spent the weekend with Melanie and most of her family in Killington.  The snow was great.  Saturday we rode Killington.  It was very chilly with temps in the single digits and wind chill well below zero.  The close to 50 mph wind gusts were a lot of fun and almost pushed me over a few times.

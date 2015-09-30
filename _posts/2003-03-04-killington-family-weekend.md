@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Killington Family Weekend'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Melanie and I joined the rest of the Davis family for fun in the snow at Killington, VT, for an extended weekend.  Saturday was spent at Pico and was the return to the slopes for Brenna.  She was taking it easy on her first day out, but by the next day she was skiing down Outer Limits.

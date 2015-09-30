@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Microsoft Architect Council 5 City Tour'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 I've said it before and I will say it again, I enjoy working with the folks from Microsoft.  I am one of three speakers at the Microsoft Architect Council in the Gulf States.  My talk is on Interop with Web Services, and I'm having a good time interacting with the audience.

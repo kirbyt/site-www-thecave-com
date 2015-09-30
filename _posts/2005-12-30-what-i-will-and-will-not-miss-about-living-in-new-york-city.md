@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'What I will and will not miss about living in New York City'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 ## 5 things I will NOT miss about life in New York (in no particular order):

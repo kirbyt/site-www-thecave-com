@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'WASTED II Day 9, 10, 11 and 12: Catch Up'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 ## Day 9, 10, 11 and 12: Catch Up:

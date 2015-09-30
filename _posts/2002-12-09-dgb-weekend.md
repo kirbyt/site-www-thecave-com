@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'DGB Weekend'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 I have return to rainy Florida after attending the first ever <a href="http://www.wastedboarding.com/home/tripdetail.wasted?tid=6">DGB Killington Weekend</a>.  What a great weekend!  Skiing and riding, beer and pizza.  What more can a group of guys ask for?

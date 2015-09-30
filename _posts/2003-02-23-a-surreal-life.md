@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'A surreal life'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 12:27 am Sunday morning waiting for the number 6 downtown.  The uptown 4 speeds by on the express line and I realize I am living a surreal moment in New York.  The greatest city in the world, Saturday night, and my evening includes tea and a poetry reading on Bowery, Xbox and Budweiser,  caso dip and conversations about how hard it is dating in New York.  This is my night.  Uptown number 6 stops and people get off.  Couples holding hands.  Guys with their umbrellas.  It must still be raining outside.

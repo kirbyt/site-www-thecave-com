@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Getting dark'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 It's starting to get dark outside.  Should be a unique night in the city.  I just might have to walk around a bit.

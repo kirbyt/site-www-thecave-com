@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'On the Plane Again'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 So here I am flying back to New York.  I spoke at a Web services boot camp today in the Research Triangle of North Carolina.  A fun day, I must say.  But it got me thinking, and the first thought was that I don't post enough technical content on this site.  Why is that?

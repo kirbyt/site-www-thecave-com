@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Recap of Last Week'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 ## Lake Sunapee

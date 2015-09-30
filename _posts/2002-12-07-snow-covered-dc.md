@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Snow covered DC'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 By the way, snow covered DC looks really cool...especially the mall.

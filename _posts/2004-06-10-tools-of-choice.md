@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Tools of Choice'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Lately I have seen a handful of developers blog the list of tools they use so I've decided to do the same.  Here are the ones that come to mind because I use them daily.

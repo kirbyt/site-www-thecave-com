@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'End of a Long Day'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Some of you may have noticed that the site was down today.  An unfortunate set of events prevented me from getting the site up sooner.  It all started this morning when I deployed a new version of the site software.

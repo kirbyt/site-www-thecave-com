@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Opening Day'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 [Killington](http://www.killington.com/) opened today!

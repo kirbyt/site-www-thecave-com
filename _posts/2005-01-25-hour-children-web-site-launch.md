@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Hour Children Web Site Launch'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 I am pleased to announce the launch of the Hour Children <a href="http://www.hourchildren.org/">web site</a>.  The site was funded through a service grant provided by the <a href="http://www.taprootfoundation.org/">Taproot Foundation</a> of which I am a volunteer.

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'SmarterMail 2.0'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 This notice is for all @thecave.com e-mail users who use the web interface.  SmarterMail 2.0 was installed last night.  It offers dramatic changes over the previous version include:<ul>

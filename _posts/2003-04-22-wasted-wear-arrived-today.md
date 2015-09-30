@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'WASTED Wear Arrived Today'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 <img src="http://www.thecave.com/images/wastedhoodie_sm.jpg" align="left" />

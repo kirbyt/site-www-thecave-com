@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'ZDNet News: The real costs of going offshore'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Interesting panel discussion on the real costs of going offshore.

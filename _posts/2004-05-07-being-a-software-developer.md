@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Being a Software Developer'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 [Joel Spolsky](http://www.joelonsoftware.com/) has posted his [foreword](http://www.joelonsoftware.com/articles/CoderToDeveloper.html) to Mike Gunderloy's new book, [Coder to Developer](http://www.amazon.com/exec/obidos/tg/detail/-/078214327X/ref=ase_whitepeaksoft-20/002-0173335-5722445?v=glance&amp;s=books).  The foreword puts in very simple terms what it takes to be a software developer, which is more than knowing how to writing code.  As Joel puts it, a software developer can "take a concept, build a team, set up state of the art development processes, design a software product, the right software product, and produce it."  I'll add that a software developer should understand various development methodologies and how to apply them, and the importances of QA and testing even though these are assumed to be part of the state of the art development process.

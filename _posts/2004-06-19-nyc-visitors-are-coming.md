@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'NYC Visitors are Coming'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 My friend Phil was in town this week which means one thing.  Time for [BenZona](http://www.benzonaband.com/) to rock [Luna Lounge](http://www.lunalounge.com/).  They had a great gig last night and it was good to see Phil, Keith and others again.  We also stuck around to hear San Francisco based [Candy From Strangers](http://www.candyfromstrangers.com/) who I definitely got into.

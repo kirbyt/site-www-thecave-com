@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Overworked and tired of it!'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 It pretty much common knowledge that [Americans are overworked](http://www.hrmguide.net/usa/worklife/unused_vacation.htm).  And this is specially true in the [IT](http://www.webopedia.com/TERM/I/IT.html) community.  This has been bothering me a lot lately as things other than work are becoming top priorities in my life.  (Sidenote: For those wondering, those other things include Melanie and snowboarding.)

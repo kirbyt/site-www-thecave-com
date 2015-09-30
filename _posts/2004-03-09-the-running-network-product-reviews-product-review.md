@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'The Running Network -- Product Reviews -- Product Review'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Congratulations to Josh for the recent award on one of his New Balance shoe designs.

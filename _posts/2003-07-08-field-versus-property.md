@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Field versus Property'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 .NET class structures defined in the CLR can have public fields and public properties among other things.  On the surface, a public field and a public property appear to be the same.  The .NET Framework Glossary even says a property "is like a public field."  However the two are not same. The most obvious difference is in the declaration of the two. For example, consider the follow class:

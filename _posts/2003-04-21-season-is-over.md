@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Season is Over'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 My snowboard season is finally over, and it ends with me wanting more.  This weekend in Killington was one of the best times on the slope for me this season.  And to add to the great snow, the weekend was made a bit better by spending time with the Davis's.  The turkey was delich and the ham was more than heavenly.  But this posting is about the snow.

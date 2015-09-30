@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Install Woes with Roxio'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 After a 3 hour struggle I finally got Roxio Easy CD &amp; DVD Creator 6 installed on my laptop.  Here's the story.

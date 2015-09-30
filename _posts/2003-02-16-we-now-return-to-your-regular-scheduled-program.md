@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'We now return to your regular scheduled program'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Over the last two weeks, I have been replicating my blog posting to thecave.com and wastedboarding.com.  WASTED II is now over so I will return to only posting to appropriate site, which will be primarily this site cocked full with my rumblings.  And I will start the rumble with a comment about my iPod.

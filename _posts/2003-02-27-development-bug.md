@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Development Bug'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Lately I have started feeling the byte of the development bug.  It's been a while since I wrote any real code and the update to this site has got me wanting to do more.  So to help get started and to fix the work into my job, I decided to write some true interop examples between J2EE and .NET.  Today was all about installing the environment.

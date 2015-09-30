@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Xbox in the Hotel'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 After many months of no Xbox, I finally replaced mine this week with a brand new one.  Now I can start playing video games while I am sitting in the hotel.  But there's one problem.  Most hotels do not allow you to connect game consoles to the room TV.

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: Congratulations
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Congratulations to Ricky and Maureen on the arrival of Gabriel Ethan.

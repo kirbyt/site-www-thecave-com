@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Looking Sharp'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 ![Noah](http://www.thecave.com/noahryan.jpg)

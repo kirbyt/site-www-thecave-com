@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Here I come Baltimore'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Melanie and I are flying down to Baltimore today.  I'm so psyched for a number of reasons.  First, I have always wanted to visit Baltimore, the hometown of such <a href="http://www.thecave.com/archive/2002_07_01_archive.aspx#85269605">greats</a> as John Waters and Divine.  Secondly, we are going to visit with Rachel and Fernado another of Melanie's sisters and her sister's boyfriend respectively.

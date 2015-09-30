@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Interesting Read'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Aoccdrnig to rscheearch at Cmabrigde Uinervtisy, it deosn't mttaer in what oredr the ltteers in a wrod are, the olny iprmoetnt tihng is taht the frist and lsat ltteer be at the rghit pclae.

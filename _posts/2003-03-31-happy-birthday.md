@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Happy Birthday'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 It's been <a href="http://www.thecave.com/?xml/2002_03_01_archive.xml">a year</a> since I changed thecave.com to a weblog, and it's been interesting to watch how it has evolved from what I thought would be more technical related posting to more personal postings.  I guess it's a direct reflection of what is going on in my life.  My job has been anything but technical over the last six months or so, which may explain the lack of tech postings.  On the other hand, the personal postings have been well received by my friends and family who check the site on a regular basis.

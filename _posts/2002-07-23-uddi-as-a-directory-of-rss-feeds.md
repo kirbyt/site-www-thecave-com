@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'UDDI as a directory of RSS feeds'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Recently my friend Karsten Januszewski posted a <a href="http://groups.yahoo.com/group/rss-dev/message/2866">message</a> to the RSS-DEV group suggesting that UDDI could be used as a directory of RSS feeds.  I for one really like the idea.  UDDI provides not only a public directory that is easily searchable but an API that would allow me to automate the search rather the discovery of new RSS feeds that I might be interested in.

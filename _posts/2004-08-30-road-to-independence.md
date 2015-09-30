@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Road to Independence'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 I recently wrote the article below but have not published it yet.  I am working on an article section on the <a href="http://www.whitepeaksoftware.com/">White Peak Software</a> web site but I haven't completed the software change yet.  So instead of waiting longer, I decided I would post a draft of the article here on the blog.

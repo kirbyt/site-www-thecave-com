@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Attention @thecave.com E-mail Users'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 <b>Attention @thecave.com E-mail Users</b>: There was a serious problem with the SmarterMail today that forced my new hosting provider to reset the passwords of all the e-mail accounts.  I have reset the password to the value provided in the e-mail I sent out last week.  If for some reason you do not know your password please reach out to me by e-mail or phone and I will get you going again.

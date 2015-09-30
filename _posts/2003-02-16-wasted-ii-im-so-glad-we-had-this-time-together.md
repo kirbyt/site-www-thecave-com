@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'WASTED II I''m So Glad We Had This Time Together'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 ## I'm So Glad We Had This Time Together:

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Day 3: Birthday Fondue'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Day 3: Birthday Fondue:

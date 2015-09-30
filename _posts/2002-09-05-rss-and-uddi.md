@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'RSS and UDDI'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Karsten Januszewski recently published a white paper on <a href="http://www.gotdotnet.com/team/karstenj/docs/rss_in_uddi.aspx">Registering and Discovering RSS Feed in UDDI</a>.  I personally think this is a great idea.  My only problem with the idea is that registering services in UDDI can be a bit cumbersome for some folks.  But Karsten solves this problem by providing a <a href="http://www.gotdotnet.com/userfiles/karstenj/rssuddi.zip">sample</a> Windows application that makes registering RSS v.9x feeds as simple as specifying the URL to the feed and clicking a button.

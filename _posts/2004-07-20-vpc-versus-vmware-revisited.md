@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'VPC versus VMWare Revisited'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 After playing with Virtual PC off and on for a couple of days, I decided to return to VMWare. There are two main reasons why I decided to go with VMWare over VPC.

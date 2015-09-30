@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Installers and My Document Directory'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 In setting up my new laptop, I decided to go with VMware to host various guest operating systems for my development, collaboration, etc.  For the most part this is working out well but there are still glitches.  For example, to share the My Document folder with multiple guest OS I created a share in the host OS.  Each guest OS maps the My Documents folder to the UNC \\.host\Shared Folders\kirbyt\documents.  The problem I have experienced with this configuration has nothing to do with me authoring documents, etc.  Instead I have encounter two cases where installers have failed.

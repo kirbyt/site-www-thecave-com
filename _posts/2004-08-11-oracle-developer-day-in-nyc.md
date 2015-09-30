@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Oracle Developer Day in NYC'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Yesterday I attended the Oracle Developer Day.  This hands on workshop covered Service Oriented Architecture (SOA) and how you would implement SOA solutions using Oracle tools.  The morning sessions talked about SOA and how it fits into the application architecture.  The architectural concepts presented here also apply to .NET solutions.  It was refreshing to see that whether you use .NET or Java the same good architecture can be applied to either platform.

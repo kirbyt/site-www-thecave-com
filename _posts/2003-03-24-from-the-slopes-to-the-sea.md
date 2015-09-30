@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'From the Slopes to the Sea'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Melanie and I just returned from a great weekend in Killington.  The snow was perfect, soft and fun.  Spring time conditions.  I had some of my best runs of the season over the weekend.

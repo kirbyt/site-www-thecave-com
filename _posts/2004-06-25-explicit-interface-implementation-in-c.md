@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Explicit Interface Implementation in C#'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 I was a grumbling VB developer for a number of years.  At the time Delphi was my language of choice but in the part of the country I lived customer work using it was almost non-existent.  In the summer of 2000 at PDC, a friend of mine from Microsoft showed me the .NET Framework and C#.  I was instantly drawn to C# because it reminded me of Delphi, which is no surprise for those who know their [C#/Delphi history](http://c2.com/cgi/wiki?HistoryOfCsharp).

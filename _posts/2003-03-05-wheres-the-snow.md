@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Where''s the Snow?'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Day 4 on Killington was very nice.  The snow had soften up a bit.  Runs of the day: Rim in the morning and the Chute in the afternoon.  Also Great Bear was a blast and was the only trail I know of that still have evidence on Sunday's snow storm.  It's un-groomed and has soft powder bumps.

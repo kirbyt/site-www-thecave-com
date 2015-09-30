@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'WASTED II Day 6: Return to Blackcomb'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 ## Day 6: Return to Blackcomb:

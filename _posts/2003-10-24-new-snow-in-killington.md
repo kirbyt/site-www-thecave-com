@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'New Snow in Killington'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 <img src="20031024killton.jpg" align="left" />

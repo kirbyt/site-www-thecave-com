@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'It Came from Inside'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Over the last month a lot of my time has been spent focusing on security as I design a security framework and strategy for a customer.  One comment I hear often is "we don't need to worry about internal security threats" or "internal security threats are minor and represent a low priority".  I couldn't disagree more and have been repeatedly emphasizing the importance of protecting ones assets from internal attacks, which for some companies is a greater threat.

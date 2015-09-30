@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'They will fire me if I pee one more time today.'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Get this crap...<a href="http://www.courier-journal.com/localnews/2002/08/21/ke082102s261927.htm">Daily news from Louisville, Kentucky and Southern Indiana from courier-journal.com</a> The Jim Beam bourbon-making plant in Bullitt County is disputing a Kentucky Labor Cabinet citation involving toilet breaks for the plant's bottlingline workers.

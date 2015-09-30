@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'A day in the life of a consultant'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 As I am sitting on the plane heading to Dallas, I thought it would be fun to share my day with others.  Consider it as a day in the life of a consultant.

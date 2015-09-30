@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'WASTED II Final Days: No Snow but Still a Great Time'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 ## Final Days: No Snow but Still a Great Time:

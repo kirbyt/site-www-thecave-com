@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Repair or Replace?'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 My Xbox died a couple of weeks ago on <a href="http://www.wastedboarding.com/http://www.wastedboarding.com/wastedblog/home.aspx">my trip</a> to Whistler.  Melanie is working this weekend and I have to say I am missing the game play.  So I finally called the Xbox support number to find out my opinions.  The console I have needs repair work which costs $100, shipping included.  A new Xbox will cost $200.  The difference is I can pick up a new Xbox today but it will be a few weeks before my get back my repaired Xbox.

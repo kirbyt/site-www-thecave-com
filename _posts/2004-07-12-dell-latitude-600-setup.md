@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Dell Latitude 600 Setup'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 I received my new Dell Latitude 600 today.  Sweet machine but now it's time to set it up to my liking.  My plan going into it is to setup the host OS with the general tools I need each day such as Eudora Pro, Office 2003, iTunes, and so on.  I will use either VMWare or Virtual PC to host guest OS for my development environments.  I plan to setup the primary user account for each OS with minimum privileges to force me to become even more security minded.

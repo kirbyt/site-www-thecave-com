@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'To Data Bind or Not To Data Bind?  That is the Question.'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 I had a lengthy discussion with another developer today regarding data binding in .NET.&nbsp; I started thinking about this more after the conversation ended and I realized there are some who think data binding should always be used in Windows based .NET applications.&nbsp; The conversation today brought back memories of how developers overused data binding when VB 3.0 was released into the wild.

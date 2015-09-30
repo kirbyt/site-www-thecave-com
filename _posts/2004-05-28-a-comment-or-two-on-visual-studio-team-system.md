@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'A comment or two on Visual Studio Team System'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 This week at TechEd, Microsoft announced <a href="http://msdn.microsoft.com/vstudio/teamsystem/default.aspx">Visual Studio Team System</a>.  It includes a number of features to get development team more into the life cycle such as unit testing, profiling, and code coverage.  Sounds exciting but a couple of things I have read bother me.

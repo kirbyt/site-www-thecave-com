@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Open VS.NET Command Window Here'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 I used Windows Explorer all the time to navigate my hard drive.  Many times throughout the day I need to drop to MS-DOS within a specific directory.  I'm too lazy to drop to DOS and navigate using the command line so I created a registry entry that will launch a CMD window from Windows Explorer and place me in the selected directory.  You can run the following VBScript to do the same for yourself.

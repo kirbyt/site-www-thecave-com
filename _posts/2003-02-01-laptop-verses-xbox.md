@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Laptop verses Xbox'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 I have developed a ritual for getting through airport security that includes pulling out my laptop before I get in line.  But today was a little different because I am also traveling with my Xbox.  Naturally I expected that I would need to pull out the Xbox from its case but no!  It's not a laptop, it's a game console.

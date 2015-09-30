@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Goodbye to Dot-Dot'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 As some already know, my grandmother Dot passed away last week.  I left for Memphis as soon as I heard the news to be with the family.  Although it is sad that Dot is no longer with us, she is in a much better place now.

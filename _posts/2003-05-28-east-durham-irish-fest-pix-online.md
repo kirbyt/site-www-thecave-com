@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'East Durham Irish Fest pix online'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 East Durham Irish Fest pix online in the <a href="gallery.aspx">gallery</a>.  Enjoy.

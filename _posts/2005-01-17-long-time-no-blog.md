@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Long Time No Blog'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Although it is probably silly to apologize for not posting a new entity in over a month, I still feel compelled.  So I apologize for not posting a new entity in over a month.

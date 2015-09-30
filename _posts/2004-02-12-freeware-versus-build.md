@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Freeware versus Build'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 I know I have said this before but this time I hope I really mean it.  I plan to start making more technology related posting to this blog.  And to start things off I will share my rambling on using a CMS verses building a web site by hand.

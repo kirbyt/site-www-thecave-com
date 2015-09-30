@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Counting down the minutes'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 I am counting down the minutes to my departure from Jacksonhell, FL, and my return north to spend time with my squeeze and to once again ride the slopes of Killington.  Pico opened last weekend so we might hit it on Sunday.  I wonder what Beer Mountain is like this weekend.  Yes, I said it again...Beer Mountain.

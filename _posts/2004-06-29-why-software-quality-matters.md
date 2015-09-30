@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Why Software Quality Matters'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 "This is a warning for any creator of computer programs: that software quality matters, that applications must be foolproof, and that-whether embedded in the engine of a car, a robotic arm in a factory or a healing device in a hospital-poorly deployed code can kill."

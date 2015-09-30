@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Weapons of Mass Destruction'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 [Weapons of Mass Destruction](http://www.coxar.pwp.blueyonder.co.uk/) 404

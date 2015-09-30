@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Reflector for .NET'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 A new version of [Reflector](http://www.aisto.com/roeder/dotnet/) is out.  It is a class browser for .NET components and assemblies.  It has a very nice C#/VB decompiler, which seems to be better then Anakrino, imo.  Reflector is a must have for .NET devs.

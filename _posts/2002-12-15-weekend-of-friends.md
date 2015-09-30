@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Weekend of friends'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Met up with Melanie in DC for the Murphy's holiday party.  Good times and good friends.  My friend Tom from Memphis joined us for the party, and long time friends from St. Louis now DC area residents Linda and Jeff stopped by for a while.  Always great seeing them.

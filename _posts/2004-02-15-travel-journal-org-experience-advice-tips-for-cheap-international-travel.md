@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Travel Journal.org - Experience, Advice & Tips for Cheap International Travel'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Melanie's good friend Chris Hart has started a new travel site.  Check it out.

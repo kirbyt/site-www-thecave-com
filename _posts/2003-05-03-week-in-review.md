@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Week in Review'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 I figure it's about time for me to make another posting since it's been a while.  It's been a busy week, that's for sure.  First news is, I'm finally staffed on a project.  I'm working for a customer down in Hopewell, NJ.  Not the ideal location but the project works looks like fun.  After more than two years with Avanade, I can finally excited about a project.

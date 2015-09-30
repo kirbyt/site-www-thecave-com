@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Last Evening in New Orleans'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 My New Orleans trip is almost over.  Events are winding down and people are heading home.  The trip highlights for me have been (in no particular order and aside from the primary reason for me being here):

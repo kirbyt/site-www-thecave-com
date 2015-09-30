@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Deleting Information in BCM'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Users of Microsoft Business Contact Manager for Outlook 2003 should be careful when deleting accounts.  All business contacts linked to the account will be deleted when you delete the account.  And there is no warning message when deleting an account.  Simply highlight the account and press the delete key and your account and linked contacts are gone.

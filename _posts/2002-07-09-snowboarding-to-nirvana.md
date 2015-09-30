@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Snowboarding to Nirvana'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 "I was in one of the most beautiful places in all the world, the Himalayan mountains.  Several months before, in my endless quest for the perfect snow, I had left my home in America and traveled by plane to Nepal with my two snowboards, to have the ultimate experience in snowboarding."

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Searching New York for an iPod'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Yesterday I decided I wanted an [iPod](http://www.ipod.com/ipod/), and those who know me well know that once I get something set in my mind there is no changing it.  So throughout yesterday I searched all over Manhattan for a 10gig iPod for Windows.  I hit the mega stores like CompUSA but had no luck getting my hands on an iPod.  \[Side note: Don't trust retail store web sites that claim something is in stock and available for in-store pick-up.  On more than one occasion I have stopped by the store to pick up a gadget after checking availability from the web site only to be told by the clerk at the store that the item is not in stock.  At least this has been a common occurrence for me in Manhattan.\]

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Software development is about making the end user''s life easier.'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 I am starting to realize there are different types of software developers.  I guess I have always known this but it was not clear to me how the differences affect delivery of software solutions.  This probably explains why I am happy on some gigs and frustrated on others.  And why I can easily become frustrated on projects where I start out happy.

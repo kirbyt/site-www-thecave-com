@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Favorite feature: XML Serialization'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 I have said it before and I will say it again.  XML Serialization ROCKS!  I am working on a new version for WASTEDBoarding.com this weekend and I am taking a totally new approach to the architecture of the software.  One approach includes using XML Serialization to save object hierarchies to a SQL Server database.

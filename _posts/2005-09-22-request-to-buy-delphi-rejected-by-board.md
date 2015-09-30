@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Request to Buy Delphi Rejected By Board'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Have you read this?

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Masking Addresses to Prevent Email Harvesting'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Email harvesting is a technique used by spammers to find email addresses published on web sites.  Spiders crawl the net looking for text that looks like email addresses (ex: somename@somedomain.com).

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Transworld Snowboarding for the XBox'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 I got the new <a href="http://www.transworldgames.com/snow/">Transworld Snowboarding</a> game for the XBox last night and it's pretty dang cool.  I still have not decided which I like better, <a href="http://www.xbox.com/ampedfreestylesnowboarding/default.htm?cs_catalog=cat%2dus">Amped</a> or Transworld SB, but both are a must have for any rider who own an XBox.

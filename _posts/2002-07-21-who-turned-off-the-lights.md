@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Who turned off the lights'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 The brief <a href="http://www.ny1.com/ny/TopStories/SubTopic/index.html?topicintid=1&amp;subtopicintid=1&amp;contentintid=23113">power outage</a> in the lower Manhattan was an interesting experience.  With no power in the West Village, shops and restaurants were forced to close.  This sent a large number of people out onto the streets.  And traffic was a total mess with no traffic signals working.  Subways were not working and buses were overflowing with people.

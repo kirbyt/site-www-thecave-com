@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Blacklisted on AOL'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Bad news for my friends, family and others on AOL and CompuServe.  Apparently my mail server and/or service provider has been blacklisted by AOL since Friday, July 11.  What this means is I am unable to send e-mail to members of AOL and CompuServe.  My service provider is working hard to resolve the issue but AOL is saying it will take another 5 to 10 business days.  AOL is claiming they are backlogged, which is the reason for the delay.  <br /><br />Maybe if AOL wasn't busy blacklisting legitimate mail servers, there wouldn't be a backlog.  On the other hand, if the spammers would simply fall off the face of the Net there wouldn't be a backlog either.  And I would be able to send e-mail to AOL and CompuServe members, specifically my friends and family.<br /><br />My e-mail address is all over the Internet, so it is no surprise to me that I receive spam mail.  I receive around 250 spams per day.  With <a href="http://www.eudora.com/">Eudora Pro</a> and <a href="http://www.spamnix.com/">Spamnix</a>, I have been able to control it and it does not require me to devote a large amount of time each day parsing through useless e-mails.  But this latest problem as a result of spam is the worse.  I can't even send e-mail to Melanie.<br /><br />Anyway, if you are a AOL or CompuServe member and you are expecting a reply e-mail from me, you may not get it for a while.  Don't blame me.  Blame AOL.<br /><br />

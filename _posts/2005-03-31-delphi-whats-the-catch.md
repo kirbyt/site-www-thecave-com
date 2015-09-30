@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Delphi - What''s the Catch?'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 There's a nice <a href="http://discuss.joelonsoftware.com/default.asp?joel.3.101416.64">thread</a> on Joel on Software discussing Delphi, reasons why it hasn't really caught on yet, and why it is a great development language.  It's a long thread but interesting.

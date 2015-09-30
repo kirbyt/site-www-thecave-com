@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Microsoft C# Beta Exam 71-320'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 I just completed the latest Microsoft C# Beta Exam: 71-320 Developing XML Web Services and Server Components with C#.  This exam is much harder than the <a href="http://www.thecave.com/archive/2002_04_01_archive.asp#75166183">previous one</a> I took, which I did pass.  Unlike the previous exam, this one focuses on server-side work with Web services, server components, and Windows services.

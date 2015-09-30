@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Day 0: The Commute Begins'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 ## Day 0: The Commute Begins:

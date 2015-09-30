@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'WSE, WSTK, and WS Security'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 I spent the morning taking a deeper look at WS Security using Microsoft's WSE and IBM WSTK.  Specifically I wanted to learn more about encrypting a SOAP message, and I have to say I am not only impressed with the standard but with the implementations from both Microsoft and IBM.  Once I resolved issues around my X.509 certificate, I was able to play.  I found it very easy to sign and encrypt my SOAP messages.  And on initial glance, it looks like interop between the two toolkits works well.

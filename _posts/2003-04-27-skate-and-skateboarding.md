@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Skate and Skateboarding'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 This weekend was the return to the skateboard for me.  I have not been on a skateboard, aside from my freebord which is a different type of skateboard all together, in more than 20 years.  But I finally broke down, bought a new board, and hit the Hudson River Park.  And to add to the excitement, Melanie decided to buy a pair of in-line skates.  So now we can ride together down the Hudson.

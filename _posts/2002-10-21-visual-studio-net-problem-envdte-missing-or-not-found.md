@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Visual Studio.NET problem: EnvDTE missing or not found'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 I un-installed <a href="http://www.activestate.com/Products/Visual_XSLT/">Visual XSLT</a> the other day and it broke my Visual Studio.NET install.  When I created a new Windows Application, VS.NET would fail to display Form1 in the Form Designer with the exception "File or assembly name EnvDTE, or one of its dependencies, was not found."  I believe the problem was caused by un-installing Visual XSLT.  Luckily the fix was simple.

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'What does it take to be considered advanced in OOP techniques?'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Within Avanade we are asked to maintain skills self-assessments.  This allows Avanade to identify appropriate individuals for a particular job.  One area we are asked to evaluate is OOP techniques.  This led a co-worker to ask me "What does it take to be considered advanced in OOP techniques?"  Here was my initial reply:

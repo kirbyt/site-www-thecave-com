@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'SnowReport Service Passes WS-I Test'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 [WS-I.org](http://www.ws-i.org/) recently published a set of test tools for XML Web services.  These tools test for conformance with the WS-I's Basic Profile.  For fun, I decided to test my Snow Report Service.

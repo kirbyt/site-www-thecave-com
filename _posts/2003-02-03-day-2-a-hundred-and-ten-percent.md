@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Day 2: A hundred and ten percent'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 ## Day 2: A hundred and ten percent:

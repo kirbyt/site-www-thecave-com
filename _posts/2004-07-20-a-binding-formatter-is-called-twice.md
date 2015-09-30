@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'A Binding Formatter is Called Twice'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 It seems that a binding formatter is called twice when a user leaves a textbox control. As the user leaves the control the Leave event for the control is fired followed by the binding format event. The setter method of the bounded property is called next followed by the getter method then finally the binding format event is called again.

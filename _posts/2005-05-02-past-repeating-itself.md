@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Past Repeating Itself'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 I have started work on the application framework for Vertigo.  Well sort of.  \[Vertigo is the code name for the product I have mentioned a couple of times over the last week.\]  I have a very nice framework implemented in C# that has evolved over the years, but Vertigo is being written in Delphi.  And now I face the hardest part...starting with an empty palette.

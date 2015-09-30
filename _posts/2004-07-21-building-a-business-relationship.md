@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Building a Business Relationship'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Over the last few years I have watched and learned about building business relationships. I have seen huge mistakes made and I have seen techniques used that lead to great success. However, the key to building a relationship, whether good or bad, is always same...communication. A lack of communication will spell disaster for any relationship while a good amount of communication can spell success.

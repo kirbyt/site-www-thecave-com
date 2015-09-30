@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'Can you pass 8th grade math?'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 ## You Passed 8th Grade Math

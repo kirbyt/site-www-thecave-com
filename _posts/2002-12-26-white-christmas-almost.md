@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'White Christmas almost'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 I was lucky enough to return to New York City at the tail end of the latest Noreastern to hit the Northeast part of the country.  Many flights were cancelled in and out of NYC airports but the plane I was on was one of the lucky ones allowed to land on the snow plowed runway.  Yeah! I am finally home for a few days.

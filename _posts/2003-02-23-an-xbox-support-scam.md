@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'An Xbox Support Scam?'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Earlier today I called the Xbox support number and talked with a woman about my options for repair of my Xbox.  The cost was $99, which included shipping.  As a matter of fact, she told me they would send me a box to ship my Xbox back to the service center.  Not sure if I wanted to repair or replace, she said I could call back and give my ticket number to complete the repair request.

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'WASTED II Day 4: Bowl of Sweetness'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 Day 4: Bowl of Sweetness:

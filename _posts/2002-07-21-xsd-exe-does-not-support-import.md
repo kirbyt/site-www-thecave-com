@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 'xsd.exe does not support import'
-categories:
-  - blogger
-
+category: uncategorized
 ---
 
 xsd.exe from the .NET SDK has been a favorite tool of mine in recent months, but it let me down tonight.  It seems that xsd.exe does not support schema files that import other schemas.  I'm bummed.
