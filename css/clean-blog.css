@@ -275,8 +275,11 @@ footer .copyright {
   font-size: 14px;
   position: relative;
   margin-bottom: 0;
-  padding-bottom: 0.5em;
-  border-bottom: 1px solid #eeeeee;
+}
+.floating-label-form-group-border {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  border: 1px solid #eeeeee;
 }
 .floating-label-form-group input,
 .floating-label-form-group textarea {

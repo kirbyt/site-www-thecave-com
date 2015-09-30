@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/clean-blog.css">
+    <link rel="stylesheet" href="/css/clean-blog.min.css">
 
     <!-- Pygments Github CSS -->
     <link rel="stylesheet" href="/css/syntax.css">
@@ -172,7 +172,9 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label>Email Address</label>
-                            <input type="email" name="fields[email]" placeholder="Click or tap here to enter your email address" value="" class="form-control"/>
+                            <div class="floating-label-form-group-border">
+                            <input type="email" name="fields[email]" placeholder="Email Address" value="" class="form-control"/>
+                            </div>
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
