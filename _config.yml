@@ -1,9 +1,9 @@
 showGrid: false
 
 url: http://www.thecave.com
-title: thecave | Ramblings From A Crotchety Old Man
+title: "thecave | A Hideout for Programmers, Indie Devs, Solopreneurs"
 author: Kirby Turner
-description: "thecave.com is the blog site for Kirby Turner, an independent software developer for Mac and iOS."
+description: "The blog site for Kirby Turner, an independent software developer, where he shares tips and advice for programmers, indie devs, and solopreneurs."
 baseurl: ""
 header-img: "img/bg-01.jpg"
 google_tracking_id: "UA-167605-3"
