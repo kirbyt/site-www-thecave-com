@@ -34,3 +34,5 @@ tag_dir: tag
 
 exclude: [Rakefile, readme.md]
 include: [.nojekyll, keybase.txt]
+
+gems: [jekyll-paginate]
