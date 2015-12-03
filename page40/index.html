@@ -74,15 +74,15 @@
                 </li>
                 
                 <li>
-                    <a href="/about.html">About</a>
+                    <a href="/about/">About</a>
                 </li>
                 
                 <li>
-                    <a href="/archive.html">Archive</a>
+                    <a href="/archive/">Archive</a>
                 </li>
                 
                 <li>
-                    <a href="/categories.html">Categories & Tags</a>
+                    <a href="/categories/">Categories & Tags</a>
                 </li>
                 
             </ul>
@@ -116,11 +116,28 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2005/08/30/date-range-check-in-sql-server/">Date Range Check in SQL Server</a>
+    </h2>
+    
+    <p>I have been writing a number of stored procedures that return report data for a client.  Each of these reports can be filtered by a date range, so I needed a simple way to check that a date was within a user defined date range.  <br /><br />As an additional requirement, if the user does not specify a begin date or end date as part of the date range then the earliest or latest supported date respectively should be used.  In other words, if the user does not specify a begin date then the earliest date supported by SQL Server should be used as the begin date, and if the user does not specify the end date then the latest date supported is used for the end date.<br /><br />My original approach was to use a BETWEEN clause in the SELECT statements.  However, this made the code messy especially with the ISNULL call used to set the begin end dates when NULL.  So I swapped out the code with a user-defined function.<br /><br />The user-defined function <b>fnIsInDateRange</b> takes 3 parameters:&lt;ul&gt;&lt;li&gt;Date to check&lt;/li&gt;&lt;li&gt;Beginning date of the date range&lt;/li&gt;&lt;li&gt;Ending date of the date range&lt;/li&gt;&lt;/ul&gt;<br />The function returns one of the following:&lt;ul&gt;&lt;li&gt;<b>-1</b> if the date is before the range&lt;/li&gt;&lt;li&gt;<b>0</b> if the date is within the range&lt;/li&gt;&lt;li&gt;<b>1</b> if the date is beyond the range&lt;/li&gt;&lt;/ul&gt;<br />Here’s the code for those who want it.&lt;pre&gt;<br />CREATE FUNCTION dbo.fnIsInDateRange<br />/* <br />  Determines if the date time value is within the date time range.<br /> <br />  Returns:<br />  -1 if the date is before the date range.<br />   0 if the date is within the date range.<br />   1 if the date is after the date range.<br /> <br />  Usage:<br />   SELECT dbo.fnIsInDateRange(‘2005-08-16’,’2005-08-01’,’2005-08-15’)<br />   SELECT * FROM exams WHERE dbo.fnIsInDateRange(dtmExamDate,’2005-08-01’,’2005-08-15’)=0<br />*/  <br />  (<br />    @value      DATETIME,<br />    @rangeFrom  DATETIME,<br />    @rangeTo    DATETIME<br />  )<br />RETURNS SMALLINT<br />AS<br />BEGIN<br />   DECLARE @result SMALLINT<br />   IF @value &lt; ISNULL(@rangeFrom,'1753-01-01 00:00:00.000') <br />   BEGIN<br />      SET @result = -1<br />   END<br />   ELSE IF @value &gt; ISNULL( @rangeTo, ‘9999-12-31 11:59:59.997’ )<br />   BEGIN<br />      SET @result = 1<br />   END<br />   ELSE<br />   BEGIN<br />      SET @result = 0<br />   END<br />   RETURN @result<br />END<br />&lt;/pre&gt;</p>
+
+
+    <p><a href="/2005/08/30/date-range-check-in-sql-server/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on August 30, 2005
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2005/08/29/i-admit-to-being-lazy-and-dumb/">I Admit to Being Lazy and Dumb</a>
     </h2>
     
     <p>I’ve always said I’m lazy programmer, which makes me a good programmer.  For instance, I’m too lazy to perform the same task over and over on a computer so I write a tool.  And I hate writing the same code over and over.  I would rather write it once, package it up in a library, and forget the details.  All I want to remember is the API.<br /><br />I also believe my lack of a quality education helps me think of solutions that smarter individual may never even consider.  My seemingly childish approach to problem solving helps me think of solutions to the most time consuming yet simple problems.<br /><br />But Philipp Lenssen at Google Blogoscoped has really summed up <a href="http://blog.outer-court.com/archive/2005-08-24-n14.html">why good programmers are lazy and dumb</a>.  Give it a read.</p>
-
 
 
     <p><a href="/2005/08/29/i-admit-to-being-lazy-and-dumb/">Continue reading &rarr;</a></p>
@@ -141,7 +158,6 @@
     <p>Amped 3, Burnout Revenge, and Dead or Alive 4.<br /><br />While I believe Burnout Revenge will also be released on the Xbox in September, I plan to wait until Xbox 360.  The latest disc from OXM has a playable demo of Burnout Revenge and a video showcase on Amped 3 and DOA4.  All three games look awesome.</p>
 
 
-
     <p><a href="/2005/08/29/3-reasons-for-me-to-buy-an-xbox-360/">Continue reading &rarr;</a></p>
 
     <p class="post-meta">Posted by Kirby Turner on August 29, 2005
@@ -160,7 +176,6 @@
     <p>My ISP must perform some emergency maintenance on my SQL Server box.  The forums site may be down for 15 minutes.  Repair work is scheduled to start at 2:00 pm MST (GMT-7).<br /><br /><b>Update:</b> All done.</p>
 
 
-
     <p><a href="/2005/08/25/emergency-maintenance/">Continue reading &rarr;</a></p>
 
     <p class="post-meta">Posted by Kirby Turner on August 25, 2005
@@ -177,7 +192,6 @@
     </h2>
     
     <p>I want to let the 2 readers out there know I will be offline for the next 48 hours.  I’ll catch up on emails and such Wednesday afternoon/evening.  Cheers.</p>
-
 
 
     <p><a href="/2005/08/22/offline-for-the-next-48-hours/">Continue reading &rarr;</a></p>
@@ -217,7 +231,6 @@
     <p>I read a <a href="http://www.furrygoat.com/2005/08/how_to_win_a_sa.html">blog post</a> that has me thinking about the trial version of SMTP Diagnostics.  As the story goes, a person was unhappy with the nag screen popping up as he was trying the trial version of a software program.  Annoyed at the popups, he decided to uninstall the application even though the gentleman liked the program.<br /><br />The ISV that published the program in question found the blog <a href="http://www.furrygoat.com/2005/08/how_to_kill_a_s.html#comments">posting</a> and explained the company’s reasoning for displaying the popup screens in the trial version.  This is the part that really got me thinking about the trail version for SMTP Diagnostics.<br /><br />I didn’t like the trial mode model used in SMTP Diagnostics when I first released it and I still don’t like it.  For starters, it is too confusing.  In trial mode, the software will disable itself after 10 runs or 30 days which ever occurs first.  While I’m not a fan of nag screens, which I prefer to call marketing screens, I believe just such a screen makes more sense for SMTP Diagnostics over disabling the software.<br /><br />I would love to hear your thoughts.  What would be YOUR preferred approach to encourage users to buy the product without interfering too much with the user experience?<br /><br />Here’s one idea I am playing with in my head:  Eliminate the current model all together and instead use marketing screens.  The user will see the marketing screen every 5 times that the program is run.  Also, the user will see the marketing screen every 5 times a test mail is sent within a single run.  Lastly, the test mail will include a tag line at the end of each message saying something like “Sent using the trial version of SMTP Diagnostics.”<br /><br />The benefit of this approach is that the program will continue to work even if it has been installed for months.  The current approach does not allow for that.  Under the new model, users who rarely use SMTP Diagnostics can get away with running the trial and clicking OK to close the marketing screens.  Users who use SMTP Diagnostics on a regular basis will hopefully agree to buy a license to eliminate the popup screen and remove the trial version tag line in the email message.<br /><br />What do you think of this approach?  Or is there an approach I should consider?</p>
 
 
-
     <p><a href="/2005/08/18/30-day-trial-vs-marketing-screens/">Continue reading &rarr;</a></p>
 
     <p class="post-meta">Posted by Kirby Turner on August 18, 2005
@@ -234,7 +247,6 @@
     </h2>
     
     <p>Thanks for a patch from InstantASP the <a href="http://www.whitepeaksoftware.com/forums/">WPS Forums</a> are back online.</p>
-
 
 
     <p><a href="/2005/08/15/support-forums-are-back-online/">Continue reading &rarr;</a></p>
@@ -255,7 +267,6 @@
     <p>The latest version of SMTP Diagnostics, version 1.3, is now available.  This release includes a number of enhancements including the ability to save and open the SMTP settings as a Profile.  For a complete list of changes, please read the Revision History found in the SMTP Diagnostics Help file.<br /><br />The latest version can be downloaded from our web site at:<br /><a href="http://www.whitepeaksoftware.com/smtpdiagnostics.aspx">http://www.whitepeaksoftware.com/smtpdiagnostics.aspx</a><br /><br />Note: This is a FREE upgrade to all licensed users.</p>
 
 
-
     <p><a href="/2005/08/15/ann-smtp-diagnostics-version-1-3-is-available/">Continue reading &rarr;</a></p>
 
     <p class="post-meta">Posted by Kirby Turner on August 15, 2005
@@ -274,29 +285,9 @@
     <p>Apparent the White Peak install of InstantForum.NET 4.0 is tied directly to the availability an InstantASP server.  Unfortunately it seems the InstantASP server is down and as a result the White Peak Software Support Forums is down as well.  I am working with the vendor to resolve the problem as quickly as possible and to hopefully ensure this never happens again.</p>
 
 
-
     <p><a href="/2005/08/14/forum-site-is-offline-for-the-moment/">Continue reading &rarr;</a></p>
 
     <p class="post-meta">Posted by Kirby Turner on August 14, 2005
-     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
-    Tagged in .
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2005/08/03/camping-in-long-island/">Camping in Long Island</a>
-    </h2>
-    
-    <p>There are camp grounds in Long Island?  You bet ya.  Melanie and I spent the weekend camping at one of many Long Island campgrounds.  We stayed at <a href="http://nysparks.state.ny.us/parks/info.asp?parkID=52">Wildwood State Park</a> Saturday and Sunday night and had a very enjoyable time.  Wildwood is about an hour and a half to two hours from Manhattan and is on the Sound side of the island.<br /><br />We were a bit disappointed with the camp grounds on Saturday, rather I should say disappointed with the other campers on Saturday.  There were lots of campers on that night, the grounds were near capacity.  And many of the campers seemed to enjoy their cars more than the great outdoors.  Music poured from car radios until 10:00/10:30 pm, people drove cars around until midnight, and car alarms could be heard throughout the night and early morning.  Needless to say, Saturday wasn’t what we expected.<br /><br />Luckily Sunday was the saving grace for Wildwood campgrounds.  The rowdy campers left (check-out time is 11 am) and grounds were probably less than 25% full.  Sunday night was quite and enjoyable, a welcome change from the previous night.  We chilled by the campfire listening to the strange noises made by the creatures of the night.  We cooked steaks and roasted corn on the grill, and we were constantly thankful the Saturday night crowd was gone.<br /><br />Overall we really liked the campgrounds at Wildwood State Park and highly recommend it to those wanting to camp in Long Island.  The campgrounds are nice and the beach is only a short walk away.  Be sure to bring your bike and avoid Friday and Saturday nights.</p>
-
-
-
-    <p><a href="/2005/08/03/camping-in-long-island/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on August 3, 2005
      in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
     Tagged in .
     </p>
@@ -335,6 +326,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/" title="How To Do A Case Insensitive Search Using Parse SDK">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                
                 <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/" title="How To Present An Alert View Using UIAlertController When You Don't Have A View Controller">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
                 
                 <li><a href="/2015/09/21/tags-and-categories/" title="Tags And Categories">Tags And Categories</a></li>
@@ -342,8 +335,6 @@
                 <li><a href="/2015/09/10/trying-something-new-to-avoid-feast-or-famine/" title="Trying Something New To Avoid Feast Or Famine">Trying Something New To Avoid Feast Or Famine</a></li>
                 
                 <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/" title="My Upcoming Share Extension Talk At 360idev-Min">My Upcoming Share Extension Talk At 360idev-Min</a></li>
-                
-                <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/" title="Wish I Could Help But It's Not My App">Wish I Could Help But It's Not My App</a></li>
                 
                 </ul>                
             </div>

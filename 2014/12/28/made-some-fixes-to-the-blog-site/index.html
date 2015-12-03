@@ -76,15 +76,15 @@
                 </li>
                 
                 <li>
-                    <a href="/about.html">About</a>
+                    <a href="/about/">About</a>
                 </li>
                 
                 <li>
-                    <a href="/archive.html">Archive</a>
+                    <a href="/archive/">Archive</a>
                 </li>
                 
                 <li>
-                    <a href="/categories.html">Categories & Tags</a>
+                    <a href="/categories/">Categories & Tags</a>
                 </li>
                 
             </ul>
@@ -120,11 +120,11 @@
 
 <p>This site, as well as <a href="http://blog.whitepeaksoftware.com">my company blog site</a>, uses <a href="http://jekyllrb.com">Jekyll</a> to generate a static HTML version of the site that is in turned hosted on a server for your viewing pleasure. I noticed a while back that categories with embedded spaces, such as <em>cross post</em>, weren’t accessible from the categories list. The embedded space was being replaced with a dash. Also, the RSS feed was not including the time of the post, only the date. So I set out to fix these problems.</p>
 
-<p>I started with the time problem first. I learned that Jekyll does not include the time of the post unless you include the <code>date</code> parameter in the front matter. Adding the parameter is easy enough to do, but I decided I wanted to make it even easier for me. So I created a Rakefile that has a <code>new_post</code> task. I could have used an existing Rakefile, maybe even the one from Octopress, but I decided it would be more fun to write my own. Turns out writing a Rakefile is pretty simple, and I had my <code>new_post</code> task working quickly.</p>
+<p>I started with the time problem first. I learned that Jekyll does not include the time of the post unless you include the <code class="highlighter-rouge">date</code> parameter in the front matter. Adding the parameter is easy enough to do, but I decided I wanted to make it even easier for me. So I created a Rakefile that has a <code class="highlighter-rouge">new_post</code> task. I could have used an existing Rakefile, maybe even the one from Octopress, but I decided it would be more fun to write my own. Turns out writing a Rakefile is pretty simple, and I had my <code class="highlighter-rouge">new_post</code> task working quickly.</p>
 
-<p>The <code>new_post</code> task I wrote create a new markdown file for the post. The task also generates the YAML front matter for the post including the <code>date</code> parameter with the current local time. This solves my time problem in the RSS feed for new post. I thought about making a fix for older post, but I decided it wasn’t worth the effort.</p>
+<p>The <code class="highlighter-rouge">new_post</code> task I wrote create a new markdown file for the post. The task also generates the YAML front matter for the post including the <code class="highlighter-rouge">date</code> parameter with the current local time. This solves my time problem in the RSS feed for new post. I thought about making a fix for older post, but I decided it wasn’t worth the effort.</p>
 
-<p>Using the Rakefile to create a new post makes so much sense that I decided to add a <code>deploy</code> task the Rakefile. I’ve been using a shell script I wrote a few years ago to generate the Jekyll site then commit it to the <em>gh-pages</em> branch of the site’s git <a href="https://github.com/kirbyt/site-www-thecave-com">repo</a>. I thought it would be a fun exercise to re-implement this in the Rakefile. At the same time I decided to change how the files are committed to the branch. Instead of working from a single local git repo, I decided to clone the repo to a second <em>_deploy</em> directory, then copy the <em>_site</em> files to that directory. Turns out this was fairly simple to do as well.</p>
+<p>Using the Rakefile to create a new post makes so much sense that I decided to add a <code class="highlighter-rouge">deploy</code> task the Rakefile. I’ve been using a shell script I wrote a few years ago to generate the Jekyll site then commit it to the <em>gh-pages</em> branch of the site’s git <a href="https://github.com/kirbyt/site-www-thecave-com">repo</a>. I thought it would be a fun exercise to re-implement this in the Rakefile. At the same time I decided to change how the files are committed to the branch. Instead of working from a single local git repo, I decided to clone the repo to a second <em>_deploy</em> directory, then copy the <em>_site</em> files to that directory. Turns out this was fairly simple to do as well.</p>
 
 <p>With that work out of the way I turned my focus to the categories name problem. Turns out it was caused by a space replacement in the Jekyll plugin I use to generate the categories list. That was the easiest, fastest fix of the day.</p>
 
@@ -224,6 +224,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/" title="How To Do A Case Insensitive Search Using Parse SDK">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                
                 <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/" title="How To Present An Alert View Using UIAlertController When You Don't Have A View Controller">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
                 
                 <li><a href="/2015/09/21/tags-and-categories/" title="Tags And Categories">Tags And Categories</a></li>
@@ -231,8 +233,6 @@
                 <li><a href="/2015/09/10/trying-something-new-to-avoid-feast-or-famine/" title="Trying Something New To Avoid Feast Or Famine">Trying Something New To Avoid Feast Or Famine</a></li>
                 
                 <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/" title="My Upcoming Share Extension Talk At 360idev-Min">My Upcoming Share Extension Talk At 360idev-Min</a></li>
-                
-                <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/" title="Wish I Could Help But It's Not My App">Wish I Could Help But It's Not My App</a></li>
                 
                 </ul>                
             </div>

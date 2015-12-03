@@ -76,15 +76,15 @@
                 </li>
                 
                 <li>
-                    <a href="/about.html">About</a>
+                    <a href="/about/">About</a>
                 </li>
                 
                 <li>
-                    <a href="/archive.html">Archive</a>
+                    <a href="/archive/">Archive</a>
                 </li>
                 
                 <li>
-                    <a href="/categories.html">Categories & Tags</a>
+                    <a href="/categories/">Categories & Tags</a>
                 </li>
                 
             </ul>
@@ -120,9 +120,9 @@
 
 <p>Configuration of the Analyzer is straight forward.  Starting with the sample analyzerConfig.xml, I commented out the  and created a new , pointing the references to my <a href="http://www.thecave.com/ws/snowreport.wsdl">Snow Report</a> service.  I ran the analyzer test and my service failed the tests.</p>
 
-<p>Analyzer produces a report of the test in XML, which can be viewed in a user friendly format using your browser.  I quickly saw from the report that the test could not find my  that I have declared in a separate schema file that is imported into the WSDL.  And sure enough, there was a problem.  I had forgotten to include the namespace reference on the  element in my WSDL document.  A simple change to <code>&lt;s&gt;</code> and all was well.  My service passes the WS-I Basic Profile test.</p>
+<p>Analyzer produces a report of the test in XML, which can be viewed in a user friendly format using your browser.  I quickly saw from the report that the test could not find my  that I have declared in a separate schema file that is imported into the WSDL.  And sure enough, there was a problem.  I had forgotten to include the namespace reference on the  element in my WSDL document.  A simple change to <code class="highlighter-rouge">&lt;s&gt;</code> and all was well.  My service passes the WS-I Basic Profile test.</p>
 
-<p>In theory, my service should interop with other platforms.  I have had no problem consuming the service from Java.  However, WSDL2Java from Axis still fails.  Apparently it does not support the <code>&lt;/s&gt;</code> element.  The only way I can generate the Java based proxy classes using WSDL2Java is to include the types schema in the WSDL document as a single file.  Hopefully that will be fix some day.</p>
+<p>In theory, my service should interop with other platforms.  I have had no problem consuming the service from Java.  However, WSDL2Java from Axis still fails.  Apparently it does not support the <code class="highlighter-rouge">&lt;/s&gt;</code> element.  The only way I can generate the Java based proxy classes using WSDL2Java is to include the types schema in the WSDL document as a single file.  Hopefully that will be fix some day.</p>
 
 
                 <hr>
@@ -169,6 +169,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/" title="How To Do A Case Insensitive Search Using Parse SDK">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                
                 <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/" title="How To Present An Alert View Using UIAlertController When You Don't Have A View Controller">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
                 
                 <li><a href="/2015/09/21/tags-and-categories/" title="Tags And Categories">Tags And Categories</a></li>
@@ -176,8 +178,6 @@
                 <li><a href="/2015/09/10/trying-something-new-to-avoid-feast-or-famine/" title="Trying Something New To Avoid Feast Or Famine">Trying Something New To Avoid Feast Or Famine</a></li>
                 
                 <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/" title="My Upcoming Share Extension Talk At 360idev-Min">My Upcoming Share Extension Talk At 360idev-Min</a></li>
-                
-                <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/" title="Wish I Could Help But It's Not My App">Wish I Could Help But It's Not My App</a></li>
                 
                 </ul>                
             </div>

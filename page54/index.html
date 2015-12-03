@@ -74,15 +74,15 @@
                 </li>
                 
                 <li>
-                    <a href="/about.html">About</a>
+                    <a href="/about/">About</a>
                 </li>
                 
                 <li>
-                    <a href="/archive.html">Archive</a>
+                    <a href="/archive/">Archive</a>
                 </li>
                 
                 <li>
-                    <a href="/categories.html">Categories & Tags</a>
+                    <a href="/categories/">Categories & Tags</a>
                 </li>
                 
             </ul>
@@ -116,6 +116,28 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2004/08/02/unit-testing-gone-bad/">Unit Testing Gone Bad</a>
+    </h2>
+    
+    <p>Sorry but I have to rant for a minute.  I have been working with a team lately that doesn’t get unit testing.  In 4 months, this team has been unable to have all 200+ unit tests run successfully.  This to me is an indication that 1) the team does not understand unit testing and its importance, or 2) the team just does not care.  My initial thought is the team does not care, but after today I am starting to think the team just does not understand unit testing.
+<br />
+<br />Today a programmer committed code changes to CVS with a comment stating that the class failed unit testing with a stack overflow problem.  The programmer apparently cared enough to run the unit tests prior to committing the code but didn’t take the time to fix the code, which by the way would have only taken a minute.  Instead of fixing the code he commented in the log message that the class failed unit testing.
+<br />
+<br />What kills me is the programmer cared enough to run the unit test against his code prior to committing to the source repository and yet didn’t care enough to fix the problem.  Did the programmer think the test was falsely reporting an error against his assumed-to-be perfect code?  It is as if the programmer does not realize that the unit test is trying to help him determine problems in his code.  “Yeah, the unit test failed against my code but I know my code is correct so I’m going to commit anyway.”  I don’t get it.</p>
+
+
+    <p><a href="/2004/08/02/unit-testing-gone-bad/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on August 2, 2004
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2004/08/01/installers-and-my-document-directory/">Installers and My Document Directory</a>
     </h2>
     
@@ -124,7 +146,6 @@
 <br />The .NET Framework 1.1 installer and the Adobe Reader 6.0 apparently need access to the My Documents folder during the installation process.  However, both fail because of the UNC reference to the actual folder.  My temporary work around to date has been to re-map the My Documents folder to a temporary directory on the local hard drive within the guest OS, prefer the install, and re-map the My Documents folder back to the original UNC location.
 <br />
 <br />I wonder what these two installers want with the My Documents folder during installations and I wonder why their not smart enough to recognize the UNC reference.</p>
-
 
 
     <p><a href="/2004/08/01/installers-and-my-document-directory/">Continue reading &rarr;</a></p>
@@ -143,7 +164,6 @@
     </h2>
     
     <p>I attended my second <a href="http://www.iccanyc.org/">ICCA NYC Chapter</a> meeting last Tuesday. Turn out was not as good as the previous month but that was probably due to the pouring rain. The meeting was about planning for the upcoming year. We talked about the topics that will be presented over the next 12 months and attendees had a chance to vote for topics that he or she was most interested in hearing. Internet marketing and better networking (not the technical kind but the person to person kind) were top on the list with many other exciting topics following. The next 12 months of meetings are shaping up to be interesting and useful.</p>
-
 
 
     <p><a href="/2004/07/30/july-icca-meeting/">Continue reading &rarr;</a></p>
@@ -165,7 +185,6 @@
 <br /></p>
 
 
-
     <p><a href="/2004/07/26/back-from-vermont/">Continue reading &rarr;</a></p>
 
     <p class="post-meta">Posted by Kirby Turner on July 26, 2004
@@ -183,7 +202,6 @@
     
     <p>Melanie and I will be in Vermont this week.  Can’t wait.  It’s been too long since our last visit.
 <br /></p>
-
 
 
     <p><a href="/2004/07/23/weekend-in-vermont/">Continue reading &rarr;</a></p>
@@ -205,7 +223,6 @@
 <br /></p>
 
 
-
     <p><a href="/2004/07/22/shizzolator/">Continue reading &rarr;</a></p>
 
     <p class="post-meta">Posted by Kirby Turner on July 22, 2004
@@ -223,7 +240,6 @@
     
     <p>I learned that some Dell Latitude D600 configurations will prevent Shift + Arrow key combination from highlighting text within a VMware guest OS.&nbsp; The problem also prevents selecting multiple list items too.&nbsp; I found that the problem is caused by the ATI tray icon application.&nbsp; Disable the ATI tray icon application to get Shift + Arrow key highlighting working again within Windows guest OS'es.</p>
 <p><br /></p>
-
 
 
     <p><a href="/2004/07/21/shift-arrow-keys-not-highlighting/">Continue reading &rarr;</a></p>
@@ -259,7 +275,6 @@
 <br /></p>
 
 
-
     <p><a href="/2004/07/21/building-a-business-relationship/">Continue reading &rarr;</a></p>
 
     <p class="post-meta">Posted by Kirby Turner on July 21, 2004
@@ -283,7 +298,6 @@
 <br /></p>
 
 
-
     <p><a href="/2004/07/20/vpc-versus-vmware-revisited/">Continue reading &rarr;</a></p>
 
     <p class="post-meta">Posted by Kirby Turner on July 20, 2004
@@ -303,27 +317,7 @@
 <br /></p>
 
 
-
     <p><a href="/2004/07/20/regex-library/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on July 20, 2004
-     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
-    Tagged in .
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2004/07/20/a-binding-formatter-is-called-twice/">A Binding Formatter is Called Twice</a>
-    </h2>
-    
-    <p>It seems that a binding formatter is called twice when a user leaves a textbox control. As the user leaves the control the Leave event for the control is fired followed by the binding format event. The setter method of the bounded property is called next followed by the getter method then finally the binding format event is called again.</p>
-
-
-
-    <p><a href="/2004/07/20/a-binding-formatter-is-called-twice/">Continue reading &rarr;</a></p>
 
     <p class="post-meta">Posted by Kirby Turner on July 20, 2004
      in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
@@ -364,6 +358,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/" title="How To Do A Case Insensitive Search Using Parse SDK">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                
                 <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/" title="How To Present An Alert View Using UIAlertController When You Don't Have A View Controller">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
                 
                 <li><a href="/2015/09/21/tags-and-categories/" title="Tags And Categories">Tags And Categories</a></li>
@@ -371,8 +367,6 @@
                 <li><a href="/2015/09/10/trying-something-new-to-avoid-feast-or-famine/" title="Trying Something New To Avoid Feast Or Famine">Trying Something New To Avoid Feast Or Famine</a></li>
                 
                 <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/" title="My Upcoming Share Extension Talk At 360idev-Min">My Upcoming Share Extension Talk At 360idev-Min</a></li>
-                
-                <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/" title="Wish I Could Help But It's Not My App">Wish I Could Help But It's Not My App</a></li>
                 
                 </ul>                
             </div>

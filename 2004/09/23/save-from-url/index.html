@@ -12,7 +12,6 @@
 After some detective work, I discovered the source of the problem.  Seems that each HTML file I attempted to open had a comment line near the top of the file that looked like this: .  Apparently this is special information that Microsoft products such as IE and VS.NET look for.  I’m not sure how the information is used but I do know that neither tool reported meaningful messages regarding the commented line in the HTML file.
 
 To resolve the problem, I removed the saved from url lines from each HTML file.  IE and VS.NET are now happy as can be with regard to viewing these files.
-
 ">
 
     <!-- Facebook tags -->
@@ -80,15 +79,15 @@ To resolve the problem, I removed the saved from url lines from each HTML file. 
                 </li>
                 
                 <li>
-                    <a href="/about.html">About</a>
+                    <a href="/about/">About</a>
                 </li>
                 
                 <li>
-                    <a href="/archive.html">Archive</a>
+                    <a href="/archive/">Archive</a>
                 </li>
                 
                 <li>
-                    <a href="/categories.html">Categories & Tags</a>
+                    <a href="/categories/">Categories & Tags</a>
                 </li>
                 
             </ul>
@@ -171,6 +170,8 @@ To resolve the problem, I removed the saved from url lines from each HTML file. 
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/" title="How To Do A Case Insensitive Search Using Parse SDK">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                
                 <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/" title="How To Present An Alert View Using UIAlertController When You Don't Have A View Controller">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
                 
                 <li><a href="/2015/09/21/tags-and-categories/" title="Tags And Categories">Tags And Categories</a></li>
@@ -178,8 +179,6 @@ To resolve the problem, I removed the saved from url lines from each HTML file. 
                 <li><a href="/2015/09/10/trying-something-new-to-avoid-feast-or-famine/" title="Trying Something New To Avoid Feast Or Famine">Trying Something New To Avoid Feast Or Famine</a></li>
                 
                 <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/" title="My Upcoming Share Extension Talk At 360idev-Min">My Upcoming Share Extension Talk At 360idev-Min</a></li>
-                
-                <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/" title="Wish I Could Help But It's Not My App">Wish I Could Help But It's Not My App</a></li>
                 
                 </ul>                
             </div>

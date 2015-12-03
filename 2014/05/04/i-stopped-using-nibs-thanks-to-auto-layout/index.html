@@ -76,15 +76,15 @@
                 </li>
                 
                 <li>
-                    <a href="/about.html">About</a>
+                    <a href="/about/">About</a>
                 </li>
                 
                 <li>
-                    <a href="/archive.html">Archive</a>
+                    <a href="/archive/">Archive</a>
                 </li>
                 
                 <li>
-                    <a href="/categories.html">Categories & Tags</a>
+                    <a href="/categories/">Categories & Tags</a>
                 </li>
                 
             </ul>
@@ -126,7 +126,7 @@
 
 <p>I’ve now done a number of iOS projects where I don’t use a single NIB or storyboard, and I’m convinced this is the right approach for me. I see everything regarding a view and its subviews explicitly defined in source code, which makes it easier to see what’s going on and to make changes. No more bouncing between inspectors to figure out what is causing a problem or to understand how a view is rendered. I see it all in the source code defined in a single <em>.m</em> file.</p>
 
-<p>So how do I construct my views using only source code? I have a base class that I call <a href="https://github.com/kirbyt/WPSKit/blob/master/WPSKit/UIKit/WPSCompositeView.h"><code>WPSCompositeView</code></a> in my <a href="https://github.com/kirbyt/WPSKit">WPSKit</a>, a set of classes and categories I use to build apps. <code>WPSCompositeView</code> has a class method named <code>+addToSuperview:</code> that creates the instance of the view, which must be a subclass of <code>WPSCompositeView</code>, then calls <code>-loadView</code> on the instance of the view. I place all the code needed to create the subviews of the view in the <code>-loadView</code> implementation. The constraints for the view are implemented in the <code>-updateConstraints</code> that is called by iOS when needed. That’s it.</p>
+<p>So how do I construct my views using only source code? I have a base class that I call <a href="https://github.com/kirbyt/WPSKit/blob/master/WPSKit/UIKit/WPSCompositeView.h"><code class="highlighter-rouge">WPSCompositeView</code></a> in my <a href="https://github.com/kirbyt/WPSKit">WPSKit</a>, a set of classes and categories I use to build apps. <code class="highlighter-rouge">WPSCompositeView</code> has a class method named <code class="highlighter-rouge">+addToSuperview:</code> that creates the instance of the view, which must be a subclass of <code class="highlighter-rouge">WPSCompositeView</code>, then calls <code class="highlighter-rouge">-loadView</code> on the instance of the view. I place all the code needed to create the subviews of the view in the <code class="highlighter-rouge">-loadView</code> implementation. The constraints for the view are implemented in the <code class="highlighter-rouge">-updateConstraints</code> that is called by iOS when needed. That’s it.</p>
 
 <p>Here’s an example of a composer view for a new app I’m working on:</p>
 
@@ -134,7 +134,7 @@
 
 <p>And the code for creating this view is as follows:</p>
 
-<pre><code>- (void)loadView
+<div class="highlighter-rouge"><pre class="highlight"><code>- (void)loadView
 {
   UIView *containerView = self;
 
@@ -249,12 +249,13 @@
   return  _toolbar;
 }
 </code></pre>
+</div>
 
-<p>The only things not created or managed but this view are the navigation bar and collection view of photos. The navigation bar is provided by the <code>UINavigationController</code> used by the view controller that created this composer view. Also, the view controller uses controller containment to include the collection view of photos, which is actually managed by another view controller and custom view class.</p>
+<p>The only things not created or managed but this view are the navigation bar and collection view of photos. The navigation bar is provided by the <code class="highlighter-rouge">UINavigationController</code> used by the view controller that created this composer view. Also, the view controller uses controller containment to include the collection view of photos, which is actually managed by another view controller and custom view class.</p>
 
-<p>Oh, I almost forgot to mention…I create the composite view in the <code>loadView</code> method implemented in the view controller. For example:</p>
+<p>Oh, I almost forgot to mention…I create the composite view in the <code class="highlighter-rouge">loadView</code> method implemented in the view controller. For example:</p>
 
-<pre><code>- (void)loadView
+<div class="highlighter-rouge"><pre class="highlight"><code>- (void)loadView
 {
   [super loadView];
   UIView *contentView = [self view];
@@ -263,8 +264,9 @@
   [self setComposeView:composeView];
 }
 </code></pre>
+</div>
 
-<p>After I create the view I might add more layout constraints to position and size the subview as needed within the main content view. I do that in the view controller’s <code>-loadView</code> when needed.</p>
+<p>After I create the view I might add more layout constraints to position and size the subview as needed within the main content view. I do that in the view controller’s <code class="highlighter-rouge">-loadView</code> when needed.</p>
 
 <p>So that’s it. That’s why I have stopped using NIB and storyboard files in my iOS projects. This approach might not work for others, but it certainly works for me.</p>
 
@@ -315,6 +317,8 @@
                     
                         <li><a href="/2014/09/16/using-xcodebuild-to-export-a-ipa-from-an-archive/">Using xcodebuild To Export a .ipa From an Archive</a></li>
                     
+                        <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                    
                         <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
                     
                         <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/">My Upcoming Share Extension Talk At 360idev-Min</a></li>
@@ -328,8 +332,6 @@
                         <li><a href="/2015/06/08/building-an-app-from-start-to-finish/">Building An App From Start To Finish</a></li>
                     
                         <li><a href="/2015/04/15/views-created-in-code/">Views Created In Code</a></li>
-                    
-                        <li><a href="/2015/04/14/no-wwdc-or-sf-trip/">No WWDC Or SF Trip</a></li>
                     
                     </ul>
                 
@@ -365,6 +367,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/" title="How To Do A Case Insensitive Search Using Parse SDK">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                
                 <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/" title="How To Present An Alert View Using UIAlertController When You Don't Have A View Controller">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
                 
                 <li><a href="/2015/09/21/tags-and-categories/" title="Tags And Categories">Tags And Categories</a></li>
@@ -372,8 +376,6 @@
                 <li><a href="/2015/09/10/trying-something-new-to-avoid-feast-or-famine/" title="Trying Something New To Avoid Feast Or Famine">Trying Something New To Avoid Feast Or Famine</a></li>
                 
                 <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/" title="My Upcoming Share Extension Talk At 360idev-Min">My Upcoming Share Extension Talk At 360idev-Min</a></li>
-                
-                <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/" title="Wish I Could Help But It's Not My App">Wish I Could Help But It's Not My App</a></li>
                 
                 </ul>                
             </div>

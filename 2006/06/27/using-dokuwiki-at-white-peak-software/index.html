@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Kirby Turner">
     <meta name="description" content="One of the items on my never ending to-do list is to install a wiki for internal use at White Peak Software.  It’s been on my list for over a year to do but it seems I never have the time.  Last week I saw the internal wiki of another small software company and thought to myself, “I need to do the same.”  So today I decided to take a break from my normal work to install a wiki.There are a lot of different wiki software options available so I started by reviewing the popular ones at WikiMatrix.  This site even has a Wiki Choice Wizard that helps find a wiki software package based on requirement needs.The selection criteria was simple.  I need something that will run on a Windows server under IIS and does not require a database.  The content should be stored in the file system in case a need arises that requires access to the data outside of the wiki software.  The software I settled on is DokuWiki.DokuWiki is written in PHP so my first step was to download the latest version of PHP.  A Windows installer is provided that will not only install PHP but configure IIS to use PHP.  The installer ran without a problem, which made me very happy.Next I downloaded the DokuWiki software and un-archived the tar file.  I setup a wiki folder and copied the DokuWiki to the new folder.  I created a new web site using the IIS management console and pointed the web site to the wiki folder.  Within a few minutes, from installing PHP to copying the DokuWiki files to setting up the web site, the wiki site was up and running.The more time consuming part has been adding content to the wiki site.  I started by creating a new start page with links to various White Peak Software resources.  I also setup a “Clients” wiki page.  From there I started adding content about each client and client project.  Even after 3 hours I haven’t made it very far.  There’s too much information to add.  I imagine I will be adding content off and on for the next few weeks.The great thing about having the wiki is that White Peak Software now has single point of reference for accessing WPS information.  When a new sub-contractor comes on board, or even if I am looking for information about a particular project, the wiki site provides easy access to the needed information.  I’m glad I finally took the time to get this started.
-
 ">
 
     <!-- Facebook tags -->
@@ -76,15 +75,15 @@
                 </li>
                 
                 <li>
-                    <a href="/about.html">About</a>
+                    <a href="/about/">About</a>
                 </li>
                 
                 <li>
-                    <a href="/archive.html">Archive</a>
+                    <a href="/archive/">Archive</a>
                 </li>
                 
                 <li>
-                    <a href="/categories.html">Categories & Tags</a>
+                    <a href="/categories/">Categories & Tags</a>
                 </li>
                 
             </ul>
@@ -189,6 +188,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/" title="How To Do A Case Insensitive Search Using Parse SDK">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                
                 <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/" title="How To Present An Alert View Using UIAlertController When You Don't Have A View Controller">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
                 
                 <li><a href="/2015/09/21/tags-and-categories/" title="Tags And Categories">Tags And Categories</a></li>
@@ -196,8 +197,6 @@
                 <li><a href="/2015/09/10/trying-something-new-to-avoid-feast-or-famine/" title="Trying Something New To Avoid Feast Or Famine">Trying Something New To Avoid Feast Or Famine</a></li>
                 
                 <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/" title="My Upcoming Share Extension Talk At 360idev-Min">My Upcoming Share Extension Talk At 360idev-Min</a></li>
-                
-                <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/" title="Wish I Could Help But It's Not My App">Wish I Could Help But It's Not My App</a></li>
                 
                 </ul>                
             </div>

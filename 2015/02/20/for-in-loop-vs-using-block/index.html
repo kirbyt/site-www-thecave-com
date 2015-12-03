@@ -76,15 +76,15 @@
                 </li>
                 
                 <li>
-                    <a href="/about.html">About</a>
+                    <a href="/about/">About</a>
                 </li>
                 
                 <li>
-                    <a href="/archive.html">Archive</a>
+                    <a href="/archive/">Archive</a>
                 </li>
                 
                 <li>
-                    <a href="/categories.html">Categories & Tags</a>
+                    <a href="/categories/">Categories & Tags</a>
                 </li>
                 
             </ul>
@@ -122,13 +122,13 @@
   <p>most of the time the for-in enumeration is the straightforward and less clever approach. (“Less clever” is a good thing.)</p>
 </blockquote>
 
-<p>I agree with Brent. I’m a fan of the for-in syntax. It’s straightforward and easy to read. But I have to admit in recent years I’ve been using <code>enumerateObjects​UsingBlock:</code> more often than for-in loops. I’ve been favoring the block syntax because something bbum <a href="http://stackoverflow.com/users/25646/bbum">said on Stack Overflow</a> a while back.</p>
+<p>I agree with Brent. I’m a fan of the for-in syntax. It’s straightforward and easy to read. But I have to admit in recent years I’ve been using <code class="highlighter-rouge">enumerateObjects​UsingBlock:</code> more often than for-in loops. I’ve been favoring the block syntax because something bbum <a href="http://stackoverflow.com/users/25646/bbum">said on Stack Overflow</a> a while back.</p>
 
 <blockquote>
-  <p><code>enumerateObjectsUsingBlock:</code> will be as fast or faster than fast enumeration (<code>for(... in ...</code>) uses the <code>NSFastEnumeration</code> support to implement enumeration). Fast enumeration requires translation from an internal representation to the representation for fast enumeration. There is overhead therein. Block-based enumeration allows the collection class to enumerate contents as quickly as the fastest traversal of the native storage format. Likely irrelevant for arrays, but it can be a huge difference for dictionaries.</p>
+  <p><code class="highlighter-rouge">enumerateObjectsUsingBlock:</code> will be as fast or faster than fast enumeration (<code class="highlighter-rouge">for(... in ...</code>) uses the <code class="highlighter-rouge">NSFastEnumeration</code> support to implement enumeration). Fast enumeration requires translation from an internal representation to the representation for fast enumeration. There is overhead therein. Block-based enumeration allows the collection class to enumerate contents as quickly as the fastest traversal of the native storage format. Likely irrelevant for arrays, but it can be a huge difference for dictionaries.</p>
 </blockquote>
 
-<p>For those who don’t know who <a href="http://stackoverflow.com/users/25646/bbum">bbum</a> is, he’s Bill Bumgarner. He works at Apple and knows a thing or two about Cocoa. So I believe him when he says “<code>enumerateObjectsUsingBlock:</code> will be as fast or faster than fast enumeration.”</p>
+<p>For those who don’t know who <a href="http://stackoverflow.com/users/25646/bbum">bbum</a> is, he’s Bill Bumgarner. He works at Apple and knows a thing or two about Cocoa. So I believe him when he says “<code class="highlighter-rouge">enumerateObjectsUsingBlock:</code> will be as fast or faster than fast enumeration.”</p>
 
 
 
@@ -228,6 +228,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/" title="How To Do A Case Insensitive Search Using Parse SDK">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                
                 <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/" title="How To Present An Alert View Using UIAlertController When You Don't Have A View Controller">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
                 
                 <li><a href="/2015/09/21/tags-and-categories/" title="Tags And Categories">Tags And Categories</a></li>
@@ -235,8 +237,6 @@
                 <li><a href="/2015/09/10/trying-something-new-to-avoid-feast-or-famine/" title="Trying Something New To Avoid Feast Or Famine">Trying Something New To Avoid Feast Or Famine</a></li>
                 
                 <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/" title="My Upcoming Share Extension Talk At 360idev-Min">My Upcoming Share Extension Talk At 360idev-Min</a></li>
-                
-                <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/" title="Wish I Could Help But It's Not My App">Wish I Could Help But It's Not My App</a></li>
                 
                 </ul>                
             </div>

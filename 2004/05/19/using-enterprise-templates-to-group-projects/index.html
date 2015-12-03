@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Kirby Turner">
     <meta name="description" content="I’m currently working on a customer project with 16+ VS.NET projects in a single VS.NET solution file.  The single solution file is handy in that all the source code that makes up the complete customer solution is available in one place.  The solution includes multiple C# projects, unit test projects, database projects, and one Reporting Services project.  Also our build environment relies on NAnt scripts so each project that produces an assembly also has its own .build script.A single solution approach is nice because I have access to everything that makes up the solution, from build scripts to C# source code to stored procedures.  But finding the right project or file is becoming more challenging each day as more is added to the solution.  This is where Enterprise Template Projects comes to the rescue.  An Enterprise Template Project is a project type available in Visual Studio.NET Enterprise Edition or greater, and it can contain any type of file including other project types.  I started out by creating a set of enterprise template projects that represent the grouping I want.  For example, I created template projects with the names Applications, BusinessServices, Databases, Frameworks, NAntScripts, and UnitTests.  Within each of these projects I added the appropriate reference based on the grouping to existing project files.  UnitTests contains references to the C# projects responsible for producing our NUnit unit test assemblies.  BusinessServices contains references to projects that make up the middle tier of the solution.  Framework contains references to framework projects, and so on.NAntScripts is interesting in that it does not contain a reference to another project but instead it contains references to .build scripts files found in other projects.  I like this because many times when I am working on the build scripts I need to modify more than one script.  Before making the grouping I was jumping from project to project in search of the .build script file.  Now I have references to all the script files in one place making it easier to find a particular script file.With this new grouping I am able to more efficiently find the projects and files I need to work on.  The grouping has proven itself to be a huge time saver for me especially when working with large single solution files.One additional note on using enterprise template projects to organize your single solution: To prevent scattering .etp files throughout project directories containing the source code I recommend creating a single directory that will store all of the .etp files.  References within an enterprise template project do not have to fall under the template project.  Instead files referenced within the .etp can be stored anywhere on the hard drive.  This means the .etp file does not have to dirty up the project directory where the source code actually resides.
-
 ">
 
     <!-- Facebook tags -->
@@ -76,15 +75,15 @@
                 </li>
                 
                 <li>
-                    <a href="/about.html">About</a>
+                    <a href="/about/">About</a>
                 </li>
                 
                 <li>
-                    <a href="/archive.html">Archive</a>
+                    <a href="/archive/">Archive</a>
                 </li>
                 
                 <li>
-                    <a href="/categories.html">Categories & Tags</a>
+                    <a href="/categories/">Categories & Tags</a>
                 </li>
                 
             </ul>
@@ -163,6 +162,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/" title="How To Do A Case Insensitive Search Using Parse SDK">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                
                 <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/" title="How To Present An Alert View Using UIAlertController When You Don't Have A View Controller">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
                 
                 <li><a href="/2015/09/21/tags-and-categories/" title="Tags And Categories">Tags And Categories</a></li>
@@ -170,8 +171,6 @@
                 <li><a href="/2015/09/10/trying-something-new-to-avoid-feast-or-famine/" title="Trying Something New To Avoid Feast Or Famine">Trying Something New To Avoid Feast Or Famine</a></li>
                 
                 <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/" title="My Upcoming Share Extension Talk At 360idev-Min">My Upcoming Share Extension Talk At 360idev-Min</a></li>
-                
-                <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/" title="Wish I Could Help But It's Not My App">Wish I Could Help But It's Not My App</a></li>
                 
                 </ul>                
             </div>

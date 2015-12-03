@@ -76,15 +76,15 @@
                 </li>
                 
                 <li>
-                    <a href="/about.html">About</a>
+                    <a href="/about/">About</a>
                 </li>
                 
                 <li>
-                    <a href="/archive.html">Archive</a>
+                    <a href="/archive/">Archive</a>
                 </li>
                 
                 <li>
-                    <a href="/categories.html">Categories & Tags</a>
+                    <a href="/categories/">Categories & Tags</a>
                 </li>
                 
             </ul>
@@ -128,7 +128,7 @@
 
 <p>To use CompositeTestFixture, begin by writing your test fixtures as you normally would.  In the spirit of Jonathan’s blog I will show an example that provides a test for implementors of the IEnumerable interface.  In this example I will show how to test the ArrayList and Hashtable classes which both implement this interface.  The only requirement in this test is that the IEnumerable instance is not null.</p>
 
-<pre><code>using System;
+<div class="highlighter-rouge"><pre class="highlight"><code>using System;
 using System.Collections;
 using System.Diagnostics;
 
@@ -147,10 +147,11 @@ namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
     }
 }
 </code></pre>
+</div>
 
 <p>Now we need to write the unit test for the GetEnumeratorNotNull test.  However we must first tell CompositeTestFixture about the factories needed to create an instance of class that implements the interface to test.  I call the instance of the class the implementor.</p>
 
-<pre><code>[TestFixture]
+<div class="highlighter-rouge"><pre class="highlight"><code>[TestFixture]
 [ProviderFactory(FactoryType=typeof(ArrayListFactory),
 ReturnType=typeof(IEnumerable))]
 [ProviderFactory(FactoryType=typeof(HashtableFactory),
@@ -160,24 +161,27 @@ public class EnumerableTest
     ...
 }
 </code></pre>
+</div>
 
 <p>Next we need to write the code that will test the implementor.  The NUnit framework is going to call the GetEnumeratorNotNull method that is decorated with the [Test] attribute.  This is where we call into the CompositeTestFixture helper class.  A static method RunTest is provided for those who do not want to create an instance of the CompositeTestFixture class.</p>
 
-<pre><code>[Test]
+<div class="highlighter-rouge"><pre class="highlight"><code>[Test]
 public void GetEnumeratorNotNull()
 {
     CompositeTestFixture.RunTest( this );
 }
 </code></pre>
+</div>
 
 <p>Now we write the method that will perform the actual test.  This method will have the same name as the test method.  The only difference is that the method signature takes a single parameter of the interface type we are testing.  Note that this method is not decorated with the [Test] attribute since we do not want NUnit calling this method.</p>
 
-<pre><code>public void GetEnumeratorNotNull( IEnumerable en )
+<div class="highlighter-rouge"><pre class="highlight"><code>public void GetEnumeratorNotNull( IEnumerable en )
 {
     Debug.WriteLine( "Testing " + en.GetType().ToString() );
     Assert.IsNotNull( en.GetEnumerator(), "Must not be null." );
 }
 </code></pre>
+</div>
 
 <p>That’s it.  CompositeTestFixture will do all the heavy work of calling the appropriate unit test method to test a specific implementor.</p>
 
@@ -189,7 +193,7 @@ public void GetEnumeratorNotNull()
 
 <p>CompositeTestFixture determines creators by inspecting the factory class type and discovering each method with a return type that implements the type defined in the ProviderFactory.ReturnType property that decorates the test fixture.  Creators must be defined with a public scope and no parameters on the method signature.</p>
 
-<pre><code>using System;
+<div class="highlighter-rouge"><pre class="highlight"><code>using System;
 using System.Collections;
 
 namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
@@ -214,6 +218,7 @@ namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
     }
 }
 </code></pre>
+</div>
 
 <p>After CompositeTestFixture calls a factory creator it calls the unit test method matching the name of the [Test] method that invoked CompositeTestFixture.RunTest( this ).  In our example this is the GetEnumeratorNotNull( IEnumerable en ) method.  This is repeated for each creator declared on a factory and for each factory declared on the fixture.</p>
 
@@ -270,6 +275,8 @@ namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/" title="How To Do A Case Insensitive Search Using Parse SDK">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                
                 <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/" title="How To Present An Alert View Using UIAlertController When You Don't Have A View Controller">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
                 
                 <li><a href="/2015/09/21/tags-and-categories/" title="Tags And Categories">Tags And Categories</a></li>
@@ -277,8 +284,6 @@ namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
                 <li><a href="/2015/09/10/trying-something-new-to-avoid-feast-or-famine/" title="Trying Something New To Avoid Feast Or Famine">Trying Something New To Avoid Feast Or Famine</a></li>
                 
                 <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/" title="My Upcoming Share Extension Talk At 360idev-Min">My Upcoming Share Extension Talk At 360idev-Min</a></li>
-                
-                <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/" title="Wish I Could Help But It's Not My App">Wish I Could Help But It's Not My App</a></li>
                 
                 </ul>                
             </div>

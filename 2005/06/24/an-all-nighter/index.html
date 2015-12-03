@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Kirby Turner">
     <meta name="description" content="I decided last night to make some enhancements to blog engine I wrote for this web site.  That was around 7:30 pm.  At 5:30 am I decided it was time to go to bed.  I did roll out the changes but there’s more work to be done.  And I know there are some problems too.  For example melanieandkirby.com is displaying the wrong blog.The most notable change is the new permlink for my blog entries.  The old permlink, which are still valid, used a blog item ID as part of the query string.  While functional it wasn’t very descriptive and not well liked by search engines like Goggle.The new permlink uses a better structure consisting of the posting date and title.  For example, the permlink for my last posting is http://www.thecave.com/archive/2005/06/23/office_pranks.aspx.  As you can see the link includes the publish date followed by the title of the post.  For older blog items that do not have a title the blog item id is used.The other notable change is the blog item page itself, which is a new feature.  Before you could only see the blog item on a page listing other items from that month.  Now the blog item displays on its own page with the comments below.  At last you can see both the post and its comments from the same page.  This is a feature I have wanted implemented for a long time.I still need to migrate the archives to the new permlink structure.  For example, http://www.thecave.com/archive/2005/06/ should display all the blog items for the month of June 2005.  Also I discovered that the links in the rss file are invalid, which will be fixed soon.So why did I make the change?  Simple, I want to make the site more appealing to search engines and hopefully increase my Google ranking.  The blog item is now optimized by the title, which will make it easier to find specific blog items through Google and other search engines.  There still many more things that need to happen to make the pages more appealing to search engines but this is a start.One side note, all previous permlinks are still valid.  As a matter of fact, the data store containing the blog items remains unchanged.  I wrote an HttpHandler to map the permlinks to the correct page content.  This mapping allows the site to support both the old and new permlinks.
-
 ">
 
     <!-- Facebook tags -->
@@ -76,15 +75,15 @@
                 </li>
                 
                 <li>
-                    <a href="/about.html">About</a>
+                    <a href="/about/">About</a>
                 </li>
                 
                 <li>
-                    <a href="/archive.html">Archive</a>
+                    <a href="/archive/">Archive</a>
                 </li>
                 
                 <li>
-                    <a href="/categories.html">Categories & Tags</a>
+                    <a href="/categories/">Categories & Tags</a>
                 </li>
                 
             </ul>
@@ -163,6 +162,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/" title="How To Do A Case Insensitive Search Using Parse SDK">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                
                 <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/" title="How To Present An Alert View Using UIAlertController When You Don't Have A View Controller">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
                 
                 <li><a href="/2015/09/21/tags-and-categories/" title="Tags And Categories">Tags And Categories</a></li>
@@ -170,8 +171,6 @@
                 <li><a href="/2015/09/10/trying-something-new-to-avoid-feast-or-famine/" title="Trying Something New To Avoid Feast Or Famine">Trying Something New To Avoid Feast Or Famine</a></li>
                 
                 <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/" title="My Upcoming Share Extension Talk At 360idev-Min">My Upcoming Share Extension Talk At 360idev-Min</a></li>
-                
-                <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/" title="Wish I Could Help But It's Not My App">Wish I Could Help But It's Not My App</a></li>
                 
                 </ul>                
             </div>

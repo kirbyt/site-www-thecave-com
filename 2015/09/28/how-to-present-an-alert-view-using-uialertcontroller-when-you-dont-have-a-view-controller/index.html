@@ -76,15 +76,15 @@
                 </li>
                 
                 <li>
-                    <a href="/about.html">About</a>
+                    <a href="/about/">About</a>
                 </li>
                 
                 <li>
-                    <a href="/archive.html">Archive</a>
+                    <a href="/archive/">Archive</a>
                 </li>
                 
                 <li>
-                    <a href="/categories.html">Categories & Tags</a>
+                    <a href="/categories/">Categories & Tags</a>
                 </li>
                 
             </ul>
@@ -116,29 +116,31 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-				<p>Over the summer I updated a number of apps to iOS 9. A common tasks for me was replacing the deprecated <code>UIAlertView</code> with new <code>UIAlertController</code> class. Generally this is easy to do, but there is one scenario that <code>UIAlertView</code> handles well that <code>UIAlertController</code> doesn’t support at all: displaying an alert view from parts of your code without a reference to the current view controller, for instance, displaying an alert view from the app delegate.</p>
+				<p>Over the summer I updated a number of apps to iOS 9. A common tasks for me was replacing the deprecated <code class="highlighter-rouge">UIAlertView</code> with new <code class="highlighter-rouge">UIAlertController</code> class. Generally this is easy to do, but there is one scenario that <code class="highlighter-rouge">UIAlertView</code> handles well that <code class="highlighter-rouge">UIAlertController</code> doesn’t support at all: displaying an alert view from parts of your code without a reference to the current view controller, for instance, displaying an alert view from the app delegate.</p>
 
-<p>Trying to display an alert view using <code>UIAlertController</code> from a non-UI specific class such as the app delegate is a <a href="http://stackoverflow.com/questions/26952061/present-uialertcontroller-from-appdelegate">common problem</a>, and developers have found different <a href="http://stackoverflow.com/questions/26554894/how-to-present-uialertcontroller-when-not-in-a-view-controller">workarounds</a>. <a href="http://stackoverflow.com/a/30941356">One particular solution</a> that caught my eye was this one from agilityvision, who writes:</p>
+<p>Trying to display an alert view using <code class="highlighter-rouge">UIAlertController</code> from a non-UI specific class such as the app delegate is a <a href="http://stackoverflow.com/questions/26952061/present-uialertcontroller-from-appdelegate">common problem</a>, and developers have found different <a href="http://stackoverflow.com/questions/26554894/how-to-present-uialertcontroller-when-not-in-a-view-controller">workarounds</a>. <a href="http://stackoverflow.com/a/30941356">One particular solution</a> that caught my eye was this one from agilityvision, who writes:</p>
 
 <blockquote>
   <p>At WWDC I stopped in at one of the labs and asked an Apple Engineer this same question: “What was the best practice for displaying a UIAlertController?” And he said they had been getting this question a lot and we joked that they should have had a session on it. He said that internally Apple is creating a UIWindow with a transparent UIViewController and then presenting the UIAlertController on it.</p>
 </blockquote>
 
-<p>This got me thinking about how I would solve the problem for apps I work on. Liking the approach mentioned by the Apple Engineer, I decided to give that a try. But unlike some of the other solutions that use a category, I decided to create a new class, <code>WPSAlertController</code>, that is a subclass of <code>UIAlertController</code>, and provide additional convenience methods making it possible to display an alert view with a single call…like this:</p>
+<p>This got me thinking about how I would solve the problem for apps I work on. Liking the approach mentioned by the Apple Engineer, I decided to give that a try. But unlike some of the other solutions that use a category, I decided to create a new class, <code class="highlighter-rouge">WPSAlertController</code>, that is a subclass of <code class="highlighter-rouge">UIAlertController</code>, and provide additional convenience methods making it possible to display an alert view with a single call…like this:</p>
 
-<pre><code>NSString *title = ...
+<div class="highlighter-rouge"><pre class="highlight"><code>NSString *title = ...
 NSString *message = ...
 [WPSAlertController presentOkayAlertWithTitle:title message:message];
 </code></pre>
+</div>
 
-<p>Or display the <code>localizedDescription</code> from an <code>NSError</code> object:</p>
+<p>Or display the <code class="highlighter-rouge">localizedDescription</code> from an <code class="highlighter-rouge">NSError</code> object:</p>
 
-<pre><code>[WPSAlertController presentOkayAlertWithError:error];
+<div class="highlighter-rouge"><pre class="highlight"><code>[WPSAlertController presentOkayAlertWithError:error];
 </code></pre>
+</div>
 
-<p>And of course, since <code>WPSAlertController</code> is a subclass of <code>UIAlertController</code>, you can create your alert the same way as you do using <code>UIAlertController</code>. The only difference is you call <code>show</code> to present the alert when you don’t have a view controller. For example:</p>
+<p>And of course, since <code class="highlighter-rouge">WPSAlertController</code> is a subclass of <code class="highlighter-rouge">UIAlertController</code>, you can create your alert the same way as you do using <code class="highlighter-rouge">UIAlertController</code>. The only difference is you call <code class="highlighter-rouge">show</code> to present the alert when you don’t have a view controller. For example:</p>
 
-<pre><code>NSString *title = ...
+<div class="highlighter-rouge"><pre class="highlight"><code>NSString *title = ...
 NSString *message = ...
 WPSAlertController *alertController = [WPSAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
 [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -147,8 +149,9 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 
 [alertController show];
 </code></pre>
+</div>
 
-<p>You can grab the <a href="https://github.com/kirbyt/WPSKit/blob/master/WPSKit/UIKit/WPSAlertController.m">source code for <code>WPSAlertController</code></a> from my github repository and include it in your project, or use the entire <a href="https://github.com/kirbyt/WPSKit">WPSKit.framework</a> in your project if you want to use <code>WPSAlertController</code> plus other handy classes that I use when creating iOS apps.</p>
+<p>You can grab the <a href="https://github.com/kirbyt/WPSKit/blob/master/WPSKit/UIKit/WPSAlertController.m">source code for <code class="highlighter-rouge">WPSAlertController</code></a> from my github repository and include it in your project, or use the entire <a href="https://github.com/kirbyt/WPSKit">WPSKit.framework</a> in your project if you want to use <code class="highlighter-rouge">WPSAlertController</code> plus other handy classes that I use when creating iOS apps.</p>
 
 
                 <hr>
@@ -193,6 +196,8 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
                     <h3>Related Articles</h3>
                     <ul>
                     
+                        <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                    
                         <li><a href="/2015/08/10/dispatch-async-to-main-queue-doesnt-work-with-modal-window-on-mac-os-x/">Dispatch Async to Main Queue Doesn't Work With Modal Window on Mac OS X</a></li>
                     
                         <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/">My Upcoming Share Extension Talk At 360idev-Min</a></li>
@@ -211,8 +216,6 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
                     
                         <li><a href="/2015/04/06/apple-watch-will-make-iphone-6-plus-size-less-annoying/">Apple Watch Will Make iPhone 6 Plus Size Less Annoying</a></li>
                     
-                        <li><a href="/2015/03/05/apres-code-a-new-developer-meetup-in-stowe-vt/">Après Code: A New Developer Meetup In Stowe Vt</a></li>
-                    
                     </ul>
                 
 
@@ -224,6 +227,10 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
                         <a href="/2015/09/21/tags-and-categories/" data-toggle="tooltip" data-placement="top" title="Tags And Categories">&larr; Previous Post</a>
                     </li>
                     
+                    
+                    <li class="next">
+                        <a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/" data-toggle="tooltip" data-placement="top" title="How To Do A Case Insensitive Search Using Parse SDK">Next Post &rarr;</a>
+                    </li>
                     
                 </ul>
 
@@ -243,6 +250,8 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/" title="How To Do A Case Insensitive Search Using Parse SDK">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                
                 <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/" title="How To Present An Alert View Using UIAlertController When You Don't Have A View Controller">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
                 
                 <li><a href="/2015/09/21/tags-and-categories/" title="Tags And Categories">Tags And Categories</a></li>
@@ -250,8 +259,6 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
                 <li><a href="/2015/09/10/trying-something-new-to-avoid-feast-or-famine/" title="Trying Something New To Avoid Feast Or Famine">Trying Something New To Avoid Feast Or Famine</a></li>
                 
                 <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/" title="My Upcoming Share Extension Talk At 360idev-Min">My Upcoming Share Extension Talk At 360idev-Min</a></li>
-                
-                <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/" title="Wish I Could Help But It's Not My App">Wish I Could Help But It's Not My App</a></li>
                 
                 </ul>                
             </div>

@@ -74,15 +74,15 @@
                 </li>
                 
                 <li>
-                    <a href="/about.html">About</a>
+                    <a href="/about/">About</a>
                 </li>
                 
                 <li>
-                    <a href="/archive.html">Archive</a>
+                    <a href="/archive/">Archive</a>
                 </li>
                 
                 <li>
-                    <a href="/categories.html">Categories & Tags</a>
+                    <a href="/categories/">Categories & Tags</a>
                 </li>
                 
             </ul>
@@ -116,11 +116,28 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2005/09/26/ann-smtp-diagnostics-1-4-beta-1/">ANN: SMTP Diagnostics 1.4 Beta 1</a>
+    </h2>
+    
+    <p>SMTP Diagnostics 1.4 Beta 1 is available for download.  Click <a href="http://www.whitepeaksoftware.com/forums/Topic40-4-1.aspx">here</a> for more information.</p>
+
+
+    <p><a href="/2005/09/26/ann-smtp-diagnostics-1-4-beta-1/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on September 26, 2005
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2005/09/23/refactoring-smtp-diagnostics-the-story-continues/">Refactoring SMTP Diagnostics...The Story Continues</a>
     </h2>
     
     <p>My small refactoring effort on SMTP Diagnostics turned into a much bigger effort but the end result is a much better code base.  The exercise led to re-architecting most of the application.  The GUI remains untouched but everything else behind the scenes has changed.  After an 11 hour marathon session, I finally got a clean compile.  I still need to re-wire parts of the GUI to the new object model before I can begin testing.  But I did write unit tests (using <a href="http://dunit.sourceforge.net/">DUnit</a>) for all of the non-GUI code as part of the refactoring exercise.  All of this re-work is definitely going to make it easier to add new features in the future.<br /><br /><b>Incorporating another New Feature</b><br /><br />Speaking of new features, a fellow developer recommended I incorporate <a href="http://www.xml.com/pub/a/2002/12/18/dive-into-xml.html">RSS</a> feeds as a way to inform users of new releases within the program.  I instantly fell in love with this idea mainly because it allows me to share more information with customer beyond just “a new release is available”.  By using an RSS feed, I will be able to let users know about new releases, show the list of enhancements and bug fixes, send out tips, and possibly a newsletter some day.<br /><br />Of course the user will have the option to turn off the feed feature, or to display the feed on demand.  But I think this is a great use for RSS that I plan to incorporate in all of our products going forward.</p>
-
 
 
     <p><a href="/2005/09/23/refactoring-smtp-diagnostics-the-story-continues/">Continue reading &rarr;</a></p>
@@ -139,7 +156,6 @@
     </h2>
     
     <p>According to EBgames.com, the official street date for the Xbox 360 is November 22, 2005.  I pre-ordered my 360 with overnight delivery, but given that the 22nd is only a couple of days before Thanksgiving I should have requested standard ground shipping.  Chances are good I will be out of town when the shipment is delivered.  Oh well.</p>
-
 
 
     <p><a href="/2005/09/22/xbox-360-release-date-november-22-2005/">Continue reading &rarr;</a></p>
@@ -179,7 +195,6 @@
     <p>In a recent blog posting, I talked about <a href="http://www.thecave.com/archive/2005/09/02/convincing_a_client_it_is_time_to_refactor.aspx">convincing a client it’s time to refactor</a>.  Well, I have spent the last few days convincing myself that it is time to do some refactoring of <a href="http://www.smtpdiagnostics.com/">SMTP Diagnostics</a>.<br /><br />For those who don’t know, SMTP Diagnostics is a mailer program enabling you to troubleshoot problems with outgoing email and assist with configuring outgoing (SMTP) servers.<br /><br />I have been putting off refactoring while still adding new features.  I did this to “save time” but the code base has reached a point where it is now more time consuming then it should be to add new features.  I can put it off no longer.<br /><br />What’s fun about this exercise is that I get to build from the knowledge obtain thus far.  Version 1.0 did not have a solid object model and a lot of the code was specific to this one project.  Version 1.2 and 1.3 moved away from that by incorporating common code, or a common framework, that I’m using in a second product code-name Vertigo.  Version 1.4, which is the next release, will finally have a reusable object model that will make adding new features much easier.  For example, adding command line support will be a snap once the new object model is in place.  <br /><br />Look for the beta release for version 1.4 in a few days.</p>
 
 
-
     <p><a href="/2005/09/21/refactoring-smtp-diagnostics/">Continue reading &rarr;</a></p>
 
     <p class="post-meta">Posted by Kirby Turner on September 21, 2005
@@ -196,7 +211,6 @@
     </h2>
     
     <p>Tonight I discovered an interesting Visual Studio.NET 2003 bug.  Seems devenv.exe will throw an unhandled exception when the constant in the sample code below is compiled.  From what I can tell, it looks like devenv.exe chokes on the length of the contant.  Remove line 73 (LEFT OUTER JOIN…) and the exception is not thrown.<br /><br />The exception only occurs when compiling the project from within VS.NET 2003 (devenv.exe).  The command line compiler csc.exe does not have the problem.  Also, the problem does not occur if you are using <a href="http://www.borland.com/delphi/">Delphi</a> 2005.  Makes me wonder what devenv.exe is doing during the project build process.<br /><br />&lt;pre&gt;<br />001  using System;<br />002 <br />003  namespace ConsoleApplication3<br />004  {<br />005     /// &lt;summary&gt;<br />006     /// Summary description for Class1.<br />007     /// &lt;/summary&gt;<br />008     class Class1<br />009     {<br />010        /// &lt;summary&gt;<br />011        /// The main entry point for the application.<br />012        /// &lt;/summary&gt;<br />013        [STAThread]<br />014        static void Main(string[] args)<br />015        {<br />016          const string SQL_FORMAT = @”<br />017           SELECT <br />018           1 AS Tag,<br />019           NULL AS Parent,<br />020           NULL AS [users!1],<br />021           NULL AS [user!2!strUSID],<br />022           NULL AS [user!2!strPrefixID],<br />023           NULL AS [user!2!strFirstName],<br />024           NULL AS [user!2!strLastName],<br />025           NULL AS [user!2!strUSName],<br />026           NULL AS [user!2!strAdd1],<br />027           NULL AS [user!2!strAdd2],<br />028           NULL AS [user!2!strTown],<br />029           NULL AS [user!2!strState],<br />030           NULL AS [user!2!strPostCode],<br />031           NULL AS [user!2!strCountry],<br />032           NULL AS [user!2!strTel],<br />033           NULL AS [user!2!strFax],<br />034           NULL AS [user!2!strEMail],<br />035           NULL AS [user!2!strLocked],<br />036           NULL AS [user!2!dtmLockedDate],<br />037           NULL AS [user!2!strSuspenseReason],<br />038           NULL AS [user!2!intLogonCount],<br />039           NULL AS [user!2!dtmCreatedDate],<br />040           NULL AS [user!2!strMedicalSpecialtyID],<br />041           NULL AS [user!2!blnChangePassword],<br />042           NULL AS [user!2!strInstitutionalUser],<br />043           NULL AS [user!2!strCreditCardExpDate]<br />044           UNION<br />045           SELECT<br />046           2 AS Tag,<br />047           1 AS Parent,<br />048           NULL,<br />049           Users.strUSID,<br />050           strPrefixID,<br />051           strFirstName,<br />052           strLastName,<br />053           strUSName,<br />054           strAdd1,<br />055           strAdd2,<br />056           strTown,<br />057           strState,<br />058           strPostCode,<br />059           strCountry,<br />060           strTel,<br />061           strFax,<br />062           strEMail,<br />063           strLocked,<br />064           dtmLockedDate,<br />065           ID_LoginSuspenseReason.strSuspenseReason,<br />066           intLogonCount,<br />067           dtmCreatedDate,<br />068           strMedicalSpecialtyID,<br />069           blnChangePassword,<br />070           strInstitutionalUser,<br />071           strCreditCardExpDate<br />072           FROM ID_Login Users<br />073           LEFT OUTER JOIN ID_LoginSuspenseReason ON Users.strUSID = ID_LoginSuspenseReason.strUSID<br />074           {0}<br />075           FOR XML EXPLICIT<br />076           “;<br />077        }<br />078     }<br />079  }<br />&lt;/pre&gt;</p>
-
 
 
     <p><a href="/2005/09/19/discovered-constant-bug-in-vs-net-2003/">Continue reading &rarr;</a></p>
@@ -217,7 +231,6 @@
     <p>We are happy to announcement the new <a href="http://www.smtpdiagnostics.com/">SMTP Diagnostics web site</a>. Find the latest download, purchase your license, view the FAQ, and more.<br /><br /><a href="http://www.smtpdiagnostics.com/">http://www.smtpdiagnostics.com/</a></p>
 
 
-
     <p><a href="/2005/09/19/ann-new-smtp-diagnostics-web-site/">Continue reading &rarr;</a></p>
 
     <p class="post-meta">Posted by Kirby Turner on September 19, 2005
@@ -234,7 +247,6 @@
     </h2>
     
     <p>White Peak Software is donating 10 licenses of <a href="http://www.whitepeaksoftware.com/smtpdiagnostics.aspx">SMTP Diagnostics</a> to <a href="http://www.truerwords.net/fundraising/cd-donations.html">Seth Dillingham’s PMC fund raiser</a>.  The licenses along with other software that will be auctioned off in September to raise money for the <a href="http://www.jimmyfund.org/">Jimmy Fund</a>.  All proceeds from the auction will go to the <a href="http://www.pmc.org/">Pan-Mass Challenge</a>, and in turn to the Jummy Fund, for the research and treatment of cancer at the <a href="http://www.dana-farber.org/">Dana-Farber Cancer Institute</a> in Boston.<br /><br />The PMC is a 192 mile bike ride across Massachusetts.  This year’s ride had approximately 4,000 riders.</p>
-
 
 
     <p><a href="/2005/09/06/wps-to-donate-software-to-pmc-fund-raising-event/">Continue reading &rarr;</a></p>
@@ -255,7 +267,6 @@
     <p>I recently changed the way perm links are generated for my blog entries.  However, I totally forgot about making the change to my RSS feed.  I guess that’s what happens when you introduce a technology like RSS and it runs problem free for months if not years.  Still, that’s no excuse for overlooking the RSS feed with regard to the new perm links.<br /><br />I will have a fix in place within a couple of days.  Sorry it can’t be sooner but my plate is full at the moment and since that has been no complaints it’s not a top priority issue.<br /><br />My apologies to those of you reading the blog through an RSS reader.</p>
 
 
-
     <p><a href="/2005/09/06/broken-perm-links-in-rss-feeds/">Continue reading &rarr;</a></p>
 
     <p class="post-meta">Posted by Kirby Turner on September 6, 2005
@@ -274,29 +285,9 @@
     <p>You know what I dislike the most about doing client work?  You see problems in the code, no bugs - things are working correctly, but the code itself is a problem.  Finding <a href="http://xp.c2.com/CodeSmell.html">code smells</a> for example, and you know the best thing to do is refactor the code to save tons of time in the future.  But some clients don’t get this and the ones that do get it will still say no to refactor work.<br /><br />You tell the client you want to spend a couple of days to refactor the code but the client says “No”.  To the client the code is working fine.  Refactoring is going to cost more money and require more testing while providing little benefit to the end user.  But the reality is ongoing maintenance cost for the code is going to cost more, which down the road could increase the cost to the end user, if refactoring does not occur.  What is often overlooked is that maintenance costs can be lowered in the long term as a result of a refactoring investment.<br /><br />Refactoring is something that should be embraced, not feared or viewed as an unnecessary cost.  Refactoring improves the quality of the code and reduces code maintenance in the future and thus reduces cost.  <br /><br />A joy I have in writing my own software is being able to make the refactoring call myself.  I don’t always say yes to refactoring but when the time is right I refactor the code.  I don’t concern myself with the initial refactoring and testing costs because I know it will save me time and money in the long run.<br /><br />So when is the time right?  That’s a hard question to answer because the right time can be different for each shop and software package.  For me a right time is when working on a new feature I find a number of code smells affecting the quality of the feature.  Assuming a refactor will only affect a small portion of the entire system and it will take no more than a couple of days to refactor and test the changes, I make the yes call to refactor the code.<br /><br />Do I worry about breaking existing functionality as a result of refactoring?  Absolutely, especially when refactoring occurs in a critical area such as processing a credit card transaction.  This is why it is so important to have automated scripts and unit tests in place.  Automated regression testing definitely helps ease concerns.<br /><br />So how do I convince the client it is time to refactor code?  I wish there was a magic answer to the question that could be applied to all cases but there isn’t.  Getting the client to okay a refactor takes having the client’s trust in your abilities and decisions.  <br /><br />One way to gain trust is to know when to recommend a refactor.  You should make a point not to scream “fire” each time you find code smells.  If each time you are asked to implement a new feature and you come back with “Before I can implement the feature I need to re-write all this other code,” your client’s trust in you will most definitely drop.<br /><br />You also need to be able to show the client the long term value gained by refactoring.  For instance, make the client aware of the various code smells and discuss the impact the repeated (or similar) code has to maintenance should a bug be found or a business requirement changes in the future.  Also, remind the client that the need is fresh in your head but 6 months later it is going to take more time research the impact.  Plus, the number of smells may have grown between the time the problem was first identified and the time code has to change, resulting in higher costs.<br /><br />Lastly, be mindful of the business side.  Many times developers only think of the technical aspects with no regard to the business side of things.  Understand what is happening on the business side of a project will help when discussing a refactoring effort with a client.  This can also help you understand why the answer is “No” and could help you identify a better “right time” to refactor.<br /><br />Convincing a client it is time to refactor is no trivial task but it is possible.</p>
 
 
-
     <p><a href="/2005/09/02/convincing-a-client-it-is-time-to-refactor/">Continue reading &rarr;</a></p>
 
     <p class="post-meta">Posted by Kirby Turner on September 2, 2005
-     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
-    Tagged in .
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2005/08/30/date-range-check-in-sql-server/">Date Range Check in SQL Server</a>
-    </h2>
-    
-    <p>I have been writing a number of stored procedures that return report data for a client.  Each of these reports can be filtered by a date range, so I needed a simple way to check that a date was within a user defined date range.  <br /><br />As an additional requirement, if the user does not specify a begin date or end date as part of the date range then the earliest or latest supported date respectively should be used.  In other words, if the user does not specify a begin date then the earliest date supported by SQL Server should be used as the begin date, and if the user does not specify the end date then the latest date supported is used for the end date.<br /><br />My original approach was to use a BETWEEN clause in the SELECT statements.  However, this made the code messy especially with the ISNULL call used to set the begin end dates when NULL.  So I swapped out the code with a user-defined function.<br /><br />The user-defined function <b>fnIsInDateRange</b> takes 3 parameters:&lt;ul&gt;&lt;li&gt;Date to check&lt;/li&gt;&lt;li&gt;Beginning date of the date range&lt;/li&gt;&lt;li&gt;Ending date of the date range&lt;/li&gt;&lt;/ul&gt;<br />The function returns one of the following:&lt;ul&gt;&lt;li&gt;<b>-1</b> if the date is before the range&lt;/li&gt;&lt;li&gt;<b>0</b> if the date is within the range&lt;/li&gt;&lt;li&gt;<b>1</b> if the date is beyond the range&lt;/li&gt;&lt;/ul&gt;<br />Here’s the code for those who want it.&lt;pre&gt;<br />CREATE FUNCTION dbo.fnIsInDateRange<br />/* <br />  Determines if the date time value is within the date time range.<br /> <br />  Returns:<br />  -1 if the date is before the date range.<br />   0 if the date is within the date range.<br />   1 if the date is after the date range.<br /> <br />  Usage:<br />   SELECT dbo.fnIsInDateRange(‘2005-08-16’,’2005-08-01’,’2005-08-15’)<br />   SELECT * FROM exams WHERE dbo.fnIsInDateRange(dtmExamDate,’2005-08-01’,’2005-08-15’)=0<br />*/  <br />  (<br />    @value      DATETIME,<br />    @rangeFrom  DATETIME,<br />    @rangeTo    DATETIME<br />  )<br />RETURNS SMALLINT<br />AS<br />BEGIN<br />   DECLARE @result SMALLINT<br />   IF @value &lt; ISNULL(@rangeFrom,'1753-01-01 00:00:00.000') <br />   BEGIN<br />      SET @result = -1<br />   END<br />   ELSE IF @value &gt; ISNULL( @rangeTo, ‘9999-12-31 11:59:59.997’ )<br />   BEGIN<br />      SET @result = 1<br />   END<br />   ELSE<br />   BEGIN<br />      SET @result = 0<br />   END<br />   RETURN @result<br />END<br />&lt;/pre&gt;</p>
-
-
-
-    <p><a href="/2005/08/30/date-range-check-in-sql-server/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on August 30, 2005
      in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
     Tagged in .
     </p>
@@ -335,6 +326,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/" title="How To Do A Case Insensitive Search Using Parse SDK">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                
                 <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/" title="How To Present An Alert View Using UIAlertController When You Don't Have A View Controller">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
                 
                 <li><a href="/2015/09/21/tags-and-categories/" title="Tags And Categories">Tags And Categories</a></li>
@@ -342,8 +335,6 @@
                 <li><a href="/2015/09/10/trying-something-new-to-avoid-feast-or-famine/" title="Trying Something New To Avoid Feast Or Famine">Trying Something New To Avoid Feast Or Famine</a></li>
                 
                 <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/" title="My Upcoming Share Extension Talk At 360idev-Min">My Upcoming Share Extension Talk At 360idev-Min</a></li>
-                
-                <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/" title="Wish I Could Help But It's Not My App">Wish I Could Help But It's Not My App</a></li>
                 
                 </ul>                
             </div>

@@ -76,15 +76,15 @@
                 </li>
                 
                 <li>
-                    <a href="/about.html">About</a>
+                    <a href="/about/">About</a>
                 </li>
                 
                 <li>
-                    <a href="/archive.html">Archive</a>
+                    <a href="/archive/">Archive</a>
                 </li>
                 
                 <li>
-                    <a href="/categories.html">Categories & Tags</a>
+                    <a href="/categories/">Categories & Tags</a>
                 </li>
                 
             </ul>
@@ -130,16 +130,17 @@
 
 <p>The end result is a set of classes which is really nothing more than a TObjectList containing TObjectList containing a field value class.  In other words, the final data structure consists of the following classes:</p>
 
-<pre><code>TQuickBaseDataset = class(TObjectList);
+<div class="highlighter-rouge"><pre class="highlight"><code>TQuickBaseDataset = class(TObjectList);
 TQuickBaseRecordset = class(TObjectList);
 TQuickBaseValue = class(TObject);
 </code></pre>
+</div>
 
 <p>A dataset contains one or more record sets which contains one of more values.  The value class is implemented to provide strong type access to the value returned from QuickBase.</p>
 
 <p>So does the new data structure meet the 3 goals above?  I think so but I will leave it up to you to decide.  Here is a code snippet that queries the database and returns a record set containing 3 fields in each record.</p>
 
-<pre><code>Qdb := TQuickBaseClient.Create(username, password);
+<div class="highlighter-rouge"><pre class="highlight"><code>Qdb := TQuickBaseClient.Create(username, password);
 if Qdb.Authenticate then
 begin
     Dataset := Qdb.DoQuery(dbid, query, clist);
@@ -153,6 +154,7 @@ end;
 Qdb.SignOut;
 Qdb.Free;
 </code></pre>
+</div>
 
 <p>I will be adding the ability to retrieve field values by name very soon.  This will make the code even more readable.</p>
 
@@ -253,6 +255,8 @@ Qdb.Free;
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/" title="How To Do A Case Insensitive Search Using Parse SDK">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                
                 <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/" title="How To Present An Alert View Using UIAlertController When You Don't Have A View Controller">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
                 
                 <li><a href="/2015/09/21/tags-and-categories/" title="Tags And Categories">Tags And Categories</a></li>
@@ -260,8 +264,6 @@ Qdb.Free;
                 <li><a href="/2015/09/10/trying-something-new-to-avoid-feast-or-famine/" title="Trying Something New To Avoid Feast Or Famine">Trying Something New To Avoid Feast Or Famine</a></li>
                 
                 <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/" title="My Upcoming Share Extension Talk At 360idev-Min">My Upcoming Share Extension Talk At 360idev-Min</a></li>
-                
-                <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/" title="Wish I Could Help But It's Not My App">Wish I Could Help But It's Not My App</a></li>
                 
                 </ul>                
             </div>

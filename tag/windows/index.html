@@ -74,15 +74,15 @@
                 </li>
                 
                 <li>
-                    <a href="/about.html">About</a>
+                    <a href="/about/">About</a>
                 </li>
                 
                 <li>
-                    <a href="/archive.html">Archive</a>
+                    <a href="/archive/">Archive</a>
                 </li>
                 
                 <li>
-                    <a href="/categories.html">Categories & Tags</a>
+                    <a href="/categories/">Categories & Tags</a>
                 </li>
                 
             </ul>
@@ -145,7 +145,6 @@
         <p>I love my MacBook Pro.  It’s an awesome machine and OS X is a great operating system.  However, I have encountered 2 problems when dealing with my Windows-base network.  First problem is accessing Windows 2003 file shares and the other problem is resolving machine names on the local network.  <br /><br />I still haven’t solved the second problem but today I came across the solution for the first.  This blog posting by Drew McLellan gives the step by step instructions for <a href="http://allinthehead.com/retro/218/accessing-a-windows-2003-share-from-os-x">accessing Windows 2003 file shares from Mac OS X</a>.  Thanks Drew!</p>
 
 
-
         <p><a href="/2007/07/29/how-to-access-a-windows-2003-file-share-from-mac-os-x/">Continue reading &rarr;</a></p>
 
         <p class="post-meta">Posted by Kirby Turner on July 29, 2007 in <a class='category' href='/category/programming/'>programming</a>.
@@ -165,7 +164,6 @@
         </h2>
         
         <p>After resolving the <a href="http://www.thecave.com/archive/2007/07/29/how_to_access_a_windows_2003_file_share_from_mac_os_x.aspx">Windows Server 2003 file share access</a> problem I turned my attention to fixing the DNS issue I’m having.  I’m able to ping the IP address of machines on my Local Area Network but I’m not able to resolve the machine names.  I have a local DNS running on Windows Server 2003 but for some odd reason OS X is not using it to resolve names.  So I decided to use a stop-gap approach for the time being.<br /><br />I modified the /etc/hosts file to include the address of the machines with a static IP address.  After all, these are the only machines I need access to from OS X.  Here are the steps I followed:&lt;ul&gt;<br />&lt;li&gt;Sign in as an administrator (or an account belonging to the sudousers group)&lt;/li&gt;<br />&lt;li&gt;Launch a terminal shell (Applications &gt; Utilities &gt; Terminal if you are using Finder or type <b>terminal</b> in Spotlight)&lt;/li&gt;<br />&lt;li&gt;Run the command <b>sudo vi /etc/hosts</b>&lt;/li&gt;<br />&lt;li&gt;Scroll to the end of the file&lt;/li&gt;<br />&lt;li&gt;Type <b>i</b> to enter insert mode&lt;/li&gt;<br />&lt;li&gt;Press the enter key to start a new line (my vi skills are weak as it has been years since I have used it - there is probably a better way to append to the end of a file)&lt;/li&gt;<br />&lt;li&gt;Enter the IP address, press the <b>tab</b> key, then enter the name machine&lt;/li&gt;<br />&lt;li&gt;Press the <b>esc</b> key to get out of insert mode&lt;/li&gt;<br />&lt;li&gt;Press <b>:wq</b> to save the changes and quit vi&lt;/li&gt;<br />&lt;/ul&gt;That’s is.  The machine name will now resolve to the IP.</p>
-
 
 
         <p><a href="/2007/07/29/cannot-resolve-machine-name-from-mac-os-x/">Continue reading &rarr;</a></p>
@@ -189,7 +187,6 @@
         <p>Last month I mentioned <a href="http://www.thecave.com/archive/2007/04/16/powerpoint_2007_and_outlook_2003_dont_play_nice_together.aspx">Windows automatic update was maxing out the CPU on my computer after I installed PowerPoint 2007</a>.  It seems I’m not the only one dealing with the annoying issue.  Here is a suggested workaround to the <a href="http://www.bleepingcomputer.com/blogs/mowgreen/index.php?s=3e9ba5023518c8b34453138b5ab57024&amp;showentry=1071">infamous svchost issue</a>.<br /><br />Also, here is <a href="http://groups.google.com/group/microsoft.public.windowsupdate/browse_thread/thread/228d22046d54d430/40670938071f33bd?lnk=st&amp;q=wuauclt%2Fsrvchost+at+100%25+today&amp;rnum=1">another newsgroup thread</a> talking about the issue that might be helpful to some.<br /><br /><span style="color:red">Update:</span> The workaround mentioned above does not prevent wuauclt and svchost from using 100% of the CPU but it does make the computer responsive again.  Prior to applying the workaround the computer would be unusable for long periods of time.</p>
 
 
-
         <p><a href="/2007/05/24/wuauclt-svchost-and-100-cpu-usgage/">Continue reading &rarr;</a></p>
 
         <p class="post-meta">Posted by Kirby Turner on May 24, 2007 in <a class='category' href='/category/programming/'>programming</a>.
@@ -209,7 +206,6 @@
         </h2>
         
         <p>I learned a valuable lesson today about naming configuration files for my programs.  When I started building.NET applications I followed the .NET convention for naming program configuration files:  MyProgram.exe.config<br /><br />These days I write less .NET applications and more native Windows applications using <a href="http://www.codegear.com/delphi">Delphi</a>.  I continue using the .NET naming convention for configuration files for all my programs even native Windows applications.  This hasn’t been a problem until today.<br /><br />Today I embedded a manifest into a program and when I ran the program I got the following error message:<br /><br />&lt;div class="quote"&gt;<br />C:\MyProgram.exe<br /><br />This application has failed to start because the application configuration is incorrect.  Reinstalling the application may fix this problem.<br />&lt;/div&gt;<br /><br />Without the manifest the program ran fine, but the program failed each time the manifest was included.  I first thought a problem was with the manifest.  I review the manifest over, and over, and over again.  I even used a manifest from another application that does not have the problem.  After banging my head on the wall for a couple of hours I found the source of the problem, and it wasn’t the manifest at all.<br /><br />Like all my programs, this particular program creates a configuration file using the .NET naming convention MyProgram.exe.config.  But in this one case the configuration file is stored in the same directory as the program file, and here in lies the problem.<br /><br />Apparently Windows XP, and I assume Vista as well, expects the program configuration file to be based on some specific config file schema when the manifest is embedded in the program file even if the program is a native Windows program.  I knew this to be true with .NET applications but I didn’t realize the same is true for native Windows applications.<br /><br />I have not spent time figuring out the expected schema.  I suspect it is the .NET config file schema, but I now follow a new naming convention.  I do not name my config files MyProgram.exe.config any more.  Instead I use MyProgram.config, which does not have any negative side effects when stored in the same directory as the program file.<br /><br /><span style="color:red">Update:</span> If you want to use the .NET config file naming convention for your native Windows application, your .config file must be an XML, and the root element must be .  Other root elements might be allowed but I know  works.</p>
-
 
 
         <p><a href="/2007/04/25/when-naming-a-configuration-file-program-exe-config-is-bad/">Continue reading &rarr;</a></p>
@@ -233,7 +229,6 @@
         <p>Yesterday I had a need to install PowerPoint 2007.  Typically I install something like this in a virtual machine to avoid problems with other applications but yesterday I was in a rush so I installed PowerPoint 2007 in my “production” VM.  The Office 2007 installation gave me the option to keep my Office 2003 applications and install only PowerPoint 2007.  “Groovy!” I thought.  Well, it turns out not to be so groovy.  <br /><br />After installing PowerPoint 2007 and doing what I needed to do, I launched Outlook 2003.  As Outlook 2003 was loading the Office 2007 installer popped up and attempted to install something.  I cancel the installer and Outlook 2003 finally loads.  I checked my mail, read a few messages, and clicked Reply to author a response to a new message.  Here’s where the problem started.<br /><br />I have Outlook configured to use Word as the editor for messages.  When I tried to reply to a message Outlook locked up.  Not only did the application lock up but the entire operating system locked up.  I had no choice but to power off.<br /><br />Rebooting didn’t help either.  Outlook 2003 did not properly load, and I had a new problem.  Microsoft’s automatic update was now maxing out the CPU.  To regain control over the machine I killed the automatic update process.<br /><br />After dealing with this mess I believe I found a work around.  After installing PowerPoint 2007 and before launch Outlook 2003, launch Word 2003.  If your experience is similar to mine you will notice Word 2003 loads without the XP theme.  After about 30 seconds Word 2003’s UI switches to the XP theme.  It is after this point that Outlook 2003 is once again able to use Word 2003 as its editor.<br /><br />I can’t guarantee this will work for you but it did work for me.  I’m now able to use Outlook 2003 once again.<br /><br />The only problem that remains is the automatic update for Windows.  It still maxes out the CPU and the process must be manually killed.  I can handle doing this until I have time to re-build a new “production” VM.<br /><br /><span style="color:red">Update</span>: I found <a href="http://www.thecave.com/archive/2007/05/24/wuauclt_svchost_and_100_cpu_usgage.aspx">this wordaround</a> to the maxed out CPU problem.</p>
 
 
-
         <p><a href="/2007/04/16/powerpoint-2007-and-outlook-2003-dont-play-nice-together/">Continue reading &rarr;</a></p>
 
         <p class="post-meta">Posted by Kirby Turner on April 16, 2007 in <a class='category' href='/category/business/'>business</a>.
@@ -253,7 +248,6 @@
         </h2>
         
         <p>I’m adding a new feature to <a href="http://www.killink.com/">Killink</a> to allow the user to integrate the application with Windows Explorer.  Not a difficult task.  Just involves making some registry settings.  But one registry setting I need to make must go under HKEY_CLASSES_ROOT, and this hive is under administrative control in Vista.  <br /><br />This isn’t such a big deal if I am using an installer.  Installers will typically ask for elevated permissions to perform the install.  But I’m trying to provide a version that does not require an installer.  This means my application will have to ask for elevated permissions when the user clicks the option to integrate with Explorer.  It also means I need to display the shield icon indicating that elevated permissions are required to perform the task.<br /><br />This really has me bummed out because it means more work (and learning).  Now I have to learn up to ask for elevated permissions within the application.<br /><br />Sigh…</p>
-
 
 
         <p><a href="/2007/04/04/vista-reigstry-keys-and-uac/">Continue reading &rarr;</a></p>
@@ -277,7 +271,6 @@
         <p>Here are a few Delphi (BDS) Live Templates I created for writting SQL Server script:<br /><br /><b>Create SQL Server Table</b><br />&lt;pre&gt;<br /><br /><br />        version=”1.0.0”&gt;<br /> <br /> <br />      Create table for SQL Server.<br /> <br /> <br />      Kirby Turner<br /> <br /><br /> <br /> <br />        TableName<br /> <br /> <br /> <br /> <br /><br /> <code>&lt;![CDATA[/***<br />  Create |TableName| table.<br />***/<br /><br />PRINT 'Create |TableName| table'<br />GO<br /><br />IF (EXISTS (SELECT name FROM sysobjects WHERE (name = N'|TableName|') AND (type = 'U')))<br />BEGIN<br />  DROP TABLE [dbo].[|TableName|]<br />END<br />GO<br /><br />CREATE TABLE [dbo].[|TableName|] (<br />|*||end|<br /><br />|*|CONSTRAINT [PK_|TableName|_1] PRIMARY KEY CLUSTERED<br />|*|(<br />|*|)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]<br />) ON [PRIMARY]<br />GO<br /><br />GRANT SELECT ON [dbo].[|TableName|] TO [public]<br />GO]]&gt;<br /> </code><br /> <br /><br />&lt;/pre&gt;<br /><br /><b>Create Foreign Key Reference</b><br />&lt;pre&gt;<br /><br /><br />        version=”1.0.0”&gt;<br /> <br /> <br />      Create foreign key constraint for SQL Server.<br /> <br /> <br />      Kirby Turner<br /> <br /> <br /> <br />                PrimaryTableName<br /> <br /> <br /> <br /> <br /> <br /> <br />                SecondaryTableName<br /> <br /> <br /> <br /> <br /> <br /> <br />                ColumnName<br /> <br /> <br /> <br /> <br /> <code>&lt;![CDATA[ALTER TABLE [dbo].[|PrimaryTableName|] WITH CHECK ADD<br />CONSTRAINT [FK_|PrimaryTableName|_|SecondaryTableName|] FOREIGN KEY([|ColumnName|])<br />REFERENCES [dbo].[|SecondaryTableName|] ([|ColumnName|])<br />GO]]&gt;<br /> </code><br /> <br /><br />&lt;/pre&gt;<br /><br />Enjoy.</p>
 
 
-
         <p><a href="/2006/12/06/delphi-bds-live-templates-for-sql-server/">Continue reading &rarr;</a></p>
 
         <p class="post-meta">Posted by Kirby Turner on December 6, 2006 in <a class='category' href='/category/programming/'>programming</a>.
@@ -297,7 +290,6 @@
         </h2>
         
         <p>According to the Microsoft blogger Somasegar, <a href="http://blogs.msdn.com/somasegar/archive/2006/07/28/681224.aspx">Windows Vista will support more than 7,000 new native APIs</a>.<br />&lt;div class="quote"&gt;<br />Here is a trivia for you.  We have added more than 7,000 new native APIs for Windows developers in Windows Vista.  Examples of some of the exciting new areas where we have exposed new APIs include the new integrated search capability and the new peer-to-peer functionality.  To get the whole story, please check out the <a href="http://msdn.microsoft.com/windowsvista/downloads/docs/developerstory/default.aspx">Windows Vista Developer Story</a> at the <a href="http://msdn.microsoft.com/windowsvista/">Vista Developer Center</a>.<br />&lt;/div&gt;<br />Further proof the <a href="http://www.thecave.com/archive/2006/06/21/native_windows_code_is_here_for_a_while.aspx">native windows code is here for a while</a>.</p>
-
 
 
         <p><a href="/2006/07/28/windows-vista-to-support-7000-new-native-apis/">Continue reading &rarr;</a></p>
@@ -321,7 +313,6 @@
         <p>I’m one of those rare developers who have moved from .NET managed code to native Windows code over the last year.  After living in the managed code world for years, I’ve returned to native windows coding and I find I am doing more and more native Win32 work each month for customers.  Sure the <a href="http://www.whitepeaksoftware.com/products.aspx">products White Peak Software</a> is writing are native Windows applications but recently customers have been <a href="http://www.whitepeaksoftware.com/custom_software.aspx">asking White Peak Software to develop native Win32 custom software</a>.  The most common reason?  The desire to eliminate the dependency on the .NET Framework.  <br /><br />I often hear, “We don’t know if the server hosting your program will have the .NET Framework installed,” or “The end users do not have .NET installed on their desktops so we need something that will run without .NET.”<br /><br />Now don’t get me wrong.  I love .NET.  It’s a great framework, but there is something to be said for native Windows applications.  And there are still many cases where a native Windows application should be written instead of a .NET equivalent.  For instance, I feel .NET applications are ideal for in-house development typically found in corporations, and I feel commercial applications are typically better served as a native Windows application.  Of course there are always exceptions to my general thinking, hence the <a href="http://suretalent.blogspot.com/2006/06/resurgence-in-native-windows.html">recent resurgence seen at White Peak Software</a> in customer requests for <a href="http://www.whitepeaksoftware.com/custom_software.aspx">custom native Windows applications</a>.  <br /><br />Don’t believe me?  Think everything running on the Windows platform should be managed code?  Well, individuals at Microsoft know that native Windows applications are staying around for a while.  When the IE Lead Project Manager Christopher Vaughan was recently asked <a href="http://www.matasano.com/log/332/matasano-interviews-ie-lead-pm-christopher-vaughan">if components of the new IE7 would be implemented in managed code</a> his response was, “No, IE7 remains purely native code throughout. I think as we develop future versions of IE you’ll see a larger focus on managed code, most likely to enable great plug-ins of that type for our platform. One thing people shouldn’t expect is that IE8 be re-written in managed code. For a variety of reasons, native code is where we’ll stay for a while.”</p>
 
 
-
         <p><a href="/2006/06/21/native-windows-code-is-here-for-a-while/">Continue reading &rarr;</a></p>
 
         <p class="post-meta">Posted by Kirby Turner on June 21, 2006 in <a class='category' href='/category/programming/'>programming</a>.
@@ -343,7 +334,6 @@
         <p>Ever wish you could contribute to the Visual Studio and .NET Framework documentation?  Now you can through the <a href="http://msdnwiki.microsoft.com/">MSDN Wiki</a>.  The Wiki is already growing with a number of community contributed edits.</p>
 
 
-
         <p><a href="/2006/06/15/msdn-wiki/">Continue reading &rarr;</a></p>
 
         <p class="post-meta">Posted by Kirby Turner on June 15, 2006 in <a class='category' href='/category/programming/'>programming</a>.
@@ -363,7 +353,6 @@
         </h2>
         
         <p>CNet news is reporting that <a href="http://news.zdnet.com/2100-3513_22-6057856.html?tag=nl.e589">Apple has announced Boot Camp</a>, a new software package that makes it possible to run Microsoft Windows on the new Intel-based Macs.  How awesome is that!  It’s one step closer to making me want to buy a Mac.  Now what would be really awesome and close the deal for me is to have “Devco” create a Delphi compiler for the Mac OS and make it easy for me to port my VCL applications to Mac.</p>
-
 
 
         <p><a href="/2006/04/05/finally-windows-on-mac/">Continue reading &rarr;</a></p>
@@ -393,6 +382,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/" title="How To Do A Case Insensitive Search Using Parse SDK">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                
                 <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/" title="How To Present An Alert View Using UIAlertController When You Don't Have A View Controller">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
                 
                 <li><a href="/2015/09/21/tags-and-categories/" title="Tags And Categories">Tags And Categories</a></li>
@@ -400,8 +391,6 @@
                 <li><a href="/2015/09/10/trying-something-new-to-avoid-feast-or-famine/" title="Trying Something New To Avoid Feast Or Famine">Trying Something New To Avoid Feast Or Famine</a></li>
                 
                 <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/" title="My Upcoming Share Extension Talk At 360idev-Min">My Upcoming Share Extension Talk At 360idev-Min</a></li>
-                
-                <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/" title="Wish I Could Help But It's Not My App">Wish I Could Help But It's Not My App</a></li>
                 
                 </ul>                
             </div>

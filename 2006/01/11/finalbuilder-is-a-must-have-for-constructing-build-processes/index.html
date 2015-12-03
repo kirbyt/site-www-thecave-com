@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Kirby Turner">
     <meta name="description" content="For years I have relied on custom built build processes for software I develop.  For instance, on a recent large-scale .NET solution I used a combination of NTScheduler, VMware Workstation, CVS, NAnt, and the .NET SDK (along with other tools) to build an automated build environment.  However, doing something similar for every one of my software projects is time consuming, and I have to rely on different tools for different projects.  For example NAnt is useless for a Delphi Win32 project.  So I finally decided to give FinalBuilder a try.FinalBuilder is the ultimate tool for constructing a build process.  Within minutes I was able to automate a build process for a box inventory program I am working on.  Of course projects with a more complex build process will take more than a few minutes to setup, but you should be able to automate a build process in minutes and not hours or days for most projects.  I’m amazed at the flexibility provided by FinalBuilder.  It supports a wide array of compilers and tools.  And it has an easy-to-use GUI for construction of the build process for every time of project I’m working on.I decided to see how long it would take to setup a build process for SMTP Diagnostics.  Although SMTP Diagnostics is a simple product, its build process involves a number of steps.  It is the perfect product to evaluate FinalBuilder with.  Here are the steps in the build process that I wanted to automate through FinalBuilder:- Create a build directory sandbox- Retrieve the latest source code from CVS- Compile the GUI program (using Delphi 2006 compiler)- Compile EurekaLog into the GUI program- Compile to console program (using Delphi 2006 compiler)- Compile the licensing framework into the GUI and console programs (using Armadillo)- Generate the help file system (using Help&amp;Manual;)- Generate the installer (using Inno Setup)- Generate a zip file containing the generated installer- Update and commit build number changes to CVS- Tag release in CVSIn less than 30 minutes I was able to setup the SMTP Diagnostics build process in FinalBuilder.  I can now make a complete build of SMTP Diagnostics in under a minute with a click of a button.  My next step in exploring FinalBuilder will be to generate the online help as HTML files and upon successful build of the product push the HTML files and the installer out to SMTP Diagnostics web site.  Given the time I spent playing with FinalBuilder, I’m confident I will be able to automate these steps as well.
-
 ">
 
     <!-- Facebook tags -->
@@ -76,15 +75,15 @@
                 </li>
                 
                 <li>
-                    <a href="/about.html">About</a>
+                    <a href="/about/">About</a>
                 </li>
                 
                 <li>
-                    <a href="/archive.html">Archive</a>
+                    <a href="/archive/">Archive</a>
                 </li>
                 
                 <li>
-                    <a href="/categories.html">Categories & Tags</a>
+                    <a href="/categories/">Categories & Tags</a>
                 </li>
                 
             </ul>
@@ -189,6 +188,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/" title="How To Do A Case Insensitive Search Using Parse SDK">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                
                 <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/" title="How To Present An Alert View Using UIAlertController When You Don't Have A View Controller">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
                 
                 <li><a href="/2015/09/21/tags-and-categories/" title="Tags And Categories">Tags And Categories</a></li>
@@ -196,8 +197,6 @@
                 <li><a href="/2015/09/10/trying-something-new-to-avoid-feast-or-famine/" title="Trying Something New To Avoid Feast Or Famine">Trying Something New To Avoid Feast Or Famine</a></li>
                 
                 <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/" title="My Upcoming Share Extension Talk At 360idev-Min">My Upcoming Share Extension Talk At 360idev-Min</a></li>
-                
-                <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/" title="Wish I Could Help But It's Not My App">Wish I Could Help But It's Not My App</a></li>
                 
                 </ul>                
             </div>

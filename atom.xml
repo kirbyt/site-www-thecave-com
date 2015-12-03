@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2015-09-30T15:57:23-04:00</updated>
+  <updated>2015-12-03T17:28:57-05:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -14,34 +14,73 @@
   
   
   <entry>
+    <title type="html"><![CDATA[How To Do A Case Insensitive Search Using Parse SDK]]></title>
+    <link href="http://www.thecave.com/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/"/>
+    <published>2015-12-03T10:16:56-05:00</published>
+    <updated>2015-12-03T10:16:56-05:00</updated>
+    <id>http://www.thecave.com/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk</id>
+    <content type="html"><![CDATA[<p>I recently came across this question about searching using the Parse SDK for iOS. Simon asks:</p>
+
+<blockquote>
+  <p>What would be the best practice for search in a large user database and return e..g 10 first results based on name or email?</p>
+</blockquote>
+
+<p>I’ve been doing a lot with <a href="https://www.parse.com">Parse</a> recently, from building a new iOS app to adding a license key <a href="http://www.whitepeaksoftware.com/licenselookup">lookup</a> feature to my company website, and the reason Simon’s question caught my attention was because I asked myself a similar question the other day when working on the license key lookup feature.</p>
+
+<p>The license key data comes from my order processing provider. A customer who has lost they license key can visit my website and retrieve for their license information by entering their email address. The problem, however, is that the person might enter the email address using a different case than used when the order was placed. And Parse does not have a way to perform a case insensitive search on string values.</p>
+
+<p>So how do you get around this problem? And as Simon asks, what are some best practices for searching data in Parse?</p>
+
+<h2 id="force-strings-to-all-lowercase">Force Strings To All Lowercase</h2>
+
+<p>For starters, you should force all string values that can be searched to lower case, and do the same with the search string entered by the user. This produces the same effect as performing a case insensitive search while getting around the fact that Parse, as well as other types of data stores, doesn’t support case insensitive searches.</p>
+
+<p>While storing the string value in all lowercase works fine for some value types, such as an email address, it’s not ideal for other value types. A person’s first and last names are not something you want to store in lowercase only. After all, you will likely display the person’s name on a profile screen or in an email message, and you want to display the name exactly as entered by the person.</p>
+
+<p>So how do you search by data such as a first or last name without the ability to perform a case insensitive search? Simple. You create a search field for each.</p>
+
+<h2 id="define-search-fields">Define Search Fields</h2>
+
+<p>Let’s say your Parse class contains three properties, <code class="highlighter-rouge">firstName</code>, <code class="highlighter-rouge">lastName</code>, and <code class="highlighter-rouge">email</code>. All three contain data entered by a person. When you add a new instance of this class to Parse containing the data entered by the person, you can force the value for <code class="highlighter-rouge">email</code> to be lowercase (e.g., <code class="highlighter-rouge">-[NSString lowercaseString]</code> if you’re using Objective-C). However, you don’t want to do this for <code class="highlighter-rouge">firstName</code> and <code class="highlighter-rouge">lastName</code>. Instead, you want to use search fields for those two properties.</p>
+
+<p>To search on <code class="highlighter-rouge">firstName</code> and <code class="highlighter-rouge">lastName</code>, add two additional properties to your class, <code class="highlighter-rouge">firstNameSearch</code> and <code class="highlighter-rouge">lastNameSearch</code>. Then, just as you did with <code class="highlighter-rouge">email</code>, force the values for <code class="highlighter-rouge">firstNameSearch</code> and <code class="highlighter-rouge">lastNameSearch</code> to be all lowercase before saving the data to Parse. Now when you want to perform a search, use the search properties <code class="highlighter-rouge">firstNameSearch</code> and <code class="highlighter-rouge">lastNameSearch</code> instead of the other two.</p>
+
+<p>Congratulations! You’ve achieved case insensitive searching in an environment that does not support it.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[How To Present An Alert View Using UIAlertController When You Don't Have A View Controller]]></title>
     <link href="http://www.thecave.com/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/"/>
     <published>2015-09-28T15:46:02-04:00</published>
     <updated>2015-09-28T15:46:02-04:00</updated>
     <id>http://www.thecave.com/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller</id>
-    <content type="html"><![CDATA[<p>Over the summer I updated a number of apps to iOS 9. A common tasks for me was replacing the deprecated <code>UIAlertView</code> with new <code>UIAlertController</code> class. Generally this is easy to do, but there is one scenario that <code>UIAlertView</code> handles well that <code>UIAlertController</code> doesn’t support at all: displaying an alert view from parts of your code without a reference to the current view controller, for instance, displaying an alert view from the app delegate.</p>
+    <content type="html"><![CDATA[<p>Over the summer I updated a number of apps to iOS 9. A common tasks for me was replacing the deprecated <code class="highlighter-rouge">UIAlertView</code> with new <code class="highlighter-rouge">UIAlertController</code> class. Generally this is easy to do, but there is one scenario that <code class="highlighter-rouge">UIAlertView</code> handles well that <code class="highlighter-rouge">UIAlertController</code> doesn’t support at all: displaying an alert view from parts of your code without a reference to the current view controller, for instance, displaying an alert view from the app delegate.</p>
 
-<p>Trying to display an alert view using <code>UIAlertController</code> from a non-UI specific class such as the app delegate is a <a href="http://stackoverflow.com/questions/26952061/present-uialertcontroller-from-appdelegate">common problem</a>, and developers have found different <a href="http://stackoverflow.com/questions/26554894/how-to-present-uialertcontroller-when-not-in-a-view-controller">workarounds</a>. <a href="http://stackoverflow.com/a/30941356">One particular solution</a> that caught my eye was this one from agilityvision, who writes:</p>
+<p>Trying to display an alert view using <code class="highlighter-rouge">UIAlertController</code> from a non-UI specific class such as the app delegate is a <a href="http://stackoverflow.com/questions/26952061/present-uialertcontroller-from-appdelegate">common problem</a>, and developers have found different <a href="http://stackoverflow.com/questions/26554894/how-to-present-uialertcontroller-when-not-in-a-view-controller">workarounds</a>. <a href="http://stackoverflow.com/a/30941356">One particular solution</a> that caught my eye was this one from agilityvision, who writes:</p>
 
 <blockquote>
   <p>At WWDC I stopped in at one of the labs and asked an Apple Engineer this same question: “What was the best practice for displaying a UIAlertController?” And he said they had been getting this question a lot and we joked that they should have had a session on it. He said that internally Apple is creating a UIWindow with a transparent UIViewController and then presenting the UIAlertController on it.</p>
 </blockquote>
 
-<p>This got me thinking about how I would solve the problem for apps I work on. Liking the approach mentioned by the Apple Engineer, I decided to give that a try. But unlike some of the other solutions that use a category, I decided to create a new class, <code>WPSAlertController</code>, that is a subclass of <code>UIAlertController</code>, and provide additional convenience methods making it possible to display an alert view with a single call…like this:</p>
+<p>This got me thinking about how I would solve the problem for apps I work on. Liking the approach mentioned by the Apple Engineer, I decided to give that a try. But unlike some of the other solutions that use a category, I decided to create a new class, <code class="highlighter-rouge">WPSAlertController</code>, that is a subclass of <code class="highlighter-rouge">UIAlertController</code>, and provide additional convenience methods making it possible to display an alert view with a single call…like this:</p>
 
-<pre><code>NSString *title = ...
+<div class="highlighter-rouge"><pre class="highlight"><code>NSString *title = ...
 NSString *message = ...
 [WPSAlertController presentOkayAlertWithTitle:title message:message];
 </code></pre>
+</div>
 
-<p>Or display the <code>localizedDescription</code> from an <code>NSError</code> object:</p>
+<p>Or display the <code class="highlighter-rouge">localizedDescription</code> from an <code class="highlighter-rouge">NSError</code> object:</p>
 
-<pre><code>[WPSAlertController presentOkayAlertWithError:error];
+<div class="highlighter-rouge"><pre class="highlight"><code>[WPSAlertController presentOkayAlertWithError:error];
 </code></pre>
+</div>
 
-<p>And of course, since <code>WPSAlertController</code> is a subclass of <code>UIAlertController</code>, you can create your alert the same way as you do using <code>UIAlertController</code>. The only difference is you call <code>show</code> to present the alert when you don’t have a view controller. For example:</p>
+<p>And of course, since <code class="highlighter-rouge">WPSAlertController</code> is a subclass of <code class="highlighter-rouge">UIAlertController</code>, you can create your alert the same way as you do using <code class="highlighter-rouge">UIAlertController</code>. The only difference is you call <code class="highlighter-rouge">show</code> to present the alert when you don’t have a view controller. For example:</p>
 
-<pre><code>NSString *title = ...
+<div class="highlighter-rouge"><pre class="highlight"><code>NSString *title = ...
 NSString *message = ...
 WPSAlertController *alertController = [WPSAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
 [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -50,8 +89,9 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 
 [alertController show];
 </code></pre>
+</div>
 
-<p>You can grab the <a href="https://github.com/kirbyt/WPSKit/blob/master/WPSKit/UIKit/WPSAlertController.m">source code for <code>WPSAlertController</code></a> from my github repository and include it in your project, or use the entire <a href="https://github.com/kirbyt/WPSKit">WPSKit.framework</a> in your project if you want to use <code>WPSAlertController</code> plus other handy classes that I use when creating iOS apps.</p>
+<p>You can grab the <a href="https://github.com/kirbyt/WPSKit/blob/master/WPSKit/UIKit/WPSAlertController.m">source code for <code class="highlighter-rouge">WPSAlertController</code></a> from my github repository and include it in your project, or use the entire <a href="https://github.com/kirbyt/WPSKit">WPSKit.framework</a> in your project if you want to use <code class="highlighter-rouge">WPSAlertController</code> plus other handy classes that I use when creating iOS apps.</p>
 ]]></content>
   </entry>
   
@@ -65,7 +105,7 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 
 <p>Tag support is provided in Jekyll, but I wanted something slightly different. I want the list of tags to appear at the end of a post just like the categories have for last couple of years. I searched for different ways to support tags with Jekyll, but I didn’t find anything suiting my needs. Then it occurred to me I could tweak the category plugins I use to work with tags, so that’s exactly what I did.</p>
 
-<p>The <a href="https://github.com/recurser/jekyll-plugins">Jekyll category plugins</a> I use come from Dave Perretter. I made copies of <em>category_generator.rb</em> and <em>category_list_tags.rb</em> naming the new plugins <em>tag_generator.rb</em> and <em>tag_list_tags.rb</em>. Then I replace references to <code>categories</code> and <code>category</code> with <code>tags</code> and <code>tag</code> in the source code. And BAM! I now have tag support at thecave.com.</p>
+<p>The <a href="https://github.com/recurser/jekyll-plugins">Jekyll category plugins</a> I use come from Dave Perretter. I made copies of <em>category_generator.rb</em> and <em>category_list_tags.rb</em> naming the new plugins <em>tag_generator.rb</em> and <em>tag_list_tags.rb</em>. Then I replace references to <code class="highlighter-rouge">categories</code> and <code class="highlighter-rouge">category</code> with <code class="highlighter-rouge">tags</code> and <code class="highlighter-rouge">tag</code> in the source code. And BAM! I now have tag support at thecave.com.</p>
 
 <p>You can find the source code for the plugins in my site’s github <a href="https://github.com/kirbyt/site-www-thecave-com/tree/master/_plugins">repo</a>.</p>
 ]]></content>
@@ -338,7 +378,7 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 
 <p>The typical pattern I follow for sending the request to the server and getting notified when done is to call a method that will dispatch the URL request to a background queue then dispatch to the main queue to call a block when complete. It looks something like this:</p>
 
-<pre><code>- (void)sendSomething:(NSDictionary *)something completion:(void(^)(BOOL success, NSError *error))completion
+<div class="highlighter-rouge"><pre class="highlight"><code>- (void)sendSomething:(NSDictionary *)something completion:(void(^)(BOOL success, NSError *error))completion
 {
   NSParameterAssert(something);
   dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -354,18 +394,19 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
   });
 }
 </code></pre>
+</div>
 
 <p>This is a simplified view of the pattern I often use. Call a method with a callback block. Perform some work on a background thread. When done, call the callback block on the main thread.</p>
 
 <p>This pattern has served me well on iOS, but it has issues on Mac OS X when displaying a modal window.</p>
 
-<p>When you display a modal window with <code>+[NSApp runModalForWindow:]</code> a new run loop is created for the window<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. That might seem fine until you call <code>dispatch_async(dispatch_get_main_queue(), ^{})</code> from a background thread. The block that you are trying to execute in the main queue will never run. And in my case, the <code>completion</code> block is never called. This means my modal window never receives the notification that the URL request completed. (NOTE: Mike Ash <a href="#update2">pointed out</a> that it’s not the new run loop that causes the problem.)</p>
+<p>When you display a modal window with <code class="highlighter-rouge">+[NSApp runModalForWindow:]</code> a new run loop is created for the window<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. That might seem fine until you call <code class="highlighter-rouge">dispatch_async(dispatch_get_main_queue(), ^{})</code> from a background thread. The block that you are trying to execute in the main queue will never run. And in my case, the <code class="highlighter-rouge">completion</code> block is never called. This means my modal window never receives the notification that the URL request completed. (NOTE: Mike Ash <a href="#update2">pointed out</a> that it’s not the new run loop that causes the problem.)</p>
 
 <p>So how did I work around this problem?</p>
 
-<p>Instead of dispatching the <code>completion()</code> to the main queue, I call it directly from the background thread. In the completion block itself, I decide how to get the code should run in the main thread. If my window isn’t modal, then I can use <code>dispatch_async(dispatch_get_main_queue(), ^{})</code>. But if my window is modal, which just happens to be the case for the app I’m working on, then I use <code>-performSelectorOnMainThread:withObject:waitUntilDone:</code>. So the code in my view controller looks something like this:</p>
+<p>Instead of dispatching the <code class="highlighter-rouge">completion()</code> to the main queue, I call it directly from the background thread. In the completion block itself, I decide how to get the code should run in the main thread. If my window isn’t modal, then I can use <code class="highlighter-rouge">dispatch_async(dispatch_get_main_queue(), ^{})</code>. But if my window is modal, which just happens to be the case for the app I’m working on, then I use <code class="highlighter-rouge">-performSelectorOnMainThread:withObject:waitUntilDone:</code>. So the code in my view controller looks something like this:</p>
 
-<pre><code>- (void)someAction:(id)sender
+<div class="highlighter-rouge"><pre class="highlight"><code>- (void)someAction:(id)sender
 {
   SomeHelper *helper = [[SomeHelper alloc] init];
   __weak __typeof__(self) weakSelf = self;
@@ -392,12 +433,13 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
     ...
 }
 </code></pre>
+</div>
 
 <p>This pattern change now has me re-thinking how I use certain patterns in my code, especially for code that I intend on sharing between the two platforms.</p>
 
 <p>Update: I posted a <a href="https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSApplication_Class/index.html#//apple_ref/occ/instm/NSApplication/runModalForWindow:">sample project</a> that illustrates the problem. In writing the sample app, I learned that the scenario that causes the problem is when the modal window is presented via a block that is dispatched asynchronously on the main queue.</p>
 
-<p><a name="update2"></a>Update 2: <a href="https://mikeash.com/pyblog/">Mike Ash</a> pointed out that NSRunLoop is reentrant but GCD serial queues are not and this is the reason, not my theory of a different event loop, the block isn’t executed. Mike said, “The main queue is already executing a block, and it won’t execute a new one until that one is done. This is a subtle way in which dispatch on the main queue isn’t the same as <code>performSelectorOnMainThread</code>.”</p>
+<p><a name="update2"></a>Update 2: <a href="https://mikeash.com/pyblog/">Mike Ash</a> pointed out that NSRunLoop is reentrant but GCD serial queues are not and this is the reason, not my theory of a different event loop, the block isn’t executed. Mike said, “The main queue is already executing a block, and it won’t execute a new one until that one is done. This is a subtle way in which dispatch on the main queue isn’t the same as <code class="highlighter-rouge">performSelectorOnMainThread</code>.”</p>
 
 <p>Good to know and thanks, Mike, for explaining what is happening.</p>
 
@@ -406,7 +448,7 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>From the <a href="https://github.com/kirbyt/MacModalDispatchAsyncProblem">Apple documentation</a> for <code>+[NSApp runModalForWindow:]</code>: “This method runs a modal event loop for the specified window synchronously. It displays the specified window, makes it key, starts the run loop, and processes events for that window. (You do not need to show the window yourself.) While the app is in that loop, it does not respond to any other events (including mouse, keyboard, or window-close events) unless they are associated with the window. It also does not perform any tasks (such as firing timers) that are not associated with the modal run loop. In other words, this method consumes only enough CPU time to process events and dispatch them to the action methods associated with the modal window.” <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>From the <a href="https://github.com/kirbyt/MacModalDispatchAsyncProblem">Apple documentation</a> for <code class="highlighter-rouge">+[NSApp runModalForWindow:]</code>: “This method runs a modal event loop for the specified window synchronously. It displays the specified window, makes it key, starts the run loop, and processes events for that window. (You do not need to show the window yourself.) While the app is in that loop, it does not respond to any other events (including mouse, keyboard, or window-close events) unless they are associated with the window. It also does not perform any tasks (such as firing timers) that are not associated with the modal run loop. In other words, this method consumes only enough CPU time to process events and dispatch them to the action methods associated with the modal window.” <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -434,8 +476,9 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
     <id>http://www.thecave.com/2015/08/07/blogging-the-little-things</id>
     <content type="html"><![CDATA[<p>I read a post from Shubham Jain, by way of <a href="http://shapeof.com/archives/2015/7/coffee_coder_-_blog_little_things.html">Gus Mueller</a>, about <a href="http://coffeecoder.net/blog/blog-little-things/">blogging the little things</a>. In the post, Shubham says:</p>
 
-<pre><code>There are lots of things that can be blogged about and yet, we are stuck in the dilemma of, – "Is it worth something to write?". The fear of being insignificant aka "Nobody will read it" syndrome, inhibits us from writing that simple thing that might have helped many people.
+<div class="highlighter-rouge"><pre class="highlight"><code>There are lots of things that can be blogged about and yet, we are stuck in the dilemma of, – "Is it worth something to write?". The fear of being insignificant aka "Nobody will read it" syndrome, inhibits us from writing that simple thing that might have helped many people.
 </code></pre>
+</div>
 
 <p>I recently talked about my <a href="http://www.thecave.com/2015/07/02/fear/">fears</a> and I mentioned some of the things I’m trying to do to help overcome those fears. And blogging more about the little things seems like another way for me to overcome some of the fears I’ve been having.</p>
 
@@ -448,26 +491,27 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
     <published>2015-07-14T14:17:53-04:00</published>
     <updated>2015-07-14T14:17:53-04:00</updated>
     <id>http://www.thecave.com/2015/07/14/redirect-jekyll-site-to-https-on-openshift</id>
-    <content type="html"><![CDATA[<p>I’m preparing to roll out a new <a href="http://jekyllrb.com">Jekyll</a> website, but unlike with my other Jekyll sites, I want each web page served up on <code>https</code>, not <code>http</code>. This means telling the server to redirect <code>http</code> request to <code>https</code>.</p>
+    <content type="html"><![CDATA[<p>I’m preparing to roll out a new <a href="http://jekyllrb.com">Jekyll</a> website, but unlike with my other Jekyll sites, I want each web page served up on <code class="highlighter-rouge">https</code>, not <code class="highlighter-rouge">http</code>. This means telling the server to redirect <code class="highlighter-rouge">http</code> request to <code class="highlighter-rouge">https</code>.</p>
 
 <p>Hosting this new site on <a href="https://pages.github.com">Github Pages</a> isn’t option because Github Pages doesn’t support using a custom SSL certificate for your custom domain name. So I decided to see what it would take to host a Jekyll site on <a href="https://www.openshift.com">OpenShift</a>.</p>
 
-<p>I was thrilled to learn that OpenShift has a <a href="https://hub.openshift.com/quickstarts/41-jekyll">quick start cartridge for installing Jekyll</a> on a new gear. With a click of a button I was able to deploy my new server instance with a boiler plate Jekyll site. I replaced the boiler plate site with the one I’ve been working on, and BAM! My site was up and running. The only step remaining was to force the web server to serve up the pages using <code>https</code>.</p>
+<p>I was thrilled to learn that OpenShift has a <a href="https://hub.openshift.com/quickstarts/41-jekyll">quick start cartridge for installing Jekyll</a> on a new gear. With a click of a button I was able to deploy my new server instance with a boiler plate Jekyll site. I replaced the boiler plate site with the one I’ve been working on, and BAM! My site was up and running. The only step remaining was to force the web server to serve up the pages using <code class="highlighter-rouge">https</code>.</p>
 
 <p>Turns out this is simple to do with OpenShift and Jekyll. First, I went over to namecheap.com and purchased a <a href="https://www.namecheap.com/security/ssl-certificates/rapidssl/rapidssl.aspx">RapidSSL certificate</a> with domain validation. Next, I followed the instructions from OpenShift to <a href="https://developers.openshift.com/en/managing-domains-ssl.html#_generating_a_csr_certificate_signing_request">generate my certificate signing request</a>. Using my newly generated CSR I activated my RapidSSL certificate over at namecheap, then I followed the instructions on OpenShift to <a href="https://developers.openshift.com/en/managing-domains-ssl.html#using-a-custom-ssl-certificate">add the certificate to my server instance</a>.</p>
 
-<p>Up to this point everything was easy peasy, and all I had left to do was figure out how to redirect the Jekyll site from <code>http</code> to <code>https</code>. Turns out this isn’t difficult either.</p>
+<p>Up to this point everything was easy peasy, and all I had left to do was figure out how to redirect the Jekyll site from <code class="highlighter-rouge">http</code> to <code class="highlighter-rouge">https</code>. Turns out this isn’t difficult either.</p>
 
 <p>The Jekyll website is actually just a static website hosted by Apache 2 running on an OpenShift gear. To force the redirect all I needed to do was add a <em>.htaccess</em> file to the root of my Jekyll site source code (note: the site source code is in the <em>source/</em> directory when using OpenShift) and put this rewrite rule in the file:</p>
 
-<pre><code>RewriteEngine on  
+<div class="highlighter-rouge"><pre class="highlight"><code>RewriteEngine on  
 RewriteCond %{HTTP:X-Forwarded-Proto} !https  
 RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]  
 </code></pre>
+</div>
 
-<p>After I added the <em>.htaccess</em> file with the rewrite rule, I pushed my changes to the remote git repository running on my OpenShift gear. This launched Jekyll which re-built my static website, this time with each web page being served with <code>https</code> instead of <code>http</code>.</p>
+<p>After I added the <em>.htaccess</em> file with the rewrite rule, I pushed my changes to the remote git repository running on my OpenShift gear. This launched Jekyll which re-built my static website, this time with each web page being served with <code class="highlighter-rouge">https</code> instead of <code class="highlighter-rouge">http</code>.</p>
 
-<p>Including the <em>.htaccess</em> file works great when deploying the Jekyll site to OpenShift, but approach isn’t unique to OpenShift. This should work for most Jekyll site hosted with Apache 2. And if for some reason Jekyll isn’t including the <em>.htaccess</em> file when it builds the site, add <code>include: [".htaccess"]</code> to your <em>_config.yaml</em> file.</p>
+<p>Including the <em>.htaccess</em> file works great when deploying the Jekyll site to OpenShift, but approach isn’t unique to OpenShift. This should work for most Jekyll site hosted with Apache 2. And if for some reason Jekyll isn’t including the <em>.htaccess</em> file when it builds the site, add <code class="highlighter-rouge">include: [".htaccess"]</code> to your <em>_config.yaml</em> file.</p>
 
 ]]></content>
   </entry>
@@ -674,18 +718,6 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 <div class="youtube-video"><figure><iframe width="560" height="420" src="https://www.youtube.com/embed/9_Wk5j_4Uc4?color=white&amp;theme=light"></iframe></figure></div>
 
 <p>The video is from <a href="http://www.vtscapes.com">VermontScapes</a>. Go checkout the site if you want to see more beautiful photos of Vermont and the Stowe area.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Essence Of Vermont]]></title>
-    <link href="http://www.thecave.com/2015/06/18/essence-of-vermont/"/>
-    <published>2015-06-18T06:16:26-04:00</published>
-    <updated>2015-06-18T06:16:26-04:00</updated>
-    <id>http://www.thecave.com/2015/06/18/essence-of-vermont</id>
-    <content type="html"><![CDATA[<p>It’s no surprise I love living in Vermont in part because it’s different from other places I have lived. And this video from Skyworks really captures parts of why I love it here.</p>
-
-<div class="youtube-video"><figure><iframe width="560" height="420" src="https://www.youtube.com/embed/UBwqn9BRWhA?color=white&amp;theme=light"></iframe></figure></div>
 ]]></content>
   </entry>
   

@@ -76,15 +76,15 @@
                 </li>
                 
                 <li>
-                    <a href="/about.html">About</a>
+                    <a href="/about/">About</a>
                 </li>
                 
                 <li>
-                    <a href="/archive.html">Archive</a>
+                    <a href="/archive/">Archive</a>
                 </li>
                 
                 <li>
-                    <a href="/categories.html">Categories & Tags</a>
+                    <a href="/categories/">Categories & Tags</a>
                 </li>
                 
             </ul>
@@ -118,21 +118,23 @@
 
 				<p>I used Windows Explorer all the time to navigate my hard drive.  Many times throughout the day I need to drop to MS-DOS within a specific directory.  I’m too lazy to drop to DOS and navigate using the command line so I created a registry entry that will launch a CMD window from Windows Explorer and place me in the selected directory.  You can run the following VBScript to do the same for yourself.</p>
 
-<pre><code>Set WshShell = CreateObject( "WScript.Shell" )  
+<div class="highlighter-rouge"><pre class="highlight"><code>Set WshShell = CreateObject( "WScript.Shell" )  
 WshShell.RegWrite _  
    "HKEY_CLASSES_ROOT\Folder\Shell\Command Window\Command\", _  
    "CMD /K cd /d %L"  
 </code></pre>
+</div>
 
 <p>As an added bonus, you can run the VBScript below to create a menu item that will launch a CMD window that has been setup for the Microsoft Visual Studio .NET tools.</p>
 
-<pre><code>vsnetPath = _  
+<div class="highlighter-rouge"><pre class="highlight"><code>vsnetPath = _  
  "d:\Program Files\Microsoft Visual Studio .NET\Common7\Tools\vsvars32.bat"  
 Set WshShell = CreateObject( "WScript.Shell" )  
 WshShell.RegWrite _  
  "HKEY_CLASSES_ROOT\Folder\Shell\Open VS.NET Command Window Here\Command\", _  
  "CMD /K """ + vsnetPath + """ : cd /d %L"  
 </code></pre>
+</div>
 
 <p>Be sure to modify the path above to match your installation of Visual Studio.NET.</p>
 
@@ -183,6 +185,8 @@ WshShell.RegWrite _
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/" title="How To Do A Case Insensitive Search Using Parse SDK">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                
                 <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/" title="How To Present An Alert View Using UIAlertController When You Don't Have A View Controller">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
                 
                 <li><a href="/2015/09/21/tags-and-categories/" title="Tags And Categories">Tags And Categories</a></li>
@@ -190,8 +194,6 @@ WshShell.RegWrite _
                 <li><a href="/2015/09/10/trying-something-new-to-avoid-feast-or-famine/" title="Trying Something New To Avoid Feast Or Famine">Trying Something New To Avoid Feast Or Famine</a></li>
                 
                 <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/" title="My Upcoming Share Extension Talk At 360idev-Min">My Upcoming Share Extension Talk At 360idev-Min</a></li>
-                
-                <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/" title="Wish I Could Help But It's Not My App">Wish I Could Help But It's Not My App</a></li>
                 
                 </ul>                
             </div>

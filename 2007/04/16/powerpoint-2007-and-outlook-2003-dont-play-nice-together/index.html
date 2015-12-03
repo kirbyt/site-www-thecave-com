@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Kirby Turner">
     <meta name="description" content="Yesterday I had a need to install PowerPoint 2007.  Typically I install something like this in a virtual machine to avoid problems with other applications but yesterday I was in a rush so I installed PowerPoint 2007 in my “production” VM.  The Office 2007 installation gave me the option to keep my Office 2003 applications and install only PowerPoint 2007.  “Groovy!” I thought.  Well, it turns out not to be so groovy.  After installing PowerPoint 2007 and doing what I needed to do, I launched Outlook 2003.  As Outlook 2003 was loading the Office 2007 installer popped up and attempted to install something.  I cancel the installer and Outlook 2003 finally loads.  I checked my mail, read a few messages, and clicked Reply to author a response to a new message.  Here’s where the problem started.I have Outlook configured to use Word as the editor for messages.  When I tried to reply to a message Outlook locked up.  Not only did the application lock up but the entire operating system locked up.  I had no choice but to power off.Rebooting didn’t help either.  Outlook 2003 did not properly load, and I had a new problem.  Microsoft’s automatic update was now maxing out the CPU.  To regain control over the machine I killed the automatic update process.After dealing with this mess I believe I found a work around.  After installing PowerPoint 2007 and before launch Outlook 2003, launch Word 2003.  If your experience is similar to mine you will notice Word 2003 loads without the XP theme.  After about 30 seconds Word 2003’s UI switches to the XP theme.  It is after this point that Outlook 2003 is once again able to use Word 2003 as its editor.I can’t guarantee this will work for you but it did work for me.  I’m now able to use Outlook 2003 once again.The only problem that remains is the automatic update for Windows.  It still maxes out the CPU and the process must be manually killed.  I can handle doing this until I have time to re-build a new “production” VM.Update: I found this wordaround to the maxed out CPU problem.
-
 ">
 
     <!-- Facebook tags -->
@@ -76,15 +75,15 @@
                 </li>
                 
                 <li>
-                    <a href="/about.html">About</a>
+                    <a href="/about/">About</a>
                 </li>
                 
                 <li>
-                    <a href="/archive.html">Archive</a>
+                    <a href="/archive/">Archive</a>
                 </li>
                 
                 <li>
-                    <a href="/categories.html">Categories & Tags</a>
+                    <a href="/categories/">Categories & Tags</a>
                 </li>
                 
             </ul>
@@ -167,9 +166,9 @@
                     
                         <li><a href="/2015/08/18/retiring-my-csv-editor/">Retiring My CSV Editor</a></li>
                     
-                        <li><a href="/2007/07/29/how-to-access-a-windows-2003-file-share-from-mac-os-x/">How To Access a Windows 2003 File Share From Mac OS X</a></li>
-                    
                         <li><a href="/2007/07/29/cannot-resolve-machine-name-from-mac-os-x/">Cannot Resolve Machine Name From Mac OS X</a></li>
+                    
+                        <li><a href="/2007/07/29/how-to-access-a-windows-2003-file-share-from-mac-os-x/">How To Access a Windows 2003 File Share From Mac OS X</a></li>
                     
                         <li><a href="/2007/05/24/wuauclt-svchost-and-100-cpu-usgage/">wuauclt svchost and 100% CPU usgage</a></li>
                     
@@ -215,6 +214,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/" title="How To Do A Case Insensitive Search Using Parse SDK">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                
                 <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/" title="How To Present An Alert View Using UIAlertController When You Don't Have A View Controller">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
                 
                 <li><a href="/2015/09/21/tags-and-categories/" title="Tags And Categories">Tags And Categories</a></li>
@@ -222,8 +223,6 @@
                 <li><a href="/2015/09/10/trying-something-new-to-avoid-feast-or-famine/" title="Trying Something New To Avoid Feast Or Famine">Trying Something New To Avoid Feast Or Famine</a></li>
                 
                 <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/" title="My Upcoming Share Extension Talk At 360idev-Min">My Upcoming Share Extension Talk At 360idev-Min</a></li>
-                
-                <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/" title="Wish I Could Help But It's Not My App">Wish I Could Help But It's Not My App</a></li>
                 
                 </ul>                
             </div>

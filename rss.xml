@@ -5,36 +5,74 @@
         <description>thecave | A Hideout for Programmers, Indie Devs, Solopreneurs - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2015-09-30T15:57:23-04:00</lastBuildDate>
-        <pubDate>2015-09-30T15:57:23-04:00</pubDate>
+        <lastBuildDate>2015-12-03T17:28:57-05:00</lastBuildDate>
+        <pubDate>2015-12-03T17:28:57-05:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
-                <title>How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</title>
-                <description>&lt;p&gt;Over the summer I updated a number of apps to iOS 9. A common tasks for me was replacing the deprecated &lt;code&gt;UIAlertView&lt;/code&gt; with new &lt;code&gt;UIAlertController&lt;/code&gt; class. Generally this is easy to do, but there is one scenario that &lt;code&gt;UIAlertView&lt;/code&gt; handles well that &lt;code&gt;UIAlertController&lt;/code&gt; doesn’t support at all: displaying an alert view from parts of your code without a reference to the current view controller, for instance, displaying an alert view from the app delegate.&lt;/p&gt;
+                <title>How To Do A Case Insensitive Search Using Parse SDK</title>
+                <description>&lt;p&gt;I recently came across this question about searching using the Parse SDK for iOS. Simon asks:&lt;/p&gt;
 
-&lt;p&gt;Trying to display an alert view using &lt;code&gt;UIAlertController&lt;/code&gt; from a non-UI specific class such as the app delegate is a &lt;a href=&quot;http://stackoverflow.com/questions/26952061/present-uialertcontroller-from-appdelegate&quot;&gt;common problem&lt;/a&gt;, and developers have found different &lt;a href=&quot;http://stackoverflow.com/questions/26554894/how-to-present-uialertcontroller-when-not-in-a-view-controller&quot;&gt;workarounds&lt;/a&gt;. &lt;a href=&quot;http://stackoverflow.com/a/30941356&quot;&gt;One particular solution&lt;/a&gt; that caught my eye was this one from agilityvision, who writes:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;What would be the best practice for search in a large user database and return e..g 10 first results based on name or email?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I’ve been doing a lot with &lt;a href=&quot;https://www.parse.com&quot;&gt;Parse&lt;/a&gt; recently, from building a new iOS app to adding a license key &lt;a href=&quot;http://www.whitepeaksoftware.com/licenselookup&quot;&gt;lookup&lt;/a&gt; feature to my company website, and the reason Simon’s question caught my attention was because I asked myself a similar question the other day when working on the license key lookup feature.&lt;/p&gt;
+
+&lt;p&gt;The license key data comes from my order processing provider. A customer who has lost they license key can visit my website and retrieve for their license information by entering their email address. The problem, however, is that the person might enter the email address using a different case than used when the order was placed. And Parse does not have a way to perform a case insensitive search on string values.&lt;/p&gt;
+
+&lt;p&gt;So how do you get around this problem? And as Simon asks, what are some best practices for searching data in Parse?&lt;/p&gt;
+
+&lt;h2 id=&quot;force-strings-to-all-lowercase&quot;&gt;Force Strings To All Lowercase&lt;/h2&gt;
+
+&lt;p&gt;For starters, you should force all string values that can be searched to lower case, and do the same with the search string entered by the user. This produces the same effect as performing a case insensitive search while getting around the fact that Parse, as well as other types of data stores, doesn’t support case insensitive searches.&lt;/p&gt;
+
+&lt;p&gt;While storing the string value in all lowercase works fine for some value types, such as an email address, it’s not ideal for other value types. A person’s first and last names are not something you want to store in lowercase only. After all, you will likely display the person’s name on a profile screen or in an email message, and you want to display the name exactly as entered by the person.&lt;/p&gt;
+
+&lt;p&gt;So how do you search by data such as a first or last name without the ability to perform a case insensitive search? Simple. You create a search field for each.&lt;/p&gt;
+
+&lt;h2 id=&quot;define-search-fields&quot;&gt;Define Search Fields&lt;/h2&gt;
+
+&lt;p&gt;Let’s say your Parse class contains three properties, &lt;code class=&quot;highlighter-rouge&quot;&gt;firstName&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;lastName&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;email&lt;/code&gt;. All three contain data entered by a person. When you add a new instance of this class to Parse containing the data entered by the person, you can force the value for &lt;code class=&quot;highlighter-rouge&quot;&gt;email&lt;/code&gt; to be lowercase (e.g., &lt;code class=&quot;highlighter-rouge&quot;&gt;-[NSString lowercaseString]&lt;/code&gt; if you’re using Objective-C). However, you don’t want to do this for &lt;code class=&quot;highlighter-rouge&quot;&gt;firstName&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;lastName&lt;/code&gt;. Instead, you want to use search fields for those two properties.&lt;/p&gt;
+
+&lt;p&gt;To search on &lt;code class=&quot;highlighter-rouge&quot;&gt;firstName&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;lastName&lt;/code&gt;, add two additional properties to your class, &lt;code class=&quot;highlighter-rouge&quot;&gt;firstNameSearch&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;lastNameSearch&lt;/code&gt;. Then, just as you did with &lt;code class=&quot;highlighter-rouge&quot;&gt;email&lt;/code&gt;, force the values for &lt;code class=&quot;highlighter-rouge&quot;&gt;firstNameSearch&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;lastNameSearch&lt;/code&gt; to be all lowercase before saving the data to Parse. Now when you want to perform a search, use the search properties &lt;code class=&quot;highlighter-rouge&quot;&gt;firstNameSearch&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;lastNameSearch&lt;/code&gt; instead of the other two.&lt;/p&gt;
+
+&lt;p&gt;Congratulations! You’ve achieved case insensitive searching in an environment that does not support it.&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/</link>
+                <guid>http://www.thecave.com/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk</guid>
+                <pubDate>2015-12-03T10:16:56-05:00</pubDate>
+        </item>
+
+        <item>
+                <title>How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</title>
+                <description>&lt;p&gt;Over the summer I updated a number of apps to iOS 9. A common tasks for me was replacing the deprecated &lt;code class=&quot;highlighter-rouge&quot;&gt;UIAlertView&lt;/code&gt; with new &lt;code class=&quot;highlighter-rouge&quot;&gt;UIAlertController&lt;/code&gt; class. Generally this is easy to do, but there is one scenario that &lt;code class=&quot;highlighter-rouge&quot;&gt;UIAlertView&lt;/code&gt; handles well that &lt;code class=&quot;highlighter-rouge&quot;&gt;UIAlertController&lt;/code&gt; doesn’t support at all: displaying an alert view from parts of your code without a reference to the current view controller, for instance, displaying an alert view from the app delegate.&lt;/p&gt;
+
+&lt;p&gt;Trying to display an alert view using &lt;code class=&quot;highlighter-rouge&quot;&gt;UIAlertController&lt;/code&gt; from a non-UI specific class such as the app delegate is a &lt;a href=&quot;http://stackoverflow.com/questions/26952061/present-uialertcontroller-from-appdelegate&quot;&gt;common problem&lt;/a&gt;, and developers have found different &lt;a href=&quot;http://stackoverflow.com/questions/26554894/how-to-present-uialertcontroller-when-not-in-a-view-controller&quot;&gt;workarounds&lt;/a&gt;. &lt;a href=&quot;http://stackoverflow.com/a/30941356&quot;&gt;One particular solution&lt;/a&gt; that caught my eye was this one from agilityvision, who writes:&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;At WWDC I stopped in at one of the labs and asked an Apple Engineer this same question: “What was the best practice for displaying a UIAlertController?” And he said they had been getting this question a lot and we joked that they should have had a session on it. He said that internally Apple is creating a UIWindow with a transparent UIViewController and then presenting the UIAlertController on it.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;This got me thinking about how I would solve the problem for apps I work on. Liking the approach mentioned by the Apple Engineer, I decided to give that a try. But unlike some of the other solutions that use a category, I decided to create a new class, &lt;code&gt;WPSAlertController&lt;/code&gt;, that is a subclass of &lt;code&gt;UIAlertController&lt;/code&gt;, and provide additional convenience methods making it possible to display an alert view with a single call…like this:&lt;/p&gt;
+&lt;p&gt;This got me thinking about how I would solve the problem for apps I work on. Liking the approach mentioned by the Apple Engineer, I decided to give that a try. But unlike some of the other solutions that use a category, I decided to create a new class, &lt;code class=&quot;highlighter-rouge&quot;&gt;WPSAlertController&lt;/code&gt;, that is a subclass of &lt;code class=&quot;highlighter-rouge&quot;&gt;UIAlertController&lt;/code&gt;, and provide additional convenience methods making it possible to display an alert view with a single call…like this:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;NSString *title = ...
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;NSString *title = ...
 NSString *message = ...
 [WPSAlertController presentOkayAlertWithTitle:title message:message];
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;Or display the &lt;code&gt;localizedDescription&lt;/code&gt; from an &lt;code&gt;NSError&lt;/code&gt; object:&lt;/p&gt;
+&lt;p&gt;Or display the &lt;code class=&quot;highlighter-rouge&quot;&gt;localizedDescription&lt;/code&gt; from an &lt;code class=&quot;highlighter-rouge&quot;&gt;NSError&lt;/code&gt; object:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;[WPSAlertController presentOkayAlertWithError:error];
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[WPSAlertController presentOkayAlertWithError:error];
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;And of course, since &lt;code&gt;WPSAlertController&lt;/code&gt; is a subclass of &lt;code&gt;UIAlertController&lt;/code&gt;, you can create your alert the same way as you do using &lt;code&gt;UIAlertController&lt;/code&gt;. The only difference is you call &lt;code&gt;show&lt;/code&gt; to present the alert when you don’t have a view controller. For example:&lt;/p&gt;
+&lt;p&gt;And of course, since &lt;code class=&quot;highlighter-rouge&quot;&gt;WPSAlertController&lt;/code&gt; is a subclass of &lt;code class=&quot;highlighter-rouge&quot;&gt;UIAlertController&lt;/code&gt;, you can create your alert the same way as you do using &lt;code class=&quot;highlighter-rouge&quot;&gt;UIAlertController&lt;/code&gt;. The only difference is you call &lt;code class=&quot;highlighter-rouge&quot;&gt;show&lt;/code&gt; to present the alert when you don’t have a view controller. For example:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;NSString *title = ...
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;NSString *title = ...
 NSString *message = ...
 WPSAlertController *alertController = [WPSAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
 [alertController addAction:[UIAlertAction actionWithTitle:@&quot;OK&quot; style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -43,8 +81,9 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 
 [alertController show];
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;You can grab the &lt;a href=&quot;https://github.com/kirbyt/WPSKit/blob/master/WPSKit/UIKit/WPSAlertController.m&quot;&gt;source code for &lt;code&gt;WPSAlertController&lt;/code&gt;&lt;/a&gt; from my github repository and include it in your project, or use the entire &lt;a href=&quot;https://github.com/kirbyt/WPSKit&quot;&gt;WPSKit.framework&lt;/a&gt; in your project if you want to use &lt;code&gt;WPSAlertController&lt;/code&gt; plus other handy classes that I use when creating iOS apps.&lt;/p&gt;
+&lt;p&gt;You can grab the &lt;a href=&quot;https://github.com/kirbyt/WPSKit/blob/master/WPSKit/UIKit/WPSAlertController.m&quot;&gt;source code for &lt;code class=&quot;highlighter-rouge&quot;&gt;WPSAlertController&lt;/code&gt;&lt;/a&gt; from my github repository and include it in your project, or use the entire &lt;a href=&quot;https://github.com/kirbyt/WPSKit&quot;&gt;WPSKit.framework&lt;/a&gt; in your project if you want to use &lt;code class=&quot;highlighter-rouge&quot;&gt;WPSAlertController&lt;/code&gt; plus other handy classes that I use when creating iOS apps.&lt;/p&gt;
 </description>
                 <link>http://www.thecave.com/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/</link>
                 <guid>http://www.thecave.com/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller</guid>
@@ -57,7 +96,7 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 
 &lt;p&gt;Tag support is provided in Jekyll, but I wanted something slightly different. I want the list of tags to appear at the end of a post just like the categories have for last couple of years. I searched for different ways to support tags with Jekyll, but I didn’t find anything suiting my needs. Then it occurred to me I could tweak the category plugins I use to work with tags, so that’s exactly what I did.&lt;/p&gt;
 
-&lt;p&gt;The &lt;a href=&quot;https://github.com/recurser/jekyll-plugins&quot;&gt;Jekyll category plugins&lt;/a&gt; I use come from Dave Perretter. I made copies of &lt;em&gt;category_generator.rb&lt;/em&gt; and &lt;em&gt;category_list_tags.rb&lt;/em&gt; naming the new plugins &lt;em&gt;tag_generator.rb&lt;/em&gt; and &lt;em&gt;tag_list_tags.rb&lt;/em&gt;. Then I replace references to &lt;code&gt;categories&lt;/code&gt; and &lt;code&gt;category&lt;/code&gt; with &lt;code&gt;tags&lt;/code&gt; and &lt;code&gt;tag&lt;/code&gt; in the source code. And BAM! I now have tag support at thecave.com.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;https://github.com/recurser/jekyll-plugins&quot;&gt;Jekyll category plugins&lt;/a&gt; I use come from Dave Perretter. I made copies of &lt;em&gt;category_generator.rb&lt;/em&gt; and &lt;em&gt;category_list_tags.rb&lt;/em&gt; naming the new plugins &lt;em&gt;tag_generator.rb&lt;/em&gt; and &lt;em&gt;tag_list_tags.rb&lt;/em&gt;. Then I replace references to &lt;code class=&quot;highlighter-rouge&quot;&gt;categories&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;category&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;tags&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;tag&lt;/code&gt; in the source code. And BAM! I now have tag support at thecave.com.&lt;/p&gt;
 
 &lt;p&gt;You can find the source code for the plugins in my site’s github &lt;a href=&quot;https://github.com/kirbyt/site-www-thecave-com/tree/master/_plugins&quot;&gt;repo&lt;/a&gt;.&lt;/p&gt;
 </description>
@@ -320,7 +359,7 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 
 &lt;p&gt;The typical pattern I follow for sending the request to the server and getting notified when done is to call a method that will dispatch the URL request to a background queue then dispatch to the main queue to call a block when complete. It looks something like this:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;- (void)sendSomething:(NSDictionary *)something completion:(void(^)(BOOL success, NSError *error))completion
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- (void)sendSomething:(NSDictionary *)something completion:(void(^)(BOOL success, NSError *error))completion
 {
   NSParameterAssert(something);
   dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -336,18 +375,19 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
   });
 }
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;This is a simplified view of the pattern I often use. Call a method with a callback block. Perform some work on a background thread. When done, call the callback block on the main thread.&lt;/p&gt;
 
 &lt;p&gt;This pattern has served me well on iOS, but it has issues on Mac OS X when displaying a modal window.&lt;/p&gt;
 
-&lt;p&gt;When you display a modal window with &lt;code&gt;+[NSApp runModalForWindow:]&lt;/code&gt; a new run loop is created for the window&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. That might seem fine until you call &lt;code&gt;dispatch_async(dispatch_get_main_queue(), ^{})&lt;/code&gt; from a background thread. The block that you are trying to execute in the main queue will never run. And in my case, the &lt;code&gt;completion&lt;/code&gt; block is never called. This means my modal window never receives the notification that the URL request completed. (NOTE: Mike Ash &lt;a href=&quot;#update2&quot;&gt;pointed out&lt;/a&gt; that it’s not the new run loop that causes the problem.)&lt;/p&gt;
+&lt;p&gt;When you display a modal window with &lt;code class=&quot;highlighter-rouge&quot;&gt;+[NSApp runModalForWindow:]&lt;/code&gt; a new run loop is created for the window&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. That might seem fine until you call &lt;code class=&quot;highlighter-rouge&quot;&gt;dispatch_async(dispatch_get_main_queue(), ^{})&lt;/code&gt; from a background thread. The block that you are trying to execute in the main queue will never run. And in my case, the &lt;code class=&quot;highlighter-rouge&quot;&gt;completion&lt;/code&gt; block is never called. This means my modal window never receives the notification that the URL request completed. (NOTE: Mike Ash &lt;a href=&quot;#update2&quot;&gt;pointed out&lt;/a&gt; that it’s not the new run loop that causes the problem.)&lt;/p&gt;
 
 &lt;p&gt;So how did I work around this problem?&lt;/p&gt;
 
-&lt;p&gt;Instead of dispatching the &lt;code&gt;completion()&lt;/code&gt; to the main queue, I call it directly from the background thread. In the completion block itself, I decide how to get the code should run in the main thread. If my window isn’t modal, then I can use &lt;code&gt;dispatch_async(dispatch_get_main_queue(), ^{})&lt;/code&gt;. But if my window is modal, which just happens to be the case for the app I’m working on, then I use &lt;code&gt;-performSelectorOnMainThread:withObject:waitUntilDone:&lt;/code&gt;. So the code in my view controller looks something like this:&lt;/p&gt;
+&lt;p&gt;Instead of dispatching the &lt;code class=&quot;highlighter-rouge&quot;&gt;completion()&lt;/code&gt; to the main queue, I call it directly from the background thread. In the completion block itself, I decide how to get the code should run in the main thread. If my window isn’t modal, then I can use &lt;code class=&quot;highlighter-rouge&quot;&gt;dispatch_async(dispatch_get_main_queue(), ^{})&lt;/code&gt;. But if my window is modal, which just happens to be the case for the app I’m working on, then I use &lt;code class=&quot;highlighter-rouge&quot;&gt;-performSelectorOnMainThread:withObject:waitUntilDone:&lt;/code&gt;. So the code in my view controller looks something like this:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;- (void)someAction:(id)sender
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- (void)someAction:(id)sender
 {
   SomeHelper *helper = [[SomeHelper alloc] init];
   __weak __typeof__(self) weakSelf = self;
@@ -374,12 +414,13 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
     ...
 }
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;This pattern change now has me re-thinking how I use certain patterns in my code, especially for code that I intend on sharing between the two platforms.&lt;/p&gt;
 
 &lt;p&gt;Update: I posted a &lt;a href=&quot;https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSApplication_Class/index.html#//apple_ref/occ/instm/NSApplication/runModalForWindow:&quot;&gt;sample project&lt;/a&gt; that illustrates the problem. In writing the sample app, I learned that the scenario that causes the problem is when the modal window is presented via a block that is dispatched asynchronously on the main queue.&lt;/p&gt;
 
-&lt;p&gt;&lt;a name=&quot;update2&quot;&gt;&lt;/a&gt;Update 2: &lt;a href=&quot;https://mikeash.com/pyblog/&quot;&gt;Mike Ash&lt;/a&gt; pointed out that NSRunLoop is reentrant but GCD serial queues are not and this is the reason, not my theory of a different event loop, the block isn’t executed. Mike said, “The main queue is already executing a block, and it won’t execute a new one until that one is done. This is a subtle way in which dispatch on the main queue isn’t the same as &lt;code&gt;performSelectorOnMainThread&lt;/code&gt;.”&lt;/p&gt;
+&lt;p&gt;&lt;a name=&quot;update2&quot;&gt;&lt;/a&gt;Update 2: &lt;a href=&quot;https://mikeash.com/pyblog/&quot;&gt;Mike Ash&lt;/a&gt; pointed out that NSRunLoop is reentrant but GCD serial queues are not and this is the reason, not my theory of a different event loop, the block isn’t executed. Mike said, “The main queue is already executing a block, and it won’t execute a new one until that one is done. This is a subtle way in which dispatch on the main queue isn’t the same as &lt;code class=&quot;highlighter-rouge&quot;&gt;performSelectorOnMainThread&lt;/code&gt;.”&lt;/p&gt;
 
 &lt;p&gt;Good to know and thanks, Mike, for explaining what is happening.&lt;/p&gt;
 
@@ -388,7 +429,7 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;From the &lt;a href=&quot;https://github.com/kirbyt/MacModalDispatchAsyncProblem&quot;&gt;Apple documentation&lt;/a&gt; for &lt;code&gt;+[NSApp runModalForWindow:]&lt;/code&gt;: “This method runs a modal event loop for the specified window synchronously. It displays the specified window, makes it key, starts the run loop, and processes events for that window. (You do not need to show the window yourself.) While the app is in that loop, it does not respond to any other events (including mouse, keyboard, or window-close events) unless they are associated with the window. It also does not perform any tasks (such as firing timers) that are not associated with the modal run loop. In other words, this method consumes only enough CPU time to process events and dispatch them to the action methods associated with the modal window.” &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;From the &lt;a href=&quot;https://github.com/kirbyt/MacModalDispatchAsyncProblem&quot;&gt;Apple documentation&lt;/a&gt; for &lt;code class=&quot;highlighter-rouge&quot;&gt;+[NSApp runModalForWindow:]&lt;/code&gt;: “This method runs a modal event loop for the specified window synchronously. It displays the specified window, makes it key, starts the run loop, and processes events for that window. (You do not need to show the window yourself.) While the app is in that loop, it does not respond to any other events (including mouse, keyboard, or window-close events) unless they are associated with the window. It also does not perform any tasks (such as firing timers) that are not associated with the modal run loop. In other words, this method consumes only enough CPU time to process events and dispatch them to the action methods associated with the modal window.” &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
@@ -414,8 +455,9 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
                 <title>Blogging The Little Things</title>
                 <description>&lt;p&gt;I read a post from Shubham Jain, by way of &lt;a href=&quot;http://shapeof.com/archives/2015/7/coffee_coder_-_blog_little_things.html&quot;&gt;Gus Mueller&lt;/a&gt;, about &lt;a href=&quot;http://coffeecoder.net/blog/blog-little-things/&quot;&gt;blogging the little things&lt;/a&gt;. In the post, Shubham says:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;There are lots of things that can be blogged about and yet, we are stuck in the dilemma of, – &quot;Is it worth something to write?&quot;. The fear of being insignificant aka &quot;Nobody will read it&quot; syndrome, inhibits us from writing that simple thing that might have helped many people.
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;There are lots of things that can be blogged about and yet, we are stuck in the dilemma of, – &quot;Is it worth something to write?&quot;. The fear of being insignificant aka &quot;Nobody will read it&quot; syndrome, inhibits us from writing that simple thing that might have helped many people.
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;I recently talked about my &lt;a href=&quot;http://www.thecave.com/2015/07/02/fear/&quot;&gt;fears&lt;/a&gt; and I mentioned some of the things I’m trying to do to help overcome those fears. And blogging more about the little things seems like another way for me to overcome some of the fears I’ve been having.&lt;/p&gt;
 
@@ -427,26 +469,27 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 
         <item>
                 <title>Redirect Jekyll Site To HTTPS On OpenShift</title>
-                <description>&lt;p&gt;I’m preparing to roll out a new &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; website, but unlike with my other Jekyll sites, I want each web page served up on &lt;code&gt;https&lt;/code&gt;, not &lt;code&gt;http&lt;/code&gt;. This means telling the server to redirect &lt;code&gt;http&lt;/code&gt; request to &lt;code&gt;https&lt;/code&gt;.&lt;/p&gt;
+                <description>&lt;p&gt;I’m preparing to roll out a new &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; website, but unlike with my other Jekyll sites, I want each web page served up on &lt;code class=&quot;highlighter-rouge&quot;&gt;https&lt;/code&gt;, not &lt;code class=&quot;highlighter-rouge&quot;&gt;http&lt;/code&gt;. This means telling the server to redirect &lt;code class=&quot;highlighter-rouge&quot;&gt;http&lt;/code&gt; request to &lt;code class=&quot;highlighter-rouge&quot;&gt;https&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Hosting this new site on &lt;a href=&quot;https://pages.github.com&quot;&gt;Github Pages&lt;/a&gt; isn’t option because Github Pages doesn’t support using a custom SSL certificate for your custom domain name. So I decided to see what it would take to host a Jekyll site on &lt;a href=&quot;https://www.openshift.com&quot;&gt;OpenShift&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;I was thrilled to learn that OpenShift has a &lt;a href=&quot;https://hub.openshift.com/quickstarts/41-jekyll&quot;&gt;quick start cartridge for installing Jekyll&lt;/a&gt; on a new gear. With a click of a button I was able to deploy my new server instance with a boiler plate Jekyll site. I replaced the boiler plate site with the one I’ve been working on, and BAM! My site was up and running. The only step remaining was to force the web server to serve up the pages using &lt;code&gt;https&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;I was thrilled to learn that OpenShift has a &lt;a href=&quot;https://hub.openshift.com/quickstarts/41-jekyll&quot;&gt;quick start cartridge for installing Jekyll&lt;/a&gt; on a new gear. With a click of a button I was able to deploy my new server instance with a boiler plate Jekyll site. I replaced the boiler plate site with the one I’ve been working on, and BAM! My site was up and running. The only step remaining was to force the web server to serve up the pages using &lt;code class=&quot;highlighter-rouge&quot;&gt;https&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Turns out this is simple to do with OpenShift and Jekyll. First, I went over to namecheap.com and purchased a &lt;a href=&quot;https://www.namecheap.com/security/ssl-certificates/rapidssl/rapidssl.aspx&quot;&gt;RapidSSL certificate&lt;/a&gt; with domain validation. Next, I followed the instructions from OpenShift to &lt;a href=&quot;https://developers.openshift.com/en/managing-domains-ssl.html#_generating_a_csr_certificate_signing_request&quot;&gt;generate my certificate signing request&lt;/a&gt;. Using my newly generated CSR I activated my RapidSSL certificate over at namecheap, then I followed the instructions on OpenShift to &lt;a href=&quot;https://developers.openshift.com/en/managing-domains-ssl.html#using-a-custom-ssl-certificate&quot;&gt;add the certificate to my server instance&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Up to this point everything was easy peasy, and all I had left to do was figure out how to redirect the Jekyll site from &lt;code&gt;http&lt;/code&gt; to &lt;code&gt;https&lt;/code&gt;. Turns out this isn’t difficult either.&lt;/p&gt;
+&lt;p&gt;Up to this point everything was easy peasy, and all I had left to do was figure out how to redirect the Jekyll site from &lt;code class=&quot;highlighter-rouge&quot;&gt;http&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;https&lt;/code&gt;. Turns out this isn’t difficult either.&lt;/p&gt;
 
 &lt;p&gt;The Jekyll website is actually just a static website hosted by Apache 2 running on an OpenShift gear. To force the redirect all I needed to do was add a &lt;em&gt;.htaccess&lt;/em&gt; file to the root of my Jekyll site source code (note: the site source code is in the &lt;em&gt;source/&lt;/em&gt; directory when using OpenShift) and put this rewrite rule in the file:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;RewriteEngine on  
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;RewriteEngine on  
 RewriteCond %{HTTP:X-Forwarded-Proto} !https  
 RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]  
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;After I added the &lt;em&gt;.htaccess&lt;/em&gt; file with the rewrite rule, I pushed my changes to the remote git repository running on my OpenShift gear. This launched Jekyll which re-built my static website, this time with each web page being served with &lt;code&gt;https&lt;/code&gt; instead of &lt;code&gt;http&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;After I added the &lt;em&gt;.htaccess&lt;/em&gt; file with the rewrite rule, I pushed my changes to the remote git repository running on my OpenShift gear. This launched Jekyll which re-built my static website, this time with each web page being served with &lt;code class=&quot;highlighter-rouge&quot;&gt;https&lt;/code&gt; instead of &lt;code class=&quot;highlighter-rouge&quot;&gt;http&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Including the &lt;em&gt;.htaccess&lt;/em&gt; file works great when deploying the Jekyll site to OpenShift, but approach isn’t unique to OpenShift. This should work for most Jekyll site hosted with Apache 2. And if for some reason Jekyll isn’t including the &lt;em&gt;.htaccess&lt;/em&gt; file when it builds the site, add &lt;code&gt;include: [&quot;.htaccess&quot;]&lt;/code&gt; to your &lt;em&gt;_config.yaml&lt;/em&gt; file.&lt;/p&gt;
+&lt;p&gt;Including the &lt;em&gt;.htaccess&lt;/em&gt; file works great when deploying the Jekyll site to OpenShift, but approach isn’t unique to OpenShift. This should work for most Jekyll site hosted with Apache 2. And if for some reason Jekyll isn’t including the &lt;em&gt;.htaccess&lt;/em&gt; file when it builds the site, add &lt;code class=&quot;highlighter-rouge&quot;&gt;include: [&quot;.htaccess&quot;]&lt;/code&gt; to your &lt;em&gt;_config.yaml&lt;/em&gt; file.&lt;/p&gt;
 
 </description>
                 <link>http://www.thecave.com/2015/07/14/redirect-jekyll-site-to-https-on-openshift/</link>
@@ -653,17 +696,6 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
                 <link>http://www.thecave.com/2015/06/18/video-of-stowe-vermont/</link>
                 <guid>http://www.thecave.com/2015/06/18/video-of-stowe-vermont</guid>
                 <pubDate>2015-06-18T22:22:58-04:00</pubDate>
-        </item>
-
-        <item>
-                <title>Essence Of Vermont</title>
-                <description>&lt;p&gt;It’s no surprise I love living in Vermont in part because it’s different from other places I have lived. And this video from Skyworks really captures parts of why I love it here.&lt;/p&gt;
-
-&lt;div class=&quot;youtube-video&quot;&gt;&lt;figure&gt;&lt;iframe width=&quot;560&quot; height=&quot;420&quot; src=&quot;https://www.youtube.com/embed/UBwqn9BRWhA?color=white&amp;amp;theme=light&quot;&gt;&lt;/iframe&gt;&lt;/figure&gt;&lt;/div&gt;
-</description>
-                <link>http://www.thecave.com/2015/06/18/essence-of-vermont/</link>
-                <guid>http://www.thecave.com/2015/06/18/essence-of-vermont</guid>
-                <pubDate>2015-06-18T06:16:26-04:00</pubDate>
         </item>
 
 

@@ -76,15 +76,15 @@
                 </li>
                 
                 <li>
-                    <a href="/about.html">About</a>
+                    <a href="/about/">About</a>
                 </li>
                 
                 <li>
-                    <a href="/archive.html">Archive</a>
+                    <a href="/archive/">Archive</a>
                 </li>
                 
                 <li>
-                    <a href="/categories.html">Categories & Tags</a>
+                    <a href="/categories/">Categories & Tags</a>
                 </li>
                 
             </ul>
@@ -124,12 +124,13 @@
 
 <p>You can use JavaScript to mask an email address.  For example, instead of including your email address as plain text in the HTML convert each character of your email address into the appropriate ASCII value and display the ASCII value string using document.write as shown below.</p>
 
-<pre><code>&lt;!--document.write('&amp;#107&amp;#105&amp;#114&amp;#98&amp;#121&amp;#64&amp;#116&amp;#104&amp;#101&amp;#99&amp;#97&amp;#118&amp;#101&amp;#46&amp;#99&amp;#111&amp;#109');// --&gt; 
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;!--document.write('&amp;#107&amp;#105&amp;#114&amp;#98&amp;#121&amp;#64&amp;#116&amp;#104&amp;#101&amp;#99&amp;#97&amp;#118&amp;#101&amp;#46&amp;#99&amp;#111&amp;#109');// --&gt; 
 </code></pre>
+</div>
 
 <p>Of course doing this each time can be a pain.  A better approach is to use server-side scripting that will mask the email address for you.  That’s exactly what I did for my web site using the following C# code:</p>
 
-<pre><code>public string MaskedEmail( string email )
+<div class="highlighter-rouge"><pre class="highlight"><code>public string MaskedEmail( string email )
 {   
     string masked = MaskedStringFromString(email);   
     string javascript = @"  &lt;!--      document.write('{0}');      // --&gt; ";
@@ -161,6 +162,7 @@ public string MaskedStringFromString(string value)
     return masked;
 }
 </code></pre>
+</div>
 
 <p>When I display an email address I mask it by calling the MaskedEmail method.  And I use MaskedMailToLink for those times when I want to include a mailto link.  You can see this in action on the <a href="http://www.whitepeaksoftware.com/contacts.aspx">contact us</a> page for White Peak Software.</p>
 
@@ -209,6 +211,8 @@ public string MaskedStringFromString(string value)
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/" title="How To Do A Case Insensitive Search Using Parse SDK">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                
                 <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/" title="How To Present An Alert View Using UIAlertController When You Don't Have A View Controller">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
                 
                 <li><a href="/2015/09/21/tags-and-categories/" title="Tags And Categories">Tags And Categories</a></li>
@@ -216,8 +220,6 @@ public string MaskedStringFromString(string value)
                 <li><a href="/2015/09/10/trying-something-new-to-avoid-feast-or-famine/" title="Trying Something New To Avoid Feast Or Famine">Trying Something New To Avoid Feast Or Famine</a></li>
                 
                 <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/" title="My Upcoming Share Extension Talk At 360idev-Min">My Upcoming Share Extension Talk At 360idev-Min</a></li>
-                
-                <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/" title="Wish I Could Help But It's Not My App">Wish I Could Help But It's Not My App</a></li>
                 
                 </ul>                
             </div>

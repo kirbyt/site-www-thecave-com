@@ -74,15 +74,15 @@
                 </li>
                 
                 <li>
-                    <a href="/about.html">About</a>
+                    <a href="/about/">About</a>
                 </li>
                 
                 <li>
-                    <a href="/archive.html">Archive</a>
+                    <a href="/archive/">Archive</a>
                 </li>
                 
                 <li>
-                    <a href="/categories.html">Categories & Tags</a>
+                    <a href="/categories/">Categories & Tags</a>
                 </li>
                 
             </ul>
@@ -116,13 +116,31 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2004/06/01/how-to-unit-testing-implementations-of-an-interface/">How to Unit Testing Implementations of an Interface</a>
+    </h2>
+    
+    <p>I have become a firm supporter of writing unit tests for most if not all code I write, and <a href="http://www.nunit.org">NUnit</a> is an ideal framework for implementing unit tests.  But one problem I have had repeatedly is finding a good way to test specific implementations of an interface.  My approach has always been to write a new test fixture for each implementor of an interface.  But the problem with this approach is that I end up duplicating unit tests for each implementor, and if I need to write a new test I have to copy it to multiple fixtures.</p>
+
+
+
+    <p><a href="/2004/06/01/how-to-unit-testing-implementations-of-an-interface/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on June 1, 2004
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2004/05/28/a-comment-or-two-on-visual-studio-team-system/">A comment or two on Visual Studio Team System</a>
     </h2>
     
     <p>This week at TechEd, Microsoft announced <a href="http://msdn.microsoft.com/vstudio/teamsystem/default.aspx">Visual Studio Team System</a>.  It includes a number of features to get development team more into the life cycle such as unit testing, profiling, and code coverage.  Sounds exciting but a couple of things I have read bother me.
 <br />
 <br />Class diagraming will not use UML.  Instead Microsoft has created a new notation which Microsoft says is needed to support two-way application design.  The other point that I read that worries me is that Visual Studio Team System integrates tightly with SQL Server 2005.  My assumption here is that as a team tool the database used most likely has to be a centralized database accessible by all team members.  However, this is just an assumption at the moment but as a developer who uses a laptop and one who does development disconnected from a network from time to time such as when flying, I wonder how this will change the development experience or worse how it will limit the development experience.  Guess I will have to wait until I get my hands on the bits to see what will happen.</p>
-
 
 
     <p><a href="/2004/05/28/a-comment-or-two-on-visual-studio-team-system/">Continue reading &rarr;</a></p>
@@ -143,7 +161,6 @@
     <p>Here’s a fun game to play while walking the streets of New York, <a href="http://www.catbirdseat.org/catbirdseat/bingo.html">hipster bingo</a>.</p>
 
 
-
     <p><a href="/2004/05/27/hipster-bingo/">Continue reading &rarr;</a></p>
 
     <p class="post-meta">Posted by Kirby Turner on May 27, 2004
@@ -160,7 +177,6 @@
     </h2>
     
     <p>I’m currently working on a customer project with 16+ VS.NET projects in a single VS.NET solution file.  The single solution file is handy in that all the source code that makes up the complete customer solution is available in one place.  The solution includes multiple C# projects, unit test projects, database projects, and one Reporting Services project.  Also our build environment relies on NAnt scripts so each project that produces an assembly also has its own .build script.<br /><br />A single solution approach is nice because I have access to everything that makes up the solution, from build scripts to C# source code to stored procedures.  But finding the right project or file is becoming more challenging each day as more is added to the solution.  This is where Enterprise Template Projects comes to the rescue.  <br /><br />An Enterprise Template Project is a project type available in Visual Studio.NET Enterprise Edition or greater, and it can contain any type of file including other project types.  I started out by creating a set of enterprise template projects that represent the grouping I want.  For example, I created template projects with the names Applications, BusinessServices, Databases, Frameworks, NAntScripts, and UnitTests.  Within each of these projects I added the appropriate reference based on the grouping to existing project files.  UnitTests contains references to the C# projects responsible for producing our NUnit unit test assemblies.  BusinessServices contains references to projects that make up the middle tier of the solution.  Framework contains references to framework projects, and so on.<br /><br />NAntScripts is interesting in that it does not contain a reference to another project but instead it contains references to .build scripts files found in other projects.  I like this because many times when I am working on the build scripts I need to modify more than one script.  Before making the grouping I was jumping from project to project in search of the .build script file.  Now I have references to all the script files in one place making it easier to find a particular script file.<br /><br />With this new grouping I am able to more efficiently find the projects and files I need to work on.  The grouping has proven itself to be a huge time saver for me especially when working with large single solution files.<br /><br />One additional note on using enterprise template projects to organize your single solution: To prevent scattering .etp files throughout project directories containing the source code I recommend creating a single directory that will store all of the .etp files.  References within an enterprise template project do not have to fall under the template project.  Instead files referenced within the .etp can be stored anywhere on the hard drive.  This means the .etp file does not have to dirty up the project directory where the source code actually resides.<br /><br /><br /></p>
-
 
 
     <p><a href="/2004/05/19/using-enterprise-templates-to-group-projects/">Continue reading &rarr;</a></p>
@@ -181,7 +197,6 @@
     <p>I have been working today on stabilizing our build environment for a customer project.  NAnt has been a great to so far for this.  But today I wanted to start running NUnit tests of our assemblies from the NAnt script.  I have tried a combination of Xml in attempts to get the NUnit task to work as expected.  All assemblies except one have a configuration file so I must use the  element.  I have tried defining a single  section with multiple  elements, one for each assembly to test.  And I have tried multiple  sections within a single target, but the result is the same.  Not all tests do not always run.  <br /><br />Say I have 4 test assemblies.  2 out of the 4 may load.  The other two seem to be ignored.  The  section seems easiest enough, but I must be missing something.  Shot me a reply if you have a suggestion.  Thanks.<br /><br /><br /></p>
 
 
-
     <p><a href="/2004/05/18/multiple-nunit-tests-from-nant/">Continue reading &rarr;</a></p>
 
     <p class="post-meta">Posted by Kirby Turner on May 18, 2004
@@ -198,7 +213,6 @@
     </h2>
     
     <p>When did the term <a href="http://www.thinkgeek.com/tshirts/coder/3817/">code monkey</a> become inappropriate in the office?  <br /><br />I was talking with a programmer who is employed by the customer yesterday and a question came up about coders.  This lead to a conversation about the meaning behind terms like “coder”, “programmer”, and “developer”.  All can be the same while having some differences.  During the conversation I mentioned the term code monkey.  The programmer I was talking to never heard of the term so I showed him the <a href="http://info.astrian.net/jargon/terms/c/code_monkey.html">definition</a> of code monkey from <a href="http://info.astrian.net/jargon/">The Jargon Dictionary</a>.<br /><br />Later that day the GM from my employer talked with me about the term, and 15 minutes later I got an e-mail from our HR Generalist requesting to talk with me about this.  Apparently code monkey has become an offensive thing to say, or at least it has within the walls of my employer.<br /><br />I see nothing wrong with this phrase.  I have even considered myself a code monkey from time to time.  Last summer I was on a project for a customer where I got to be a code monkey and I loved it.  It was one the best project I have been on since joining my employer.<br /><br />The whole situation reminds me of an episode of Recess called <a href="http://www.bcdb.com/bcdb/cartoon.cgi?film=7015&amp;cartoon=The%20Story%20of%20Whomps">The Story of Whomps</a>.  The school principal and one of the teachers deem the word “whomps” as a cuss word and set out to punish the kid who created the word.  The scandal goes all the way up to the Board of Education.  When the superintended learns the scandalous word is “whomps” he says something to the tune of “Anyone who hears something vulgar in the word ‘whomps’ has a vulgar mind.”  And that’s how I feel about the term code monkey.  If you hear something offensive in the term code monkey than you probably have an offense mind.<br /><br /><br /></p>
-
 
 
     <p><a href="/2004/05/18/man-this-whomps/">Continue reading &rarr;</a></p>
@@ -219,7 +233,6 @@
     <p><a href="http://weblogs.threepines.net/taba/archive/2004/05/05/214.aspx">Don’t be a “Cargo Cult” Programmer (or don’t get bit by the “Law of Leaky Abstractions”)</a></p>
 
 
-
     <p><a href="/2004/05/18/dont-be-a-cargo-cult-programmer/">Continue reading &rarr;</a></p>
 
     <p class="post-meta">Posted by Kirby Turner on May 18, 2004
@@ -236,7 +249,6 @@
     </h2>
     
     <p><a href="http://www.amazon.com/">Amazon</a> has some great prices on MSDN Universal subscriptions.  A <a href="http://www.amazon.com/exec/obidos/redirect?tag=whitepeaksoft-20&amp;path=tg/detail/-/B00005NGPB/qid%3D1084453776/sr%3D8-1">first time subscription</a> is only $2399 USD saving more than $400 USD over Microsoft’s price.  The <a href="http://www.amazon.com/exec/obidos/redirect?tag=whitepeaksoft-20&amp;path=tg/detail/-/B00005NGPA/qid%3D1084453776/sr%3D8-2">upgrade</a> price is $1974.99 USD.  I think these prices are for U.S. customers only.</p>
-
 
 
     <p><a href="/2004/05/13/cheap-price-for-msdn-universal-subscriptions/">Continue reading &rarr;</a></p>
@@ -257,7 +269,6 @@
     <p>Take a virtual tour of Bill Gates’ <a href="http://www.usnews.com/usnews/tech/billgate/gates.htm">estate</a>.</p>
 
 
-
     <p><a href="/2004/05/07/usnews-com-technology-bill-gates-house/">Continue reading &rarr;</a></p>
 
     <p class="post-meta">Posted by Kirby Turner on May 7, 2004
@@ -276,27 +287,7 @@
     <p>The PInvoke.net <a href="http://www.gotdotnet.com/Community/UserSamples/Details.aspx?SampleGuid=75122f62-5459-4364-b9ba-7b5e6a4754fe">Add-in</a> for Visual Studio.NET will insert PInvoke signatures into your code.  What’s cool about this is that the add-in retrieves the PInvoke information from the <a href="http://www.pinvoke.net/">PINVOKE.NET</a> wiki.  And you can contribute signatures back to the wiki from the add-in.  What a neat idea.</p>
 
 
-
     <p><a href="/2004/05/07/pinvoke-net-add-in-for-vs-net/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on May 7, 2004
-     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
-    Tagged in .
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2004/05/07/being-a-software-developer/">Being a Software Developer</a>
-    </h2>
-    
-    <p><a href="http://www.joelonsoftware.com/">Joel Spolsky</a> has posted his <a href="http://www.joelonsoftware.com/articles/CoderToDeveloper.html">foreword</a> to Mike Gunderloy’s new book, <a href="http://www.amazon.com/exec/obidos/tg/detail/-/078214327X/ref=ase_whitepeaksoft-20/002-0173335-5722445?v=glance&amp;s=books">Coder to Developer</a>.  The foreword puts in very simple terms what it takes to be a software developer, which is more than knowing how to writing code.  As Joel puts it, a software developer can “take a concept, build a team, set up state of the art development processes, design a software product, the right software product, and produce it.”  I’ll add that a software developer should understand various development methodologies and how to apply them, and the importances of QA and testing even though these are assumed to be part of the state of the art development process.</p>
-
-
-
-    <p><a href="/2004/05/07/being-a-software-developer/">Continue reading &rarr;</a></p>
 
     <p class="post-meta">Posted by Kirby Turner on May 7, 2004
      in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
@@ -337,6 +328,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/" title="How To Do A Case Insensitive Search Using Parse SDK">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                
                 <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/" title="How To Present An Alert View Using UIAlertController When You Don't Have A View Controller">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
                 
                 <li><a href="/2015/09/21/tags-and-categories/" title="Tags And Categories">Tags And Categories</a></li>
@@ -344,8 +337,6 @@
                 <li><a href="/2015/09/10/trying-something-new-to-avoid-feast-or-famine/" title="Trying Something New To Avoid Feast Or Famine">Trying Something New To Avoid Feast Or Famine</a></li>
                 
                 <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/" title="My Upcoming Share Extension Talk At 360idev-Min">My Upcoming Share Extension Talk At 360idev-Min</a></li>
-                
-                <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/" title="Wish I Could Help But It's Not My App">Wish I Could Help But It's Not My App</a></li>
                 
                 </ul>                
             </div>

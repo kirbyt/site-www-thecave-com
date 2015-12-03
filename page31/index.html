@@ -74,15 +74,15 @@
                 </li>
                 
                 <li>
-                    <a href="/about.html">About</a>
+                    <a href="/about/">About</a>
                 </li>
                 
                 <li>
-                    <a href="/archive.html">Archive</a>
+                    <a href="/archive/">Archive</a>
                 </li>
                 
                 <li>
-                    <a href="/categories.html">Categories & Tags</a>
+                    <a href="/categories/">Categories & Tags</a>
                 </li>
                 
             </ul>
@@ -116,11 +116,28 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2006/05/16/mike-eberhart-is-now-blogging/">Mike Eberhart is now Blogging</a>
+    </h2>
+    
+    <p>Mike Eberhart of the <a href="http://www.intersoftdevelopment.com/">Cleveland based database developer</a> shop Intersoft Development, and long time friend, is finally blogging on <a href="http://suretalent.blogspot.com/">investment news and opinions, software and technology thoughts</a>, and more.  Should make for some interesting reading.<br /><br />Welcome to the blogosphere, Mike.</p>
+
+
+    <p><a href="/2006/05/16/mike-eberhart-is-now-blogging/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on May 16, 2006
+     in <a class='category' href='/category/personal/'>personal</a>.
+    Tagged in <a class='tag' href='/tag/blog/'>blog</a>.
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2006/05/16/delphi-asp-net-on-mono/">Delphi ASP.NET on Mono</a>
     </h2>
     
     <p>This blog posting by <a href="http://delphi-notes.blogspot.com/">Daniel Wischnewski</a> really caught my attention.  He has successfully ported an <a href="http://delphi-notes.blogspot.com/2006/05/first-time-delphi-aspnet-application.html">ASP.NET application written in Delphi.NET to a Linux environment running Mono and Apache</a>.  This really doesn’t surprise me because I have in the past run .NET assemblies under Mono without a problem.  But at the same time I find it very cool that it is an ASP.NET application written in <a href="http://www.borland.com/delphi">Delphi</a>, which is something I haven’t yet tried.  Awesome stuff.</p>
-
 
 
     <p><a href="/2006/05/16/delphi-asp-net-on-mono/">Continue reading &rarr;</a></p>
@@ -139,7 +156,6 @@
     </h2>
     
     <p>Someone on the <a href="http://discuss.joelonsoftware.com/default.asp?joel">Joel on Software forum</a> asked “<a href="http://discuss.joelonsoftware.com/default.asp?joel.3.342621.47">how many ISVs are using Delphi</a>?”  If you’re using <a href="http://www.borland.com/delphi">Delphi</a>, share the love and post a reply.  White Peak Software is <a href="http://www.whitepeaksoftware.com/">using Delphi and Borland Developer Studio 2006 for its products and custom software</a>.</p>
-
 
 
     <p><a href="/2006/05/14/sharing-the-delphi-love/">Continue reading &rarr;</a></p>
@@ -179,7 +195,6 @@
     <p>“The software business is picking up regionally across the country”, as noted per CEO of White Peak’s <a href="http://www.intersoftdevelopment.com/">Cleveland database developers</a> partner firm, which has seen software development and consulting requests easily double during the past 3 months in the Cleveland, Ohio region.  Requests have been pouring in from small, mid, and large firms alike.  The most sought after technology skills have been Access, Microsoft SQL Server 2000 and 2005, and .NET recently.</p>
 
 
-
     <p><a href="/2006/05/11/software-business-on-the-raise-in-cleveland/">Continue reading &rarr;</a></p>
 
     <p class="post-meta">Posted by Kirby Turner on May 11, 2006
@@ -198,7 +213,6 @@
     <p>Here is a useful link for those who want to <a href="http://www.vmwarez.com/2006/02/livecd-player-virtual-machine.html">run a Linux LiveCD under VMware Workstation or VMware Player</a>.  What’s neat about this hack is it allows you to run the LiveCD without needing to reboot your host OS.  [Hats off to Mike for sharing the tip with me.]</p>
 
 
-
     <p><a href="/2006/05/07/running-livecd-in-vmware/">Continue reading &rarr;</a></p>
 
     <p class="post-meta">Posted by Kirby Turner on May 7, 2006
@@ -215,7 +229,6 @@
     </h2>
     
     <p>John Kaster has posted tips on <a href="http://blogs.borland.com/johnk/archive/2006/05/05/24602.aspx">using ASP.NET 1.1 and 2.0 on the same machine</a>.  It’s a quick read and has references to utilities that will easy the work.</p>
-
 
 
     <p><a href="/2006/05/05/using-asp-net-1-1-and-2-0-on-the-same-machine/">Continue reading &rarr;</a></p>
@@ -274,32 +287,11 @@
     <p>SQL Server 2005 has been out for some time now but I have only recently made the move to it.  I’ve been in the SQL Server 2000 world because of customers but my customers are finally making the move 2005.<br /><br />Overall I really like SQL Server 2005 and the new Management Studio is nice.  However, I’m really annoyed that the SQL Server 2005 team decided to do away with the database scripting feature found in SQL Server 2000.  <br /><br />In SQL Server 2000, you can script out each database object into individual files.  I do this so I can commit the DDL source for each into CVS, or to do revision comparisons, or to do a number of other tasks.  But you cannot easily script out each object in a database with SQL Server 2005.  Apparently this is a known limitation as seen <a href="http://lab.msdn.microsoft.com/productfeedback/viewfeedback.aspx?feedbackid=9eb6c773-2dbb-4a27-b9d8-225d6ed4385a">here</a>.<br /><br />One option I found is to <a href="http://www.sqlteam.com/item.asp?ItemID=23185">write a programming using .NET 2.0 and the SQL Management Object (SMO)</a>.  Unfortunately time is not a luxury I have and I have an immediate need to script out the each object in a database into individual files.  So I started down the path of script out each object individual.  <br /><br />Guess what?  It has its own set of problems.  First starters, there is not an option to generate a script that contains both the DROP and CREATE statements.  Instead what I do is generate the CREATE statement to a query window.  Next I generate the DROP statement to the clipboard followed by pasting the clipboard content to the query window.  Needless to say, this is a painful process, and I have hundreds of database objects to script out.<br /><br />I can’t believe the model used for generating scripts in previous versions of SQL Server did not make it into SQL Server 2005.  I would have expected the same functionality at a minimum, and possibly an improvement on past versions.  But I would never have guess it was removed completely.</p>
 
 
-
     <p><a href="/2006/05/04/limited-scripting-in-sql-server-2005/">Continue reading &rarr;</a></p>
 
     <p class="post-meta">Posted by Kirby Turner on May 4, 2006
      in <a class='category' href='/category/programming/'>programming</a>.
     Tagged in <a class='tag' href='/tag/sql-server/'>sql server</a>.
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2006/05/03/ws-workbench-coming-along-nicely/">WS-Workbench Coming Along Nicely</a>
-    </h2>
-    
-    <p><a href="http://www.thecave.com/images/blogimages/swirl-20060503.gif"><img src="http://www.thecave.com/images/blogimages/swirl-20060503.gif" width="50%" border="1" align="left" /></a>
-Work on <a href="http://www.whitepeaksoftware.com/">White Peak Software</a>’s next product, WS-Workbench (also called Swirl internally) is coming along nicely as you can see from this screen shot.  The first beta should be ready soon.  Post a comment or send me an email if you are interested in beta testing WS-Workbench once it is ready.</p>
-
-
-
-    <p><a href="/2006/05/03/ws-workbench-coming-along-nicely/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on May 3, 2006
-     in <a class='category' href='/category/programming/'>programming</a>.
-    Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>, <a class='tag' href='/tag/white-peak-software/'>white peak software</a>.
     </p>
 </div>
 <hr>
@@ -336,6 +328,8 @@ Work on <a href="http://www.whitepeaksoftware.com/">White Peak Software</a>’s 
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/" title="How To Do A Case Insensitive Search Using Parse SDK">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                
                 <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/" title="How To Present An Alert View Using UIAlertController When You Don't Have A View Controller">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
                 
                 <li><a href="/2015/09/21/tags-and-categories/" title="Tags And Categories">Tags And Categories</a></li>
@@ -343,8 +337,6 @@ Work on <a href="http://www.whitepeaksoftware.com/">White Peak Software</a>’s 
                 <li><a href="/2015/09/10/trying-something-new-to-avoid-feast-or-famine/" title="Trying Something New To Avoid Feast Or Famine">Trying Something New To Avoid Feast Or Famine</a></li>
                 
                 <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/" title="My Upcoming Share Extension Talk At 360idev-Min">My Upcoming Share Extension Talk At 360idev-Min</a></li>
-                
-                <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/" title="Wish I Could Help But It's Not My App">Wish I Could Help But It's Not My App</a></li>
                 
                 </ul>                
             </div>

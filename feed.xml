@@ -5,35 +5,83 @@
     <description>The blog site for Kirby Turner, an independent software developer, where he shares tips and advice for programmers, indie devs, and solopreneurs.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 30 Sep 2015 15:57:23 -0400</pubDate>
-    <lastBuildDate>Wed, 30 Sep 2015 15:57:23 -0400</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <pubDate>Thu, 03 Dec 2015 17:28:57 -0500</pubDate>
+    <lastBuildDate>Thu, 03 Dec 2015 17:28:57 -0500</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>How To Do A Case Insensitive Search Using Parse SDK</title>
+        <description>&lt;p&gt;I recently came across this question about searching using the Parse SDK for iOS. Simon asks:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What would be the best practice for search in a large user database and return e..g 10 first results based on name or email?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I’ve been doing a lot with &lt;a href=&quot;https://www.parse.com&quot;&gt;Parse&lt;/a&gt; recently, from building a new iOS app to adding a license key &lt;a href=&quot;http://www.whitepeaksoftware.com/licenselookup&quot;&gt;lookup&lt;/a&gt; feature to my company website, and the reason Simon’s question caught my attention was because I asked myself a similar question the other day when working on the license key lookup feature.&lt;/p&gt;
+
+&lt;p&gt;The license key data comes from my order processing provider. A customer who has lost they license key can visit my website and retrieve for their license information by entering their email address. The problem, however, is that the person might enter the email address using a different case than used when the order was placed. And Parse does not have a way to perform a case insensitive search on string values.&lt;/p&gt;
+
+&lt;p&gt;So how do you get around this problem? And as Simon asks, what are some best practices for searching data in Parse?&lt;/p&gt;
+
+&lt;h2 id=&quot;force-strings-to-all-lowercase&quot;&gt;Force Strings To All Lowercase&lt;/h2&gt;
+
+&lt;p&gt;For starters, you should force all string values that can be searched to lower case, and do the same with the search string entered by the user. This produces the same effect as performing a case insensitive search while getting around the fact that Parse, as well as other types of data stores, doesn’t support case insensitive searches.&lt;/p&gt;
+
+&lt;p&gt;While storing the string value in all lowercase works fine for some value types, such as an email address, it’s not ideal for other value types. A person’s first and last names are not something you want to store in lowercase only. After all, you will likely display the person’s name on a profile screen or in an email message, and you want to display the name exactly as entered by the person.&lt;/p&gt;
+
+&lt;p&gt;So how do you search by data such as a first or last name without the ability to perform a case insensitive search? Simple. You create a search field for each.&lt;/p&gt;
+
+&lt;h2 id=&quot;define-search-fields&quot;&gt;Define Search Fields&lt;/h2&gt;
+
+&lt;p&gt;Let’s say your Parse class contains three properties, &lt;code class=&quot;highlighter-rouge&quot;&gt;firstName&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;lastName&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;email&lt;/code&gt;. All three contain data entered by a person. When you add a new instance of this class to Parse containing the data entered by the person, you can force the value for &lt;code class=&quot;highlighter-rouge&quot;&gt;email&lt;/code&gt; to be lowercase (e.g., &lt;code class=&quot;highlighter-rouge&quot;&gt;-[NSString lowercaseString]&lt;/code&gt; if you’re using Objective-C). However, you don’t want to do this for &lt;code class=&quot;highlighter-rouge&quot;&gt;firstName&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;lastName&lt;/code&gt;. Instead, you want to use search fields for those two properties.&lt;/p&gt;
+
+&lt;p&gt;To search on &lt;code class=&quot;highlighter-rouge&quot;&gt;firstName&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;lastName&lt;/code&gt;, add two additional properties to your class, &lt;code class=&quot;highlighter-rouge&quot;&gt;firstNameSearch&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;lastNameSearch&lt;/code&gt;. Then, just as you did with &lt;code class=&quot;highlighter-rouge&quot;&gt;email&lt;/code&gt;, force the values for &lt;code class=&quot;highlighter-rouge&quot;&gt;firstNameSearch&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;lastNameSearch&lt;/code&gt; to be all lowercase before saving the data to Parse. Now when you want to perform a search, use the search properties &lt;code class=&quot;highlighter-rouge&quot;&gt;firstNameSearch&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;lastNameSearch&lt;/code&gt; instead of the other two.&lt;/p&gt;
+
+&lt;p&gt;Congratulations! You’ve achieved case insensitive searching in an environment that does not support it.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 03 Dec 2015 10:16:56 -0500</pubDate>
+        <link>http://www.thecave.com/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/</guid>
+        
+        <category>ios</category>
+        
+        <category>objective-c</category>
+        
+        <category>parse.com</category>
+        
+        
+        <category>programming</category>
+        
+      </item>
     
       <item>
         <title>How To Present An Alert View Using UIAlertController When You Don&#39;t Have A View Controller</title>
-        <description>&lt;p&gt;Over the summer I updated a number of apps to iOS 9. A common tasks for me was replacing the deprecated &lt;code&gt;UIAlertView&lt;/code&gt; with new &lt;code&gt;UIAlertController&lt;/code&gt; class. Generally this is easy to do, but there is one scenario that &lt;code&gt;UIAlertView&lt;/code&gt; handles well that &lt;code&gt;UIAlertController&lt;/code&gt; doesn’t support at all: displaying an alert view from parts of your code without a reference to the current view controller, for instance, displaying an alert view from the app delegate.&lt;/p&gt;
+        <description>&lt;p&gt;Over the summer I updated a number of apps to iOS 9. A common tasks for me was replacing the deprecated &lt;code class=&quot;highlighter-rouge&quot;&gt;UIAlertView&lt;/code&gt; with new &lt;code class=&quot;highlighter-rouge&quot;&gt;UIAlertController&lt;/code&gt; class. Generally this is easy to do, but there is one scenario that &lt;code class=&quot;highlighter-rouge&quot;&gt;UIAlertView&lt;/code&gt; handles well that &lt;code class=&quot;highlighter-rouge&quot;&gt;UIAlertController&lt;/code&gt; doesn’t support at all: displaying an alert view from parts of your code without a reference to the current view controller, for instance, displaying an alert view from the app delegate.&lt;/p&gt;
 
-&lt;p&gt;Trying to display an alert view using &lt;code&gt;UIAlertController&lt;/code&gt; from a non-UI specific class such as the app delegate is a &lt;a href=&quot;http://stackoverflow.com/questions/26952061/present-uialertcontroller-from-appdelegate&quot;&gt;common problem&lt;/a&gt;, and developers have found different &lt;a href=&quot;http://stackoverflow.com/questions/26554894/how-to-present-uialertcontroller-when-not-in-a-view-controller&quot;&gt;workarounds&lt;/a&gt;. &lt;a href=&quot;http://stackoverflow.com/a/30941356&quot;&gt;One particular solution&lt;/a&gt; that caught my eye was this one from agilityvision, who writes:&lt;/p&gt;
+&lt;p&gt;Trying to display an alert view using &lt;code class=&quot;highlighter-rouge&quot;&gt;UIAlertController&lt;/code&gt; from a non-UI specific class such as the app delegate is a &lt;a href=&quot;http://stackoverflow.com/questions/26952061/present-uialertcontroller-from-appdelegate&quot;&gt;common problem&lt;/a&gt;, and developers have found different &lt;a href=&quot;http://stackoverflow.com/questions/26554894/how-to-present-uialertcontroller-when-not-in-a-view-controller&quot;&gt;workarounds&lt;/a&gt;. &lt;a href=&quot;http://stackoverflow.com/a/30941356&quot;&gt;One particular solution&lt;/a&gt; that caught my eye was this one from agilityvision, who writes:&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;At WWDC I stopped in at one of the labs and asked an Apple Engineer this same question: “What was the best practice for displaying a UIAlertController?” And he said they had been getting this question a lot and we joked that they should have had a session on it. He said that internally Apple is creating a UIWindow with a transparent UIViewController and then presenting the UIAlertController on it.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;This got me thinking about how I would solve the problem for apps I work on. Liking the approach mentioned by the Apple Engineer, I decided to give that a try. But unlike some of the other solutions that use a category, I decided to create a new class, &lt;code&gt;WPSAlertController&lt;/code&gt;, that is a subclass of &lt;code&gt;UIAlertController&lt;/code&gt;, and provide additional convenience methods making it possible to display an alert view with a single call…like this:&lt;/p&gt;
+&lt;p&gt;This got me thinking about how I would solve the problem for apps I work on. Liking the approach mentioned by the Apple Engineer, I decided to give that a try. But unlike some of the other solutions that use a category, I decided to create a new class, &lt;code class=&quot;highlighter-rouge&quot;&gt;WPSAlertController&lt;/code&gt;, that is a subclass of &lt;code class=&quot;highlighter-rouge&quot;&gt;UIAlertController&lt;/code&gt;, and provide additional convenience methods making it possible to display an alert view with a single call…like this:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;NSString *title = ...
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;NSString *title = ...
 NSString *message = ...
 [WPSAlertController presentOkayAlertWithTitle:title message:message];
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;Or display the &lt;code&gt;localizedDescription&lt;/code&gt; from an &lt;code&gt;NSError&lt;/code&gt; object:&lt;/p&gt;
+&lt;p&gt;Or display the &lt;code class=&quot;highlighter-rouge&quot;&gt;localizedDescription&lt;/code&gt; from an &lt;code class=&quot;highlighter-rouge&quot;&gt;NSError&lt;/code&gt; object:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;[WPSAlertController presentOkayAlertWithError:error];
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[WPSAlertController presentOkayAlertWithError:error];
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;And of course, since &lt;code&gt;WPSAlertController&lt;/code&gt; is a subclass of &lt;code&gt;UIAlertController&lt;/code&gt;, you can create your alert the same way as you do using &lt;code&gt;UIAlertController&lt;/code&gt;. The only difference is you call &lt;code&gt;show&lt;/code&gt; to present the alert when you don’t have a view controller. For example:&lt;/p&gt;
+&lt;p&gt;And of course, since &lt;code class=&quot;highlighter-rouge&quot;&gt;WPSAlertController&lt;/code&gt; is a subclass of &lt;code class=&quot;highlighter-rouge&quot;&gt;UIAlertController&lt;/code&gt;, you can create your alert the same way as you do using &lt;code class=&quot;highlighter-rouge&quot;&gt;UIAlertController&lt;/code&gt;. The only difference is you call &lt;code class=&quot;highlighter-rouge&quot;&gt;show&lt;/code&gt; to present the alert when you don’t have a view controller. For example:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;NSString *title = ...
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;NSString *title = ...
 NSString *message = ...
 WPSAlertController *alertController = [WPSAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
 [alertController addAction:[UIAlertAction actionWithTitle:@&quot;OK&quot; style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -42,8 +90,9 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 
 [alertController show];
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;You can grab the &lt;a href=&quot;https://github.com/kirbyt/WPSKit/blob/master/WPSKit/UIKit/WPSAlertController.m&quot;&gt;source code for &lt;code&gt;WPSAlertController&lt;/code&gt;&lt;/a&gt; from my github repository and include it in your project, or use the entire &lt;a href=&quot;https://github.com/kirbyt/WPSKit&quot;&gt;WPSKit.framework&lt;/a&gt; in your project if you want to use &lt;code&gt;WPSAlertController&lt;/code&gt; plus other handy classes that I use when creating iOS apps.&lt;/p&gt;
+&lt;p&gt;You can grab the &lt;a href=&quot;https://github.com/kirbyt/WPSKit/blob/master/WPSKit/UIKit/WPSAlertController.m&quot;&gt;source code for &lt;code class=&quot;highlighter-rouge&quot;&gt;WPSAlertController&lt;/code&gt;&lt;/a&gt; from my github repository and include it in your project, or use the entire &lt;a href=&quot;https://github.com/kirbyt/WPSKit&quot;&gt;WPSKit.framework&lt;/a&gt; in your project if you want to use &lt;code class=&quot;highlighter-rouge&quot;&gt;WPSAlertController&lt;/code&gt; plus other handy classes that I use when creating iOS apps.&lt;/p&gt;
 </description>
         <pubDate>Mon, 28 Sep 2015 15:46:02 -0400</pubDate>
         <link>http://www.thecave.com/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/</link>
@@ -64,7 +113,7 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 
 &lt;p&gt;Tag support is provided in Jekyll, but I wanted something slightly different. I want the list of tags to appear at the end of a post just like the categories have for last couple of years. I searched for different ways to support tags with Jekyll, but I didn’t find anything suiting my needs. Then it occurred to me I could tweak the category plugins I use to work with tags, so that’s exactly what I did.&lt;/p&gt;
 
-&lt;p&gt;The &lt;a href=&quot;https://github.com/recurser/jekyll-plugins&quot;&gt;Jekyll category plugins&lt;/a&gt; I use come from Dave Perretter. I made copies of &lt;em&gt;category_generator.rb&lt;/em&gt; and &lt;em&gt;category_list_tags.rb&lt;/em&gt; naming the new plugins &lt;em&gt;tag_generator.rb&lt;/em&gt; and &lt;em&gt;tag_list_tags.rb&lt;/em&gt;. Then I replace references to &lt;code&gt;categories&lt;/code&gt; and &lt;code&gt;category&lt;/code&gt; with &lt;code&gt;tags&lt;/code&gt; and &lt;code&gt;tag&lt;/code&gt; in the source code. And BAM! I now have tag support at thecave.com.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;https://github.com/recurser/jekyll-plugins&quot;&gt;Jekyll category plugins&lt;/a&gt; I use come from Dave Perretter. I made copies of &lt;em&gt;category_generator.rb&lt;/em&gt; and &lt;em&gt;category_list_tags.rb&lt;/em&gt; naming the new plugins &lt;em&gt;tag_generator.rb&lt;/em&gt; and &lt;em&gt;tag_list_tags.rb&lt;/em&gt;. Then I replace references to &lt;code class=&quot;highlighter-rouge&quot;&gt;categories&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;category&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;tags&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;tag&lt;/code&gt; in the source code. And BAM! I now have tag support at thecave.com.&lt;/p&gt;
 
 &lt;p&gt;You can find the source code for the plugins in my site’s github &lt;a href=&quot;https://github.com/kirbyt/site-www-thecave-com/tree/master/_plugins&quot;&gt;repo&lt;/a&gt;.&lt;/p&gt;
 </description>
@@ -321,23 +370,6 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
         
         
         <category>rant</category>
-        
-      </item>
-    
-      <item>
-        <title>Two Years Ago Today</title>
-        <description>&lt;p&gt;We moved to Stowe two years ago today. It seems like we’ve been here a lot longer, but in a good way.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 15 Aug 2015 09:46:04 -0400</pubDate>
-        <link>http://www.thecave.com/2015/08/15/two-years-ago-today/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2015/08/15/two-years-ago-today/</guid>
-        
-        <category>family</category>
-        
-        <category>stowe</category>
-        
-        
-        <category>personal</category>
         
       </item>
     

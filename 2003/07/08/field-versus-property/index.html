@@ -76,15 +76,15 @@
                 </li>
                 
                 <li>
-                    <a href="/about.html">About</a>
+                    <a href="/about/">About</a>
                 </li>
                 
                 <li>
-                    <a href="/archive.html">Archive</a>
+                    <a href="/archive/">Archive</a>
                 </li>
                 
                 <li>
-                    <a href="/categories.html">Categories & Tags</a>
+                    <a href="/categories/">Categories & Tags</a>
                 </li>
                 
             </ul>
@@ -118,7 +118,7 @@
 
 				<p>.NET class structures defined in the CLR can have public fields and public properties among other things.  On the surface, a public field and a public property appear to be the same.  The .NET Framework Glossary even says a property “is like a public field.”  However the two are not same. The most obvious difference is in the declaration of the two. For example, consider the follow class:</p>
 
-<pre><code>public class Person
+<div class="highlighter-rouge"><pre class="highlight"><code>public class Person
 {
     public string Name;
 
@@ -126,20 +126,23 @@
     public string Email{ get{ return _email; } set{ _email = value; } }
 }
 </code></pre>
+</div>
 
 <p>In the code snippet above, Name is a public field while Email is a public property.  However if you were to use an instance of the class Person, you would not be able to tell what is defined as a field versus property. The two appear to be the same.  Example:</p>
 
-<pre><code>Person p = new Person();
+<div class="highlighter-rouge"><pre class="highlight"><code>Person p = new Person();
 p.Name = "Kirby";
 p.Email = "kirby@thecave.com";
 </code></pre>
+</div>
 
 <p>A property has many advantages over a field and I personally rarely, if ever, use public fields.  And today I learned yet another reason for using a public property over a public field.</p>
 
 <p>Some functionality built into the .NET Framework relies on reflection to perform specific tasks.  For example, within ASP.NET you can use DataBinder.Eval() to reference properties of a class instance stored in the Container.DataItem.  Example:</p>
 
-<pre><code>&lt;%# DataBinder.Eval( Container.DataItem, "Name" ) %&gt;
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;%# DataBinder.Eval( Container.DataItem, "Name" ) %&gt;
 </code></pre>
+</div>
 
 <p>Using the Person class defined above, the DataBinder.Eval() call to retrieve the value of Name will fail.  The exception message will state that the property Name is not defined in the class Person, which is true.  Name is defined as a field not a property. Another area where the difference between a property and a field is realized is within custom components that have design time properties.  Visual Studio.NET’s Designer expects properties to be defined as properties and not fields.</p>
 
@@ -190,6 +193,8 @@ p.Email = "kirby@thecave.com";
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/" title="How To Do A Case Insensitive Search Using Parse SDK">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                
                 <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/" title="How To Present An Alert View Using UIAlertController When You Don't Have A View Controller">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
                 
                 <li><a href="/2015/09/21/tags-and-categories/" title="Tags And Categories">Tags And Categories</a></li>
@@ -197,8 +202,6 @@ p.Email = "kirby@thecave.com";
                 <li><a href="/2015/09/10/trying-something-new-to-avoid-feast-or-famine/" title="Trying Something New To Avoid Feast Or Famine">Trying Something New To Avoid Feast Or Famine</a></li>
                 
                 <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/" title="My Upcoming Share Extension Talk At 360idev-Min">My Upcoming Share Extension Talk At 360idev-Min</a></li>
-                
-                <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/" title="Wish I Could Help But It's Not My App">Wish I Could Help But It's Not My App</a></li>
                 
                 </ul>                
             </div>
