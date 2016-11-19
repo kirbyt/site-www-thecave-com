@@ -14,7 +14,7 @@ layout: page
             {{ post.subtitle }}
         </h3>
         {% endif %}
-        {{ post.excerpt || markdownify }}
+        {{ post.excerpt | markdownify }}
 
         <p><a href="{{ post.url | prepend: site.baseurl }}">Continue reading &rarr;</a></p>
 
