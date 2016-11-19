@@ -2,6 +2,7 @@
 layout: post
 title: "From Trace To Slopes"
 date: 2016-11-19 10:52:31 -0500
+header-img: "img/bg-07.jpg"
 category: personal
 tags: [python, ios, snowboarding, open source]
 ---
