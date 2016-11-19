@@ -230,13 +230,18 @@ module Jekyll
     #  +date+ is the date object to format as HTML.
     #
     # Returns string
-    def date_to_html_string(date)
-      result = '<span class="month">' + date.strftime('%b').upcase + '</span> '
-      result += date.strftime('<span class="day">%d</span> ')
-      result += date.strftime('<span class="year">%Y</span> ')
-      result
-    end
+    #
+    # Available in category_generator.rb
+    #
+    # def date_to_html_string(date)
+    #   result = '<span class="month">' + date.strftime('%b').upcase + '</span> '
+    #   result += date.strftime('<span class="day">%d</span> ')
+    #   result += date.strftime('<span class="year">%Y</span> ')
+    #   result
+    # end
 
   end
 
 end
+
+Liquid::Template.register_filter(Jekyll::Filters)
