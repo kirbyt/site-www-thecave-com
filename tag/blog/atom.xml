@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: blog | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
+  <link href="http://www.thecave.com/tag/blog/atom.xml" rel="self"/>
+  <link href="http://www.thecave.com/"/>
+  <updated>2016-12-28T09:33:57-05:00</updated>
+  <id>http://www.thecave.com/</id>
+  <author>
+    <name><![CDATA[Kirby Turner]]></name>
+    
+  </author>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Tags And Categories]]></title>
+    <link href="http://www.thecave.com/2015/09/21/tags-and-categories/"/>
+    <updated>2015-09-21T19:45:44-04:00</updated>
+    <id>http://www.thecave.com/2015/09/21/tags-and-categories</id>
+    <content type="html"><![CDATA[<p>I’ve been doing a bit of tinkering here at thecave. I realized I was using categories as if they were tags and for one simple reason. I didn’t have a way to support tags. That is, until now.</p>
+
+<p>Tag support is provided in Jekyll, but I wanted something slightly different. I want the list of tags to appear at the end of a post just like the categories have for last couple of years. I searched for different ways to support tags with Jekyll, but I didn’t find anything suiting my needs. Then it occurred to me I could tweak the category plugins I use to work with tags, so that’s exactly what I did.</p>
+
+<p>The <a href="https://github.com/recurser/jekyll-plugins">Jekyll category plugins</a> I use come from Dave Perretter. I made copies of <em>category_generator.rb</em> and <em>category_list_tags.rb</em> naming the new plugins <em>tag_generator.rb</em> and <em>tag_list_tags.rb</em>. Then I replace references to <code class="highlighter-rouge">categories</code> and <code class="highlighter-rouge">category</code> with <code class="highlighter-rouge">tags</code> and <code class="highlighter-rouge">tag</code> in the source code. And BAM! I now have tag support at thecave.com.</p>
+
+<p>You can find the source code for the plugins in my site’s github <a href="https://github.com/kirbyt/site-www-thecave-com/tree/master/_plugins">repo</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Blogging The Little Things]]></title>
+    <link href="http://www.thecave.com/2015/08/07/blogging-the-little-things/"/>
+    <updated>2015-08-07T10:11:57-04:00</updated>
+    <id>http://www.thecave.com/2015/08/07/blogging-the-little-things</id>
+    <content type="html"><![CDATA[<p>I read a post from Shubham Jain, by way of <a href="http://shapeof.com/archives/2015/7/coffee_coder_-_blog_little_things.html">Gus Mueller</a>, about <a href="http://coffeecoder.net/blog/blog-little-things/">blogging the little things</a>. In the post, Shubham says:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>There are lots of things that can be blogged about and yet, we are stuck in the dilemma of, – "Is it worth something to write?". The fear of being insignificant aka "Nobody will read it" syndrome, inhibits us from writing that simple thing that might have helped many people.
+</code></pre>
+</div>
+
+<p>I recently talked about my <a href="http://www.thecave.com/2015/07/02/fear/">fears</a> and I mentioned some of the things I’m trying to do to help overcome those fears. And blogging more about the little things seems like another way for me to overcome some of the fears I’ve been having.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Do I Need Another Twitter Account]]></title>
+    <link href="http://www.thecave.com/2015/06/14/do-i-need-another-twitter-account/"/>
+    <updated>2015-06-14T23:09:24-04:00</updated>
+    <id>http://www.thecave.com/2015/06/14/do-i-need-another-twitter-account</id>
+    <content type="html"><![CDATA[<p>Earlier tonight I setup a new Twitter account that tweets a link each time I publish a new post here at thecave.com. The new Twitter account is <a href="https://twitter.com/thecave_com/">@thecave_com</a>. Of course now that this is setup, I’m wondering…Do I really need a separate Twitter account, or should I just tweet the links from my <a href="https://twitter.com/kiryt/">@kirbyt</a> account?</p>
+
+<p>I guess I will keep the two separate accounts, and I’ll retweet via @kirbyt any links that I feel might be of greater interest, which is basically what I’ve always done. So if you want to know each time a new post is published, follow @thecave_com. Otherwise just keep doing what you’ve been doing.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[thecave On Twitter]]></title>
+    <link href="http://www.thecave.com/2015/06/14/thecave-on-twitter/"/>
+    <updated>2015-06-14T22:31:52-04:00</updated>
+    <id>http://www.thecave.com/2015/06/14/thecave-on-twitter</id>
+    <content type="html"><![CDATA[<p>My friend Uli <a href="https://twitter.com/uliwitness/status/600656348272001024">asked</a>:</p>
+
+<blockquote>
+  <p>Do you have a Twitter feed that lets me know when you post something new?</p>
+</blockquote>
+
+<p>It only took me a month, but I finally have a Twitter account for thecave. Follow <a href="https://twitter.com/thecave_com/">@thecave_com</a> on Twitter if you want to know when I post something new to this blog. And as always you can subscribe to the <a href="http://www.thecave.com/feed.xml">RSS feed</a> if you prefer feed readers over Twitter.</p>
+
+<h2 id="the-technical-how-to">The Technical How To</h2>
+
+<p>There are a few different ways to automate the process of posting a link on Twitter when you publish a new blog post. <a href="http://twitterfeed.com">Twitter Feed</a> is one service I tried. It is fast and easy to setup, and it includes options such as including the title, description, or title and description in the tweet. Even though Twitter Feed is a cinch to setup, I decided to go with <a href="https://ifttt.com/">If This Then That (IFTTT)</a> instead.</p>
+
+<p>Using IFTTT create a new recipe. Select <em>Feed</em> for the trigger and <em>Twitter</em> for the action. Be sure to connect your Twitter account to the IFTTT if you have not already done so. And that’s it. Next time you make a blog post, IFTTT will update your Twitter account with the title and link to the post.</p>
+
+<p>And thanks <a href="https://twitter.com/uliwitness">@uliwitness</a> for suggesting I do this.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Where I Blog These Days]]></title>
+    <link href="http://www.thecave.com/2015/05/19/where-i-blog-these-days/"/>
+    <updated>2015-05-19T09:40:11-04:00</updated>
+    <id>http://www.thecave.com/2015/05/19/where-i-blog-these-days</id>
+    <content type="html"><![CDATA[<p>I’ve recently, and “recently” as in the last couple of years, cut back on the number of blog sites I have. I’m down to three sites now, and that seems manageable. The sites are:</p>
+
+<ul>
+  <li><a href="http://www.thecave.com/">thecave.com</a><br />
+  That’s this site. It’s my personal blog, and it’s where I post most often. I talk about everything from what’s going on with me personally to snowboarding to programming. The site is broken down into categories, and I have plans to publish an RSS feed for each category so readers can filter out topics they might consider noise.</li>
+  <li><a href="http://blog.whitepeaksoftware.com/">blog.whitepeaksoftware.com</a><br />
+  This is my company blog site. The focus of this site is to talk about the company and the products I sell. Granted I’m doing a horrible job at keeping up with the posts. That’s probably one of the many reasons my stuff doesn’t sell as well as it did a few years back.</li>
+  <li><a href="http://www.rowanturner.net/">rowanturner.net</a><br />
+  Yep, my son has his own website. But he has no interest in making posts here, so I do it for him. I usually post pictures and videos of Rowan and his friends off having fun. My mom might be the only person reading this site regularly, but that’s fine. I’ll keep posting because I like looking back on past articles and reliving fun moments with my kid.</li>
+</ul>
+
+<p>These sites each have RSS feeds, so you don’t have to remember to visit. And some day I’ll do a better job of mentioning when new posts are available on the various social networks for those who don’t want to subscribe to the feeds.</p>
+
+]]></content>
+  </entry>
+  
+</feed>

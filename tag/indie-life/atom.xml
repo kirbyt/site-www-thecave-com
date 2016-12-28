@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: business | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
-  <link href="http://www.thecave.com/category/business/atom.xml" rel="self"/>
+  <title><![CDATA[Tag: indie life | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
+  <link href="http://www.thecave.com/tag/indie-life/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
   <updated>2016-12-28T09:33:57-05:00</updated>
   <id>http://www.thecave.com/</id>
@@ -127,32 +127,6 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Retiring My CSV Editor]]></title>
-    <link href="http://www.thecave.com/2015/08/18/retiring-my-csv-editor/"/>
-    <updated>2015-08-18T11:23:09-04:00</updated>
-    <id>http://www.thecave.com/2015/08/18/retiring-my-csv-editor</id>
-    <content type="html"><![CDATA[<p>Today I did something that I’ve been saying I will do for a long time. I retired my CSV editor, <a href="http://blog.whitepeaksoftware.com/2015/08/18/killinks-retirement/">Killink</a>.</p>
-
-<p>The first release of Killink CSV Editor was back on March 22, 2007, and over the years it has done well despite the fact that I haven’t been actively working on the app or marketing it. Killink had great potential, especially if I had followed the business advice from those smarter than me to focus on the enterprise, but I honestly lost interest in the editor after I started writing apps for Mac and iOS.</p>
-
-<p>I did start work on a Mac version of Killink CSV Editor, and I have still have a semi-working version of it on my iPhone. But I struggled to create the user experience that I wanted on those two platforms. Given enough time I could have conquered the UX challenges, but I knew the market for the editor was small and spending the extra time to do what I wanted didn’t make good business sense. So the Mac and iOS versions never shipped.</p>
-
-<p>I always found the customers of Killink CSV Editor fascinating. While we developer types view CSV as antiquated technology, these customers work with CSV files regularly. And most are business users from large, well known companies. We developer types often times forget that people around the world are using old technologies like CSV daily to do their job, and they too would like a better way to work with old tech like CSV files. Killink CSV Editor was a better way for many for a number of years.</p>
-
-<p>It saddens me to retire Killink CSV Editor, but at the same time I feel like a burden has been lifted off my shoulders. The app is rock solid and support is minimum, but I have felt guilty for a long time about selling a software product that I know isn’t actively being worked on. And with the recent Windows 10 release, I finally decided now is the time to retire my CSV editor.</p>
-
-<p>I’ve heard many good things about Windows 10. But if I keep selling Killink to Windows users I will have no choice but to install it some day. And honestly, I don’t want to do that. I have zero interest in Windows these days.</p>
-
-<p>I do plan to continuing supporting licensed users of Killink CSV Editor, which I talk about over at the <a href="http://blog.whitepeaksoftware.com/2015/08/18/killinks-retirement/">company blog site</a>. The support load is minimum, so providing ongoing support isn’t a concern for me. Killink is a native Win32 app built using Delphi. It’s rock solid and hasn’t had a serious issue that I couldn’t resolve in email in years. So I’m happy to continue answering questions about Killink and helping folks if they happen to run into a problem. That said, I’m not looking forward to the emails I’m going to receive when people try to buy a new license.</p>
-
-<p>When I retired SMTP Diagnostics, another Windows app I sold for years, I received emails for nearly a year asking why it was no longer available and why I couldn’t make an exception this one time and sell a new license. Most of the time the people understood, but a few sent angry emails. I fully expect the same will happen with the retirement of Killink, and all I can say to those folks is sorry.</p>
-
-<p>Retiring my CSV editor ends another chapter in my long software career. I’m a bit sad by this, but I’m also excited by no longer having the mental burden that came with having my editor sit untouched for such a long time while people were still buying licenses for it.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[Maintain Your iOS App With Peak App Care]]></title>
     <link href="http://www.thecave.com/2015/08/11/maintain-your-ios-app-with-peak-app-care/"/>
     <updated>2015-08-11T07:05:42-04:00</updated>
@@ -192,6 +166,22 @@
 <p>Like any product I need to market Peak App Care if it is to be a success. My first step is to let my existing clients know about this new offering, which I’ve already done. After that I need to start making others companies within my target audience aware of Peak App Care, and that is where things start to get tougher for me. Just posting a web site isn’t going to bring in customers. I must find ways to reach my target audience, and thankfully I have some ideas on how to make that happen.</p>
 
 <p>As for my company reboot, I feel this is a good first step. I don’t know if Peak App Care will be a success or not. I’m hopeful it will be. But if I fail to bring on new subscribers over the next few months, at least I won’t feel like I have wasted a lot of my time or money. This is a big switch in thinking when I compare it to the months I’ve spent in the past working on other products that either failed or were never even released into the wild.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Blogging The Little Things]]></title>
+    <link href="http://www.thecave.com/2015/08/07/blogging-the-little-things/"/>
+    <updated>2015-08-07T10:11:57-04:00</updated>
+    <id>http://www.thecave.com/2015/08/07/blogging-the-little-things</id>
+    <content type="html"><![CDATA[<p>I read a post from Shubham Jain, by way of <a href="http://shapeof.com/archives/2015/7/coffee_coder_-_blog_little_things.html">Gus Mueller</a>, about <a href="http://coffeecoder.net/blog/blog-little-things/">blogging the little things</a>. In the post, Shubham says:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>There are lots of things that can be blogged about and yet, we are stuck in the dilemma of, – "Is it worth something to write?". The fear of being insignificant aka "Nobody will read it" syndrome, inhibits us from writing that simple thing that might have helped many people.
+</code></pre>
+</div>
+
+<p>I recently talked about my <a href="http://www.thecave.com/2015/07/02/fear/">fears</a> and I mentioned some of the things I’m trying to do to help overcome those fears. And blogging more about the little things seems like another way for me to overcome some of the fears I’ve been having.</p>
 
 ]]></content>
   </entry>

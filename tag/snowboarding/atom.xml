@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: personal | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
-  <link href="http://www.thecave.com/category/personal/atom.xml" rel="self"/>
+  <title><![CDATA[Tag: snowboarding | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
+  <link href="http://www.thecave.com/tag/snowboarding/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
   <updated>2016-12-28T09:33:57-05:00</updated>
   <id>http://www.thecave.com/</id>
@@ -39,47 +39,54 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Two Years Ago Today]]></title>
-    <link href="http://www.thecave.com/2015/08/15/two-years-ago-today/"/>
-    <updated>2015-08-15T09:46:04-04:00</updated>
-    <id>http://www.thecave.com/2015/08/15/two-years-ago-today</id>
-    <content type="html"><![CDATA[<p>We moved to Stowe two years ago today. It seems like we’ve been here a lot longer, but in a good way.</p>
+    <title type="html"><![CDATA[Snow River At Stowe]]></title>
+    <link href="http://www.thecave.com/2015/05/09/snow-river-at-stowe/"/>
+    <updated>2015-05-09T11:24:25-04:00</updated>
+    <id>http://www.thecave.com/2015/05/09/snow-river-at-stowe</id>
+    <content type="html"><![CDATA[<p>This looks like it was a lot of fun. Wish I had known about it when it happened last year.</p>
+
+<p><div class="youtube-video"><figure><iframe width="560" height="420" src="https://www.youtube.com/embed/wfWUHKUt-Q0?color=white&theme=light"></iframe></figure></div></p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Video of Stowe, Vermont]]></title>
-    <link href="http://www.thecave.com/2015/06/18/video-of-stowe-vermont/"/>
-    <updated>2015-06-18T22:22:58-04:00</updated>
-    <id>http://www.thecave.com/2015/06/18/video-of-stowe-vermont</id>
-    <content type="html"><![CDATA[<p>My friend Ashley came across another video of Vermont. This time it’s about Stowe, the town I live in. Enjoy.</p>
+    <title type="html"><![CDATA[I Should Feel Guilty But I Don't]]></title>
+    <link href="http://www.thecave.com/2015/04/13/i-should-feel-guilty-but-i-dont/"/>
+    <updated>2015-04-13T20:15:11-04:00</updated>
+    <id>http://www.thecave.com/2015/04/13/i-should-feel-guilty-but-i-dont</id>
+    <content type="html"><![CDATA[<p>I played hooky from work afternoon. I should feel guilty but I don’t.</p>
 
-<p><div class="youtube-video"><figure><iframe width="560" height="420" src="https://www.youtube.com/embed/9_Wk5j_4Uc4?color=white&theme=light"></iframe></figure></div></p>
+<p>I picked up Rowan from school this afternoon, and we headed to the mountain. Unfortunately I forgot his skis boots, so we had to stop by the house. Then as we tried to get on the lift I realized I left our passes in our jackets. The temperature was in the 60, so we weren’t wearing our jackets. They were still at the house. The afternoon was off to a bad start, but our luck changed.</p>
 
-<p>The video is from <a href="http://www.vtscapes.com">VermontScapes</a>. Go checkout the site if you want to see more beautiful photos of Vermont and the Stowe area.</p>
+<p>We were able to get two runs in before the lifts closed thanks to the nice lifties that let us through without our passes. Also we ran into some friends in our first run, including a class mate of Rowan’s. After the lifts shut down for the day we hung out in the parking lot for a bit of après ski with friends. Then we headed to Rimrocks where we ran into more friends.</p>
+
+<p><img src="https://farm9.staticflickr.com/8776/16952950809_f0103c0255_z.jpg" alt="" /></p>
+
+<p>It was a great father son afternoon with wonderful friends, and when I’m 85 years old I’ll remember how much fun Rowan and I had today. I won’t remember the work I should have done today, and that’s why I don’t feel guilty about how I spent my time this afternoon.</p>
+
+<p><img src="https://farm9.staticflickr.com/8722/16951598160_95cb6df7cc_z.jpg" alt="" /></p>
+
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Essence Of Vermont]]></title>
-    <link href="http://www.thecave.com/2015/06/18/essence-of-vermont/"/>
-    <updated>2015-06-18T06:16:26-04:00</updated>
-    <id>http://www.thecave.com/2015/06/18/essence-of-vermont</id>
-    <content type="html"><![CDATA[<p>It’s no surprise I love living in Vermont in part because it’s different from other places I have lived. And this video from Skyworks really captures parts of why I love it here.</p>
+    <title type="html"><![CDATA[Driver X]]></title>
+    <link href="http://www.thecave.com/2015/03/09/driver-x/"/>
+    <updated>2015-03-09T16:11:50-04:00</updated>
+    <id>http://www.thecave.com/2015/03/09/driver-x</id>
+    <content type="html"><![CDATA[<p>I received my new pair of Burton Driver X snowboard boots this afternoon. Damn, these puppies are stiff, but that’s a good thing. I can’t wait to hit the hill with them in the morning. It’s going to be a whole new riding experience after wearing boots that I probably should’ve replaced a couple of seasons ago.</p>
 
-<p><div class="youtube-video"><figure><iframe width="560" height="420" src="https://www.youtube.com/embed/UBwqn9BRWhA?color=white&theme=light"></iframe></figure></div></p>
+<p><img src="https://farm8.staticflickr.com/7634/16766864701_a383cbd8cc_z.jpg" alt="" /></p>
+
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Do I Need Another Twitter Account]]></title>
-    <link href="http://www.thecave.com/2015/06/14/do-i-need-another-twitter-account/"/>
-    <updated>2015-06-14T23:09:24-04:00</updated>
-    <id>http://www.thecave.com/2015/06/14/do-i-need-another-twitter-account</id>
-    <content type="html"><![CDATA[<p>Earlier tonight I setup a new Twitter account that tweets a link each time I publish a new post here at thecave.com. The new Twitter account is <a href="https://twitter.com/thecave_com/">@thecave_com</a>. Of course now that this is setup, I’m wondering…Do I really need a separate Twitter account, or should I just tweet the links from my <a href="https://twitter.com/kiryt/">@kirbyt</a> account?</p>
-
-<p>I guess I will keep the two separate accounts, and I’ll retweet via @kirbyt any links that I feel might be of greater interest, which is basically what I’ve always done. So if you want to know each time a new post is published, follow @thecave_com. Otherwise just keep doing what you’ve been doing.</p>
-
+    <title type="html"><![CDATA[I Feel Guilty But]]></title>
+    <link href="http://www.thecave.com/2015/03/09/i-feel-guilty-but/"/>
+    <updated>2015-03-09T11:21:39-04:00</updated>
+    <id>http://www.thecave.com/2015/03/09/i-feel-guilty-but</id>
+    <content type="html"><![CDATA[<p>Our local hill received a surprised 6-7 inches of new snow overnight. I feel a little guilty for not letting Rowan skip the first half of school this morning so he could ride the fresh powder, but at the time, he didn’t ask to skip school so he’s loss.</p>
 ]]></content>
   </entry>
   

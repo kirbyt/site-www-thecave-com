@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: facebook | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
+  <link href="http://www.thecave.com/tag/facebook/atom.xml" rel="self"/>
+  <link href="http://www.thecave.com/"/>
+  <updated>2016-12-28T09:33:57-05:00</updated>
+  <id>http://www.thecave.com/</id>
+  <author>
+    <name><![CDATA[Kirby Turner]]></name>
+    
+  </author>
+
+  
+  <entry>
+    <title type="html"><![CDATA[My Thought on the FaceBook Privacy Issue]]></title>
+    <link href="http://www.thecave.com/2009/12/18/my-thought-on-the-facebook-privacy-issue/"/>
+    <updated>2009-12-18T00:00:00-05:00</updated>
+    <id>http://www.thecave.com/2009/12/18/my-thought-on-the-facebook-privacy-issue</id>
+    <content type="html"><![CDATA[<p>It’s the Internet. If you post it then you are sharing it with someone.  And who knows what that someone will do with it.  You want privacy then get off the Internet and stop sharing.</p>
+]]></content>
+  </entry>
+  
+</feed>

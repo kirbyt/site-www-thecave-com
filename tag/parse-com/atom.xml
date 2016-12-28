@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: parse.com | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
+  <link href="http://www.thecave.com/tag/parse-com/atom.xml" rel="self"/>
+  <link href="http://www.thecave.com/"/>
+  <updated>2016-12-28T09:33:57-05:00</updated>
+  <id>http://www.thecave.com/</id>
+  <author>
+    <name><![CDATA[Kirby Turner]]></name>
+    
+  </author>
+
+  
+  <entry>
+    <title type="html"><![CDATA[How To Do A Case Insensitive Search Using Parse SDK]]></title>
+    <link href="http://www.thecave.com/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/"/>
+    <updated>2015-12-03T10:16:56-05:00</updated>
+    <id>http://www.thecave.com/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk</id>
+    <content type="html"><![CDATA[<p>I recently came across this question about searching using the Parse SDK for iOS. Simon asks:</p>
+
+<blockquote>
+  <p>What would be the best practice for search in a large user database and return e..g 10 first results based on name or email?</p>
+</blockquote>
+
+<p>I’ve been doing a lot with <a href="https://www.parse.com">Parse</a> recently, from building a new iOS app to adding a license key <a href="http://www.whitepeaksoftware.com/licenselookup">lookup</a> feature to my company website, and the reason Simon’s question caught my attention was because I asked myself a similar question the other day when working on the license key lookup feature.</p>
+
+<p>The license key data comes from my order processing provider. A customer who has lost they license key can visit my website and retrieve for their license information by entering their email address. The problem, however, is that the person might enter the email address using a different case than used when the order was placed. And Parse does not have a way to perform a case insensitive search on string values.</p>
+
+<p>So how do you get around this problem? And as Simon asks, what are some best practices for searching data in Parse?</p>
+
+<h2 id="force-strings-to-all-lowercase">Force Strings To All Lowercase</h2>
+
+<p>For starters, you should force all string values that can be searched to lower case, and do the same with the search string entered by the user. This produces the same effect as performing a case insensitive search while getting around the fact that Parse, as well as other types of data stores, doesn’t support case insensitive searches.</p>
+
+<p>While storing the string value in all lowercase works fine for some value types, such as an email address, it’s not ideal for other value types. A person’s first and last names are not something you want to store in lowercase only. After all, you will likely display the person’s name on a profile screen or in an email message, and you want to display the name exactly as entered by the person.</p>
+
+<p>So how do you search by data such as a first or last name without the ability to perform a case insensitive search? Simple. You create a search field for each.</p>
+
+<h2 id="define-search-fields">Define Search Fields</h2>
+
+<p>Let’s say your Parse class contains three properties, <code class="highlighter-rouge">firstName</code>, <code class="highlighter-rouge">lastName</code>, and <code class="highlighter-rouge">email</code>. All three contain data entered by a person. When you add a new instance of this class to Parse containing the data entered by the person, you can force the value for <code class="highlighter-rouge">email</code> to be lowercase (e.g., <code class="highlighter-rouge">-[NSString lowercaseString]</code> if you’re using Objective-C). However, you don’t want to do this for <code class="highlighter-rouge">firstName</code> and <code class="highlighter-rouge">lastName</code>. Instead, you want to use search fields for those two properties.</p>
+
+<p>To search on <code class="highlighter-rouge">firstName</code> and <code class="highlighter-rouge">lastName</code>, add two additional properties to your class, <code class="highlighter-rouge">firstNameSearch</code> and <code class="highlighter-rouge">lastNameSearch</code>. Then, just as you did with <code class="highlighter-rouge">email</code>, force the values for <code class="highlighter-rouge">firstNameSearch</code> and <code class="highlighter-rouge">lastNameSearch</code> to be all lowercase before saving the data to Parse. Now when you want to perform a search, use the search properties <code class="highlighter-rouge">firstNameSearch</code> and <code class="highlighter-rouge">lastNameSearch</code> instead of the other two.</p>
+
+<p>Congratulations! You’ve achieved case insensitive searching in an environment that does not support it.</p>
+
+]]></content>
+  </entry>
+  
+</feed>

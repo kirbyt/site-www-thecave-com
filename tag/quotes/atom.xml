@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: quotes | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
+  <link href="http://www.thecave.com/tag/quotes/atom.xml" rel="self"/>
+  <link href="http://www.thecave.com/"/>
+  <updated>2016-12-28T09:33:57-05:00</updated>
+  <id>http://www.thecave.com/</id>
+  <author>
+    <name><![CDATA[Kirby Turner]]></name>
+    
+  </author>
+
+  
+  <entry>
+    <title type="html"><![CDATA[It's Better To Try An Idea]]></title>
+    <link href="http://www.thecave.com/2015/06/08/its-better-to-try-an-idea/"/>
+    <updated>2015-06-08T08:54:23-04:00</updated>
+    <id>http://www.thecave.com/2015/06/08/its-better-to-try-an-idea</id>
+    <content type="html"><![CDATA[<p>One of my favorite quotes about shipping:</p>
+
+<blockquote>
+  <p>It’s better to try an idea and see if it works than worry too much about its potential and never ship. - <a href="https://twitter.com/_davidsmith">@_davidsmith</a></p>
+</blockquote>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Stuck Working For Others]]></title>
+    <link href="http://www.thecave.com/2015/06/04/stuck-working-for-others/"/>
+    <updated>2015-06-04T16:31:38-04:00</updated>
+    <id>http://www.thecave.com/2015/06/04/stuck-working-for-others</id>
+    <content type="html"><![CDATA[<p>I love this quote from Amy Hoy:</p>
+
+<blockquote>
+  <p>If you only do what pays immediately, you will be stuck working for other people. Or you will be stuck doing what other people want you to do…forever.</p>
+</blockquote>
+
+<p>The quote come from her talk about <a href="https://unicornfree.com/2015/be-your-own-angel-a-revenue-model-for-slow-startups?inf_contact_key=33d23f3cc326dbb9432ca21551e5c05960ba9e460978b642f3bc69a5e6171317">being your own angel investor</a>.</p>
+
+]]></content>
+  </entry>
+  
+</feed>

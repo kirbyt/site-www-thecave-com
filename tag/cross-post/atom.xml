@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: cross post | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
+  <link href="http://www.thecave.com/tag/cross-post/atom.xml" rel="self"/>
+  <link href="http://www.thecave.com/"/>
+  <updated>2016-12-28T09:33:57-05:00</updated>
+  <id>http://www.thecave.com/</id>
+  <author>
+    <name><![CDATA[Kirby Turner]]></name>
+    
+  </author>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Eliminating Distractions]]></title>
+    <link href="http://www.thecave.com/2015/01/18/eliminating-distractions/"/>
+    <updated>2015-01-18T13:49:47-05:00</updated>
+    <id>http://www.thecave.com/2015/01/18/eliminating-distractions</id>
+    <content type="html"><![CDATA[<p>Dan Counsell wrote an excellent post about <a href="http://dancounsell.com/articles/removing-distractions">removing distractions</a>. In the post he talks about how he removed distractions by removing social media apps such as Twitter and Facebook from his iPhone. He’s done other things too such as reading a book instead of checking Twitter, and he started a “No Technology Day” on Saturdays, which is something I think I might start doing as well.</p>
+
+<p>Over the last year I too have been eliminating distractions in my life by spending more of my time <a href="http://www.thecave.com/2014/06/20/enjoy-less-and-love-more/">doing what I love</a> and changing the way I use social networks. Changing the way I use social networks is one of the reasons I wrote my app <a href="http://www.whitepeaksoftware.com/cross-post">Cross Post</a>. With Cross Post I can share pictures, thoughts, and comments on Facebook, Twitter, and App.net without the worry of being distracted by those sites. Cross Post sends updates to social media sites, but it does not read the time lines or streams from those sites. Cross Post is a tool for making, not reading, micro-blog posts, hence it’s ability to help eliminate distractions.</p>
+
+<p>I did one other thing to help me eliminate distractions. I turned off notifications on all but the most important apps on my iPhone<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. Unlike Dan I did not remove the social media apps from my phone. I still want to be able to reply to mentions via my iPhone, which is why I left the apps installed. And in the case of Facebook, it’s the easiest way for me to get news about my family via my sister down in Mississippi, so I still check Facebook once or twice a day. But I do not receive notifications from any of the social media apps on my phone.</p>
+
+<p>So how can you start eliminating distractions in your life. I suggest starting with Dan’s new website, <a href="http://thegreatdisconnect.info">The Great Disconnect</a>. It contains articles, videos and information about how to remove distractions by living a less connected life. Check it out because we all can benefit from being a bit less connected these days.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Examples of app that are important to me and which I still have notifications turned on are ones for my bank and credit cards. I want to make sure I’m alerted if a fraudulent charge is ever made against one of my accounts. Slack is another app that I use with notifications turned on since I use this for work purposes. Beyond that, I have notifications turned off. Oh, and in case you were wondering, I let sites like Twitter notify me of mentions via email, and I only check email a few times a day. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Microblogging, the Open Web, and Cross Post]]></title>
+    <link href="http://www.thecave.com/2014/10/09/microblogging-the-open-web-and-cross-post/"/>
+    <updated>2014-10-09T00:00:00-04:00</updated>
+    <id>http://www.thecave.com/2014/10/09/microblogging-the-open-web-and-cross-post</id>
+    <content type="html"><![CDATA[<p>Recently Manton Reece has been talking a lot about <a href="http://www.manton.org/tag/microblogging">microblogging</a> in an open web world using <a href="http://www.manton.org/tag/rss">RSS</a>. He has touched on points that are important to me, specifically content ownership. Like many people I post regularly to App.net, Facebook, Twitter, and other social networks, but I’ve always had one big problem with these networks. My micro-posts do not appear on my web site, and if these networks were to disappear in the future, then my content disappears too.</p>
+
+<h2 id="a-bit-of-history">A Bit of History</h2>
+
+<p>I started thecave.com back in 1997. It was called “The Programmer’s Hideout” and I published various programming how-to articles for SQL Server, Delphi, and other tech that was interesting to me at the time. What I didn’t know at the time was that I was blogging. It wasn’t called blogging in 1997, but that’s exactly what I was doing. It wasn’t until March 2002 that thecave.com became what is typically known today as a blog site.</p>
+
+<p>thecave.com has changed a lot under the hood. In the beginning I used a blogging engine that I wrote. I later switched to a hybrid engine using blogger.com as my editor. Blogger would upload an XML version of the post to my server that my blogging engine would consume and publish the website. As time went on I would used other blogging engines including Wordpress for thecave.com. Today thecave.com is a static HTML website generated by Jekyll. Despite all the changes under the hood, <a href="http://www.thecave.com/blog/archives/">every post</a> I have made to thecave.com since March 2002 is still available today<sup id="fnref:oldposts"><a href="#fn:oldposts" class="footnote">1</a></sup>. I own and control the content, and it is not going away.</p>
+
+<p>This isn’t true for my Facebook or Twitter posts. They control the content, content that could disappear in the future. That is why Manton’s thoughts on microblogging in an open web environment has piqued my interest. I want to take back control of my content including my micro-posts, but how do I do this? As luck would have it, Manton suggested a possible solution for me that fits in nicely with Cross Post, the app I’m currently working, and his suggestion is changing the way I think of Cross Post<sup id="fnref:manton"><a href="#fn:manton" class="footnote">2</a></sup>.</p>
+
+<h2 id="the-suggestion">The Suggestion</h2>
+
+<p>Cross Post is designed to make it easy to share your status and photos across multiple social networks. In other words, Cross Post is a microblog app that lets you post to one or more social networks. Manton’s suggested to me that I add RSS support to Cross Post. It took a while for his suggestion to sink in, but when it did turn on I was like “Oh shit! I want that!”</p>
+
+<p>Cross Post lets me post updates to App.net, Facebook, and Twitter so friends and family can read about me drinking beer, snowboarding, and doing other boring things. But more importantly it can be updated to give me the option to store my content in a location that I have complete control of. Cross Post then becomes an app for microblogging that not only publishes content to multiple networks, it stores your post in a place that you have complete control over and ownership of. And RSS is the perfect solution for this.</p>
+
+<p>When I first heard Manton’s suggestion of adding RSS support to Cross Post, my thinking was that Cross Post would host the RSS feed on its own server. But this is not as simple as it sounds. This requires me to implement some type of user management system. Also since the Cross Post server would be hosting the content, I would have to implement features to allow a person to edit and remove posts. And then there is the hosting cost for hosting all the photos that a person can include with each post. But beyond that, you as the user of Cross Post would not have complete control over the content. It would be hosted on the Cross Post server, and if Cross Post were to ever disappear, then so would your content. In other words letting Cross Post host your content is no better than using App.net or Twitter. But I didn’t give up on the idea of using RSS in Cross Post.</p>
+
+<p>Content ownership is what is important to me, and I knew there had to be a way to make this work. So my next thought was to have Cross Post support different blogging engines. Instead of just posting to social networks, Cross Post could upload your post to your web site directly. But that’s no easy task. What you are talking here is a microblogging version of <a href="http://www.red-sweater.com/marsedit/">MarsEdit</a>, which is not something I care to write. Besides, a microblogging MarsEdit wouldn’t help me get my post into thecave.com because only static HTML is hosted. What Cross Post needs to do is post the content somewhere available on the Internet, but it has to be a location that the person has complete control. That’s when it hit me. Dropbox.</p>
+
+<h2 id="host-on-dropbox">Host on Dropbox</h2>
+
+<p>Cross Post can post the content to your Dropbox (or similar service), and with syncing you will have a copy of your content for as long as you like. Even if Facebook or Twitter disappears, you would still have a copy of your post. And using RSS to store the content lets you do all sorts of things, from syndicating the post to other services to displaying the content in your own website to letting family and friends read you micro-post via an RSS reader.</p>
+
+<h2 id="but-how">But How</h2>
+
+<p>Here’s my current thinking of how it would work:</p>
+
+<p>Using Cross Post, the person grants the app access to Dropbox (Google Drive, SFTP, whatever). When the person makes a post, Cross Post will append it to two feed files, full.rss and recent.rss. Full would contain all micro-posts ever made through the app. Recent would be the last n number of posts where “n” is set by the person (i.e., 5, 10, 20, etc). And if the post includes a photo, then the photo is uploaded to a subdirectory and the appropriate link is added to the entry in the feed file. If the person wishes to publish the feed to a service or let others consume the feed, then the Dropbox public link to the RSS feed file can be used.</p>
+
+<p>The beauty of this approach is that the person has full control over the microblog content and that content is synced to their computer. Even if Cross Post disappears, the content does not. And for oddballs like me, I can integrated the microblog content into my static HTML site just by adding a plugin to Jekyll that consumes the RSS feed and generates a markdown file for each new post before generating the complete site. Heck, I can automate this to have my website updated in near-real time each time I make a new post via Cross Post.</p>
+
+<p>So that’s my thinking, at a high level, for adding RSS support to Cross Post. This feature will not be in the first release of Cross Post. My first goal is to stabilize and ship the current version of the app. Once that happens I’ll focus on adding RSS support.</p>
+
+<p>Whadda think? Is RSS support something that interest you? Let me know on App.net or Twitter.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:oldposts">
+      <p>I still have the content from thecave.com pre-March 2002, but it’s not published on the Internet anymore. <a href="#fnref:oldposts" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:manton">
+      <p>That Manton is a smart guy. <a href="#fnref:manton" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Reporting Errors in Cross Post Part 2]]></title>
+    <link href="http://www.thecave.com/2014/09/15/reporting-errors-in-cross-post-part-2/"/>
+    <updated>2014-09-15T00:00:00-04:00</updated>
+    <id>http://www.thecave.com/2014/09/15/reporting-errors-in-cross-post-part-2</id>
+    <content type="html"><![CDATA[<p>Yesterday I talked about <a href="http://www.thecave.com/2014/09/14/reporting-errors-in-cross-post/">options for reporting errors</a> (and statuses) from the server back to the Cross Post app. Later I came up with a third option, which I like the best…hosting the error reports on <a href="http://www.rackspace.com/cloud/files/">Cloud Files</a>.</p>
+
+<p>The Cross Post server is scalable, which means I cannot rely on the server’s file system. Data on the file system for one server is not synced to the other servers, and it’s possible that the server reporting the error is not the same server as the one that caught the error.</p>
+
+<p>The obvious solution is to use a database server, but using a database server is overkill for Cross Post. But as I thought about it more I realized I all I need is a scalable file system, and that’s exactly what cloud storage systems like <a href="http://aws.amazon.com/s3/">S3</a> and <a href="http://www.rackspace.com/cloud/files/">Cloud Files</a> do. They provide a scalable file storage system.</p>
+
+<p>I came to this realization while thinking about how a CMS in a scalable environment might store uploaded files. Uploaded files would likely be stored on a scalable file storage system like S3. And that’s exactly what I need for reporting errors, a scalable file system. As I keep saying, a database is overkill for the current needs of Cross Post.</p>
+
+<h2 id="cloud-files">Cloud Files</h2>
+
+<p>So why Cloud Files instead of S3? Two reasons. 1) I already use Cloud Files as my CDN for my websites. And 2) the price. I don’t expect to have a lot of error reports, and once the error has been reported to the app the report is deleted, so I estimate my total storage cost will be pennies.</p>
+
+<p>A GB of Cloud Files storage is only 10 cents a month, and bandwidth is only 12 cents per GB per month. The total space needed for my error reports will certainly be less than a GB each month, so my estimated cost is only 22 cents per month, well within an affordable range for a snowboard bum like me.</p>
+
+<h2 id="the-how-tos">The How Tos</h2>
+
+<p>So exactly how will this work? Cross Post sends a payload to the server. Once the server receives the payload the HTTP connection ends. The server then processes the payload posting the status update and photos to the selected social networks.</p>
+
+<p>If an error occurs while posting to a social network, it is captured and stored in a JSON file. The file name is the unique id generated by the Cross Post app when packaging up the payload. The server will then take the JSON file and post it to Cloud Files. The next time the Cross Post app is launched, it will check Cloud Files to see if an error report exists. If it does, then the app will report the error to the user, and it will send a request to the Cross Post server telling it to delete the error report from Cloud Files<sup id="fnref:deletefile"><a href="#fn:deletefile" class="footnote">1</a></sup>.</p>
+
+<p>So what happens if an error occurred and the person never launches Cross Post ever again? For starters I’ll be sad, but with regards to the error report I can set an expiration date on the file, say 30 days. Cloud Files will take care of deleting the file when it expires. This means less work for my server and less code for me to write.</p>
+
+<h2 id="not-just-for-errors">Not Just For Errors</h2>
+
+<p>What I like about the approach is that it is not limited to reporting errors. I can use this approach to report any status back to the app, though at the moment the only status type I need to report is an error status. I subscribe to the “no news is good news” mindset meaning that once the server receives the payload, unless an error is reported, it’s safe to assume the post was sent to the different social networks without a problem.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:deletefile">
+      <p>I let the Cross Post server delete the file from Cloud Files CDN so I don’t have to include the api key in the iOS app. <a href="#fnref:deletefile" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Reporting Errors in Cross Post]]></title>
+    <link href="http://www.thecave.com/2014/09/14/reporting-errors-in-cross-post/"/>
+    <updated>2014-09-14T00:00:00-04:00</updated>
+    <id>http://www.thecave.com/2014/09/14/reporting-errors-in-cross-post</id>
+    <content type="html"><![CDATA[<p>A friend sent me suggestions on handling error reporting for Cross Post. I decided write up my current thinking here to see if my approach makes sense. Besides, trying to explain it in a set of 140 character tweets is less than ideal.</p>
+
+<p>The challenge I face is reporting errors, or any status reporting for that matter, that happen once the server takes over the process. A timeout error, for example, could occur while the server is uploading a photo to Twitter. At this point the server no longer has a connection to the app, so trickling the error up to the app is not an option.</p>
+
+<p>One option is to let the server eat the error. I know of a few similar solutions that eat the error, and I stopped using those apps for that very reason. If I ask an app to post something to Facebook, and the post never appears, then I want to know why. Letting the server eat the error is not an option for Cross Post. But how does the Cross Post app learn about the error?</p>
+
+<p>One option is to use push notifications. When an error occurs the server can notify the user via a push notification. But this isn’t a trivial task to implement and it’s a path I don’t care to pursue unless absolutely necessary.</p>
+
+<p>Another option, and the one I’m considering at the moment, is having the app include a unique identifier in the payload sent to the server. You can think of the identifier as a handle that the app can use to query to server for the status of the post.</p>
+
+<p>If an error occurs on the server, the server will store the error with the identifier provided by the app as the primary key. The next time the app launches, it will check with the server to see if there were any errors. Once the app learns about the error, the server deletes the error from its data store.</p>
+
+<p>This is a more reactive approach to reporting errors instead of a proactive approach, but it’s a cleaner solution than going down the push notification route. Beside, push notifications are not guaranteed so this approach is as reliable if not more reliable.</p>
+
+<p>There are problems with this approach. First starters, only the device that sent the post will know to check for the error. Say I send a new post to Facebook using my iPhone. The post fails to make its way to Facebook. I launch Cross Post on my iPad. The iPad does not know about the post sent from iPhone, so it does not know to check for an error.</p>
+
+<p>Now there are ways around this new problem. I could ask each user for a unique identifier such as an email address or username, but that’s another road I don’t care to travel down. People have more than enough logins to remember without me asking them to setup yet another online account and log into Cross Post. Besides, Cross Post can use iCloud to sync the unique identifier for each post between devices. In fact, this is what I will likely do. Key-value syncing using iCloud has been reliable for some time now, so why take advantage of it.</p>
+
+<p>The other problem with having the app check the server for error reports is that now the server must persist the error report. This means I need to have some type of data persistence store. I could use the file system on the server, but I’ve configured my server app to scale. This means a load balancer is in place and as traffic increases OpenShift will spawn new server instances. This means it is possible that the server that caught the error will not be the server that the app queries for error reports. So storing the error report on the server’s file system is not an option. An additional server, aka a database server, is needed to persist the error reports.</p>
+
+<p>Having an additional server for data persistence isn’t a big deal for OpenShift, but it is just one more server that must always be available. And now the backend for Cross Post is starting to grow. A couple of weeks ago the entire Cross Post solution ran on an iOS device. Now the solution spans the device and a server environment, and next I have to throw in a database server just for error reporting!?</p>
+
+<p>Having the database does seem a bit overkill at the moment, but there might be a need for a database for persistent storage down the road anyways. So it looks like I will be adding a MongoDB database to the mix very soon. That is unless someone has a better idea to share with me.</p>
+
+<p>Update: I came up with a <a href="http://www.thecave.com/2014/09/15/reporting-errors-in-cross-post-part-2/">third option</a> that is by far my favorite.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cross Posting to App.net, Facebook, and Twitter]]></title>
+    <link href="http://www.thecave.com/2014/09/14/cross-posting-to-app.net-facebook-and-twitter/"/>
+    <updated>2014-09-14T00:00:00-04:00</updated>
+    <id>http://www.thecave.com/2014/09/14/cross-posting-to-app.net-facebook-and-twitter</id>
+    <content type="html"><![CDATA[<p>Last year my wife told me more family and friends would “like” my photos on Facebook if I posted the them directly to Facebook. At the time I was using <a href="https://ifttt.com">ifttt</a> to selectively cross post to App.net and Facebook. This meant my photos on Facebook were actually links to the App.net, which is where the photos were being stored, and this required my Facebook followers to tap the link to see the photos. Not the best experience for my followers.</p>
+
+<p>I decided to test my wife’s theory by posting photos directly to Facebook. Turns out she was right. I started getting more likes. Not only that, I found that family and friends posted more comments when I posted the photos directly. My wife was right. Posting photos directly to the social site is the best experience for followers and the best to become more engaged with your followers.</p>
+
+<p>Now I could have setup an ifttt recipe that cross posted my Facebook photos to App.net, but that means my followers on App.net would have the less than ideal experience reading my posts and viewing my photos. So I started down the path of exploring different options for cross posting between different social networks.</p>
+
+<p>After exploring options for nearly six months, I learned there is no single solution that will cross post to different social networks while giving the followers on each network the best viewing experience. So I set out to write my own app.</p>
+
+<p>I quickly learned why no cross post solution that posts natively to each social network existed. It’s hard, and in the case of Facebook, nearly impossible to make the post look as if it were posted from the official app. But I figured it out and for the past few months I have been making posts using Cross Post.</p>
+
+<p>Cross Post is the app I’ve been working on for the last few months. I’ve also been using it almost daily for months. The app was ready for public release back in August, but I decided to wait until the iOS 8 release. The primary reason for this is to avoid annoying iPhone 4 users. iPhone 4 cannot run iOS 8, and I had planned to drop support for iOS 7 the moment iOS 8 is released. So I decided to delay the release of Cross Post.</p>
+
+<p>The delayed release gave me time to work on adding some new iOS 8 only features. One feature in particular that I’m very excited about is the share extension. This feature makes it possible for a person to cross post to different social networks from other apps running on their iPhone or iPad. This feature alone makes Cross Post much more useful than I ever imagined 6 months ago.</p>
+
+<p>When I started learning the ins and outs of share extensions I thought to myself, “This will be a snap.” But as I got deeper into the code I realized Cross Post has one major issue that makes the Cross Post share extension suck. It takes Cross Post too damn long to post photos to multiple social sites.</p>
+
+<p>Consider the scenario where you want to post 4 photos to App.net, Facebook, and Twitter. Each photo must be uploaded to each network. That means 12 different uploads, which is not speedy. This performance problem is acceptable in the Cross Post app because it performs the uploads even when the app is no longer active. A share extension, on the other hand, should return almost immediately. It should not, or have to, wait for the uploads to complete.</p>
+
+<p>Extensions that need to upload data should do so using a background <code class="highlighter-rouge">NSURLSession</code>. Unfortunately this is not an option for Cross Post because it uses the Facebook SDK to post to Facebook and <code class="highlighter-rouge">SLRequest</code> to post to Twitter. Cross Post does use <code class="highlighter-rouge">NSURLSession</code> to post to App.net, but I want to be able to post to Facebook and Twitter via the share extension as well. So I needed to come up with a better way to post status updates and photos across different social networks.</p>
+
+<p>To solve this problem I decided to create a Cross Post server. I was trying to avoid having a server for Cross Post, but it’s unavoidable if I want to provide the best user experience. With the server in place Cross Post can upload the post and photos once and let the server handle uploading the content to the selected networks. Best of all, the upload from the app can be accomplished using a single <code class="highlighter-rouge">NSURLSession</code> request, and it can be performed in a background session. This means the Cross Post share extension can return almost immediately. It also means that Cross Post now only needs to make one HTTP request whereas previously it had to make numerous requests. For instance, the previous scenario of posting 4 photos to 3 different social sites required 15 HTTP requests. Now Cross Post app accomplishes the same thing using a single HTTP request<sup id="fnref:onerequest"><a href="#fn:onerequest" class="footnote">1</a></sup>, and the Cross Post server handles making all the other requests on behalf of the app.</p>
+
+<p>This performance boost does have some disadvantages. First and foremost, I’m now responsible for keeping the server environment up and running. But thanks to <a href="https://www.openshift.com">OpenShift</a>, I’m not too worried about that.</p>
+
+<p>Another disadvantage is that reporting errors back to the iOS app is going to be more challenging. Cross Post and the share extension sends off the request to the server. Once the server receives the payload the HTTP connection ends. The server, however, continues working by posting the payload to the selected social sites. If there is an error posting to, say, Twitter, there is no way for the server to tell the Cross Post app because that connection no longer exist. I have some ideas on how to solve this problem, but it’s not going to happen in the first release.</p>
+
+<p>Still, the improved user experience outweighs the disadvantages of using a server. And I have to admit, I’m enjoying getting back into server-side programming. So much as changed, for the better, over the years.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:onerequest">
+      <p>I was able to reducing the number of calls to the server down to one by packaging the post and photos into a single .zip file, which is sent to the server. <a href="#fnref:onerequest" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
+  
+</feed>

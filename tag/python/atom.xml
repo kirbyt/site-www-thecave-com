@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: personal | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
-  <link href="http://www.thecave.com/category/personal/atom.xml" rel="self"/>
+  <title><![CDATA[Tag: python | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
+  <link href="http://www.thecave.com/tag/python/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
   <updated>2016-12-28T09:33:57-05:00</updated>
   <id>http://www.thecave.com/</id>
@@ -34,51 +34,6 @@
 <p>Now, if you are a Slopes user too and you previously used Trace, you can use my Python script to <a href="https://github.com/kirbyt/trace-export">download your past GPX recordings</a>. I open sourced it so others can quickly download their data.</p>
 
 <p>As for Slopes, I have to say it’s a great app and Curtis is awesome. He has thought of just about everything for Slopes, and for those features not in it, he seems like the type of guy who will add them if it makes sense for the app and its users. In fact one feature missing that I’ve already requested is an option to export all my GPX data from Slopes. I don’t plan to stop using Slopes anytime soon, but I would still like to see this feature on the off chance I have to make another switch in the future.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Two Years Ago Today]]></title>
-    <link href="http://www.thecave.com/2015/08/15/two-years-ago-today/"/>
-    <updated>2015-08-15T09:46:04-04:00</updated>
-    <id>http://www.thecave.com/2015/08/15/two-years-ago-today</id>
-    <content type="html"><![CDATA[<p>We moved to Stowe two years ago today. It seems like we’ve been here a lot longer, but in a good way.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Video of Stowe, Vermont]]></title>
-    <link href="http://www.thecave.com/2015/06/18/video-of-stowe-vermont/"/>
-    <updated>2015-06-18T22:22:58-04:00</updated>
-    <id>http://www.thecave.com/2015/06/18/video-of-stowe-vermont</id>
-    <content type="html"><![CDATA[<p>My friend Ashley came across another video of Vermont. This time it’s about Stowe, the town I live in. Enjoy.</p>
-
-<p><div class="youtube-video"><figure><iframe width="560" height="420" src="https://www.youtube.com/embed/9_Wk5j_4Uc4?color=white&theme=light"></iframe></figure></div></p>
-
-<p>The video is from <a href="http://www.vtscapes.com">VermontScapes</a>. Go checkout the site if you want to see more beautiful photos of Vermont and the Stowe area.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Essence Of Vermont]]></title>
-    <link href="http://www.thecave.com/2015/06/18/essence-of-vermont/"/>
-    <updated>2015-06-18T06:16:26-04:00</updated>
-    <id>http://www.thecave.com/2015/06/18/essence-of-vermont</id>
-    <content type="html"><![CDATA[<p>It’s no surprise I love living in Vermont in part because it’s different from other places I have lived. And this video from Skyworks really captures parts of why I love it here.</p>
-
-<p><div class="youtube-video"><figure><iframe width="560" height="420" src="https://www.youtube.com/embed/UBwqn9BRWhA?color=white&theme=light"></iframe></figure></div></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Do I Need Another Twitter Account]]></title>
-    <link href="http://www.thecave.com/2015/06/14/do-i-need-another-twitter-account/"/>
-    <updated>2015-06-14T23:09:24-04:00</updated>
-    <id>http://www.thecave.com/2015/06/14/do-i-need-another-twitter-account</id>
-    <content type="html"><![CDATA[<p>Earlier tonight I setup a new Twitter account that tweets a link each time I publish a new post here at thecave.com. The new Twitter account is <a href="https://twitter.com/thecave_com/">@thecave_com</a>. Of course now that this is setup, I’m wondering…Do I really need a separate Twitter account, or should I just tweet the links from my <a href="https://twitter.com/kiryt/">@kirbyt</a> account?</p>
-
-<p>I guess I will keep the two separate accounts, and I’ll retweet via @kirbyt any links that I feel might be of greater interest, which is basically what I’ve always done. So if you want to know each time a new post is published, follow @thecave_com. Otherwise just keep doing what you’ve been doing.</p>
 
 ]]></content>
   </entry>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: big screen | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
+  <link href="http://www.thecave.com/tag/big-screen/atom.xml" rel="self"/>
+  <link href="http://www.thecave.com/"/>
+  <updated>2016-12-28T09:33:57-05:00</updated>
+  <id>http://www.thecave.com/</id>
+  <author>
+    <name><![CDATA[Kirby Turner]]></name>
+    
+  </author>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Send Camera Video to Your TV]]></title>
+    <link href="http://www.thecave.com/2013/11/20/send-your-camera-video-to-your-tv/"/>
+    <updated>2013-11-20T00:00:00-05:00</updated>
+    <id>http://www.thecave.com/2013/11/20/send-your-camera-video-to-your-tv</id>
+    <content type="html"><![CDATA[<p>Believe it or not, I finally released a new app for iOS. It’s my first new app for <a href="http://www.whitepeaksoftware.com/">White Peak Software</a> in more than 2 years. Somewhere along the way over the last two years I lost my way, but I’m back.</p>
+
+<p>So what’s this new app? It’s <a href="http://www.whitepeaksoftware.com/big-screen">Big Screen</a>.</p>
+
+<p>Big Screen lets you view the video from your iPhone or iPad’s camera on your TV. It requires an AppleTV, or other AirPlay receiver. Sure, you can use the built-in iOS 7 camera app to do the same, but you will see the app’s chrome on the TV. With Big Screen, there is no chrome or any other evidence that the app is being used. This makes Big Screen ideal for presentation, conferences, and other events where large screen TVs are used to let viewers in the room see the action on the stage.</p>
+
+<p>I got the idea to write an <a href="http://www.whitepeaksoftware.com/main/big-screen/why">app to display the camera’s video on a TV</a> while attending an event at Rowan’s elementary school. It just goes to show you never know when a new app idea will pop up.</p>
+
+<p>Big Screen is a free app available now in the iOS App Store. <a href="http://www.whitepeaksoftware.com/main/store/buy/big-screen">Grab a copy</a>, and let me know what you think.</p>
+
+]]></content>
+  </entry>
+  
+</feed>

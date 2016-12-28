@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: bootstrapping | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
+  <link href="http://www.thecave.com/tag/bootstrapping/atom.xml" rel="self"/>
+  <link href="http://www.thecave.com/"/>
+  <updated>2016-12-28T09:33:57-05:00</updated>
+  <id>http://www.thecave.com/</id>
+  <author>
+    <name><![CDATA[Kirby Turner]]></name>
+    
+  </author>
+
+  
+  <entry>
+    <title type="html"><![CDATA[11 Commandments for Small Software Companies]]></title>
+    <link href="http://www.thecave.com/2006/02/03/11-commandments-for-small-software-companies/"/>
+    <updated>2006-02-03T00:00:00-05:00</updated>
+    <id>http://www.thecave.com/2006/02/03/11-commandments-for-small-software-companies</id>
+    <content type="html"><![CDATA[<p>Although this blog posting is on the art of bootstrapping, I think it is also a good set of <a href="http://blog.guykawasaki.com/2006/01/the_art_of_boot.html">commandments for small software companies</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>

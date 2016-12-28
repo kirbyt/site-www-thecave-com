@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: javascript | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
+  <link href="http://www.thecave.com/tag/javascript/atom.xml" rel="self"/>
+  <link href="http://www.thecave.com/"/>
+  <updated>2016-12-28T09:33:57-05:00</updated>
+  <id>http://www.thecave.com/</id>
+  <author>
+    <name><![CDATA[Kirby Turner]]></name>
+    
+  </author>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Removing Child Nodes Dynamically using JavaScript]]></title>
+    <link href="http://www.thecave.com/2006/09/05/removing-child-nodes-dynamically-using-javascript/"/>
+    <updated>2006-09-05T00:00:00-04:00</updated>
+    <id>http://www.thecave.com/2006/09/05/removing-child-nodes-dynamically-using-javascript</id>
+    <content type="html"><![CDATA[<p>JavaScript once again kicked my butt last night.  Well, it was the combination of JavaScript and IE because my initial code worked fine in Firefox.  Here’s the story.<br /><br />I have a search form that uses AJAX to retrieve search results based on user submitted criteria.  The results are displayed in a table dynamically created using JavaScript.  The problem, however, was the results were being appended to the end of the existing table data.  I needed a way to clear the table contents prior to adding the latest search results.<br /><br />My first approach was to set the innerHTML property of the TBODY element from the results table to a zero-length string.  For example:<br /><br />&lt;pre&gt;<br />var ctrl;<br />ctrl = document.getElementById(‘searchTBody’);<br />ctrl.innerHTML = ‘’;<br />&lt;/pre&gt;<br /><br />This works fine in Firefox but it causes problems under IE.  A different approach is needed.  A couple of google searches turned up the removeChild method.  Using it you can iterate through the childNodes collections to remove each child within the element.  So I wrote the following JavaScript function:<br /><br />&lt;pre&gt;<br />function removeChildNodes(ctrl)<br />{<br />  while (ctrl.childNodes[0])<br />  {<br />    ctrl.removeChild(ctrl.childNodes[0]);<br />  }<br />}<br />&lt;/pre&gt;<br /><br />To remove each child node from an element, get a reference to the element and pass it to the removeChildNodes function.  For example:<br /><br />&lt;pre&gt;<br />var ctrl;<br />ctrl = document.getElementById(‘searchTBody’);<br />removeChildNodes(ctrl);<br />&lt;/pre&gt;<br /><br />This approach works for IE and Firefox.</p>
+]]></content>
+  </entry>
+  
+</feed>
