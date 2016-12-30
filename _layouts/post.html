@@ -3,7 +3,7 @@ layout: default
 ---
 
 <!-- Post Header -->
-<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}img/bg-0{{ page.date | date:"%d" | modulo:site.headerImageCount | plus:1 }}.jpg{% endif %}')">
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.image %}{{ page.image }}{% else %}img/bg-0{{ page.date | date:"%d" | modulo:site.headerImageCount | plus:1 }}.jpg{% endif %}')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">

@@ -5,7 +5,7 @@ title: "thecave | A Hideout for Programmers, Indie Devs, Solopreneurs"
 author: Kirby Turner
 description: "The blog site for Kirby Turner, an independent software developer, where he shares tips and advice for programmers, indie devs, and solopreneurs."
 baseurl: ""
-header-img: "img/bg-01.jpg"
+image: "img/bg-01.jpg"
 google_tracking_id: "UA-167605-3"
 
 # Set header image count to the number of bg-NN.jpg images.
