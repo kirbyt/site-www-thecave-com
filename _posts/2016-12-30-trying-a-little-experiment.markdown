@@ -2,7 +2,7 @@
 layout: post
 title: "Trying a little experiment"
 description: "How I am using tags to share my blog posts to Facebook and Twitter."
-date: 2016-12-30 17:00:52 -0500
+date: 2016-12-30 18:01:52 -0500
 category: personal
 tags: [facebook, twitter]
 ---
