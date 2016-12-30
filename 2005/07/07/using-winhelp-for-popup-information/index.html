@@ -7,12 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Kirby Turner">
+    
     <meta name="description" content="I want to include a legend feature in SMTP Diagnostics to give users a clue as to the meaning of various icons used in the program.  I initially tried to accomplish this by creating a new borderless window that displayed the legend.  When the user clicked the legend link in the statusbar the legend window would popup.  But I found an easier way to do this.Instead of creating a new window and doing all the leg work behind the scenes to display the window, position the window, add shadowing to the window and so on, I decided to use a WinHelp popup.  WinHelp popups are used in many applications such as Microsoft Office to display “What’s This?” Help.  A nice feature of WinHelp popups is content can be formatted.  In the case of SMTP Diagnostics, a WinHelp popup topic is used to display the legend with the icon on the left followed by the text describing the meaning of the icon.The end result.  I reduced the code used in my first attempt at displaying a legend to a single line of code.  Delphi and WinHelp do all the work of displaying, positioning, and shadowing the legend window.Click image to enlarge.
 ">
+    
 
     <!-- Facebook tags -->
     <meta property="og:title" content="Using WinHelp for Popup Information" />
-    <meta property="og:type" content="website" />
+    
+    <meta name="og:description" content="I want to include a legend feature in SMTP Diagnostics to give users a clue as to the meaning of various icons used in the program.  I initially tried to accomplish this by creating a new borderless window that displayed the legend.  When the user clicked the legend link in the statusbar the legend window would popup.  But I found an easier way to do this.Instead of creating a new window and doing all the leg work behind the scenes to display the window, position the window, add shadowing to the window and so on, I decided to use a WinHelp popup.  WinHelp popups are used in many applications such as Microsoft Office to display “What’s This?” Help.  A nice feature of WinHelp popups is content can be formatted.  In the case of SMTP Diagnostics, a WinHelp popup topic is used to display the legend with the icon on the left followed by the text describing the meaning of the icon.The end result.  I reduced the code used in my first attempt at displaying a legend to a single line of code.  Delphi and WinHelp do all the work of displaying, positioning, and shadowing the legend window.Click image to enlarge.
+">
+    
+    <meta property="og:type" content="article" />
     <meta property="og:image" content="http://www.thecave.com/img/bg-01.jpg" />
 
     <meta property="og:url" content="http://www.thecave.com/2005/07/07/using-winhelp-for-popup-information/" />

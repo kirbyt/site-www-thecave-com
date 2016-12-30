@@ -7,12 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Kirby Turner">
+    
     <meta name="description" content="After taking a break from the laptop I was able to get a much better handle on interfaces in Delphi.  And I was able to implement the design I wanted.  It’s not as slick as in C# but it works.  And the code is readable, which is important to me.I was returning a TObject when I should have been returning IInterface.  After seeing the code it makes sense to me why my use of TObject was causing problems, and why I was trying to cast an interface from an object, which now I see was not needed.
 ">
+    
 
     <!-- Facebook tags -->
     <meta property="og:title" content="Update on Interfaces in Delphi" />
-    <meta property="og:type" content="website" />
+    
+    <meta name="og:description" content="After taking a break from the laptop I was able to get a much better handle on interfaces in Delphi.  And I was able to implement the design I wanted.  It’s not as slick as in C# but it works.  And the code is readable, which is important to me.I was returning a TObject when I should have been returning IInterface.  After seeing the code it makes sense to me why my use of TObject was causing problems, and why I was trying to cast an interface from an object, which now I see was not needed.
+">
+    
+    <meta property="og:type" content="article" />
     <meta property="og:image" content="http://www.thecave.com/img/bg-05.jpg" />
 
     <meta property="og:url" content="http://www.thecave.com/2005/05/04/update-on-interfaces-in-delphi/" />

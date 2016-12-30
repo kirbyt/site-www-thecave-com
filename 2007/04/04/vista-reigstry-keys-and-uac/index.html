@@ -7,12 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Kirby Turner">
+    
     <meta name="description" content="I’m adding a new feature to Killink to allow the user to integrate the application with Windows Explorer.  Not a difficult task.  Just involves making some registry settings.  But one registry setting I need to make must go under HKEY_CLASSES_ROOT, and this hive is under administrative control in Vista.  This isn’t such a big deal if I am using an installer.  Installers will typically ask for elevated permissions to perform the install.  But I’m trying to provide a version that does not require an installer.  This means my application will have to ask for elevated permissions when the user clicks the option to integrate with Explorer.  It also means I need to display the shield icon indicating that elevated permissions are required to perform the task.This really has me bummed out because it means more work (and learning).  Now I have to learn up to ask for elevated permissions within the application.Sigh…
 ">
+    
 
     <!-- Facebook tags -->
     <meta property="og:title" content="VIsta, Reigstry Keys, and UAC" />
-    <meta property="og:type" content="website" />
+    
+    <meta name="og:description" content="I’m adding a new feature to Killink to allow the user to integrate the application with Windows Explorer.  Not a difficult task.  Just involves making some registry settings.  But one registry setting I need to make must go under HKEY_CLASSES_ROOT, and this hive is under administrative control in Vista.  This isn’t such a big deal if I am using an installer.  Installers will typically ask for elevated permissions to perform the install.  But I’m trying to provide a version that does not require an installer.  This means my application will have to ask for elevated permissions when the user clicks the option to integrate with Explorer.  It also means I need to display the shield icon indicating that elevated permissions are required to perform the task.This really has me bummed out because it means more work (and learning).  Now I have to learn up to ask for elevated permissions within the application.Sigh…
+">
+    
+    <meta property="og:type" content="article" />
     <meta property="og:image" content="http://www.thecave.com/img/bg-05.jpg" />
 
     <meta property="og:url" content="http://www.thecave.com/2007/04/04/vista-reigstry-keys-and-uac/" />

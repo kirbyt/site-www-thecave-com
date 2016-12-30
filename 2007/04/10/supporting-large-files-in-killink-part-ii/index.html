@@ -7,12 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Kirby Turner">
+    
     <meta name="description" content="I’m coming to the conclusion that having code loop millions of times to copy data from one structure to another is never going to be fast.  I’m using two controls, a spreadsheet control and a report printing control.  Unfortunately the two do not support the same data structures so to print a report Killink has to copy the data from the spreadsheet to the report which means looping.  And when there are a million + rows with 3 columns the code is looping 3 million + times.  Not much can be done to speed it up.What I need is a way to keep the data in a single data structure that is supported by both components.  I’m starting to have a better understanding why certain commercial software tends to not rely on 3rd party components and libraries.  However, time is important to me so I must rely on 3rd party components for certain features.For now Killink will have to warn the user before allowing a huge files to be printed.  “You wish to print a file that is very large.  It will take some time to prepare the data for printing.  Do you wish to continue?”The report I’m trying to preview during testing will have more than 15,000 pages.  I don’t see anyone realistically printing this many pages but you never know.
 ">
+    
 
     <!-- Facebook tags -->
     <meta property="og:title" content="Supporting Large Files in Killink Part II" />
-    <meta property="og:type" content="website" />
+    
+    <meta name="og:description" content="I’m coming to the conclusion that having code loop millions of times to copy data from one structure to another is never going to be fast.  I’m using two controls, a spreadsheet control and a report printing control.  Unfortunately the two do not support the same data structures so to print a report Killink has to copy the data from the spreadsheet to the report which means looping.  And when there are a million + rows with 3 columns the code is looping 3 million + times.  Not much can be done to speed it up.What I need is a way to keep the data in a single data structure that is supported by both components.  I’m starting to have a better understanding why certain commercial software tends to not rely on 3rd party components and libraries.  However, time is important to me so I must rely on 3rd party components for certain features.For now Killink will have to warn the user before allowing a huge files to be printed.  “You wish to print a file that is very large.  It will take some time to prepare the data for printing.  Do you wish to continue?”The report I’m trying to preview during testing will have more than 15,000 pages.  I don’t see anyone realistically printing this many pages but you never know.
+">
+    
+    <meta property="og:type" content="article" />
     <meta property="og:image" content="http://www.thecave.com/img/bg-04.jpg" />
 
     <meta property="og:url" content="http://www.thecave.com/2007/04/10/supporting-large-files-in-killink-part-ii/" />

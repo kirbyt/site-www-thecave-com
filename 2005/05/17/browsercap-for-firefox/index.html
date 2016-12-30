@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Kirby Turner">
+    
     <meta name="description" content="
   
     
@@ -16,10 +17,22 @@
   
 
 ">
+    
 
     <!-- Facebook tags -->
     <meta property="og:title" content="BrowserCap for FireFox" />
-    <meta property="og:type" content="website" />
+    
+    <meta name="og:description" content="
+  
+    
+      Something I didn’t realize until today is that ASP.NET does not generate proper HTML 4.0-compliant code for certain modern, non-Microsoft browsers such as FireFox and Safari.  For instance setting the width property of an  will not render the style attribute needed to set the control width in FireFox.  The problem is easily fixed by including the  section in your web.config or machine.config with the appropriate user agent pattern for the particular browser or browsers.The guys at 4GuysFromRolla.com have a nice article explaining this in more details.  The article also includes a sample  section that you can copy
+      paste into your .config file that supports GECKO (Netscape 6.0+, Mozilla/Firefox, …) and AppleWebKit (Safari, …) based browsers.
+    
+  
+
+">
+    
+    <meta property="og:type" content="article" />
     <meta property="og:image" content="http://www.thecave.com/img/bg-04.jpg" />
 
     <meta property="og:url" content="http://www.thecave.com/2005/05/17/browsercap-for-firefox/" />

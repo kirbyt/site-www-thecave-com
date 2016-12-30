@@ -7,12 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Kirby Turner">
+    
     <meta name="description" content="After resolving the Windows Server 2003 file share access problem I turned my attention to fixing the DNS issue I’m having.  I’m able to ping the IP address of machines on my Local Area Network but I’m not able to resolve the machine names.  I have a local DNS running on Windows Server 2003 but for some odd reason OS X is not using it to resolve names.  So I decided to use a stop-gap approach for the time being.I modified the /etc/hosts file to include the address of the machines with a static IP address.  After all, these are the only machines I need access to from OS X.  Here are the steps I followed:&lt;ul&gt;&lt;li&gt;Sign in as an administrator (or an account belonging to the sudousers group)&lt;/li&gt;&lt;li&gt;Launch a terminal shell (Applications &gt; Utilities &gt; Terminal if you are using Finder or type terminal in Spotlight)&lt;/li&gt;&lt;li&gt;Run the command sudo vi /etc/hosts&lt;/li&gt;&lt;li&gt;Scroll to the end of the file&lt;/li&gt;&lt;li&gt;Type i to enter insert mode&lt;/li&gt;&lt;li&gt;Press the enter key to start a new line (my vi skills are weak as it has been years since I have used it - there is probably a better way to append to the end of a file)&lt;/li&gt;&lt;li&gt;Enter the IP address, press the tab key, then enter the name machine&lt;/li&gt;&lt;li&gt;Press the esc key to get out of insert mode&lt;/li&gt;&lt;li&gt;Press :wq to save the changes and quit vi&lt;/li&gt;&lt;/ul&gt;That’s is.  The machine name will now resolve to the IP.
 ">
+    
 
     <!-- Facebook tags -->
     <meta property="og:title" content="Cannot Resolve Machine Name From Mac OS X" />
-    <meta property="og:type" content="website" />
+    
+    <meta name="og:description" content="After resolving the Windows Server 2003 file share access problem I turned my attention to fixing the DNS issue I’m having.  I’m able to ping the IP address of machines on my Local Area Network but I’m not able to resolve the machine names.  I have a local DNS running on Windows Server 2003 but for some odd reason OS X is not using it to resolve names.  So I decided to use a stop-gap approach for the time being.I modified the /etc/hosts file to include the address of the machines with a static IP address.  After all, these are the only machines I need access to from OS X.  Here are the steps I followed:&lt;ul&gt;&lt;li&gt;Sign in as an administrator (or an account belonging to the sudousers group)&lt;/li&gt;&lt;li&gt;Launch a terminal shell (Applications &gt; Utilities &gt; Terminal if you are using Finder or type terminal in Spotlight)&lt;/li&gt;&lt;li&gt;Run the command sudo vi /etc/hosts&lt;/li&gt;&lt;li&gt;Scroll to the end of the file&lt;/li&gt;&lt;li&gt;Type i to enter insert mode&lt;/li&gt;&lt;li&gt;Press the enter key to start a new line (my vi skills are weak as it has been years since I have used it - there is probably a better way to append to the end of a file)&lt;/li&gt;&lt;li&gt;Enter the IP address, press the tab key, then enter the name machine&lt;/li&gt;&lt;li&gt;Press the esc key to get out of insert mode&lt;/li&gt;&lt;li&gt;Press :wq to save the changes and quit vi&lt;/li&gt;&lt;/ul&gt;That’s is.  The machine name will now resolve to the IP.
+">
+    
+    <meta property="og:type" content="article" />
     <meta property="og:image" content="http://www.thecave.com/img/bg-02.jpg" />
 
     <meta property="og:url" content="http://www.thecave.com/2007/07/29/cannot-resolve-machine-name-from-mac-os-x/" />

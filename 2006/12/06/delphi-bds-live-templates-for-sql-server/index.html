@@ -7,12 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Kirby Turner">
+    
     <meta name="description" content="Here are a few Delphi (BDS) Live Templates I created for writting SQL Server script:Create SQL Server Table&lt;pre&gt;        version=”1.0.0”&gt;        Create table for SQL Server.        Kirby Turner           TableName     &lt;![CDATA[/***  Create |TableName| table.***/PRINT 'Create |TableName| table'GOIF (EXISTS (SELECT name FROM sysobjects WHERE (name = N'|TableName|') AND (type = 'U')))BEGIN  DROP TABLE [dbo].[|TableName|]ENDGOCREATE TABLE [dbo].[|TableName|] (|*||end||*|CONSTRAINT [PK_|TableName|_1] PRIMARY KEY CLUSTERED|*|(|*|)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]) ON [PRIMARY]GOGRANT SELECT ON [dbo].[|TableName|] TO [public]GO]]&gt;  &lt;/pre&gt;Create Foreign Key Reference&lt;pre&gt;        version=”1.0.0”&gt;        Create foreign key constraint for SQL Server.        Kirby Turner                   PrimaryTableName                      SecondaryTableName                      ColumnName     &lt;![CDATA[ALTER TABLE [dbo].[|PrimaryTableName|] WITH CHECK ADDCONSTRAINT [FK_|PrimaryTableName|_|SecondaryTableName|] FOREIGN KEY([|ColumnName|])REFERENCES [dbo].[|SecondaryTableName|] ([|ColumnName|])GO]]&gt;  &lt;/pre&gt;Enjoy.
 ">
+    
 
     <!-- Facebook tags -->
     <meta property="og:title" content="Delphi (BDS) Live Templates for SQL Server" />
-    <meta property="og:type" content="website" />
+    
+    <meta name="og:description" content="Here are a few Delphi (BDS) Live Templates I created for writting SQL Server script:Create SQL Server Table&lt;pre&gt;        version=”1.0.0”&gt;        Create table for SQL Server.        Kirby Turner           TableName     &lt;![CDATA[/***  Create |TableName| table.***/PRINT 'Create |TableName| table'GOIF (EXISTS (SELECT name FROM sysobjects WHERE (name = N'|TableName|') AND (type = 'U')))BEGIN  DROP TABLE [dbo].[|TableName|]ENDGOCREATE TABLE [dbo].[|TableName|] (|*||end||*|CONSTRAINT [PK_|TableName|_1] PRIMARY KEY CLUSTERED|*|(|*|)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]) ON [PRIMARY]GOGRANT SELECT ON [dbo].[|TableName|] TO [public]GO]]&gt;  &lt;/pre&gt;Create Foreign Key Reference&lt;pre&gt;        version=”1.0.0”&gt;        Create foreign key constraint for SQL Server.        Kirby Turner                   PrimaryTableName                      SecondaryTableName                      ColumnName     &lt;![CDATA[ALTER TABLE [dbo].[|PrimaryTableName|] WITH CHECK ADDCONSTRAINT [FK_|PrimaryTableName|_|SecondaryTableName|] FOREIGN KEY([|ColumnName|])REFERENCES [dbo].[|SecondaryTableName|] ([|ColumnName|])GO]]&gt;  &lt;/pre&gt;Enjoy.
+">
+    
+    <meta property="og:type" content="article" />
     <meta property="og:image" content="http://www.thecave.com/img/bg-07.jpg" />
 
     <meta property="og:url" content="http://www.thecave.com/2006/12/06/delphi-bds-live-templates-for-sql-server/" />

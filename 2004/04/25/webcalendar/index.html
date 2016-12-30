@@ -7,12 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Kirby Turner">
+    
     <meta name="description" content="Melanie and I have a very busy but fun life.  With work, travel, events in New York, it is sometimes hard for us to remember were we will be in 6 months.  So I setup a web calendar for us to use.I used open source project WebCalendar, which is a PHP-based calendar application.  Setup was a snap thanks to the folks at CrystalTech, which is my hosting provider.  Their support of PHP and MySql made getting the site up and running very easy.  However, I did have to make one change to the code.Inside of init.php is a number of “include-once” statements.  Each of these statements refer to the a file in the “includes” directory such as “includes/translate.php”.  To make the site work correctly within the server environment I had to remove the “includes/” string literal portion of the “include-once” statements.  I did not have to make any other changes to get the application running from the shared server.
 ">
+    
 
     <!-- Facebook tags -->
     <meta property="og:title" content="WebCalendar" />
-    <meta property="og:type" content="website" />
+    
+    <meta name="og:description" content="Melanie and I have a very busy but fun life.  With work, travel, events in New York, it is sometimes hard for us to remember were we will be in 6 months.  So I setup a web calendar for us to use.I used open source project WebCalendar, which is a PHP-based calendar application.  Setup was a snap thanks to the folks at CrystalTech, which is my hosting provider.  Their support of PHP and MySql made getting the site up and running very easy.  However, I did have to make one change to the code.Inside of init.php is a number of “include-once” statements.  Each of these statements refer to the a file in the “includes” directory such as “includes/translate.php”.  To make the site work correctly within the server environment I had to remove the “includes/” string literal portion of the “include-once” statements.  I did not have to make any other changes to get the application running from the shared server.
+">
+    
+    <meta property="og:type" content="article" />
     <meta property="og:image" content="http://www.thecave.com/img/bg-05.jpg" />
 
     <meta property="og:url" content="http://www.thecave.com/2004/04/25/webcalendar/" />
