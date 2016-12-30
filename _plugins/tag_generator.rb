@@ -124,7 +124,7 @@ module Jekyll
     #  +tag+     is the tag currently being processed.
     def initialize(site, base, tag_dir, tag)
       template_path = File.join(base, '_includes', 'custom', 'tag_feed.xml')
-      super(template_path, 'atom.xml', site, base, tag_dir, tag)
+      super(template_path, 'feed.xml', site, base, tag_dir, tag)
 
       # Set the correct feed URL.
       self.data['feed_url'] = "#{tag_dir}/#{name}" if render?
