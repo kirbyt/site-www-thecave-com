@@ -4,12 +4,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="{{ site.author }}">
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% else %}
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.description }}{% endif %}">
+    {% endif %}
 
     <!-- Facebook tags -->
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-    {% if page.excerpt %}
-    <meta property="og:description" content="{{ page.excerpt | strip_html }}" />
+    {% if page.description %}
+    <meta name="og:description" content="{{ page.description }}">
+    {% else %}
+    <meta name="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.description }}{% endif %}">
     {% endif %}
     <meta property="og:type" content="article" />
     <meta property="og:image" content="{{ site.baseurl | prepend: site.url }}/{% if page.image %}{{ page.image }}{% else %}img/bg-0{{ page.date | date:"%d" | modulo:site.headerImageCount | plus:1 }}.jpg{% endif %}" />

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "From Trace To Slopes"
+description: "How to download your Trace Snow recordings and import them into Slopes."
 date: 2016-11-19 10:52:31 -0500
 image: "img/bg-07.jpg"
 category: personal
