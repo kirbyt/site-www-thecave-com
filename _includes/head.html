@@ -18,9 +18,8 @@
     <meta name="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.description }}{% endif %}">
     {% endif %}
     <meta property="og:type" content="article" />
-    <meta property="og:image" content="{{ site.baseurl | prepend: site.url }}/{% if page.image %}{{ page.image }}{% else %}img/bg-0{{ page.date | date:"%d" | modulo:site.headerImageCount | plus:1 }}.jpg{% endif %}" />
     <meta property="article:author" content="https://www.facebook.com/mr.kirbyturner" />
-
+    <meta property="og:image" content="{{ site.baseurl | prepend: site.url }}/{% if page.image %}{{ page.image }}{% else %}img/bg-0{{ page.date | date:"%d" | modulo:site.headerImageCount | plus:1 }}.jpg{% endif %}" />
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
     <meta property="og:site_name" content="{{ site.title }}" />
 
