@@ -8,7 +8,10 @@
 
     <!-- Facebook tags -->
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-    <meta property="og:type" content="website" />
+    {% if page.excerpt %}
+    <meta property="og:description" content="{{ page.excerpt | strip_html }}" />
+    {% endif %}
+    <meta property="og:type" content="article" />
     <meta property="og:image" content="{{ site.baseurl | prepend: site.url }}/{% if page.header-img %}{{ page.header-img }}{% else %}img/bg-0{{ page.date | date:"%d" | modulo:site.headerImageCount | plus:1 }}.jpg{% endif %}" />
 
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
