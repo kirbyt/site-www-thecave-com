@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: tech | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
+  <link href="http://www.thecave.com/tag/tech/feed.xml" rel="self"/>
+  <link href="http://www.thecave.com/"/>
+  <updated>2016-12-30T17:13:53-05:00</updated>
+  <id>http://www.thecave.com/</id>
+  <author>
+    <name><![CDATA[Kirby Turner]]></name>
+    
+  </author>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Affordable Cloud Storage With Amazon Cloud Drive]]></title>
+    <link href="http://www.thecave.com/2015/03/27/affordable-cloud-storage-with-amazon-cloud-drive/"/>
+    <updated>2015-03-27T06:52:45-04:00</updated>
+    <id>http://www.thecave.com/2015/03/27/affordable-cloud-storage-with-amazon-cloud-drive</id>
+    <content type="html"><![CDATA[<p>Yesterday Amazon announced new <a href="https://www.amazon.com/clouddrive/pricing">pricing plans</a> for their cloud storage offering named <a href="https://www.amazon.com/clouddrive/home">Cloud Drive</a>. You can store unlimited number of photos for $11.99 per year, or you can store unlimited number of files for $59.99. The later is a no-brainer for me as I have been looking for an affordable cloud storage solution like this.</p>
+
+<p>Currently I use a number of different services for cloud storage. I use <a href="https://db.tt/Y2NovyiG">Dropbox</a> to sync files between computers and devices. The files I keep on Dropbox are ones I need immediate access to. In other words, these are the files I need to have on my laptop while also having access from other computers and devices such as my iPhone.</p>
+
+<p>I use <a href="https://secure.backblaze.com/r/00ytw8">Backblaze</a> to backup all the files on my laptop to the cloud. It’s my lifeline should something unexpected happen to my laptop. For photos I use <a href="https://secure.smugmug.com/signup?Coupon=8ZK2smzZYAS1I">SmugMug</a>, but more recently I’ve been using <a href="http://www.flickr.com">Flickr</a> more than SmugMug. And I use Rackspace Cloud File for my CDN. That’s content delivery network for my non-geeky friends reading this.</p>
+
+<p>The problem with these different cloud storage providers is that I still had no easy way to upload and store files that I don’t need frequent access to. I don’t like to throw away data, but I also don’t need documents I wrote back in 2003 wasting space on my laptop. Dropbox has a way to not sync selected folders, but I don’t trust it. Plus, it’s not as straight forward as uploading and storing selected files.</p>
+
+<p>Rackspace Cloud File works well for archiving my old data, but it can become costly if I have multi-terabytes of data to store. Same is true for Amazon S3, which I considered using in the past. In fact, when Amazon announced S3 Glacier I thought I had found the perfect cloud storage solution for me, but it’s not easy to use.</p>
+
+<p>Flickr and SmugMug are great for storing photos and videos, and they both make it easy to upload new ones. Heck, Flickr will even automatically upload new photos taken on my iPhone for me. It doesn’t get much easier than that. But these two only support photos and videos, and I have other file types I want to store in the cloud.</p>
+
+<p>So when I first heard about Amazon’s new pricing for Cloud Drive I thought, “Finally, an affordable cloud storage solution that fixes my needs for archiving old data.” At $60 per year for unlimited storage, I would be a fool not to try it out. But I don’t even need to spend the $60 right now. Amazon is offering a 3-month free trial.</p>
+
+<p>Cloud Drive has desktop software for your Mac (and I’m guessing Windows too) to upload files, but I’m not a fan of the desktop software. It doesn’t let me pick where I want to store the files I’m uploading, and I like to use a very specific directory structure for my files.</p>
+
+<p>While the Cloud Drive desktop software doesn’t suite my needs, the Cloud Drive web interface does. I can organize my storage area to my liking, create new folders and upload files to specific folders within the file system. And that’s just what I’ve been doing…uploading and organizing files - a few gigs so far to test out the service.</p>
+
+<p>I do, however, have one complaint about Cloud Drive. The Cloud Drive app for iOS only shows photos and videos. I want access to all the files stored on my Cloud Drive. Hopefully Amazon will change this soon, or maybe it’s an opportunity for me to write a new app. There is, after all, an API for Cloud Drive.</p>
+
+<p>Amazon Cloud Drive is the solution I’ve been looking for to archive my old data to the cloud. I’ll continue using external hard drives, Dropbox, Backblaze and such for backups, but my days with SmugMugs might be numbered. Still, I’m excited to finally have an affordable cloud storage solution for my old data.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Why Microsoft's Acquisition of HockeyApp Saddens Me]]></title>
+    <link href="http://www.thecave.com/2014/12/12/why-microsoft-s-acquisition-of-hockeyapp-saddens-me/"/>
+    <updated>2014-12-12T00:00:00-05:00</updated>
+    <id>http://www.thecave.com/2014/12/12/why-microsoft-s-acquisition-of-hockeyapp-saddens-me</id>
+    <content type="html"><![CDATA[<p>While catching up on the latest tech news last night, I came across a post that said Microsoft had acquired HockeyApp. My first thought was this is a joke. I immediately went to the HockeyApp blog site and, lo and behold, it is not a joke. Microsoft did acquire HockeyApp.</p>
+
+<p>This news left me with mixed feelings. First, I’m happy for the folks at HockeyApp. I’ve been a long time user of HockeyApp, and I feel they have the best solution for beta app distribution and crash reporting. The acquisition is further proof that HockeyApp is an outstanding solution. Yet at the same time it saddens me that HockeyApp is now in the hands of Microsoft.</p>
+
+<p>It’s no secret that I’m not a fan of Microsoft. That wasn’t always the case. I used to love the technology coming out of Redmond, so much so that I worked for nearly 4 years for a consulting company co-owned by Microsoft whose initial purpose was to promote and showcase Microsoft technologies in the enterprise. But around 2005 I started feeling like Microsoft technologies were heading in the wrong direction and, by this time I was working for myself, I stopped recommending Microsoft technologies to clients. I also began transitioning my skill set to other non-Microsoft technologies. By the end of 2008 I was done working in the Microsoft world, a decision that I don’t regret one bit.</p>
+
+<p>In 2010 my dislike for Microsoft became a bit more personal when an accounting mistake caused during the merger of billing systems after a Microsoft acquisition resulted in a collection agency calling me on behalf of Microsoft. I talk in detail about what happened <a href="http://blog.whitepeaksoftware.com/2010/04/26/i-paid-for-microsofts-mistake/">here</a> and <a href="http://blog.whitepeaksoftware.com/2010/05/18/follow-up-on-my-fight-with-microsoft/">here</a>, and thanks to the first post being picked up on Hacker News the matter was eventually <a href="http://blog.whitepeaksoftware.com/2010/06/14/score-one-for-the-little-guy-and-kudos-to-microsoft/">resolved</a>. Still, I was left with a stronger dislike of Microsoft.</p>
+
+<p>The combination of my lacking faith in Microsoft technologies and poor customer service experiences<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> drove me away from Microsoft world, and in 2010 I made conscious decision to stop giving my money to Microsoft unless there is absolutely no other option<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>. I’m fully aware that my decision to stop buying Microsoft products and services has zero impact on Microsoft. Also I don’t view Microsoft as an evil empire or a horrible company, and not everything about Microsoft sucks. Heck, they are doing some really neat things these days. But based on my past experiences, Microsoft is not a company I want to do business with today.</p>
+
+<p>It boils downs to a personal preference, much like my preference to shop at Target instead of Wal-mart or to buy from a locally owned store before buying from a national store or online. And this is why Microsoft’s acquisition of HockeyApp saddens me. A product I love is now in the hands of a company I choose to not do business with, and this means I need to think long and hard about whether or not I will continue using HockeyApp when my subscription comes up for renewal in October.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>I know there are individuals at Microsoft who really care about and do provide outstanding customer service, and there are consumers and businesses out there that have had nothing but great experiences dealing with Microsoft. But my own personal experiences dealing with Microsoft have been less than ideal. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>When writing my books my publisher required I submit my manuscripts in Word documents, so I ended up buying a copy of Microsoft Word. Also I do enjoying playing video games on my Xbox, so Microsoft does get a bit of my money from time to time. But in general I have stopped buying Microsoft products and services. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[iPhone 6 Plus Is Too Big For Me, But I Bought It Anyways]]></title>
+    <link href="http://www.thecave.com/2014/10/13/iphone-6-plus-is-too-big-for-me-but-i-bought-it-anyways/"/>
+    <updated>2014-10-13T00:00:00-04:00</updated>
+    <id>http://www.thecave.com/2014/10/13/iphone-6-plus-is-too-big-for-me-but-i-bought-it-anyways</id>
+    <content type="html"><![CDATA[<p>A few weeks back I said I would be buying the <a href="http://www.thecave.com/2014/09/10/iphone-6-plus-pocket-test/">iPhone 6</a>, not the 6 Plus. The 6 Plus is simply too large for me. But I have since changed my mind.</p>
+
+<p>There are a few reasons I changed my mind. First and foremost, I could not justify upgrading from the iPhone 5 to iPhone 6. It’s just a hardware upgrade, and I’m very happy with my iPhone 5. Sure, it would be nice having a device with TouchID but that’s not a must have feature for me. And a better camera would also be nice, but again it’s not totally necessary for me.</p>
+
+<p>I actually started the process of ordering the iPhone 6 on two separate occasions this past week, and each time I stopped before completing the order. There simply weren’t any good reasons for me to upgrade my phone other than to keep the end date for my 2-year contract with Verizon in the month of October. But the same is not true for the iPhone 6 Plus.</p>
+
+<h2 id="different-size-classes">Different Size Classes</h2>
+
+<p>The iPhone 6 Plus has features not available on the 6, features that, as a developer, I need to support in the apps I write. And while I can use the iOS Simulator to test those features, I’m a firm believer that testing on an actual device is far better. Testing on a device gives you a real sense for how your app feels on that device, and that’s why I own a number of iOS devices. The Simulator is great for quick debugging and testings, but nothing beats playing with your app on an actual device.</p>
+
+<p>The iPhone 6 Plus supports different size classes than the iPhone 6 and earlier iPhones. This means, for example, in landscape mode the iPhone 6 Plus can take advantage of displaying a split view controller, which is something the iPhone 6 does not. And again, while I can test this using the Simulator I won’t get a true feel for the differences without using an actual device. But this alone wasn’t the only reason I changed my mind on which device I should buy.</p>
+
+<h2 id="the-pocket-test">The Pocket Test</h2>
+
+<p>Over the weekend, while attending <a href="http://cingleton.com">Çingleton</a>, I did a number of pocket tests using various iPhone 6 Plus devices. Some had cases, others did not. What I found was that while I notice the iPhone 6 Plus in my pocket, it wasn’t as uncomfortable as I thought it would be. Does it feel as nice in my pocket as the iPhone 5 or even the 4s? Certainly not. And there will still be times when I’m annoyed at the size of the 6 Plus when carrying it in my pocket, such as when I’m snowboarding. In fact, I’ll likely have to carry the 6 Plus in my jacket pocket when snowboarding instead of my front pants pocket. And I’m not thrilled about carrying the larger device in a cargo pocket when I’m hiking as it will be banging against my leg as I walk.</p>
+
+<p>But as I thought about it more I realized that I don’t keep my iPhone 5 in my pocket all that much. I work from home and the majority of the time my iPhone is sitting on my desk. I do put it in my pocket when I leave the house, but typically I’m at home more than not.</p>
+
+<p>Still, after a weekend of various pocket tests I wasn’t completely sold on the iPhone 6 Plus. I certainly was leaning towards buying it, but I was still on the fence. That was until I learned about the zoom view.</p>
+
+<h2 id="zoom-view">Zoom View</h2>
+
+<p>With the zoom view an iPhone 6 Plus behaves like an iPhone 6. For instance, when the zoom view is enabled the home screen does not rotate when the iPhone 6 Plus is in landscape mode. In fact, it appears that the size classes used on the iPhone 6 Plus are the same as the iPhone 6 when using zoom mode. This means that the iPhone 6 Plus can be used to test the behavior of your app as if it were running on an iPhone 6. And that sealed the deal for me.</p>
+
+<p>Using the iPhone 6 Plus to test my apps is like having two devices in one. I can test my apps to make sure the user experience is perfect for iPhone 6 Plus users and, thanks to the zoom view, iPhone 6 users. At this point the decision to buy an iPhone 6 Plus became a no brainer for me.</p>
+
+<h2 id="not-a-developer">Not a Developer</h2>
+
+<p>Would I buy an iPhone 6 Plus if I weren’t a developer? Nope, I would not. In fact I would not buy the iPhone 6 either, at least not right now. My iPhone 5 suits me well, and I would have no good reason to upgrade if I weren’t a developer.</p>
+
+<h2 id="what-i-really-want">What I Really Want</h2>
+
+<p>What I really want isn’t the iPhone 6 Plus, but what I want does not exists, at least not yet.</p>
+
+<p>As a developer what I really want is an iPod touch Plus. If Apple were selling an iPod touch Plus that is the same as the iPhone 6 Plus minus the phone, then I would buy it in an instant. That way I could continue using my iPhone 5 as my primary phone device and the iPod touch Plus as a test device. And my son would be happy too because in his mind the iPod touch Plus would be his even though I would use it for testing purposes. But sadly there is no such thing as an iPod touch Plus right now.</p>
+
+<h2 id="change-my-mind-again">Change My Mind Again</h2>
+
+<p>So there you have it…the reasons I changed my mind.</p>
+
+<ol>
+  <li>Different size classes and UI behaviors.</li>
+  <li>Not as uncomfortable in my pocket as I thought it would be.</li>
+  <li>Able to test iPhone 6 and 6 Plus user experience from the same device.</li>
+  <li>No iPod touch Plus.</li>
+</ol>
+
+<p>There’s actually one more reason that led to me changing my mind, Apple’s return policy. If after the first week of owning an iPhone 6 Plus I find that carrying it around in my pocket too annoying then I can return the device. I doubt I will return it especially after talking with many iPhone 6 Plus owners at Çingleton this past weekend, but still, there is always a chance I will change my mind again.</p>
+
+]]></content>
+  </entry>
+  
+</feed>

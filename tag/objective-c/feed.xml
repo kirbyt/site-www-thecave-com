@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: programming | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
-  <link href="http://www.thecave.com/category/programming/atom.xml" rel="self"/>
+  <title><![CDATA[Tag: objective-c | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
+  <link href="http://www.thecave.com/tag/objective-c/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
   <updated>2016-12-30T17:13:53-05:00</updated>
   <id>http://www.thecave.com/</id>
@@ -93,42 +93,92 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Tags And Categories]]></title>
-    <link href="http://www.thecave.com/2015/09/21/tags-and-categories/"/>
-    <updated>2015-09-21T19:45:44-04:00</updated>
-    <id>http://www.thecave.com/2015/09/21/tags-and-categories</id>
-    <content type="html"><![CDATA[<p>I’ve been doing a bit of tinkering here at thecave. I realized I was using categories as if they were tags and for one simple reason. I didn’t have a way to support tags. That is, until now.</p>
+    <title type="html"><![CDATA[Dispatch Async to Main Queue Doesn't Work With Modal Window on Mac OS X]]></title>
+    <link href="http://www.thecave.com/2015/08/10/dispatch-async-to-main-queue-doesnt-work-with-modal-window-on-mac-os-x/"/>
+    <updated>2015-08-10T07:09:01-04:00</updated>
+    <id>http://www.thecave.com/2015/08/10/dispatch-async-to-main-queue-doesnt-work-with-modal-window-on-mac-os-x</id>
+    <content type="html"><![CDATA[<p>I’ve been working on a Mac app lately, and while some things are similar to iOS, something are definitely different. One thing that is different are modal windows and run loops.</p>
 
-<p>Tag support is provided in Jekyll, but I wanted something slightly different. I want the list of tags to appear at the end of a post just like the categories have for last couple of years. I searched for different ways to support tags with Jekyll, but I didn’t find anything suiting my needs. Then it occurred to me I could tweak the category plugins I use to work with tags, so that’s exactly what I did.</p>
+<p>When you display a modal view on iOS you don’t get a new run loop for the view, but when you display a modal window on OS X a new run loop is created for the window. This is not necessarily a big deal unless you have a habit of using <a href="https://developer.apple.com/library/ios/documentation/Performance/Reference/GCD_libdispatch_Ref/">GCD</a> to dispatch work between background and main queues. Let me give a more specific example.</p>
 
-<p>The <a href="https://github.com/recurser/jekyll-plugins">Jekyll category plugins</a> I use come from Dave Perretter. I made copies of <em>category_generator.rb</em> and <em>category_list_tags.rb</em> naming the new plugins <em>tag_generator.rb</em> and <em>tag_list_tags.rb</em>. Then I replace references to <code class="highlighter-rouge">categories</code> and <code class="highlighter-rouge">category</code> with <code class="highlighter-rouge">tags</code> and <code class="highlighter-rouge">tag</code> in the source code. And BAM! I now have tag support at thecave.com.</p>
+<p>I display a modal view, or in the cause of OS X, a modal window. The current view is managed by a view controller. User input is captured, then a URL request is sent off to a server on the Internet. The view controller is then notified when the URL request completes.</p>
 
-<p>You can find the source code for the plugins in my site’s github <a href="https://github.com/kirbyt/site-www-thecave-com/tree/master/_plugins">repo</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[My Upcoming Share Extension Talk At 360idev-Min]]></title>
-    <link href="http://www.thecave.com/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/"/>
-    <updated>2015-09-07T11:37:39-04:00</updated>
-    <id>http://www.thecave.com/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min</id>
-    <content type="html"><![CDATA[<p>I’m excited to be one of the speakers at the upcoming <a href="http://min.360idev.com">360idev-min</a> conference in Greenville, SC. In my talk I’ll share the things you need to know about when writing a share extension for your iOS app.</p>
+<p>The typical pattern I follow for sending the request to the server and getting notified when done is to call a method that will dispatch the URL request to a background queue then dispatch to the main queue to call a block when complete. It looks something like this:</p>
 
-<p>If you plan to attend <a href="http://min.360idev.com">360idev-min</a>, then use the coupon code <strong>SpeakerFriend</strong> to save $100 when purchasing your ticket.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>- (void)sendSomething:(NSDictionary *)something completion:(void(^)(BOOL success, NSError *error))completion
+{
+  NSParameterAssert(something);
+  dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    // Send something out over the Internet.
+    ...
 
-<p>And let me know if you are attending so we can meet up in person.</p>
+    // All done. Assume success and error are already set.
+    dispatch_async(dispatch_get_main_queue(), ^{
+      if (completion) {
+        completion(success, error);
+      }
+    });
+  });
+}
+</code></pre>
+</div>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Wish I Could Help But It's Not My App]]></title>
-    <link href="http://www.thecave.com/2015/09/01/wish-i-could-help-but-its-not-my-app/"/>
-    <updated>2015-09-01T15:37:18-04:00</updated>
-    <id>http://www.thecave.com/2015/09/01/wish-i-could-help-but-its-not-my-app</id>
-    <content type="html"><![CDATA[<p>A well known global company is using some open source code I wrote in one of their apps (yay!). Like a good company, they included my name and licensing information in app’s about screen. Now I’m getting emails from one of the app’s users seeking help with the app. The person thinks I wrote the app because my name appears in the licensing section.</p>
+<p>This is a simplified view of the pattern I often use. Call a method with a callback block. Perform some work on a background thread. When done, call the callback block on the main thread.</p>
 
-<p>Definitely a first for me.</p>
+<p>This pattern has served me well on iOS, but it has issues on Mac OS X when displaying a modal window.</p>
+
+<p>When you display a modal window with <code class="highlighter-rouge">+[NSApp runModalForWindow:]</code> a new run loop is created for the window<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. That might seem fine until you call <code class="highlighter-rouge">dispatch_async(dispatch_get_main_queue(), ^{})</code> from a background thread. The block that you are trying to execute in the main queue will never run. And in my case, the <code class="highlighter-rouge">completion</code> block is never called. This means my modal window never receives the notification that the URL request completed. (NOTE: Mike Ash <a href="#update2">pointed out</a> that it’s not the new run loop that causes the problem.)</p>
+
+<p>So how did I work around this problem?</p>
+
+<p>Instead of dispatching the <code class="highlighter-rouge">completion()</code> to the main queue, I call it directly from the background thread. In the completion block itself, I decide how to get the code should run in the main thread. If my window isn’t modal, then I can use <code class="highlighter-rouge">dispatch_async(dispatch_get_main_queue(), ^{})</code>. But if my window is modal, which just happens to be the case for the app I’m working on, then I use <code class="highlighter-rouge">-performSelectorOnMainThread:withObject:waitUntilDone:</code>. So the code in my view controller looks something like this:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>- (void)someAction:(id)sender
+{
+  SomeHelper *helper = [[SomeHelper alloc] init];
+  __weak __typeof__(self) weakSelf = self;
+  [helper sendSomething:someValues completion:^(BOOL success, NSError *error) {
+    __typeof__(self) strongSelf = weakSelf;
+    if (strongSelf == nil) return;
+    
+    // This window is running modally with its own run loop. Therefore,
+    // we cannot dispatch to the main queue. Instead, we must go old
+    // school can call a selector on the main thread. In other words,
+    // dispatch_async(dispatch_get_main_queue(), ^{}); does not work
+    // here.
+    
+    NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
+    userInfo[@"success"] = @(success);
+    if (error) userInfo[@"error"] = error;
+    
+    [strongSelf performSelectorOnMainThread:@selector(completeSendSomething:) withObject:userInfo waitUntilDone:NO];
+  }];
+}
+
+- (void)completeSendSomething:(NSDictionary *)userInfo
+{
+    ...
+}
+</code></pre>
+</div>
+
+<p>This pattern change now has me re-thinking how I use certain patterns in my code, especially for code that I intend on sharing between the two platforms.</p>
+
+<p>Update: I posted a <a href="https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSApplication_Class/index.html#//apple_ref/occ/instm/NSApplication/runModalForWindow:">sample project</a> that illustrates the problem. In writing the sample app, I learned that the scenario that causes the problem is when the modal window is presented via a block that is dispatched asynchronously on the main queue.</p>
+
+<p><a name="update2"></a>Update 2: <a href="https://mikeash.com/pyblog/">Mike Ash</a> pointed out that NSRunLoop is reentrant but GCD serial queues are not and this is the reason, not my theory of a different event loop, the block isn’t executed. Mike said, “The main queue is already executing a block, and it won’t execute a new one until that one is done. This is a subtle way in which dispatch on the main queue isn’t the same as <code class="highlighter-rouge">performSelectorOnMainThread</code>.”</p>
+
+<p>Good to know and thanks, Mike, for explaining what is happening.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>From the <a href="https://github.com/kirbyt/MacModalDispatchAsyncProblem">Apple documentation</a> for <code class="highlighter-rouge">+[NSApp runModalForWindow:]</code>: “This method runs a modal event loop for the specified window synchronously. It displays the specified window, makes it key, starts the run loop, and processes events for that window. (You do not need to show the window yourself.) While the app is in that loop, it does not respond to any other events (including mouse, keyboard, or window-close events) unless they are associated with the window. It also does not perform any tasks (such as firing timers) that are not associated with the modal run loop. In other words, this method consumes only enough CPU time to process events and dispatch them to the action methods associated with the modal window.” <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 ]]></content>
   </entry>
   
