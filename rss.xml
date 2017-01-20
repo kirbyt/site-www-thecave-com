@@ -5,10 +5,38 @@
         <description>thecave | A Hideout for Programmers, Indie Devs, Solopreneurs - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2016-12-30T18:14:54-05:00</lastBuildDate>
-        <pubDate>2016-12-30T18:14:54-05:00</pubDate>
+        <lastBuildDate>2017-01-20T06:59:57-05:00</lastBuildDate>
+        <pubDate>2017-01-20T06:59:57-05:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Hey Siri, Text Evernote</title>
+                <description>&lt;p&gt;Do you use &lt;a href=&quot;https://evernote.com&quot;&gt;Evernote&lt;/a&gt;? Ever wish you could quickly save a note to Evernote hands-free? Well, I found a way.&lt;/p&gt;
+
+&lt;p&gt;For nearly a year now, I’ve been using Evernote to store everything. Even the draft of this blog post was written using Evernote. As my dependency on Evernote grew, so did my need to quickly capture new ideas when I wasn’t near my computer. Sure, I can use my iPhone to save a note, but how do I save one when I can’t using my phone. What if I’m driving and an idea comes to mind that I want to capture. What then? Pull the car over just to use Evernote. Sorry, I’m obsessed with using Evernote, but not that obsessed.&lt;/p&gt;
+
+&lt;p&gt;Thankfully I found a way to record my ideas to Evernote that I can do it even while driving. All I do is say, “Hey Siri text Evernote…”&lt;/p&gt;
+
+&lt;h1 id=&quot;how-it-works&quot;&gt;How it works&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ifttt.com/&quot;&gt;IFTTT&lt;/a&gt; is an online service that lets you connect one service to another. It’s watching for actions from one service, and when they happen, it triggers an action in the other service. For instance, if you post a picture to Instagram, then save it to Dropbox. IFTTT can do that for you. It’s even in their name. IFTTT is If This, Then That. If I post a picture to Instagram, then save it to Dropbox. If This, Then That.&lt;/p&gt;
+
+&lt;p&gt;IFTTT supports incoming SMS messages. IFTTT can also save a note Evernote. I created an applet — that’s what IFTTT calls the rules that connect services together — that combines these two services. The applet accepts an incoming SMS message, then saves the message to Evernote.&lt;/p&gt;
+
+&lt;p&gt;IFTTT provides the phone number for the SMS message, which I added to my contacts list. I named the contact Evernote. Now, whenever I need to save an idea to Evernote quickly, I just send a text message to my Evernote contact. Cool, eh? Wait, it gets even cooler.&lt;/p&gt;
+
+&lt;h1 id=&quot;hey-siri-text-evernote&quot;&gt;Hey Siri, Text Evernote&lt;/h1&gt;
+
+&lt;p&gt;iPhone and Apple Watch have a nifty feature where you can say, “Hey Siri” and have Siri do some task for you. I use this all this time for things like setting a timer. “Hey Siri, set a 5 minute timer.” BAM! Siri sets a 5-minute timer for me. But Siri can do more. She can send a text message. Heck, she’ll even type the message as you speak. So while I’m driving, I raise my wrist and say into my Apple Watch, “Hey Siri, text Evernote, write a blog post on how I save ideas to Evernote without using my hands.” My watch sends the message to my iPhone, which sends out the SMS to IFTTT, which saves the message to Evernote.&lt;/p&gt;
+
+&lt;p&gt;Pretty dang cool, eh?&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2017/01/20/hey-siri-text-evernote/</link>
+                <guid>http://www.thecave.com/2017/01/20/hey-siri-text-evernote</guid>
+                <pubDate>2017-01-20T06:52:48-05:00</pubDate>
+        </item>
 
         <item>
                 <title>Trying a little experiment</title>
@@ -595,61 +623,6 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
                 <link>http://www.thecave.com/2015/07/07/ive-been-doing-it-wrong/</link>
                 <guid>http://www.thecave.com/2015/07/07/ive-been-doing-it-wrong</guid>
                 <pubDate>2015-07-07T07:22:54-04:00</pubDate>
-        </item>
-
-        <item>
-                <title>Fear</title>
-                <description>&lt;p&gt;Lately I’ve been struggling to release new things out to the public, things such as blog posts, open source code, a new website and service I want to offer, even updates to some of my apps. What’s worse is that a number of these things are done and are just sitting on my computer. For instance, I’ve been using an updated version of Cross Post for nearly two months that isn’t available in the App Store.&lt;/p&gt;
-
-&lt;p&gt;So why haven’t I pulled the trigger on these things and released them to the public? Fear, that’s my answer.&lt;/p&gt;
-
-&lt;p&gt;I’m letting fear get the best me recently. I fear what people might say or think of the work I’m going. I fear that friends will start looking down on me. I fear that I will end up looking like an idiot. The funny part is I don’t have a fear of failing. You learn from failure. But for some odd reason I have developed a fear what others, especially friends, will think.&lt;/p&gt;
-
-&lt;h2 id=&quot;out-of-character&quot;&gt;Out of Character&lt;/h2&gt;
-
-&lt;p&gt;This fear of what others will think is completely out of character for me. For most of my life I’ve had a “I don’t give a fuck what other think” attitude (and that’s exactly how I’ve always put it). I was the high school weirdo with dyed hair and strange clothes. I was the nonconformist who would occasionally wear a polo shirt just to throw off my small circle of friends. In college I had a my racquetball racquet strung with bright hot pink strings, which led to some heated confrontations with others&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. The point here is I didn’t care what others thought.&lt;/p&gt;
-
-&lt;p&gt;I remember an evening years ago when my dad refused to go out to dinner with me because of the way I was dressed. He said I embarrassed him. I argued that he was being ridiculous because 1) it wasn’t him that was dressed up like a Boy George reject and if anyone should be embarrassed it should be me (though I wasn’t), and 2) if I don’t care what people think about me, then why should he care. If anything people will feel sorry for him for having to sit with me at a restaurant. My argument didn’t change his mind and our dinner plans were canceled.&lt;/p&gt;
-
-&lt;p&gt;So if this fear is out of character for me, then where is it coming from?&lt;/p&gt;
-
-&lt;h2 id=&quot;where-is-it-coming-from&quot;&gt;Where Is It Coming From&lt;/h2&gt;
-
-&lt;p&gt;I know my fear is irrational when I think about it. But it’s still there and I can’t seem to shake it. Recently I’ve been putting a lot of thought into where this fear is coming from, and I think I might know.&lt;/p&gt;
-
-&lt;p&gt;I’ve been much more isolated since moving to Vermont. I don’t have the social circle of independent software developers and business owners around me like I did when I lived in New York City and the Boston area. Most of my social interactions these days involved talking about snowboarding and hiking, not on product releases, marketing, and growing a business.&lt;/p&gt;
-
-&lt;p&gt;Before moving to Vermont I attended a number of social gatherings where I could talk about and share my ideas. These groups were great and always provided excellent feedback. I always listened to what others had to say, but I didn’t always follow their advice. For example, I released a CSV editor for Windows years ago and made a good money from it for a number of years even though all my software dev friends said not to do it. Still, talking about the ideas with other on a regular bases always felt good, but I no longer have a local circle of friends and peers like I did before. And I think that is why I’ve developed this fear inside me.&lt;/p&gt;
-
-&lt;p&gt;Even though I didn’t care, for most of my life, what others thoughts, hearing what others had to say, both good or bad, always helped me. But in my recent isolation I rarely, if ever, get feedback from others. Hearing “you suck” motivated me to do better. Hearing “that’s awesome” in encouraged me to do more. But hearing nothing, no feedback at all, for long periods of time has caused this fear to grow inside of me.&lt;/p&gt;
-
-&lt;h2 id=&quot;get-over-the-fear&quot;&gt;Get Over The Fear&lt;/h2&gt;
-
-&lt;p&gt;I know my fears are irrational, but I can’t seem to shake them. So I’m trying a few new things in my attempts to get over the fear.&lt;/p&gt;
-
-&lt;p&gt;I’m trying to build a small community here in Stowe (though I think about giving up each month). A few folks do join me each month, but the group is not the same as the ones I participated in before coming to Vermont. Like the gatherings I attended before, this new group is made up of mostly software developers. But what is missing for me are the independents, the business owners, the solopreneur that were common in the circles I had when I lived in NYC and Boston.&lt;/p&gt;
-
-&lt;p&gt;I’m also participating in a bi-weekly mastermind group. This is going well, and in fact, it was on a recent mastermind call that I realized I’ve developed this irrational fear. My fear came up again last night in an email exchange with a friend who is doing a far better job of shipping than me. Talking about my fear with others as well as what I’m working on and my goals is starting to help me return to my old self, but I need to do more.&lt;/p&gt;
-
-&lt;p&gt;Another thing I’m interested in trying but I haven’t started yet is working with an accountability partner. The concept is simple. You and your partner help each other keep weekly commitments. Once a week you and your partner chat about the previous week’s accomplishments and the current week’s goals. When goals are not met, you analyze and talk through what happened. Having someone hold me accountable each week will help get me back into the habit of releasing things, which in turn will help me get over my fears.&lt;/p&gt;
-
-&lt;p&gt;One other thing I am doing in my attempts to shake the fear is to leave my quiet “cave” here in Stowe and get back into interacting in person with peers. To get things started, I agreed last week to speak at a small conference in October (more on this later). Just knowing I have this speaking event coming up should help reset my brain back to where it once was, or so I hope.&lt;/p&gt;
-
-&lt;p&gt;Are you having or had the similar fears? What sort of things are your doing to get over it? Fire off an email to me or send me a tweet and let me know.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;To this day I still don’t understand why people get so worked up over something so silly such as the string color of a racquetball racquet or the appearance of others. Just because it’s not something you would do, wear, or whatever doesn’t mean you need to hate on the other person. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-                <link>http://www.thecave.com/2015/07/02/fear/</link>
-                <guid>http://www.thecave.com/2015/07/02/fear</guid>
-                <pubDate>2015-07-02T06:48:32-04:00</pubDate>
         </item>
 
 

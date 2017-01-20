@@ -4,13 +4,41 @@
   <title><![CDATA[Category: personal | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/category/personal/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2016-12-30T18:14:54-05:00</updated>
+  <updated>2017-01-20T06:59:57-05:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hey Siri, Text Evernote]]></title>
+    <link href="http://www.thecave.com/2017/01/20/hey-siri-text-evernote/"/>
+    <updated>2017-01-20T06:52:48-05:00</updated>
+    <id>http://www.thecave.com/2017/01/20/hey-siri-text-evernote</id>
+    <content type="html"><![CDATA[<p>Do you use <a href="https://evernote.com">Evernote</a>? Ever wish you could quickly save a note to Evernote hands-free? Well, I found a way.</p>
+
+<p>For nearly a year now, I’ve been using Evernote to store everything. Even the draft of this blog post was written using Evernote. As my dependency on Evernote grew, so did my need to quickly capture new ideas when I wasn’t near my computer. Sure, I can use my iPhone to save a note, but how do I save one when I can’t using my phone. What if I’m driving and an idea comes to mind that I want to capture. What then? Pull the car over just to use Evernote. Sorry, I’m obsessed with using Evernote, but not that obsessed.</p>
+
+<p>Thankfully I found a way to record my ideas to Evernote that I can do it even while driving. All I do is say, “Hey Siri text Evernote…”</p>
+
+<h1 id="how-it-works">How it works</h1>
+
+<p><a href="https://ifttt.com/">IFTTT</a> is an online service that lets you connect one service to another. It’s watching for actions from one service, and when they happen, it triggers an action in the other service. For instance, if you post a picture to Instagram, then save it to Dropbox. IFTTT can do that for you. It’s even in their name. IFTTT is If This, Then That. If I post a picture to Instagram, then save it to Dropbox. If This, Then That.</p>
+
+<p>IFTTT supports incoming SMS messages. IFTTT can also save a note Evernote. I created an applet — that’s what IFTTT calls the rules that connect services together — that combines these two services. The applet accepts an incoming SMS message, then saves the message to Evernote.</p>
+
+<p>IFTTT provides the phone number for the SMS message, which I added to my contacts list. I named the contact Evernote. Now, whenever I need to save an idea to Evernote quickly, I just send a text message to my Evernote contact. Cool, eh? Wait, it gets even cooler.</p>
+
+<h1 id="hey-siri-text-evernote">Hey Siri, Text Evernote</h1>
+
+<p>iPhone and Apple Watch have a nifty feature where you can say, “Hey Siri” and have Siri do some task for you. I use this all this time for things like setting a timer. “Hey Siri, set a 5 minute timer.” BAM! Siri sets a 5-minute timer for me. But Siri can do more. She can send a text message. Heck, she’ll even type the message as you speak. So while I’m driving, I raise my wrist and say into my Apple Watch, “Hey Siri, text Evernote, write a blog post on how I save ideas to Evernote without using my hands.” My watch sends the message to my iPhone, which sends out the SMS to IFTTT, which saves the message to Evernote.</p>
+
+<p>Pretty dang cool, eh?</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Trying a little experiment]]></title>
@@ -78,17 +106,6 @@
 <p><div class="youtube-video"><figure><iframe width="560" height="420" src="https://www.youtube.com/embed/9_Wk5j_4Uc4?color=white&theme=light"></iframe></figure></div></p>
 
 <p>The video is from <a href="http://www.vtscapes.com">VermontScapes</a>. Go checkout the site if you want to see more beautiful photos of Vermont and the Stowe area.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Essence Of Vermont]]></title>
-    <link href="http://www.thecave.com/2015/06/18/essence-of-vermont/"/>
-    <updated>2015-06-18T06:16:26-04:00</updated>
-    <id>http://www.thecave.com/2015/06/18/essence-of-vermont</id>
-    <content type="html"><![CDATA[<p>It’s no surprise I love living in Vermont in part because it’s different from other places I have lived. And this video from Skyworks really captures parts of why I love it here.</p>
-
-<p><div class="youtube-video"><figure><iframe width="560" height="420" src="https://www.youtube.com/embed/UBwqn9BRWhA?color=white&theme=light"></iframe></figure></div></p>
 ]]></content>
   </entry>
   

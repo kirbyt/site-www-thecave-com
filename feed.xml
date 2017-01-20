@@ -5,9 +5,49 @@
     <description>The blog site for Kirby Turner, an independent software developer, where he shares tips and advice for programmers, indie devs, and solopreneurs.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 30 Dec 2016 18:14:54 -0500</pubDate>
-    <lastBuildDate>Fri, 30 Dec 2016 18:14:54 -0500</lastBuildDate>
+    <pubDate>Fri, 20 Jan 2017 06:59:57 -0500</pubDate>
+    <lastBuildDate>Fri, 20 Jan 2017 06:59:57 -0500</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Hey Siri, Text Evernote</title>
+        <description>&lt;p&gt;Do you use &lt;a href=&quot;https://evernote.com&quot;&gt;Evernote&lt;/a&gt;? Ever wish you could quickly save a note to Evernote hands-free? Well, I found a way.&lt;/p&gt;
+
+&lt;p&gt;For nearly a year now, I’ve been using Evernote to store everything. Even the draft of this blog post was written using Evernote. As my dependency on Evernote grew, so did my need to quickly capture new ideas when I wasn’t near my computer. Sure, I can use my iPhone to save a note, but how do I save one when I can’t using my phone. What if I’m driving and an idea comes to mind that I want to capture. What then? Pull the car over just to use Evernote. Sorry, I’m obsessed with using Evernote, but not that obsessed.&lt;/p&gt;
+
+&lt;p&gt;Thankfully I found a way to record my ideas to Evernote that I can do it even while driving. All I do is say, “Hey Siri text Evernote…”&lt;/p&gt;
+
+&lt;h1 id=&quot;how-it-works&quot;&gt;How it works&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ifttt.com/&quot;&gt;IFTTT&lt;/a&gt; is an online service that lets you connect one service to another. It’s watching for actions from one service, and when they happen, it triggers an action in the other service. For instance, if you post a picture to Instagram, then save it to Dropbox. IFTTT can do that for you. It’s even in their name. IFTTT is If This, Then That. If I post a picture to Instagram, then save it to Dropbox. If This, Then That.&lt;/p&gt;
+
+&lt;p&gt;IFTTT supports incoming SMS messages. IFTTT can also save a note Evernote. I created an applet — that’s what IFTTT calls the rules that connect services together — that combines these two services. The applet accepts an incoming SMS message, then saves the message to Evernote.&lt;/p&gt;
+
+&lt;p&gt;IFTTT provides the phone number for the SMS message, which I added to my contacts list. I named the contact Evernote. Now, whenever I need to save an idea to Evernote quickly, I just send a text message to my Evernote contact. Cool, eh? Wait, it gets even cooler.&lt;/p&gt;
+
+&lt;h1 id=&quot;hey-siri-text-evernote&quot;&gt;Hey Siri, Text Evernote&lt;/h1&gt;
+
+&lt;p&gt;iPhone and Apple Watch have a nifty feature where you can say, “Hey Siri” and have Siri do some task for you. I use this all this time for things like setting a timer. “Hey Siri, set a 5 minute timer.” BAM! Siri sets a 5-minute timer for me. But Siri can do more. She can send a text message. Heck, she’ll even type the message as you speak. So while I’m driving, I raise my wrist and say into my Apple Watch, “Hey Siri, text Evernote, write a blog post on how I save ideas to Evernote without using my hands.” My watch sends the message to my iPhone, which sends out the SMS to IFTTT, which saves the message to Evernote.&lt;/p&gt;
+
+&lt;p&gt;Pretty dang cool, eh?&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 20 Jan 2017 06:52:48 -0500</pubDate>
+        <link>http://www.thecave.com/2017/01/20/hey-siri-text-evernote/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2017/01/20/hey-siri-text-evernote/</guid>
+        
+        <category>evernote</category>
+        
+        <category>productivity</category>
+        
+        <category>siri</category>
+        
+        <category>tip</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title>Trying a little experiment</title>
@@ -329,43 +369,6 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
         <pubDate>Mon, 31 Aug 2015 20:57:22 -0400</pubDate>
         <link>http://www.thecave.com/2015/08/31/kicking-procrastination-in-the-ass/</link>
         <guid isPermaLink="true">http://www.thecave.com/2015/08/31/kicking-procrastination-in-the-ass/</guid>
-        
-        <category>indie life</category>
-        
-        <category>life</category>
-        
-        
-        <category>business</category>
-        
-      </item>
-    
-      <item>
-        <title>You Don't Need Motivation. You Need Good Habits</title>
-        <description>&lt;p&gt;Amy Hoy answers the question “&lt;a href=&quot;https://unicornfree.com/2013/how-do-you-stay-motivated-when-youre-not-making-any-money&quot;&gt;How do you stay motivated when you’re not making any money&lt;/a&gt;”. The post is a couple of years old, but her answer is as relevant today as it was back then. It’s not about finding and having motivation. It’s about developing good habits.&lt;/p&gt;
-
-&lt;p&gt;To paraphrase Amy, you don’t let your kids or pets starve just because you’re not motivated to feed them. You do it anyways. And that exactly what you need to do when starting or running your business, creating a new product, or doing anything that matters to you. You just need to do it even when your not motivated to do it.&lt;/p&gt;
-
-&lt;p&gt;I think back to the time when I was writing the first edition of &lt;a href=&quot;http://www.learningipadprogramming.com&quot;&gt;Learning iPad Programming&lt;/a&gt;. I was struggling to stay motivated, and I would go long periods of time (days, weeks, months) without writing a word. I read anything and everything I could find on how to stay motivated, but those tips didn’t help me.&lt;/p&gt;
-
-&lt;p&gt;What helped me was structuring my day so that I worked on my book at least an hour each day. I started work on the book at the same time every day, which was 9 am. Some days I only worked on it for an hour, other days I would work on it all day. It depended on how I felt. But I always worked on it for at least one hour starting at 9 am every day even when I wasn’t motivated to work on it.&lt;/p&gt;
-
-&lt;p&gt;This structure got me into the habit of writing daily. And after I developed the habit, I found writing became easier for me. And I was able to ship the book. The structure worked so well, I used it again and developed the same habit (and then some&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;) to ship the second edition, which I completed in a fraction of the time compared to the time spent on the first edition.&lt;/p&gt;
-
-&lt;p&gt;So don’t let a lack of motivation stop you from getting things done. If you are struggling, then setup a structure that will help you develop the habits you need to get things done.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;Another habit I developed while writing the second edition of my book, and one I still use today, is to listen to my &lt;a href=&quot;https://open.spotify.com/user/kirbyt/playlist/6QUgiw9WPf8qXdgnrdXGvZ&quot;&gt;Music to Write To&lt;/a&gt; playlist on Spotify. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Mon, 31 Aug 2015 14:49:56 -0400</pubDate>
-        <link>http://www.thecave.com/2015/08/31/you-dont-need-motivation-you-need-good-habits/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2015/08/31/you-dont-need-motivation-you-need-good-habits/</guid>
         
         <category>indie life</category>
         
