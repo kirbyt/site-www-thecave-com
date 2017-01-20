@@ -5,13 +5,13 @@
     <description>The blog site for Kirby Turner, an independent software developer, where he shares tips and advice for programmers, indie devs, and solopreneurs.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 20 Jan 2017 06:59:57 -0500</pubDate>
-    <lastBuildDate>Fri, 20 Jan 2017 06:59:57 -0500</lastBuildDate>
+    <pubDate>Fri, 20 Jan 2017 07:02:04 -0500</pubDate>
+    <lastBuildDate>Fri, 20 Jan 2017 07:02:04 -0500</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
         <title>Hey Siri, Text Evernote</title>
-        <description>&lt;p&gt;Do you use &lt;a href=&quot;https://evernote.com&quot;&gt;Evernote&lt;/a&gt;? Ever wish you could quickly save a note to Evernote hands-free? Well, I found a way.&lt;/p&gt;
+        <description>&lt;p&gt;Do you use &lt;a href=&quot;https://evernote.com&quot;&gt;Evernote&lt;/a&gt;? Ever wish you could quickly save a note to Evernote hands-free? I found a way.&lt;/p&gt;
 
 &lt;p&gt;For nearly a year now, I’ve been using Evernote to store everything. Even the draft of this blog post was written using Evernote. As my dependency on Evernote grew, so did my need to quickly capture new ideas when I wasn’t near my computer. Sure, I can use my iPhone to save a note, but how do I save one when I can’t using my phone. What if I’m driving and an idea comes to mind that I want to capture. What then? Pull the car over just to use Evernote. Sorry, I’m obsessed with using Evernote, but not that obsessed.&lt;/p&gt;
 
