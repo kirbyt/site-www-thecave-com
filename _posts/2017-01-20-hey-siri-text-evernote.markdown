@@ -5,7 +5,7 @@ date: 2017-01-20 06:52:48 -0500
 category: personal
 tags: [evernote, siri, productivity, tip]
 ---
-Do you use [Evernote][2]? Ever wish you could quickly save a note to Evernote hands-free? Well, I found a way.
+Do you use [Evernote][2]? Ever wish you could quickly save a note to Evernote hands-free? I found a way.
 
 For nearly a year now, I’ve been using Evernote to store everything. Even the draft of this blog post was written using Evernote. As my dependency on Evernote grew, so did my need to quickly capture new ideas when I wasn’t near my computer. Sure, I can use my iPhone to save a note, but how do I save one when I can’t using my phone. What if I’m driving and an idea comes to mind that I want to capture. What then? Pull the car over just to use Evernote. Sorry, I’m obsessed with using Evernote, but not that obsessed. 
 
