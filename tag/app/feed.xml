@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: app | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/app/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-02-02T11:35:19-05:00</updated>
+  <updated>2017-02-02T11:39:40-05:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -19,11 +19,11 @@
     <id>http://www.thecave.com/2017/02/02/the-experienced-programmers-guide-to-getting-started-with-swift</id>
     <content type="html"><![CDATA[<p>A couple Vermont-based software developers recently asked me how to get started with Swift and writing apps for iOS. I emailed them individually, but when I was asked again today, I thought, time to write a blog post.</p>
 
-<p>If you are an experienced programmer looking to get started with Swift and iOS development, I suggest starting with the <a href="https://developer.apple.com/swift/resources/">Apple developer guides</a>. I also recommend reading the language guide, available in the iBooks Store and <a href="https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097-CH3-ID0">online</a>. It is a dry read, but very detailed. Besides, I still find myself referring to it from time to time, so it is on my <strong>must read</strong> for those new to Swift.</p>
+<p>If you are an experienced programmer looking to get started with Swift and iOS development, I suggest starting with the <a href="https://developer.apple.com/swift/resources/">Apple developer guides</a>. I also recommend reading the language guide, available in the iBooks Store and <a href="https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097-CH3-ID0">online</a>. It is a dry read, but very detailed. Besides, I still find myself referring to it from time to time, so it is on my “must read” list for those new to Swift.</p>
 
 <p>Another great place to get started is over at <a href="https://www.raywenderlich.com">raywenderlich.com</a>. The site contains tons of great tutorials, books, and videos. Some are free, others you pay for, but the materials are some of the best learning materials outside of Apple. Take a look at the <a href="https://www.raywenderlich.com/category/swift">Swift category</a> to get started.</p>
 
-<p>If you are interested in game development, the book <strong><a href="https://www.raywenderlich.com/store/2d-ios-tvos-games-by-tutorials">2D Apple Games</a></strong> is an awesome read. It focuses on writing iOS games using Swift 3 and SpriteKit, giving you step by step instructions. I have read half the book so far, and it has been a blast learning how to create games for iOS (even though I am not a game developer).</p>
+<p>If you are interested in game development, the book <em><a href="https://www.raywenderlich.com/store/2d-ios-tvos-games-by-tutorials">2D Apple Games</a></em> is an awesome read. It focuses on writing iOS games using Swift 3 and SpriteKit, giving you step by step instructions. I have read half the book so far, and it has been a blast learning how to create games for iOS (even though I am not a game developer).</p>
 
 <p>Lastly, if you have an iPad, check out <a href="http://www.apple.com/swift/playgrounds/">Swift Playgrounds</a>. It teaches you how to code, which is not something you need if you are an experienced programmer, but from what I have heard, the advance lessons can be helpful in teaching experienced programmer how to write Swift code. Also, you can experiment with all aspects of the device, from accessing the various iOS frameworks, such as SpriteKit and UIKit, to directly controlling hardware, such as the gyroscope, accelerometer, and camera. (Download the Swift Playgrounds app <a href="https://itunes.apple.com/us/app/swift-playgrounds/id908519492?mt=8">here</a>.)</p>
 
