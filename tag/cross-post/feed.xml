@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: cross post | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/cross-post/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-03-25T07:30:17-04:00</updated>
+  <updated>2017-03-25T07:58:53-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -17,6 +17,9 @@
     <link href="http://www.thecave.com/2015/01/18/eliminating-distractions/"/>
     <updated>2015-01-18T13:49:47-05:00</updated>
     <id>http://www.thecave.com/2015/01/18/eliminating-distractions</id>
+    <description><![CDATA[<p>Dan Counsell wrote an excellent post about <a href="http://dancounsell.com/articles/removing-distractions">removing distractions</a>. In the post he talks about how he removed distractions by removing social media apps such as Twitter and Facebook from his iPhone. He’s done other things too such as reading a book instead of checking Twitter, and he started a “No Technology Day” on Saturdays, which is something I think I might start doing as well.</p>
+
+]]></description>
     <content type="html"><![CDATA[<p>Dan Counsell wrote an excellent post about <a href="http://dancounsell.com/articles/removing-distractions">removing distractions</a>. In the post he talks about how he removed distractions by removing social media apps such as Twitter and Facebook from his iPhone. He’s done other things too such as reading a book instead of checking Twitter, and he started a “No Technology Day” on Saturdays, which is something I think I might start doing as well.</p>
 
 <p>Over the last year I too have been eliminating distractions in my life by spending more of my time <a href="http://www.thecave.com/2014/06/20/enjoy-less-and-love-more/">doing what I love</a> and changing the way I use social networks. Changing the way I use social networks is one of the reasons I wrote my app <a href="http://www.whitepeaksoftware.com/cross-post">Cross Post</a>. With Cross Post I can share pictures, thoughts, and comments on Facebook, Twitter, and App.net without the worry of being distracted by those sites. Cross Post sends updates to social media sites, but it does not read the time lines or streams from those sites. Cross Post is a tool for making, not reading, micro-blog posts, hence it’s ability to help eliminate distractions.</p>
@@ -42,6 +45,9 @@
     <link href="http://www.thecave.com/2014/10/09/microblogging-the-open-web-and-cross-post/"/>
     <updated>2014-10-09T00:00:00-04:00</updated>
     <id>http://www.thecave.com/2014/10/09/microblogging-the-open-web-and-cross-post</id>
+    <description><![CDATA[<p>Recently Manton Reece has been talking a lot about <a href="http://www.manton.org/tag/microblogging">microblogging</a> in an open web world using <a href="http://www.manton.org/tag/rss">RSS</a>. He has touched on points that are important to me, specifically content ownership. Like many people I post regularly to App.net, Facebook, Twitter, and other social networks, but I’ve always had one big problem with these networks. My micro-posts do not appear on my web site, and if these networks were to disappear in the future, then my content disappears too.</p>
+
+]]></description>
     <content type="html"><![CDATA[<p>Recently Manton Reece has been talking a lot about <a href="http://www.manton.org/tag/microblogging">microblogging</a> in an open web world using <a href="http://www.manton.org/tag/rss">RSS</a>. He has touched on points that are important to me, specifically content ownership. Like many people I post regularly to App.net, Facebook, Twitter, and other social networks, but I’ve always had one big problem with these networks. My micro-posts do not appear on my web site, and if these networks were to disappear in the future, then my content disappears too.</p>
 
 <h2 id="a-bit-of-history">A Bit of History</h2>
@@ -96,6 +102,9 @@
     <link href="http://www.thecave.com/2014/09/15/reporting-errors-in-cross-post-part-2/"/>
     <updated>2014-09-15T00:00:00-04:00</updated>
     <id>http://www.thecave.com/2014/09/15/reporting-errors-in-cross-post-part-2</id>
+    <description><![CDATA[<p>Yesterday I talked about <a href="http://www.thecave.com/2014/09/14/reporting-errors-in-cross-post/">options for reporting errors</a> (and statuses) from the server back to the Cross Post app. Later I came up with a third option, which I like the best…hosting the error reports on <a href="http://www.rackspace.com/cloud/files/">Cloud Files</a>.</p>
+
+]]></description>
     <content type="html"><![CDATA[<p>Yesterday I talked about <a href="http://www.thecave.com/2014/09/14/reporting-errors-in-cross-post/">options for reporting errors</a> (and statuses) from the server back to the Cross Post app. Later I came up with a third option, which I like the best…hosting the error reports on <a href="http://www.rackspace.com/cloud/files/">Cloud Files</a>.</p>
 
 <p>The Cross Post server is scalable, which means I cannot rely on the server’s file system. Data on the file system for one server is not synced to the other servers, and it’s possible that the server reporting the error is not the same server as the one that caught the error.</p>
@@ -137,6 +146,9 @@
     <link href="http://www.thecave.com/2014/09/14/reporting-errors-in-cross-post/"/>
     <updated>2014-09-14T00:00:00-04:00</updated>
     <id>http://www.thecave.com/2014/09/14/reporting-errors-in-cross-post</id>
+    <description><![CDATA[<p>A friend sent me suggestions on handling error reporting for Cross Post. I decided write up my current thinking here to see if my approach makes sense. Besides, trying to explain it in a set of 140 character tweets is less than ideal.</p>
+
+]]></description>
     <content type="html"><![CDATA[<p>A friend sent me suggestions on handling error reporting for Cross Post. I decided write up my current thinking here to see if my approach makes sense. Besides, trying to explain it in a set of 140 character tweets is less than ideal.</p>
 
 <p>The challenge I face is reporting errors, or any status reporting for that matter, that happen once the server takes over the process. A timeout error, for example, could occur while the server is uploading a photo to Twitter. At this point the server no longer has a connection to the app, so trickling the error up to the app is not an option.</p>
@@ -171,6 +183,9 @@
     <link href="http://www.thecave.com/2014/09/14/cross-posting-to-app.net-facebook-and-twitter/"/>
     <updated>2014-09-14T00:00:00-04:00</updated>
     <id>http://www.thecave.com/2014/09/14/cross-posting-to-app.net-facebook-and-twitter</id>
+    <description><![CDATA[<p>Last year my wife told me more family and friends would “like” my photos on Facebook if I posted the them directly to Facebook. At the time I was using <a href="https://ifttt.com">ifttt</a> to selectively cross post to App.net and Facebook. This meant my photos on Facebook were actually links to the App.net, which is where the photos were being stored, and this required my Facebook followers to tap the link to see the photos. Not the best experience for my followers.</p>
+
+]]></description>
     <content type="html"><![CDATA[<p>Last year my wife told me more family and friends would “like” my photos on Facebook if I posted the them directly to Facebook. At the time I was using <a href="https://ifttt.com">ifttt</a> to selectively cross post to App.net and Facebook. This meant my photos on Facebook were actually links to the App.net, which is where the photos were being stored, and this required my Facebook followers to tap the link to see the photos. Not the best experience for my followers.</p>
 
 <p>I decided to test my wife’s theory by posting photos directly to Facebook. Turns out she was right. I started getting more likes. Not only that, I found that family and friends posted more comments when I posted the photos directly. My wife was right. Posting photos directly to the social site is the best experience for followers and the best to become more engaged with your followers.</p>

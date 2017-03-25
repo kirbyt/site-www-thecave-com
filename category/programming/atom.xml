@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/category/programming/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-03-25T07:30:17-04:00</updated>
+  <updated>2017-03-25T07:58:53-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -17,6 +17,9 @@
     <link href="http://www.thecave.com/2017/02/02/the-experienced-programmers-guide-to-getting-started-with-swift/"/>
     <updated>2017-02-02T11:32:49-05:00</updated>
     <id>http://www.thecave.com/2017/02/02/the-experienced-programmers-guide-to-getting-started-with-swift</id>
+    <description><![CDATA[<p>A couple Vermont-based software developers recently asked me how to get started with Swift and writing apps for iOS. I emailed them individually, but when I was asked again today, I thought, time to write a blog post.</p>
+
+]]></description>
     <content type="html"><![CDATA[<p>A couple Vermont-based software developers recently asked me how to get started with Swift and writing apps for iOS. I emailed them individually, but when I was asked again today, I thought, time to write a blog post.</p>
 
 <p>If you are an experienced programmer looking to get started with Swift and iOS development, I suggest starting with the <a href="https://developer.apple.com/swift/resources/">Apple developer guides</a>. I also recommend reading the language guide, available in the iBooks Store and <a href="https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097-CH3-ID0">online</a>. It is a dry read, but very detailed. Besides, I still find myself referring to it from time to time, so it is on my “must read” list for those new to Swift.</p>
@@ -36,6 +39,9 @@
     <link href="http://www.thecave.com/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/"/>
     <updated>2015-12-03T10:16:56-05:00</updated>
     <id>http://www.thecave.com/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk</id>
+    <description><![CDATA[<p>I recently came across this question about searching using the Parse SDK for iOS. Simon asks:</p>
+
+]]></description>
     <content type="html"><![CDATA[<p>I recently came across this question about searching using the Parse SDK for iOS. Simon asks:</p>
 
 <blockquote>
@@ -72,6 +78,9 @@
     <link href="http://www.thecave.com/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/"/>
     <updated>2015-09-28T15:46:02-04:00</updated>
     <id>http://www.thecave.com/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller</id>
+    <description><![CDATA[<p>Over the summer I updated a number of apps to iOS 9. A common tasks for me was replacing the deprecated <code class="highlighter-rouge">UIAlertView</code> with new <code class="highlighter-rouge">UIAlertController</code> class. Generally this is easy to do, but there is one scenario that <code class="highlighter-rouge">UIAlertView</code> handles well that <code class="highlighter-rouge">UIAlertController</code> doesn’t support at all: displaying an alert view from parts of your code without a reference to the current view controller, for instance, displaying an alert view from the app delegate.</p>
+
+]]></description>
     <content type="html"><![CDATA[<p>Over the summer I updated a number of apps to iOS 9. A common tasks for me was replacing the deprecated <code class="highlighter-rouge">UIAlertView</code> with new <code class="highlighter-rouge">UIAlertController</code> class. Generally this is easy to do, but there is one scenario that <code class="highlighter-rouge">UIAlertView</code> handles well that <code class="highlighter-rouge">UIAlertController</code> doesn’t support at all: displaying an alert view from parts of your code without a reference to the current view controller, for instance, displaying an alert view from the app delegate.</p>
 
 <p>Trying to display an alert view using <code class="highlighter-rouge">UIAlertController</code> from a non-UI specific class such as the app delegate is a <a href="http://stackoverflow.com/questions/26952061/present-uialertcontroller-from-appdelegate">common problem</a>, and developers have found different <a href="http://stackoverflow.com/questions/26554894/how-to-present-uialertcontroller-when-not-in-a-view-controller">workarounds</a>. <a href="http://stackoverflow.com/a/30941356">One particular solution</a> that caught my eye was this one from agilityvision, who writes:</p>
@@ -116,6 +125,9 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
     <link href="http://www.thecave.com/2015/09/21/tags-and-categories/"/>
     <updated>2015-09-21T19:45:44-04:00</updated>
     <id>http://www.thecave.com/2015/09/21/tags-and-categories</id>
+    <description><![CDATA[<p>I’ve been doing a bit of tinkering here at thecave. I realized I was using categories as if they were tags and for one simple reason. I didn’t have a way to support tags. That is, until now.</p>
+
+]]></description>
     <content type="html"><![CDATA[<p>I’ve been doing a bit of tinkering here at thecave. I realized I was using categories as if they were tags and for one simple reason. I didn’t have a way to support tags. That is, until now.</p>
 
 <p>Tag support is provided in Jekyll, but I wanted something slightly different. I want the list of tags to appear at the end of a post just like the categories have for last couple of years. I searched for different ways to support tags with Jekyll, but I didn’t find anything suiting my needs. Then it occurred to me I could tweak the category plugins I use to work with tags, so that’s exactly what I did.</p>
@@ -131,6 +143,9 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
     <link href="http://www.thecave.com/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/"/>
     <updated>2015-09-07T11:37:39-04:00</updated>
     <id>http://www.thecave.com/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min</id>
+    <description><![CDATA[<p>I’m excited to be one of the speakers at the upcoming <a href="http://min.360idev.com">360idev-min</a> conference in Greenville, SC. In my talk I’ll share the things you need to know about when writing a share extension for your iOS app.</p>
+
+]]></description>
     <content type="html"><![CDATA[<p>I’m excited to be one of the speakers at the upcoming <a href="http://min.360idev.com">360idev-min</a> conference in Greenville, SC. In my talk I’ll share the things you need to know about when writing a share extension for your iOS app.</p>
 
 <p>If you plan to attend <a href="http://min.360idev.com">360idev-min</a>, then use the coupon code <strong>SpeakerFriend</strong> to save $100 when purchasing your ticket.</p>

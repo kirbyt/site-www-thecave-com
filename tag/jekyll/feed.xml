@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: jekyll | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/jekyll/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-03-25T07:30:17-04:00</updated>
+  <updated>2017-03-25T07:58:53-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -17,6 +17,9 @@
     <link href="http://www.thecave.com/2015/09/21/tags-and-categories/"/>
     <updated>2015-09-21T19:45:44-04:00</updated>
     <id>http://www.thecave.com/2015/09/21/tags-and-categories</id>
+    <description><![CDATA[<p>I’ve been doing a bit of tinkering here at thecave. I realized I was using categories as if they were tags and for one simple reason. I didn’t have a way to support tags. That is, until now.</p>
+
+]]></description>
     <content type="html"><![CDATA[<p>I’ve been doing a bit of tinkering here at thecave. I realized I was using categories as if they were tags and for one simple reason. I didn’t have a way to support tags. That is, until now.</p>
 
 <p>Tag support is provided in Jekyll, but I wanted something slightly different. I want the list of tags to appear at the end of a post just like the categories have for last couple of years. I searched for different ways to support tags with Jekyll, but I didn’t find anything suiting my needs. Then it occurred to me I could tweak the category plugins I use to work with tags, so that’s exactly what I did.</p>
@@ -32,6 +35,9 @@
     <link href="http://www.thecave.com/2015/07/14/redirect-jekyll-site-to-https-on-openshift/"/>
     <updated>2015-07-14T14:17:53-04:00</updated>
     <id>http://www.thecave.com/2015/07/14/redirect-jekyll-site-to-https-on-openshift</id>
+    <description><![CDATA[<p>I’m preparing to roll out a new <a href="http://jekyllrb.com">Jekyll</a> website, but unlike with my other Jekyll sites, I want each web page served up on <code class="highlighter-rouge">https</code>, not <code class="highlighter-rouge">http</code>. This means telling the server to redirect <code class="highlighter-rouge">http</code> request to <code class="highlighter-rouge">https</code>.</p>
+
+]]></description>
     <content type="html"><![CDATA[<p>I’m preparing to roll out a new <a href="http://jekyllrb.com">Jekyll</a> website, but unlike with my other Jekyll sites, I want each web page served up on <code class="highlighter-rouge">https</code>, not <code class="highlighter-rouge">http</code>. This means telling the server to redirect <code class="highlighter-rouge">http</code> request to <code class="highlighter-rouge">https</code>.</p>
 
 <p>Hosting this new site on <a href="https://pages.github.com">Github Pages</a> isn’t option because Github Pages doesn’t support using a custom SSL certificate for your custom domain name. So I decided to see what it would take to host a Jekyll site on <a href="https://www.openshift.com">OpenShift</a>.</p>
@@ -62,6 +68,9 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
     <link href="http://www.thecave.com/2014/12/28/made-some-fixes-to-the-blog-site/"/>
     <updated>2014-12-28T19:01:32-05:00</updated>
     <id>http://www.thecave.com/2014/12/28/made-some-fixes-to-the-blog-site</id>
+    <description><![CDATA[<p>Before doing some work today I decided to make some improvements to my blog site. I thought I would be playing with the site for only an hour or so, but instead it took most of the day. Typical when dealing with programming issues in an unfamiliar environment.</p>
+
+]]></description>
     <content type="html"><![CDATA[<p>Before doing some work today I decided to make some improvements to my blog site. I thought I would be playing with the site for only an hour or so, but instead it took most of the day. Typical when dealing with programming issues in an unfamiliar environment.</p>
 
 <p>This site, as well as <a href="http://blog.whitepeaksoftware.com">my company blog site</a>, uses <a href="http://jekyllrb.com">Jekyll</a> to generate a static HTML version of the site that is in turned hosted on a server for your viewing pleasure. I noticed a while back that categories with embedded spaces, such as <em>cross post</em>, weren’t accessible from the categories list. The embedded space was being replaced with a dash. Also, the RSS feed was not including the time of the post, only the date. So I set out to fix these problems.</p>

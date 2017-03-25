@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: python | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/python/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-03-25T07:30:17-04:00</updated>
+  <updated>2017-03-25T07:58:53-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -17,6 +17,7 @@
     <link href="http://www.thecave.com/2016/11/19/from-trace-to-slopes/"/>
     <updated>2016-11-19T10:52:31-05:00</updated>
     <id>http://www.thecave.com/2016/11/19/from-trace-to-slopes</id>
+    <description><![CDATA[Need to download your Trace Snow recordings? I did and this is how I did it so I could import the recordings into Slopes.]]></description>
     <content type="html"><![CDATA[<p>I’m a software developer but I’m also a snowboard bum. And with the start of the 2016/2017 snowboard season upon us – that is, for those of us living in the Northern Hemisphere – I’m eager to hit the slopes. Over the last few years I’ve used <a href="http://www.traceup.com/trace-for-snow">Trace Snow</a>, formerly AlpineReplay, to track my time on the slopes. It’s a good iPhone app but far from perfect. One feature it lacks is reporting the number of days spent on the slopes in a season. Trace isn’t alone in not having this feature. None of the ski and snowboard tracking apps I’ve tried have this feature. It seems these apps are more commonly used by individuals who only get a small number of days on the slopes, say 5 or 10 days, which is easy to count. But when you average 80+ days each season, counting the number of days can be a pain.</p>
 
 <p>As luck would have it I had the pleasure of meeting <a href="https://curtisherbert.com">Curtis Herbert</a> at this year’s 360idev. For those who don’t know Curtis, he’s an iOS developer who just happens to have written an excellent ski and snowboard tracking app appropriately named <a href="https://getslopes.com">Slopes</a>.</p>

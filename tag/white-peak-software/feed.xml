@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: white peak software | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/white-peak-software/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-03-25T07:30:17-04:00</updated>
+  <updated>2017-03-25T07:58:53-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -17,6 +17,9 @@
     <link href="http://www.thecave.com/2015/08/18/retiring-my-csv-editor/"/>
     <updated>2015-08-18T11:23:09-04:00</updated>
     <id>http://www.thecave.com/2015/08/18/retiring-my-csv-editor</id>
+    <description><![CDATA[<p>Today I did something that I’ve been saying I will do for a long time. I retired my CSV editor, <a href="http://blog.whitepeaksoftware.com/2015/08/18/killinks-retirement/">Killink</a>.</p>
+
+]]></description>
     <content type="html"><![CDATA[<p>Today I did something that I’ve been saying I will do for a long time. I retired my CSV editor, <a href="http://blog.whitepeaksoftware.com/2015/08/18/killinks-retirement/">Killink</a>.</p>
 
 <p>The first release of Killink CSV Editor was back on March 22, 2007, and over the years it has done well despite the fact that I haven’t been actively working on the app or marketing it. Killink had great potential, especially if I had followed the business advice from those smarter than me to focus on the enterprise, but I honestly lost interest in the editor after I started writing apps for Mac and iOS.</p>
@@ -43,6 +46,9 @@
     <link href="http://www.thecave.com/2015/08/11/maintain-your-ios-app-with-peak-app-care/"/>
     <updated>2015-08-11T07:05:42-04:00</updated>
     <id>http://www.thecave.com/2015/08/11/maintain-your-ios-app-with-peak-app-care</id>
+    <description><![CDATA[<p>Last month I briefly mentioned <a href="http://www.thecave.com/2015/07/07/ive-been-doing-it-wrong/">my plan</a> to productize some of the services I offer through White Peak Software. The main idea is to take a consulting service that I already offer to my clients and turn it into a product that my clients and others will hopefully subscribe to thus creating a monthly recurring revenue stream for my company. My goal was to spend no more than 40 hours over the span of a few weeks setting up this new product. And now, after spending 38.75 hours over the last few weeks, I’m ready to share more details.</p>
+
+]]></description>
     <content type="html"><![CDATA[<p>Last month I briefly mentioned <a href="http://www.thecave.com/2015/07/07/ive-been-doing-it-wrong/">my plan</a> to productize some of the services I offer through White Peak Software. The main idea is to take a consulting service that I already offer to my clients and turn it into a product that my clients and others will hopefully subscribe to thus creating a monthly recurring revenue stream for my company. My goal was to spend no more than 40 hours over the span of a few weeks setting up this new product. And now, after spending 38.75 hours over the last few weeks, I’m ready to share more details.</p>
 
 <p>Today I’m happy to announce <a href="https://www.peakappcare.com">Peak App Care</a>. Peak App Care is a monthly subscription service for maintaining your iOS apps. What do I mean by that? Simply put, I monitor your app for crashes and fix them as quickly as possible. Not only that, I also perform small jobs such as bug fixes and enhancements to your app at your request, and I even manage the App Store for you, from updating screenshots to submitting new builds on your behalf.</p>
@@ -87,6 +93,9 @@
     <link href="http://www.thecave.com/2015/07/07/ive-been-doing-it-wrong/"/>
     <updated>2015-07-07T07:22:54-04:00</updated>
     <id>http://www.thecave.com/2015/07/07/ive-been-doing-it-wrong</id>
+    <description><![CDATA[<p>A few years back I was making the majority of my income from the products I sold. My apps, my book, they were all doing well. But that changed in 2013. Things came crashing down, and I found myself wondering how I was going to pay the bills.</p>
+
+]]></description>
     <content type="html"><![CDATA[<p>A few years back I was making the majority of my income from the products I sold. My apps, my book, they were all doing well. But that changed in 2013. Things came crashing down, and I found myself wondering how I was going to pay the bills.</p>
 
 <p>Luckily I have a marketable skill, so I decided to focus on consulting. This was my attempt to reboot my company. The idea was to do consulting work to raise cash, then when I had enough cash I would take time off to work on my business, which in my case meant building another app or two and improving on the ones I already had.</p>
@@ -140,6 +149,9 @@
     <link href="http://www.thecave.com/2014/09/14/cross-posting-to-app.net-facebook-and-twitter/"/>
     <updated>2014-09-14T00:00:00-04:00</updated>
     <id>http://www.thecave.com/2014/09/14/cross-posting-to-app.net-facebook-and-twitter</id>
+    <description><![CDATA[<p>Last year my wife told me more family and friends would “like” my photos on Facebook if I posted the them directly to Facebook. At the time I was using <a href="https://ifttt.com">ifttt</a> to selectively cross post to App.net and Facebook. This meant my photos on Facebook were actually links to the App.net, which is where the photos were being stored, and this required my Facebook followers to tap the link to see the photos. Not the best experience for my followers.</p>
+
+]]></description>
     <content type="html"><![CDATA[<p>Last year my wife told me more family and friends would “like” my photos on Facebook if I posted the them directly to Facebook. At the time I was using <a href="https://ifttt.com">ifttt</a> to selectively cross post to App.net and Facebook. This meant my photos on Facebook were actually links to the App.net, which is where the photos were being stored, and this required my Facebook followers to tap the link to see the photos. Not the best experience for my followers.</p>
 
 <p>I decided to test my wife’s theory by posting photos directly to Facebook. Turns out she was right. I started getting more likes. Not only that, I found that family and friends posted more comments when I posted the photos directly. My wife was right. Posting photos directly to the social site is the best experience for followers and the best to become more engaged with your followers.</p>
@@ -183,6 +195,9 @@
     <link href="http://www.thecave.com/2013/11/20/send-your-camera-video-to-your-tv/"/>
     <updated>2013-11-20T00:00:00-05:00</updated>
     <id>http://www.thecave.com/2013/11/20/send-your-camera-video-to-your-tv</id>
+    <description><![CDATA[<p>Believe it or not, I finally released a new app for iOS. It’s my first new app for <a href="http://www.whitepeaksoftware.com/">White Peak Software</a> in more than 2 years. Somewhere along the way over the last two years I lost my way, but I’m back.</p>
+
+]]></description>
     <content type="html"><![CDATA[<p>Believe it or not, I finally released a new app for iOS. It’s my first new app for <a href="http://www.whitepeaksoftware.com/">White Peak Software</a> in more than 2 years. Somewhere along the way over the last two years I lost my way, but I’m back.</p>
 
 <p>So what’s this new app? It’s <a href="http://www.whitepeaksoftware.com/big-screen">Big Screen</a>.</p>

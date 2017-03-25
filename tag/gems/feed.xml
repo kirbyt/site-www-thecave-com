@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: gems | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/gems/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-03-25T07:30:17-04:00</updated>
+  <updated>2017-03-25T07:58:53-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -17,6 +17,9 @@
     <link href="http://www.thecave.com/2014/04/24/wtf-ruby-gems/"/>
     <updated>2014-04-24T00:00:00-04:00</updated>
     <id>http://www.thecave.com/2014/04/24/wtf-ruby-gems</id>
+    <description><![CDATA[<p>I’m working with a client to update one of their iOS apps. The Xcode project uses CocoaPods for dependency management. I’m not a fan of CocoaPods, but I grin and bear it when working with existing client projects.</p>
+
+]]></description>
     <content type="html"><![CDATA[<p>I’m working with a client to update one of their iOS apps. The Xcode project uses CocoaPods for dependency management. I’m not a fan of CocoaPods, but I grin and bear it when working with existing client projects.</p>
 
 <p>Yesterday I needed to update a class, one .h file and one .m, from an open source project, so I ran <code class="highlighter-rouge">pod update</code> on the project. This told me I needed to update my install of CocoaPods, so I did. This in turn updated a ton of other Ruby Gems on my system. It was annoying having to go through the update process when all I needed was two files that I could have copied from github in less time, but no harm done, right? WRONG!!!</p>
