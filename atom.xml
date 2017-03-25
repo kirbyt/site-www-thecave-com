@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-03-25T07:58:53-04:00</updated>
+  <updated>2017-03-25T08:11:43-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,16 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[Love this picture]]></title>
+    <link href="http://www.thecave.com/2017/03/25/love-this-picture/"/>
+    <published>2017-03-25T08:08:22-04:00</published>
+    <updated>2017-03-25T08:08:22-04:00</updated>
+    <id>http://www.thecave.com/2017/03/25/love-this-picture</id>
+    <content type="html"><![CDATA[<p>I love this picture of Rowan and his cousin Sedona. Taken last weekend at Stowe Mountain Resort. <img src="https://c1.staticflickr.com/3/2813/32769104684_cec6f7e85b_z.jpg" alt="" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Micro blogging from thecave]]></title>
@@ -574,19 +584,6 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
     </li>
   </ol>
 </div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Boston Area Mac And iOS Dev Community Is Awesome]]></title>
-    <link href="http://www.thecave.com/2015/08/07/boston-area-mac-and-ios-dev-community-is-awesome/"/>
-    <published>2015-08-07T10:22:16-04:00</published>
-    <updated>2015-08-07T10:22:16-04:00</updated>
-    <id>http://www.thecave.com/2015/08/07/boston-area-mac-and-ios-dev-community-is-awesome</id>
-    <content type="html"><![CDATA[<p>This past Wednesday I had a chance to attend <a href="http://www.nshappyhour.org">NSHappyHour</a>. It’s was my first time attending since moving to Vermont two years ago. I had a great time catching up with everyone, and I was reminded just how awesome the Mac and iOS developer community is in the Boston area.</p>
-
-<p>I also was reminded how much I miss the community there, and since moving back isn’t an option for me - snowboard season starts in about 3 months for me - I need to make a point of visit the Boston area more.</p>
-
 ]]></content>
   </entry>
   

@@ -5,10 +5,19 @@
         <description>thecave | A Hideout for Programmers, Indie Devs, Solopreneurs - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2017-03-25T07:58:53-04:00</lastBuildDate>
-        <pubDate>2017-03-25T07:58:53-04:00</pubDate>
+        <lastBuildDate>2017-03-25T08:11:43-04:00</lastBuildDate>
+        <pubDate>2017-03-25T08:11:43-04:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Love this picture</title>
+                <description>&lt;p&gt;I love this picture of Rowan and his cousin Sedona. Taken last weekend at Stowe Mountain Resort. &lt;img src=&quot;https://c1.staticflickr.com/3/2813/32769104684_cec6f7e85b_z.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+                <link>http://www.thecave.com/2017/03/25/love-this-picture/</link>
+                <guid>http://www.thecave.com/2017/03/25/love-this-picture</guid>
+                <pubDate>2017-03-25T08:08:22-04:00</pubDate>
+        </item>
 
         <item>
                 <title>Micro blogging from thecave</title>
@@ -553,18 +562,6 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
                 <link>http://www.thecave.com/2015/08/10/dispatch-async-to-main-queue-doesnt-work-with-modal-window-on-mac-os-x/</link>
                 <guid>http://www.thecave.com/2015/08/10/dispatch-async-to-main-queue-doesnt-work-with-modal-window-on-mac-os-x</guid>
                 <pubDate>2015-08-10T07:09:01-04:00</pubDate>
-        </item>
-
-        <item>
-                <title>Boston Area Mac And iOS Dev Community Is Awesome</title>
-                <description>&lt;p&gt;This past Wednesday I had a chance to attend &lt;a href=&quot;http://www.nshappyhour.org&quot;&gt;NSHappyHour&lt;/a&gt;. It’s was my first time attending since moving to Vermont two years ago. I had a great time catching up with everyone, and I was reminded just how awesome the Mac and iOS developer community is in the Boston area.&lt;/p&gt;
-
-&lt;p&gt;I also was reminded how much I miss the community there, and since moving back isn’t an option for me - snowboard season starts in about 3 months for me - I need to make a point of visit the Boston area more.&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2015/08/07/boston-area-mac-and-ios-dev-community-is-awesome/</link>
-                <guid>http://www.thecave.com/2015/08/07/boston-area-mac-and-ios-dev-community-is-awesome</guid>
-                <pubDate>2015-08-07T10:22:16-04:00</pubDate>
         </item>
 
 
