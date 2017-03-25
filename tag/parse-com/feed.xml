@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: parse.com | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/parse-com/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-03-25T08:11:43-04:00</updated>
+  <updated>2017-03-25T08:34:32-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -13,10 +13,13 @@
 
   
   <entry>
+    
     <title type="html"><![CDATA[How To Do A Case Insensitive Search Using Parse SDK]]></title>
+    
     <link href="http://www.thecave.com/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/"/>
     <updated>2015-12-03T10:16:56-05:00</updated>
     <id>http://www.thecave.com/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk</id>
+    <tag>parse.com</tag>
     <description><![CDATA[<p>I recently came across this question about searching using the Parse SDK for iOS. Simon asks:</p>
 
 ]]></description>

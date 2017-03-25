@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: book | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/book/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-03-25T08:11:43-04:00</updated>
+  <updated>2017-03-25T08:34:32-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -13,10 +13,13 @@
 
   
   <entry>
+    
     <title type="html"><![CDATA[Micro-ISV: From Vision to Reality]]></title>
+    
     <link href="http://www.thecave.com/2006/01/11/micro-isv-from-vision-to-reality/"/>
     <updated>2006-01-11T00:00:00-05:00</updated>
     <id>http://www.thecave.com/2006/01/11/micro-isv-from-vision-to-reality</id>
+    <tag>book</tag>
     <description><![CDATA[<p><a href="http://www.amazon.com/exec/obidos/ASIN/1590596013/whitepeaksoft-20?creative=327641&amp;camp=14573&amp;link_code=as1"><img src="/images/blogimages/bcm.gif" border="0" alt=" Micro-ISV: From Vision to Reality " align="left" /></a> <a href="http://www.todoorelse.com/">Bob Walsh</a>’s book <a href="http://www.amazon.com/exec/obidos/ASIN/1590596013/whitepeaksoft-20?creative=327641&amp;camp=14573&amp;link_code=as1">Micro-ISV: From Vision to Reality</a> is finally on sale at Amazon.  You can also <a href="http://www.apress.com/book/bookDisplay.html?bID=10057">buy the eBook version</a> from directly from APress.</p>
 
 ]]></description>

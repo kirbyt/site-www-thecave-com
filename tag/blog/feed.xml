@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: blog | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/blog/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-03-25T08:11:43-04:00</updated>
+  <updated>2017-03-25T08:34:32-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -13,10 +13,13 @@
 
   
   <entry>
+    
     <title type="html"><![CDATA[Tags And Categories]]></title>
+    
     <link href="http://www.thecave.com/2015/09/21/tags-and-categories/"/>
     <updated>2015-09-21T19:45:44-04:00</updated>
     <id>http://www.thecave.com/2015/09/21/tags-and-categories</id>
+    <tag>blog</tag>
     <description><![CDATA[<p>I’ve been doing a bit of tinkering here at thecave. I realized I was using categories as if they were tags and for one simple reason. I didn’t have a way to support tags. That is, until now.</p>
 
 ]]></description>
@@ -31,10 +34,13 @@
   </entry>
   
   <entry>
+    
     <title type="html"><![CDATA[Blogging The Little Things]]></title>
+    
     <link href="http://www.thecave.com/2015/08/07/blogging-the-little-things/"/>
     <updated>2015-08-07T10:11:57-04:00</updated>
     <id>http://www.thecave.com/2015/08/07/blogging-the-little-things</id>
+    <tag>blog</tag>
     <description><![CDATA[<p>I read a post from Shubham Jain, by way of <a href="http://shapeof.com/archives/2015/7/coffee_coder_-_blog_little_things.html">Gus Mueller</a>, about <a href="http://coffeecoder.net/blog/blog-little-things/">blogging the little things</a>. In the post, Shubham says:</p>
 
 ]]></description>
@@ -50,10 +56,13 @@
   </entry>
   
   <entry>
+    
     <title type="html"><![CDATA[Do I Need Another Twitter Account]]></title>
+    
     <link href="http://www.thecave.com/2015/06/14/do-i-need-another-twitter-account/"/>
     <updated>2015-06-14T23:09:24-04:00</updated>
     <id>http://www.thecave.com/2015/06/14/do-i-need-another-twitter-account</id>
+    <tag>blog</tag>
     <description><![CDATA[<p>Earlier tonight I setup a new Twitter account that tweets a link each time I publish a new post here at thecave.com. The new Twitter account is <a href="https://twitter.com/thecave_com/">@thecave_com</a>. Of course now that this is setup, I’m wondering…Do I really need a separate Twitter account, or should I just tweet the links from my <a href="https://twitter.com/kiryt/">@kirbyt</a> account?</p>
 
 ]]></description>
@@ -65,10 +74,13 @@
   </entry>
   
   <entry>
+    
     <title type="html"><![CDATA[thecave On Twitter]]></title>
+    
     <link href="http://www.thecave.com/2015/06/14/thecave-on-twitter/"/>
     <updated>2015-06-14T22:31:52-04:00</updated>
     <id>http://www.thecave.com/2015/06/14/thecave-on-twitter</id>
+    <tag>blog</tag>
     <description><![CDATA[<p>My friend Uli <a href="https://twitter.com/uliwitness/status/600656348272001024">asked</a>:</p>
 
 ]]></description>
@@ -92,10 +104,13 @@
   </entry>
   
   <entry>
+    
     <title type="html"><![CDATA[Where I Blog These Days]]></title>
+    
     <link href="http://www.thecave.com/2015/05/19/where-i-blog-these-days/"/>
     <updated>2015-05-19T09:40:11-04:00</updated>
     <id>http://www.thecave.com/2015/05/19/where-i-blog-these-days</id>
+    <tag>blog</tag>
     <description><![CDATA[<p>I’ve recently, and “recently” as in the last couple of years, cut back on the number of blog sites I have. I’m down to three sites now, and that seems manageable. The sites are:</p>
 
 ]]></description>

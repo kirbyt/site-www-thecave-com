@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: cocoapods | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/cocoapods/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-03-25T08:11:43-04:00</updated>
+  <updated>2017-03-25T08:34:32-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -13,10 +13,13 @@
 
   
   <entry>
+    
     <title type="html"><![CDATA[WTF Ruby Gems]]></title>
+    
     <link href="http://www.thecave.com/2014/04/24/wtf-ruby-gems/"/>
     <updated>2014-04-24T00:00:00-04:00</updated>
     <id>http://www.thecave.com/2014/04/24/wtf-ruby-gems</id>
+    <tag>cocoapods</tag>
     <description><![CDATA[<p>I’m working with a client to update one of their iOS apps. The Xcode project uses CocoaPods for dependency management. I’m not a fan of CocoaPods, but I grin and bear it when working with existing client projects.</p>
 
 ]]></description>

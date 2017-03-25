@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: backup | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/backup/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-03-25T08:11:43-04:00</updated>
+  <updated>2017-03-25T08:34:32-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -13,10 +13,13 @@
 
   
   <entry>
+    
     <title type="html"><![CDATA[Affordable Cloud Storage With Amazon Cloud Drive]]></title>
+    
     <link href="http://www.thecave.com/2015/03/27/affordable-cloud-storage-with-amazon-cloud-drive/"/>
     <updated>2015-03-27T06:52:45-04:00</updated>
     <id>http://www.thecave.com/2015/03/27/affordable-cloud-storage-with-amazon-cloud-drive</id>
+    <tag>backup</tag>
     <description><![CDATA[<p>Yesterday Amazon announced new <a href="https://www.amazon.com/clouddrive/pricing">pricing plans</a> for their cloud storage offering named <a href="https://www.amazon.com/clouddrive/home">Cloud Drive</a>. You can store unlimited number of photos for $11.99 per year, or you can store unlimited number of files for $59.99. The later is a no-brainer for me as I have been looking for an affordable cloud storage solution like this.</p>
 
 ]]></description>

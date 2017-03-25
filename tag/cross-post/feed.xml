@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: cross post | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/cross-post/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-03-25T08:11:43-04:00</updated>
+  <updated>2017-03-25T08:34:32-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -13,10 +13,13 @@
 
   
   <entry>
+    
     <title type="html"><![CDATA[Eliminating Distractions]]></title>
+    
     <link href="http://www.thecave.com/2015/01/18/eliminating-distractions/"/>
     <updated>2015-01-18T13:49:47-05:00</updated>
     <id>http://www.thecave.com/2015/01/18/eliminating-distractions</id>
+    <tag>cross post</tag>
     <description><![CDATA[<p>Dan Counsell wrote an excellent post about <a href="http://dancounsell.com/articles/removing-distractions">removing distractions</a>. In the post he talks about how he removed distractions by removing social media apps such as Twitter and Facebook from his iPhone. He’s done other things too such as reading a book instead of checking Twitter, and he started a “No Technology Day” on Saturdays, which is something I think I might start doing as well.</p>
 
 ]]></description>
@@ -41,10 +44,13 @@
   </entry>
   
   <entry>
+    
     <title type="html"><![CDATA[Microblogging, the Open Web, and Cross Post]]></title>
+    
     <link href="http://www.thecave.com/2014/10/09/microblogging-the-open-web-and-cross-post/"/>
     <updated>2014-10-09T00:00:00-04:00</updated>
     <id>http://www.thecave.com/2014/10/09/microblogging-the-open-web-and-cross-post</id>
+    <tag>cross post</tag>
     <description><![CDATA[<p>Recently Manton Reece has been talking a lot about <a href="http://www.manton.org/tag/microblogging">microblogging</a> in an open web world using <a href="http://www.manton.org/tag/rss">RSS</a>. He has touched on points that are important to me, specifically content ownership. Like many people I post regularly to App.net, Facebook, Twitter, and other social networks, but I’ve always had one big problem with these networks. My micro-posts do not appear on my web site, and if these networks were to disappear in the future, then my content disappears too.</p>
 
 ]]></description>
@@ -98,10 +104,13 @@
   </entry>
   
   <entry>
+    
     <title type="html"><![CDATA[Reporting Errors in Cross Post Part 2]]></title>
+    
     <link href="http://www.thecave.com/2014/09/15/reporting-errors-in-cross-post-part-2/"/>
     <updated>2014-09-15T00:00:00-04:00</updated>
     <id>http://www.thecave.com/2014/09/15/reporting-errors-in-cross-post-part-2</id>
+    <tag>cross post</tag>
     <description><![CDATA[<p>Yesterday I talked about <a href="http://www.thecave.com/2014/09/14/reporting-errors-in-cross-post/">options for reporting errors</a> (and statuses) from the server back to the Cross Post app. Later I came up with a third option, which I like the best…hosting the error reports on <a href="http://www.rackspace.com/cloud/files/">Cloud Files</a>.</p>
 
 ]]></description>
@@ -142,10 +151,13 @@
   </entry>
   
   <entry>
+    
     <title type="html"><![CDATA[Reporting Errors in Cross Post]]></title>
+    
     <link href="http://www.thecave.com/2014/09/14/reporting-errors-in-cross-post/"/>
     <updated>2014-09-14T00:00:00-04:00</updated>
     <id>http://www.thecave.com/2014/09/14/reporting-errors-in-cross-post</id>
+    <tag>cross post</tag>
     <description><![CDATA[<p>A friend sent me suggestions on handling error reporting for Cross Post. I decided write up my current thinking here to see if my approach makes sense. Besides, trying to explain it in a set of 140 character tweets is less than ideal.</p>
 
 ]]></description>
@@ -179,10 +191,13 @@
   </entry>
   
   <entry>
+    
     <title type="html"><![CDATA[Cross Posting to App.net, Facebook, and Twitter]]></title>
+    
     <link href="http://www.thecave.com/2014/09/14/cross-posting-to-app.net-facebook-and-twitter/"/>
     <updated>2014-09-14T00:00:00-04:00</updated>
     <id>http://www.thecave.com/2014/09/14/cross-posting-to-app.net-facebook-and-twitter</id>
+    <tag>cross post</tag>
     <description><![CDATA[<p>Last year my wife told me more family and friends would “like” my photos on Facebook if I posted the them directly to Facebook. At the time I was using <a href="https://ifttt.com">ifttt</a> to selectively cross post to App.net and Facebook. This meant my photos on Facebook were actually links to the App.net, which is where the photos were being stored, and this required my Facebook followers to tap the link to see the photos. Not the best experience for my followers.</p>
 
 ]]></description>

@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: social | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/social/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-03-25T08:11:43-04:00</updated>
+  <updated>2017-03-25T08:34:32-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -13,10 +13,13 @@
 
   
   <entry>
+    
     <title type="html"><![CDATA[Boston Area Mac And iOS Dev Community Is Awesome]]></title>
+    
     <link href="http://www.thecave.com/2015/08/07/boston-area-mac-and-ios-dev-community-is-awesome/"/>
     <updated>2015-08-07T10:22:16-04:00</updated>
     <id>http://www.thecave.com/2015/08/07/boston-area-mac-and-ios-dev-community-is-awesome</id>
+    <tag>social</tag>
     <description><![CDATA[<p>This past Wednesday I had a chance to attend <a href="http://www.nshappyhour.org">NSHappyHour</a>. It’s was my first time attending since moving to Vermont two years ago. I had a great time catching up with everyone, and I was reminded just how awesome the Mac and iOS developer community is in the Boston area.</p>
 
 ]]></description>
@@ -28,10 +31,13 @@
   </entry>
   
   <entry>
+    
     <title type="html"><![CDATA[Fear]]></title>
+    
     <link href="http://www.thecave.com/2015/07/02/fear/"/>
     <updated>2015-07-02T06:48:32-04:00</updated>
     <id>http://www.thecave.com/2015/07/02/fear</id>
+    <tag>social</tag>
     <description><![CDATA[<p>Lately I’ve been struggling to release new things out to the public, things such as blog posts, open source code, a new website and service I want to offer, even updates to some of my apps. What’s worse is that a number of these things are done and are just sitting on my computer. For instance, I’ve been using an updated version of Cross Post for nearly two months that isn’t available in the App Store.</p>
 
 ]]></description>
@@ -86,10 +92,13 @@
   </entry>
   
   <entry>
+    
     <title type="html"><![CDATA[Do I Need Another Twitter Account]]></title>
+    
     <link href="http://www.thecave.com/2015/06/14/do-i-need-another-twitter-account/"/>
     <updated>2015-06-14T23:09:24-04:00</updated>
     <id>http://www.thecave.com/2015/06/14/do-i-need-another-twitter-account</id>
+    <tag>social</tag>
     <description><![CDATA[<p>Earlier tonight I setup a new Twitter account that tweets a link each time I publish a new post here at thecave.com. The new Twitter account is <a href="https://twitter.com/thecave_com/">@thecave_com</a>. Of course now that this is setup, I’m wondering…Do I really need a separate Twitter account, or should I just tweet the links from my <a href="https://twitter.com/kiryt/">@kirbyt</a> account?</p>
 
 ]]></description>
@@ -101,10 +110,13 @@
   </entry>
   
   <entry>
+    
     <title type="html"><![CDATA[thecave On Twitter]]></title>
+    
     <link href="http://www.thecave.com/2015/06/14/thecave-on-twitter/"/>
     <updated>2015-06-14T22:31:52-04:00</updated>
     <id>http://www.thecave.com/2015/06/14/thecave-on-twitter</id>
+    <tag>social</tag>
     <description><![CDATA[<p>My friend Uli <a href="https://twitter.com/uliwitness/status/600656348272001024">asked</a>:</p>
 
 ]]></description>
@@ -128,10 +140,13 @@
   </entry>
   
   <entry>
+    
     <title type="html"><![CDATA[Après Code: A New Developer Meetup In Stowe Vt]]></title>
+    
     <link href="http://www.thecave.com/2015/03/05/apres-code-a-new-developer-meetup-in-stowe-vt/"/>
     <updated>2015-03-05T10:54:05-05:00</updated>
     <id>http://www.thecave.com/2015/03/05/apres-code-a-new-developer-meetup-in-stowe-vt</id>
+    <tag>social</tag>
     <description><![CDATA[<p>I started organizing developer related meetups in 2001 starting with a weekly happy hour for dev friends and co-workers. Over the years I ended up organizing different types of events, from monthly meetings that included speakers to parties and happy hours to annual snowboarding trips. I even started <a href="http://www.nshappyhour.org">NSHappyHour</a> for Mac and iOS developers, which is still going on each month in Salem, MA.</p>
 
 ]]></description>

@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: swift | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/swift/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-03-25T08:11:43-04:00</updated>
+  <updated>2017-03-25T08:34:32-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -13,10 +13,13 @@
 
   
   <entry>
+    
     <title type="html"><![CDATA[The Experienced Programmer's Guide to Getting Started with Swift]]></title>
+    
     <link href="http://www.thecave.com/2017/02/02/the-experienced-programmers-guide-to-getting-started-with-swift/"/>
     <updated>2017-02-02T11:32:49-05:00</updated>
     <id>http://www.thecave.com/2017/02/02/the-experienced-programmers-guide-to-getting-started-with-swift</id>
+    <tag>swift</tag>
     <description><![CDATA[<p>A couple Vermont-based software developers recently asked me how to get started with Swift and writing apps for iOS. I emailed them individually, but when I was asked again today, I thought, time to write a blog post.</p>
 
 ]]></description>

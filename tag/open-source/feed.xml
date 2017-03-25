@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: open source | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/open-source/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-03-25T08:11:43-04:00</updated>
+  <updated>2017-03-25T08:34:32-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -13,10 +13,13 @@
 
   
   <entry>
+    
     <title type="html"><![CDATA[From Trace To Slopes]]></title>
+    
     <link href="http://www.thecave.com/2016/11/19/from-trace-to-slopes/"/>
     <updated>2016-11-19T10:52:31-05:00</updated>
     <id>http://www.thecave.com/2016/11/19/from-trace-to-slopes</id>
+    <tag>open source</tag>
     <description><![CDATA[Need to download your Trace Snow recordings? I did and this is how I did it so I could import the recordings into Slopes.]]></description>
     <content type="html"><![CDATA[<p>I’m a software developer but I’m also a snowboard bum. And with the start of the 2016/2017 snowboard season upon us – that is, for those of us living in the Northern Hemisphere – I’m eager to hit the slopes. Over the last few years I’ve used <a href="http://www.traceup.com/trace-for-snow">Trace Snow</a>, formerly AlpineReplay, to track my time on the slopes. It’s a good iPhone app but far from perfect. One feature it lacks is reporting the number of days spent on the slopes in a season. Trace isn’t alone in not having this feature. None of the ski and snowboard tracking apps I’ve tried have this feature. It seems these apps are more commonly used by individuals who only get a small number of days on the slopes, say 5 or 10 days, which is easy to count. But when you average 80+ days each season, counting the number of days can be a pain.</p>
 
@@ -40,10 +43,13 @@
   </entry>
   
   <entry>
+    
     <title type="html"><![CDATA[Wish I Could Help But It's Not My App]]></title>
+    
     <link href="http://www.thecave.com/2015/09/01/wish-i-could-help-but-its-not-my-app/"/>
     <updated>2015-09-01T15:37:18-04:00</updated>
     <id>http://www.thecave.com/2015/09/01/wish-i-could-help-but-its-not-my-app</id>
+    <tag>open source</tag>
     <description><![CDATA[<p>A well known global company is using some open source code I wrote in one of their apps (yay!). Like a good company, they included my name and licensing information in app’s about screen. Now I’m getting emails from one of the app’s users seeking help with the app. The person thinks I wrote the app because my name appears in the licensing section.</p>
 
 ]]></description>
@@ -54,10 +60,13 @@
   </entry>
   
   <entry>
+    
     <title type="html"><![CDATA[No Love from the .NET Community]]></title>
+    
     <link href="http://www.thecave.com/2006/07/28/no-love-from-the-net-community/"/>
     <updated>2006-07-28T00:00:00-04:00</updated>
     <id>http://www.thecave.com/2006/07/28/no-love-from-the-net-community</id>
+    <tag>open source</tag>
     <description><![CDATA[<p>Kevin Downs, of <a href="http://ndoc.sourceforge.net/">NDoc</a> fame, has decided to <a href="http://johnsbraindump.blogspot.com/2006/07/ndoc-20-is-dead.html">stop work on NDoc</a>.  One reason is the lack of love from the .NET community.  This widely used open source tool for generating source code documentation from .NET applications has received very few community contributions and from what I gathered even less financial support.  And to make matter worse Kevin was the victim of a mail-bomb attack believed to be directed at him for not providing .NET 2.0 support fast enough.<br /><br />I’m not surprised at the lack of community support but the mail-bomb attack is just plan insane.  I don’t blame Kevin for stepping down.</p>
 ]]></description>
     <content type="html"><![CDATA[<p>Kevin Downs, of <a href="http://ndoc.sourceforge.net/">NDoc</a> fame, has decided to <a href="http://johnsbraindump.blogspot.com/2006/07/ndoc-20-is-dead.html">stop work on NDoc</a>.  One reason is the lack of love from the .NET community.  This widely used open source tool for generating source code documentation from .NET applications has received very few community contributions and from what I gathered even less financial support.  And to make matter worse Kevin was the victim of a mail-bomb attack believed to be directed at him for not providing .NET 2.0 support fast enough.<br /><br />I’m not surprised at the lack of community support but the mail-bomb attack is just plan insane.  I don’t blame Kevin for stepping down.</p>
