@@ -20,6 +20,11 @@ class String
   end
 end
 
+def get_stdin(message)
+  print message
+  STDIN.gets.chomp
+end
+
 # usage rake new_post[my-new-post] or rake new_post['my new post'] or rake new_post (defaults to "new-post")
 desc "Begin a new post in #{source_dir}/#{posts_dir}"
 task :new_post, :title do |t, args|
