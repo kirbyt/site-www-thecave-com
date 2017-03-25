@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-03-25T07:00:46-04:00</updated>
+  <updated>2017-03-25T07:18:47-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,16 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[Micro blogging from thecave]]></title>
+    <link href="http://www.thecave.com/2017/03/25/micro-blogging-from-thecave/"/>
+    <published>2017-03-25T07:15:34-04:00</published>
+    <updated>2017-03-25T07:15:34-04:00</updated>
+    <id>http://www.thecave.com/2017/03/25/micro-blogging-from-thecave</id>
+    <content type="html"><![CDATA[<p>Testing, testing. 1, 2, 3…I moved my RSS feed for <a href="http://micro.blog">micro.blog</a> to <a href="https://www.thecave.com/">thecave.com</a> since my app, Cross Post, is not longer in active development.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Experienced Programmer's Guide to Getting Started with Swift]]></title>
@@ -576,23 +586,6 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
     <content type="html"><![CDATA[<p>This past Wednesday I had a chance to attend <a href="http://www.nshappyhour.org">NSHappyHour</a>. It’s was my first time attending since moving to Vermont two years ago. I had a great time catching up with everyone, and I was reminded just how awesome the Mac and iOS developer community is in the Boston area.</p>
 
 <p>I also was reminded how much I miss the community there, and since moving back isn’t an option for me - snowboard season starts in about 3 months for me - I need to make a point of visit the Boston area more.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Blogging The Little Things]]></title>
-    <link href="http://www.thecave.com/2015/08/07/blogging-the-little-things/"/>
-    <published>2015-08-07T10:11:57-04:00</published>
-    <updated>2015-08-07T10:11:57-04:00</updated>
-    <id>http://www.thecave.com/2015/08/07/blogging-the-little-things</id>
-    <content type="html"><![CDATA[<p>I read a post from Shubham Jain, by way of <a href="http://shapeof.com/archives/2015/7/coffee_coder_-_blog_little_things.html">Gus Mueller</a>, about <a href="http://coffeecoder.net/blog/blog-little-things/">blogging the little things</a>. In the post, Shubham says:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>There are lots of things that can be blogged about and yet, we are stuck in the dilemma of, – "Is it worth something to write?". The fear of being insignificant aka "Nobody will read it" syndrome, inhibits us from writing that simple thing that might have helped many people.
-</code></pre>
-</div>
-
-<p>I recently talked about my <a href="http://www.thecave.com/2015/07/02/fear/">fears</a> and I mentioned some of the things I’m trying to do to help overcome those fears. And blogging more about the little things seems like another way for me to overcome some of the fears I’ve been having.</p>
 
 ]]></content>
   </entry>

@@ -5,10 +5,19 @@
         <description>thecave | A Hideout for Programmers, Indie Devs, Solopreneurs - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2017-03-25T07:00:46-04:00</lastBuildDate>
-        <pubDate>2017-03-25T07:00:46-04:00</pubDate>
+        <lastBuildDate>2017-03-25T07:18:47-04:00</lastBuildDate>
+        <pubDate>2017-03-25T07:18:47-04:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Micro blogging from thecave</title>
+                <description>&lt;p&gt;Testing, testing. 1, 2, 3…I moved my RSS feed for &lt;a href=&quot;http://micro.blog&quot;&gt;micro.blog&lt;/a&gt; to &lt;a href=&quot;https://www.thecave.com/&quot;&gt;thecave.com&lt;/a&gt; since my app, Cross Post, is not longer in active development.&lt;/p&gt;
+</description>
+                <link>http://www.thecave.com/2017/03/25/micro-blogging-from-thecave/</link>
+                <guid>http://www.thecave.com/2017/03/25/micro-blogging-from-thecave</guid>
+                <pubDate>2017-03-25T07:15:34-04:00</pubDate>
+        </item>
 
         <item>
                 <title>The Experienced Programmer's Guide to Getting Started with Swift</title>
@@ -556,22 +565,6 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
                 <link>http://www.thecave.com/2015/08/07/boston-area-mac-and-ios-dev-community-is-awesome/</link>
                 <guid>http://www.thecave.com/2015/08/07/boston-area-mac-and-ios-dev-community-is-awesome</guid>
                 <pubDate>2015-08-07T10:22:16-04:00</pubDate>
-        </item>
-
-        <item>
-                <title>Blogging The Little Things</title>
-                <description>&lt;p&gt;I read a post from Shubham Jain, by way of &lt;a href=&quot;http://shapeof.com/archives/2015/7/coffee_coder_-_blog_little_things.html&quot;&gt;Gus Mueller&lt;/a&gt;, about &lt;a href=&quot;http://coffeecoder.net/blog/blog-little-things/&quot;&gt;blogging the little things&lt;/a&gt;. In the post, Shubham says:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;There are lots of things that can be blogged about and yet, we are stuck in the dilemma of, – &quot;Is it worth something to write?&quot;. The fear of being insignificant aka &quot;Nobody will read it&quot; syndrome, inhibits us from writing that simple thing that might have helped many people.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;I recently talked about my &lt;a href=&quot;http://www.thecave.com/2015/07/02/fear/&quot;&gt;fears&lt;/a&gt; and I mentioned some of the things I’m trying to do to help overcome those fears. And blogging more about the little things seems like another way for me to overcome some of the fears I’ve been having.&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2015/08/07/blogging-the-little-things/</link>
-                <guid>http://www.thecave.com/2015/08/07/blogging-the-little-things</guid>
-                <pubDate>2015-08-07T10:11:57-04:00</pubDate>
         </item>
 
 

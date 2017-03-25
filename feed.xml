@@ -5,9 +5,24 @@
     <description>The blog site for Kirby Turner, an independent software developer, where he shares tips and advice for programmers, indie devs, and solopreneurs.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 25 Mar 2017 07:00:46 -0400</pubDate>
-    <lastBuildDate>Sat, 25 Mar 2017 07:00:46 -0400</lastBuildDate>
+    <pubDate>Sat, 25 Mar 2017 07:18:47 -0400</pubDate>
+    <lastBuildDate>Sat, 25 Mar 2017 07:18:47 -0400</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>Micro blogging from thecave</title>
+        <description>&lt;p&gt;Testing, testing. 1, 2, 3…I moved my RSS feed for &lt;a href=&quot;http://micro.blog&quot;&gt;micro.blog&lt;/a&gt; to &lt;a href=&quot;https://www.thecave.com/&quot;&gt;thecave.com&lt;/a&gt; since my app, Cross Post, is not longer in active development.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 25 Mar 2017 07:15:34 -0400</pubDate>
+        <link>http://www.thecave.com/2017/03/25/micro-blogging-from-thecave/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2017/03/25/micro-blogging-from-thecave/</guid>
+        
+        <category>microblog</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title>The Experienced Programmer's Guide to Getting Started with Swift</title>
@@ -333,28 +348,6 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
         
         
         <category>business</category>
-        
-      </item>
-    
-      <item>
-        <title>My Upcoming Share Extension Talk At 360idev-Min</title>
-        <description>&lt;p&gt;I’m excited to be one of the speakers at the upcoming &lt;a href=&quot;http://min.360idev.com&quot;&gt;360idev-min&lt;/a&gt; conference in Greenville, SC. In my talk I’ll share the things you need to know about when writing a share extension for your iOS app.&lt;/p&gt;
-
-&lt;p&gt;If you plan to attend &lt;a href=&quot;http://min.360idev.com&quot;&gt;360idev-min&lt;/a&gt;, then use the coupon code &lt;strong&gt;SpeakerFriend&lt;/strong&gt; to save $100 when purchasing your ticket.&lt;/p&gt;
-
-&lt;p&gt;And let me know if you are attending so we can meet up in person.&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 07 Sep 2015 11:37:39 -0400</pubDate>
-        <link>http://www.thecave.com/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/</guid>
-        
-        <category>conference</category>
-        
-        <category>ios</category>
-        
-        
-        <category>programming</category>
         
       </item>
     
