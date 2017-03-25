@@ -17,10 +17,15 @@ title : Atom Feed
 
   {% for post in site.tags[page.tag] limit: 5 %}
   <entry>
+    {% if page.tag == "microblog" %}
+    <title></title>
+    {% else %}
     <title type="html"><![CDATA[{{ post.title | cdata_escape }}]]></title>
+    {% endif %}
     <link href="{{ site.url }}{{ post.url }}"/>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <id>{{ site.url }}{{ post.id }}</id>
+    <tag>{{ page.tag }}</tag>
     <description><![CDATA[{{ post.excerpt | cdata_escape }}]]></description>
     <content type="html"><![CDATA[{{ post.content | expand_urls: site.url | markdownify | cdata_escape }}]]></content>
   </entry>
