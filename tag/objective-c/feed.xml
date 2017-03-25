@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: objective-c | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/objective-c/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-02-02T11:39:40-05:00</updated>
+  <updated>2017-03-25T07:00:46-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -175,7 +175,7 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>From the <a href="https://github.com/kirbyt/MacModalDispatchAsyncProblem">Apple documentation</a> for <code class="highlighter-rouge">+[NSApp runModalForWindow:]</code>: “This method runs a modal event loop for the specified window synchronously. It displays the specified window, makes it key, starts the run loop, and processes events for that window. (You do not need to show the window yourself.) While the app is in that loop, it does not respond to any other events (including mouse, keyboard, or window-close events) unless they are associated with the window. It also does not perform any tasks (such as firing timers) that are not associated with the modal run loop. In other words, this method consumes only enough CPU time to process events and dispatch them to the action methods associated with the modal window.” <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>From the <a href="https://github.com/kirbyt/MacModalDispatchAsyncProblem">Apple documentation</a> for <code class="highlighter-rouge">+[NSApp runModalForWindow:]</code>: “This method runs a modal event loop for the specified window synchronously. It displays the specified window, makes it key, starts the run loop, and processes events for that window. (You do not need to show the window yourself.) While the app is in that loop, it does not respond to any other events (including mouse, keyboard, or window-close events) unless they are associated with the window. It also does not perform any tasks (such as firing timers) that are not associated with the modal run loop. In other words, this method consumes only enough CPU time to process events and dispatch them to the action methods associated with the modal window.”&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

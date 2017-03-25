@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-02-02T11:39:40-05:00</updated>
+  <updated>2017-03-25T07:00:46-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -256,7 +256,7 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>I have since learned that in this situation I should have charged a fixed weekly or monthly rate instead of an hourly rate. This would have ensured I met my earning goals while still being available to the end-client even when the workload itself was lacking in hours. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>I have since learned that in this situation I should have charged a fixed weekly or monthly rate instead of an hourly rate. This would have ensured I met my earning goals while still being available to the end-client even when the workload itself was lacking in hours.&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -360,7 +360,7 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>Another habit I developed while writing the second edition of my book, and one I still use today, is to listen to my <a href="https://open.spotify.com/user/kirbyt/playlist/6QUgiw9WPf8qXdgnrdXGvZ">Music to Write To</a> playlist on Spotify. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>Another habit I developed while writing the second edition of my book, and one I still use today, is to listen to my <a href="https://open.spotify.com/user/kirbyt/playlist/6QUgiw9WPf8qXdgnrdXGvZ">Music to Write To</a> playlist on Spotify.&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -560,7 +560,7 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>From the <a href="https://github.com/kirbyt/MacModalDispatchAsyncProblem">Apple documentation</a> for <code class="highlighter-rouge">+[NSApp runModalForWindow:]</code>: “This method runs a modal event loop for the specified window synchronously. It displays the specified window, makes it key, starts the run loop, and processes events for that window. (You do not need to show the window yourself.) While the app is in that loop, it does not respond to any other events (including mouse, keyboard, or window-close events) unless they are associated with the window. It also does not perform any tasks (such as firing timers) that are not associated with the modal run loop. In other words, this method consumes only enough CPU time to process events and dispatch them to the action methods associated with the modal window.” <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>From the <a href="https://github.com/kirbyt/MacModalDispatchAsyncProblem">Apple documentation</a> for <code class="highlighter-rouge">+[NSApp runModalForWindow:]</code>: “This method runs a modal event loop for the specified window synchronously. It displays the specified window, makes it key, starts the run loop, and processes events for that window. (You do not need to show the window yourself.) While the app is in that loop, it does not respond to any other events (including mouse, keyboard, or window-close events) unless they are associated with the window. It also does not perform any tasks (such as firing timers) that are not associated with the modal run loop. In other words, this method consumes only enough CPU time to process events and dispatch them to the action methods associated with the modal window.”&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

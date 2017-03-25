@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: cross post | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/cross-post/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-02-02T11:39:40-05:00</updated>
+  <updated>2017-03-25T07:00:46-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -30,7 +30,7 @@
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>Examples of app that are important to me and which I still have notifications turned on are ones for my bank and credit cards. I want to make sure I’m alerted if a fraudulent charge is ever made against one of my accounts. Slack is another app that I use with notifications turned on since I use this for work purposes. Beyond that, I have notifications turned off. Oh, and in case you were wondering, I let sites like Twitter notify me of mentions via email, and I only check email a few times a day. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>Examples of app that are important to me and which I still have notifications turned on are ones for my bank and credit cards. I want to make sure I’m alerted if a fraudulent charge is ever made against one of my accounts. Slack is another app that I use with notifications turned on since I use this for work purposes. Beyond that, I have notifications turned off. Oh, and in case you were wondering, I let sites like Twitter notify me of mentions via email, and I only check email a few times a day.&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -81,10 +81,10 @@
 <div class="footnotes">
   <ol>
     <li id="fn:oldposts">
-      <p>I still have the content from thecave.com pre-March 2002, but it’s not published on the Internet anymore. <a href="#fnref:oldposts" class="reversefootnote">&#8617;</a></p>
+      <p>I still have the content from thecave.com pre-March 2002, but it’s not published on the Internet anymore.&nbsp;<a href="#fnref:oldposts" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:manton">
-      <p>That Manton is a smart guy. <a href="#fnref:manton" class="reversefootnote">&#8617;</a></p>
+      <p>That Manton is a smart guy.&nbsp;<a href="#fnref:manton" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -125,7 +125,7 @@
 <div class="footnotes">
   <ol>
     <li id="fn:deletefile">
-      <p>I let the Cross Post server delete the file from Cloud Files CDN so I don’t have to include the api key in the iOS app. <a href="#fnref:deletefile" class="reversefootnote">&#8617;</a></p>
+      <p>I let the Cross Post server delete the file from Cloud Files CDN so I don’t have to include the api key in the iOS app.&nbsp;<a href="#fnref:deletefile" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -202,7 +202,7 @@
 <div class="footnotes">
   <ol>
     <li id="fn:onerequest">
-      <p>I was able to reducing the number of calls to the server down to one by packaging the post and photos into a single .zip file, which is sent to the server. <a href="#fnref:onerequest" class="reversefootnote">&#8617;</a></p>
+      <p>I was able to reducing the number of calls to the server down to one by packaging the post and photos into a single .zip file, which is sent to the server.&nbsp;<a href="#fnref:onerequest" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

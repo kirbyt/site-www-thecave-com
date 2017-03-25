@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: web | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/web/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-02-02T11:39:40-05:00</updated>
+  <updated>2017-03-25T07:00:46-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -79,10 +79,10 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>I made the same change to the theme on Rowan’s website. Now you can see more fun pictures of Rowan as you read through the posts. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>I made the same change to the theme on Rowan’s website. Now you can see more fun pictures of Rowan as you read through the posts.&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:2">
-      <p>You will find links to me on various social networks such as App.net and Twitter below in the page footer. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+      <p>You will find links to me on various social networks such as App.net and Twitter below in the page footer.&nbsp;<a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

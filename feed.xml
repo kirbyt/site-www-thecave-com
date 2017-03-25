@@ -5,9 +5,9 @@
     <description>The blog site for Kirby Turner, an independent software developer, where he shares tips and advice for programmers, indie devs, and solopreneurs.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 02 Feb 2017 11:39:40 -0500</pubDate>
-    <lastBuildDate>Thu, 02 Feb 2017 11:39:40 -0500</lastBuildDate>
-    <generator>Jekyll v3.3.1</generator>
+    <pubDate>Sat, 25 Mar 2017 07:00:46 -0400</pubDate>
+    <lastBuildDate>Sat, 25 Mar 2017 07:00:46 -0400</lastBuildDate>
+    <generator>Jekyll v3.4.3</generator>
     
       <item>
         <title>The Experienced Programmer's Guide to Getting Started with Swift</title>
@@ -320,7 +320,7 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;I have since learned that in this situation I should have charged a fixed weekly or monthly rate instead of an hourly rate. This would have ensured I met my earning goals while still being available to the end-client even when the workload itself was lacking in hours. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;I have since learned that in this situation I should have charged a fixed weekly or monthly rate instead of an hourly rate. This would have ensured I met my earning goals while still being available to the end-client even when the workload itself was lacking in hours.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
