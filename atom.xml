@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-03-26T06:34:55-04:00</updated>
+  <updated>2017-04-01T07:06:55-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,16 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[Ain't No April Fools' Joke]]></title>
+    <link href="http://www.thecave.com/2017/04/01/aint-no-april-fools-joke/"/>
+    <published>2017-04-01T06:56:58-04:00</published>
+    <updated>2017-04-01T06:56:58-04:00</updated>
+    <id>http://www.thecave.com/2017/04/01/aint-no-april-fools-joke</id>
+    <content type="html"><![CDATA[<p>What a beautiful morning. Winter is still going strong here in Stowe. <img src="https://c1.staticflickr.com/4/3754/32957940243_5ae40ae89a_z.jpg" alt="" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[No Facebook for 11 Days!]]></title>
@@ -458,51 +468,6 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
     <updated>2015-08-15T09:46:04-04:00</updated>
     <id>http://www.thecave.com/2015/08/15/two-years-ago-today</id>
     <content type="html"><![CDATA[<p>We moved to Stowe two years ago today. It seems like we’ve been here a lot longer, but in a good way.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Maintain Your iOS App With Peak App Care]]></title>
-    <link href="http://www.thecave.com/2015/08/11/maintain-your-ios-app-with-peak-app-care/"/>
-    <published>2015-08-11T07:05:42-04:00</published>
-    <updated>2015-08-11T07:05:42-04:00</updated>
-    <id>http://www.thecave.com/2015/08/11/maintain-your-ios-app-with-peak-app-care</id>
-    <content type="html"><![CDATA[<p>Last month I briefly mentioned <a href="http://www.thecave.com/2015/07/07/ive-been-doing-it-wrong/">my plan</a> to productize some of the services I offer through White Peak Software. The main idea is to take a consulting service that I already offer to my clients and turn it into a product that my clients and others will hopefully subscribe to thus creating a monthly recurring revenue stream for my company. My goal was to spend no more than 40 hours over the span of a few weeks setting up this new product. And now, after spending 38.75 hours over the last few weeks, I’m ready to share more details.</p>
-
-<p>Today I’m happy to announce <a href="https://www.peakappcare.com">Peak App Care</a>. Peak App Care is a monthly subscription service for maintaining your iOS apps. What do I mean by that? Simply put, I monitor your app for crashes and fix them as quickly as possible. Not only that, I also perform small jobs such as bug fixes and enhancements to your app at your request, and I even manage the App Store for you, from updating screenshots to submitting new builds on your behalf.</p>
-
-<p>What I have found is that many apps available today in the App Store are published by companies with zero iOS developers on staff. Those companies, instead, rely on freelancers and software shops to build their apps for them. The problem, however, is that often times there’s no plans to keep the app up to date after the initial release.</p>
-
-<p>What happens when the app starts crashing or customers start reporting bugs? What happens when Apple releases a new version of iOS or a new device?</p>
-
-<p>Often times these companies must scramble to find an iOS developer to help out. If they are lucky, the original developer is still available but chances are good the developer is currently working on something else and isn’t available for days, weeks, or even months.</p>
-
-<p>With Peak App Care I become your in-house iOS developer responsible for the upkeep of your mobile app. I watch for crashes and fix them as they are reported. But I go beyond that. I will work with you to ensure your app remains up to date with the latest changes coming out of Cupertino. A good example of this is happening right now.</p>
-
-<p>iOS 9 is in beta and every app publisher should be testing their app on this new iOS version. Not only that, the app should be updated to cleanly compile against the iOS 9 SDK. This means replacing deprecated code. But a company with no staffed iOS developer is often times unaware of the need to perform these types of tasks. Or they choose to ignore these tasks. After all, the app is running fine right now, so why wouldn’t it run fine when the new OS comes out.</p>
-
-<p>Sometimes it’s okay to ignore changes coming from Apple, but sometimes the changes are too big to ignore. The iPhone 6 Plus is one example. Customers can quickly tell if an iPhone app doesn’t support the larger display found on the 6 Plus, and the only way to take full advantage of the larger display is to update the app.</p>
-
-<p>This is one area where Peak App Care helps app publishers. Making changes to your app to support the latest iOS release or new device is covered with Peak App Care.</p>
-
-<p>So that’s the new productize service I’m now offering. Check out the new <a href="https://www.peakappcare.com">web site</a>, and tell your friends, family members and anyone else who might be interested. Now let’s chat about how this concept came to be.</p>
-
-<h2 id="giving-credit-where-credit-is-due">Giving Credit Where Credit is Due</h2>
-
-<p>I wish I could take credit for coming up with a totally unique concept, but the truth is a maintenance plan for software isn’t anything new. And providing this type of service for mobile apps isn’t new either. In fact, I got the idea from Einar Vollset.</p>
-
-<p>Einar talks about his app care service in <a href="http://www.freelancetransformation.com/blog/building-a-recurring-revenue-consulting-business-with-einar-vollset">this podcast interview</a> over at <a href="http://www.freelancetransformation.com">Freelance Transformations</a>. This interview blew me away. Here’s a person providing a service that is similar to what I provide, but he came up with a different way to market the service. Brilliant!</p>
-
-<p>But Einar’s <a href="http://www.appaftercare.com">App Aftercare</a> isn’t unique either. There are many other examples of this in different spaces. <a href="http://wpcurve.com">WPCurve</a> provides a similar service for folks running a WordPress site. And I’ve heard of other examples too, companies that will help you maintain your Ruby on Rails app or your Django server. So the concept of app maintenance isn’t new, but I do give credit to Einar Vollset for inspiring me to create <a href="https://www.peakappcare.com">Peak App Care</a>.</p>
-
-<h1 id="whats-next">What’s Next</h1>
-
-<p>So what’s next now that the web site is up and running? Well, it’s time for me to roll up my sleeves and start the real work…marketing Peak App Care.</p>
-
-<p>Like any product I need to market Peak App Care if it is to be a success. My first step is to let my existing clients know about this new offering, which I’ve already done. After that I need to start making others companies within my target audience aware of Peak App Care, and that is where things start to get tougher for me. Just posting a web site isn’t going to bring in customers. I must find ways to reach my target audience, and thankfully I have some ideas on how to make that happen.</p>
-
-<p>As for my company reboot, I feel this is a good first step. I don’t know if Peak App Care will be a success or not. I’m hopeful it will be. But if I fail to bring on new subscribers over the next few months, at least I won’t feel like I have wasted a lot of my time or money. This is a big switch in thinking when I compare it to the months I’ve spent in the past working on other products that either failed or were never even released into the wild.</p>
-
 ]]></content>
   </entry>
   
