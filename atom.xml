@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-04-01T07:06:55-04:00</updated>
+  <updated>2017-04-03T08:18:22-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,16 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[After 17 Days]]></title>
+    <link href="http://www.thecave.com/2017/04/03/after-17-days/"/>
+    <published>2017-04-03T08:10:26-04:00</published>
+    <updated>2017-04-03T08:10:26-04:00</updated>
+    <id>http://www.thecave.com/2017/04/03/after-17-days</id>
+    <content type="html"><![CDATA[<p>After 17 days of no Facebook, I finally took a peek at my feed. I was totally uninterested, and I signed out after a minute. I think I’m over my Facebook addiction.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ain't No April Fools' Joke]]></title>
@@ -458,16 +468,6 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 
 <p>Regardless of whether or not I renew for another 6 months or not, I will not ever use Meetup.com again for any other group in the future. The subscription is not worth the hassle.</p>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Two Years Ago Today]]></title>
-    <link href="http://www.thecave.com/2015/08/15/two-years-ago-today/"/>
-    <published>2015-08-15T09:46:04-04:00</published>
-    <updated>2015-08-15T09:46:04-04:00</updated>
-    <id>http://www.thecave.com/2015/08/15/two-years-ago-today</id>
-    <content type="html"><![CDATA[<p>We moved to Stowe two years ago today. It seems like we’ve been here a lot longer, but in a good way.</p>
 ]]></content>
   </entry>
   

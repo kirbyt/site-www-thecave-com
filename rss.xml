@@ -5,10 +5,19 @@
         <description>thecave | A Hideout for Programmers, Indie Devs, Solopreneurs - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2017-04-01T07:06:55-04:00</lastBuildDate>
-        <pubDate>2017-04-01T07:06:55-04:00</pubDate>
+        <lastBuildDate>2017-04-03T08:18:22-04:00</lastBuildDate>
+        <pubDate>2017-04-03T08:18:22-04:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>After 17 Days</title>
+                <description>&lt;p&gt;After 17 days of no Facebook, I finally took a peek at my feed. I was totally uninterested, and I signed out after a minute. I think I’m over my Facebook addiction.&lt;/p&gt;
+</description>
+                <link>http://www.thecave.com/2017/04/03/after-17-days/</link>
+                <guid>http://www.thecave.com/2017/04/03/after-17-days</guid>
+                <pubDate>2017-04-03T08:10:26-04:00</pubDate>
+        </item>
 
         <item>
                 <title>Ain't No April Fools' Joke</title>
@@ -437,15 +446,6 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
                 <link>http://www.thecave.com/2015/08/17/i-wish-there-was-something-better-than-meetupcom/</link>
                 <guid>http://www.thecave.com/2015/08/17/i-wish-there-was-something-better-than-meetupcom</guid>
                 <pubDate>2015-08-17T07:28:35-04:00</pubDate>
-        </item>
-
-        <item>
-                <title>Two Years Ago Today</title>
-                <description>&lt;p&gt;We moved to Stowe two years ago today. It seems like we’ve been here a lot longer, but in a good way.&lt;/p&gt;
-</description>
-                <link>http://www.thecave.com/2015/08/15/two-years-ago-today/</link>
-                <guid>http://www.thecave.com/2015/08/15/two-years-ago-today</guid>
-                <pubDate>2015-08-15T09:46:04-04:00</pubDate>
         </item>
 
 
