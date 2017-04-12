@@ -4,13 +4,50 @@
   <title><![CDATA[Tag: open source | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/open-source/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-04-06T23:46:12-04:00</updated>
+  <updated>2017-04-12T14:13:53-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    
+    <title type="html"><![CDATA[Mastodon and thecave.social]]></title>
+    
+    <link href="http://www.thecave.com/2017/04/12/mastodon-and-thecavesocial/"/>
+    <updated>2017-04-12T14:07:57-04:00</updated>
+    <id>http://www.thecave.com/2017/04/12/mastodon-and-thecavesocial</id>
+    <tag>open source</tag>
+    <description><![CDATA[<p>I first heard about <a href="https://github.com/tootsuite/mastodon">Mastodon</a> last week while lurking on Twitter. For those who don’t know, Mastodon is a free, open source, decentralized social network with instances run mostly by individuals.</p>
+
+]]></description>
+    <content type="html"><![CDATA[<p>I first heard about <a href="https://github.com/tootsuite/mastodon">Mastodon</a> last week while lurking on Twitter. For those who don’t know, Mastodon is a free, open source, decentralized social network with instances run mostly by individuals.</p>
+
+<p>As I read more about Mastodon, I became more intrigued. It didn’t take long before I registered the domain name <a href="https://thecave.social/">thecave.social</a>. The idea of hosting a Mastodon instance, even if just for myself, piqued the geek in me. The realist in me said I don’t have the extra time to take on such an endeavor. Still, I wanted to learn more about Mastodon, and what better way than hosting an instance.</p>
+
+<p>First, I looked at hosting my Mastodon instance on <a href="https://www.openshift.com">OpenShift Online</a>. I’m a long time fan of OpenShift, but it’s been a while since I played on it. Turns out, a new OpenShift Online supporting Docker containers is in the works. Right now, the new OpenShift Online is in Developer Preview, and accounts are active for only 30 days. The time limit doesn’t work for me because I can see myself hosting my Mastodon instance for more than a month. So OpenShift is not an option for me at the moment.</p>
+
+<p>I looked at hosting the instance somewhere else, like Digital Ocean, but I decided I don’t have the time to do all the extra work. Thankfully, there is an experimental Heroku install option for Mastodon, and given that I already have some basic experience with <a href="https://www.heroku.com">Heroku</a>, I decided it is the way to go for me.</p>
+
+<p>After deciding where to host my instance, I did a “test” install. I created a single dyno and played around with Mastodon. Liking what I saw, I scrapped the dyno and created another one, this time for thecave.social.</p>
+
+<p>It took me about four hours total to get my Mastodon instance setup and configured the way I want it. A more experienced admin could have probably done the work in half the time.</p>
+
+<p>I’m using <a href="https://www.mailgun.com">Mailgun</a> for emails and <a href="https://aws.amazon.com/s3/">S3</a> for file storage. And now that Heroku has an automatic certificate manager that uses <a href="https://letsencrypt.org">Let’s Encrypt</a>, acquiring and installing an SSL/TLS certificate for the site was a snap. I’m continually amazed at how easy it is to host a server these days thanks to services like Mailgun, S3, and Heroku.</p>
+
+<p><a href="https://thecave.social/">thecave.social</a> has been live for a few days now, and everything is running smoothly. Of course, I am the only user on this instance, and I do not support the streaming API yet.</p>
+
+<p>I’ve even made a few toots on Mastodon, which is impressive for me given that I don’t spend a lot of time on social networks these days. (I’ve checked Facebook once in the last 28 days, and I lurk on Twitter only once or twice a month.) Still, I can see myself getting into Mastodon because it represents what I like about social networks, and it doesn’t have the crap that has turned me off of social networks in general, ads and political rants being the top offenders for me.</p>
+
+<p>Currently, registration on thecave.social is closed, though I’m considering opening it up to family and friends soon. Let me know if you are interested in having an account so I can tell you when registration is open. I can’t guarantee how long I will keep the server up and running, but I don’t see myself shutting it down anytime soon.</p>
+
+<p>Also, I’m not looking to grow a big community with hundreds or even thousands of users. Instead, I want a place that is my own just like I have with my personal email address. Some family and friends have thecave.com email address, and I see the same thing happening with thecave.social.</p>
+
+<p>For those of you on other Mastodon instances, feel free to follow me at <a href="https://thecave.social/@kirby">@kirby@thecave.social</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     

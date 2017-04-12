@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kirby Turner">
+    
+    <meta name="description" content="I first heard about Mastodon last week while lurking on Twitter. For those who don’t know, Mastodon is a free, open source, decentralized social network with instances run mostly by individuals.
+
+">
+    
+
+    <!-- Facebook tags -->
+    <meta property="og:title" content="Mastodon and thecave.social" />
+    
+    <meta name="og:description" content="I first heard about Mastodon last week while lurking on Twitter. For those who don’t know, Mastodon is a free, open source, decentralized social network with instances run mostly by individuals.
+
+">
+    
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/mr.kirbyturner" />
+    <meta property="og:image" content="http://www.thecave.com/img/bg-06.jpg" />
+    <meta property="og:url" content="http://www.thecave.com/2017/04/12/mastodon-and-thecavesocial/" />
+    <meta property="og:site_name" content="thecave | A Hideout for Programmers, Indie Devs, Solopreneurs" />
+
+    <title>Mastodon and thecave.social</title>
+
+    <link rel="canonical" href="http://www.thecave.com/2017/04/12/mastodon-and-thecavesocial/">
+    <link rel="alternate" type="application/atom+xml" title="thecave | A Hideout for Programmers, Indie Devs, Solopreneurs's Feed" href="http://www.thecave.com/feed.xml" />
+
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/clean-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- YouTube CSS -->
+    <link rel="stylesheet" href="/css/video.css">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">thecave</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                
+                <li>
+                    <a href="/about/">About</a>
+                </li>
+                
+                <li>
+                    <a href="/archive/">Archive</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/">Categories & Tags</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+    <!-- Post Header -->
+<header class="intro-header" style="background-image: url('/img/bg-06.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Mastodon and thecave.social</h1>
+                    
+                    <span class="meta">Posted by Kirby Turner on April 12, 2017</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+				<p>I first heard about <a href="https://github.com/tootsuite/mastodon">Mastodon</a> last week while lurking on Twitter. For those who don’t know, Mastodon is a free, open source, decentralized social network with instances run mostly by individuals.</p>
+
+<p>As I read more about Mastodon, I became more intrigued. It didn’t take long before I registered the domain name <a href="https://thecave.social/">thecave.social</a>. The idea of hosting a Mastodon instance, even if just for myself, piqued the geek in me. The realist in me said I don’t have the extra time to take on such an endeavor. Still, I wanted to learn more about Mastodon, and what better way than hosting an instance.</p>
+
+<p>First, I looked at hosting my Mastodon instance on <a href="https://www.openshift.com">OpenShift Online</a>. I’m a long time fan of OpenShift, but it’s been a while since I played on it. Turns out, a new OpenShift Online supporting Docker containers is in the works. Right now, the new OpenShift Online is in Developer Preview, and accounts are active for only 30 days. The time limit doesn’t work for me because I can see myself hosting my Mastodon instance for more than a month. So OpenShift is not an option for me at the moment.</p>
+
+<p>I looked at hosting the instance somewhere else, like Digital Ocean, but I decided I don’t have the time to do all the extra work. Thankfully, there is an experimental Heroku install option for Mastodon, and given that I already have some basic experience with <a href="https://www.heroku.com">Heroku</a>, I decided it is the way to go for me.</p>
+
+<p>After deciding where to host my instance, I did a “test” install. I created a single dyno and played around with Mastodon. Liking what I saw, I scrapped the dyno and created another one, this time for thecave.social.</p>
+
+<p>It took me about four hours total to get my Mastodon instance setup and configured the way I want it. A more experienced admin could have probably done the work in half the time.</p>
+
+<p>I’m using <a href="https://www.mailgun.com">Mailgun</a> for emails and <a href="https://aws.amazon.com/s3/">S3</a> for file storage. And now that Heroku has an automatic certificate manager that uses <a href="https://letsencrypt.org">Let’s Encrypt</a>, acquiring and installing an SSL/TLS certificate for the site was a snap. I’m continually amazed at how easy it is to host a server these days thanks to services like Mailgun, S3, and Heroku.</p>
+
+<p><a href="https://thecave.social/">thecave.social</a> has been live for a few days now, and everything is running smoothly. Of course, I am the only user on this instance, and I do not support the streaming API yet.</p>
+
+<p>I’ve even made a few toots on Mastodon, which is impressive for me given that I don’t spend a lot of time on social networks these days. (I’ve checked Facebook once in the last 28 days, and I lurk on Twitter only once or twice a month.) Still, I can see myself getting into Mastodon because it represents what I like about social networks, and it doesn’t have the crap that has turned me off of social networks in general, ads and political rants being the top offenders for me.</p>
+
+<p>Currently, registration on thecave.social is closed, though I’m considering opening it up to family and friends soon. Let me know if you are interested in having an account so I can tell you when registration is open. I can’t guarantee how long I will keep the server up and running, but I don’t see myself shutting it down anytime soon.</p>
+
+<p>Also, I’m not looking to grow a big community with hundreds or even thousands of users. Instead, I want a place that is my own just like I have with my personal email address. Some family and friends have thecave.com email address, and I see the same thing happening with thecave.social.</p>
+
+<p>For those of you on other Mastodon instances, feel free to follow me at <a href="https://thecave.social/@kirby">@kirby@thecave.social</a>.</p>
+
+
+                <hr>
+
+                
+                    <p>
+                    Posted in <a class='category' href='/category/personal/'>personal</a>. 
+                    Tagged in <a class='tag' href='/tag/mastodon/'>mastodon</a>, <a class='tag' href='/tag/microblogging/'>microblogging</a>, <a class='tag' href='/tag/open-source/'>open source</a>, <a class='tag' href='/tag/social/'>social</a>.
+                    </p>
+                
+
+                
+
+                
+                    <hr>
+                    <h3>Related Articles</h3>
+                    <ul>
+                    
+                        <li><a href="/2014/10/09/microblogging-the-open-web-and-cross-post/">Microblogging, the Open Web, and Cross Post</a></li>
+                    
+                        <li><a href="/2016/11/19/from-trace-to-slopes/">From Trace To Slopes</a></li>
+                    
+                        <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/">Wish I Could Help But It's Not My App</a></li>
+                    
+                        <li><a href="/2006/07/28/no-love-from-the-net-community/">No Love from the .NET Community</a></li>
+                    
+                        <li><a href="/2015/08/07/boston-area-mac-and-ios-dev-community-is-awesome/">Boston Area Mac And iOS Dev Community Is Awesome</a></li>
+                    
+                        <li><a href="/2015/07/02/fear/">Fear</a></li>
+                    
+                        <li><a href="/2015/06/14/do-i-need-another-twitter-account/">Do I Need Another Twitter Account</a></li>
+                    
+                        <li><a href="/2015/06/14/thecave-on-twitter/">thecave On Twitter</a></li>
+                    
+                        <li><a href="/2015/03/05/apres-code-a-new-developer-meetup-in-stowe-vt/">Après Code: A New Developer Meetup In Stowe Vt</a></li>
+                    
+                        <li><a href="/2015/01/18/eliminating-distractions/">Eliminating Distractions</a></li>
+                    
+                    </ul>
+                
+
+                <hr>
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2017/04/03/after-17-days/" data-toggle="tooltip" data-placement="top" title="After 17 Days">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<p>&nbsp;</p>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Recent Articles</h3>
+                <ul>
+                
+                <li><a href="/2017/04/12/mastodon-and-thecavesocial/" title="Mastodon and thecave.social">Mastodon and thecave.social</a></li>
+                
+                <li><a href="/2017/04/03/after-17-days/" title="After 17 Days">After 17 Days</a></li>
+                
+                <li><a href="/2017/04/01/aint-no-april-fools-joke/" title="Ain't No April Fools' Joke">Ain't No April Fools' Joke</a></li>
+                
+                <li><a href="/2017/03/26/no-facebook-for-11-days/" title="No Facebook for 11 Days!">No Facebook for 11 Days!</a></li>
+                
+                <li><a href="/2017/03/25/love-this-picture/" title="Love this picture">Love this picture</a></li>
+                
+                </ul>                
+            </div>
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Other Sites</h3>
+                <ul>
+<!--                     
+                    <li><a href="http://photos.thecave.com/">And More Photos</a></li>
+                    <li><a href="http://www.rowanturner.net/">Rowan Turner</a></li>
+ -->                    
+                    <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
+                    <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
+                    <li><a href="http://www.whitepeaksoftware.com/">White Peak Software</a></li>
+<!--                     
+                    <li><a href="http://www.peakappcare.com/">Peak App Care</a></li>
+ -->                
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br />
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://alpha.app.net/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-adn fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://twitter.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="https://github.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="http://www.linkedin.com/in/kirbyt/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2017</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
+
+<!-- Google -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-167605-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Drip -->
+<script type="text/javascript">
+  var _dcq = _dcq || [];
+  var _dcs = _dcs || {}; 
+  _dcs.account = '5902978';
+  
+  (function() {
+    var dc = document.createElement('script');
+    dc.type = 'text/javascript'; dc.async = true; 
+    dc.src = '//tag.getdrip.com/5902978.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(dc, s);
+  })();
+</script>
+
+
+</body>
+
+</html>

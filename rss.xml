@@ -5,10 +5,41 @@
         <description>thecave | A Hideout for Programmers, Indie Devs, Solopreneurs - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2017-04-06T23:46:12-04:00</lastBuildDate>
-        <pubDate>2017-04-06T23:46:12-04:00</pubDate>
+        <lastBuildDate>2017-04-12T14:13:53-04:00</lastBuildDate>
+        <pubDate>2017-04-12T14:13:53-04:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Mastodon and thecave.social</title>
+                <description>&lt;p&gt;I first heard about &lt;a href=&quot;https://github.com/tootsuite/mastodon&quot;&gt;Mastodon&lt;/a&gt; last week while lurking on Twitter. For those who don’t know, Mastodon is a free, open source, decentralized social network with instances run mostly by individuals.&lt;/p&gt;
+
+&lt;p&gt;As I read more about Mastodon, I became more intrigued. It didn’t take long before I registered the domain name &lt;a href=&quot;https://thecave.social/&quot;&gt;thecave.social&lt;/a&gt;. The idea of hosting a Mastodon instance, even if just for myself, piqued the geek in me. The realist in me said I don’t have the extra time to take on such an endeavor. Still, I wanted to learn more about Mastodon, and what better way than hosting an instance.&lt;/p&gt;
+
+&lt;p&gt;First, I looked at hosting my Mastodon instance on &lt;a href=&quot;https://www.openshift.com&quot;&gt;OpenShift Online&lt;/a&gt;. I’m a long time fan of OpenShift, but it’s been a while since I played on it. Turns out, a new OpenShift Online supporting Docker containers is in the works. Right now, the new OpenShift Online is in Developer Preview, and accounts are active for only 30 days. The time limit doesn’t work for me because I can see myself hosting my Mastodon instance for more than a month. So OpenShift is not an option for me at the moment.&lt;/p&gt;
+
+&lt;p&gt;I looked at hosting the instance somewhere else, like Digital Ocean, but I decided I don’t have the time to do all the extra work. Thankfully, there is an experimental Heroku install option for Mastodon, and given that I already have some basic experience with &lt;a href=&quot;https://www.heroku.com&quot;&gt;Heroku&lt;/a&gt;, I decided it is the way to go for me.&lt;/p&gt;
+
+&lt;p&gt;After deciding where to host my instance, I did a “test” install. I created a single dyno and played around with Mastodon. Liking what I saw, I scrapped the dyno and created another one, this time for thecave.social.&lt;/p&gt;
+
+&lt;p&gt;It took me about four hours total to get my Mastodon instance setup and configured the way I want it. A more experienced admin could have probably done the work in half the time.&lt;/p&gt;
+
+&lt;p&gt;I’m using &lt;a href=&quot;https://www.mailgun.com&quot;&gt;Mailgun&lt;/a&gt; for emails and &lt;a href=&quot;https://aws.amazon.com/s3/&quot;&gt;S3&lt;/a&gt; for file storage. And now that Heroku has an automatic certificate manager that uses &lt;a href=&quot;https://letsencrypt.org&quot;&gt;Let’s Encrypt&lt;/a&gt;, acquiring and installing an SSL/TLS certificate for the site was a snap. I’m continually amazed at how easy it is to host a server these days thanks to services like Mailgun, S3, and Heroku.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://thecave.social/&quot;&gt;thecave.social&lt;/a&gt; has been live for a few days now, and everything is running smoothly. Of course, I am the only user on this instance, and I do not support the streaming API yet.&lt;/p&gt;
+
+&lt;p&gt;I’ve even made a few toots on Mastodon, which is impressive for me given that I don’t spend a lot of time on social networks these days. (I’ve checked Facebook once in the last 28 days, and I lurk on Twitter only once or twice a month.) Still, I can see myself getting into Mastodon because it represents what I like about social networks, and it doesn’t have the crap that has turned me off of social networks in general, ads and political rants being the top offenders for me.&lt;/p&gt;
+
+&lt;p&gt;Currently, registration on thecave.social is closed, though I’m considering opening it up to family and friends soon. Let me know if you are interested in having an account so I can tell you when registration is open. I can’t guarantee how long I will keep the server up and running, but I don’t see myself shutting it down anytime soon.&lt;/p&gt;
+
+&lt;p&gt;Also, I’m not looking to grow a big community with hundreds or even thousands of users. Instead, I want a place that is my own just like I have with my personal email address. Some family and friends have thecave.com email address, and I see the same thing happening with thecave.social.&lt;/p&gt;
+
+&lt;p&gt;For those of you on other Mastodon instances, feel free to follow me at &lt;a href=&quot;https://thecave.social/@kirby&quot;&gt;@kirby@thecave.social&lt;/a&gt;.&lt;/p&gt;
+</description>
+                <link>http://www.thecave.com/2017/04/12/mastodon-and-thecavesocial/</link>
+                <guid>http://www.thecave.com/2017/04/12/mastodon-and-thecavesocial</guid>
+                <pubDate>2017-04-12T14:07:57-04:00</pubDate>
+        </item>
 
         <item>
                 <title>After 17 Days</title>
@@ -420,32 +451,6 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
                 <link>http://www.thecave.com/2015/08/18/retiring-my-csv-editor/</link>
                 <guid>http://www.thecave.com/2015/08/18/retiring-my-csv-editor</guid>
                 <pubDate>2015-08-18T11:23:09-04:00</pubDate>
-        </item>
-
-        <item>
-                <title>I Wish There Was Something Better Than Meetup.Com</title>
-                <description>&lt;p&gt;I’ve been a Meetup.com subscriber for years, but I hate using them. Their website isn’t very user-friendly, and I often times find their messages to be misleading and or confusing. For example during the transition of the &lt;a href=&quot;http://www.nshappyhour.org&quot;&gt;NSHappyHour&lt;/a&gt; meetup, which had over 250 members, I tried to disable the account. Turns out that is not an option, or at least it wasn’t at the time. I learned that the account had been deleted when I went to re-enable the account a few days later. The only option was to start a new account. This meant we lost the 250+ members that has joined over the years, and we had no way of reaching out to those members to ask them to join the new meetup.&lt;/p&gt;
-
-&lt;p&gt;After that experience I decided I would not use Meetup.com again. But earlier this year I decided to start a new group, &lt;a href=&quot;http://www.apres-code.com&quot;&gt;Après Code&lt;/a&gt;, and the best way to get the word out was to start another Meetup.com meet up. Meetup did help get the word out and people have been attending the gathering each month. But I still haven’t fully leveraged Meetup.com because the web interface is still just as confusing and crappy as ever.&lt;/p&gt;
-
-&lt;p&gt;Today I received yet another confusing, and misleading, message from Meetup.com that will cost a member $10, and I’m once again regretting my decision to use Meetup.com.&lt;/p&gt;
-
-&lt;p&gt;Apparently there is an option with Meetup to allow members to send a contribution. I thought this option was turned off, and according to my account settings contributions were not enabled. Yet, a member was still able to send a $10 contribution. I decided not to accept the contribution because it just seems weird to me to have someone spend me money for this meet up group.&lt;/p&gt;
-
-&lt;p&gt;I changed my mind this morning when I received the misleading email reminding me of the contribution. The Meetup email said, “You can choose to use it toward your Organizer Subscription.” My bi-annual subscription is due in a few days and I thought, sure, why not apply the $10 to the subscription amount. Turns out it’s not that simple.&lt;/p&gt;
-
-&lt;p&gt;With a single click of the mouse button, I started the process of accepting the contribution, but accepting the contribution means setting up a new account with some service named WePay and linking my bank account to WePay. This is not something I’m interested in doing. I know nothing about WePay. Not only that, WePay is taking $1.50 from the $10 contribution as a processing fee. That’s 15% of the contribution, which I find ridiculous.&lt;/p&gt;
-
-&lt;p&gt;Why can’t Meetup take the contribution and apply it directly to the Organizer Subscription? It seems like a simple enough task. After all, Meetup has the ability to process online credit card payments. And in doing this, members like me would not need to sign up for yet another service, link a bank account to a service they know nothing about, and the full contribution amount can be applied instead of only 85%.&lt;/p&gt;
-
-&lt;p&gt;So now I’m having to waste time contacting both Meetup and WePay requesting the member be refunded his contribution because Meetup misled me. And with my bi-annual subscription renewal coming up in a few days, I’m once agree debating whether I should continue using Meetup.com or not. I’m leaning towards not renewing, but I know if I don’t then they will delete the account and the members will be lost forever if I decide to renew later. And if I let the account expire before this contribution mess is resolved, the member who was kind enough to send the contribution will likely be out $10 and WePay will have an extra $10.&lt;/p&gt;
-
-&lt;p&gt;Regardless of whether or not I renew for another 6 months or not, I will not ever use Meetup.com again for any other group in the future. The subscription is not worth the hassle.&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2015/08/17/i-wish-there-was-something-better-than-meetupcom/</link>
-                <guid>http://www.thecave.com/2015/08/17/i-wish-there-was-something-better-than-meetupcom</guid>
-                <pubDate>2015-08-17T07:28:35-04:00</pubDate>
         </item>
 
 
