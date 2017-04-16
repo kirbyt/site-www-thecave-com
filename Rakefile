@@ -124,37 +124,54 @@ task :deploy do
 
   Rake::Task[:generate].execute
 
-  puts "## Fetch git repo at #{git_repo}"
-  FileUtils.mkdir_p(deploy_dir) unless File.exist?(deploy_dir)
-  cd "#{deploy_dir}" do 
-    if not File.exist?(deploy_branch)
-      system "git clone #{git_repo} #{deploy_branch}"
-      cd "#{deploy_branch}" do 
-        system "git branch #{deploy_branch} origin/#{deploy_branch}"
-      end
-    end
-  end
+  puts "## Clone #{deploy_branch} branch from #{git_repo}"
 
-  cd "#{deploy_dir}/#{deploy_branch}" do
-    system "git checkout #{deploy_branch}"
-    system "git pull"
-  end
+  rm_rf "#{deploy_dir}"
+  system "git clone --branch #{deploy_branch} #{git_repo} #{deploy_dir}"
 
-  # Remove the old files and directories
-  (Dir["#{deploy_dir}/#{deploy_branch}/*"]).each { |f| rm_rf(f) }  
-
-  puts "## Copying #{site_dir} files to #{deploy_dir}/#{deploy_branch}"
+  puts "## Copying #{site_dir} files to #{deploy_dir}"
   FileUtils.cp_r(site_dir + '/.', deploy_dir + '/' + deploy_branch)
 
-  cd "#{deploy_dir}/#{deploy_branch}" do 
-    system "git add -A ."
-    message = "Site updated at #{Time.now.utc}"
-    puts "\n## Committing: #{message}"
-    system "git commit -m \"#{message}\""
-    puts "\n## Pushing generated #{deploy_dir} website"
-    system "git push origin #{deploy_branch}"
-    puts "\n## Github Pages deploy complete"
-  end
+  system "git add ."
+  message = "Site updated at #{Time.now.utc}"
+  puts "\n## Committing: #{message}"
+  system "git commit -m \"#{message}\""
+  puts "\n## Pushing generated #{deploy_dir} website"
+  system "git push origin #{deploy_branch}"
+  puts "\n## Github Pages deploy complete"
+
+
+###
+  # FileUtils.mkdir_p(deploy_dir) unless File.exist?(deploy_dir)
+  # cd "#{deploy_dir}" do 
+  #   if not File.exist?(deploy_branch)
+  #     system "git clone #{git_repo} #{deploy_branch}"
+  #     cd "#{deploy_branch}" do 
+  #       system "git branch #{deploy_branch} origin/#{deploy_branch}"
+  #     end
+  #   end
+  # end
+
+  # cd "#{deploy_dir}/#{deploy_branch}" do
+  #   system "git checkout #{deploy_branch}"
+  #   system "git pull"
+  # end
+
+  # # Remove the old files and directories
+  # (Dir["#{deploy_dir}/#{deploy_branch}/*"]).each { |f| rm_rf(f) }  
+
+  # puts "## Copying #{site_dir} files to #{deploy_dir}/#{deploy_branch}"
+  # FileUtils.cp_r(site_dir + '/.', deploy_dir + '/' + deploy_branch)
+
+  # cd "#{deploy_dir}/#{deploy_branch}" do 
+  #   system "git add -A ."
+  #   message = "Site updated at #{Time.now.utc}"
+  #   puts "\n## Committing: #{message}"
+  #   system "git commit -m \"#{message}\""
+  #   puts "\n## Pushing generated #{deploy_dir} website"
+  #   system "git push origin #{deploy_branch}"
+  #   puts "\n## Github Pages deploy complete"
+  # end
 
 end
 
