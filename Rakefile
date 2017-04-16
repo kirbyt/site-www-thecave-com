@@ -130,7 +130,7 @@ task :deploy do
   system "git clone --branch #{deploy_branch} #{git_repo} #{deploy_dir}"
 
   puts "## Copying #{site_dir} files to #{deploy_dir}"
-  FileUtils.cp_r(site_dir + '/.', deploy_dir + '/' + deploy_branch)
+  FileUtils.cp_r(site_dir + '/.', deploy_dir)
 
   system "git add ."
   message = "Site updated at #{Time.now.utc}"
