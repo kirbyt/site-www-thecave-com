@@ -5,9 +5,25 @@
     <description>The blog site for Kirby Turner, an independent software developer, where he shares tips and advice for programmers, indie devs, and solopreneurs.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 16 Apr 2017 14:03:00 +0000</pubDate>
-    <lastBuildDate>Sun, 16 Apr 2017 14:03:00 +0000</lastBuildDate>
+    <pubDate>Sun, 16 Apr 2017 14:28:53 +0000</pubDate>
+    <lastBuildDate>Sun, 16 Apr 2017 14:28:53 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;Another test to see if I got the time zone right this time.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 16 Apr 2017 14:27:23 +0000</pubDate>
+        <link>http://www.thecave.com/2017/04/16/timezone-test/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2017/04/16/timezone-test/</guid>
+        
+        <category>micropost</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title></title>
@@ -189,46 +205,6 @@
         <category>snowboarding</category>
         
         <category>stowe</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title>Hey Siri, Text Evernote</title>
-        <description>&lt;p&gt;Do you use &lt;a href=&quot;https://evernote.com&quot;&gt;Evernote&lt;/a&gt;? Ever wish you could quickly save a note to Evernote hands-free? I found a way.&lt;/p&gt;
-
-&lt;p&gt;For nearly a year now, I’ve been using Evernote to store everything. Even the draft of this blog post was written using Evernote. As my dependency on Evernote grew, so did my need to quickly capture new ideas when I wasn’t near my computer. Sure, I can use my iPhone to save a note, but how do I save one when I can’t using my phone. What if I’m driving and an idea comes to mind that I want to capture. What then? Pull the car over just to use Evernote. Sorry, I’m obsessed with using Evernote, but not that obsessed.&lt;/p&gt;
-
-&lt;p&gt;Thankfully I found a way to record my ideas to Evernote that I can do it even while driving. All I do is say, “Hey Siri text Evernote…”&lt;/p&gt;
-
-&lt;h1 id=&quot;how-it-works&quot;&gt;How it works&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://ifttt.com/&quot;&gt;IFTTT&lt;/a&gt; is an online service that lets you connect one service to another. It’s watching for actions from one service, and when they happen, it triggers an action in the other service. For instance, if you post a picture to Instagram, then save it to Dropbox. IFTTT can do that for you. It’s even in their name. IFTTT is If This, Then That. If I post a picture to Instagram, then save it to Dropbox. If This, Then That.&lt;/p&gt;
-
-&lt;p&gt;IFTTT supports incoming SMS messages. IFTTT can also save a note Evernote. I created an applet — that’s what IFTTT calls the rules that connect services together — that combines these two services. The applet accepts an incoming SMS message, then saves the message to Evernote.&lt;/p&gt;
-
-&lt;p&gt;IFTTT provides the phone number for the SMS message, which I added to my contacts list. I named the contact Evernote. Now, whenever I need to save an idea to Evernote quickly, I just send a text message to my Evernote contact. Cool, eh? Wait, it gets even cooler.&lt;/p&gt;
-
-&lt;h1 id=&quot;hey-siri-text-evernote&quot;&gt;Hey Siri, Text Evernote&lt;/h1&gt;
-
-&lt;p&gt;iPhone and Apple Watch have a nifty feature where you can say, “Hey Siri” and have Siri do some task for you. I use this all this time for things like setting a timer. “Hey Siri, set a 5 minute timer.” BAM! Siri sets a 5-minute timer for me. But Siri can do more. She can send a text message. Heck, she’ll even type the message as you speak. So while I’m driving, I raise my wrist and say into my Apple Watch, “Hey Siri, text Evernote, write a blog post on how I save ideas to Evernote without using my hands.” My watch sends the message to my iPhone, which sends out the SMS to IFTTT, which saves the message to Evernote.&lt;/p&gt;
-
-&lt;p&gt;Pretty dang cool, eh?&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 20 Jan 2017 11:52:48 +0000</pubDate>
-        <link>http://www.thecave.com/2017/01/20/hey-siri-text-evernote/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2017/01/20/hey-siri-text-evernote/</guid>
-        
-        <category>evernote</category>
-        
-        <category>productivity</category>
-        
-        <category>siri</category>
-        
-        <category>tip</category>
         
         
         <category>personal</category>

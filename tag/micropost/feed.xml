@@ -4,13 +4,28 @@
   <title><![CDATA[Tag: micropost | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/micropost/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-04-16T14:03:00+00:00</updated>
+  <updated>2017-04-16T14:28:53+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    
+    <title></title>
+    
+    <link href="http://www.thecave.com/2017/04/16/timezone-test/"/>
+    <updated>2017-04-16T14:27:23+00:00</updated>
+    <id>http://www.thecave.com/2017/04/16/timezone-test</id>
+    <tag>micropost</tag>
+    <description><![CDATA[<p>Another test to see if I got the time zone right this time.</p>
+]]></description>
+    <content type="html"><![CDATA[<p>Another test to see if I got the time zone right this time.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     
@@ -66,20 +81,6 @@
     <description><![CDATA[<p>I haven’t been on Facebook for 11 straight days. #breakingtheaddiction</p>
 ]]></description>
     <content type="html"><![CDATA[<p>I haven’t been on Facebook for 11 straight days. #breakingtheaddiction</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    
-    <title></title>
-    
-    <link href="http://www.thecave.com/2017/03/25/love-this-picture/"/>
-    <updated>2017-03-25T12:37:22+00:00</updated>
-    <id>http://www.thecave.com/2017/03/25/love-this-picture</id>
-    <tag>micropost</tag>
-    <description><![CDATA[<p>I love this picture of Rowan and his cousin Sedona. Taken last weekend at Stowe Mountain Resort. <img src="https://c1.staticflickr.com/3/2813/32769104684_cec6f7e85b_z.jpg" alt="" /></p>
-]]></description>
-    <content type="html"><![CDATA[<p>I love this picture of Rowan and his cousin Sedona. Taken last weekend at Stowe Mountain Resort. <img src="https://c1.staticflickr.com/3/2813/32769104684_cec6f7e85b_z.jpg" alt="" /></p>
 ]]></content>
   </entry>
   

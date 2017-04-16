@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-04-16T14:03:00+00:00</updated>
+  <updated>2017-04-16T14:28:53+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/04/16/timezone-test/"/>
+    <published>2017-04-16T14:27:23+00:00</published>
+    <updated>2017-04-16T14:27:23+00:00</updated>
+    <id>http://www.thecave.com/2017/04/16/timezone-test</id>
+    <content type="html"><![CDATA[<p>Another test to see if I got the time zone right this time.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -427,36 +438,6 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 
 <p>Check out the video. Good stuff.</p>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[You Don't Need Motivation. You Need Good Habits]]></title>
-    <link href="http://www.thecave.com/2015/08/31/you-dont-need-motivation-you-need-good-habits/"/>
-    <published>2015-08-31T18:49:56+00:00</published>
-    <updated>2015-08-31T18:49:56+00:00</updated>
-    <id>http://www.thecave.com/2015/08/31/you-dont-need-motivation-you-need-good-habits</id>
-    <content type="html"><![CDATA[<p>Amy Hoy answers the question “<a href="https://unicornfree.com/2013/how-do-you-stay-motivated-when-youre-not-making-any-money">How do you stay motivated when you’re not making any money</a>”. The post is a couple of years old, but her answer is as relevant today as it was back then. It’s not about finding and having motivation. It’s about developing good habits.</p>
-
-<p>To paraphrase Amy, you don’t let your kids or pets starve just because you’re not motivated to feed them. You do it anyways. And that exactly what you need to do when starting or running your business, creating a new product, or doing anything that matters to you. You just need to do it even when your not motivated to do it.</p>
-
-<p>I think back to the time when I was writing the first edition of <a href="http://www.learningipadprogramming.com">Learning iPad Programming</a>. I was struggling to stay motivated, and I would go long periods of time (days, weeks, months) without writing a word. I read anything and everything I could find on how to stay motivated, but those tips didn’t help me.</p>
-
-<p>What helped me was structuring my day so that I worked on my book at least an hour each day. I started work on the book at the same time every day, which was 9 am. Some days I only worked on it for an hour, other days I would work on it all day. It depended on how I felt. But I always worked on it for at least one hour starting at 9 am every day even when I wasn’t motivated to work on it.</p>
-
-<p>This structure got me into the habit of writing daily. And after I developed the habit, I found writing became easier for me. And I was able to ship the book. The structure worked so well, I used it again and developed the same habit (and then some<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>) to ship the second edition, which I completed in a fraction of the time compared to the time spent on the first edition.</p>
-
-<p>So don’t let a lack of motivation stop you from getting things done. If you are struggling, then setup a structure that will help you develop the habits you need to get things done.</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>Another habit I developed while writing the second edition of my book, and one I still use today, is to listen to my <a href="https://open.spotify.com/user/kirbyt/playlist/6QUgiw9WPf8qXdgnrdXGvZ">Music to Write To</a> playlist on Spotify.&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 ]]></content>
   </entry>
   
