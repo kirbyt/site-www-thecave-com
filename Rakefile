@@ -75,10 +75,10 @@ task :new_micro_post, :title do |t, args|
   open(filename, 'w') do |post|
     post.puts "---"
     post.puts "layout: post"
-    post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
+    post.puts "title: \"\""
     post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}"
     post.puts "category: personal"
-    post.puts "tags: [microblog]"
+    post.puts "tags: [micropost]"
     post.puts "---"
   end
   system "~/bin/subl --new-window . --add #{filename}"
