@@ -17,7 +17,7 @@ title : Atom Feed
 
   {% for post in site.tags[page.tag] limit: 5 %}
   <entry>
-    {% if page.tag == "microblog" %}
+    {% if post.title == "" %}
     <title></title>
     {% else %}
     <title type="html"><![CDATA[{{ post.title | cdata_escape }}]]></title>
