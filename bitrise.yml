@@ -16,8 +16,7 @@ workflows:
         - content: |-
             #!/bin/bash
             set -ex
-            #
-            bundle install
+            sudo bundle install
     - script@1.1.3:
         title: Deploy to Github Pages
         inputs:
