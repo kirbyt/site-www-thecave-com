@@ -4,13 +4,25 @@
   <title><![CDATA[Category: personal | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/category/personal/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-04-16T23:26:29+00:00</updated>
+  <updated>2017-04-16T23:29:49+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Sample Post]]></title>
+    <link href="http://www.thecave.com/2017/04/16/sample-post/"/>
+    <updated>2017-04-16T23:22:01+00:00</updated>
+    <id>http://www.thecave.com/2017/04/16/sample-post</id>
+    <description><![CDATA[<p>Sample post.</p>
+]]></description>
+    <content type="html"><![CDATA[<p>Sample post.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -78,17 +90,6 @@
     <description><![CDATA[<p>After 17 days of no Facebook, I finally took a peek at my feed. I was totally uninterested, and I signed out after a minute. I think I’m over my Facebook addiction.</p>
 ]]></description>
     <content type="html"><![CDATA[<p>After 17 days of no Facebook, I finally took a peek at my feed. I was totally uninterested, and I signed out after a minute. I think I’m over my Facebook addiction.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/04/01/aint-no-april-fools-joke/"/>
-    <updated>2017-04-01T10:56:58+00:00</updated>
-    <id>http://www.thecave.com/2017/04/01/aint-no-april-fools-joke</id>
-    <description><![CDATA[<p>What a beautiful morning. Winter is still going strong here in Stowe. <img src="https://c1.staticflickr.com/4/3754/32957940243_5ae40ae89a_z.jpg" alt="" /></p>
-]]></description>
-    <content type="html"><![CDATA[<p>What a beautiful morning. Winter is still going strong here in Stowe. <img src="https://c1.staticflickr.com/4/3754/32957940243_5ae40ae89a_z.jpg" alt="" /></p>
 ]]></content>
   </entry>
   

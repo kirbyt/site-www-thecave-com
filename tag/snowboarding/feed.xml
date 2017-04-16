@@ -4,13 +4,28 @@
   <title><![CDATA[Tag: snowboarding | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/snowboarding/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-04-16T23:26:29+00:00</updated>
+  <updated>2017-04-16T23:29:49+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    
+    <title type="html"><![CDATA[Sample Post]]></title>
+    
+    <link href="http://www.thecave.com/2017/04/16/sample-post/"/>
+    <updated>2017-04-16T23:22:01+00:00</updated>
+    <id>http://www.thecave.com/2017/04/16/sample-post</id>
+    <tag>snowboarding</tag>
+    <description><![CDATA[<p>Sample post.</p>
+]]></description>
+    <content type="html"><![CDATA[<p>Sample post.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     
@@ -100,24 +115,6 @@
 <p>It was a great father son afternoon with wonderful friends, and when I’m 85 years old I’ll remember how much fun Rowan and I had today. I won’t remember the work I should have done today, and that’s why I don’t feel guilty about how I spent my time this afternoon.</p>
 
 <p><img src="https://farm9.staticflickr.com/8722/16951598160_95cb6df7cc_z.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    
-    <title type="html"><![CDATA[Driver X]]></title>
-    
-    <link href="http://www.thecave.com/2015/03/09/driver-x/"/>
-    <updated>2015-03-09T20:11:50+00:00</updated>
-    <id>http://www.thecave.com/2015/03/09/driver-x</id>
-    <tag>snowboarding</tag>
-    <description><![CDATA[<p>I received my new pair of Burton Driver X snowboard boots this afternoon. Damn, these puppies are stiff, but that’s a good thing. I can’t wait to hit the hill with them in the morning. It’s going to be a whole new riding experience after wearing boots that I probably should’ve replaced a couple of seasons ago.</p>
-
-]]></description>
-    <content type="html"><![CDATA[<p>I received my new pair of Burton Driver X snowboard boots this afternoon. Damn, these puppies are stiff, but that’s a good thing. I can’t wait to hit the hill with them in the morning. It’s going to be a whole new riding experience after wearing boots that I probably should’ve replaced a couple of seasons ago.</p>
-
-<p><img src="https://farm8.staticflickr.com/7634/16766864701_a383cbd8cc_z.jpg" alt="" /></p>
 
 ]]></content>
   </entry>
