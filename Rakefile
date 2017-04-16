@@ -1,7 +1,7 @@
 
 # This will be configured for you when you run config_deploy
 deploy_branch  = "gh-pages"
-git_repo = "https://github.com/kirbyt/site-www-thecave-com.git"
+git_repo = "git@github.com:kirbyt/site-www-thecave-com.git"
 
 ## -- Misc Configs -- ##
 
@@ -132,46 +132,14 @@ task :deploy do
   puts "## Copying #{site_dir} files to #{deploy_dir}"
   FileUtils.cp_r(site_dir + '/.', deploy_dir)
 
-  system "git add ."
-  message = "Site updated at #{Time.now.utc}"
-  puts "\n## Committing: #{message}"
-  system "git commit -m \"#{message}\""
-  puts "\n## Pushing generated #{deploy_dir} website"
-  system "git push origin #{deploy_branch}"
-  puts "\n## Github Pages deploy complete"
-
-
-###
-  # FileUtils.mkdir_p(deploy_dir) unless File.exist?(deploy_dir)
-  # cd "#{deploy_dir}" do 
-  #   if not File.exist?(deploy_branch)
-  #     system "git clone #{git_repo} #{deploy_branch}"
-  #     cd "#{deploy_branch}" do 
-  #       system "git branch #{deploy_branch} origin/#{deploy_branch}"
-  #     end
-  #   end
-  # end
-
-  # cd "#{deploy_dir}/#{deploy_branch}" do
-  #   system "git checkout #{deploy_branch}"
-  #   system "git pull"
-  # end
-
-  # # Remove the old files and directories
-  # (Dir["#{deploy_dir}/#{deploy_branch}/*"]).each { |f| rm_rf(f) }  
-
-  # puts "## Copying #{site_dir} files to #{deploy_dir}/#{deploy_branch}"
-  # FileUtils.cp_r(site_dir + '/.', deploy_dir + '/' + deploy_branch)
-
-  # cd "#{deploy_dir}/#{deploy_branch}" do 
-  #   system "git add -A ."
-  #   message = "Site updated at #{Time.now.utc}"
-  #   puts "\n## Committing: #{message}"
-  #   system "git commit -m \"#{message}\""
-  #   puts "\n## Pushing generated #{deploy_dir} website"
-  #   system "git push origin #{deploy_branch}"
-  #   puts "\n## Github Pages deploy complete"
-  # end
-
+  cd "#{deploy_dir}" do
+    system "git add ."
+    message = "Site updated at #{Time.now.utc}"
+    puts "\n## Committing: #{message}"
+    system "git commit -m \"#{message}\""
+    puts "\n## Pushing generated #{deploy_dir} website"
+    system "git push origin #{deploy_branch}"
+    puts "\n## Github Pages deploy complete"
+  end
 end
 
