@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/category/programming/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-04-16T04:14:30-04:00</updated>
+  <updated>2017-04-16T09:32:04+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -15,7 +15,7 @@
   <entry>
     <title type="html"><![CDATA[The Experienced Programmer's Guide to Getting Started with Swift]]></title>
     <link href="http://www.thecave.com/2017/02/02/the-experienced-programmers-guide-to-getting-started-with-swift/"/>
-    <updated>2017-02-02T11:32:49-05:00</updated>
+    <updated>2017-02-02T16:32:49+00:00</updated>
     <id>http://www.thecave.com/2017/02/02/the-experienced-programmers-guide-to-getting-started-with-swift</id>
     <description><![CDATA[<p>A couple Vermont-based software developers recently asked me how to get started with Swift and writing apps for iOS. I emailed them individually, but when I was asked again today, I thought, time to write a blog post.</p>
 
@@ -37,7 +37,7 @@
   <entry>
     <title type="html"><![CDATA[How To Do A Case Insensitive Search Using Parse SDK]]></title>
     <link href="http://www.thecave.com/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/"/>
-    <updated>2015-12-03T10:16:56-05:00</updated>
+    <updated>2015-12-03T15:16:56+00:00</updated>
     <id>http://www.thecave.com/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk</id>
     <description><![CDATA[<p>I recently came across this question about searching using the Parse SDK for iOS. Simon asks:</p>
 
@@ -76,7 +76,7 @@
   <entry>
     <title type="html"><![CDATA[How To Present An Alert View Using UIAlertController When You Don't Have A View Controller]]></title>
     <link href="http://www.thecave.com/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/"/>
-    <updated>2015-09-28T15:46:02-04:00</updated>
+    <updated>2015-09-28T19:46:02+00:00</updated>
     <id>http://www.thecave.com/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller</id>
     <description><![CDATA[<p>Over the summer I updated a number of apps to iOS 9. A common tasks for me was replacing the deprecated <code class="highlighter-rouge">UIAlertView</code> with new <code class="highlighter-rouge">UIAlertController</code> class. Generally this is easy to do, but there is one scenario that <code class="highlighter-rouge">UIAlertView</code> handles well that <code class="highlighter-rouge">UIAlertController</code> doesn’t support at all: displaying an alert view from parts of your code without a reference to the current view controller, for instance, displaying an alert view from the app delegate.</p>
 
@@ -123,7 +123,7 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
   <entry>
     <title type="html"><![CDATA[Tags And Categories]]></title>
     <link href="http://www.thecave.com/2015/09/21/tags-and-categories/"/>
-    <updated>2015-09-21T19:45:44-04:00</updated>
+    <updated>2015-09-21T23:45:44+00:00</updated>
     <id>http://www.thecave.com/2015/09/21/tags-and-categories</id>
     <description><![CDATA[<p>I’ve been doing a bit of tinkering here at thecave. I realized I was using categories as if they were tags and for one simple reason. I didn’t have a way to support tags. That is, until now.</p>
 
@@ -141,7 +141,7 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
   <entry>
     <title type="html"><![CDATA[My Upcoming Share Extension Talk At 360idev-Min]]></title>
     <link href="http://www.thecave.com/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/"/>
-    <updated>2015-09-07T11:37:39-04:00</updated>
+    <updated>2015-09-07T15:37:39+00:00</updated>
     <id>http://www.thecave.com/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min</id>
     <description><![CDATA[<p>I’m excited to be one of the speakers at the upcoming <a href="http://min.360idev.com">360idev-min</a> conference in Greenville, SC. In my talk I’ll share the things you need to know about when writing a share extension for your iOS app.</p>
 

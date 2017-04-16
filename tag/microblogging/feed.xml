@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: microblogging | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/microblogging/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-04-16T04:14:30-04:00</updated>
+  <updated>2017-04-16T09:32:04+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -17,7 +17,7 @@
     <title type="html"><![CDATA[Mastodon and thecave.social]]></title>
     
     <link href="http://www.thecave.com/2017/04/12/mastodon-and-thecavesocial/"/>
-    <updated>2017-04-12T14:07:57-04:00</updated>
+    <updated>2017-04-12T18:07:57+00:00</updated>
     <id>http://www.thecave.com/2017/04/12/mastodon-and-thecavesocial</id>
     <tag>microblogging</tag>
     <description><![CDATA[<p>I first heard about <a href="https://github.com/tootsuite/mastodon">Mastodon</a> last week while lurking on Twitter. For those who don’t know, Mastodon is a free, open source, decentralized social network with instances run mostly by individuals.</p>
@@ -54,7 +54,7 @@
     <title type="html"><![CDATA[Microblogging, the Open Web, and Cross Post]]></title>
     
     <link href="http://www.thecave.com/2014/10/09/microblogging-the-open-web-and-cross-post/"/>
-    <updated>2014-10-09T00:00:00-04:00</updated>
+    <updated>2014-10-09T00:00:00+00:00</updated>
     <id>http://www.thecave.com/2014/10/09/microblogging-the-open-web-and-cross-post</id>
     <tag>microblogging</tag>
     <description><![CDATA[<p>Recently Manton Reece has been talking a lot about <a href="http://www.manton.org/tag/microblogging">microblogging</a> in an open web world using <a href="http://www.manton.org/tag/rss">RSS</a>. He has touched on points that are important to me, specifically content ownership. Like many people I post regularly to App.net, Facebook, Twitter, and other social networks, but I’ve always had one big problem with these networks. My micro-posts do not appear on my web site, and if these networks were to disappear in the future, then my content disappears too.</p>

@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: interface builder | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/interface-builder/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-04-16T04:14:30-04:00</updated>
+  <updated>2017-04-16T09:32:04+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -17,7 +17,7 @@
     <title type="html"><![CDATA[Wait, Justin and I Agree?]]></title>
     
     <link href="http://www.thecave.com/2014/05/10/wait-justin-and-i-agree/"/>
-    <updated>2014-05-10T00:00:00-04:00</updated>
+    <updated>2014-05-10T00:00:00+00:00</updated>
     <id>http://www.thecave.com/2014/05/10/wait-justin-and-i-agree</id>
     <tag>interface builder</tag>
     <description><![CDATA[<p>My friend Justin wrote a post explaining why he thinks you should <a href="http://carpeaqua.com/2014/05/09/why-you-should-use-interface-builder-with-auto-layout/">use Interface Builder with Auto Layout</a>. It was in response to my post about <a href="http://www.thecave.com/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout/">why I don’t use Interface Builder</a> these days thanks to Auto Layout. Justin’s post is good with plenty of valid points. Justin and I also agree iOS and Mac developers should be using Auto Layout. But he said something that got me wondering…does Justin agree with me more than he realizes. Regarding writing layout constraints in code, Justin says:</p>
@@ -49,7 +49,7 @@
     <title type="html"><![CDATA[I Stopped Using NIBs Thanks to Auto Layout]]></title>
     
     <link href="http://www.thecave.com/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout/"/>
-    <updated>2014-05-04T00:00:00-04:00</updated>
+    <updated>2014-05-04T00:00:00+00:00</updated>
     <id>http://www.thecave.com/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout</id>
     <tag>interface builder</tag>
     <description><![CDATA[<p>The subject to this post might suggest I don’t like Auto Layout, but on the contrary I really like Auto Layout. I didn’t always like Auto Layout. For the longest time Auto Layout was a major pain in my ass, but it turns out it was Interface Builder that was causing me the majority of headaches when I used Auto Layout. So I stopped using Auto Layout in IB and I started using it in code only.</p>

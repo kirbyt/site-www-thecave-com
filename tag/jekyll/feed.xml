@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: jekyll | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/jekyll/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-04-16T04:14:30-04:00</updated>
+  <updated>2017-04-16T09:32:04+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -17,7 +17,7 @@
     <title type="html"><![CDATA[Tags And Categories]]></title>
     
     <link href="http://www.thecave.com/2015/09/21/tags-and-categories/"/>
-    <updated>2015-09-21T19:45:44-04:00</updated>
+    <updated>2015-09-21T23:45:44+00:00</updated>
     <id>http://www.thecave.com/2015/09/21/tags-and-categories</id>
     <tag>jekyll</tag>
     <description><![CDATA[<p>I’ve been doing a bit of tinkering here at thecave. I realized I was using categories as if they were tags and for one simple reason. I didn’t have a way to support tags. That is, until now.</p>
@@ -38,7 +38,7 @@
     <title type="html"><![CDATA[Redirect Jekyll Site To HTTPS On OpenShift]]></title>
     
     <link href="http://www.thecave.com/2015/07/14/redirect-jekyll-site-to-https-on-openshift/"/>
-    <updated>2015-07-14T14:17:53-04:00</updated>
+    <updated>2015-07-14T18:17:53+00:00</updated>
     <id>http://www.thecave.com/2015/07/14/redirect-jekyll-site-to-https-on-openshift</id>
     <tag>jekyll</tag>
     <description><![CDATA[<p>I’m preparing to roll out a new <a href="http://jekyllrb.com">Jekyll</a> website, but unlike with my other Jekyll sites, I want each web page served up on <code class="highlighter-rouge">https</code>, not <code class="highlighter-rouge">http</code>. This means telling the server to redirect <code class="highlighter-rouge">http</code> request to <code class="highlighter-rouge">https</code>.</p>
@@ -74,7 +74,7 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
     <title type="html"><![CDATA[Made Some Fixes To The Blog Site]]></title>
     
     <link href="http://www.thecave.com/2014/12/28/made-some-fixes-to-the-blog-site/"/>
-    <updated>2014-12-28T19:01:32-05:00</updated>
+    <updated>2014-12-29T00:01:32+00:00</updated>
     <id>http://www.thecave.com/2014/12/28/made-some-fixes-to-the-blog-site</id>
     <tag>jekyll</tag>
     <description><![CDATA[<p>Before doing some work today I decided to make some improvements to my blog site. I thought I would be playing with the site for only an hour or so, but instead it took most of the day. Typical when dealing with programming issues in an unfamiliar environment.</p>

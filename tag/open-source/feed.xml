@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: open source | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/open-source/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-04-16T04:14:30-04:00</updated>
+  <updated>2017-04-16T09:32:04+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -17,7 +17,7 @@
     <title type="html"><![CDATA[Mastodon and thecave.social]]></title>
     
     <link href="http://www.thecave.com/2017/04/12/mastodon-and-thecavesocial/"/>
-    <updated>2017-04-12T14:07:57-04:00</updated>
+    <updated>2017-04-12T18:07:57+00:00</updated>
     <id>http://www.thecave.com/2017/04/12/mastodon-and-thecavesocial</id>
     <tag>open source</tag>
     <description><![CDATA[<p>I first heard about <a href="https://github.com/tootsuite/mastodon">Mastodon</a> last week while lurking on Twitter. For those who don’t know, Mastodon is a free, open source, decentralized social network with instances run mostly by individuals.</p>
@@ -54,7 +54,7 @@
     <title type="html"><![CDATA[From Trace To Slopes]]></title>
     
     <link href="http://www.thecave.com/2016/11/19/from-trace-to-slopes/"/>
-    <updated>2016-11-19T10:52:31-05:00</updated>
+    <updated>2016-11-19T15:52:31+00:00</updated>
     <id>http://www.thecave.com/2016/11/19/from-trace-to-slopes</id>
     <tag>open source</tag>
     <description><![CDATA[Need to download your Trace Snow recordings? I did and this is how I did it so I could import the recordings into Slopes.]]></description>
@@ -84,7 +84,7 @@
     <title type="html"><![CDATA[Wish I Could Help But It's Not My App]]></title>
     
     <link href="http://www.thecave.com/2015/09/01/wish-i-could-help-but-its-not-my-app/"/>
-    <updated>2015-09-01T15:37:18-04:00</updated>
+    <updated>2015-09-01T19:37:18+00:00</updated>
     <id>http://www.thecave.com/2015/09/01/wish-i-could-help-but-its-not-my-app</id>
     <tag>open source</tag>
     <description><![CDATA[<p>A well known global company is using some open source code I wrote in one of their apps (yay!). Like a good company, they included my name and licensing information in app’s about screen. Now I’m getting emails from one of the app’s users seeking help with the app. The person thinks I wrote the app because my name appears in the licensing section.</p>
@@ -101,7 +101,7 @@
     <title type="html"><![CDATA[No Love from the .NET Community]]></title>
     
     <link href="http://www.thecave.com/2006/07/28/no-love-from-the-net-community/"/>
-    <updated>2006-07-28T00:00:00-04:00</updated>
+    <updated>2006-07-28T00:00:00+00:00</updated>
     <id>http://www.thecave.com/2006/07/28/no-love-from-the-net-community</id>
     <tag>open source</tag>
     <description><![CDATA[<p>Kevin Downs, of <a href="http://ndoc.sourceforge.net/">NDoc</a> fame, has decided to <a href="http://johnsbraindump.blogspot.com/2006/07/ndoc-20-is-dead.html">stop work on NDoc</a>.  One reason is the lack of love from the .NET community.  This widely used open source tool for generating source code documentation from .NET applications has received very few community contributions and from what I gathered even less financial support.  And to make matter worse Kevin was the victim of a mail-bomb attack believed to be directed at him for not providing .NET 2.0 support fast enough.<br /><br />I’m not surprised at the lack of community support but the mail-bomb attack is just plan insane.  I don’t blame Kevin for stepping down.</p>

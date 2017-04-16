@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: web | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/web/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-04-16T04:14:30-04:00</updated>
+  <updated>2017-04-16T09:32:04+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -17,7 +17,7 @@
     <title type="html"><![CDATA[Tags And Categories]]></title>
     
     <link href="http://www.thecave.com/2015/09/21/tags-and-categories/"/>
-    <updated>2015-09-21T19:45:44-04:00</updated>
+    <updated>2015-09-21T23:45:44+00:00</updated>
     <id>http://www.thecave.com/2015/09/21/tags-and-categories</id>
     <tag>web</tag>
     <description><![CDATA[<p>I’ve been doing a bit of tinkering here at thecave. I realized I was using categories as if they were tags and for one simple reason. I didn’t have a way to support tags. That is, until now.</p>
@@ -38,7 +38,7 @@
     <title type="html"><![CDATA[Redirect Jekyll Site To HTTPS On OpenShift]]></title>
     
     <link href="http://www.thecave.com/2015/07/14/redirect-jekyll-site-to-https-on-openshift/"/>
-    <updated>2015-07-14T14:17:53-04:00</updated>
+    <updated>2015-07-14T18:17:53+00:00</updated>
     <id>http://www.thecave.com/2015/07/14/redirect-jekyll-site-to-https-on-openshift</id>
     <tag>web</tag>
     <description><![CDATA[<p>I’m preparing to roll out a new <a href="http://jekyllrb.com">Jekyll</a> website, but unlike with my other Jekyll sites, I want each web page served up on <code class="highlighter-rouge">https</code>, not <code class="highlighter-rouge">http</code>. This means telling the server to redirect <code class="highlighter-rouge">http</code> request to <code class="highlighter-rouge">https</code>.</p>
@@ -74,7 +74,7 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
     <title type="html"><![CDATA[New Site Theme]]></title>
     
     <link href="http://www.thecave.com/2015/02/16/new-site-theme/"/>
-    <updated>2015-02-16T22:53:03-05:00</updated>
+    <updated>2015-02-17T03:53:03+00:00</updated>
     <id>http://www.thecave.com/2015/02/16/new-site-theme</id>
     <tag>web</tag>
     <description><![CDATA[<p>I’ve been on a website redesign kick lately updating sites such as <a href="http://www.kirbyturner.com">kirbyturner.com</a> and <a href="http://www.rowanturner.net">rowanturner.net</a>. The recent update to my <a href="http://www.kirbyturner.com">vanity website</a> gives it a more modern look, and <a href="http://www.rowanturner.net">Rowan’s website</a> now has a clean, fresh look that focuses on the content.</p>
@@ -112,7 +112,7 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
     <title type="html"><![CDATA[Hey Local Retail Stores, Update Your Website]]></title>
     
     <link href="http://www.thecave.com/2015/02/04/hey-local-retail-stores-update-your-website/"/>
-    <updated>2015-02-04T13:08:21-05:00</updated>
+    <updated>2015-02-04T18:08:21+00:00</updated>
     <id>http://www.thecave.com/2015/02/04/hey-local-retail-stores-update-your-website</id>
     <tag>web</tag>
     <description><![CDATA[<p>I bought a new Burton snowboard the other day. I ordered it online from a mom and pop shop in the Oregon. I wanted to buy locally here in Stowe but the price I paid was 10% cheaper than the price listed on the websites of local shops. Combined with the fact that I didn’t have to pay sales tax and shipping was free, I felt I was getting a great deal. Still, I would have preferred to support a local shop here in Vermont, but at least I supported a local shop in Oregon.</p>
@@ -137,7 +137,7 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
     <title type="html"><![CDATA[New kirbyturner.com Site]]></title>
     
     <link href="http://www.thecave.com/2015/01/15/new-kirbyturnercom-site/"/>
-    <updated>2015-01-15T16:20:35-05:00</updated>
+    <updated>2015-01-15T21:20:35+00:00</updated>
     <id>http://www.thecave.com/2015/01/15/new-kirbyturnercom-site</id>
     <tag>web</tag>
     <description><![CDATA[<p>I have owned the vanity domain name <a href="http://www.kirbyturner.com">kirbyturner.com</a> for a long time, but I didn’t anything with it after buying it. That changed back when I was writing <a href="http://www.learningipadprogramming.com">Learning iPad Programming</a>. My publisher asked that I setup a website that talks about me, so I finally put kirbyturner.com to use. Unfortunately I never liked the look of the site. I used a bland template to create the website quickly. The site was ugly, but it served its purpose. Then Justin Williams created a new “professional web site” for <a href="http://www.justinw.me">himself</a>.</p>

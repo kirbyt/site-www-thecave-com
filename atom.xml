@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-04-16T04:14:30-04:00</updated>
+  <updated>2017-04-16T09:32:04+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -16,8 +16,8 @@
   <entry>
     <title type="html"><![CDATA[Mastodon and thecave.social]]></title>
     <link href="http://www.thecave.com/2017/04/12/mastodon-and-thecavesocial/"/>
-    <published>2017-04-12T14:07:57-04:00</published>
-    <updated>2017-04-12T14:07:57-04:00</updated>
+    <published>2017-04-12T18:07:57+00:00</published>
+    <updated>2017-04-12T18:07:57+00:00</updated>
     <id>http://www.thecave.com/2017/04/12/mastodon-and-thecavesocial</id>
     <content type="html"><![CDATA[<p>I first heard about <a href="https://github.com/tootsuite/mastodon">Mastodon</a> last week while lurking on Twitter. For those who don’t know, Mastodon is a free, open source, decentralized social network with instances run mostly by individuals.</p>
 
@@ -48,8 +48,8 @@
   <entry>
     <title type="html"><![CDATA[After 17 Days]]></title>
     <link href="http://www.thecave.com/2017/04/03/after-17-days/"/>
-    <published>2017-04-03T08:10:26-04:00</published>
-    <updated>2017-04-03T08:10:26-04:00</updated>
+    <published>2017-04-03T12:10:26+00:00</published>
+    <updated>2017-04-03T12:10:26+00:00</updated>
     <id>http://www.thecave.com/2017/04/03/after-17-days</id>
     <content type="html"><![CDATA[<p>After 17 days of no Facebook, I finally took a peek at my feed. I was totally uninterested, and I signed out after a minute. I think I’m over my Facebook addiction.</p>
 ]]></content>
@@ -58,8 +58,8 @@
   <entry>
     <title type="html"><![CDATA[Ain't No April Fools' Joke]]></title>
     <link href="http://www.thecave.com/2017/04/01/aint-no-april-fools-joke/"/>
-    <published>2017-04-01T06:56:58-04:00</published>
-    <updated>2017-04-01T06:56:58-04:00</updated>
+    <published>2017-04-01T10:56:58+00:00</published>
+    <updated>2017-04-01T10:56:58+00:00</updated>
     <id>http://www.thecave.com/2017/04/01/aint-no-april-fools-joke</id>
     <content type="html"><![CDATA[<p>What a beautiful morning. Winter is still going strong here in Stowe. <img src="https://c1.staticflickr.com/4/3754/32957940243_5ae40ae89a_z.jpg" alt="" /></p>
 ]]></content>
@@ -68,8 +68,8 @@
   <entry>
     <title type="html"><![CDATA[No Facebook for 11 Days!]]></title>
     <link href="http://www.thecave.com/2017/03/26/no-facebook-for-11-days/"/>
-    <published>2017-03-26T06:32:14-04:00</published>
-    <updated>2017-03-26T06:32:14-04:00</updated>
+    <published>2017-03-26T10:32:14+00:00</published>
+    <updated>2017-03-26T10:32:14+00:00</updated>
     <id>http://www.thecave.com/2017/03/26/no-facebook-for-11-days</id>
     <content type="html"><![CDATA[<p>I haven’t been on Facebook for 11 straight days. #breakingtheaddiction</p>
 ]]></content>
@@ -78,8 +78,8 @@
   <entry>
     <title type="html"><![CDATA[Love this picture]]></title>
     <link href="http://www.thecave.com/2017/03/25/love-this-picture/"/>
-    <published>2017-03-25T08:37:22-04:00</published>
-    <updated>2017-03-25T08:37:22-04:00</updated>
+    <published>2017-03-25T12:37:22+00:00</published>
+    <updated>2017-03-25T12:37:22+00:00</updated>
     <id>http://www.thecave.com/2017/03/25/love-this-picture</id>
     <content type="html"><![CDATA[<p>I love this picture of Rowan and his cousin Sedona. Taken last weekend at Stowe Mountain Resort. <img src="https://c1.staticflickr.com/3/2813/32769104684_cec6f7e85b_z.jpg" alt="" /></p>
 ]]></content>
@@ -88,8 +88,8 @@
   <entry>
     <title type="html"><![CDATA[Micro blogging from thecave]]></title>
     <link href="http://www.thecave.com/2017/03/25/micro-blogging-from-thecave/"/>
-    <published>2017-03-25T07:15:34-04:00</published>
-    <updated>2017-03-25T07:15:34-04:00</updated>
+    <published>2017-03-25T11:15:34+00:00</published>
+    <updated>2017-03-25T11:15:34+00:00</updated>
     <id>http://www.thecave.com/2017/03/25/micro-blogging-from-thecave</id>
     <content type="html"><![CDATA[<p>Testing, testing. 1, 2, 3…I moved my RSS feed for <a href="http://micro.blog">micro.blog</a> to <a href="https://www.thecave.com/">thecave.com</a> since I’m no longer actively working on my app, Cross Post.</p>
 ]]></content>
@@ -98,8 +98,8 @@
   <entry>
     <title type="html"><![CDATA[The Experienced Programmer's Guide to Getting Started with Swift]]></title>
     <link href="http://www.thecave.com/2017/02/02/the-experienced-programmers-guide-to-getting-started-with-swift/"/>
-    <published>2017-02-02T11:32:49-05:00</published>
-    <updated>2017-02-02T11:32:49-05:00</updated>
+    <published>2017-02-02T16:32:49+00:00</published>
+    <updated>2017-02-02T16:32:49+00:00</updated>
     <id>http://www.thecave.com/2017/02/02/the-experienced-programmers-guide-to-getting-started-with-swift</id>
     <content type="html"><![CDATA[<p>A couple Vermont-based software developers recently asked me how to get started with Swift and writing apps for iOS. I emailed them individually, but when I was asked again today, I thought, time to write a blog post.</p>
 
@@ -118,8 +118,8 @@
   <entry>
     <title type="html"><![CDATA[Wow! Busy weekends ahead]]></title>
     <link href="http://www.thecave.com/2017/01/30/wow-busy-weekends-ahead/"/>
-    <published>2017-01-30T20:34:29-05:00</published>
-    <updated>2017-01-30T20:34:29-05:00</updated>
+    <published>2017-01-31T01:34:29+00:00</published>
+    <updated>2017-01-31T01:34:29+00:00</updated>
     <id>http://www.thecave.com/2017/01/30/wow-busy-weekends-ahead</id>
     <content type="html"><![CDATA[<p>A friend emailed me asking if I’m around in two weekends. He wants to visit me in Stowe and do a little riding together. I haven’t seen this friend in years, and it will be great to catch up ago. The problem is, I discovered I’m busy every weekend through the end of March. Turns out, when you live in a ski town, lots of people want to come for a visit.</p>
 
@@ -132,8 +132,8 @@
   <entry>
     <title type="html"><![CDATA[Hey Siri, Text Evernote]]></title>
     <link href="http://www.thecave.com/2017/01/20/hey-siri-text-evernote/"/>
-    <published>2017-01-20T06:52:48-05:00</published>
-    <updated>2017-01-20T06:52:48-05:00</updated>
+    <published>2017-01-20T11:52:48+00:00</published>
+    <updated>2017-01-20T11:52:48+00:00</updated>
     <id>http://www.thecave.com/2017/01/20/hey-siri-text-evernote</id>
     <content type="html"><![CDATA[<p>Do you use <a href="https://evernote.com">Evernote</a>? Ever wish you could quickly save a note to Evernote hands-free? I found a way.</p>
 
@@ -161,8 +161,8 @@
   <entry>
     <title type="html"><![CDATA[Trying a little experiment]]></title>
     <link href="http://www.thecave.com/2016/12/30/trying-a-little-experiment/"/>
-    <published>2016-12-30T18:01:52-05:00</published>
-    <updated>2016-12-30T18:01:52-05:00</updated>
+    <published>2016-12-30T23:01:52+00:00</published>
+    <updated>2016-12-30T23:01:52+00:00</updated>
     <id>http://www.thecave.com/2016/12/30/trying-a-little-experiment</id>
     <content type="html"><![CDATA[<p>I want an easy way to share certain posts to social media sites, such as Facebook and Twitter, at the time I publish the post. The more I can automate, the better. The problem is this site is a static HTML site generated by <a href="https://jekyllrb.com">Jekyll</a> and hosted on <a href="https://pages.github.com">Github Pages</a>.</p>
 
@@ -183,8 +183,8 @@
   <entry>
     <title type="html"><![CDATA[From Trace To Slopes]]></title>
     <link href="http://www.thecave.com/2016/11/19/from-trace-to-slopes/"/>
-    <published>2016-11-19T10:52:31-05:00</published>
-    <updated>2016-11-19T10:52:31-05:00</updated>
+    <published>2016-11-19T15:52:31+00:00</published>
+    <updated>2016-11-19T15:52:31+00:00</updated>
     <id>http://www.thecave.com/2016/11/19/from-trace-to-slopes</id>
     <content type="html"><![CDATA[<p>I’m a software developer but I’m also a snowboard bum. And with the start of the 2016/2017 snowboard season upon us – that is, for those of us living in the Northern Hemisphere – I’m eager to hit the slopes. Over the last few years I’ve used <a href="http://www.traceup.com/trace-for-snow">Trace Snow</a>, formerly AlpineReplay, to track my time on the slopes. It’s a good iPhone app but far from perfect. One feature it lacks is reporting the number of days spent on the slopes in a season. Trace isn’t alone in not having this feature. None of the ski and snowboard tracking apps I’ve tried have this feature. It seems these apps are more commonly used by individuals who only get a small number of days on the slopes, say 5 or 10 days, which is easy to count. But when you average 80+ days each season, counting the number of days can be a pain.</p>
 
@@ -210,8 +210,8 @@
   <entry>
     <title type="html"><![CDATA[How To Do A Case Insensitive Search Using Parse SDK]]></title>
     <link href="http://www.thecave.com/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/"/>
-    <published>2015-12-03T10:16:56-05:00</published>
-    <updated>2015-12-03T10:16:56-05:00</updated>
+    <published>2015-12-03T15:16:56+00:00</published>
+    <updated>2015-12-03T15:16:56+00:00</updated>
     <id>http://www.thecave.com/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk</id>
     <content type="html"><![CDATA[<p>I recently came across this question about searching using the Parse SDK for iOS. Simon asks:</p>
 
@@ -247,8 +247,8 @@
   <entry>
     <title type="html"><![CDATA[How To Present An Alert View Using UIAlertController When You Don't Have A View Controller]]></title>
     <link href="http://www.thecave.com/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/"/>
-    <published>2015-09-28T15:46:02-04:00</published>
-    <updated>2015-09-28T15:46:02-04:00</updated>
+    <published>2015-09-28T19:46:02+00:00</published>
+    <updated>2015-09-28T19:46:02+00:00</updated>
     <id>http://www.thecave.com/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller</id>
     <content type="html"><![CDATA[<p>Over the summer I updated a number of apps to iOS 9. A common tasks for me was replacing the deprecated <code class="highlighter-rouge">UIAlertView</code> with new <code class="highlighter-rouge">UIAlertController</code> class. Generally this is easy to do, but there is one scenario that <code class="highlighter-rouge">UIAlertView</code> handles well that <code class="highlighter-rouge">UIAlertController</code> doesn’t support at all: displaying an alert view from parts of your code without a reference to the current view controller, for instance, displaying an alert view from the app delegate.</p>
 
@@ -292,8 +292,8 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
   <entry>
     <title type="html"><![CDATA[Tags And Categories]]></title>
     <link href="http://www.thecave.com/2015/09/21/tags-and-categories/"/>
-    <published>2015-09-21T19:45:44-04:00</published>
-    <updated>2015-09-21T19:45:44-04:00</updated>
+    <published>2015-09-21T23:45:44+00:00</published>
+    <updated>2015-09-21T23:45:44+00:00</updated>
     <id>http://www.thecave.com/2015/09/21/tags-and-categories</id>
     <content type="html"><![CDATA[<p>I’ve been doing a bit of tinkering here at thecave. I realized I was using categories as if they were tags and for one simple reason. I didn’t have a way to support tags. That is, until now.</p>
 
@@ -308,8 +308,8 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
   <entry>
     <title type="html"><![CDATA[Trying Something New To Avoid Feast Or Famine]]></title>
     <link href="http://www.thecave.com/2015/09/10/trying-something-new-to-avoid-feast-or-famine/"/>
-    <published>2015-09-10T11:05:11-04:00</published>
-    <updated>2015-09-10T11:05:11-04:00</updated>
+    <published>2015-09-10T15:05:11+00:00</published>
+    <updated>2015-09-10T15:05:11+00:00</updated>
     <id>http://www.thecave.com/2015/09/10/trying-something-new-to-avoid-feast-or-famine</id>
     <content type="html"><![CDATA[<p>I’ve been working for myself for nearly 12 years, and for the most part I love it. But there is one aspect of being an independent software developer that I could happily do without, the cycle of feast or famine.</p>
 
@@ -348,8 +348,8 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
   <entry>
     <title type="html"><![CDATA[My Upcoming Share Extension Talk At 360idev-Min]]></title>
     <link href="http://www.thecave.com/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/"/>
-    <published>2015-09-07T11:37:39-04:00</published>
-    <updated>2015-09-07T11:37:39-04:00</updated>
+    <published>2015-09-07T15:37:39+00:00</published>
+    <updated>2015-09-07T15:37:39+00:00</updated>
     <id>http://www.thecave.com/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min</id>
     <content type="html"><![CDATA[<p>I’m excited to be one of the speakers at the upcoming <a href="http://min.360idev.com">360idev-min</a> conference in Greenville, SC. In my talk I’ll share the things you need to know about when writing a share extension for your iOS app.</p>
 
@@ -363,8 +363,8 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
   <entry>
     <title type="html"><![CDATA[Wish I Could Help But It's Not My App]]></title>
     <link href="http://www.thecave.com/2015/09/01/wish-i-could-help-but-its-not-my-app/"/>
-    <published>2015-09-01T15:37:18-04:00</published>
-    <updated>2015-09-01T15:37:18-04:00</updated>
+    <published>2015-09-01T19:37:18+00:00</published>
+    <updated>2015-09-01T19:37:18+00:00</updated>
     <id>http://www.thecave.com/2015/09/01/wish-i-could-help-but-its-not-my-app</id>
     <content type="html"><![CDATA[<p>A well known global company is using some open source code I wrote in one of their apps (yay!). Like a good company, they included my name and licensing information in app’s about screen. Now I’m getting emails from one of the app’s users seeking help with the app. The person thinks I wrote the app because my name appears in the licensing section.</p>
 
@@ -375,8 +375,8 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
   <entry>
     <title type="html"><![CDATA[Kicking Procrastination In The Ass]]></title>
     <link href="http://www.thecave.com/2015/08/31/kicking-procrastination-in-the-ass/"/>
-    <published>2015-08-31T20:57:22-04:00</published>
-    <updated>2015-08-31T20:57:22-04:00</updated>
+    <published>2015-09-01T00:57:22+00:00</published>
+    <updated>2015-09-01T00:57:22+00:00</updated>
     <id>http://www.thecave.com/2015/08/31/kicking-procrastination-in-the-ass</id>
     <content type="html"><![CDATA[<p>I attended a video cast thingie today - I think the kids call it a webinar - hosted by <a href="https://twitter.com/amyhoy">Amy Hoy</a> and <a href="https://twitter.com/alexhillman">Alex Hillman</a> titled <a href="https://www.crowdcast.io/e/procrastination">Kick Procrastination’s Ass</a>. It was really good, especially the first hour. If you have some spare time, I highly recommend watching it.</p>
 
@@ -422,8 +422,8 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
   <entry>
     <title type="html"><![CDATA[You Don't Need Motivation. You Need Good Habits]]></title>
     <link href="http://www.thecave.com/2015/08/31/you-dont-need-motivation-you-need-good-habits/"/>
-    <published>2015-08-31T14:49:56-04:00</published>
-    <updated>2015-08-31T14:49:56-04:00</updated>
+    <published>2015-08-31T18:49:56+00:00</published>
+    <updated>2015-08-31T18:49:56+00:00</updated>
     <id>http://www.thecave.com/2015/08/31/you-dont-need-motivation-you-need-good-habits</id>
     <content type="html"><![CDATA[<p>Amy Hoy answers the question “<a href="https://unicornfree.com/2013/how-do-you-stay-motivated-when-youre-not-making-any-money">How do you stay motivated when you’re not making any money</a>”. The post is a couple of years old, but her answer is as relevant today as it was back then. It’s not about finding and having motivation. It’s about developing good habits.</p>
 
@@ -452,8 +452,8 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
   <entry>
     <title type="html"><![CDATA[Retiring My CSV Editor]]></title>
     <link href="http://www.thecave.com/2015/08/18/retiring-my-csv-editor/"/>
-    <published>2015-08-18T11:23:09-04:00</published>
-    <updated>2015-08-18T11:23:09-04:00</updated>
+    <published>2015-08-18T15:23:09+00:00</published>
+    <updated>2015-08-18T15:23:09+00:00</updated>
     <id>http://www.thecave.com/2015/08/18/retiring-my-csv-editor</id>
     <content type="html"><![CDATA[<p>Today I did something that I’ve been saying I will do for a long time. I retired my CSV editor, <a href="http://blog.whitepeaksoftware.com/2015/08/18/killinks-retirement/">Killink</a>.</p>
 
