@@ -4,28 +4,13 @@
   <title><![CDATA[Tag: microblog | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/microblog/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-04-16T11:50:52+00:00</updated>
+  <updated>2017-04-16T11:54:02+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
-  
-  <entry>
-    
-    <title></title>
-    
-    <link href="http://www.thecave.com/2017/04/16/sample-post/"/>
-    <updated>2017-04-16T07:49:14+00:00</updated>
-    <id>http://www.thecave.com/2017/04/16/sample-post</id>
-    <tag>microblog</tag>
-    <description><![CDATA[<p>Sample post.</p>
-]]></description>
-    <content type="html"><![CDATA[<p>Sample post.</p>
-
-]]></content>
-  </entry>
   
   <entry>
     
@@ -80,6 +65,20 @@
     <description><![CDATA[<p>I love this picture of Rowan and his cousin Sedona. Taken last weekend at Stowe Mountain Resort. <img src="https://c1.staticflickr.com/3/2813/32769104684_cec6f7e85b_z.jpg" alt="" /></p>
 ]]></description>
     <content type="html"><![CDATA[<p>I love this picture of Rowan and his cousin Sedona. Taken last weekend at Stowe Mountain Resort. <img src="https://c1.staticflickr.com/3/2813/32769104684_cec6f7e85b_z.jpg" alt="" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    
+    <title></title>
+    
+    <link href="http://www.thecave.com/2017/03/25/micro-blogging-from-thecave/"/>
+    <updated>2017-03-25T11:15:34+00:00</updated>
+    <id>http://www.thecave.com/2017/03/25/micro-blogging-from-thecave</id>
+    <tag>microblog</tag>
+    <description><![CDATA[<p>Testing, testing. 1, 2, 3…I moved my RSS feed for <a href="http://micro.blog">micro.blog</a> to <a href="https://www.thecave.com/">thecave.com</a> since I’m no longer actively working on my app, Cross Post.</p>
+]]></description>
+    <content type="html"><![CDATA[<p>Testing, testing. 1, 2, 3…I moved my RSS feed for <a href="http://micro.blog">micro.blog</a> to <a href="https://www.thecave.com/">thecave.com</a> since I’m no longer actively working on my app, Cross Post.</p>
 ]]></content>
   </entry>
   

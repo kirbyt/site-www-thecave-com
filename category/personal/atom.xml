@@ -4,25 +4,13 @@
   <title><![CDATA[Category: personal | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/category/personal/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-04-16T11:50:52+00:00</updated>
+  <updated>2017-04-16T11:54:02+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
-  
-  <entry>
-    <title type="html"><![CDATA[sample post]]></title>
-    <link href="http://www.thecave.com/2017/04/16/sample-post/"/>
-    <updated>2017-04-16T07:49:14+00:00</updated>
-    <id>http://www.thecave.com/2017/04/16/sample-post</id>
-    <description><![CDATA[<p>Sample post.</p>
-]]></description>
-    <content type="html"><![CDATA[<p>Sample post.</p>
-
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Mastodon and thecave.social]]></title>
@@ -88,6 +76,17 @@
     <description><![CDATA[<p>I haven’t been on Facebook for 11 straight days. #breakingtheaddiction</p>
 ]]></description>
     <content type="html"><![CDATA[<p>I haven’t been on Facebook for 11 straight days. #breakingtheaddiction</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Love this picture]]></title>
+    <link href="http://www.thecave.com/2017/03/25/love-this-picture/"/>
+    <updated>2017-03-25T12:37:22+00:00</updated>
+    <id>http://www.thecave.com/2017/03/25/love-this-picture</id>
+    <description><![CDATA[<p>I love this picture of Rowan and his cousin Sedona. Taken last weekend at Stowe Mountain Resort. <img src="https://c1.staticflickr.com/3/2813/32769104684_cec6f7e85b_z.jpg" alt="" /></p>
+]]></description>
+    <content type="html"><![CDATA[<p>I love this picture of Rowan and his cousin Sedona. Taken last weekend at Stowe Mountain Resort. <img src="https://c1.staticflickr.com/3/2813/32769104684_cec6f7e85b_z.jpg" alt="" /></p>
 ]]></content>
   </entry>
   
