@@ -17,7 +17,7 @@ image: "img/bg-02.jpg"
     <div class="post-preview">
         
         <h2 class="post-title">
-            <a href="{{ post.url | prepend: site.baseurl }}">{% unless post.title == '' or post.title == null %}{{ post.title }}{% else %}No Title{% endunless %}</a>
+            <a href="{{ post.url | prepend: site.baseurl }}">{% unless post.title == '' or post.title == null %}{{ post.title }}{% else %}{{ post.date | date: "%B %-d, %Y at %r" }}{% endunless %}</a>
         </h2>
         {% if post.subtitle %}
         <h3 class="post-subtitle">
