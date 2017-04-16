@@ -32,7 +32,7 @@ category_dir: category
 
 tag_dir: tag
 
-exclude: [Rakefile, readme.md, bitrise.yml]
+exclude: [Rakefile, readme.md, bitrise.yml, Gemfile, Gemfile.lock]
 include: [.nojekyll, keybase.txt]
 
 gems: [jekyll-paginate]
