@@ -5,9 +5,24 @@
     <description>The blog site for Kirby Turner, an independent software developer, where he shares tips and advice for programmers, indie devs, and solopreneurs.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 16 Apr 2017 23:57:58 +0000</pubDate>
-    <lastBuildDate>Sun, 16 Apr 2017 23:57:58 +0000</lastBuildDate>
+    <pubDate>Mon, 17 Apr 2017 00:05:07 +0000</pubDate>
+    <lastBuildDate>Mon, 17 Apr 2017 00:05:07 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;Why didn’t I setup &lt;a href=&quot;https://www.bitrise.io&quot;&gt;Bitrise&lt;/a&gt; to generate &lt;a href=&quot;https://www.thecave.com&quot;&gt;thecave.com&lt;/a&gt; sooner. It’s so much easier, and faster, to push to master and let Bitrise do the rest of the work for me.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 16 Apr 2017 23:59:11 +0000</pubDate>
+        <link>http://www.thecave.com/2017/04/16/why-didnt-i-do-this-earlier/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2017/04/16/why-didnt-i-do-this-earlier/</guid>
+        
+        <category>micropost</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title></title>
@@ -187,27 +202,6 @@
         
         
         <category>programming</category>
-        
-      </item>
-    
-      <item>
-        <title>Wow! Busy weekends ahead</title>
-        <description>&lt;p&gt;A friend emailed me asking if I’m around in two weekends. He wants to visit me in Stowe and do a little riding together. I haven’t seen this friend in years, and it will be great to catch up ago. The problem is, I discovered I’m busy every weekend through the end of March. Turns out, when you live in a ski town, lots of people want to come for a visit.&lt;/p&gt;
-
-&lt;p&gt;So if you want to visit me in Stowe, and you want to ride together, it’ll have to be during the weekday or a weekend towards the end of March beginning of April.&lt;/p&gt;
-
-&lt;p&gt;And in case you’re wondering, the skiing and riding in Stowe has been superb recently.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 31 Jan 2017 01:34:29 +0000</pubDate>
-        <link>http://www.thecave.com/2017/01/30/wow-busy-weekends-ahead/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2017/01/30/wow-busy-weekends-ahead/</guid>
-        
-        <category>snowboarding</category>
-        
-        <category>stowe</category>
-        
-        
-        <category>personal</category>
         
       </item>
     

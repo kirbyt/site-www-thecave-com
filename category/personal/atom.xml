@@ -4,13 +4,24 @@
   <title><![CDATA[Category: personal | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/category/personal/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-04-16T23:57:58+00:00</updated>
+  <updated>2017-04-17T00:05:07+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/04/16/why-didnt-i-do-this-earlier/"/>
+    <updated>2017-04-16T23:59:11+00:00</updated>
+    <id>http://www.thecave.com/2017/04/16/why-didnt-i-do-this-earlier</id>
+    <description><![CDATA[<p>Why didn’t I setup <a href="https://www.bitrise.io">Bitrise</a> to generate <a href="https://www.thecave.com">thecave.com</a> sooner. It’s so much easier, and faster, to push to master and let Bitrise do the rest of the work for me.</p>
+]]></description>
+    <content type="html"><![CDATA[<p>Why didn’t I setup <a href="https://www.bitrise.io">Bitrise</a> to generate <a href="https://www.thecave.com">thecave.com</a> sooner. It’s so much easier, and faster, to push to master and let Bitrise do the rest of the work for me.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -78,17 +89,6 @@
     <description><![CDATA[<p>After 17 days of no Facebook, I finally took a peek at my feed. I was totally uninterested, and I signed out after a minute. I think I’m over my Facebook addiction.</p>
 ]]></description>
     <content type="html"><![CDATA[<p>After 17 days of no Facebook, I finally took a peek at my feed. I was totally uninterested, and I signed out after a minute. I think I’m over my Facebook addiction.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/04/01/aint-no-april-fools-joke/"/>
-    <updated>2017-04-01T10:56:58+00:00</updated>
-    <id>http://www.thecave.com/2017/04/01/aint-no-april-fools-joke</id>
-    <description><![CDATA[<p>What a beautiful morning. Winter is still going strong here in Stowe. <img src="https://c1.staticflickr.com/4/3754/32957940243_5ae40ae89a_z.jpg" alt="" /></p>
-]]></description>
-    <content type="html"><![CDATA[<p>What a beautiful morning. Winter is still going strong here in Stowe. <img src="https://c1.staticflickr.com/4/3754/32957940243_5ae40ae89a_z.jpg" alt="" /></p>
 ]]></content>
   </entry>
   
