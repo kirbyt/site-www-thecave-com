@@ -5,10 +5,45 @@
         <description>thecave | A Hideout for Programmers, Indie Devs, Solopreneurs - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2017-04-17T00:05:07+00:00</lastBuildDate>
-        <pubDate>2017-04-17T00:05:07+00:00</pubDate>
+        <lastBuildDate>2017-04-17T01:40:15+00:00</lastBuildDate>
+        <pubDate>2017-04-17T01:40:15+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Convert Time with a TextExpander Snippet</title>
+                <description>&lt;p&gt;I find I am using &lt;a href=&quot;https://textexpander.com&quot;&gt;TextExpander&lt;/a&gt; more and more these days. It’s an awesome productivity tool that saves me time by inserting snippets of text into whatever I’m writing, be it code or words. What I didn’t know about TextExpander, that is, until today, is that it can run shell scripts to generate the text snippets.&lt;/p&gt;
+
+&lt;p&gt;I often meet with people on the West Coast. When I schedule a meeting time, I will say something like “Let’s meet at 01:30 PM EDT / 10:30 AM PDT” in the email. Not only is this a lot of text to type, but it also requires I calculate the Pacific time.&lt;/p&gt;
+
+&lt;p&gt;How cool would it be if TextExpander could generate the time snippet for me? Guess what. It can.&lt;/p&gt;
+
+&lt;p&gt;I created a shell script snippet that takes a local time, which I input, and calculates the Eastern and Pacific times. I use &lt;em&gt;timept;;&lt;/em&gt; for the snippet abbreviation. Now when I want to mention a particular time in an email, I type &lt;em&gt;timept;;&lt;/em&gt; and enter the time. TextExpander does the rest.&lt;/p&gt;
+
+&lt;p&gt;Here’s the shell script code for anyone who might want it. Make sure you select &lt;strong&gt;Shell Script&lt;/strong&gt; as the &lt;em&gt;Content&lt;/em&gt; type when creating the snippet.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#! /bin/bash&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Enter a time using 24H. 1:30pm is 13:30 .&lt;/span&gt;
+
+&lt;span class=&quot;nv&quot;&gt;ENTERTIME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;%filltext:name=Time (in 24H)%&quot;&lt;/span&gt;
+
+
+&lt;span class=&quot;c&quot;&gt;# See https://gist.github.com/palaniraja/f8e21e8c66eac7e1b313 for a&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# list of time zone names.&lt;/span&gt;
+
+&lt;span class=&quot;nv&quot;&gt;T1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;TZ&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;America/New_York&quot;&lt;/span&gt; date -jf &lt;span class=&quot;s2&quot;&gt;&quot;%H:%M %z&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$ENTERTIME&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;date &lt;span class=&quot;s2&quot;&gt;&quot;+%z&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;+%I:%M %p %Z&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;nv&quot;&gt;T2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;TZ&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;America/Los_Angeles&quot;&lt;/span&gt; date -jf &lt;span class=&quot;s2&quot;&gt;&quot;%H:%M %z&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$ENTERTIME&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;date &lt;span class=&quot;s2&quot;&gt;&quot;+%z&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;+%I:%M %p %Z&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; -n &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$T1&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; / &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$T2&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+                <link>http://www.thecave.com/2017/04/16/convert-time-with-a-textexpander-snippet/</link>
+                <guid>http://www.thecave.com/2017/04/16/convert-time-with-a-textexpander-snippet</guid>
+                <pubDate>2017-04-17T01:14:46+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -368,17 +403,6 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
                 <link>http://www.thecave.com/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/</link>
                 <guid>http://www.thecave.com/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min</guid>
                 <pubDate>2015-09-07T15:37:39+00:00</pubDate>
-        </item>
-
-        <item>
-                <title>Wish I Could Help But It's Not My App</title>
-                <description>&lt;p&gt;A well known global company is using some open source code I wrote in one of their apps (yay!). Like a good company, they included my name and licensing information in app’s about screen. Now I’m getting emails from one of the app’s users seeking help with the app. The person thinks I wrote the app because my name appears in the licensing section.&lt;/p&gt;
-
-&lt;p&gt;Definitely a first for me.&lt;/p&gt;
-</description>
-                <link>http://www.thecave.com/2015/09/01/wish-i-could-help-but-its-not-my-app/</link>
-                <guid>http://www.thecave.com/2015/09/01/wish-i-could-help-but-its-not-my-app</guid>
-                <pubDate>2015-09-01T19:37:18+00:00</pubDate>
         </item>
 
 

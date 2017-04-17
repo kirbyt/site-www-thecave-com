@@ -4,13 +4,51 @@
   <title><![CDATA[Category: programming | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/category/programming/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-04-17T00:05:07+00:00</updated>
+  <updated>2017-04-17T01:40:15+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Convert Time with a TextExpander Snippet]]></title>
+    <link href="http://www.thecave.com/2017/04/16/convert-time-with-a-textexpander-snippet/"/>
+    <updated>2017-04-17T01:14:46+00:00</updated>
+    <id>http://www.thecave.com/2017/04/16/convert-time-with-a-textexpander-snippet</id>
+    <description><![CDATA[<p>I find I am using <a href="https://textexpander.com">TextExpander</a> more and more these days. It’s an awesome productivity tool that saves me time by inserting snippets of text into whatever I’m writing, be it code or words. What I didn’t know about TextExpander, that is, until today, is that it can run shell scripts to generate the text snippets.</p>
+
+]]></description>
+    <content type="html"><![CDATA[<p>I find I am using <a href="https://textexpander.com">TextExpander</a> more and more these days. It’s an awesome productivity tool that saves me time by inserting snippets of text into whatever I’m writing, be it code or words. What I didn’t know about TextExpander, that is, until today, is that it can run shell scripts to generate the text snippets.</p>
+
+<p>I often meet with people on the West Coast. When I schedule a meeting time, I will say something like “Let’s meet at 01:30 PM EDT / 10:30 AM PDT” in the email. Not only is this a lot of text to type, but it also requires I calculate the Pacific time.</p>
+
+<p>How cool would it be if TextExpander could generate the time snippet for me? Guess what. It can.</p>
+
+<p>I created a shell script snippet that takes a local time, which I input, and calculates the Eastern and Pacific times. I use <em>timept;;</em> for the snippet abbreviation. Now when I want to mention a particular time in an email, I type <em>timept;;</em> and enter the time. TextExpander does the rest.</p>
+
+<p>Here’s the shell script code for anyone who might want it. Make sure you select <strong>Shell Script</strong> as the <em>Content</em> type when creating the snippet.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">#! /bin/bash</span>
+
+<span class="c"># Enter a time using 24H. 1:30pm is 13:30 .</span>
+
+<span class="nv">ENTERTIME</span><span class="o">=</span><span class="s2">"%filltext:name=Time (in 24H)%"</span>
+
+
+<span class="c"># See https://gist.github.com/palaniraja/f8e21e8c66eac7e1b313 for a</span>
+<span class="c"># list of time zone names.</span>
+
+<span class="nv">T1</span><span class="o">=</span><span class="k">$(</span><span class="nv">TZ</span><span class="o">=</span><span class="s2">"America/New_York"</span> date -jf <span class="s2">"%H:%M %z"</span> <span class="s2">"</span><span class="nv">$ENTERTIME</span><span class="s2"> </span><span class="k">$(</span>date <span class="s2">"+%z"</span><span class="k">)</span><span class="s2">"</span> <span class="s2">"+%I:%M %p %Z"</span><span class="k">)</span>
+
+<span class="nv">T2</span><span class="o">=</span><span class="k">$(</span><span class="nv">TZ</span><span class="o">=</span><span class="s2">"America/Los_Angeles"</span> date -jf <span class="s2">"%H:%M %z"</span> <span class="s2">"</span><span class="nv">$ENTERTIME</span><span class="s2"> </span><span class="k">$(</span>date <span class="s2">"+%z"</span><span class="k">)</span><span class="s2">"</span> <span class="s2">"+%I:%M %p %Z"</span><span class="k">)</span>
+
+<span class="nb">echo</span> -n <span class="s2">"</span><span class="nv">$T1</span><span class="s2"> / </span><span class="nv">$T2</span><span class="s2">"</span>
+</code></pre>
+</div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Experienced Programmer's Guide to Getting Started with Swift]]></title>
@@ -135,23 +173,6 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 <p>The <a href="https://github.com/recurser/jekyll-plugins">Jekyll category plugins</a> I use come from Dave Perretter. I made copies of <em>category_generator.rb</em> and <em>category_list_tags.rb</em> naming the new plugins <em>tag_generator.rb</em> and <em>tag_list_tags.rb</em>. Then I replace references to <code class="highlighter-rouge">categories</code> and <code class="highlighter-rouge">category</code> with <code class="highlighter-rouge">tags</code> and <code class="highlighter-rouge">tag</code> in the source code. And BAM! I now have tag support at thecave.com.</p>
 
 <p>You can find the source code for the plugins in my site’s github <a href="https://github.com/kirbyt/site-www-thecave-com/tree/master/_plugins">repo</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[My Upcoming Share Extension Talk At 360idev-Min]]></title>
-    <link href="http://www.thecave.com/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/"/>
-    <updated>2015-09-07T15:37:39+00:00</updated>
-    <id>http://www.thecave.com/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min</id>
-    <description><![CDATA[<p>I’m excited to be one of the speakers at the upcoming <a href="http://min.360idev.com">360idev-min</a> conference in Greenville, SC. In my talk I’ll share the things you need to know about when writing a share extension for your iOS app.</p>
-
-]]></description>
-    <content type="html"><![CDATA[<p>I’m excited to be one of the speakers at the upcoming <a href="http://min.360idev.com">360idev-min</a> conference in Greenville, SC. In my talk I’ll share the things you need to know about when writing a share extension for your iOS app.</p>
-
-<p>If you plan to attend <a href="http://min.360idev.com">360idev-min</a>, then use the coupon code <strong>SpeakerFriend</strong> to save $100 when purchasing your ticket.</p>
-
-<p>And let me know if you are attending so we can meet up in person.</p>
-
 ]]></content>
   </entry>
   
