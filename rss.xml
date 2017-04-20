@@ -5,10 +5,20 @@
         <description>thecave | A Hideout for Programmers, Indie Devs, Solopreneurs - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2017-04-17T01:52:11+00:00</lastBuildDate>
-        <pubDate>2017-04-17T01:52:11+00:00</pubDate>
+        <lastBuildDate>2017-04-20T01:35:40+00:00</lastBuildDate>
+        <pubDate>2017-04-20T01:35:40+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title></title>
+                <description>&lt;p&gt;Day 💯 for my 🏂 season.&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2017/04/19/Untitled/</link>
+                <guid>http://www.thecave.com/2017/04/19/Untitled</guid>
+                <pubDate>2017-04-20T01:33:55+00:00</pubDate>
+        </item>
 
         <item>
                 <title>Convert Time with a TextExpander Snippet</title>
@@ -389,20 +399,6 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
                 <link>http://www.thecave.com/2015/09/10/trying-something-new-to-avoid-feast-or-famine/</link>
                 <guid>http://www.thecave.com/2015/09/10/trying-something-new-to-avoid-feast-or-famine</guid>
                 <pubDate>2015-09-10T15:05:11+00:00</pubDate>
-        </item>
-
-        <item>
-                <title>My Upcoming Share Extension Talk At 360idev-Min</title>
-                <description>&lt;p&gt;I’m excited to be one of the speakers at the upcoming &lt;a href=&quot;http://min.360idev.com&quot;&gt;360idev-min&lt;/a&gt; conference in Greenville, SC. In my talk I’ll share the things you need to know about when writing a share extension for your iOS app.&lt;/p&gt;
-
-&lt;p&gt;If you plan to attend &lt;a href=&quot;http://min.360idev.com&quot;&gt;360idev-min&lt;/a&gt;, then use the coupon code &lt;strong&gt;SpeakerFriend&lt;/strong&gt; to save $100 when purchasing your ticket.&lt;/p&gt;
-
-&lt;p&gt;And let me know if you are attending so we can meet up in person.&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/</link>
-                <guid>http://www.thecave.com/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min</guid>
-                <pubDate>2015-09-07T15:37:39+00:00</pubDate>
         </item>
 
 

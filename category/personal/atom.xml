@@ -4,13 +4,25 @@
   <title><![CDATA[Category: personal | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/category/personal/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-04-17T01:52:11+00:00</updated>
+  <updated>2017-04-20T01:35:40+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/04/19/Untitled/"/>
+    <updated>2017-04-20T01:33:55+00:00</updated>
+    <id>http://www.thecave.com/2017/04/19/Untitled</id>
+    <description><![CDATA[<p>Day 💯 for my 🏂 season.</p>
+]]></description>
+    <content type="html"><![CDATA[<p>Day 💯 for my 🏂 season.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -78,17 +90,6 @@
 <p>Also, I’m not looking to grow a big community with hundreds or even thousands of users. Instead, I want a place that is my own just like I have with my personal email address. Some family and friends have thecave.com email address, and I see the same thing happening with thecave.social.</p>
 
 <p>For those of you on other Mastodon instances, feel free to follow me at <a href="https://thecave.social/@kirby">@kirby@thecave.social</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/04/03/after-17-days/"/>
-    <updated>2017-04-03T12:10:26+00:00</updated>
-    <id>http://www.thecave.com/2017/04/03/after-17-days</id>
-    <description><![CDATA[<p>After 17 days of no Facebook, I finally took a peek at my feed. I was totally uninterested, and I signed out after a minute. I think I’m over my Facebook addiction.</p>
-]]></description>
-    <content type="html"><![CDATA[<p>After 17 days of no Facebook, I finally took a peek at my feed. I was totally uninterested, and I signed out after a minute. I think I’m over my Facebook addiction.</p>
 ]]></content>
   </entry>
   

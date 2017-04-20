@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-04-17T01:52:11+00:00</updated>
+  <updated>2017-04-20T01:35:40+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/04/19/Untitled/"/>
+    <published>2017-04-20T01:33:55+00:00</published>
+    <updated>2017-04-20T01:33:55+00:00</updated>
+    <id>http://www.thecave.com/2017/04/19/Untitled</id>
+    <content type="html"><![CDATA[<p>Day 💯 for my 🏂 season.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Convert Time with a TextExpander Snippet]]></title>
@@ -410,21 +421,6 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
     </li>
   </ol>
 </div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[My Upcoming Share Extension Talk At 360idev-Min]]></title>
-    <link href="http://www.thecave.com/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/"/>
-    <published>2015-09-07T15:37:39+00:00</published>
-    <updated>2015-09-07T15:37:39+00:00</updated>
-    <id>http://www.thecave.com/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min</id>
-    <content type="html"><![CDATA[<p>I’m excited to be one of the speakers at the upcoming <a href="http://min.360idev.com">360idev-min</a> conference in Greenville, SC. In my talk I’ll share the things you need to know about when writing a share extension for your iOS app.</p>
-
-<p>If you plan to attend <a href="http://min.360idev.com">360idev-min</a>, then use the coupon code <strong>SpeakerFriend</strong> to save $100 when purchasing your ticket.</p>
-
-<p>And let me know if you are attending so we can meet up in person.</p>
-
 ]]></content>
   </entry>
   
