@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-04-21T12:54:57+00:00</updated>
+  <updated>2017-04-21T13:23:47+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -43,7 +43,7 @@
 
 <p>Simply put, the Editorial workflow lets me publish a new post with a single tap.</p>
 
-<p>XXX INSERT VIDEO HERE XXX</p>
+<div class="vimeo-video"><figure><iframe src="//player.vimeo.com/video/3ffad2c5bd" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></figure></div>
 
 <h2 id="sharing-my-workflows">Sharing My Workflows</h2>
 
