@@ -30,7 +30,7 @@ The workflow also names the file with the appropriate YYYY-MM-DD prefix that Jek
 
 Simply put, the Editorial workflow lets me publish a new post with a single tap. 
 
-XXX INSERT VIDEO HERE XXX
+{% vimeo 3ffad2c5bd %}
 
 ## Sharing My Workflows
 
