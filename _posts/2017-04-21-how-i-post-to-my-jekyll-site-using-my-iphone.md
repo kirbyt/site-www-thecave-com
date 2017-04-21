@@ -28,7 +28,7 @@ The difference between the two workflows is subtle. The workflow I use to publis
 
 The workflow also names the file with the appropriate YYYY-MM-DD prefix that Jekyll expects, and it does one other thing for me as well. It sends the appropriate commands to Working Copy so it can add, commit, and push the new document to my git repository. And after Working Copy finishes its job, it returns me back to Editorial. 
 
-Simply put, the Editorial workflow lets me publish a new post with a single tap. 
+Simply put, the Editorial workflow lets me publish a new post with just a few taps of my finger. 
 
 {% vimeo 214172887 %}
 
