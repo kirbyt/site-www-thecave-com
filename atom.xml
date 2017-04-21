@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-04-21T13:32:23+00:00</updated>
+  <updated>2017-04-21T13:44:28+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -41,7 +41,7 @@
 
 <p>The workflow also names the file with the appropriate YYYY-MM-DD prefix that Jekyll expects, and it does one other thing for me as well. It sends the appropriate commands to Working Copy so it can add, commit, and push the new document to my git repository. And after Working Copy finishes its job, it returns me back to Editorial.</p>
 
-<p>Simply put, the Editorial workflow lets me publish a new post with a single tap.</p>
+<p>Simply put, the Editorial workflow lets me publish a new post with just a few taps of my finger.</p>
 
 <div class="vimeo-video"><figure><iframe src="//player.vimeo.com/video/214172887" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></figure></div>
 
