@@ -5,10 +5,20 @@
         <description>thecave | A Hideout for Programmers, Indie Devs, Solopreneurs - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2017-04-24T01:08:23+00:00</lastBuildDate>
-        <pubDate>2017-04-24T01:08:23+00:00</pubDate>
+        <lastBuildDate>2017-04-24T11:22:35+00:00</lastBuildDate>
+        <pubDate>2017-04-24T11:22:35+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title></title>
+                <description>&lt;p&gt;Good times yesterday, which was the last day of the season for lift service at Stowe Mountain Resort. &lt;img src=&quot;https://thecave.social/media/DS1teOt1MLWVhyNhRYM&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;https://thecave.social/media/1QkMTHIe3-pMHZDRdKA&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2017/04/24/good-times-yesterday/</link>
+                <guid>http://www.thecave.com/2017/04/24/good-times-yesterday</guid>
+                <pubDate>2017-04-24T11:19:31+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -344,42 +354,6 @@
                 <link>http://www.thecave.com/2016/11/19/from-trace-to-slopes/</link>
                 <guid>http://www.thecave.com/2016/11/19/from-trace-to-slopes</guid>
                 <pubDate>2016-11-19T15:52:31+00:00</pubDate>
-        </item>
-
-        <item>
-                <title>How To Do A Case Insensitive Search Using Parse SDK</title>
-                <description>&lt;p&gt;I recently came across this question about searching using the Parse SDK for iOS. Simon asks:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;What would be the best practice for search in a large user database and return e..g 10 first results based on name or email?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I’ve been doing a lot with &lt;a href=&quot;https://www.parse.com&quot;&gt;Parse&lt;/a&gt; recently, from building a new iOS app to adding a license key &lt;a href=&quot;http://www.whitepeaksoftware.com/licenselookup&quot;&gt;lookup&lt;/a&gt; feature to my company website, and the reason Simon’s question caught my attention was because I asked myself a similar question the other day when working on the license key lookup feature.&lt;/p&gt;
-
-&lt;p&gt;The license key data comes from my order processing provider. A customer who has lost they license key can visit my website and retrieve for their license information by entering their email address. The problem, however, is that the person might enter the email address using a different case than used when the order was placed. And Parse does not have a way to perform a case insensitive search on string values.&lt;/p&gt;
-
-&lt;p&gt;So how do you get around this problem? And as Simon asks, what are some best practices for searching data in Parse?&lt;/p&gt;
-
-&lt;h2 id=&quot;force-strings-to-all-lowercase&quot;&gt;Force Strings To All Lowercase&lt;/h2&gt;
-
-&lt;p&gt;For starters, you should force all string values that can be searched to lower case, and do the same with the search string entered by the user. This produces the same effect as performing a case insensitive search while getting around the fact that Parse, as well as other types of data stores, doesn’t support case insensitive searches.&lt;/p&gt;
-
-&lt;p&gt;While storing the string value in all lowercase works fine for some value types, such as an email address, it’s not ideal for other value types. A person’s first and last names are not something you want to store in lowercase only. After all, you will likely display the person’s name on a profile screen or in an email message, and you want to display the name exactly as entered by the person.&lt;/p&gt;
-
-&lt;p&gt;So how do you search by data such as a first or last name without the ability to perform a case insensitive search? Simple. You create a search field for each.&lt;/p&gt;
-
-&lt;h2 id=&quot;define-search-fields&quot;&gt;Define Search Fields&lt;/h2&gt;
-
-&lt;p&gt;Let’s say your Parse class contains three properties, &lt;code class=&quot;highlighter-rouge&quot;&gt;firstName&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;lastName&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;email&lt;/code&gt;. All three contain data entered by a person. When you add a new instance of this class to Parse containing the data entered by the person, you can force the value for &lt;code class=&quot;highlighter-rouge&quot;&gt;email&lt;/code&gt; to be lowercase (e.g., &lt;code class=&quot;highlighter-rouge&quot;&gt;-[NSString lowercaseString]&lt;/code&gt; if you’re using Objective-C). However, you don’t want to do this for &lt;code class=&quot;highlighter-rouge&quot;&gt;firstName&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;lastName&lt;/code&gt;. Instead, you want to use search fields for those two properties.&lt;/p&gt;
-
-&lt;p&gt;To search on &lt;code class=&quot;highlighter-rouge&quot;&gt;firstName&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;lastName&lt;/code&gt;, add two additional properties to your class, &lt;code class=&quot;highlighter-rouge&quot;&gt;firstNameSearch&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;lastNameSearch&lt;/code&gt;. Then, just as you did with &lt;code class=&quot;highlighter-rouge&quot;&gt;email&lt;/code&gt;, force the values for &lt;code class=&quot;highlighter-rouge&quot;&gt;firstNameSearch&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;lastNameSearch&lt;/code&gt; to be all lowercase before saving the data to Parse. Now when you want to perform a search, use the search properties &lt;code class=&quot;highlighter-rouge&quot;&gt;firstNameSearch&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;lastNameSearch&lt;/code&gt; instead of the other two.&lt;/p&gt;
-
-&lt;p&gt;Congratulations! You’ve achieved case insensitive searching in an environment that does not support it.&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/</link>
-                <guid>http://www.thecave.com/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk</guid>
-                <pubDate>2015-12-03T15:16:56+00:00</pubDate>
         </item>
 
 

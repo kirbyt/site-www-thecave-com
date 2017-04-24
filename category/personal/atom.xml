@@ -4,13 +4,25 @@
   <title><![CDATA[Category: personal | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/category/personal/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-04-24T01:08:23+00:00</updated>
+  <updated>2017-04-24T11:22:35+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/04/24/good-times-yesterday/"/>
+    <updated>2017-04-24T11:19:31+00:00</updated>
+    <id>http://www.thecave.com/2017/04/24/good-times-yesterday</id>
+    <description><![CDATA[<p>Good times yesterday, which was the last day of the season for lift service at Stowe Mountain Resort. <img src="https://thecave.social/media/DS1teOt1MLWVhyNhRYM" alt="" /> <img src="https://thecave.social/media/1QkMTHIe3-pMHZDRdKA" alt="" /></p>
+]]></description>
+    <content type="html"><![CDATA[<p>Good times yesterday, which was the last day of the season for lift service at Stowe Mountain Resort. <img src="https://thecave.social/media/DS1teOt1MLWVhyNhRYM" alt="" /> <img src="https://thecave.social/media/1QkMTHIe3-pMHZDRdKA" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -56,18 +68,6 @@
     <description><![CDATA[<p>Why didn’t I setup <a href="https://www.bitrise.io">Bitrise</a> to generate <a href="https://www.thecave.com">thecave.com</a> sooner. It’s so much easier, and faster, to push to master and let Bitrise do the rest of the work for me.</p>
 ]]></description>
     <content type="html"><![CDATA[<p>Why didn’t I setup <a href="https://www.bitrise.io">Bitrise</a> to generate <a href="https://www.thecave.com">thecave.com</a> sooner. It’s so much easier, and faster, to push to master and let Bitrise do the rest of the work for me.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/04/16/timezone-test/"/>
-    <updated>2017-04-16T14:27:23+00:00</updated>
-    <id>http://www.thecave.com/2017/04/16/timezone-test</id>
-    <description><![CDATA[<p>Another test to see if I got the time zone right this time.</p>
-]]></description>
-    <content type="html"><![CDATA[<p>Another test to see if I got the time zone right this time.</p>
-
 ]]></content>
   </entry>
   
