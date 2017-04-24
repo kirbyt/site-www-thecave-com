@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-04-21T13:44:28+00:00</updated>
+  <updated>2017-04-24T01:08:23+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/04/23/a-perfect-evening-in-stowe/"/>
+    <published>2017-04-24T01:06:49+00:00</published>
+    <updated>2017-04-24T01:06:49+00:00</updated>
+    <id>http://www.thecave.com/2017/04/23/a-perfect-evening-in-stowe</id>
+    <content type="html"><![CDATA[<p>It’s a perfect evening in Stowe. <img src="https://thecave.social/media/itKMZLMPsuse1NVxMHg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How I post to my Jekyll site using my iPhone]]></title>
@@ -391,51 +402,6 @@
 
 <p>Congratulations! You’ve achieved case insensitive searching in an environment that does not support it.</p>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How To Present An Alert View Using UIAlertController When You Don't Have A View Controller]]></title>
-    <link href="http://www.thecave.com/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/"/>
-    <published>2015-09-28T19:46:02+00:00</published>
-    <updated>2015-09-28T19:46:02+00:00</updated>
-    <id>http://www.thecave.com/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller</id>
-    <content type="html"><![CDATA[<p>Over the summer I updated a number of apps to iOS 9. A common tasks for me was replacing the deprecated <code class="highlighter-rouge">UIAlertView</code> with new <code class="highlighter-rouge">UIAlertController</code> class. Generally this is easy to do, but there is one scenario that <code class="highlighter-rouge">UIAlertView</code> handles well that <code class="highlighter-rouge">UIAlertController</code> doesn’t support at all: displaying an alert view from parts of your code without a reference to the current view controller, for instance, displaying an alert view from the app delegate.</p>
-
-<p>Trying to display an alert view using <code class="highlighter-rouge">UIAlertController</code> from a non-UI specific class such as the app delegate is a <a href="http://stackoverflow.com/questions/26952061/present-uialertcontroller-from-appdelegate">common problem</a>, and developers have found different <a href="http://stackoverflow.com/questions/26554894/how-to-present-uialertcontroller-when-not-in-a-view-controller">workarounds</a>. <a href="http://stackoverflow.com/a/30941356">One particular solution</a> that caught my eye was this one from agilityvision, who writes:</p>
-
-<blockquote>
-  <p>At WWDC I stopped in at one of the labs and asked an Apple Engineer this same question: “What was the best practice for displaying a UIAlertController?” And he said they had been getting this question a lot and we joked that they should have had a session on it. He said that internally Apple is creating a UIWindow with a transparent UIViewController and then presenting the UIAlertController on it.</p>
-</blockquote>
-
-<p>This got me thinking about how I would solve the problem for apps I work on. Liking the approach mentioned by the Apple Engineer, I decided to give that a try. But unlike some of the other solutions that use a category, I decided to create a new class, <code class="highlighter-rouge">WPSAlertController</code>, that is a subclass of <code class="highlighter-rouge">UIAlertController</code>, and provide additional convenience methods making it possible to display an alert view with a single call…like this:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>NSString *title = ...
-NSString *message = ...
-[WPSAlertController presentOkayAlertWithTitle:title message:message];
-</code></pre>
-</div>
-
-<p>Or display the <code class="highlighter-rouge">localizedDescription</code> from an <code class="highlighter-rouge">NSError</code> object:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>[WPSAlertController presentOkayAlertWithError:error];
-</code></pre>
-</div>
-
-<p>And of course, since <code class="highlighter-rouge">WPSAlertController</code> is a subclass of <code class="highlighter-rouge">UIAlertController</code>, you can create your alert the same way as you do using <code class="highlighter-rouge">UIAlertController</code>. The only difference is you call <code class="highlighter-rouge">show</code> to present the alert when you don’t have a view controller. For example:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>NSString *title = ...
-NSString *message = ...
-WPSAlertController *alertController = [WPSAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
-[alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-  // Your code.
-}]];
-
-[alertController show];
-</code></pre>
-</div>
-
-<p>You can grab the <a href="https://github.com/kirbyt/WPSKit/blob/master/WPSKit/UIKit/WPSAlertController.m">source code for <code class="highlighter-rouge">WPSAlertController</code></a> from my github repository and include it in your project, or use the entire <a href="https://github.com/kirbyt/WPSKit">WPSKit.framework</a> in your project if you want to use <code class="highlighter-rouge">WPSAlertController</code> plus other handy classes that I use when creating iOS apps.</p>
 ]]></content>
   </entry>
   

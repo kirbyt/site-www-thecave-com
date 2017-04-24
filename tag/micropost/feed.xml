@@ -4,13 +4,28 @@
   <title><![CDATA[Tag: micropost | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/micropost/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-04-21T13:44:28+00:00</updated>
+  <updated>2017-04-24T01:08:23+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    
+    <title></title>
+    
+    <link href="http://www.thecave.com/2017/04/23/a-perfect-evening-in-stowe/"/>
+    <updated>2017-04-24T01:06:49+00:00</updated>
+    <id>http://www.thecave.com/2017/04/23/a-perfect-evening-in-stowe</id>
+    <tag>micropost</tag>
+    <description><![CDATA[<p>It’s a perfect evening in Stowe. <img src="https://thecave.social/media/itKMZLMPsuse1NVxMHg" alt="" /></p>
+]]></description>
+    <content type="html"><![CDATA[<p>It’s a perfect evening in Stowe. <img src="https://thecave.social/media/itKMZLMPsuse1NVxMHg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     
@@ -145,20 +160,6 @@
 <span class="nb">echo</span> -n <span class="s2">"</span><span class="nv">$T1</span><span class="s2"> / </span><span class="nv">$T2</span><span class="s2">"</span>
 </code></pre>
 </div>
-]]></content>
-  </entry>
-  
-  <entry>
-    
-    <title></title>
-    
-    <link href="http://www.thecave.com/2017/04/16/why-didnt-i-do-this-earlier/"/>
-    <updated>2017-04-16T23:59:11+00:00</updated>
-    <id>http://www.thecave.com/2017/04/16/why-didnt-i-do-this-earlier</id>
-    <tag>micropost</tag>
-    <description><![CDATA[<p>Why didn’t I setup <a href="https://www.bitrise.io">Bitrise</a> to generate <a href="https://www.thecave.com">thecave.com</a> sooner. It’s so much easier, and faster, to push to master and let Bitrise do the rest of the work for me.</p>
-]]></description>
-    <content type="html"><![CDATA[<p>Why didn’t I setup <a href="https://www.bitrise.io">Bitrise</a> to generate <a href="https://www.thecave.com">thecave.com</a> sooner. It’s so much easier, and faster, to push to master and let Bitrise do the rest of the work for me.</p>
 ]]></content>
   </entry>
   
