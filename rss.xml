@@ -5,10 +5,20 @@
         <description>thecave | A Hideout for Programmers, Indie Devs, Solopreneurs - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2017-04-24T11:22:35+00:00</lastBuildDate>
-        <pubDate>2017-04-24T11:22:35+00:00</pubDate>
+        <lastBuildDate>2017-04-25T14:03:53+00:00</lastBuildDate>
+        <pubDate>2017-04-25T14:03:53+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title></title>
+                <description>&lt;p&gt;Congrats to &lt;a href=&quot;http://micro.blog/manton&quot;&gt;@manton&lt;/a&gt; on the launch of &lt;a href=&quot;http://micro.blog&quot;&gt;micro.blog&lt;/a&gt;!!&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2017/04/25/congrats-to-manton-on-the-launch-of-micro-blog/</link>
+                <guid>http://www.thecave.com/2017/04/25/congrats-to-manton-on-the-launch-of-micro-blog</guid>
+                <pubDate>2017-04-25T14:00:28+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -328,32 +338,6 @@
                 <link>http://www.thecave.com/2016/12/30/trying-a-little-experiment/</link>
                 <guid>http://www.thecave.com/2016/12/30/trying-a-little-experiment</guid>
                 <pubDate>2016-12-30T23:01:52+00:00</pubDate>
-        </item>
-
-        <item>
-                <title>From Trace To Slopes</title>
-                <description>&lt;p&gt;I’m a software developer but I’m also a snowboard bum. And with the start of the 2016/2017 snowboard season upon us – that is, for those of us living in the Northern Hemisphere – I’m eager to hit the slopes. Over the last few years I’ve used &lt;a href=&quot;http://www.traceup.com/trace-for-snow&quot;&gt;Trace Snow&lt;/a&gt;, formerly AlpineReplay, to track my time on the slopes. It’s a good iPhone app but far from perfect. One feature it lacks is reporting the number of days spent on the slopes in a season. Trace isn’t alone in not having this feature. None of the ski and snowboard tracking apps I’ve tried have this feature. It seems these apps are more commonly used by individuals who only get a small number of days on the slopes, say 5 or 10 days, which is easy to count. But when you average 80+ days each season, counting the number of days can be a pain.&lt;/p&gt;
-
-&lt;p&gt;As luck would have it I had the pleasure of meeting &lt;a href=&quot;https://curtisherbert.com&quot;&gt;Curtis Herbert&lt;/a&gt; at this year’s 360idev. For those who don’t know Curtis, he’s an iOS developer who just happens to have written an excellent ski and snowboard tracking app appropriately named &lt;a href=&quot;https://getslopes.com&quot;&gt;Slopes&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I tried Slopes once last year, but I wasn’t won over by it. I don’t remember the reasons, but I do remember it was lacking the one feature I really wanted, which is the see the number of days I’ve ridden in a season. I mentioned this to Curtis and before the end of the conference Slopes had a day count feature. And Curtis had a new customer. I decided right away I would use Slopes this season instead of Trace.&lt;/p&gt;
-
-&lt;p&gt;That said, I was bummed that I could not use Slopes to view the years of data I had collected in Trace. I mentioned this in email to Curtis and within a minute he replied telling me about Slopes’ import process. “Wow,” I thought, “he’s thought of everything.”&lt;/p&gt;
-
-&lt;p&gt;I immediately went to the Trace website to see if I could export my data, and sure enough I could. But there was a problem. I had to export each day one at a time. I’ve logged over 250 days in Trace and manually downloading each day was not something I wanted to do. So I put on my developer hat and wrote a python script that &lt;a href=&quot;https://github.com/kirbyt/trace-export&quot;&gt;downloads the GPX files from Trace&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.python.org&quot;&gt;Python&lt;/a&gt; is the perfect language for a task like this especially when combined with &lt;a href=&quot;https://www.crummy.com/software/BeautifulSoup/&quot;&gt;Beautiful Soup&lt;/a&gt;, a Python library for parsing HTML. I’ve written similar screen scraping scripts using Python and Beautiful Soup before, so writing a script that downloads the GPX files from the Trace site took me a fraction of the time it would have taken me to manually download each GPX file.&lt;/p&gt;
-
-&lt;p&gt;With my Trace data in hand I was ready to import the GPX files into Slopes, but I hit another wall. To import a GPX file into Slopes, you email the file to yourself, then on your iPhone, you open the GPX file in Slopes. This is a great process if you have one or two GPX files to import, but if you have hundreds, well, it’s less than ideal. But thankfully Curtis thought that too. You can use &lt;a href=&quot;https://support.apple.com/en-us/HT201301&quot;&gt;iTunes File Sharing&lt;/a&gt; to import GPX files. Simply tether your iPhone to your Mac, open iTunes, select your iPhone, select the Apps section in the left panel, and scroll down to the File Sharing section in the right panel (thanks, Apple, for making this not so straight forward). Select the Slopes app, then drag and drop your GPX files into the Slopes Documents area. Finally, launch the Slopes app on your iPhone. Slopes was able to import all my files in a matter of seconds, and now I have all my tracked data, dating back to the 2012/2013 snowboard season, in Slopes.&lt;/p&gt;
-
-&lt;p&gt;Now, if you are a Slopes user too and you previously used Trace, you can use my Python script to &lt;a href=&quot;https://github.com/kirbyt/trace-export&quot;&gt;download your past GPX recordings&lt;/a&gt;. I open sourced it so others can quickly download their data.&lt;/p&gt;
-
-&lt;p&gt;As for Slopes, I have to say it’s a great app and Curtis is awesome. He has thought of just about everything for Slopes, and for those features not in it, he seems like the type of guy who will add them if it makes sense for the app and its users. In fact one feature missing that I’ve already requested is an option to export all my GPX data from Slopes. I don’t plan to stop using Slopes anytime soon, but I would still like to see this feature on the off chance I have to make another switch in the future.&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2016/11/19/from-trace-to-slopes/</link>
-                <guid>http://www.thecave.com/2016/11/19/from-trace-to-slopes</guid>
-                <pubDate>2016-11-19T15:52:31+00:00</pubDate>
         </item>
 
 
