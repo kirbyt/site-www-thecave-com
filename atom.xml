@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-04-28T20:02:08+00:00</updated>
+  <updated>2017-04-30T09:39:14+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/04/30/boarding-a-plane-using-my-apple-watch/"/>
+    <published>2017-04-30T09:37:32+00:00</published>
+    <updated>2017-04-30T09:37:32+00:00</updated>
+    <id>http://www.thecave.com/2017/04/30/boarding-a-plane-using-my-apple-watch</id>
+    <content type="html"><![CDATA[<p>I love being able to board a plane using my Apple Watch.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -316,20 +327,6 @@
 <p>Lastly, if you have an iPad, check out <a href="http://www.apple.com/swift/playgrounds/">Swift Playgrounds</a>. It teaches you how to code, which is not something you need if you are an experienced programmer, but from what I have heard, the advance lessons can be helpful in teaching experienced programmer how to write Swift code. Also, you can experiment with all aspects of the device, from accessing the various iOS frameworks, such as SpriteKit and UIKit, to directly controlling hardware, such as the gyroscope, accelerometer, and camera. (Download the Swift Playgrounds app <a href="https://itunes.apple.com/us/app/swift-playgrounds/id908519492?mt=8">here</a>.)</p>
 
 <p>Hope this helps get you started.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Wow! Busy weekends ahead]]></title>
-    <link href="http://www.thecave.com/2017/01/30/wow-busy-weekends-ahead/"/>
-    <published>2017-01-31T01:34:29+00:00</published>
-    <updated>2017-01-31T01:34:29+00:00</updated>
-    <id>http://www.thecave.com/2017/01/30/wow-busy-weekends-ahead</id>
-    <content type="html"><![CDATA[<p>A friend emailed me asking if I’m around in two weekends. He wants to visit me in Stowe and do a little riding together. I haven’t seen this friend in years, and it will be great to catch up ago. The problem is, I discovered I’m busy every weekend through the end of March. Turns out, when you live in a ski town, lots of people want to come for a visit.</p>
-
-<p>So if you want to visit me in Stowe, and you want to ride together, it’ll have to be during the weekday or a weekend towards the end of March beginning of April.</p>
-
-<p>And in case you’re wondering, the skiing and riding in Stowe has been superb recently.</p>
 ]]></content>
   </entry>
   

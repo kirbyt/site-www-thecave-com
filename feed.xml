@@ -5,9 +5,27 @@
     <description>The blog site for Kirby Turner, an independent software developer, where he shares tips and advice for programmers, indie devs, and solopreneurs.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 28 Apr 2017 20:02:08 +0000</pubDate>
-    <lastBuildDate>Fri, 28 Apr 2017 20:02:08 +0000</lastBuildDate>
+    <pubDate>Sun, 30 Apr 2017 09:39:14 +0000</pubDate>
+    <lastBuildDate>Sun, 30 Apr 2017 09:39:14 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;I love being able to board a plane using my Apple Watch.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 30 Apr 2017 09:37:32 +0000</pubDate>
+        <link>http://www.thecave.com/2017/04/30/boarding-a-plane-using-my-apple-watch/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2017/04/30/boarding-a-plane-using-my-apple-watch/</guid>
+        
+        <category>micropost</category>
+        
+        <category>travel</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title></title>
@@ -233,21 +251,6 @@
         
         
         <category>programming</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;Why didn’t I setup &lt;a href=&quot;https://www.bitrise.io&quot;&gt;Bitrise&lt;/a&gt; to generate &lt;a href=&quot;https://www.thecave.com&quot;&gt;thecave.com&lt;/a&gt; sooner. It’s so much easier, and faster, to push to master and let Bitrise do the rest of the work for me.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 16 Apr 2017 23:59:11 +0000</pubDate>
-        <link>http://www.thecave.com/2017/04/16/why-didnt-i-do-this-earlier/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2017/04/16/why-didnt-i-do-this-earlier/</guid>
-        
-        <category>micropost</category>
-        
-        
-        <category>personal</category>
         
       </item>
     

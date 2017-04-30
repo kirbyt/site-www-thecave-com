@@ -124,6 +124,24 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2006/11/15/codegear/">CodeGear</a>
+    </h2>
+    
+    <p>It’s official.  Borland’s Developer Tool Group, aka DTG, aka DevCo, has spun off.  The new company is called <a href="http://www.codegear.com/">CodeGear</a>. <br /><br />Here are various links about CodeGear and today’s announcement:&lt;ul&gt;<br />&lt;li&gt;<a href="http://blogs.borland.com/abauer/archive/2006/11/14/29345.aspx">CodeGear blog posting by Allen Bauer, CodeGear Chief Scientist</a><br />&lt;/li&gt;&lt;li&gt;<a href="http://bdn.borland.com/article/33818">Letter from Ben Smith, CEO CodeGear</a><br />&lt;/li&gt;&lt;li&gt;<a href="http://www.eweek.com/article2/0,1895,2059052,00.asp">Borland Spins Off Its Tools Unit</a><br />&lt;/li&gt;&lt;li&gt;<a href="http://www.eweek.com/article2/0,1895,2059084,00.asp">Borland Launches CodeGear to Supply Developers with Tools of the Trade</a><br />&lt;/li&gt;&lt;li&gt;<a href="http://bdn.borland.com/article/33817">Borland forms CodeGear - FAQ</a><br />&lt;/li&gt;&lt;/ul&gt;</p>
+
+
+    <p><a href="/2006/11/15/codegear/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on November 15, 2006
+     in <a class='category' href='/category/programming/'>programming</a>.
+    Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2006/11/07/naked-man-arrested-for-concealed-weapon/">Naked man arrested for concealed weapon</a>
     </h2>
     
@@ -283,24 +301,6 @@
 </div>
 <hr>
 
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2006/09/05/removing-child-nodes-dynamically-using-javascript/">Removing Child Nodes Dynamically using JavaScript</a>
-    </h2>
-    
-    <p>JavaScript once again kicked my butt last night.  Well, it was the combination of JavaScript and IE because my initial code worked fine in Firefox.  Here’s the story.<br /><br />I have a search form that uses AJAX to retrieve search results based on user submitted criteria.  The results are displayed in a table dynamically created using JavaScript.  The problem, however, was the results were being appended to the end of the existing table data.  I needed a way to clear the table contents prior to adding the latest search results.<br /><br />My first approach was to set the innerHTML property of the TBODY element from the results table to a zero-length string.  For example:<br /><br />&lt;pre&gt;<br />var ctrl;<br />ctrl = document.getElementById(‘searchTBody’);<br />ctrl.innerHTML = ‘’;<br />&lt;/pre&gt;<br /><br />This works fine in Firefox but it causes problems under IE.  A different approach is needed.  A couple of google searches turned up the removeChild method.  Using it you can iterate through the childNodes collections to remove each child within the element.  So I wrote the following JavaScript function:<br /><br />&lt;pre&gt;<br />function removeChildNodes(ctrl)<br />{<br />  while (ctrl.childNodes[0])<br />  {<br />    ctrl.removeChild(ctrl.childNodes[0]);<br />  }<br />}<br />&lt;/pre&gt;<br /><br />To remove each child node from an element, get a reference to the element and pass it to the removeChildNodes function.  For example:<br /><br />&lt;pre&gt;<br />var ctrl;<br />ctrl = document.getElementById(‘searchTBody’);<br />removeChildNodes(ctrl);<br />&lt;/pre&gt;<br /><br />This approach works for IE and Firefox.</p>
-
-
-    <p><a href="/2006/09/05/removing-child-nodes-dynamically-using-javascript/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on September 5, 2006
-     in <a class='category' href='/category/programming/'>programming</a>.
-    Tagged in <a class='tag' href='/tag/javascript/'>javascript</a>.
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -333,6 +333,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2017/04/30/boarding-a-plane-using-my-apple-watch/" title="">April 30, 2017 at 05:37:32 AM</a></li>
+                
                 <li><a href="/2017/04/28/its-a-good-day-to-celebrate/" title="">April 28, 2017 at 03:59:40 PM</a></li>
                 
                 <li><a href="/2017/04/25/dear-mr-president/" title="">April 25, 2017 at 12:24:39 PM</a></li>
@@ -340,8 +342,6 @@
                 <li><a href="/2017/04/25/congrats-to-manton-on-the-launch-of-micro-blog/" title="">April 25, 2017 at 10:00:28 AM</a></li>
                 
                 <li><a href="/2017/04/24/good-times-yesterday/" title="">April 24, 2017 at 07:19:31 AM</a></li>
-                
-                <li><a href="/2017/04/23/a-perfect-evening-in-stowe/" title="">April 23, 2017 at 09:06:49 PM</a></li>
                 
                 </ul>                
             </div>
