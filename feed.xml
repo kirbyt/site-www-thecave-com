@@ -5,9 +5,43 @@
     <description>The blog site for Kirby Turner, an independent software developer, where he shares tips and advice for programmers, indie devs, and solopreneurs.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 30 Apr 2017 09:39:14 +0000</pubDate>
-    <lastBuildDate>Sun, 30 Apr 2017 09:39:14 +0000</lastBuildDate>
+    <pubDate>Mon, 01 May 2017 14:51:58 +0000</pubDate>
+    <lastBuildDate>Mon, 01 May 2017 14:51:58 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>I'm Trying Something Different</title>
+        <description>&lt;p&gt;I’ve been working for myself for nearly 14 years, and it has been an incredible experience. During that time I’ve had a couple of bad years, but in general, each year has been better than the previous year. In fact, 2016 was my best year ever. It was the year I learned from some amazing mentors how to be a better business owner, which resulted in me working on great projects and having my highest revenue year ever.&lt;/p&gt;
+
+&lt;p&gt;But on the heels of that success, I’ve decided I need to do something different. That’s why, as of today, I’m an &lt;a href=&quot;https://www.apple.com&quot;&gt;Apple&lt;/a&gt; employee.&lt;/p&gt;
+
+&lt;p&gt;For those wanting more details, here’s what I can share. I am staying in Vermont and working as a remote employee. I will be making trips out to Cupertino from time to time – I’m actually in Cupertino today. I’ve joined the DevPubs team where I get to combine my passion for writing code with my love for writing words. And I plan to snowboard almost every morning next winter season, so this is more of a career change and less of a lifestyle change for me.&lt;/p&gt;
+
+&lt;p&gt;Joining Apple wasn’t an easy decision for me. I love &lt;a href=&quot;http://www.whitepeaksoftware.com&quot;&gt;White Peak Software&lt;/a&gt;, and I’m proud of the accomplishments I’ve made over the years. The company is a big part of who I am, so I’m not just leaving a job, I’m saying goodbye to a part of me.&lt;/p&gt;
+
+&lt;p&gt;At the same time, I love what Apple is doing, and for me, it’s not just about the technology coming out of Cupertino. I truly believe &lt;a href=&quot;https://www.apple.com/environment/&quot;&gt;Apple is helping to make this world a better place&lt;/a&gt;, and I want to be a part of that. So while there is a part of me that is sad I’m leaving my company, a much larger part of me is excited. Excited to try something different, and excited to do my part in helping make this a better world for my son.&lt;/p&gt;
+
+&lt;p&gt;To my clients and customers, thank you, thank you, thank you! Without you, the last 14 years would not have happened, and I will be forever grateful to you for your support and trust in me.&lt;/p&gt;
+
+&lt;p&gt;To my wife, Melanie, and my son, Rowan, thank you for joining me on the 14 year roller coaster ride. It has been quiet the thrill ride, for sure. And don’t worry, we still have plenty more thrilling times ahead of us.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 01 May 2017 14:38:16 +0000</pubDate>
+        <link>http://www.thecave.com/2017/05/01/im-trying-something-different/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2017/05/01/im-trying-something-different/</guid>
+        
+        <category>apple</category>
+        
+        <category>business</category>
+        
+        <category>micropost</category>
+        
+        <category>personal</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title></title>
@@ -208,49 +242,6 @@
         
         
         <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title>Convert Time with a TextExpander Snippet</title>
-        <description>&lt;p&gt;I find I am using &lt;a href=&quot;https://textexpander.com&quot;&gt;TextExpander&lt;/a&gt; more and more these days. It’s an awesome productivity tool that saves me time by inserting snippets of text into whatever I’m writing, be it code or words. What I didn’t know about TextExpander, that is, until today, is that it can run shell scripts to generate the text snippets.&lt;/p&gt;
-
-&lt;p&gt;I often meet with people on the West Coast. When I schedule a meeting time, I will say something like “Let’s meet at 01:30 PM EDT / 10:30 AM PDT” in the email. Not only is this a lot of text to type, but it also requires I calculate the Pacific time.&lt;/p&gt;
-
-&lt;p&gt;How cool would it be if TextExpander could generate the time snippet for me? Guess what. It can.&lt;/p&gt;
-
-&lt;p&gt;I created a shell script snippet that takes a local time, which I input, and calculates the Eastern and Pacific times. I use &lt;em&gt;timept;;&lt;/em&gt; for the snippet abbreviation. Now when I want to mention a particular time in an email, I type &lt;em&gt;timept;;&lt;/em&gt; and enter the time. TextExpander does the rest.&lt;/p&gt;
-
-&lt;p&gt;Here’s the shell script code for anyone who might want it. Make sure you select &lt;strong&gt;Shell Script&lt;/strong&gt; as the &lt;em&gt;Content&lt;/em&gt; type when creating the snippet.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#! /bin/bash&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# Enter a time using 24H. 1:30pm is 13:30 .&lt;/span&gt;
-
-&lt;span class=&quot;nv&quot;&gt;ENTERTIME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;%filltext:name=Time (in 24H)%&quot;&lt;/span&gt;
-
-
-&lt;span class=&quot;c&quot;&gt;# See https://gist.github.com/palaniraja/f8e21e8c66eac7e1b313 for a&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# list of time zone names.&lt;/span&gt;
-
-&lt;span class=&quot;nv&quot;&gt;T1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;TZ&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;America/New_York&quot;&lt;/span&gt; date -jf &lt;span class=&quot;s2&quot;&gt;&quot;%H:%M %z&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$ENTERTIME&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;date &lt;span class=&quot;s2&quot;&gt;&quot;+%z&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;+%I:%M %p %Z&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;nv&quot;&gt;T2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;TZ&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;America/Los_Angeles&quot;&lt;/span&gt; date -jf &lt;span class=&quot;s2&quot;&gt;&quot;%H:%M %z&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$ENTERTIME&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;date &lt;span class=&quot;s2&quot;&gt;&quot;+%z&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;+%I:%M %p %Z&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; -n &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$T1&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; / &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$T2&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Mon, 17 Apr 2017 01:14:46 +0000</pubDate>
-        <link>http://www.thecave.com/2017/04/16/convert-time-with-a-textexpander-snippet/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2017/04/16/convert-time-with-a-textexpander-snippet/</guid>
-        
-        <category>micropost</category>
-        
-        <category>textexpander</category>
-        
-        
-        <category>programming</category>
         
       </item>
     

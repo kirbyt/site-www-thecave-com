@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-04-30T09:39:14+00:00</updated>
+  <updated>2017-05-01T14:51:58+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,29 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[I'm Trying Something Different]]></title>
+    <link href="http://www.thecave.com/2017/05/01/im-trying-something-different/"/>
+    <published>2017-05-01T14:38:16+00:00</published>
+    <updated>2017-05-01T14:38:16+00:00</updated>
+    <id>http://www.thecave.com/2017/05/01/im-trying-something-different</id>
+    <content type="html"><![CDATA[<p>I’ve been working for myself for nearly 14 years, and it has been an incredible experience. During that time I’ve had a couple of bad years, but in general, each year has been better than the previous year. In fact, 2016 was my best year ever. It was the year I learned from some amazing mentors how to be a better business owner, which resulted in me working on great projects and having my highest revenue year ever.</p>
+
+<p>But on the heels of that success, I’ve decided I need to do something different. That’s why, as of today, I’m an <a href="https://www.apple.com">Apple</a> employee.</p>
+
+<p>For those wanting more details, here’s what I can share. I am staying in Vermont and working as a remote employee. I will be making trips out to Cupertino from time to time – I’m actually in Cupertino today. I’ve joined the DevPubs team where I get to combine my passion for writing code with my love for writing words. And I plan to snowboard almost every morning next winter season, so this is more of a career change and less of a lifestyle change for me.</p>
+
+<p>Joining Apple wasn’t an easy decision for me. I love <a href="http://www.whitepeaksoftware.com">White Peak Software</a>, and I’m proud of the accomplishments I’ve made over the years. The company is a big part of who I am, so I’m not just leaving a job, I’m saying goodbye to a part of me.</p>
+
+<p>At the same time, I love what Apple is doing, and for me, it’s not just about the technology coming out of Cupertino. I truly believe <a href="https://www.apple.com/environment/">Apple is helping to make this world a better place</a>, and I want to be a part of that. So while there is a part of me that is sad I’m leaving my company, a much larger part of me is excited. Excited to try something different, and excited to do my part in helping make this a better world for my son.</p>
+
+<p>To my clients and customers, thank you, thank you, thank you! Without you, the last 14 years would not have happened, and I will be forever grateful to you for your support and trust in me.</p>
+
+<p>To my wife, Melanie, and my son, Rowan, thank you for joining me on the 14 year roller coaster ride. It has been quiet the thrill ride, for sure. And don’t worry, we still have plenty more thrilling times ahead of us.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -307,26 +330,6 @@
     <updated>2017-03-25T11:15:34+00:00</updated>
     <id>http://www.thecave.com/2017/03/25/micro-blogging-from-thecave</id>
     <content type="html"><![CDATA[<p>Testing, testing. 1, 2, 3…I moved my RSS feed for <a href="http://micro.blog">micro.blog</a> to <a href="https://www.thecave.com/">thecave.com</a> since I’m no longer actively working on my app, Cross Post.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The Experienced Programmer's Guide to Getting Started with Swift]]></title>
-    <link href="http://www.thecave.com/2017/02/02/the-experienced-programmers-guide-to-getting-started-with-swift/"/>
-    <published>2017-02-02T16:32:49+00:00</published>
-    <updated>2017-02-02T16:32:49+00:00</updated>
-    <id>http://www.thecave.com/2017/02/02/the-experienced-programmers-guide-to-getting-started-with-swift</id>
-    <content type="html"><![CDATA[<p>A couple Vermont-based software developers recently asked me how to get started with Swift and writing apps for iOS. I emailed them individually, but when I was asked again today, I thought, time to write a blog post.</p>
-
-<p>If you are an experienced programmer looking to get started with Swift and iOS development, I suggest starting with the <a href="https://developer.apple.com/swift/resources/">Apple developer guides</a>. I also recommend reading the language guide, available in the iBooks Store and <a href="https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097-CH3-ID0">online</a>. It is a dry read, but very detailed. Besides, I still find myself referring to it from time to time, so it is on my “must read” list for those new to Swift.</p>
-
-<p>Another great place to get started is over at <a href="https://www.raywenderlich.com">raywenderlich.com</a>. The site contains tons of great tutorials, books, and videos. Some are free, others you pay for, but the materials are some of the best learning materials outside of Apple. Take a look at the <a href="https://www.raywenderlich.com/category/swift">Swift category</a> to get started.</p>
-
-<p>If you are interested in game development, the book <em><a href="https://www.raywenderlich.com/store/2d-ios-tvos-games-by-tutorials">2D Apple Games</a></em> is an awesome read. It focuses on writing iOS games using Swift 3 and SpriteKit, giving you step by step instructions. I have read half the book so far, and it has been a blast learning how to create games for iOS (even though I am not a game developer).</p>
-
-<p>Lastly, if you have an iPad, check out <a href="http://www.apple.com/swift/playgrounds/">Swift Playgrounds</a>. It teaches you how to code, which is not something you need if you are an experienced programmer, but from what I have heard, the advance lessons can be helpful in teaching experienced programmer how to write Swift code. Also, you can experiment with all aspects of the device, from accessing the various iOS frameworks, such as SpriteKit and UIKit, to directly controlling hardware, such as the gyroscope, accelerometer, and camera. (Download the Swift Playgrounds app <a href="https://itunes.apple.com/us/app/swift-playgrounds/id908519492?mt=8">here</a>.)</p>
-
-<p>Hope this helps get you started.</p>
 ]]></content>
   </entry>
   

@@ -5,10 +5,32 @@
         <description>thecave | A Hideout for Programmers, Indie Devs, Solopreneurs - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2017-04-30T09:39:14+00:00</lastBuildDate>
-        <pubDate>2017-04-30T09:39:14+00:00</pubDate>
+        <lastBuildDate>2017-05-01T14:51:58+00:00</lastBuildDate>
+        <pubDate>2017-05-01T14:51:58+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>I'm Trying Something Different</title>
+                <description>&lt;p&gt;I’ve been working for myself for nearly 14 years, and it has been an incredible experience. During that time I’ve had a couple of bad years, but in general, each year has been better than the previous year. In fact, 2016 was my best year ever. It was the year I learned from some amazing mentors how to be a better business owner, which resulted in me working on great projects and having my highest revenue year ever.&lt;/p&gt;
+
+&lt;p&gt;But on the heels of that success, I’ve decided I need to do something different. That’s why, as of today, I’m an &lt;a href=&quot;https://www.apple.com&quot;&gt;Apple&lt;/a&gt; employee.&lt;/p&gt;
+
+&lt;p&gt;For those wanting more details, here’s what I can share. I am staying in Vermont and working as a remote employee. I will be making trips out to Cupertino from time to time – I’m actually in Cupertino today. I’ve joined the DevPubs team where I get to combine my passion for writing code with my love for writing words. And I plan to snowboard almost every morning next winter season, so this is more of a career change and less of a lifestyle change for me.&lt;/p&gt;
+
+&lt;p&gt;Joining Apple wasn’t an easy decision for me. I love &lt;a href=&quot;http://www.whitepeaksoftware.com&quot;&gt;White Peak Software&lt;/a&gt;, and I’m proud of the accomplishments I’ve made over the years. The company is a big part of who I am, so I’m not just leaving a job, I’m saying goodbye to a part of me.&lt;/p&gt;
+
+&lt;p&gt;At the same time, I love what Apple is doing, and for me, it’s not just about the technology coming out of Cupertino. I truly believe &lt;a href=&quot;https://www.apple.com/environment/&quot;&gt;Apple is helping to make this world a better place&lt;/a&gt;, and I want to be a part of that. So while there is a part of me that is sad I’m leaving my company, a much larger part of me is excited. Excited to try something different, and excited to do my part in helping make this a better world for my son.&lt;/p&gt;
+
+&lt;p&gt;To my clients and customers, thank you, thank you, thank you! Without you, the last 14 years would not have happened, and I will be forever grateful to you for your support and trust in me.&lt;/p&gt;
+
+&lt;p&gt;To my wife, Melanie, and my son, Rowan, thank you for joining me on the 14 year roller coaster ride. It has been quiet the thrill ride, for sure. And don’t worry, we still have plenty more thrilling times ahead of us.&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2017/05/01/im-trying-something-different/</link>
+                <guid>http://www.thecave.com/2017/05/01/im-trying-something-different</guid>
+                <pubDate>2017-05-01T14:38:16+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -286,25 +308,6 @@
                 <link>http://www.thecave.com/2017/03/25/micro-blogging-from-thecave/</link>
                 <guid>http://www.thecave.com/2017/03/25/micro-blogging-from-thecave</guid>
                 <pubDate>2017-03-25T11:15:34+00:00</pubDate>
-        </item>
-
-        <item>
-                <title>The Experienced Programmer's Guide to Getting Started with Swift</title>
-                <description>&lt;p&gt;A couple Vermont-based software developers recently asked me how to get started with Swift and writing apps for iOS. I emailed them individually, but when I was asked again today, I thought, time to write a blog post.&lt;/p&gt;
-
-&lt;p&gt;If you are an experienced programmer looking to get started with Swift and iOS development, I suggest starting with the &lt;a href=&quot;https://developer.apple.com/swift/resources/&quot;&gt;Apple developer guides&lt;/a&gt;. I also recommend reading the language guide, available in the iBooks Store and &lt;a href=&quot;https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097-CH3-ID0&quot;&gt;online&lt;/a&gt;. It is a dry read, but very detailed. Besides, I still find myself referring to it from time to time, so it is on my “must read” list for those new to Swift.&lt;/p&gt;
-
-&lt;p&gt;Another great place to get started is over at &lt;a href=&quot;https://www.raywenderlich.com&quot;&gt;raywenderlich.com&lt;/a&gt;. The site contains tons of great tutorials, books, and videos. Some are free, others you pay for, but the materials are some of the best learning materials outside of Apple. Take a look at the &lt;a href=&quot;https://www.raywenderlich.com/category/swift&quot;&gt;Swift category&lt;/a&gt; to get started.&lt;/p&gt;
-
-&lt;p&gt;If you are interested in game development, the book &lt;em&gt;&lt;a href=&quot;https://www.raywenderlich.com/store/2d-ios-tvos-games-by-tutorials&quot;&gt;2D Apple Games&lt;/a&gt;&lt;/em&gt; is an awesome read. It focuses on writing iOS games using Swift 3 and SpriteKit, giving you step by step instructions. I have read half the book so far, and it has been a blast learning how to create games for iOS (even though I am not a game developer).&lt;/p&gt;
-
-&lt;p&gt;Lastly, if you have an iPad, check out &lt;a href=&quot;http://www.apple.com/swift/playgrounds/&quot;&gt;Swift Playgrounds&lt;/a&gt;. It teaches you how to code, which is not something you need if you are an experienced programmer, but from what I have heard, the advance lessons can be helpful in teaching experienced programmer how to write Swift code. Also, you can experiment with all aspects of the device, from accessing the various iOS frameworks, such as SpriteKit and UIKit, to directly controlling hardware, such as the gyroscope, accelerometer, and camera. (Download the Swift Playgrounds app &lt;a href=&quot;https://itunes.apple.com/us/app/swift-playgrounds/id908519492?mt=8&quot;&gt;here&lt;/a&gt;.)&lt;/p&gt;
-
-&lt;p&gt;Hope this helps get you started.&lt;/p&gt;
-</description>
-                <link>http://www.thecave.com/2017/02/02/the-experienced-programmers-guide-to-getting-started-with-swift/</link>
-                <guid>http://www.thecave.com/2017/02/02/the-experienced-programmers-guide-to-getting-started-with-swift</guid>
-                <pubDate>2017-02-02T16:32:49+00:00</pubDate>
         </item>
 
 
