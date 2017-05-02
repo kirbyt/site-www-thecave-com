@@ -5,10 +5,19 @@
         <description>thecave | A Hideout for Programmers, Indie Devs, Solopreneurs - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2017-05-01T14:51:58+00:00</lastBuildDate>
-        <pubDate>2017-05-01T14:51:58+00:00</pubDate>
+        <lastBuildDate>2017-05-02T12:25:22+00:00</lastBuildDate>
+        <pubDate>2017-05-02T12:25:22+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Advice for new iOS freelancers</title>
+                <description>
+</description>
+                <link>http://www.thecave.com/2017/05/02/advice-for-new-ios-freelancers/</link>
+                <guid>http://www.thecave.com/2017/05/02/advice-for-new-ios-freelancers</guid>
+                <pubDate>2017-05-02T12:11:53+00:00</pubDate>
+        </item>
 
         <item>
                 <title>I'm Trying Something Different</title>
@@ -299,15 +308,6 @@
                 <link>http://www.thecave.com/2017/03/25/love-this-picture/</link>
                 <guid>http://www.thecave.com/2017/03/25/love-this-picture</guid>
                 <pubDate>2017-03-25T12:37:22+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;Testing, testing. 1, 2, 3…I moved my RSS feed for &lt;a href=&quot;http://micro.blog&quot;&gt;micro.blog&lt;/a&gt; to &lt;a href=&quot;https://www.thecave.com/&quot;&gt;thecave.com&lt;/a&gt; since I’m no longer actively working on my app, Cross Post.&lt;/p&gt;
-</description>
-                <link>http://www.thecave.com/2017/03/25/micro-blogging-from-thecave/</link>
-                <guid>http://www.thecave.com/2017/03/25/micro-blogging-from-thecave</guid>
-                <pubDate>2017-03-25T11:15:34+00:00</pubDate>
         </item>
 
 

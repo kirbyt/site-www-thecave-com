@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-05-01T14:51:58+00:00</updated>
+  <updated>2017-05-02T12:25:22+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,16 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[Advice for new iOS freelancers]]></title>
+    <link href="http://www.thecave.com/2017/05/02/advice-for-new-ios-freelancers/"/>
+    <published>2017-05-02T12:11:53+00:00</published>
+    <updated>2017-05-02T12:11:53+00:00</updated>
+    <id>http://www.thecave.com/2017/05/02/advice-for-new-ios-freelancers</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[I'm Trying Something Different]]></title>
@@ -320,16 +330,6 @@
     <updated>2017-03-25T12:37:22+00:00</updated>
     <id>http://www.thecave.com/2017/03/25/love-this-picture</id>
     <content type="html"><![CDATA[<p>I love this picture of Rowan and his cousin Sedona. Taken last weekend at Stowe Mountain Resort. <img src="https://c1.staticflickr.com/3/2813/32769104684_cec6f7e85b_z.jpg" alt="" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/03/25/micro-blogging-from-thecave/"/>
-    <published>2017-03-25T11:15:34+00:00</published>
-    <updated>2017-03-25T11:15:34+00:00</updated>
-    <id>http://www.thecave.com/2017/03/25/micro-blogging-from-thecave</id>
-    <content type="html"><![CDATA[<p>Testing, testing. 1, 2, 3…I moved my RSS feed for <a href="http://micro.blog">micro.blog</a> to <a href="https://www.thecave.com/">thecave.com</a> since I’m no longer actively working on my app, Cross Post.</p>
 ]]></content>
   </entry>
   
