@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-05-02T12:25:22+00:00</updated>
+  <updated>2017-05-02T12:29:17+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -19,7 +19,16 @@
     <published>2017-05-02T12:11:53+00:00</published>
     <updated>2017-05-02T12:11:53+00:00</updated>
     <id>http://www.thecave.com/2017/05/02/advice-for-new-ios-freelancers</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<p>A friend of mine told me this morning she quit her job and is now freelancing as an iOS developer. She asked if I had any advice to share. The first thoughts to pop into my mind were:</p>
+
+<ul>
+  <li>Read all you can from <a href="https://doubleyourfreelancing.com">Brennan Dunn</a></li>
+  <li>Read all you can from <a href="https://expensiveproblem.com">Jonathan Stark</a></li>
+  <li>Read all you can from <a href="http://ryanwaggoner.com">Ryan Waggoner</a></li>
+  <li>Subscribe to Matt Inglot’s <a href="https://freelancetransformation.com">Freelance Transformation podcast</a></li>
+</ul>
+
+<p>Also, I talked about my workflow for finding new freelance work at last year’s <a href="https://360idev.com">360idev</a> conference. Unfortunately, the video recording got corrupted, so you can’t watch the talk. But I do have a <a href="https://www.dropbox.com/s/wo4r3jnjnilguzu/freelancers-guide-to-finding-work.pdf?dl=0">PDF</a> of slide deck that includes a transcript of the talk that some might find helpful.</p>
 ]]></content>
   </entry>
   
