@@ -5,10 +5,20 @@
         <description>thecave | A Hideout for Programmers, Indie Devs, Solopreneurs - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2017-05-02T12:29:17+00:00</lastBuildDate>
-        <pubDate>2017-05-02T12:29:17+00:00</pubDate>
+        <lastBuildDate>2017-05-13T01:15:50+00:00</lastBuildDate>
+        <pubDate>2017-05-13T01:15:50+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title></title>
+                <description>&lt;p&gt;The last two weeks have been crazy, exciting, nonstop fun. I’m ready for more.&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2017/05/12/crazy-fun-exciting-two-weeks/</link>
+                <guid>http://www.thecave.com/2017/05/12/crazy-fun-exciting-two-weeks</guid>
+                <pubDate>2017-05-13T01:12:55+00:00</pubDate>
+        </item>
 
         <item>
                 <title>Advice for new iOS freelancers</title>
@@ -308,15 +318,6 @@
                 <link>http://www.thecave.com/2017/03/26/no-facebook-for-11-days/</link>
                 <guid>http://www.thecave.com/2017/03/26/no-facebook-for-11-days</guid>
                 <pubDate>2017-03-26T10:32:14+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;I love this picture of Rowan and his cousin Sedona. Taken last weekend at Stowe Mountain Resort. &lt;img src=&quot;https://c1.staticflickr.com/3/2813/32769104684_cec6f7e85b_z.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</description>
-                <link>http://www.thecave.com/2017/03/25/love-this-picture/</link>
-                <guid>http://www.thecave.com/2017/03/25/love-this-picture</guid>
-                <pubDate>2017-03-25T12:37:22+00:00</pubDate>
         </item>
 
 

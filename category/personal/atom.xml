@@ -4,13 +4,25 @@
   <title><![CDATA[Category: personal | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/category/personal/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-05-02T12:29:17+00:00</updated>
+  <updated>2017-05-13T01:15:50+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/05/12/crazy-fun-exciting-two-weeks/"/>
+    <updated>2017-05-13T01:12:55+00:00</updated>
+    <id>http://www.thecave.com/2017/05/12/crazy-fun-exciting-two-weeks</id>
+    <description><![CDATA[<p>The last two weeks have been crazy, exciting, nonstop fun. I’m ready for more.</p>
+]]></description>
+    <content type="html"><![CDATA[<p>The last two weeks have been crazy, exciting, nonstop fun. I’m ready for more.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[I'm Trying Something Different]]></title>
@@ -69,18 +81,6 @@
     <description><![CDATA[<p>I share the same love for winter and snow as these kids. Thanks, POW, for making the touching video. <a href="https://vimeo.com/214243023">https://vimeo.com/214243023</a></p>
 ]]></description>
     <content type="html"><![CDATA[<p>I share the same love for winter and snow as these kids. Thanks, POW, for making the touching video. <a href="https://vimeo.com/214243023">https://vimeo.com/214243023</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/04/25/congrats-to-manton-on-the-launch-of-micro-blog/"/>
-    <updated>2017-04-25T14:00:28+00:00</updated>
-    <id>http://www.thecave.com/2017/04/25/congrats-to-manton-on-the-launch-of-micro-blog</id>
-    <description><![CDATA[<p>Congrats to <a href="http://micro.blog/manton">@manton</a> on the launch of <a href="http://micro.blog">micro.blog</a>!!</p>
-]]></description>
-    <content type="html"><![CDATA[<p>Congrats to <a href="http://micro.blog/manton">@manton</a> on the launch of <a href="http://micro.blog">micro.blog</a>!!</p>
-
 ]]></content>
   </entry>
   
