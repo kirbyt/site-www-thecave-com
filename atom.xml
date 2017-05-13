@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-05-13T01:15:50+00:00</updated>
+  <updated>2017-05-13T01:47:27+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/05/12/photo-upload-test/"/>
+    <published>2017-05-13T01:46:12+00:00</published>
+    <updated>2017-05-13T01:46:12+00:00</updated>
+    <id>http://www.thecave.com/2017/05/12/photo-upload-test</id>
+    <content type="html"><![CDATA[<p>Testing photo upload. Nothing to see here except this gorgeous view from yesterday. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-05-12-21-43.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -330,16 +341,6 @@
     <updated>2017-04-01T10:56:58+00:00</updated>
     <id>http://www.thecave.com/2017/04/01/aint-no-april-fools-joke</id>
     <content type="html"><![CDATA[<p>What a beautiful morning. Winter is still going strong here in Stowe. <img src="https://c1.staticflickr.com/4/3754/32957940243_5ae40ae89a_z.jpg" alt="" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/03/26/no-facebook-for-11-days/"/>
-    <published>2017-03-26T10:32:14+00:00</published>
-    <updated>2017-03-26T10:32:14+00:00</updated>
-    <id>http://www.thecave.com/2017/03/26/no-facebook-for-11-days</id>
-    <content type="html"><![CDATA[<p>I haven’t been on Facebook for 11 straight days. #breakingtheaddiction</p>
 ]]></content>
   </entry>
   

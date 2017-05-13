@@ -4,13 +4,25 @@
   <title><![CDATA[Category: personal | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/category/personal/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-05-13T01:15:50+00:00</updated>
+  <updated>2017-05-13T01:47:27+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/05/12/photo-upload-test/"/>
+    <updated>2017-05-13T01:46:12+00:00</updated>
+    <id>http://www.thecave.com/2017/05/12/photo-upload-test</id>
+    <description><![CDATA[<p>Testing photo upload. Nothing to see here except this gorgeous view from yesterday. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-05-12-21-43.jpg" alt="" /></p>
+]]></description>
+    <content type="html"><![CDATA[<p>Testing photo upload. Nothing to see here except this gorgeous view from yesterday. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-05-12-21-43.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -70,17 +82,6 @@
 ]]></description>
     <content type="html"><![CDATA[<p>It’s a good day to celebrate. <img src="https://thecave-social.s3.amazonaws.com/media_attachments/files/000/000/496/original/947df333040ae64f.jpeg?1493409447" alt="" /></p>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/04/25/dear-mr-president/"/>
-    <updated>2017-04-25T16:24:39+00:00</updated>
-    <id>http://www.thecave.com/2017/04/25/dear-mr-president</id>
-    <description><![CDATA[<p>I share the same love for winter and snow as these kids. Thanks, POW, for making the touching video. <a href="https://vimeo.com/214243023">https://vimeo.com/214243023</a></p>
-]]></description>
-    <content type="html"><![CDATA[<p>I share the same love for winter and snow as these kids. Thanks, POW, for making the touching video. <a href="https://vimeo.com/214243023">https://vimeo.com/214243023</a></p>
 ]]></content>
   </entry>
   
