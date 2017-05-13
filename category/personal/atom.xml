@@ -4,13 +4,25 @@
   <title><![CDATA[Category: personal | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/category/personal/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-05-13T01:47:27+00:00</updated>
+  <updated>2017-05-13T01:58:07+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/05/12/dropshare-app/"/>
+    <updated>2017-05-13T01:56:52+00:00</updated>
+    <id>http://www.thecave.com/2017/05/12/dropshare-app</id>
+    <description><![CDATA[<p>Sweet! My photo upload worked. I’m using <a href="https://appsto.re/us/rAGK3.i">Dropshare</a> to upload photos to Amazon S3, then making a micropost on <a href="https://www.thecave.com">thecave.com</a> that gets picked up on <a href="http://micro.blog/kirbyt">micro.blog</a>.</p>
+]]></description>
+    <content type="html"><![CDATA[<p>Sweet! My photo upload worked. I’m using <a href="https://appsto.re/us/rAGK3.i">Dropshare</a> to upload photos to Amazon S3, then making a micropost on <a href="https://www.thecave.com">thecave.com</a> that gets picked up on <a href="http://micro.blog/kirbyt">micro.blog</a>.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -69,18 +81,6 @@
     <description><![CDATA[<p>I love being able to board a plane using my Apple Watch.</p>
 ]]></description>
     <content type="html"><![CDATA[<p>I love being able to board a plane using my Apple Watch.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/04/28/its-a-good-day-to-celebrate/"/>
-    <updated>2017-04-28T19:59:40+00:00</updated>
-    <id>http://www.thecave.com/2017/04/28/its-a-good-day-to-celebrate</id>
-    <description><![CDATA[<p>It’s a good day to celebrate. <img src="https://thecave-social.s3.amazonaws.com/media_attachments/files/000/000/496/original/947df333040ae64f.jpeg?1493409447" alt="" /></p>
-]]></description>
-    <content type="html"><![CDATA[<p>It’s a good day to celebrate. <img src="https://thecave-social.s3.amazonaws.com/media_attachments/files/000/000/496/original/947df333040ae64f.jpeg?1493409447" alt="" /></p>
 
 ]]></content>
   </entry>

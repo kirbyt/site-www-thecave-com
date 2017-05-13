@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-05-13T01:47:27+00:00</updated>
+  <updated>2017-05-13T01:58:07+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/05/12/dropshare-app/"/>
+    <published>2017-05-13T01:56:52+00:00</published>
+    <updated>2017-05-13T01:56:52+00:00</updated>
+    <id>http://www.thecave.com/2017/05/12/dropshare-app</id>
+    <content type="html"><![CDATA[<p>Sweet! My photo upload worked. I’m using <a href="https://appsto.re/us/rAGK3.i">Dropshare</a> to upload photos to Amazon S3, then making a micropost on <a href="https://www.thecave.com">thecave.com</a> that gets picked up on <a href="http://micro.blog/kirbyt">micro.blog</a>.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -331,16 +342,6 @@
     <updated>2017-04-03T12:10:26+00:00</updated>
     <id>http://www.thecave.com/2017/04/03/after-17-days</id>
     <content type="html"><![CDATA[<p>After 17 days of no Facebook, I finally took a peek at my feed. I was totally uninterested, and I signed out after a minute. I think I’m over my Facebook addiction.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/04/01/aint-no-april-fools-joke/"/>
-    <published>2017-04-01T10:56:58+00:00</published>
-    <updated>2017-04-01T10:56:58+00:00</updated>
-    <id>http://www.thecave.com/2017/04/01/aint-no-april-fools-joke</id>
-    <content type="html"><![CDATA[<p>What a beautiful morning. Winter is still going strong here in Stowe. <img src="https://c1.staticflickr.com/4/3754/32957940243_5ae40ae89a_z.jpg" alt="" /></p>
 ]]></content>
   </entry>
   
