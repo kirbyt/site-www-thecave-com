@@ -5,10 +5,20 @@
         <description>thecave | A Hideout for Programmers, Indie Devs, Solopreneurs - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2017-05-13T01:58:07+00:00</lastBuildDate>
-        <pubDate>2017-05-13T01:58:07+00:00</pubDate>
+        <lastBuildDate>2017-05-20T01:23:41+00:00</lastBuildDate>
+        <pubDate>2017-05-20T01:23:41+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title></title>
+                <description>&lt;p&gt;You know it’s a long day when you’ve been idled for only 1 hour over the last 19 hours. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-05-19-21-19.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2017/05/19/long-day/</link>
+                <guid>http://www.thecave.com/2017/05/19/long-day</guid>
+                <pubDate>2017-05-20T01:22:28+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -311,15 +321,6 @@
                 <link>http://www.thecave.com/2017/04/12/mastodon-and-thecavesocial/</link>
                 <guid>http://www.thecave.com/2017/04/12/mastodon-and-thecavesocial</guid>
                 <pubDate>2017-04-12T18:07:57+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;After 17 days of no Facebook, I finally took a peek at my feed. I was totally uninterested, and I signed out after a minute. I think I’m over my Facebook addiction.&lt;/p&gt;
-</description>
-                <link>http://www.thecave.com/2017/04/03/after-17-days/</link>
-                <guid>http://www.thecave.com/2017/04/03/after-17-days</guid>
-                <pubDate>2017-04-03T12:10:26+00:00</pubDate>
         </item>
 
 
