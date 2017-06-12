@@ -5,10 +5,20 @@
         <description>thecave | A Hideout for Programmers, Indie Devs, Solopreneurs - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2017-05-20T01:23:41+00:00</lastBuildDate>
-        <pubDate>2017-05-20T01:23:41+00:00</pubDate>
+        <lastBuildDate>2017-06-12T01:15:49+00:00</lastBuildDate>
+        <pubDate>2017-06-12T01:15:49+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title></title>
+                <description>&lt;p&gt;I wonder if Micro.blog supports animated gifs. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/output.GIF&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2017/06/11/fire-fire-fire/</link>
+                <guid>http://www.thecave.com/2017/06/11/fire-fire-fire</guid>
+                <pubDate>2017-06-12T01:14:14+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -290,37 +300,6 @@
                 <link>http://www.thecave.com/2017/04/16/micropost-test/</link>
                 <guid>http://www.thecave.com/2017/04/16/micropost-test</guid>
                 <pubDate>2017-04-16T10:01:11+00:00</pubDate>
-        </item>
-
-        <item>
-                <title>Mastodon and thecave.social</title>
-                <description>&lt;p&gt;I first heard about &lt;a href=&quot;https://github.com/tootsuite/mastodon&quot;&gt;Mastodon&lt;/a&gt; last week while lurking on Twitter. For those who don’t know, Mastodon is a free, open source, decentralized social network with instances run mostly by individuals.&lt;/p&gt;
-
-&lt;p&gt;As I read more about Mastodon, I became more intrigued. It didn’t take long before I registered the domain name &lt;a href=&quot;https://thecave.social/&quot;&gt;thecave.social&lt;/a&gt;. The idea of hosting a Mastodon instance, even if just for myself, piqued the geek in me. The realist in me said I don’t have the extra time to take on such an endeavor. Still, I wanted to learn more about Mastodon, and what better way than hosting an instance.&lt;/p&gt;
-
-&lt;p&gt;First, I looked at hosting my Mastodon instance on &lt;a href=&quot;https://www.openshift.com&quot;&gt;OpenShift Online&lt;/a&gt;. I’m a long time fan of OpenShift, but it’s been a while since I played on it. Turns out, a new OpenShift Online supporting Docker containers is in the works. Right now, the new OpenShift Online is in Developer Preview, and accounts are active for only 30 days. The time limit doesn’t work for me because I can see myself hosting my Mastodon instance for more than a month. So OpenShift is not an option for me at the moment.&lt;/p&gt;
-
-&lt;p&gt;I looked at hosting the instance somewhere else, like Digital Ocean, but I decided I don’t have the time to do all the extra work. Thankfully, there is an experimental Heroku install option for Mastodon, and given that I already have some basic experience with &lt;a href=&quot;https://www.heroku.com&quot;&gt;Heroku&lt;/a&gt;, I decided it is the way to go for me.&lt;/p&gt;
-
-&lt;p&gt;After deciding where to host my instance, I did a “test” install. I created a single dyno and played around with Mastodon. Liking what I saw, I scrapped the dyno and created another one, this time for thecave.social.&lt;/p&gt;
-
-&lt;p&gt;It took me about four hours total to get my Mastodon instance setup and configured the way I want it. A more experienced admin could have probably done the work in half the time.&lt;/p&gt;
-
-&lt;p&gt;I’m using &lt;a href=&quot;https://www.mailgun.com&quot;&gt;Mailgun&lt;/a&gt; for emails and &lt;a href=&quot;https://aws.amazon.com/s3/&quot;&gt;S3&lt;/a&gt; for file storage. And now that Heroku has an automatic certificate manager that uses &lt;a href=&quot;https://letsencrypt.org&quot;&gt;Let’s Encrypt&lt;/a&gt;, acquiring and installing an SSL/TLS certificate for the site was a snap. I’m continually amazed at how easy it is to host a server these days thanks to services like Mailgun, S3, and Heroku.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://thecave.social/&quot;&gt;thecave.social&lt;/a&gt; has been live for a few days now, and everything is running smoothly. Of course, I am the only user on this instance, and I do not support the streaming API yet.&lt;/p&gt;
-
-&lt;p&gt;I’ve even made a few toots on Mastodon, which is impressive for me given that I don’t spend a lot of time on social networks these days. (I’ve checked Facebook once in the last 28 days, and I lurk on Twitter only once or twice a month.) Still, I can see myself getting into Mastodon because it represents what I like about social networks, and it doesn’t have the crap that has turned me off of social networks in general, ads and political rants being the top offenders for me.&lt;/p&gt;
-
-&lt;p&gt;Currently, registration on thecave.social is closed, though I’m considering opening it up to family and friends soon. Let me know if you are interested in having an account so I can tell you when registration is open. I can’t guarantee how long I will keep the server up and running, but I don’t see myself shutting it down anytime soon.&lt;/p&gt;
-
-&lt;p&gt;Also, I’m not looking to grow a big community with hundreds or even thousands of users. Instead, I want a place that is my own just like I have with my personal email address. Some family and friends have thecave.com email address, and I see the same thing happening with thecave.social.&lt;/p&gt;
-
-&lt;p&gt;For those of you on other Mastodon instances, feel free to follow me at &lt;a href=&quot;https://thecave.social/@kirby&quot;&gt;@kirby@thecave.social&lt;/a&gt;.&lt;/p&gt;
-</description>
-                <link>http://www.thecave.com/2017/04/12/mastodon-and-thecavesocial/</link>
-                <guid>http://www.thecave.com/2017/04/12/mastodon-and-thecavesocial</guid>
-                <pubDate>2017-04-12T18:07:57+00:00</pubDate>
         </item>
 
 
