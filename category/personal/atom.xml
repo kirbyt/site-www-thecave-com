@@ -4,13 +4,25 @@
   <title><![CDATA[Category: personal | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/category/personal/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-06-12T01:15:49+00:00</updated>
+  <updated>2017-06-15T12:26:25+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/06/15/crazy-hair-day/"/>
+    <updated>2017-06-15T12:24:35+00:00</updated>
+    <id>http://www.thecave.com/2017/06/15/crazy-hair-day</id>
+    <description><![CDATA[<p>It’s crazy hair day at Stowe Elementary. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-06-15-08-20-J8ar1Um2yZO1AZdrpElF.jpg" alt="" /></p>
+]]></description>
+    <content type="html"><![CDATA[<p>It’s crazy hair day at Stowe Elementary. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-06-15-08-20-J8ar1Um2yZO1AZdrpElF.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -56,18 +68,6 @@
     <description><![CDATA[<p>Testing photo upload. Nothing to see here except this gorgeous view from yesterday. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-05-12-21-43.jpg" alt="" /></p>
 ]]></description>
     <content type="html"><![CDATA[<p>Testing photo upload. Nothing to see here except this gorgeous view from yesterday. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-05-12-21-43.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/05/12/crazy-fun-exciting-two-weeks/"/>
-    <updated>2017-05-13T01:12:55+00:00</updated>
-    <id>http://www.thecave.com/2017/05/12/crazy-fun-exciting-two-weeks</id>
-    <description><![CDATA[<p>The last two weeks have been crazy, exciting, nonstop fun. I’m ready for more.</p>
-]]></description>
-    <content type="html"><![CDATA[<p>The last two weeks have been crazy, exciting, nonstop fun. I’m ready for more.</p>
 
 ]]></content>
   </entry>
