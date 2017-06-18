@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-06-15T12:26:25+00:00</updated>
+  <updated>2017-06-18T22:21:59+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/06/18/swimming-hole/"/>
+    <published>2017-06-18T22:20:22+00:00</published>
+    <updated>2017-06-18T22:20:22+00:00</updated>
+    <id>http://www.thecave.com/2017/06/18/swimming-hole</id>
+    <content type="html"><![CDATA[<p>Beating the heat at a local swimming hole. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-06-18-18-17-0AeCmp0BsGVYv5sNDeBj.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -311,17 +322,6 @@
     <updated>2017-04-16T23:59:11+00:00</updated>
     <id>http://www.thecave.com/2017/04/16/why-didnt-i-do-this-earlier</id>
     <content type="html"><![CDATA[<p>Why didn’t I setup <a href="https://www.bitrise.io">Bitrise</a> to generate <a href="https://www.thecave.com">thecave.com</a> sooner. It’s so much easier, and faster, to push to master and let Bitrise do the rest of the work for me.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/04/16/timezone-test/"/>
-    <published>2017-04-16T14:27:23+00:00</published>
-    <updated>2017-04-16T14:27:23+00:00</updated>
-    <id>http://www.thecave.com/2017/04/16/timezone-test</id>
-    <content type="html"><![CDATA[<p>Another test to see if I got the time zone right this time.</p>
-
 ]]></content>
   </entry>
   

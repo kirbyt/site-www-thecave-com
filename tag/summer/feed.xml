@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: summer | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
+  <link href="http://www.thecave.com/tag/summer/feed.xml" rel="self"/>
+  <link href="http://www.thecave.com/"/>
+  <updated>2017-06-18T22:21:59+00:00</updated>
+  <id>http://www.thecave.com/</id>
+  <author>
+    <name><![CDATA[Kirby Turner]]></name>
+    
+  </author>
+
+  
+  <entry>
+    
+    <title></title>
+    
+    <link href="http://www.thecave.com/2017/06/18/swimming-hole/"/>
+    <updated>2017-06-18T22:20:22+00:00</updated>
+    <id>http://www.thecave.com/2017/06/18/swimming-hole</id>
+    <tag>summer</tag>
+    <description><![CDATA[<p>Beating the heat at a local swimming hole. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-06-18-18-17-0AeCmp0BsGVYv5sNDeBj.jpg" alt="" /></p>
+]]></description>
+    <content type="html"><![CDATA[<p>Beating the heat at a local swimming hole. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-06-18-18-17-0AeCmp0BsGVYv5sNDeBj.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
+  
+</feed>

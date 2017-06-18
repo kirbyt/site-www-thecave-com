@@ -5,10 +5,20 @@
         <description>thecave | A Hideout for Programmers, Indie Devs, Solopreneurs - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2017-06-15T12:26:25+00:00</lastBuildDate>
-        <pubDate>2017-06-15T12:26:25+00:00</pubDate>
+        <lastBuildDate>2017-06-18T22:21:59+00:00</lastBuildDate>
+        <pubDate>2017-06-18T22:21:59+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title></title>
+                <description>&lt;p&gt;Beating the heat at a local swimming hole. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-06-18-18-17-0AeCmp0BsGVYv5sNDeBj.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2017/06/18/swimming-hole/</link>
+                <guid>http://www.thecave.com/2017/06/18/swimming-hole</guid>
+                <pubDate>2017-06-18T22:20:22+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -290,16 +300,6 @@
                 <link>http://www.thecave.com/2017/04/16/why-didnt-i-do-this-earlier/</link>
                 <guid>http://www.thecave.com/2017/04/16/why-didnt-i-do-this-earlier</guid>
                 <pubDate>2017-04-16T23:59:11+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;Another test to see if I got the time zone right this time.&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2017/04/16/timezone-test/</link>
-                <guid>http://www.thecave.com/2017/04/16/timezone-test</guid>
-                <pubDate>2017-04-16T14:27:23+00:00</pubDate>
         </item>
 
 

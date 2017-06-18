@@ -4,13 +4,28 @@
   <title><![CDATA[Tag: micropost | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/micropost/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-06-15T12:26:25+00:00</updated>
+  <updated>2017-06-18T22:21:59+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    
+    <title></title>
+    
+    <link href="http://www.thecave.com/2017/06/18/swimming-hole/"/>
+    <updated>2017-06-18T22:20:22+00:00</updated>
+    <id>http://www.thecave.com/2017/06/18/swimming-hole</id>
+    <tag>micropost</tag>
+    <description><![CDATA[<p>Beating the heat at a local swimming hole. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-06-18-18-17-0AeCmp0BsGVYv5sNDeBj.jpg" alt="" /></p>
+]]></description>
+    <content type="html"><![CDATA[<p>Beating the heat at a local swimming hole. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-06-18-18-17-0AeCmp0BsGVYv5sNDeBj.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     
@@ -68,21 +83,6 @@
     <description><![CDATA[<p>Sweet! My photo upload worked. I’m using <a href="https://appsto.re/us/rAGK3.i">Dropshare</a> to upload photos to Amazon S3, then making a micropost on <a href="https://www.thecave.com">thecave.com</a> that gets picked up on <a href="http://micro.blog/kirbyt">micro.blog</a>.</p>
 ]]></description>
     <content type="html"><![CDATA[<p>Sweet! My photo upload worked. I’m using <a href="https://appsto.re/us/rAGK3.i">Dropshare</a> to upload photos to Amazon S3, then making a micropost on <a href="https://www.thecave.com">thecave.com</a> that gets picked up on <a href="http://micro.blog/kirbyt">micro.blog</a>.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    
-    <title></title>
-    
-    <link href="http://www.thecave.com/2017/05/12/photo-upload-test/"/>
-    <updated>2017-05-13T01:46:12+00:00</updated>
-    <id>http://www.thecave.com/2017/05/12/photo-upload-test</id>
-    <tag>micropost</tag>
-    <description><![CDATA[<p>Testing photo upload. Nothing to see here except this gorgeous view from yesterday. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-05-12-21-43.jpg" alt="" /></p>
-]]></description>
-    <content type="html"><![CDATA[<p>Testing photo upload. Nothing to see here except this gorgeous view from yesterday. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-05-12-21-43.jpg" alt="" /></p>
 
 ]]></content>
   </entry>
