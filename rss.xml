@@ -5,10 +5,20 @@
         <description>thecave | A Hideout for Programmers, Indie Devs, Solopreneurs - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2017-06-18T22:21:59+00:00</lastBuildDate>
-        <pubDate>2017-06-18T22:21:59+00:00</pubDate>
+        <lastBuildDate>2017-06-19T01:53:18+00:00</lastBuildDate>
+        <pubDate>2017-06-19T01:53:18+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title></title>
+                <description>&lt;p&gt;And jump! &lt;img src=&quot;http://giftrending.com/public/upload/gifs/14978369961497836980.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2017/06/18/and-jump/</link>
+                <guid>http://www.thecave.com/2017/06/18/and-jump</guid>
+                <pubDate>2017-06-19T01:51:58+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -291,15 +301,6 @@
                 <link>http://www.thecave.com/2017/04/16/convert-time-with-a-textexpander-snippet/</link>
                 <guid>http://www.thecave.com/2017/04/16/convert-time-with-a-textexpander-snippet</guid>
                 <pubDate>2017-04-17T01:14:46+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;Why didn’t I setup &lt;a href=&quot;https://www.bitrise.io&quot;&gt;Bitrise&lt;/a&gt; to generate &lt;a href=&quot;https://www.thecave.com&quot;&gt;thecave.com&lt;/a&gt; sooner. It’s so much easier, and faster, to push to master and let Bitrise do the rest of the work for me.&lt;/p&gt;
-</description>
-                <link>http://www.thecave.com/2017/04/16/why-didnt-i-do-this-earlier/</link>
-                <guid>http://www.thecave.com/2017/04/16/why-didnt-i-do-this-earlier</guid>
-                <pubDate>2017-04-16T23:59:11+00:00</pubDate>
         </item>
 
 
