@@ -124,6 +124,24 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2007/04/10/support-large-files-in-killink/">Support Large Files in Killink</a>
+    </h2>
+    
+    <p>The first version of <a href="http://www.killink.com/">Killink</a> is feature complete, but there was one thing that was brothering me, large file support.  Opening, printing, and saving a large file in Killink is a rather slow process so I’ve been working on improving these 3 areas.<br /><br />The first area I worked on was opening a large file, which is what I will talk about today.  After profiling the application I found the biggest bottleneck was populating the spreadsheet with display data.  This was an easy fix that involved “freezing” display while the spreadsheet is loaded with data.  This change resulted in a huge performance increase.  The test file I used took minutes to load prior to the change and only 2 seconds after the change.  But then Killink took another perform hit.<br /><br />A beta tester reported the bug that embedded new line characters were not properly handled.  I modified the CSV parser to check each byte of data as it was read from the hard drive.  However this is a very inefficient approach.  A better approach is to buffer each read.  In other words, instead of reading a single byte from the hard drive it is better to read a chuck of bytes.  The chuck can be any size such as 65K chucks or 1MB chucks.  <br /><br />Buffering the file read process gave Killink the performance boost it needed to open large files.  It’s not as fast as I would like it but it’s getting closer.<br /><br />The performance improved version of Killink should be ready for <a href="http://www.killink.com/download.aspx">download</a> in a couple of days.</p>
+
+
+    <p><a href="/2007/04/10/support-large-files-in-killink/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on April 10, 2007
+     in <a class='category' href='/category/business/'>business</a>.
+    Tagged in <a class='tag' href='/tag/killink/'>killink</a>, <a class='tag' href='/tag/white-peak-software/'>white peak software</a>.
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2007/04/10/csv-editing/">CSV Editing</a>
     </h2>
     
@@ -284,24 +302,6 @@
 </div>
 <hr>
 
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2007/03/21/update-on-delphi-2007-order-mess/">Update on Delphi 2007 Order Mess</a>
-    </h2>
-    
-    <p>The <a href="http://www.codegear.com/">CodeGear</a> folks are awesome.  They were quick to respond to my <a href="http://www.thecave.com/archive/2007/03/19/why_i_will_never_preorder_from_codegear_again.aspx">pre-order issue</a>.  CodeGear’s Loreen Fornshell worked directly with me.  She was able to sort through the mess and correct the mistakes made by Digital River.  It did take a few days but based on my phone calls with Digital River I suspect the delays were caused by DR and not CodeGear.<br /><br />Thanks to CodeGear folks like Loreen my pre-order mess has finally been cleaned up and I should have my license for <a href="http://www.codegear.com/delphi">Delphi 2007</a> later today.  <br /><br />I installed Vista the other day preparing the Delphi 2007.  I don’t have much of an opinion on Vista yet because I haven’t spent much time playing with it other than to say you better have a beefy machine with lots of RAM if you want the best UI experience.  I ordered more RAM for my laptop so I can run Vista’s Aero theme.  I’m not 100% sure if this will meet the minimum requirements needed to use the Aero theme but based on what I have read it should.  I’ll know in a couple of days after the new RAM arrives.</p>
-
-
-    <p><a href="/2007/03/21/update-on-delphi-2007-order-mess/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on March 21, 2007
-     in <a class='category' href='/category/programming/'>programming</a>.
-    Tagged in .
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -334,6 +334,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2017/06/19/mark-twain-brother-lived-in-vermont/" title="Mark Twain's Brother Lived in Vermont">Mark Twain's Brother Lived in Vermont</a></li>
+                
                 <li><a href="/2017/06/18/and-jump/" title="">June 18, 2017 at 09:51:58 PM</a></li>
                 
                 <li><a href="/2017/06/18/swimming-hole/" title="">June 18, 2017 at 06:20:22 PM</a></li>
@@ -341,8 +343,6 @@
                 <li><a href="/2017/06/15/crazy-hair-day/" title="">June 15, 2017 at 08:24:35 AM</a></li>
                 
                 <li><a href="/2017/06/11/fire-fire-fire/" title="">June 11, 2017 at 09:14:14 PM</a></li>
-                
-                <li><a href="/2017/05/19/long-day/" title="">May 19, 2017 at 09:22:28 PM</a></li>
                 
                 </ul>                
             </div>

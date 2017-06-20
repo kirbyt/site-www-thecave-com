@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: writer | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
+  <link href="http://www.thecave.com/tag/writer/feed.xml" rel="self"/>
+  <link href="http://www.thecave.com/"/>
+  <updated>2017-06-20T01:55:49+00:00</updated>
+  <id>http://www.thecave.com/</id>
+  <author>
+    <name><![CDATA[Kirby Turner]]></name>
+    
+  </author>
+
+  
+  <entry>
+    
+    <title type="html"><![CDATA[Mark Twain's Brother Lived in Vermont]]></title>
+    
+    <link href="http://www.thecave.com/2017/06/19/mark-twain-brother-lived-in-vermont/"/>
+    <updated>2017-06-20T01:42:32+00:00</updated>
+    <id>http://www.thecave.com/2017/06/19/mark-twain-brother-lived-in-vermont</id>
+    <tag>writer</tag>
+    <description><![CDATA[<p>I’ve been interested in Mark Twain lately, so it seemed fitting to me when this <a href="https://vtdigger.org/2017/06/18/twains-ill-fated-brother-not-prosper-vermont/">article about Orion Clemens</a>, Twain’s brother, appeared in my RSS feed. It turns out Orion lived in Vermont for a short time and was editor of the Rutland Daily Globe.</p>
+
+]]></description>
+    <content type="html"><![CDATA[<p>I’ve been interested in Mark Twain lately, so it seemed fitting to me when this <a href="https://vtdigger.org/2017/06/18/twains-ill-fated-brother-not-prosper-vermont/">article about Orion Clemens</a>, Twain’s brother, appeared in my RSS feed. It turns out Orion lived in Vermont for a short time and was editor of the Rutland Daily Globe.</p>
+
+]]></content>
+  </entry>
+  
+</feed>
