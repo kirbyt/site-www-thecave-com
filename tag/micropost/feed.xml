@@ -4,13 +4,28 @@
   <title><![CDATA[Tag: micropost | thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/tag/micropost/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-06-20T02:51:29+00:00</updated>
+  <updated>2017-06-20T13:38:47+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    
+    <title></title>
+    
+    <link href="http://www.thecave.com/2017/06/20/down-by-the-stream/"/>
+    <updated>2017-06-20T13:37:01+00:00</updated>
+    <id>http://www.thecave.com/2017/06/20/down-by-the-stream</id>
+    <tag>micropost</tag>
+    <description><![CDATA[<p><img src="https://thecave-com.s3.amazonaws.com/output-1-WJaOeNkliunoNKkkusip.GIF" alt="" /></p>
+]]></description>
+    <content type="html"><![CDATA[<p><img src="https://thecave-com.s3.amazonaws.com/output-1-WJaOeNkliunoNKkkusip.GIF" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     
@@ -69,21 +84,6 @@
     <description><![CDATA[<p>It’s crazy hair day at Stowe Elementary. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-06-15-08-20-J8ar1Um2yZO1AZdrpElF.jpg" alt="" /></p>
 ]]></description>
     <content type="html"><![CDATA[<p>It’s crazy hair day at Stowe Elementary. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-06-15-08-20-J8ar1Um2yZO1AZdrpElF.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    
-    <title></title>
-    
-    <link href="http://www.thecave.com/2017/06/11/fire-fire-fire/"/>
-    <updated>2017-06-12T01:14:14+00:00</updated>
-    <id>http://www.thecave.com/2017/06/11/fire-fire-fire</id>
-    <tag>micropost</tag>
-    <description><![CDATA[<p>I wonder if Micro.blog supports animated gifs. <img src="https://thecave-com.s3.amazonaws.com/output.GIF" alt="" /></p>
-]]></description>
-    <content type="html"><![CDATA[<p>I wonder if Micro.blog supports animated gifs. <img src="https://thecave-com.s3.amazonaws.com/output.GIF" alt="" /></p>
 
 ]]></content>
   </entry>

@@ -124,6 +124,24 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2004/06/17/unit-testing-and-vs-net-2005/">Unit testing and VS.NET 2005</a>
+    </h2>
+    
+    <p>I <a href="http://www.peterprovost.org/archive/2004/06/12/1379.aspx">agree</a> with Scott.  Unit Testing support should be included with all versions of Visual Studio 2005 and not just with Team System.  However, I am not sure I agree with the unit testing support using a new framework developed by Microsoft.  <a href="http://www.nunit.org/">NUnit</a> is here today and works with all released versions of the .NET Framework.  And I am sure support for version 2 of the .NET Framework will be included in NUnit once Microsoft has released it.<br /><br />I doubt many of my customers will be ready to move to VS.NET 2005 and the .NET Framework 2.0 when it is released, but I will still be developing solutions for them.  And I will continue to provide unit tests for custom written production code.  So while I agree that all versions of Visual Studio.NET 2005 should include support for unit testing, I would like to see stronger support for NUnit and not some new testing framework.  This will help ease the migration to the new tool and framework.<br /><br /><br /></p>
+
+
+    <p><a href="/2004/06/17/unit-testing-and-vs-net-2005/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on June 17, 2004
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2004/06/17/firefox-extensions/">Firefox Extensions</a>
     </h2>
     
@@ -284,24 +302,6 @@
 </div>
 <hr>
 
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2004/06/09/which-xml-api/">Which XML API?</a>
-    </h2>
-    
-    <p>I had an interesting chat with a team member today about which XML parsing API from the .NET Framework to use for a particular situation.  He mentioned that using the XPathNavigator with an XmlReader would not load the document into memory.  However, after some quick research I found this to be incorrect.  XPathNavigator is different than XmlDocument in that it is optimized for XSLT processing and the XPath data model, but it is similar in that the entire document is read into memory.  XPathNavigator appears to use a cursor-base model for traversing the document while XmlDocument uses a tree-base model.<br /><br />The rule of thumb I have come up with is this:  Read-only, forward-only XML parsing API tend to read from a stream and do not store the entire document in memory.  Random access XML parsing API, which typically use a tree-base model or cursor-base model, will traverse in-memory the XML document which means this entire document is stored in memory.<br /><br /><br /></p>
-
-
-    <p><a href="/2004/06/09/which-xml-api/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on June 9, 2004
-     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
-    Tagged in .
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -334,6 +334,9 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2017/06/20/down-by-the-stream/" title="">
+</a></li>
+                
                 <li><a href="/2017/06/19/mark-twain-brother-lived-in-vermont/" title="Mark Twain's Brother Lived in Vermont">Mark Twain's Brother Lived in Vermont</a></li>
                 
                 <li><a href="/2017/06/18/and-jump/" title="">And jump! 
@@ -342,8 +345,6 @@
                 <li><a href="/2017/06/18/swimming-hole/" title="">Beating the heat at a local swimming...</a></li>
                 
                 <li><a href="/2017/06/15/crazy-hair-day/" title="">It’s crazy hair day at Stowe Elementary....</a></li>
-                
-                <li><a href="/2017/06/11/fire-fire-fire/" title="">I wonder if Micro.blog supports animated gifs....</a></li>
                 
                 </ul>                
             </div>
