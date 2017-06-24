@@ -5,10 +5,20 @@
         <description>thecave | A Hideout for Programmers, Indie Devs, Solopreneurs - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2017-06-20T13:38:47+00:00</lastBuildDate>
-        <pubDate>2017-06-20T13:38:47+00:00</pubDate>
+        <lastBuildDate>2017-06-24T00:47:00+00:00</lastBuildDate>
+        <pubDate>2017-06-24T00:47:00+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title></title>
+                <description>&lt;p&gt;Let’s go Lake Monsters! &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-06-23-20-43-qHFu07jcKsXgKjW3avnk.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2017/06/23/lets-go-lake-monsters/</link>
+                <guid>http://www.thecave.com/2017/06/23/lets-go-lake-monsters</guid>
+                <pubDate>2017-06-24T00:45:26+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -266,16 +276,6 @@
                 <link>http://www.thecave.com/2017/04/21/how-i-post-to-my-jekyll-site-using-my-iphone/</link>
                 <guid>http://www.thecave.com/2017/04/21/how-i-post-to-my-jekyll-site-using-my-iphone</guid>
                 <pubDate>2017-04-21T12:53:10+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;My week of temporary bachelorhood ends in an hour. The wife and kid will be home soon.  Guess I need to finish my beer and head home from the bar.&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2017/04/20/temporary-bachelorhood-ending/</link>
-                <guid>http://www.thecave.com/2017/04/20/temporary-bachelorhood-ending</guid>
-                <pubDate>2017-04-20T23:03:16+00:00</pubDate>
         </item>
 
 
