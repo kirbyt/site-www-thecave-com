@@ -5,10 +5,20 @@
         <description>thecave | A Hideout for Programmers, Indie Devs, Solopreneurs - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2017-06-24T20:39:32+00:00</lastBuildDate>
-        <pubDate>2017-06-24T20:39:32+00:00</pubDate>
+        <lastBuildDate>2017-06-25T02:35:07+00:00</lastBuildDate>
+        <pubDate>2017-06-25T02:35:07+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title></title>
+                <description>&lt;p&gt;Mmm…oh so good. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-06-24-22-31-OQYsnZUehRyFCWtYc157.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2017/06/24/mmm-good/</link>
+                <guid>http://www.thecave.com/2017/06/24/mmm-good</guid>
+                <pubDate>2017-06-25T02:33:29+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -217,16 +227,6 @@
                 <link>http://www.thecave.com/2017/04/24/good-times-yesterday/</link>
                 <guid>http://www.thecave.com/2017/04/24/good-times-yesterday</guid>
                 <pubDate>2017-04-24T11:19:31+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;It’s a perfect evening in Stowe. &lt;img src=&quot;https://thecave.social/media/itKMZLMPsuse1NVxMHg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2017/04/23/a-perfect-evening-in-stowe/</link>
-                <guid>http://www.thecave.com/2017/04/23/a-perfect-evening-in-stowe</guid>
-                <pubDate>2017-04-24T01:06:49+00:00</pubDate>
         </item>
 
 
