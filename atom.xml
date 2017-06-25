@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-06-25T02:35:07+00:00</updated>
+  <updated>2017-06-25T03:02:28+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/06/24/ready-for-snow/"/>
+    <published>2017-06-25T03:00:53+00:00</published>
+    <updated>2017-06-25T03:00:53+00:00</updated>
+    <id>http://www.thecave.com/2017/06/24/ready-for-snow</id>
+    <content type="html"><![CDATA[<p>I know summer just started but…I’m ready for snow. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-06-24-22-58-6jT48qsl2EEkgL1ggiEv.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -237,17 +248,6 @@
     <updated>2017-04-25T14:00:28+00:00</updated>
     <id>http://www.thecave.com/2017/04/25/congrats-to-manton-on-the-launch-of-micro-blog</id>
     <content type="html"><![CDATA[<p>Congrats to <a href="http://micro.blog/manton">@manton</a> on the launch of <a href="http://micro.blog">micro.blog</a>!!</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/04/24/good-times-yesterday/"/>
-    <published>2017-04-24T11:19:31+00:00</published>
-    <updated>2017-04-24T11:19:31+00:00</updated>
-    <id>http://www.thecave.com/2017/04/24/good-times-yesterday</id>
-    <content type="html"><![CDATA[<p>Good times yesterday, which was the last day of the season for lift service at Stowe Mountain Resort. <img src="https://thecave.social/media/DS1teOt1MLWVhyNhRYM" alt="" /> <img src="https://thecave.social/media/1QkMTHIe3-pMHZDRdKA" alt="" /></p>
 
 ]]></content>
   </entry>
