@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-06-25T03:02:28+00:00</updated>
+  <updated>2017-07-01T14:07:02+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/07/01/first-all-star-game/"/>
+    <published>2017-07-01T14:05:32+00:00</published>
+    <updated>2017-07-01T14:05:32+00:00</updated>
+    <id>http://www.thecave.com/2017/07/01/first-all-star-game</id>
+    <content type="html"><![CDATA[<p>Rowan is stoked to be in his first All Star game. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-07-01-10-03-uaKAi5jGN5pISSdcsvWe.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -238,17 +249,6 @@
     <updated>2017-04-25T16:24:39+00:00</updated>
     <id>http://www.thecave.com/2017/04/25/dear-mr-president</id>
     <content type="html"><![CDATA[<p>I share the same love for winter and snow as these kids. Thanks, POW, for making the touching video. <a href="https://vimeo.com/214243023">https://vimeo.com/214243023</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/04/25/congrats-to-manton-on-the-launch-of-micro-blog/"/>
-    <published>2017-04-25T14:00:28+00:00</published>
-    <updated>2017-04-25T14:00:28+00:00</updated>
-    <id>http://www.thecave.com/2017/04/25/congrats-to-manton-on-the-launch-of-micro-blog</id>
-    <content type="html"><![CDATA[<p>Congrats to <a href="http://micro.blog/manton">@manton</a> on the launch of <a href="http://micro.blog">micro.blog</a>!!</p>
-
 ]]></content>
   </entry>
   
