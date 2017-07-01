@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-07-01T14:07:02+00:00</updated>
+  <updated>2017-07-01T19:26:34+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/07/01/first-pga-jr-league/"/>
+    <published>2017-07-01T19:25:09+00:00</published>
+    <updated>2017-07-01T19:25:09+00:00</updated>
+    <id>http://www.thecave.com/2017/07/01/first-pga-jr-league</id>
+    <content type="html"><![CDATA[<p>From All Star baseball to PGA Junior League. Busy Saturday in the rain. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-07-01-15-22-XzV8IBBbJna6eBQWcVfz.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -239,16 +250,6 @@
     <id>http://www.thecave.com/2017/04/28/its-a-good-day-to-celebrate</id>
     <content type="html"><![CDATA[<p>It’s a good day to celebrate. <img src="https://thecave-social.s3.amazonaws.com/media_attachments/files/000/000/496/original/947df333040ae64f.jpeg?1493409447" alt="" /></p>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/04/25/dear-mr-president/"/>
-    <published>2017-04-25T16:24:39+00:00</published>
-    <updated>2017-04-25T16:24:39+00:00</updated>
-    <id>http://www.thecave.com/2017/04/25/dear-mr-president</id>
-    <content type="html"><![CDATA[<p>I share the same love for winter and snow as these kids. Thanks, POW, for making the touching video. <a href="https://vimeo.com/214243023">https://vimeo.com/214243023</a></p>
 ]]></content>
   </entry>
   
