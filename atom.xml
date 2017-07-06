@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-07-01T21:28:38+00:00</updated>
+  <updated>2017-07-06T00:51:39+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/07/05/stowe-vermont/"/>
+    <published>2017-07-06T00:50:13+00:00</published>
+    <updated>2017-07-06T00:50:13+00:00</updated>
+    <id>http://www.thecave.com/2017/07/05/stowe-vermont</id>
+    <content type="html"><![CDATA[<p><img src="https://thecave-com.s3.amazonaws.com/Photo-2017-07-05-20-48-4MjcwomcT97FK922yHpm.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -238,17 +249,6 @@
 <p>To my clients and customers, thank you, thank you, thank you! Without you, the last 14 years would not have happened, and I will be forever grateful to you for your support and trust in me.</p>
 
 <p>To my wife, Melanie, and my son, Rowan, thank you for joining me on the 14 year roller coaster ride. It has been quiet the thrill ride, for sure. And don’t worry, we still have plenty more thrilling times ahead of us.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/04/30/boarding-a-plane-using-my-apple-watch/"/>
-    <published>2017-04-30T09:37:32+00:00</published>
-    <updated>2017-04-30T09:37:32+00:00</updated>
-    <id>http://www.thecave.com/2017/04/30/boarding-a-plane-using-my-apple-watch</id>
-    <content type="html"><![CDATA[<p>I love being able to board a plane using my Apple Watch.</p>
 
 ]]></content>
   </entry>
