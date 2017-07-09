@@ -5,9 +5,28 @@
     <description>The blog site for Kirby Turner, an independent software developer, where he shares tips and advice for programmers, indie devs, and solopreneurs.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 09 Jul 2017 00:50:36 +0000</pubDate>
-    <lastBuildDate>Sun, 09 Jul 2017 00:50:36 +0000</lastBuildDate>
+    <pubDate>Sun, 09 Jul 2017 02:11:21 +0000</pubDate>
+    <lastBuildDate>Sun, 09 Jul 2017 02:11:21 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>Hot Air Balloon Landing</title>
+        <description>&lt;p&gt;A hot air balloon landed in our back yard earlier today.&lt;/p&gt;
+
+&lt;div class=&quot;vimeo-video&quot;&gt;&lt;figure&gt;&lt;iframe src=&quot;//player.vimeo.com/video/224799855&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/figure&gt;&lt;/div&gt;
+</description>
+        <pubDate>Sun, 09 Jul 2017 02:07:28 +0000</pubDate>
+        <link>http://www.thecave.com/2017/07/08/hot-air-balloon-landing/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2017/07/08/hot-air-balloon-landing/</guid>
+        
+        <category>stowe</category>
+        
+        <category>video</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title></title>
@@ -191,26 +210,6 @@
         <guid isPermaLink="true">http://www.thecave.com/2017/06/23/lets-go-lake-monsters/</guid>
         
         <category>baseball</category>
-        
-        <category>micropost</category>
-        
-        <category>photo</category>
-        
-        <category>vermont</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/output-1-WJaOeNkliunoNKkkusip.GIF&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 20 Jun 2017 13:37:01 +0000</pubDate>
-        <link>http://www.thecave.com/2017/06/20/down-by-the-stream/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2017/06/20/down-by-the-stream/</guid>
         
         <category>micropost</category>
         

@@ -5,10 +5,21 @@
         <description>thecave | A Hideout for Programmers, Indie Devs, Solopreneurs - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2017-07-09T00:50:36+00:00</lastBuildDate>
-        <pubDate>2017-07-09T00:50:36+00:00</pubDate>
+        <lastBuildDate>2017-07-09T02:11:21+00:00</lastBuildDate>
+        <pubDate>2017-07-09T02:11:21+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Hot Air Balloon Landing</title>
+                <description>&lt;p&gt;A hot air balloon landed in our back yard earlier today.&lt;/p&gt;
+
+&lt;div class=&quot;vimeo-video&quot;&gt;&lt;figure&gt;&lt;iframe src=&quot;//player.vimeo.com/video/224799855&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/figure&gt;&lt;/div&gt;
+</description>
+                <link>http://www.thecave.com/2017/07/08/hot-air-balloon-landing/</link>
+                <guid>http://www.thecave.com/2017/07/08/hot-air-balloon-landing</guid>
+                <pubDate>2017-07-09T02:07:28+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -198,24 +209,6 @@
                 <link>http://www.thecave.com/2017/05/12/crazy-fun-exciting-two-weeks/</link>
                 <guid>http://www.thecave.com/2017/05/12/crazy-fun-exciting-two-weeks</guid>
                 <pubDate>2017-05-13T01:12:55+00:00</pubDate>
-        </item>
-
-        <item>
-                <title>Advice for new iOS freelancers</title>
-                <description>&lt;p&gt;A friend of mine told me this morning she quit her job and is now freelancing as an iOS developer. She asked if I had any advice to share. The first thoughts to pop into my mind were:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Read all you can from &lt;a href=&quot;https://doubleyourfreelancing.com&quot;&gt;Brennan Dunn&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Read all you can from &lt;a href=&quot;https://expensiveproblem.com&quot;&gt;Jonathan Stark&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Read all you can from &lt;a href=&quot;http://ryanwaggoner.com&quot;&gt;Ryan Waggoner&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Subscribe to Matt Inglot’s &lt;a href=&quot;https://freelancetransformation.com&quot;&gt;Freelance Transformation podcast&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Also, I talked about my workflow for finding new freelance work at last year’s &lt;a href=&quot;https://360idev.com&quot;&gt;360idev&lt;/a&gt; conference. Unfortunately, the video recording got corrupted, so you can’t watch the talk. But I do have a &lt;a href=&quot;https://www.dropbox.com/s/wo4r3jnjnilguzu/freelancers-guide-to-finding-work.pdf?dl=0&quot;&gt;PDF&lt;/a&gt; of slide deck that includes a transcript of the talk that some might find helpful.&lt;/p&gt;
-</description>
-                <link>http://www.thecave.com/2017/05/02/advice-for-new-ios-freelancers/</link>
-                <guid>http://www.thecave.com/2017/05/02/advice-for-new-ios-freelancers</guid>
-                <pubDate>2017-05-02T12:11:53+00:00</pubDate>
         </item>
 
 
