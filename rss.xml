@@ -5,16 +5,23 @@
         <description>thecave | A Hideout for Programmers, Indie Devs, Solopreneurs - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2017-07-09T02:11:21+00:00</lastBuildDate>
-        <pubDate>2017-07-09T02:11:21+00:00</pubDate>
+        <lastBuildDate>2017-07-09T02:41:47+00:00</lastBuildDate>
+        <pubDate>2017-07-09T02:41:47+00:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
-                <title>Hot Air Balloon Landing</title>
-                <description>&lt;p&gt;A hot air balloon landed in our back yard earlier today.&lt;/p&gt;
+                <title>More pictures from the hot air balloon landing</title>
+                <description>&lt;p&gt;&lt;a href=&quot;https://www.flickr.com/photos/kirbyturner/shares/2n9vRn&quot;&gt;More pictures&lt;/a&gt; from the hot air balloon landing today.&lt;/p&gt;
+</description>
+                <link>http://www.thecave.com/2017/07/08/more-pictures-from-the-hot-air-balloon-landing/</link>
+                <guid>http://www.thecave.com/2017/07/08/more-pictures-from-the-hot-air-balloon-landing</guid>
+                <pubDate>2017-07-09T02:38:02+00:00</pubDate>
+        </item>
 
-&lt;div class=&quot;vimeo-video&quot;&gt;&lt;figure&gt;&lt;iframe src=&quot;//player.vimeo.com/video/224799855&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/figure&gt;&lt;/div&gt;
+        <item>
+                <title>Hot Air Balloon Landing</title>
+                <description>&lt;p&gt;A hot air balloon landed in our back yard earlier today. &amp;lt;div class=&quot;vimeo-video&quot;&amp;gt;&lt;figure&gt;&amp;lt;iframe src=&quot;//player.vimeo.com/video/224799855&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/figure&gt;&amp;lt;/div&amp;gt;&lt;/p&gt;
 </description>
                 <link>http://www.thecave.com/2017/07/08/hot-air-balloon-landing/</link>
                 <guid>http://www.thecave.com/2017/07/08/hot-air-balloon-landing</guid>
@@ -199,16 +206,6 @@
                 <link>http://www.thecave.com/2017/05/12/photo-upload-test/</link>
                 <guid>http://www.thecave.com/2017/05/12/photo-upload-test</guid>
                 <pubDate>2017-05-13T01:46:12+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;The last two weeks have been crazy, exciting, nonstop fun. I’m ready for more.&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2017/05/12/crazy-fun-exciting-two-weeks/</link>
-                <guid>http://www.thecave.com/2017/05/12/crazy-fun-exciting-two-weeks</guid>
-                <pubDate>2017-05-13T01:12:55+00:00</pubDate>
         </item>
 
 

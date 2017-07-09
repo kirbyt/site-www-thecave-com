@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | A Hideout for Programmers, Indie Devs, Solopreneurs]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-07-09T02:11:21+00:00</updated>
+  <updated>2017-07-09T02:41:47+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -14,14 +14,22 @@
   
   
   <entry>
+    <title type="html"><![CDATA[More pictures from the hot air balloon landing]]></title>
+    <link href="http://www.thecave.com/2017/07/08/more-pictures-from-the-hot-air-balloon-landing/"/>
+    <published>2017-07-09T02:38:02+00:00</published>
+    <updated>2017-07-09T02:38:02+00:00</updated>
+    <id>http://www.thecave.com/2017/07/08/more-pictures-from-the-hot-air-balloon-landing</id>
+    <content type="html"><![CDATA[<p><a href="https://www.flickr.com/photos/kirbyturner/shares/2n9vRn">More pictures</a> from the hot air balloon landing today.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Hot Air Balloon Landing]]></title>
     <link href="http://www.thecave.com/2017/07/08/hot-air-balloon-landing/"/>
     <published>2017-07-09T02:07:28+00:00</published>
     <updated>2017-07-09T02:07:28+00:00</updated>
     <id>http://www.thecave.com/2017/07/08/hot-air-balloon-landing</id>
-    <content type="html"><![CDATA[<p>A hot air balloon landed in our back yard earlier today.</p>
-
-<div class="vimeo-video"><figure><iframe src="//player.vimeo.com/video/224799855" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></figure></div>
+    <content type="html"><![CDATA[<p>A hot air balloon landed in our back yard earlier today. &lt;div class="vimeo-video"&gt;<figure>&lt;iframe src="//player.vimeo.com/video/224799855" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;</figure>&lt;/div&gt;</p>
 ]]></content>
   </entry>
   
@@ -219,17 +227,6 @@
     <updated>2017-05-13T01:46:12+00:00</updated>
     <id>http://www.thecave.com/2017/05/12/photo-upload-test</id>
     <content type="html"><![CDATA[<p>Testing photo upload. Nothing to see here except this gorgeous view from yesterday. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-05-12-21-43.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/05/12/crazy-fun-exciting-two-weeks/"/>
-    <published>2017-05-13T01:12:55+00:00</published>
-    <updated>2017-05-13T01:12:55+00:00</updated>
-    <id>http://www.thecave.com/2017/05/12/crazy-fun-exciting-two-weeks</id>
-    <content type="html"><![CDATA[<p>The last two weeks have been crazy, exciting, nonstop fun. I’m ready for more.</p>
 
 ]]></content>
   </entry>
