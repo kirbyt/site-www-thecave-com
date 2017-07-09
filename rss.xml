@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-        <title>thecave | A Hideout for Programmers, Indie Devs, Solopreneurs</title>
-        <description>thecave | A Hideout for Programmers, Indie Devs, Solopreneurs - </description>
+        <title>thecave | Blog site for Kirby Turner</title>
+        <description>thecave | Blog site for Kirby Turner - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2017-07-09T02:41:47+00:00</lastBuildDate>
-        <pubDate>2017-07-09T02:41:47+00:00</pubDate>
+        <lastBuildDate>2017-07-09T02:49:20+00:00</lastBuildDate>
+        <pubDate>2017-07-09T02:49:20+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -21,7 +21,9 @@
 
         <item>
                 <title>Hot Air Balloon Landing</title>
-                <description>&lt;p&gt;A hot air balloon landed in our back yard earlier today. &amp;lt;div class=&quot;vimeo-video&quot;&amp;gt;&lt;figure&gt;&amp;lt;iframe src=&quot;//player.vimeo.com/video/224799855&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/figure&gt;&amp;lt;/div&amp;gt;&lt;/p&gt;
+                <description>&lt;div class=&quot;vimeo-video&quot;&gt;&lt;figure&gt;&lt;iframe src=&quot;//player.vimeo.com/video/224799855&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/figure&gt;&lt;/div&gt;
+
+&lt;p&gt;A hot air balloon landed in our back yard earlier today.&lt;/p&gt;
 </description>
                 <link>http://www.thecave.com/2017/07/08/hot-air-balloon-landing/</link>
                 <guid>http://www.thecave.com/2017/07/08/hot-air-balloon-landing</guid>
