@@ -1,9 +1,9 @@
 showGrid: false
 
 url: http://www.thecave.com
-title: "thecave | A Hideout for Programmers, Indie Devs, Solopreneurs"
+title: "thecave | Blog site for Kirby Turner"
 author: Kirby Turner
-description: "The blog site for Kirby Turner, an independent software developer, where he shares tips and advice for programmers, indie devs, and solopreneurs."
+description: "The blog site for Kirby Turner, software engineer, writer, author, and snowboard bum."
 baseurl: ""
 image: "img/bg-01.jpg"
 google_tracking_id: "UA-167605-3"
