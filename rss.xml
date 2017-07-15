@@ -5,10 +5,20 @@
         <description>thecave | Blog site for Kirby Turner - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2017-07-09T02:49:20+00:00</lastBuildDate>
-        <pubDate>2017-07-09T02:49:20+00:00</pubDate>
+        <lastBuildDate>2017-07-15T12:28:12+00:00</lastBuildDate>
+        <pubDate>2017-07-15T12:28:12+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title></title>
+                <description>&lt;p&gt;Achievement unlocked. Also my first day walking with my new GORUCK Bullet and 20 pound weight plate. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-07-15-08-16-IQEaXxHM9LeCeFxmOc0C.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2017/07/15/national-park-challenge/</link>
+                <guid>http://www.thecave.com/2017/07/15/national-park-challenge</guid>
+                <pubDate>2017-07-15T12:26:41+00:00</pubDate>
+        </item>
 
         <item>
                 <title>More pictures from the hot air balloon landing</title>
@@ -198,16 +208,6 @@
                 <link>http://www.thecave.com/2017/05/12/dropshare-app/</link>
                 <guid>http://www.thecave.com/2017/05/12/dropshare-app</guid>
                 <pubDate>2017-05-13T01:56:52+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;Testing photo upload. Nothing to see here except this gorgeous view from yesterday. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-05-12-21-43.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2017/05/12/photo-upload-test/</link>
-                <guid>http://www.thecave.com/2017/05/12/photo-upload-test</guid>
-                <pubDate>2017-05-13T01:46:12+00:00</pubDate>
         </item>
 
 

@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Blog site for Kirby Turner]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-07-09T02:49:20+00:00</updated>
+  <updated>2017-07-15T12:28:12+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/07/15/national-park-challenge/"/>
+    <published>2017-07-15T12:26:41+00:00</published>
+    <updated>2017-07-15T12:26:41+00:00</updated>
+    <id>http://www.thecave.com/2017/07/15/national-park-challenge</id>
+    <content type="html"><![CDATA[<p>Achievement unlocked. Also my first day walking with my new GORUCK Bullet and 20 pound weight plate. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-07-15-08-16-IQEaXxHM9LeCeFxmOc0C.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[More pictures from the hot air balloon landing]]></title>
@@ -218,17 +229,6 @@
     <updated>2017-05-13T01:56:52+00:00</updated>
     <id>http://www.thecave.com/2017/05/12/dropshare-app</id>
     <content type="html"><![CDATA[<p>Sweet! My photo upload worked. I’m using <a href="https://appsto.re/us/rAGK3.i">Dropshare</a> to upload photos to Amazon S3, then making a micropost on <a href="https://www.thecave.com">thecave.com</a> that gets picked up on <a href="http://micro.blog/kirbyt">micro.blog</a>.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/05/12/photo-upload-test/"/>
-    <published>2017-05-13T01:46:12+00:00</published>
-    <updated>2017-05-13T01:46:12+00:00</updated>
-    <id>http://www.thecave.com/2017/05/12/photo-upload-test</id>
-    <content type="html"><![CDATA[<p>Testing photo upload. Nothing to see here except this gorgeous view from yesterday. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-05-12-21-43.jpg" alt="" /></p>
 
 ]]></content>
   </entry>
