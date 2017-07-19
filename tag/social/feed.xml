@@ -4,13 +4,32 @@
   <title><![CDATA[Tag: social | thecave | Blog site for Kirby Turner]]></title>
   <link href="http://www.thecave.com/tag/social/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-07-15T12:28:12+00:00</updated>
+  <updated>2017-07-19T00:38:16+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    
+    <title type="html"><![CDATA[Shutting Down thecave.social]]></title>
+    
+    <link href="http://www.thecave.com/2017/07/18/shutting-down-thecavesocial/"/>
+    <updated>2017-07-19T00:17:13+00:00</updated>
+    <id>http://www.thecave.com/2017/07/18/shutting-down-thecavesocial</id>
+    <tag>social</tag>
+    <description><![CDATA[<p>I first heard about <a href="https://github.com/tootsuite/mastodon">Mastodon</a> back in April. I liked it so much, I decided to host my own Mastodon instance. Thus, <a href="https://www.thecave.com/2017/04/12/mastodon-and-thecavesocial/">thecave.social</a> was born.</p>
+
+]]></description>
+    <content type="html"><![CDATA[<p>I first heard about <a href="https://github.com/tootsuite/mastodon">Mastodon</a> back in April. I liked it so much, I decided to host my own Mastodon instance. Thus, <a href="https://www.thecave.com/2017/04/12/mastodon-and-thecavesocial/">thecave.social</a> was born.</p>
+
+<p>I had a lot of fun playing with my own Mastodon instance, and I learned a lot. I even thought I might open up it up to other users. But alas, I haven’t had a lot of spare time since <a href="https://www.thecave.com/2017/05/01/im-trying-something-different/">May 1</a>. I don’t even remember the last time I checked in on thecave.social. That’s why I decided to shut it down today.</p>
+
+<p>If you are looking for me on a social network, you can find me at <a href="https://micro.blog/kirbyt">Micro.blog</a>. Of course, you can find those same <a href="https://www.thecave.com/tag/micropost/">microposts</a> right here at <a href="https://www.thecave.com/">thecave.com</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     
@@ -142,36 +161,6 @@
     <content type="html"><![CDATA[<p>Earlier tonight I setup a new Twitter account that tweets a link each time I publish a new post here at thecave.com. The new Twitter account is <a href="https://twitter.com/thecave_com/">@thecave_com</a>. Of course now that this is setup, I’m wondering…Do I really need a separate Twitter account, or should I just tweet the links from my <a href="https://twitter.com/kiryt/">@kirbyt</a> account?</p>
 
 <p>I guess I will keep the two separate accounts, and I’ll retweet via @kirbyt any links that I feel might be of greater interest, which is basically what I’ve always done. So if you want to know each time a new post is published, follow @thecave_com. Otherwise just keep doing what you’ve been doing.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    
-    <title type="html"><![CDATA[thecave On Twitter]]></title>
-    
-    <link href="http://www.thecave.com/2015/06/14/thecave-on-twitter/"/>
-    <updated>2015-06-15T02:31:52+00:00</updated>
-    <id>http://www.thecave.com/2015/06/14/thecave-on-twitter</id>
-    <tag>social</tag>
-    <description><![CDATA[<p>My friend Uli <a href="https://twitter.com/uliwitness/status/600656348272001024">asked</a>:</p>
-
-]]></description>
-    <content type="html"><![CDATA[<p>My friend Uli <a href="https://twitter.com/uliwitness/status/600656348272001024">asked</a>:</p>
-
-<blockquote>
-  <p>Do you have a Twitter feed that lets me know when you post something new?</p>
-</blockquote>
-
-<p>It only took me a month, but I finally have a Twitter account for thecave. Follow <a href="https://twitter.com/thecave_com/">@thecave_com</a> on Twitter if you want to know when I post something new to this blog. And as always you can subscribe to the <a href="http://www.thecave.com/feed.xml">RSS feed</a> if you prefer feed readers over Twitter.</p>
-
-<h2 id="the-technical-how-to">The Technical How To</h2>
-
-<p>There are a few different ways to automate the process of posting a link on Twitter when you publish a new blog post. <a href="http://twitterfeed.com">Twitter Feed</a> is one service I tried. It is fast and easy to setup, and it includes options such as including the title, description, or title and description in the tweet. Even though Twitter Feed is a cinch to setup, I decided to go with <a href="https://ifttt.com/">If This Then That (IFTTT)</a> instead.</p>
-
-<p>Using IFTTT create a new recipe. Select <em>Feed</em> for the trigger and <em>Twitter</em> for the action. Be sure to connect your Twitter account to the IFTTT if you have not already done so. And that’s it. Next time you make a blog post, IFTTT will update your Twitter account with the title and link to the post.</p>
-
-<p>And thanks <a href="https://twitter.com/uliwitness">@uliwitness</a> for suggesting I do this.</p>
 
 ]]></content>
   </entry>

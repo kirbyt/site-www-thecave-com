@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Blog site for Kirby Turner]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-07-15T12:28:12+00:00</updated>
+  <updated>2017-07-19T00:38:16+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,20 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[Shutting Down thecave.social]]></title>
+    <link href="http://www.thecave.com/2017/07/18/shutting-down-thecavesocial/"/>
+    <published>2017-07-19T00:17:13+00:00</published>
+    <updated>2017-07-19T00:17:13+00:00</updated>
+    <id>http://www.thecave.com/2017/07/18/shutting-down-thecavesocial</id>
+    <content type="html"><![CDATA[<p>I first heard about <a href="https://github.com/tootsuite/mastodon">Mastodon</a> back in April. I liked it so much, I decided to host my own Mastodon instance. Thus, <a href="https://www.thecave.com/2017/04/12/mastodon-and-thecavesocial/">thecave.social</a> was born.</p>
+
+<p>I had a lot of fun playing with my own Mastodon instance, and I learned a lot. I even thought I might open up it up to other users. But alas, I haven’t had a lot of spare time since <a href="https://www.thecave.com/2017/05/01/im-trying-something-different/">May 1</a>. I don’t even remember the last time I checked in on thecave.social. That’s why I decided to shut it down today.</p>
+
+<p>If you are looking for me on a social network, you can find me at <a href="https://micro.blog/kirbyt">Micro.blog</a>. Of course, you can find those same <a href="https://www.thecave.com/tag/micropost/">microposts</a> right here at <a href="https://www.thecave.com/">thecave.com</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -218,17 +232,6 @@
     <updated>2017-05-20T01:22:28+00:00</updated>
     <id>http://www.thecave.com/2017/05/19/long-day</id>
     <content type="html"><![CDATA[<p>You know it’s a long day when you’ve been idled for only 1 hour over the last 19 hours. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-05-19-21-19.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/05/12/dropshare-app/"/>
-    <published>2017-05-13T01:56:52+00:00</published>
-    <updated>2017-05-13T01:56:52+00:00</updated>
-    <id>http://www.thecave.com/2017/05/12/dropshare-app</id>
-    <content type="html"><![CDATA[<p>Sweet! My photo upload worked. I’m using <a href="https://appsto.re/us/rAGK3.i">Dropshare</a> to upload photos to Amazon S3, then making a micropost on <a href="https://www.thecave.com">thecave.com</a> that gets picked up on <a href="http://micro.blog/kirbyt">micro.blog</a>.</p>
 
 ]]></content>
   </entry>

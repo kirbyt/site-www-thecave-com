@@ -4,13 +4,29 @@
   <title><![CDATA[Category: personal | thecave | Blog site for Kirby Turner]]></title>
   <link href="http://www.thecave.com/category/personal/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-07-15T12:28:12+00:00</updated>
+  <updated>2017-07-19T00:38:16+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Shutting Down thecave.social]]></title>
+    <link href="http://www.thecave.com/2017/07/18/shutting-down-thecavesocial/"/>
+    <updated>2017-07-19T00:17:13+00:00</updated>
+    <id>http://www.thecave.com/2017/07/18/shutting-down-thecavesocial</id>
+    <description><![CDATA[<p>I first heard about <a href="https://github.com/tootsuite/mastodon">Mastodon</a> back in April. I liked it so much, I decided to host my own Mastodon instance. Thus, <a href="https://www.thecave.com/2017/04/12/mastodon-and-thecavesocial/">thecave.social</a> was born.</p>
+
+]]></description>
+    <content type="html"><![CDATA[<p>I first heard about <a href="https://github.com/tootsuite/mastodon">Mastodon</a> back in April. I liked it so much, I decided to host my own Mastodon instance. Thus, <a href="https://www.thecave.com/2017/04/12/mastodon-and-thecavesocial/">thecave.social</a> was born.</p>
+
+<p>I had a lot of fun playing with my own Mastodon instance, and I learned a lot. I even thought I might open up it up to other users. But alas, I haven’t had a lot of spare time since <a href="https://www.thecave.com/2017/05/01/im-trying-something-different/">May 1</a>. I don’t even remember the last time I checked in on thecave.social. That’s why I decided to shut it down today.</p>
+
+<p>If you are looking for me on a social network, you can find me at <a href="https://micro.blog/kirbyt">Micro.blog</a>. Of course, you can find those same <a href="https://www.thecave.com/tag/micropost/">microposts</a> right here at <a href="https://www.thecave.com/">thecave.com</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -57,18 +73,6 @@
     <description><![CDATA[<p>So this just happened. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-07-08-20-45-FiIh3yTfmG78FqogSSFa.jpg" alt="" /></p>
 ]]></description>
     <content type="html"><![CDATA[<p>So this just happened. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-07-08-20-45-FiIh3yTfmG78FqogSSFa.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/07/05/stowe-vermont/"/>
-    <updated>2017-07-06T00:50:13+00:00</updated>
-    <id>http://www.thecave.com/2017/07/05/stowe-vermont</id>
-    <description><![CDATA[<p><img src="https://thecave-com.s3.amazonaws.com/Photo-2017-07-05-20-48-4MjcwomcT97FK922yHpm.jpg" alt="" /></p>
-]]></description>
-    <content type="html"><![CDATA[<p><img src="https://thecave-com.s3.amazonaws.com/Photo-2017-07-05-20-48-4MjcwomcT97FK922yHpm.jpg" alt="" /></p>
 
 ]]></content>
   </entry>

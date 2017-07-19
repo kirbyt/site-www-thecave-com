@@ -5,10 +5,23 @@
         <description>thecave | Blog site for Kirby Turner - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2017-07-15T12:28:12+00:00</lastBuildDate>
-        <pubDate>2017-07-15T12:28:12+00:00</pubDate>
+        <lastBuildDate>2017-07-19T00:38:16+00:00</lastBuildDate>
+        <pubDate>2017-07-19T00:38:16+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Shutting Down thecave.social</title>
+                <description>&lt;p&gt;I first heard about &lt;a href=&quot;https://github.com/tootsuite/mastodon&quot;&gt;Mastodon&lt;/a&gt; back in April. I liked it so much, I decided to host my own Mastodon instance. Thus, &lt;a href=&quot;https://www.thecave.com/2017/04/12/mastodon-and-thecavesocial/&quot;&gt;thecave.social&lt;/a&gt; was born.&lt;/p&gt;
+
+&lt;p&gt;I had a lot of fun playing with my own Mastodon instance, and I learned a lot. I even thought I might open up it up to other users. But alas, I haven’t had a lot of spare time since &lt;a href=&quot;https://www.thecave.com/2017/05/01/im-trying-something-different/&quot;&gt;May 1&lt;/a&gt;. I don’t even remember the last time I checked in on thecave.social. That’s why I decided to shut it down today.&lt;/p&gt;
+
+&lt;p&gt;If you are looking for me on a social network, you can find me at &lt;a href=&quot;https://micro.blog/kirbyt&quot;&gt;Micro.blog&lt;/a&gt;. Of course, you can find those same &lt;a href=&quot;https://www.thecave.com/tag/micropost/&quot;&gt;microposts&lt;/a&gt; right here at &lt;a href=&quot;https://www.thecave.com/&quot;&gt;thecave.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+                <link>http://www.thecave.com/2017/07/18/shutting-down-thecavesocial/</link>
+                <guid>http://www.thecave.com/2017/07/18/shutting-down-thecavesocial</guid>
+                <pubDate>2017-07-19T00:17:13+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -198,16 +211,6 @@
                 <link>http://www.thecave.com/2017/05/19/long-day/</link>
                 <guid>http://www.thecave.com/2017/05/19/long-day</guid>
                 <pubDate>2017-05-20T01:22:28+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;Sweet! My photo upload worked. I’m using &lt;a href=&quot;https://appsto.re/us/rAGK3.i&quot;&gt;Dropshare&lt;/a&gt; to upload photos to Amazon S3, then making a micropost on &lt;a href=&quot;https://www.thecave.com&quot;&gt;thecave.com&lt;/a&gt; that gets picked up on &lt;a href=&quot;http://micro.blog/kirbyt&quot;&gt;micro.blog&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2017/05/12/dropshare-app/</link>
-                <guid>http://www.thecave.com/2017/05/12/dropshare-app</guid>
-                <pubDate>2017-05-13T01:56:52+00:00</pubDate>
         </item>
 
 
