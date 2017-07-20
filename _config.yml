@@ -1,9 +1,9 @@
 showGrid: false
 
 url: http://www.thecave.com
-title: "thecave | Blog site for Kirby Turner"
+title: "thecave | Kirby Turner's Blog"
 author: Kirby Turner
-description: "The blog site for Kirby Turner, software engineer, writer, author, and snowboard bum."
+description: "The personal blog of Kirby Turner, a software engineer, author, and snowboard bum."
 baseurl: ""
 image: "img/bg-01.jpg"
 google_tracking_id: "UA-167605-3"
