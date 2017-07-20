@@ -15,9 +15,8 @@ image: "img/bg-02.jpg"
 
     <!--- Post Starts -->
     <div class="post-preview">
-        
         <h2 class="post-title">
-            <a href="{{ post.url | prepend: site.baseurl }}">{% unless post.title == '' or post.title == null %}{{ post.title }}{% else %}{{ post.date | date: "%B %-d, %Y at %r" }}{% endunless %}</a>
+            <a href="{{ post.url | prepend: site.baseurl }}">{% unless post.title == '' or post.title == null %}{{ post.title }}{% else %}{% capture excerpt %}{{ post.excerpt | markdownify | strip_html | strip_newlines | truncatewords: 7 }}{% endcapture %}{% unless excerpt == '' or excerpt == null %}{{ excerpt }}{% else %}{{ post.date | date: "%B %-d, %Y at %r" }}{% endunless %}{% endunless %}</a>
         </h2>
         {% if post.subtitle %}
         <h3 class="post-subtitle">

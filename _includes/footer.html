@@ -6,7 +6,7 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 {% for post in site.posts limit: site.recent_posts %}
-                <li><a href="{{ post.url }}" title="{{ post.title }}">{% unless post.title == '' or post.title == null %}{{ post.title }}{% else %}{{ post.excerpt | markdownify | strip_html | truncatewords: 7 }}{% endunless %}</a></li>
+                <li><a href="{{ post.url }}" title="{{ post.title }}">{% unless post.title == '' or post.title == null %}{{ post.title }}{% else %}{% capture excerpt %}{{ post.excerpt | markdownify | strip_html | strip_newlines | truncatewords: 7 }}{% endcapture %}{% unless excerpt == '' or excerpt == null %}{{ excerpt }}{% else %}{{ post.date | date: "%B %-d, %Y at %r" }}{% endunless %}{% endunless %}</a></li>
                 {% endfor %}
                 </ul>                
             </div>
