@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-07-20T13:54:00+00:00</updated>
+  <updated>2017-07-26T22:52:29+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/07/26/a-favorite-feature-of-the-airpods/"/>
+    <published>2017-07-26T22:50:56+00:00</published>
+    <updated>2017-07-26T22:50:56+00:00</updated>
+    <id>http://www.thecave.com/2017/07/26/a-favorite-feature-of-the-airpods</id>
+    <content type="html"><![CDATA[<p>My AirPods arrived today, and I already have a favorite feature. I don’t have to hear the TV when my son is watching a show on Apple TV. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-07-26-18-45-q6nEkZ4rfUFlAw78Ej5C.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Shutting Down thecave.social]]></title>
@@ -221,17 +232,6 @@
     <updated>2017-06-12T01:14:14+00:00</updated>
     <id>http://www.thecave.com/2017/06/11/fire-fire-fire</id>
     <content type="html"><![CDATA[<p>I wonder if Micro.blog supports animated gifs. <img src="https://thecave-com.s3.amazonaws.com/output.GIF" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/05/19/long-day/"/>
-    <published>2017-05-20T01:22:28+00:00</published>
-    <updated>2017-05-20T01:22:28+00:00</updated>
-    <id>http://www.thecave.com/2017/05/19/long-day</id>
-    <content type="html"><![CDATA[<p>You know it’s a long day when you’ve been idled for only 1 hour over the last 19 hours. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-05-19-21-19.jpg" alt="" /></p>
 
 ]]></content>
   </entry>

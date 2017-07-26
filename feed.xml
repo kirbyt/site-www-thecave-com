@@ -5,9 +5,29 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 20 Jul 2017 13:54:00 +0000</pubDate>
-    <lastBuildDate>Thu, 20 Jul 2017 13:54:00 +0000</lastBuildDate>
+    <pubDate>Wed, 26 Jul 2017 22:52:29 +0000</pubDate>
+    <lastBuildDate>Wed, 26 Jul 2017 22:52:29 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;My AirPods arrived today, and I already have a favorite feature. I don’t have to hear the TV when my son is watching a show on Apple TV. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-07-26-18-45-q6nEkZ4rfUFlAw78Ej5C.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 26 Jul 2017 22:50:56 +0000</pubDate>
+        <link>http://www.thecave.com/2017/07/26/a-favorite-feature-of-the-airpods/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2017/07/26/a-favorite-feature-of-the-airpods/</guid>
+        
+        <category>airpods</category>
+        
+        <category>micropost</category>
+        
+        <category>photo</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title>Shutting Down thecave.social</title>
@@ -184,28 +204,6 @@
         <category>photo</category>
         
         <category>rowan</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;I know summer just started but…I’m ready for snow. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-06-24-22-58-6jT48qsl2EEkgL1ggiEv.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 25 Jun 2017 03:00:53 +0000</pubDate>
-        <link>http://www.thecave.com/2017/06/24/ready-for-snow/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2017/06/24/ready-for-snow/</guid>
-        
-        <category>micropost</category>
-        
-        <category>photo</category>
-        
-        <category>snowboard</category>
-        
-        <category>vermont</category>
         
         
         <category>personal</category>
