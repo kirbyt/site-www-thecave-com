@@ -5,9 +5,29 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 26 Jul 2017 22:52:29 +0000</pubDate>
-    <lastBuildDate>Wed, 26 Jul 2017 22:52:29 +0000</lastBuildDate>
+    <pubDate>Sat, 05 Aug 2017 21:46:38 +0000</pubDate>
+    <lastBuildDate>Sat, 05 Aug 2017 21:46:38 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;This beer is so good rainbows come out of the can. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-08-05-17-39-Mc0U61z5EkfempRO5yXH.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 05 Aug 2017 21:43:58 +0000</pubDate>
+        <link>http://www.thecave.com/2017/08/05/rainbow-beer/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2017/08/05/rainbow-beer/</guid>
+        
+        <category>beer</category>
+        
+        <category>micropost</category>
+        
+        <category>photo</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title></title>
@@ -176,28 +196,6 @@
         <guid isPermaLink="true">http://www.thecave.com/2017/07/01/first-pga-jr-league/</guid>
         
         <category>golf</category>
-        
-        <category>micropost</category>
-        
-        <category>photo</category>
-        
-        <category>rowan</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;Rowan is stoked to be in his first All Star game. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-07-01-10-03-uaKAi5jGN5pISSdcsvWe.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 01 Jul 2017 14:05:32 +0000</pubDate>
-        <link>http://www.thecave.com/2017/07/01/first-all-star-game/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2017/07/01/first-all-star-game/</guid>
-        
-        <category>baseball</category>
         
         <category>micropost</category>
         

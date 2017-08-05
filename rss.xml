@@ -5,10 +5,20 @@
         <description>thecave | Kirby Turner's Blog - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2017-07-26T22:52:29+00:00</lastBuildDate>
-        <pubDate>2017-07-26T22:52:29+00:00</pubDate>
+        <lastBuildDate>2017-08-05T21:46:38+00:00</lastBuildDate>
+        <pubDate>2017-08-05T21:46:38+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title></title>
+                <description>&lt;p&gt;This beer is so good rainbows come out of the can. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-08-05-17-39-Mc0U61z5EkfempRO5yXH.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2017/08/05/rainbow-beer/</link>
+                <guid>http://www.thecave.com/2017/08/05/rainbow-beer</guid>
+                <pubDate>2017-08-05T21:43:58+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -201,16 +211,6 @@
                 <link>http://www.thecave.com/2017/06/15/crazy-hair-day/</link>
                 <guid>http://www.thecave.com/2017/06/15/crazy-hair-day</guid>
                 <pubDate>2017-06-15T12:24:35+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;I wonder if Micro.blog supports animated gifs. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/output.GIF&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2017/06/11/fire-fire-fire/</link>
-                <guid>http://www.thecave.com/2017/06/11/fire-fire-fire</guid>
-                <pubDate>2017-06-12T01:14:14+00:00</pubDate>
         </item>
 
 

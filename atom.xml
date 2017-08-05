@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-07-26T22:52:29+00:00</updated>
+  <updated>2017-08-05T21:46:38+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/08/05/rainbow-beer/"/>
+    <published>2017-08-05T21:43:58+00:00</published>
+    <updated>2017-08-05T21:43:58+00:00</updated>
+    <id>http://www.thecave.com/2017/08/05/rainbow-beer</id>
+    <content type="html"><![CDATA[<p>This beer is so good rainbows come out of the can. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-08-05-17-39-Mc0U61z5EkfempRO5yXH.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -221,17 +232,6 @@
     <updated>2017-06-15T12:24:35+00:00</updated>
     <id>http://www.thecave.com/2017/06/15/crazy-hair-day</id>
     <content type="html"><![CDATA[<p>It’s crazy hair day at Stowe Elementary. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-06-15-08-20-J8ar1Um2yZO1AZdrpElF.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/06/11/fire-fire-fire/"/>
-    <published>2017-06-12T01:14:14+00:00</published>
-    <updated>2017-06-12T01:14:14+00:00</updated>
-    <id>http://www.thecave.com/2017/06/11/fire-fire-fire</id>
-    <content type="html"><![CDATA[<p>I wonder if Micro.blog supports animated gifs. <img src="https://thecave-com.s3.amazonaws.com/output.GIF" alt="" /></p>
 
 ]]></content>
   </entry>

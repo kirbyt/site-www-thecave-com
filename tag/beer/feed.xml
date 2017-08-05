@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: beer | thecave | Kirby Turner's Blog]]></title>
+  <link href="http://www.thecave.com/tag/beer/feed.xml" rel="self"/>
+  <link href="http://www.thecave.com/"/>
+  <updated>2017-08-05T21:46:38+00:00</updated>
+  <id>http://www.thecave.com/</id>
+  <author>
+    <name><![CDATA[Kirby Turner]]></name>
+    
+  </author>
+
+  
+  <entry>
+    
+    <title></title>
+    
+    <link href="http://www.thecave.com/2017/08/05/rainbow-beer/"/>
+    <updated>2017-08-05T21:43:58+00:00</updated>
+    <id>http://www.thecave.com/2017/08/05/rainbow-beer</id>
+    <tag>beer</tag>
+    <description><![CDATA[<p>This beer is so good rainbows come out of the can. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-08-05-17-39-Mc0U61z5EkfempRO5yXH.jpg" alt="" /></p>
+]]></description>
+    <content type="html"><![CDATA[<p>This beer is so good rainbows come out of the can. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-08-05-17-39-Mc0U61z5EkfempRO5yXH.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
+  
+</feed>

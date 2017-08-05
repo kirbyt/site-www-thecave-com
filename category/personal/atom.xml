@@ -4,13 +4,25 @@
   <title><![CDATA[Category: personal | thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/category/personal/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-07-26T22:52:29+00:00</updated>
+  <updated>2017-08-05T21:46:38+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/08/05/rainbow-beer/"/>
+    <updated>2017-08-05T21:43:58+00:00</updated>
+    <id>http://www.thecave.com/2017/08/05/rainbow-beer</id>
+    <description><![CDATA[<p>This beer is so good rainbows come out of the can. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-08-05-17-39-Mc0U61z5EkfempRO5yXH.jpg" alt="" /></p>
+]]></description>
+    <content type="html"><![CDATA[<p>This beer is so good rainbows come out of the can. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-08-05-17-39-Mc0U61z5EkfempRO5yXH.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -60,20 +72,6 @@
     <description><![CDATA[<p><a href="https://www.flickr.com/photos/kirbyturner/shares/2n9vRn">More pictures</a> from the hot air balloon landing today.</p>
 ]]></description>
     <content type="html"><![CDATA[<p><a href="https://www.flickr.com/photos/kirbyturner/shares/2n9vRn">More pictures</a> from the hot air balloon landing today.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hot Air Balloon Landing]]></title>
-    <link href="http://www.thecave.com/2017/07/08/hot-air-balloon-landing/"/>
-    <updated>2017-07-09T02:07:28+00:00</updated>
-    <id>http://www.thecave.com/2017/07/08/hot-air-balloon-landing</id>
-    <description><![CDATA[<div class="vimeo-video"><figure><iframe src="//player.vimeo.com/video/224799855" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></figure></div>
-
-]]></description>
-    <content type="html"><![CDATA[<p><div class="vimeo-video"><figure><iframe src="//player.vimeo.com/video/224799855" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></figure></div></p>
-
-<p>A hot air balloon landed in our back yard earlier today.</p>
 ]]></content>
   </entry>
   
