@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-08-05T21:46:38+00:00</updated>
+  <updated>2017-08-11T05:07:14+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/08/10/i-love-vermont/"/>
+    <published>2017-08-11T05:05:11+00:00</published>
+    <updated>2017-08-11T05:05:11+00:00</updated>
+    <id>http://www.thecave.com/2017/08/10/i-love-vermont</id>
+    <content type="html"><![CDATA[<p>I can’t wait to be back in Vermont.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -221,17 +232,6 @@
     <updated>2017-06-18T22:20:22+00:00</updated>
     <id>http://www.thecave.com/2017/06/18/swimming-hole</id>
     <content type="html"><![CDATA[<p>Beating the heat at a local swimming hole. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-06-18-18-17-0AeCmp0BsGVYv5sNDeBj.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/06/15/crazy-hair-day/"/>
-    <published>2017-06-15T12:24:35+00:00</published>
-    <updated>2017-06-15T12:24:35+00:00</updated>
-    <id>http://www.thecave.com/2017/06/15/crazy-hair-day</id>
-    <content type="html"><![CDATA[<p>It’s crazy hair day at Stowe Elementary. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-06-15-08-20-J8ar1Um2yZO1AZdrpElF.jpg" alt="" /></p>
 
 ]]></content>
   </entry>
