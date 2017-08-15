@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-08-11T05:07:14+00:00</updated>
+  <updated>2017-08-15T23:03:44+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/08/15/yankees-vs-mets/"/>
+    <published>2017-08-15T23:01:06+00:00</published>
+    <updated>2017-08-15T23:01:06+00:00</updated>
+    <id>http://www.thecave.com/2017/08/15/yankees-vs-mets</id>
+    <content type="html"><![CDATA[<p>Ready to watch the Yankees vs Mets game. I predict New York will win. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-08-15-18-58-YyIGiskSSHZtrWzUFOsJ.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -221,17 +232,6 @@
     <updated>2017-06-19T01:51:58+00:00</updated>
     <id>http://www.thecave.com/2017/06/18/and-jump</id>
     <content type="html"><![CDATA[<p>And jump! <img src="http://giftrending.com/public/upload/gifs/14978369961497836980.gif" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/06/18/swimming-hole/"/>
-    <published>2017-06-18T22:20:22+00:00</published>
-    <updated>2017-06-18T22:20:22+00:00</updated>
-    <id>http://www.thecave.com/2017/06/18/swimming-hole</id>
-    <content type="html"><![CDATA[<p>Beating the heat at a local swimming hole. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-06-18-18-17-0AeCmp0BsGVYv5sNDeBj.jpg" alt="" /></p>
 
 ]]></content>
   </entry>
