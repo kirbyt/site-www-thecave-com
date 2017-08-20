@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-08-19T12:37:08+00:00</updated>
+  <updated>2017-08-20T23:05:56+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/08/20/count-basie-orchestra-20/"/>
+    <published>2017-08-20T23:04:35+00:00</published>
+    <updated>2017-08-20T23:04:35+00:00</updated>
+    <id>http://www.thecave.com/2017/08/20/count-basie-orchestra%20</id>
+    <content type="html"><![CDATA[<p>Count Basie Orchestra at Music in the Meadows. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-08-20-19-03-UanJlggMt05pfnnXD4ru.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -221,17 +232,6 @@
     <updated>2017-06-20T01:42:32+00:00</updated>
     <id>http://www.thecave.com/2017/06/19/mark-twain-brother-lived-in-vermont</id>
     <content type="html"><![CDATA[<p>I’ve been interested in Mark Twain lately, so it seemed fitting to me when this <a href="https://vtdigger.org/2017/06/18/twains-ill-fated-brother-not-prosper-vermont/">article about Orion Clemens</a>, Twain’s brother, appeared in my RSS feed. It turns out Orion lived in Vermont for a short time and was editor of the Rutland Daily Globe.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/06/18/and-jump/"/>
-    <published>2017-06-19T01:51:58+00:00</published>
-    <updated>2017-06-19T01:51:58+00:00</updated>
-    <id>http://www.thecave.com/2017/06/18/and-jump</id>
-    <content type="html"><![CDATA[<p>And jump! <img src="http://giftrending.com/public/upload/gifs/14978369961497836980.gif" alt="" /></p>
 
 ]]></content>
   </entry>
