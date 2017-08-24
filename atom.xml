@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-08-24T17:47:41+00:00</updated>
+  <updated>2017-08-24T19:54:27+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/08/24/wooden-roller-coasters-are-the-best/"/>
+    <published>2017-08-24T19:52:48+00:00</published>
+    <updated>2017-08-24T19:52:48+00:00</updated>
+    <id>http://www.thecave.com/2017/08/24/wooden-roller-coasters-are-the-best</id>
+    <content type="html"><![CDATA[<p>Wooden roller coasters are the best. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-08-24-15-50-QUWcrVkYFwwbGUtXQdWg.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -221,17 +232,6 @@
     <updated>2017-06-24T00:45:26+00:00</updated>
     <id>http://www.thecave.com/2017/06/23/lets-go-lake-monsters</id>
     <content type="html"><![CDATA[<p>Let’s go Lake Monsters! <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-06-23-20-43-qHFu07jcKsXgKjW3avnk.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/06/20/down-by-the-stream/"/>
-    <published>2017-06-20T13:37:01+00:00</published>
-    <updated>2017-06-20T13:37:01+00:00</updated>
-    <id>http://www.thecave.com/2017/06/20/down-by-the-stream</id>
-    <content type="html"><![CDATA[<p><img src="https://thecave-com.s3.amazonaws.com/output-1-WJaOeNkliunoNKkkusip.GIF" alt="" /></p>
 
 ]]></content>
   </entry>
