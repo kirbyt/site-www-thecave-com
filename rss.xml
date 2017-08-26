@@ -5,10 +5,20 @@
         <description>thecave | Kirby Turner's Blog - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2017-08-24T19:54:27+00:00</lastBuildDate>
-        <pubDate>2017-08-24T19:54:27+00:00</pubDate>
+        <lastBuildDate>2017-08-26T17:16:16+00:00</lastBuildDate>
+        <pubDate>2017-08-26T17:16:16+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title></title>
+                <description>&lt;p&gt;My bedroom for a couple of days &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-08-26-13-13-zihSmzHOE2wCyBIKBueY.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2017/08/26/bedroom/</link>
+                <guid>http://www.thecave.com/2017/08/26/bedroom</guid>
+                <pubDate>2017-08-26T17:14:59+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -201,16 +211,6 @@
                 <link>http://www.thecave.com/2017/06/24/good-times-at-bgs/</link>
                 <guid>http://www.thecave.com/2017/06/24/good-times-at-bgs</guid>
                 <pubDate>2017-06-24T20:37:57+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;Let’s go Lake Monsters! &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-06-23-20-43-qHFu07jcKsXgKjW3avnk.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2017/06/23/lets-go-lake-monsters/</link>
-                <guid>http://www.thecave.com/2017/06/23/lets-go-lake-monsters</guid>
-                <pubDate>2017-06-24T00:45:26+00:00</pubDate>
         </item>
 
 

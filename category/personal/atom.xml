@@ -4,13 +4,25 @@
   <title><![CDATA[Category: personal | thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/category/personal/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-08-24T19:54:27+00:00</updated>
+  <updated>2017-08-26T17:16:16+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/08/26/bedroom/"/>
+    <updated>2017-08-26T17:14:59+00:00</updated>
+    <id>http://www.thecave.com/2017/08/26/bedroom</id>
+    <description><![CDATA[<p>My bedroom for a couple of days <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-08-26-13-13-zihSmzHOE2wCyBIKBueY.jpg" alt="" /></p>
+]]></description>
+    <content type="html"><![CDATA[<p>My bedroom for a couple of days <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-08-26-13-13-zihSmzHOE2wCyBIKBueY.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -56,18 +68,6 @@
     <description><![CDATA[<p>Ready to watch the Yankees vs Mets game. I predict New York will win. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-08-15-18-58-YyIGiskSSHZtrWzUFOsJ.jpg" alt="" /></p>
 ]]></description>
     <content type="html"><![CDATA[<p>Ready to watch the Yankees vs Mets game. I predict New York will win. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-08-15-18-58-YyIGiskSSHZtrWzUFOsJ.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/08/10/i-love-vermont/"/>
-    <updated>2017-08-11T05:05:11+00:00</updated>
-    <id>http://www.thecave.com/2017/08/10/i-love-vermont</id>
-    <description><![CDATA[<p>I can’t wait to be back in Vermont.</p>
-]]></description>
-    <content type="html"><![CDATA[<p>I can’t wait to be back in Vermont.</p>
 
 ]]></content>
   </entry>
