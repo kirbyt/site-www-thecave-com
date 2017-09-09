@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: objective-c | thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/tag/objective-c/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-09-09T08:53:13-04:00</updated>
+  <updated>2017-09-09T13:00:56+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -17,7 +17,7 @@
     <title type="html"><![CDATA[How To Do A Case Insensitive Search Using Parse SDK]]></title>
     
     <link href="http://www.thecave.com/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/"/>
-    <updated>2015-12-03T10:16:56-05:00</updated>
+    <updated>2015-12-03T15:16:56+00:00</updated>
     <id>http://www.thecave.com/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk</id>
     <tag>objective-c</tag>
     <description><![CDATA[<p>I recently came across this question about searching using the Parse SDK for iOS. Simon asks:</p>
@@ -59,7 +59,7 @@
     <title type="html"><![CDATA[How To Present An Alert View Using UIAlertController When You Don't Have A View Controller]]></title>
     
     <link href="http://www.thecave.com/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/"/>
-    <updated>2015-09-28T15:46:02-04:00</updated>
+    <updated>2015-09-28T19:46:02+00:00</updated>
     <id>http://www.thecave.com/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller</id>
     <tag>objective-c</tag>
     <description><![CDATA[<p>Over the summer I updated a number of apps to iOS 9. A common tasks for me was replacing the deprecated <code class="highlighter-rouge">UIAlertView</code> with new <code class="highlighter-rouge">UIAlertController</code> class. Generally this is easy to do, but there is one scenario that <code class="highlighter-rouge">UIAlertView</code> handles well that <code class="highlighter-rouge">UIAlertController</code> doesn’t support at all: displaying an alert view from parts of your code without a reference to the current view controller, for instance, displaying an alert view from the app delegate.</p>
@@ -109,7 +109,7 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
     <title type="html"><![CDATA[Dispatch Async to Main Queue Doesn't Work With Modal Window on Mac OS X]]></title>
     
     <link href="http://www.thecave.com/2015/08/10/dispatch-async-to-main-queue-doesnt-work-with-modal-window-on-mac-os-x/"/>
-    <updated>2015-08-10T07:09:01-04:00</updated>
+    <updated>2015-08-10T11:09:01+00:00</updated>
     <id>http://www.thecave.com/2015/08/10/dispatch-async-to-main-queue-doesnt-work-with-modal-window-on-mac-os-x</id>
     <tag>objective-c</tag>
     <description><![CDATA[<p>I’ve been working on a Mac app lately, and while some things are similar to iOS, something are definitely different. One thing that is different are modal windows and run loops.</p>

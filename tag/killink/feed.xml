@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: killink | thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/tag/killink/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-09-09T08:53:13-04:00</updated>
+  <updated>2017-09-09T13:00:56+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -17,7 +17,7 @@
     <title type="html"><![CDATA[Run Killink CSV Under Linux]]></title>
     
     <link href="http://www.thecave.com/2008/07/09/run-killink-csv-under-linux/"/>
-    <updated>2008-07-09T00:00:00-04:00</updated>
+    <updated>2008-07-09T00:00:00+00:00</updated>
     <id>http://www.thecave.com/2008/07/09/run-killink-csv-under-linux</id>
     <tag>killink</tag>
     <description><![CDATA[<p>For grins I decided to see if <a href="http://www.killink.com/">Killink CSV</a> will run under Linux using the latest version of Wine. I tried a few months ago and it didn’t work.  So imagine my surprise today when I upgraded the version of Wine installed on my Ubuntu machine, installed Killink CSV, and saw it run under Linux for the very first time.  All functionality works as expected.  I’ll post more about this soon.</p>
@@ -31,7 +31,7 @@
     <title type="html"><![CDATA[Killink CSV 1.9 Finally Released!]]></title>
     
     <link href="http://www.thecave.com/2008/03/13/killink-csv-1-9-finally-released/"/>
-    <updated>2008-03-13T00:00:00-04:00</updated>
+    <updated>2008-03-13T00:00:00+00:00</updated>
     <id>http://www.thecave.com/2008/03/13/killink-csv-1-9-finally-released</id>
     <tag>killink</tag>
     <description><![CDATA[<p>After fighting with a few last minute issues when running under Vista, <a href="http://www.whitepeaksoftware.com/killink-csv.aspx">Killink CSV 1.9</a> was finally released last night.  I wasn’t able to get all the changes I wanted into this release but I got a good number of them.  The biggest change is the new sort feature.  Users are now able to sort their delimited text data using Killink CSV.  Also included in this release is improved navigation (quickly jump to the top, bottom, left, and right most item using Ctrl+Arrow key combinations) and more ways to select values (Shift+Click to select a range of columns or rows, Ctrl+Shift+Arrow keys to select blocks of items from the active cell).  And finally the ability to paste a value to multiple cells simply by selecting a block of cells.<br /><br />This release was long overdue.  But I’m hoping users will find the wait worth well.  Please read the <a href="http://www.whitepeaksoftware.com/help-killink-csv/revisionhistory.html">revision history</a> for a complete list of changes.<br /><br />One feature that did not make this release is Unicode support.  I really wanted to include this feature in version 1.9 but it is taking more time to implement than planned.  So instead of delaying the other features I decided to release version 1.9 without Unicode support.  At the moment Unicode support is now planned for version 1.10 which I have already started work on and will be released soon.</p>
@@ -45,7 +45,7 @@
     <title type="html"><![CDATA[When is the Next Release of Killink CSV Coming?]]></title>
     
     <link href="http://www.thecave.com/2008/02/29/when-is-the-next-release-of-killink-csv-coming/"/>
-    <updated>2008-02-29T00:00:00-05:00</updated>
+    <updated>2008-02-29T00:00:00+00:00</updated>
     <id>http://www.thecave.com/2008/02/29/when-is-the-next-release-of-killink-csv-coming</id>
     <tag>killink</tag>
     <description><![CDATA[<p>I have received a number of requests for new features in <a href="http://www.killink.com/">Killink CSV</a> to be included in the next release of Killink CSV.  I have been telling people I hope to have the next release available download no later than the end of February.  Well, today is the end of February and the new release isn’t quite ready.  More testing is needed before this next release is made available to the public.  Assuming all goes well, the new release should be available within the week.<br /><br />The 3 most requested features coming in the next release are:&lt;ul&gt;<br />&lt;li&gt;Sorting&lt;/li&gt;<br />&lt;li&gt;Unicode support&lt;/li&gt;<br />&lt;li&gt;Bulk paste&lt;/li&gt;<br />&lt;/ul&gt;Bulk paste, for those who might be wondering what it it, enables you to paste a value or a set of values from the Windows Clipboard into a selection of cells.  This is a neat feature because it enables the user to quickly set the value for a large number of cells.<br /><br />So if you are one of the people waiting on the next release of <a href="http://www.killink.com/">Killink CSV</a> then keep an eye on <a href="http://www.thecave.com/">this blog</a> and or the announcement area of the <a href="http://www.whitepeaksoftware.com/forums/">White Peak Software support forums</a>.</p>
@@ -59,7 +59,7 @@
     <title type="html"><![CDATA[To The Customers of White Peak Software]]></title>
     
     <link href="http://www.thecave.com/2008/01/18/to-the-customers-of-white-peak-software/"/>
-    <updated>2008-01-18T00:00:00-05:00</updated>
+    <updated>2008-01-18T00:00:00+00:00</updated>
     <id>http://www.thecave.com/2008/01/18/to-the-customers-of-white-peak-software</id>
     <tag>killink</tag>
     <description><![CDATA[<p>I would like to express my sincere apologies to the customers of White Peak Software, especially those who are waiting for features to be added to Killink CSV.  My life has been turned upside down, in a good way, over the last 3 months.  My wife and I are expecting a new baby at the end of March and we recently bought a house, our first house, which unfortunately needed work before we could move in.  <br /><br />The good news is we will be in the new house by next Thursday and life will return to normal, or as normal as one can expect with a new baby coming soon.  The other good news is that I’m planning to release the next version of Killink CSV soon.  This next version release should have many of the recently requested features including sorting and Unicode support.  An update to SMTP Diagnostics is coming soon too.<br /><br />So again I apologize to the customers of White Peak Software and I appreciate your patience over the last few months.</p>
@@ -73,7 +73,7 @@
     <title type="html"><![CDATA[Excited About Expected New Arrival]]></title>
     
     <link href="http://www.thecave.com/2007/07/23/excited-about-expected-new-arrival/"/>
-    <updated>2007-07-23T00:00:00-04:00</updated>
+    <updated>2007-07-23T00:00:00+00:00</updated>
     <id>http://www.thecave.com/2007/07/23/excited-about-expected-new-arrival</id>
     <tag>killink</tag>
     <description><![CDATA[<p>Things are really busy for me right now.  I’ve just started two separate customer projects, sales of <a href="http://www.whitepeaksoftware.com/killink-csv.aspx">Killink CSV</a> and <a href="http://www.whitepeaksoftware.com/smtp-diagnostics.aspx">SMTP Diagnostics</a> are climbing, and I’ve been doing a <a href="http://www.thecave.com/archive/2007/01/26/my_trips_in_2007.aspx">lot of travel</a>.  But one thing has me really excited.  I ordered a <a href="http://www.apple.com/macbookpro/">MacBook Pro</a> and it’s expected to arrive in a couple of days.</p>

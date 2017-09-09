@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: microsoft | thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/tag/microsoft/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-09-09T08:53:13-04:00</updated>
+  <updated>2017-09-09T13:00:56+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -17,7 +17,7 @@
     <title type="html"><![CDATA[Why Microsoft's Acquisition of HockeyApp Saddens Me]]></title>
     
     <link href="http://www.thecave.com/2014/12/12/why-microsoft-s-acquisition-of-hockeyapp-saddens-me/"/>
-    <updated>2014-12-12T00:00:00-05:00</updated>
+    <updated>2014-12-12T00:00:00+00:00</updated>
     <id>http://www.thecave.com/2014/12/12/why-microsoft-s-acquisition-of-hockeyapp-saddens-me</id>
     <tag>microsoft</tag>
     <description><![CDATA[<p>While catching up on the latest tech news last night, I came across a post that said Microsoft had acquired HockeyApp. My first thought was this is a joke. I immediately went to the HockeyApp blog site and, lo and behold, it is not a joke. Microsoft did acquire HockeyApp.</p>
@@ -53,7 +53,7 @@
     <title type="html"><![CDATA[PowerPoint 2007 and Outlook 2003 Don't Play Nice Together]]></title>
     
     <link href="http://www.thecave.com/2007/04/16/powerpoint-2007-and-outlook-2003-dont-play-nice-together/"/>
-    <updated>2007-04-16T00:00:00-04:00</updated>
+    <updated>2007-04-16T00:00:00+00:00</updated>
     <id>http://www.thecave.com/2007/04/16/powerpoint-2007-and-outlook-2003-dont-play-nice-together</id>
     <tag>microsoft</tag>
     <description><![CDATA[<p>Yesterday I had a need to install PowerPoint 2007.  Typically I install something like this in a virtual machine to avoid problems with other applications but yesterday I was in a rush so I installed PowerPoint 2007 in my “production” VM.  The Office 2007 installation gave me the option to keep my Office 2003 applications and install only PowerPoint 2007.  “Groovy!” I thought.  Well, it turns out not to be so groovy.  <br /><br />After installing PowerPoint 2007 and doing what I needed to do, I launched Outlook 2003.  As Outlook 2003 was loading the Office 2007 installer popped up and attempted to install something.  I cancel the installer and Outlook 2003 finally loads.  I checked my mail, read a few messages, and clicked Reply to author a response to a new message.  Here’s where the problem started.<br /><br />I have Outlook configured to use Word as the editor for messages.  When I tried to reply to a message Outlook locked up.  Not only did the application lock up but the entire operating system locked up.  I had no choice but to power off.<br /><br />Rebooting didn’t help either.  Outlook 2003 did not properly load, and I had a new problem.  Microsoft’s automatic update was now maxing out the CPU.  To regain control over the machine I killed the automatic update process.<br /><br />After dealing with this mess I believe I found a work around.  After installing PowerPoint 2007 and before launch Outlook 2003, launch Word 2003.  If your experience is similar to mine you will notice Word 2003 loads without the XP theme.  After about 30 seconds Word 2003’s UI switches to the XP theme.  It is after this point that Outlook 2003 is once again able to use Word 2003 as its editor.<br /><br />I can’t guarantee this will work for you but it did work for me.  I’m now able to use Outlook 2003 once again.<br /><br />The only problem that remains is the automatic update for Windows.  It still maxes out the CPU and the process must be manually killed.  I can handle doing this until I have time to re-build a new “production” VM.<br /><br /><span style="color:red">Update</span>: I found <a href="http://www.thecave.com/archive/2007/05/24/wuauclt_svchost_and_100_cpu_usgage.aspx">this wordaround</a> to the maxed out CPU problem.</p>
@@ -67,7 +67,7 @@
     <title type="html"><![CDATA[What is Microsoft Re-designed the iPod Packaging?]]></title>
     
     <link href="http://www.thecave.com/2006/04/27/what-is-microsoft-re-designed-the-ipod-packaging/"/>
-    <updated>2006-04-27T00:00:00-04:00</updated>
+    <updated>2006-04-27T00:00:00+00:00</updated>
     <id>http://www.thecave.com/2006/04/27/what-is-microsoft-re-designed-the-ipod-packaging</id>
     <tag>microsoft</tag>
     <description><![CDATA[<p>It might go a little something like this…<a href="http://www.youtube.com/watch?v=EUXnJraKM3k&amp;search=microsoft%20packaging%20ipod">Microsoft’s Re-designed iPod Packing</a>.</p>
