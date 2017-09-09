@@ -4,7 +4,7 @@
   <title><![CDATA[Category: rant | thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/category/rant/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-08-26T17:19:20+00:00</updated>
+  <updated>2017-09-09T08:53:13-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -15,7 +15,7 @@
   <entry>
     <title type="html"><![CDATA[I Wish There Was Something Better Than Meetup.Com]]></title>
     <link href="http://www.thecave.com/2015/08/17/i-wish-there-was-something-better-than-meetupcom/"/>
-    <updated>2015-08-17T11:28:35+00:00</updated>
+    <updated>2015-08-17T07:28:35-04:00</updated>
     <id>http://www.thecave.com/2015/08/17/i-wish-there-was-something-better-than-meetupcom</id>
     <description><![CDATA[<p>I’ve been a Meetup.com subscriber for years, but I hate using them. Their website isn’t very user-friendly, and I often times find their messages to be misleading and or confusing. For example during the transition of the <a href="http://www.nshappyhour.org">NSHappyHour</a> meetup, which had over 250 members, I tried to disable the account. Turns out that is not an option, or at least it wasn’t at the time. I learned that the account had been deleted when I went to re-enable the account a few days later. The only option was to start a new account. This meant we lost the 250+ members that has joined over the years, and we had no way of reaching out to those members to ask them to join the new meetup.</p>
 
@@ -44,7 +44,7 @@
   <entry>
     <title type="html"><![CDATA[Argh! Thanks A Lot Apple]]></title>
     <link href="http://www.thecave.com/2015/04/10/argh-thanks-a-lot-apple/"/>
-    <updated>2015-04-10T07:13:14+00:00</updated>
+    <updated>2015-04-10T03:13:14-04:00</updated>
     <id>http://www.thecave.com/2015/04/10/argh-thanks-a-lot-apple</id>
     <description><![CDATA[<p>I woke up at 2:45 am this morning to buy a new Apple Watch. I ordered the 42mm space gray with black sport band Apple Watch Sport, but I’m still annoyed. I got a delivery date of May 13 to May 27, and that annoys me because I was ready to order at 3 am.</p>
 
@@ -60,7 +60,7 @@
   <entry>
     <title type="html"><![CDATA[Hey Local Retail Stores, Update Your Website]]></title>
     <link href="http://www.thecave.com/2015/02/04/hey-local-retail-stores-update-your-website/"/>
-    <updated>2015-02-04T18:08:21+00:00</updated>
+    <updated>2015-02-04T13:08:21-05:00</updated>
     <id>http://www.thecave.com/2015/02/04/hey-local-retail-stores-update-your-website</id>
     <description><![CDATA[<p>I bought a new Burton snowboard the other day. I ordered it online from a mom and pop shop in the Oregon. I wanted to buy locally here in Stowe but the price I paid was 10% cheaper than the price listed on the websites of local shops. Combined with the fact that I didn’t have to pay sales tax and shipping was free, I felt I was getting a great deal. Still, I would have preferred to support a local shop here in Vermont, but at least I supported a local shop in Oregon.</p>
 
@@ -82,7 +82,7 @@
   <entry>
     <title type="html"><![CDATA[Dear Simple. It's You, Not Me.]]></title>
     <link href="http://www.thecave.com/2014/09/03/dear-simple-its-you-not-me/"/>
-    <updated>2014-09-03T00:00:00+00:00</updated>
+    <updated>2014-09-03T00:00:00-04:00</updated>
     <id>http://www.thecave.com/2014/09/03/dear-simple-its-you-not-me</id>
     <description><![CDATA[<p>For more than a year and a half I’ve been in love with <a href="http://www.simple.com">Simple</a>, my online bank. From the very beginning it was as if Simple were designed specifically for me. Safe-to-spend and Goals changed how I managed and saved money, and it worked. It worked really well. So well in fact that I have more cash on hand today than I’ve had in years, and it’s all thanks to Simple. But something went wrong.</p>
 
@@ -105,7 +105,7 @@
   <entry>
     <title type="html"><![CDATA[WTF Ruby Gems]]></title>
     <link href="http://www.thecave.com/2014/04/24/wtf-ruby-gems/"/>
-    <updated>2014-04-24T00:00:00+00:00</updated>
+    <updated>2014-04-24T00:00:00-04:00</updated>
     <id>http://www.thecave.com/2014/04/24/wtf-ruby-gems</id>
     <description><![CDATA[<p>I’m working with a client to update one of their iOS apps. The Xcode project uses CocoaPods for dependency management. I’m not a fan of CocoaPods, but I grin and bear it when working with existing client projects.</p>
 

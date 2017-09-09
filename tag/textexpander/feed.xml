@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: textexpander | thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/tag/textexpander/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-08-26T17:19:20+00:00</updated>
+  <updated>2017-09-09T08:53:13-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -17,7 +17,7 @@
     <title type="html"><![CDATA[Convert Time with a TextExpander Snippet]]></title>
     
     <link href="http://www.thecave.com/2017/04/16/convert-time-with-a-textexpander-snippet/"/>
-    <updated>2017-04-17T01:14:46+00:00</updated>
+    <updated>2017-04-16T21:14:46-04:00</updated>
     <id>http://www.thecave.com/2017/04/16/convert-time-with-a-textexpander-snippet</id>
     <tag>textexpander</tag>
     <description><![CDATA[<p>I find I am using <a href="https://textexpander.com">TextExpander</a> more and more these days. It’s an awesome productivity tool that saves me time by inserting snippets of text into whatever I’m writing, be it code or words. What I didn’t know about TextExpander, that is, until today, is that it can run shell scripts to generate the text snippets.</p>

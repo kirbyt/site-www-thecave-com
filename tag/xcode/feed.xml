@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: xcode | thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/tag/xcode/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-08-26T17:19:20+00:00</updated>
+  <updated>2017-09-09T08:53:13-04:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -17,7 +17,7 @@
     <title type="html"><![CDATA[Using xcodebuild To Export a .ipa From an Archive]]></title>
     
     <link href="http://www.thecave.com/2014/09/16/using-xcodebuild-to-export-a-ipa-from-an-archive/"/>
-    <updated>2014-09-16T00:00:00+00:00</updated>
+    <updated>2014-09-16T00:00:00-04:00</updated>
     <id>http://www.thecave.com/2014/09/16/using-xcodebuild-to-export-a-ipa-from-an-archive</id>
     <tag>xcode</tag>
     <description><![CDATA[<p>Xcode 6 changes how you export a .ipa from an archive for adhoc distribution. It used to be that you could export the archive to a .ipa as long as you had the right provisioning profile and distribution certificate on your machine. Starting with Xcode 6 you need to be a team member of the particular Developer Program account and you need to have the rights to make a distribution build. This means you need to be a team agent. However, I work with a number of clients who don’t have the clue what Xcode is much less are willing to make distribution builds, so I need to way to make distribution builds within this new limitation from Xcode 6.</p>
@@ -77,7 +77,7 @@
     <title type="html"><![CDATA[I Stopped Using NIBs Thanks to Auto Layout]]></title>
     
     <link href="http://www.thecave.com/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout/"/>
-    <updated>2014-05-04T00:00:00+00:00</updated>
+    <updated>2014-05-04T00:00:00-04:00</updated>
     <id>http://www.thecave.com/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout</id>
     <tag>xcode</tag>
     <description><![CDATA[<p>The subject to this post might suggest I don’t like Auto Layout, but on the contrary I really like Auto Layout. I didn’t always like Auto Layout. For the longest time Auto Layout was a major pain in my ass, but it turns out it was Interface Builder that was causing me the majority of headaches when I used Auto Layout. So I stopped using Auto Layout in IB and I started using it in code only.</p>
