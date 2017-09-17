@@ -5,9 +5,29 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 09 Sep 2017 13:00:56 +0000</pubDate>
-    <lastBuildDate>Sat, 09 Sep 2017 13:00:56 +0000</lastBuildDate>
+    <pubDate>Sun, 17 Sep 2017 12:04:10 +0000</pubDate>
+    <lastBuildDate>Sun, 17 Sep 2017 12:04:10 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;Fun times finding our way out of the Danville Corn Maze yesterday. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-09-17-07-47-XQINgFhXw8Q2PWzIYJy8.jpg&quot; alt=&quot;&quot; /&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-09-17-07-54-LhoVarU9ojDFeLCKxqgd.jpg&quot; alt=&quot;&quot; /&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-09-17-07-56-fTjG3bwenpUuQqtxqiiT.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 17 Sep 2017 11:59:03 +0000</pubDate>
+        <link>http://www.thecave.com/2017/09/17/danville-corn-maze/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2017/09/17/danville-corn-maze/</guid>
+        
+        <category>micropost</category>
+        
+        <category>photo</category>
+        
+        <category>vermont</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title></title>
@@ -195,27 +215,6 @@
         <category>micropost</category>
         
         <category>photo</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title>Shutting Down thecave.social</title>
-        <description>&lt;p&gt;I first heard about &lt;a href=&quot;https://github.com/tootsuite/mastodon&quot;&gt;Mastodon&lt;/a&gt; back in April. I liked it so much, I decided to host my own Mastodon instance. Thus, &lt;a href=&quot;https://www.thecave.com/2017/04/12/mastodon-and-thecavesocial/&quot;&gt;thecave.social&lt;/a&gt; was born.&lt;/p&gt;
-
-&lt;p&gt;I had a lot of fun playing with my own Mastodon instance, and I learned a lot. I even thought I might open up it up to other users. But alas, I haven’t had a lot of spare time since &lt;a href=&quot;https://www.thecave.com/2017/05/01/im-trying-something-different/&quot;&gt;May 1&lt;/a&gt;. I don’t even remember the last time I checked in on thecave.social. That’s why I decided to shut it down today.&lt;/p&gt;
-
-&lt;p&gt;If you are looking for me on a social network, you can find me at &lt;a href=&quot;https://micro.blog/kirbyt&quot;&gt;Micro.blog&lt;/a&gt;. Of course, you can find those same &lt;a href=&quot;https://www.thecave.com/tag/micropost/&quot;&gt;microposts&lt;/a&gt; right here at &lt;a href=&quot;https://www.thecave.com/&quot;&gt;thecave.com&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 19 Jul 2017 00:17:13 +0000</pubDate>
-        <link>http://www.thecave.com/2017/07/19/shutting-down-thecavesocial/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2017/07/19/shutting-down-thecavesocial/</guid>
-        
-        <category>mastodon</category>
-        
-        <category>social</category>
         
         
         <category>personal</category>
