@@ -5,9 +5,31 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 23 Sep 2017 13:07:28 +0000</pubDate>
-    <lastBuildDate>Sat, 23 Sep 2017 13:07:28 +0000</lastBuildDate>
+    <pubDate>Sat, 23 Sep 2017 22:59:23 +0000</pubDate>
+    <lastBuildDate>Sat, 23 Sep 2017 22:59:23 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;Having a chilled night wishing for some Deep Purple. Then &lt;a href=&quot;https://itunes.apple.com/us/album/hush/id83155652?i=83155547&quot;&gt;Hush&lt;/a&gt; comes on. Perfect evening. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-09-23-18-51-24nQ3rvXvUkmjQjKcF70.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 23 Sep 2017 22:52:50 +0000</pubDate>
+        <link>http://www.thecave.com/2017/09/23/hush/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2017/09/23/hush/</guid>
+        
+        <category>micropost</category>
+        
+        <category>music</category>
+        
+        <category>photo</category>
+        
+        <category>vermont</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title></title>
@@ -201,24 +223,6 @@
         <category>new-york</category>
         
         <category>photo</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;I can’t wait to be back in Vermont.&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 11 Aug 2017 05:05:11 +0000</pubDate>
-        <link>http://www.thecave.com/2017/08/11/i-love-vermont/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2017/08/11/i-love-vermont/</guid>
-        
-        <category>micropost</category>
-        
-        <category>vermont</category>
         
         
         <category>personal</category>
