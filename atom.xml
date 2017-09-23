@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-09-23T00:24:10+00:00</updated>
+  <updated>2017-09-23T13:07:28+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/09/23/smile/"/>
+    <published>2017-09-23T13:02:24+00:00</published>
+    <updated>2017-09-23T13:02:24+00:00</updated>
+    <id>http://www.thecave.com/2017/09/23/smile</id>
+    <content type="html"><![CDATA[<p>I found a smile while on my walk. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-09-23-08-57-YmKJwKC9uDpLNz4lXMLo.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -221,17 +232,6 @@
     <updated>2017-07-01T19:25:09+00:00</updated>
     <id>http://www.thecave.com/2017/07/01/first-pga-jr-league</id>
     <content type="html"><![CDATA[<p>From All Star baseball to PGA Junior League. Busy Saturday in the rain. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-07-01-15-22-XzV8IBBbJna6eBQWcVfz.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/07/01/first-all-star-game/"/>
-    <published>2017-07-01T14:05:32+00:00</published>
-    <updated>2017-07-01T14:05:32+00:00</updated>
-    <id>http://www.thecave.com/2017/07/01/first-all-star-game</id>
-    <content type="html"><![CDATA[<p>Rowan is stoked to be in his first All Star game. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-07-01-10-03-uaKAi5jGN5pISSdcsvWe.jpg" alt="" /></p>
 
 ]]></content>
   </entry>
