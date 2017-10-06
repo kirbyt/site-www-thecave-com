@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: corn | thecave | Kirby Turner's Blog]]></title>
+  <link href="http://www.thecave.com/tag/corn/feed.xml" rel="self"/>
+  <link href="http://www.thecave.com/"/>
+  <updated>2017-10-06T03:45:13+00:00</updated>
+  <id>http://www.thecave.com/</id>
+  <author>
+    <name><![CDATA[Kirby Turner]]></name>
+    
+  </author>
+
+  
+  <entry>
+    
+    <title></title>
+    
+    <link href="http://www.thecave.com/2017/10/06/more-corn/"/>
+    <updated>2017-10-06T03:42:06+00:00</updated>
+    <id>http://www.thecave.com/2017/10/06/more-corn</id>
+    <tag>corn</tag>
+    <description><![CDATA[<p><img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-05-23-40-eogwzFSIFl2Z8Np4qUTi.jpg" alt="" /></p>
+]]></description>
+    <content type="html"><![CDATA[<p><img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-05-23-40-eogwzFSIFl2Z8Np4qUTi.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
+  
+</feed>

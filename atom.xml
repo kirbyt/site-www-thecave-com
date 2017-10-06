@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-10-04T01:39:47+00:00</updated>
+  <updated>2017-10-06T03:45:13+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/10/06/more-corn/"/>
+    <published>2017-10-06T03:42:06+00:00</published>
+    <updated>2017-10-06T03:42:06+00:00</updated>
+    <id>http://www.thecave.com/2017/10/06/more-corn</id>
+    <content type="html"><![CDATA[<p><img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-05-23-40-eogwzFSIFl2Z8Np4qUTi.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -221,17 +232,6 @@
     <updated>2017-07-09T00:49:08+00:00</updated>
     <id>http://www.thecave.com/2017/07/09/this-happened-today</id>
     <content type="html"><![CDATA[<p>So this just happened. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-07-08-20-45-FiIh3yTfmG78FqogSSFa.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/07/06/stowe-vermont/"/>
-    <published>2017-07-06T00:50:13+00:00</published>
-    <updated>2017-07-06T00:50:13+00:00</updated>
-    <id>http://www.thecave.com/2017/07/06/stowe-vermont</id>
-    <content type="html"><![CDATA[<p><img src="https://thecave-com.s3.amazonaws.com/Photo-2017-07-05-20-48-4MjcwomcT97FK922yHpm.jpg" alt="" /></p>
 
 ]]></content>
   </entry>

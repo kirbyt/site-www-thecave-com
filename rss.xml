@@ -5,10 +5,20 @@
         <description>thecave | Kirby Turner's Blog - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2017-10-04T01:39:47+00:00</lastBuildDate>
-        <pubDate>2017-10-04T01:39:47+00:00</pubDate>
+        <lastBuildDate>2017-10-06T03:45:13+00:00</lastBuildDate>
+        <pubDate>2017-10-06T03:45:13+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title></title>
+                <description>&lt;p&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-10-05-23-40-eogwzFSIFl2Z8Np4qUTi.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2017/10/06/more-corn/</link>
+                <guid>http://www.thecave.com/2017/10/06/more-corn</guid>
+                <pubDate>2017-10-06T03:42:06+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -201,16 +211,6 @@
                 <link>http://www.thecave.com/2017/07/09/this-happened-today/</link>
                 <guid>http://www.thecave.com/2017/07/09/this-happened-today</guid>
                 <pubDate>2017-07-09T00:49:08+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-07-05-20-48-4MjcwomcT97FK922yHpm.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2017/07/06/stowe-vermont/</link>
-                <guid>http://www.thecave.com/2017/07/06/stowe-vermont</guid>
-                <pubDate>2017-07-06T00:50:13+00:00</pubDate>
         </item>
 
 
