@@ -124,6 +124,24 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2004/06/09/which-xml-api/">Which XML API?</a>
+    </h2>
+    
+    <p>I had an interesting chat with a team member today about which XML parsing API from the .NET Framework to use for a particular situation.  He mentioned that using the XPathNavigator with an XmlReader would not load the document into memory.  However, after some quick research I found this to be incorrect.  XPathNavigator is different than XmlDocument in that it is optimized for XSLT processing and the XPath data model, but it is similar in that the entire document is read into memory.  XPathNavigator appears to use a cursor-base model for traversing the document while XmlDocument uses a tree-base model.<br /><br />The rule of thumb I have come up with is this:  Read-only, forward-only XML parsing API tend to read from a stream and do not store the entire document in memory.  Random access XML parsing API, which typically use a tree-base model or cursor-base model, will traverse in-memory the XML document which means this entire document is stored in memory.<br /><br /><br /></p>
+
+
+    <p><a href="/2004/06/09/which-xml-api/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on June 9, 2004
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2004/06/08/making-the-move-to-test-driven-development/">Making the Move to Test Driven Development</a>
     </h2>
     
@@ -288,24 +306,6 @@
 </div>
 <hr>
 
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2004/05/18/multiple-nunit-tests-from-nant/">Multiple NUnit tests from NAnt</a>
-    </h2>
-    
-    <p>I have been working today on stabilizing our build environment for a customer project.  NAnt has been a great to so far for this.  But today I wanted to start running NUnit tests of our assemblies from the NAnt script.  I have tried a combination of Xml in attempts to get the NUnit task to work as expected.  All assemblies except one have a configuration file so I must use the  element.  I have tried defining a single  section with multiple  elements, one for each assembly to test.  And I have tried multiple  sections within a single target, but the result is the same.  Not all tests do not always run.  <br /><br />Say I have 4 test assemblies.  2 out of the 4 may load.  The other two seem to be ignored.  The  section seems easiest enough, but I must be missing something.  Shot me a reply if you have a suggestion.  Thanks.<br /><br /><br /></p>
-
-
-    <p><a href="/2004/05/18/multiple-nunit-tests-from-nant/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on May 18, 2004
-     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
-    Tagged in .
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -338,6 +338,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2017/10/11/sad-news/" title="">Sad news and too damn early in...</a></li>
+                
                 <li><a href="/2017/10/06/lake-sunapee-sax/" title="">Practice time during our weekend getaway. </a></li>
                 
                 <li><a href="/2017/10/06/more-corn/" title="">October 6, 2017 at 03:42:06 AM</a></li>
@@ -345,8 +347,6 @@
                 <li><a href="/2017/10/04/corn/" title="">October 4, 2017 at 01:36:37 AM</a></li>
                 
                 <li><a href="/2017/09/23/hush/" title="">Having a chilled night wishing for some...</a></li>
-                
-                <li><a href="/2017/09/23/smile/" title="">I found a smile while on my...</a></li>
                 
                 </ul>                
             </div>

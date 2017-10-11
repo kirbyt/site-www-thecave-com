@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-10-06T23:24:22+00:00</updated>
+  <updated>2017-10-11T01:26:07+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/10/11/sad-news/"/>
+    <published>2017-10-11T01:22:55+00:00</published>
+    <updated>2017-10-11T01:22:55+00:00</updated>
+    <id>http://www.thecave.com/2017/10/11/sad-news</id>
+    <content type="html"><![CDATA[<p><a href="http://www.explorebigsky.com/two-dead-after-avalanche-incident-south-of-big-sky/22864">Sad news</a> and too damn early in the season for this to happen. My heart goes out to their family and friends.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -221,18 +232,6 @@
     <updated>2017-07-09T02:38:02+00:00</updated>
     <id>http://www.thecave.com/2017/07/09/more-pictures-from-the-hot-air-balloon-landing</id>
     <content type="html"><![CDATA[<p><a href="https://www.flickr.com/photos/kirbyturner/shares/2n9vRn">More pictures</a> from the hot air balloon landing today.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hot Air Balloon Landing]]></title>
-    <link href="http://www.thecave.com/2017/07/09/hot-air-balloon-landing/"/>
-    <published>2017-07-09T02:07:28+00:00</published>
-    <updated>2017-07-09T02:07:28+00:00</updated>
-    <id>http://www.thecave.com/2017/07/09/hot-air-balloon-landing</id>
-    <content type="html"><![CDATA[<div class="vimeo-video"><figure><iframe src="//player.vimeo.com/video/224799855" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></figure></div>
-
-<p>A hot air balloon landed in our back yard earlier today.</p>
 ]]></content>
   </entry>
   
