@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: fall | thecave | Kirby Turner's Blog]]></title>
+  <link href="http://www.thecave.com/tag/fall/feed.xml" rel="self"/>
+  <link href="http://www.thecave.com/"/>
+  <updated>2017-10-17T21:13:02+00:00</updated>
+  <id>http://www.thecave.com/</id>
+  <author>
+    <name><![CDATA[Kirby Turner]]></name>
+    
+  </author>
+
+  
+  <entry>
+    
+    <title></title>
+    
+    <link href="http://www.thecave.com/2017/10/17/red-leaves/"/>
+    <updated>2017-10-17T21:06:51+00:00</updated>
+    <id>http://www.thecave.com/2017/10/17/red-leaves</id>
+    <tag>fall</tag>
+    <description><![CDATA[<p><img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-17-17-05-3metqcBTsxKB5xyZXO9c.jpg" alt="" /></p>
+]]></description>
+    <content type="html"><![CDATA[<p><img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-17-17-05-3metqcBTsxKB5xyZXO9c.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
+  
+</feed>
