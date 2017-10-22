@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-10-17T21:13:02+00:00</updated>
+  <updated>2017-10-22T12:02:06+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/10/22/the-kids-first-mindstorm-robot/"/>
+    <published>2017-10-22T11:54:48+00:00</published>
+    <updated>2017-10-22T11:54:48+00:00</updated>
+    <id>http://www.thecave.com/2017/10/22/the-kids-first-mindstorm-robot</id>
+    <content type="html"><![CDATA[<p>The kid built his first Mindstorm robot. His got a lot more work to do before next month’s STEM fair. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-22-07-50-TEgxCnbKGiAPbiMWj0B3.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -219,20 +230,6 @@
     <id>http://www.thecave.com/2017/07/26/a-favorite-feature-of-the-airpods</id>
     <content type="html"><![CDATA[<p>My AirPods arrived today, and I already have a favorite feature. I don’t have to hear the TV when my son is watching a show on Apple TV. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-07-26-18-45-q6nEkZ4rfUFlAw78Ej5C.jpg" alt="" /></p>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Shutting Down thecave.social]]></title>
-    <link href="http://www.thecave.com/2017/07/19/shutting-down-thecavesocial/"/>
-    <published>2017-07-19T00:17:13+00:00</published>
-    <updated>2017-07-19T00:17:13+00:00</updated>
-    <id>http://www.thecave.com/2017/07/19/shutting-down-thecavesocial</id>
-    <content type="html"><![CDATA[<p>I first heard about <a href="https://github.com/tootsuite/mastodon">Mastodon</a> back in April. I liked it so much, I decided to host my own Mastodon instance. Thus, <a href="https://www.thecave.com/2017/04/12/mastodon-and-thecavesocial/">thecave.social</a> was born.</p>
-
-<p>I had a lot of fun playing with my own Mastodon instance, and I learned a lot. I even thought I might open up it up to other users. But alas, I haven’t had a lot of spare time since <a href="https://www.thecave.com/2017/05/01/im-trying-something-different/">May 1</a>. I don’t even remember the last time I checked in on thecave.social. That’s why I decided to shut it down today.</p>
-
-<p>If you are looking for me on a social network, you can find me at <a href="https://micro.blog/kirbyt">Micro.blog</a>. Of course, you can find those same <a href="https://www.thecave.com/tag/micropost/">microposts</a> right here at <a href="https://www.thecave.com/">thecave.com</a>.</p>
 ]]></content>
   </entry>
   

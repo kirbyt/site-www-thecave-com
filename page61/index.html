@@ -124,6 +124,28 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2004/08/01/installers-and-my-document-directory/">Installers and My Document Directory</a>
+    </h2>
+    
+    <p>In setting up my new laptop, I decided to go with VMware to host various guest operating systems for my development, collaboration, etc.  For the most part this is working out well but there are still glitches.  For example, to share the My Document folder with multiple guest OS I created a share in the host OS.  Each guest OS maps the My Documents folder to the UNC \.host\Shared Folders\kirbyt\documents.  The problem I have experienced with this configuration has nothing to do with me authoring documents, etc.  Instead I have encounter two cases where installers have failed.
+<br />
+<br />The .NET Framework 1.1 installer and the Adobe Reader 6.0 apparently need access to the My Documents folder during the installation process.  However, both fail because of the UNC reference to the actual folder.  My temporary work around to date has been to re-map the My Documents folder to a temporary directory on the local hard drive within the guest OS, prefer the install, and re-map the My Documents folder back to the original UNC location.
+<br />
+<br />I wonder what these two installers want with the My Documents folder during installations and I wonder why their not smart enough to recognize the UNC reference.</p>
+
+
+    <p><a href="/2004/08/01/installers-and-my-document-directory/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on August 1, 2004
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2004/07/30/july-icca-meeting/">July ICCA Meeting</a>
     </h2>
     
@@ -309,27 +331,6 @@
 </div>
 <hr>
 
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2004/07/16/duh/">Duh!</a>
-    </h2>
-    
-    <p>Melanie and I were planning to fly into Manchester, NH next week and drive to Vermont for a break from NYC.  However confusion set in when we started checking the fly availability and car rentals.  Flights into Manchester are filling up and car rentals are sold out.  What gives?
-<br /> 
-<br />Duh!  The Democratic Convention 2004 starts on Sunday, July 26 in Boston.  No wonder Manchester is so busy that weekend.  Needless to say, Melanie and I are breaking convention (no pun intended) and driving up from NYC to avoid the Boston/Manchester madness.
-<br /></p>
-
-
-    <p><a href="/2004/07/16/duh/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on July 16, 2004
-     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
-    Tagged in .
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -362,6 +363,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2017/10/22/the-kids-first-mindstorm-robot/" title="">The kid built his first Mindstorm robot....</a></li>
+                
                 <li><a href="/2017/10/17/red-leaves/" title="">October 17, 2017 at 09:06:51 PM</a></li>
                 
                 <li><a href="/2017/10/11/closing-my-rings/" title="">I need to burn twenty more calories...</a></li>
@@ -369,8 +372,6 @@
                 <li><a href="/2017/10/11/sad-news/" title="">Sad news and too damn early in...</a></li>
                 
                 <li><a href="/2017/10/06/lake-sunapee-sax/" title="">Practice time during our weekend getaway. </a></li>
-                
-                <li><a href="/2017/10/06/more-corn/" title="">October 6, 2017 at 03:42:06 AM</a></li>
                 
                 </ul>                
             </div>
