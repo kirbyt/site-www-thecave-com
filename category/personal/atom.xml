@@ -4,13 +4,26 @@
   <title><![CDATA[Category: personal | thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/category/personal/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-10-26T14:47:52+00:00</updated>
+  <updated>2017-10-26T18:22:19+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[See who you're following on Micro.blog]]></title>
+    <link href="http://www.thecave.com/2017/10/26/see-who-you-are-following-on-micro_blog/"/>
+    <updated>2017-10-26T18:07:09+00:00</updated>
+    <id>http://www.thecave.com/2017/10/26/see-who-you-are-following-on-micro_blog</id>
+    <description><![CDATA[<p>I discovered you can see the list of people a person follows on <a href="https://micro.blog/">Micro.blog</a>, including yourself. It seems the feature is only available in the <a href="http://help.micro.blog/2017/mac-version/">Micro.blog for Mac</a> app. Using it, click a person’s avatar. Under the bio section, you’ll see “Following n” where n is the number of people that the person follows. Click it to see the list of people. Thanks, <a href="https://micro.blog/manton">@manton</a>, for giving us another way to discover people on Micro.blog.</p>
+
+]]></description>
+    <content type="html"><![CDATA[<p>I discovered you can see the list of people a person follows on <a href="https://micro.blog/">Micro.blog</a>, including yourself. It seems the feature is only available in the <a href="http://help.micro.blog/2017/mac-version/">Micro.blog for Mac</a> app. Using it, click a person’s avatar. Under the bio section, you’ll see “Following n” where n is the number of people that the person follows. Click it to see the list of people. Thanks, <a href="https://micro.blog/manton">@manton</a>, for giving us another way to discover people on Micro.blog.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -56,18 +69,6 @@
     <description><![CDATA[<p>I need to burn twenty more calories to close my Activity ring. I’m thinking about walking to the pub that’s down the street to burn the calories…and grab a beer.</p>
 ]]></description>
     <content type="html"><![CDATA[<p>I need to burn twenty more calories to close my Activity ring. I’m thinking about walking to the pub that’s down the street to burn the calories…and grab a beer.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/10/11/sad-news/"/>
-    <updated>2017-10-11T01:22:55+00:00</updated>
-    <id>http://www.thecave.com/2017/10/11/sad-news</id>
-    <description><![CDATA[<p><a href="http://www.explorebigsky.com/two-dead-after-avalanche-incident-south-of-big-sky/22864">Sad news</a> and too damn early in the season for this to happen. My heart goes out to their family and friends.</p>
-]]></description>
-    <content type="html"><![CDATA[<p><a href="http://www.explorebigsky.com/two-dead-after-avalanche-incident-south-of-big-sky/22864">Sad news</a> and too damn early in the season for this to happen. My heart goes out to their family and friends.</p>
 
 ]]></content>
   </entry>

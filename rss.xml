@@ -5,10 +5,20 @@
         <description>thecave | Kirby Turner's Blog - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2017-10-26T14:47:52+00:00</lastBuildDate>
-        <pubDate>2017-10-26T14:47:52+00:00</pubDate>
+        <lastBuildDate>2017-10-26T18:22:19+00:00</lastBuildDate>
+        <pubDate>2017-10-26T18:22:19+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>See who you're following on Micro.blog</title>
+                <description>&lt;p&gt;I discovered you can see the list of people a person follows on &lt;a href=&quot;https://micro.blog/&quot;&gt;Micro.blog&lt;/a&gt;, including yourself. It seems the feature is only available in the &lt;a href=&quot;http://help.micro.blog/2017/mac-version/&quot;&gt;Micro.blog for Mac&lt;/a&gt; app. Using it, click a person’s avatar. Under the bio section, you’ll see “Following n” where n is the number of people that the person follows. Click it to see the list of people. Thanks, &lt;a href=&quot;https://micro.blog/manton&quot;&gt;@manton&lt;/a&gt;, for giving us another way to discover people on Micro.blog.&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2017/10/26/see-who-you-are-following-on-micro_blog/</link>
+                <guid>http://www.thecave.com/2017/10/26/see-who-you-are-following-on-micro_blog</guid>
+                <pubDate>2017-10-26T18:07:09+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -198,16 +208,6 @@
                 <link>http://www.thecave.com/2017/08/11/i-love-vermont/</link>
                 <guid>http://www.thecave.com/2017/08/11/i-love-vermont</guid>
                 <pubDate>2017-08-11T05:05:11+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;This beer is so good rainbows come out of the can. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-08-05-17-39-Mc0U61z5EkfempRO5yXH.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2017/08/05/rainbow-beer/</link>
-                <guid>http://www.thecave.com/2017/08/05/rainbow-beer</guid>
-                <pubDate>2017-08-05T21:43:58+00:00</pubDate>
         </item>
 
 

@@ -5,9 +5,27 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 26 Oct 2017 14:47:52 +0000</pubDate>
-    <lastBuildDate>Thu, 26 Oct 2017 14:47:52 +0000</lastBuildDate>
+    <pubDate>Thu, 26 Oct 2017 18:22:19 +0000</pubDate>
+    <lastBuildDate>Thu, 26 Oct 2017 18:22:19 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>See who you're following on Micro.blog</title>
+        <description>&lt;p&gt;I discovered you can see the list of people a person follows on &lt;a href=&quot;https://micro.blog/&quot;&gt;Micro.blog&lt;/a&gt;, including yourself. It seems the feature is only available in the &lt;a href=&quot;http://help.micro.blog/2017/mac-version/&quot;&gt;Micro.blog for Mac&lt;/a&gt; app. Using it, click a person’s avatar. Under the bio section, you’ll see “Following n” where n is the number of people that the person follows. Click it to see the list of people. Thanks, &lt;a href=&quot;https://micro.blog/manton&quot;&gt;@manton&lt;/a&gt;, for giving us another way to discover people on Micro.blog.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 26 Oct 2017 18:07:09 +0000</pubDate>
+        <link>http://www.thecave.com/2017/10/26/see-who-you-are-following-on-micro_blog/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2017/10/26/see-who-you-are-following-on-micro_blog/</guid>
+        
+        <category>micro.blog</category>
+        
+        <category>micropost</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title></title>
@@ -197,28 +215,6 @@
         <category>photo</category>
         
         <category>vermont</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;I found a smile while on my walk. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-09-23-08-57-YmKJwKC9uDpLNz4lXMLo.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 23 Sep 2017 13:02:24 +0000</pubDate>
-        <link>http://www.thecave.com/2017/09/23/smile/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2017/09/23/smile/</guid>
-        
-        <category>micropost</category>
-        
-        <category>photo</category>
-        
-        <category>stowe</category>
-        
-        <category>walk</category>
         
         
         <category>personal</category>
