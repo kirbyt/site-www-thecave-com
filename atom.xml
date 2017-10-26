@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-10-23T00:14:30+00:00</updated>
+  <updated>2017-10-26T14:47:52+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/10/26/a-year-ago-today/"/>
+    <published>2017-10-26T14:44:36+00:00</published>
+    <updated>2017-10-26T14:44:36+00:00</updated>
+    <id>http://www.thecave.com/2017/10/26/a-year-ago-today</id>
+    <content type="html"><![CDATA[<p>A year ago today I was snowboarding on Mt. Mansfield. It’s a different story today with warmish temperatures and rain. I’m ready for the start of winter. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-26-10-37-owQ8VNFrdmUMdCNidshS.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -218,17 +229,6 @@
     <updated>2017-08-05T21:43:58+00:00</updated>
     <id>http://www.thecave.com/2017/08/05/rainbow-beer</id>
     <content type="html"><![CDATA[<p>This beer is so good rainbows come out of the can. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-08-05-17-39-Mc0U61z5EkfempRO5yXH.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/07/26/a-favorite-feature-of-the-airpods/"/>
-    <published>2017-07-26T22:50:56+00:00</published>
-    <updated>2017-07-26T22:50:56+00:00</updated>
-    <id>http://www.thecave.com/2017/07/26/a-favorite-feature-of-the-airpods</id>
-    <content type="html"><![CDATA[<p>My AirPods arrived today, and I already have a favorite feature. I don’t have to hear the TV when my son is watching a show on Apple TV. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-07-26-18-45-q6nEkZ4rfUFlAw78Ej5C.jpg" alt="" /></p>
 
 ]]></content>
   </entry>

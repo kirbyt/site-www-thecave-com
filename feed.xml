@@ -5,9 +5,33 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 23 Oct 2017 00:14:30 +0000</pubDate>
-    <lastBuildDate>Mon, 23 Oct 2017 00:14:30 +0000</lastBuildDate>
+    <pubDate>Thu, 26 Oct 2017 14:47:52 +0000</pubDate>
+    <lastBuildDate>Thu, 26 Oct 2017 14:47:52 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;A year ago today I was snowboarding on Mt. Mansfield. It’s a different story today with warmish temperatures and rain. I’m ready for the start of winter. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-10-26-10-37-owQ8VNFrdmUMdCNidshS.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 26 Oct 2017 14:44:36 +0000</pubDate>
+        <link>http://www.thecave.com/2017/10/26/a-year-ago-today/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2017/10/26/a-year-ago-today/</guid>
+        
+        <category>micropost</category>
+        
+        <category>photo</category>
+        
+        <category>snowboarding</category>
+        
+        <category>stowe</category>
+        
+        <category>vermont</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title></title>
@@ -195,28 +219,6 @@
         <category>stowe</category>
         
         <category>walk</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;YES! BSG, The Complete Series, &lt;a href=&quot;https://itunes.apple.com/us/tv-season/bsg-the-complete-series-vol-1/id583461291&quot;&gt;Volume 1&lt;/a&gt; and &lt;a href=&quot;https://itunes.apple.com/us/tv-season/bsg-the-complete-series-vol-2/id583474407&quot;&gt;Volume 2&lt;/a&gt; are available in the iTunes Store for only $14.99 each.&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 23 Sep 2017 00:20:55 +0000</pubDate>
-        <link>http://www.thecave.com/2017/09/23/bsg-on-sale/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2017/09/23/bsg-on-sale/</guid>
-        
-        <category>bsg</category>
-        
-        <category>itunes-store</category>
-        
-        <category>micropost</category>
-        
-        <category>tv</category>
         
         
         <category>personal</category>
