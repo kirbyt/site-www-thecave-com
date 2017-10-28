@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-10-26T18:22:19+00:00</updated>
+  <updated>2017-10-28T03:42:20+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/10/28/when-in-maine/"/>
+    <published>2017-10-28T03:39:17+00:00</published>
+    <updated>2017-10-28T03:39:17+00:00</updated>
+    <id>http://www.thecave.com/2017/10/28/when-in-maine</id>
+    <content type="html"><![CDATA[<p>When in Maine. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-27-23-38-Zu21cegi2ofNxaxiomBt.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[See who you're following on Micro.blog]]></title>
@@ -218,17 +229,6 @@
     <updated>2017-08-15T23:01:06+00:00</updated>
     <id>http://www.thecave.com/2017/08/15/yankees-vs-mets</id>
     <content type="html"><![CDATA[<p>Ready to watch the Yankees vs Mets game. I predict New York will win. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-08-15-18-58-YyIGiskSSHZtrWzUFOsJ.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/08/11/i-love-vermont/"/>
-    <published>2017-08-11T05:05:11+00:00</published>
-    <updated>2017-08-11T05:05:11+00:00</updated>
-    <id>http://www.thecave.com/2017/08/11/i-love-vermont</id>
-    <content type="html"><![CDATA[<p>I can’t wait to be back in Vermont.</p>
 
 ]]></content>
   </entry>
