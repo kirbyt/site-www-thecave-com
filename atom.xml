@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-10-28T18:12:24+00:00</updated>
+  <updated>2017-10-28T18:18:05+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/10/28/kennebunkport-maine/"/>
+    <published>2017-10-28T18:11:08+00:00</published>
+    <updated>2017-10-28T18:11:08+00:00</updated>
+    <id>http://www.thecave.com/2017/10/28/kennebunkport-maine</id>
+    <content type="html"><![CDATA[<p><img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-28-14-09-Q3LyvQpc77iCDgQcM863.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -218,17 +229,6 @@
     <updated>2017-08-24T17:44:49+00:00</updated>
     <id>http://www.thecave.com/2017/08/24/paid-vacation</id>
     <content type="html"><![CDATA[<p>Starting my first paid vacation in over 14 years. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-08-24-13-42-5VFAWkXGrnbb6K9R7gWe.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/08/20/count-basie-orchestra-20/"/>
-    <published>2017-08-20T23:04:35+00:00</published>
-    <updated>2017-08-20T23:04:35+00:00</updated>
-    <id>http://www.thecave.com/2017/08/20/count-basie-orchestra%20</id>
-    <content type="html"><![CDATA[<p>Count Basie Orchestra at Music in the Meadows. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-08-20-19-03-UanJlggMt05pfnnXD4ru.jpg" alt="" /></p>
 
 ]]></content>
   </entry>
