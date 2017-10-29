@@ -4,13 +4,25 @@
   <title><![CDATA[Category: personal | thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/category/personal/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-10-28T18:18:05+00:00</updated>
+  <updated>2017-10-29T22:23:24+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/10/29/one-more-stop/"/>
+    <updated>2017-10-29T22:20:10+00:00</updated>
+    <id>http://www.thecave.com/2017/10/29/one-more-stop</id>
+    <description><![CDATA[<p>One more stop before going home. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-29-18-18-rGlyosmMKbO7LIGaQnYc.jpg" alt="" /></p>
+]]></description>
+    <content type="html"><![CDATA[<p>One more stop before going home. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-29-18-18-rGlyosmMKbO7LIGaQnYc.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -57,18 +69,6 @@
 
 ]]></description>
     <content type="html"><![CDATA[<p>I discovered you can see the list of people a person follows on <a href="https://micro.blog/">Micro.blog</a>, including yourself. It seems the feature is only available in the <a href="http://help.micro.blog/2017/mac-version/">Micro.blog for Mac</a> app. Using it, click a person’s avatar. Under the bio section, you’ll see “Following n” where n is the number of people that the person follows. Click it to see the list of people. Thanks, <a href="https://micro.blog/manton">@manton</a>, for giving us another way to discover people on Micro.blog.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/10/26/a-year-ago-today/"/>
-    <updated>2017-10-26T14:44:36+00:00</updated>
-    <id>http://www.thecave.com/2017/10/26/a-year-ago-today</id>
-    <description><![CDATA[<p>A year ago today I was snowboarding on Mt. Mansfield. It’s a different story today with warmish temperatures and rain. I’m ready for the start of winter. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-26-10-37-owQ8VNFrdmUMdCNidshS.jpg" alt="" /></p>
-]]></description>
-    <content type="html"><![CDATA[<p>A year ago today I was snowboarding on Mt. Mansfield. It’s a different story today with warmish temperatures and rain. I’m ready for the start of winter. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-26-10-37-owQ8VNFrdmUMdCNidshS.jpg" alt="" /></p>
 
 ]]></content>
   </entry>
