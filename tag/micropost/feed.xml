@@ -4,13 +4,28 @@
   <title><![CDATA[Tag: micropost | thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/tag/micropost/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-10-29T22:23:24+00:00</updated>
+  <updated>2017-11-01T01:53:09+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    
+    <title></title>
+    
+    <link href="http://www.thecave.com/2017/11/01/happy-halloween/"/>
+    <updated>2017-11-01T01:47:47+00:00</updated>
+    <id>http://www.thecave.com/2017/11/01/happy-halloween</id>
+    <tag>micropost</tag>
+    <description><![CDATA[<p>Happy Halloween. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-31-21-46-NaNP2MClkTHtTX8ITQKK.jpg" alt="" /></p>
+]]></description>
+    <content type="html"><![CDATA[<p>Happy Halloween. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-31-21-46-NaNP2MClkTHtTX8ITQKK.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     
@@ -68,22 +83,6 @@
     <description><![CDATA[<p>When in Maine. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-27-23-38-Zu21cegi2ofNxaxiomBt.jpg" alt="" /></p>
 ]]></description>
     <content type="html"><![CDATA[<p>When in Maine. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-27-23-38-Zu21cegi2ofNxaxiomBt.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    
-    <title type="html"><![CDATA[See who you're following on Micro.blog]]></title>
-    
-    <link href="http://www.thecave.com/2017/10/26/see-who-you-are-following-on-micro_blog/"/>
-    <updated>2017-10-26T18:07:09+00:00</updated>
-    <id>http://www.thecave.com/2017/10/26/see-who-you-are-following-on-micro_blog</id>
-    <tag>micropost</tag>
-    <description><![CDATA[<p>I discovered you can see the list of people a person follows on <a href="https://micro.blog/">Micro.blog</a>, including yourself. It seems the feature is only available in the <a href="http://help.micro.blog/2017/mac-version/">Micro.blog for Mac</a> app. Using it, click a person’s avatar. Under the bio section, you’ll see “Following n” where n is the number of people that the person follows. Click it to see the list of people. Thanks, <a href="https://micro.blog/manton">@manton</a>, for giving us another way to discover people on Micro.blog.</p>
-
-]]></description>
-    <content type="html"><![CDATA[<p>I discovered you can see the list of people a person follows on <a href="https://micro.blog/">Micro.blog</a>, including yourself. It seems the feature is only available in the <a href="http://help.micro.blog/2017/mac-version/">Micro.blog for Mac</a> app. Using it, click a person’s avatar. Under the bio section, you’ll see “Following n” where n is the number of people that the person follows. Click it to see the list of people. Thanks, <a href="https://micro.blog/manton">@manton</a>, for giving us another way to discover people on Micro.blog.</p>
 
 ]]></content>
   </entry>

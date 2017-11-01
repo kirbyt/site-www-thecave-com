@@ -5,9 +5,33 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 29 Oct 2017 22:23:24 +0000</pubDate>
-    <lastBuildDate>Sun, 29 Oct 2017 22:23:24 +0000</lastBuildDate>
+    <pubDate>Wed, 01 Nov 2017 01:53:09 +0000</pubDate>
+    <lastBuildDate>Wed, 01 Nov 2017 01:53:09 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;Happy Halloween. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-10-31-21-46-NaNP2MClkTHtTX8ITQKK.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 01 Nov 2017 01:47:47 +0000</pubDate>
+        <link>http://www.thecave.com/2017/11/01/happy-halloween/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2017/11/01/happy-halloween/</guid>
+        
+        <category>micropost</category>
+        
+        <category>photo</category>
+        
+        <category>rowan</category>
+        
+        <category>stowe</category>
+        
+        <category>vermont</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title></title>
@@ -189,26 +213,6 @@
         <guid isPermaLink="true">http://www.thecave.com/2017/10/11/closing-my-rings/</guid>
         
         <category>micropost</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://www.explorebigsky.com/two-dead-after-avalanche-incident-south-of-big-sky/22864&quot;&gt;Sad news&lt;/a&gt; and too damn early in the season for this to happen. My heart goes out to their family and friends.&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 11 Oct 2017 01:22:55 +0000</pubDate>
-        <link>http://www.thecave.com/2017/10/11/sad-news/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2017/10/11/sad-news/</guid>
-        
-        <category>micropost</category>
-        
-        <category>news</category>
-        
-        <category>snowboarding</category>
         
         
         <category>personal</category>
