@@ -4,13 +4,25 @@
   <title><![CDATA[Category: personal | thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/category/personal/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-11-01T01:53:09+00:00</updated>
+  <updated>2017-11-01T11:57:32+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/11/01/good-morning-stowe/"/>
+    <updated>2017-11-01T11:54:19+00:00</updated>
+    <id>http://www.thecave.com/2017/11/01/good-morning-stowe</id>
+    <description><![CDATA[<p><img src="https://thecave-com.s3.amazonaws.com/Photo-2017-11-01-07-53-8xBYynhzHukGdKB7fXVn.jpg" alt="" /></p>
+]]></description>
+    <content type="html"><![CDATA[<p><img src="https://thecave-com.s3.amazonaws.com/Photo-2017-11-01-07-53-8xBYynhzHukGdKB7fXVn.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -56,18 +68,6 @@
     <description><![CDATA[<p>Lunch at Mabels. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-28-14-03-AjeX6pYZCkjJIHzM7lQ4.jpg" alt="" /></p>
 ]]></description>
     <content type="html"><![CDATA[<p>Lunch at Mabels. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-28-14-03-AjeX6pYZCkjJIHzM7lQ4.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/10/28/when-in-maine/"/>
-    <updated>2017-10-28T03:39:17+00:00</updated>
-    <id>http://www.thecave.com/2017/10/28/when-in-maine</id>
-    <description><![CDATA[<p>When in Maine. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-27-23-38-Zu21cegi2ofNxaxiomBt.jpg" alt="" /></p>
-]]></description>
-    <content type="html"><![CDATA[<p>When in Maine. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-27-23-38-Zu21cegi2ofNxaxiomBt.jpg" alt="" /></p>
 
 ]]></content>
   </entry>
