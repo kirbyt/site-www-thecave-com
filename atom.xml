@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-11-01T11:57:32+00:00</updated>
+  <updated>2017-11-18T00:23:05+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/11/18/opening-day/"/>
+    <published>2017-11-18T00:19:36+00:00</published>
+    <updated>2017-11-18T00:19:36+00:00</updated>
+    <id>http://www.thecave.com/2017/11/18/opening-day</id>
+    <content type="html"><![CDATA[<p>Enjoying Après Opening Day at Stowe Mountain Resort. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-11-17-19-17-eaZv8Gr3kXwLRSUAVDIc.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -218,17 +229,6 @@
     <updated>2017-09-17T11:59:03+00:00</updated>
     <id>http://www.thecave.com/2017/09/17/danville-corn-maze</id>
     <content type="html"><![CDATA[<p>Fun times finding our way out of the Danville Corn Maze yesterday. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-09-17-07-47-XQINgFhXw8Q2PWzIYJy8.jpg" alt="" /><img src="https://thecave-com.s3.amazonaws.com/Photo-2017-09-17-07-54-LhoVarU9ojDFeLCKxqgd.jpg" alt="" /><img src="https://thecave-com.s3.amazonaws.com/Photo-2017-09-17-07-56-fTjG3bwenpUuQqtxqiiT.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/08/26/kids-enjoying-the-view/"/>
-    <published>2017-08-26T17:17:30+00:00</published>
-    <updated>2017-08-26T17:17:30+00:00</updated>
-    <id>http://www.thecave.com/2017/08/26/kids-enjoying-the-view</id>
-    <content type="html"><![CDATA[<p>Enjoying the view. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-08-26-13-15-cupeaSRCCJ4BQqSesbDU.jpg" alt="" /></p>
 
 ]]></content>
   </entry>
