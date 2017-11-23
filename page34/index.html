@@ -124,6 +124,24 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2006/10/25/namespaces-in-delphi/">Namespaces in Delphi</a>
+    </h2>
+    
+    <p>Recently there have been some good postings about using namespaces in Delphi such as the ones <a href="http://blogs.borland.com/nickhodges/articles/28331.aspx">here</a>, <a href="http://blogs.teamb.com/rudyvelthuis/archive/2006/10/04/27817.aspx">here</a>, and <a href="http://blog.marcocantu.com/blog/delphidotnet_firstclass.html">here</a>.  I like how namespaces are implemented in Delphi but I have been slow to adopt them in my Delphi code (especially Win32 code).  The problem I have is that the BDS Project Manager has no collapsible view, or grouping for namespaces.  Instead, Project Manager lists the unit names.  My namespaces tend to be wordy which means I cannot easily see the unit name without making the Project Manager window very wide.<br /><br />It will be great if the next release of BDS provides some sort of grouping of namespaces within the Project Manager.  For example, each segment in the namespace could be represented as a folder that can expand and collapse.  And the contents of the folder would be the final unit name or additional namespaces contained within.  In other words, the Project Manager would look something like this when the following units are included:<br /><br />Units:<br /><br />WhitePeakSoftware.Data.DataProvider.pas<br />WhitePeakSoftware.Data.Providers.SqlProvider.pas<br />WhitePeakSoftware.Data.Providers.SqliteProvider.pas<br />WhitePeakSoftware.Net.MailClient.pas<br /><br />Project Manager:<br />&lt;pre&gt;<br />ProjectGroup<br />- MyProgram.exe<br />  + References<br />  - WhitePeakSoftware<br />    - Data<br />      - Providers<br />        - SqlProvider.pas<br />        - SqliteProvider.pas<br />      - DataProvider.pas<br />    - Net<br />      - MailClient.pas<br />&lt;/pre&gt;<br /><br />There is already a <a href="http://qc.borland.com/wc/qcmain.aspx?d=26677">feature request</a> in the QC that asks for namespace grouping.  Please vote for this feature if you are using namespaces in Delphi and you would like to see some type of namespace grouping.</p>
+
+
+    <p><a href="/2006/10/25/namespaces-in-delphi/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on October 25, 2006
+     in <a class='category' href='/category/programming/'>programming</a>.
+    Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2006/09/25/parse-csv-or-tab-separated-files-using-delphi/">Parse CSV or Tab Separated Files Using Delphi</a>
     </h2>
     
@@ -283,25 +301,6 @@
 </div>
 <hr>
 
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2006/08/27/gluten-free-gourmet-dessert-recipes-book/">Gluten-Free Gourmet Dessert Recipes Book</a>
-    </h2>
-    
-    <p><img src="http://www.thecave.com/images/blogimages/GlutenFreeBookCover.jpg" border="0" width="148" height="191" align="left" hspace="10" /></p>
-
-
-
-    <p><a href="/2006/08/27/gluten-free-gourmet-dessert-recipes-book/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on August 27, 2006
-     in <a class='category' href='/category/personal/'>personal</a>.
-    Tagged in .
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -334,6 +333,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2017/11/23/first-day/" title="">First day of the season with the...</a></li>
+                
                 <li><a href="/2017/11/21/just-another-morning-in-stowe/" title="">Fun times this morning.  </a></li>
                 
                 <li><a href="/2017/11/18/opening-day/" title="">Enjoying Après Opening Day at Stowe Mountain...</a></li>
@@ -341,8 +342,6 @@
                 <li><a href="/2017/11/01/good-morning-stowe/" title="">November 1, 2017 at 11:54:19 AM</a></li>
                 
                 <li><a href="/2017/11/01/happy-halloween/" title="">Happy Halloween. </a></li>
-                
-                <li><a href="/2017/10/29/one-more-stop/" title="">One more stop before going home. </a></li>
                 
                 </ul>                
             </div>

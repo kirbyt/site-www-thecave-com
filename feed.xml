@@ -5,9 +5,31 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 21 Nov 2017 17:29:33 +0000</pubDate>
-    <lastBuildDate>Tue, 21 Nov 2017 17:29:33 +0000</lastBuildDate>
+    <pubDate>Thu, 23 Nov 2017 02:15:51 +0000</pubDate>
+    <lastBuildDate>Thu, 23 Nov 2017 02:15:51 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;First day of the season with the kid on the hill. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-11-22-21-09-I8sOeA8HeHPzQELtIyNN.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 23 Nov 2017 02:12:31 +0000</pubDate>
+        <link>http://www.thecave.com/2017/11/23/first-day/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2017/11/23/first-day/</guid>
+        
+        <category>micropost</category>
+        
+        <category>photo</category>
+        
+        <category>snowboarding</category>
+        
+        <category>stowe</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title></title>
@@ -195,30 +217,6 @@
         <category>micro.blog</category>
         
         <category>micropost</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;A year ago today I was snowboarding on Mt. Mansfield. It’s a different story today with warmish temperatures and rain. I’m ready for the start of winter. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-10-26-10-37-owQ8VNFrdmUMdCNidshS.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 26 Oct 2017 14:44:36 +0000</pubDate>
-        <link>http://www.thecave.com/2017/10/26/a-year-ago-today/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2017/10/26/a-year-ago-today/</guid>
-        
-        <category>micropost</category>
-        
-        <category>photo</category>
-        
-        <category>snowboarding</category>
-        
-        <category>stowe</category>
-        
-        <category>vermont</category>
         
         
         <category>personal</category>
