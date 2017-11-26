@@ -18,6 +18,8 @@ The list starts with the more budget friendly places, then moves up to the more 
 
 There are places available on AirBnB if you're into that sort of thing.
 
+---
+
 ## Restaurants
 
 <div  markdown="1" class="custom-list">
@@ -43,6 +45,8 @@ You can also eat dinner at any of these Après Ski places.
 - [Tap 25](http://www.tap25stowe.com)
 </div>
 
+---
+
 ## Things to Do
 
 - [Stowebowl](http://www.stowebowl.com)
@@ -60,6 +64,8 @@ You can also eat dinner at any of these Après Ski places.
 - [Stowe Mountain Resort](https://www.stowe.com/activities/winter/ice-skating/): Brings your own skates, and skate for free. Rental skates are available.
 - [Stowe Arena](https://www.stowerec.org/about-stowe-arena/)
 - [Edison Hill](http://edsonhill.com)
+
+---
 
 ## For the Craft Beer Lover
 
