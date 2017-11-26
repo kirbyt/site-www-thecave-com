@@ -49,26 +49,33 @@ You can also eat dinner at any of these Après Ski places.
 
 ## Things to Do
 
+<div  markdown="1" class="custom-list">
 - [Stowebowl](http://www.stowebowl.com)
 - Stowe Elementary School: Sledding and playground
+</div>
 
 ### Cross Country Skiing/Snowshoeing
 
+<div  markdown="1" class="custom-list">
 - [Trapp Family Lodge](https://www.trappfamily.com/skiing-snowshoeing.htm)
 - [Stowe Mountain Resort Cross Country Center](https://www.stowe.com/ski-ride/xc/)
 - [Edison Hill](http://edsonhill.com)
 - The Notch: Drive up Mountain Road/VT 108 until it ends (just pass Stowe Mountain Resort)
+</div>
 
 ### Ice Skating
 
+<div  markdown="1" class="custom-list">
 - [Stowe Mountain Resort](https://www.stowe.com/activities/winter/ice-skating/): Brings your own skates, and skate for free. Rental skates are available.
 - [Stowe Arena](https://www.stowerec.org/about-stowe-arena/)
 - [Edison Hill](http://edsonhill.com)
+</div>
 
 ---
 
 ## For the Craft Beer Lover
 
+<div  markdown="1" class="custom-list">
 - [The Alchemist](https://alchemistbeer.com)
 - [Idletyme](https://idletymebrewing.com): They have a restaurant.
 - [Stowe Cider](https://www.stowecider.com)
@@ -77,14 +84,17 @@ You can also eat dinner at any of these Après Ski places.
 - [Doc Ponds](https://www.docponds.com): Large selection of local beers.
 - [The Bench](http://www.benchvt.com): Nice selection of local beers.
 - [Tap 25](http://www.tap25stowe.com)
+</div>
 
 ### Nearby Stowe
 
+<div  markdown="1" class="custom-list">
 - [Lost Nation](http://lostnationbrewing.com): (Morrisville) Great beer and great food.
 - [Rock Art Brewery](http://www.rockartbrewery.com): (Morrisville)
 - [Prohibition Pig](http://prohibitionpig.com): (Waterbury)
 - [Ten Bends Beer](https://tenbendsbeer.com): (Hyde Park)
 - [Green Mountain Distillers](http://greendistillers.com): (Morrisville)
+</div>
 
 ---
 
