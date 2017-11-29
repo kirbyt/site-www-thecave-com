@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-11-29T02:29:44+00:00</updated>
+  <updated>2017-11-29T02:35:24+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/11/29/this-afternoon/"/>
+    <published>2017-11-29T02:27:47+00:00</published>
+    <updated>2017-11-29T02:27:47+00:00</updated>
+    <id>http://www.thecave.com/2017/11/29/this-afternoon</id>
+    <content type="html"><![CDATA[<p>This afternoon. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-11-28-21-26-ble2tBMaAIozjnmir19C.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -218,17 +229,6 @@
     <updated>2017-10-04T01:36:37+00:00</updated>
     <id>http://www.thecave.com/2017/10/04/corn</id>
     <content type="html"><![CDATA[<p><img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-03-21-35-OWhlODXs3LDrKiejD2mn.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/09/23/hush/"/>
-    <published>2017-09-23T22:52:50+00:00</published>
-    <updated>2017-09-23T22:52:50+00:00</updated>
-    <id>http://www.thecave.com/2017/09/23/hush</id>
-    <content type="html"><![CDATA[<p>Having a chilled night wishing for some Deep Purple. Then <a href="https://itunes.apple.com/us/album/hush/id83155652?i=83155547">Hush</a> comes on. Perfect evening. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-09-23-18-51-24nQ3rvXvUkmjQjKcF70.jpg" alt="" /></p>
 
 ]]></content>
   </entry>

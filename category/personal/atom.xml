@@ -4,13 +4,25 @@
   <title><![CDATA[Category: personal | thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/category/personal/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-11-29T02:29:44+00:00</updated>
+  <updated>2017-11-29T02:35:24+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/11/29/this-afternoon/"/>
+    <updated>2017-11-29T02:27:47+00:00</updated>
+    <id>http://www.thecave.com/2017/11/29/this-afternoon</id>
+    <description><![CDATA[<p>This afternoon. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-11-28-21-26-ble2tBMaAIozjnmir19C.jpg" alt="" /></p>
+]]></description>
+    <content type="html"><![CDATA[<p>This afternoon. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-11-28-21-26-ble2tBMaAIozjnmir19C.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -56,18 +68,6 @@
     <description><![CDATA[<p>Enjoying Après Opening Day at Stowe Mountain Resort. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-11-17-19-17-eaZv8Gr3kXwLRSUAVDIc.jpg" alt="" /></p>
 ]]></description>
     <content type="html"><![CDATA[<p>Enjoying Après Opening Day at Stowe Mountain Resort. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-11-17-19-17-eaZv8Gr3kXwLRSUAVDIc.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/11/01/good-morning-stowe/"/>
-    <updated>2017-11-01T11:54:19+00:00</updated>
-    <id>http://www.thecave.com/2017/11/01/good-morning-stowe</id>
-    <description><![CDATA[<p><img src="https://thecave-com.s3.amazonaws.com/Photo-2017-11-01-07-53-8xBYynhzHukGdKB7fXVn.jpg" alt="" /></p>
-]]></description>
-    <content type="html"><![CDATA[<p><img src="https://thecave-com.s3.amazonaws.com/Photo-2017-11-01-07-53-8xBYynhzHukGdKB7fXVn.jpg" alt="" /></p>
 
 ]]></content>
   </entry>
