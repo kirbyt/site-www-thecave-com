@@ -5,9 +5,31 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 29 Nov 2017 02:35:24 +0000</pubDate>
-    <lastBuildDate>Wed, 29 Nov 2017 02:35:24 +0000</lastBuildDate>
+    <pubDate>Wed, 29 Nov 2017 15:17:43 +0000</pubDate>
+    <lastBuildDate>Wed, 29 Nov 2017 15:17:43 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;A beautiful morning to be out on the hill. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-11-29-10-11-B0DDSa94N3wsiM3lTZxM.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 29 Nov 2017 15:14:36 +0000</pubDate>
+        <link>http://www.thecave.com/2017/11/29/a-beautiful-morning/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2017/11/29/a-beautiful-morning/</guid>
+        
+        <category>micropost</category>
+        
+        <category>photo</category>
+        
+        <category>snowboarding</category>
+        
+        <category>stowe</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title></title>
@@ -195,28 +217,6 @@
         <pubDate>Sat, 28 Oct 2017 18:11:08 +0000</pubDate>
         <link>http://www.thecave.com/2017/10/28/kennebunkport-maine/</link>
         <guid isPermaLink="true">http://www.thecave.com/2017/10/28/kennebunkport-maine/</guid>
-        
-        <category>maine</category>
-        
-        <category>micropost</category>
-        
-        <category>photo</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;Lunch at Mabels. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-10-28-14-03-AjeX6pYZCkjJIHzM7lQ4.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 28 Oct 2017 18:06:12 +0000</pubDate>
-        <link>http://www.thecave.com/2017/10/28/lunch-at-mabels/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2017/10/28/lunch-at-mabels/</guid>
-        
-        <category>lunch</category>
         
         <category>maine</category>
         
