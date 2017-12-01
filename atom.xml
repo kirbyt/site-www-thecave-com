@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-11-29T15:17:43+00:00</updated>
+  <updated>2017-12-01T03:50:28+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,16 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/12/01/music-battle/"/>
+    <published>2017-12-01T03:41:40+00:00</published>
+    <updated>2017-12-01T03:41:40+00:00</updated>
+    <id>http://www.thecave.com/2017/12/01/music-battle</id>
+    <content type="html"><![CDATA[<p>The kid and I played Battle of the Music tonight. His pick: Twenty One Pilots. My pick: Godzilla. The winner: Meatwad’s <a href="https://itunes.apple.com/us/album/frosty-the-red-nosed-snowman/336680764?i=336681060">Frosty the Red-Nosed Snowman</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -218,17 +228,6 @@
     <updated>2017-10-06T23:21:17+00:00</updated>
     <id>http://www.thecave.com/2017/10/06/lake-sunapee-sax</id>
     <content type="html"><![CDATA[<p>Practice time during our weekend getaway. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-06-19-19-3attNwpoOFaMyox3mTjr.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/10/06/more-corn/"/>
-    <published>2017-10-06T03:42:06+00:00</published>
-    <updated>2017-10-06T03:42:06+00:00</updated>
-    <id>http://www.thecave.com/2017/10/06/more-corn</id>
-    <content type="html"><![CDATA[<p><img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-05-23-40-eogwzFSIFl2Z8Np4qUTi.jpg" alt="" /></p>
 
 ]]></content>
   </entry>
