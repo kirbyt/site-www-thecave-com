@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-12-03T20:06:51+00:00</updated>
+  <updated>2017-12-08T02:49:06+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,19 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/12/08/the-bar-for-me/"/>
+    <published>2017-12-08T02:45:44+00:00</published>
+    <updated>2017-12-08T02:45:44+00:00</updated>
+    <id>http://www.thecave.com/2017/12/08/the-bar-for-me</id>
+    <content type="html"><![CDATA[<p>Jane’s Addiction on the sound system. Hunting Hitler on the TV behind the bar. I think I just found my new favorite dive bar.</p>
+
+<p>Oh wait. The bartender just put on Justin Timberlake. Time to look for another place.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -217,17 +230,6 @@
     <updated>2017-10-11T02:56:21+00:00</updated>
     <id>http://www.thecave.com/2017/10/11/closing-my-rings</id>
     <content type="html"><![CDATA[<p>I need to burn twenty more calories to close my Activity ring. I’m thinking about walking to the pub that’s down the street to burn the calories…and grab a beer.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/10/11/sad-news/"/>
-    <published>2017-10-11T01:22:55+00:00</published>
-    <updated>2017-10-11T01:22:55+00:00</updated>
-    <id>http://www.thecave.com/2017/10/11/sad-news</id>
-    <content type="html"><![CDATA[<p><a href="http://www.explorebigsky.com/two-dead-after-avalanche-incident-south-of-big-sky/22864">Sad news</a> and too damn early in the season for this to happen. My heart goes out to their family and friends.</p>
 
 ]]></content>
   </entry>
