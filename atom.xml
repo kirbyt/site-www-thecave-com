@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-12-08T02:49:06+00:00</updated>
+  <updated>2017-12-24T18:11:52+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/12/24/christmas-eve-snowshoe-outing/"/>
+    <published>2017-12-24T18:05:29+00:00</published>
+    <updated>2017-12-24T18:05:29+00:00</updated>
+    <id>http://www.thecave.com/2017/12/24/christmas-eve-snowshoe-outing</id>
+    <content type="html"><![CDATA[<p>Decided to do something other than snowboarding today. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-12-24-13-04-dZxZ4bL5qd7A3x0B9mNW.jpg" alt="" /> <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-12-24-13-01-TelLjsyA4Si9HcePlCpd.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -219,17 +230,6 @@
     <updated>2017-10-17T21:06:51+00:00</updated>
     <id>http://www.thecave.com/2017/10/17/red-leaves</id>
     <content type="html"><![CDATA[<p><img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-17-17-05-3metqcBTsxKB5xyZXO9c.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/10/11/closing-my-rings/"/>
-    <published>2017-10-11T02:56:21+00:00</published>
-    <updated>2017-10-11T02:56:21+00:00</updated>
-    <id>http://www.thecave.com/2017/10/11/closing-my-rings</id>
-    <content type="html"><![CDATA[<p>I need to burn twenty more calories to close my Activity ring. I’m thinking about walking to the pub that’s down the street to burn the calories…and grab a beer.</p>
 
 ]]></content>
   </entry>
