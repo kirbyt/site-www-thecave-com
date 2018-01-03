@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2018-01-03T18:45:23+00:00</updated>
+  <updated>2018-01-03T18:51:43+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2018 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2018/01/03/the-kid-getting-air/"/>
+    <published>2018-01-03T18:44:18+00:00</published>
+    <updated>2018-01-03T18:44:18+00:00</updated>
+    <id>http://www.thecave.com/2018/01/03/the-kid-getting-air</id>
+    <content type="html"><![CDATA[<p>The kid getting air last Sunday. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-01-03-13-43-YpVBc1rmuekdsWxpgOAR.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -219,17 +230,6 @@
     <updated>2017-10-26T14:44:36+00:00</updated>
     <id>http://www.thecave.com/2017/10/26/a-year-ago-today</id>
     <content type="html"><![CDATA[<p>A year ago today I was snowboarding on Mt. Mansfield. It’s a different story today with warmish temperatures and rain. I’m ready for the start of winter. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-26-10-37-owQ8VNFrdmUMdCNidshS.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/10/22/the-kids-first-mindstorm-robot/"/>
-    <published>2017-10-22T11:54:48+00:00</published>
-    <updated>2017-10-22T11:54:48+00:00</updated>
-    <id>http://www.thecave.com/2017/10/22/the-kids-first-mindstorm-robot</id>
-    <content type="html"><![CDATA[<p>The kid built his first Mindstorm robot. He has a lot more work to do before next month’s STEM fair. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-22-07-50-TEgxCnbKGiAPbiMWj0B3.jpg" alt="" /></p>
 
 ]]></content>
   </entry>
