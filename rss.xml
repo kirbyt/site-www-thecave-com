@@ -5,10 +5,20 @@
         <description>thecave | Kirby Turner's Blog - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2017-12-28T18:03:25+00:00</lastBuildDate>
-        <pubDate>2017-12-28T18:03:25+00:00</pubDate>
+        <lastBuildDate>2018-01-03T18:45:23+00:00</lastBuildDate>
+        <pubDate>2018-01-03T18:45:23+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title></title>
+                <description>&lt;p&gt;Picture of the kid from last month. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-01-03-13-40-8niSf6M1Sv5IGARRdLwV.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2018/01/03/the-kid-last-month/</link>
+                <guid>http://www.thecave.com/2018/01/03/the-kid-last-month</guid>
+                <pubDate>2018-01-03T18:41:56+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -199,16 +209,6 @@
                 <link>http://www.thecave.com/2017/10/22/the-kids-first-mindstorm-robot/</link>
                 <guid>http://www.thecave.com/2017/10/22/the-kids-first-mindstorm-robot</guid>
                 <pubDate>2017-10-22T11:54:48+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-10-17-17-05-3metqcBTsxKB5xyZXO9c.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2017/10/17/red-leaves/</link>
-                <guid>http://www.thecave.com/2017/10/17/red-leaves</guid>
-                <pubDate>2017-10-17T21:06:51+00:00</pubDate>
         </item>
 
 

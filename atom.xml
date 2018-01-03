@@ -4,14 +4,25 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2017-12-28T18:03:25+00:00</updated>
+  <updated>2018-01-03T18:45:23+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
-  <rights>Copyright (c) 2002-2017 Kirby Turner</rights>
+  <rights>Copyright (c) 2002-2018 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2018/01/03/the-kid-last-month/"/>
+    <published>2018-01-03T18:41:56+00:00</published>
+    <updated>2018-01-03T18:41:56+00:00</updated>
+    <id>http://www.thecave.com/2018/01/03/the-kid-last-month</id>
+    <content type="html"><![CDATA[<p>Picture of the kid from last month. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-01-03-13-40-8niSf6M1Sv5IGARRdLwV.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -219,17 +230,6 @@
     <updated>2017-10-22T11:54:48+00:00</updated>
     <id>http://www.thecave.com/2017/10/22/the-kids-first-mindstorm-robot</id>
     <content type="html"><![CDATA[<p>The kid built his first Mindstorm robot. He has a lot more work to do before next month’s STEM fair. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-22-07-50-TEgxCnbKGiAPbiMWj0B3.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/10/17/red-leaves/"/>
-    <published>2017-10-17T21:06:51+00:00</published>
-    <updated>2017-10-17T21:06:51+00:00</updated>
-    <id>http://www.thecave.com/2017/10/17/red-leaves</id>
-    <content type="html"><![CDATA[<p><img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-17-17-05-3metqcBTsxKB5xyZXO9c.jpg" alt="" /></p>
 
 ]]></content>
   </entry>
