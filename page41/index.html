@@ -127,6 +127,63 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2006/05/04/one-more-rant-about-sql-server-2005/">One More Rant about SQL Server 2005</a>
+    </h2>
+    
+    <p>Here’s another rant I have about SQL Server 2005.</p>
+
+
+
+    <p><a href="/2006/05/04/one-more-rant-about-sql-server-2005/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on May 4, 2006
+     in <a class='category' href='/category/programming/'>programming</a>.
+    Tagged in <a class='tag' href='/tag/sql-server/'>sql server</a>.
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/05/04/limited-scripting-in-sql-server-2005/">Limited Scripting in SQL Server 2005</a>
+    </h2>
+    
+    <p>SQL Server 2005 has been out for some time now but I have only recently made the move to it.  I’ve been in the SQL Server 2000 world because of customers but my customers are finally making the move 2005.<br /><br />Overall I really like SQL Server 2005 and the new Management Studio is nice.  However, I’m really annoyed that the SQL Server 2005 team decided to do away with the database scripting feature found in SQL Server 2000.  <br /><br />In SQL Server 2000, you can script out each database object into individual files.  I do this so I can commit the DDL source for each into CVS, or to do revision comparisons, or to do a number of other tasks.  But you cannot easily script out each object in a database with SQL Server 2005.  Apparently this is a known limitation as seen <a href="http://lab.msdn.microsoft.com/productfeedback/viewfeedback.aspx?feedbackid=9eb6c773-2dbb-4a27-b9d8-225d6ed4385a">here</a>.<br /><br />One option I found is to <a href="http://www.sqlteam.com/item.asp?ItemID=23185">write a programming using .NET 2.0 and the SQL Management Object (SMO)</a>.  Unfortunately time is not a luxury I have and I have an immediate need to script out the each object in a database into individual files.  So I started down the path of script out each object individual.  <br /><br />Guess what?  It has its own set of problems.  First starters, there is not an option to generate a script that contains both the DROP and CREATE statements.  Instead what I do is generate the CREATE statement to a query window.  Next I generate the DROP statement to the clipboard followed by pasting the clipboard content to the query window.  Needless to say, this is a painful process, and I have hundreds of database objects to script out.<br /><br />I can’t believe the model used for generating scripts in previous versions of SQL Server did not make it into SQL Server 2005.  I would have expected the same functionality at a minimum, and possibly an improvement on past versions.  But I would never have guess it was removed completely.</p>
+
+
+    <p><a href="/2006/05/04/limited-scripting-in-sql-server-2005/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on May 4, 2006
+     in <a class='category' href='/category/programming/'>programming</a>.
+    Tagged in <a class='tag' href='/tag/sql-server/'>sql server</a>.
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/05/03/ws-workbench-coming-along-nicely/">WS-Workbench Coming Along Nicely</a>
+    </h2>
+    
+    <p><a href="http://www.thecave.com/images/blogimages/swirl-20060503.gif"><img src="http://www.thecave.com/images/blogimages/swirl-20060503.gif" width="50%" border="1" align="left" /></a>
+Work on <a href="http://www.whitepeaksoftware.com/">White Peak Software</a>’s next product, WS-Workbench (also called Swirl internally) is coming along nicely as you can see from this screen shot.  The first beta should be ready soon.  Post a comment or send me an email if you are interested in beta testing WS-Workbench once it is ready.</p>
+
+
+
+    <p><a href="/2006/05/03/ws-workbench-coming-along-nicely/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on May 3, 2006
+     in <a class='category' href='/category/programming/'>programming</a>.
+    Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>, <a class='tag' href='/tag/white-peak-software/'>white peak software</a>.
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2006/05/02/too-much-technology-to-play-with/">Too Much Technology to Play With</a>
     </h2>
     
@@ -250,60 +307,6 @@
 </div>
 <hr>
 
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2006/04/05/xml-schema-object-model-som-parser-for-delphi/">XML Schema Object Model (SOM) Parser for Delphi</a>
-    </h2>
-    
-    <p>I’m working on a new project and have a need to parse XML Schemas found inside WSDL documents.  After a few google searches I discovered the concept of a Schema Object Model (SOM).  The <a href="http://www.xml.com/pub/a/2002/12/04/som.html">.NET Framework has a SOM parser</a> as does <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/xmlsdk/html/85b447ee-70d0-4456-9ad7-70b4e2d1f3fa.asp">MSXML</a>.  There’s also a <a href="https://xsom.dev.java.net/">SOM parser for Java</a> as well.  Because I’m writing a Win32 application, I started learning <a href="http://www.informit.com/articles/article.asp?p=31360&amp;seqNum=1">the ins and outs of MSXML’s SOM parser</a>.  As a learned more I did additional google searches and discovered Delphi has its own SOM parser.<br /><br />Interfaces such as <i>IXmlSchemaDoc</i> and functions such as <i>LoadXMLSchema</i> and <i>LoadXMLSchemaStr</i> are undocumented but the source can be found in <i>source\win32\xml\XMLSchema.pas</i>.  There is also <a href="http://codecentral.borland.com/Item.aspx?id=21870">sample code for parsing an XML Schema</a> available BDN.  With the aid of the sample code I was able to get my sample project working.  <br /><br />And in case you are wondering, the VCL library has a component called <i>TXMLSchemaDoc</i> that wraps Delphi’s SOM parser into a handy component.  You will not find it in the tool pallet though.  For what it is worth, I found working with the interface (<i>IXmlSchemaDoc</i>) easy and I have not tried the <i>TXMLSchemaDoc</i> component.</p>
-
-
-    <p><a href="/2006/04/05/xml-schema-object-model-som-parser-for-delphi/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on April 5, 2006
-     in <a class='category' href='/category/programming/'>programming</a>.
-    Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2006/04/05/shareware-stars-can-make-big-money/">Shareware Stars Can Make Big Money</a>
-    </h2>
-    
-    <p>Ever wonder how much money WinZip brings in per year, or how much money Jasc, makers of Paint Shop Pro, makes annually?  Corel now owns these two and Corel is planning to go public, which means disclosure to this information.  <br /><br />Thomas Warfield over at A Shareware Life has <a href="http://www.asharewarelife.com/2006/04/winzip_and_jasc.html">posted the numbers</a> and a link to the entire prospectus.  Give it a quick read and see that shareware stars do make big money.  At least these two do.</p>
-
-
-    <p><a href="/2006/04/05/shareware-stars-can-make-big-money/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on April 5, 2006
-     in <a class='category' href='/category/business/'>business</a>.
-    Tagged in <a class='tag' href='/tag/indie-life/'>indie life</a>.
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2006/04/05/finally-windows-on-mac/">Finally Windows on Mac</a>
-    </h2>
-    
-    <p>CNet news is reporting that <a href="http://news.zdnet.com/2100-3513_22-6057856.html?tag=nl.e589">Apple has announced Boot Camp</a>, a new software package that makes it possible to run Microsoft Windows on the new Intel-based Macs.  How awesome is that!  It’s one step closer to making me want to buy a Mac.  Now what would be really awesome and close the deal for me is to have “Devco” create a Delphi compiler for the Mac OS and make it easy for me to port my VCL applications to Mac.</p>
-
-
-    <p><a href="/2006/04/05/finally-windows-on-mac/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on April 5, 2006
-     in <a class='category' href='/category/programming/'>programming</a>.
-    Tagged in <a class='tag' href='/tag/os-x/'>os x</a>, <a class='tag' href='/tag/windows/'>windows</a>.
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -336,15 +339,15 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2018/01/11/stowe-january-3-2018/" title="Stowe, January 3, 2018">Stowe, January 3, 2018</a></li>
+                
+                <li><a href="/2018/01/11/stowe-december-13-2017/" title="Stowe on December 13">Stowe on December 13</a></li>
+                
+                <li><a href="/2018/01/11/new-year-terrain-park-fun/" title="New Year Terrain Park Fun">New Year Terrain Park Fun</a></li>
+                
                 <li><a href="/2018/01/03/the-kid-getting-air/" title="">The kid getting air last Sunday. </a></li>
                 
                 <li><a href="/2018/01/03/the-kid-last-month/" title="">Picture of the kid from last month....</a></li>
-                
-                <li><a href="/2017/12/24/christmas-eve-snowshoe-outing/" title="">Decided to do something other than snowboarding...</a></li>
-                
-                <li><a href="/2017/12/08/the-bar-for-me/" title="">Jane’s Addiction on the sound system. Hunting...</a></li>
-                
-                <li><a href="/2017/12/03/a-nice-to-the-day/" title="">A nice end to a fun day...</a></li>
                 
                 </ul>                
             </div>

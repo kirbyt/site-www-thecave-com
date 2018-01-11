@@ -127,6 +127,60 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2008/03/14/a-review-of-cvs-clients-for-mac-os-x/">A Review of CVS Clients for Mac OS X</a>
+    </h2>
+    
+    <p>I’ve been a Mac user for a little more than 6 months now, and while I’m still writing software for the Windows platform, I’m toying with the idea of targeting OS X for an upcoming product.  The use of version control software is part of the software methodology used at <a href="http://www.whitepeaksoftware.com/">White Peak Software</a>, and the version control software I used is CVS (Concurrent Versioning System).<br /><br />Why CVS instead of Subversion?  Simple.  I have been using CVS since early 2000.  It works for me and I see no reason for moving to Subversion.  If I were starting from scratch I would most likely select Subversion for versioning control, but that’s a different story for a different blog post.  This blog post is about my review of the various CVS clients available for Mac OS X.<br /><br /><a href="http://www.tortoisecvs.org/">TortoiseCVS</a> is the CVS client I use on Windows and is by far, in my opinion, the best Windows CVS client out there.  This of course is what I used as a baseline for finding a CVS client for the Mac.  The CVS client I use needs to be as good as, or close to, TortoiseCVS.  My preference for a CVS client for the Mac would be one that provides a Finder like user interface and uses right-click popup menus to interact with the CVS repository.  That’s what I went searching for and here is what I found:<br /><br /><b>Xcode</b><br /><br />Xcode from Apple has an SCM repository feature that works with CVS, Subversion, and Perforce.  I like the approach used in Xcode but I wasn’t able to get it working with my CVS repositories.  The first problem I encountered was the lack of sserver support.  The workaround for this is to use CVSNT instead of CVS, which comes installed by default on OS X.  Unfortunately Xcode has a problem with sending the password to CVSNT and since CVS doesn’t support sserver Xcode was quickly off my list of CVS clients to consider.<br /><br />For grins I decided to enable pserver on one of my CVS repositories to test Xcode with CVS.  Unfortunately I ran into more problems.  For starters, there is no way (that I can find) for specifying a module.  Secondly, when I was finally able to get Xcode to checkout a complete repository it would crash Xcode.  I was testing with a rather large repository and the crash happened after about 20 minutes of download time.  I tried this 3 times and the crash happened all 3 times.  So even if Xcode did work with CVSNT and I was able to use sserver, I still could not use Xcode as my CVS client.<br /><br /><b>MacCvsX</b><br /><br />The next CVS client I tried was <a href="http://cvsgui.sourceforge.net/">MacCvsX</a> (version 3.3 beta 2).  This client has no problems accessing my CVS repositories but I found the UI to be a bit cumbersome.  Also, I didn’t like the fact that when I wanted to add lots of new files to the repository I had to select each and every file individually.  There is no “Add Content” feature like that found in <a href="http://www.tortoisecvs.org/">TortoiseCVS</a>.  While I can do everything I need to using MacCvsX, I found it UI to be inefficient.  Thus my search for a CVS client for Mac OS X continued.<br /><br /><b>MacCVS Pro</b><br /><br />I looked at <a href="http://www.maccvs.org/">MacCVS Pro</a> next, but I never downloaded it.  The <a href="http://www.maccvs.org/status.html">revision history</a> shows the last update to be March 27, 2000.  That’s nearly 8 years without an update.  I doubt it will run on my Intel-based MacBook Pro so I didn’t bother to download it.<br /><br />After more searching I discovered that the MacCVS Pro website at maccvs.org is out of date and no longer maintained, but the project lives on at SourceForge.net.  The up-to-date <a href="http://sourceforge.net/projects/maccvspro/">MacCVS Pro</a> can be found at <a href="http://sourceforge.net/projects/maccvspro/">http://sourceforge.net/projects/maccvspro/</a>.  The latest update at the time of this writing is January 14, 2007.  Ah, much better.  I did download it but I never ran it.  According to the release notes in the readme file the latest build of MacCVS Pro “will only run on PPC machines (and Intel machines via Rosetta).”  And the readme goes on to say “This is likely the last version that will be built using CodeWarrior, since CodeWarrior is no longer commercially available.”  So MacCVS Pro is not the CVS client for me.<br /><br /><b>MacCVSClient</b><br /><br />The next CVS client I looked at was <a href="http://www.heilancoo.net/MacCVSClient/">MacCVSClient</a> version 1.10.  Now this product is more to my liking especially after looking at the other options.  It works well with my CVS repositories and I like the concept of opening a sandbox to get a hierarchical view of the files.  I also really liked how the hierarchical view automatically refreshed to reflect the most recent changes to the sandbox area and files within the sandbox.  What I didn’t like was the diff viewer.  While usable it wasn’t what I have become accustom to.  I prefer the split window approach when viewing differences between files.  Still, MacCVSClient is an excellent choice for those looking for a free CVS client for the Mac.<br /><br /><b>SmartCVS</b><br /><br />My search to find the ideal CVS client for Mac OS X lead me to <a href="http://www.syntevo.com/smartcvs/">SmartCVS</a> from Syntevo.  SmartCVS as a very clean, modern looking user interface.  It provides different views of the sandbox.  It allows me to easily checkout specific modules instead of the complete repository.  As a matter of fact, SmartCVS has a project manager that allows me to save the settings for a particular module.  I found this feature to be really cool and handy.  And even though it does not have the “Add Contents” feature found in TortoiseCVS, SmartCVS does make it easy to add large sets of files to a repository even when the files are contained within subdirectories.<br /><br />SmartCVS comes in two favors, Foundation and Professional.  Foundation is free but it does not include all the features found in the Professional version (click <a href="http://www.syntevo.com/smartcvs/comparison.html">here</a> for the features comparison chart).  The Professional version is affordable costing only $79 USD for a single user license and discounts for multi-user licenses.<br /><br />My only complaint with SmartCVS at the moment is that Syntevo needs to improve its <a href="http://en.wikipedia.org/wiki/Search_engine_optimization">SEO</a>.  I didn’t find SmartCVS in my initial searches and had I not spent a few nights in a row looking for CVS clients I probably would have never found it.  <br /><br /><b>Conclusion</b><br /><br />In my opinion and based on my needs, SmartCVS is the best CVS client available for the Mac.  It lacks some features that I have come to expect with TortoiseCVS <strike>such as the ability to use the diff and merge tools of my choosing</strike>, but it definitely has unique features that I like such as the Project Manager.  So if you are looking for a good CVS client for the Mac, give SmartCVS a test drive.<br /><br /><font color="red">\[Update\]</font> Turns out SmartCVS does allow users to specify external file diff and merge tools.  The options are found under Preferences.</p>
+
+
+    <p><a href="/2008/03/14/a-review-of-cvs-clients-for-mac-os-x/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on March 14, 2008
+     in <a class='category' href='/category/programming/'>programming</a>.
+    Tagged in <a class='tag' href='/tag/os-x/'>os x</a>, <a class='tag' href='/tag/source-control/'>source control</a>.
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2008/03/13/killink-csv-1-9-finally-released/">Killink CSV 1.9 Finally Released!</a>
+    </h2>
+    
+    <p>After fighting with a few last minute issues when running under Vista, <a href="http://www.whitepeaksoftware.com/killink-csv.aspx">Killink CSV 1.9</a> was finally released last night.  I wasn’t able to get all the changes I wanted into this release but I got a good number of them.  The biggest change is the new sort feature.  Users are now able to sort their delimited text data using Killink CSV.  Also included in this release is improved navigation (quickly jump to the top, bottom, left, and right most item using Ctrl+Arrow key combinations) and more ways to select values (Shift+Click to select a range of columns or rows, Ctrl+Shift+Arrow keys to select blocks of items from the active cell).  And finally the ability to paste a value to multiple cells simply by selecting a block of cells.<br /><br />This release was long overdue.  But I’m hoping users will find the wait worth well.  Please read the <a href="http://www.whitepeaksoftware.com/help-killink-csv/revisionhistory.html">revision history</a> for a complete list of changes.<br /><br />One feature that did not make this release is Unicode support.  I really wanted to include this feature in version 1.9 but it is taking more time to implement than planned.  So instead of delaying the other features I decided to release version 1.9 without Unicode support.  At the moment Unicode support is now planned for version 1.10 which I have already started work on and will be released soon.</p>
+
+
+    <p><a href="/2008/03/13/killink-csv-1-9-finally-released/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on March 13, 2008
+     in <a class='category' href='/category/business/'>business</a>.
+    Tagged in <a class='tag' href='/tag/killink/'>killink</a>, <a class='tag' href='/tag/white-peak-software/'>white peak software</a>.
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2008/03/05/jet-lagged-alex/">Jet Lagged Alex</a>
+    </h2>
+    
+    <p>My buddy Alex was on NBC’s Today Show this morning in a bit about <a href="http://www.msnbc.msn.com/id/21134540/vp/23479372#23479372">jet lag</a>.</p>
+
+
+    <p><a href="/2008/03/05/jet-lagged-alex/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on March 5, 2008
+     in <a class='category' href='/category/personal/'>personal</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2008/03/05/a-better-way-to-buy-music/">A Better Way To Buy Music</a>
     </h2>
     
@@ -254,60 +308,6 @@ Work on the house is nearing completion.  4 rooms are now ready to go and I hope
 </div>
 <hr>
 
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2008/01/12/the-cavalry-is-here/">The Cavalry is Here</a>
-    </h2>
-    
-    <p>My very good buddy Darren has come up from <strike>Tampa</strike>St. Pete to help with work on the new house for 3 days.  I can’t begin to say how grateful I am having Darren here to help.  Work on the house is progressing nicely now and we’re hoping to have most of the rooms completed by the end of the weekend.<br /><br />Thanks for the help Darren.  I owe you big time!</p>
-
-
-    <p><a href="/2008/01/12/the-cavalry-is-here/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on January 12, 2008
-     in <a class='category' href='/category/personal/'>personal</a>.
-    Tagged in <a class='tag' href='/tag/salem/'>salem</a>.
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2008/01/08/they-iscrewed-me-again/">They iScrewed Me Again</a>
-    </h2>
-    
-    <p><a href="http://www.youtube.com/watch?v=2i32NkW0s94">This spoof from MadTv</a> is too funny especially if you are one of those individuals who keeps buying a new iPod each year.  Me?  I’m happy with my oversized, first-generation iPod Classic which is incompatible with almost things iPod these days.</p>
-
-
-    <p><a href="/2008/01/08/they-iscrewed-me-again/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on January 8, 2008
-     in <a class='category' href='/category/personal/'>personal</a>.
-    Tagged in <a class='tag' href='/tag/humor/'>humor</a>.
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2008/01/02/my-recommended-mac-os-x-applications/">My Recommended Mac OS X Applications</a>
-    </h2>
-    
-    <p>I have been a Mac OS X users for 6 months now and I love it.  It is doubtful I will ever return to a Windows only machine so I thought it fitting to list the OS X software I use regularly.&lt;ul&gt;<br />&lt;li&gt;<a href="http://www.apple.com/macosx/features/mail.html">Mail.app</a>, which comes with OS X, is a powerful email program that allows me to manage the many, many mail messages I receive daily.&lt;/li&gt;<br />&lt;li&gt;<a href="http://www.blogger.com/www.apple.com/ical/">iCal</a> is another handy program that comes with OS X.  iCal allows me to manage multiple calendars.&lt;/li&gt;<br />&lt;li&gt;<a href="http://www.spanningsync.com/">Spanning Sync</a> synchronizes my iCal calendars with Google Calendars.&lt;/li&gt;<br />&lt;li&gt;<a href="http://www.apple.com/macosx/features/300.html#addressbook">Address Book</a>, also free with OS X, is a nice address book manager.&lt;/li&gt;<br />&lt;li&gt;<a href="http://www.vmware.com/products/fusion/">Fusion</a> by VMware is the one piece of software that convinced me to try OS X.  While I love OS X I still must use Windows on a daily basis.  Fusions allows me to run Windows hosted as a virtual machine within OS X.&lt;/li&gt;<br />&lt;li&gt;<a href="http://www.mozilla.com/firefox/">Firefox</a> is my preferred web browser. Safari is nice and I use it from time to time.  But Firefox is the browser I use most often.&lt;/li&gt;<br />&lt;li&gt;<a href="http://www.adiumx.com/">Adium</a> is a friendly chat program supporting AOL, Yahoo, Messenger, Google Talk, and who knows what else.  I like iChat, which comes with OS X, but I don’t use it often due to its lacking support for IM services such as Messenger.&lt;/li&gt;<br />&lt;li&gt;<a href="http://www.apple.com/iphoto/">iPhoto</a> is my favorite application in the iLife suite.  I enjoy taking pictures and I currently use iPhoto to manage all my digital pictures, a collection that is quickly approaching 7,000 pictures.&lt;/li&gt;<br />&lt;li&gt;<a href="http://www.apple.com/ilife/">iLife ‘08</a> is another reason I decided to switch to the Mac.  Making movies, burning DVDs, and managing my digital photos was never this easy in the Windows world.&lt;/li&gt;<br />&lt;li&gt;<a href="http://cord.sourceforge.net/">CoRD</a> is a remote desktop client.  I use it often to RDP into other Windows machines on my network.&lt;/li&gt;<br />&lt;li&gt;<a href="http://www.videolan.org/">VLC</a> is a freeware media player.&lt;/li&gt;<br />&lt;li&gt;<a href="http://www.panic.com/unison/">Unison</a> is a nice newsgroup reader.  I  prefer the user interface from Agent but it is not available for OS X.&lt;/li&gt;<br />&lt;li&gt;<a href="http://www.opencommunity.co.uk/vienna2.php">Vienna</a> is an open source RSS feed reader.&lt;/li&gt;<br />&lt;li&gt;<a href="http://www.shirt-pocket.com/SuperDuper/">SuperDuper</a> is my preferred backup software.  Easy to use, and powerful enough to make the types of backups I want.&lt;/li&gt;<br />&lt;/ul&gt;</p>
-
-
-    <p><a href="/2008/01/02/my-recommended-mac-os-x-applications/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on January 2, 2008
-     in <a class='category' href='/category/business/'>business</a>.
-    Tagged in <a class='tag' href='/tag/os-x/'>os x</a>.
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -340,15 +340,15 @@ Work on the house is nearing completion.  4 rooms are now ready to go and I hope
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2018/01/11/stowe-january-3-2018/" title="Stowe, January 3, 2018">Stowe, January 3, 2018</a></li>
+                
+                <li><a href="/2018/01/11/stowe-december-13-2017/" title="Stowe on December 13">Stowe on December 13</a></li>
+                
+                <li><a href="/2018/01/11/new-year-terrain-park-fun/" title="New Year Terrain Park Fun">New Year Terrain Park Fun</a></li>
+                
                 <li><a href="/2018/01/03/the-kid-getting-air/" title="">The kid getting air last Sunday. </a></li>
                 
                 <li><a href="/2018/01/03/the-kid-last-month/" title="">Picture of the kid from last month....</a></li>
-                
-                <li><a href="/2017/12/24/christmas-eve-snowshoe-outing/" title="">Decided to do something other than snowboarding...</a></li>
-                
-                <li><a href="/2017/12/08/the-bar-for-me/" title="">Jane’s Addiction on the sound system. Hunting...</a></li>
-                
-                <li><a href="/2017/12/03/a-nice-to-the-day/" title="">A nice end to a fun day...</a></li>
                 
                 </ul>                
             </div>

@@ -127,6 +127,60 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2006/01/16/using-dunit-with-finalbuilder/">Using DUnit with FinalBuilder</a>
+    </h2>
+    
+    <p>After installing FinalBuilder for the first time, I looked through the list of actions to see what 3rd party tools were supported.  I was pleasantly surprised to see an action for every tool I use in software development except one, DUnit.  I thought this was odd but I soon realized that DUnit is supported, just not as a custom action.<br /><br />Follow these steps to use DUnit in FinalBuilder:<br /><br />1) Add a Compile Delphi Win32 Project action to your FinalBuilder project.<br />2) Point the Compile Delphi action to your DUnit project and configure it as needed to compile the project.<br />3) Add an Execute Program action to the FinalBuilder project.  This action is found under the Windows OS action group.<br />4) Point the action to the compiled bits from the Compile Delphi action.  In other words, point it to your DUnit program.<br />5) Mark the Log Output option, which should be marked by default.<br /><br />That’s it.  FinalBuilder will run your DUnit unit tests as part of the build process and the output from the tests will be captured by FinalBuilder.  And of course you can configure the FinalBuilder project to act accordingly based on the pass/fail result of your unit tests.<br /><br />Some people might think FinalBuilder should have a custom action for DUnit.  However, the action would only be a direct copy of the Execute Program action.  Or maybe it would combine the Compile Delphi and Execute Program actions into a single action.  But as you can see a custom action is not needed.  DUnit unit tests are support through the Execute Program action and a custom action specific to DUnit would just be a waste of time for the folks at Vsoft Technologies.  Their time is better spent adding support for more tools and adding more features to an already great product,<br />FinalBuilder.</p>
+
+
+    <p><a href="/2006/01/16/using-dunit-with-finalbuilder/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on January 16, 2006
+     in <a class='category' href='/category/programming/'>programming</a>.
+    Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/01/16/migrating-from-visual-studio-to-borland-developer-studio/">Migrating from Visual Studio to Borland Developer Studio</a>
+    </h2>
+    
+    <p>I spent the day migrating various Visual Studio projects to Borland Developer Studio 2006.  For the most part the projects easily moved over but I did have some problems with one project group.  <br /><br />This project group contains multiple C# library projects and an ASP.NET C# web application.  The BDS converter for the project group did not set the parent reference for some of the .aspx and .ascx files.  However, I was able to quickly fix this using a text editor.<br /><br />One Visual Studio feature I do miss since moving to Borland Developer Studio is Copy Web Project.  I really like this feature to xcopy an ASP.NET web application to a new directory that contains only the files needed for runtime.  The Professional Edition of BDS does not have this feature.  However, I was able to quickly clone this feature using FinalBuilder.<br /><br />Right now I’m very happy with the move to Borland Developer Studio.  Using one IDE for all my development work (Delphi, C# and ASP.NET 1.1) is making me a more productive software developer.</p>
+
+
+    <p><a href="/2006/01/16/migrating-from-visual-studio-to-borland-developer-studio/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on January 16, 2006
+     in <a class='category' href='/category/programming/'>programming</a>.
+    Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/01/16/delphi-live-templates-for-vb-developers/">Delphi Live Templates for VB Developers</a>
+    </h2>
+    
+    <p><a href="http://www.lemanix.com/nickblog/default.aspx">Nick Hodges</a> has created a set of <a href="http://www.lemanix.com/nickblog/PermaLink,guid,e407798f-32bd-43cb-96d9-e1f5b04ae316.aspx">Delphi Live Templates for VB developers</a> who have moved to Delphi.  This templates work with the latest version of Borland Developer Studio.  The developer to type VBish code and the templates spit out Delphi code.  For instance, type “MsgBox” and you get “MessageDlg”.</p>
+
+
+    <p><a href="/2006/01/16/delphi-live-templates-for-vb-developers/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on January 16, 2006
+     in <a class='category' href='/category/programming/'>programming</a>.
+    Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2006/01/13/smtp-diagnostics-review/">SMTP Diagnostics Review</a>
     </h2>
     
@@ -252,61 +306,6 @@
 </div>
 <hr>
 
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2005/12/30/what-i-will-and-will-not-miss-about-living-in-new-york-city/">What I will and will not miss about living in New York City</a>
-    </h2>
-    
-    <h2 id="5-things-i-will-not-miss-about-life-in-new-york-in-no-particular-order">5 things I will NOT miss about life in New York (in no particular order):</h2>
-
-
-
-    <p><a href="/2005/12/30/what-i-will-and-will-not-miss-about-living-in-new-york-city/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on December 30, 2005
-     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
-    Tagged in .
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2005/12/25/long-time-no-post-3/">Long Time No Post</a>
-    </h2>
-    
-    <p>December has been a very busy month for me and my wife.  We’ve had a lot going on, which is why I have been slow to post this month.  And no, I have not spent the entire month playing on the Xbox 360, although I wish I had.<br /><br />First the exciting news…We’re moving out of NYC!<br /><br />Yep, you read it here first.  We’re moving out of NYC at the end of January.  Melanie and I both love this city but we also want a life style that is hard to have in the city unless you are filthy rich.  And contrary to my family’s beliefs, living in Manhattan doesn’t mean you are rich and we are far from rich.<br /><br />So where are we moving to?  <a href="http://www.salemweb.com/">Salem, Massachusetts</a>.  I call it our “From Rainbows to Witches” move and if you know anything about where we currently live and where we are moving to you will know this is not a Wizard of Oz reference.<br /><br />We found a super nice apartment in Salem.  It’s actually a house but a portion of the first floor is used as office space for the church that is next door.  We have a small portion of the first floor, all of the second and third floors, and a small storage room.  This house is definitely larger than our small Manhattan apartment.  And for a faction of the cost too.  I’ll post pictures of the house in about a month.<br /><br />A number of other things have been keeping me busy in December too.  Migrating all my Visual Studio.NET 2003 (.NET 1.1) projects to Borland Developer Studio 2006 (C# Builder) has not gone as smoothly as I had hoped.  I’ll post my experience about this later, but I will say I absolutely love BDS.  Live templates are awesome and the IDE is very fast.  Aside from load time I find it more responsive than Visual Studio 2005, which is why I’m moving all my .NET 1.1 projects to BDS.<br /><br />I also spent a lot of time in December reviewing and evaluating specific features of Visual Studio 2005 and .NET 2.0.  There are some improvements I like such as <a href="http://www.thecave.com/archive/2005/11/09/my_opinion_of_typed_data_sets_is_changing.aspx">typed data sets</a> but I’m finding my customers are slow to move to or have little interest at the moment in .NET 2.0.  So while I wish BDS 2006 had support for .NET 2.0 it doesn’t look like I will be doing any hardcore .NET 2.0 work anytime soon.  My focus will continue to be on Win32 and .NET 1.1.<br /><br />Happy holidays to everyone.</p>
-
-
-    <p><a href="/2005/12/25/long-time-no-post-3/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on December 25, 2005
-     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
-    Tagged in .
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2005/12/15/bds-and-quality-central/">BDS and Quality Central</a>
-    </h2>
-    
-    <p>I finally got my copy of <a href="http://www.borland.com/delphi">Delphi</a> 2006 install and I have started using it day.  I love it and it is a huge improvement over Delphi 2005.<br /><br />Unfortunately the IDE crashed on me, but it did something really cool.  The exception was caught and I was given the option to send the error report to Borland’s Quality Central.  Not only that, but if you provide your BDN credentials you can track the report!  How cool is that!<br /><br />I’m happy to see this new level of commitment to quality.</p>
-
-
-    <p><a href="/2005/12/15/bds-and-quality-central/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on December 15, 2005
-     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
-    Tagged in .
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -339,15 +338,15 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2018/01/11/stowe-january-3-2018/" title="Stowe, January 3, 2018">Stowe, January 3, 2018</a></li>
+                
+                <li><a href="/2018/01/11/stowe-december-13-2017/" title="Stowe on December 13">Stowe on December 13</a></li>
+                
+                <li><a href="/2018/01/11/new-year-terrain-park-fun/" title="New Year Terrain Park Fun">New Year Terrain Park Fun</a></li>
+                
                 <li><a href="/2018/01/03/the-kid-getting-air/" title="">The kid getting air last Sunday. </a></li>
                 
                 <li><a href="/2018/01/03/the-kid-last-month/" title="">Picture of the kid from last month....</a></li>
-                
-                <li><a href="/2017/12/24/christmas-eve-snowshoe-outing/" title="">Decided to do something other than snowboarding...</a></li>
-                
-                <li><a href="/2017/12/08/the-bar-for-me/" title="">Jane’s Addiction on the sound system. Hunting...</a></li>
-                
-                <li><a href="/2017/12/03/a-nice-to-the-day/" title="">A nice end to a fun day...</a></li>
                 
                 </ul>                
             </div>
