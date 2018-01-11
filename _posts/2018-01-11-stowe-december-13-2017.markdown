@@ -1,0 +1,8 @@
+---
+layout: post
+title: "Stowe on December 13"
+date: 2018-01-11 09:15:28 -0500
+category: personal
+tags: [rowan,video,snowboard,stowe]
+---
+{% vimeo 249553873 %}
