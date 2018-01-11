@@ -127,6 +127,24 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2008/12/08/framework-or-cms/">Framework or CMS</a>
+    </h2>
+    
+    <p>I am once again pondering the question of whether to use a framework or CMS for the upcoming refresh the <a href="http://www.whitepeaksoftware.com/">White Peak Software</a> web site.  I have gone back and forth on this multiple times over the years and I can never really decide which is better.  And I ask this question often not just for my company web site but for customer web sites that I build.<br /><br />A <a href="http://en.wikipedia.org/wiki/Framework">framework</a> gives me great control and flexibility.  I can design and architect the site to my liking.  I can use the data store of my choice be it XML, a database such as MSSQL or <a href="http://www.postgresql.org/">Postgres</a>, and I can implement site specific features that meet 100% of the requirements.  But the site eventually reaches a point where the only thing needed is to publish new content.  Create a new landing page for marketing, change copy on an existing page, add a new product page, and so on.  This is when I start thinking “Man, I wish I had a really simple CMS in place.”<br /><br />A <a href="http://en.wikipedia.org/wiki/Content_management_system">CMS</a> manages the site content for me.  A CMS really does make publishing new content a snap.  And you get a lot of additional features, or add-ons, with a CMS such as blog engine, forums or discussion groups, user management, calendar, photo gallery…the list goes on.  However, most if not all CMSs are built on top of some core framework (<a href="http://plone.org/">Plone</a> uses <a href="http://www.zope.org/">Zope</a>, <a href="http://www.dotnetnuke.com/">DotNetNuke</a> uses .NET, <a href="http://expressionengine.com/">ExpressionEngine</a> uses <a href="http://codeigniter.com/">CodeIgnitor</a> - I think).  This allows developers to expand and enhance the CMS by writing their own add-ons and extensions.  But to do this the developer needs to know the underlying framework, and if you already know the framework isn’t it sometimes easier and or faster to work directly with the framework bypassing the CMS all together?  Also, it’s been my experience that many of the CMSs out there tend to meet only 80 to 90% of the requirements.  So you get the ease of publishing new content but other areas of the site can be lacking unless, of course, additional code is written to make up for the missing functionality.  It’s a vicious circle.<br /><br />So do you learn and master a framework and have ultimate flexibility or learn and master a CMS and have ease of use for managing content?  And what about rolling your own “simple” CMS.  It can be great experience in the beginning but it will eventually have limitations or even worse become yet another full feature CMS like those already available today.  And if you end up writing your own full featured CMS you have to ask yourself “Would my time have been better spent learning and mastering an existing CMS, its framework and contributing to its community?”<br /><br />Unfortunately I don’t have any solid answers here.  I guess the only real answer to the question should I use a framework or CMS is “It depends.”  It depends on a number of different factors unique to your situation, your needs, your time line, and so on.<br /><br />So what have I decided for the White Peak Software web site refresh?  Honestly I’m still a bit undecided.  The site is currently implemented with ASP.NET and a home grown simple CMS mechanism.  It has worked well for a number of years but I need more functionality on the site.  Building on the current implementation would take too much time so I need a different approach.  My original thought was to use PHP and Zend but then I discovered CodeIgnitor.  CodeIgnitor led me to ExpressEngine and I thought “Ah, the solution for me.  PHP+CodeIgnitor+ExpressEngine”.  But then I started looking at python for general programming tasks and thought “What would it take to use Python programming for web apps?”  Not much I found out so I have decided to use <a href="http://www.python.org/">Python</a>.<br /><br />The decision to use Python has lead me to look at a number of different frameworks and CMS solutions.  And while I’m not 100% sure what stack I will select, I’m leaning towards Python + web2py.  <a href="http://www.web2py.com/">web2py</a> is an enterprise ready framework for web based application.  Web development using web2py is very easy and fast, and I really like the development experience on my Mac.<br /><br />I guess it’s safe to assume at this point that I will once again pick a framework over an existing CMS.  What can I say?  I’m a programmer and while the appeal for a CMS is there I still enjoy the flexibility and control I have by doing my own implementation using a framework.<br /><br /><span style="color:red">Update:</span> Here is a <a href="http://www.thecave.com/archive/2008/12/08/framework_or_cms_revisited.aspx">follow up posting</a> that explains my own requirements and why I feel using a framework is better in my situation.</p>
+
+
+    <p><a href="/2008/12/08/framework-or-cms/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on December 8, 2008
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2008/12/08/framework-or-cms-revisited/">Framework or CMS Revisited</a>
     </h2>
     
@@ -292,25 +310,6 @@ ownloadFile = open(filename, ‘w’)<br />downloadFile.write(filebuffer)<br />d
 </div>
 <hr>
 
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2008/10/09/wedding-pictures/">Wedding Pictures</a>
-    </h2>
-    
-    <p><a href="http://photos.thecave.com/gallery/6192603_d997M//390526002_eeLnF"><img src="http://photos.thecave.com/photos/390526002_eeLnF-Th.jpg" width="150" height="150" border="0" alt="" vspace="6" hspace="6" /></a></p>
-
-
-
-    <p><a href="/2008/10/09/wedding-pictures/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on October 9, 2008
-     in <a class='category' href='/category/personal/'>personal</a>.
-    Tagged in <a class='tag' href='/tag/pictures/'>pictures</a>.
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -345,13 +344,13 @@ ownloadFile = open(filename, ‘w’)<br />downloadFile.write(filebuffer)<br />d
                 
                 <li><a href="/2018/01/11/stowe-january-3-2018/" title="Stowe, January 3, 2018">Stowe, January 3, 2018</a></li>
                 
+                <li><a href="/2018/01/11/stowe-on-december-13/" title="Stowe, December 13, 2017">Stowe, December 13, 2017</a></li>
+                
                 <li><a href="/2018/01/11/stowe-december-13-2017/" title="Stowe on December 13">Stowe on December 13</a></li>
                 
                 <li><a href="/2018/01/11/new-year-terrain-park-fun/" title="New Year Terrain Park Fun">New Year Terrain Park Fun</a></li>
                 
                 <li><a href="/2018/01/03/the-kid-getting-air/" title="">The kid getting air last Sunday. </a></li>
-                
-                <li><a href="/2018/01/03/the-kid-last-month/" title="">Picture of the kid from last month....</a></li>
                 
                 </ul>                
             </div>
