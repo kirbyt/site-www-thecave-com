@@ -5,8 +5,8 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 11 Jan 2018 14:27:40 +0000</pubDate>
-    <lastBuildDate>Thu, 11 Jan 2018 14:27:40 +0000</lastBuildDate>
+    <pubDate>Sun, 14 Jan 2018 21:06:47 +0000</pubDate>
+    <lastBuildDate>Sun, 14 Jan 2018 21:06:47 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -16,27 +16,6 @@
         <pubDate>Thu, 11 Jan 2018 14:16:42 +0000</pubDate>
         <link>http://www.thecave.com/2018/01/11/stowe-january-3-2018/</link>
         <guid isPermaLink="true">http://www.thecave.com/2018/01/11/stowe-january-3-2018/</guid>
-        
-        <category>snowboard</category>
-        
-        <category>stowe</category>
-        
-        <category>video</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title>Stowe, December 13, 2017</title>
-        <description>&lt;div class=&quot;vimeo-video&quot;&gt;&lt;figure&gt;&lt;iframe src=&quot;//player.vimeo.com/video/249553873&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/figure&gt;&lt;/div&gt;
-</description>
-        <pubDate>Thu, 11 Jan 2018 14:15:28 +0000</pubDate>
-        <link>http://www.thecave.com/2018/01/11/stowe-on-december-13/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2018/01/11/stowe-on-december-13/</guid>
-        
-        <category>rowan</category>
         
         <category>snowboard</category>
         
@@ -218,6 +197,28 @@
         <category>micropost</category>
         
         <category>music</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;A beautiful morning to be out on the hill. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-11-29-10-11-B0DDSa94N3wsiM3lTZxM.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 29 Nov 2017 15:14:36 +0000</pubDate>
+        <link>http://www.thecave.com/2017/11/29/a-beautiful-morning/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2017/11/29/a-beautiful-morning/</guid>
+        
+        <category>micropost</category>
+        
+        <category>photo</category>
+        
+        <category>snowboarding</category>
+        
+        <category>stowe</category>
         
         
         <category>personal</category>

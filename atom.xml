@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2018-01-11T14:27:40+00:00</updated>
+  <updated>2018-01-14T21:06:47+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -20,16 +20,6 @@
     <updated>2018-01-11T14:16:42+00:00</updated>
     <id>http://www.thecave.com/2018/01/11/stowe-january-3-2018</id>
     <content type="html"><![CDATA[<div class="vimeo-video"><figure><iframe src="//player.vimeo.com/video/249549544" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></figure></div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Stowe, December 13, 2017]]></title>
-    <link href="http://www.thecave.com/2018/01/11/stowe-on-december-13/"/>
-    <published>2018-01-11T14:15:28+00:00</published>
-    <updated>2018-01-11T14:15:28+00:00</updated>
-    <id>http://www.thecave.com/2018/01/11/stowe-on-december-13</id>
-    <content type="html"><![CDATA[<div class="vimeo-video"><figure><iframe src="//player.vimeo.com/video/249553873" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></figure></div>
 ]]></content>
   </entry>
   
@@ -226,6 +216,17 @@
     <updated>2017-10-28T18:11:08+00:00</updated>
     <id>http://www.thecave.com/2017/10/28/kennebunkport-maine</id>
     <content type="html"><![CDATA[<p><img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-28-14-09-Q3LyvQpc77iCDgQcM863.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2017/10/28/lunch-at-mabels/"/>
+    <published>2017-10-28T18:06:12+00:00</published>
+    <updated>2017-10-28T18:06:12+00:00</updated>
+    <id>http://www.thecave.com/2017/10/28/lunch-at-mabels</id>
+    <content type="html"><![CDATA[<p>Lunch at Mabels. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-10-28-14-03-AjeX6pYZCkjJIHzM7lQ4.jpg" alt="" /></p>
 
 ]]></content>
   </entry>
