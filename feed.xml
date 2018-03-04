@@ -5,9 +5,31 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 01 Mar 2018 02:08:03 +0000</pubDate>
-    <lastBuildDate>Thu, 01 Mar 2018 02:08:03 +0000</lastBuildDate>
+    <pubDate>Sun, 04 Mar 2018 14:42:52 +0000</pubDate>
+    <lastBuildDate>Sun, 04 Mar 2018 14:42:52 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;Enjoying our spur-of-the-moment trip to Disney World during the kid’s winter break. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-03-04-09-31-STDinpd9A204VTCOvSFi.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 04 Mar 2018 14:35:48 +0000</pubDate>
+        <link>http://www.thecave.com/2018/03/04/disney-world-trip/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2018/03/04/disney-world-trip/</guid>
+        
+        <category>disney</category>
+        
+        <category>micropost</category>
+        
+        <category>photo</category>
+        
+        <category>travel</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title></title>
@@ -200,30 +222,6 @@
         <category>micropost</category>
         
         <category>music</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;A nice end to a fun day of snowboarding. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-12-03-14-33-CoRvNMML5wPBTx9qsrtp.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 03 Dec 2017 19:35:25 +0000</pubDate>
-        <link>http://www.thecave.com/2017/12/03/a-nice-to-the-day/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2017/12/03/a-nice-to-the-day/</guid>
-        
-        <category>beer</category>
-        
-        <category>micropost</category>
-        
-        <category>photo</category>
-        
-        <category>snowboarding</category>
-        
-        <category>stowe</category>
         
         
         <category>personal</category>
