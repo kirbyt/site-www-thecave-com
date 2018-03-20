@@ -127,6 +127,24 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2009/03/21/short-in-ipod-touch-connector-port/">Short in iPod touch Connector Port</a>
+    </h2>
+    
+    <p>We have the <a href="http://www.griffintechnology.com/products/evolve">Griffin Evolve</a> sound system for the iPod, which I use from time to time to listen to music from my iPod touch.  Unfortunately the sound system was within reach of <a href="http://www.rowanturner.net/">Rowan</a> who decided yesterday to pull back and forth on the docked iPod touch.  This unfortunately bent the connector pins in the iPod touch connector port.  And now whenever the iPod touch is docked the music starts and stops, plays out only 1 speaker, and or sometimes it makes an awful noise. <br /><br />Okay, so I can’t use the iPod touch with the Griffin system by docking it.  That’s fine.  I’ll just connect it using the headphone jack.  Problem solved, or so I thought.<br /><br />Today I discovered the iPod touch shorting out when connected to my laptop.  It didn’t occur to me yesterday I would have this problem but an electrical short is an electrical short. And no matter what I try the device keeps disconnecting and reconnecting every minute or so when plugged into the laptop.<br /><br />I’m debating whether I should try getting the device fixed or just buy another one.  If I get another one I can let the kid have the broken one.  It could be fun to see how long it takes before he completely destroys it. <br /><br />Regardless of what I decide to do, I did learn my lesson and now the sound system is out of the kid’s reach.</p>
+
+
+    <p><a href="/2009/03/21/short-in-ipod-touch-connector-port/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on March 21, 2009
+     in <a class='category' href='/category/personal/'>personal</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2009/02/24/our-healthcare-system-sucks/">Our Healthcare System Sucks</a>
     </h2>
     
@@ -289,25 +307,6 @@ Last month Shawn and I hiked Division 1 of the Long Trail.  The hike was mostly 
 </div>
 <hr>
 
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2008/10/21/download-itunes-connect-sales-reports-using-python/">Download iTunes Connect Sales Reports Using Python</a>
-    </h2>
-    
-    <p>Apple publishes daily sales figures on their iTunes Connect website for software vendors who have applications for sale in the iPhone App Store.  I’ve been making a point to download the daily file each morning but I know I cannot continue doing this manually.  What I need is an automated way to download the daily file.<br /><br />I searched the net for script code that will download the iTunes Connect daily sales report but I came up empty.  So I decided to write my own.<br /><br />I’ve been interested in getting into Python programming and I thought what better way to learn Python programming than to write a script that will download the daily sales report from the iTunes Connect website.  It turned out to be a fairly easy task to complete using Python.  Guess it goes to show how powerful Python really is.<br /><br />So here is my very first Python script.  I’m sure there are things I could do better in the script, but hey, it’s my first script.  Enjoy.<br /><br /><span style="color:red">UPDATE:</span> The original code had a problem with retaining cookies set by the iTunes Connect website. The code below has been updated with the correct, working code.<br /><br /><span style="color:red">UPDATE 2:</span> The Python script below is now hosted over at Google.  Just click <a href="http://code.google.com/p/appdailysales/source/browse/trunk/appdailysales.py">here</a> or visit <a href="http://code.google.com/p/appdailysales/">http://code.google.com/p/appdailysales/</a> for the latest information and version.<br /><br />&lt;pre&gt;<br />#!/usr/bin/python<br />#<br /># appdailysales.py<br />#<br /># iTune Connect Daily Sales Reports Downloader<br /># Copyright 2008 Kirby Turner<br />#<br />#<br /># This script will download yesterday’s daily sales report from<br /># the iTunes Connect web site.  The downloaded file is stored<br /># in the same directory containing the script file.  Note: if<br /># the download file already exists then it will be overwritten.<br />#<br /># The iTunes Connect web site has dynamic urls and form field<br /># names.  In other words, these values change from session to<br /># session.  So to get to the download file we must navigate  <br /># the site and webscrape the pages.  Joy, joy.<br />#<br />#<br /># Permission is hereby granted, free of charge, to any person obtaining a copy<br /># of this software and associated documentation files (the “Software”), to deal<br /># in the Software without restriction, including without limitation the rights<br /># to use, copy, modify, merge, publish, distribute, sublicense, and/or sell<br /># copies of the Software, and to permit persons to whom the Software is<br /># furnished to do so, subject to the following conditions:<br /># <br /># The above copyright notice and this permission notice shall be included in<br /># all copies or substantial portions of the Software.<br /># <br /># THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR<br /># IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,<br /># FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE<br /># AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER<br /># LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,<br /># OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN<br /># THE SOFTWARE.<br /><br /><br /># – Change the following to match your credentials –<br />appleId = ‘Your Apple Id’<br />password = ‘Your Password’<br /># —————————————————-<br /><br /><br />import urllib<br />import urllib2<br />import cookielib<br />import datetime<br />import re<br /><br />urlWebsite = ‘https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa’<br />urlActionLogin = ‘https://itunesconnect.apple.com%s’<br />urlActionSalesReport = ‘https://itunesconnect.apple.com%s’<br /><br />print ‘– begin script –‘<br /><br /># There is an issue with Python 2.5 where it assumes the ‘version’<br /># cookie value is always interger.  However, itunesconnect.apple.com<br /># returns this value as a string, i.e., “1” instead of 1.  Because<br /># of this we need a workaround that “fixes” the version field.<br />#<br /># More information at: http://bugs.python.org/issue3924<br />class MyCookieJar(cookielib.CookieJar):<br /> def _cookie_from_cookie_tuple(self, tup, request):<br />  name, value, standard, rest = tup<br />  version = standard.get(‘version’, None)<br />  if version is not None:<br />   version = version.replace(‘”’, ‘’)<br />   standard[“version”] = version<br />  return cookielib.CookieJar._cookie_from_cookie_tuple(self, tup, request)<br /><br /><br />def showCookies(cj):<br /> for index, cookie in enumerate(cj):<br />  print index, ‘ : ‘, cookie<br /> <br /><br />cj = MyCookieJar();<br />opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))<br /><br /><br /><br /># Go to the iTunes Connect website and retrieve the<br /># form action for logging into the site.<br />urlHandle = opener.open(urlWebsite)<br />html = urlHandle.read()<br />match = re.search(‘action=”(.<em>)”’, html)<br />urlActionLogin = urlActionLogin % match.group(1)<br /><br /><br /># Login to iTunes Connect web site and retrieve the<br /># link to the sales report page.<br />webFormLoginData = urllib.urlencode({‘theAccountName’:appleId, ‘theAccountPW’:password})<br />urlHandle = opener.open(urlActionLogin, webFormLoginData)<br />html = urlHandle.read()<br />match = re.search(‘href=”(/WebObjects/iTunesConnect.woa/wo/.</em>)”&gt;<img /><br />urlActionSalesReport = urlActionSalesReport % match.group(1)<br /><br /><br /># Go to the sales report page, get the form action url and<br /># form fields.  Note the sales report page will actually<br /># load a blank page that redirects to the static URL. Best<br /># guess here is that the server is setting some session<br /># variables or something.<br />urlHandle = opener.open(urlActionSalesReport)<br />urlHandle = opener.open(‘https://itts.apple.com/cgi-bin/WebObjects/Piano.woa’)<br />html = urlHandle.read()<br />match = re.findall(‘action=”(.<em>)”’, html)<br />urlDownload = “https://itts.apple.com%s” % match[1]<br /><br /><br /># Get the form field names needed to download the report.<br />match = re.findall(‘name=”(.</em>?)”’, html)<br />fieldNameReportType = match[3]<br />fieldNameReportPeriod = match[4]<br />fieldNameDayOrWeekSelection = match[6]<br />fieldNameSubmitTypeName = match[7]<br /><br /><br /># Ah…more fun.  We need to post the page with the form<br /># fields collected so far.  This will give us the remaining<br /># form fields needed to get the download file.<br />webFormSalesReportData = urllib.urlencode({fieldNameReportType:’Summary’, fieldNameReportPeriod:’Daily’, fieldNameDayOrWeekSelection:’Daily’, fieldNameSubmitTypeName:’ShowDropDown’})<br />urlHandle = opener.open(urlDownload, webFormSalesReportData)<br />html = urlHandle.read()<br />match = re.findall(‘action=”(.<em>)”’, html)<br />urlDownload = “https://itts.apple.com%s” % match[1]<br />match = re.findall(‘name=”(.</em>?)”’, html)<br />fieldNameDayOrWeekDropdown = match[5]<br /><br /><br /># Set report date to yesterday’s date.  This will be the most<br /># recent daily report available.  Another option would be to<br /># webscrape the dropdown list of available report dates and<br /># select the first item but setting the date to yesterday’s<br /># date is easier.<br />today = datetime.date.today() - datetime.timedelta(1)<br />reportDate = ‘%i/%i/%i’ % (today.month, today.day, today.year)<br /><br /><br /># And finally…we’re ready to download yesterday’s sales report.<br />webFormSalesReportData = urllib.urlencode({fieldNameReportType:’Summary’, fieldNameReportPeriod:’Daily’, fieldNameDayOrWeekDropdown:reportDate, fieldNameDayOrWeekSelection:’Daily’, fieldNameSubmitTypeName:’Download’})<br />urlHandle = opener.open(urlDownload, webFormSalesReportData)<br />filename = urlHandle.info().getheader(‘content-disposition’).split(‘=’)[1]<br />filebuffer = urlHandle.read()<br />urlHandle.close()<br /><br /><br />print ‘ saving download file:’, filename<br />d
-ownloadFile = open(filename, ‘w’)<br />downloadFile.write(filebuffer)<br />downloadFile.close()<br /><br />print ‘– end of script –‘<br />&lt;/pre&gt;</p>
-
-
-    <p><a href="/2008/10/21/download-itunes-connect-sales-reports-using-python/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on October 21, 2008
-     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
-    Tagged in .
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -340,6 +339,8 @@ ownloadFile = open(filename, ‘w’)<br />downloadFile.write(filebuffer)<br />d
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2018/03/20/sunset/" title="">On top of Mount Mansfield watching the...</a></li>
+                
                 <li><a href="/2018/03/04/disney-world-trip/" title="">Enjoying our spur-of-the-moment trip to Disney World...</a></li>
                 
                 <li><a href="/2018/03/01/my-first-perfect-month/" title="">My first perfect month. Closed my rings...</a></li>
@@ -347,8 +348,6 @@ ownloadFile = open(filename, ‘w’)<br />downloadFile.write(filebuffer)<br />d
                 <li><a href="/2018/01/28/first-snowboard-competition/" title="First Snowboard Competition">First Snowboard Competition</a></li>
                 
                 <li><a href="/2018/01/11/stowe-january-3-2018/" title="Stowe, January 3, 2018">Stowe, January 3, 2018</a></li>
-                
-                <li><a href="/2018/01/11/stowe-december-13-2017/" title="Stowe on December 13">Stowe on December 13</a></li>
                 
                 </ul>                
             </div>
