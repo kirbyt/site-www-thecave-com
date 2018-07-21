@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2018-03-20T21:10:35+00:00</updated>
+  <updated>2018-07-21T12:29:26+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2018 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2018/06/04/move-web-host/"/>
+    <published>2018-06-04T15:22:53+00:00</published>
+    <updated>2018-06-04T15:22:53+00:00</updated>
+    <id>http://www.thecave.com/2018/06/04/move-web-host</id>
+    <content type="html"><![CDATA[<p>I host my <a href="https://www.thecave.com">website</a> on GitHub Pages, but I’ve been thinking about hosting it on micro.blog. I’m now more motivated to make the move.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -37,10 +48,10 @@
   
   <entry>
     <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2018/03/01/my-first-perfect-month/"/>
+    <link href="http://www.thecave.com/2018/02/28/my-first-perfect-month/"/>
     <published>2018-03-01T02:04:31+00:00</published>
     <updated>2018-03-01T02:04:31+00:00</updated>
-    <id>http://www.thecave.com/2018/03/01/my-first-perfect-month</id>
+    <id>http://www.thecave.com/2018/02/28/my-first-perfect-month</id>
     <content type="html"><![CDATA[<p>My first perfect month. Closed my rings every day in February.<img src="https://thecave-com.s3.amazonaws.com/Photo-2018-02-28-21-01-mcL6tXb10nWklnlWZnIU.jpg" alt="" /></p>
 
 ]]></content>
@@ -122,10 +133,10 @@
   
   <entry>
     <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/12/08/the-bar-for-me/"/>
+    <link href="http://www.thecave.com/2017/12/07/the-bar-for-me/"/>
     <published>2017-12-08T02:45:44+00:00</published>
     <updated>2017-12-08T02:45:44+00:00</updated>
-    <id>http://www.thecave.com/2017/12/08/the-bar-for-me</id>
+    <id>http://www.thecave.com/2017/12/07/the-bar-for-me</id>
     <content type="html"><![CDATA[<p>Jane’s Addiction on the sound system. Hunting Hitler on the TV behind the bar. I think I just found my new favorite dive bar.</p>
 
 <p>Oh wait. The bartender just put on Justin Timberlake. Time to look for another place.</p>
@@ -146,10 +157,10 @@
   
   <entry>
     <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/12/01/music-battle/"/>
+    <link href="http://www.thecave.com/2017/11/30/music-battle/"/>
     <published>2017-12-01T03:41:40+00:00</published>
     <updated>2017-12-01T03:41:40+00:00</updated>
-    <id>http://www.thecave.com/2017/12/01/music-battle</id>
+    <id>http://www.thecave.com/2017/11/30/music-battle</id>
     <content type="html"><![CDATA[<p>The kid and I played Battle of the Music tonight. His pick: Twenty One Pilots. My pick: Godzilla. The winner: Meatwad’s <a href="https://itunes.apple.com/us/album/frosty-the-red-nosed-snowman/336680764?i=336681060">Frosty the Red-Nosed Snowman</a>.</p>
 ]]></content>
   </entry>
@@ -167,10 +178,10 @@
   
   <entry>
     <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/11/29/this-afternoon/"/>
+    <link href="http://www.thecave.com/2017/11/28/this-afternoon/"/>
     <published>2017-11-29T02:27:47+00:00</published>
     <updated>2017-11-29T02:27:47+00:00</updated>
-    <id>http://www.thecave.com/2017/11/29/this-afternoon</id>
+    <id>http://www.thecave.com/2017/11/28/this-afternoon</id>
     <content type="html"><![CDATA[<p>This afternoon. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-11-28-21-26-ble2tBMaAIozjnmir19C.jpg" alt="" /></p>
 
 ]]></content>
@@ -178,10 +189,10 @@
   
   <entry>
     <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/11/29/this-morning/"/>
+    <link href="http://www.thecave.com/2017/11/28/this-morning/"/>
     <published>2017-11-29T02:26:20+00:00</published>
     <updated>2017-11-29T02:26:20+00:00</updated>
-    <id>http://www.thecave.com/2017/11/29/this-morning</id>
+    <id>http://www.thecave.com/2017/11/28/this-morning</id>
     <content type="html"><![CDATA[<p>This morning. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-11-28-21-24-8pmUPqbTYLSbWH9hDpgR.jpg" alt="" /></p>
 
 ]]></content>
@@ -189,10 +200,10 @@
   
   <entry>
     <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/11/23/first-day/"/>
+    <link href="http://www.thecave.com/2017/11/22/first-day/"/>
     <published>2017-11-23T02:12:31+00:00</published>
     <updated>2017-11-23T02:12:31+00:00</updated>
-    <id>http://www.thecave.com/2017/11/23/first-day</id>
+    <id>http://www.thecave.com/2017/11/22/first-day</id>
     <content type="html"><![CDATA[<p>First day of the season with the kid on the hill. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-11-22-21-09-I8sOeA8HeHPzQELtIyNN.jpg" alt="" /></p>
 
 ]]></content>
@@ -211,22 +222,11 @@
   
   <entry>
     <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/11/18/opening-day/"/>
+    <link href="http://www.thecave.com/2017/11/17/opening-day/"/>
     <published>2017-11-18T00:19:36+00:00</published>
     <updated>2017-11-18T00:19:36+00:00</updated>
-    <id>http://www.thecave.com/2017/11/18/opening-day</id>
+    <id>http://www.thecave.com/2017/11/17/opening-day</id>
     <content type="html"><![CDATA[<p>Enjoying Après Opening Day at Stowe Mountain Resort. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-11-17-19-17-eaZv8Gr3kXwLRSUAVDIc.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/11/01/good-morning-stowe/"/>
-    <published>2017-11-01T11:54:19+00:00</published>
-    <updated>2017-11-01T11:54:19+00:00</updated>
-    <id>http://www.thecave.com/2017/11/01/good-morning-stowe</id>
-    <content type="html"><![CDATA[<p><img src="https://thecave-com.s3.amazonaws.com/Photo-2017-11-01-07-53-8xBYynhzHukGdKB7fXVn.jpg" alt="" /></p>
 
 ]]></content>
   </entry>

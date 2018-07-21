@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: jekyll | thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/tag/jekyll/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2018-03-20T21:10:35+00:00</updated>
+  <updated>2018-07-21T12:29:26+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -138,9 +138,9 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
     
     <title type="html"><![CDATA[Made Some Fixes To The Blog Site]]></title>
     
-    <link href="http://www.thecave.com/2014/12/29/made-some-fixes-to-the-blog-site/"/>
+    <link href="http://www.thecave.com/2014/12/28/made-some-fixes-to-the-blog-site/"/>
     <updated>2014-12-29T00:01:32+00:00</updated>
-    <id>http://www.thecave.com/2014/12/29/made-some-fixes-to-the-blog-site</id>
+    <id>http://www.thecave.com/2014/12/28/made-some-fixes-to-the-blog-site</id>
     <tag>jekyll</tag>
     <description><![CDATA[<p>Before doing some work today I decided to make some improvements to my blog site. I thought I would be playing with the site for only an hour or so, but instead it took most of the day. Typical when dealing with programming issues in an unfamiliar environment.</p>
 

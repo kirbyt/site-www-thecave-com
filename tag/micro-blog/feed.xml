@@ -4,13 +4,28 @@
   <title><![CDATA[Tag: micro.blog | thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/tag/micro-blog/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2018-03-20T21:10:35+00:00</updated>
+  <updated>2018-07-21T12:29:26+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    
+    <title></title>
+    
+    <link href="http://www.thecave.com/2018/06/04/move-web-host/"/>
+    <updated>2018-06-04T15:22:53+00:00</updated>
+    <id>http://www.thecave.com/2018/06/04/move-web-host</id>
+    <tag>micro.blog</tag>
+    <description><![CDATA[<p>I host my <a href="https://www.thecave.com">website</a> on GitHub Pages, but I’ve been thinking about hosting it on micro.blog. I’m now more motivated to make the move.</p>
+]]></description>
+    <content type="html"><![CDATA[<p>I host my <a href="https://www.thecave.com">website</a> on GitHub Pages, but I’ve been thinking about hosting it on micro.blog. I’m now more motivated to make the move.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     

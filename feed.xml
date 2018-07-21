@@ -5,9 +5,27 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 20 Mar 2018 21:10:35 +0000</pubDate>
-    <lastBuildDate>Tue, 20 Mar 2018 21:10:35 +0000</lastBuildDate>
+    <pubDate>Sat, 21 Jul 2018 12:29:26 +0000</pubDate>
+    <lastBuildDate>Sat, 21 Jul 2018 12:29:26 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;I host my &lt;a href=&quot;https://www.thecave.com&quot;&gt;website&lt;/a&gt; on GitHub Pages, but I’ve been thinking about hosting it on micro.blog. I’m now more motivated to make the move.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 04 Jun 2018 15:22:53 +0000</pubDate>
+        <link>http://www.thecave.com/2018/06/04/move-web-host/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2018/06/04/move-web-host/</guid>
+        
+        <category>micro.blog</category>
+        
+        <category>website</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title></title>
@@ -57,8 +75,8 @@
 
 </description>
         <pubDate>Thu, 01 Mar 2018 02:04:31 +0000</pubDate>
-        <link>http://www.thecave.com/2018/03/01/my-first-perfect-month/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2018/03/01/my-first-perfect-month/</guid>
+        <link>http://www.thecave.com/2018/02/28/my-first-perfect-month/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2018/02/28/my-first-perfect-month/</guid>
         
         <category>fitness</category>
         
@@ -196,30 +214,6 @@
         <category>rowan</category>
         
         <category>snowboard</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;Decided to do something other than snowboarding today. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-12-24-13-04-dZxZ4bL5qd7A3x0B9mNW.jpg&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-12-24-13-01-TelLjsyA4Si9HcePlCpd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 24 Dec 2017 18:05:29 +0000</pubDate>
-        <link>http://www.thecave.com/2017/12/24/christmas-eve-snowshoe-outing/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2017/12/24/christmas-eve-snowshoe-outing/</guid>
-        
-        <category>family</category>
-        
-        <category>micropost</category>
-        
-        <category>photo</category>
-        
-        <category>snowshoe</category>
-        
-        <category>stowe</category>
         
         
         <category>personal</category>

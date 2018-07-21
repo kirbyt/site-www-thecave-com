@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: mastodon | thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/tag/mastodon/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2018-03-20T21:10:35+00:00</updated>
+  <updated>2018-07-21T12:29:26+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -16,9 +16,9 @@
     
     <title type="html"><![CDATA[Shutting Down thecave.social]]></title>
     
-    <link href="http://www.thecave.com/2017/07/19/shutting-down-thecavesocial/"/>
+    <link href="http://www.thecave.com/2017/07/18/shutting-down-thecavesocial/"/>
     <updated>2017-07-19T00:17:13+00:00</updated>
-    <id>http://www.thecave.com/2017/07/19/shutting-down-thecavesocial</id>
+    <id>http://www.thecave.com/2017/07/18/shutting-down-thecavesocial</id>
     <tag>mastodon</tag>
     <description><![CDATA[<p>I first heard about <a href="https://github.com/tootsuite/mastodon">Mastodon</a> back in April. I liked it so much, I decided to host my own Mastodon instance. Thus, <a href="https://www.thecave.com/2017/04/12/mastodon-and-thecavesocial/">thecave.social</a> was born.</p>
 
