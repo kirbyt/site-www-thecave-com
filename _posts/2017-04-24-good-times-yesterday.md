@@ -6,5 +6,5 @@ category: personal
 tags: [micropost,]
 ---
 
-Good times yesterday, which was the last day of the season for lift service at Stowe Mountain Resort. ![](https://thecave.social/media/DS1teOt1MLWVhyNhRYM) ![](https://thecave.social/media/1QkMTHIe3-pMHZDRdKA)
+Good times yesterday, which was the last day of the season for lift service at Stowe Mountain Resort. ![](https://farm3.staticflickr.com/2896/33855266760_451e2897ca_z.jpg) ![](https://farm3.staticflickr.com/2888/33855265230_209ae9ccf1_z.jpg)
 

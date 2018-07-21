@@ -6,5 +6,5 @@ category: personal
 tags: [micropost,]
 ---
 
-It's a perfect evening in Stowe. ![](https://thecave.social/media/itKMZLMPsuse1NVxMHg) 
+It's a perfect evening in Stowe. ![](https://farm3.staticflickr.com/2852/33428712953_5b1fa77c2a_z.jpg) 
 
