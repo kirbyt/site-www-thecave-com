@@ -5,9 +5,26 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 21 Jul 2018 12:41:57 +0000</pubDate>
-    <lastBuildDate>Sat, 21 Jul 2018 12:41:57 +0000</lastBuildDate>
+    <pubDate>Sat, 21 Jul 2018 12:55:36 +0000</pubDate>
+    <lastBuildDate>Sat, 21 Jul 2018 12:55:36 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>Sunset</title>
+        <description>&lt;p&gt;Beautiful sunset over Mount Mansfield a couple of weeks ago. &lt;img src=&quot;https://farm1.staticflickr.com/835/29304217858_b777019b4b_z.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 21 Jul 2018 12:50:09 +0000</pubDate>
+        <link>http://www.thecave.com/2018/07/21/sunset/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2018/07/21/sunset/</guid>
+        
+        <category>photo</category>
+        
+        <category>stowe</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title></title>
@@ -192,28 +209,6 @@
         <category>snowboard</category>
         
         <category>stowe</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;Picture of the kid from last month. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-01-03-13-40-8niSf6M1Sv5IGARRdLwV.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 03 Jan 2018 18:41:56 +0000</pubDate>
-        <link>http://www.thecave.com/2018/01/03/the-kid-last-month/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2018/01/03/the-kid-last-month/</guid>
-        
-        <category>micropost</category>
-        
-        <category>photo</category>
-        
-        <category>rowan</category>
-        
-        <category>snowboard</category>
         
         
         <category>personal</category>

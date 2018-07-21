@@ -5,10 +5,19 @@
         <description>thecave | Kirby Turner's Blog - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2018-07-21T12:41:57+00:00</lastBuildDate>
-        <pubDate>2018-07-21T12:41:57+00:00</pubDate>
+        <lastBuildDate>2018-07-21T12:55:36+00:00</lastBuildDate>
+        <pubDate>2018-07-21T12:55:36+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Sunset</title>
+                <description>&lt;p&gt;Beautiful sunset over Mount Mansfield a couple of weeks ago. &lt;img src=&quot;https://farm1.staticflickr.com/835/29304217858_b777019b4b_z.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+                <link>http://www.thecave.com/2018/07/21/sunset/</link>
+                <guid>http://www.thecave.com/2018/07/21/sunset</guid>
+                <pubDate>2018-07-21T12:50:09+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -196,16 +205,6 @@
                 <link>http://www.thecave.com/2017/11/21/just-another-morning-in-stowe/</link>
                 <guid>http://www.thecave.com/2017/11/21/just-another-morning-in-stowe</guid>
                 <pubDate>2017-11-21T17:26:14+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;Enjoying Après Opening Day at Stowe Mountain Resort. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-11-17-19-17-eaZv8Gr3kXwLRSUAVDIc.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2017/11/17/opening-day/</link>
-                <guid>http://www.thecave.com/2017/11/17/opening-day</guid>
-                <pubDate>2017-11-18T00:19:36+00:00</pubDate>
         </item>
 
 
