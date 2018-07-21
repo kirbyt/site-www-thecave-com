@@ -1,0 +1,8 @@
+---
+layout: post
+title: "Sunset"
+date: 2018-07-21 08:50:09 -0400
+category: personal
+tags: [photo,stowe]
+---
+Beautiful sunset over Mount Mansfield a couple of weeks ago. ![](https://farm1.staticflickr.com/835/29304217858_b777019b4b_z.jpg)
