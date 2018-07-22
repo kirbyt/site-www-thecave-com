@@ -5,9 +5,29 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 21 Jul 2018 12:55:36 +0000</pubDate>
-    <lastBuildDate>Sat, 21 Jul 2018 12:55:36 +0000</lastBuildDate>
+    <pubDate>Sun, 22 Jul 2018 19:57:12 +0000</pubDate>
+    <lastBuildDate>Sun, 22 Jul 2018 19:57:12 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;Watching the kid, and two of his friends, sit still for five minutes to watch a sunset in Minecraft. Would never happen in real life.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 22 Jul 2018 19:54:30 +0000</pubDate>
+        <link>http://www.thecave.com/2018/07/22/watching-the-sunset/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2018/07/22/watching-the-sunset/</guid>
+        
+        <category>micropost</category>
+        
+        <category>minecraft</category>
+        
+        <category>rowan</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title>Sunset</title>
@@ -185,30 +205,6 @@
         <category>stowe</category>
         
         <category>video</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;The kid getting air last Sunday. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-01-03-13-43-YpVBc1rmuekdsWxpgOAR.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 03 Jan 2018 18:44:18 +0000</pubDate>
-        <link>http://www.thecave.com/2018/01/03/the-kid-getting-air/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2018/01/03/the-kid-getting-air/</guid>
-        
-        <category>micropost</category>
-        
-        <category>photo</category>
-        
-        <category>rowan</category>
-        
-        <category>snowboard</category>
-        
-        <category>stowe</category>
         
         
         <category>personal</category>

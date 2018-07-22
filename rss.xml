@@ -5,10 +5,20 @@
         <description>thecave | Kirby Turner's Blog - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2018-07-21T12:55:36+00:00</lastBuildDate>
-        <pubDate>2018-07-21T12:55:36+00:00</pubDate>
+        <lastBuildDate>2018-07-22T19:57:12+00:00</lastBuildDate>
+        <pubDate>2018-07-22T19:57:12+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title></title>
+                <description>&lt;p&gt;Watching the kid, and two of his friends, sit still for five minutes to watch a sunset in Minecraft. Would never happen in real life.&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2018/07/22/watching-the-sunset/</link>
+                <guid>http://www.thecave.com/2018/07/22/watching-the-sunset</guid>
+                <pubDate>2018-07-22T19:54:30+00:00</pubDate>
+        </item>
 
         <item>
                 <title>Sunset</title>
@@ -195,16 +205,6 @@
                 <link>http://www.thecave.com/2017/11/22/first-day/</link>
                 <guid>http://www.thecave.com/2017/11/22/first-day</guid>
                 <pubDate>2017-11-23T02:12:31+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;Fun times this morning. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-11-21-12-23-8eIww608pfU5srYWIBAq.jpg&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-11-21-12-25-KuQnfCyKCRzbhQydVHz8.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2017/11/21/just-another-morning-in-stowe/</link>
-                <guid>http://www.thecave.com/2017/11/21/just-another-morning-in-stowe</guid>
-                <pubDate>2017-11-21T17:26:14+00:00</pubDate>
         </item>
 
 
