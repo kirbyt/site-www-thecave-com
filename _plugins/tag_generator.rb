@@ -189,6 +189,17 @@ module Jekyll
     # Processes the given dir and removes leading and trailing slashes. Falls
     # back on the default if no dir is provided.
     def self.tag_dir(base_dir, tag)
+      # [kt] Transform special tags.
+      if tag.casecmp(".net") == 0
+        tag = "dotnet"
+      end
+      if tag.casecmp("c#") == 0
+        tag = "csharp"
+      end
+      if tag.casecmp("c++") == 0
+        tag = "cpp"
+      end
+
       base_dir = (base_dir || TAG_DIR).gsub(/^\/*(.*)\/*$/, '\1')
       tag = tag.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase
       File.join(base_dir, tag)
