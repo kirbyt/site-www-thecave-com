@@ -7,21 +7,12 @@ module Jekyll
         posts_in_tag = context.registers[:site].tags[tag].size
         tag_dir = context.registers[:site].config['tag_dir']
 
-        # [kt] Transform special tags.
-        transformed_tag = tag
-        if transformed_tag.casecmp(".net") == 0
-          transformed_tag = "dotnet"
-        end
-        if transformed_tag.casecmp("c#") == 0
-          transformed_tag = "csharp"
-        end
-        if transformed_tag.casecmp("c++") == 0
-          transformed_tag = "cpp"
-        end
-
-
-        tag_url = File.join(tag_dir, transformed_tag.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase)
-        html << "<li><a href='/#{tag_url}/'>#{tag} (#{posts_in_tag})</a></li>\n"
+        # [KT] Need to transform special tags. Instead of
+        # duplicating logic, let's call GenerateTags.tag_dir.
+        tag_url = GenerateTags.tag_dir(tag_dir, tag)
+        # Make sure the tag URL begins with a slash.
+        tag_url = "/#{tag_url}" unless tag_url =~ /^\//
+        html << "<li><a href='#{tag_url}/'>#{tag} (#{posts_in_tag})</a></li>\n"
       end
       html
     end
