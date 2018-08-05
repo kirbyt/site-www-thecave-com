@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2018-07-26T11:11:02+00:00</updated>
+  <updated>2018-08-05T01:23:55+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2018 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2018/08/04/weekend-getaway/"/>
+    <published>2018-08-05T01:17:16+00:00</published>
+    <updated>2018-08-05T01:17:16+00:00</updated>
+    <id>http://www.thecave.com/2018/08/04/weekend-getaway</id>
+    <content type="html"><![CDATA[<p>Enjoying a weekend getaway in South Carolina. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-08-04-21-16-cfZoUCWsRU6YQyk71YnA.jpg" alt="" /> <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-08-04-21-14-ihhRRIZgrCU3BLAwaSLd.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -215,17 +226,6 @@
     <updated>2017-11-29T02:26:20+00:00</updated>
     <id>http://www.thecave.com/2017/11/28/this-morning</id>
     <content type="html"><![CDATA[<p>This morning. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-11-28-21-24-8pmUPqbTYLSbWH9hDpgR.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/11/22/first-day/"/>
-    <published>2017-11-23T02:12:31+00:00</published>
-    <updated>2017-11-23T02:12:31+00:00</updated>
-    <id>http://www.thecave.com/2017/11/22/first-day</id>
-    <content type="html"><![CDATA[<p>First day of the season with the kid on the hill. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-11-22-21-09-I8sOeA8HeHPzQELtIyNN.jpg" alt="" /></p>
 
 ]]></content>
   </entry>

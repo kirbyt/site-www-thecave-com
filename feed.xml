@@ -5,9 +5,29 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 26 Jul 2018 11:11:02 +0000</pubDate>
-    <lastBuildDate>Thu, 26 Jul 2018 11:11:02 +0000</lastBuildDate>
+    <pubDate>Sun, 05 Aug 2018 01:23:55 +0000</pubDate>
+    <lastBuildDate>Sun, 05 Aug 2018 01:23:55 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;Enjoying a weekend getaway in South Carolina. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-08-04-21-16-cfZoUCWsRU6YQyk71YnA.jpg&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-08-04-21-14-ihhRRIZgrCU3BLAwaSLd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 05 Aug 2018 01:17:16 +0000</pubDate>
+        <link>http://www.thecave.com/2018/08/04/weekend-getaway/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2018/08/04/weekend-getaway/</guid>
+        
+        <category>micropost</category>
+        
+        <category>photo</category>
+        
+        <category>travel</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title></title>
@@ -182,25 +202,6 @@
         <category>rowan</category>
         
         <category>snowboard</category>
-        
-        <category>stowe</category>
-        
-        <category>video</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title>New Year Terrain Park Fun</title>
-        <description>&lt;div class=&quot;vimeo-video&quot;&gt;&lt;figure&gt;&lt;iframe src=&quot;//player.vimeo.com/video/249333769&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/figure&gt;&lt;/div&gt;
-</description>
-        <pubDate>Thu, 11 Jan 2018 14:10:28 +0000</pubDate>
-        <link>http://www.thecave.com/2018/01/11/new-year-terrain-park-fun/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2018/01/11/new-year-terrain-park-fun/</guid>
-        
-        <category>rowan</category>
         
         <category>stowe</category>
         
