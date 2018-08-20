@@ -4,13 +4,25 @@
   <title><![CDATA[Category: personal | thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/category/personal/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2018-08-05T01:23:55+00:00</updated>
+  <updated>2018-08-20T01:47:42+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2018/08/19/afternoon-hike/"/>
+    <updated>2018-08-20T01:44:42+00:00</updated>
+    <id>http://www.thecave.com/2018/08/19/afternoon-hike</id>
+    <description><![CDATA[<p>Afternoon hike across the top of Vermont. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-08-19-21-42-LKcwc2LrEPZ5S7tJZckF.jpg" alt="" /></p>
+]]></description>
+    <content type="html"><![CDATA[<p>Afternoon hike across the top of Vermont. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-08-19-21-42-LKcwc2LrEPZ5S7tJZckF.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -55,18 +67,6 @@
     <description><![CDATA[<p>I host my <a href="https://www.thecave.com">website</a> on GitHub Pages, but I’ve been thinking about hosting it on micro.blog. I’m now more motivated to make the move.</p>
 ]]></description>
     <content type="html"><![CDATA[<p>I host my <a href="https://www.thecave.com">website</a> on GitHub Pages, but I’ve been thinking about hosting it on micro.blog. I’m now more motivated to make the move.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2018/03/20/sunset/"/>
-    <updated>2018-03-20T21:06:38+00:00</updated>
-    <id>http://www.thecave.com/2018/03/20/sunset</id>
-    <description><![CDATA[<p>On top of Mount Mansfield watching the sunset. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-03-20-17-04-IDTiE0GroaTq5NQ2FIG6.jpg" alt="" /></p>
-]]></description>
-    <content type="html"><![CDATA[<p>On top of Mount Mansfield watching the sunset. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-03-20-17-04-IDTiE0GroaTq5NQ2FIG6.jpg" alt="" /></p>
 
 ]]></content>
   </entry>

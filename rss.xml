@@ -5,10 +5,20 @@
         <description>thecave | Kirby Turner's Blog - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2018-08-05T01:23:55+00:00</lastBuildDate>
-        <pubDate>2018-08-05T01:23:55+00:00</pubDate>
+        <lastBuildDate>2018-08-20T01:47:42+00:00</lastBuildDate>
+        <pubDate>2018-08-20T01:47:42+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title></title>
+                <description>&lt;p&gt;Afternoon hike across the top of Vermont. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-08-19-21-42-LKcwc2LrEPZ5S7tJZckF.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2018/08/19/afternoon-hike/</link>
+                <guid>http://www.thecave.com/2018/08/19/afternoon-hike</guid>
+                <pubDate>2018-08-20T01:44:42+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -195,16 +205,6 @@
                 <link>http://www.thecave.com/2017/11/28/this-afternoon/</link>
                 <guid>http://www.thecave.com/2017/11/28/this-afternoon</guid>
                 <pubDate>2017-11-29T02:27:47+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;This morning. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-11-28-21-24-8pmUPqbTYLSbWH9hDpgR.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2017/11/28/this-morning/</link>
-                <guid>http://www.thecave.com/2017/11/28/this-morning</guid>
-                <pubDate>2017-11-29T02:26:20+00:00</pubDate>
         </item>
 
 
