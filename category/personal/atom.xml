@@ -4,13 +4,25 @@
   <title><![CDATA[Category: personal | thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/category/personal/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2018-08-20T01:47:42+00:00</updated>
+  <updated>2018-09-03T03:43:44+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2018/09/02/vermont-sunset/"/>
+    <updated>2018-09-03T03:40:55+00:00</updated>
+    <id>http://www.thecave.com/2018/09/02/vermont-sunset</id>
+    <description><![CDATA[<p>A beautiful Vermont sunset. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-09-02-23-39-RDpfkJdIL4xvlJmLAl0s.jpg" alt="" /></p>
+]]></description>
+    <content type="html"><![CDATA[<p>A beautiful Vermont sunset. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-09-02-23-39-RDpfkJdIL4xvlJmLAl0s.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -56,18 +68,6 @@
     <description><![CDATA[<p>Beautiful sunset over Mount Mansfield a couple of weeks ago. <img src="https://farm1.staticflickr.com/835/29304217858_b777019b4b_z.jpg" alt="" /></p>
 ]]></description>
     <content type="html"><![CDATA[<p>Beautiful sunset over Mount Mansfield a couple of weeks ago. <img src="https://farm1.staticflickr.com/835/29304217858_b777019b4b_z.jpg" alt="" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2018/06/04/move-web-host/"/>
-    <updated>2018-06-04T15:22:53+00:00</updated>
-    <id>http://www.thecave.com/2018/06/04/move-web-host</id>
-    <description><![CDATA[<p>I host my <a href="https://www.thecave.com">website</a> on GitHub Pages, but I’ve been thinking about hosting it on micro.blog. I’m now more motivated to make the move.</p>
-]]></description>
-    <content type="html"><![CDATA[<p>I host my <a href="https://www.thecave.com">website</a> on GitHub Pages, but I’ve been thinking about hosting it on micro.blog. I’m now more motivated to make the move.</p>
-
 ]]></content>
   </entry>
   

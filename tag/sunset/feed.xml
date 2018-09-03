@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: sunset | thecave | Kirby Turner's Blog]]></title>
+  <link href="http://www.thecave.com/tag/sunset/feed.xml" rel="self"/>
+  <link href="http://www.thecave.com/"/>
+  <updated>2018-09-03T03:43:44+00:00</updated>
+  <id>http://www.thecave.com/</id>
+  <author>
+    <name><![CDATA[Kirby Turner]]></name>
+    
+  </author>
+
+  
+  <entry>
+    
+    <title></title>
+    
+    <link href="http://www.thecave.com/2018/09/02/vermont-sunset/"/>
+    <updated>2018-09-03T03:40:55+00:00</updated>
+    <id>http://www.thecave.com/2018/09/02/vermont-sunset</id>
+    <tag>sunset</tag>
+    <description><![CDATA[<p>A beautiful Vermont sunset. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-09-02-23-39-RDpfkJdIL4xvlJmLAl0s.jpg" alt="" /></p>
+]]></description>
+    <content type="html"><![CDATA[<p>A beautiful Vermont sunset. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-09-02-23-39-RDpfkJdIL4xvlJmLAl0s.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
+  
+</feed>
