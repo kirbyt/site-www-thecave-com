@@ -8,21 +8,14 @@
                 {% for post in site.posts limit: site.recent_posts %}
                 <li><a href="{{ post.url }}" title="{{ post.title }}">{% unless post.title == '' or post.title == null %}{{ post.title }}{% else %}{% capture excerpt %}{{ post.excerpt | markdownify | strip_html | strip_newlines | truncatewords: 7 }}{% endcapture %}{% unless excerpt == '' or excerpt == null %}{{ excerpt }}{% else %}{{ post.date | date: "%B %-d, %Y at %r" }}{% endunless %}{% endunless %}</a></li>
                 {% endfor %}
-                </ul>                
+                </ul>
             </div>
             <div class="col-md-5 col-md-offset-1 col-xs-12">
                 <h3>Other Sites</h3>
                 <ul>
-<!--                     
-                    <li><a href="http://photos.thecave.com/">And More Photos</a></li>
-                    <li><a href="http://www.rowanturner.net/">Rowan Turner</a></li>
- -->                    
                     <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
                     <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
-                    <li><a href="http://www.whitepeaksoftware.com/">White Peak Software</a></li>
-<!--                     
-                    <li><a href="http://www.peakappcare.com/">Peak App Care</a></li>
- -->                
+                    <li><a href="https://photos.thecave.com/">More Photos</a></li>
                 </ul>
             </div>
         </div>
