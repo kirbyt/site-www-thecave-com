@@ -5,10 +5,20 @@
         <description>thecave | Kirby Turner's Blog - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2018-09-03T13:28:45+00:00</lastBuildDate>
-        <pubDate>2018-09-03T13:28:45+00:00</pubDate>
+        <lastBuildDate>2018-09-04T23:42:21+00:00</lastBuildDate>
+        <pubDate>2018-09-04T23:42:21+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title></title>
+                <description>&lt;p&gt;Enjoying the view while taking an evening walk. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-09-04-19-37-JquqPRHdm62iAphb62V4.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2018/09/04/evening-walk/</link>
+                <guid>http://www.thecave.com/2018/09/04/evening-walk</guid>
+                <pubDate>2018-09-04T23:39:35+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -195,16 +205,6 @@
                 <link>http://www.thecave.com/2017/11/30/music-battle/</link>
                 <guid>http://www.thecave.com/2017/11/30/music-battle</guid>
                 <pubDate>2017-12-01T03:41:40+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;A beautiful morning to be out on the hill. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2017-11-29-10-11-B0DDSa94N3wsiM3lTZxM.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2017/11/29/a-beautiful-morning/</link>
-                <guid>http://www.thecave.com/2017/11/29/a-beautiful-morning</guid>
-                <pubDate>2017-11-29T15:14:36+00:00</pubDate>
         </item>
 
 

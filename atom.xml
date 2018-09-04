@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2018-09-03T13:28:45+00:00</updated>
+  <updated>2018-09-04T23:42:21+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2018 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2018/09/04/evening-walk/"/>
+    <published>2018-09-04T23:39:35+00:00</published>
+    <updated>2018-09-04T23:39:35+00:00</updated>
+    <id>http://www.thecave.com/2018/09/04/evening-walk</id>
+    <content type="html"><![CDATA[<p>Enjoying the view while taking an evening walk. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-09-04-19-37-JquqPRHdm62iAphb62V4.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -216,17 +227,6 @@
     <updated>2017-12-01T03:41:40+00:00</updated>
     <id>http://www.thecave.com/2017/11/30/music-battle</id>
     <content type="html"><![CDATA[<p>The kid and I played Battle of the Music tonight. His pick: Twenty One Pilots. My pick: Godzilla. The winner: Meatwad’s <a href="https://itunes.apple.com/us/album/frosty-the-red-nosed-snowman/336680764?i=336681060">Frosty the Red-Nosed Snowman</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/11/29/a-beautiful-morning/"/>
-    <published>2017-11-29T15:14:36+00:00</published>
-    <updated>2017-11-29T15:14:36+00:00</updated>
-    <id>http://www.thecave.com/2017/11/29/a-beautiful-morning</id>
-    <content type="html"><![CDATA[<p>A beautiful morning to be out on the hill. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-11-29-10-11-B0DDSa94N3wsiM3lTZxM.jpg" alt="" /></p>
-
 ]]></content>
   </entry>
   
