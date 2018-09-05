@@ -4,13 +4,28 @@
   <title><![CDATA[Tag: micropost | thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/tag/micropost/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2018-09-04T23:42:21+00:00</updated>
+  <updated>2018-09-05T20:58:25+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    
+    <title></title>
+    
+    <link href="http://www.thecave.com/2018/09/05/sunlit-app/"/>
+    <updated>2018-09-05T20:55:41+00:00</updated>
+    <id>http://www.thecave.com/2018/09/05/sunlit-app</id>
+    <tag>micropost</tag>
+    <description><![CDATA[<p>I’m loving the timeline feature in <a href="https://itunes.apple.com/us/app/sunlit/id1334727769?mt=8">Sunlit</a>. Makes me want to post more pictures.</p>
+]]></description>
+    <content type="html"><![CDATA[<p>I’m loving the timeline feature in <a href="https://itunes.apple.com/us/app/sunlit/id1334727769?mt=8">Sunlit</a>. Makes me want to post more pictures.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     
@@ -68,21 +83,6 @@
     <description><![CDATA[<p>Enjoying a weekend getaway in South Carolina. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-08-04-21-16-cfZoUCWsRU6YQyk71YnA.jpg" alt="" /> <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-08-04-21-14-ihhRRIZgrCU3BLAwaSLd.jpg" alt="" /></p>
 ]]></description>
     <content type="html"><![CDATA[<p>Enjoying a weekend getaway in South Carolina. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-08-04-21-16-cfZoUCWsRU6YQyk71YnA.jpg" alt="" /> <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-08-04-21-14-ihhRRIZgrCU3BLAwaSLd.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    
-    <title></title>
-    
-    <link href="http://www.thecave.com/2018/07/22/watching-the-sunset/"/>
-    <updated>2018-07-22T19:54:30+00:00</updated>
-    <id>http://www.thecave.com/2018/07/22/watching-the-sunset</id>
-    <tag>micropost</tag>
-    <description><![CDATA[<p>Watching the kid, and two of his friends, sit still for five minutes to watch a sunset in Minecraft. Would never happen in real life.</p>
-]]></description>
-    <content type="html"><![CDATA[<p>Watching the kid, and two of his friends, sit still for five minutes to watch a sunset in Minecraft. Would never happen in real life.</p>
 
 ]]></content>
   </entry>
