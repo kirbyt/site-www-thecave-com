@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2018-09-07T00:38:30+00:00</updated>
+  <updated>2018-09-07T01:41:44+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2018 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2018/09/06/goruck-gr1/"/>
+    <published>2018-09-07T01:38:52+00:00</published>
+    <updated>2018-09-07T01:38:52+00:00</updated>
+    <id>http://www.thecave.com/2018/09/06/goruck-gr1</id>
+    <content type="html"><![CDATA[<p>My first GoRuck bag, G1, purchased May 2012. Still my favorite bag. Goes with me (almost) everywhere. <img src="https://www.thecave.com/images/blog/2012-05-30-goruck.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -214,19 +225,6 @@
     <updated>2017-12-24T18:05:29+00:00</updated>
     <id>http://www.thecave.com/2017/12/24/christmas-eve-snowshoe-outing</id>
     <content type="html"><![CDATA[<p>Decided to do something other than snowboarding today. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-12-24-13-04-dZxZ4bL5qd7A3x0B9mNW.jpg" alt="" /> <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-12-24-13-01-TelLjsyA4Si9HcePlCpd.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/12/07/the-bar-for-me/"/>
-    <published>2017-12-08T02:45:44+00:00</published>
-    <updated>2017-12-08T02:45:44+00:00</updated>
-    <id>http://www.thecave.com/2017/12/07/the-bar-for-me</id>
-    <content type="html"><![CDATA[<p>Jane’s Addiction on the sound system. Hunting Hitler on the TV behind the bar. I think I just found my new favorite dive bar.</p>
-
-<p>Oh wait. The bartender just put on Justin Timberlake. Time to look for another place.</p>
 
 ]]></content>
   </entry>

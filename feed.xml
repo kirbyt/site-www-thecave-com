@@ -5,9 +5,33 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 07 Sep 2018 00:38:30 +0000</pubDate>
-    <lastBuildDate>Fri, 07 Sep 2018 00:38:30 +0000</lastBuildDate>
+    <pubDate>Fri, 07 Sep 2018 01:41:44 +0000</pubDate>
+    <lastBuildDate>Fri, 07 Sep 2018 01:41:44 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;My first GoRuck bag, G1, purchased May 2012. Still my favorite bag. Goes with me (almost) everywhere. &lt;img src=&quot;https://www.thecave.com/images/blog/2012-05-30-goruck.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 07 Sep 2018 01:38:52 +0000</pubDate>
+        <link>http://www.thecave.com/2018/09/06/goruck-gr1/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2018/09/06/goruck-gr1/</guid>
+        
+        <category>backpack</category>
+        
+        <category>goruck</category>
+        
+        <category>gr1</category>
+        
+        <category>micropost</category>
+        
+        <category>photo</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title></title>
@@ -190,26 +214,6 @@
         <category>micro.blog</category>
         
         <category>website</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;On top of Mount Mansfield watching the sunset. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-03-20-17-04-IDTiE0GroaTq5NQ2FIG6.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 20 Mar 2018 21:06:38 +0000</pubDate>
-        <link>http://www.thecave.com/2018/03/20/sunset/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2018/03/20/sunset/</guid>
-        
-        <category>micropost</category>
-        
-        <category>photo</category>
-        
-        <category>vermont</category>
         
         
         <category>personal</category>
