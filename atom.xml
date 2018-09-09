@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2018-09-07T01:41:44+00:00</updated>
+  <updated>2018-09-09T15:30:53+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2018 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2018/09/09/kayaking/"/>
+    <published>2018-09-09T15:27:29+00:00</published>
+    <updated>2018-09-09T15:27:29+00:00</updated>
+    <id>http://www.thecave.com/2018/09/09/kayaking</id>
+    <content type="html"><![CDATA[<p>The kid out for an evening paddle. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-09-09-11-25-gTh00kFl539oFc8nnsfT.jpg" alt="" /> <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-09-09-11-26-HU3T9bvDnf8Gi14NDoAI.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -214,17 +225,6 @@
     <updated>2018-01-03T18:41:56+00:00</updated>
     <id>http://www.thecave.com/2018/01/03/the-kid-last-month</id>
     <content type="html"><![CDATA[<p>Picture of the kid from last month. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-01-03-13-40-8niSf6M1Sv5IGARRdLwV.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2017/12/24/christmas-eve-snowshoe-outing/"/>
-    <published>2017-12-24T18:05:29+00:00</published>
-    <updated>2017-12-24T18:05:29+00:00</updated>
-    <id>http://www.thecave.com/2017/12/24/christmas-eve-snowshoe-outing</id>
-    <content type="html"><![CDATA[<p>Decided to do something other than snowboarding today. <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-12-24-13-04-dZxZ4bL5qd7A3x0B9mNW.jpg" alt="" /> <img src="https://thecave-com.s3.amazonaws.com/Photo-2017-12-24-13-01-TelLjsyA4Si9HcePlCpd.jpg" alt="" /></p>
 
 ]]></content>
   </entry>
