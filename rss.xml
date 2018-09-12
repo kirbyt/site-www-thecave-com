@@ -5,10 +5,19 @@
         <description>thecave | Kirby Turner's Blog - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2018-09-09T15:30:53+00:00</lastBuildDate>
-        <pubDate>2018-09-09T15:30:53+00:00</pubDate>
+        <lastBuildDate>2018-09-12T13:21:10+00:00</lastBuildDate>
+        <pubDate>2018-09-12T13:21:10+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Two Years Ago Today</title>
+                <description>&lt;p&gt;I started at Apple as a contractor two years ago today. And what an exciting two years it has been.&lt;/p&gt;
+</description>
+                <link>http://www.thecave.com/2018/09/12/two-years-ago-today/</link>
+                <guid>http://www.thecave.com/2018/09/12/two-years-ago-today</guid>
+                <pubDate>2018-09-12T13:17:15+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -194,16 +203,6 @@
                 <link>http://www.thecave.com/2018/01/03/the-kid-getting-air/</link>
                 <guid>http://www.thecave.com/2018/01/03/the-kid-getting-air</guid>
                 <pubDate>2018-01-03T18:44:18+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;Picture of the kid from last month. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-01-03-13-40-8niSf6M1Sv5IGARRdLwV.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2018/01/03/the-kid-last-month/</link>
-                <guid>http://www.thecave.com/2018/01/03/the-kid-last-month</guid>
-                <pubDate>2018-01-03T18:41:56+00:00</pubDate>
         </item>
 
 

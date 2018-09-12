@@ -4,13 +4,24 @@
   <title><![CDATA[Category: personal | thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/category/personal/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2018-09-09T15:30:53+00:00</updated>
+  <updated>2018-09-12T13:21:10+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Two Years Ago Today]]></title>
+    <link href="http://www.thecave.com/2018/09/12/two-years-ago-today/"/>
+    <updated>2018-09-12T13:17:15+00:00</updated>
+    <id>http://www.thecave.com/2018/09/12/two-years-ago-today</id>
+    <description><![CDATA[<p>I started at Apple as a contractor two years ago today. And what an exciting two years it has been.</p>
+]]></description>
+    <content type="html"><![CDATA[<p>I started at Apple as a contractor two years ago today. And what an exciting two years it has been.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -56,18 +67,6 @@
     <description><![CDATA[<p>I’m loving the timeline feature in <a href="https://itunes.apple.com/us/app/sunlit/id1334727769?mt=8">Sunlit</a>. Makes me want to post more pictures.</p>
 ]]></description>
     <content type="html"><![CDATA[<p>I’m loving the timeline feature in <a href="https://itunes.apple.com/us/app/sunlit/id1334727769?mt=8">Sunlit</a>. Makes me want to post more pictures.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2018/09/04/evening-walk/"/>
-    <updated>2018-09-04T23:39:35+00:00</updated>
-    <id>http://www.thecave.com/2018/09/04/evening-walk</id>
-    <description><![CDATA[<p>Enjoying the view while taking an evening walk. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-09-04-19-37-JquqPRHdm62iAphb62V4.jpg" alt="" /></p>
-]]></description>
-    <content type="html"><![CDATA[<p>Enjoying the view while taking an evening walk. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-09-04-19-37-JquqPRHdm62iAphb62V4.jpg" alt="" /></p>
 
 ]]></content>
   </entry>

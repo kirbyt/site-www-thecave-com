@@ -127,6 +127,24 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2004/07/30/july-icca-meeting/">July ICCA Meeting</a>
+    </h2>
+    
+    <p>I attended my second <a href="http://www.iccanyc.org/">ICCA NYC Chapter</a> meeting last Tuesday. Turn out was not as good as the previous month but that was probably due to the pouring rain. The meeting was about planning for the upcoming year. We talked about the topics that will be presented over the next 12 months and attendees had a chance to vote for topics that he or she was most interested in hearing. Internet marketing and better networking (not the technical kind but the person to person kind) were top on the list with many other exciting topics following. The next 12 months of meetings are shaping up to be interesting and useful.</p>
+
+
+    <p><a href="/2004/07/30/july-icca-meeting/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on July 30, 2004
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2004/07/26/back-from-vermont/">Back from Vermont</a>
     </h2>
     
@@ -315,39 +333,6 @@
 </div>
 <hr>
 
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2004/07/15/to-data-bind-or-not-to-data-bind-that-is-the-question/">To Data Bind or Not To Data Bind?  That is the Question.</a>
-    </h2>
-    
-    <p>I had a lengthy discussion with another developer today regarding data binding in .NET.  I started thinking about this more after the conversation ended and I realized there are some who think data binding should always be used in Windows based .NET applications.  The conversation today brought back memories of how developers overused data binding when VB 3.0 was released into the wild.
-<br />
-<br />Data binding in .NET is a vast improvement over past attempts at providing a data binding feature in a programming language.  I for one love the fact that I can data bind to different data structures and that I am not limited to binding to ADO.NET datasets only.  I often use data binding in my ASP.NET applications that use a repeater.  This feature alone has helped me build web pages faster, but I do not believe data binding is the silver bullet for all cases of moving data between structure and presentation.
-<br />
-<br />Consider a case where you are developing a Windows application and the presentation tier works with custom data structures only, no dataset.  The window must allow the user to edit values stored within the data structure.  One easy way to do this is to bind the data structure to the window elements.  Changes in the data will immediately be reflected in the data structure.  Now assume that the user wishes to cancel the data changes.  Unfortunately the data structure has already been updated with the changes.  How do you reset the data structure?
-<br />
-<br />There are probably 101 ways to solve this problem.  One approach that works well and does not use data binding is to copy data from the data structure into the window elements for display and copy the data back from the window elements to the data structure for persistence.  This is accomplished by writing two private methods, one to copy from the data structure to the window elements and the other to copy from the window elements to the data structure.  The on change event from each editable window element can be wired to a single event handler that sets a flag that indicates data has changed, i.e., IsDirty.
-<br />
-<br />Within the form load event of the window, the private method to copy data from the structure to the window elements is called.  Within the form close event or some other event indicating a desire to save the data, the private method to copy the data from the window elements to the data structure is called.  The flag indicating data has changed can be used here to avoid copying data when no changes exist.  In other words, only copy the data from the window elements if the IsDirty flag is true; otherwise do not copy the values.
-<br />
-<br />This approach does require the developer to write code.  Data binding would of course eliminate the need to write the code but in doing so you give up some flexibility in what you can and cannot do.  In many more complex solutions, giving up that flexibility can lead to more costly problem solving approaches such as writing code for workarounds to problems caused by the loss of flexibility.  This can be true when data binding is used. 
-<br />
-<br />I have seen projects that use data binding go down the path of writing various parsers, formatters, utility helper classes, implementing interfaces such as IEditableObject on data structures, and so on just to overcome limitations imposed by the use of data binding.  In the attempt to avoid writing code that follows a straight forward pattern of moving data from a structure to window elements and back, the project developers have made life much harder for themselves.  Design meetings, whiteboard sessions, and developer time are wasted on producing these workarounds just to eliminate the need to write simple snippets of clean code within the window.
-<br />
-<br />Data bind has its place in the application development world, but do not assume it is the only approach to use within your applications.  Don’t be afraid to write code.  You might be surprised at how easy it is to maintain, enhance, and most importantly improve the richness of your applications when you don’t use concepts like data binding.  And when you do use data binding use it wisely.
-<br /></p>
-
-
-    <p><a href="/2004/07/15/to-data-bind-or-not-to-data-bind-that-is-the-question/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on July 15, 2004
-     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
-    Tagged in .
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -380,6 +365,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2018/09/12/two-years-ago-today/" title="Two Years Ago Today">Two Years Ago Today</a></li>
+                
                 <li><a href="/2018/09/09/kayaking/" title="">The kid out for an evening paddle....</a></li>
                 
                 <li><a href="/2018/09/06/goruck-gr1/" title="">My first GoRuck bag, G1, purchased May...</a></li>
@@ -387,8 +374,6 @@
                 <li><a href="/2018/09/06/evening-on-the-lawn/" title="">Fun evening on the lawn at The...</a></li>
                 
                 <li><a href="/2018/09/05/sunlit-app/" title="">I’m loving the timeline feature in Sunlit....</a></li>
-                
-                <li><a href="/2018/09/04/evening-walk/" title="">Enjoying the view while taking an evening...</a></li>
                 
                 </ul>
             </div>
