@@ -127,6 +127,24 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2008/09/04/importerror-no-module-named-svn/">ImportError: No module named svn</a>
+    </h2>
+    
+    <p>Recently I moved my CVS and Subversion repositories to a VPS that is running the server edition of Ubuntu Hardy.  As part of the move I installed ViewCV enabling me to view my repositories via a web browser.  Problem was when I viewed a Subversion repository I got the following error message:<br /><br /><code><br />An Exception Has Occurred<br />Python Traceback<br />Traceback (most recent call last):<br />  File "/usr/local/viewcvs-1.0-dev/lib/viewcvs.py", line 3194, in main<br />    request.run_viewcvs()<br />  File "/usr/local/viewcvs-1.0-dev/lib/viewcvs.py", line 258, in run_viewcvs<br />    import vclib.svn<br />  File "/usr/local/viewcvs-1.0-dev/lib/vclib/svn/__init__.py", line 27, in ?<br />    from svn import fs, repos, core, delta<br />ImportError: No module named svn<br /></code><br /><br />I could view CVS repository just not Subversion repositories.  This left me scratching my head.  I did a couple of google searches but no solution found.  Then I thought to myself, “I wonder if there is anything Python specific for Subversion.”  This prompted me to try searching for packages using the aptitude command.<br /><br />Sure enough the command <b>aptitude search subversion</b> returned a few items including <b>python-subversion</b>, which is the Python binding for Subversion.  Bingo!  I ran the command <b>aptitude install python-subversion</b> then checked ViewCV again in my browser.  Error gone.  I’m now able to view both CVS and SVN repositories.</p>
+
+
+    <p><a href="/2008/09/04/importerror-no-module-named-svn/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on September 4, 2008
+     in <a class='category' href='/category/programming/'>programming</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2008/08/28/salem-bloggers-unite/">Salem Bloggers Unite</a>
     </h2>
     
@@ -287,24 +305,6 @@
 </div>
 <hr>
 
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2008/06/18/recommended-software-for-mac/">Recommended Software for Mac</a>
-    </h2>
-    
-    <p>A good friend of mine, who just bought an iMac, asked what Mac software I use regularly and recommend. Instead of emailing a reply to him, I decided to post my list of recommended software here for all to see.<br /><br />&lt;ul&gt;<br />&lt;li&gt;<a href="http://vmware.com/products/fusion/">VMware Fusion</a> - Although I spend less time in Windows these days, I still have to use it for various development projects. So when I need to use Windows, I rely on VMware Fusion, which allows me to run an instance of Windows from within OS X.&lt;/li&gt;<br />&lt;li&gt;Mail.app - This is the email program that comes with OS X.  I use it to manage all my emails.&lt;/li&gt;<br />&lt;li&gt;iCal - This also comes with OS X and I use it daily.&lt;/li&gt;<br />&lt;li&gt;<a href="http://www.spanningsync.com/">Spanning Sync</a> - I used this gem to synch my iCal calendars to Google calendars.  I currently synch 5 different calendars, a birthday calendar that I share with my wife, my personal calendar, my wife’s calendar, a calendar for trips, and my work calendar.&lt;/li&gt;<br />&lt;li&gt;<a href="http://www.nhoj.co.uk/youreinvited/">YAI (You Are Invited)</a> - This is a Mail.app plug-in that translates and transfers calendar invites from Outlook, Google, and others to iCal.&lt;/li&gt;<br />&lt;li&gt;Address Book - Another piece of software that comes with OS X.&lt;/li&gt;<br />&lt;li&gt;<a href="http://macromates.com/">TextMate</a> - Damn fine text editor.&lt;/li&gt;<br />&lt;li&gt;<a href="http://www.evernote.com/">Evernote</a> - For tracking various notes.&lt;/li&gt;<br />&lt;li&gt;<a href="http://www.openoffice.org/">Open Office</a> - For word processing, spreadsheet, etc.  I’m using the beta for version 3.0, which support the Aqua interface and does not require X11.&lt;/li&gt;<br />&lt;li&gt;<a href="http://www.adiumx.com/">Adium</a> - My IM client of choice. Adium supports different IM services including Messenger, Yahoo!, AIM, and Google Talk.&lt;/li&gt;<br />&lt;li&gt;<a href="http://www.apple.com/ilife/iphoto/">iPhoto</a> - From the iLife suite. I store all my photos in iPhoto libraries.&lt;/li&gt;<br />&lt;li&gt;<a href="http://www.apple.com/aperture/">Aperture</a> - While I store all my master images in iPhoto, I do all my editing, rating, etc in Aperture.&lt;/li&gt;<br />&lt;li&gt;<a href="http://www.apple.com/ilife/imovie/">iMoive</a> - From the iLife suite. iMovie makes publishing to YouTube a snap.&lt;/li&gt;<br />&lt;li&gt;<a href="http://www.apple.com/ilife/idvd/">iDVD</a> - From the iLife suite. Easy way to record movies for family members who can’t view my movies online.&lt;/li&gt;<br />&lt;li&gt;<a href="http://www.apple.com/ilife/garageband/">GarageBand</a> - From the iLife suite. I don’t use this much.  Typically I only use it to lay down background sound tracks to movies I create.&lt;/li&gt;<br />&lt;li&gt;<a href="http://www.videolan.org/vlc/">VLC</a> - For view various media files.&lt;/li&gt;<br />&lt;li&gt;<a href="http://www.panic.com/unison/">Unison</a> - For reading newsgroups.&lt;/li&gt;<br />&lt;li&gt;<a href="http://www.newsgator.com/INDIVIDUALS/NETNEWSWIRE/">NetNewsWire</a> - For reading RSS feeds.&lt;/li&gt;<br />&lt;li&gt;<a href="http://www.shirt-pocket.com/SuperDuper/">SuperDuper!</a> - For making back ups of my MBP.&lt;/li&gt;<br />&lt;li&gt;<a href="http://skitch.com/">Skitch</a> - For capturing screen shots and sharing images with others.&lt;/li&gt;<br />&lt;li&gt;<a href="http://www.mozilla.com/">FireFox</a> - Safari is nice, but I prefer FireFox.  I use it the majority of the time, and Safari only once in a while.&lt;/li&gt;<br />&lt;li&gt;<a href="http://cord.sourceforge.net/">CoRD</a> - Enables me to remote desktop into my various Windows servers.&lt;/li&gt;<br />&lt;/ul&gt;That’s my list of Mac software that I use regularly.</p>
-
-
-    <p><a href="/2008/06/18/recommended-software-for-mac/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on June 18, 2008
-     in <a class='category' href='/category/personal/'>personal</a>.
-    Tagged in <a class='tag' href='/tag/os-x/'>os x</a>.
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -337,6 +337,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2018/09/17/sunrise/" title="">Sunrise view from thirty thousand feet. </a></li>
+                
                 <li><a href="/2018/09/14/preordered-iphone-xs/" title="">I woke up at 2:55 am (EDT)...</a></li>
                 
                 <li><a href="/2018/09/12/two-years-ago-today/" title="Two Years Ago Today">Two Years Ago Today</a></li>
@@ -344,8 +346,6 @@
                 <li><a href="/2018/09/09/kayaking/" title="">The kid out for an evening paddle....</a></li>
                 
                 <li><a href="/2018/09/06/goruck-gr1/" title="">My first GoRuck bag, G1, purchased May...</a></li>
-                
-                <li><a href="/2018/09/06/evening-on-the-lawn/" title="">Fun evening on the lawn at The...</a></li>
                 
                 </ul>
             </div>

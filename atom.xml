@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2018-09-14T13:22:08+00:00</updated>
+  <updated>2018-09-17T11:05:54+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2018 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2018/09/17/sunrise/"/>
+    <published>2018-09-17T11:03:06+00:00</published>
+    <updated>2018-09-17T11:03:06+00:00</updated>
+    <id>http://www.thecave.com/2018/09/17/sunrise</id>
+    <content type="html"><![CDATA[<p>Sunrise view from thirty thousand feet. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-09-17-06-59-i3ePjQ9cepawiexxAqgo.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -215,16 +226,6 @@
     <updated>2018-01-11T14:15:28+00:00</updated>
     <id>http://www.thecave.com/2018/01/11/stowe-december-13-2017</id>
     <content type="html"><![CDATA[<div class="vimeo-video"><figure><iframe src="//player.vimeo.com/video/249553873" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></figure></div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[New Year Terrain Park Fun]]></title>
-    <link href="http://www.thecave.com/2018/01/11/new-year-terrain-park-fun/"/>
-    <published>2018-01-11T14:10:28+00:00</published>
-    <updated>2018-01-11T14:10:28+00:00</updated>
-    <id>http://www.thecave.com/2018/01/11/new-year-terrain-park-fun</id>
-    <content type="html"><![CDATA[<div class="vimeo-video"><figure><iframe src="//player.vimeo.com/video/249333769" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></figure></div>
 ]]></content>
   </entry>
   
