@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2018-09-17T11:05:54+00:00</updated>
+  <updated>2018-09-21T23:06:20+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2018 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2018/09/21/flying-into-lax/"/>
+    <published>2018-09-21T23:02:54+00:00</published>
+    <updated>2018-09-21T23:02:54+00:00</updated>
+    <id>http://www.thecave.com/2018/09/21/flying-into-lax</id>
+    <content type="html"><![CDATA[<p>My view flying into LAX this morning. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-09-21-19-01-E7yE8pkuMZqXHJlXkL1E.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -216,16 +227,6 @@
     <updated>2018-01-11T14:16:42+00:00</updated>
     <id>http://www.thecave.com/2018/01/11/stowe-january-3-2018</id>
     <content type="html"><![CDATA[<div class="vimeo-video"><figure><iframe src="//player.vimeo.com/video/249549544" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></figure></div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Stowe on December 13]]></title>
-    <link href="http://www.thecave.com/2018/01/11/stowe-december-13-2017/"/>
-    <published>2018-01-11T14:15:28+00:00</published>
-    <updated>2018-01-11T14:15:28+00:00</updated>
-    <id>http://www.thecave.com/2018/01/11/stowe-december-13-2017</id>
-    <content type="html"><![CDATA[<div class="vimeo-video"><figure><iframe src="//player.vimeo.com/video/249553873" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></figure></div>
 ]]></content>
   </entry>
   

@@ -5,10 +5,20 @@
         <description>thecave | Kirby Turner's Blog - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2018-09-17T11:05:54+00:00</lastBuildDate>
-        <pubDate>2018-09-17T11:05:54+00:00</pubDate>
+        <lastBuildDate>2018-09-21T23:06:20+00:00</lastBuildDate>
+        <pubDate>2018-09-21T23:06:20+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title></title>
+                <description>&lt;p&gt;My view flying into LAX this morning. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-09-21-19-01-E7yE8pkuMZqXHJlXkL1E.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2018/09/21/flying-into-lax/</link>
+                <guid>http://www.thecave.com/2018/09/21/flying-into-lax</guid>
+                <pubDate>2018-09-21T23:02:54+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -195,15 +205,6 @@
                 <link>http://www.thecave.com/2018/01/11/stowe-january-3-2018/</link>
                 <guid>http://www.thecave.com/2018/01/11/stowe-january-3-2018</guid>
                 <pubDate>2018-01-11T14:16:42+00:00</pubDate>
-        </item>
-
-        <item>
-                <title>Stowe on December 13</title>
-                <description>&lt;div class=&quot;vimeo-video&quot;&gt;&lt;figure&gt;&lt;iframe src=&quot;//player.vimeo.com/video/249553873&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/figure&gt;&lt;/div&gt;
-</description>
-                <link>http://www.thecave.com/2018/01/11/stowe-december-13-2017/</link>
-                <guid>http://www.thecave.com/2018/01/11/stowe-december-13-2017</guid>
-                <pubDate>2018-01-11T14:15:28+00:00</pubDate>
         </item>
 
 
