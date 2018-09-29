@@ -5,20 +5,10 @@
         <description>thecave | Kirby Turner's Blog - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2018-09-29T11:51:47+00:00</lastBuildDate>
-        <pubDate>2018-09-29T11:51:47+00:00</pubDate>
+        <lastBuildDate>2018-09-29T11:57:01+00:00</lastBuildDate>
+        <pubDate>2018-09-29T11:57:01+00:00</pubDate>
         <ttl>1800</ttl>
 
-
-        <item>
-                <title>test</title>
-                <description>&lt;p&gt;This is a test post from my iPhone XS.&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2018/09/29/my-test-post/</link>
-                <guid>http://www.thecave.com/2018/09/29/my-test-post</guid>
-                <pubDate>2018-09-29T11:50:06+00:00</pubDate>
-        </item>
 
         <item>
                 <title></title>
@@ -206,6 +196,15 @@
                 <link>http://www.thecave.com/2018/01/28/first-snowboard-competition/</link>
                 <guid>http://www.thecave.com/2018/01/28/first-snowboard-competition</guid>
                 <pubDate>2018-01-28T22:34:39+00:00</pubDate>
+        </item>
+
+        <item>
+                <title>Stowe, January 3, 2018</title>
+                <description>&lt;div class=&quot;vimeo-video&quot;&gt;&lt;figure&gt;&lt;iframe src=&quot;//player.vimeo.com/video/249549544&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/figure&gt;&lt;/div&gt;
+</description>
+                <link>http://www.thecave.com/2018/01/11/stowe-january-3-2018/</link>
+                <guid>http://www.thecave.com/2018/01/11/stowe-january-3-2018</guid>
+                <pubDate>2018-01-11T14:16:42+00:00</pubDate>
         </item>
 
 
