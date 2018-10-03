@@ -127,6 +127,24 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2005/09/19/discovered-constant-bug-in-vs-net-2003/">Discovered Constant Bug in VS.NET 2003</a>
+    </h2>
+    
+    <p>Tonight I discovered an interesting Visual Studio.NET 2003 bug.  Seems devenv.exe will throw an unhandled exception when the constant in the sample code below is compiled.  From what I can tell, it looks like devenv.exe chokes on the length of the contant.  Remove line 73 (LEFT OUTER JOIN…) and the exception is not thrown.<br /><br />The exception only occurs when compiling the project from within VS.NET 2003 (devenv.exe).  The command line compiler csc.exe does not have the problem.  Also, the problem does not occur if you are using <a href="http://www.borland.com/delphi/">Delphi</a> 2005.  Makes me wonder what devenv.exe is doing during the project build process.<br /><br />&lt;pre&gt;<br />001  using System;<br />002 <br />003  namespace ConsoleApplication3<br />004  {<br />005     /// &lt;summary&gt;<br />006     /// Summary description for Class1.<br />007     /// &lt;/summary&gt;<br />008     class Class1<br />009     {<br />010        /// &lt;summary&gt;<br />011        /// The main entry point for the application.<br />012        /// &lt;/summary&gt;<br />013        [STAThread]<br />014        static void Main(string[] args)<br />015        {<br />016          const string SQL_FORMAT = @”<br />017           SELECT <br />018           1 AS Tag,<br />019           NULL AS Parent,<br />020           NULL AS [users!1],<br />021           NULL AS [user!2!strUSID],<br />022           NULL AS [user!2!strPrefixID],<br />023           NULL AS [user!2!strFirstName],<br />024           NULL AS [user!2!strLastName],<br />025           NULL AS [user!2!strUSName],<br />026           NULL AS [user!2!strAdd1],<br />027           NULL AS [user!2!strAdd2],<br />028           NULL AS [user!2!strTown],<br />029           NULL AS [user!2!strState],<br />030           NULL AS [user!2!strPostCode],<br />031           NULL AS [user!2!strCountry],<br />032           NULL AS [user!2!strTel],<br />033           NULL AS [user!2!strFax],<br />034           NULL AS [user!2!strEMail],<br />035           NULL AS [user!2!strLocked],<br />036           NULL AS [user!2!dtmLockedDate],<br />037           NULL AS [user!2!strSuspenseReason],<br />038           NULL AS [user!2!intLogonCount],<br />039           NULL AS [user!2!dtmCreatedDate],<br />040           NULL AS [user!2!strMedicalSpecialtyID],<br />041           NULL AS [user!2!blnChangePassword],<br />042           NULL AS [user!2!strInstitutionalUser],<br />043           NULL AS [user!2!strCreditCardExpDate]<br />044           UNION<br />045           SELECT<br />046           2 AS Tag,<br />047           1 AS Parent,<br />048           NULL,<br />049           Users.strUSID,<br />050           strPrefixID,<br />051           strFirstName,<br />052           strLastName,<br />053           strUSName,<br />054           strAdd1,<br />055           strAdd2,<br />056           strTown,<br />057           strState,<br />058           strPostCode,<br />059           strCountry,<br />060           strTel,<br />061           strFax,<br />062           strEMail,<br />063           strLocked,<br />064           dtmLockedDate,<br />065           ID_LoginSuspenseReason.strSuspenseReason,<br />066           intLogonCount,<br />067           dtmCreatedDate,<br />068           strMedicalSpecialtyID,<br />069           blnChangePassword,<br />070           strInstitutionalUser,<br />071           strCreditCardExpDate<br />072           FROM ID_Login Users<br />073           LEFT OUTER JOIN ID_LoginSuspenseReason ON Users.strUSID = ID_LoginSuspenseReason.strUSID<br />074           {0}<br />075           FOR XML EXPLICIT<br />076           “;<br />077        }<br />078     }<br />079  }<br />&lt;/pre&gt;</p>
+
+
+    <p><a href="/2005/09/19/discovered-constant-bug-in-vs-net-2003/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on September 19, 2005
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2005/09/19/ann-new-smtp-diagnostics-web-site/">ANN: New SMTP Diagnostics Web Site</a>
     </h2>
     
@@ -286,25 +304,6 @@
 </div>
 <hr>
 
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2005/08/18/recap-of-last-week/">Recap of Last Week</a>
-    </h2>
-    
-    <h2 id="lake-sunapee">Lake Sunapee</h2>
-
-
-
-    <p><a href="/2005/08/18/recap-of-last-week/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on August 18, 2005
-     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
-    Tagged in .
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -337,6 +336,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2018/10/03/mushrooms/" title="">October 3, 2018 at 10:01:05 AM</a></li>
+                
                 <li><a href="/2018/10/01/celebrating-oktoberfest/" title="">Celebrating Oktoberfest. </a></li>
                 
                 <li><a href="/2018/09/29/soccer-time/" title="">Soccer time for the kid. </a></li>
@@ -344,8 +345,6 @@
                 <li><a href="/2018/09/29/iphone-xs-camera/" title="">Playing around with my new camera, I...</a></li>
                 
                 <li><a href="/2018/09/21/flying-into-lax/" title="">My view flying into LAX this morning....</a></li>
-                
-                <li><a href="/2018/09/17/sunrise/" title="">Sunrise view from thirty thousand feet. </a></li>
                 
                 </ul>
             </div>
