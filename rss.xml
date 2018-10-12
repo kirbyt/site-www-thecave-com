@@ -5,10 +5,20 @@
         <description>thecave | Kirby Turner's Blog - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2018-10-03T14:03:03+00:00</lastBuildDate>
-        <pubDate>2018-10-03T14:03:03+00:00</pubDate>
+        <lastBuildDate>2018-10-12T02:37:11+00:00</lastBuildDate>
+        <pubDate>2018-10-12T02:37:11+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title></title>
+                <description>&lt;p&gt;&lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-10-11-22-33-H2gEdBeAWPx0cTxs6CQg.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-10-11-22-33-H2gEdBeAWPx0cTxs6CQg.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2018/10/11/fall-in-stowe/</link>
+                <guid>http://www.thecave.com/2018/10/11/fall-in-stowe</guid>
+                <pubDate>2018-10-12T02:35:35+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -196,16 +206,6 @@
                 <link>http://www.thecave.com/2018/06/04/move-web-host/</link>
                 <guid>http://www.thecave.com/2018/06/04/move-web-host</guid>
                 <pubDate>2018-06-04T15:22:53+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;On top of Mount Mansfield watching the sunset. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-03-20-17-04-IDTiE0GroaTq5NQ2FIG6.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2018/03/20/sunset/</link>
-                <guid>http://www.thecave.com/2018/03/20/sunset</guid>
-                <pubDate>2018-03-20T21:06:38+00:00</pubDate>
         </item>
 
 
