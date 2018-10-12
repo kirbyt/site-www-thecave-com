@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2018-10-12T02:37:11+00:00</updated>
+  <updated>2018-10-12T17:42:58+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2018 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2018/10/12/another-fall-photo/"/>
+    <published>2018-10-12T17:41:13+00:00</published>
+    <updated>2018-10-12T17:41:13+00:00</updated>
+    <id>http://www.thecave.com/2018/10/12/another-fall-photo</id>
+    <content type="html"><![CDATA[<p><a href="https://thecave-com.s3.amazonaws.com/Photo-2018-10-12-13-39-VYIi897d21V63LznASLl.jpeg"><img src="https://thecave-com.s3.amazonaws.com/Photo-2018-10-12-13-39-VYIi897d21V63LznASLl.jpeg" alt="" /></a></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -217,17 +228,6 @@
     <updated>2018-07-21T12:50:09+00:00</updated>
     <id>http://www.thecave.com/2018/07/21/sunset</id>
     <content type="html"><![CDATA[<p>Beautiful sunset over Mount Mansfield a couple of weeks ago. <img src="https://farm1.staticflickr.com/835/29304217858_b777019b4b_z.jpg" alt="" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2018/06/04/move-web-host/"/>
-    <published>2018-06-04T15:22:53+00:00</published>
-    <updated>2018-06-04T15:22:53+00:00</updated>
-    <id>http://www.thecave.com/2018/06/04/move-web-host</id>
-    <content type="html"><![CDATA[<p>I host my <a href="https://www.thecave.com">website</a> on GitHub Pages, but I’ve been thinking about hosting it on micro.blog. I’m now more motivated to make the move.</p>
-
 ]]></content>
   </entry>
   
