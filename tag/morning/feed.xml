@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: morning | thecave | Kirby Turner's Blog]]></title>
+  <link href="http://www.thecave.com/tag/morning/feed.xml" rel="self"/>
+  <link href="http://www.thecave.com/"/>
+  <updated>2018-10-15T23:32:56+00:00</updated>
+  <id>http://www.thecave.com/</id>
+  <author>
+    <name><![CDATA[Kirby Turner]]></name>
+    
+  </author>
+
+  
+  <entry>
+    
+    <title></title>
+    
+    <link href="http://www.thecave.com/2018/10/15/horses/"/>
+    <updated>2018-10-15T23:31:20+00:00</updated>
+    <id>http://www.thecave.com/2018/10/15/horses</id>
+    <tag>morning</tag>
+    <description><![CDATA[<p><a href="https://thecave-com.s3.amazonaws.com/Photo-2018-10-15-19-29-EkaYmwxCOwvQdX2qXtAK.jpeg"><img src="https://thecave-com.s3.amazonaws.com/Photo-2018-10-15-19-29-EkaYmwxCOwvQdX2qXtAK.jpeg" alt="" /></a></p>
+]]></description>
+    <content type="html"><![CDATA[<p><a href="https://thecave-com.s3.amazonaws.com/Photo-2018-10-15-19-29-EkaYmwxCOwvQdX2qXtAK.jpeg"><img src="https://thecave-com.s3.amazonaws.com/Photo-2018-10-15-19-29-EkaYmwxCOwvQdX2qXtAK.jpeg" alt="" /></a></p>
+
+]]></content>
+  </entry>
+  
+</feed>

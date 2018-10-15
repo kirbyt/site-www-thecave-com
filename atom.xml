@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2018-10-12T17:42:58+00:00</updated>
+  <updated>2018-10-15T23:32:56+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2018 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2018/10/15/horses/"/>
+    <published>2018-10-15T23:31:20+00:00</published>
+    <updated>2018-10-15T23:31:20+00:00</updated>
+    <id>http://www.thecave.com/2018/10/15/horses</id>
+    <content type="html"><![CDATA[<p><a href="https://thecave-com.s3.amazonaws.com/Photo-2018-10-15-19-29-EkaYmwxCOwvQdX2qXtAK.jpeg"><img src="https://thecave-com.s3.amazonaws.com/Photo-2018-10-15-19-29-EkaYmwxCOwvQdX2qXtAK.jpeg" alt="" /></a></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -218,16 +229,6 @@
     <id>http://www.thecave.com/2018/07/22/watching-the-sunset</id>
     <content type="html"><![CDATA[<p>Watching the kid, and two of his friends, sit still for five minutes to watch a sunset in Minecraft. Would never happen in real life.</p>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Sunset]]></title>
-    <link href="http://www.thecave.com/2018/07/21/sunset/"/>
-    <published>2018-07-21T12:50:09+00:00</published>
-    <updated>2018-07-21T12:50:09+00:00</updated>
-    <id>http://www.thecave.com/2018/07/21/sunset</id>
-    <content type="html"><![CDATA[<p>Beautiful sunset over Mount Mansfield a couple of weeks ago. <img src="https://farm1.staticflickr.com/835/29304217858_b777019b4b_z.jpg" alt="" /></p>
 ]]></content>
   </entry>
   

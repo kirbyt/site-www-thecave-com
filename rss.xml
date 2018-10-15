@@ -5,10 +5,20 @@
         <description>thecave | Kirby Turner's Blog - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2018-10-12T17:42:58+00:00</lastBuildDate>
-        <pubDate>2018-10-12T17:42:58+00:00</pubDate>
+        <lastBuildDate>2018-10-15T23:32:56+00:00</lastBuildDate>
+        <pubDate>2018-10-15T23:32:56+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title></title>
+                <description>&lt;p&gt;&lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-10-15-19-29-EkaYmwxCOwvQdX2qXtAK.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-10-15-19-29-EkaYmwxCOwvQdX2qXtAK.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2018/10/15/horses/</link>
+                <guid>http://www.thecave.com/2018/10/15/horses</guid>
+                <pubDate>2018-10-15T23:31:20+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -197,15 +207,6 @@
                 <link>http://www.thecave.com/2018/07/22/watching-the-sunset/</link>
                 <guid>http://www.thecave.com/2018/07/22/watching-the-sunset</guid>
                 <pubDate>2018-07-22T19:54:30+00:00</pubDate>
-        </item>
-
-        <item>
-                <title>Sunset</title>
-                <description>&lt;p&gt;Beautiful sunset over Mount Mansfield a couple of weeks ago. &lt;img src=&quot;https://farm1.staticflickr.com/835/29304217858_b777019b4b_z.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</description>
-                <link>http://www.thecave.com/2018/07/21/sunset/</link>
-                <guid>http://www.thecave.com/2018/07/21/sunset</guid>
-                <pubDate>2018-07-21T12:50:09+00:00</pubDate>
         </item>
 
 
