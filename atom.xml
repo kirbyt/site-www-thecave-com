@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2018-10-15T23:32:56+00:00</updated>
+  <updated>2018-10-21T03:22:22+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2018 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2018/10/20/clouds/"/>
+    <published>2018-10-21T03:20:40+00:00</published>
+    <updated>2018-10-21T03:20:40+00:00</updated>
+    <id>http://www.thecave.com/2018/10/20/clouds</id>
+    <content type="html"><![CDATA[<p><a href="https://thecave-com.s3.amazonaws.com/Photo-2018-10-20-23-19-IDcRLfp8yjgplmYOduPh.jpeg"><img src="https://thecave-com.s3.amazonaws.com/Photo-2018-10-20-23-19-IDcRLfp8yjgplmYOduPh.jpeg" alt="" /></a></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -217,17 +228,6 @@
     <updated>2018-08-05T01:17:16+00:00</updated>
     <id>http://www.thecave.com/2018/08/04/weekend-getaway</id>
     <content type="html"><![CDATA[<p>Enjoying a weekend getaway in South Carolina. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-08-04-21-16-cfZoUCWsRU6YQyk71YnA.jpg" alt="" /> <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-08-04-21-14-ihhRRIZgrCU3BLAwaSLd.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2018/07/22/watching-the-sunset/"/>
-    <published>2018-07-22T19:54:30+00:00</published>
-    <updated>2018-07-22T19:54:30+00:00</updated>
-    <id>http://www.thecave.com/2018/07/22/watching-the-sunset</id>
-    <content type="html"><![CDATA[<p>Watching the kid, and two of his friends, sit still for five minutes to watch a sunset in Minecraft. Would never happen in real life.</p>
 
 ]]></content>
   </entry>

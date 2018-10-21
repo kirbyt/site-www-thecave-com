@@ -5,9 +5,29 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 15 Oct 2018 23:32:56 +0000</pubDate>
-    <lastBuildDate>Mon, 15 Oct 2018 23:32:56 +0000</lastBuildDate>
+    <pubDate>Sun, 21 Oct 2018 03:22:22 +0000</pubDate>
+    <lastBuildDate>Sun, 21 Oct 2018 03:22:22 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-10-20-23-19-IDcRLfp8yjgplmYOduPh.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-10-20-23-19-IDcRLfp8yjgplmYOduPh.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 21 Oct 2018 03:20:40 +0000</pubDate>
+        <link>http://www.thecave.com/2018/10/20/clouds/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2018/10/20/clouds/</guid>
+        
+        <category>micropost</category>
+        
+        <category>photo</category>
+        
+        <category>vermont</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title></title>
@@ -185,24 +205,6 @@
         <category>photo</category>
         
         <category>sunrise</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;I woke up at 2:55 am (EDT) to preorder an iPhone XS. Then I talked myself out of spending the money. My iPhone 7 is a great device that serves me well. But then, before dropping the kid off at school, I preordered the iPhone XS. The camera on the XS is what motivated me to upgrade my phone.&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 14 Sep 2018 13:19:05 +0000</pubDate>
-        <link>http://www.thecave.com/2018/09/14/preordered-iphone-xs/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2018/09/14/preordered-iphone-xs/</guid>
-        
-        <category>iphone</category>
-        
-        <category>micropost</category>
         
         
         <category>personal</category>
