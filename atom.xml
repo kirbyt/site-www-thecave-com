@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2018-10-21T03:22:22+00:00</updated>
+  <updated>2018-11-15T02:52:09+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2018 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2018/11/14/walk-in-the-woods/"/>
+    <published>2018-11-15T02:50:23+00:00</published>
+    <updated>2018-11-15T02:50:23+00:00</updated>
+    <id>http://www.thecave.com/2018/11/14/walk-in-the-woods</id>
+    <content type="html"><![CDATA[<p>Took a walk in the woods today. <a href="https://thecave-com.s3.amazonaws.com/Photo-2018-11-14-21-49-psjkeRQKVknS13czCd7Y.JPG"><img src="https://thecave-com.s3.amazonaws.com/Photo-2018-11-14-21-49-psjkeRQKVknS13czCd7Y.JPG" alt="" /></a></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -217,17 +228,6 @@
     <updated>2018-08-20T01:44:42+00:00</updated>
     <id>http://www.thecave.com/2018/08/19/afternoon-hike</id>
     <content type="html"><![CDATA[<p>Afternoon hike across the top of Vermont. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-08-19-21-42-LKcwc2LrEPZ5S7tJZckF.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2018/08/04/weekend-getaway/"/>
-    <published>2018-08-05T01:17:16+00:00</published>
-    <updated>2018-08-05T01:17:16+00:00</updated>
-    <id>http://www.thecave.com/2018/08/04/weekend-getaway</id>
-    <content type="html"><![CDATA[<p>Enjoying a weekend getaway in South Carolina. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-08-04-21-16-cfZoUCWsRU6YQyk71YnA.jpg" alt="" /> <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-08-04-21-14-ihhRRIZgrCU3BLAwaSLd.jpg" alt="" /></p>
 
 ]]></content>
   </entry>

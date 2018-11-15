@@ -5,10 +5,20 @@
         <description>thecave | Kirby Turner's Blog - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2018-10-21T03:22:22+00:00</lastBuildDate>
-        <pubDate>2018-10-21T03:22:22+00:00</pubDate>
+        <lastBuildDate>2018-11-15T02:52:09+00:00</lastBuildDate>
+        <pubDate>2018-11-15T02:52:09+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title></title>
+                <description>&lt;p&gt;Took a walk in the woods today. &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-11-14-21-49-psjkeRQKVknS13czCd7Y.JPG&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-11-14-21-49-psjkeRQKVknS13czCd7Y.JPG&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2018/11/14/walk-in-the-woods/</link>
+                <guid>http://www.thecave.com/2018/11/14/walk-in-the-woods</guid>
+                <pubDate>2018-11-15T02:50:23+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -197,16 +207,6 @@
                 <link>http://www.thecave.com/2018/08/19/afternoon-hike/</link>
                 <guid>http://www.thecave.com/2018/08/19/afternoon-hike</guid>
                 <pubDate>2018-08-20T01:44:42+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;Enjoying a weekend getaway in South Carolina. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-08-04-21-16-cfZoUCWsRU6YQyk71YnA.jpg&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-08-04-21-14-ihhRRIZgrCU3BLAwaSLd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2018/08/04/weekend-getaway/</link>
-                <guid>http://www.thecave.com/2018/08/04/weekend-getaway</guid>
-                <pubDate>2018-08-05T01:17:16+00:00</pubDate>
         </item>
 
 
