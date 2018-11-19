@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2018-11-18T16:53:07+00:00</updated>
+  <updated>2018-11-19T19:46:53+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2018 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2018/11/19/my-wife-joined-me/"/>
+    <published>2018-11-19T19:44:38+00:00</published>
+    <updated>2018-11-19T19:44:38+00:00</updated>
+    <id>http://www.thecave.com/2018/11/19/my-wife-joined-me</id>
+    <content type="html"><![CDATA[<p>My wife joined me for a couple of runs on the hill this morning. <a href="https://thecave-com.s3.amazonaws.com/Photo-2018-11-19-14-41-lxIw1r0GVbVj8aAMz6qs.jpeg"><img src="https://thecave-com.s3.amazonaws.com/Photo-2018-11-19-14-41-lxIw1r0GVbVj8aAMz6qs.jpeg" alt="" /></a></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -217,17 +228,6 @@
     <updated>2018-09-04T23:39:35+00:00</updated>
     <id>http://www.thecave.com/2018/09/04/evening-walk</id>
     <content type="html"><![CDATA[<p>Enjoying the view while taking an evening walk. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-09-04-19-37-JquqPRHdm62iAphb62V4.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2018/09/02/vermont-sunset/"/>
-    <published>2018-09-03T03:40:55+00:00</published>
-    <updated>2018-09-03T03:40:55+00:00</updated>
-    <id>http://www.thecave.com/2018/09/02/vermont-sunset</id>
-    <content type="html"><![CDATA[<p>A beautiful Vermont sunset. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-09-02-23-39-RDpfkJdIL4xvlJmLAl0s.jpg" alt="" /></p>
 
 ]]></content>
   </entry>

@@ -127,6 +127,24 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2006/12/06/delphi-bds-live-templates-for-sql-server/">Delphi (BDS) Live Templates for SQL Server</a>
+    </h2>
+    
+    <p>Here are a few Delphi (BDS) Live Templates I created for writting SQL Server script:<br /><br /><b>Create SQL Server Table</b><br />&lt;pre&gt;<br /><br /><br />        version=”1.0.0”&gt;<br /> <br /> <br />      Create table for SQL Server.<br /> <br /> <br />      Kirby Turner<br /> <br /><br /> <br /> <br />        TableName<br /> <br /> <br /> <br /> <br /><br /> <code>&lt;![CDATA[/***<br />  Create |TableName| table.<br />***/<br /><br />PRINT 'Create |TableName| table'<br />GO<br /><br />IF (EXISTS (SELECT name FROM sysobjects WHERE (name = N'|TableName|') AND (type = 'U')))<br />BEGIN<br />  DROP TABLE [dbo].[|TableName|]<br />END<br />GO<br /><br />CREATE TABLE [dbo].[|TableName|] (<br />|*||end|<br /><br />|*|CONSTRAINT [PK_|TableName|_1] PRIMARY KEY CLUSTERED<br />|*|(<br />|*|)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]<br />) ON [PRIMARY]<br />GO<br /><br />GRANT SELECT ON [dbo].[|TableName|] TO [public]<br />GO]]&gt;<br /> </code><br /> <br /><br />&lt;/pre&gt;<br /><br /><b>Create Foreign Key Reference</b><br />&lt;pre&gt;<br /><br /><br />        version=”1.0.0”&gt;<br /> <br /> <br />      Create foreign key constraint for SQL Server.<br /> <br /> <br />      Kirby Turner<br /> <br /> <br /> <br />                PrimaryTableName<br /> <br /> <br /> <br /> <br /> <br /> <br />                SecondaryTableName<br /> <br /> <br /> <br /> <br /> <br /> <br />                ColumnName<br /> <br /> <br /> <br /> <br /> <code>&lt;![CDATA[ALTER TABLE [dbo].[|PrimaryTableName|] WITH CHECK ADD<br />CONSTRAINT [FK_|PrimaryTableName|_|SecondaryTableName|] FOREIGN KEY([|ColumnName|])<br />REFERENCES [dbo].[|SecondaryTableName|] ([|ColumnName|])<br />GO]]&gt;<br /> </code><br /> <br /><br />&lt;/pre&gt;<br /><br />Enjoy.</p>
+
+
+    <p><a href="/2006/12/06/delphi-bds-live-templates-for-sql-server/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on December 6, 2006
+     in <a class='category' href='/category/programming/'>programming</a>.
+    Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>, <a class='tag' href='/tag/windows/'>windows</a>.
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2006/12/06/apple-distributed-quicktime-patch-through-myspace/">Apple Distributed QuickTime Patch Through MySpace</a>
     </h2>
     
@@ -287,24 +305,6 @@
 </div>
 <hr>
 
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2006/10/30/surge-in-email-spam/">Surge in Email Spam</a>
-    </h2>
-    
-    <p>I don’t know about you but the number of spam mails I receive daily has definitely gone up in recent months.  And I’m not just imagining it either.  There has been a <a href="http://blogs.zdnet.com/Ou/?p=354&amp;tag=nl.e539">surge in spam</a>.<br /><br />Update: More on the <a href="http://www.theregister.co.uk/2006/10/31/botnet_spam_surge/">surge in spam</a>.</p>
-
-
-    <p><a href="/2006/10/30/surge-in-email-spam/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on October 30, 2006
-     in <a class='category' href='/category/personal/'>personal</a>.
-    Tagged in .
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -337,6 +337,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2018/11/19/my-wife-joined-me/" title="">My wife joined me for a couple...</a></li>
+                
                 <li><a href="/2018/11/18/first-day-of-the-season/" title="">First day of the season was a...</a></li>
                 
                 <li><a href="/2018/11/14/walk-in-the-woods/" title="">Took a walk in the woods today....</a></li>
@@ -344,8 +346,6 @@
                 <li><a href="/2018/10/20/clouds/" title="">October 20, 2018 at 11:20:40 PM</a></li>
                 
                 <li><a href="/2018/10/15/horses/" title="">October 15, 2018 at 07:31:20 PM</a></li>
-                
-                <li><a href="/2018/10/12/another-fall-photo/" title="">October 12, 2018 at 01:41:13 PM</a></li>
                 
                 </ul>
             </div>
