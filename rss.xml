@@ -5,10 +5,20 @@
         <description>thecave | Kirby Turner's Blog - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2018-11-19T19:46:53+00:00</lastBuildDate>
-        <pubDate>2018-11-19T19:46:53+00:00</pubDate>
+        <lastBuildDate>2018-11-28T02:40:00+00:00</lastBuildDate>
+        <pubDate>2018-11-28T02:40:00+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title></title>
+                <description>&lt;p&gt;The math seems to be a bit off. Guess it’s true, math is hard. &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-11-27-21-36-IUFmwa143m1aGynR8fPF.jpg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-11-27-21-36-IUFmwa143m1aGynR8fPF.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2018/11/27/math-is-hard/</link>
+                <guid>http://www.thecave.com/2018/11/27/math-is-hard</guid>
+                <pubDate>2018-11-28T02:38:05+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -197,16 +207,6 @@
                 <link>http://www.thecave.com/2018/09/05/sunlit-app/</link>
                 <guid>http://www.thecave.com/2018/09/05/sunlit-app</guid>
                 <pubDate>2018-09-05T20:55:41+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;Enjoying the view while taking an evening walk. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-09-04-19-37-JquqPRHdm62iAphb62V4.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2018/09/04/evening-walk/</link>
-                <guid>http://www.thecave.com/2018/09/04/evening-walk</guid>
-                <pubDate>2018-09-04T23:39:35+00:00</pubDate>
         </item>
 
 

@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2018-11-19T19:46:53+00:00</updated>
+  <updated>2018-11-28T02:40:00+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2018 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2018/11/27/math-is-hard/"/>
+    <published>2018-11-28T02:38:05+00:00</published>
+    <updated>2018-11-28T02:38:05+00:00</updated>
+    <id>http://www.thecave.com/2018/11/27/math-is-hard</id>
+    <content type="html"><![CDATA[<p>The math seems to be a bit off. Guess it’s true, math is hard. <a href="https://thecave-com.s3.amazonaws.com/Photo-2018-11-27-21-36-IUFmwa143m1aGynR8fPF.jpg"><img src="https://thecave-com.s3.amazonaws.com/Photo-2018-11-27-21-36-IUFmwa143m1aGynR8fPF.jpg" alt="" /></a></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -217,17 +228,6 @@
     <updated>2018-09-05T20:55:41+00:00</updated>
     <id>http://www.thecave.com/2018/09/05/sunlit-app</id>
     <content type="html"><![CDATA[<p>I’m loving the timeline feature in <a href="https://itunes.apple.com/us/app/sunlit/id1334727769?mt=8">Sunlit</a>. Makes me want to post more pictures.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2018/09/04/evening-walk/"/>
-    <published>2018-09-04T23:39:35+00:00</published>
-    <updated>2018-09-04T23:39:35+00:00</updated>
-    <id>http://www.thecave.com/2018/09/04/evening-walk</id>
-    <content type="html"><![CDATA[<p>Enjoying the view while taking an evening walk. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-09-04-19-37-JquqPRHdm62iAphb62V4.jpg" alt="" /></p>
 
 ]]></content>
   </entry>

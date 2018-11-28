@@ -5,9 +5,31 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 19 Nov 2018 19:46:53 +0000</pubDate>
-    <lastBuildDate>Mon, 19 Nov 2018 19:46:53 +0000</lastBuildDate>
+    <pubDate>Wed, 28 Nov 2018 02:40:00 +0000</pubDate>
+    <lastBuildDate>Wed, 28 Nov 2018 02:40:00 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;The math seems to be a bit off. Guess it’s true, math is hard. &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-11-27-21-36-IUFmwa143m1aGynR8fPF.jpg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-11-27-21-36-IUFmwa143m1aGynR8fPF.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 28 Nov 2018 02:38:05 +0000</pubDate>
+        <link>http://www.thecave.com/2018/11/27/math-is-hard/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2018/11/27/math-is-hard/</guid>
+        
+        <category>activity</category>
+        
+        <category>math</category>
+        
+        <category>micropost</category>
+        
+        <category>photo</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title></title>
@@ -191,26 +213,6 @@
         <category>photo</category>
         
         <category>stowe</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;Soccer time for the kid. &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-09-29-08-36-ec2WVkmPIzW4d1gH1OhB.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-09-29-08-36-ec2WVkmPIzW4d1gH1OhB.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 29 Sep 2018 12:38:06 +0000</pubDate>
-        <link>http://www.thecave.com/2018/09/29/soccer-time/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2018/09/29/soccer-time/</guid>
-        
-        <category>micropost</category>
-        
-        <category>photo</category>
-        
-        <category>vermont</category>
         
         
         <category>personal</category>
