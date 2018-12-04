@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2018-11-28T02:40:00+00:00</updated>
+  <updated>2018-12-04T02:00:46+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2018 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2018/12/03/the-fog-lifted/"/>
+    <published>2018-12-04T01:59:04+00:00</published>
+    <updated>2018-12-04T01:59:04+00:00</updated>
+    <id>http://www.thecave.com/2018/12/03/the-fog-lifted</id>
+    <content type="html"><![CDATA[<p>The fog lifted and the rain stopped. <a href="https://thecave-com.s3.amazonaws.com/Photo-2018-12-03-20-57-QGuPBNc9TSlElZuQ0Isu.jpeg"><img src="https://thecave-com.s3.amazonaws.com/Photo-2018-12-03-20-57-QGuPBNc9TSlElZuQ0Isu.jpeg" alt="" /></a></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -217,17 +228,6 @@
     <updated>2018-09-07T00:35:43+00:00</updated>
     <id>http://www.thecave.com/2018/09/06/evening-on-the-lawn</id>
     <content type="html"><![CDATA[<p>Fun evening on the lawn at The Alchemist. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-09-06-20-32-dqcs1ZbNrdBT5bsSw2Cr.jpg" alt="" /> <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-09-06-20-33-vWzpqJ2bw8htoYOuGx3G.jpg" alt="" /> <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-09-06-20-34-dA2dyJ1rFyLh08pLSsjv.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2018/09/05/sunlit-app/"/>
-    <published>2018-09-05T20:55:41+00:00</published>
-    <updated>2018-09-05T20:55:41+00:00</updated>
-    <id>http://www.thecave.com/2018/09/05/sunlit-app</id>
-    <content type="html"><![CDATA[<p>I’m loving the timeline feature in <a href="https://itunes.apple.com/us/app/sunlit/id1334727769?mt=8">Sunlit</a>. Makes me want to post more pictures.</p>
 
 ]]></content>
   </entry>
