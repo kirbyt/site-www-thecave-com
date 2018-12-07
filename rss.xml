@@ -5,10 +5,20 @@
         <description>thecave | Kirby Turner's Blog - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2018-12-04T02:00:46+00:00</lastBuildDate>
-        <pubDate>2018-12-04T02:00:46+00:00</pubDate>
+        <lastBuildDate>2018-12-07T15:27:16+00:00</lastBuildDate>
+        <pubDate>2018-12-07T15:27:16+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title></title>
+                <description>&lt;p&gt;A beautiful morning on the hill this morning. 🏂 &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-12-07-10-23-kgtJ98X3FBtKSeE9rjbP.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-12-07-10-23-kgtJ98X3FBtKSeE9rjbP.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2018/12/07/a-beautiful-morning/</link>
+                <guid>http://www.thecave.com/2018/12/07/a-beautiful-morning</guid>
+                <pubDate>2018-12-07T15:25:18+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -197,16 +207,6 @@
                 <link>http://www.thecave.com/2018/09/06/goruck-gr1/</link>
                 <guid>http://www.thecave.com/2018/09/06/goruck-gr1</guid>
                 <pubDate>2018-09-07T01:38:52+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;Fun evening on the lawn at The Alchemist. &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-09-06-20-32-dqcs1ZbNrdBT5bsSw2Cr.jpg&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-09-06-20-33-vWzpqJ2bw8htoYOuGx3G.jpg&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-09-06-20-34-dA2dyJ1rFyLh08pLSsjv.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2018/09/06/evening-on-the-lawn/</link>
-                <guid>http://www.thecave.com/2018/09/06/evening-on-the-lawn</guid>
-                <pubDate>2018-09-07T00:35:43+00:00</pubDate>
         </item>
 
 

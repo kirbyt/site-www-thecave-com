@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2018-12-04T02:00:46+00:00</updated>
+  <updated>2018-12-07T15:27:16+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2018 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2018/12/07/a-beautiful-morning/"/>
+    <published>2018-12-07T15:25:18+00:00</published>
+    <updated>2018-12-07T15:25:18+00:00</updated>
+    <id>http://www.thecave.com/2018/12/07/a-beautiful-morning</id>
+    <content type="html"><![CDATA[<p>A beautiful morning on the hill this morning. 🏂 <a href="https://thecave-com.s3.amazonaws.com/Photo-2018-12-07-10-23-kgtJ98X3FBtKSeE9rjbP.jpeg"><img src="https://thecave-com.s3.amazonaws.com/Photo-2018-12-07-10-23-kgtJ98X3FBtKSeE9rjbP.jpeg" alt="" /></a></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -217,17 +228,6 @@
     <updated>2018-09-07T01:38:52+00:00</updated>
     <id>http://www.thecave.com/2018/09/06/goruck-gr1</id>
     <content type="html"><![CDATA[<p>My first GoRuck bag, G1, purchased May 2012. Still my favorite bag. Goes with me (almost) everywhere. <img src="https://www.thecave.com/images/blog/2012-05-30-goruck.jpg" alt="" /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2018/09/06/evening-on-the-lawn/"/>
-    <published>2018-09-07T00:35:43+00:00</published>
-    <updated>2018-09-07T00:35:43+00:00</updated>
-    <id>http://www.thecave.com/2018/09/06/evening-on-the-lawn</id>
-    <content type="html"><![CDATA[<p>Fun evening on the lawn at The Alchemist. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-09-06-20-32-dqcs1ZbNrdBT5bsSw2Cr.jpg" alt="" /> <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-09-06-20-33-vWzpqJ2bw8htoYOuGx3G.jpg" alt="" /> <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-09-06-20-34-dA2dyJ1rFyLh08pLSsjv.jpg" alt="" /></p>
 
 ]]></content>
   </entry>
