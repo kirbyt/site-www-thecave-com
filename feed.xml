@@ -5,9 +5,33 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 17 Dec 2018 18:42:04 +0000</pubDate>
-    <lastBuildDate>Mon, 17 Dec 2018 18:42:04 +0000</lastBuildDate>
+    <pubDate>Thu, 20 Dec 2018 01:18:16 +0000</pubDate>
+    <lastBuildDate>Thu, 20 Dec 2018 01:18:16 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;A couple of pics from my morning snowshoe adventure.  &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-12-19-20-11-bnSVuPoSBh6sKEEiBIWT.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-12-19-20-11-bnSVuPoSBh6sKEEiBIWT.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-12-19-20-13-bwHPOgBY9SNnXK0km9Lk.JPG&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-12-19-20-13-bwHPOgBY9SNnXK0km9Lk.JPG&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 20 Dec 2018 01:16:46 +0000</pubDate>
+        <link>http://www.thecave.com/2018/12/19/snowshoe-hike/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2018/12/19/snowshoe-hike/</guid>
+        
+        <category>micropost</category>
+        
+        <category>photo</category>
+        
+        <category>snowshoeing</category>
+        
+        <category>stowe</category>
+        
+        <category>winter</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title></title>
@@ -193,28 +217,6 @@
         <category>micropost</category>
         
         <category>morning</category>
-        
-        <category>photo</category>
-        
-        <category>stowe</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-10-12-13-39-VYIi897d21V63LznASLl.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-10-12-13-39-VYIi897d21V63LznASLl.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 12 Oct 2018 17:41:13 +0000</pubDate>
-        <link>http://www.thecave.com/2018/10/12/another-fall-photo/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2018/10/12/another-fall-photo/</guid>
-        
-        <category>fall</category>
-        
-        <category>micropost</category>
         
         <category>photo</category>
         

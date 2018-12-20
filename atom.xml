@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2018-12-17T18:42:04+00:00</updated>
+  <updated>2018-12-20T01:18:16+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2018 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://www.thecave.com/2018/12/19/snowshoe-hike/"/>
+    <published>2018-12-20T01:16:46+00:00</published>
+    <updated>2018-12-20T01:16:46+00:00</updated>
+    <id>http://www.thecave.com/2018/12/19/snowshoe-hike</id>
+    <content type="html"><![CDATA[<p>A couple of pics from my morning snowshoe adventure.  <a href="https://thecave-com.s3.amazonaws.com/Photo-2018-12-19-20-11-bnSVuPoSBh6sKEEiBIWT.jpeg"><img src="https://thecave-com.s3.amazonaws.com/Photo-2018-12-19-20-11-bnSVuPoSBh6sKEEiBIWT.jpeg" alt="" /></a> <a href="https://thecave-com.s3.amazonaws.com/Photo-2018-12-19-20-13-bwHPOgBY9SNnXK0km9Lk.JPG"><img src="https://thecave-com.s3.amazonaws.com/Photo-2018-12-19-20-13-bwHPOgBY9SNnXK0km9Lk.JPG" alt="" /></a></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[]]></title>
@@ -218,17 +229,6 @@
     <updated>2018-09-12T13:17:15+00:00</updated>
     <id>http://www.thecave.com/2018/09/12/two-years-ago-today</id>
     <content type="html"><![CDATA[<p>I started at Apple as a contractor two years ago today. And what an exciting two years it has been.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2018/09/09/kayaking/"/>
-    <published>2018-09-09T15:27:29+00:00</published>
-    <updated>2018-09-09T15:27:29+00:00</updated>
-    <id>http://www.thecave.com/2018/09/09/kayaking</id>
-    <content type="html"><![CDATA[<p>The kid out for an evening paddle. <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-09-09-11-25-gTh00kFl539oFc8nnsfT.jpg" alt="" /> <img src="https://thecave-com.s3.amazonaws.com/Photo-2018-09-09-11-26-HU3T9bvDnf8Gi14NDoAI.jpg" alt="" /></p>
-
 ]]></content>
   </entry>
   
