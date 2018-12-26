@@ -5,9 +5,33 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 26 Dec 2018 02:41:43 +0000</pubDate>
-    <lastBuildDate>Wed, 26 Dec 2018 02:41:43 +0000</lastBuildDate>
+    <pubDate>Wed, 26 Dec 2018 02:49:50 +0000</pubDate>
+    <lastBuildDate>Wed, 26 Dec 2018 02:49:50 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;Afternoon walk to burn off calories from all the food I’ve eaten in the last 24 hours. &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-12-25-21-45-E8Eo8xKroOITeAVhFPsS.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-12-25-21-45-E8Eo8xKroOITeAVhFPsS.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-12-25-21-47-D6FwwszJLzHcFSCSwGPi.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-12-25-21-47-D6FwwszJLzHcFSCSwGPi.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 26 Dec 2018 02:48:10 +0000</pubDate>
+        <link>http://www.thecave.com/2018/12/25/afternoon-walk/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2018/12/25/afternoon-walk/</guid>
+        
+        <category>micropost</category>
+        
+        <category>photo</category>
+        
+        <category>snow</category>
+        
+        <category>stowe</category>
+        
+        <category>walk</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title></title>
@@ -201,28 +225,6 @@
         <category>micropost</category>
         
         <category>photo</category>
-        
-        <category>snowboarding</category>
-        
-        <category>stowe</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;First day of the season was a short one. Gotta get the kid to a birthday party. &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-11-18-11-49-3igzP1TLs2eB8Uv0YSbs.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-11-18-11-49-3igzP1TLs2eB8Uv0YSbs.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 18 Nov 2018 16:51:22 +0000</pubDate>
-        <link>http://www.thecave.com/2018/11/18/first-day-of-the-season/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2018/11/18/first-day-of-the-season/</guid>
-        
-        <category>micropost</category>
-        
-        <category>slopes</category>
         
         <category>snowboarding</category>
         
