@@ -127,6 +127,24 @@
 <div class="post-preview">
     
     <h2 class="post-title">
+        <a href="/2005/05/24/problem-accessing-ntfs-for-other-oses/">Problem Accessing NTFS for Other OSes</a>
+    </h2>
+    
+    <p>I was asked to look at my sister-in-law’s PC over the weekend.  Apparently it was having problems.  I typically avoid helping others with their PC problems but thought I would since she and her boyfriend were great hosts.  <br /><br />Somehow a nasty, little virus-like program was installed on her PC.  I tracked down the source of the problem to the <a href="http://www.wilderssecurity.com/showthread.php?t=79466">winik.sys</a>, which isn’t in fact a Microsoft driver.  This little puppy loads other programs that appear to be tracking activity on the PC and reporting information out to somewhere.<br /><br />The simple solution to the problem: delete the winik.sys file along with the directory of other programs it launches and clean up the registry.  Unfortunately the winik.sys loads as a driver and cannot be deleted while Windows is running.  No big deal I thought.  I would just boot up into a different OS and manually delete the files.  This turned out to be harder than I thought.  And harder then it should have been.<br /><br />Not having any “tools” with me, I decided I would boot up in safe mode with a command prompt.  Unfortunately this still loads the winik.sys driver.  Note that my sister-in-law is running an OEM version of Windows XP Home without any updates on it…no service packs, etc.  When this attempt failed, I created a DOS bootable disk from Windows.  I booted up the computer from the disk and to my surprised learned that the version of DOS I was running did not recognize NTFS.  <br /><br />I tried using the OEM recovery disc, but that didn’t help either.  <br /><br />My next thought was to use Linux.  I found a <a href="http://www.linuxlinks.com/Distributions/Floppy/">list</a> of floppy based distributions, but to my surprise none of the distributions I tried supported NTFS.  After spending hours trying to find ways to read an NTFS volume from another OS, I finally had to give up.  After all, I needed to get on the road and head back to NYC.<br /><br />I did learn a lot from the exercise even though I wasn’t able to remove the file from the PC.  For instance,<br /><br />1) Sysinternals has a <a href="http://www.sysinternals.com/ntw2k/freeware/ntfsdospro.shtml">NTFSDOS</a> utility that will mount NTFS volumes and provide read/write access from DOS.  Unfortunately the freeware version is read access only so it didn’t help me solve the problem.  And I didn’t want to buy the Administration Pack just for this one problem.<br /><br />2) While the idea of a Linux distribution on a floppy is cool, there are limits to what you can do.  I realized I need to know more about Linux and possibly make my own distribution that would allow me to help family and friends clean up infected machines.  But I’ll never take the time to make a floppy distribution.<br /><br />3) I should buy this <a href="http://www.thinkgeek.com/tshirts/frustrations/388b/">t-shirt</a>.</p>
+
+
+    <p><a href="/2005/05/24/problem-accessing-ntfs-for-other-oses/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on May 24, 2005
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
         <a href="/2005/05/18/nintendo-world/">Nintendo World</a>
     </h2>
     
@@ -303,24 +321,6 @@
 </div>
 <hr>
 
-<div class="post-preview">
-    
-    <h2 class="post-title">
-        <a href="/2005/05/04/argh/">Argh!</a>
-    </h2>
-    
-    <p>The way interfaces work in Delphi for Win32 stinks.  From what I have read it seems that interfaces were forced in to work with COM.  But even if you are not using COM, interfaces imposes COM like behaviors such as ref counts and interfaces must have a GUID.  But what really ticks me off is that you cannot cast an interface to an object.<br /><br />For years I have abstracted framework and application features through interfaces.  Now I can’t use them and it means I have to change the way I think.  This limitation, which I wish I knew about 2 months ago, makes me think I should have used C# for my app.<br /><br />In the end, I will be happy with my selection of Delphi.  But I’m a bit ticked off at it for the moment.<br /><br />For those using Delphi for .NET, this will not be a problem.  Interfaces work the way you would expect, and you can cast objects to interfaces and interfaces to objects.</p>
-
-
-    <p><a href="/2005/05/04/argh/">Continue reading &rarr;</a></p>
-
-    <p class="post-meta">Posted by Kirby Turner on May 4, 2005
-     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
-    Tagged in .
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
@@ -353,6 +353,8 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
+                <li><a href="/2019/01/11/snowshoe-adventure/" title="">A snowshoe adventure after getting annoyed at...</a></li>
+                
                 <li><a href="/2019/01/02/morning-hike-in-the-woods/" title="">  </a></li>
                 
                 <li><a href="/2018/12/25/afternoon-walk/" title="">Afternoon walk to burn off calories from...</a></li>
@@ -360,8 +362,6 @@
                 <li><a href="/2018/12/25/merry-christmas-2018/" title="">Merry Christmas. </a></li>
                 
                 <li><a href="/2018/12/22/bright-moon/" title="">Bright moon tonight. </a></li>
-                
-                <li><a href="/2018/12/20/another-walk-in-the-woods/" title="">Today’s walk in the woods.   </a></li>
                 
                 </ul>
             </div>

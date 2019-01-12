@@ -5,9 +5,31 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 03 Jan 2019 02:30:14 +0000</pubDate>
-    <lastBuildDate>Thu, 03 Jan 2019 02:30:14 +0000</lastBuildDate>
+    <pubDate>Sat, 12 Jan 2019 04:18:48 +0000</pubDate>
+    <lastBuildDate>Sat, 12 Jan 2019 04:18:48 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;A snowshoe adventure after getting annoyed at the local ski resort. &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-01-11-23-15-C2wG2Sxd9lODjVShbhrZ.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-01-11-23-15-C2wG2Sxd9lODjVShbhrZ.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 12 Jan 2019 04:17:07 +0000</pubDate>
+        <link>http://www.thecave.com/2019/01/11/snowshoe-adventure/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2019/01/11/snowshoe-adventure/</guid>
+        
+        <category>micropost</category>
+        
+        <category>photo</category>
+        
+        <category>snowshoe</category>
+        
+        <category>winter</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title></title>
@@ -213,28 +235,6 @@
         <category>snowboarding</category>
         
         <category>stowe</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;The math seems to be a bit off. Guess it’s true, math is hard. &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-11-27-21-36-IUFmwa143m1aGynR8fPF.jpg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-11-27-21-36-IUFmwa143m1aGynR8fPF.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 28 Nov 2018 02:38:05 +0000</pubDate>
-        <link>http://www.thecave.com/2018/11/27/math-is-hard/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2018/11/27/math-is-hard/</guid>
-        
-        <category>activity</category>
-        
-        <category>math</category>
-        
-        <category>micropost</category>
-        
-        <category>photo</category>
         
         
         <category>personal</category>

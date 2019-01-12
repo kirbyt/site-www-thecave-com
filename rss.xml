@@ -5,10 +5,20 @@
         <description>thecave | Kirby Turner's Blog - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2019-01-03T02:30:14+00:00</lastBuildDate>
-        <pubDate>2019-01-03T02:30:14+00:00</pubDate>
+        <lastBuildDate>2019-01-12T04:18:48+00:00</lastBuildDate>
+        <pubDate>2019-01-12T04:18:48+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title></title>
+                <description>&lt;p&gt;A snowshoe adventure after getting annoyed at the local ski resort. &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-01-11-23-15-C2wG2Sxd9lODjVShbhrZ.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-01-11-23-15-C2wG2Sxd9lODjVShbhrZ.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2019/01/11/snowshoe-adventure/</link>
+                <guid>http://www.thecave.com/2019/01/11/snowshoe-adventure</guid>
+                <pubDate>2019-01-12T04:17:07+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -198,16 +208,6 @@
                 <link>http://www.thecave.com/2018/10/01/celebrating-oktoberfest/</link>
                 <guid>http://www.thecave.com/2018/10/01/celebrating-oktoberfest</guid>
                 <pubDate>2018-10-01T11:44:07+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;Soccer time for the kid. &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-09-29-08-36-ec2WVkmPIzW4d1gH1OhB.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-09-29-08-36-ec2WVkmPIzW4d1gH1OhB.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2018/09/29/soccer-time/</link>
-                <guid>http://www.thecave.com/2018/09/29/soccer-time</guid>
-                <pubDate>2018-09-29T12:38:06+00:00</pubDate>
         </item>
 
 
