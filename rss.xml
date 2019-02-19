@@ -5,10 +5,20 @@
         <description>thecave | Kirby Turner's Blog - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2019-01-12T04:18:48+00:00</lastBuildDate>
-        <pubDate>2019-01-12T04:18:48+00:00</pubDate>
+        <lastBuildDate>2019-02-19T01:53:36+00:00</lastBuildDate>
+        <pubDate>2019-02-19T01:53:36+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title></title>
+                <description>&lt;p&gt;Heading into the Notch. &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-02-18-20-50-0iiqToekBHN1bzMybeyn.JPG&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-02-18-20-50-0iiqToekBHN1bzMybeyn.JPG&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2019/02/18/heading-into-the-notch/</link>
+                <guid>http://www.thecave.com/2019/02/18/heading-into-the-notch</guid>
+                <pubDate>2019-02-19T01:52:22+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -198,16 +208,6 @@
                 <link>http://www.thecave.com/2018/10/03/mushrooms/</link>
                 <guid>http://www.thecave.com/2018/10/03/mushrooms</guid>
                 <pubDate>2018-10-03T14:01:05+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;Celebrating Oktoberfest. &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-10-01-07-39-1LFuNANzNj6YYMRT2S4z.JPG&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-10-01-07-39-1LFuNANzNj6YYMRT2S4z.JPG&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2018/10/01/celebrating-oktoberfest/</link>
-                <guid>http://www.thecave.com/2018/10/01/celebrating-oktoberfest</guid>
-                <pubDate>2018-10-01T11:44:07+00:00</pubDate>
         </item>
 
 

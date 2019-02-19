@@ -5,9 +5,35 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 12 Jan 2019 04:18:48 +0000</pubDate>
-    <lastBuildDate>Sat, 12 Jan 2019 04:18:48 +0000</lastBuildDate>
+    <pubDate>Tue, 19 Feb 2019 01:53:36 +0000</pubDate>
+    <lastBuildDate>Tue, 19 Feb 2019 01:53:36 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;Heading into the Notch. &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-02-18-20-50-0iiqToekBHN1bzMybeyn.JPG&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-02-18-20-50-0iiqToekBHN1bzMybeyn.JPG&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 19 Feb 2019 01:52:22 +0000</pubDate>
+        <link>http://www.thecave.com/2019/02/18/heading-into-the-notch/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2019/02/18/heading-into-the-notch/</guid>
+        
+        <category>micropost</category>
+        
+        <category>photo</category>
+        
+        <category>snowshoeing</category>
+        
+        <category>stowe</category>
+        
+        <category>vermont</category>
+        
+        <category>winter</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title></title>
@@ -205,28 +231,6 @@
         <pubDate>Fri, 07 Dec 2018 15:25:18 +0000</pubDate>
         <link>http://www.thecave.com/2018/12/07/a-beautiful-morning/</link>
         <guid isPermaLink="true">http://www.thecave.com/2018/12/07/a-beautiful-morning/</guid>
-        
-        <category>micropost</category>
-        
-        <category>photo</category>
-        
-        <category>snowboarding</category>
-        
-        <category>stowe</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;The fog lifted and the rain stopped. &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-12-03-20-57-QGuPBNc9TSlElZuQ0Isu.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-12-03-20-57-QGuPBNc9TSlElZuQ0Isu.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 04 Dec 2018 01:59:04 +0000</pubDate>
-        <link>http://www.thecave.com/2018/12/03/the-fog-lifted/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2018/12/03/the-fog-lifted/</guid>
         
         <category>micropost</category>
         
