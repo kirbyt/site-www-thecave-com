@@ -5,9 +5,37 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 19 Feb 2019 02:01:35 +0000</pubDate>
-    <lastBuildDate>Tue, 19 Feb 2019 02:01:35 +0000</lastBuildDate>
+    <pubDate>Mon, 18 Mar 2019 13:45:01 +0000</pubDate>
+    <lastBuildDate>Mon, 18 Mar 2019 13:45:01 +0000</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;Spent some time in the woods this morning. &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-03-18-09-41-GvbAxNM8Jt9wbivRwiuY.JPG&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-03-18-09-41-GvbAxNM8Jt9wbivRwiuY.JPG&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 18 Mar 2019 13:43:00 +0000</pubDate>
+        <link>http://www.thecave.com/2019/03/18/in-the-woods/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2019/03/18/in-the-woods/</guid>
+        
+        <category>micropost</category>
+        
+        <category>photo</category>
+        
+        <category>snowshoe</category>
+        
+        <category>stowe</category>
+        
+        <category>vt</category>
+        
+        <category>winter</category>
+        
+        <category>woods</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title></title>
@@ -215,28 +243,6 @@
         <category>photo</category>
         
         <category>snowshoeing</category>
-        
-        <category>stowe</category>
-        
-        <category>winter</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;Taking a stroll through the notch. &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-12-17-13-37-pfBWy3Oa1uAMjw5Khjzl.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-12-17-13-37-pfBWy3Oa1uAMjw5Khjzl.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 17 Dec 2018 18:40:03 +0000</pubDate>
-        <link>http://www.thecave.com/2018/12/17/notch-road/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2018/12/17/notch-road/</guid>
-        
-        <category>micropost</category>
-        
-        <category>photo</category>
         
         <category>stowe</category>
         

@@ -5,10 +5,20 @@
         <description>thecave | Kirby Turner's Blog - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2019-02-19T02:01:35+00:00</lastBuildDate>
-        <pubDate>2019-02-19T02:01:35+00:00</pubDate>
+        <lastBuildDate>2019-03-18T13:45:01+00:00</lastBuildDate>
+        <pubDate>2019-03-18T13:45:01+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title></title>
+                <description>&lt;p&gt;Spent some time in the woods this morning. &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-03-18-09-41-GvbAxNM8Jt9wbivRwiuY.JPG&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-03-18-09-41-GvbAxNM8Jt9wbivRwiuY.JPG&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2019/03/18/in-the-woods/</link>
+                <guid>http://www.thecave.com/2019/03/18/in-the-woods</guid>
+                <pubDate>2019-03-18T13:43:00+00:00</pubDate>
+        </item>
 
         <item>
                 <title></title>
@@ -198,16 +208,6 @@
                 <link>http://www.thecave.com/2018/10/12/another-fall-photo/</link>
                 <guid>http://www.thecave.com/2018/10/12/another-fall-photo</guid>
                 <pubDate>2018-10-12T17:41:13+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;&lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-10-11-22-33-H2gEdBeAWPx0cTxs6CQg.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-10-11-22-33-H2gEdBeAWPx0cTxs6CQg.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2018/10/11/fall-in-stowe/</link>
-                <guid>http://www.thecave.com/2018/10/11/fall-in-stowe</guid>
-                <pubDate>2018-10-12T02:35:35+00:00</pubDate>
         </item>
 
 
