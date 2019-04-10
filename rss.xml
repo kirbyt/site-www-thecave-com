@@ -5,10 +5,20 @@
         <description>thecave | Kirby Turner's Blog - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2019-04-03T15:18:51+00:00</lastBuildDate>
-        <pubDate>2019-04-03T15:18:51+00:00</pubDate>
+        <lastBuildDate>2019-04-10T13:24:49+00:00</lastBuildDate>
+        <pubDate>2019-04-10T13:24:49+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>In The Notch</title>
+                <description>&lt;p&gt;Enjoy walk in the notch. &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-04-10-09-21-Q6sbJSjvBQwdG1qQ1IH3.JPG&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-04-10-09-21-Q6sbJSjvBQwdG1qQ1IH3.JPG&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2019/04/10/in-the-notch/</link>
+                <guid>http://www.thecave.com/2019/04/10/in-the-notch</guid>
+                <pubDate>2019-04-10T13:23:21+00:00</pubDate>
+        </item>
 
         <item>
                 <title>One And Done</title>
@@ -198,16 +208,6 @@
                 <link>http://www.thecave.com/2018/10/20/clouds/</link>
                 <guid>http://www.thecave.com/2018/10/20/clouds</guid>
                 <pubDate>2018-10-21T03:20:40+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;&lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-10-15-19-29-EkaYmwxCOwvQdX2qXtAK.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-10-15-19-29-EkaYmwxCOwvQdX2qXtAK.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2018/10/15/horses/</link>
-                <guid>http://www.thecave.com/2018/10/15/horses</guid>
-                <pubDate>2018-10-15T23:31:20+00:00</pubDate>
         </item>
 
 

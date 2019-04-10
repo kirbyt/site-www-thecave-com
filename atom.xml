@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2019-04-03T15:18:51+00:00</updated>
+  <updated>2019-04-10T13:24:49+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2019 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[In The Notch]]></title>
+    <link href="http://www.thecave.com/2019/04/10/in-the-notch/"/>
+    <published>2019-04-10T13:23:21+00:00</published>
+    <updated>2019-04-10T13:23:21+00:00</updated>
+    <id>http://www.thecave.com/2019/04/10/in-the-notch</id>
+    <content type="html"><![CDATA[<p>Enjoy walk in the notch. <a href="https://thecave-com.s3.amazonaws.com/Photo-2019-04-10-09-21-Q6sbJSjvBQwdG1qQ1IH3.JPG"><img src="https://thecave-com.s3.amazonaws.com/Photo-2019-04-10-09-21-Q6sbJSjvBQwdG1qQ1IH3.JPG" alt="" /></a></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[One And Done]]></title>
@@ -218,17 +229,6 @@
     <updated>2018-10-21T03:20:40+00:00</updated>
     <id>http://www.thecave.com/2018/10/20/clouds</id>
     <content type="html"><![CDATA[<p><a href="https://thecave-com.s3.amazonaws.com/Photo-2018-10-20-23-19-IDcRLfp8yjgplmYOduPh.jpeg"><img src="https://thecave-com.s3.amazonaws.com/Photo-2018-10-20-23-19-IDcRLfp8yjgplmYOduPh.jpeg" alt="" /></a></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2018/10/15/horses/"/>
-    <published>2018-10-15T23:31:20+00:00</published>
-    <updated>2018-10-15T23:31:20+00:00</updated>
-    <id>http://www.thecave.com/2018/10/15/horses</id>
-    <content type="html"><![CDATA[<p><a href="https://thecave-com.s3.amazonaws.com/Photo-2018-10-15-19-29-EkaYmwxCOwvQdX2qXtAK.jpeg"><img src="https://thecave-com.s3.amazonaws.com/Photo-2018-10-15-19-29-EkaYmwxCOwvQdX2qXtAK.jpeg" alt="" /></a></p>
 
 ]]></content>
   </entry>
