@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2019-04-10T14:20:17+00:00</updated>
+  <updated>2019-07-05T03:40:18+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright (c) 2002-2019 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[Happy Firecracker Day]]></title>
+    <link href="http://www.thecave.com/2019/07/04/happy-firecracker-day/"/>
+    <published>2019-07-05T03:39:05+00:00</published>
+    <updated>2019-07-05T03:39:05+00:00</updated>
+    <id>http://www.thecave.com/2019/07/04/happy-firecracker-day</id>
+    <content type="html"><![CDATA[<p>Happy Firecracker Day! <a href="https://thecave-com.s3.amazonaws.com/Photo-2019-07-04-23-37-YnuV663YXTFG1SW7J8fp.jpeg"><img src="https://thecave-com.s3.amazonaws.com/Photo-2019-07-04-23-37-YnuV663YXTFG1SW7J8fp.jpeg" alt="" /></a></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[In The Notch]]></title>
@@ -218,17 +229,6 @@
     <updated>2018-11-15T02:50:23+00:00</updated>
     <id>http://www.thecave.com/2018/11/14/walk-in-the-woods</id>
     <content type="html"><![CDATA[<p>Took a walk in the woods today. <a href="https://thecave-com.s3.amazonaws.com/Photo-2018-11-14-21-49-psjkeRQKVknS13czCd7Y.JPG"><img src="https://thecave-com.s3.amazonaws.com/Photo-2018-11-14-21-49-psjkeRQKVknS13czCd7Y.JPG" alt="" /></a></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2018/10/20/clouds/"/>
-    <published>2018-10-21T03:20:40+00:00</published>
-    <updated>2018-10-21T03:20:40+00:00</updated>
-    <id>http://www.thecave.com/2018/10/20/clouds</id>
-    <content type="html"><![CDATA[<p><a href="https://thecave-com.s3.amazonaws.com/Photo-2018-10-20-23-19-IDcRLfp8yjgplmYOduPh.jpeg"><img src="https://thecave-com.s3.amazonaws.com/Photo-2018-10-20-23-19-IDcRLfp8yjgplmYOduPh.jpeg" alt="" /></a></p>
 
 ]]></content>
   </entry>

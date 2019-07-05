@@ -5,10 +5,20 @@
         <description>thecave | Kirby Turner's Blog - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2019-04-10T14:20:17+00:00</lastBuildDate>
-        <pubDate>2019-04-10T14:20:17+00:00</pubDate>
+        <lastBuildDate>2019-07-05T03:40:18+00:00</lastBuildDate>
+        <pubDate>2019-07-05T03:40:18+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Happy Firecracker Day</title>
+                <description>&lt;p&gt;Happy Firecracker Day! &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-07-04-23-37-YnuV663YXTFG1SW7J8fp.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-07-04-23-37-YnuV663YXTFG1SW7J8fp.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+                <link>http://www.thecave.com/2019/07/04/happy-firecracker-day/</link>
+                <guid>http://www.thecave.com/2019/07/04/happy-firecracker-day</guid>
+                <pubDate>2019-07-05T03:39:05+00:00</pubDate>
+        </item>
 
         <item>
                 <title>In The Notch</title>
@@ -198,16 +208,6 @@
                 <link>http://www.thecave.com/2018/11/14/walk-in-the-woods/</link>
                 <guid>http://www.thecave.com/2018/11/14/walk-in-the-woods</guid>
                 <pubDate>2018-11-15T02:50:23+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;&lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-10-20-23-19-IDcRLfp8yjgplmYOduPh.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-10-20-23-19-IDcRLfp8yjgplmYOduPh.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2018/10/20/clouds/</link>
-                <guid>http://www.thecave.com/2018/10/20/clouds</guid>
-                <pubDate>2018-10-21T03:20:40+00:00</pubDate>
         </item>
 
 
