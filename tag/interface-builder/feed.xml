@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: interface builder | thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/tag/interface-builder/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2019-07-05T03:40:18+00:00</updated>
+  <updated>2019-11-26T12:41:51+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -73,7 +73,7 @@
 
 <p>And the code for creating this view is as follows:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>- (void)loadView
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void)loadView
 {
   UIView *containerView = self;
 
@@ -187,14 +187,13 @@
   }
   return  _toolbar;
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>The only things not created or managed but this view are the navigation bar and collection view of photos. The navigation bar is provided by the <code class="highlighter-rouge">UINavigationController</code> used by the view controller that created this composer view. Also, the view controller uses controller containment to include the collection view of photos, which is actually managed by another view controller and custom view class.</p>
 
 <p>Oh, I almost forgot to mention…I create the composite view in the <code class="highlighter-rouge">loadView</code> method implemented in the view controller. For example:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>- (void)loadView
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void)loadView
 {
   [super loadView];
   UIView *contentView = [self view];
@@ -202,8 +201,7 @@
   CPComposeView *composeView = [CPComposeView addToSuperview:contentView];
   [self setComposeView:composeView];
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>After I create the view I might add more layout constraints to position and size the subview as needed within the main content view. I do that in the view controller’s <code class="highlighter-rouge">-loadView</code> when needed.</p>
 

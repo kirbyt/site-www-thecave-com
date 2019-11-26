@@ -135,7 +135,7 @@
 
 <p>Another difference is that in VB.NET you can specify the scope of a member that implements a particular interface as something other than public.  I needed to do this in more than one occasion in C# but was resolved to the fact that a member implementation of interface in C# had to be scoped as public.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>Public Interface IMyInterface
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Public Interface IMyInterface
     Sub Foo()
 End Interface
 
@@ -144,12 +144,11 @@ Implements IMyInterface
     Private Sub Foo() Implements IMyInterface.Foo
     End Sub
 End Class
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>So if you can do this in VB.NET why can’t you do the same, or something similar in C#?  This question lead me to the discovery (thank you <a href="http://www.google.com/search?q=explicit+interface+implement&amp;sourceid=firefox&amp;start=0&amp;start=0&amp;ie=utf-8&amp;oe=utf-8">google</a>) of explicit interface implementation in C#.  By using an explicit interface implementation you can scope the member implementation as private.  It’s a little messy because a member explicitly implemented cannot be access through the class instance.  Instead it must be accessed through an instance of the interface.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>interface IMyInterface
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>interface IMyInterface
 {
     void Foo();
 }
@@ -187,8 +186,7 @@ public class MyApp
         ((IMyInterface)c).Foo();
     }
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>While an explicit interface implementation does give the C# developer the ability to scope a member implementation as private, it is still not as powerful as VB.NET’s ability to scope a member implementation as anything other than public.  Score 1 point for VB.NET.</p>
 
@@ -197,7 +195,7 @@ public class MyApp
 
                 
                     <p>
-                    Posted in <a class='category' href='/category/uncategorized/'>uncategorized</a>. 
+                    Posted in uncategorized. 
                     Tagged in .
                     </p>
                 

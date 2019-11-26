@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: xcode | thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/tag/xcode/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2019-07-05T03:40:18+00:00</updated>
+  <updated>2019-11-26T12:41:51+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -62,10 +62,10 @@
 <div class="footnotes">
   <ol>
     <li id="fn:ask">
-      <p>I usually assist my clients with this by guiding them through the steps, or I ask them to give me the account credentials with a temporary password so I can perform the necessary steps. Then I have the client reset the password.&nbsp;<a href="#fnref:ask" class="reversefootnote">&#8617;</a></p>
+      <p>I usually assist my clients with this by guiding them through the steps, or I ask them to give me the account credentials with a temporary password so I can perform the necessary steps. Then I have the client reset the password. <a href="#fnref:ask" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:host">
-      <p>I don’t export when I host the test app on <a href="http://hockeyapp.net/">HockeyApp</a>. It takes care of exporting the .ipa from the archive for you. I only export when the client requests that the test app be hosted on their own server.)&nbsp;<a href="#fnref:host" class="reversefootnote">&#8617;</a></p>
+      <p>I don’t export when I host the test app on <a href="http://hockeyapp.net/">HockeyApp</a>. It takes care of exporting the .ipa from the archive for you. I only export when the client requests that the test app be hosted on their own server.) <a href="#fnref:host" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -101,7 +101,7 @@
 
 <p>And the code for creating this view is as follows:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>- (void)loadView
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void)loadView
 {
   UIView *containerView = self;
 
@@ -215,14 +215,13 @@
   }
   return  _toolbar;
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>The only things not created or managed but this view are the navigation bar and collection view of photos. The navigation bar is provided by the <code class="highlighter-rouge">UINavigationController</code> used by the view controller that created this composer view. Also, the view controller uses controller containment to include the collection view of photos, which is actually managed by another view controller and custom view class.</p>
 
 <p>Oh, I almost forgot to mention…I create the composite view in the <code class="highlighter-rouge">loadView</code> method implemented in the view controller. For example:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>- (void)loadView
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void)loadView
 {
   [super loadView];
   UIView *contentView = [self view];
@@ -230,8 +229,7 @@
   CPComposeView *composeView = [CPComposeView addToSuperview:contentView];
   [self setComposeView:composeView];
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>After I create the view I might add more layout constraints to position and size the subview as needed within the main content view. I do that in the view controller’s <code class="highlighter-rouge">-loadView</code> when needed.</p>
 

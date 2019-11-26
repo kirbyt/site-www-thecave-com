@@ -135,13 +135,12 @@
 
 <p>You can use JavaScript to mask an email address.  For example, instead of including your email address as plain text in the HTML convert each character of your email address into the appropriate ASCII value and display the ASCII value string using document.write as shown below.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;!--document.write('&amp;#107&amp;#105&amp;#114&amp;#98&amp;#121&amp;#64&amp;#116&amp;#104&amp;#101&amp;#99&amp;#97&amp;#118&amp;#101&amp;#46&amp;#99&amp;#111&amp;#109');// --&gt; 
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!--document.write('&amp;#107&amp;#105&amp;#114&amp;#98&amp;#121&amp;#64&amp;#116&amp;#104&amp;#101&amp;#99&amp;#97&amp;#118&amp;#101&amp;#46&amp;#99&amp;#111&amp;#109');// --&gt; 
+</code></pre></div></div>
 
 <p>Of course doing this each time can be a pain.  A better approach is to use server-side scripting that will mask the email address for you.  That’s exactly what I did for my web site using the following C# code:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>public string MaskedEmail( string email )
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public string MaskedEmail( string email )
 {   
     string masked = MaskedStringFromString(email);   
     string javascript = @"  &lt;!--      document.write('{0}');      // --&gt; ";
@@ -172,8 +171,7 @@ public string MaskedStringFromString(string value)
     }   
     return masked;
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>When I display an email address I mask it by calling the MaskedEmail method.  And I use MaskedMailToLink for those times when I want to include a mailto link.  You can see this in action on the <a href="http://www.whitepeaksoftware.com/contacts.aspx">contact us</a> page for White Peak Software.</p>
 
@@ -182,7 +180,7 @@ public string MaskedStringFromString(string value)
 
                 
                     <p>
-                    Posted in <a class='category' href='/category/uncategorized/'>uncategorized</a>. 
+                    Posted in uncategorized. 
                     Tagged in .
                     </p>
                 

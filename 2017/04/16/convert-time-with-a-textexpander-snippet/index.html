@@ -137,7 +137,7 @@
 
 <p>Here’s the shell script code for anyone who might want it. Make sure you select <strong>Shell Script</strong> as the <em>Content</em> type when creating the snippet.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">#! /bin/bash</span>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#! /bin/bash</span>
 
 <span class="c"># Enter a time using 24H. 1:30pm is 13:30 .</span>
 
@@ -147,21 +147,20 @@
 <span class="c"># See https://gist.github.com/palaniraja/f8e21e8c66eac7e1b313 for a</span>
 <span class="c"># list of time zone names.</span>
 
-<span class="nv">T1</span><span class="o">=</span><span class="k">$(</span><span class="nv">TZ</span><span class="o">=</span><span class="s2">"America/New_York"</span> date -jf <span class="s2">"%H:%M %z"</span> <span class="s2">"</span><span class="nv">$ENTERTIME</span><span class="s2"> </span><span class="k">$(</span>date <span class="s2">"+%z"</span><span class="k">)</span><span class="s2">"</span> <span class="s2">"+%I:%M %p %Z"</span><span class="k">)</span>
+<span class="nv">T1</span><span class="o">=</span><span class="k">$(</span><span class="nv">TZ</span><span class="o">=</span><span class="s2">"America/New_York"</span> date <span class="nt">-jf</span> <span class="s2">"%H:%M %z"</span> <span class="s2">"</span><span class="nv">$ENTERTIME</span><span class="s2"> </span><span class="k">$(</span>date <span class="s2">"+%z"</span><span class="k">)</span><span class="s2">"</span> <span class="s2">"+%I:%M %p %Z"</span><span class="k">)</span>
 
-<span class="nv">T2</span><span class="o">=</span><span class="k">$(</span><span class="nv">TZ</span><span class="o">=</span><span class="s2">"America/Los_Angeles"</span> date -jf <span class="s2">"%H:%M %z"</span> <span class="s2">"</span><span class="nv">$ENTERTIME</span><span class="s2"> </span><span class="k">$(</span>date <span class="s2">"+%z"</span><span class="k">)</span><span class="s2">"</span> <span class="s2">"+%I:%M %p %Z"</span><span class="k">)</span>
+<span class="nv">T2</span><span class="o">=</span><span class="k">$(</span><span class="nv">TZ</span><span class="o">=</span><span class="s2">"America/Los_Angeles"</span> date <span class="nt">-jf</span> <span class="s2">"%H:%M %z"</span> <span class="s2">"</span><span class="nv">$ENTERTIME</span><span class="s2"> </span><span class="k">$(</span>date <span class="s2">"+%z"</span><span class="k">)</span><span class="s2">"</span> <span class="s2">"+%I:%M %p %Z"</span><span class="k">)</span>
 
-<span class="nb">echo</span> -n <span class="s2">"</span><span class="nv">$T1</span><span class="s2"> / </span><span class="nv">$T2</span><span class="s2">"</span>
-</code></pre>
-</div>
+<span class="nb">echo</span> <span class="nt">-n</span> <span class="s2">"</span><span class="nv">$T1</span><span class="s2"> / </span><span class="nv">$T2</span><span class="s2">"</span>
+</code></pre></div></div>
 
 
                 <hr>
 
                 
                     <p>
-                    Posted in <a class='category' href='/category/programming/'>programming</a>. 
-                    Tagged in <a class='tag' href='/tag/micropost/'>micropost</a>, <a class='tag' href='/tag/textexpander/'>textexpander</a>.
+                    Posted in programming. 
+                    Tagged in microposttextexpander.
                     </p>
                 
 

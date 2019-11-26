@@ -5,9 +5,9 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 05 Jul 2019 03:40:18 +0000</pubDate>
-    <lastBuildDate>Fri, 05 Jul 2019 03:40:18 +0000</lastBuildDate>
-    <generator>Jekyll v3.4.3</generator>
+    <pubDate>Tue, 26 Nov 2019 12:41:51 +0000</pubDate>
+    <lastBuildDate>Tue, 26 Nov 2019 12:41:51 +0000</lastBuildDate>
+    <generator>Jekyll v3.6.3</generator>
     
       <item>
         <title>Happy Firecracker Day</title>
@@ -18,9 +18,9 @@
         <link>http://www.thecave.com/2019/07/04/happy-firecracker-day/</link>
         <guid isPermaLink="true">http://www.thecave.com/2019/07/04/happy-firecracker-day/</guid>
         
-        <category>celebration</category>
-        
         <category>stowe</category>
+        
+        <category>celebration</category>
         
         
         <category>personal</category>
@@ -36,13 +36,13 @@
         <link>http://www.thecave.com/2019/04/10/in-the-notch/</link>
         <guid isPermaLink="true">http://www.thecave.com/2019/04/10/in-the-notch/</guid>
         
-        <category>notch</category>
-        
         <category>photo</category>
         
         <category>stowe</category>
         
         <category>vermont</category>
+        
+        <category>notch</category>
         
         <category>winter</category>
         
@@ -60,8 +60,6 @@
         <link>http://www.thecave.com/2019/04/03/one-and-done/</link>
         <guid isPermaLink="true">http://www.thecave.com/2019/04/03/one-and-done/</guid>
         
-        <category>hike</category>
-        
         <category>photo</category>
         
         <category>snowshoe</category>
@@ -69,6 +67,8 @@
         <category>stowe</category>
         
         <category>winter</category>
+        
+        <category>hike</category>
         
         
         <category>personal</category>
@@ -86,17 +86,17 @@
         
         <category>micropost</category>
         
-        <category>photo</category>
-        
         <category>snowshoe</category>
+        
+        <category>woods</category>
+        
+        <category>winter</category>
+        
+        <category>photo</category>
         
         <category>stowe</category>
         
         <category>vt</category>
-        
-        <category>winter</category>
-        
-        <category>woods</category>
         
         
         <category>personal</category>
@@ -166,9 +166,9 @@
         
         <category>photo</category>
         
-        <category>snowshoe</category>
-        
         <category>winter</category>
+        
+        <category>snowshoe</category>
         
         
         <category>personal</category>
@@ -184,19 +184,19 @@
         <link>http://www.thecave.com/2019/01/02/morning-hike-in-the-woods/</link>
         <guid isPermaLink="true">http://www.thecave.com/2019/01/02/morning-hike-in-the-woods/</guid>
         
-        <category>long-trail</category>
-        
         <category>micropost</category>
         
         <category>photo</category>
-        
-        <category>snowshoeing</category>
         
         <category>stowe</category>
         
         <category>vermont</category>
         
+        <category>long-trail</category>
+        
         <category>winter</category>
+        
+        <category>snowshoeing</category>
         
         
         <category>personal</category>
@@ -216,9 +216,9 @@
         
         <category>photo</category>
         
-        <category>snow</category>
-        
         <category>stowe</category>
+        
+        <category>snow</category>
         
         <category>walk</category>
         
@@ -236,11 +236,11 @@
         <link>http://www.thecave.com/2018/12/25/merry-christmas-2018/</link>
         <guid isPermaLink="true">http://www.thecave.com/2018/12/25/merry-christmas-2018/</guid>
         
-        <category>christmas</category>
-        
         <category>micropost</category>
         
         <category>photo</category>
+        
+        <category>christmas</category>
         
         
         <category>personal</category>

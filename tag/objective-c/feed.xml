@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: objective-c | thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/tag/objective-c/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2019-07-05T03:40:18+00:00</updated>
+  <updated>2019-11-26T12:41:51+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -75,21 +75,19 @@
 
 <p>This got me thinking about how I would solve the problem for apps I work on. Liking the approach mentioned by the Apple Engineer, I decided to give that a try. But unlike some of the other solutions that use a category, I decided to create a new class, <code class="highlighter-rouge">WPSAlertController</code>, that is a subclass of <code class="highlighter-rouge">UIAlertController</code>, and provide additional convenience methods making it possible to display an alert view with a single call…like this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>NSString *title = ...
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NSString *title = ...
 NSString *message = ...
 [WPSAlertController presentOkayAlertWithTitle:title message:message];
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Or display the <code class="highlighter-rouge">localizedDescription</code> from an <code class="highlighter-rouge">NSError</code> object:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>[WPSAlertController presentOkayAlertWithError:error];
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[WPSAlertController presentOkayAlertWithError:error];
+</code></pre></div></div>
 
 <p>And of course, since <code class="highlighter-rouge">WPSAlertController</code> is a subclass of <code class="highlighter-rouge">UIAlertController</code>, you can create your alert the same way as you do using <code class="highlighter-rouge">UIAlertController</code>. The only difference is you call <code class="highlighter-rouge">show</code> to present the alert when you don’t have a view controller. For example:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>NSString *title = ...
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NSString *title = ...
 NSString *message = ...
 WPSAlertController *alertController = [WPSAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
 [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -97,8 +95,7 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 }]];
 
 [alertController show];
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>You can grab the <a href="https://github.com/kirbyt/WPSKit/blob/master/WPSKit/UIKit/WPSAlertController.m">source code for <code class="highlighter-rouge">WPSAlertController</code></a> from my github repository and include it in your project, or use the entire <a href="https://github.com/kirbyt/WPSKit">WPSKit.framework</a> in your project if you want to use <code class="highlighter-rouge">WPSAlertController</code> plus other handy classes that I use when creating iOS apps.</p>
 ]]></content>
@@ -123,7 +120,7 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 
 <p>The typical pattern I follow for sending the request to the server and getting notified when done is to call a method that will dispatch the URL request to a background queue then dispatch to the main queue to call a block when complete. It looks something like this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>- (void)sendSomething:(NSDictionary *)something completion:(void(^)(BOOL success, NSError *error))completion
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void)sendSomething:(NSDictionary *)something completion:(void(^)(BOOL success, NSError *error))completion
 {
   NSParameterAssert(something);
   dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -138,8 +135,7 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
     });
   });
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>This is a simplified view of the pattern I often use. Call a method with a callback block. Perform some work on a background thread. When done, call the callback block on the main thread.</p>
 
@@ -151,7 +147,7 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 
 <p>Instead of dispatching the <code class="highlighter-rouge">completion()</code> to the main queue, I call it directly from the background thread. In the completion block itself, I decide how to get the code should run in the main thread. If my window isn’t modal, then I can use <code class="highlighter-rouge">dispatch_async(dispatch_get_main_queue(), ^{})</code>. But if my window is modal, which just happens to be the case for the app I’m working on, then I use <code class="highlighter-rouge">-performSelectorOnMainThread:withObject:waitUntilDone:</code>. So the code in my view controller looks something like this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>- (void)someAction:(id)sender
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void)someAction:(id)sender
 {
   SomeHelper *helper = [[SomeHelper alloc] init];
   __weak __typeof__(self) weakSelf = self;
@@ -177,8 +173,7 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 {
     ...
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>This pattern change now has me re-thinking how I use certain patterns in my code, especially for code that I intend on sharing between the two platforms.</p>
 
@@ -193,7 +188,7 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>From the <a href="https://github.com/kirbyt/MacModalDispatchAsyncProblem">Apple documentation</a> for <code class="highlighter-rouge">+[NSApp runModalForWindow:]</code>: “This method runs a modal event loop for the specified window synchronously. It displays the specified window, makes it key, starts the run loop, and processes events for that window. (You do not need to show the window yourself.) While the app is in that loop, it does not respond to any other events (including mouse, keyboard, or window-close events) unless they are associated with the window. It also does not perform any tasks (such as firing timers) that are not associated with the modal run loop. In other words, this method consumes only enough CPU time to process events and dispatch them to the action methods associated with the modal window.”&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>From the <a href="https://github.com/kirbyt/MacModalDispatchAsyncProblem">Apple documentation</a> for <code class="highlighter-rouge">+[NSApp runModalForWindow:]</code>: “This method runs a modal event loop for the specified window synchronously. It displays the specified window, makes it key, starts the run loop, and processes events for that window. (You do not need to show the window yourself.) While the app is in that loop, it does not respond to any other events (including mouse, keyboard, or window-close events) unless they are associated with the window. It also does not perform any tasks (such as firing timers) that are not associated with the modal run loop. In other words, this method consumes only enough CPU time to process events and dispatch them to the action methods associated with the modal window.” <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/category/programming/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2019-07-05T03:40:18+00:00</updated>
+  <updated>2019-11-26T12:41:51+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -92,7 +92,7 @@
 
 <p>Here’s the shell script code for anyone who might want it. Make sure you select <strong>Shell Script</strong> as the <em>Content</em> type when creating the snippet.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">#! /bin/bash</span>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#! /bin/bash</span>
 
 <span class="c"># Enter a time using 24H. 1:30pm is 13:30 .</span>
 
@@ -102,13 +102,12 @@
 <span class="c"># See https://gist.github.com/palaniraja/f8e21e8c66eac7e1b313 for a</span>
 <span class="c"># list of time zone names.</span>
 
-<span class="nv">T1</span><span class="o">=</span><span class="k">$(</span><span class="nv">TZ</span><span class="o">=</span><span class="s2">"America/New_York"</span> date -jf <span class="s2">"%H:%M %z"</span> <span class="s2">"</span><span class="nv">$ENTERTIME</span><span class="s2"> </span><span class="k">$(</span>date <span class="s2">"+%z"</span><span class="k">)</span><span class="s2">"</span> <span class="s2">"+%I:%M %p %Z"</span><span class="k">)</span>
+<span class="nv">T1</span><span class="o">=</span><span class="k">$(</span><span class="nv">TZ</span><span class="o">=</span><span class="s2">"America/New_York"</span> date <span class="nt">-jf</span> <span class="s2">"%H:%M %z"</span> <span class="s2">"</span><span class="nv">$ENTERTIME</span><span class="s2"> </span><span class="k">$(</span>date <span class="s2">"+%z"</span><span class="k">)</span><span class="s2">"</span> <span class="s2">"+%I:%M %p %Z"</span><span class="k">)</span>
 
-<span class="nv">T2</span><span class="o">=</span><span class="k">$(</span><span class="nv">TZ</span><span class="o">=</span><span class="s2">"America/Los_Angeles"</span> date -jf <span class="s2">"%H:%M %z"</span> <span class="s2">"</span><span class="nv">$ENTERTIME</span><span class="s2"> </span><span class="k">$(</span>date <span class="s2">"+%z"</span><span class="k">)</span><span class="s2">"</span> <span class="s2">"+%I:%M %p %Z"</span><span class="k">)</span>
+<span class="nv">T2</span><span class="o">=</span><span class="k">$(</span><span class="nv">TZ</span><span class="o">=</span><span class="s2">"America/Los_Angeles"</span> date <span class="nt">-jf</span> <span class="s2">"%H:%M %z"</span> <span class="s2">"</span><span class="nv">$ENTERTIME</span><span class="s2"> </span><span class="k">$(</span>date <span class="s2">"+%z"</span><span class="k">)</span><span class="s2">"</span> <span class="s2">"+%I:%M %p %Z"</span><span class="k">)</span>
 
-<span class="nb">echo</span> -n <span class="s2">"</span><span class="nv">$T1</span><span class="s2"> / </span><span class="nv">$T2</span><span class="s2">"</span>
-</code></pre>
-</div>
+<span class="nb">echo</span> <span class="nt">-n</span> <span class="s2">"</span><span class="nv">$T1</span><span class="s2"> / </span><span class="nv">$T2</span><span class="s2">"</span>
+</code></pre></div></div>
 ]]></content>
   </entry>
   
@@ -191,21 +190,19 @@
 
 <p>This got me thinking about how I would solve the problem for apps I work on. Liking the approach mentioned by the Apple Engineer, I decided to give that a try. But unlike some of the other solutions that use a category, I decided to create a new class, <code class="highlighter-rouge">WPSAlertController</code>, that is a subclass of <code class="highlighter-rouge">UIAlertController</code>, and provide additional convenience methods making it possible to display an alert view with a single call…like this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>NSString *title = ...
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NSString *title = ...
 NSString *message = ...
 [WPSAlertController presentOkayAlertWithTitle:title message:message];
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Or display the <code class="highlighter-rouge">localizedDescription</code> from an <code class="highlighter-rouge">NSError</code> object:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>[WPSAlertController presentOkayAlertWithError:error];
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[WPSAlertController presentOkayAlertWithError:error];
+</code></pre></div></div>
 
 <p>And of course, since <code class="highlighter-rouge">WPSAlertController</code> is a subclass of <code class="highlighter-rouge">UIAlertController</code>, you can create your alert the same way as you do using <code class="highlighter-rouge">UIAlertController</code>. The only difference is you call <code class="highlighter-rouge">show</code> to present the alert when you don’t have a view controller. For example:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>NSString *title = ...
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NSString *title = ...
 NSString *message = ...
 WPSAlertController *alertController = [WPSAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
 [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -213,8 +210,7 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 }]];
 
 [alertController show];
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>You can grab the <a href="https://github.com/kirbyt/WPSKit/blob/master/WPSKit/UIKit/WPSAlertController.m">source code for <code class="highlighter-rouge">WPSAlertController</code></a> from my github repository and include it in your project, or use the entire <a href="https://github.com/kirbyt/WPSKit">WPSKit.framework</a> in your project if you want to use <code class="highlighter-rouge">WPSAlertController</code> plus other handy classes that I use when creating iOS apps.</p>
 ]]></content>

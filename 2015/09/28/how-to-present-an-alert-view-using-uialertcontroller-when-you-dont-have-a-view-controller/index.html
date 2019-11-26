@@ -137,21 +137,19 @@
 
 <p>This got me thinking about how I would solve the problem for apps I work on. Liking the approach mentioned by the Apple Engineer, I decided to give that a try. But unlike some of the other solutions that use a category, I decided to create a new class, <code class="highlighter-rouge">WPSAlertController</code>, that is a subclass of <code class="highlighter-rouge">UIAlertController</code>, and provide additional convenience methods making it possible to display an alert view with a single call…like this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>NSString *title = ...
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NSString *title = ...
 NSString *message = ...
 [WPSAlertController presentOkayAlertWithTitle:title message:message];
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Or display the <code class="highlighter-rouge">localizedDescription</code> from an <code class="highlighter-rouge">NSError</code> object:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>[WPSAlertController presentOkayAlertWithError:error];
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[WPSAlertController presentOkayAlertWithError:error];
+</code></pre></div></div>
 
 <p>And of course, since <code class="highlighter-rouge">WPSAlertController</code> is a subclass of <code class="highlighter-rouge">UIAlertController</code>, you can create your alert the same way as you do using <code class="highlighter-rouge">UIAlertController</code>. The only difference is you call <code class="highlighter-rouge">show</code> to present the alert when you don’t have a view controller. For example:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>NSString *title = ...
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NSString *title = ...
 NSString *message = ...
 WPSAlertController *alertController = [WPSAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
 [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -159,8 +157,7 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 }]];
 
 [alertController show];
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>You can grab the <a href="https://github.com/kirbyt/WPSKit/blob/master/WPSKit/UIKit/WPSAlertController.m">source code for <code class="highlighter-rouge">WPSAlertController</code></a> from my github repository and include it in your project, or use the entire <a href="https://github.com/kirbyt/WPSKit">WPSKit.framework</a> in your project if you want to use <code class="highlighter-rouge">WPSAlertController</code> plus other handy classes that I use when creating iOS apps.</p>
 
@@ -169,8 +166,8 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 
                 
                     <p>
-                    Posted in <a class='category' href='/category/programming/'>programming</a>. 
-                    Tagged in <a class='tag' href='/tag/ios/'>ios</a>, <a class='tag' href='/tag/objective-c/'>objective-c</a>.
+                    Posted in programming. 
+                    Tagged in iosobjective-c.
                     </p>
                 
 

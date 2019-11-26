@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: web | thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/tag/web/feed.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2019-07-05T03:40:18+00:00</updated>
+  <updated>2019-11-26T12:41:51+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -56,11 +56,10 @@
 
 <p>The Jekyll website is actually just a static website hosted by Apache 2 running on an OpenShift gear. To force the redirect all I needed to do was add a <em>.htaccess</em> file to the root of my Jekyll site source code (note: the site source code is in the <em>source/</em> directory when using OpenShift) and put this rewrite rule in the file:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>RewriteEngine on  
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>RewriteEngine on  
 RewriteCond %{HTTP:X-Forwarded-Proto} !https  
 RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]  
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>After I added the <em>.htaccess</em> file with the rewrite rule, I pushed my changes to the remote git repository running on my OpenShift gear. This launched Jekyll which re-built my static website, this time with each web page being served with <code class="highlighter-rouge">https</code> instead of <code class="highlighter-rouge">http</code>.</p>
 
@@ -97,10 +96,10 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>I made the same change to the theme on Rowan’s website. Now you can see more fun pictures of Rowan as you read through the posts.&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>I made the same change to the theme on Rowan’s website. Now you can see more fun pictures of Rowan as you read through the posts. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:2">
-      <p>You will find links to me on various social networks such as App.net and Twitter below in the page footer.&nbsp;<a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+      <p>You will find links to me on various social networks such as App.net and Twitter below in the page footer. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

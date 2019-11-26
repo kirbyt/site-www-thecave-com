@@ -141,17 +141,16 @@
 
 <p>The end result is a set of classes which is really nothing more than a TObjectList containing TObjectList containing a field value class.  In other words, the final data structure consists of the following classes:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>TQuickBaseDataset = class(TObjectList);
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TQuickBaseDataset = class(TObjectList);
 TQuickBaseRecordset = class(TObjectList);
 TQuickBaseValue = class(TObject);
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>A dataset contains one or more record sets which contains one of more values.  The value class is implemented to provide strong type access to the value returned from QuickBase.</p>
 
 <p>So does the new data structure meet the 3 goals above?  I think so but I will leave it up to you to decide.  Here is a code snippet that queries the database and returns a record set containing 3 fields in each record.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>Qdb := TQuickBaseClient.Create(username, password);
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Qdb := TQuickBaseClient.Create(username, password);
 if Qdb.Authenticate then
 begin
     Dataset := Qdb.DoQuery(dbid, query, clist);
@@ -164,8 +163,7 @@ begin
 end;
 Qdb.SignOut;
 Qdb.Free;
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>I will be adding the ability to retrieve field values by name very soon.  This will make the code even more readable.</p>
 
@@ -174,8 +172,8 @@ Qdb.Free;
 
                 
                     <p>
-                    Posted in <a class='category' href='/category/programming/'>programming</a>. 
-                    Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+                    Posted in programming. 
+                    Tagged in delphi.
                     </p>
                 
 
