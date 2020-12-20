@@ -9,7 +9,6 @@
     <meta name="author" content="Kirby Turner">
     
     <meta name="description" content="I’ve been working on a Mac app lately, and while some things are similar to iOS, something are definitely different. One thing that is different are modal windows and run loops.
-
 ">
     
 
@@ -17,7 +16,6 @@
     <meta property="og:title" content="Dispatch Async to Main Queue Doesn't Work With Modal Window on Mac OS X" />
     
     <meta name="og:description" content="I’ve been working on a Mac app lately, and while some things are similar to iOS, something are definitely different. One thing that is different are modal windows and run loops.
-
 ">
     
     <meta property="og:type" content="article" />
@@ -135,7 +133,7 @@
 
 <p>The typical pattern I follow for sending the request to the server and getting notified when done is to call a method that will dispatch the URL request to a background queue then dispatch to the main queue to call a block when complete. It looks something like this:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void)sendSomething:(NSDictionary *)something completion:(void(^)(BOOL success, NSError *error))completion
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void)sendSomething:(NSDictionary *)something completion:(void(^)(BOOL success, NSError *error))completion
 {
   NSParameterAssert(something);
   dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -156,13 +154,13 @@
 
 <p>This pattern has served me well on iOS, but it has issues on Mac OS X when displaying a modal window.</p>
 
-<p>When you display a modal window with <code class="highlighter-rouge">+[NSApp runModalForWindow:]</code> a new run loop is created for the window<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. That might seem fine until you call <code class="highlighter-rouge">dispatch_async(dispatch_get_main_queue(), ^{})</code> from a background thread. The block that you are trying to execute in the main queue will never run. And in my case, the <code class="highlighter-rouge">completion</code> block is never called. This means my modal window never receives the notification that the URL request completed. (NOTE: Mike Ash <a href="#update2">pointed out</a> that it’s not the new run loop that causes the problem.)</p>
+<p>When you display a modal window with <code class="language-plaintext highlighter-rouge">+[NSApp runModalForWindow:]</code> a new run loop is created for the window<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup>. That might seem fine until you call <code class="language-plaintext highlighter-rouge">dispatch_async(dispatch_get_main_queue(), ^{})</code> from a background thread. The block that you are trying to execute in the main queue will never run. And in my case, the <code class="language-plaintext highlighter-rouge">completion</code> block is never called. This means my modal window never receives the notification that the URL request completed. (NOTE: Mike Ash <a href="#update2">pointed out</a> that it’s not the new run loop that causes the problem.)</p>
 
 <p>So how did I work around this problem?</p>
 
-<p>Instead of dispatching the <code class="highlighter-rouge">completion()</code> to the main queue, I call it directly from the background thread. In the completion block itself, I decide how to get the code should run in the main thread. If my window isn’t modal, then I can use <code class="highlighter-rouge">dispatch_async(dispatch_get_main_queue(), ^{})</code>. But if my window is modal, which just happens to be the case for the app I’m working on, then I use <code class="highlighter-rouge">-performSelectorOnMainThread:withObject:waitUntilDone:</code>. So the code in my view controller looks something like this:</p>
+<p>Instead of dispatching the <code class="language-plaintext highlighter-rouge">completion()</code> to the main queue, I call it directly from the background thread. In the completion block itself, I decide how to get the code should run in the main thread. If my window isn’t modal, then I can use <code class="language-plaintext highlighter-rouge">dispatch_async(dispatch_get_main_queue(), ^{})</code>. But if my window is modal, which just happens to be the case for the app I’m working on, then I use <code class="language-plaintext highlighter-rouge">-performSelectorOnMainThread:withObject:waitUntilDone:</code>. So the code in my view controller looks something like this:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void)someAction:(id)sender
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void)someAction:(id)sender
 {
   SomeHelper *helper = [[SomeHelper alloc] init];
   __weak __typeof__(self) weakSelf = self;
@@ -194,16 +192,16 @@
 
 <p>Update: I posted a <a href="https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSApplication_Class/index.html#//apple_ref/occ/instm/NSApplication/runModalForWindow:">sample project</a> that illustrates the problem. In writing the sample app, I learned that the scenario that causes the problem is when the modal window is presented via a block that is dispatched asynchronously on the main queue.</p>
 
-<p><a name="update2"></a>Update 2: <a href="https://mikeash.com/pyblog/">Mike Ash</a> pointed out that NSRunLoop is reentrant but GCD serial queues are not and this is the reason, not my theory of a different event loop, the block isn’t executed. Mike said, “The main queue is already executing a block, and it won’t execute a new one until that one is done. This is a subtle way in which dispatch on the main queue isn’t the same as <code class="highlighter-rouge">performSelectorOnMainThread</code>.”</p>
+<p><a name="update2"></a>Update 2: <a href="https://mikeash.com/pyblog/">Mike Ash</a> pointed out that NSRunLoop is reentrant but GCD serial queues are not and this is the reason, not my theory of a different event loop, the block isn’t executed. Mike said, “The main queue is already executing a block, and it won’t execute a new one until that one is done. This is a subtle way in which dispatch on the main queue isn’t the same as <code class="language-plaintext highlighter-rouge">performSelectorOnMainThread</code>.”</p>
 
 <p>Good to know and thanks, Mike, for explaining what is happening.</p>
 
 <hr />
 
-<div class="footnotes">
+<div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:1">
-      <p>From the <a href="https://github.com/kirbyt/MacModalDispatchAsyncProblem">Apple documentation</a> for <code class="highlighter-rouge">+[NSApp runModalForWindow:]</code>: “This method runs a modal event loop for the specified window synchronously. It displays the specified window, makes it key, starts the run loop, and processes events for that window. (You do not need to show the window yourself.) While the app is in that loop, it does not respond to any other events (including mouse, keyboard, or window-close events) unless they are associated with the window. It also does not perform any tasks (such as firing timers) that are not associated with the modal run loop. In other words, this method consumes only enough CPU time to process events and dispatch them to the action methods associated with the modal window.” <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:1" role="doc-endnote">
+      <p>From the <a href="https://github.com/kirbyt/MacModalDispatchAsyncProblem">Apple documentation</a> for <code class="language-plaintext highlighter-rouge">+[NSApp runModalForWindow:]</code>: “This method runs a modal event loop for the specified window synchronously. It displays the specified window, makes it key, starts the run loop, and processes events for that window. (You do not need to show the window yourself.) While the app is in that loop, it does not respond to any other events (including mouse, keyboard, or window-close events) unless they are associated with the window. It also does not perform any tasks (such as firing timers) that are not associated with the modal run loop. In other words, this method consumes only enough CPU time to process events and dispatch them to the action methods associated with the modal window.” <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -213,8 +211,8 @@
 
                 
                     <p>
-                    Posted in programming. 
-                    Tagged in os xobjective-c.
+                    Posted in <a class='category' href='/category/programming/'>programming</a>. 
+                    Tagged in <a class='tag' href='/tag/objective-c/'>objective-c</a>, <a class='tag' href='/tag/os-x/'>os x</a>.
                     </p>
                 
 
@@ -225,25 +223,25 @@
                     <h3>Related Articles</h3>
                     <ul>
                     
-                        <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                        <li><a href="/2019/07/04/happy-firecracker-day/">Happy Firecracker Day</a></li>
                     
-                        <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
+                        <li><a href="/2019/04/10/in-the-notch/">In The Notch</a></li>
                     
-                        <li><a href="/2015/04/14/no-wwdc-or-sf-trip/">No WWDC Or SF Trip</a></li>
+                        <li><a href="/2019/04/03/one-and-done/">One And Done</a></li>
                     
-                        <li><a href="/2015/03/05/apres-code-a-new-developer-meetup-in-stowe-vt/">Après Code: A New Developer Meetup In Stowe Vt</a></li>
+                        <li><a href="/2019/03/18/in-the-woods/">Spent some time in the woods this...</a></li>
                     
-                        <li><a href="/2015/02/20/for-in-loop-vs-using-block/">For-In Loop vs Using Block</a></li>
+                        <li><a href="/2019/02/18/water-crossing/">Had a bit of wading while snowshoeing...</a></li>
                     
-                        <li><a href="/2008/06/18/recommended-software-for-mac/">Recommended Software for Mac</a></li>
+                        <li><a href="/2019/02/18/heading-into-the-notch/">Heading into the Notch. </a></li>
                     
-                        <li><a href="/2008/03/14/a-review-of-cvs-clients-for-mac-os-x/">A Review of CVS Clients for Mac OS X</a></li>
+                        <li><a href="/2019/01/11/snowshoe-adventure/">A snowshoe adventure after getting annoyed at...</a></li>
                     
-                        <li><a href="/2008/01/02/my-recommended-mac-os-x-applications/">My Recommended Mac OS X Applications</a></li>
+                        <li><a href="/2019/01/02/morning-hike-in-the-woods/">  </a></li>
                     
-                        <li><a href="/2007/07/29/cannot-resolve-machine-name-from-mac-os-x/">Cannot Resolve Machine Name From Mac OS X</a></li>
+                        <li><a href="/2018/12/25/afternoon-walk/">Afternoon walk to burn off calories from...</a></li>
                     
-                        <li><a href="/2007/07/29/how-to-access-a-windows-2003-file-share-from-mac-os-x/">How To Access a Windows 2003 File Share From Mac OS X</a></li>
+                        <li><a href="/2018/12/25/merry-christmas-2018/">Merry Christmas. </a></li>
                     
                     </ul>
                 
@@ -296,7 +294,6 @@
                 <ul>
                     <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
                     <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
-                    <li><a href="https://photos.thecave.com/">More Photos</a></li>
                 </ul>
             </div>
         </div>
@@ -354,7 +351,7 @@
                     </li>
                     
                 </ul>
-                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2019</p>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2020</p>
             </div>
         </div>
     </div>

@@ -9,7 +9,6 @@
     <meta name="author" content="Kirby Turner">
     
     <meta name="description" content="Email harvesting is a technique used by spammers to find email addresses published on web sites.  Spiders crawl the net looking for text that looks like email addresses (ex: somename@somedomain.com).
-
 ">
     
 
@@ -17,7 +16,6 @@
     <meta property="og:title" content="Masking Addresses to Prevent Email Harvesting" />
     
     <meta name="og:description" content="Email harvesting is a technique used by spammers to find email addresses published on web sites.  Spiders crawl the net looking for text that looks like email addresses (ex: somename@somedomain.com).
-
 ">
     
     <meta property="og:type" content="article" />
@@ -135,12 +133,12 @@
 
 <p>You can use JavaScript to mask an email address.  For example, instead of including your email address as plain text in the HTML convert each character of your email address into the appropriate ASCII value and display the ASCII value string using document.write as shown below.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!--document.write('&amp;#107&amp;#105&amp;#114&amp;#98&amp;#121&amp;#64&amp;#116&amp;#104&amp;#101&amp;#99&amp;#97&amp;#118&amp;#101&amp;#46&amp;#99&amp;#111&amp;#109');// --&gt; 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!--document.write('&amp;#107&amp;#105&amp;#114&amp;#98&amp;#121&amp;#64&amp;#116&amp;#104&amp;#101&amp;#99&amp;#97&amp;#118&amp;#101&amp;#46&amp;#99&amp;#111&amp;#109');// --&gt; 
 </code></pre></div></div>
 
 <p>Of course doing this each time can be a pain.  A better approach is to use server-side scripting that will mask the email address for you.  That’s exactly what I did for my web site using the following C# code:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public string MaskedEmail( string email )
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public string MaskedEmail( string email )
 {   
     string masked = MaskedStringFromString(email);   
     string javascript = @"  &lt;!--      document.write('{0}');      // --&gt; ";
@@ -180,13 +178,39 @@ public string MaskedStringFromString(string value)
 
                 
                     <p>
-                    Posted in uncategorized. 
+                    Posted in <a class='category' href='/category/uncategorized/'>uncategorized</a>. 
                     Tagged in .
                     </p>
                 
 
                 
 
+                
+                    <hr>
+                    <h3>Related Articles</h3>
+                    <ul>
+                    
+                        <li><a href="/2019/07/04/happy-firecracker-day/">Happy Firecracker Day</a></li>
+                    
+                        <li><a href="/2019/04/10/in-the-notch/">In The Notch</a></li>
+                    
+                        <li><a href="/2019/04/03/one-and-done/">One And Done</a></li>
+                    
+                        <li><a href="/2019/03/18/in-the-woods/">Spent some time in the woods this...</a></li>
+                    
+                        <li><a href="/2019/02/18/water-crossing/">Had a bit of wading while snowshoeing...</a></li>
+                    
+                        <li><a href="/2019/02/18/heading-into-the-notch/">Heading into the Notch. </a></li>
+                    
+                        <li><a href="/2019/01/11/snowshoe-adventure/">A snowshoe adventure after getting annoyed at...</a></li>
+                    
+                        <li><a href="/2019/01/02/morning-hike-in-the-woods/">  </a></li>
+                    
+                        <li><a href="/2018/12/25/afternoon-walk/">Afternoon walk to burn off calories from...</a></li>
+                    
+                        <li><a href="/2018/12/25/merry-christmas-2018/">Merry Christmas. </a></li>
+                    
+                    </ul>
                 
 
                 <hr>
@@ -237,7 +261,6 @@ public string MaskedStringFromString(string value)
                 <ul>
                     <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
                     <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
-                    <li><a href="https://photos.thecave.com/">More Photos</a></li>
                 </ul>
             </div>
         </div>
@@ -295,7 +318,7 @@ public string MaskedStringFromString(string value)
                     </li>
                     
                 </ul>
-                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2019</p>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2020</p>
             </div>
         </div>
     </div>

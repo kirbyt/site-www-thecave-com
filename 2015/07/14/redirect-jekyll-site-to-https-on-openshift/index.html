@@ -127,26 +127,26 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-				<p>I’m preparing to roll out a new <a href="http://jekyllrb.com">Jekyll</a> website, but unlike with my other Jekyll sites, I want each web page served up on <code class="highlighter-rouge">https</code>, not <code class="highlighter-rouge">http</code>. This means telling the server to redirect <code class="highlighter-rouge">http</code> request to <code class="highlighter-rouge">https</code>.</p>
+				<p>I’m preparing to roll out a new <a href="http://jekyllrb.com">Jekyll</a> website, but unlike with my other Jekyll sites, I want each web page served up on <code class="language-plaintext highlighter-rouge">https</code>, not <code class="language-plaintext highlighter-rouge">http</code>. This means telling the server to redirect <code class="language-plaintext highlighter-rouge">http</code> request to <code class="language-plaintext highlighter-rouge">https</code>.</p>
 
 <p>Hosting this new site on <a href="https://pages.github.com">Github Pages</a> isn’t option because Github Pages doesn’t support using a custom SSL certificate for your custom domain name. So I decided to see what it would take to host a Jekyll site on <a href="https://www.openshift.com">OpenShift</a>.</p>
 
-<p>I was thrilled to learn that OpenShift has a <a href="https://hub.openshift.com/quickstarts/41-jekyll">quick start cartridge for installing Jekyll</a> on a new gear. With a click of a button I was able to deploy my new server instance with a boiler plate Jekyll site. I replaced the boiler plate site with the one I’ve been working on, and BAM! My site was up and running. The only step remaining was to force the web server to serve up the pages using <code class="highlighter-rouge">https</code>.</p>
+<p>I was thrilled to learn that OpenShift has a <a href="https://hub.openshift.com/quickstarts/41-jekyll">quick start cartridge for installing Jekyll</a> on a new gear. With a click of a button I was able to deploy my new server instance with a boiler plate Jekyll site. I replaced the boiler plate site with the one I’ve been working on, and BAM! My site was up and running. The only step remaining was to force the web server to serve up the pages using <code class="language-plaintext highlighter-rouge">https</code>.</p>
 
 <p>Turns out this is simple to do with OpenShift and Jekyll. First, I went over to namecheap.com and purchased a <a href="https://www.namecheap.com/security/ssl-certificates/rapidssl/rapidssl.aspx">RapidSSL certificate</a> with domain validation. Next, I followed the instructions from OpenShift to <a href="https://developers.openshift.com/en/managing-domains-ssl.html#_generating_a_csr_certificate_signing_request">generate my certificate signing request</a>. Using my newly generated CSR I activated my RapidSSL certificate over at namecheap, then I followed the instructions on OpenShift to <a href="https://developers.openshift.com/en/managing-domains-ssl.html#using-a-custom-ssl-certificate">add the certificate to my server instance</a>.</p>
 
-<p>Up to this point everything was easy peasy, and all I had left to do was figure out how to redirect the Jekyll site from <code class="highlighter-rouge">http</code> to <code class="highlighter-rouge">https</code>. Turns out this isn’t difficult either.</p>
+<p>Up to this point everything was easy peasy, and all I had left to do was figure out how to redirect the Jekyll site from <code class="language-plaintext highlighter-rouge">http</code> to <code class="language-plaintext highlighter-rouge">https</code>. Turns out this isn’t difficult either.</p>
 
 <p>The Jekyll website is actually just a static website hosted by Apache 2 running on an OpenShift gear. To force the redirect all I needed to do was add a <em>.htaccess</em> file to the root of my Jekyll site source code (note: the site source code is in the <em>source/</em> directory when using OpenShift) and put this rewrite rule in the file:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>RewriteEngine on  
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>RewriteEngine on  
 RewriteCond %{HTTP:X-Forwarded-Proto} !https  
 RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]  
 </code></pre></div></div>
 
-<p>After I added the <em>.htaccess</em> file with the rewrite rule, I pushed my changes to the remote git repository running on my OpenShift gear. This launched Jekyll which re-built my static website, this time with each web page being served with <code class="highlighter-rouge">https</code> instead of <code class="highlighter-rouge">http</code>.</p>
+<p>After I added the <em>.htaccess</em> file with the rewrite rule, I pushed my changes to the remote git repository running on my OpenShift gear. This launched Jekyll which re-built my static website, this time with each web page being served with <code class="language-plaintext highlighter-rouge">https</code> instead of <code class="language-plaintext highlighter-rouge">http</code>.</p>
 
-<p>Including the <em>.htaccess</em> file works great when deploying the Jekyll site to OpenShift, but approach isn’t unique to OpenShift. This should work for most Jekyll site hosted with Apache 2. And if for some reason Jekyll isn’t including the <em>.htaccess</em> file when it builds the site, add <code class="highlighter-rouge">include: [".htaccess"]</code> to your <em>_config.yaml</em> file.</p>
+<p>Including the <em>.htaccess</em> file works great when deploying the Jekyll site to OpenShift, but approach isn’t unique to OpenShift. This should work for most Jekyll site hosted with Apache 2. And if for some reason Jekyll isn’t including the <em>.htaccess</em> file when it builds the site, add <code class="language-plaintext highlighter-rouge">include: [".htaccess"]</code> to your <em>_config.yaml</em> file.</p>
 
 
 
@@ -154,8 +154,8 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 
                 
                     <p>
-                    Posted in programming. 
-                    Tagged in jekyllweb.
+                    Posted in <a class='category' href='/category/programming/'>programming</a>. 
+                    Tagged in <a class='tag' href='/tag/jekyll/'>jekyll</a>, <a class='tag' href='/tag/web/'>web</a>.
                     </p>
                 
 
@@ -166,21 +166,25 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
                     <h3>Related Articles</h3>
                     <ul>
                     
-                        <li><a href="/2015/09/21/tags-and-categories/">Tags And Categories</a></li>
+                        <li><a href="/2019/07/04/happy-firecracker-day/">Happy Firecracker Day</a></li>
                     
-                        <li><a href="/2014/12/28/made-some-fixes-to-the-blog-site/">Made Some Fixes To The Blog Site</a></li>
+                        <li><a href="/2019/04/10/in-the-notch/">In The Notch</a></li>
                     
-                        <li><a href="/2017/04/21/how-i-post-to-my-jekyll-site-using-my-iphone/">How I post to my Jekyll site using my iPhone</a></li>
+                        <li><a href="/2019/04/03/one-and-done/">One And Done</a></li>
                     
-                        <li><a href="/2015/02/16/new-site-theme/">New Site Theme</a></li>
+                        <li><a href="/2019/03/18/in-the-woods/">Spent some time in the woods this...</a></li>
                     
-                        <li><a href="/2015/02/04/hey-local-retail-stores-update-your-website/">Hey Local Retail Stores, Update Your Website</a></li>
+                        <li><a href="/2019/02/18/water-crossing/">Had a bit of wading while snowshoeing...</a></li>
                     
-                        <li><a href="/2015/01/15/new-kirbyturnercom-site/">New kirbyturner.com Site</a></li>
+                        <li><a href="/2019/02/18/heading-into-the-notch/">Heading into the Notch. </a></li>
                     
-                        <li><a href="/2015/01/07/checkout-the-new-rowan-t-site/">Checkout The New Rowan T Site</a></li>
+                        <li><a href="/2019/01/11/snowshoe-adventure/">A snowshoe adventure after getting annoyed at...</a></li>
                     
-                        <li><a href="/2007/05/18/product-website-or-company-website/">Product Website or Company Website</a></li>
+                        <li><a href="/2019/01/02/morning-hike-in-the-woods/">  </a></li>
+                    
+                        <li><a href="/2018/12/25/afternoon-walk/">Afternoon walk to burn off calories from...</a></li>
+                    
+                        <li><a href="/2018/12/25/merry-christmas-2018/">Merry Christmas. </a></li>
                     
                     </ul>
                 
@@ -233,7 +237,6 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
                 <ul>
                     <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
                     <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
-                    <li><a href="https://photos.thecave.com/">More Photos</a></li>
                 </ul>
             </div>
         </div>
@@ -291,7 +294,7 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
                     </li>
                     
                 </ul>
-                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2019</p>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2020</p>
             </div>
         </div>
     </div>

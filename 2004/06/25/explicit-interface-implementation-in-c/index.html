@@ -9,7 +9,6 @@
     <meta name="author" content="Kirby Turner">
     
     <meta name="description" content="I was a grumbling VB developer for a number of years.  At the time Delphi was my language of choice but in the part of the country I lived customer work using it was almost non-existent.  In the summer of 2000 at PDC, a friend of mine from Microsoft showed me the .NET Framework and C#.  I was instantly drawn to C# because it reminded me of Delphi, which is no surprise for those who know their C#/Delphi history.
-
 ">
     
 
@@ -17,7 +16,6 @@
     <meta property="og:title" content="Explicit Interface Implementation in C#" />
     
     <meta name="og:description" content="I was a grumbling VB developer for a number of years.  At the time Delphi was my language of choice but in the part of the country I lived customer work using it was almost non-existent.  In the summer of 2000 at PDC, a friend of mine from Microsoft showed me the .NET Framework and C#.  I was instantly drawn to C# because it reminded me of Delphi, which is no surprise for those who know their C#/Delphi history.
-
 ">
     
     <meta property="og:type" content="article" />
@@ -135,7 +133,7 @@
 
 <p>Another difference is that in VB.NET you can specify the scope of a member that implements a particular interface as something other than public.  I needed to do this in more than one occasion in C# but was resolved to the fact that a member implementation of interface in C# had to be scoped as public.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Public Interface IMyInterface
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Public Interface IMyInterface
     Sub Foo()
 End Interface
 
@@ -148,7 +146,7 @@ End Class
 
 <p>So if you can do this in VB.NET why can’t you do the same, or something similar in C#?  This question lead me to the discovery (thank you <a href="http://www.google.com/search?q=explicit+interface+implement&amp;sourceid=firefox&amp;start=0&amp;start=0&amp;ie=utf-8&amp;oe=utf-8">google</a>) of explicit interface implementation in C#.  By using an explicit interface implementation you can scope the member implementation as private.  It’s a little messy because a member explicitly implemented cannot be access through the class instance.  Instead it must be accessed through an instance of the interface.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>interface IMyInterface
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>interface IMyInterface
 {
     void Foo();
 }
@@ -195,13 +193,39 @@ public class MyApp
 
                 
                     <p>
-                    Posted in uncategorized. 
+                    Posted in <a class='category' href='/category/uncategorized/'>uncategorized</a>. 
                     Tagged in .
                     </p>
                 
 
                 
 
+                
+                    <hr>
+                    <h3>Related Articles</h3>
+                    <ul>
+                    
+                        <li><a href="/2019/07/04/happy-firecracker-day/">Happy Firecracker Day</a></li>
+                    
+                        <li><a href="/2019/04/10/in-the-notch/">In The Notch</a></li>
+                    
+                        <li><a href="/2019/04/03/one-and-done/">One And Done</a></li>
+                    
+                        <li><a href="/2019/03/18/in-the-woods/">Spent some time in the woods this...</a></li>
+                    
+                        <li><a href="/2019/02/18/water-crossing/">Had a bit of wading while snowshoeing...</a></li>
+                    
+                        <li><a href="/2019/02/18/heading-into-the-notch/">Heading into the Notch. </a></li>
+                    
+                        <li><a href="/2019/01/11/snowshoe-adventure/">A snowshoe adventure after getting annoyed at...</a></li>
+                    
+                        <li><a href="/2019/01/02/morning-hike-in-the-woods/">  </a></li>
+                    
+                        <li><a href="/2018/12/25/afternoon-walk/">Afternoon walk to burn off calories from...</a></li>
+                    
+                        <li><a href="/2018/12/25/merry-christmas-2018/">Merry Christmas. </a></li>
+                    
+                    </ul>
                 
 
                 <hr>
@@ -252,7 +276,6 @@ public class MyApp
                 <ul>
                     <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
                     <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
-                    <li><a href="https://photos.thecave.com/">More Photos</a></li>
                 </ul>
             </div>
         </div>
@@ -310,7 +333,7 @@ public class MyApp
                     </li>
                     
                 </ul>
-                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2019</p>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2020</p>
             </div>
         </div>
     </div>

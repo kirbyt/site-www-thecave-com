@@ -9,7 +9,6 @@
     <meta name="author" content="Kirby Turner">
     
     <meta name="description" content="I recently came across this question about searching using the Parse SDK for iOS. Simon asks:
-
 ">
     
 
@@ -17,7 +16,6 @@
     <meta property="og:title" content="How To Do A Case Insensitive Search Using Parse SDK" />
     
     <meta name="og:description" content="I recently came across this question about searching using the Parse SDK for iOS. Simon asks:
-
 ">
     
     <meta property="og:type" content="article" />
@@ -149,9 +147,9 @@
 
 <h2 id="define-search-fields">Define Search Fields</h2>
 
-<p>Let’s say your Parse class contains three properties, <code class="highlighter-rouge">firstName</code>, <code class="highlighter-rouge">lastName</code>, and <code class="highlighter-rouge">email</code>. All three contain data entered by a person. When you add a new instance of this class to Parse containing the data entered by the person, you can force the value for <code class="highlighter-rouge">email</code> to be lowercase (e.g., <code class="highlighter-rouge">-[NSString lowercaseString]</code> if you’re using Objective-C). However, you don’t want to do this for <code class="highlighter-rouge">firstName</code> and <code class="highlighter-rouge">lastName</code>. Instead, you want to use search fields for those two properties.</p>
+<p>Let’s say your Parse class contains three properties, <code class="language-plaintext highlighter-rouge">firstName</code>, <code class="language-plaintext highlighter-rouge">lastName</code>, and <code class="language-plaintext highlighter-rouge">email</code>. All three contain data entered by a person. When you add a new instance of this class to Parse containing the data entered by the person, you can force the value for <code class="language-plaintext highlighter-rouge">email</code> to be lowercase (e.g., <code class="language-plaintext highlighter-rouge">-[NSString lowercaseString]</code> if you’re using Objective-C). However, you don’t want to do this for <code class="language-plaintext highlighter-rouge">firstName</code> and <code class="language-plaintext highlighter-rouge">lastName</code>. Instead, you want to use search fields for those two properties.</p>
 
-<p>To search on <code class="highlighter-rouge">firstName</code> and <code class="highlighter-rouge">lastName</code>, add two additional properties to your class, <code class="highlighter-rouge">firstNameSearch</code> and <code class="highlighter-rouge">lastNameSearch</code>. Then, just as you did with <code class="highlighter-rouge">email</code>, force the values for <code class="highlighter-rouge">firstNameSearch</code> and <code class="highlighter-rouge">lastNameSearch</code> to be all lowercase before saving the data to Parse. Now when you want to perform a search, use the search properties <code class="highlighter-rouge">firstNameSearch</code> and <code class="highlighter-rouge">lastNameSearch</code> instead of the other two.</p>
+<p>To search on <code class="language-plaintext highlighter-rouge">firstName</code> and <code class="language-plaintext highlighter-rouge">lastName</code>, add two additional properties to your class, <code class="language-plaintext highlighter-rouge">firstNameSearch</code> and <code class="language-plaintext highlighter-rouge">lastNameSearch</code>. Then, just as you did with <code class="language-plaintext highlighter-rouge">email</code>, force the values for <code class="language-plaintext highlighter-rouge">firstNameSearch</code> and <code class="language-plaintext highlighter-rouge">lastNameSearch</code> to be all lowercase before saving the data to Parse. Now when you want to perform a search, use the search properties <code class="language-plaintext highlighter-rouge">firstNameSearch</code> and <code class="language-plaintext highlighter-rouge">lastNameSearch</code> instead of the other two.</p>
 
 <p>Congratulations! You’ve achieved case insensitive searching in an environment that does not support it.</p>
 
@@ -161,8 +159,8 @@
 
                 
                     <p>
-                    Posted in programming. 
-                    Tagged in iosobjective-cparse.com.
+                    Posted in <a class='category' href='/category/programming/'>programming</a>. 
+                    Tagged in <a class='tag' href='/tag/ios/'>ios</a>, <a class='tag' href='/tag/objective-c/'>objective-c</a>, <a class='tag' href='/tag/parse-com/'>parse.com</a>.
                     </p>
                 
 
@@ -173,25 +171,25 @@
                     <h3>Related Articles</h3>
                     <ul>
                     
-                        <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
+                        <li><a href="/2019/07/04/happy-firecracker-day/">Happy Firecracker Day</a></li>
                     
-                        <li><a href="/2015/08/10/dispatch-async-to-main-queue-doesnt-work-with-modal-window-on-mac-os-x/">Dispatch Async to Main Queue Doesn't Work With Modal Window on Mac OS X</a></li>
+                        <li><a href="/2019/04/10/in-the-notch/">In The Notch</a></li>
                     
-                        <li><a href="/2017/05/02/advice-for-new-ios-freelancers/">Advice for new iOS freelancers</a></li>
+                        <li><a href="/2019/04/03/one-and-done/">One And Done</a></li>
                     
-                        <li><a href="/2017/04/21/how-i-post-to-my-jekyll-site-using-my-iphone/">How I post to my Jekyll site using my iPhone</a></li>
+                        <li><a href="/2019/03/18/in-the-woods/">Spent some time in the woods this...</a></li>
                     
-                        <li><a href="/2017/02/02/the-experienced-programmers-guide-to-getting-started-with-swift/">The Experienced Programmer's Guide to Getting Started with Swift</a></li>
+                        <li><a href="/2019/02/18/water-crossing/">Had a bit of wading while snowshoeing...</a></li>
                     
-                        <li><a href="/2016/11/19/from-trace-to-slopes/">From Trace To Slopes</a></li>
+                        <li><a href="/2019/02/18/heading-into-the-notch/">Heading into the Notch. </a></li>
                     
-                        <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/">My Upcoming Share Extension Talk At 360idev-Min</a></li>
+                        <li><a href="/2019/01/11/snowshoe-adventure/">A snowshoe adventure after getting annoyed at...</a></li>
                     
-                        <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/">Wish I Could Help But It's Not My App</a></li>
+                        <li><a href="/2019/01/02/morning-hike-in-the-woods/">  </a></li>
                     
-                        <li><a href="/2015/08/11/maintain-your-ios-app-with-peak-app-care/">Maintain Your iOS App With Peak App Care</a></li>
+                        <li><a href="/2018/12/25/afternoon-walk/">Afternoon walk to burn off calories from...</a></li>
                     
-                        <li><a href="/2015/08/07/boston-area-mac-and-ios-dev-community-is-awesome/">Boston Area Mac And iOS Dev Community Is Awesome</a></li>
+                        <li><a href="/2018/12/25/merry-christmas-2018/">Merry Christmas. </a></li>
                     
                     </ul>
                 
@@ -244,7 +242,6 @@
                 <ul>
                     <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
                     <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
-                    <li><a href="https://photos.thecave.com/">More Photos</a></li>
                 </ul>
             </div>
         </div>
@@ -302,7 +299,7 @@
                     </li>
                     
                 </ul>
-                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2019</p>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2020</p>
             </div>
         </div>
     </div>

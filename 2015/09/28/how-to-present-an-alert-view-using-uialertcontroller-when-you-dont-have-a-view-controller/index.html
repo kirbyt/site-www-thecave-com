@@ -9,7 +9,6 @@
     <meta name="author" content="Kirby Turner">
     
     <meta name="description" content="Over the summer I updated a number of apps to iOS 9. A common tasks for me was replacing the deprecated UIAlertView with new UIAlertController class. Generally this is easy to do, but there is one scenario that UIAlertView handles well that UIAlertController doesn’t support at all: displaying an alert view from parts of your code without a reference to the current view controller, for instance, displaying an alert view from the app delegate.
-
 ">
     
 
@@ -17,7 +16,6 @@
     <meta property="og:title" content="How To Present An Alert View Using UIAlertController When You Don't Have A View Controller" />
     
     <meta name="og:description" content="Over the summer I updated a number of apps to iOS 9. A common tasks for me was replacing the deprecated UIAlertView with new UIAlertController class. Generally this is easy to do, but there is one scenario that UIAlertView handles well that UIAlertController doesn’t support at all: displaying an alert view from parts of your code without a reference to the current view controller, for instance, displaying an alert view from the app delegate.
-
 ">
     
     <meta property="og:type" content="article" />
@@ -127,29 +125,29 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-				<p>Over the summer I updated a number of apps to iOS 9. A common tasks for me was replacing the deprecated <code class="highlighter-rouge">UIAlertView</code> with new <code class="highlighter-rouge">UIAlertController</code> class. Generally this is easy to do, but there is one scenario that <code class="highlighter-rouge">UIAlertView</code> handles well that <code class="highlighter-rouge">UIAlertController</code> doesn’t support at all: displaying an alert view from parts of your code without a reference to the current view controller, for instance, displaying an alert view from the app delegate.</p>
+				<p>Over the summer I updated a number of apps to iOS 9. A common tasks for me was replacing the deprecated <code class="language-plaintext highlighter-rouge">UIAlertView</code> with new <code class="language-plaintext highlighter-rouge">UIAlertController</code> class. Generally this is easy to do, but there is one scenario that <code class="language-plaintext highlighter-rouge">UIAlertView</code> handles well that <code class="language-plaintext highlighter-rouge">UIAlertController</code> doesn’t support at all: displaying an alert view from parts of your code without a reference to the current view controller, for instance, displaying an alert view from the app delegate.</p>
 
-<p>Trying to display an alert view using <code class="highlighter-rouge">UIAlertController</code> from a non-UI specific class such as the app delegate is a <a href="http://stackoverflow.com/questions/26952061/present-uialertcontroller-from-appdelegate">common problem</a>, and developers have found different <a href="http://stackoverflow.com/questions/26554894/how-to-present-uialertcontroller-when-not-in-a-view-controller">workarounds</a>. <a href="http://stackoverflow.com/a/30941356">One particular solution</a> that caught my eye was this one from agilityvision, who writes:</p>
+<p>Trying to display an alert view using <code class="language-plaintext highlighter-rouge">UIAlertController</code> from a non-UI specific class such as the app delegate is a <a href="http://stackoverflow.com/questions/26952061/present-uialertcontroller-from-appdelegate">common problem</a>, and developers have found different <a href="http://stackoverflow.com/questions/26554894/how-to-present-uialertcontroller-when-not-in-a-view-controller">workarounds</a>. <a href="http://stackoverflow.com/a/30941356">One particular solution</a> that caught my eye was this one from agilityvision, who writes:</p>
 
 <blockquote>
   <p>At WWDC I stopped in at one of the labs and asked an Apple Engineer this same question: “What was the best practice for displaying a UIAlertController?” And he said they had been getting this question a lot and we joked that they should have had a session on it. He said that internally Apple is creating a UIWindow with a transparent UIViewController and then presenting the UIAlertController on it.</p>
 </blockquote>
 
-<p>This got me thinking about how I would solve the problem for apps I work on. Liking the approach mentioned by the Apple Engineer, I decided to give that a try. But unlike some of the other solutions that use a category, I decided to create a new class, <code class="highlighter-rouge">WPSAlertController</code>, that is a subclass of <code class="highlighter-rouge">UIAlertController</code>, and provide additional convenience methods making it possible to display an alert view with a single call…like this:</p>
+<p>This got me thinking about how I would solve the problem for apps I work on. Liking the approach mentioned by the Apple Engineer, I decided to give that a try. But unlike some of the other solutions that use a category, I decided to create a new class, <code class="language-plaintext highlighter-rouge">WPSAlertController</code>, that is a subclass of <code class="language-plaintext highlighter-rouge">UIAlertController</code>, and provide additional convenience methods making it possible to display an alert view with a single call…like this:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NSString *title = ...
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NSString *title = ...
 NSString *message = ...
 [WPSAlertController presentOkayAlertWithTitle:title message:message];
 </code></pre></div></div>
 
-<p>Or display the <code class="highlighter-rouge">localizedDescription</code> from an <code class="highlighter-rouge">NSError</code> object:</p>
+<p>Or display the <code class="language-plaintext highlighter-rouge">localizedDescription</code> from an <code class="language-plaintext highlighter-rouge">NSError</code> object:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[WPSAlertController presentOkayAlertWithError:error];
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[WPSAlertController presentOkayAlertWithError:error];
 </code></pre></div></div>
 
-<p>And of course, since <code class="highlighter-rouge">WPSAlertController</code> is a subclass of <code class="highlighter-rouge">UIAlertController</code>, you can create your alert the same way as you do using <code class="highlighter-rouge">UIAlertController</code>. The only difference is you call <code class="highlighter-rouge">show</code> to present the alert when you don’t have a view controller. For example:</p>
+<p>And of course, since <code class="language-plaintext highlighter-rouge">WPSAlertController</code> is a subclass of <code class="language-plaintext highlighter-rouge">UIAlertController</code>, you can create your alert the same way as you do using <code class="language-plaintext highlighter-rouge">UIAlertController</code>. The only difference is you call <code class="language-plaintext highlighter-rouge">show</code> to present the alert when you don’t have a view controller. For example:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NSString *title = ...
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NSString *title = ...
 NSString *message = ...
 WPSAlertController *alertController = [WPSAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
 [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -159,15 +157,15 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
 [alertController show];
 </code></pre></div></div>
 
-<p>You can grab the <a href="https://github.com/kirbyt/WPSKit/blob/master/WPSKit/UIKit/WPSAlertController.m">source code for <code class="highlighter-rouge">WPSAlertController</code></a> from my github repository and include it in your project, or use the entire <a href="https://github.com/kirbyt/WPSKit">WPSKit.framework</a> in your project if you want to use <code class="highlighter-rouge">WPSAlertController</code> plus other handy classes that I use when creating iOS apps.</p>
+<p>You can grab the <a href="https://github.com/kirbyt/WPSKit/blob/master/WPSKit/UIKit/WPSAlertController.m">source code for <code class="language-plaintext highlighter-rouge">WPSAlertController</code></a> from my github repository and include it in your project, or use the entire <a href="https://github.com/kirbyt/WPSKit">WPSKit.framework</a> in your project if you want to use <code class="language-plaintext highlighter-rouge">WPSAlertController</code> plus other handy classes that I use when creating iOS apps.</p>
 
 
                 <hr>
 
                 
                     <p>
-                    Posted in programming. 
-                    Tagged in iosobjective-c.
+                    Posted in <a class='category' href='/category/programming/'>programming</a>. 
+                    Tagged in <a class='tag' href='/tag/ios/'>ios</a>, <a class='tag' href='/tag/objective-c/'>objective-c</a>.
                     </p>
                 
 
@@ -178,25 +176,25 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
                     <h3>Related Articles</h3>
                     <ul>
                     
-                        <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                        <li><a href="/2019/07/04/happy-firecracker-day/">Happy Firecracker Day</a></li>
                     
-                        <li><a href="/2015/08/10/dispatch-async-to-main-queue-doesnt-work-with-modal-window-on-mac-os-x/">Dispatch Async to Main Queue Doesn't Work With Modal Window on Mac OS X</a></li>
+                        <li><a href="/2019/04/10/in-the-notch/">In The Notch</a></li>
                     
-                        <li><a href="/2017/05/02/advice-for-new-ios-freelancers/">Advice for new iOS freelancers</a></li>
+                        <li><a href="/2019/04/03/one-and-done/">One And Done</a></li>
                     
-                        <li><a href="/2017/04/21/how-i-post-to-my-jekyll-site-using-my-iphone/">How I post to my Jekyll site using my iPhone</a></li>
+                        <li><a href="/2019/03/18/in-the-woods/">Spent some time in the woods this...</a></li>
                     
-                        <li><a href="/2017/02/02/the-experienced-programmers-guide-to-getting-started-with-swift/">The Experienced Programmer's Guide to Getting Started with Swift</a></li>
+                        <li><a href="/2019/02/18/water-crossing/">Had a bit of wading while snowshoeing...</a></li>
                     
-                        <li><a href="/2016/11/19/from-trace-to-slopes/">From Trace To Slopes</a></li>
+                        <li><a href="/2019/02/18/heading-into-the-notch/">Heading into the Notch. </a></li>
                     
-                        <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/">My Upcoming Share Extension Talk At 360idev-Min</a></li>
+                        <li><a href="/2019/01/11/snowshoe-adventure/">A snowshoe adventure after getting annoyed at...</a></li>
                     
-                        <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/">Wish I Could Help But It's Not My App</a></li>
+                        <li><a href="/2019/01/02/morning-hike-in-the-woods/">  </a></li>
                     
-                        <li><a href="/2015/08/11/maintain-your-ios-app-with-peak-app-care/">Maintain Your iOS App With Peak App Care</a></li>
+                        <li><a href="/2018/12/25/afternoon-walk/">Afternoon walk to burn off calories from...</a></li>
                     
-                        <li><a href="/2015/08/07/boston-area-mac-and-ios-dev-community-is-awesome/">Boston Area Mac And iOS Dev Community Is Awesome</a></li>
+                        <li><a href="/2018/12/25/merry-christmas-2018/">Merry Christmas. </a></li>
                     
                     </ul>
                 
@@ -249,7 +247,6 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
                 <ul>
                     <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
                     <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
-                    <li><a href="https://photos.thecave.com/">More Photos</a></li>
                 </ul>
             </div>
         </div>
@@ -307,7 +304,7 @@ WPSAlertController *alertController = [WPSAlertController alertControllerWithTit
                     </li>
                     
                 </ul>
-                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2019</p>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2020</p>
             </div>
         </div>
     </div>

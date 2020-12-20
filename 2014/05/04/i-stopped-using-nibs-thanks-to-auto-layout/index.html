@@ -9,7 +9,6 @@
     <meta name="author" content="Kirby Turner">
     
     <meta name="description" content="The subject to this post might suggest I don’t like Auto Layout, but on the contrary I really like Auto Layout. I didn’t always like Auto Layout. For the longest time Auto Layout was a major pain in my ass, but it turns out it was Interface Builder that was causing me the majority of headaches when I used Auto Layout. So I stopped using Auto Layout in IB and I started using it in code only.
-
 ">
     
 
@@ -17,7 +16,6 @@
     <meta property="og:title" content="I Stopped Using NIBs Thanks to Auto Layout" />
     
     <meta name="og:description" content="The subject to this post might suggest I don’t like Auto Layout, but on the contrary I really like Auto Layout. I didn’t always like Auto Layout. For the longest time Auto Layout was a major pain in my ass, but it turns out it was Interface Builder that was causing me the majority of headaches when I used Auto Layout. So I stopped using Auto Layout in IB and I started using it in code only.
-
 ">
     
     <meta property="og:type" content="article" />
@@ -137,7 +135,7 @@
 
 <p>I’ve now done a number of iOS projects where I don’t use a single NIB or storyboard, and I’m convinced this is the right approach for me. I see everything regarding a view and its subviews explicitly defined in source code, which makes it easier to see what’s going on and to make changes. No more bouncing between inspectors to figure out what is causing a problem or to understand how a view is rendered. I see it all in the source code defined in a single <em>.m</em> file.</p>
 
-<p>So how do I construct my views using only source code? I have a base class that I call <a href="https://github.com/kirbyt/WPSKit/blob/master/WPSKit/UIKit/WPSCompositeView.h"><code class="highlighter-rouge">WPSCompositeView</code></a> in my <a href="https://github.com/kirbyt/WPSKit">WPSKit</a>, a set of classes and categories I use to build apps. <code class="highlighter-rouge">WPSCompositeView</code> has a class method named <code class="highlighter-rouge">+addToSuperview:</code> that creates the instance of the view, which must be a subclass of <code class="highlighter-rouge">WPSCompositeView</code>, then calls <code class="highlighter-rouge">-loadView</code> on the instance of the view. I place all the code needed to create the subviews of the view in the <code class="highlighter-rouge">-loadView</code> implementation. The constraints for the view are implemented in the <code class="highlighter-rouge">-updateConstraints</code> that is called by iOS when needed. That’s it.</p>
+<p>So how do I construct my views using only source code? I have a base class that I call <a href="https://github.com/kirbyt/WPSKit/blob/master/WPSKit/UIKit/WPSCompositeView.h"><code class="language-plaintext highlighter-rouge">WPSCompositeView</code></a> in my <a href="https://github.com/kirbyt/WPSKit">WPSKit</a>, a set of classes and categories I use to build apps. <code class="language-plaintext highlighter-rouge">WPSCompositeView</code> has a class method named <code class="language-plaintext highlighter-rouge">+addToSuperview:</code> that creates the instance of the view, which must be a subclass of <code class="language-plaintext highlighter-rouge">WPSCompositeView</code>, then calls <code class="language-plaintext highlighter-rouge">-loadView</code> on the instance of the view. I place all the code needed to create the subviews of the view in the <code class="language-plaintext highlighter-rouge">-loadView</code> implementation. The constraints for the view are implemented in the <code class="language-plaintext highlighter-rouge">-updateConstraints</code> that is called by iOS when needed. That’s it.</p>
 
 <p>Here’s an example of a composer view for a new app I’m working on:</p>
 
@@ -145,7 +143,7 @@
 
 <p>And the code for creating this view is as follows:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void)loadView
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void)loadView
 {
   UIView *containerView = self;
 
@@ -261,11 +259,11 @@
 }
 </code></pre></div></div>
 
-<p>The only things not created or managed but this view are the navigation bar and collection view of photos. The navigation bar is provided by the <code class="highlighter-rouge">UINavigationController</code> used by the view controller that created this composer view. Also, the view controller uses controller containment to include the collection view of photos, which is actually managed by another view controller and custom view class.</p>
+<p>The only things not created or managed but this view are the navigation bar and collection view of photos. The navigation bar is provided by the <code class="language-plaintext highlighter-rouge">UINavigationController</code> used by the view controller that created this composer view. Also, the view controller uses controller containment to include the collection view of photos, which is actually managed by another view controller and custom view class.</p>
 
-<p>Oh, I almost forgot to mention…I create the composite view in the <code class="highlighter-rouge">loadView</code> method implemented in the view controller. For example:</p>
+<p>Oh, I almost forgot to mention…I create the composite view in the <code class="language-plaintext highlighter-rouge">loadView</code> method implemented in the view controller. For example:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void)loadView
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void)loadView
 {
   [super loadView];
   UIView *contentView = [self view];
@@ -275,7 +273,7 @@
 }
 </code></pre></div></div>
 
-<p>After I create the view I might add more layout constraints to position and size the subview as needed within the main content view. I do that in the view controller’s <code class="highlighter-rouge">-loadView</code> when needed.</p>
+<p>After I create the view I might add more layout constraints to position and size the subview as needed within the main content view. I do that in the view controller’s <code class="language-plaintext highlighter-rouge">-loadView</code> when needed.</p>
 
 <p>So that’s it. That’s why I have stopped using NIB and storyboard files in my iOS projects. This approach might not work for others, but it certainly works for me.</p>
 
@@ -284,8 +282,8 @@
 
                 
                     <p>
-                    Posted in programming. 
-                    Tagged in iosauto layoutinterface builderxcode.
+                    Posted in <a class='category' href='/category/programming/'>programming</a>. 
+                    Tagged in <a class='tag' href='/tag/auto-layout/'>auto layout</a>, <a class='tag' href='/tag/interface-builder/'>interface builder</a>, <a class='tag' href='/tag/ios/'>ios</a>, <a class='tag' href='/tag/xcode/'>xcode</a>.
                     </p>
                 
 
@@ -296,25 +294,25 @@
                     <h3>Related Articles</h3>
                     <ul>
                     
-                        <li><a href="/2014/05/10/wait-justin-and-i-agree/">Wait, Justin and I Agree?</a></li>
+                        <li><a href="/2019/07/04/happy-firecracker-day/">Happy Firecracker Day</a></li>
                     
-                        <li><a href="/2014/09/16/using-xcodebuild-to-export-a-ipa-from-an-archive/">Using xcodebuild To Export a .ipa From an Archive</a></li>
+                        <li><a href="/2019/04/10/in-the-notch/">In The Notch</a></li>
                     
-                        <li><a href="/2017/05/02/advice-for-new-ios-freelancers/">Advice for new iOS freelancers</a></li>
+                        <li><a href="/2019/04/03/one-and-done/">One And Done</a></li>
                     
-                        <li><a href="/2017/04/21/how-i-post-to-my-jekyll-site-using-my-iphone/">How I post to my Jekyll site using my iPhone</a></li>
+                        <li><a href="/2019/03/18/in-the-woods/">Spent some time in the woods this...</a></li>
                     
-                        <li><a href="/2017/02/02/the-experienced-programmers-guide-to-getting-started-with-swift/">The Experienced Programmer's Guide to Getting Started with Swift</a></li>
+                        <li><a href="/2019/02/18/water-crossing/">Had a bit of wading while snowshoeing...</a></li>
                     
-                        <li><a href="/2016/11/19/from-trace-to-slopes/">From Trace To Slopes</a></li>
+                        <li><a href="/2019/02/18/heading-into-the-notch/">Heading into the Notch. </a></li>
                     
-                        <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                        <li><a href="/2019/01/11/snowshoe-adventure/">A snowshoe adventure after getting annoyed at...</a></li>
                     
-                        <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
+                        <li><a href="/2019/01/02/morning-hike-in-the-woods/">  </a></li>
                     
-                        <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/">My Upcoming Share Extension Talk At 360idev-Min</a></li>
+                        <li><a href="/2018/12/25/afternoon-walk/">Afternoon walk to burn off calories from...</a></li>
                     
-                        <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/">Wish I Could Help But It's Not My App</a></li>
+                        <li><a href="/2018/12/25/merry-christmas-2018/">Merry Christmas. </a></li>
                     
                     </ul>
                 
@@ -367,7 +365,6 @@
                 <ul>
                     <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
                     <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
-                    <li><a href="https://photos.thecave.com/">More Photos</a></li>
                 </ul>
             </div>
         </div>
@@ -425,7 +422,7 @@
                     </li>
                     
                 </ul>
-                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2019</p>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2020</p>
             </div>
         </div>
     </div>

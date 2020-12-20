@@ -145,9 +145,9 @@
 
 <p>Consider the scenario where you want to post 4 photos to App.net, Facebook, and Twitter. Each photo must be uploaded to each network. That means 12 different uploads, which is not speedy. This performance problem is acceptable in the Cross Post app because it performs the uploads even when the app is no longer active. A share extension, on the other hand, should return almost immediately. It should not, or have to, wait for the uploads to complete.</p>
 
-<p>Extensions that need to upload data should do so using a background <code class="highlighter-rouge">NSURLSession</code>. Unfortunately this is not an option for Cross Post because it uses the Facebook SDK to post to Facebook and <code class="highlighter-rouge">SLRequest</code> to post to Twitter. Cross Post does use <code class="highlighter-rouge">NSURLSession</code> to post to App.net, but I want to be able to post to Facebook and Twitter via the share extension as well. So I needed to come up with a better way to post status updates and photos across different social networks.</p>
+<p>Extensions that need to upload data should do so using a background <code class="language-plaintext highlighter-rouge">NSURLSession</code>. Unfortunately this is not an option for Cross Post because it uses the Facebook SDK to post to Facebook and <code class="language-plaintext highlighter-rouge">SLRequest</code> to post to Twitter. Cross Post does use <code class="language-plaintext highlighter-rouge">NSURLSession</code> to post to App.net, but I want to be able to post to Facebook and Twitter via the share extension as well. So I needed to come up with a better way to post status updates and photos across different social networks.</p>
 
-<p>To solve this problem I decided to create a Cross Post server. I was trying to avoid having a server for Cross Post, but it’s unavoidable if I want to provide the best user experience. With the server in place Cross Post can upload the post and photos once and let the server handle uploading the content to the selected networks. Best of all, the upload from the app can be accomplished using a single <code class="highlighter-rouge">NSURLSession</code> request, and it can be performed in a background session. This means the Cross Post share extension can return almost immediately. It also means that Cross Post now only needs to make one HTTP request whereas previously it had to make numerous requests. For instance, the previous scenario of posting 4 photos to 3 different social sites required 15 HTTP requests. Now Cross Post app accomplishes the same thing using a single HTTP request<sup id="fnref:onerequest"><a href="#fn:onerequest" class="footnote">1</a></sup>, and the Cross Post server handles making all the other requests on behalf of the app.</p>
+<p>To solve this problem I decided to create a Cross Post server. I was trying to avoid having a server for Cross Post, but it’s unavoidable if I want to provide the best user experience. With the server in place Cross Post can upload the post and photos once and let the server handle uploading the content to the selected networks. Best of all, the upload from the app can be accomplished using a single <code class="language-plaintext highlighter-rouge">NSURLSession</code> request, and it can be performed in a background session. This means the Cross Post share extension can return almost immediately. It also means that Cross Post now only needs to make one HTTP request whereas previously it had to make numerous requests. For instance, the previous scenario of posting 4 photos to 3 different social sites required 15 HTTP requests. Now Cross Post app accomplishes the same thing using a single HTTP request<sup id="fnref:onerequest" role="doc-noteref"><a href="#fn:onerequest" class="footnote">1</a></sup>, and the Cross Post server handles making all the other requests on behalf of the app.</p>
 
 <p>This performance boost does have some disadvantages. First and foremost, I’m now responsible for keeping the server environment up and running. But thanks to <a href="https://www.openshift.com">OpenShift</a>, I’m not too worried about that.</p>
 
@@ -155,10 +155,10 @@
 
 <p>Still, the improved user experience outweighs the disadvantages of using a server. And I have to admit, I’m enjoying getting back into server-side programming. So much as changed, for the better, over the years.</p>
 
-<div class="footnotes">
+<div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:onerequest">
-      <p>I was able to reducing the number of calls to the server down to one by packaging the post and photos into a single .zip file, which is sent to the server. <a href="#fnref:onerequest" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:onerequest" role="doc-endnote">
+      <p>I was able to reducing the number of calls to the server down to one by packaging the post and photos into a single .zip file, which is sent to the server. <a href="#fnref:onerequest" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -168,8 +168,8 @@
 
                 
                     <p>
-                    Posted in business. 
-                    Tagged in ioswhite peak softwarecross postsocial.
+                    Posted in <a class='category' href='/category/business/'>business</a>. 
+                    Tagged in <a class='tag' href='/tag/cross-post/'>cross post</a>, <a class='tag' href='/tag/ios/'>ios</a>, <a class='tag' href='/tag/social/'>social</a>, <a class='tag' href='/tag/white-peak-software/'>white peak software</a>.
                     </p>
                 
 
@@ -180,25 +180,25 @@
                     <h3>Related Articles</h3>
                     <ul>
                     
-                        <li><a href="/2015/01/18/eliminating-distractions/">Eliminating Distractions</a></li>
+                        <li><a href="/2019/07/04/happy-firecracker-day/">Happy Firecracker Day</a></li>
                     
-                        <li><a href="/2014/03/14/cross-posting/">Cross Posting</a></li>
+                        <li><a href="/2019/04/10/in-the-notch/">In The Notch</a></li>
                     
-                        <li><a href="/2014/10/09/microblogging-the-open-web-and-cross-post/">Microblogging, the Open Web, and Cross Post</a></li>
+                        <li><a href="/2019/04/03/one-and-done/">One And Done</a></li>
                     
-                        <li><a href="/2014/09/15/reporting-errors-in-cross-post-part-2/">Reporting Errors in Cross Post Part 2</a></li>
+                        <li><a href="/2019/03/18/in-the-woods/">Spent some time in the woods this...</a></li>
                     
-                        <li><a href="/2014/09/14/reporting-errors-in-cross-post/">Reporting Errors in Cross Post</a></li>
+                        <li><a href="/2019/02/18/water-crossing/">Had a bit of wading while snowshoeing...</a></li>
                     
-                        <li><a href="/2015/08/07/boston-area-mac-and-ios-dev-community-is-awesome/">Boston Area Mac And iOS Dev Community Is Awesome</a></li>
+                        <li><a href="/2019/02/18/heading-into-the-notch/">Heading into the Notch. </a></li>
                     
-                        <li><a href="/2015/03/05/apres-code-a-new-developer-meetup-in-stowe-vt/">Après Code: A New Developer Meetup In Stowe Vt</a></li>
+                        <li><a href="/2019/01/11/snowshoe-adventure/">A snowshoe adventure after getting annoyed at...</a></li>
                     
-                        <li><a href="/2015/08/11/maintain-your-ios-app-with-peak-app-care/">Maintain Your iOS App With Peak App Care</a></li>
+                        <li><a href="/2019/01/02/morning-hike-in-the-woods/">  </a></li>
                     
-                        <li><a href="/2013/11/20/send-your-camera-video-to-your-tv/">Send Camera Video to Your TV</a></li>
+                        <li><a href="/2018/12/25/afternoon-walk/">Afternoon walk to burn off calories from...</a></li>
                     
-                        <li><a href="/2017/07/18/shutting-down-thecavesocial/">Shutting Down thecave.social</a></li>
+                        <li><a href="/2018/12/25/merry-christmas-2018/">Merry Christmas. </a></li>
                     
                     </ul>
                 
@@ -251,7 +251,6 @@
                 <ul>
                     <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
                     <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
-                    <li><a href="https://photos.thecave.com/">More Photos</a></li>
                 </ul>
             </div>
         </div>
@@ -309,7 +308,7 @@
                     </li>
                     
                 </ul>
-                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2019</p>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2020</p>
             </div>
         </div>
     </div>

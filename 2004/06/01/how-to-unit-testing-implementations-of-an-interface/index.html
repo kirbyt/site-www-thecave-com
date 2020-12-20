@@ -9,7 +9,6 @@
     <meta name="author" content="Kirby Turner">
     
     <meta name="description" content="I have become a firm supporter of writing unit tests for most if not all code I write, and NUnit is an ideal framework for implementing unit tests.  But one problem I have had repeatedly is finding a good way to test specific implementations of an interface.  My approach has always been to write a new test fixture for each implementor of an interface.  But the problem with this approach is that I end up duplicating unit tests for each implementor, and if I need to write a new test I have to copy it to multiple fixtures.
-
 ">
     
 
@@ -17,7 +16,6 @@
     <meta property="og:title" content="How to Unit Testing Implementations of an Interface" />
     
     <meta name="og:description" content="I have become a firm supporter of writing unit tests for most if not all code I write, and NUnit is an ideal framework for implementing unit tests.  But one problem I have had repeatedly is finding a good way to test specific implementations of an interface.  My approach has always been to write a new test fixture for each implementor of an interface.  But the problem with this approach is that I end up duplicating unit tests for each implementor, and if I need to write a new test I have to copy it to multiple fixtures.
-
 ">
     
     <meta property="og:type" content="article" />
@@ -139,7 +137,7 @@
 
 <p>To use CompositeTestFixture, begin by writing your test fixtures as you normally would.  In the spirit of Jonathan’s blog I will show an example that provides a test for implementors of the IEnumerable interface.  In this example I will show how to test the ArrayList and Hashtable classes which both implement this interface.  The only requirement in this test is that the IEnumerable instance is not null.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>using System;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>using System;
 using System.Collections;
 using System.Diagnostics;
 
@@ -161,7 +159,7 @@ namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
 
 <p>Now we need to write the unit test for the GetEnumeratorNotNull test.  However we must first tell CompositeTestFixture about the factories needed to create an instance of class that implements the interface to test.  I call the instance of the class the implementor.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[TestFixture]
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[TestFixture]
 [ProviderFactory(FactoryType=typeof(ArrayListFactory),
 ReturnType=typeof(IEnumerable))]
 [ProviderFactory(FactoryType=typeof(HashtableFactory),
@@ -174,7 +172,7 @@ public class EnumerableTest
 
 <p>Next we need to write the code that will test the implementor.  The NUnit framework is going to call the GetEnumeratorNotNull method that is decorated with the [Test] attribute.  This is where we call into the CompositeTestFixture helper class.  A static method RunTest is provided for those who do not want to create an instance of the CompositeTestFixture class.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Test]
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Test]
 public void GetEnumeratorNotNull()
 {
     CompositeTestFixture.RunTest( this );
@@ -183,7 +181,7 @@ public void GetEnumeratorNotNull()
 
 <p>Now we write the method that will perform the actual test.  This method will have the same name as the test method.  The only difference is that the method signature takes a single parameter of the interface type we are testing.  Note that this method is not decorated with the [Test] attribute since we do not want NUnit calling this method.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public void GetEnumeratorNotNull( IEnumerable en )
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public void GetEnumeratorNotNull( IEnumerable en )
 {
     Debug.WriteLine( "Testing " + en.GetType().ToString() );
     Assert.IsNotNull( en.GetEnumerator(), "Must not be null." );
@@ -200,7 +198,7 @@ public void GetEnumeratorNotNull()
 
 <p>CompositeTestFixture determines creators by inspecting the factory class type and discovering each method with a return type that implements the type defined in the ProviderFactory.ReturnType property that decorates the test fixture.  Creators must be defined with a public scope and no parameters on the method signature.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>using System;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>using System;
 using System.Collections;
 
 namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
@@ -241,13 +239,39 @@ namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
 
                 
                     <p>
-                    Posted in uncategorized. 
+                    Posted in <a class='category' href='/category/uncategorized/'>uncategorized</a>. 
                     Tagged in .
                     </p>
                 
 
                 
 
+                
+                    <hr>
+                    <h3>Related Articles</h3>
+                    <ul>
+                    
+                        <li><a href="/2019/07/04/happy-firecracker-day/">Happy Firecracker Day</a></li>
+                    
+                        <li><a href="/2019/04/10/in-the-notch/">In The Notch</a></li>
+                    
+                        <li><a href="/2019/04/03/one-and-done/">One And Done</a></li>
+                    
+                        <li><a href="/2019/03/18/in-the-woods/">Spent some time in the woods this...</a></li>
+                    
+                        <li><a href="/2019/02/18/water-crossing/">Had a bit of wading while snowshoeing...</a></li>
+                    
+                        <li><a href="/2019/02/18/heading-into-the-notch/">Heading into the Notch. </a></li>
+                    
+                        <li><a href="/2019/01/11/snowshoe-adventure/">A snowshoe adventure after getting annoyed at...</a></li>
+                    
+                        <li><a href="/2019/01/02/morning-hike-in-the-woods/">  </a></li>
+                    
+                        <li><a href="/2018/12/25/afternoon-walk/">Afternoon walk to burn off calories from...</a></li>
+                    
+                        <li><a href="/2018/12/25/merry-christmas-2018/">Merry Christmas. </a></li>
+                    
+                    </ul>
                 
 
                 <hr>
@@ -298,7 +322,6 @@ namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
                 <ul>
                     <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
                     <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
-                    <li><a href="https://photos.thecave.com/">More Photos</a></li>
                 </ul>
             </div>
         </div>
@@ -356,7 +379,7 @@ namespace Samples.FunWithNUnit.MyClassLibrary.UnitTests
                     </li>
                     
                 </ul>
-                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2019</p>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2020</p>
             </div>
         </div>
     </div>

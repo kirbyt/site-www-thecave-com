@@ -12,7 +12,7 @@
     
 
     <!-- Facebook tags -->
-    <meta property="og:title" content="Tag: sql server" />
+    <meta property="og:title" content="sql server" />
     
     <meta name="og:description" content="The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.">
     
@@ -22,7 +22,7 @@
     <meta property="og:url" content="http://www.thecave.com/tag/sql-server/" />
     <meta property="og:site_name" content="thecave | Kirby Turner's Blog" />
 
-    <title>Tag: sql server</title>
+    <title>sql server</title>
 
     <link href="https://micro.blog/kirbyt" rel="me" />
     <link rel="canonical" href="http://www.thecave.com/tag/sql-server/">
@@ -108,7 +108,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="site-heading">
-                    <h1>Tag: sql server</h1>
+                    <h1>sql server</h1>
                     <hr class="small">
                     
                 </div>
@@ -122,69 +122,68 @@
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 			
-    <!--- Post Starts -->
-    <div class="post-preview">
-        
-        <h2 class="post-title">
-            <a href="/2007/04/26/connection-tool-for-sql-server-updated/">Connection Tool for SQL Server Updated</a>
-        </h2>
-        
-        <p>I posted a new version of the <a href="http://www.whitepeaksoftware.com/connectiontool.aspx">Connection Tool for SQL Server</a>.  This free tool provides an easy way to test and build connection strings for SQL Server databases.  This latest version has improved support for Windows 98/ME and Windows Vista.<br /><br />One unfortunate side effect with this release is you must delete the ConnectionToolForSQLServer.exe.config file if you used the previous version.  This file is found in the same directory as the ConnectionToolForSQLServer.exe program file.  If you don’t you will get an error message similar to this:<br /><br />&lt;div class="quote"&gt;<br />ConnectionToolForSQlServer.exe<br /><br />This application has failed to start because the application configuration is incorrect. Reinstalling the application may fix this problem.<br />&lt;/div&gt;<br /><br />I explain the reason for this <a href="http://www.thecave.com/archive/2007/04/25/when_naming_a_configuration_file_programexeconfig_is_bad.aspx">here</a>.</p>
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2007/04/26/connection-tool-for-sql-server-updated/">Connection Tool for SQL Server Updated</a>
+    </h2>
+    
+    <p>I posted a new version of the <a href="http://www.whitepeaksoftware.com/connectiontool.aspx">Connection Tool for SQL Server</a>.  This free tool provides an easy way to test and build connection strings for SQL Server databases.  This latest version has improved support for Windows 98/ME and Windows Vista.<br /><br />One unfortunate side effect with this release is you must delete the ConnectionToolForSQLServer.exe.config file if you used the previous version.  This file is found in the same directory as the ConnectionToolForSQLServer.exe program file.  If you don’t you will get an error message similar to this:<br /><br />&lt;div class="quote"&gt;<br />ConnectionToolForSQlServer.exe<br /><br />This application has failed to start because the application configuration is incorrect. Reinstalling the application may fix this problem.<br />&lt;/div&gt;<br /><br />I explain the reason for this <a href="http://www.thecave.com/archive/2007/04/25/when_naming_a_configuration_file_programexeconfig_is_bad.aspx">here</a>.</p>
 
 
-        <p><a href="/2007/04/26/connection-tool-for-sql-server-updated/">Continue reading &rarr;</a></p>
+    <p><a href="/2007/04/26/connection-tool-for-sql-server-updated/">Continue reading &rarr;</a></p>
 
-        <p class="post-meta">Posted by Kirby Turner on April 26, 2007 in programming.
-        
-            Tagged in sql server.
-        
-        </p>
-    </div>
-    <hr>
-    <!--- Post Ends -->
+    <p class="post-meta">Posted by Kirby Turner on April 26, 2007 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/sql-server/'>sql server</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
 
-    <!--- Post Starts -->
-    <div class="post-preview">
-        
-        <h2 class="post-title">
-            <a href="/2006/05/04/one-more-rant-about-sql-server-2005/">One More Rant about SQL Server 2005</a>
-        </h2>
-        
-        <p>Here’s another rant I have about SQL Server 2005.</p>
-
-
-
-        <p><a href="/2006/05/04/one-more-rant-about-sql-server-2005/">Continue reading &rarr;</a></p>
-
-        <p class="post-meta">Posted by Kirby Turner on May 4, 2006 in programming.
-        
-            Tagged in sql server.
-        
-        </p>
-    </div>
-    <hr>
-    <!--- Post Ends -->
-
-    <!--- Post Starts -->
-    <div class="post-preview">
-        
-        <h2 class="post-title">
-            <a href="/2006/05/04/limited-scripting-in-sql-server-2005/">Limited Scripting in SQL Server 2005</a>
-        </h2>
-        
-        <p>SQL Server 2005 has been out for some time now but I have only recently made the move to it.  I’ve been in the SQL Server 2000 world because of customers but my customers are finally making the move 2005.<br /><br />Overall I really like SQL Server 2005 and the new Management Studio is nice.  However, I’m really annoyed that the SQL Server 2005 team decided to do away with the database scripting feature found in SQL Server 2000.  <br /><br />In SQL Server 2000, you can script out each database object into individual files.  I do this so I can commit the DDL source for each into CVS, or to do revision comparisons, or to do a number of other tasks.  But you cannot easily script out each object in a database with SQL Server 2005.  Apparently this is a known limitation as seen <a href="http://lab.msdn.microsoft.com/productfeedback/viewfeedback.aspx?feedbackid=9eb6c773-2dbb-4a27-b9d8-225d6ed4385a">here</a>.<br /><br />One option I found is to <a href="http://www.sqlteam.com/item.asp?ItemID=23185">write a programming using .NET 2.0 and the SQL Management Object (SMO)</a>.  Unfortunately time is not a luxury I have and I have an immediate need to script out the each object in a database into individual files.  So I started down the path of script out each object individual.  <br /><br />Guess what?  It has its own set of problems.  First starters, there is not an option to generate a script that contains both the DROP and CREATE statements.  Instead what I do is generate the CREATE statement to a query window.  Next I generate the DROP statement to the clipboard followed by pasting the clipboard content to the query window.  Needless to say, this is a painful process, and I have hundreds of database objects to script out.<br /><br />I can’t believe the model used for generating scripts in previous versions of SQL Server did not make it into SQL Server 2005.  I would have expected the same functionality at a minimum, and possibly an improvement on past versions.  But I would never have guess it was removed completely.</p>
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/05/04/one-more-rant-about-sql-server-2005/">One More Rant about SQL Server 2005</a>
+    </h2>
+    
+    <p>Here’s another rant I have about SQL Server 2005.</p>
 
 
-        <p><a href="/2006/05/04/limited-scripting-in-sql-server-2005/">Continue reading &rarr;</a></p>
+    <p><a href="/2006/05/04/one-more-rant-about-sql-server-2005/">Continue reading &rarr;</a></p>
 
-        <p class="post-meta">Posted by Kirby Turner on May 4, 2006 in programming.
-        
-            Tagged in sql server.
-        
-        </p>
-    </div>
-    <hr>
-    <!--- Post Ends -->
+    <p class="post-meta">Posted by Kirby Turner on May 4, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/sql-server/'>sql server</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/05/04/limited-scripting-in-sql-server-2005/">Limited Scripting in SQL Server 2005</a>
+    </h2>
+    
+    <p>SQL Server 2005 has been out for some time now but I have only recently made the move to it.  I’ve been in the SQL Server 2000 world because of customers but my customers are finally making the move 2005.<br /><br />Overall I really like SQL Server 2005 and the new Management Studio is nice.  However, I’m really annoyed that the SQL Server 2005 team decided to do away with the database scripting feature found in SQL Server 2000.  <br /><br />In SQL Server 2000, you can script out each database object into individual files.  I do this so I can commit the DDL source for each into CVS, or to do revision comparisons, or to do a number of other tasks.  But you cannot easily script out each object in a database with SQL Server 2005.  Apparently this is a known limitation as seen <a href="http://lab.msdn.microsoft.com/productfeedback/viewfeedback.aspx?feedbackid=9eb6c773-2dbb-4a27-b9d8-225d6ed4385a">here</a>.<br /><br />One option I found is to <a href="http://www.sqlteam.com/item.asp?ItemID=23185">write a programming using .NET 2.0 and the SQL Management Object (SMO)</a>.  Unfortunately time is not a luxury I have and I have an immediate need to script out the each object in a database into individual files.  So I started down the path of script out each object individual.  <br /><br />Guess what?  It has its own set of problems.  First starters, there is not an option to generate a script that contains both the DROP and CREATE statements.  Instead what I do is generate the CREATE statement to a query window.  Next I generate the DROP statement to the clipboard followed by pasting the clipboard content to the query window.  Needless to say, this is a painful process, and I have hundreds of database objects to script out.<br /><br />I can’t believe the model used for generating scripts in previous versions of SQL Server did not make it into SQL Server 2005.  I would have expected the same functionality at a minimum, and possibly an improvement on past versions.  But I would never have guess it was removed completely.</p>
+
+
+    <p><a href="/2006/05/04/limited-scripting-in-sql-server-2005/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on May 4, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/sql-server/'>sql server</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
 
 
 		</div>
@@ -219,7 +218,6 @@
                 <ul>
                     <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
                     <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
-                    <li><a href="https://photos.thecave.com/">More Photos</a></li>
                 </ul>
             </div>
         </div>
@@ -277,7 +275,7 @@
                     </li>
                     
                 </ul>
-                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2019</p>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2020</p>
             </div>
         </div>
     </div>
