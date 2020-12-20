@@ -5,9 +5,26 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 20 Dec 2020 14:56:43 +0000</pubDate>
-    <lastBuildDate>Sun, 20 Dec 2020 14:56:43 +0000</lastBuildDate>
+    <pubDate>Sun, 20 Dec 2020 15:22:22 +0000</pubDate>
+    <lastBuildDate>Sun, 20 Dec 2020 15:22:22 +0000</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>First Blog Post of 2020</title>
+        <description>&lt;p&gt;Wow! It’s nearly the end of 2020 and I’m making my first blog post of the year. It’s been more than a year since my last post. There’s no excuse for going this long without a post, but I have one anyways. I broke my local install in &lt;a href=&quot;https://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;, which is the software I use to generate this website. And I’ve been too busy with work to make the time to fix the issues. But I started a 2-week vacation yesterday and thought, “I should fix my blog site.”&lt;/p&gt;
+
+&lt;p&gt;Fixing the software issues that prevented me from blogging solves only half of the problem. The other half that I must solve is actually blogging. Taking the time to write something and post it here. Or post a picture. I have lots of pictures from 2020, but I haven’t posted a single one here.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 20 Dec 2020 15:10:50 +0000</pubDate>
+        <link>http://www.thecave.com/2020/12/20/first-blog-post-of-2020/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2020/12/20/first-blog-post-of-2020/</guid>
+        
+        <category>blog</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title>Happy Firecracker Day</title>
@@ -221,26 +238,6 @@
         <category>stowe</category>
         
         <category>walk</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;Merry Christmas. &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-12-25-21-38-IWhNzWpTRAW9GDkLgGiY.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-12-25-21-38-IWhNzWpTRAW9GDkLgGiY.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 26 Dec 2018 02:40:02 +0000</pubDate>
-        <link>http://www.thecave.com/2018/12/26/merry-christmas-2018/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2018/12/26/merry-christmas-2018/</guid>
-        
-        <category>christmas</category>
-        
-        <category>micropost</category>
-        
-        <category>photo</category>
         
         
         <category>personal</category>

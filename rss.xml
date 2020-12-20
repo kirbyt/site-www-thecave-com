@@ -5,10 +5,21 @@
         <description>thecave | Kirby Turner's Blog - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2020-12-20T14:56:43+00:00</lastBuildDate>
-        <pubDate>2020-12-20T14:56:43+00:00</pubDate>
+        <lastBuildDate>2020-12-20T15:22:22+00:00</lastBuildDate>
+        <pubDate>2020-12-20T15:22:22+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>First Blog Post of 2020</title>
+                <description>&lt;p&gt;Wow! It’s nearly the end of 2020 and I’m making my first blog post of the year. It’s been more than a year since my last post. There’s no excuse for going this long without a post, but I have one anyways. I broke my local install in &lt;a href=&quot;https://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;, which is the software I use to generate this website. And I’ve been too busy with work to make the time to fix the issues. But I started a 2-week vacation yesterday and thought, “I should fix my blog site.”&lt;/p&gt;
+
+&lt;p&gt;Fixing the software issues that prevented me from blogging solves only half of the problem. The other half that I must solve is actually blogging. Taking the time to write something and post it here. Or post a picture. I have lots of pictures from 2020, but I haven’t posted a single one here.&lt;/p&gt;
+</description>
+                <link>http://www.thecave.com/2020/12/20/first-blog-post-of-2020/</link>
+                <guid>http://www.thecave.com/2020/12/20/first-blog-post-of-2020</guid>
+                <pubDate>2020-12-20T15:10:50+00:00</pubDate>
+        </item>
 
         <item>
                 <title>Happy Firecracker Day</title>
@@ -198,16 +209,6 @@
                 <link>http://www.thecave.com/2018/11/18/first-day-of-the-season/</link>
                 <guid>http://www.thecave.com/2018/11/18/first-day-of-the-season</guid>
                 <pubDate>2018-11-18T16:51:22+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;Took a walk in the woods today. &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-11-14-21-49-psjkeRQKVknS13czCd7Y.JPG&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-11-14-21-49-psjkeRQKVknS13czCd7Y.JPG&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2018/11/15/walk-in-the-woods/</link>
-                <guid>http://www.thecave.com/2018/11/15/walk-in-the-woods</guid>
-                <pubDate>2018-11-15T02:50:23+00:00</pubDate>
         </item>
 
 
