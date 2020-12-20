@@ -9,7 +9,6 @@
     <meta name="author" content="Kirby Turner">
     
     <meta name="description" content="Before doing some work today I decided to make some improvements to my blog site. I thought I would be playing with the site for only an hour or so, but instead it took most of the day. Typical when dealing with programming issues in an unfamiliar environment.
-
 ">
     
 
@@ -17,7 +16,6 @@
     <meta property="og:title" content="Made Some Fixes To The Blog Site" />
     
     <meta name="og:description" content="Before doing some work today I decided to make some improvements to my blog site. I thought I would be playing with the site for only an hour or so, but instead it took most of the day. Typical when dealing with programming issues in an unfamiliar environment.
-
 ">
     
     <meta property="og:type" content="article" />
@@ -131,11 +129,11 @@
 
 <p>This site, as well as <a href="http://blog.whitepeaksoftware.com">my company blog site</a>, uses <a href="http://jekyllrb.com">Jekyll</a> to generate a static HTML version of the site that is in turned hosted on a server for your viewing pleasure. I noticed a while back that categories with embedded spaces, such as <em>cross post</em>, weren’t accessible from the categories list. The embedded space was being replaced with a dash. Also, the RSS feed was not including the time of the post, only the date. So I set out to fix these problems.</p>
 
-<p>I started with the time problem first. I learned that Jekyll does not include the time of the post unless you include the <code class="highlighter-rouge">date</code> parameter in the front matter. Adding the parameter is easy enough to do, but I decided I wanted to make it even easier for me. So I created a Rakefile that has a <code class="highlighter-rouge">new_post</code> task. I could have used an existing Rakefile, maybe even the one from Octopress, but I decided it would be more fun to write my own. Turns out writing a Rakefile is pretty simple, and I had my <code class="highlighter-rouge">new_post</code> task working quickly.</p>
+<p>I started with the time problem first. I learned that Jekyll does not include the time of the post unless you include the <code class="language-plaintext highlighter-rouge">date</code> parameter in the front matter. Adding the parameter is easy enough to do, but I decided I wanted to make it even easier for me. So I created a Rakefile that has a <code class="language-plaintext highlighter-rouge">new_post</code> task. I could have used an existing Rakefile, maybe even the one from Octopress, but I decided it would be more fun to write my own. Turns out writing a Rakefile is pretty simple, and I had my <code class="language-plaintext highlighter-rouge">new_post</code> task working quickly.</p>
 
-<p>The <code class="highlighter-rouge">new_post</code> task I wrote create a new markdown file for the post. The task also generates the YAML front matter for the post including the <code class="highlighter-rouge">date</code> parameter with the current local time. This solves my time problem in the RSS feed for new post. I thought about making a fix for older post, but I decided it wasn’t worth the effort.</p>
+<p>The <code class="language-plaintext highlighter-rouge">new_post</code> task I wrote create a new markdown file for the post. The task also generates the YAML front matter for the post including the <code class="language-plaintext highlighter-rouge">date</code> parameter with the current local time. This solves my time problem in the RSS feed for new post. I thought about making a fix for older post, but I decided it wasn’t worth the effort.</p>
 
-<p>Using the Rakefile to create a new post makes so much sense that I decided to add a <code class="highlighter-rouge">deploy</code> task the Rakefile. I’ve been using a shell script I wrote a few years ago to generate the Jekyll site then commit it to the <em>gh-pages</em> branch of the site’s git <a href="https://github.com/kirbyt/site-www-thecave-com">repo</a>. I thought it would be a fun exercise to re-implement this in the Rakefile. At the same time I decided to change how the files are committed to the branch. Instead of working from a single local git repo, I decided to clone the repo to a second <em>_deploy</em> directory, then copy the <em>_site</em> files to that directory. Turns out this was fairly simple to do as well.</p>
+<p>Using the Rakefile to create a new post makes so much sense that I decided to add a <code class="language-plaintext highlighter-rouge">deploy</code> task the Rakefile. I’ve been using a shell script I wrote a few years ago to generate the Jekyll site then commit it to the <em>gh-pages</em> branch of the site’s git <a href="https://github.com/kirbyt/site-www-thecave-com">repo</a>. I thought it would be a fun exercise to re-implement this in the Rakefile. At the same time I decided to change how the files are committed to the branch. Instead of working from a single local git repo, I decided to clone the repo to a second <em>_deploy</em> directory, then copy the <em>_site</em> files to that directory. Turns out this was fairly simple to do as well.</p>
 
 <p>With that work out of the way I turned my focus to the categories name problem. Turns out it was caused by a space replacement in the Jekyll plugin I use to generate the categories list. That was the easiest, fastest fix of the day.</p>
 
@@ -161,21 +159,25 @@
                     <h3>Related Articles</h3>
                     <ul>
                     
-                        <li><a href="/2015/09/21/tags-and-categories/">Tags And Categories</a></li>
+                        <li><a href="/2019/07/05/happy-firecracker-day/">Happy Firecracker Day</a></li>
                     
-                        <li><a href="/2015/07/14/redirect-jekyll-site-to-https-on-openshift/">Redirect Jekyll Site To HTTPS On OpenShift</a></li>
+                        <li><a href="/2019/04/10/in-the-notch/">In The Notch</a></li>
                     
-                        <li><a href="/2017/04/21/how-i-post-to-my-jekyll-site-using-my-iphone/">How I post to my Jekyll site using my iPhone</a></li>
+                        <li><a href="/2019/04/03/one-and-done/">One And Done</a></li>
                     
-                        <li><a href="/2015/02/17/new-site-theme/">New Site Theme</a></li>
+                        <li><a href="/2019/03/18/in-the-woods/">Spent some time in the woods this...</a></li>
                     
-                        <li><a href="/2015/02/04/hey-local-retail-stores-update-your-website/">Hey Local Retail Stores, Update Your Website</a></li>
+                        <li><a href="/2019/02/19/water-crossing/">Had a bit of wading while snowshoeing...</a></li>
                     
-                        <li><a href="/2015/01/15/new-kirbyturnercom-site/">New kirbyturner.com Site</a></li>
+                        <li><a href="/2019/02/19/heading-into-the-notch/">Heading into the Notch. </a></li>
                     
-                        <li><a href="/2015/01/07/checkout-the-new-rowan-t-site/">Checkout The New Rowan T Site</a></li>
+                        <li><a href="/2019/01/12/snowshoe-adventure/">A snowshoe adventure after getting annoyed at...</a></li>
                     
-                        <li><a href="/2007/05/18/product-website-or-company-website/">Product Website or Company Website</a></li>
+                        <li><a href="/2019/01/03/morning-hike-in-the-woods/">  </a></li>
+                    
+                        <li><a href="/2018/12/26/afternoon-walk/">Afternoon walk to burn off calories from...</a></li>
+                    
+                        <li><a href="/2018/12/26/merry-christmas-2018/">Merry Christmas. </a></li>
                     
                     </ul>
                 
@@ -211,31 +213,23 @@
                 <h3>Recent Articles</h3>
                 <ul>
                 
-                <li><a href="/2018/03/20/sunset/" title="">On top of Mount Mansfield watching the...</a></li>
+                <li><a href="/2019/07/05/happy-firecracker-day/" title="Happy Firecracker Day">Happy Firecracker Day</a></li>
                 
-                <li><a href="/2018/03/04/disney-world-trip/" title="">Enjoying our spur-of-the-moment trip to Disney World...</a></li>
+                <li><a href="/2019/04/10/in-the-notch/" title="In The Notch">In The Notch</a></li>
                 
-                <li><a href="/2018/03/01/my-first-perfect-month/" title="">My first perfect month. Closed my rings...</a></li>
+                <li><a href="/2019/04/03/one-and-done/" title="One And Done">One And Done</a></li>
                 
-                <li><a href="/2018/01/28/first-snowboard-competition/" title="First Snowboard Competition">First Snowboard Competition</a></li>
+                <li><a href="/2019/03/18/in-the-woods/" title="">Spent some time in the woods this...</a></li>
                 
-                <li><a href="/2018/01/11/stowe-january-3-2018/" title="Stowe, January 3, 2018">Stowe, January 3, 2018</a></li>
+                <li><a href="/2019/02/19/water-crossing/" title="">Had a bit of wading while snowshoeing...</a></li>
                 
-                </ul>                
+                </ul>
             </div>
             <div class="col-md-5 col-md-offset-1 col-xs-12">
                 <h3>Other Sites</h3>
                 <ul>
-<!--                     
-                    <li><a href="http://photos.thecave.com/">And More Photos</a></li>
-                    <li><a href="http://www.rowanturner.net/">Rowan Turner</a></li>
- -->                    
                     <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
                     <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
-                    <li><a href="http://www.whitepeaksoftware.com/">White Peak Software</a></li>
-<!--                     
-                    <li><a href="http://www.peakappcare.com/">Peak App Care</a></li>
- -->                
                 </ul>
             </div>
         </div>
@@ -293,7 +287,7 @@
                     </li>
                     
                 </ul>
-                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2018</p>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2020</p>
             </div>
         </div>
     </div>
@@ -307,19 +301,6 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="/js/clean-blog.min.js "></script>
-
-<!-- Google -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-167605-3', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
 
 
 </body>
