@@ -28,6 +28,10 @@ related_posts_count: 10 # Number of related articles to display.
 
 permalink: /:year/:month/:day/:title/
 
+jekyll-archives:
+  enabled: [categories, tags]
+  layout: archive
+
 # Category plugin (https://github.com/recurser/jekyll-plugins)
 category_dir: category
 
@@ -36,4 +40,9 @@ tag_dir: tag
 exclude: [Rakefile, readme.md, bitrise.yml, Gemfile, Gemfile.lock]
 include: [.nojekyll, keybase.txt]
 
-gems: [jekyll-paginate]
+plugins:
+  - jekyll-feed
+  - jekyll-archives
+  - jekyll-paginate
+
+

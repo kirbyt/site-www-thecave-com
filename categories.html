@@ -6,12 +6,22 @@ image: "img/bg-05.jpg"
 ---
 <h2>Categories</h2>
 <ul>
-    {% category_list %}
+	{% assign category_list = site.categories | sort %}
+	{% for category in category_list %}
+      {% assign category_url = site.category_dir | append: '/' | append: category[0] | uri_escape | downcase %}
+	  <li><a href="{{ category_url | relative_url }}">{{ category[0] }} ({{ category[1].size }})</a></li>
+	{% endfor %}	
+    <!-- { category_list %} -->
 </ul>
 <p>&nbsp;</p>
 
 <h2>Tags</h2>
 <ul>
-    {% tag_list %}
+ 	{% assign tag_list = site.tags | sort %}
+	{% for tag in tag_list %}
+      {% assign tag_url = site.tag_dir | append: '/' | append: tag[0] | replace: " ", "-" | uri_escape | downcase %}
+	  <li><a href="{{ tag_url | relative_url }}">{{ tag[0] }} ({{ tag[1].size }})</a></li>
+	{% endfor %}	
+	<!-- { tag_list %} -->
 </ul>
 <p>&nbsp;</p>

@@ -2,7 +2,7 @@
 layout: post
 title: 'Hiking the Long Trail Division 1'
 category: personal
-tags: [hiking, long trail, pictures]
+tags: [hiking, long-trail, pictures]
 ---
 
 <a href="http://photos.thecave.com/gallery/6462530_g93i8/1/409902560_U4g2h"><img src="http://photos.thecave.com/photos/409902136_ypvrA-Th.jpg" align="left" height="150" width="150" border="0" vspace="6" hspace="6" /></a>
