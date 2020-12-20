@@ -2,7 +2,7 @@
 layout: post
 title: 'Back from the Long Trail Hike'
 category: personal
-tags: [hiking, camping, travel, long trail]
+tags: [hiking, camping, travel, long-trail]
 ---
 [<img src="http://photos.thecave.com/Trips/Hikes/Long-Trail-Thru-Hike-2012/i-2xkDqK9/0/Th/IMG0208-Th.jpg" alt="" border="0" class="alignleft" />][gallery] My southbound hike of the Long Trail didn't go as planned. I had to stop after 13 days due to a knee injury. As I said in a tweet, “Th-Th-Th-Th-Th…That’s all, folks. I’m not continuing the hike due to constant pain that has zapped all the fun out of the journey.”
 I’m disappointed that I wasn’t able to hike the trail end to end, but I’m glad I at least tried it. And I will be back next year to complete the remaining 182 miles.

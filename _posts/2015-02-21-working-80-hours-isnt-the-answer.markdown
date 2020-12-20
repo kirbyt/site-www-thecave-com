@@ -3,7 +3,7 @@ layout: post
 title: "Working 80+ Hours Isn't The Answer"
 date: 2015-02-21 07:41:24 -0500
 category: business
-tags: [life, indie life, long trail, hiking, videos]
+tags: [life, indie life, long-trail, hiking, videos]
 ---
 A founder, or maybe the person is a manager type, asked on Quora, "[How do you make programmers work 60-80 hours per week?][1]" While the question is a pathetic one, the answers that follow, especially the first one, are worth a read. And you should certainly read the answers if you happen to be one of those sad founders/manager types who wants their of programmers to work long hours. In short, if you are trying to force your programmers to work 60, 80 or more hours per week, then you are doing it wrong. 
 
