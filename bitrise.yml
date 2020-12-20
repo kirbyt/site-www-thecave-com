@@ -16,6 +16,8 @@ workflows:
         - content: |-
             #!/bin/bash
             set -ex
+            # See: https://bundler.io/blog/2019/01/04/an-update-on-the-bundler-2-release.html
+            sudo gem install bundler -v '2.2.2'
             sudo bundle install
     - script:
         title: Deploy to Github Pages
