@@ -5,9 +5,28 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 20 Dec 2020 15:42:10 +0000</pubDate>
-    <lastBuildDate>Sun, 20 Dec 2020 15:42:10 +0000</lastBuildDate>
+    <pubDate>Sun, 20 Dec 2020 16:45:38 +0000</pubDate>
+    <lastBuildDate>Sun, 20 Dec 2020 16:45:38 +0000</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>Snow Lights</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.flickr.com/photos/kirbyturner/50740369621&quot;&gt;&lt;img src=&quot;https://live.staticflickr.com/65535/50740369621_c3b514f9cf_c.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 20 Dec 2020 16:06:08 +0000</pubDate>
+        <link>http://www.thecave.com/2020/12/20/snow-lights/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2020/12/20/snow-lights/</guid>
+        
+        <category>photo</category>
+        
+        <category>snow</category>
+        
+        <category>winter</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title>First Blog Post of 2020</title>
@@ -214,30 +233,6 @@
         <category>vermont</category>
         
         <category>winter</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;Afternoon walk to burn off calories from all the food I’ve eaten in the last 24 hours. &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-12-25-21-45-E8Eo8xKroOITeAVhFPsS.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-12-25-21-45-E8Eo8xKroOITeAVhFPsS.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-12-25-21-47-D6FwwszJLzHcFSCSwGPi.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-12-25-21-47-D6FwwszJLzHcFSCSwGPi.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 26 Dec 2018 02:48:10 +0000</pubDate>
-        <link>http://www.thecave.com/2018/12/26/afternoon-walk/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2018/12/26/afternoon-walk/</guid>
-        
-        <category>micropost</category>
-        
-        <category>photo</category>
-        
-        <category>snow</category>
-        
-        <category>stowe</category>
-        
-        <category>walk</category>
         
         
         <category>personal</category>
