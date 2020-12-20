@@ -69,7 +69,7 @@ layout: default
                     <h3>Related Articles</h3>
                     <ul>
                     {% for post in site.related_posts limit: site.related_posts_count %}
-                        <li><a href="{{ post.url }}">{% unless post.title == '' or post.title == null %}{{ post.title }}{% else %}{% capture excerpt %}{{ post.excerpt | markdownify | strip_html | strip_newlines | truncatewords: 7 }}{% endcapture %}{% unless excerpt == '' or excerpt == null %}{{ excerpt }}{% else %}{{ post.date | date: "%B %-d, %Y at %r" }}{% endunless %}{% endunless %}</a></li>
+                        <li><a href="{{ post.url }}">{% unless post.title == '' or post.title == null %}{{ post.title }}{% else %}{% capture excerpt %}{{ post.excerpt | markdownify | strip_html | strip_newlines | strip | truncatewords: 7 }}{% endcapture %}{% unless excerpt == '' or excerpt == null %}{{ excerpt }}{% else %}{{ post.date | date: "%B %-d, %Y at %r" }}{% endunless %}{% endunless %}</a></li>
                     {% endfor %}
                     </ul>
                 {% endif %}
