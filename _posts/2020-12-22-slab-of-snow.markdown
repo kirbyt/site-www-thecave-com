@@ -1,0 +1,11 @@
+---
+layout: post
+title: "slab of snow"
+date: 2020-12-22 08:23:28 -0500
+category: personal
+tags: [winter, snow]
+---
+
+[![](https://live.staticflickr.com/65535/50747242612_f80f20fc2c_c_d.jpg)](https://www.flickr.com/photos/kirbyturner/50747242612)
+
+Many houses have icicles, but not ours. We have slabs of snow slowly sliding off our metal roof.
