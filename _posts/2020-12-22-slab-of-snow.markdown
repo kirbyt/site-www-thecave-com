@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "slab of snow"
+title: "Slab of Snow"
 date: 2020-12-22 08:23:28 -0500
 category: personal
 tags: [winter, snow]
