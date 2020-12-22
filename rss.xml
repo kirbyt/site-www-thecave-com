@@ -5,10 +5,21 @@
         <description>thecave | Kirby Turner's Blog - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2020-12-20T16:45:38+00:00</lastBuildDate>
-        <pubDate>2020-12-20T16:45:38+00:00</pubDate>
+        <lastBuildDate>2020-12-22T13:40:39+00:00</lastBuildDate>
+        <pubDate>2020-12-22T13:40:39+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Slab of Snow</title>
+                <description>&lt;p&gt;&lt;a href=&quot;https://www.flickr.com/photos/kirbyturner/50747242612&quot;&gt;&lt;img src=&quot;https://live.staticflickr.com/65535/50747242612_f80f20fc2c_c_d.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Many houses have icicles, but not ours. We have slabs of snow slowly sliding off our metal roof.&lt;/p&gt;
+</description>
+                <link>http://www.thecave.com/2020/12/22/slab-of-snow/</link>
+                <guid>http://www.thecave.com/2020/12/22/slab-of-snow</guid>
+                <pubDate>2020-12-22T13:23:28+00:00</pubDate>
+        </item>
 
         <item>
                 <title>Snow Lights</title>
@@ -198,16 +209,6 @@
                 <link>http://www.thecave.com/2018/11/28/math-is-hard/</link>
                 <guid>http://www.thecave.com/2018/11/28/math-is-hard</guid>
                 <pubDate>2018-11-28T02:38:05+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;My wife joined me for a couple of runs on the hill this morning. &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-11-19-14-41-lxIw1r0GVbVj8aAMz6qs.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-11-19-14-41-lxIw1r0GVbVj8aAMz6qs.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2018/11/19/my-wife-joined-me/</link>
-                <guid>http://www.thecave.com/2018/11/19/my-wife-joined-me</guid>
-                <pubDate>2018-11-19T19:44:38+00:00</pubDate>
         </item>
 
 

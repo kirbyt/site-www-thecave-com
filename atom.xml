@@ -4,7 +4,7 @@
   <title><![CDATA[thecave | Kirby Turner's Blog]]></title>
   <link href="http://www.thecave.com/atom.xml" rel="self"/>
   <link href="http://www.thecave.com/"/>
-  <updated>2020-12-20T16:45:38+00:00</updated>
+  <updated>2020-12-22T13:40:39+00:00</updated>
   <id>http://www.thecave.com/</id>
   <author>
     <name><![CDATA[Kirby Turner]]></name>
@@ -12,6 +12,18 @@
   </author>
   <rights>Copyright (c) 2002-2020 Kirby Turner</rights>
   
+  
+  <entry>
+    <title type="html"><![CDATA[Slab of Snow]]></title>
+    <link href="http://www.thecave.com/2020/12/22/slab-of-snow/"/>
+    <published>2020-12-22T13:23:28+00:00</published>
+    <updated>2020-12-22T13:23:28+00:00</updated>
+    <id>http://www.thecave.com/2020/12/22/slab-of-snow</id>
+    <content type="html"><![CDATA[<p><a href="https://www.flickr.com/photos/kirbyturner/50747242612"><img src="https://live.staticflickr.com/65535/50747242612_f80f20fc2c_c_d.jpg" alt="" /></a></p>
+
+<p>Many houses have icicles, but not ours. We have slabs of snow slowly sliding off our metal roof.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Snow Lights]]></title>
@@ -218,17 +230,6 @@
     <updated>2018-11-28T02:38:05+00:00</updated>
     <id>http://www.thecave.com/2018/11/28/math-is-hard</id>
     <content type="html"><![CDATA[<p>The math seems to be a bit off. Guess it’s true, math is hard. <a href="https://thecave-com.s3.amazonaws.com/Photo-2018-11-27-21-36-IUFmwa143m1aGynR8fPF.jpg"><img src="https://thecave-com.s3.amazonaws.com/Photo-2018-11-27-21-36-IUFmwa143m1aGynR8fPF.jpg" alt="" /></a></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://www.thecave.com/2018/11/19/my-wife-joined-me/"/>
-    <published>2018-11-19T19:44:38+00:00</published>
-    <updated>2018-11-19T19:44:38+00:00</updated>
-    <id>http://www.thecave.com/2018/11/19/my-wife-joined-me</id>
-    <content type="html"><![CDATA[<p>My wife joined me for a couple of runs on the hill this morning. <a href="https://thecave-com.s3.amazonaws.com/Photo-2018-11-19-14-41-lxIw1r0GVbVj8aAMz6qs.jpeg"><img src="https://thecave-com.s3.amazonaws.com/Photo-2018-11-19-14-41-lxIw1r0GVbVj8aAMz6qs.jpeg" alt="" /></a></p>
 
 ]]></content>
   </entry>

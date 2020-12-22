@@ -5,9 +5,28 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 20 Dec 2020 16:45:38 +0000</pubDate>
-    <lastBuildDate>Sun, 20 Dec 2020 16:45:38 +0000</lastBuildDate>
+    <pubDate>Tue, 22 Dec 2020 13:40:39 +0000</pubDate>
+    <lastBuildDate>Tue, 22 Dec 2020 13:40:39 +0000</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>Slab of Snow</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.flickr.com/photos/kirbyturner/50747242612&quot;&gt;&lt;img src=&quot;https://live.staticflickr.com/65535/50747242612_f80f20fc2c_c_d.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Many houses have icicles, but not ours. We have slabs of snow slowly sliding off our metal roof.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 22 Dec 2020 13:23:28 +0000</pubDate>
+        <link>http://www.thecave.com/2020/12/22/slab-of-snow/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2020/12/22/slab-of-snow/</guid>
+        
+        <category>snow</category>
+        
+        <category>winter</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title>Snow Lights</title>
@@ -203,34 +222,6 @@
         <category>photo</category>
         
         <category>snowshoe</category>
-        
-        <category>winter</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-01-02-21-26-Qxi8Xsao97VJiDONfl1L.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-01-02-21-26-Qxi8Xsao97VJiDONfl1L.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-01-02-21-26-blO3Szk7rdpE2NZbbKq1.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-01-02-21-26-blO3Szk7rdpE2NZbbKq1.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-01-02-21-27-pH4JO2Gx7MoUJcldzmtS.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-01-02-21-27-pH4JO2Gx7MoUJcldzmtS.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-01-02-21-27-hcu3TkcwKN3ZtTyVmtqU.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-01-02-21-27-hcu3TkcwKN3ZtTyVmtqU.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 03 Jan 2019 02:28:38 +0000</pubDate>
-        <link>http://www.thecave.com/2019/01/03/morning-hike-in-the-woods/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2019/01/03/morning-hike-in-the-woods/</guid>
-        
-        <category>long-trail</category>
-        
-        <category>micropost</category>
-        
-        <category>photo</category>
-        
-        <category>snowshoeing</category>
-        
-        <category>stowe</category>
-        
-        <category>vermont</category>
         
         <category>winter</category>
         
