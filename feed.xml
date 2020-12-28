@@ -5,9 +5,28 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 23 Dec 2020 13:43:48 +0000</pubDate>
-    <lastBuildDate>Wed, 23 Dec 2020 13:43:48 +0000</lastBuildDate>
+    <pubDate>Mon, 28 Dec 2020 00:20:23 +0000</pubDate>
+    <lastBuildDate>Mon, 28 Dec 2020 00:20:23 +0000</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>A Moonlit Night</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.flickr.com/photos/kirbyturner/50768910037&quot;&gt;&lt;img src=&quot;https://live.staticflickr.com/65535/50768910037_c175a9cf07_c_d.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 28 Dec 2020 00:15:21 +0000</pubDate>
+        <link>http://www.thecave.com/2020/12/28/a-moonlit-night/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2020/12/28/a-moonlit-night/</guid>
+        
+        <category>house</category>
+        
+        <category>photo</category>
+        
+        <category>snow</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title>Slab of Snow</title>
@@ -202,28 +221,6 @@
         <category>stowe</category>
         
         <category>vermont</category>
-        
-        <category>winter</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;A snowshoe adventure after getting annoyed at the local ski resort. &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-01-11-23-15-C2wG2Sxd9lODjVShbhrZ.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-01-11-23-15-C2wG2Sxd9lODjVShbhrZ.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 12 Jan 2019 04:17:07 +0000</pubDate>
-        <link>http://www.thecave.com/2019/01/12/snowshoe-adventure/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2019/01/12/snowshoe-adventure/</guid>
-        
-        <category>micropost</category>
-        
-        <category>photo</category>
-        
-        <category>snowshoe</category>
         
         <category>winter</category>
         

@@ -5,10 +5,19 @@
         <description>thecave | Kirby Turner's Blog - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2020-12-23T13:43:48+00:00</lastBuildDate>
-        <pubDate>2020-12-23T13:43:48+00:00</pubDate>
+        <lastBuildDate>2020-12-28T00:20:23+00:00</lastBuildDate>
+        <pubDate>2020-12-28T00:20:23+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>A Moonlit Night</title>
+                <description>&lt;p&gt;&lt;a href=&quot;https://www.flickr.com/photos/kirbyturner/50768910037&quot;&gt;&lt;img src=&quot;https://live.staticflickr.com/65535/50768910037_c175a9cf07_c_d.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+                <link>http://www.thecave.com/2020/12/28/a-moonlit-night/</link>
+                <guid>http://www.thecave.com/2020/12/28/a-moonlit-night</guid>
+                <pubDate>2020-12-28T00:15:21+00:00</pubDate>
+        </item>
 
         <item>
                 <title>Slab of Snow</title>
@@ -199,16 +208,6 @@
                 <link>http://www.thecave.com/2018/12/04/the-fog-lifted/</link>
                 <guid>http://www.thecave.com/2018/12/04/the-fog-lifted</guid>
                 <pubDate>2018-12-04T01:59:04+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;The math seems to be a bit off. Guess it’s true, math is hard. &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-11-27-21-36-IUFmwa143m1aGynR8fPF.jpg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-11-27-21-36-IUFmwa143m1aGynR8fPF.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2018/11/28/math-is-hard/</link>
-                <guid>http://www.thecave.com/2018/11/28/math-is-hard</guid>
-                <pubDate>2018-11-28T02:38:05+00:00</pubDate>
         </item>
 
 
