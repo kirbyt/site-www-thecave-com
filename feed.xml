@@ -5,9 +5,49 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 28 Dec 2020 00:20:23 +0000</pubDate>
-    <lastBuildDate>Mon, 28 Dec 2020 00:20:23 +0000</lastBuildDate>
+    <pubDate>Wed, 06 Jan 2021 20:38:41 +0000</pubDate>
+    <lastBuildDate>Wed, 06 Jan 2021 20:38:41 +0000</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>My Private Snowshoe Trail</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.flickr.com/photos/kirbyturner/50808275832&quot;&gt;&lt;img src=&quot;https://live.staticflickr.com/65535/50808275832_f2387b42fd_c_d.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This is my happy place.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 06 Jan 2021 20:28:00 +0000</pubDate>
+        <link>http://www.thecave.com/2021/01/06/my-private-snowshoe-trail/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2021/01/06/my-private-snowshoe-trail/</guid>
+        
+        <category>photo</category>
+        
+        <category>snowshoe</category>
+        
+        <category>winter</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
+    
+      <item>
+        <title>Beautiful View in Stowe This Morning</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.flickr.com/photos/kirbyturner/50808275462&quot;&gt;&lt;img src=&quot;https://live.staticflickr.com/65535/50808275462_6736e2c92a_c_d.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 04 Jan 2021 20:31:52 +0000</pubDate>
+        <link>http://www.thecave.com/2021/01/04/beautiful-view-in-stowe-this-morning/</link>
+        <guid isPermaLink="true">http://www.thecave.com/2021/01/04/beautiful-view-in-stowe-this-morning/</guid>
+        
+        <category>photo</category>
+        
+        <category>stowe</category>
+        
+        <category>winter</category>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title>A Moonlit Night</title>
@@ -173,56 +213,6 @@
         <category>winter</category>
         
         <category>woods</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;Had a bit of wading while snowshoeing this afternoon. &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-02-18-20-54-sZHcJ3Z74qUzLB6NEz2O.JPG&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-02-18-20-54-sZHcJ3Z74qUzLB6NEz2O.JPG&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 19 Feb 2019 02:00:15 +0000</pubDate>
-        <link>http://www.thecave.com/2019/02/19/water-crossing/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2019/02/19/water-crossing/</guid>
-        
-        <category>micropost</category>
-        
-        <category>photo</category>
-        
-        <category>snowshoeing</category>
-        
-        <category>stowe</category>
-        
-        <category>vermont</category>
-        
-        
-        <category>personal</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;Heading into the Notch. &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-02-18-20-50-0iiqToekBHN1bzMybeyn.JPG&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2019-02-18-20-50-0iiqToekBHN1bzMybeyn.JPG&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 19 Feb 2019 01:52:22 +0000</pubDate>
-        <link>http://www.thecave.com/2019/02/19/heading-into-the-notch/</link>
-        <guid isPermaLink="true">http://www.thecave.com/2019/02/19/heading-into-the-notch/</guid>
-        
-        <category>micropost</category>
-        
-        <category>photo</category>
-        
-        <category>snowshoeing</category>
-        
-        <category>stowe</category>
-        
-        <category>vermont</category>
-        
-        <category>winter</category>
         
         
         <category>personal</category>

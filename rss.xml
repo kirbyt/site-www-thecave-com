@@ -5,10 +5,30 @@
         <description>thecave | Kirby Turner's Blog - </description>
         <link>http://www.thecave.com</link>
         <link>http://www.thecave.com</link>
-        <lastBuildDate>2020-12-28T00:20:23+00:00</lastBuildDate>
-        <pubDate>2020-12-28T00:20:23+00:00</pubDate>
+        <lastBuildDate>2021-01-06T20:38:41+00:00</lastBuildDate>
+        <pubDate>2021-01-06T20:38:41+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>My Private Snowshoe Trail</title>
+                <description>&lt;p&gt;&lt;a href=&quot;https://www.flickr.com/photos/kirbyturner/50808275832&quot;&gt;&lt;img src=&quot;https://live.staticflickr.com/65535/50808275832_f2387b42fd_c_d.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This is my happy place.&lt;/p&gt;
+</description>
+                <link>http://www.thecave.com/2021/01/06/my-private-snowshoe-trail/</link>
+                <guid>http://www.thecave.com/2021/01/06/my-private-snowshoe-trail</guid>
+                <pubDate>2021-01-06T20:28:00+00:00</pubDate>
+        </item>
+
+        <item>
+                <title>Beautiful View in Stowe This Morning</title>
+                <description>&lt;p&gt;&lt;a href=&quot;https://www.flickr.com/photos/kirbyturner/50808275462&quot;&gt;&lt;img src=&quot;https://live.staticflickr.com/65535/50808275462_6736e2c92a_c_d.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+                <link>http://www.thecave.com/2021/01/04/beautiful-view-in-stowe-this-morning/</link>
+                <guid>http://www.thecave.com/2021/01/04/beautiful-view-in-stowe-this-morning</guid>
+                <pubDate>2021-01-04T20:31:52+00:00</pubDate>
+        </item>
 
         <item>
                 <title>A Moonlit Night</title>
@@ -188,26 +208,6 @@
                 <link>http://www.thecave.com/2018/12/17/notch-road/</link>
                 <guid>http://www.thecave.com/2018/12/17/notch-road</guid>
                 <pubDate>2018-12-17T18:40:03+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;A beautiful day on the hill this morning. 🏂 &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-12-07-10-23-kgtJ98X3FBtKSeE9rjbP.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-12-07-10-23-kgtJ98X3FBtKSeE9rjbP.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2018/12/07/a-beautiful-morning/</link>
-                <guid>http://www.thecave.com/2018/12/07/a-beautiful-morning</guid>
-                <pubDate>2018-12-07T15:25:18+00:00</pubDate>
-        </item>
-
-        <item>
-                <title></title>
-                <description>&lt;p&gt;The fog lifted and the rain stopped. &lt;a href=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-12-03-20-57-QGuPBNc9TSlElZuQ0Isu.jpeg&quot;&gt;&lt;img src=&quot;https://thecave-com.s3.amazonaws.com/Photo-2018-12-03-20-57-QGuPBNc9TSlElZuQ0Isu.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-</description>
-                <link>http://www.thecave.com/2018/12/04/the-fog-lifted/</link>
-                <guid>http://www.thecave.com/2018/12/04/the-fog-lifted</guid>
-                <pubDate>2018-12-04T01:59:04+00:00</pubDate>
         </item>
 
 
