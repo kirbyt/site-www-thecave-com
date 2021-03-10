@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 'Goruck GR1 Review - First Impressions'
+title: 'GORUCK GR1 Review - First Impressions'
 category: personal
-tags: [gear]
+tags: [gear, backpack]
 ---
 
 <img src="/images/blog/2012-05-30-goruck.jpg" alt="IMG 6146" border="0" width="180" height="270" class="alignleft" />
-My <a href="https://www.goruckgear.com/Gear/Details/3">Goruck GR1 backpack</a> arrived today, and so far I'm very impressed with it. The construction of this bag is top notch, and the bag screams quality. I love the minimalistic look and it's low profile. It is a little stiff coming right out of the box, but it's already loosening up after packing and unpacking it a few times and wearing it around the house.
+My <a href="https://www.goruckgear.com/Gear/Details/3">GORUCK GR1 backpack</a> arrived today, and so far I'm very impressed with it. The construction of this bag is top notch, and the bag screams quality. I love the minimalistic look and it's low profile. It is a little stiff coming right out of the box, but it's already loosening up after packing and unpacking it a few times and wearing it around the house.
 
 I did a test run packing the GR1, loading it with the clothes (jeans, t-shirts, boxers, socks, rain jacket) and gear (iPad, MacBook Pro 15", cables, Bose headphones) I plan to take to San Francisco in a couple of weeks. The GR1 had plenty of space for my stuff with room to spare. The true test, of course, comes this weekend when I take it on a camping trip with Rowan.
 

@@ -1,11 +1,11 @@
 ---
 layout: post
-title: 'First Two Trips with Goruck GR1'
+title: 'First Two Trips with GORUCK GR1'
 category: personal
-tags: [gear, travel]
+tags: [gear, travel, backpack]
 ---
 
-I returned from my second trip using the GR1, and I can now say the <a href="https://www.goruckgear.com/Gear/Details/3">Goruck GR1</a> is now my favorite everyday backpack. My latest trip was to WWDC, and the GR1 kicked ass. I packed everything I needed for the week in the ruck, and I used it as my daypack each day at the conference. I especially like how slim the bag is even when stuffed full. I had no problems sliding it in and out from under the seat on the plane. And the zippers are quiet enough when opening and closing as to not disturb those sitting around me at the conference during talks.
+I returned from my second trip using the GR1, and I can now say the <a href="https://www.goruckgear.com/Gear/Details/3">GORUCK GR1</a> is now my favorite everyday backpack. My latest trip was to WWDC, and the GR1 kicked ass. I packed everything I needed for the week in the ruck, and I used it as my daypack each day at the conference. I especially like how slim the bag is even when stuffed full. I had no problems sliding it in and out from under the seat on the plane. And the zippers are quiet enough when opening and closing as to not disturb those sitting around me at the conference during talks.
 
 Here was my packing list for the conference:
 
