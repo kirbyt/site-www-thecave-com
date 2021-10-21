@@ -24,13 +24,16 @@ There are places available on AirBnB if you're into that sort of thing.
 
 <div  markdown="1" class="custom-list">
 - [Harrison's](http://www.harrisonsstowe.com): Favorite of Melanie and Kirby. Reservations recommended.
+- [Salute](https://www.salutevt.com): Family favorite. Best Italian food in town. Reservations recommended.
 - [Plate](http://www.platestowe.com)
-- [Junior's](http://www.juniorsatstowe.com): Family favorite. Best Italian food in town.
 - [Doc Ponds](https://www.docponds.com): A good place for après ski too.
+- [The Backyard](https://backyardvt.com/): Amazing tacos.
 - [Piecasso](http://www.piecasso.com)
 - [Von Trapp Brewing Bierhall](http://www.vontrappbrewing.com/bierhall.htm)
 - [The Bench](http://www.benchvt.com)
-- [Tres Amigo](https://www.tresamigosvt.com): Stowe's only Mexican restaurant.
+- [Ranch Camp](https://ranchcampvt.com/): Bikes. Beers. Burritos.
+- [Tres Amigo](https://www.tresamigosvt.com)
+- [More restaurants](https://gostowe.com/restaurants/)
 </div>
 
 ### Après Ski
@@ -40,9 +43,9 @@ You can also eat dinner at any of these Après Ski places.
 <div  markdown="1" class="custom-list">
 - [Matterhorn](https://matterhornbar.com): Best wings in town.
 - [Rimrock's](http://rimrocksmountaintavern.com/): Kirby's favorite watering hole.
+- [Lower Bar](https://www.lowerbarstowe.com)
 - [Cork](http://corkvt.com): For those who prefer wine over beer (though beer is still available)
 - [Hob Knob Inn](https://www.hobknobinn.com): Great place for the kids.
-- [Tap 25](http://www.tap25stowe.com)
 </div>
 
 ---
@@ -83,7 +86,7 @@ You can also eat dinner at any of these Après Ski places.
 - [Stowe Public House](https://stowepublichouse.com)
 - [Doc Ponds](https://www.docponds.com): Large selection of local beers.
 - [The Bench](http://www.benchvt.com): Nice selection of local beers.
-- [Tap 25](http://www.tap25stowe.com)
+- [Lower Bar](https://www.lowerbarstowe.com)
 </div>
 
 ### Nearby Stowe
@@ -98,4 +101,4 @@ You can also eat dinner at any of these Après Ski places.
 
 ---
 
-_Last updated: November 26, 2017_
+_Last updated: October 21, 2021_
