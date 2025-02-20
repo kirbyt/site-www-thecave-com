@@ -5,8 +5,8 @@
     <description>The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.</description>
     <link>http://www.thecave.com/</link>
     <atom:link href="http://www.thecave.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 20 Feb 2025 22:39:49 +0000</pubDate>
-    <lastBuildDate>Thu, 20 Feb 2025 22:39:49 +0000</lastBuildDate>
+    <pubDate>Thu, 20 Feb 2025 22:51:44 +0000</pubDate>
+    <lastBuildDate>Thu, 20 Feb 2025 22:51:44 +0000</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
     
       <item>
@@ -114,7 +114,7 @@
     
       <item>
         <title>Slab of Snow</title>
-        <description>&lt;p&gt;&lt;img src=&quot;http://cdn.thecave.com/images/blog/2020-12-22-slab-of-snow.jpg&quot; alt=&quot;A slab of snow hanging from the roof visible through a window.&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;https://5a53f94a81860336e697-1e2098ad951c28538f092cdf9cb1848d.ssl.cf2.rackcdn.com/images/blog/2020-12-22-slab-of-snow.jpg&quot; alt=&quot;A slab of snow hanging from the roof visible through a window.&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Many houses have icicles, but not ours. We have slabs of snow slowly sliding off our metal roof.&lt;/p&gt;
 </description>
