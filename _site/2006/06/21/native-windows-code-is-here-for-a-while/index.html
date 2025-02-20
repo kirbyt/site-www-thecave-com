@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kirby Turner">
+    
+    <meta name="description" content="I’m one of those rare developers who have moved from .NET managed code to native Windows code over the last year.  After living in the managed code world for years, I’ve returned to native windows coding and I find I am doing more and more native Win32 work each month for customers.  Sure the products White Peak Software is writing are native Windows applications but recently customers have been asking White Peak Software to develop native Win32 custom software.  The most common reason?  The desire to eliminate the dependency on the .NET Framework.  I often hear, “We don’t know if the server hosting your program will have the .NET Framework installed,” or “The end users do not have .NET installed on their desktops so we need something that will run without .NET.”Now don’t get me wrong.  I love .NET.  It’s a great framework, but there is something to be said for native Windows applications.  And there are still many cases where a native Windows application should be written instead of a .NET equivalent.  For instance, I feel .NET applications are ideal for in-house development typically found in corporations, and I feel commercial applications are typically better served as a native Windows application.  Of course there are always exceptions to my general thinking, hence the recent resurgence seen at White Peak Software in customer requests for custom native Windows applications.  Don’t believe me?  Think everything running on the Windows platform should be managed code?  Well, individuals at Microsoft know that native Windows applications are staying around for a while.  When the IE Lead Project Manager Christopher Vaughan was recently asked if components of the new IE7 would be implemented in managed code his response was, “No, IE7 remains purely native code throughout. I think as we develop future versions of IE you’ll see a larger focus on managed code, most likely to enable great plug-ins of that type for our platform. One thing people shouldn’t expect is that IE8 be re-written in managed code. For a variety of reasons, native code is where we’ll stay for a while.”
+">
+    
+
+    <!-- Facebook tags -->
+    <meta property="og:title" content="Native Windows Code Is Here for a While" />
+    
+    <meta name="og:description" content="I’m one of those rare developers who have moved from .NET managed code to native Windows code over the last year.  After living in the managed code world for years, I’ve returned to native windows coding and I find I am doing more and more native Win32 work each month for customers.  Sure the products White Peak Software is writing are native Windows applications but recently customers have been asking White Peak Software to develop native Win32 custom software.  The most common reason?  The desire to eliminate the dependency on the .NET Framework.  I often hear, “We don’t know if the server hosting your program will have the .NET Framework installed,” or “The end users do not have .NET installed on their desktops so we need something that will run without .NET.”Now don’t get me wrong.  I love .NET.  It’s a great framework, but there is something to be said for native Windows applications.  And there are still many cases where a native Windows application should be written instead of a .NET equivalent.  For instance, I feel .NET applications are ideal for in-house development typically found in corporations, and I feel commercial applications are typically better served as a native Windows application.  Of course there are always exceptions to my general thinking, hence the recent resurgence seen at White Peak Software in customer requests for custom native Windows applications.  Don’t believe me?  Think everything running on the Windows platform should be managed code?  Well, individuals at Microsoft know that native Windows applications are staying around for a while.  When the IE Lead Project Manager Christopher Vaughan was recently asked if components of the new IE7 would be implemented in managed code his response was, “No, IE7 remains purely native code throughout. I think as we develop future versions of IE you’ll see a larger focus on managed code, most likely to enable great plug-ins of that type for our platform. One thing people shouldn’t expect is that IE8 be re-written in managed code. For a variety of reasons, native code is where we’ll stay for a while.”
+">
+    
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/mr.kirbyturner" />
+    <meta property="og:image" content="http://www.thecave.com/img/bg-01.jpg" />
+    <meta property="og:url" content="http://www.thecave.com/2006/06/21/native-windows-code-is-here-for-a-while/" />
+    <meta property="og:site_name" content="thecave | Kirby Turner's Blog" />
+
+    <title>Native Windows Code Is Here for a While</title>
+
+    <link href="https://micro.blog/kirbyt" rel="me" />
+    <link rel="canonical" href="http://www.thecave.com/2006/06/21/native-windows-code-is-here-for-a-while/">
+    <link rel="alternate" type="application/atom+xml" title="thecave | Kirby Turner's Blog's Feed" href="http://www.thecave.com/feed.xml" />
+
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/clean-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- YouTube CSS -->
+    <link rel="stylesheet" href="/css/video.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">thecave</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                
+                <li>
+                    <a href="/about/">About</a>
+                </li>
+                
+                <li>
+                    <a href="/archive/">Archive</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/">Categories & Tags</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+    <!-- Post Header -->
+<header class="intro-header" style="background-image: url('/img/bg-01.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Native Windows Code Is Here for a While</h1>
+                    
+                    <span class="meta">Posted by Kirby Turner on June 21, 2006</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+				<p>I’m one of those rare developers who have moved from .NET managed code to native Windows code over the last year.  After living in the managed code world for years, I’ve returned to native windows coding and I find I am doing more and more native Win32 work each month for customers.  Sure the <a href="http://www.whitepeaksoftware.com/products.aspx">products White Peak Software</a> is writing are native Windows applications but recently customers have been <a href="http://www.whitepeaksoftware.com/custom_software.aspx">asking White Peak Software to develop native Win32 custom software</a>.  The most common reason?  The desire to eliminate the dependency on the .NET Framework.  <br /><br />I often hear, “We don’t know if the server hosting your program will have the .NET Framework installed,” or “The end users do not have .NET installed on their desktops so we need something that will run without .NET.”<br /><br />Now don’t get me wrong.  I love .NET.  It’s a great framework, but there is something to be said for native Windows applications.  And there are still many cases where a native Windows application should be written instead of a .NET equivalent.  For instance, I feel .NET applications are ideal for in-house development typically found in corporations, and I feel commercial applications are typically better served as a native Windows application.  Of course there are always exceptions to my general thinking, hence the <a href="http://suretalent.blogspot.com/2006/06/resurgence-in-native-windows.html">recent resurgence seen at White Peak Software</a> in customer requests for <a href="http://www.whitepeaksoftware.com/custom_software.aspx">custom native Windows applications</a>.  <br /><br />Don’t believe me?  Think everything running on the Windows platform should be managed code?  Well, individuals at Microsoft know that native Windows applications are staying around for a while.  When the IE Lead Project Manager Christopher Vaughan was recently asked <a href="http://www.matasano.com/log/332/matasano-interviews-ie-lead-pm-christopher-vaughan">if components of the new IE7 would be implemented in managed code</a> his response was, “No, IE7 remains purely native code throughout. I think as we develop future versions of IE you’ll see a larger focus on managed code, most likely to enable great plug-ins of that type for our platform. One thing people shouldn’t expect is that IE8 be re-written in managed code. For a variety of reasons, native code is where we’ll stay for a while.”</p>
+
+
+                <hr>
+
+                
+                    <p>
+                    Posted in <a class='category' href='/category/programming/'>programming</a>. 
+                    Tagged in <a class='tag' href='/tag/windows/'>windows</a>.
+                    </p>
+                
+
+                
+
+                
+                    <hr>
+                    <h3>Related Articles</h3>
+                    <ul>
+                    
+                        <li><a href="/2015/08/18/retiring-my-csv-editor/">Retiring My CSV Editor</a></li>
+                    
+                        <li><a href="/2007/07/29/cannot-resolve-machine-name-from-mac-os-x/">Cannot Resolve Machine Name From Mac OS X</a></li>
+                    
+                        <li><a href="/2007/07/29/how-to-access-a-windows-2003-file-share-from-mac-os-x/">How To Access a Windows 2003 File Share From Mac OS X</a></li>
+                    
+                        <li><a href="/2007/05/24/wuauclt-svchost-and-100-cpu-usgage/">wuauclt svchost and 100% CPU usgage</a></li>
+                    
+                        <li><a href="/2007/04/25/when-naming-a-configuration-file-program-exe-config-is-bad/">When Naming a Configuration File program.exe.config is Bad</a></li>
+                    
+                        <li><a href="/2007/04/16/powerpoint-2007-and-outlook-2003-dont-play-nice-together/">PowerPoint 2007 and Outlook 2003 Don't Play Nice Together</a></li>
+                    
+                        <li><a href="/2007/04/04/vista-reigstry-keys-and-uac/">VIsta, Reigstry Keys, and UAC</a></li>
+                    
+                        <li><a href="/2006/12/06/delphi-bds-live-templates-for-sql-server/">Delphi (BDS) Live Templates for SQL Server</a></li>
+                    
+                        <li><a href="/2006/07/28/windows-vista-to-support-7000-new-native-apis/">Windows Vista to Support 7,000+ New Native APIs</a></li>
+                    
+                        <li><a href="/2006/06/15/msdn-wiki/">MSDN Wiki</a></li>
+                    
+                    </ul>
+                
+
+                <hr>
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2006/06/18/microsofts-project-gildepath/" data-toggle="tooltip" data-placement="top" title="Microsoft's Project Gildepath">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2006/06/21/turning-off-html-formatting-in-bds2006/" data-toggle="tooltip" data-placement="top" title="Turning Off HTML Formatting in BDS2006">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<p>&nbsp;</p>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Recent Articles</h3>
+                <ul>
+                
+                <li><a href="/2021/03/10/my-backpacks/" title="My Backpacks">My Backpacks</a></li>
+                
+                <li><a href="/2021/01/06/my-private-snowshoe-trail/" title="My Private Snowshoe Trail">My Private Snowshoe Trail</a></li>
+                
+                <li><a href="/2021/01/04/beautiful-view-in-stowe-this-morning/" title="Beautiful View in Stowe This Morning">Beautiful View in Stowe This Morning</a></li>
+                
+                <li><a href="/2020/12/28/a-moonlit-night/" title="A Moonlit Night">A Moonlit Night</a></li>
+                
+                <li><a href="/2020/12/22/slab-of-snow/" title="Slab of Snow">Slab of Snow</a></li>
+                
+                </ul>
+            </div>
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Other Sites</h3>
+                <ul>
+                    <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
+                    <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br />
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://twitter.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="https://github.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="http://www.linkedin.com/in/kirbyturner/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://www.goodreads.com/kirbyt/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-stack-1x fa-inverse"><span style="font-family:helvetica;position: relative;top: -5px">g</span></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2025</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
+
+
+</body>
+
+</html>

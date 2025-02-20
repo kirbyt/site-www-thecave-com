@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kirby Turner">
+    
+    <meta name="description" content="Yesterday I talked about options for reporting errors (and statuses) from the server back to the Cross Post app. Later I came up with a third option, which I like the best…hosting the error reports on Cloud Files.
+
+">
+    
+
+    <!-- Facebook tags -->
+    <meta property="og:title" content="Reporting Errors in Cross Post Part 2" />
+    
+    <meta name="og:description" content="Yesterday I talked about options for reporting errors (and statuses) from the server back to the Cross Post app. Later I came up with a third option, which I like the best…hosting the error reports on Cloud Files.
+
+">
+    
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/mr.kirbyturner" />
+    <meta property="og:image" content="http://www.thecave.com/img/bg-02.jpg" />
+    <meta property="og:url" content="http://www.thecave.com/2014/09/15/reporting-errors-in-cross-post-part-2/" />
+    <meta property="og:site_name" content="thecave | Kirby Turner's Blog" />
+
+    <title>Reporting Errors in Cross Post Part 2</title>
+
+    <link href="https://micro.blog/kirbyt" rel="me" />
+    <link rel="canonical" href="http://www.thecave.com/2014/09/15/reporting-errors-in-cross-post-part-2/">
+    <link rel="alternate" type="application/atom+xml" title="thecave | Kirby Turner's Blog's Feed" href="http://www.thecave.com/feed.xml" />
+
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/clean-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- YouTube CSS -->
+    <link rel="stylesheet" href="/css/video.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">thecave</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                
+                <li>
+                    <a href="/about/">About</a>
+                </li>
+                
+                <li>
+                    <a href="/archive/">Archive</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/">Categories & Tags</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+    <!-- Post Header -->
+<header class="intro-header" style="background-image: url('/img/bg-02.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Reporting Errors in Cross Post Part 2</h1>
+                    
+                    <span class="meta">Posted by Kirby Turner on September 15, 2014</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+				<p>Yesterday I talked about <a href="http://www.thecave.com/2014/09/14/reporting-errors-in-cross-post/">options for reporting errors</a> (and statuses) from the server back to the Cross Post app. Later I came up with a third option, which I like the best…hosting the error reports on <a href="http://www.rackspace.com/cloud/files/">Cloud Files</a>.</p>
+
+<p>The Cross Post server is scalable, which means I cannot rely on the server’s file system. Data on the file system for one server is not synced to the other servers, and it’s possible that the server reporting the error is not the same server as the one that caught the error.</p>
+
+<p>The obvious solution is to use a database server, but using a database server is overkill for Cross Post. But as I thought about it more I realized I all I need is a scalable file system, and that’s exactly what cloud storage systems like <a href="http://aws.amazon.com/s3/">S3</a> and <a href="http://www.rackspace.com/cloud/files/">Cloud Files</a> do. They provide a scalable file storage system.</p>
+
+<p>I came to this realization while thinking about how a CMS in a scalable environment might store uploaded files. Uploaded files would likely be stored on a scalable file storage system like S3. And that’s exactly what I need for reporting errors, a scalable file system. As I keep saying, a database is overkill for the current needs of Cross Post.</p>
+
+<h2 id="cloud-files">Cloud Files</h2>
+
+<p>So why Cloud Files instead of S3? Two reasons. 1) I already use Cloud Files as my CDN for my websites. And 2) the price. I don’t expect to have a lot of error reports, and once the error has been reported to the app the report is deleted, so I estimate my total storage cost will be pennies.</p>
+
+<p>A GB of Cloud Files storage is only 10 cents a month, and bandwidth is only 12 cents per GB per month. The total space needed for my error reports will certainly be less than a GB each month, so my estimated cost is only 22 cents per month, well within an affordable range for a snowboard bum like me.</p>
+
+<h2 id="the-how-tos">The How Tos</h2>
+
+<p>So exactly how will this work? Cross Post sends a payload to the server. Once the server receives the payload the HTTP connection ends. The server then processes the payload posting the status update and photos to the selected social networks.</p>
+
+<p>If an error occurs while posting to a social network, it is captured and stored in a JSON file. The file name is the unique id generated by the Cross Post app when packaging up the payload. The server will then take the JSON file and post it to Cloud Files. The next time the Cross Post app is launched, it will check Cloud Files to see if an error report exists. If it does, then the app will report the error to the user, and it will send a request to the Cross Post server telling it to delete the error report from Cloud Files<sup id="fnref:deletefile"><a href="#fn:deletefile" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>.</p>
+
+<p>So what happens if an error occurred and the person never launches Cross Post ever again? For starters I’ll be sad, but with regards to the error report I can set an expiration date on the file, say 30 days. Cloud Files will take care of deleting the file when it expires. This means less work for my server and less code for me to write.</p>
+
+<h2 id="not-just-for-errors">Not Just For Errors</h2>
+
+<p>What I like about the approach is that it is not limited to reporting errors. I can use this approach to report any status back to the app, though at the moment the only status type I need to report is an error status. I subscribe to the “no news is good news” mindset meaning that once the server receives the payload, unless an error is reported, it’s safe to assume the post was sent to the different social networks without a problem.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:deletefile">
+      <p>I let the Cross Post server delete the file from Cloud Files CDN so I don’t have to include the api key in the iOS app. <a href="#fnref:deletefile" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+
+                <hr>
+
+                
+                    <p>
+                    Posted in <a class='category' href='/category/programming/'>programming</a>. 
+                    Tagged in <a class='tag' href='/tag/cross-post/'>cross post</a>, <a class='tag' href='/tag/ios/'>ios</a>.
+                    </p>
+                
+
+                
+
+                
+                    <hr>
+                    <h3>Related Articles</h3>
+                    <ul>
+                    
+                        <li><a href="/2015/01/18/eliminating-distractions/">Eliminating Distractions</a></li>
+                    
+                        <li><a href="/2014/10/09/microblogging-the-open-web-and-cross-post/">Microblogging, the Open Web, and Cross Post</a></li>
+                    
+                        <li><a href="/2014/09/14/cross-posting-to-app.net-facebook-and-twitter/">Cross Posting to App.net, Facebook, and Twitter</a></li>
+                    
+                        <li><a href="/2014/09/14/reporting-errors-in-cross-post/">Reporting Errors in Cross Post</a></li>
+                    
+                        <li><a href="/2014/03/14/cross-posting/">Cross Posting</a></li>
+                    
+                        <li><a href="/2017/05/02/advice-for-new-ios-freelancers/">Advice for new iOS freelancers</a></li>
+                    
+                        <li><a href="/2017/04/21/how-i-post-to-my-jekyll-site-using-my-iphone/">How I post to my Jekyll site using my iPhone</a></li>
+                    
+                        <li><a href="/2017/02/02/the-experienced-programmers-guide-to-getting-started-with-swift/">The Experienced Programmer's Guide to Getting Started with Swift</a></li>
+                    
+                        <li><a href="/2016/11/19/from-trace-to-slopes/">From Trace To Slopes</a></li>
+                    
+                        <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                    
+                    </ul>
+                
+
+                <hr>
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2014/09/14/reporting-errors-in-cross-post/" data-toggle="tooltip" data-placement="top" title="Reporting Errors in Cross Post">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2014/09/16/using-xcodebuild-to-export-a-ipa-from-an-archive/" data-toggle="tooltip" data-placement="top" title="Using xcodebuild To Export a .ipa From an Archive">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<p>&nbsp;</p>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Recent Articles</h3>
+                <ul>
+                
+                <li><a href="/2021/03/10/my-backpacks/" title="My Backpacks">My Backpacks</a></li>
+                
+                <li><a href="/2021/01/06/my-private-snowshoe-trail/" title="My Private Snowshoe Trail">My Private Snowshoe Trail</a></li>
+                
+                <li><a href="/2021/01/04/beautiful-view-in-stowe-this-morning/" title="Beautiful View in Stowe This Morning">Beautiful View in Stowe This Morning</a></li>
+                
+                <li><a href="/2020/12/28/a-moonlit-night/" title="A Moonlit Night">A Moonlit Night</a></li>
+                
+                <li><a href="/2020/12/22/slab-of-snow/" title="Slab of Snow">Slab of Snow</a></li>
+                
+                </ul>
+            </div>
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Other Sites</h3>
+                <ul>
+                    <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
+                    <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br />
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://twitter.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="https://github.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="http://www.linkedin.com/in/kirbyturner/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://www.goodreads.com/kirbyt/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-stack-1x fa-inverse"><span style="font-family:helvetica;position: relative;top: -5px">g</span></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2025</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
+
+
+</body>
+
+</html>

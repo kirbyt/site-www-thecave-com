@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kirby Turner">
+    
+    <meta name="description" content="The subject to this post might suggest I don’t like Auto Layout, but on the contrary I really like Auto Layout. I didn’t always like Auto Layout. For the longest time Auto Layout was a major pain in my ass, but it turns out it was Interface Builder that was causing me the majority of headaches when I used Auto Layout. So I stopped using Auto Layout in IB and I started using it in code only.
+">
+    
+
+    <!-- Facebook tags -->
+    <meta property="og:title" content="I Stopped Using NIBs Thanks to Auto Layout" />
+    
+    <meta name="og:description" content="The subject to this post might suggest I don’t like Auto Layout, but on the contrary I really like Auto Layout. I didn’t always like Auto Layout. For the longest time Auto Layout was a major pain in my ass, but it turns out it was Interface Builder that was causing me the majority of headaches when I used Auto Layout. So I stopped using Auto Layout in IB and I started using it in code only.
+">
+    
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/mr.kirbyturner" />
+    <meta property="og:image" content="http://www.thecave.com/img/bg-05.jpg" />
+    <meta property="og:url" content="http://www.thecave.com/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout/" />
+    <meta property="og:site_name" content="thecave | Kirby Turner's Blog" />
+
+    <title>I Stopped Using NIBs Thanks to Auto Layout</title>
+
+    <link href="https://micro.blog/kirbyt" rel="me" />
+    <link rel="canonical" href="http://www.thecave.com/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout/">
+    <link rel="alternate" type="application/atom+xml" title="thecave | Kirby Turner's Blog's Feed" href="http://www.thecave.com/feed.xml" />
+
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/clean-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- YouTube CSS -->
+    <link rel="stylesheet" href="/css/video.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">thecave</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                
+                <li>
+                    <a href="/about/">About</a>
+                </li>
+                
+                <li>
+                    <a href="/archive/">Archive</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/">Categories & Tags</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+    <!-- Post Header -->
+<header class="intro-header" style="background-image: url('/img/bg-05.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>I Stopped Using NIBs Thanks to Auto Layout</h1>
+                    
+                    <span class="meta">Posted by Kirby Turner on May 4, 2014</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+				<p>The subject to this post might suggest I don’t like Auto Layout, but on the contrary I really like Auto Layout. I didn’t always like Auto Layout. For the longest time Auto Layout was a major pain in my ass, but it turns out it was Interface Builder that was causing me the majority of headaches when I used Auto Layout. So I stopped using Auto Layout in IB and I started using it in code only.</p>
+
+<p>It took me a while to get comfortable with Auto Layout in code, but once things clicked, I found it easy to get the layout I wanted. In fact, I have found Auto Layout saves me time when laying out a UI, and I’ve become so comfortable with Auto Layout that now I become annoyed if I have to work on a project that does not use Auto Layout.</p>
+
+<p>Because I use Auto Layout in code I realized overtime I was using Interface Builder only to define the UI elements that made up the view. I would define all the Auto Layout constraints in code. This got me thinking, why do I need to define the UI elements in IB? So I did a small project with no NIBs or storyboards, and I loved it. I felt more productive, and I was banging my head against the wall a hell of a lot less.</p>
+
+<p>(Credit also goes to <a href="https://twitter.com/mattie">Matt Massicotte</a> for encouraging me to try a project with no NIB or storboard files.)</p>
+
+<p>I’ve now done a number of iOS projects where I don’t use a single NIB or storyboard, and I’m convinced this is the right approach for me. I see everything regarding a view and its subviews explicitly defined in source code, which makes it easier to see what’s going on and to make changes. No more bouncing between inspectors to figure out what is causing a problem or to understand how a view is rendered. I see it all in the source code defined in a single <em>.m</em> file.</p>
+
+<p>So how do I construct my views using only source code? I have a base class that I call <a href="https://github.com/kirbyt/WPSKit/blob/master/WPSKit/UIKit/WPSCompositeView.h"><code class="language-plaintext highlighter-rouge">WPSCompositeView</code></a> in my <a href="https://github.com/kirbyt/WPSKit">WPSKit</a>, a set of classes and categories I use to build apps. <code class="language-plaintext highlighter-rouge">WPSCompositeView</code> has a class method named <code class="language-plaintext highlighter-rouge">+addToSuperview:</code> that creates the instance of the view, which must be a subclass of <code class="language-plaintext highlighter-rouge">WPSCompositeView</code>, then calls <code class="language-plaintext highlighter-rouge">-loadView</code> on the instance of the view. I place all the code needed to create the subviews of the view in the <code class="language-plaintext highlighter-rouge">-loadView</code> implementation. The constraints for the view are implemented in the <code class="language-plaintext highlighter-rouge">-updateConstraints</code> that is called by iOS when needed. That’s it.</p>
+
+<p>Here’s an example of a composer view for a new app I’m working on:</p>
+
+<p><a href="https://farm8.staticflickr.com/7204/13920896030_4c53fbfe1c_o.jpg"><img src="https://farm8.staticflickr.com/7204/13920896030_e0da352daf_m.jpg" alt="" /></a></p>
+
+<p>And the code for creating this view is as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void)loadView
+{
+  UIView *containerView = self;
+
+  WPSTextView *textView = [[WPSTextView alloc] init];
+  [textView setTranslatesAutoresizingMaskIntoConstraints:NO];
+  [textView setAlwaysBounceVertical:YES];
+  [textView setInputAccessoryView:[self toolbar]];
+  [textView setFont:[UIFont systemFontOfSize:17.0]];
+  [textView setPlaceholderText:NSLocalizedString(@"What's up?", @"Placeholder text.")];
+  [self setTextView:textView];
+
+  UIButton *locationButton = [UIButton buttonWithType:UIButtonTypeCustom];
+  [locationButton setTranslatesAutoresizingMaskIntoConstraints:NO];
+  [locationButton setImage:[UIImage wps_imageNamed:@"location" withMaskColor:[UIColor lightGrayColor]] forState:UIControlStateNormal];
+  [locationButton setImage:[UIImage wps_imageNamed:@"location" withMaskColor:[UIColor wps_iOSDefaultBlue]] forState:UIControlStateSelected];
+  [locationButton setSelected:NO];
+  [locationButton addTarget:self action:@selector(_locationButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+  [self setLocationButton:locationButton];
+
+  UILabel *locationLabel = [[UILabel alloc] init];
+  [locationLabel setTranslatesAutoresizingMaskIntoConstraints:NO];
+  [locationLabel setTextColor:[UIColor lightGrayColor]];
+  [locationLabel setTextAlignment:NSTextAlignmentLeft];
+  [locationLabel setText:NSLocalizedString(@"Location Disabled", @"Location text.")];
+  [self setLocationLabel:locationLabel];
+
+  UILabel *characterCountLabel = [[UILabel alloc] init];
+  [characterCountLabel setTranslatesAutoresizingMaskIntoConstraints:NO];
+  [characterCountLabel setTextColor:[UIColor lightGrayColor]];
+  [characterCountLabel setTextAlignment:NSTextAlignmentRight];
+  [self setCharacterCountLabel:characterCountLabel];
+
+  [containerView addSubview:textView];
+  [containerView addSubview:locationButton];
+  [containerView addSubview:locationLabel];
+  [containerView addSubview:characterCountLabel];
+
+  [textView wps_setDidChange:^(UITextView *aTextView) {
+    NSString *countString = nil;
+    NSUInteger length = [[aTextView text] length];
+    if (length &gt; 0) {
+      countString = [NSString stringWithFormat:@"%lu", (unsigned long)length];
+    }
+    [characterCountLabel setText:countString];
+  }];
+}
+
+- (void)updateConstraints
+{
+  WPSTextView *textView = [self textView];
+  UILabel *characterCountLabel = [self characterCountLabel];
+  UIButton *locationButton = [self locationButton];
+  UILabel *locationLabel = [self locationLabel];
+
+  [locationButton wps_constrainToHeight:38.0f];
+  [locationButton wps_constrainToWidth:38.0f];
+
+  NSDictionary *bindings = NSDictionaryOfVariableBindings(textView, characterCountLabel, locationButton, locationLabel);
+  [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[textView]-4-[characterCountLabel]-0-|" options:0 metrics:nil views:bindings]];
+  [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[textView]-0-|" options:0 metrics:nil views:bindings]];
+  [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-8-[locationButton]-[locationLabel]-[characterCountLabel]-8-|" options:0 metrics:nil views:bindings]];
+  [self addConstraint:[NSLayoutConstraint constraintWithItem:locationLabel attribute:NSLayoutAttributeBaseline relatedBy:NSLayoutRelationEqual toItem:characterCountLabel attribute:NSLayoutAttributeBaseline multiplier:1.0 constant:0.0]];
+  [self addConstraint:[NSLayoutConstraint constraintWithItem:locationButton attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:locationLabel attribute:NSLayoutAttributeCenterY multiplier:1.0 constant:0.0]];
+
+  [super updateConstraints];
+}
+
+- (UIToolbar *)toolbar
+{
+  if (_toolbar == nil) {
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, screenBounds.size.width, 44)];
+    [toolbar setTintAdjustmentMode:UIViewTintAdjustmentModeNormal];
+
+
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    BOOL adnOn = [defaults cp_isAdnOn];
+    BOOL facebookOn = [defaults cp_isFacebookOn];
+    BOOL twitterOn = [defaults cp_isTwitterOn];
+
+    UIColor *offColor = [UIColor lightGrayColor];
+    UIColor *adnColor = adnOn ? [UIColor blackColor] : offColor;
+    UIColor *facebookColor = facebookOn ? [UIColor wps_facebookBlue] : offColor;
+    UIColor *twitterColor = twitterOn ? [UIColor wps_twitterBlue] : offColor;
+
+    UIBarButtonItem *cameraButton = [self buttonWithImageName:@"camera" color:[UIColor wps_iOSDefaultBlue] action:@selector(_cameraButtonTapped:)];
+    [self setCameraButton:cameraButton];
+
+    UIBarButtonItem *adnButton = [self buttonWithImageName:@"adn" color:adnColor action:@selector(_adnButtonTapped:)];
+    [adnButton setTag:adnOn];
+    [self setAdnOn:adnOn];
+    [self setAdnButton:adnButton];
+
+    UIBarButtonItem *facebookButton = [self buttonWithImageName:@"facebook" color:facebookColor action:@selector(_facebookButtonTapped:)];
+    [facebookButton setTag:facebookOn];
+    [self setFacebookOn:facebookOn];
+    [self setFacebookButton:facebookButton];
+
+    UIBarButtonItem *twitterButton = [self buttonWithImageName:@"twitter" color:twitterColor action:@selector(_twitterButtonTapped:)];
+    [twitterButton setTag:twitterOn];
+    [self setTwitterOn:twitterOn];
+    [self setTwitterButton:twitterButton];
+
+    UIBarButtonItem *draftsButton = [self buttonWithImageName:@"drafts" color:[UIColor wps_iOSDefaultBlue] action:@selector(_draftsButtonTapped:)];
+    [self setDraftsButton:draftsButton];
+
+    UIBarButtonItem *flexibleButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    [toolbar setItems:@[adnButton, facebookButton, twitterButton, flexibleButton, draftsButton, cameraButton] animated:NO];
+
+    _toolbar = toolbar;
+  }
+  return  _toolbar;
+}
+</code></pre></div></div>
+
+<p>The only things not created or managed but this view are the navigation bar and collection view of photos. The navigation bar is provided by the <code class="language-plaintext highlighter-rouge">UINavigationController</code> used by the view controller that created this composer view. Also, the view controller uses controller containment to include the collection view of photos, which is actually managed by another view controller and custom view class.</p>
+
+<p>Oh, I almost forgot to mention…I create the composite view in the <code class="language-plaintext highlighter-rouge">loadView</code> method implemented in the view controller. For example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void)loadView
+{
+  [super loadView];
+  UIView *contentView = [self view];
+
+  CPComposeView *composeView = [CPComposeView addToSuperview:contentView];
+  [self setComposeView:composeView];
+}
+</code></pre></div></div>
+
+<p>After I create the view I might add more layout constraints to position and size the subview as needed within the main content view. I do that in the view controller’s <code class="language-plaintext highlighter-rouge">-loadView</code> when needed.</p>
+
+<p>So that’s it. That’s why I have stopped using NIB and storyboard files in my iOS projects. This approach might not work for others, but it certainly works for me.</p>
+
+
+                <hr>
+
+                
+                    <p>
+                    Posted in <a class='category' href='/category/programming/'>programming</a>. 
+                    Tagged in <a class='tag' href='/tag/auto-layout/'>auto layout</a>, <a class='tag' href='/tag/interface-builder/'>interface builder</a>, <a class='tag' href='/tag/ios/'>ios</a>, <a class='tag' href='/tag/xcode/'>xcode</a>.
+                    </p>
+                
+
+                
+
+                
+                    <hr>
+                    <h3>Related Articles</h3>
+                    <ul>
+                    
+                        <li><a href="/2014/05/10/wait-justin-and-i-agree/">Wait, Justin and I Agree?</a></li>
+                    
+                        <li><a href="/2014/09/16/using-xcodebuild-to-export-a-ipa-from-an-archive/">Using xcodebuild To Export a .ipa From an Archive</a></li>
+                    
+                        <li><a href="/2017/05/02/advice-for-new-ios-freelancers/">Advice for new iOS freelancers</a></li>
+                    
+                        <li><a href="/2017/04/21/how-i-post-to-my-jekyll-site-using-my-iphone/">How I post to my Jekyll site using my iPhone</a></li>
+                    
+                        <li><a href="/2017/02/02/the-experienced-programmers-guide-to-getting-started-with-swift/">The Experienced Programmer's Guide to Getting Started with Swift</a></li>
+                    
+                        <li><a href="/2016/11/19/from-trace-to-slopes/">From Trace To Slopes</a></li>
+                    
+                        <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                    
+                        <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
+                    
+                        <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/">My Upcoming Share Extension Talk At 360idev-Min</a></li>
+                    
+                        <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/">Wish I Could Help But It's Not My App</a></li>
+                    
+                    </ul>
+                
+
+                <hr>
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2014/04/24/wtf-ruby-gems/" data-toggle="tooltip" data-placement="top" title="WTF Ruby Gems">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2014/05/08/still-enjoying-the-snow/" data-toggle="tooltip" data-placement="top" title="Still Enjoying the Snow">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<p>&nbsp;</p>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Recent Articles</h3>
+                <ul>
+                
+                <li><a href="/2021/03/10/my-backpacks/" title="My Backpacks">My Backpacks</a></li>
+                
+                <li><a href="/2021/01/06/my-private-snowshoe-trail/" title="My Private Snowshoe Trail">My Private Snowshoe Trail</a></li>
+                
+                <li><a href="/2021/01/04/beautiful-view-in-stowe-this-morning/" title="Beautiful View in Stowe This Morning">Beautiful View in Stowe This Morning</a></li>
+                
+                <li><a href="/2020/12/28/a-moonlit-night/" title="A Moonlit Night">A Moonlit Night</a></li>
+                
+                <li><a href="/2020/12/22/slab-of-snow/" title="Slab of Snow">Slab of Snow</a></li>
+                
+                </ul>
+            </div>
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Other Sites</h3>
+                <ul>
+                    <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
+                    <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br />
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://twitter.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="https://github.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="http://www.linkedin.com/in/kirbyturner/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://www.goodreads.com/kirbyt/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-stack-1x fa-inverse"><span style="font-family:helvetica;position: relative;top: -5px">g</span></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2025</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
+
+
+</body>
+
+</html>

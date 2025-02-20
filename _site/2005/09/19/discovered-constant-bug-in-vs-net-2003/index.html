@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kirby Turner">
+    
+    <meta name="description" content="Tonight I discovered an interesting Visual Studio.NET 2003 bug.  Seems devenv.exe will throw an unhandled exception when the constant in the sample code below is compiled.  From what I can tell, it looks like devenv.exe chokes on the length of the contant.  Remove line 73 (LEFT OUTER JOIN…) and the exception is not thrown.The exception only occurs when compiling the project from within VS.NET 2003 (devenv.exe).  The command line compiler csc.exe does not have the problem.  Also, the problem does not occur if you are using Delphi 2005.  Makes me wonder what devenv.exe is doing during the project build process.&lt;pre&gt;001  using System;002 003  namespace ConsoleApplication3004  {005     /// &lt;summary&gt;006     /// Summary description for Class1.007     /// &lt;/summary&gt;008     class Class1009     {010        /// &lt;summary&gt;011        /// The main entry point for the application.012        /// &lt;/summary&gt;013        [STAThread]014        static void Main(string[] args)015        {016          const string SQL_FORMAT = @”017           SELECT 018           1 AS Tag,019           NULL AS Parent,020           NULL AS [users!1],021           NULL AS [user!2!strUSID],022           NULL AS [user!2!strPrefixID],023           NULL AS [user!2!strFirstName],024           NULL AS [user!2!strLastName],025           NULL AS [user!2!strUSName],026           NULL AS [user!2!strAdd1],027           NULL AS [user!2!strAdd2],028           NULL AS [user!2!strTown],029           NULL AS [user!2!strState],030           NULL AS [user!2!strPostCode],031           NULL AS [user!2!strCountry],032           NULL AS [user!2!strTel],033           NULL AS [user!2!strFax],034           NULL AS [user!2!strEMail],035           NULL AS [user!2!strLocked],036           NULL AS [user!2!dtmLockedDate],037           NULL AS [user!2!strSuspenseReason],038           NULL AS [user!2!intLogonCount],039           NULL AS [user!2!dtmCreatedDate],040           NULL AS [user!2!strMedicalSpecialtyID],041           NULL AS [user!2!blnChangePassword],042           NULL AS [user!2!strInstitutionalUser],043           NULL AS [user!2!strCreditCardExpDate]044           UNION045           SELECT046           2 AS Tag,047           1 AS Parent,048           NULL,049           Users.strUSID,050           strPrefixID,051           strFirstName,052           strLastName,053           strUSName,054           strAdd1,055           strAdd2,056           strTown,057           strState,058           strPostCode,059           strCountry,060           strTel,061           strFax,062           strEMail,063           strLocked,064           dtmLockedDate,065           ID_LoginSuspenseReason.strSuspenseReason,066           intLogonCount,067           dtmCreatedDate,068           strMedicalSpecialtyID,069           blnChangePassword,070           strInstitutionalUser,071           strCreditCardExpDate072           FROM ID_Login Users073           LEFT OUTER JOIN ID_LoginSuspenseReason ON Users.strUSID = ID_LoginSuspenseReason.strUSID074           {0}075           FOR XML EXPLICIT076           “;077        }078     }079  }&lt;/pre&gt;
+">
+    
+
+    <!-- Facebook tags -->
+    <meta property="og:title" content="Discovered Constant Bug in VS.NET 2003" />
+    
+    <meta name="og:description" content="Tonight I discovered an interesting Visual Studio.NET 2003 bug.  Seems devenv.exe will throw an unhandled exception when the constant in the sample code below is compiled.  From what I can tell, it looks like devenv.exe chokes on the length of the contant.  Remove line 73 (LEFT OUTER JOIN…) and the exception is not thrown.The exception only occurs when compiling the project from within VS.NET 2003 (devenv.exe).  The command line compiler csc.exe does not have the problem.  Also, the problem does not occur if you are using Delphi 2005.  Makes me wonder what devenv.exe is doing during the project build process.&lt;pre&gt;001  using System;002 003  namespace ConsoleApplication3004  {005     /// &lt;summary&gt;006     /// Summary description for Class1.007     /// &lt;/summary&gt;008     class Class1009     {010        /// &lt;summary&gt;011        /// The main entry point for the application.012        /// &lt;/summary&gt;013        [STAThread]014        static void Main(string[] args)015        {016          const string SQL_FORMAT = @”017           SELECT 018           1 AS Tag,019           NULL AS Parent,020           NULL AS [users!1],021           NULL AS [user!2!strUSID],022           NULL AS [user!2!strPrefixID],023           NULL AS [user!2!strFirstName],024           NULL AS [user!2!strLastName],025           NULL AS [user!2!strUSName],026           NULL AS [user!2!strAdd1],027           NULL AS [user!2!strAdd2],028           NULL AS [user!2!strTown],029           NULL AS [user!2!strState],030           NULL AS [user!2!strPostCode],031           NULL AS [user!2!strCountry],032           NULL AS [user!2!strTel],033           NULL AS [user!2!strFax],034           NULL AS [user!2!strEMail],035           NULL AS [user!2!strLocked],036           NULL AS [user!2!dtmLockedDate],037           NULL AS [user!2!strSuspenseReason],038           NULL AS [user!2!intLogonCount],039           NULL AS [user!2!dtmCreatedDate],040           NULL AS [user!2!strMedicalSpecialtyID],041           NULL AS [user!2!blnChangePassword],042           NULL AS [user!2!strInstitutionalUser],043           NULL AS [user!2!strCreditCardExpDate]044           UNION045           SELECT046           2 AS Tag,047           1 AS Parent,048           NULL,049           Users.strUSID,050           strPrefixID,051           strFirstName,052           strLastName,053           strUSName,054           strAdd1,055           strAdd2,056           strTown,057           strState,058           strPostCode,059           strCountry,060           strTel,061           strFax,062           strEMail,063           strLocked,064           dtmLockedDate,065           ID_LoginSuspenseReason.strSuspenseReason,066           intLogonCount,067           dtmCreatedDate,068           strMedicalSpecialtyID,069           blnChangePassword,070           strInstitutionalUser,071           strCreditCardExpDate072           FROM ID_Login Users073           LEFT OUTER JOIN ID_LoginSuspenseReason ON Users.strUSID = ID_LoginSuspenseReason.strUSID074           {0}075           FOR XML EXPLICIT076           “;077        }078     }079  }&lt;/pre&gt;
+">
+    
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/mr.kirbyturner" />
+    <meta property="og:image" content="http://www.thecave.com/img/bg-06.jpg" />
+    <meta property="og:url" content="http://www.thecave.com/2005/09/19/discovered-constant-bug-in-vs-net-2003/" />
+    <meta property="og:site_name" content="thecave | Kirby Turner's Blog" />
+
+    <title>Discovered Constant Bug in VS.NET 2003</title>
+
+    <link href="https://micro.blog/kirbyt" rel="me" />
+    <link rel="canonical" href="http://www.thecave.com/2005/09/19/discovered-constant-bug-in-vs-net-2003/">
+    <link rel="alternate" type="application/atom+xml" title="thecave | Kirby Turner's Blog's Feed" href="http://www.thecave.com/feed.xml" />
+
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/clean-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- YouTube CSS -->
+    <link rel="stylesheet" href="/css/video.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">thecave</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                
+                <li>
+                    <a href="/about/">About</a>
+                </li>
+                
+                <li>
+                    <a href="/archive/">Archive</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/">Categories & Tags</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+    <!-- Post Header -->
+<header class="intro-header" style="background-image: url('/img/bg-06.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Discovered Constant Bug in VS.NET 2003</h1>
+                    
+                    <span class="meta">Posted by Kirby Turner on September 19, 2005</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+				<p>Tonight I discovered an interesting Visual Studio.NET 2003 bug.  Seems devenv.exe will throw an unhandled exception when the constant in the sample code below is compiled.  From what I can tell, it looks like devenv.exe chokes on the length of the contant.  Remove line 73 (LEFT OUTER JOIN…) and the exception is not thrown.<br /><br />The exception only occurs when compiling the project from within VS.NET 2003 (devenv.exe).  The command line compiler csc.exe does not have the problem.  Also, the problem does not occur if you are using <a href="http://www.borland.com/delphi/">Delphi</a> 2005.  Makes me wonder what devenv.exe is doing during the project build process.<br /><br />&lt;pre&gt;<br />001  using System;<br />002 <br />003  namespace ConsoleApplication3<br />004  {<br />005     /// &lt;summary&gt;<br />006     /// Summary description for Class1.<br />007     /// &lt;/summary&gt;<br />008     class Class1<br />009     {<br />010        /// &lt;summary&gt;<br />011        /// The main entry point for the application.<br />012        /// &lt;/summary&gt;<br />013        [STAThread]<br />014        static void Main(string[] args)<br />015        {<br />016          const string SQL_FORMAT = @”<br />017           SELECT <br />018           1 AS Tag,<br />019           NULL AS Parent,<br />020           NULL AS [users!1],<br />021           NULL AS [user!2!strUSID],<br />022           NULL AS [user!2!strPrefixID],<br />023           NULL AS [user!2!strFirstName],<br />024           NULL AS [user!2!strLastName],<br />025           NULL AS [user!2!strUSName],<br />026           NULL AS [user!2!strAdd1],<br />027           NULL AS [user!2!strAdd2],<br />028           NULL AS [user!2!strTown],<br />029           NULL AS [user!2!strState],<br />030           NULL AS [user!2!strPostCode],<br />031           NULL AS [user!2!strCountry],<br />032           NULL AS [user!2!strTel],<br />033           NULL AS [user!2!strFax],<br />034           NULL AS [user!2!strEMail],<br />035           NULL AS [user!2!strLocked],<br />036           NULL AS [user!2!dtmLockedDate],<br />037           NULL AS [user!2!strSuspenseReason],<br />038           NULL AS [user!2!intLogonCount],<br />039           NULL AS [user!2!dtmCreatedDate],<br />040           NULL AS [user!2!strMedicalSpecialtyID],<br />041           NULL AS [user!2!blnChangePassword],<br />042           NULL AS [user!2!strInstitutionalUser],<br />043           NULL AS [user!2!strCreditCardExpDate]<br />044           UNION<br />045           SELECT<br />046           2 AS Tag,<br />047           1 AS Parent,<br />048           NULL,<br />049           Users.strUSID,<br />050           strPrefixID,<br />051           strFirstName,<br />052           strLastName,<br />053           strUSName,<br />054           strAdd1,<br />055           strAdd2,<br />056           strTown,<br />057           strState,<br />058           strPostCode,<br />059           strCountry,<br />060           strTel,<br />061           strFax,<br />062           strEMail,<br />063           strLocked,<br />064           dtmLockedDate,<br />065           ID_LoginSuspenseReason.strSuspenseReason,<br />066           intLogonCount,<br />067           dtmCreatedDate,<br />068           strMedicalSpecialtyID,<br />069           blnChangePassword,<br />070           strInstitutionalUser,<br />071           strCreditCardExpDate<br />072           FROM ID_Login Users<br />073           LEFT OUTER JOIN ID_LoginSuspenseReason ON Users.strUSID = ID_LoginSuspenseReason.strUSID<br />074           {0}<br />075           FOR XML EXPLICIT<br />076           “;<br />077        }<br />078     }<br />079  }<br />&lt;/pre&gt;</p>
+
+
+                <hr>
+
+                
+                    <p>
+                    Posted in <a class='category' href='/category/uncategorized/'>uncategorized</a>. 
+                    Tagged in .
+                    </p>
+                
+
+                
+
+                
+
+                <hr>
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2005/09/19/ann-new-smtp-diagnostics-web-site/" data-toggle="tooltip" data-placement="top" title="ANN: New SMTP Diagnostics Web Site">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2005/09/21/refactoring-smtp-diagnostics/" data-toggle="tooltip" data-placement="top" title="Refactoring SMTP Diagnostics">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<p>&nbsp;</p>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Recent Articles</h3>
+                <ul>
+                
+                <li><a href="/2021/03/10/my-backpacks/" title="My Backpacks">My Backpacks</a></li>
+                
+                <li><a href="/2021/01/06/my-private-snowshoe-trail/" title="My Private Snowshoe Trail">My Private Snowshoe Trail</a></li>
+                
+                <li><a href="/2021/01/04/beautiful-view-in-stowe-this-morning/" title="Beautiful View in Stowe This Morning">Beautiful View in Stowe This Morning</a></li>
+                
+                <li><a href="/2020/12/28/a-moonlit-night/" title="A Moonlit Night">A Moonlit Night</a></li>
+                
+                <li><a href="/2020/12/22/slab-of-snow/" title="Slab of Snow">Slab of Snow</a></li>
+                
+                </ul>
+            </div>
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Other Sites</h3>
+                <ul>
+                    <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
+                    <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br />
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://twitter.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="https://github.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="http://www.linkedin.com/in/kirbyturner/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://www.goodreads.com/kirbyt/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-stack-1x fa-inverse"><span style="font-family:helvetica;position: relative;top: -5px">g</span></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2025</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
+
+
+</body>
+
+</html>

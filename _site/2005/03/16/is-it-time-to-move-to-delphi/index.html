@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kirby Turner">
+    
+    <meta name="description" content="There were many rumbling last week in the Blogosphere regarding Microsoft’s decision to end support for Visual Basic 6.0.  While I am not impacted by this decision, I couldn’t help but reflect on this.I started using VB in 1993.  I was amazed at how much easier it was to write a Windows application using VB as compared to C, and I was excited about the move to VB.  But to put things in prospective, I was also excited about Clarion for Windows and Topspeed.Over time the applications I wrote using VB became more complex and I needed more power.  For instance, I had a need for owner drawn controls and writing Windows services.  Yes, there were ways to get around limitations of VB such as using SpyWorks but I became increasingly annoyed with VB.Delphi v1 was released in February of 1994 but I didn’t take notice of it until v2.  I instantly fell in love with Delphi.  It offered the easy of VB with the power of C/C++.  Finally, I could do anything I needed using one language.  I no longer had to rely on 3rd party DLLs or my own components written in VC++ to enhance my VB applications.  Unfortunately my clients, as well as many U.S. companies, did not adopt Delphi as their language of choice.  VB was the standard.In my attempts to illustrate to clients the benefits of Delphi, and to keep my skills up, I would write prototype applications using Delphi and re-write the production app using VB.  I would use Delphi features out of the box that would look and function better than the production VB app using 3rd party controls.  In some cases I had to “dumb down” my Delphi prototype app as to not outshine the final result of the VB application.  Still, there was one common message echoed by my clients when they saw the power of Delphi, “What is the future of Delphi?”While Delphi appeared to be the better development platform, clients would question the longevity of Delphi as compared to Visual Basic.  The thought was that by selecting VB, intellectual properties (aka source code) would be supported for years to come.  After all, it was Microsoft’s flag ship development language for corporate development.Fast forward to March 2005…200+ Microsoft MVPs along with 2000+ other concerned developers signed an electronic petition asking Microsoft to continue support and further development of VB6 and VBA.  Companies world wide must now face the reality that their IP must be ported to VB.NET, or to another language, to continue receiving the technology advancements and benefits provided by tool vendors.  And many are not too happy about it.Meanwhile many Delphi applications today, even ones written in older versions of Delphi, continue to thrive and evolve.  And migrating a Delphi application from Win32 to .NET is made easier with the support of VCL.NET and Delphi 2005.  I’ve even seen cases where the only difference between a Win32 Delphi application and the .NET managed code equivalent is the project file.  The application code remains unchanged.If the companies that selected VB 10 years ago could have looked into the crystal ball, I wonder if they would have stuck with that decision or made a move to Delphi.  And I wonder if the companies facing the challenges of porting countless lines of VB code will take a serious look at Delphi, its history, and its future.
+">
+    
+
+    <!-- Facebook tags -->
+    <meta property="og:title" content="Is it Time to Move to Delphi?" />
+    
+    <meta name="og:description" content="There were many rumbling last week in the Blogosphere regarding Microsoft’s decision to end support for Visual Basic 6.0.  While I am not impacted by this decision, I couldn’t help but reflect on this.I started using VB in 1993.  I was amazed at how much easier it was to write a Windows application using VB as compared to C, and I was excited about the move to VB.  But to put things in prospective, I was also excited about Clarion for Windows and Topspeed.Over time the applications I wrote using VB became more complex and I needed more power.  For instance, I had a need for owner drawn controls and writing Windows services.  Yes, there were ways to get around limitations of VB such as using SpyWorks but I became increasingly annoyed with VB.Delphi v1 was released in February of 1994 but I didn’t take notice of it until v2.  I instantly fell in love with Delphi.  It offered the easy of VB with the power of C/C++.  Finally, I could do anything I needed using one language.  I no longer had to rely on 3rd party DLLs or my own components written in VC++ to enhance my VB applications.  Unfortunately my clients, as well as many U.S. companies, did not adopt Delphi as their language of choice.  VB was the standard.In my attempts to illustrate to clients the benefits of Delphi, and to keep my skills up, I would write prototype applications using Delphi and re-write the production app using VB.  I would use Delphi features out of the box that would look and function better than the production VB app using 3rd party controls.  In some cases I had to “dumb down” my Delphi prototype app as to not outshine the final result of the VB application.  Still, there was one common message echoed by my clients when they saw the power of Delphi, “What is the future of Delphi?”While Delphi appeared to be the better development platform, clients would question the longevity of Delphi as compared to Visual Basic.  The thought was that by selecting VB, intellectual properties (aka source code) would be supported for years to come.  After all, it was Microsoft’s flag ship development language for corporate development.Fast forward to March 2005…200+ Microsoft MVPs along with 2000+ other concerned developers signed an electronic petition asking Microsoft to continue support and further development of VB6 and VBA.  Companies world wide must now face the reality that their IP must be ported to VB.NET, or to another language, to continue receiving the technology advancements and benefits provided by tool vendors.  And many are not too happy about it.Meanwhile many Delphi applications today, even ones written in older versions of Delphi, continue to thrive and evolve.  And migrating a Delphi application from Win32 to .NET is made easier with the support of VCL.NET and Delphi 2005.  I’ve even seen cases where the only difference between a Win32 Delphi application and the .NET managed code equivalent is the project file.  The application code remains unchanged.If the companies that selected VB 10 years ago could have looked into the crystal ball, I wonder if they would have stuck with that decision or made a move to Delphi.  And I wonder if the companies facing the challenges of porting countless lines of VB code will take a serious look at Delphi, its history, and its future.
+">
+    
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/mr.kirbyturner" />
+    <meta property="og:image" content="http://www.thecave.com/img/bg-03.jpg" />
+    <meta property="og:url" content="http://www.thecave.com/2005/03/16/is-it-time-to-move-to-delphi/" />
+    <meta property="og:site_name" content="thecave | Kirby Turner's Blog" />
+
+    <title>Is it Time to Move to Delphi?</title>
+
+    <link href="https://micro.blog/kirbyt" rel="me" />
+    <link rel="canonical" href="http://www.thecave.com/2005/03/16/is-it-time-to-move-to-delphi/">
+    <link rel="alternate" type="application/atom+xml" title="thecave | Kirby Turner's Blog's Feed" href="http://www.thecave.com/feed.xml" />
+
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/clean-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- YouTube CSS -->
+    <link rel="stylesheet" href="/css/video.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">thecave</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                
+                <li>
+                    <a href="/about/">About</a>
+                </li>
+                
+                <li>
+                    <a href="/archive/">Archive</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/">Categories & Tags</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+    <!-- Post Header -->
+<header class="intro-header" style="background-image: url('/img/bg-03.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Is it Time to Move to Delphi?</h1>
+                    
+                    <span class="meta">Posted by Kirby Turner on March 16, 2005</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+				<p>There were many rumbling last week in the Blogosphere regarding Microsoft’s decision to end support for Visual Basic 6.0.  While I am not impacted by this decision, I couldn’t help but reflect on this.<br /><br />I started using VB in 1993.  I was amazed at how much easier it was to write a Windows application using VB as compared to C, and I was excited about the move to VB.  But to put things in prospective, I was also excited about <a href="http://www.artofprogramming.net/dev_clarion_legend.html">Clarion</a> for Windows and Topspeed.<br /><br />Over time the applications I wrote using VB became more complex and I needed more power.  For instance, I had a need for owner drawn controls and writing Windows services.  Yes, there were ways to get around limitations of VB such as using SpyWorks but I became increasingly annoyed with VB.<br /><br />Delphi v1 was released in February of 1994 but I didn’t take notice of it until v2.  I instantly fell in love with Delphi.  It offered the easy of VB with the power of C/C++.  Finally, I could do anything I needed using one language.  I no longer had to rely on 3rd party DLLs or my own components written in VC++ to enhance my VB applications.  Unfortunately my clients, as well as many U.S. companies, did not adopt Delphi as their language of choice.  VB was the standard.<br /><br />In my attempts to illustrate to clients the benefits of Delphi, and to keep my skills up, I would write prototype applications using Delphi and re-write the production app using VB.  I would use Delphi features out of the box that would look and function better than the production VB app using 3rd party controls.  In some cases I had to “dumb down” my Delphi prototype app as to not outshine the final result of the VB application.  Still, there was one common message echoed by my clients when they saw the power of Delphi, “What is the future of Delphi?”<br /><br />While Delphi appeared to be the better development platform, clients would question the longevity of Delphi as compared to Visual Basic.  The thought was that by selecting VB, intellectual properties (aka source code) would be supported for years to come.  After all, it was Microsoft’s flag ship development language for corporate development.<br /><br />Fast forward to March 2005…200+ Microsoft MVPs along with 2000+ other concerned developers signed an electronic <a href="http://classicvb.org/petition/">petition</a> asking Microsoft to continue support and further development of VB6 and VBA.  Companies world wide must now face the reality that their IP must be ported to VB.NET, or to another language, to continue receiving the technology advancements and benefits provided by tool vendors.  And many are not too happy about it.<br /><br />Meanwhile many Delphi applications today, even ones <a href="http://nick.typepad.com/blog/2005/02/behind_the_scen.html">written in older versions</a> of Delphi, continue to thrive and evolve.  And migrating a Delphi application from Win32 to .NET is made easier with the support of VCL.NET and Delphi 2005.  I’ve even seen cases where the only difference between a Win32 Delphi application and the .NET managed code equivalent is the project file.  The application code remains unchanged.<br /><br />If the companies that selected VB 10 years ago could have looked into the crystal ball, I wonder if they would have stuck with that decision or made a move to Delphi.  And I wonder if the companies facing the challenges of porting countless lines of VB code will take a serious look at Delphi, its history, and its future.</p>
+
+
+                <hr>
+
+                
+                    <p>
+                    Posted in <a class='category' href='/category/uncategorized/'>uncategorized</a>. 
+                    Tagged in .
+                    </p>
+                
+
+                
+
+                
+
+                <hr>
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2005/03/11/ranking-programming-language-popularity/" data-toggle="tooltip" data-placement="top" title="Ranking Programming Language Popularity">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2005/03/21/betanews-microsoft-delays-visual-studio-2005/" data-toggle="tooltip" data-placement="top" title="BetaNews | Microsoft Delays Visual Studio 2005">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<p>&nbsp;</p>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Recent Articles</h3>
+                <ul>
+                
+                <li><a href="/2021/03/10/my-backpacks/" title="My Backpacks">My Backpacks</a></li>
+                
+                <li><a href="/2021/01/06/my-private-snowshoe-trail/" title="My Private Snowshoe Trail">My Private Snowshoe Trail</a></li>
+                
+                <li><a href="/2021/01/04/beautiful-view-in-stowe-this-morning/" title="Beautiful View in Stowe This Morning">Beautiful View in Stowe This Morning</a></li>
+                
+                <li><a href="/2020/12/28/a-moonlit-night/" title="A Moonlit Night">A Moonlit Night</a></li>
+                
+                <li><a href="/2020/12/22/slab-of-snow/" title="Slab of Snow">Slab of Snow</a></li>
+                
+                </ul>
+            </div>
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Other Sites</h3>
+                <ul>
+                    <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
+                    <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br />
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://twitter.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="https://github.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="http://www.linkedin.com/in/kirbyturner/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://www.goodreads.com/kirbyt/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-stack-1x fa-inverse"><span style="font-family:helvetica;position: relative;top: -5px">g</span></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2025</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
+
+
+</body>
+
+</html>

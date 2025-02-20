@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kirby Turner">
+    
+    <meta name="description" content="Xcode 6 changes how you export a .ipa from an archive for adhoc distribution. It used to be that you could export the archive to a .ipa as long as you had the right provisioning profile and distribution certificate on your machine. Starting with Xcode 6 you need to be a team member of the particular Developer Program account and you need to have the rights to make a distribution build. This means you need to be a team agent. However, I work with a number of clients who don’t have the clue what Xcode is much less are willing to make distribution builds, so I need to way to make distribution builds within this new limitation from Xcode 6.
+">
+    
+
+    <!-- Facebook tags -->
+    <meta property="og:title" content="Using xcodebuild To Export a .ipa From an Archive" />
+    
+    <meta name="og:description" content="Xcode 6 changes how you export a .ipa from an archive for adhoc distribution. It used to be that you could export the archive to a .ipa as long as you had the right provisioning profile and distribution certificate on your machine. Starting with Xcode 6 you need to be a team member of the particular Developer Program account and you need to have the rights to make a distribution build. This means you need to be a team agent. However, I work with a number of clients who don’t have the clue what Xcode is much less are willing to make distribution builds, so I need to way to make distribution builds within this new limitation from Xcode 6.
+">
+    
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/mr.kirbyturner" />
+    <meta property="og:image" content="http://www.thecave.com/img/bg-03.jpg" />
+    <meta property="og:url" content="http://www.thecave.com/2014/09/16/using-xcodebuild-to-export-a-ipa-from-an-archive/" />
+    <meta property="og:site_name" content="thecave | Kirby Turner's Blog" />
+
+    <title>Using xcodebuild To Export a .ipa From an Archive</title>
+
+    <link href="https://micro.blog/kirbyt" rel="me" />
+    <link rel="canonical" href="http://www.thecave.com/2014/09/16/using-xcodebuild-to-export-a-ipa-from-an-archive/">
+    <link rel="alternate" type="application/atom+xml" title="thecave | Kirby Turner's Blog's Feed" href="http://www.thecave.com/feed.xml" />
+
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/clean-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- YouTube CSS -->
+    <link rel="stylesheet" href="/css/video.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">thecave</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                
+                <li>
+                    <a href="/about/">About</a>
+                </li>
+                
+                <li>
+                    <a href="/archive/">Archive</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/">Categories & Tags</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+    <!-- Post Header -->
+<header class="intro-header" style="background-image: url('/img/bg-03.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Using xcodebuild To Export a .ipa From an Archive</h1>
+                    
+                    <span class="meta">Posted by Kirby Turner on September 16, 2014</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+				<p>Xcode 6 changes how you export a .ipa from an archive for adhoc distribution. It used to be that you could export the archive to a .ipa as long as you had the right provisioning profile and distribution certificate on your machine. Starting with Xcode 6 you need to be a team member of the particular Developer Program account and you need to have the rights to make a distribution build. This means you need to be a team agent. However, I work with a number of clients who don’t have the clue what Xcode is much less are willing to make distribution builds, so I need to way to make distribution builds within this new limitation from Xcode 6.</p>
+
+<p>Making distribution builds hasn’t been a problem for me in the past. I ask the client to provide me<sup id="fnref:ask"><a href="#fn:ask" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> with the necessary provisioning profile, distribution certificate, and public private key pair so I can make the distribution build for them. Then I use Xcode Organizer to export the archive to a .ipa that I can distribute.<sup id="fnref:host"><a href="#fn:host" class="footnote" rel="footnote" role="doc-noteref">2</a></sup> But it seems I can no longer export using Organizer without having the right team access, so I had to search out an alternative approach.</p>
+
+<p>Turns out starting with Xcode 5, <em>xcodebuild</em> includes parameters for exporting from an archive. This is exactly what I need so I can continue making adhoc distribution builds for clients without being a team member or team agent under their Developer Program account.</p>
+
+<p>So how do I do it?</p>
+
+<h3 id="the-how-to">The How To</h3>
+
+<p>My build script starts by performing a clean.</p>
+
+<blockquote>
+  <p>xcodebuild clean -project $projectname.xcodeproj -configuration Release -alltargets</p>
+</blockquote>
+
+<p>Then the script builds and archives the app. I specify the archive path using the <em>-archivePath</em> parameter in the command line so the script will know where the archive file is located.</p>
+
+<blockquote>
+  <p>xcodebuild archive -project $projectname.xcodeproj -scheme $schemename -archivePath $projectname.xcarchive</p>
+</blockquote>
+
+<p>Finally my script exports the archive into a .ipa file.</p>
+
+<blockquote>
+  <p>xcodebuild -exportArchive -archivePath $projectname.xcarchive -exportPath $projectname -exportFormat ipa -exportProvisioningProfile “Provisioning Profile Name”</p>
+</blockquote>
+
+<p>I let the provisioning profile imply the signing identity, but you can specify the signing identity using the <em>-exportSigningIdentity</em> parameter.</p>
+
+<h3 id="the-gotcha">The Gotcha</h3>
+
+<p>The one major gotcha that cost me a more than an hour of time was figuring out the parameter value for <em>-exportProvisioningProfile</em>. I initial thought it should be the file name to the provisioning profile. I tried it with and without the <em>.mobileprovision</em> file extension, but it did not work. I included a relative path as well as an absolute path to the provision profile. I tried using the UUID for the provision profile instead of the file name. I even I tried not including a path at all thinking it would look up the provision profile in the <em>~/Library/MobileDevice/Provisioning Profiles/</em> directory, but still no luck.</p>
+
+<p>Turns out I needed to specify the name of the provisioning profile as defined in the file itself. This is the same name assigned to the profile in the provisioning portal. Once I figured this out I was able to export the .ipa from the archive using the my build script, and I don’t have to be a team agent under my client’s Developer Program account to make the distribution build.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:ask">
+      <p>I usually assist my clients with this by guiding them through the steps, or I ask them to give me the account credentials with a temporary password so I can perform the necessary steps. Then I have the client reset the password. <a href="#fnref:ask" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:host">
+      <p>I don’t export when I host the test app on <a href="http://hockeyapp.net/">HockeyApp</a>. It takes care of exporting the .ipa from the archive for you. I only export when the client requests that the test app be hosted on their own server.) <a href="#fnref:host" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+
+                <hr>
+
+                
+                    <p>
+                    Posted in <a class='category' href='/category/programming/'>programming</a>. 
+                    Tagged in <a class='tag' href='/tag/ios/'>ios</a>, <a class='tag' href='/tag/xcode/'>xcode</a>.
+                    </p>
+                
+
+                
+
+                
+                    <hr>
+                    <h3>Related Articles</h3>
+                    <ul>
+                    
+                        <li><a href="/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout/">I Stopped Using NIBs Thanks to Auto Layout</a></li>
+                    
+                        <li><a href="/2017/05/02/advice-for-new-ios-freelancers/">Advice for new iOS freelancers</a></li>
+                    
+                        <li><a href="/2017/04/21/how-i-post-to-my-jekyll-site-using-my-iphone/">How I post to my Jekyll site using my iPhone</a></li>
+                    
+                        <li><a href="/2017/02/02/the-experienced-programmers-guide-to-getting-started-with-swift/">The Experienced Programmer's Guide to Getting Started with Swift</a></li>
+                    
+                        <li><a href="/2016/11/19/from-trace-to-slopes/">From Trace To Slopes</a></li>
+                    
+                        <li><a href="/2015/12/03/how-to-do-a-case-insensitive-search-using-parse-sdk/">How To Do A Case Insensitive Search Using Parse SDK</a></li>
+                    
+                        <li><a href="/2015/09/28/how-to-present-an-alert-view-using-uialertcontroller-when-you-dont-have-a-view-controller/">How To Present An Alert View Using UIAlertController When You Don't Have A View Controller</a></li>
+                    
+                        <li><a href="/2015/09/07/my-upcoming-share-extension-talk-at-360idev-min/">My Upcoming Share Extension Talk At 360idev-Min</a></li>
+                    
+                        <li><a href="/2015/09/01/wish-i-could-help-but-its-not-my-app/">Wish I Could Help But It's Not My App</a></li>
+                    
+                        <li><a href="/2015/08/11/maintain-your-ios-app-with-peak-app-care/">Maintain Your iOS App With Peak App Care</a></li>
+                    
+                    </ul>
+                
+
+                <hr>
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2014/09/15/reporting-errors-in-cross-post-part-2/" data-toggle="tooltip" data-placement="top" title="Reporting Errors in Cross Post Part 2">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2014/10/09/microblogging-the-open-web-and-cross-post/" data-toggle="tooltip" data-placement="top" title="Microblogging, the Open Web, and Cross Post">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<p>&nbsp;</p>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Recent Articles</h3>
+                <ul>
+                
+                <li><a href="/2021/03/10/my-backpacks/" title="My Backpacks">My Backpacks</a></li>
+                
+                <li><a href="/2021/01/06/my-private-snowshoe-trail/" title="My Private Snowshoe Trail">My Private Snowshoe Trail</a></li>
+                
+                <li><a href="/2021/01/04/beautiful-view-in-stowe-this-morning/" title="Beautiful View in Stowe This Morning">Beautiful View in Stowe This Morning</a></li>
+                
+                <li><a href="/2020/12/28/a-moonlit-night/" title="A Moonlit Night">A Moonlit Night</a></li>
+                
+                <li><a href="/2020/12/22/slab-of-snow/" title="Slab of Snow">Slab of Snow</a></li>
+                
+                </ul>
+            </div>
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Other Sites</h3>
+                <ul>
+                    <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
+                    <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br />
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://twitter.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="https://github.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="http://www.linkedin.com/in/kirbyturner/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://www.goodreads.com/kirbyt/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-stack-1x fa-inverse"><span style="font-family:helvetica;position: relative;top: -5px">g</span></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2025</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
+
+
+</body>
+
+</html>

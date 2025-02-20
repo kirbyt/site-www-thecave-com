@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kirby Turner">
+    
+    <meta name="description" content="The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.">
+    
+
+    <!-- Facebook tags -->
+    <meta property="og:title" content="delphi" />
+    
+    <meta name="og:description" content="The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.">
+    
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/mr.kirbyturner" />
+    <meta property="og:image" content="http://www.thecave.com/img/bg-01.jpg" />
+    <meta property="og:url" content="http://www.thecave.com/tag/delphi/" />
+    <meta property="og:site_name" content="thecave | Kirby Turner's Blog" />
+
+    <title>delphi</title>
+
+    <link href="https://micro.blog/kirbyt" rel="me" />
+    <link rel="canonical" href="http://www.thecave.com/tag/delphi/">
+    <link rel="alternate" type="application/atom+xml" title="thecave | Kirby Turner's Blog's Feed" href="http://www.thecave.com/feed.xml" />
+
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/clean-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- YouTube CSS -->
+    <link rel="stylesheet" href="/css/video.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">thecave</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                
+                <li>
+                    <a href="/about/">About</a>
+                </li>
+                
+                <li>
+                    <a href="/archive/">Archive</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/">Categories & Tags</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+    <!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/bg-01.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>delphi</h1>
+                    <hr class="small">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/12/06/delphi-bds-live-templates-for-sql-server/">Delphi (BDS) Live Templates for SQL Server</a>
+    </h2>
+    
+    <p>Here are a few Delphi (BDS) Live Templates I created for writting SQL Server script:<br /><br /><b>Create SQL Server Table</b><br />&lt;pre&gt;<br /><br /><br />        version=”1.0.0”&gt;<br /> <br /> <br />      Create table for SQL Server.<br /> <br /> <br />      Kirby Turner<br /> <br /><br /> <br /> <br />        TableName<br /> <br /> <br /> <br /> <br /><br /> <code>&lt;![CDATA[/***<br />  Create |TableName| table.<br />***/<br /><br />PRINT 'Create |TableName| table'<br />GO<br /><br />IF (EXISTS (SELECT name FROM sysobjects WHERE (name = N'|TableName|') AND (type = 'U')))<br />BEGIN<br />  DROP TABLE [dbo].[|TableName|]<br />END<br />GO<br /><br />CREATE TABLE [dbo].[|TableName|] (<br />|*||end|<br /><br />|*|CONSTRAINT [PK_|TableName|_1] PRIMARY KEY CLUSTERED<br />|*|(<br />|*|)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]<br />) ON [PRIMARY]<br />GO<br /><br />GRANT SELECT ON [dbo].[|TableName|] TO [public]<br />GO]]&gt;<br /> </code><br /> <br /><br />&lt;/pre&gt;<br /><br /><b>Create Foreign Key Reference</b><br />&lt;pre&gt;<br /><br /><br />        version=”1.0.0”&gt;<br /> <br /> <br />      Create foreign key constraint for SQL Server.<br /> <br /> <br />      Kirby Turner<br /> <br /> <br /> <br />                PrimaryTableName<br /> <br /> <br /> <br /> <br /> <br /> <br />                SecondaryTableName<br /> <br /> <br /> <br /> <br /> <br /> <br />                ColumnName<br /> <br /> <br /> <br /> <br /> <code>&lt;![CDATA[ALTER TABLE [dbo].[|PrimaryTableName|] WITH CHECK ADD<br />CONSTRAINT [FK_|PrimaryTableName|_|SecondaryTableName|] FOREIGN KEY([|ColumnName|])<br />REFERENCES [dbo].[|SecondaryTableName|] ([|ColumnName|])<br />GO]]&gt;<br /> </code><br /> <br /><br />&lt;/pre&gt;<br /><br />Enjoy.</p>
+
+
+    <p><a href="/2006/12/06/delphi-bds-live-templates-for-sql-server/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on December 6, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>, <a class='tag' href='/tag/windows/'>windows</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/11/15/codegear/">CodeGear</a>
+    </h2>
+    
+    <p>It’s official.  Borland’s Developer Tool Group, aka DTG, aka DevCo, has spun off.  The new company is called <a href="http://www.codegear.com/">CodeGear</a>. <br /><br />Here are various links about CodeGear and today’s announcement:&lt;ul&gt;<br />&lt;li&gt;<a href="http://blogs.borland.com/abauer/archive/2006/11/14/29345.aspx">CodeGear blog posting by Allen Bauer, CodeGear Chief Scientist</a><br />&lt;/li&gt;&lt;li&gt;<a href="http://bdn.borland.com/article/33818">Letter from Ben Smith, CEO CodeGear</a><br />&lt;/li&gt;&lt;li&gt;<a href="http://www.eweek.com/article2/0,1895,2059052,00.asp">Borland Spins Off Its Tools Unit</a><br />&lt;/li&gt;&lt;li&gt;<a href="http://www.eweek.com/article2/0,1895,2059084,00.asp">Borland Launches CodeGear to Supply Developers with Tools of the Trade</a><br />&lt;/li&gt;&lt;li&gt;<a href="http://bdn.borland.com/article/33817">Borland forms CodeGear - FAQ</a><br />&lt;/li&gt;&lt;/ul&gt;</p>
+
+
+    <p><a href="/2006/11/15/codegear/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on November 15, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/10/30/delphi-2006-survey/">Delphi 2006 Survey</a>
+    </h2>
+    
+    <p>Yesterday Nick Hodges announced that the <a href="http://infopoll.net/live/surveys/s30110.htm">Delphi 2006 Survey</a> is online.  Share your feedback by filling out this year’s survey.</p>
+
+
+    <p><a href="/2006/10/30/delphi-2006-survey/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on October 30, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/10/25/namespaces-in-delphi/">Namespaces in Delphi</a>
+    </h2>
+    
+    <p>Recently there have been some good postings about using namespaces in Delphi such as the ones <a href="http://blogs.borland.com/nickhodges/articles/28331.aspx">here</a>, <a href="http://blogs.teamb.com/rudyvelthuis/archive/2006/10/04/27817.aspx">here</a>, and <a href="http://blog.marcocantu.com/blog/delphidotnet_firstclass.html">here</a>.  I like how namespaces are implemented in Delphi but I have been slow to adopt them in my Delphi code (especially Win32 code).  The problem I have is that the BDS Project Manager has no collapsible view, or grouping for namespaces.  Instead, Project Manager lists the unit names.  My namespaces tend to be wordy which means I cannot easily see the unit name without making the Project Manager window very wide.<br /><br />It will be great if the next release of BDS provides some sort of grouping of namespaces within the Project Manager.  For example, each segment in the namespace could be represented as a folder that can expand and collapse.  And the contents of the folder would be the final unit name or additional namespaces contained within.  In other words, the Project Manager would look something like this when the following units are included:<br /><br />Units:<br /><br />WhitePeakSoftware.Data.DataProvider.pas<br />WhitePeakSoftware.Data.Providers.SqlProvider.pas<br />WhitePeakSoftware.Data.Providers.SqliteProvider.pas<br />WhitePeakSoftware.Net.MailClient.pas<br /><br />Project Manager:<br />&lt;pre&gt;<br />ProjectGroup<br />- MyProgram.exe<br />  + References<br />  - WhitePeakSoftware<br />    - Data<br />      - Providers<br />        - SqlProvider.pas<br />        - SqliteProvider.pas<br />      - DataProvider.pas<br />    - Net<br />      - MailClient.pas<br />&lt;/pre&gt;<br /><br />There is already a <a href="http://qc.borland.com/wc/qcmain.aspx?d=26677">feature request</a> in the QC that asks for namespace grouping.  Please vote for this feature if you are using namespaces in Delphi and you would like to see some type of namespace grouping.</p>
+
+
+    <p><a href="/2006/10/25/namespaces-in-delphi/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on October 25, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/09/25/parse-csv-or-tab-separated-files-using-delphi/">Parse CSV or Tab Separated Files Using Delphi</a>
+    </h2>
+    
+    <p>The <a href="http://www.whitepeaksoftware.com/delphi_csv_parser.aspx">wpsCsvParser</a> has been updated to support parsing Tab Separated Value files.  You can specify the value separator type by setting the new ValueSeparatorType property to either vsCsv or vsTab.  Or you can set the ValueSeparator property to any character you wish to use as the separator.  The default is vsCsv for CSV parsing.</p>
+
+
+    <p><a href="/2006/09/25/parse-csv-or-tab-separated-files-using-delphi/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on September 25, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/09/11/wpscsvparser-fix/">wpsCsvParser Fix</a>
+    </h2>
+    
+    <p>A new version of the <a href="http://www.whitepeaksoftware.com/delphi_csv_parser.aspx">wpsCsvParser</a> has been posted to the <a href="http://www.whitepeaksoftware.com/">White Peak Software</a> web site.  Thanks to Stephan Hilchenbach for providing the fix to the bug that caused the parser to ignore the last field on a line if the field is empty.</p>
+
+
+    <p><a href="/2006/09/11/wpscsvparser-fix/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on September 11, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/09/05/video-tutorials-for-delphi/">Video Tutorials for Delphi</a>
+    </h2>
+    
+    <p>Nick Hodges, <a href="http://www.borland.com/">Delphi</a> Product Manager, has been busy for the last 22 days piecing together the <a href="http://blogs.borland.com/nickhodges/articles/26687.aspx">Thirty Camtasia Demos in Thirty Days for Delphi</a>.  These short videos are the perfect tutorials for those <a href="http://www.turboexplorer.com/">new to Delphi</a>.</p>
+
+
+    <p><a href="/2006/09/05/video-tutorials-for-delphi/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on September 5, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>, <a class='tag' href='/tag/videos/'>videos</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/09/05/csv-parser-for-delphi/">CSV Parser for Delphi</a>
+    </h2>
+    
+    <p>I updated my <a href="http://www.whitepeaksoftware.com/delphi_csv_parser.aspx">Delphi CSV Parser</a> to include .NET support.  TwpsCsvParser can now be compiled for Win32 and .NET applications using Delphi.  To download the code with sample Win32 and .NET applications, visit the <a href="http://www.whitepeaksoftware.com/delphi_csv_parser.aspx">Delphi CSV Parser</a> page at the <a href="http://www.whitepeaksoftware.com/">White Peak Software</a> web site.<br /><br />Don’t have Delphi?  Visit <a href="http://www.turboexplorer.com/">http://www.turboexplorer.com/</a> and download the FREE <a href="http://www.turboexplorer.com/delphi">Turbo Delphi Explorer</a> or <a href="http://www.turboexplorer.com/delphinet">Turbo Delphi for .NET Explorer</a>.</p>
+
+
+    <p><a href="/2006/09/05/csv-parser-for-delphi/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on September 5, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/09/01/free-3rd-party-tool-bundle-with-bds-2006/">FREE 3rd Party Tool bundle with BDS 2006</a>
+    </h2>
+    
+    <p>You have BDS 2006 right?  Did you see the latest marketing campaign that includes the following 3rd party applications (full versions, not trial)?<br /><br /><a href="http://www.twodesk.com/">Castalia</a><br /><a href="http://www.socksoftware.com/codehealer.php">CodeHealer</a><br /><a href="http://www.scootersoftware.com/">Beyond Compare Differ</a><br /><a href="http://www.builderbooster.com/">BuilderBooster</a>(tm)<br /><br />Registered users of BDS 2006 are also entitled to the FREE bundle.  Just go to the download site and click FREE 3rd party tools.<br /><br /><a href="http://www.borland.com/downloads/registered/download_bds.html">http://www.borland.com/downloads/registered/download_bds.html</a><br /><br />I’ve been a Beyond Compare user for years.  It’s a great piece of software.  Not only can you compare files, but you can compare directories, and, get this, compare FTP sites.  The ability to compare with FTP sites is awesome.<br /><br />Thanks for the 3rd party bunlde DevCo!</p>
+
+
+    <p><a href="/2006/09/01/free-3rd-party-tool-bundle-with-bds-2006/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on September 1, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/08/28/from-delphi-to-c-and-back-again/">From Delphi to C# and Back Again</a>
+    </h2>
+    
+    <p>I remember when I first started working with C#.  A friend at Microsoft showed it to me at PDC in 2000.  He just happened to be the same guy who introduced me to Delphi a few years earlier, and I remember him saying “You’re going to love this.”  And I did.  C# made programming fun again for me after being stuck in the VB world for a couple of years.  That fun feeling I had with C# was similar to the fun feeling I had when I was programming with Delphi during the mid-90s.<br /><br />I enjoyed C# for the years that followed.  Of course all the work was web-based.  After starting <a href="http://www.whitepeaksoftware.com/">White Peak Software</a> a customer asked me to develop a prototype version of a desktop application.  The customer also asked that I use VB.NET, so I gave VB.NET a try.  However I stepped away from the project after completing the prototype.  Working in VB.NET was an awful experience for me and I now refuse to write any programs using VB.NET.  <br /><br />What was equally as awful was writing a desktop application in .NET (and I have written my fair share of them as well).  Sure, it can be done but not with the speed and easy found with Delphi and the VCL.  I bought and used Delphi 2005 for the next desktop application I wrote and I haven’t looked back.  Delphi is back as my language of choice, and the Borland Developer Studio is my IDE of choice for both Delphi and C# development.<br /><br />The VCL is the magical piece that makes writing Windows desktop application so easy.  Sure I love Delphi as a language.  Pascal has always been my favorite.  I cut my programming teeth on Pascal back in the early 80’s.  C# is a nice language too especially if you prefer C-style languages, and it’s my second programming language of choice.  But VCL features such as TFrame and TAction make writing a Windows desktop application make easier compared to .NET.<br /><br />Today I do more Delphi programming than C# and I couldn’t be happier.  My customers are happier too.</p>
+
+
+    <p><a href="/2006/08/28/from-delphi-to-c-and-back-again/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on August 28, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/csharp/'>csharp</a>, <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/08/23/delphi-oktoberfest-video/">Delphi Oktoberfest Video</a>
+    </h2>
+    
+    <p>The <a href="http://www.youtube.com/watch?v=BdQy3_BhhgA">Delphi Oktoberfest video</a> is a funny video from the 1995 Borland Developer Conference.  The message still applies today.</p>
+
+
+    <p><a href="/2006/08/23/delphi-oktoberfest-video/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on August 23, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>, <a class='tag' href='/tag/videos/'>videos</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/08/12/turbo-delphi/">Turbo Delphi</a>
+    </h2>
+    
+    <p>Earlier this year I ranted about <a href="http://www.thecave.com/archive/2006/01/16/why_no_free_personal_edition_of_borland_developer_studio.aspx">Borland not offering a free personal edition of Borland Developer Studio</a>, and more specifically <a href="http://www.borland.com/delphi/">Delphi</a>.  A few months later a trial version was made available for download.  But the new DevCo is going one step further with the upcoming release of the <a href="http://www.turboexplorer.com/">Turbo editions of Delphi, Delphi.NET, C++, and C#</a>.<br /><br />The single language Turbo editions come in two flavors, Explorer and Professional.  Explorer is FREE while Professional will be less than $500 (and less then $100 for students).  The only restriction in the Explorer addition is the fixed component palette.  In other words, the Explorer edition, which comes with hundreds of pre-built components will not allow you use to 3rd party components.  But that’s okay because it is FREE.<br /><br />The return of single language Turbo editions is exciting news.  Now all those others developers who hear me preach about the wonders of Delphi will have a chance to give Turbo Delphi a spin at no cost.  And once they discover the power they will be able to buy the professional edition at a reasonable price.<br /><br />For me, I plan to stick with Borland Developer Studio because I need to multi-language support.  But I’m still excited about the new opportunities the Turbo editions will create.<br /><br />Go DevCo!</p>
+
+
+    <p><a href="/2006/08/12/turbo-delphi/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on August 12, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/07/26/devco-sell-to-be-completed-soon/">DevCo Sell to be Completed Soon</a>
+    </h2>
+    
+    <p>In this recent article on eWeek, Tod Nielsen said <a href="http://www.eweek.com/article2/0,1895,1993731,00.asp?kc=EWEAUEMNL072506EOAD">Borland is close to naming the buyer for DevCo</a>.  He also said the process should be complete by the end of September.  Exciting time indeed for software developers.  <br /><br />Many people thing Delphi is dead, but they are dead wrong.  I’ve been hearing the same time for 10 years now from people who have never even tried Delphi.  “Delphi is dead.”  “There is no future for Delphi.” And so on.  Not only is this wrong, but the future of Delphi is brighter than ever.<br /><br />I jumped onto the .NET C# bandwagon in the early days.  My first C# work started right after the Summer 2000 PDC, and I worked with C# exclusively from 2001 through most of 2004.  <br /><br />Soon after starting <a href="http://www.whitepeaksoftware.com">White Peak Software</a> I realized I needed a “secret weapon” not only for custom software development work but for the products White Peak Software plans to publish.  That secret weapon is <a href="http://www.borland.com/delphi">Delphi</a>.  I have been able to do so much more for our customers, in less time and at a lower cost beacuse Delphi.<br /><br />Corporations and uppper management will never get it.  Microsoft development tools are a safe choice, and in many cases .NET within the enterprise makes the most sense.  But for those developers who need a tool that allows them to do many things, Delphi or rather Borland Developer Studio is perfect.  The ability to write native Win32 application and .NET applications from the same IDE is priceless.</p>
+
+
+    <p><a href="/2006/07/26/devco-sell-to-be-completed-soon/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on July 26, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/07/25/less-risk-with-delphi/">Less risk with Delphi</a>
+    </h2>
+    
+    <p>A good read about one person’s opinion on why <a href="http://blogs.borland.com/nickhodges/archive/2006/07/25/26224.aspx">Delphi is less risky</a> compared to Microsoft development tools.  I concur with this opinion.  Heck just the other day I incorporated some Delphi code that I wrote some 10 years ago into a customer application.</p>
+
+
+    <p><a href="/2006/07/25/less-risk-with-delphi/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on July 25, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/06/15/quickbase-api-for-delphi/">QuickBase API for Delphi</a>
+    </h2>
+    
+    <p>I have been doing more <a href="http://www.quickbase.com/">QuickBase</a> work lately.  I really like QuickBase but the <a href="https://www.quickbase.com/up/6mztyxu8/g/rc7/en/va/QuickBaseAPI.htm">HTTP API</a> can be a bit hairy.  Intuit provides various language specific SDKs for the QuickBase API but <a href="http://www.borland.com/delphi">Delphi</a> is not included.  So I’m writing my own.  [I’ll post the code to the <a href="http://www.whitepeaksoftware.com/">White Peak Software</a> site as soon as it is done.]</p>
+
+
+    <p><a href="/2006/06/15/quickbase-api-for-delphi/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on June 15, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/06/15/nick-hodges-joins-devco/">Nick Hodges Joins DevCo</a>
+    </h2>
+    
+    <p><a href="http://www.lemanix.com/nickblog/">Nick Hodges</a> of <a href="http://www.teamb.com/">TeamB</a> fame, and a huge voice for the <a href="http://www.borland.com/delphi">Delphi</a> community, has joined the DevCo team as the <a href="http://www.lemanix.com/nickblog/PermaLink,guid,e12c634d-a70b-4c8e-b6e5-1c23130bf518.aspx">new Delphi Product Manager</a>.  Congratulations Nick!  I can’t think of a better person for the role.</p>
+
+
+    <p><a href="/2006/06/15/nick-hodges-joins-devco/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on June 15, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/06/10/bds-2006-hot-fix-5/">BDS 2006 Hot Fix 5</a>
+    </h2>
+    
+    <p>Sounds like the new <a href="http://groups.google.com/group/borland.public.delphi.non-technical/browse_thread/thread/5d0a803ea08f93df/4301233951de49db?#4301233951de49db">Hot Fix 5 for BSD 2006</a> is a good one for those looking to improve IDE performance.<br /><br /><span style="color:red">Update: I installed hot fix 5, and now switching between design mode and code is lighting fast!  Thanks DevCo.</span></p>
+
+
+    <p><a href="/2006/06/10/bds-2006-hot-fix-5/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on June 10, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/06/08/no-delphi-road-show-for-me/">No Delphi Road Show for me</a>
+    </h2>
+    
+    <p>I planned to attend the <a href="http://208.109.7.163/html/borland_inside/landing.htm">Delphi Road Show</a> today hosted in NYC, but it seems other forces had other plans for me.  I’m bummed not to be in attendance.  For one, I want to show my support for Delphi and the new DevCo.  I also wanted to hear <a href="http://blogs.borland.com/davidi/">David I</a> talk about the future.  And lastly, I was hoping to network with other Delphi developers.  But it didn’t happen for me.  I can only now hope that they add another NYC date, or better yet a Boston date.  Or even provide a webcast of the road show once the tour as ended.<br /><br />Update: <a href="http://www.thecave.com/archive/2006/06/08/delphi_road_show_webcast.aspx">A web cast date has been added.</a></p>
+
+
+    <p><a href="/2006/06/08/no-delphi-road-show-for-me/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on June 8, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/06/08/delphi-road-show-webcast/">Delphi Road Show Webcast</a>
+    </h2>
+    
+    <p>Did David I read my <a href="http://www.thecave.com/archive/2006/06/08/no_delphi_road_show_for_me.aspx">posting</a> hoping for a webcast of the Delphi Road Show?  I doubt it but at least great minds think alike.  A <a href="http://208.109.7.163/html/borland_inside/weblanding.htm">webcast date for the Delphi tour</a> has been added.  Thanks DevCo!</p>
+
+
+    <p><a href="/2006/06/08/delphi-road-show-webcast/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on June 8, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/05/30/generating-large-number-of-temporary-user-accounts/">Generating Large Number of Temporary User Accounts</a>
+    </h2>
+    
+    <p>A customer recently asked White Peak Software to <a href="http://www.whitepeaksoftware.com/">design and implement custom software</a> for generating large batches of temporary user accounts.  The purpose of these temporary user accounts is to market a subscription based web site in much the same way AOL used to market its services.  Here’s how it works.</p>
+
+
+    <p><a href="/2006/05/30/generating-large-number-of-temporary-user-accounts/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on May 30, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/05/26/devco-questions-comments-and-name-suggestions/">DevCo Questions, Comments, and Name Suggestions</a>
+    </h2>
+    
+    <p>DevCo wants your input.  Michael Swindell, DevCo Director of Product Management, has posted a <a href="http://blogs.borland.com/michaelswindell/archive/2006/05/25.aspx">blog entry</a> asking you to send your suggestions, comments, and questions regarding DevCo to the appropriate email addresses listed below.<br /><br />Send a message to <a href="devco.names@borland.com">devco.names@borland.com</a> for your company name ideas.<br />Send a message to <a href="devco.suggestions@borland.com">devco.suggestions@borland.com</a> for your ideas and suggestions.<br />Send a message to <a href="devco.questions@borland.com">devco.questions@borland.com</a> with any questions and concerns.</p>
+
+
+    <p><a href="/2006/05/26/devco-questions-comments-and-name-suggestions/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on May 26, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/05/16/delphi-asp-net-on-mono/">Delphi ASP.NET on Mono</a>
+    </h2>
+    
+    <p>This blog posting by <a href="http://delphi-notes.blogspot.com/">Daniel Wischnewski</a> really caught my attention.  He has successfully ported an <a href="http://delphi-notes.blogspot.com/2006/05/first-time-delphi-aspnet-application.html">ASP.NET application written in Delphi.NET to a Linux environment running Mono and Apache</a>.  This really doesn’t surprise me because I have in the past run .NET assemblies under Mono without a problem.  But at the same time I find it very cool that it is an ASP.NET application written in <a href="http://www.borland.com/delphi">Delphi</a>, which is something I haven’t yet tried.  Awesome stuff.</p>
+
+
+    <p><a href="/2006/05/16/delphi-asp-net-on-mono/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on May 16, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>, <a class='tag' href='/tag/dotnet/'>dotnet</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/05/14/sharing-the-delphi-love/">Sharing the Delphi Love</a>
+    </h2>
+    
+    <p>Someone on the <a href="http://discuss.joelonsoftware.com/default.asp?joel">Joel on Software forum</a> asked “<a href="http://discuss.joelonsoftware.com/default.asp?joel.3.342621.47">how many ISVs are using Delphi</a>?”  If you’re using <a href="http://www.borland.com/delphi">Delphi</a>, share the love and post a reply.  White Peak Software is <a href="http://www.whitepeaksoftware.com/">using Delphi and Borland Developer Studio 2006 for its products and custom software</a>.</p>
+
+
+    <p><a href="/2006/05/14/sharing-the-delphi-love/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on May 14, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/05/12/borland-2006-road-show-u-s-dates/">Borland 2006 Road Show U.S. Dates</a>
+    </h2>
+    
+    <p>Registration for the <a href="http://208.109.7.163/html/borland_inside/landing.htm">Borland 2006 Road Show</a> is now open for the U.S. dates.  I have reserved my spot for the June 8 NYC event.</p>
+
+
+    <p><a href="/2006/05/12/borland-2006-road-show-u-s-dates/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on May 12, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/05/05/dbgo-and-delphi/">dbGo and Delphi</a>
+    </h2>
+    
+    <p>For years I believed the Professional Edition of Delphi did not provide any database access to SQL Server.  I assumed if you wanted db access you would need to import the type library for ADO included in MDAC.  But raw COM access to ADO is sometimes a pain (think BSTR and SafeArray).  So 15 minutes of googling and reading the BDS help file I discovered a gem called dbGo.  From the help file, “The dbGo components provide data access through the ADO framework.”  Go figure, or should I say “dbGo figure”?  [Geek humor, haha]</p>
+
+
+    <p><a href="/2006/05/05/dbgo-and-delphi/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on May 5, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/05/03/ws-workbench-coming-along-nicely/">WS-Workbench Coming Along Nicely</a>
+    </h2>
+    
+    <p><a href="http://www.thecave.com/images/blogimages/swirl-20060503.gif"><img src="http://www.thecave.com/images/blogimages/swirl-20060503.gif" width="50%" border="1" align="left" /></a>
+Work on <a href="http://www.whitepeaksoftware.com/">White Peak Software</a>’s next product, WS-Workbench (also called Swirl internally) is coming along nicely as you can see from this screen shot.  The first beta should be ready soon.  Post a comment or send me an email if you are interested in beta testing WS-Workbench once it is ready.</p>
+
+
+    <p><a href="/2006/05/03/ws-workbench-coming-along-nicely/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on May 3, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>, <a class='tag' href='/tag/white-peak-software/'>white peak software</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/05/02/too-much-technology-to-play-with/">Too Much Technology to Play With</a>
+    </h2>
+    
+    <p>Some days I find it hard to stay focused.  There are many new technologies to play with and I want to spend time with them all.  I’m itching to install the latest version of <a href="http://www.dotnetnuke.com/">DotNetNuke</a> and see what has changed in the last year.  I also want to port a web part I wrote for SharePoint from C# to <a href="http://www.borland.com/delphi/">Delphi</a> and make it a DNN module.  There’s also a few Ajax frameworks I want to experiment with, and <a href="http://code.google.com/apis/gdata/index.html">GData</a> (Google Data API) is something I’m really, really anxious to play with.<br /><br />The fun doesn’t stop there.  Microsoft’s Windows Workflow Foundation and SQL Server Integration Services (SSIS) are peaking my interest too.  /n software isn’t helping my focus problem either by releasing a new <a href="http://www.nsoftware.com/workflow/">workflow</a> and <a href="http://www.nsoftware.com/ssis/">SSIS</a>.  Just more fun stuff to play with.<br /><br />Maybe I need a new <a href="http://www.whitepeaksoftware.com/">White Peak Software</a> company policy allowing 8 hours per week to “technology play time”.</p>
+
+
+    <p><a href="/2006/05/02/too-much-technology-to-play-with/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on May 2, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/csharp/'>csharp</a>, <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/04/09/delphis-net-interop-features/">Delphi's .NET Interop features</a>
+    </h2>
+    
+    <p>Bruce McGee made a <a href="http://groups.google.com/group/borland.public.delphi.non-technical/browse_thread/thread/9b61ff2b4300a66e/2dad3eb263746f07?lnk=st&amp;q=Bruce+McGee+interop&amp;rnum=1#2dad3eb263746f07">newsgroup posting listing some great examples of interop between Delphi and the .NET world</a>.  Two that really caught my attention are:<br /><br />&lt;div class="quote"&gt;<br /><a href="http://cc.borland.com/Item.aspx?id=22688">http://cc.borland.com/Item.aspx?id=22688</a><br />Unmanaged exports.  Run .Net code from Win32 applications without COM interop.  Delphi and managed C++ support these, but C# doesn’t.<br /><br /><a href="http://cc.borland.com/Item.aspx?id=23615">http://cc.borland.com/Item.aspx?id=23615</a><br />Virtual Library Interfaces (VLI).  Run Win32 code from .Net<br />applications without PInvoke.  Not sure if any of the other .Net<br />languages support something similar.<br />&lt;/div&gt;</p>
+
+
+    <p><a href="/2006/04/09/delphis-net-interop-features/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on April 9, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/04/05/xml-schema-object-model-som-parser-for-delphi/">XML Schema Object Model (SOM) Parser for Delphi</a>
+    </h2>
+    
+    <p>I’m working on a new project and have a need to parse XML Schemas found inside WSDL documents.  After a few google searches I discovered the concept of a Schema Object Model (SOM).  The <a href="http://www.xml.com/pub/a/2002/12/04/som.html">.NET Framework has a SOM parser</a> as does <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/xmlsdk/html/85b447ee-70d0-4456-9ad7-70b4e2d1f3fa.asp">MSXML</a>.  There’s also a <a href="https://xsom.dev.java.net/">SOM parser for Java</a> as well.  Because I’m writing a Win32 application, I started learning <a href="http://www.informit.com/articles/article.asp?p=31360&amp;seqNum=1">the ins and outs of MSXML’s SOM parser</a>.  As a learned more I did additional google searches and discovered Delphi has its own SOM parser.<br /><br />Interfaces such as <i>IXmlSchemaDoc</i> and functions such as <i>LoadXMLSchema</i> and <i>LoadXMLSchemaStr</i> are undocumented but the source can be found in <i>source\win32\xml\XMLSchema.pas</i>.  There is also <a href="http://codecentral.borland.com/Item.aspx?id=21870">sample code for parsing an XML Schema</a> available BDN.  With the aid of the sample code I was able to get my sample project working.  <br /><br />And in case you are wondering, the VCL library has a component called <i>TXMLSchemaDoc</i> that wraps Delphi’s SOM parser into a handy component.  You will not find it in the tool pallet though.  For what it is worth, I found working with the interface (<i>IXmlSchemaDoc</i>) easy and I have not tried the <i>TXMLSchemaDoc</i> component.</p>
+
+
+    <p><a href="/2006/04/05/xml-schema-object-model-som-parser-for-delphi/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on April 5, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/02/17/trial-version-of-borland-developer-studio-available/">Trial Version of Borland Developer Studio Available</a>
+    </h2>
+    
+    <p>Borland has released a <a href="http://bdn.borland.com/article/0,1410,33447,00.html">trial version of the Borland Developer Studio 2006</a>.  It’s a 30-day trial of the Architect Edition and it can be downloaded from the Borland web site.</p>
+
+
+    <p><a href="/2006/02/17/trial-version-of-borland-developer-studio-available/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on February 17, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/02/08/brand-x-delphi/">Brand X Delphi</a>
+    </h2>
+    
+    <p>The blogosphere is buzzing with the latest Borland news, and one common theme is “Who keeps the Borland name and branding?”  It looks like the Borland name will stay with the ALM company while the development tools will be branded under the new company.  <br /><br />My first reaction to this was that the development tools should keep the Borland name.  After all, most people in the development community associate the Borland name with the development tools such as Delphi and JBuilder.  But after thinking about this a bit longer I’m starting to favor a new name.  Brand X Delphi might spark new interest in people who have given up on the Borland name.</p>
+
+
+    <p><a href="/2006/02/08/brand-x-delphi/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on February 8, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/02/08/borland-looking-for-buyer-for-delphi/">Borland Looking for Buyer for Delphi</a>
+    </h2>
+    
+    <p>eWeek.com reports <a href="http://www.eweek.com/article2/0,1895,1922384,00.asp?kc=ewnws020806dtx1k0000599">Borland to Divest Dev Tools with Segue Buyout</a>.  This is definitely not a move I expected from Borland’s new CEO Tod Nielsen.  Borland made the announcement yesterday saying it <a href="http://www.borland.com/us/company/news/press_releases/2006/02_08_06_borland_acquires_segue_software.html">plans to seek a buyer for the Borland IDE product lines</a>, which include Delphi, C++ Builder, C# Builder, JBuilder, InterBase, Kylix, and more.<br /><br />Although I didn’t expect it, I think it is a good move.  Borland’s focus the last couple of years has been on its ALM business, which is no interest to me.  The idea that a new spin-off company will be created that will focus on development tools such as Delphi sounds like the right move to me.  And I was happy to read that <a href="http://blogs.borland.com/davidi/archive/2006/02/08/23013.aspx">David Intersimone, aka David I, will be joining the new dev tool company</a>.</p>
+
+
+    <p><a href="/2006/02/08/borland-looking-for-buyer-for-delphi/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on February 8, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/01/26/more-on-personal-and-trial-editions-of-borland-developer-studio/">More on Personal and Trial Editions of Borland Developer Studio</a>
+    </h2>
+    
+    <p>Last week I posted <a href="http://www.thecave.com/archive/2006/01/16/why_no_free_personal_edition_of_borland_developer_studio.aspx">a few remarks on the lack of a free Personal or Trial Edition of Borland Developer Studio</a>.  A friend of mine wanted to give Delphi a try but unfortunately he cannot because Borland does not provide a way for him to do this.<br /><br />As it turns out on the same day Marco Cantu made a newsgroup and blog posting on the exact same topic.  And there were a number of replies from both sides regarding the issue, which I have included below.<br /><br />Still I think it is a mistake for Borland to not have a Personal or Trial version available for download available today.<br /><br /><a href="http://blog.marcocantu.com/blog/perstrial_again.html">More of the topic from Marco Cantu</a>.<br /><br /><a href="http://blogs.borland.com/abauer/archive/2006/01/18/22786.aspx">And a differ point of view.</a></p>
+
+
+    <p><a href="/2006/01/26/more-on-personal-and-trial-editions-of-borland-developer-studio/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on January 26, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/01/21/delphi-job-in-omaha-nebraska/">Delphi Job in Omaha, Nebraska</a>
+    </h2>
+    
+    <p>I received an email today regarding an immediate need for 3 to 4 Delphi consultants with XML experience to work on a client project in Omaha, Nebraska.  Let me know if you are interested and I will put you in contact with the right person.</p>
+
+
+    <p><a href="/2006/01/21/delphi-job-in-omaha-nebraska/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on January 21, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/01/19/bitwise-review-of-bds/">Bitwise Review of BDS</a>
+    </h2>
+    
+    <p>The January 2006 issue of the online magazine Bitwise Magazine has a good <a href="http://www.bitwisemag.com/copy/reviews/software/programming/borland/bds2006.html">review of Borland Developer Studio</a>.  The reviewer makes some very good points, although I do not complete agree with one point, C# programmers will prefer Visual Studio.  As someone who also writes code in C# I prefer BDS over Visual Studio.  I’m more productive using a single IDE then using two separate IDE.  Using two separate IDE means I have to remember two sets of the hotkeys, how-to’s, and so on.</p>
+
+
+    <p><a href="/2006/01/19/bitwise-review-of-bds/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on January 19, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/01/16/why-no-free-personal-edition-of-borland-developer-studio/">Why NO Free Personal Edition of Borland Developer Studio?</a>
+    </h2>
+    
+    <p>A good friend of mine is interested in doing some Delphi programming for personal projects.  Unfortunately he has no way of using the latest release of Delphi without spending money on a new user license.  On the contrary, the hobbyist programmer who wishes to learn C# can download and use Microsoft’s Visual C# Express free of charge.  <br /><br />I’m always talking up the benefits of Delphi to my friends and I’m constantly telling other developers to give it a try.  But the sad reality is that those interested in looking at Delphi for the first time or the hobbyist slash student who wants to use Delphi for personal projects and to learn cannot without spending lots of dollars for a new user license.<br /><br />Get a clue Borland!  Make a Personal Edition free for those programmers who wish to learn more about Delphi or use it for personal projects.  And make it downloadable from your web site.  You will have more Delphi customers in the long run if you do.<br /><br />As for my friend, Borland has just lost a potential customer by not providing a freeware version Delphi.<br /><br /><span style="color:red">Update</span>: Seems I’m not the only one talking about the lack of a Personal Edition or trial version of Delphi.  <a href="http://blog.marcocantu.com/blog/d2006trial.html">What about Delphi 2006 Trial and Personal?</a></p>
+
+
+    <p><a href="/2006/01/16/why-no-free-personal-edition-of-borland-developer-studio/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on January 16, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/01/16/using-dunit-with-finalbuilder/">Using DUnit with FinalBuilder</a>
+    </h2>
+    
+    <p>After installing FinalBuilder for the first time, I looked through the list of actions to see what 3rd party tools were supported.  I was pleasantly surprised to see an action for every tool I use in software development except one, DUnit.  I thought this was odd but I soon realized that DUnit is supported, just not as a custom action.<br /><br />Follow these steps to use DUnit in FinalBuilder:<br /><br />1) Add a Compile Delphi Win32 Project action to your FinalBuilder project.<br />2) Point the Compile Delphi action to your DUnit project and configure it as needed to compile the project.<br />3) Add an Execute Program action to the FinalBuilder project.  This action is found under the Windows OS action group.<br />4) Point the action to the compiled bits from the Compile Delphi action.  In other words, point it to your DUnit program.<br />5) Mark the Log Output option, which should be marked by default.<br /><br />That’s it.  FinalBuilder will run your DUnit unit tests as part of the build process and the output from the tests will be captured by FinalBuilder.  And of course you can configure the FinalBuilder project to act accordingly based on the pass/fail result of your unit tests.<br /><br />Some people might think FinalBuilder should have a custom action for DUnit.  However, the action would only be a direct copy of the Execute Program action.  Or maybe it would combine the Compile Delphi and Execute Program actions into a single action.  But as you can see a custom action is not needed.  DUnit unit tests are support through the Execute Program action and a custom action specific to DUnit would just be a waste of time for the folks at Vsoft Technologies.  Their time is better spent adding support for more tools and adding more features to an already great product,<br />FinalBuilder.</p>
+
+
+    <p><a href="/2006/01/16/using-dunit-with-finalbuilder/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on January 16, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/01/16/migrating-from-visual-studio-to-borland-developer-studio/">Migrating from Visual Studio to Borland Developer Studio</a>
+    </h2>
+    
+    <p>I spent the day migrating various Visual Studio projects to Borland Developer Studio 2006.  For the most part the projects easily moved over but I did have some problems with one project group.  <br /><br />This project group contains multiple C# library projects and an ASP.NET C# web application.  The BDS converter for the project group did not set the parent reference for some of the .aspx and .ascx files.  However, I was able to quickly fix this using a text editor.<br /><br />One Visual Studio feature I do miss since moving to Borland Developer Studio is Copy Web Project.  I really like this feature to xcopy an ASP.NET web application to a new directory that contains only the files needed for runtime.  The Professional Edition of BDS does not have this feature.  However, I was able to quickly clone this feature using FinalBuilder.<br /><br />Right now I’m very happy with the move to Borland Developer Studio.  Using one IDE for all my development work (Delphi, C# and ASP.NET 1.1) is making me a more productive software developer.</p>
+
+
+    <p><a href="/2006/01/16/migrating-from-visual-studio-to-borland-developer-studio/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on January 16, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+<!--- Post Starts -->
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2006/01/16/delphi-live-templates-for-vb-developers/">Delphi Live Templates for VB Developers</a>
+    </h2>
+    
+    <p><a href="http://www.lemanix.com/nickblog/default.aspx">Nick Hodges</a> has created a set of <a href="http://www.lemanix.com/nickblog/PermaLink,guid,e407798f-32bd-43cb-96d9-e1f5b04ae316.aspx">Delphi Live Templates for VB developers</a> who have moved to Delphi.  This templates work with the latest version of Borland Developer Studio.  The developer to type VBish code and the templates spit out Delphi code.  For instance, type “MsgBox” and you get “MessageDlg”.</p>
+
+
+    <p><a href="/2006/01/16/delphi-live-templates-for-vb-developers/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on January 16, 2006 in <a class='category' href='/category/programming/'>programming</a>.
+    
+        Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+    
+    </p>
+</div>
+<hr>
+<!--- Post Ends -->
+
+
+		</div>
+	</div>
+</div>
+
+<p>&nbsp;</p>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Recent Articles</h3>
+                <ul>
+                
+                <li><a href="/2021/03/10/my-backpacks/" title="My Backpacks">My Backpacks</a></li>
+                
+                <li><a href="/2021/01/06/my-private-snowshoe-trail/" title="My Private Snowshoe Trail">My Private Snowshoe Trail</a></li>
+                
+                <li><a href="/2021/01/04/beautiful-view-in-stowe-this-morning/" title="Beautiful View in Stowe This Morning">Beautiful View in Stowe This Morning</a></li>
+                
+                <li><a href="/2020/12/28/a-moonlit-night/" title="A Moonlit Night">A Moonlit Night</a></li>
+                
+                <li><a href="/2020/12/22/slab-of-snow/" title="Slab of Snow">Slab of Snow</a></li>
+                
+                </ul>
+            </div>
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Other Sites</h3>
+                <ul>
+                    <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
+                    <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br />
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://twitter.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="https://github.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="http://www.linkedin.com/in/kirbyturner/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://www.goodreads.com/kirbyt/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-stack-1x fa-inverse"><span style="font-family:helvetica;position: relative;top: -5px">g</span></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2025</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
+
+
+</body>
+
+</html>

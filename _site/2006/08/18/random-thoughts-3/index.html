@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kirby Turner">
+    
+    <meta name="description" content="Ever have one of those days where you can't seem to get into your work even though you are under enormous pressure to certain tight deadlines?  I'm having one of those days today, which means my brain is trying to tell me to take a break.SQLite is an awesome DBMS for single user, desktop applications.  I had the opportunity to use SQLite, well, a Delphi favor called DISQLite3 in a project a few weeks ago.  The program I wrote called for reading data from multiple CSV files and sending data back out to two more CSV files.  The problem I was having was managing data relationships in memory.  SQLite and DISQLite3 to the rescue!  I imported the CSV data into the SQLite relational database then exported data using SQL queries.  I'm now looking for more reasons to use DISQLite3.I downloaded and installed the Google AdWords Editor.  This neat desktop application makes it easier to manage your AdWord campaigns without having to go through the Web interface.  I recommend this program to anyone who needs to make frequent changes to AdWords campaigns.Only 17 days remain before the release of Turbo Delphi.  I wonder if the new DevCo investor will be announced that same day.I'm working on a new web site for a beer drinking game Josh, Brooke, and I invited last year.  The site still needs lots of work especially on the copy, but it's a start.
+">
+    
+
+    <!-- Facebook tags -->
+    <meta property="og:title" content="Random Thoughts #3" />
+    
+    <meta name="og:description" content="Ever have one of those days where you can't seem to get into your work even though you are under enormous pressure to certain tight deadlines?  I'm having one of those days today, which means my brain is trying to tell me to take a break.SQLite is an awesome DBMS for single user, desktop applications.  I had the opportunity to use SQLite, well, a Delphi favor called DISQLite3 in a project a few weeks ago.  The program I wrote called for reading data from multiple CSV files and sending data back out to two more CSV files.  The problem I was having was managing data relationships in memory.  SQLite and DISQLite3 to the rescue!  I imported the CSV data into the SQLite relational database then exported data using SQL queries.  I'm now looking for more reasons to use DISQLite3.I downloaded and installed the Google AdWords Editor.  This neat desktop application makes it easier to manage your AdWord campaigns without having to go through the Web interface.  I recommend this program to anyone who needs to make frequent changes to AdWords campaigns.Only 17 days remain before the release of Turbo Delphi.  I wonder if the new DevCo investor will be announced that same day.I'm working on a new web site for a beer drinking game Josh, Brooke, and I invited last year.  The site still needs lots of work especially on the copy, but it's a start.
+">
+    
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/mr.kirbyturner" />
+    <meta property="og:image" content="http://www.thecave.com/img/bg-05.jpg" />
+    <meta property="og:url" content="http://www.thecave.com/2006/08/18/random-thoughts-3/" />
+    <meta property="og:site_name" content="thecave | Kirby Turner's Blog" />
+
+    <title>Random Thoughts #3</title>
+
+    <link href="https://micro.blog/kirbyt" rel="me" />
+    <link rel="canonical" href="http://www.thecave.com/2006/08/18/random-thoughts-3/">
+    <link rel="alternate" type="application/atom+xml" title="thecave | Kirby Turner's Blog's Feed" href="http://www.thecave.com/feed.xml" />
+
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/clean-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- YouTube CSS -->
+    <link rel="stylesheet" href="/css/video.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">thecave</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                
+                <li>
+                    <a href="/about/">About</a>
+                </li>
+                
+                <li>
+                    <a href="/archive/">Archive</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/">Categories & Tags</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+    <!-- Post Header -->
+<header class="intro-header" style="background-image: url('/img/bg-05.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Random Thoughts #3</h1>
+                    
+                    <span class="meta">Posted by Kirby Turner on August 18, 2006</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+				<ul><br /><li>Ever have one of those days where you can't seem to get into your work even though you are under enormous pressure to certain tight deadlines?  I'm having one of those days today, which means my brain is trying to tell me to take a break.</li><br /><li>SQLite is an awesome DBMS for single user, desktop applications.  I had the opportunity to use SQLite, well, a Delphi favor called <a href="http://www.zeitungsjunge.de/delphi/sqlite3/">DISQLite3</a> in a project a few weeks ago.  The program I wrote called for reading data from multiple CSV files and sending data back out to two more CSV files.  The problem I was having was managing data relationships in memory.  SQLite and <a href="http://www.zeitungsjunge.de/delphi/sqlite3/">DISQLite3</a> to the rescue!  I imported the CSV data into the SQLite relational database then exported data using SQL queries.  I'm now looking for more reasons to use DISQLite3.</li><br /><li>I downloaded and installed the <a href="http://services.google.com/adwordseditor/">Google AdWords Editor</a>.  This neat desktop application makes it easier to manage your AdWord campaigns without having to go through the Web interface.  I recommend this program to anyone who needs to make frequent changes to AdWords campaigns.</li><br /><li>Only 17 days remain before the release of <a href="http://www.turboexplorer.com/">Turbo Delphi</a>.  I wonder if the new DevCo investor will be announced that same day.</li><br /><li>I'm working on a new web site for a <a href="http://www.capturethecork.com/">beer drinking game</a> Josh, Brooke, and I invited last year.  The site still needs lots of work especially on the copy, but it's a start.</li><br /></ul>
+
+
+                <hr>
+
+                
+                    <p>
+                    Posted in <a class='category' href='/category/programming/'>programming</a>. 
+                    Tagged in .
+                    </p>
+                
+
+                
+
+                
+
+                <hr>
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2006/08/18/finally-new-pictures/" data-toggle="tooltip" data-placement="top" title="Finally! New Pictures">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2006/08/23/delphi-oktoberfest-video/" data-toggle="tooltip" data-placement="top" title="Delphi Oktoberfest Video">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<p>&nbsp;</p>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Recent Articles</h3>
+                <ul>
+                
+                <li><a href="/2021/03/10/my-backpacks/" title="My Backpacks">My Backpacks</a></li>
+                
+                <li><a href="/2021/01/06/my-private-snowshoe-trail/" title="My Private Snowshoe Trail">My Private Snowshoe Trail</a></li>
+                
+                <li><a href="/2021/01/04/beautiful-view-in-stowe-this-morning/" title="Beautiful View in Stowe This Morning">Beautiful View in Stowe This Morning</a></li>
+                
+                <li><a href="/2020/12/28/a-moonlit-night/" title="A Moonlit Night">A Moonlit Night</a></li>
+                
+                <li><a href="/2020/12/22/slab-of-snow/" title="Slab of Snow">Slab of Snow</a></li>
+                
+                </ul>
+            </div>
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Other Sites</h3>
+                <ul>
+                    <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
+                    <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br />
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://twitter.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="https://github.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="http://www.linkedin.com/in/kirbyturner/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://www.goodreads.com/kirbyt/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-stack-1x fa-inverse"><span style="font-family:helvetica;position: relative;top: -5px">g</span></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2025</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
+
+
+</body>
+
+</html>

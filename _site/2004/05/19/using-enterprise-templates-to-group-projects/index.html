@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kirby Turner">
+    
+    <meta name="description" content="I’m currently working on a customer project with 16+ VS.NET projects in a single VS.NET solution file.  The single solution file is handy in that all the source code that makes up the complete customer solution is available in one place.  The solution includes multiple C# projects, unit test projects, database projects, and one Reporting Services project.  Also our build environment relies on NAnt scripts so each project that produces an assembly also has its own .build script.A single solution approach is nice because I have access to everything that makes up the solution, from build scripts to C# source code to stored procedures.  But finding the right project or file is becoming more challenging each day as more is added to the solution.  This is where Enterprise Template Projects comes to the rescue.  An Enterprise Template Project is a project type available in Visual Studio.NET Enterprise Edition or greater, and it can contain any type of file including other project types.  I started out by creating a set of enterprise template projects that represent the grouping I want.  For example, I created template projects with the names Applications, BusinessServices, Databases, Frameworks, NAntScripts, and UnitTests.  Within each of these projects I added the appropriate reference based on the grouping to existing project files.  UnitTests contains references to the C# projects responsible for producing our NUnit unit test assemblies.  BusinessServices contains references to projects that make up the middle tier of the solution.  Framework contains references to framework projects, and so on.NAntScripts is interesting in that it does not contain a reference to another project but instead it contains references to .build scripts files found in other projects.  I like this because many times when I am working on the build scripts I need to modify more than one script.  Before making the grouping I was jumping from project to project in search of the .build script file.  Now I have references to all the script files in one place making it easier to find a particular script file.With this new grouping I am able to more efficiently find the projects and files I need to work on.  The grouping has proven itself to be a huge time saver for me especially when working with large single solution files.One additional note on using enterprise template projects to organize your single solution: To prevent scattering .etp files throughout project directories containing the source code I recommend creating a single directory that will store all of the .etp files.  References within an enterprise template project do not have to fall under the template project.  Instead files referenced within the .etp can be stored anywhere on the hard drive.  This means the .etp file does not have to dirty up the project directory where the source code actually resides.
+">
+    
+
+    <!-- Facebook tags -->
+    <meta property="og:title" content="Using Enterprise Templates to Group Projects" />
+    
+    <meta name="og:description" content="I’m currently working on a customer project with 16+ VS.NET projects in a single VS.NET solution file.  The single solution file is handy in that all the source code that makes up the complete customer solution is available in one place.  The solution includes multiple C# projects, unit test projects, database projects, and one Reporting Services project.  Also our build environment relies on NAnt scripts so each project that produces an assembly also has its own .build script.A single solution approach is nice because I have access to everything that makes up the solution, from build scripts to C# source code to stored procedures.  But finding the right project or file is becoming more challenging each day as more is added to the solution.  This is where Enterprise Template Projects comes to the rescue.  An Enterprise Template Project is a project type available in Visual Studio.NET Enterprise Edition or greater, and it can contain any type of file including other project types.  I started out by creating a set of enterprise template projects that represent the grouping I want.  For example, I created template projects with the names Applications, BusinessServices, Databases, Frameworks, NAntScripts, and UnitTests.  Within each of these projects I added the appropriate reference based on the grouping to existing project files.  UnitTests contains references to the C# projects responsible for producing our NUnit unit test assemblies.  BusinessServices contains references to projects that make up the middle tier of the solution.  Framework contains references to framework projects, and so on.NAntScripts is interesting in that it does not contain a reference to another project but instead it contains references to .build scripts files found in other projects.  I like this because many times when I am working on the build scripts I need to modify more than one script.  Before making the grouping I was jumping from project to project in search of the .build script file.  Now I have references to all the script files in one place making it easier to find a particular script file.With this new grouping I am able to more efficiently find the projects and files I need to work on.  The grouping has proven itself to be a huge time saver for me especially when working with large single solution files.One additional note on using enterprise template projects to organize your single solution: To prevent scattering .etp files throughout project directories containing the source code I recommend creating a single directory that will store all of the .etp files.  References within an enterprise template project do not have to fall under the template project.  Instead files referenced within the .etp can be stored anywhere on the hard drive.  This means the .etp file does not have to dirty up the project directory where the source code actually resides.
+">
+    
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/mr.kirbyturner" />
+    <meta property="og:image" content="http://www.thecave.com/img/bg-06.jpg" />
+    <meta property="og:url" content="http://www.thecave.com/2004/05/19/using-enterprise-templates-to-group-projects/" />
+    <meta property="og:site_name" content="thecave | Kirby Turner's Blog" />
+
+    <title>Using Enterprise Templates to Group Projects</title>
+
+    <link href="https://micro.blog/kirbyt" rel="me" />
+    <link rel="canonical" href="http://www.thecave.com/2004/05/19/using-enterprise-templates-to-group-projects/">
+    <link rel="alternate" type="application/atom+xml" title="thecave | Kirby Turner's Blog's Feed" href="http://www.thecave.com/feed.xml" />
+
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/clean-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- YouTube CSS -->
+    <link rel="stylesheet" href="/css/video.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">thecave</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                
+                <li>
+                    <a href="/about/">About</a>
+                </li>
+                
+                <li>
+                    <a href="/archive/">Archive</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/">Categories & Tags</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+    <!-- Post Header -->
+<header class="intro-header" style="background-image: url('/img/bg-06.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Using Enterprise Templates to Group Projects</h1>
+                    
+                    <span class="meta">Posted by Kirby Turner on May 19, 2004</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+				<p>I’m currently working on a customer project with 16+ VS.NET projects in a single VS.NET solution file.  The single solution file is handy in that all the source code that makes up the complete customer solution is available in one place.  The solution includes multiple C# projects, unit test projects, database projects, and one Reporting Services project.  Also our build environment relies on NAnt scripts so each project that produces an assembly also has its own .build script.<br /><br />A single solution approach is nice because I have access to everything that makes up the solution, from build scripts to C# source code to stored procedures.  But finding the right project or file is becoming more challenging each day as more is added to the solution.  This is where Enterprise Template Projects comes to the rescue.  <br /><br />An Enterprise Template Project is a project type available in Visual Studio.NET Enterprise Edition or greater, and it can contain any type of file including other project types.  I started out by creating a set of enterprise template projects that represent the grouping I want.  For example, I created template projects with the names Applications, BusinessServices, Databases, Frameworks, NAntScripts, and UnitTests.  Within each of these projects I added the appropriate reference based on the grouping to existing project files.  UnitTests contains references to the C# projects responsible for producing our NUnit unit test assemblies.  BusinessServices contains references to projects that make up the middle tier of the solution.  Framework contains references to framework projects, and so on.<br /><br />NAntScripts is interesting in that it does not contain a reference to another project but instead it contains references to .build scripts files found in other projects.  I like this because many times when I am working on the build scripts I need to modify more than one script.  Before making the grouping I was jumping from project to project in search of the .build script file.  Now I have references to all the script files in one place making it easier to find a particular script file.<br /><br />With this new grouping I am able to more efficiently find the projects and files I need to work on.  The grouping has proven itself to be a huge time saver for me especially when working with large single solution files.<br /><br />One additional note on using enterprise template projects to organize your single solution: To prevent scattering .etp files throughout project directories containing the source code I recommend creating a single directory that will store all of the .etp files.  References within an enterprise template project do not have to fall under the template project.  Instead files referenced within the .etp can be stored anywhere on the hard drive.  This means the .etp file does not have to dirty up the project directory where the source code actually resides.<br /><br /><br /></p>
+
+
+                <hr>
+
+                
+                    <p>
+                    Posted in <a class='category' href='/category/uncategorized/'>uncategorized</a>. 
+                    Tagged in .
+                    </p>
+                
+
+                
+
+                
+
+                <hr>
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2004/05/18/multiple-nunit-tests-from-nant/" data-toggle="tooltip" data-placement="top" title="Multiple NUnit tests from NAnt">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2004/05/27/hipster-bingo/" data-toggle="tooltip" data-placement="top" title="hipster bingo">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<p>&nbsp;</p>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Recent Articles</h3>
+                <ul>
+                
+                <li><a href="/2021/03/10/my-backpacks/" title="My Backpacks">My Backpacks</a></li>
+                
+                <li><a href="/2021/01/06/my-private-snowshoe-trail/" title="My Private Snowshoe Trail">My Private Snowshoe Trail</a></li>
+                
+                <li><a href="/2021/01/04/beautiful-view-in-stowe-this-morning/" title="Beautiful View in Stowe This Morning">Beautiful View in Stowe This Morning</a></li>
+                
+                <li><a href="/2020/12/28/a-moonlit-night/" title="A Moonlit Night">A Moonlit Night</a></li>
+                
+                <li><a href="/2020/12/22/slab-of-snow/" title="Slab of Snow">Slab of Snow</a></li>
+                
+                </ul>
+            </div>
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Other Sites</h3>
+                <ul>
+                    <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
+                    <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br />
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://twitter.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="https://github.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="http://www.linkedin.com/in/kirbyturner/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://www.goodreads.com/kirbyt/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-stack-1x fa-inverse"><span style="font-family:helvetica;position: relative;top: -5px">g</span></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2025</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
+
+
+</body>
+
+</html>

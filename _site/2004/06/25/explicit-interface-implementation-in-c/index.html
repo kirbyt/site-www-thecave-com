@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kirby Turner">
+    
+    <meta name="description" content="I was a grumbling VB developer for a number of years.  At the time Delphi was my language of choice but in the part of the country I lived customer work using it was almost non-existent.  In the summer of 2000 at PDC, a friend of mine from Microsoft showed me the .NET Framework and C#.  I was instantly drawn to C# because it reminded me of Delphi, which is no surprise for those who know their C#/Delphi history.
+">
+    
+
+    <!-- Facebook tags -->
+    <meta property="og:title" content="Explicit Interface Implementation in C#" />
+    
+    <meta name="og:description" content="I was a grumbling VB developer for a number of years.  At the time Delphi was my language of choice but in the part of the country I lived customer work using it was almost non-existent.  In the summer of 2000 at PDC, a friend of mine from Microsoft showed me the .NET Framework and C#.  I was instantly drawn to C# because it reminded me of Delphi, which is no surprise for those who know their C#/Delphi history.
+">
+    
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/mr.kirbyturner" />
+    <meta property="og:image" content="http://www.thecave.com/img/bg-05.jpg" />
+    <meta property="og:url" content="http://www.thecave.com/2004/06/25/explicit-interface-implementation-in-c/" />
+    <meta property="og:site_name" content="thecave | Kirby Turner's Blog" />
+
+    <title>Explicit Interface Implementation in C#</title>
+
+    <link href="https://micro.blog/kirbyt" rel="me" />
+    <link rel="canonical" href="http://www.thecave.com/2004/06/25/explicit-interface-implementation-in-c/">
+    <link rel="alternate" type="application/atom+xml" title="thecave | Kirby Turner's Blog's Feed" href="http://www.thecave.com/feed.xml" />
+
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/clean-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- YouTube CSS -->
+    <link rel="stylesheet" href="/css/video.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">thecave</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                
+                <li>
+                    <a href="/about/">About</a>
+                </li>
+                
+                <li>
+                    <a href="/archive/">Archive</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/">Categories & Tags</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+    <!-- Post Header -->
+<header class="intro-header" style="background-image: url('/img/bg-05.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Explicit Interface Implementation in C#</h1>
+                    
+                    <span class="meta">Posted by Kirby Turner on June 25, 2004</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+				<p>I was a grumbling VB developer for a number of years.  At the time Delphi was my language of choice but in the part of the country I lived customer work using it was almost non-existent.  In the summer of 2000 at PDC, a friend of mine from Microsoft showed me the .NET Framework and C#.  I was instantly drawn to C# because it reminded me of Delphi, which is no surprise for those who know their <a href="http://c2.com/cgi/wiki?HistoryOfCsharp">C#/Delphi history</a>.</p>
+
+<p>At last there was (is) a language and framework from Microsoft that generated the same level of excitement in me that Borland’s Delphi had done a few years prior.  Best of all it was from Microsoft which would mean customer work in the future.  And as luck would have it, I started working exclusively with the .NET Framework and C# in the fall of 2001.</p>
+
+<p>For better or worse I have not spent much time with VB.NET, or Visual Basic 6.0 for that manner, since the fall of 2001.  I have done a few small project using VB.NET but nothing to brag about.  For the most part, both .NET languages are very similar with regard to features but there are some differences.  For example, you can write unsafe code in C# but you can’t do the same in VB.NET.  Depending on your point of view this is an advantage or a disadvantage.</p>
+
+<p>Another difference is that in VB.NET you can specify the scope of a member that implements a particular interface as something other than public.  I needed to do this in more than one occasion in C# but was resolved to the fact that a member implementation of interface in C# had to be scoped as public.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Public Interface IMyInterface
+    Sub Foo()
+End Interface
+
+Public Class Class1
+Implements IMyInterface
+    Private Sub Foo() Implements IMyInterface.Foo
+    End Sub
+End Class
+</code></pre></div></div>
+
+<p>So if you can do this in VB.NET why can’t you do the same, or something similar in C#?  This question lead me to the discovery (thank you <a href="http://www.google.com/search?q=explicit+interface+implement&amp;sourceid=firefox&amp;start=0&amp;start=0&amp;ie=utf-8&amp;oe=utf-8">google</a>) of explicit interface implementation in C#.  By using an explicit interface implementation you can scope the member implementation as private.  It’s a little messy because a member explicitly implemented cannot be access through the class instance.  Instead it must be accessed through an instance of the interface.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>interface IMyInterface
+{
+    void Foo();
+}
+
+abstract class MyAbstractClass : IMyInterface
+{
+    // Explicit interface implementation
+    void IMyInterface.Foo()
+    {
+        Console.WriteLine( "bar" );
+    }
+}
+
+class MyConcreteClass : MyAbstractClass
+{
+    public void FooBar()
+    {
+        // Must use an instance of the interface to access
+        // the explicit implementation.
+        ((IMyInterface)this).Foo();
+    }
+}
+
+public class MyApp
+{
+    public static void Main( string[] args )
+    {
+        MyConcreteClass c = new MyConcreteClass();
+        // Will not compile because Foo() is private.
+        // c.Foo();
+
+        c.FooBar();
+
+        // This works because we are all in the same module.
+        ((IMyInterface)c).Foo();
+    }
+}
+</code></pre></div></div>
+
+<p>While an explicit interface implementation does give the C# developer the ability to scope a member implementation as private, it is still not as powerful as VB.NET’s ability to scope a member implementation as anything other than public.  Score 1 point for VB.NET.</p>
+
+
+                <hr>
+
+                
+                    <p>
+                    Posted in <a class='category' href='/category/uncategorized/'>uncategorized</a>. 
+                    Tagged in .
+                    </p>
+                
+
+                
+
+                
+
+                <hr>
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2004/06/24/it-came-from-inside/" data-toggle="tooltip" data-placement="top" title="It Came from Inside">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2004/06/29/why-software-quality-matters/" data-toggle="tooltip" data-placement="top" title="Why Software Quality Matters">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<p>&nbsp;</p>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Recent Articles</h3>
+                <ul>
+                
+                <li><a href="/2021/03/10/my-backpacks/" title="My Backpacks">My Backpacks</a></li>
+                
+                <li><a href="/2021/01/06/my-private-snowshoe-trail/" title="My Private Snowshoe Trail">My Private Snowshoe Trail</a></li>
+                
+                <li><a href="/2021/01/04/beautiful-view-in-stowe-this-morning/" title="Beautiful View in Stowe This Morning">Beautiful View in Stowe This Morning</a></li>
+                
+                <li><a href="/2020/12/28/a-moonlit-night/" title="A Moonlit Night">A Moonlit Night</a></li>
+                
+                <li><a href="/2020/12/22/slab-of-snow/" title="Slab of Snow">Slab of Snow</a></li>
+                
+                </ul>
+            </div>
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Other Sites</h3>
+                <ul>
+                    <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
+                    <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br />
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://twitter.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="https://github.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="http://www.linkedin.com/in/kirbyturner/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://www.goodreads.com/kirbyt/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-stack-1x fa-inverse"><span style="font-family:helvetica;position: relative;top: -5px">g</span></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2025</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
+
+
+</body>
+
+</html>

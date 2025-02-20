@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kirby Turner">
+    
+    <meta name="description" content="A customer recently asked White Peak Software to design and implement custom software for generating large batches of temporary user accounts.  The purpose of these temporary user accounts is to market a subscription based web site in much the same way AOL used to market its services.  Here’s how it works.
+">
+    
+
+    <!-- Facebook tags -->
+    <meta property="og:title" content="Generating Large Number of Temporary User Accounts" />
+    
+    <meta name="og:description" content="A customer recently asked White Peak Software to design and implement custom software for generating large batches of temporary user accounts.  The purpose of these temporary user accounts is to market a subscription based web site in much the same way AOL used to market its services.  Here’s how it works.
+">
+    
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/mr.kirbyturner" />
+    <meta property="og:image" content="http://www.thecave.com/img/bg-03.jpg" />
+    <meta property="og:url" content="http://www.thecave.com/2006/05/30/generating-large-number-of-temporary-user-accounts/" />
+    <meta property="og:site_name" content="thecave | Kirby Turner's Blog" />
+
+    <title>Generating Large Number of Temporary User Accounts</title>
+
+    <link href="https://micro.blog/kirbyt" rel="me" />
+    <link rel="canonical" href="http://www.thecave.com/2006/05/30/generating-large-number-of-temporary-user-accounts/">
+    <link rel="alternate" type="application/atom+xml" title="thecave | Kirby Turner's Blog's Feed" href="http://www.thecave.com/feed.xml" />
+
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/clean-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- YouTube CSS -->
+    <link rel="stylesheet" href="/css/video.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">thecave</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                
+                <li>
+                    <a href="/about/">About</a>
+                </li>
+                
+                <li>
+                    <a href="/archive/">Archive</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/">Categories & Tags</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+    <!-- Post Header -->
+<header class="intro-header" style="background-image: url('/img/bg-03.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Generating Large Number of Temporary User Accounts</h1>
+                    
+                    <span class="meta">Posted by Kirby Turner on May 30, 2006</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+				<p>A customer recently asked White Peak Software to <a href="http://www.whitepeaksoftware.com/">design and implement custom software</a> for generating large batches of temporary user accounts.  The purpose of these temporary user accounts is to market a subscription based web site in much the same way AOL used to market its services.  Here’s how it works.</p>
+
+<p>A large number of temporary user accounts, say 100,000 to 1,000,000 accounts per batch, would be generated and handed out to potential subscribers.  When the credentials to a temporary account are first used the user is guided through a set of web pages that setup a real user account and trial subscription.  Different business models are supported for the trial subscription such as 30-day trial or usage count.</p>
+
+<p>As I was designing the system my first concern was storing millions of records in the database to represent temporary user accounts.  I was worried that it would take too much time to generate batches of 1 million user accounts and store them in the database, and I didn’t like the idea of storing this much data when initially the majority of the temporary user accounts will - most likely - never be used.  So I set off to find a way, or an algorithm if you will, that would allow the system to generate a unique set of credentials for a temporary user account that did not require storage.  In other words, I needed an algorithm that is used to generate the credentials and can be re-applied during authentication to determine of validity of the credentials.  This felt similar to public private key encryption, which ultimately led me to the final design.</p>
+
+<p>In the final design a private key is used that is known only to the system.  A unique private key is used for every batch of accounts generated where each batch represents a marketing campaign.  A random number generator (RNG) is used to generate a username unique to the batch.  The combination of the private key and the username is used to generate a <a href="http://en.wikipedia.org/wiki/Md5">MD5</a> token and a random password is generated based on the bytes that makeup the MD5 token.</p>
+
+<p>The beauty of this design is that the same algorithm can be used to authenticate the credentials for the temporary account.  An individual comes to the web site and uses the temporary account credentials to sign in.  The username is combined with the private key of every active marketing campaign to create the MD5 token, which is used to generate the password.  The generated password is compared to the password entered by the user.  If the passwords match, the credentials are authenticated otherwise the credentials are invalid.</p>
+
+<p><a href="http://www.borland.com/delphi">Delphi</a> was used for the implementation of this design.  A Win32 COM component was implemented to provide authentication of the temporary credentials from the Classic ASP application.  A .NET version was also implemented [using Delphi.NET] but is not used at this time.</p>
+
+<p>To generate the large number of users, a Delphi Win32 desktop application was written.  This proved to be a fast way to generate batches.  The program can generate a batch of 1 million accounts in under 2 and half minutes on a 2 year old laptop (Pentium M 1.6GHz with 512MB of RAM).  And the batch can be saved to an XML or CSV file.</p>
+
+<p>The customer is extremely happy with the implementation, and I’m proud of the end result.  The only issue I have with the design is that during authentication the username is checked against each active marketing campaign.  This will cause a performance problem in a scenario with a large number of active campaigns (i.e., 100,000 or more), but this scenario is unrealistic for the customer.  It is unlikely that the number of active campaigns will ever exceeded 100 so the issue is not really an issue.</p>
+
+
+                <hr>
+
+                
+                    <p>
+                    Posted in <a class='category' href='/category/programming/'>programming</a>. 
+                    Tagged in <a class='tag' href='/tag/delphi/'>delphi</a>.
+                    </p>
+                
+
+                
+
+                
+                    <hr>
+                    <h3>Related Articles</h3>
+                    <ul>
+                    
+                        <li><a href="/2006/12/06/delphi-bds-live-templates-for-sql-server/">Delphi (BDS) Live Templates for SQL Server</a></li>
+                    
+                        <li><a href="/2006/11/15/codegear/">CodeGear</a></li>
+                    
+                        <li><a href="/2006/10/30/delphi-2006-survey/">Delphi 2006 Survey</a></li>
+                    
+                        <li><a href="/2006/10/25/namespaces-in-delphi/">Namespaces in Delphi</a></li>
+                    
+                        <li><a href="/2006/09/25/parse-csv-or-tab-separated-files-using-delphi/">Parse CSV or Tab Separated Files Using Delphi</a></li>
+                    
+                        <li><a href="/2006/09/11/wpscsvparser-fix/">wpsCsvParser Fix</a></li>
+                    
+                        <li><a href="/2006/09/05/csv-parser-for-delphi/">CSV Parser for Delphi</a></li>
+                    
+                        <li><a href="/2006/09/05/video-tutorials-for-delphi/">Video Tutorials for Delphi</a></li>
+                    
+                        <li><a href="/2006/09/01/free-3rd-party-tool-bundle-with-bds-2006/">FREE 3rd Party Tool bundle with BDS 2006</a></li>
+                    
+                        <li><a href="/2006/08/28/from-delphi-to-c-and-back-again/">From Delphi to C# and Back Again</a></li>
+                    
+                    </ul>
+                
+
+                <hr>
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2006/05/26/devco-questions-comments-and-name-suggestions/" data-toggle="tooltip" data-placement="top" title="DevCo Questions, Comments, and Name Suggestions">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2006/06/06/work-on-swirl-has-resumed/" data-toggle="tooltip" data-placement="top" title="Work on Swirl has resumed">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<p>&nbsp;</p>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Recent Articles</h3>
+                <ul>
+                
+                <li><a href="/2021/03/10/my-backpacks/" title="My Backpacks">My Backpacks</a></li>
+                
+                <li><a href="/2021/01/06/my-private-snowshoe-trail/" title="My Private Snowshoe Trail">My Private Snowshoe Trail</a></li>
+                
+                <li><a href="/2021/01/04/beautiful-view-in-stowe-this-morning/" title="Beautiful View in Stowe This Morning">Beautiful View in Stowe This Morning</a></li>
+                
+                <li><a href="/2020/12/28/a-moonlit-night/" title="A Moonlit Night">A Moonlit Night</a></li>
+                
+                <li><a href="/2020/12/22/slab-of-snow/" title="Slab of Snow">Slab of Snow</a></li>
+                
+                </ul>
+            </div>
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Other Sites</h3>
+                <ul>
+                    <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
+                    <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br />
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://twitter.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="https://github.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="http://www.linkedin.com/in/kirbyturner/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://www.goodreads.com/kirbyt/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-stack-1x fa-inverse"><span style="font-family:helvetica;position: relative;top: -5px">g</span></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2025</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
+
+
+</body>
+
+</html>

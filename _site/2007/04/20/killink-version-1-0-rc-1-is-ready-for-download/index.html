@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kirby Turner">
+    
+    <meta name="description" content="Whew, it’s been a long, busy week.  I have been hammering away at various performance issues with Killink CSV and I’m happy to announce a stable build is now available for download.  This is Release Candidate 1.  Assuming no more show stoppers the final release of Killink CSV should be posted in a few days.  I’ll try to find time this weekend to blog about some of the performance improvements made in Killink CSV.  One aspect I find exciting is the use of a custom dataset that allows a single copy of the delimited data to exists in memory and is used to feed data to the print module.  But more on that later.I’ve also been busy this week cleaning up the White Peak Software web site and the Killink CSV web site.  The SMTP Diagnostics web site will be updated soon.  Also look for a new release of SMTP Diagnostics coming soon with better Windows Vista support.And if you haven’t seen it yet check out the new White Peak Software Store.  The new store front is fully integrated with the White Peak Software web site giving the customer a more seamless shopping experience.As I said, it has been a long, busy week.
+">
+    
+
+    <!-- Facebook tags -->
+    <meta property="og:title" content="Killink Version 1.0 RC 1 is Ready for Download" />
+    
+    <meta name="og:description" content="Whew, it’s been a long, busy week.  I have been hammering away at various performance issues with Killink CSV and I’m happy to announce a stable build is now available for download.  This is Release Candidate 1.  Assuming no more show stoppers the final release of Killink CSV should be posted in a few days.  I’ll try to find time this weekend to blog about some of the performance improvements made in Killink CSV.  One aspect I find exciting is the use of a custom dataset that allows a single copy of the delimited data to exists in memory and is used to feed data to the print module.  But more on that later.I’ve also been busy this week cleaning up the White Peak Software web site and the Killink CSV web site.  The SMTP Diagnostics web site will be updated soon.  Also look for a new release of SMTP Diagnostics coming soon with better Windows Vista support.And if you haven’t seen it yet check out the new White Peak Software Store.  The new store front is fully integrated with the White Peak Software web site giving the customer a more seamless shopping experience.As I said, it has been a long, busy week.
+">
+    
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/mr.kirbyturner" />
+    <meta property="og:image" content="http://www.thecave.com/img/bg-07.jpg" />
+    <meta property="og:url" content="http://www.thecave.com/2007/04/20/killink-version-1-0-rc-1-is-ready-for-download/" />
+    <meta property="og:site_name" content="thecave | Kirby Turner's Blog" />
+
+    <title>Killink Version 1.0 RC 1 is Ready for Download</title>
+
+    <link href="https://micro.blog/kirbyt" rel="me" />
+    <link rel="canonical" href="http://www.thecave.com/2007/04/20/killink-version-1-0-rc-1-is-ready-for-download/">
+    <link rel="alternate" type="application/atom+xml" title="thecave | Kirby Turner's Blog's Feed" href="http://www.thecave.com/feed.xml" />
+
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/clean-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- YouTube CSS -->
+    <link rel="stylesheet" href="/css/video.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">thecave</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                
+                <li>
+                    <a href="/about/">About</a>
+                </li>
+                
+                <li>
+                    <a href="/archive/">Archive</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/">Categories & Tags</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+    <!-- Post Header -->
+<header class="intro-header" style="background-image: url('/img/bg-07.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Killink Version 1.0 RC 1 is Ready for Download</h1>
+                    
+                    <span class="meta">Posted by Kirby Turner on April 20, 2007</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+				<p>Whew, it’s been a long, busy week.  <br /><br />I have been hammering away at various performance issues with <a href="http://www.killink.com/">Killink CSV</a> and I’m happy to announce a stable build is now available for download.  This is Release Candidate 1.  Assuming no more show stoppers the final release of Killink CSV should be posted in a few days.  <br /><br />I’ll try to find time this weekend to blog about some of the performance improvements made in Killink CSV.  One aspect I find exciting is the use of a custom dataset that allows a single copy of the delimited data to exists in memory and is used to feed data to the print module.  But more on that later.<br /><br />I’ve also been busy this week cleaning up the <a href="http://www.whitepeaksoftware.com/">White Peak Software web site</a> and the <a href="http://www.killink.com/">Killink CSV web site</a>.  The <a href="http://www.smtpdiagnostics.com/">SMTP Diagnostics web site</a> will be updated soon.  Also look for a new release of <a href="http://www.smtpdiagnostics.com/">SMTP Diagnostics</a> coming soon with better Windows Vista support.<br /><br />And if you haven’t seen it yet check out the new <a href="http://www.whitepeaksoftware.com/buynow.aspx">White Peak Software Store</a>.  The new store front is fully integrated with the <a href="http://www.whitepeaksoftware.com/">White Peak Software</a> web site giving the customer a more seamless shopping experience.<br /><br />As I said, it has been a long, busy week.</p>
+
+
+                <hr>
+
+                
+                    <p>
+                    Posted in <a class='category' href='/category/business/'>business</a>. 
+                    Tagged in <a class='tag' href='/tag/killink/'>killink</a>, <a class='tag' href='/tag/white-peak-software/'>white peak software</a>.
+                    </p>
+                
+
+                
+
+                
+                    <hr>
+                    <h3>Related Articles</h3>
+                    <ul>
+                    
+                        <li><a href="/2008/07/09/run-killink-csv-under-linux/">Run Killink CSV Under Linux</a></li>
+                    
+                        <li><a href="/2008/03/13/killink-csv-1-9-finally-released/">Killink CSV 1.9 Finally Released!</a></li>
+                    
+                        <li><a href="/2008/02/29/when-is-the-next-release-of-killink-csv-coming/">When is the Next Release of Killink CSV Coming?</a></li>
+                    
+                        <li><a href="/2008/01/18/to-the-customers-of-white-peak-software/">To The Customers of White Peak Software</a></li>
+                    
+                        <li><a href="/2007/07/23/excited-about-expected-new-arrival/">Excited About Expected New Arrival</a></li>
+                    
+                        <li><a href="/2007/07/06/whew-what-a-month/">Whew...What a Month</a></li>
+                    
+                        <li><a href="/2007/07/05/some-problems-with-killink-csv/">Some Problems with Killink CSV</a></li>
+                    
+                        <li><a href="/2007/06/11/ann-killink-csv-v1-2/">ANN: Killink CSV v1.2</a></li>
+                    
+                        <li><a href="/2007/06/09/formatting-cells-in-killink-csv/">Formatting Cells in Killink CSV</a></li>
+                    
+                        <li><a href="/2007/05/31/new-killink-csv-beta-is-available/">New Killink CSV Beta is Available</a></li>
+                    
+                    </ul>
+                
+
+                <hr>
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2007/04/16/powerpoint-2007-and-outlook-2003-dont-play-nice-together/" data-toggle="tooltip" data-placement="top" title="PowerPoint 2007 and Outlook 2003 Don't Play Nice Together">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2007/04/21/killink-csv-download-links-fixed/" data-toggle="tooltip" data-placement="top" title="Killink CSV Download Links Fixed">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<p>&nbsp;</p>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Recent Articles</h3>
+                <ul>
+                
+                <li><a href="/2021/03/10/my-backpacks/" title="My Backpacks">My Backpacks</a></li>
+                
+                <li><a href="/2021/01/06/my-private-snowshoe-trail/" title="My Private Snowshoe Trail">My Private Snowshoe Trail</a></li>
+                
+                <li><a href="/2021/01/04/beautiful-view-in-stowe-this-morning/" title="Beautiful View in Stowe This Morning">Beautiful View in Stowe This Morning</a></li>
+                
+                <li><a href="/2020/12/28/a-moonlit-night/" title="A Moonlit Night">A Moonlit Night</a></li>
+                
+                <li><a href="/2020/12/22/slab-of-snow/" title="Slab of Snow">Slab of Snow</a></li>
+                
+                </ul>
+            </div>
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Other Sites</h3>
+                <ul>
+                    <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
+                    <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br />
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://twitter.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="https://github.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="http://www.linkedin.com/in/kirbyturner/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://www.goodreads.com/kirbyt/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-stack-1x fa-inverse"><span style="font-family:helvetica;position: relative;top: -5px">g</span></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2025</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
+
+
+</body>
+
+</html>

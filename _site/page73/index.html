@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kirby Turner">
+    
+    <meta name="description" content="The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.">
+    
+
+    <!-- Facebook tags -->
+    <meta property="og:title" content="thecave | Kirby Turner's Blog" />
+    
+    <meta name="og:description" content="The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.">
+    
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/mr.kirbyturner" />
+    <meta property="og:image" content="http://www.thecave.com/img/bg-01.jpg" />
+    <meta property="og:url" content="http://www.thecave.com/page73/" />
+    <meta property="og:site_name" content="thecave | Kirby Turner's Blog" />
+
+    <title>thecave | Kirby Turner's Blog</title>
+
+    <link href="https://micro.blog/kirbyt" rel="me" />
+    <link rel="canonical" href="http://www.thecave.com/page73/">
+    <link rel="alternate" type="application/atom+xml" title="thecave | Kirby Turner's Blog's Feed" href="http://www.thecave.com/feed.xml" />
+
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/clean-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- YouTube CSS -->
+    <link rel="stylesheet" href="/css/video.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">thecave</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                
+                <li>
+                    <a href="/about/">About</a>
+                </li>
+                
+                <li>
+                    <a href="/archive/">Archive</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/">Categories & Tags</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+    <!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/bg-01.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>thecave</h1>
+                    <hr class="small">
+                    
+                    <h2 class="subheading">My hideout on the Internet</h2>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/05/18/multiple-nunit-tests-from-nant/">Multiple NUnit tests from NAnt</a>
+    </h2>
+    
+    <p>I have been working today on stabilizing our build environment for a customer project.  NAnt has been a great to so far for this.  But today I wanted to start running NUnit tests of our assemblies from the NAnt script.  I have tried a combination of Xml in attempts to get the NUnit task to work as expected.  All assemblies except one have a configuration file so I must use the  element.  I have tried defining a single  section with multiple  elements, one for each assembly to test.  And I have tried multiple  sections within a single target, but the result is the same.  Not all tests do not always run.  <br /><br />Say I have 4 test assemblies.  2 out of the 4 may load.  The other two seem to be ignored.  The  section seems easiest enough, but I must be missing something.  Shot me a reply if you have a suggestion.  Thanks.<br /><br /><br /></p>
+
+
+    <p><a href="/2004/05/18/multiple-nunit-tests-from-nant/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on May 18, 2004
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/05/18/man-this-whomps/">Man this Whomps</a>
+    </h2>
+    
+    <p>When did the term <a href="http://www.thinkgeek.com/tshirts/coder/3817/">code monkey</a> become inappropriate in the office?  <br /><br />I was talking with a programmer who is employed by the customer yesterday and a question came up about coders.  This lead to a conversation about the meaning behind terms like “coder”, “programmer”, and “developer”.  All can be the same while having some differences.  During the conversation I mentioned the term code monkey.  The programmer I was talking to never heard of the term so I showed him the <a href="http://info.astrian.net/jargon/terms/c/code_monkey.html">definition</a> of code monkey from <a href="http://info.astrian.net/jargon/">The Jargon Dictionary</a>.<br /><br />Later that day the GM from my employer talked with me about the term, and 15 minutes later I got an e-mail from our HR Generalist requesting to talk with me about this.  Apparently code monkey has become an offensive thing to say, or at least it has within the walls of my employer.<br /><br />I see nothing wrong with this phrase.  I have even considered myself a code monkey from time to time.  Last summer I was on a project for a customer where I got to be a code monkey and I loved it.  It was one the best project I have been on since joining my employer.<br /><br />The whole situation reminds me of an episode of Recess called <a href="http://www.bcdb.com/bcdb/cartoon.cgi?film=7015&amp;cartoon=The%20Story%20of%20Whomps">The Story of Whomps</a>.  The school principal and one of the teachers deem the word “whomps” as a cuss word and set out to punish the kid who created the word.  The scandal goes all the way up to the Board of Education.  When the superintended learns the scandalous word is “whomps” he says something to the tune of “Anyone who hears something vulgar in the word ‘whomps’ has a vulgar mind.”  And that’s how I feel about the term code monkey.  If you hear something offensive in the term code monkey than you probably have an offense mind.<br /><br /><br /></p>
+
+
+    <p><a href="/2004/05/18/man-this-whomps/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on May 18, 2004
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/05/18/dont-be-a-cargo-cult-programmer/">Don't be a "Cargo Cult" Programmer</a>
+    </h2>
+    
+    <p><a href="http://weblogs.threepines.net/taba/archive/2004/05/05/214.aspx">Don’t be a “Cargo Cult” Programmer (or don’t get bit by the “Law of Leaky Abstractions”)</a></p>
+
+
+    <p><a href="/2004/05/18/dont-be-a-cargo-cult-programmer/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on May 18, 2004
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/05/13/cheap-price-for-msdn-universal-subscriptions/">Cheap price for MSDN Universal subscriptions</a>
+    </h2>
+    
+    <p><a href="http://www.amazon.com/">Amazon</a> has some great prices on MSDN Universal subscriptions.  A <a href="http://www.amazon.com/exec/obidos/redirect?tag=whitepeaksoft-20&amp;path=tg/detail/-/B00005NGPB/qid%3D1084453776/sr%3D8-1">first time subscription</a> is only $2399 USD saving more than $400 USD over Microsoft’s price.  The <a href="http://www.amazon.com/exec/obidos/redirect?tag=whitepeaksoft-20&amp;path=tg/detail/-/B00005NGPA/qid%3D1084453776/sr%3D8-2">upgrade</a> price is $1974.99 USD.  I think these prices are for U.S. customers only.</p>
+
+
+    <p><a href="/2004/05/13/cheap-price-for-msdn-universal-subscriptions/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on May 13, 2004
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/05/07/usnews-com-technology-bill-gates-house/">usnews.com: Technology: Bill Gates' House</a>
+    </h2>
+    
+    <p>Take a virtual tour of Bill Gates’ <a href="http://www.usnews.com/usnews/tech/billgate/gates.htm">estate</a>.</p>
+
+
+    <p><a href="/2004/05/07/usnews-com-technology-bill-gates-house/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on May 7, 2004
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/05/07/pinvoke-net-add-in-for-vs-net/">PINVOKE.NET Add-in for VS.NET</a>
+    </h2>
+    
+    <p>The PInvoke.net <a href="http://www.gotdotnet.com/Community/UserSamples/Details.aspx?SampleGuid=75122f62-5459-4364-b9ba-7b5e6a4754fe">Add-in</a> for Visual Studio.NET will insert PInvoke signatures into your code.  What’s cool about this is that the add-in retrieves the PInvoke information from the <a href="http://www.pinvoke.net/">PINVOKE.NET</a> wiki.  And you can contribute signatures back to the wiki from the add-in.  What a neat idea.</p>
+
+
+    <p><a href="/2004/05/07/pinvoke-net-add-in-for-vs-net/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on May 7, 2004
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/05/07/being-a-software-developer/">Being a Software Developer</a>
+    </h2>
+    
+    <p><a href="http://www.joelonsoftware.com/">Joel Spolsky</a> has posted his <a href="http://www.joelonsoftware.com/articles/CoderToDeveloper.html">foreword</a> to Mike Gunderloy’s new book, <a href="http://www.amazon.com/exec/obidos/tg/detail/-/078214327X/ref=ase_whitepeaksoft-20/002-0173335-5722445?v=glance&amp;s=books">Coder to Developer</a>.  The foreword puts in very simple terms what it takes to be a software developer, which is more than knowing how to writing code.  As Joel puts it, a software developer can “take a concept, build a team, set up state of the art development processes, design a software product, the right software product, and produce it.”  I’ll add that a software developer should understand various development methodologies and how to apply them, and the importances of QA and testing even though these are assumed to be part of the state of the art development process.</p>
+
+
+    <p><a href="/2004/05/07/being-a-software-developer/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on May 7, 2004
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/05/06/msn-careers-avoiding-burnout-career-advice-article/">MSN Careers - Avoiding Burnout - Career Advice Article</a>
+    </h2>
+    
+    <p><a href="http://msn.careerbuilder.com/Custom/MSN/CareerAdvice/WPI_AvoidingBurnout.htm?cbRecursionCnt=1&amp;cbsid=afe52b39db6e49d6a39e0b382d483563-137180763-wu-2">MSN Careers - Avoiding Burnout - Career Advice Article</a>: “Avoiding Burnout”</p>
+
+
+    <p><a href="/2004/05/06/msn-careers-avoiding-burnout-career-advice-article/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on May 6, 2004
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/05/01/pac-manhattan/">Pac Manhattan</a>
+    </h2>
+    
+    <p>This sounds like <a href="http://www.pacmanhattan.com/">fun</a>.  I’ll have to check it out this Saturday.<br /><br /><br /></p>
+
+
+    <p><a href="/2004/05/01/pac-manhattan/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on May 1, 2004
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2004/04/30/new-geek-toys-finally/">New Geek Toys Finally</a>
+    </h2>
+    
+    <p>Some people think of me as a gadget geek.  Surprisingly though I’m not.  Before Melanie I did not have cable TV for years.  Broadcast TV was good enough for me.  The last time I brought a computer was the first part of 1999, which was a laptop.  And the last time I brought a desktop system was in 1998.  And yes, both of these computers are still in use today.  <br /><br />The only gadgets I tend to keep up to date are gaming consoles, even though I don’t game as much as I would like.  I have a PS/2, 2 Xbox consoles, Sega Dreamcast, Super Nintendo, and a Gameboy Advance.  I gave away my older consoles when I moved to New York.  I would have kept them if I had the space.<br /><br />So contrary to popular belief I’m not much of a gadget geek…until yesterday.  I finally broken down and bought a Dell PowerEdge server for use with upcoming work.  And I’m planning to buy more computers, servers, laptops, etc over the next year.  But the really cool geek gadget in my live as of yesterday, and in Melanie’s life, is <a href="http://www.timewarnercable.com/corporate/products/digitalcable/dvr.html">DVR</a> (Digital Video Recorder).<br /><br />Melanie was kind enough to visit the Time Warner office yesterday and upgraded our digital cable box with the new DVR box.  It’s like having <a href="http://www.tivo.com/">TiVo</a> built into the cable box, and I for one am totally hooked.  Recording shows has never been easier.  And the instance replay and rewinding of live shows is awesome.  It comes with a series manager that allows us to record entire show series airing on one or more channels.  And we can record two shows at the same time, which is pretty dang awesome.<br /><br />Time Warner DVR will definitely change the way we watch TV.  Digital cable gives us tons of channels which on any given day there is nothing to watch.  But combined with DVR there will also be an interesting show to watch, from Brady Bunch to South Park to the latest XPlay on TechTV.<br /><br /><br /></p>
+
+
+    <p><a href="/2004/04/30/new-geek-toys-finally/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on April 30, 2004
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+
+<!-- Pager -->
+
+<ul class="pager">
+    
+    <li class="previous">
+        <a href="/page72">&larr; Newer Posts</a>
+    </li>
+    
+    
+    <li class="next">
+        <a href="/page74">Older Posts &rarr;</a>
+    </li>
+    
+</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<p>&nbsp;</p>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Recent Articles</h3>
+                <ul>
+                
+                <li><a href="/2021/03/10/my-backpacks/" title="My Backpacks">My Backpacks</a></li>
+                
+                <li><a href="/2021/01/06/my-private-snowshoe-trail/" title="My Private Snowshoe Trail">My Private Snowshoe Trail</a></li>
+                
+                <li><a href="/2021/01/04/beautiful-view-in-stowe-this-morning/" title="Beautiful View in Stowe This Morning">Beautiful View in Stowe This Morning</a></li>
+                
+                <li><a href="/2020/12/28/a-moonlit-night/" title="A Moonlit Night">A Moonlit Night</a></li>
+                
+                <li><a href="/2020/12/22/slab-of-snow/" title="Slab of Snow">Slab of Snow</a></li>
+                
+                </ul>
+            </div>
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Other Sites</h3>
+                <ul>
+                    <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
+                    <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br />
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://twitter.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="https://github.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="http://www.linkedin.com/in/kirbyturner/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://www.goodreads.com/kirbyt/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-stack-1x fa-inverse"><span style="font-family:helvetica;position: relative;top: -5px">g</span></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2025</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
+
+
+</body>
+
+</html>

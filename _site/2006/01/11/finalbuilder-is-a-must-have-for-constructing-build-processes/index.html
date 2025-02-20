@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kirby Turner">
+    
+    <meta name="description" content="For years I have relied on custom built build processes for software I develop.  For instance, on a recent large-scale .NET solution I used a combination of NTScheduler, VMware Workstation, CVS, NAnt, and the .NET SDK (along with other tools) to build an automated build environment.  However, doing something similar for every one of my software projects is time consuming, and I have to rely on different tools for different projects.  For example NAnt is useless for a Delphi Win32 project.  So I finally decided to give FinalBuilder a try.FinalBuilder is the ultimate tool for constructing a build process.  Within minutes I was able to automate a build process for a box inventory program I am working on.  Of course projects with a more complex build process will take more than a few minutes to setup, but you should be able to automate a build process in minutes and not hours or days for most projects.  I’m amazed at the flexibility provided by FinalBuilder.  It supports a wide array of compilers and tools.  And it has an easy-to-use GUI for construction of the build process for every time of project I’m working on.I decided to see how long it would take to setup a build process for SMTP Diagnostics.  Although SMTP Diagnostics is a simple product, its build process involves a number of steps.  It is the perfect product to evaluate FinalBuilder with.  Here are the steps in the build process that I wanted to automate through FinalBuilder:- Create a build directory sandbox- Retrieve the latest source code from CVS- Compile the GUI program (using Delphi 2006 compiler)- Compile EurekaLog into the GUI program- Compile to console program (using Delphi 2006 compiler)- Compile the licensing framework into the GUI and console programs (using Armadillo)- Generate the help file system (using Help&amp;Manual;)- Generate the installer (using Inno Setup)- Generate a zip file containing the generated installer- Update and commit build number changes to CVS- Tag release in CVSIn less than 30 minutes I was able to setup the SMTP Diagnostics build process in FinalBuilder.  I can now make a complete build of SMTP Diagnostics in under a minute with a click of a button.  My next step in exploring FinalBuilder will be to generate the online help as HTML files and upon successful build of the product push the HTML files and the installer out to SMTP Diagnostics web site.  Given the time I spent playing with FinalBuilder, I’m confident I will be able to automate these steps as well.
+">
+    
+
+    <!-- Facebook tags -->
+    <meta property="og:title" content="FinalBuilder is a Must Have for Constructing Build Processes" />
+    
+    <meta name="og:description" content="For years I have relied on custom built build processes for software I develop.  For instance, on a recent large-scale .NET solution I used a combination of NTScheduler, VMware Workstation, CVS, NAnt, and the .NET SDK (along with other tools) to build an automated build environment.  However, doing something similar for every one of my software projects is time consuming, and I have to rely on different tools for different projects.  For example NAnt is useless for a Delphi Win32 project.  So I finally decided to give FinalBuilder a try.FinalBuilder is the ultimate tool for constructing a build process.  Within minutes I was able to automate a build process for a box inventory program I am working on.  Of course projects with a more complex build process will take more than a few minutes to setup, but you should be able to automate a build process in minutes and not hours or days for most projects.  I’m amazed at the flexibility provided by FinalBuilder.  It supports a wide array of compilers and tools.  And it has an easy-to-use GUI for construction of the build process for every time of project I’m working on.I decided to see how long it would take to setup a build process for SMTP Diagnostics.  Although SMTP Diagnostics is a simple product, its build process involves a number of steps.  It is the perfect product to evaluate FinalBuilder with.  Here are the steps in the build process that I wanted to automate through FinalBuilder:- Create a build directory sandbox- Retrieve the latest source code from CVS- Compile the GUI program (using Delphi 2006 compiler)- Compile EurekaLog into the GUI program- Compile to console program (using Delphi 2006 compiler)- Compile the licensing framework into the GUI and console programs (using Armadillo)- Generate the help file system (using Help&amp;Manual;)- Generate the installer (using Inno Setup)- Generate a zip file containing the generated installer- Update and commit build number changes to CVS- Tag release in CVSIn less than 30 minutes I was able to setup the SMTP Diagnostics build process in FinalBuilder.  I can now make a complete build of SMTP Diagnostics in under a minute with a click of a button.  My next step in exploring FinalBuilder will be to generate the online help as HTML files and upon successful build of the product push the HTML files and the installer out to SMTP Diagnostics web site.  Given the time I spent playing with FinalBuilder, I’m confident I will be able to automate these steps as well.
+">
+    
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/mr.kirbyturner" />
+    <meta property="og:image" content="http://www.thecave.com/img/bg-05.jpg" />
+    <meta property="og:url" content="http://www.thecave.com/2006/01/11/finalbuilder-is-a-must-have-for-constructing-build-processes/" />
+    <meta property="og:site_name" content="thecave | Kirby Turner's Blog" />
+
+    <title>FinalBuilder is a Must Have for Constructing Build Processes</title>
+
+    <link href="https://micro.blog/kirbyt" rel="me" />
+    <link rel="canonical" href="http://www.thecave.com/2006/01/11/finalbuilder-is-a-must-have-for-constructing-build-processes/">
+    <link rel="alternate" type="application/atom+xml" title="thecave | Kirby Turner's Blog's Feed" href="http://www.thecave.com/feed.xml" />
+
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/clean-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- YouTube CSS -->
+    <link rel="stylesheet" href="/css/video.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">thecave</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                
+                <li>
+                    <a href="/about/">About</a>
+                </li>
+                
+                <li>
+                    <a href="/archive/">Archive</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/">Categories & Tags</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+    <!-- Post Header -->
+<header class="intro-header" style="background-image: url('/img/bg-05.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>FinalBuilder is a Must Have for Constructing Build Processes</h1>
+                    
+                    <span class="meta">Posted by Kirby Turner on January 11, 2006</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+				<p>For years I have relied on custom built build processes for software I develop.  For instance, on a recent large-scale .NET solution I used a combination of NTScheduler, VMware Workstation, CVS, NAnt, and the .NET SDK (along with other tools) to build an automated build environment.  However, doing something similar for every one of my software projects is time consuming, and I have to rely on different tools for different projects.  For example NAnt is useless for a Delphi Win32 project.  So I finally decided to give FinalBuilder a try.<br /><br /><a href="http://www.finalbuilder.com/">FinalBuilder is the ultimate tool for constructing a build process</a>.  Within minutes I was able to automate a build process for a box inventory program I am working on.  Of course projects with a more complex build process will take more than a few minutes to setup, but you should be able to automate a build process in minutes and not hours or days for most projects.  <br /><br />I’m amazed at the flexibility provided by FinalBuilder.  It supports a wide array of compilers and tools.  And it has an easy-to-use GUI for construction of the build process for every time of project I’m working on.<br /><br />I decided to see how long it would take to setup a build process for <a href="http://www.smtpdiagnostics.com/">SMTP Diagnostics</a>.  Although SMTP Diagnostics is a simple product, its build process involves a number of steps.  It is the perfect product to evaluate FinalBuilder with.  <br /><br />Here are the steps in the build process that I wanted to automate through FinalBuilder:<br /><br />- Create a build directory sandbox<br />- Retrieve the latest source code from <a href="http://www.cvsnt.org">CVS</a><br />- Compile the GUI program (using <a href="http://www.borland.com/delphi">Delphi</a> 2006 compiler)<br />- Compile <a href="http://www.eurekalog.com/">EurekaLog</a> into the GUI program<br />- Compile to console program (using <a href="http://www.borland.com/delphi">Delphi</a> 2006 compiler)<br />- Compile the licensing framework into the GUI and console programs (using <a href="http://www.siliconrealms.com/software.shtml">Armadillo</a>)<br />- Generate the help file system (using <a href="http://www.ec-software.com/hmpage.htm">Help&amp;Manual;</a>)<br />- Generate the installer (using <a href="http://www.jrsoftware.org/isinfo.php">Inno Setup</a>)<br />- Generate a zip file containing the generated installer<br />- Update and commit build number changes to CVS<br />- Tag release in CVS<br /><br />In less than 30 minutes I was able to setup the SMTP Diagnostics build process in FinalBuilder.  I can now make a complete build of SMTP Diagnostics in under a minute with a click of a button.  <br /><br />My next step in exploring FinalBuilder will be to generate the online help as HTML files and upon successful build of the product push the HTML files and the installer out to SMTP Diagnostics web site.  Given the time I spent playing with FinalBuilder, I’m confident I will be able to automate these steps as well.</p>
+
+
+                <hr>
+
+                
+                    <p>
+                    Posted in <a class='category' href='/category/programming/'>programming</a>. 
+                    Tagged in .
+                    </p>
+                
+
+                
+
+                
+
+                <hr>
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2006/01/06/my-dead-or-alive-4-review/" data-toggle="tooltip" data-placement="top" title="My Dead Or Alive 4 Review">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2006/01/11/micro-isv-from-vision-to-reality/" data-toggle="tooltip" data-placement="top" title="Micro-ISV: From Vision to Reality">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<p>&nbsp;</p>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Recent Articles</h3>
+                <ul>
+                
+                <li><a href="/2021/03/10/my-backpacks/" title="My Backpacks">My Backpacks</a></li>
+                
+                <li><a href="/2021/01/06/my-private-snowshoe-trail/" title="My Private Snowshoe Trail">My Private Snowshoe Trail</a></li>
+                
+                <li><a href="/2021/01/04/beautiful-view-in-stowe-this-morning/" title="Beautiful View in Stowe This Morning">Beautiful View in Stowe This Morning</a></li>
+                
+                <li><a href="/2020/12/28/a-moonlit-night/" title="A Moonlit Night">A Moonlit Night</a></li>
+                
+                <li><a href="/2020/12/22/slab-of-snow/" title="Slab of Snow">Slab of Snow</a></li>
+                
+                </ul>
+            </div>
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Other Sites</h3>
+                <ul>
+                    <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
+                    <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br />
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://twitter.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="https://github.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="http://www.linkedin.com/in/kirbyturner/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://www.goodreads.com/kirbyt/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-stack-1x fa-inverse"><span style="font-family:helvetica;position: relative;top: -5px">g</span></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2025</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kirby Turner">
+    
+    <meta name="description" content="The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.">
+    
+
+    <!-- Facebook tags -->
+    <meta property="og:title" content="thecave | Kirby Turner's Blog" />
+    
+    <meta name="og:description" content="The personal blog of Kirby Turner, a software engineer, author, and snowboard bum.">
+    
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/mr.kirbyturner" />
+    <meta property="og:image" content="http://www.thecave.com/img/bg-01.jpg" />
+    <meta property="og:url" content="http://www.thecave.com/page54/" />
+    <meta property="og:site_name" content="thecave | Kirby Turner's Blog" />
+
+    <title>thecave | Kirby Turner's Blog</title>
+
+    <link href="https://micro.blog/kirbyt" rel="me" />
+    <link rel="canonical" href="http://www.thecave.com/page54/">
+    <link rel="alternate" type="application/atom+xml" title="thecave | Kirby Turner's Blog's Feed" href="http://www.thecave.com/feed.xml" />
+
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/clean-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- YouTube CSS -->
+    <link rel="stylesheet" href="/css/video.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">thecave</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                
+                <li>
+                    <a href="/about/">About</a>
+                </li>
+                
+                <li>
+                    <a href="/archive/">Archive</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/">Categories & Tags</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+    <!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/bg-01.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>thecave</h1>
+                    <hr class="small">
+                    
+                    <h2 class="subheading">My hideout on the Internet</h2>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2005/09/21/refactoring-smtp-diagnostics/">Refactoring SMTP Diagnostics</a>
+    </h2>
+    
+    <p>In a recent blog posting, I talked about <a href="http://www.thecave.com/archive/2005/09/02/convincing_a_client_it_is_time_to_refactor.aspx">convincing a client it’s time to refactor</a>.  Well, I have spent the last few days convincing myself that it is time to do some refactoring of <a href="http://www.smtpdiagnostics.com/">SMTP Diagnostics</a>.<br /><br />For those who don’t know, SMTP Diagnostics is a mailer program enabling you to troubleshoot problems with outgoing email and assist with configuring outgoing (SMTP) servers.<br /><br />I have been putting off refactoring while still adding new features.  I did this to “save time” but the code base has reached a point where it is now more time consuming then it should be to add new features.  I can put it off no longer.<br /><br />What’s fun about this exercise is that I get to build from the knowledge obtain thus far.  Version 1.0 did not have a solid object model and a lot of the code was specific to this one project.  Version 1.2 and 1.3 moved away from that by incorporating common code, or a common framework, that I’m using in a second product code-name Vertigo.  Version 1.4, which is the next release, will finally have a reusable object model that will make adding new features much easier.  For example, adding command line support will be a snap once the new object model is in place.  <br /><br />Look for the beta release for version 1.4 in a few days.</p>
+
+
+    <p><a href="/2005/09/21/refactoring-smtp-diagnostics/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on September 21, 2005
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2005/09/19/discovered-constant-bug-in-vs-net-2003/">Discovered Constant Bug in VS.NET 2003</a>
+    </h2>
+    
+    <p>Tonight I discovered an interesting Visual Studio.NET 2003 bug.  Seems devenv.exe will throw an unhandled exception when the constant in the sample code below is compiled.  From what I can tell, it looks like devenv.exe chokes on the length of the contant.  Remove line 73 (LEFT OUTER JOIN…) and the exception is not thrown.<br /><br />The exception only occurs when compiling the project from within VS.NET 2003 (devenv.exe).  The command line compiler csc.exe does not have the problem.  Also, the problem does not occur if you are using <a href="http://www.borland.com/delphi/">Delphi</a> 2005.  Makes me wonder what devenv.exe is doing during the project build process.<br /><br />&lt;pre&gt;<br />001  using System;<br />002 <br />003  namespace ConsoleApplication3<br />004  {<br />005     /// &lt;summary&gt;<br />006     /// Summary description for Class1.<br />007     /// &lt;/summary&gt;<br />008     class Class1<br />009     {<br />010        /// &lt;summary&gt;<br />011        /// The main entry point for the application.<br />012        /// &lt;/summary&gt;<br />013        [STAThread]<br />014        static void Main(string[] args)<br />015        {<br />016          const string SQL_FORMAT = @”<br />017           SELECT <br />018           1 AS Tag,<br />019           NULL AS Parent,<br />020           NULL AS [users!1],<br />021           NULL AS [user!2!strUSID],<br />022           NULL AS [user!2!strPrefixID],<br />023           NULL AS [user!2!strFirstName],<br />024           NULL AS [user!2!strLastName],<br />025           NULL AS [user!2!strUSName],<br />026           NULL AS [user!2!strAdd1],<br />027           NULL AS [user!2!strAdd2],<br />028           NULL AS [user!2!strTown],<br />029           NULL AS [user!2!strState],<br />030           NULL AS [user!2!strPostCode],<br />031           NULL AS [user!2!strCountry],<br />032           NULL AS [user!2!strTel],<br />033           NULL AS [user!2!strFax],<br />034           NULL AS [user!2!strEMail],<br />035           NULL AS [user!2!strLocked],<br />036           NULL AS [user!2!dtmLockedDate],<br />037           NULL AS [user!2!strSuspenseReason],<br />038           NULL AS [user!2!intLogonCount],<br />039           NULL AS [user!2!dtmCreatedDate],<br />040           NULL AS [user!2!strMedicalSpecialtyID],<br />041           NULL AS [user!2!blnChangePassword],<br />042           NULL AS [user!2!strInstitutionalUser],<br />043           NULL AS [user!2!strCreditCardExpDate]<br />044           UNION<br />045           SELECT<br />046           2 AS Tag,<br />047           1 AS Parent,<br />048           NULL,<br />049           Users.strUSID,<br />050           strPrefixID,<br />051           strFirstName,<br />052           strLastName,<br />053           strUSName,<br />054           strAdd1,<br />055           strAdd2,<br />056           strTown,<br />057           strState,<br />058           strPostCode,<br />059           strCountry,<br />060           strTel,<br />061           strFax,<br />062           strEMail,<br />063           strLocked,<br />064           dtmLockedDate,<br />065           ID_LoginSuspenseReason.strSuspenseReason,<br />066           intLogonCount,<br />067           dtmCreatedDate,<br />068           strMedicalSpecialtyID,<br />069           blnChangePassword,<br />070           strInstitutionalUser,<br />071           strCreditCardExpDate<br />072           FROM ID_Login Users<br />073           LEFT OUTER JOIN ID_LoginSuspenseReason ON Users.strUSID = ID_LoginSuspenseReason.strUSID<br />074           {0}<br />075           FOR XML EXPLICIT<br />076           “;<br />077        }<br />078     }<br />079  }<br />&lt;/pre&gt;</p>
+
+
+    <p><a href="/2005/09/19/discovered-constant-bug-in-vs-net-2003/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on September 19, 2005
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2005/09/19/ann-new-smtp-diagnostics-web-site/">ANN: New SMTP Diagnostics Web Site</a>
+    </h2>
+    
+    <p>We are happy to announcement the new <a href="http://www.smtpdiagnostics.com/">SMTP Diagnostics web site</a>. Find the latest download, purchase your license, view the FAQ, and more.<br /><br /><a href="http://www.smtpdiagnostics.com/">http://www.smtpdiagnostics.com/</a></p>
+
+
+    <p><a href="/2005/09/19/ann-new-smtp-diagnostics-web-site/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on September 19, 2005
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2005/09/06/wps-to-donate-software-to-pmc-fund-raising-event/">WPS to Donate Software to PMC Fund Raising Event</a>
+    </h2>
+    
+    <p>White Peak Software is donating 10 licenses of <a href="http://www.whitepeaksoftware.com/smtpdiagnostics.aspx">SMTP Diagnostics</a> to <a href="http://www.truerwords.net/fundraising/cd-donations.html">Seth Dillingham’s PMC fund raiser</a>.  The licenses along with other software that will be auctioned off in September to raise money for the <a href="http://www.jimmyfund.org/">Jimmy Fund</a>.  All proceeds from the auction will go to the <a href="http://www.pmc.org/">Pan-Mass Challenge</a>, and in turn to the Jummy Fund, for the research and treatment of cancer at the <a href="http://www.dana-farber.org/">Dana-Farber Cancer Institute</a> in Boston.<br /><br />The PMC is a 192 mile bike ride across Massachusetts.  This year’s ride had approximately 4,000 riders.</p>
+
+
+    <p><a href="/2005/09/06/wps-to-donate-software-to-pmc-fund-raising-event/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on September 6, 2005
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2005/09/06/broken-perm-links-in-rss-feeds/">Broken Perm Links in RSS Feeds</a>
+    </h2>
+    
+    <p>I recently changed the way perm links are generated for my blog entries.  However, I totally forgot about making the change to my RSS feed.  I guess that’s what happens when you introduce a technology like RSS and it runs problem free for months if not years.  Still, that’s no excuse for overlooking the RSS feed with regard to the new perm links.<br /><br />I will have a fix in place within a couple of days.  Sorry it can’t be sooner but my plate is full at the moment and since that has been no complaints it’s not a top priority issue.<br /><br />My apologies to those of you reading the blog through an RSS reader.</p>
+
+
+    <p><a href="/2005/09/06/broken-perm-links-in-rss-feeds/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on September 6, 2005
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2005/09/02/convincing-a-client-it-is-time-to-refactor/">Convincing a client it is time to refactor</a>
+    </h2>
+    
+    <p>You know what I dislike the most about doing client work?  You see problems in the code, no bugs - things are working correctly, but the code itself is a problem.  Finding <a href="http://xp.c2.com/CodeSmell.html">code smells</a> for example, and you know the best thing to do is refactor the code to save tons of time in the future.  But some clients don’t get this and the ones that do get it will still say no to refactor work.<br /><br />You tell the client you want to spend a couple of days to refactor the code but the client says “No”.  To the client the code is working fine.  Refactoring is going to cost more money and require more testing while providing little benefit to the end user.  But the reality is ongoing maintenance cost for the code is going to cost more, which down the road could increase the cost to the end user, if refactoring does not occur.  What is often overlooked is that maintenance costs can be lowered in the long term as a result of a refactoring investment.<br /><br />Refactoring is something that should be embraced, not feared or viewed as an unnecessary cost.  Refactoring improves the quality of the code and reduces code maintenance in the future and thus reduces cost.  <br /><br />A joy I have in writing my own software is being able to make the refactoring call myself.  I don’t always say yes to refactoring but when the time is right I refactor the code.  I don’t concern myself with the initial refactoring and testing costs because I know it will save me time and money in the long run.<br /><br />So when is the time right?  That’s a hard question to answer because the right time can be different for each shop and software package.  For me a right time is when working on a new feature I find a number of code smells affecting the quality of the feature.  Assuming a refactor will only affect a small portion of the entire system and it will take no more than a couple of days to refactor and test the changes, I make the yes call to refactor the code.<br /><br />Do I worry about breaking existing functionality as a result of refactoring?  Absolutely, especially when refactoring occurs in a critical area such as processing a credit card transaction.  This is why it is so important to have automated scripts and unit tests in place.  Automated regression testing definitely helps ease concerns.<br /><br />So how do I convince the client it is time to refactor code?  I wish there was a magic answer to the question that could be applied to all cases but there isn’t.  Getting the client to okay a refactor takes having the client’s trust in your abilities and decisions.  <br /><br />One way to gain trust is to know when to recommend a refactor.  You should make a point not to scream “fire” each time you find code smells.  If each time you are asked to implement a new feature and you come back with “Before I can implement the feature I need to re-write all this other code,” your client’s trust in you will most definitely drop.<br /><br />You also need to be able to show the client the long term value gained by refactoring.  For instance, make the client aware of the various code smells and discuss the impact the repeated (or similar) code has to maintenance should a bug be found or a business requirement changes in the future.  Also, remind the client that the need is fresh in your head but 6 months later it is going to take more time research the impact.  Plus, the number of smells may have grown between the time the problem was first identified and the time code has to change, resulting in higher costs.<br /><br />Lastly, be mindful of the business side.  Many times developers only think of the technical aspects with no regard to the business side of things.  Understand what is happening on the business side of a project will help when discussing a refactoring effort with a client.  This can also help you understand why the answer is “No” and could help you identify a better “right time” to refactor.<br /><br />Convincing a client it is time to refactor is no trivial task but it is possible.</p>
+
+
+    <p><a href="/2005/09/02/convincing-a-client-it-is-time-to-refactor/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on September 2, 2005
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2005/08/30/date-range-check-in-sql-server/">Date Range Check in SQL Server</a>
+    </h2>
+    
+    <p>I have been writing a number of stored procedures that return report data for a client.  Each of these reports can be filtered by a date range, so I needed a simple way to check that a date was within a user defined date range.  <br /><br />As an additional requirement, if the user does not specify a begin date or end date as part of the date range then the earliest or latest supported date respectively should be used.  In other words, if the user does not specify a begin date then the earliest date supported by SQL Server should be used as the begin date, and if the user does not specify the end date then the latest date supported is used for the end date.<br /><br />My original approach was to use a BETWEEN clause in the SELECT statements.  However, this made the code messy especially with the ISNULL call used to set the begin end dates when NULL.  So I swapped out the code with a user-defined function.<br /><br />The user-defined function <b>fnIsInDateRange</b> takes 3 parameters:&lt;ul&gt;&lt;li&gt;Date to check&lt;/li&gt;&lt;li&gt;Beginning date of the date range&lt;/li&gt;&lt;li&gt;Ending date of the date range&lt;/li&gt;&lt;/ul&gt;<br />The function returns one of the following:&lt;ul&gt;&lt;li&gt;<b>-1</b> if the date is before the range&lt;/li&gt;&lt;li&gt;<b>0</b> if the date is within the range&lt;/li&gt;&lt;li&gt;<b>1</b> if the date is beyond the range&lt;/li&gt;&lt;/ul&gt;<br />Here’s the code for those who want it.&lt;pre&gt;<br />CREATE FUNCTION dbo.fnIsInDateRange<br />/* <br />  Determines if the date time value is within the date time range.<br /> <br />  Returns:<br />  -1 if the date is before the date range.<br />   0 if the date is within the date range.<br />   1 if the date is after the date range.<br /> <br />  Usage:<br />   SELECT dbo.fnIsInDateRange(‘2005-08-16’,’2005-08-01’,’2005-08-15’)<br />   SELECT * FROM exams WHERE dbo.fnIsInDateRange(dtmExamDate,’2005-08-01’,’2005-08-15’)=0<br />*/  <br />  (<br />    @value      DATETIME,<br />    @rangeFrom  DATETIME,<br />    @rangeTo    DATETIME<br />  )<br />RETURNS SMALLINT<br />AS<br />BEGIN<br />   DECLARE @result SMALLINT<br />   IF @value &lt; ISNULL(@rangeFrom,'1753-01-01 00:00:00.000') <br />   BEGIN<br />      SET @result = -1<br />   END<br />   ELSE IF @value &gt; ISNULL( @rangeTo, ‘9999-12-31 11:59:59.997’ )<br />   BEGIN<br />      SET @result = 1<br />   END<br />   ELSE<br />   BEGIN<br />      SET @result = 0<br />   END<br />   RETURN @result<br />END<br />&lt;/pre&gt;</p>
+
+
+    <p><a href="/2005/08/30/date-range-check-in-sql-server/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on August 30, 2005
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2005/08/29/i-admit-to-being-lazy-and-dumb/">I Admit to Being Lazy and Dumb</a>
+    </h2>
+    
+    <p>I’ve always said I’m lazy programmer, which makes me a good programmer.  For instance, I’m too lazy to perform the same task over and over on a computer so I write a tool.  And I hate writing the same code over and over.  I would rather write it once, package it up in a library, and forget the details.  All I want to remember is the API.<br /><br />I also believe my lack of a quality education helps me think of solutions that smarter individual may never even consider.  My seemingly childish approach to problem solving helps me think of solutions to the most time consuming yet simple problems.<br /><br />But Philipp Lenssen at Google Blogoscoped has really summed up <a href="http://blog.outer-court.com/archive/2005-08-24-n14.html">why good programmers are lazy and dumb</a>.  Give it a read.</p>
+
+
+    <p><a href="/2005/08/29/i-admit-to-being-lazy-and-dumb/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on August 29, 2005
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2005/08/29/3-reasons-for-me-to-buy-an-xbox-360/">3 reasons for me to buy an Xbox 360</a>
+    </h2>
+    
+    <p>Amped 3, Burnout Revenge, and Dead or Alive 4.<br /><br />While I believe Burnout Revenge will also be released on the Xbox in September, I plan to wait until Xbox 360.  The latest disc from OXM has a playable demo of Burnout Revenge and a video showcase on Amped 3 and DOA4.  All three games look awesome.</p>
+
+
+    <p><a href="/2005/08/29/3-reasons-for-me-to-buy-an-xbox-360/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on August 29, 2005
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    
+    <h2 class="post-title">
+        <a href="/2005/08/25/emergency-maintenance/">Emergency Maintenance</a>
+    </h2>
+    
+    <p>My ISP must perform some emergency maintenance on my SQL Server box.  The forums site may be down for 15 minutes.  Repair work is scheduled to start at 2:00 pm MST (GMT-7).<br /><br /><b>Update:</b> All done.</p>
+
+
+    <p><a href="/2005/08/25/emergency-maintenance/">Continue reading &rarr;</a></p>
+
+    <p class="post-meta">Posted by Kirby Turner on August 25, 2005
+     in <a class='category' href='/category/uncategorized/'>uncategorized</a>.
+    Tagged in .
+    </p>
+</div>
+<hr>
+
+
+<!-- Pager -->
+
+<ul class="pager">
+    
+    <li class="previous">
+        <a href="/page53">&larr; Newer Posts</a>
+    </li>
+    
+    
+    <li class="next">
+        <a href="/page55">Older Posts &rarr;</a>
+    </li>
+    
+</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<p>&nbsp;</p>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Recent Articles</h3>
+                <ul>
+                
+                <li><a href="/2021/03/10/my-backpacks/" title="My Backpacks">My Backpacks</a></li>
+                
+                <li><a href="/2021/01/06/my-private-snowshoe-trail/" title="My Private Snowshoe Trail">My Private Snowshoe Trail</a></li>
+                
+                <li><a href="/2021/01/04/beautiful-view-in-stowe-this-morning/" title="Beautiful View in Stowe This Morning">Beautiful View in Stowe This Morning</a></li>
+                
+                <li><a href="/2020/12/28/a-moonlit-night/" title="A Moonlit Night">A Moonlit Night</a></li>
+                
+                <li><a href="/2020/12/22/slab-of-snow/" title="Slab of Snow">Slab of Snow</a></li>
+                
+                </ul>
+            </div>
+            <div class="col-md-5 col-md-offset-1 col-xs-12">
+                <h3>Other Sites</h3>
+                <ul>
+                    <li><a href="http://www.kirbyturner.com/">Kirby Turner</a></li>
+                    <li><a href="https://www.flickr.com/photos/kirbyturner/">Photos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br />
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://twitter.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="https://github.com/kirbyt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="http://www.linkedin.com/in/kirbyturner/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://www.goodreads.com/kirbyt/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-stack-1x fa-inverse"><span style="font-family:helvetica;position: relative;top: -5px">g</span></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2025</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
+
+
+</body>
+
+</html>

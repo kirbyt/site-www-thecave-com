@@ -1,0 +1,76 @@
+==================================================================
+https://keybase.io/kirbyt
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://thecave.com
+  * I am kirbyt (https://keybase.io/kirbyt) on keybase.
+  * I have a public key with fingerprint B3BB C9B9 818F 9779 2145  3AA3 B13B F84F 586F 23FB
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.3"
+        },
+        "key": {
+            "fingerprint": "b3bbc9b9818f977921453aa3b13bf84f586f23fb",
+            "host": "keybase.io",
+            "key_id": "B13BF84F586F23FB",
+            "uid": "c08f232ce8f673b6958003e619c8f200",
+            "username": "kirbyt"
+        },
+        "merkle_root": {
+            "ctime": 1422410687,
+            "hash": "541cfe4497c00e52d667583e3acdedb3838f5a6ffffd041b06d4adc127e61255592986ad411256d312183fe4d5375744159109e61853b033ad196cf6b7925e55",
+            "seqno": 142853
+        },
+        "service": {
+            "hostname": "thecave.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1422410717,
+    "expire_in": 157680000,
+    "prev": "f1433c73e8e535fdb33369518ccd9bb0be284fc17da062fabf3661eba0038992",
+    "seqno": 22,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Comment: GPGTools - https://gpgtools.org
+
+owFVUm1oFEcYvtPEaKTiN6JS0j0Uq+Gc2dmZnT2tP5KS9o9aGxEJ6mVmdja39XJ7
+2d1cPNL7IxaqFbFQQYqWBGnBpCV+/NBYjdGImoiiIH5/FLFIEfGHoPETZ4NinV8z
+8z7vM8/zvLP9k9Gxyvj+RcPLV3uJl/Fz//HYyrO1t9s17tlFLdWuiawrc2G0y7Fm
+qaW09bLIWSCTrleV82yZ/C6oeoep1grSD1wvp1AgaSaRVqqO4FGz4+aapJ/33YhL
+44hzYXGLQupYpmnp0MCIMcQh4g41HEyJoyOHK8qMF4QfvaqNcKZdW93WQFRTR406
+ha/TUV2NqrWOFASgikAXkjrERJxYmAKAJIGWUAUAImAg/feWXJ8Xw0hts/TXZ2Xa
+97wRyyJ0IwA0dN2AgFBT6WFBRrVgAwpHGoZlCgAk1m1CTEyRREzY0uaIIupgRhy1
+bGBADohtMFtA3VQidIyxpVuUMNuA6kRsBHVIkSK0MTKxaRgQWxBYCksx4gAhZkOL
+CIdwFRaWGCsDgWzJeSPiFKYUnf2CK2SkOwrtnbcwIwUryKTwmlVP3vdCT3hZVciE
+YT4VeQ6L+QjYJnlaUXRHHGnu5mw1sf+PFCrox3mYUOUhN+RdX6bdCIFNomIGIHpH
+FhSnAw2EhIkklRhhR+WCkJoFpELYFueAS11NW0DTZoDoDuMOIgRKztSwqGXpH1zq
+uhLKmhRn4DblWNjqS620OT67LBavjI0pHxV92ljluInvf3JnRcXLspNb8bQzPx7q
+a6jP3tx16vH+N193jXvQO/DN3T9624fj+cTSS30n2OZ8/PzURNXA3NYMqeyeMgmU
+v+6B1Vpx1PgbDQmaOtX58PKFpxdPHO/71f/+6f2q14Ol8X/Oqu2vPTmm7fPd184/
+27R4257hYwdnvxJHLv3y19WN10//lGj491rLGeeLgb2flvVmjfkpfrq54R540rkj
+c2fNisH8UMdX5xI31rYRsu9wf/ejerjun4eiv4Ps6Tqwdeb0xi2fda1xd61+M3Sk
+ojhj76rfxi4rTd4Qn0AXzrn9YFbh6PwLHUt+Xvf33Z5g6Mtvb82bcnbnAm1w+RUy
+3NjSWLH2h+fzyl/8zu/N6Kl/Cw==
+=LPhb
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kirbyt
+
+==================================================================
