@@ -32,3 +32,10 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 # Need to keep rake up to date as well.
 gem "rake"
+
+# Gems needed for Ruby 3.4.0+
+gem "logger"
+gem "csv"
+gem "ostruct"
+gem "base64"
+gem "bigdecimal"
