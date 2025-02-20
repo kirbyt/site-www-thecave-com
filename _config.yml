@@ -13,11 +13,12 @@ google_tracking_id: "UA-167605-3"
 headerImageCount: 7
 
 # Social Sites
-adn_username: kirbyt
-twitter_username: kirbyt
+# adn_username: kirbyt
+mastodon_username: kirbyt
+# twitter_username: kirbyt
 github_username:  kirbyt
 linkedin_username: kirbyturner
-goodreads_username: kirbyt
+# goodreads_username: kirbyt
 
 root: /
 
