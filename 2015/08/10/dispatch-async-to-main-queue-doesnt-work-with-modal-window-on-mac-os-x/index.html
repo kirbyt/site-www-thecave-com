@@ -154,7 +154,7 @@
 
 <p>This pattern has served me well on iOS, but it has issues on Mac OS X when displaying a modal window.</p>
 
-<p>When you display a modal window with <code class="language-plaintext highlighter-rouge">+[NSApp runModalForWindow:]</code> a new run loop is created for the window<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>. That might seem fine until you call <code class="language-plaintext highlighter-rouge">dispatch_async(dispatch_get_main_queue(), ^{})</code> from a background thread. The block that you are trying to execute in the main queue will never run. And in my case, the <code class="language-plaintext highlighter-rouge">completion</code> block is never called. This means my modal window never receives the notification that the URL request completed. (NOTE: Mike Ash <a href="#update2">pointed out</a> that it’s not the new run loop that causes the problem.)</p>
+<p>When you display a modal window with <code class="language-plaintext highlighter-rouge">+[NSApp runModalForWindow:]</code> a new run loop is created for the window<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>. That might seem fine until you call <code class="language-plaintext highlighter-rouge">dispatch_async(dispatch_get_main_queue(), ^{})</code> from a background thread. The block that you are trying to execute in the main queue will never run. And in my case, the <code class="language-plaintext highlighter-rouge">completion</code> block is never called. This means my modal window never receives the notification that the URL request completed. (NOTE: Mike Ash <a href="#update2">pointed out</a> that it’s not the new run loop that causes the problem.)</p>
 
 <p>So how did I work around this problem?</p>
 
@@ -200,7 +200,7 @@
 
 <div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:1" role="doc-endnote">
+    <li id="fn:1">
       <p>From the <a href="https://github.com/kirbyt/MacModalDispatchAsyncProblem">Apple documentation</a> for <code class="language-plaintext highlighter-rouge">+[NSApp runModalForWindow:]</code>: “This method runs a modal event loop for the specified window synchronously. It displays the specified window, makes it key, starts the run loop, and processes events for that window. (You do not need to show the window yourself.) While the app is in that loop, it does not respond to any other events (including mouse, keyboard, or window-close events) unless they are associated with the window. It also does not perform any tasks (such as firing timers) that are not associated with the modal run loop. In other words, this method consumes only enough CPU time to process events and dispatch them to the action methods associated with the modal window.” <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
@@ -239,9 +239,9 @@
                     
                         <li><a href="/2008/01/02/my-recommended-mac-os-x-applications/">My Recommended Mac OS X Applications</a></li>
                     
-                        <li><a href="/2007/07/29/how-to-access-a-windows-2003-file-share-from-mac-os-x/">How To Access a Windows 2003 File Share From Mac OS X</a></li>
-                    
                         <li><a href="/2007/07/29/cannot-resolve-machine-name-from-mac-os-x/">Cannot Resolve Machine Name From Mac OS X</a></li>
+                    
+                        <li><a href="/2007/07/29/how-to-access-a-windows-2003-file-share-from-mac-os-x/">How To Access a Windows 2003 File Share From Mac OS X</a></li>
                     
                     </ul>
                 
@@ -283,7 +283,7 @@
                 
                 <li><a href="/2021/01/04/beautiful-view-in-stowe-this-morning/" title="Beautiful View in Stowe This Morning">Beautiful View in Stowe This Morning</a></li>
                 
-                <li><a href="/2020/12/27/a-moonlit-night/" title="A Moonlit Night">A Moonlit Night</a></li>
+                <li><a href="/2020/12/28/a-moonlit-night/" title="A Moonlit Night">A Moonlit Night</a></li>
                 
                 <li><a href="/2020/12/22/slab-of-snow/" title="Slab of Snow">Slab of Snow</a></li>
                 
@@ -351,7 +351,7 @@
                     </li>
                     
                 </ul>
-                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2021</p>
+                <p class="copyright text-muted">Copyright &copy; Kirby Turner 2025</p>
             </div>
         </div>
     </div>
