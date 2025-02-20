@@ -6,6 +6,6 @@ category: personal
 tags: [photo, winter, snow]
 ---
 
-![](https://live.staticflickr.com/65535/50747242612_f80f20fc2c_c_d.jpg)
+![A slab of snow hanging from the roof visible through a window.](http://cdn.thecave.com/images/blog/2020-12-22-slab-of-snow.jpg)
 
 Many houses have icicles, but not ours. We have slabs of snow slowly sliding off our metal roof.
