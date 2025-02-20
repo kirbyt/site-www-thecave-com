@@ -2,6 +2,7 @@
 # This will be configured for you when you run config_deploy
 deploy_branch  = "gh-pages"
 git_repo = "git@github.com:kirbyt/site-www-thecave-com.git"
+git_repo_https = "https://github.com/kirbyt/site-www-thecave-com.git"
 
 ## -- Misc Configs -- ##
 
@@ -128,6 +129,30 @@ task :deploy do
 
   rm_rf "#{deploy_dir}"
   system "git clone --branch #{deploy_branch} #{git_repo} #{deploy_dir}"
+
+  puts "## Copying #{site_dir} files to #{deploy_dir}"
+  FileUtils.cp_r(site_dir + '/.', deploy_dir)
+
+  cd "#{deploy_dir}" do
+    system "git add ."
+    message = "Site updated at #{Time.now.utc}"
+    puts "\n## Committing: #{message}"
+    system "git commit -m \"#{message}\""
+    puts "\n## Pushing generated #{deploy_dir} website"
+    system "git push origin #{deploy_branch}"
+    puts "\n## Github Pages deploy complete"
+  end
+end
+
+desc "Bitrise: Generate and deploy jekyll site to Github Pages"
+task :bitrise_deploy do
+
+  Rake::Task[:generate].execute
+
+  puts "## Clone #{deploy_branch} branch from #{git_repo_https}"
+
+  rm_rf "#{deploy_dir}"
+  system "git clone --branch #{deploy_branch} #{git_repo_https} #{deploy_dir}"
 
   puts "## Copying #{site_dir} files to #{deploy_dir}"
   FileUtils.cp_r(site_dir + '/.', deploy_dir)
