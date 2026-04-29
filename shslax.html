@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Carter — Goalie Shot Chart</title>
+<style>
+:root {
+  --navy:#1F4E78; --navy-dark:#163958; --bg:#F7F8FA; --card:#FFFFFF;
+  --border:#E2E4E8; --text:#1A1F2C; --muted:#6B7280;
+  --save:#C81E1E; --goal:#1E46BE; --neutral:#FFFFFF; --gray:#EEEEEE;
+  --warning:#FFE699; --warning-text:#9C5700;
+}
+* { box-sizing: border-box; }
+html, body { margin:0; padding:0; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+       "Helvetica Neue", Arial, sans-serif; color:var(--text);
+       background:var(--bg); line-height:1.45; }
+header { background:var(--navy); color:#fff; padding:18px 28px;
+         display:flex; align-items:center; justify-content:space-between;
+         flex-wrap:wrap; gap:14px;
+         box-shadow:0 1px 4px rgba(0,0,0,0.08); }
+header h1 { margin:0; font-size:20px; font-weight:600; letter-spacing:0.2px; }
+header .subtitle { font-size:12px; opacity:0.75; margin-top:2px; }
+.filter-wrap { display:flex; align-items:center; gap:8px;
+               background:rgba(255,255,255,0.08); padding:6px 12px;
+               border-radius:8px; }
+.filter-wrap label { font-size:12px; opacity:0.85; }
+.filter-wrap select { background:#fff; color:var(--text); border:none;
+                      padding:6px 10px; border-radius:6px; font-size:14px;
+                      min-width:200px; cursor:pointer; }
+main { max-width:1280px; margin:0 auto; padding:24px 28px 80px; }
+section { margin-bottom:32px; }
+section h2 { font-size:16px; font-weight:600; color:var(--navy);
+             margin:0 0 12px; text-transform:uppercase; letter-spacing:0.5px; }
+section h3 { font-size:13px; font-weight:600; color:var(--text);
+             margin:0 0 8px; }
+.card { background:var(--card); border:1px solid var(--border);
+        border-radius:10px; padding:16px; }
+
+/* KPIs */
+.kpi-row { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+.kpi { background:var(--card); border:1px solid var(--border);
+       border-radius:10px; padding:18px; text-align:center; }
+.kpi .value { display:block; font-size:32px; font-weight:700;
+              color:var(--navy); }
+.kpi .label { display:block; font-size:11px; color:var(--muted);
+              text-transform:uppercase; letter-spacing:0.6px; margin-top:4px; }
+.kpi.accent .value { color:var(--save); }
+@media (max-width:760px) { .kpi-row { grid-template-columns:repeat(2,1fr); } }
+
+/* Heatmaps */
+.heatmap-row { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+@media (max-width:1100px) { .heatmap-row { grid-template-columns:repeat(2,1fr); } }
+@media (max-width:600px) { .heatmap-row { grid-template-columns:1fr; } }
+.heatmap-card { background:var(--card); border:1px solid var(--border);
+                border-radius:10px; padding:14px; }
+.heatmap-card h3 { display:flex; justify-content:space-between;
+                   align-items:baseline; margin-bottom:10px; }
+.heatmap-card h3 .meta { font-size:11px; color:var(--muted);
+                         font-weight:400; text-transform:none; letter-spacing:0; }
+.goal-grid { display:grid; grid-template-columns:repeat(3,1fr);
+             gap:3px; aspect-ratio:1.4 / 1; }
+.zone-cell { border:2px solid #2C2C2C; border-radius:4px;
+             display:flex; flex-direction:column; align-items:center;
+             justify-content:center; padding:6px; cursor:pointer;
+             transition: transform 0.08s ease, box-shadow 0.08s ease;
+             font-weight:600; }
+.zone-cell:hover { transform:scale(1.03);
+                   box-shadow:0 2px 6px rgba(0,0,0,0.18); z-index:2; position:relative; }
+.zone-cell .pct { font-size:18px; }
+.zone-cell .raw { font-size:10px; opacity:0.85; margin-top:1px; }
+.zone-cell.empty { color:#999; font-style:italic; cursor:default; }
+.zone-cell.empty:hover { transform:none; box-shadow:none; }
+
+/* Off-target row */
+.off-target-row { display:flex; align-items:center; gap:10px;
+                  font-size:12px; color:var(--muted); margin-top:8px; }
+.off-target-chip { padding:3px 10px; border-radius:6px;
+                   border:2px solid #2C2C2C; font-weight:600; font-size:13px; }
+
+/* Legend */
+.legend { display:inline-flex; align-items:center; gap:6px;
+          font-size:11px; color:var(--muted); margin-bottom:14px; }
+.legend-bar { width:140px; height:10px; border-radius:5px; border:1px solid #ccc;
+              background:linear-gradient(to right, rgb(30,70,190),
+              rgb(255,255,255), rgb(200,30,30)); }
+
+/* Breakdowns */
+.breakdown-row { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+@media (max-width:900px) { .breakdown-row { grid-template-columns:1fr; } }
+table.brk { width:100%; border-collapse:collapse; font-size:13px; }
+table.brk th, table.brk td { padding:8px 10px; text-align:left;
+                              border-bottom:1px solid var(--border); }
+table.brk th { background:#F4F5F7; font-weight:600;
+               color:var(--muted); font-size:11px; text-transform:uppercase;
+               letter-spacing:0.4px; }
+table.brk td.num, table.brk th.num { text-align:right; }
+table.brk td.pct { font-weight:600; color:var(--navy); }
+table.brk tr.total td { font-weight:700; background:#FEF3C7; border-top:2px solid #E5B25E; }
+
+/* Distribution maps */
+.dist-row { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+@media (max-width:760px) { .dist-row { grid-template-columns:1fr; } }
+.dist-card .goal-grid .zone-cell { font-size:11px; }
+.dist-card .zone-cell .pct { font-size:14px; }
+
+/* Drilldown modal */
+.modal { position:fixed; inset:0; background:rgba(0,0,0,0.45);
+         display:none; align-items:center; justify-content:center; z-index:50;
+         padding:20px; }
+.modal.show { display:flex; }
+.modal-content { background:#fff; border-radius:12px; max-width:680px; width:100%;
+                 max-height:90vh; overflow:auto; padding:22px;
+                 box-shadow:0 10px 40px rgba(0,0,0,0.3); }
+.modal-header { display:flex; justify-content:space-between;
+                align-items:flex-start; margin-bottom:14px; gap:14px; }
+.modal-header h3 { font-size:16px; margin:0; color:var(--navy); }
+.modal-header .summary { font-size:12px; color:var(--muted); margin-top:4px; }
+.modal-close { background:none; border:none; font-size:24px;
+               cursor:pointer; color:var(--muted); line-height:1;
+               padding:0; }
+.modal table { width:100%; border-collapse:collapse; font-size:13px; }
+.modal th, .modal td { padding:6px 10px; text-align:left;
+                       border-bottom:1px solid var(--border); }
+.modal th { background:#F4F5F7; font-size:11px; text-transform:uppercase;
+            color:var(--muted); }
+.modal .save-row td { background:#F0FAF1; }
+.modal .goal-row td { background:#FCF1F1; }
+
+/* Raw shot list */
+details { background:var(--card); border:1px solid var(--border);
+          border-radius:10px; padding:14px 16px; }
+details summary { cursor:pointer; font-weight:600; color:var(--navy); }
+details[open] summary { margin-bottom:10px; }
+.raw-table { width:100%; border-collapse:collapse; font-size:12px; }
+.raw-table th, .raw-table td { padding:6px 10px;
+                                border-bottom:1px solid var(--border); }
+.raw-table th { background:#F4F5F7; font-size:11px; text-transform:uppercase;
+                letter-spacing:0.4px; color:var(--muted); }
+.raw-table .save-row td { background:#F4FBF5; }
+.raw-table .goal-row td { background:#FDF4F4; }
+
+/* Insights */
+.insights { background:var(--card); border:1px solid var(--border);
+            border-radius:10px; padding:16px 18px; }
+.insights ul { margin:0; padding-left:20px; }
+.insights li { margin-bottom:6px; font-size:14px; }
+
+footer { text-align:center; color:var(--muted); font-size:12px;
+         padding:24px 0 12px; }
+
+.meta-pill { display:inline-block; padding:2px 8px; border-radius:999px;
+             background:rgba(255,255,255,0.18); font-size:11px;
+             margin-left:6px; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>Carter — Goalie Shot Chart</h1>
+    <div class="subtitle">Generated 2026-04-29 02:05<span class="meta-pill" id="header-shots">— shots</span></div>
+  </div>
+  <div class="filter-wrap">
+    <label for="filter">Game:</label>
+    <select id="filter"></select>
+  </div>
+</header>
+
+<main>
+  <!-- KPIs -->
+  <section class="kpi-row">
+    <div class="kpi"><span class="value" id="kpi-shots">0</span><span class="label">Shots Faced</span></div>
+    <div class="kpi"><span class="value" id="kpi-saves">0</span><span class="label">Saves</span></div>
+    <div class="kpi"><span class="value" id="kpi-goals">0</span><span class="label">Goals Allowed</span></div>
+    <div class="kpi accent"><span class="value" id="kpi-pct">—</span><span class="label">Save %</span></div>
+  </section>
+
+  <!-- Hot zones -->
+  <section>
+    <h2>Hot Zones — Save % by Zone</h2>
+    <div class="legend">
+      <span>0% (all goals)</span>
+      <span class="legend-bar"></span>
+      <span>100% (all saves)</span>
+      <span style="margin-left:14px;">— click any zone to see its shots</span>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-card"><h3>Overall <span class="meta" id="meta-overall"></span></h3>
+        <div class="goal-grid" id="grid-overall"></div>
+        <div class="off-target-row">Off-target: <span class="off-target-chip" id="off-overall">—</span><span id="off-overall-meta"></span></div>
+      </div>
+      <div class="heatmap-card"><h3>Regular <span class="meta" id="meta-regular"></span></h3>
+        <div class="goal-grid" id="grid-regular"></div>
+        <div class="off-target-row">Off-target: <span class="off-target-chip" id="off-regular">—</span><span id="off-regular-meta"></span></div>
+      </div>
+      <div class="heatmap-card"><h3>Bounce <span class="meta" id="meta-bounce"></span></h3>
+        <div class="goal-grid" id="grid-bounce"></div>
+        <div class="off-target-row">Off-target: <span class="off-target-chip" id="off-bounce">—</span><span id="off-bounce-meta"></span></div>
+      </div>
+      <div class="heatmap-card"><h3>Rolling <span class="meta" id="meta-rolling"></span></h3>
+        <div class="goal-grid" id="grid-rolling"></div>
+        <div class="off-target-row">Off-target: <span class="off-target-chip" id="off-rolling">—</span><span id="off-rolling-meta"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breakdowns -->
+  <section>
+    <h2>Breakdowns</h2>
+    <div class="breakdown-row">
+      <div class="card"><h3>By Shot Type</h3><table class="brk" id="tbl-shottype"></table></div>
+      <div class="card"><h3>By Vertical</h3><table class="brk" id="tbl-vertical"></table></div>
+      <div class="card"><h3>By Horizontal</h3><table class="brk" id="tbl-horizontal"></table></div>
+    </div>
+  </section>
+
+  <!-- Per-zone full table -->
+  <section>
+    <h2>Per-Zone Detail</h2>
+    <div class="card"><table class="brk" id="tbl-zones"></table></div>
+  </section>
+
+  <!-- Distribution maps -->
+  <section>
+    <h2>Distribution Maps</h2>
+    <div class="dist-row">
+      <div class="card dist-card"><h3>Where the goals come from <span style="color:var(--muted);font-weight:400;font-size:11px;">(% of all goals)</span></h3>
+        <div class="goal-grid" id="grid-goal-dist"></div></div>
+      <div class="card dist-card"><h3>Where the saves come from <span style="color:var(--muted);font-weight:400;font-size:11px;">(% of all saves)</span></h3>
+        <div class="goal-grid" id="grid-save-dist"></div></div>
+    </div>
+  </section>
+
+  <!-- Insights -->
+  <section>
+    <h2>Auto-Generated Insights</h2>
+    <div class="insights"><ul id="insights-list"></ul></div>
+  </section>
+
+  <!-- Raw data -->
+  <section>
+    <details>
+      <summary>Raw shot log <span style="color:var(--muted); font-weight:400; font-size:12px;" id="raw-count"></span></summary>
+      <table class="raw-table" id="tbl-raw"></table>
+    </details>
+  </section>
+</main>
+
+<!-- Drilldown modal -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <div>
+        <h3 id="modal-title">Zone</h3>
+        <div class="summary" id="modal-summary"></div>
+      </div>
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+    </div>
+    <table id="modal-table"></table>
+  </div>
+</div>
+
+<footer>Single-file static dashboard. Re-run build_website.py after adding new games.</footer>
+
+<script>
+// -----------------------------------------------------------------------
+// DATA — embedded at build time
+// -----------------------------------------------------------------------
+const SHOTS = [{"shot_num": 1, "date": "2026-04-28", "game": "vs St Johnsbury 4/28", "opponent": "St Johnsbury Academy", "zone": "High-Left", "shot_type": "Regular", "result": "Save", "notes": ""}, {"shot_num": 2, "date": "2026-04-28", "game": "vs St Johnsbury 4/28", "opponent": "St Johnsbury Academy", "zone": "High-Left", "shot_type": "Regular", "result": "Save", "notes": ""}, {"shot_num": 3, "date": "2026-04-28", "game": "vs St Johnsbury 4/28", "opponent": "St Johnsbury Academy", "zone": "Off-Target", "shot_type": "Regular", "result": "Save", "notes": ""}, {"shot_num": 4, "date": "2026-04-28", "game": "vs St Johnsbury 4/28", "opponent": "St Johnsbury Academy", "zone": "Mid-Left", "shot_type": "Regular", "result": "Save", "notes": ""}, {"shot_num": 5, "date": "2026-04-28", "game": "vs St Johnsbury 4/28", "opponent": "St Johnsbury Academy", "zone": "Mid-Left", "shot_type": "Regular", "result": "Save", "notes": ""}, {"shot_num": 6, "date": "2026-04-28", "game": "vs St Johnsbury 4/28", "opponent": "St Johnsbury Academy", "zone": "Mid-Left", "shot_type": "Regular", "result": "Save", "notes": ""}, {"shot_num": 7, "date": "2026-04-28", "game": "vs St Johnsbury 4/28", "opponent": "St Johnsbury Academy", "zone": "Mid-Left", "shot_type": "Regular", "result": "Save", "notes": ""}, {"shot_num": 8, "date": "2026-04-28", "game": "vs St Johnsbury 4/28", "opponent": "St Johnsbury Academy", "zone": "Mid-Center", "shot_type": "Bounce", "result": "Save", "notes": ""}, {"shot_num": 9, "date": "2026-04-28", "game": "vs St Johnsbury 4/28", "opponent": "St Johnsbury Academy", "zone": "Mid-Right", "shot_type": "Regular", "result": "Save", "notes": ""}, {"shot_num": 10, "date": "2026-04-28", "game": "vs St Johnsbury 4/28", "opponent": "St Johnsbury Academy", "zone": "Mid-Right", "shot_type": "Bounce", "result": "Save", "notes": ""}, {"shot_num": 11, "date": "2026-04-28", "game": "vs St Johnsbury 4/28", "opponent": "St Johnsbury Academy", "zone": "Low-Center", "shot_type": "Bounce", "result": "Save", "notes": ""}, {"shot_num": 12, "date": "2026-04-28", "game": "vs St Johnsbury 4/28", "opponent": "St Johnsbury Academy", "zone": "Off-Target", "shot_type": "Bounce", "result": "Save", "notes": ""}, {"shot_num": 13, "date": "2026-04-28", "game": "vs St Johnsbury 4/28", "opponent": "St Johnsbury Academy", "zone": "Off-Target", "shot_type": "Regular", "result": "Save", "notes": ""}, {"shot_num": 14, "date": "2026-04-28", "game": "vs St Johnsbury 4/28", "opponent": "St Johnsbury Academy", "zone": "Off-Target", "shot_type": "Bounce", "result": "Save", "notes": ""}, {"shot_num": 15, "date": "2026-04-28", "game": "vs St Johnsbury 4/28", "opponent": "St Johnsbury Academy", "zone": "Off-Target", "shot_type": "Rolling", "result": "Save", "notes": ""}, {"shot_num": 16, "date": "2026-04-28", "game": "vs St Johnsbury 4/28", "opponent": "St Johnsbury Academy", "zone": "High-Left", "shot_type": "Bounce", "result": "Goal", "notes": ""}, {"shot_num": 17, "date": "2026-04-28", "game": "vs St Johnsbury 4/28", "opponent": "St Johnsbury Academy", "zone": "Mid-Center", "shot_type": "Bounce", "result": "Goal", "notes": ""}, {"shot_num": 18, "date": "2026-04-28", "game": "vs St Johnsbury 4/28", "opponent": "St Johnsbury Academy", "zone": "Low-Center", "shot_type": "Bounce", "result": "Goal", "notes": ""}, {"shot_num": 19, "date": "2026-04-28", "game": "vs St Johnsbury 4/28", "opponent": "St Johnsbury Academy", "zone": "Low-Center", "shot_type": "Bounce", "result": "Goal", "notes": ""}, {"shot_num": 20, "date": "2026-04-28", "game": "vs St Johnsbury 4/28", "opponent": "St Johnsbury Academy", "zone": "Low-Center", "shot_type": "Regular", "result": "Goal", "notes": ""}, {"shot_num": 21, "date": "2026-04-28", "game": "vs St Johnsbury 4/28", "opponent": "St Johnsbury Academy", "zone": "Low-Right", "shot_type": "Regular", "result": "Goal", "notes": ""}, {"shot_num": 22, "date": "2026-04-28", "game": "vs St Johnsbury 4/28", "opponent": "St Johnsbury Academy", "zone": "Low-Right", "shot_type": "Regular", "result": "Goal", "notes": ""}];
+const GAMES = [{"name": "vs St Johnsbury 4/28", "opponent": "St Johnsbury Academy", "date": "2026-04-28"}];
+
+const ZONES_INNER = [["High-Left","High-Center","High-Right"],
+                     ["Mid-Left","Mid-Center","Mid-Right"],
+                     ["Low-Left","Low-Center","Low-Right"]];
+const ZONES_FLAT  = ZONES_INNER.flat();
+const SHOT_TYPES  = ["Regular","Bounce","Rolling"];
+const VERT  = ["High","Mid","Low"];
+const HORIZ = ["Left","Center","Right"];
+
+// -----------------------------------------------------------------------
+// State
+// -----------------------------------------------------------------------
+let currentFilter = "All Games";
+
+// -----------------------------------------------------------------------
+// Helpers
+// -----------------------------------------------------------------------
+function filtered() {
+  if (currentFilter === "All Games") return SHOTS;
+  return SHOTS.filter(s => s.game === currentFilter);
+}
+function countWhere(arr, fn) { return arr.filter(fn).length; }
+function pct(n, d) { return d === 0 ? null : n / d; }
+function fmtPct(p) { return p === null ? "—" : Math.round(p * 100) + "%"; }
+function fmtPct1(p) { return p === null ? "—" : (Math.round(p * 1000) / 10).toFixed(1) + "%"; }
+
+function blend(c1, c2, t) {
+  return [
+    Math.round(c1[0] + (c2[0]-c1[0])*t),
+    Math.round(c1[1] + (c2[1]-c1[1])*t),
+    Math.round(c1[2] + (c2[2]-c1[2])*t)
+  ];
+}
+function pctToColor(p) {
+  if (p === null || isNaN(p)) return [238,238,238];
+  if (p >= 0.5) return blend([255,255,255], [200,30,30], (p-0.5)*2);
+  return blend([255,255,255], [30,70,190], (0.5-p)*2);
+}
+function rgb(c){ return `rgb(${c[0]},${c[1]},${c[2]})`; }
+function readableText(c) {
+  const lum = 0.299*c[0] + 0.587*c[1] + 0.114*c[2];
+  return lum < 130 ? "#fff" : "#111";
+}
+
+function singleColorScale(p, color) {
+  if (p === null || isNaN(p)) return [255,255,255];
+  // clip to 0.5 so light shares stay readable
+  const t = Math.min(1, p / 0.5);
+  return blend([255,255,255], color, t);
+}
+
+// -----------------------------------------------------------------------
+// Filter dropdown
+// -----------------------------------------------------------------------
+function buildFilter() {
+  const sel = document.getElementById("filter");
+  const opts = [{name:"All Games", subtitle:"season totals"}].concat(
+    GAMES.map(g => ({name: g.name, subtitle: g.opponent || ""})));
+  sel.innerHTML = opts.map(o =>
+    `<option value="${o.name}">${o.name}${o.subtitle ? " — " + o.subtitle : ""}</option>`).join("");
+  sel.addEventListener("change", e => { currentFilter = e.target.value; render(); });
+}
+
+// -----------------------------------------------------------------------
+// Render heatmap grid
+// -----------------------------------------------------------------------
+function renderGrid(elId, shots, shotType) {
+  const el = document.getElementById(elId);
+  el.innerHTML = "";
+  for (let r = 0; r < 3; r++) {
+    for (let c = 0; c < 3; c++) {
+      const zone = ZONES_INNER[r][c];
+      let pool = shots.filter(s => s.zone === zone);
+      if (shotType) pool = pool.filter(s => s.shot_type === shotType);
+      const saves = pool.filter(s => s.result === "Save").length;
+      const goals = pool.filter(s => s.result === "Goal").length;
+      const total = saves + goals;
+      const sp = pct(saves, total);
+      const cell = document.createElement("div");
+      cell.className = "zone-cell" + (total === 0 ? " empty" : "");
+      const color = pctToColor(sp);
+      cell.style.background = rgb(color);
+      cell.style.color = readableText(color);
+      cell.title = `${zone} · ${saves} save${saves===1?'':'s'} / ${goals} goal${goals===1?'':'s'}${shotType?` · ${shotType}`:''}`;
+      cell.innerHTML = total === 0
+        ? `<div class="pct" style="font-size:11px">${zone}</div><div class="raw">no shots</div>`
+        : `<div class="pct">${fmtPct(sp)}</div><div class="raw">${zone} · ${saves}/${total}</div>`;
+      if (total > 0) {
+        cell.addEventListener("click", () => openModal(zone, shotType, pool));
+      }
+      el.appendChild(cell);
+    }
+  }
+}
+
+function renderOffTarget(suffix, shots, shotType) {
+  let pool = shots.filter(s => s.zone === "Off-Target");
+  if (shotType) pool = pool.filter(s => s.shot_type === shotType);
+  const saves = pool.filter(s => s.result === "Save").length;
+  const goals = pool.filter(s => s.result === "Goal").length;
+  const total = saves + goals;
+  const sp = pct(saves, total);
+  const chip = document.getElementById("off-" + suffix);
+  const color = pctToColor(sp);
+  chip.style.background = rgb(color);
+  chip.style.color = readableText(color);
+  chip.textContent = total === 0 ? "—" : fmtPct(sp);
+  document.getElementById("off-" + suffix + "-meta").textContent =
+    total === 0 ? " (no off-frame shots)" : ` (${saves}/${total})`;
+}
+
+function renderHeaderMeta(suffix, shots, shotType) {
+  let pool = shotType ? shots.filter(s => s.shot_type === shotType) : shots;
+  const saves = pool.filter(s => s.result === "Save").length;
+  const goals = pool.filter(s => s.result === "Goal").length;
+  const total = saves + goals;
+  document.getElementById("meta-" + suffix).textContent =
+    total === 0 ? "no shots" : `${saves} sv · ${goals} g · ${fmtPct(pct(saves, total))}`;
+}
+
+// -----------------------------------------------------------------------
+// Distribution maps
+// -----------------------------------------------------------------------
+function renderDistGrid(elId, shots, result, color) {
+  const el = document.getElementById(elId);
+  el.innerHTML = "";
+  const totalForResult = shots.filter(s => s.result === result).length || 1;
+  const localShots = shots; // already filtered
+  for (let r = 0; r < 3; r++) {
+    for (let c = 0; c < 3; c++) {
+      const zone = ZONES_INNER[r][c];
+      const cnt = localShots.filter(s => s.zone === zone && s.result === result).length;
+      const share = cnt / totalForResult;
+      const cell = document.createElement("div");
+      cell.className = "zone-cell" + (cnt === 0 ? " empty" : "");
+      const bg = singleColorScale(share, color);
+      cell.style.background = rgb(bg);
+      cell.style.color = readableText(bg);
+      cell.title = `${zone} · ${cnt} ${result.toLowerCase()}${cnt===1?'':'s'}`;
+      cell.innerHTML = cnt === 0
+        ? `<div class="pct" style="font-size:11px">${zone}</div><div class="raw">0</div>`
+        : `<div class="pct">${cnt}</div><div class="raw">${zone} · ${Math.round(share*100)}%</div>`;
+      if (cnt > 0) cell.addEventListener("click", () =>
+        openModal(zone, null, localShots.filter(s => s.zone === zone)));
+      el.appendChild(cell);
+    }
+  }
+}
+
+// -----------------------------------------------------------------------
+// Breakdown tables
+// -----------------------------------------------------------------------
+function renderBreakdown(elId, shots, items, getter, label="Item") {
+  const rows = items.map(it => {
+    const pool = shots.filter(s => getter(s) === it);
+    const saves = pool.filter(s => s.result === "Save").length;
+    const goals = pool.filter(s => s.result === "Goal").length;
+    return { it, saves, goals, total: saves + goals };
+  });
+  const totSv = rows.reduce((a,r)=>a+r.saves,0);
+  const totGl = rows.reduce((a,r)=>a+r.goals,0);
+  const totTo = totSv + totGl;
+  const html = `
+    <thead><tr><th>${label}</th><th class="num">Saves</th><th class="num">Goals</th><th class="num">Total</th><th class="num">Save %</th></tr></thead>
+    <tbody>
+    ${rows.map(r => `<tr>
+      <td>${r.it}</td>
+      <td class="num">${r.saves}</td>
+      <td class="num">${r.goals}</td>
+      <td class="num">${r.total}</td>
+      <td class="num pct">${r.total===0?"—":fmtPct1(r.saves/r.total)}</td>
+    </tr>`).join("")}
+    <tr class="total">
+      <td>Total</td>
+      <td class="num">${totSv}</td>
+      <td class="num">${totGl}</td>
+      <td class="num">${totTo}</td>
+      <td class="num pct">${totTo===0?"—":fmtPct1(totSv/totTo)}</td>
+    </tr>
+    </tbody>`;
+  document.getElementById(elId).innerHTML = html;
+}
+
+function renderZoneTable(shots) {
+  const zones = ZONES_FLAT.concat(["Off-Target"]);
+  const rows = zones.map(z => {
+    const pool = shots.filter(s => s.zone === z);
+    const obj = { zone: z };
+    SHOT_TYPES.forEach(st => {
+      const sub = pool.filter(s => s.shot_type === st);
+      obj[st+"_S"] = sub.filter(s => s.result==="Save").length;
+      obj[st+"_G"] = sub.filter(s => s.result==="Goal").length;
+    });
+    obj.totalSaves = pool.filter(s => s.result==="Save").length;
+    obj.totalGoals = pool.filter(s => s.result==="Goal").length;
+    obj.total = obj.totalSaves + obj.totalGoals;
+    obj.savePct = obj.total === 0 ? null : obj.totalSaves / obj.total;
+    return obj;
+  });
+  const tot = {
+    zone: "TOTAL",
+    Regular_S: rows.reduce((a,r)=>a+r.Regular_S,0),
+    Regular_G: rows.reduce((a,r)=>a+r.Regular_G,0),
+    Bounce_S:  rows.reduce((a,r)=>a+r.Bounce_S,0),
+    Bounce_G:  rows.reduce((a,r)=>a+r.Bounce_G,0),
+    Rolling_S: rows.reduce((a,r)=>a+r.Rolling_S,0),
+    Rolling_G: rows.reduce((a,r)=>a+r.Rolling_G,0),
+    totalSaves: rows.reduce((a,r)=>a+r.totalSaves,0),
+    totalGoals: rows.reduce((a,r)=>a+r.totalGoals,0),
+  };
+  tot.total = tot.totalSaves + tot.totalGoals;
+  tot.savePct = tot.total===0 ? null : tot.totalSaves/tot.total;
+
+  const head = `<thead><tr>
+    <th>Zone</th>
+    <th class="num">Reg S</th><th class="num">Reg G</th>
+    <th class="num">Bnc S</th><th class="num">Bnc G</th>
+    <th class="num">Roll S</th><th class="num">Roll G</th>
+    <th class="num">Total</th><th class="num">Save %</th>
+  </tr></thead>`;
+  const tbody = "<tbody>" + rows.map(r => `<tr>
+      <td>${r.zone}</td>
+      <td class="num">${r.Regular_S}</td><td class="num">${r.Regular_G}</td>
+      <td class="num">${r.Bounce_S}</td><td class="num">${r.Bounce_G}</td>
+      <td class="num">${r.Rolling_S}</td><td class="num">${r.Rolling_G}</td>
+      <td class="num">${r.total}</td>
+      <td class="num pct">${r.savePct===null?"—":fmtPct1(r.savePct)}</td>
+    </tr>`).join("") + `<tr class="total">
+      <td>${tot.zone}</td>
+      <td class="num">${tot.Regular_S}</td><td class="num">${tot.Regular_G}</td>
+      <td class="num">${tot.Bounce_S}</td><td class="num">${tot.Bounce_G}</td>
+      <td class="num">${tot.Rolling_S}</td><td class="num">${tot.Rolling_G}</td>
+      <td class="num">${tot.total}</td>
+      <td class="num pct">${tot.savePct===null?"—":fmtPct1(tot.savePct)}</td>
+    </tr></tbody>`;
+  document.getElementById("tbl-zones").innerHTML = head + tbody;
+}
+
+// -----------------------------------------------------------------------
+// Raw shot list
+// -----------------------------------------------------------------------
+function renderRaw(shots) {
+  document.getElementById("raw-count").textContent = `(${shots.length} shot${shots.length===1?'':'s'})`;
+  const head = `<thead><tr>
+    <th>#</th><th>Date</th><th>Game</th><th>Zone</th><th>Shot Type</th><th>Result</th>
+  </tr></thead>`;
+  const body = "<tbody>" + shots.map(s => `<tr class="${s.result==='Save'?'save-row':'goal-row'}">
+    <td>${s.shot_num ?? ""}</td>
+    <td>${s.date ?? ""}</td>
+    <td>${s.game ?? ""}</td>
+    <td>${s.zone}</td>
+    <td>${s.shot_type}</td>
+    <td>${s.result}</td>
+  </tr>`).join("") + "</tbody>";
+  document.getElementById("tbl-raw").innerHTML = head + body;
+}
+
+// -----------------------------------------------------------------------
+// Insights — auto-generate based on filtered data
+// -----------------------------------------------------------------------
+function renderInsights(shots) {
+  const el = document.getElementById("insights-list");
+  if (shots.length === 0) {
+    el.innerHTML = "<li>No shots match the current filter.</li>";
+    return;
+  }
+  const tips = [];
+
+  // Overall
+  const tot = shots.length;
+  const sv = shots.filter(s => s.result==="Save").length;
+  const gl = tot - sv;
+  tips.push(`<b>Overall:</b> ${sv} saves / ${gl} goals on ${tot} shots — save % ${fmtPct1(sv/tot)}.`);
+
+  // By shot type
+  SHOT_TYPES.forEach(st => {
+    const pool = shots.filter(s => s.shot_type === st);
+    if (pool.length === 0) return;
+    const psv = pool.filter(s => s.result==="Save").length;
+    tips.push(`<b>${st}:</b> ${psv}/${pool.length} (${fmtPct1(psv/pool.length)}).`);
+  });
+
+  // Weakest zone (lowest save %, min 2 shots)
+  const zoneStats = ZONES_FLAT.map(z => {
+    const pool = shots.filter(s => s.zone === z);
+    return { z, total: pool.length, saves: pool.filter(s => s.result==="Save").length };
+  }).filter(o => o.total >= 1);
+  if (zoneStats.length) {
+    const weakest = zoneStats.slice().sort((a,b) =>
+      (a.saves/a.total) - (b.saves/b.total) || b.total - a.total)[0];
+    if (weakest.total > 0 && weakest.saves/weakest.total < 0.5) {
+      tips.push(`<b>Weakest zone:</b> ${weakest.z} — ${weakest.saves}/${weakest.total} saves (${fmtPct1(weakest.saves/weakest.total)}). Drill this first.`);
+    }
+  }
+
+  // Where goals come from
+  const goals = shots.filter(s => s.result==="Goal");
+  if (goals.length) {
+    const goalsByZone = {};
+    goals.forEach(g => goalsByZone[g.zone] = (goalsByZone[g.zone] || 0) + 1);
+    const sorted = Object.entries(goalsByZone).sort((a,b) => b[1]-a[1]);
+    const topZone = sorted[0];
+    tips.push(`<b>Goal hotspot:</b> ${topZone[0]} gave up ${topZone[1]} goal${topZone[1]===1?'':'s'} (${fmtPct1(topZone[1]/goals.length)} of all goals).`);
+  }
+
+  // Off-target
+  const offTargetShots = shots.filter(s => s.zone === "Off-Target");
+  if (offTargetShots.length) {
+    const otSv = offTargetShots.filter(s => s.result==="Save").length;
+    tips.push(`<b>Off-target shots:</b> ${otSv}/${offTargetShots.length} stopped (${fmtPct1(otSv/offTargetShots.length)}). Off-target should always be 100%.`);
+  }
+
+  el.innerHTML = tips.map(t => `<li>${t}</li>`).join("");
+}
+
+// -----------------------------------------------------------------------
+// Modal (drill-down)
+// -----------------------------------------------------------------------
+function openModal(zone, shotType, shots) {
+  document.getElementById("modal-title").textContent =
+    zone + (shotType ? ` · ${shotType} shots` : "");
+  const sv = shots.filter(s => s.result==="Save").length;
+  const gl = shots.filter(s => s.result==="Goal").length;
+  const tot = sv + gl;
+  document.getElementById("modal-summary").textContent =
+    `${sv} save${sv===1?'':'s'} / ${gl} goal${gl===1?'':'s'} · save % ${fmtPct1(pct(sv,tot))}` +
+    ` · filter: ${currentFilter}`;
+  const head = `<thead><tr><th>#</th><th>Date</th><th>Game</th><th>Type</th><th>Result</th></tr></thead>`;
+  const body = "<tbody>" + shots.map(s => `<tr class="${s.result==='Save'?'save-row':'goal-row'}">
+    <td>${s.shot_num ?? ""}</td>
+    <td>${s.date ?? ""}</td>
+    <td>${s.game ?? ""}</td>
+    <td>${s.shot_type}</td>
+    <td>${s.result}</td>
+  </tr>`).join("") + "</tbody>";
+  document.getElementById("modal-table").innerHTML = head + body;
+  document.getElementById("modal").classList.add("show");
+}
+function closeModal() {
+  document.getElementById("modal").classList.remove("show");
+}
+document.getElementById("modal").addEventListener("click", e => {
+  if (e.target.id === "modal") closeModal();
+});
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") closeModal();
+});
+
+// -----------------------------------------------------------------------
+// Render
+// -----------------------------------------------------------------------
+function render() {
+  const shots = filtered();
+  const sv = shots.filter(s => s.result==="Save").length;
+  const gl = shots.filter(s => s.result==="Goal").length;
+  const tot = sv + gl;
+  document.getElementById("kpi-shots").textContent = tot;
+  document.getElementById("kpi-saves").textContent = sv;
+  document.getElementById("kpi-goals").textContent = gl;
+  document.getElementById("kpi-pct").textContent = tot===0 ? "—" : fmtPct1(sv/tot);
+  document.getElementById("header-shots").textContent =
+    `— ${tot} shot${tot===1?'':'s'} (${currentFilter})`;
+
+  // Heatmaps
+  renderGrid("grid-overall", shots, null);
+  renderGrid("grid-regular", shots, "Regular");
+  renderGrid("grid-bounce",  shots, "Bounce");
+  renderGrid("grid-rolling", shots, "Rolling");
+  renderHeaderMeta("overall", shots, null);
+  renderHeaderMeta("regular", shots, "Regular");
+  renderHeaderMeta("bounce",  shots, "Bounce");
+  renderHeaderMeta("rolling", shots, "Rolling");
+  renderOffTarget("overall", shots, null);
+  renderOffTarget("regular", shots, "Regular");
+  renderOffTarget("bounce",  shots, "Bounce");
+  renderOffTarget("rolling", shots, "Rolling");
+
+  // Breakdowns
+  renderBreakdown("tbl-shottype", shots, SHOT_TYPES, s => s.shot_type, "Shot Type");
+  renderBreakdown("tbl-vertical", shots, VERT,
+    s => s.zone.split("-")[0],
+    "Vertical");
+  renderBreakdown("tbl-horizontal", shots, HORIZ,
+    s => { const p = s.zone.split("-"); return p.length === 2 ? p[1] : "Off-Target"; },
+    "Horizontal");
+
+  // Zone table
+  renderZoneTable(shots);
+
+  // Distribution maps
+  renderDistGrid("grid-goal-dist", shots, "Goal", [30,70,190]);
+  renderDistGrid("grid-save-dist", shots, "Save", [200,30,30]);
+
+  // Insights
+  renderInsights(shots);
+
+  // Raw
+  renderRaw(shots);
+}
+
+buildFilter();
+render();
+</script>
+</body>
+</html>
