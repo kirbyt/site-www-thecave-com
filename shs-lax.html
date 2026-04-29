@@ -38,6 +38,13 @@ section h3 { font-size:13px; font-weight:600; color:var(--text);
 .card { background:var(--card); border:1px solid var(--border);
         border-radius:10px; padding:16px; }
 
+/* Wrap wide tables so they scroll horizontally on narrow screens
+   instead of pushing past the content area. */
+.table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch;
+              margin: 0 -4px; padding: 0 4px; }
+#tbl-zones { min-width: 640px; }
+#tbl-raw   { min-width: 520px; }
+
 /* KPIs */
 .kpi-row { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
 .kpi { background:var(--card); border:1px solid var(--border);
@@ -159,7 +166,7 @@ footer { text-align:center; color:var(--muted); font-size:12px;
 <header>
   <div>
     <h1>Carter — Goalie Shot Chart</h1>
-    <div class="subtitle">Generated 2026-04-29 02:05<span class="meta-pill" id="header-shots">— shots</span></div>
+    <div class="subtitle">Generated 2026-04-29 02:21<span class="meta-pill" id="header-shots">— shots</span></div>
   </div>
   <div class="filter-wrap">
     <label for="filter">Game:</label>
@@ -218,7 +225,7 @@ footer { text-align:center; color:var(--muted); font-size:12px;
   <!-- Per-zone full table -->
   <section>
     <h2>Per-Zone Detail</h2>
-    <div class="card"><table class="brk" id="tbl-zones"></table></div>
+    <div class="card"><div class="table-wrap"><table class="brk" id="tbl-zones"></table></div></div>
   </section>
 
   <!-- Distribution maps -->
@@ -242,7 +249,7 @@ footer { text-align:center; color:var(--muted); font-size:12px;
   <section>
     <details>
       <summary>Raw shot log <span style="color:var(--muted); font-weight:400; font-size:12px;" id="raw-count"></span></summary>
-      <table class="raw-table" id="tbl-raw"></table>
+      <div class="table-wrap"><table class="raw-table" id="tbl-raw"></table></div>
     </details>
   </section>
 </main>
@@ -257,7 +264,7 @@ footer { text-align:center; color:var(--muted); font-size:12px;
       </div>
       <button class="modal-close" onclick="closeModal()">&times;</button>
     </div>
-    <table id="modal-table"></table>
+    <div class="table-wrap"><table id="modal-table"></table></div>
   </div>
 </div>
 
